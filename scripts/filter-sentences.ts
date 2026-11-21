@@ -117,7 +117,11 @@ async function main() {
 
   const words = JSON.parse(readFileSync(new URL('data/hsk1/words.json', root), 'utf8')) as WordInput[]
   const units = (JSON.parse(readFileSync(new URL('data/hsk1/units.json', root), 'utf8')) as { units: UnitInput[] }).units
-  const lex = buildLexicon(words, units)
+  // CC-CEDICT headwords only help to find word boundaries (太阳 is one word, not 太 + 阳).
+  const cedict = JSON.parse(readFileSync(new URL('node_modules/cedict-json/cedict.json', root), 'utf8')) as { simplified: string }[]
+  const dictionary = new Set(cedict.map((e) => e.simplified).filter((w) => /^\p{Script=Han}+$/u.test(w)))
+  console.log(`dictionary words: ${dictionary.size}`)
+  const lex = buildLexicon(words, units, dictionary)
 
   // 1. Mandarin sentences: apply the text rules right away.
   const stats: FilterStats = {

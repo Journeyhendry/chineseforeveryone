@@ -2,6 +2,8 @@
 // segmentation with longest match, the accept/reject rules, the ranking and the report.
 // Used by scripts/filter-sentences.ts.
 
+import { Converter } from 'opencc-js/t2cn'
+
 export interface WordInput {
   id: string
   hanzi: string
@@ -25,18 +27,25 @@ export const MAX_FILE_BYTES = 3 * 1024 * 1024
 
 const HAN = /^\p{Script=Han}$/u
 const DIGIT = /^[0-9]$/
+/** Traditional -> simplified (character level). Any sentence that changes under it contains traditional characters. */
+const toSimplified = Converter({ from: 't', to: 'cn' })
+/** Longest dictionary word tried at one position. */
+const MAX_WORD_LENGTH = 10
 const LATIN = /[A-Za-zÀ-ɏＡ-Ｚａ-ｚ]/u
 
 export interface Lexicon {
   /** Written form (hanzi or variant) -> ids of the words that use it (more than one for 还, 地, 干). */
   forms: Map<string, string[]>
   maxFormLength: number
+  /** Extra dictionary words (CC-CEDICT simplified headwords) used only to find word boundaries. */
+  dictionary: Set<string>
+  maxDictionaryLength: number
   /** Characters that only occur as the traditional form of an HSK 1 word (們 愛 說 這 ...). */
   traditionalOnly: Set<string>
   wordUnit: Map<string, { unit: string; order: number }>
 }
 
-export function buildLexicon(words: WordInput[], units: UnitInput[]): Lexicon {
+export function buildLexicon(words: WordInput[], units: UnitInput[], dictionaryWords: Iterable<string> = []): Lexicon {
   const forms = new Map<string, string[]>()
   const simplifiedChars = new Set<string>()
   const traditionalOnly = new Set<string>()
@@ -64,17 +73,56 @@ export function buildLexicon(words: WordInput[], units: UnitInput[]): Lexicon {
   const wordUnit = new Map<string, { unit: string; order: number }>()
   for (const u of units) for (const id of u.words) wordUnit.set(id, { unit: u.id, order: u.order })
   for (const w of words) if (!wordUnit.has(w.id)) throw new Error(`word ${w.id} is not in any unit`)
-  return { forms, maxFormLength, traditionalOnly, wordUnit }
+  const dictionary = new Set<string>()
+  let maxDictionaryLength = maxFormLength
+  for (const d of dictionaryWords) {
+    const length = [...d].length
+    if (length < 2 || length > MAX_WORD_LENGTH || forms.has(d)) continue
+    dictionary.add(d)
+    maxDictionaryLength = Math.max(maxDictionaryLength, length)
+  }
+  return { forms, maxFormLength, dictionary, maxDictionaryLength, traditionalOnly, wordUnit }
 }
 
 export type Token =
   | { kind: 'word'; text: string; ids: string[] }
   | { kind: 'digits' | 'punct' | 'foreign'; text: string }
 
-/** Left-to-right longest match against all HSK 1 forms; unmatched characters form one "foreign" token per run. */
+/** Splits `text` entirely into HSK 1 forms (longest match from the left), or returns null. */
+function splitIntoForms(text: string, lex: Lexicon): Token[] | null {
+  const chars = [...text]
+  const out: Token[] = []
+  let i = 0
+  while (i < chars.length) {
+    let hit = false
+    for (let len = Math.min(lex.maxFormLength, chars.length - i); len >= 1; len--) {
+      const candidate = chars.slice(i, i + len).join('')
+      const ids = lex.forms.get(candidate)
+      if (ids) {
+        out.push({ kind: 'word', text: candidate, ids })
+        i += len
+        hit = true
+        break
+      }
+    }
+    if (!hit) return null
+  }
+  return out
+}
+
+/**
+ * Forward maximum matching over HSK 1 forms plus the dictionary, so 太阳 is one word and not 太 + 阳.
+ * A dictionary word that is not HSK 1 becomes HSK 1 words only if it splits completely into HSK 1 forms
+ * (一个人 -> 一 个 人); otherwise it is foreign. Neighbouring foreign pieces form one run.
+ */
 export function segment(text: string, lex: Lexicon): Token[] {
   const chars = [...text]
   const tokens: Token[] = []
+  const addForeign = (piece: string) => {
+    const last = tokens[tokens.length - 1]
+    if (last?.kind === 'foreign') last.text += piece
+    else tokens.push({ kind: 'foreign', text: piece })
+  }
   let i = 0
   while (i < chars.length) {
     const ch = chars[i]
@@ -90,22 +138,26 @@ export function segment(text: string, lex: Lexicon): Token[] {
       i++
       continue
     }
-    let matched = false
-    for (let len = Math.min(lex.maxFormLength, chars.length - i); len >= 1; len--) {
+    let len = Math.min(lex.maxDictionaryLength, chars.length - i)
+    for (; len >= 1; len--) {
       const candidate = chars.slice(i, i + len).join('')
       const ids = lex.forms.get(candidate)
       if (ids) {
         tokens.push({ kind: 'word', text: candidate, ids })
-        i += len
-        matched = true
+        break
+      }
+      if (len > 1 && lex.dictionary.has(candidate)) {
+        const parts = splitIntoForms(candidate, lex)
+        if (parts) tokens.push(...parts)
+        else addForeign(candidate)
         break
       }
     }
-    if (matched) continue
-    const last = tokens[tokens.length - 1]
-    if (last?.kind === 'foreign') last.text += ch
-    else tokens.push({ kind: 'foreign', text: ch })
-    i++
+    if (len < 1) {
+      addForeign(ch)
+      len = 1
+    }
+    i += len
   }
   return tokens
 }
@@ -132,7 +184,7 @@ export function analyzeSentence(raw: string, lex: Lexicon): AnalyzeResult {
     if (HAN.test(ch)) han++
     else if (!DIGIT.test(ch) && !ALLOWED_PUNCT.includes(ch)) return { ok: false, reason: 'other-char' }
   }
-  if (chars.some((ch) => lex.traditionalOnly.has(ch))) return { ok: false, reason: 'traditional' }
+  if (chars.some((ch) => lex.traditionalOnly.has(ch)) || toSimplified(text) !== text) return { ok: false, reason: 'traditional' }
   if (han < MIN_HAN || han > MAX_HAN) return { ok: false, reason: 'length' }
 
   const tokens = segment(text, lex)

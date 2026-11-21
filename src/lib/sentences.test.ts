@@ -89,6 +89,56 @@ describe('segment', () => {
   })
 })
 
+describe('segment with a dictionary', () => {
+  const dictWords: WordInput[] = [
+    { id: 'D1', hanzi: '太', variants: [], traditional: '太' },
+    { id: 'D2', hanzi: '水', variants: [], traditional: '水' },
+    { id: 'D3', hanzi: '地', variants: [], traditional: '地' },
+    { id: 'D4', hanzi: '一', variants: [], traditional: '一' },
+    { id: 'D5', hanzi: '个', variants: [], traditional: '個' },
+    { id: 'D6', hanzi: '人', variants: [], traditional: '人' },
+    { id: 'D7', hanzi: '在', variants: [], traditional: '在' },
+    { id: 'D8', hanzi: '西边', variants: [], traditional: '西邊' },
+    { id: 'D9', hanzi: '下', variants: [], traditional: '下' },
+    { id: 'D10', hanzi: '山', variants: [], traditional: '山' },
+    { id: 'D11', hanzi: '别', variants: [], traditional: '別' },
+    { id: 'D12', hanzi: '坐', variants: [], traditional: '坐' },
+    { id: 'D13', hanzi: '上', variants: [], traditional: '上' },
+  ]
+  const dictLex = buildLexicon(dictWords, [{ id: 'u', order: 1, words: dictWords.map((w) => w.id) }], ['太阳', '水泥', '一个人', '地上', '水泥工', '大水泥'])
+  const result = (text: string) => {
+    const r = analyzeSentence(text, dictLex)
+    return r.ok ? r.value : r.reason
+  }
+
+  it('keeps 太阳 together: outside 太阳, and 太 is not counted as a used word', () => {
+    expect(result('太阳在西边下山。')).toMatchObject({ outside: '太阳', words: ['D7', 'D8', 'D9', 'D10'] })
+  })
+  it('keeps 水泥 together: outside 水泥, and 水 is not counted', () => {
+    const v = result('别坐在水泥地上。')
+    expect(v).toMatchObject({ outside: '水泥', words: ['D11', 'D12', 'D7', 'D3', 'D13'] })
+  })
+  it('prefers the longest dictionary word (水泥工 over 水泥)', () => {
+    expect(segment('水泥工', dictLex)).toEqual([{ kind: 'foreign', text: '水泥工' }])
+  })
+  it('treats a dictionary word made only of HSK 1 forms as those words', () => {
+    expect(segment('一个人', dictLex)).toEqual([
+      { kind: 'word', text: '一', ids: ['D4'] },
+      { kind: 'word', text: '个', ids: ['D5'] },
+      { kind: 'word', text: '人', ids: ['D6'] },
+    ])
+    expect(segment('地上', dictLex).map((t) => t.text)).toEqual(['地', '上'])
+  })
+  it('makes an HSK 1 word inside a longer dictionary word foreign', () => {
+    // 大水泥 is a dictionary word that contains 水 but is not made of HSK 1 forms only.
+    expect(segment('大水泥', dictLex)).toEqual([{ kind: 'foreign', text: '大水泥' }])
+    expect(result('我在大水泥山。')).toBe('foreign')
+  })
+  it('merges neighbouring foreign pieces into one run', () => {
+    expect(segment('太阳水泥', dictLex)).toEqual([{ kind: 'foreign', text: '太阳水泥' }])
+  })
+})
+
 describe('analyzeSentence', () => {
   const reason = (text: string) => {
     const r = analyzeSentence(text, lex)
@@ -127,6 +177,11 @@ describe('analyzeSentence', () => {
     expect(reason('朋友說汉语。')).toBe('traditional')
     expect(reason('我们爱你。')).toBe('ok')
   })
+  it('rejects traditional text that no HSK 1 word marks (via traditional -> simplified conversion)', () => {
+    expect(reason('你好，紅衣服的朋友！')).toBe('traditional')
+    expect(reason('我爱你的朋友們。')).toBe('traditional')
+    expect(reason('我爱你的朋友说。')).toBe('ok')
+  })
   it('enforces 4 to 20 Han characters (digits and punctuation do not count)', () => {
     expect(reason('我爱你。')).toBe('length')
     expect(reason('我爱你朋。')).toBe('ok')
@@ -162,6 +217,15 @@ describe('against the real word list', () => {
   })
   it('never flags a character of a simplified HSK 1 form', () => {
     for (const w of words) for (const form of [w.hanzi, ...w.variants]) for (const ch of form) expect(real.traditionalOnly.has(ch)).toBe(false)
+  })
+  it('does not reject normal simplified sentences', () => {
+    for (const text of ['我们是老朋友了。', '太阳在西边下山。', '他通通都吃了。', '你买了太多面包。', '请问，洗手间在里面还是后面？', '这个星期天我想干净地做饭。']) {
+      expect(analyzeSentence(text, real), text).not.toEqual({ ok: false, reason: 'traditional' })
+    }
+  })
+  it('rejects the traditional sentences from real data', () => {
+    expect(analyzeSentence('你好，紅衣服的女生！', real)).toEqual({ ok: false, reason: 'traditional' })
+    for (const text of ['紅', '們', '說'].map((c) => `我爱你的朋友${c}。`)) expect(analyzeSentence(text, real)).toEqual({ ok: false, reason: 'traditional' })
   })
   it('accepts an everyday sentence', () => {
     const r = analyzeSentence('我们是好朋友。', real)

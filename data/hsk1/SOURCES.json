@@ -1,0 +1,247 @@
+{
+  "hskList": {
+    "url": "https://raw.githubusercontent.com/ivankra/hsk30/4ff9e3915ce87baaecd7ebe263085573a4ea3192/hsk30.csv",
+    "repo": "https://github.com/ivankra/hsk30",
+    "commit": "4ff9e3915ce87baaecd7ebe263085573a4ea3192",
+    "localCopy": "data/raw/hsk30.csv",
+    "license": "Code MIT; word list derived from the official HSK 3.0 (2021) list",
+    "level1Rows": 500
+  },
+  "cedict": {
+    "package": "cedict-json",
+    "version": "1.3.20251213",
+    "source": "https://cc-cedict.org",
+    "license": "CC BY-SA 4.0"
+  },
+  "indonesian": "data/hsk1/translations-id.json: machine translation (written by Claude) from the English meaning and HSK 1 context; every entry is flagged machine: true",
+  "wordCount": 500,
+  "englishMeaning": {
+    "exactPinyinMatch": 467,
+    "fallbackSameSimplified": 16,
+    "erhuaRedirect": 6,
+    "manualOverride": 11,
+    "fallbackIds": [
+      "L1-0020",
+      "L1-0027",
+      "L1-0032",
+      "L1-0126",
+      "L1-0158",
+      "L1-0159",
+      "L1-0168",
+      "L1-0170",
+      "L1-0255",
+      "L1-0256",
+      "L1-0289",
+      "L1-0338",
+      "L1-0375",
+      "L1-0385",
+      "L1-0403",
+      "L1-0419"
+    ],
+    "erhuaRedirectIds": [
+      "L1-0142",
+      "L1-0244",
+      "L1-0262",
+      "L1-0278",
+      "L1-0402",
+      "L1-0434"
+    ],
+    "overrideIds": [
+      "L1-0022",
+      "L1-0024",
+      "L1-0025",
+      "L1-0044",
+      "L1-0053",
+      "L1-0056",
+      "L1-0076",
+      "L1-0416",
+      "L1-0433",
+      "L1-0437",
+      "L1-0450"
+    ]
+  },
+  "specialCases": {
+    "syllableCharMismatch": [],
+    "wordsWithVariants": [
+      {
+        "id": "L1-0004",
+        "hanzi": "爸爸",
+        "variants": [
+          "爸"
+        ]
+      },
+      {
+        "id": "L1-0074",
+        "hanzi": "弟弟",
+        "variants": [
+          "弟"
+        ]
+      },
+      {
+        "id": "L1-0118",
+        "hanzi": "哥哥",
+        "variants": [
+          "哥"
+        ]
+      },
+      {
+        "id": "L1-0178",
+        "hanzi": "姐姐",
+        "variants": [
+          "姐"
+        ]
+      },
+      {
+        "id": "L1-0216",
+        "hanzi": "零",
+        "variants": [
+          "〇"
+        ]
+      },
+      {
+        "id": "L1-0224",
+        "hanzi": "妈妈",
+        "variants": [
+          "妈"
+        ]
+      },
+      {
+        "id": "L1-0237",
+        "hanzi": "妹妹",
+        "variants": [
+          "妹"
+        ]
+      },
+      {
+        "id": "L1-0444",
+        "hanzi": "有时候",
+        "variants": [
+          "有时"
+        ]
+      },
+      {
+        "id": "L1-0445",
+        "hanzi": "有些",
+        "variants": [
+          "有一些"
+        ]
+      }
+    ],
+    "alternativePronunciationsIgnored": [
+      {
+        "id": "L1-0325",
+        "hanzi": "谁",
+        "used": "shéi",
+        "ignored": "shuí"
+      }
+    ],
+    "pinyinDisagreeingWithCsvCedictColumn": [
+      {
+        "id": "L1-0020",
+        "hanzi": "北边",
+        "ours": "bei3 bian5",
+        "csv": "bei3 bian1"
+      },
+      {
+        "id": "L1-0027",
+        "hanzi": "别人",
+        "ours": "bie2 ren2",
+        "csv": "bie2 ren5"
+      },
+      {
+        "id": "L1-0032",
+        "hanzi": "不客气",
+        "ours": "bu4 ke4 qi4",
+        "csv": "bu4 ke4 qi5"
+      },
+      {
+        "id": "L1-0126",
+        "hanzi": "关上",
+        "ours": "guan1 shang5",
+        "csv": "guan1 shang4"
+      },
+      {
+        "id": "L1-0158",
+        "hanzi": "回来",
+        "ours": "hui2 lai2",
+        "csv": "hui2 lai5"
+      },
+      {
+        "id": "L1-0159",
+        "hanzi": "回去",
+        "ours": "hui2 qu4",
+        "csv": "hui2 qu5"
+      },
+      {
+        "id": "L1-0168",
+        "hanzi": "记住",
+        "ours": "ji4 zhu4",
+        "csv": "ji4 zhu5"
+      },
+      {
+        "id": "L1-0170",
+        "hanzi": "家里",
+        "ours": "jia1 li5",
+        "csv": "jia1 li3"
+      },
+      {
+        "id": "L1-0255",
+        "hanzi": "那边",
+        "ours": "na4 bian1",
+        "csv": "na4 bian5"
+      },
+      {
+        "id": "L1-0256",
+        "hanzi": "那里",
+        "ours": "na4 li3",
+        "csv": "na4 li5"
+      },
+      {
+        "id": "L1-0289",
+        "hanzi": "起来",
+        "ours": "qi3 lai2",
+        "csv": "qi3 lai5"
+      },
+      {
+        "id": "L1-0338",
+        "hanzi": "是不是",
+        "ours": "shi4 bu5 shi4",
+        "csv": "shi4 bu4 shi4"
+      },
+      {
+        "id": "L1-0375",
+        "hanzi": "网上",
+        "ours": "wang3 shang5",
+        "csv": "wang3 shang4"
+      },
+      {
+        "id": "L1-0385",
+        "hanzi": "西边",
+        "ours": "xi1 bian5",
+        "csv": "xi1 bian1"
+      },
+      {
+        "id": "L1-0403",
+        "hanzi": "小姐",
+        "ours": "xiao3 jie3",
+        "csv": "xiao3 jie5"
+      },
+      {
+        "id": "L1-0419",
+        "hanzi": "学生",
+        "ours": "xue2 sheng1",
+        "csv": "xue2 sheng5"
+      }
+    ],
+    "rules": [
+      "hanzi = first form in the Variants column (or first of \"a|b\"); other forms go to variants[]. Rows whose Variants entry is only an example (第（第二）, 们（朋友们）, 子（桌子）) keep just the bare character.",
+      "Erhua r is its own syllable (tone 5) and its Han character 儿 counts as one character.",
+      "pinyin has no spaces; apostrophes are kept (nǚ'ér). pinyinNumbered is space separated per syllable, ü written as v.",
+      "en[]: CEDICT entries with the same simplified form and exact numbered pinyin (traditional form preferred); else same simplified form; senses starting with CL:, variant of, surname, abbr. for, (slang), Japanese-style, Taiwan pr., also pr., also written, or mentioning Kangxi radical are dropped unless they are all there is; erhua entries (erhua variant of X) take the meaning of X; at most 6.",
+      "Manual English overrides (en-overrides.json) are used for the one word missing from CEDICT and for words whose first six CEDICT senses miss the HSK 1 usage (本 次 比 打 点 别 元 行 一块儿 一点儿)."
+    ]
+  },
+  "notes": [
+    "HSK 3.0 final syllabus (CLEC, published Nov 2025, new exam from 13 Dec 2026): according to secondary sources (studycli.org, thatsmandarin.com, hsklord.com) it cuts HSK 1 to 300 words (from 500 in the 2021 list). The full official list was not obtained. BUILD_PLAN section 1 keeps 500 words; changing to 300 needs a decision by the owner."
+  ]
+}

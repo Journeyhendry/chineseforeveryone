@@ -1,0 +1,91 @@
+{
+  "L1-0022": {
+    "en": [
+      "classifier for books, volumes",
+      "(bound form) root; origin",
+      "(bound form) this; the current (year etc)"
+    ],
+    "source": "manual (wording from CC-CEDICT 本 ben3): the first six CEDICT senses are all bound forms and omit the classifier use taught in HSK 1"
+  },
+  "L1-0024": {
+    "en": [
+      "to compare",
+      "than (X 比 Y + adjective: more ... than)",
+      "ratio"
+    ],
+    "source": "manual (wording from CC-CEDICT 比 bi3): CEDICT lists the Belgium abbreviation first, which is irrelevant here"
+  },
+  "L1-0025": {
+    "en": [
+      "don't ...!",
+      "other; another; different (bound form)",
+      "to leave; to part (from)"
+    ],
+    "source": "manual (wording from CC-CEDICT 别 bie2): reordered so the HSK 1 sense (don't) comes first"
+  },
+  "L1-0044": {
+    "en": [
+      "in the car",
+      "on the vehicle"
+    ],
+    "source": "manual: no CC-CEDICT entry for 车上; composed from 车 (vehicle) + 上 (on/in)"
+  },
+  "L1-0053": {
+    "en": [
+      "time; occurrence (classifier for repeated events)",
+      "next in sequence; second",
+      "secondary"
+    ],
+    "source": "manual (wording from CC-CEDICT 次 ci4): the first CEDICT senses omit the classifier use taught in HSK 1"
+  },
+  "L1-0056": {
+    "en": [
+      "to hit; to strike",
+      "to play (a ball game)",
+      "to make (a phone call)",
+      "to fight"
+    ],
+    "source": "manual (wording from CC-CEDICT 打 da3): CEDICT's first sense is a long grammatical note"
+  },
+  "L1-0076": {
+    "en": [
+      "o'clock",
+      "a little; a bit (as in 一点儿)",
+      "dot; point",
+      "to order (food etc)",
+      "to touch briefly; to tap"
+    ],
+    "source": "manual (wording from CC-CEDICT 点 dian3): the first six CEDICT senses omit the o'clock and dot uses taught in HSK 1"
+  },
+  "L1-0416": {
+    "en": [
+      "OK; all right",
+      "capable; competent",
+      "(bound form) to walk; to go; to travel"
+    ],
+    "source": "manual (wording from CC-CEDICT 行 xing2): the first six CEDICT senses are mostly bound forms and omit 'OK'"
+  },
+  "L1-0433": {
+    "en": [
+      "together; in the same place",
+      "in company (with)"
+    ],
+    "source": "manual (wording from CC-CEDICT 一块儿 / 一塊兒 yi1 kuai4 r5): the erhua redirect to 一块 gives 'a piece', not the HSK 1 meaning 'together'"
+  },
+  "L1-0437": {
+    "en": [
+      "a bit; a little bit",
+      "(not) the least bit (in negative expressions)",
+      "(after an adjective) a bit more, -er"
+    ],
+    "source": "manual (wording from CC-CEDICT 一点儿 / 一點兒 yi1 dian3 r5): drops irrelevant calligraphy and clock senses"
+  },
+  "L1-0450": {
+    "en": [
+      "yuan (basic unit of Chinese currency)",
+      "(bound form) first; original; primary",
+      "Yuan dynasty (1279-1368)"
+    ],
+    "source": "manual (wording from CC-CEDICT 元 yuan2): reordered so the currency sense taught in HSK 1 comes first"
+  }
+}

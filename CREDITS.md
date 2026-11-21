@@ -4,12 +4,13 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Data kosakata dan tata bahasa
 
-- **Daftar kata HSK 3.0**: [github.com/ivankra/hsk30](https://github.com/ivankra/hsk30). Kode bersifat MIT; data diturunkan dari daftar resmi HSK 3.0.
+- **Daftar kata HSK 3.0** (daftar 2021, level 1 = 500 kata): [github.com/ivankra/hsk30](https://github.com/ivankra/hsk30), dipatok pada commit `4ff9e3915ce87baaecd7ebe263085573a4ea3192`. Lisensi repo tersebut: kode MIT; data diturunkan dari daftar resmi HSK 3.0. Salinan asli: `data/raw/hsk30.csv`.
 - **Daftar tata bahasa HSK**: [github.com/krmanik/HSK-3.0](https://github.com/krmanik/HSK-3.0). Lisensi akan diperiksa sebelum digunakan.
 
 ## Kamus
 
-- **CC-CEDICT**: [cc-cedict.org](https://cc-cedict.org). Berlisensi CC BY-SA (wajib mencantumkan sumber dan berbagi dengan lisensi yang sama).
+- **CC-CEDICT**: [cc-cedict.org](https://cc-cedict.org). Berlisensi CC BY-SA 4.0 (wajib mencantumkan sumber dan berbagi dengan lisensi yang sama). Dipakai lewat paket npm [`cedict-json`](https://github.com/matt-tingen/cedict-json) versi 1.3.20251213 untuk arti Inggris di `data/hsk1/words.json`.
+- **Arti Indonesia**: terjemahan mesin (dibuat oleh AI dari arti Inggris dan konteks HSK 1), ditandai `idMachine: true` di data dan "terjemahan mesin" di tampilan. Sumber: `data/hsk1/translations-id.json`.
 
 ## Kalimat contoh dan audio
 

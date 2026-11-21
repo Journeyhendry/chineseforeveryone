@@ -1,0 +1,3404 @@
+{
+  "L1-0001": {
+    "ind": [
+      "cinta",
+      "mencintai",
+      "menyukai"
+    ],
+    "machine": true
+  },
+  "L1-0002": {
+    "ind": [
+      "hobi",
+      "gemar",
+      "suka"
+    ],
+    "machine": true
+  },
+  "L1-0003": {
+    "ind": [
+      "delapan"
+    ],
+    "machine": true
+  },
+  "L1-0004": {
+    "ind": [
+      "ayah",
+      "papa"
+    ],
+    "machine": true
+  },
+  "L1-0005": {
+    "ind": [
+      "(partikel untuk ajakan, saran, atau dugaan",
+      "mirip \"ya\", \"dong\")"
+    ],
+    "machine": true
+  },
+  "L1-0006": {
+    "ind": [
+      "putih",
+      "kosong"
+    ],
+    "machine": true
+  },
+  "L1-0007": {
+    "ind": [
+      "siang hari"
+    ],
+    "machine": true
+  },
+  "L1-0008": {
+    "ind": [
+      "seratus",
+      "ratusan"
+    ],
+    "machine": true
+  },
+  "L1-0009": {
+    "ind": [
+      "kelas",
+      "(kelompok atau regu)"
+    ],
+    "machine": true
+  },
+  "L1-0010": {
+    "ind": [
+      "setengah",
+      "separuh"
+    ],
+    "machine": true
+  },
+  "L1-0011": {
+    "ind": [
+      "setengah tahun"
+    ],
+    "machine": true
+  },
+  "L1-0012": {
+    "ind": [
+      "setengah hari",
+      "lama sekali"
+    ],
+    "machine": true
+  },
+  "L1-0013": {
+    "ind": [
+      "membantu",
+      "menolong"
+    ],
+    "machine": true
+  },
+  "L1-0014": {
+    "ind": [
+      "membantu",
+      "menolong"
+    ],
+    "machine": true
+  },
+  "L1-0015": {
+    "ind": [
+      "tas",
+      "membungkus",
+      "(penghitung untuk bungkusan)"
+    ],
+    "machine": true
+  },
+  "L1-0016": {
+    "ind": [
+      "bakpao",
+      "roti kukus berisi"
+    ],
+    "machine": true
+  },
+  "L1-0017": {
+    "ind": [
+      "gelas",
+      "cangkir",
+      "(penghitung untuk gelas atau cangkir)"
+    ],
+    "machine": true
+  },
+  "L1-0018": {
+    "ind": [
+      "gelas",
+      "cangkir"
+    ],
+    "machine": true
+  },
+  "L1-0019": {
+    "ind": [
+      "utara"
+    ],
+    "machine": true
+  },
+  "L1-0020": {
+    "ind": [
+      "sisi utara",
+      "sebelah utara"
+    ],
+    "machine": true
+  },
+  "L1-0021": {
+    "ind": [
+      "Beijing"
+    ],
+    "machine": true
+  },
+  "L1-0022": {
+    "ind": [
+      "(penghitung untuk buku)"
+    ],
+    "machine": true
+  },
+  "L1-0023": {
+    "ind": [
+      "buku tulis"
+    ],
+    "machine": true
+  },
+  "L1-0024": {
+    "ind": [
+      "membandingkan",
+      "(kata \"daripada\" dalam perbandingan)"
+    ],
+    "machine": true
+  },
+  "L1-0025": {
+    "ind": [
+      "jangan",
+      "lain",
+      "yang lain"
+    ],
+    "machine": true
+  },
+  "L1-0026": {
+    "ind": [
+      "yang lain",
+      "lainnya"
+    ],
+    "machine": true
+  },
+  "L1-0027": {
+    "ind": [
+      "orang lain"
+    ],
+    "machine": true
+  },
+  "L1-0028": {
+    "ind": [
+      "sakit",
+      "penyakit"
+    ],
+    "machine": true
+  },
+  "L1-0029": {
+    "ind": [
+      "pasien",
+      "orang sakit"
+    ],
+    "machine": true
+  },
+  "L1-0030": {
+    "ind": [
+      "tidak terlalu",
+      "tidak begitu"
+    ],
+    "machine": true
+  },
+  "L1-0031": {
+    "ind": [
+      "salah",
+      "tidak benar"
+    ],
+    "machine": true
+  },
+  "L1-0032": {
+    "ind": [
+      "sama-sama",
+      "jangan sungkan"
+    ],
+    "machine": true
+  },
+  "L1-0033": {
+    "ind": [
+      "tidak usah",
+      "tidak perlu"
+    ],
+    "machine": true
+  },
+  "L1-0034": {
+    "ind": [
+      "tidak",
+      "bukan"
+    ],
+    "machine": true
+  },
+  "L1-0035": {
+    "ind": [
+      "sayur",
+      "lauk",
+      "masakan"
+    ],
+    "machine": true
+  },
+  "L1-0036": {
+    "ind": [
+      "teh"
+    ],
+    "machine": true
+  },
+  "L1-0037": {
+    "ind": [
+      "kurang",
+      "buruk",
+      "berbeda"
+    ],
+    "machine": true
+  },
+  "L1-0038": {
+    "ind": [
+      "sering"
+    ],
+    "machine": true
+  },
+  "L1-0039": {
+    "ind": [
+      "sering",
+      "biasanya"
+    ],
+    "machine": true
+  },
+  "L1-0040": {
+    "ind": [
+      "bernyanyi"
+    ],
+    "machine": true
+  },
+  "L1-0041": {
+    "ind": [
+      "bernyanyi",
+      "menyanyikan lagu"
+    ],
+    "machine": true
+  },
+  "L1-0042": {
+    "ind": [
+      "mobil",
+      "kendaraan"
+    ],
+    "machine": true
+  },
+  "L1-0043": {
+    "ind": [
+      "tiket (bus, kereta, dsb.)"
+    ],
+    "machine": true
+  },
+  "L1-0044": {
+    "ind": [
+      "di dalam mobil",
+      "di atas kendaraan"
+    ],
+    "machine": true
+  },
+  "L1-0045": {
+    "ind": [
+      "stasiun",
+      "halte"
+    ],
+    "machine": true
+  },
+  "L1-0046": {
+    "ind": [
+      "makan"
+    ],
+    "machine": true
+  },
+  "L1-0047": {
+    "ind": [
+      "makan",
+      "makan nasi"
+    ],
+    "machine": true
+  },
+  "L1-0048": {
+    "ind": [
+      "keluar",
+      "mengeluarkan"
+    ],
+    "machine": true
+  },
+  "L1-0049": {
+    "ind": [
+      "keluar (ke arah pembicara)",
+      "muncul"
+    ],
+    "machine": true
+  },
+  "L1-0050": {
+    "ind": [
+      "pergi keluar",
+      "keluar (menjauhi pembicara)"
+    ],
+    "machine": true
+  },
+  "L1-0051": {
+    "ind": [
+      "memakai (pakaian)",
+      "mengenakan"
+    ],
+    "machine": true
+  },
+  "L1-0052": {
+    "ind": [
+      "tempat tidur",
+      "ranjang"
+    ],
+    "machine": true
+  },
+  "L1-0053": {
+    "ind": [
+      "kali",
+      "(penghitung untuk frekuensi)"
+    ],
+    "machine": true
+  },
+  "L1-0054": {
+    "ind": [
+      "dari",
+      "sejak"
+    ],
+    "machine": true
+  },
+  "L1-0055": {
+    "ind": [
+      "salah",
+      "keliru"
+    ],
+    "machine": true
+  },
+  "L1-0056": {
+    "ind": [
+      "memukul",
+      "bermain (permainan bola)",
+      "melakukan (mis. menelepon)"
+    ],
+    "machine": true
+  },
+  "L1-0057": {
+    "ind": [
+      "naik taksi",
+      "memesan taksi"
+    ],
+    "machine": true
+  },
+  "L1-0058": {
+    "ind": [
+      "menelepon"
+    ],
+    "machine": true
+  },
+  "L1-0059": {
+    "ind": [
+      "membuka",
+      "menyalakan"
+    ],
+    "machine": true
+  },
+  "L1-0060": {
+    "ind": [
+      "bermain bola"
+    ],
+    "machine": true
+  },
+  "L1-0061": {
+    "ind": [
+      "besar",
+      "tua (usia)"
+    ],
+    "machine": true
+  },
+  "L1-0062": {
+    "ind": [
+      "universitas",
+      "perguruan tinggi"
+    ],
+    "machine": true
+  },
+  "L1-0063": {
+    "ind": [
+      "mahasiswa"
+    ],
+    "machine": true
+  },
+  "L1-0064": {
+    "ind": [
+      "tiba",
+      "sampai",
+      "ke"
+    ],
+    "machine": true
+  },
+  "L1-0065": {
+    "ind": [
+      "mendapat",
+      "memperoleh"
+    ],
+    "machine": true
+  },
+  "L1-0066": {
+    "ind": [
+      "(partikel yang menghubungkan kata keterangan dengan kata kerja, mirip akhiran \"-nya\")"
+    ],
+    "machine": true
+  },
+  "L1-0067": {
+    "ind": [
+      "(partikel penanda kepemilikan atau penjelas kata benda, mirip \"milik\" atau \"yang\")"
+    ],
+    "machine": true
+  },
+  "L1-0068": {
+    "ind": [
+      "menunggu",
+      "dan seterusnya"
+    ],
+    "machine": true
+  },
+  "L1-0069": {
+    "ind": [
+      "tanah",
+      "bumi",
+      "tempat"
+    ],
+    "machine": true
+  },
+  "L1-0070": {
+    "ind": [
+      "tempat",
+      "lokasi"
+    ],
+    "machine": true
+  },
+  "L1-0071": {
+    "ind": [
+      "tempat",
+      "daerah"
+    ],
+    "machine": true
+  },
+  "L1-0072": {
+    "ind": [
+      "di tanah",
+      "di lantai"
+    ],
+    "machine": true
+  },
+  "L1-0073": {
+    "ind": [
+      "peta"
+    ],
+    "machine": true
+  },
+  "L1-0074": {
+    "ind": [
+      "adik laki-laki"
+    ],
+    "machine": true
+  },
+  "L1-0075": {
+    "ind": [
+      "(awalan bilangan urutan, mirip \"ke-\")"
+    ],
+    "machine": true
+  },
+  "L1-0076": {
+    "ind": [
+      "pukul",
+      "titik",
+      "sedikit",
+      "memesan (makanan)"
+    ],
+    "machine": true
+  },
+  "L1-0077": {
+    "ind": [
+      "listrik",
+      "petir"
+    ],
+    "machine": true
+  },
+  "L1-0078": {
+    "ind": [
+      "telepon"
+    ],
+    "machine": true
+  },
+  "L1-0079": {
+    "ind": [
+      "komputer"
+    ],
+    "machine": true
+  },
+  "L1-0080": {
+    "ind": [
+      "televisi"
+    ],
+    "machine": true
+  },
+  "L1-0081": {
+    "ind": [
+      "pesawat televisi",
+      "TV"
+    ],
+    "machine": true
+  },
+  "L1-0082": {
+    "ind": [
+      "film"
+    ],
+    "machine": true
+  },
+  "L1-0083": {
+    "ind": [
+      "bioskop"
+    ],
+    "machine": true
+  },
+  "L1-0084": {
+    "ind": [
+      "timur"
+    ],
+    "machine": true
+  },
+  "L1-0085": {
+    "ind": [
+      "sisi timur",
+      "sebelah timur"
+    ],
+    "machine": true
+  },
+  "L1-0086": {
+    "ind": [
+      "barang",
+      "benda"
+    ],
+    "machine": true
+  },
+  "L1-0087": {
+    "ind": [
+      "bergerak",
+      "menggerakkan"
+    ],
+    "machine": true
+  },
+  "L1-0088": {
+    "ind": [
+      "gerakan",
+      "aksi"
+    ],
+    "machine": true
+  },
+  "L1-0089": {
+    "ind": [
+      "semua",
+      "semuanya",
+      "bahkan (penekanan)"
+    ],
+    "machine": true
+  },
+  "L1-0090": {
+    "ind": [
+      "membaca",
+      "belajar"
+    ],
+    "machine": true
+  },
+  "L1-0091": {
+    "ind": [
+      "membaca buku",
+      "belajar",
+      "bersekolah"
+    ],
+    "machine": true
+  },
+  "L1-0092": {
+    "ind": [
+      "benar",
+      "betul",
+      "terhadap",
+      "kepada"
+    ],
+    "machine": true
+  },
+  "L1-0093": {
+    "ind": [
+      "maaf",
+      "minta maaf"
+    ],
+    "machine": true
+  },
+  "L1-0094": {
+    "ind": [
+      "banyak",
+      "lebih"
+    ],
+    "machine": true
+  },
+  "L1-0095": {
+    "ind": [
+      "berapa",
+      "berapa banyak"
+    ],
+    "machine": true
+  },
+  "L1-0096": {
+    "ind": [
+      "lapar"
+    ],
+    "machine": true
+  },
+  "L1-0097": {
+    "ind": [
+      "anak laki-laki",
+      "putra"
+    ],
+    "machine": true
+  },
+  "L1-0098": {
+    "ind": [
+      "dua"
+    ],
+    "machine": true
+  },
+  "L1-0099": {
+    "ind": [
+      "nasi",
+      "makanan"
+    ],
+    "machine": true
+  },
+  "L1-0100": {
+    "ind": [
+      "restoran",
+      "hotel"
+    ],
+    "machine": true
+  },
+  "L1-0101": {
+    "ind": [
+      "kamar",
+      "ruangan"
+    ],
+    "machine": true
+  },
+  "L1-0102": {
+    "ind": [
+      "rumah",
+      "bangunan"
+    ],
+    "machine": true
+  },
+  "L1-0103": {
+    "ind": [
+      "menaruh",
+      "meletakkan",
+      "melepaskan"
+    ],
+    "machine": true
+  },
+  "L1-0104": {
+    "ind": [
+      "libur",
+      "mulai liburan"
+    ],
+    "machine": true
+  },
+  "L1-0105": {
+    "ind": [
+      "pulang sekolah",
+      "sekolah bubar"
+    ],
+    "machine": true
+  },
+  "L1-0106": {
+    "ind": [
+      "terbang"
+    ],
+    "machine": true
+  },
+  "L1-0107": {
+    "ind": [
+      "pesawat terbang"
+    ],
+    "machine": true
+  },
+  "L1-0108": {
+    "ind": [
+      "sangat",
+      "luar biasa"
+    ],
+    "machine": true
+  },
+  "L1-0109": {
+    "ind": [
+      "menit",
+      "poin",
+      "membagi",
+      "(satuan sen)"
+    ],
+    "machine": true
+  },
+  "L1-0110": {
+    "ind": [
+      "angin"
+    ],
+    "machine": true
+  },
+  "L1-0111": {
+    "ind": [
+      "kering"
+    ],
+    "machine": true
+  },
+  "L1-0112": {
+    "ind": [
+      "bersih"
+    ],
+    "machine": true
+  },
+  "L1-0113": {
+    "ind": [
+      "melakukan",
+      "mengerjakan"
+    ],
+    "machine": true
+  },
+  "L1-0114": {
+    "ind": [
+      "sedang apa",
+      "mau apa"
+    ],
+    "machine": true
+  },
+  "L1-0115": {
+    "ind": [
+      "tinggi"
+    ],
+    "machine": true
+  },
+  "L1-0116": {
+    "ind": [
+      "senang",
+      "gembira"
+    ],
+    "machine": true
+  },
+  "L1-0117": {
+    "ind": [
+      "memberi tahu",
+      "mengatakan kepada"
+    ],
+    "machine": true
+  },
+  "L1-0118": {
+    "ind": [
+      "kakak laki-laki"
+    ],
+    "machine": true
+  },
+  "L1-0119": {
+    "ind": [
+      "lagu"
+    ],
+    "machine": true
+  },
+  "L1-0120": {
+    "ind": [
+      "(penghitung umum untuk orang dan benda)"
+    ],
+    "machine": true
+  },
+  "L1-0121": {
+    "ind": [
+      "memberi",
+      "kepada",
+      "untuk"
+    ],
+    "machine": true
+  },
+  "L1-0122": {
+    "ind": [
+      "dengan",
+      "bersama",
+      "mengikuti"
+    ],
+    "machine": true
+  },
+  "L1-0123": {
+    "ind": [
+      "pekerja",
+      "buruh"
+    ],
+    "machine": true
+  },
+  "L1-0124": {
+    "ind": [
+      "bekerja",
+      "pekerjaan"
+    ],
+    "machine": true
+  },
+  "L1-0125": {
+    "ind": [
+      "menutup",
+      "mematikan"
+    ],
+    "machine": true
+  },
+  "L1-0126": {
+    "ind": [
+      "menutup",
+      "mematikan"
+    ],
+    "machine": true
+  },
+  "L1-0127": {
+    "ind": [
+      "mahal",
+      "(kata hormat untuk milik lawan bicara)"
+    ],
+    "machine": true
+  },
+  "L1-0128": {
+    "ind": [
+      "negara"
+    ],
+    "machine": true
+  },
+  "L1-0129": {
+    "ind": [
+      "negara",
+      "negeri"
+    ],
+    "machine": true
+  },
+  "L1-0130": {
+    "ind": [
+      "luar negeri"
+    ],
+    "machine": true
+  },
+  "L1-0131": {
+    "ind": [
+      "melewati",
+      "menghabiskan (waktu)",
+      "merayakan",
+      "(penanda pengalaman)"
+    ],
+    "machine": true
+  },
+  "L1-0132": {
+    "ind": [
+      "masih",
+      "juga",
+      "lebih"
+    ],
+    "machine": true
+  },
+  "L1-0133": {
+    "ind": [
+      "atau",
+      "masih",
+      "sebaiknya"
+    ],
+    "machine": true
+  },
+  "L1-0134": {
+    "ind": [
+      "masih ada",
+      "selain itu"
+    ],
+    "machine": true
+  },
+  "L1-0135": {
+    "ind": [
+      "anak"
+    ],
+    "machine": true
+  },
+  "L1-0136": {
+    "ind": [
+      "bahasa Mandarin",
+      "bahasa Tionghoa"
+    ],
+    "machine": true
+  },
+  "L1-0137": {
+    "ind": [
+      "aksara Mandarin",
+      "huruf Hanzi"
+    ],
+    "machine": true
+  },
+  "L1-0138": {
+    "ind": [
+      "baik",
+      "bagus",
+      "enak"
+    ],
+    "machine": true
+  },
+  "L1-0139": {
+    "ind": [
+      "enak (dimakan)",
+      "lezat"
+    ],
+    "machine": true
+  },
+  "L1-0140": {
+    "ind": [
+      "bagus dilihat",
+      "cantik",
+      "menarik"
+    ],
+    "machine": true
+  },
+  "L1-0141": {
+    "ind": [
+      "enak didengar",
+      "merdu"
+    ],
+    "machine": true
+  },
+  "L1-0142": {
+    "ind": [
+      "seru",
+      "asyik",
+      "menyenangkan"
+    ],
+    "machine": true
+  },
+  "L1-0143": {
+    "ind": [
+      "tanggal",
+      "nomor"
+    ],
+    "machine": true
+  },
+  "L1-0144": {
+    "ind": [
+      "minum"
+    ],
+    "machine": true
+  },
+  "L1-0145": {
+    "ind": [
+      "dan",
+      "dengan",
+      "bersama"
+    ],
+    "machine": true
+  },
+  "L1-0146": {
+    "ind": [
+      "sangat",
+      "cukup"
+    ],
+    "machine": true
+  },
+  "L1-0147": {
+    "ind": [
+      "belakang",
+      "sesudah",
+      "kemudian"
+    ],
+    "machine": true
+  },
+  "L1-0148": {
+    "ind": [
+      "bagian belakang",
+      "belakang"
+    ],
+    "machine": true
+  },
+  "L1-0149": {
+    "ind": [
+      "lusa"
+    ],
+    "machine": true
+  },
+  "L1-0150": {
+    "ind": [
+      "bunga",
+      "menghabiskan (uang atau waktu)"
+    ],
+    "machine": true
+  },
+  "L1-0151": {
+    "ind": [
+      "perkataan",
+      "bahasa",
+      "kata-kata"
+    ],
+    "machine": true
+  },
+  "L1-0152": {
+    "ind": [
+      "buruk",
+      "jahat",
+      "rusak"
+    ],
+    "machine": true
+  },
+  "L1-0153": {
+    "ind": [
+      "mengembalikan",
+      "membayar kembali"
+    ],
+    "machine": true
+  },
+  "L1-0154": {
+    "ind": [
+      "kembali",
+      "pulang",
+      "(penghitung untuk kali)"
+    ],
+    "machine": true
+  },
+  "L1-0155": {
+    "ind": [
+      "menjawab",
+      "jawaban"
+    ],
+    "machine": true
+  },
+  "L1-0156": {
+    "ind": [
+      "kembali ke",
+      "pulang ke"
+    ],
+    "machine": true
+  },
+  "L1-0157": {
+    "ind": [
+      "pulang ke rumah"
+    ],
+    "machine": true
+  },
+  "L1-0158": {
+    "ind": [
+      "pulang",
+      "kembali (ke arah pembicara)"
+    ],
+    "machine": true
+  },
+  "L1-0159": {
+    "ind": [
+      "pulang",
+      "kembali (menjauhi pembicara)"
+    ],
+    "machine": true
+  },
+  "L1-0160": {
+    "ind": [
+      "bisa",
+      "dapat",
+      "akan",
+      "berkumpul"
+    ],
+    "machine": true
+  },
+  "L1-0161": {
+    "ind": [
+      "kereta api"
+    ],
+    "machine": true
+  },
+  "L1-0162": {
+    "ind": [
+      "bandara",
+      "bandar udara"
+    ],
+    "machine": true
+  },
+  "L1-0163": {
+    "ind": [
+      "tiket pesawat"
+    ],
+    "machine": true
+  },
+  "L1-0164": {
+    "ind": [
+      "telur ayam"
+    ],
+    "machine": true
+  },
+  "L1-0165": {
+    "ind": [
+      "berapa",
+      "beberapa"
+    ],
+    "machine": true
+  },
+  "L1-0166": {
+    "ind": [
+      "mencatat",
+      "mengingat"
+    ],
+    "machine": true
+  },
+  "L1-0167": {
+    "ind": [
+      "ingat",
+      "masih ingat"
+    ],
+    "machine": true
+  },
+  "L1-0168": {
+    "ind": [
+      "mengingat",
+      "menghafal"
+    ],
+    "machine": true
+  },
+  "L1-0169": {
+    "ind": [
+      "rumah",
+      "keluarga",
+      "(penghitung untuk toko atau keluarga)"
+    ],
+    "machine": true
+  },
+  "L1-0170": {
+    "ind": [
+      "di rumah",
+      "di dalam rumah"
+    ],
+    "machine": true
+  },
+  "L1-0171": {
+    "ind": [
+      "anggota keluarga",
+      "keluarga"
+    ],
+    "machine": true
+  },
+  "L1-0172": {
+    "ind": [
+      "(penghitung untuk kamar)",
+      "di antara"
+    ],
+    "machine": true
+  },
+  "L1-0173": {
+    "ind": [
+      "melihat",
+      "bertemu"
+    ],
+    "machine": true
+  },
+  "L1-0174": {
+    "ind": [
+      "bertemu",
+      "berjumpa"
+    ],
+    "machine": true
+  },
+  "L1-0175": {
+    "ind": [
+      "mengajar"
+    ],
+    "machine": true
+  },
+  "L1-0176": {
+    "ind": [
+      "memanggil",
+      "bernama",
+      "menyuruh"
+    ],
+    "machine": true
+  },
+  "L1-0177": {
+    "ind": [
+      "gedung kelas",
+      "gedung belajar"
+    ],
+    "machine": true
+  },
+  "L1-0178": {
+    "ind": [
+      "kakak perempuan"
+    ],
+    "machine": true
+  },
+  "L1-0179": {
+    "ind": [
+      "memperkenalkan",
+      "perkenalan"
+    ],
+    "machine": true
+  },
+  "L1-0180": {
+    "ind": [
+      "tahun ini"
+    ],
+    "machine": true
+  },
+  "L1-0181": {
+    "ind": [
+      "hari ini"
+    ],
+    "machine": true
+  },
+  "L1-0182": {
+    "ind": [
+      "masuk",
+      "maju"
+    ],
+    "machine": true
+  },
+  "L1-0183": {
+    "ind": [
+      "masuk (ke arah pembicara)"
+    ],
+    "machine": true
+  },
+  "L1-0184": {
+    "ind": [
+      "masuk (menjauhi pembicara)"
+    ],
+    "machine": true
+  },
+  "L1-0185": {
+    "ind": [
+      "sembilan"
+    ],
+    "machine": true
+  },
+  "L1-0186": {
+    "ind": [
+      "langsung",
+      "segera",
+      "maka",
+      "hanya"
+    ],
+    "machine": true
+  },
+  "L1-0187": {
+    "ind": [
+      "merasa",
+      "berpendapat"
+    ],
+    "machine": true
+  },
+  "L1-0188": {
+    "ind": [
+      "membuka",
+      "mengemudikan",
+      "menyalakan",
+      "mengadakan"
+    ],
+    "machine": true
+  },
+  "L1-0189": {
+    "ind": [
+      "mengemudi",
+      "menyetir"
+    ],
+    "machine": true
+  },
+  "L1-0190": {
+    "ind": [
+      "rapat",
+      "mengadakan rapat"
+    ],
+    "machine": true
+  },
+  "L1-0191": {
+    "ind": [
+      "bercanda",
+      "mengolok-olok"
+    ],
+    "machine": true
+  },
+  "L1-0192": {
+    "ind": [
+      "melihat",
+      "menonton",
+      "membaca",
+      "mengunjungi"
+    ],
+    "machine": true
+  },
+  "L1-0193": {
+    "ind": [
+      "berobat",
+      "periksa ke dokter"
+    ],
+    "machine": true
+  },
+  "L1-0194": {
+    "ind": [
+      "melihat"
+    ],
+    "machine": true
+  },
+  "L1-0195": {
+    "ind": [
+      "melihat",
+      "terlihat"
+    ],
+    "machine": true
+  },
+  "L1-0196": {
+    "ind": [
+      "ujian",
+      "mengikuti ujian"
+    ],
+    "machine": true
+  },
+  "L1-0197": {
+    "ind": [
+      "ujian",
+      "mengikuti ujian"
+    ],
+    "machine": true
+  },
+  "L1-0198": {
+    "ind": [
+      "haus"
+    ],
+    "machine": true
+  },
+  "L1-0199": {
+    "ind": [
+      "pelajaran",
+      "mata pelajaran",
+      "kelas"
+    ],
+    "machine": true
+  },
+  "L1-0200": {
+    "ind": [
+      "buku pelajaran"
+    ],
+    "machine": true
+  },
+  "L1-0201": {
+    "ind": [
+      "teks pelajaran",
+      "bacaan"
+    ],
+    "machine": true
+  },
+  "L1-0202": {
+    "ind": [
+      "mulut",
+      "(penghitung untuk anggota keluarga)"
+    ],
+    "machine": true
+  },
+  "L1-0203": {
+    "ind": [
+      "(penghitung untuk potongan atau keping)",
+      "yuan (dalam percakapan sehari-hari)"
+    ],
+    "machine": true
+  },
+  "L1-0204": {
+    "ind": [
+      "cepat",
+      "segera"
+    ],
+    "machine": true
+  },
+  "L1-0205": {
+    "ind": [
+      "datang"
+    ],
+    "machine": true
+  },
+  "L1-0206": {
+    "ind": [
+      "tiba",
+      "datang ke"
+    ],
+    "machine": true
+  },
+  "L1-0207": {
+    "ind": [
+      "tua",
+      "(awalan akrab sebelum nama atau gelar)"
+    ],
+    "machine": true
+  },
+  "L1-0208": {
+    "ind": [
+      "orang tua",
+      "lansia"
+    ],
+    "machine": true
+  },
+  "L1-0209": {
+    "ind": [
+      "guru"
+    ],
+    "machine": true
+  },
+  "L1-0210": {
+    "ind": [
+      "(penanda perbuatan selesai atau perubahan keadaan)"
+    ],
+    "machine": true
+  },
+  "L1-0211": {
+    "ind": [
+      "capai",
+      "lelah"
+    ],
+    "machine": true
+  },
+  "L1-0212": {
+    "ind": [
+      "dingin"
+    ],
+    "machine": true
+  },
+  "L1-0213": {
+    "ind": [
+      "di dalam",
+      "dalam"
+    ],
+    "machine": true
+  },
+  "L1-0214": {
+    "ind": [
+      "bagian dalam",
+      "di dalam"
+    ],
+    "machine": true
+  },
+  "L1-0215": {
+    "ind": [
+      "dua (sebelum kata penghitung)"
+    ],
+    "machine": true
+  },
+  "L1-0216": {
+    "ind": [
+      "nol"
+    ],
+    "machine": true
+  },
+  "L1-0217": {
+    "ind": [
+      "enam"
+    ],
+    "machine": true
+  },
+  "L1-0218": {
+    "ind": [
+      "gedung bertingkat",
+      "lantai"
+    ],
+    "machine": true
+  },
+  "L1-0219": {
+    "ind": [
+      "di lantai atas",
+      "atas"
+    ],
+    "machine": true
+  },
+  "L1-0220": {
+    "ind": [
+      "di lantai bawah",
+      "bawah"
+    ],
+    "machine": true
+  },
+  "L1-0221": {
+    "ind": [
+      "jalan",
+      "rute"
+    ],
+    "machine": true
+  },
+  "L1-0222": {
+    "ind": [
+      "persimpangan jalan"
+    ],
+    "machine": true
+  },
+  "L1-0223": {
+    "ind": [
+      "di jalan",
+      "dalam perjalanan"
+    ],
+    "machine": true
+  },
+  "L1-0224": {
+    "ind": [
+      "ibu",
+      "mama"
+    ],
+    "machine": true
+  },
+  "L1-0225": {
+    "ind": [
+      "jalan raya"
+    ],
+    "machine": true
+  },
+  "L1-0226": {
+    "ind": [
+      "segera",
+      "langsung"
+    ],
+    "machine": true
+  },
+  "L1-0227": {
+    "ind": [
+      "(partikel tanya untuk pertanyaan ya/tidak)"
+    ],
+    "machine": true
+  },
+  "L1-0228": {
+    "ind": [
+      "membeli"
+    ],
+    "machine": true
+  },
+  "L1-0229": {
+    "ind": [
+      "lambat",
+      "pelan"
+    ],
+    "machine": true
+  },
+  "L1-0230": {
+    "ind": [
+      "sibuk"
+    ],
+    "machine": true
+  },
+  "L1-0231": {
+    "ind": [
+      "mao (satuan uang, sepersepuluh yuan)",
+      "bulu"
+    ],
+    "machine": true
+  },
+  "L1-0232": {
+    "ind": [
+      "tidak ada",
+      "belum",
+      "tidak"
+    ],
+    "machine": true
+  },
+  "L1-0233": {
+    "ind": [
+      "tidak apa-apa",
+      "tidak masalah"
+    ],
+    "machine": true
+  },
+  "L1-0234": {
+    "ind": [
+      "tidak apa-apa",
+      "bukan apa-apa"
+    ],
+    "machine": true
+  },
+  "L1-0235": {
+    "ind": [
+      "tidak apa-apa",
+      "tidak sibuk"
+    ],
+    "machine": true
+  },
+  "L1-0236": {
+    "ind": [
+      "tidak punya",
+      "tidak ada",
+      "belum"
+    ],
+    "machine": true
+  },
+  "L1-0237": {
+    "ind": [
+      "adik perempuan"
+    ],
+    "machine": true
+  },
+  "L1-0238": {
+    "ind": [
+      "pintu",
+      "gerbang"
+    ],
+    "machine": true
+  },
+  "L1-0239": {
+    "ind": [
+      "pintu masuk",
+      "depan pintu"
+    ],
+    "machine": true
+  },
+  "L1-0240": {
+    "ind": [
+      "tiket masuk"
+    ],
+    "machine": true
+  },
+  "L1-0241": {
+    "ind": [
+      "(akhiran jamak untuk orang, mis. 朋友们 \"teman-teman\")"
+    ],
+    "machine": true
+  },
+  "L1-0242": {
+    "ind": [
+      "nasi"
+    ],
+    "machine": true
+  },
+  "L1-0243": {
+    "ind": [
+      "roti"
+    ],
+    "machine": true
+  },
+  "L1-0244": {
+    "ind": [
+      "mi"
+    ],
+    "machine": true
+  },
+  "L1-0245": {
+    "ind": [
+      "nama"
+    ],
+    "machine": true
+  },
+  "L1-0246": {
+    "ind": [
+      "mengerti",
+      "paham",
+      "jelas"
+    ],
+    "machine": true
+  },
+  "L1-0247": {
+    "ind": [
+      "tahun depan"
+    ],
+    "machine": true
+  },
+  "L1-0248": {
+    "ind": [
+      "besok"
+    ],
+    "machine": true
+  },
+  "L1-0249": {
+    "ind": [
+      "mengambil",
+      "memegang",
+      "membawa"
+    ],
+    "machine": true
+  },
+  "L1-0250": {
+    "ind": [
+      "yang mana",
+      "mana"
+    ],
+    "machine": true
+  },
+  "L1-0251": {
+    "ind": [
+      "di mana",
+      "(jawaban merendah: \"ah, tidak juga\")"
+    ],
+    "machine": true
+  },
+  "L1-0252": {
+    "ind": [
+      "di mana"
+    ],
+    "machine": true
+  },
+  "L1-0253": {
+    "ind": [
+      "yang mana saja"
+    ],
+    "machine": true
+  },
+  "L1-0254": {
+    "ind": [
+      "itu",
+      "kalau begitu"
+    ],
+    "machine": true
+  },
+  "L1-0255": {
+    "ind": [
+      "sebelah sana",
+      "di sana"
+    ],
+    "machine": true
+  },
+  "L1-0256": {
+    "ind": [
+      "di sana",
+      "tempat itu"
+    ],
+    "machine": true
+  },
+  "L1-0257": {
+    "ind": [
+      "di sana"
+    ],
+    "machine": true
+  },
+  "L1-0258": {
+    "ind": [
+      "itu (jamak)",
+      "hal-hal itu"
+    ],
+    "machine": true
+  },
+  "L1-0259": {
+    "ind": [
+      "susu"
+    ],
+    "machine": true
+  },
+  "L1-0260": {
+    "ind": [
+      "nenek"
+    ],
+    "machine": true
+  },
+  "L1-0261": {
+    "ind": [
+      "laki-laki",
+      "pria"
+    ],
+    "machine": true
+  },
+  "L1-0262": {
+    "ind": [
+      "anak laki-laki"
+    ],
+    "machine": true
+  },
+  "L1-0263": {
+    "ind": [
+      "pacar laki-laki",
+      "pacar"
+    ],
+    "machine": true
+  },
+  "L1-0264": {
+    "ind": [
+      "pria",
+      "laki-laki"
+    ],
+    "machine": true
+  },
+  "L1-0265": {
+    "ind": [
+      "siswa laki-laki",
+      "cowok"
+    ],
+    "machine": true
+  },
+  "L1-0266": {
+    "ind": [
+      "selatan"
+    ],
+    "machine": true
+  },
+  "L1-0267": {
+    "ind": [
+      "sisi selatan",
+      "sebelah selatan"
+    ],
+    "machine": true
+  },
+  "L1-0268": {
+    "ind": [
+      "sulit",
+      "susah"
+    ],
+    "machine": true
+  },
+  "L1-0269": {
+    "ind": [
+      "(partikel tanya lanjutan, mirip \"bagaimana dengan ...?\"",
+      "juga penanda keadaan berlangsung)"
+    ],
+    "machine": true
+  },
+  "L1-0270": {
+    "ind": [
+      "bisa",
+      "dapat",
+      "mampu"
+    ],
+    "machine": true
+  },
+  "L1-0271": {
+    "ind": [
+      "kamu",
+      "engkau"
+    ],
+    "machine": true
+  },
+  "L1-0272": {
+    "ind": [
+      "kalian"
+    ],
+    "machine": true
+  },
+  "L1-0273": {
+    "ind": [
+      "tahun"
+    ],
+    "machine": true
+  },
+  "L1-0274": {
+    "ind": [
+      "Anda (sopan)"
+    ],
+    "machine": true
+  },
+  "L1-0275": {
+    "ind": [
+      "susu sapi"
+    ],
+    "machine": true
+  },
+  "L1-0276": {
+    "ind": [
+      "perempuan",
+      "wanita"
+    ],
+    "machine": true
+  },
+  "L1-0277": {
+    "ind": [
+      "anak perempuan",
+      "putri"
+    ],
+    "machine": true
+  },
+  "L1-0278": {
+    "ind": [
+      "anak perempuan",
+      "gadis"
+    ],
+    "machine": true
+  },
+  "L1-0279": {
+    "ind": [
+      "pacar perempuan",
+      "pacar"
+    ],
+    "machine": true
+  },
+  "L1-0280": {
+    "ind": [
+      "wanita",
+      "perempuan"
+    ],
+    "machine": true
+  },
+  "L1-0281": {
+    "ind": [
+      "siswi",
+      "cewek"
+    ],
+    "machine": true
+  },
+  "L1-0282": {
+    "ind": [
+      "samping",
+      "sebelah"
+    ],
+    "machine": true
+  },
+  "L1-0283": {
+    "ind": [
+      "berlari",
+      "lari"
+    ],
+    "machine": true
+  },
+  "L1-0284": {
+    "ind": [
+      "teman",
+      "sahabat"
+    ],
+    "machine": true
+  },
+  "L1-0285": {
+    "ind": [
+      "tiket",
+      "karcis"
+    ],
+    "machine": true
+  },
+  "L1-0286": {
+    "ind": [
+      "tujuh"
+    ],
+    "machine": true
+  },
+  "L1-0287": {
+    "ind": [
+      "bangun",
+      "naik",
+      "mulai"
+    ],
+    "machine": true
+  },
+  "L1-0288": {
+    "ind": [
+      "bangun tidur",
+      "bangun"
+    ],
+    "machine": true
+  },
+  "L1-0289": {
+    "ind": [
+      "berdiri",
+      "bangun",
+      "(penanda mulai atau naik)"
+    ],
+    "machine": true
+  },
+  "L1-0290": {
+    "ind": [
+      "mobil"
+    ],
+    "machine": true
+  },
+  "L1-0291": {
+    "ind": [
+      "depan",
+      "sebelum"
+    ],
+    "machine": true
+  },
+  "L1-0292": {
+    "ind": [
+      "bagian depan",
+      "di depan"
+    ],
+    "machine": true
+  },
+  "L1-0293": {
+    "ind": [
+      "kemarin dulu",
+      "dua hari lalu"
+    ],
+    "machine": true
+  },
+  "L1-0294": {
+    "ind": [
+      "uang"
+    ],
+    "machine": true
+  },
+  "L1-0295": {
+    "ind": [
+      "dompet"
+    ],
+    "machine": true
+  },
+  "L1-0296": {
+    "ind": [
+      "silakan",
+      "mohon",
+      "mengundang"
+    ],
+    "machine": true
+  },
+  "L1-0297": {
+    "ind": [
+      "izin tidak masuk",
+      "minta izin"
+    ],
+    "machine": true
+  },
+  "L1-0298": {
+    "ind": [
+      "silakan masuk"
+    ],
+    "machine": true
+  },
+  "L1-0299": {
+    "ind": [
+      "permisi, boleh tanya",
+      "numpang tanya"
+    ],
+    "machine": true
+  },
+  "L1-0300": {
+    "ind": [
+      "silakan duduk"
+    ],
+    "machine": true
+  },
+  "L1-0301": {
+    "ind": [
+      "bola"
+    ],
+    "machine": true
+  },
+  "L1-0302": {
+    "ind": [
+      "pergi"
+    ],
+    "machine": true
+  },
+  "L1-0303": {
+    "ind": [
+      "tahun lalu"
+    ],
+    "machine": true
+  },
+  "L1-0304": {
+    "ind": [
+      "panas",
+      "hangat"
+    ],
+    "machine": true
+  },
+  "L1-0305": {
+    "ind": [
+      "orang",
+      "manusia"
+    ],
+    "machine": true
+  },
+  "L1-0306": {
+    "ind": [
+      "kenal",
+      "mengenal",
+      "mengenali"
+    ],
+    "machine": true
+  },
+  "L1-0307": {
+    "ind": [
+      "serius",
+      "sungguh-sungguh",
+      "teliti"
+    ],
+    "machine": true
+  },
+  "L1-0308": {
+    "ind": [
+      "hari",
+      "tanggal",
+      "matahari"
+    ],
+    "machine": true
+  },
+  "L1-0309": {
+    "ind": [
+      "tanggal",
+      "tenggat waktu"
+    ],
+    "machine": true
+  },
+  "L1-0310": {
+    "ind": [
+      "daging"
+    ],
+    "machine": true
+  },
+  "L1-0311": {
+    "ind": [
+      "tiga"
+    ],
+    "machine": true
+  },
+  "L1-0312": {
+    "ind": [
+      "gunung",
+      "bukit"
+    ],
+    "machine": true
+  },
+  "L1-0313": {
+    "ind": [
+      "pusat perbelanjaan",
+      "mal"
+    ],
+    "machine": true
+  },
+  "L1-0314": {
+    "ind": [
+      "toko"
+    ],
+    "machine": true
+  },
+  "L1-0315": {
+    "ind": [
+      "atas",
+      "naik",
+      "menghadiri (kelas)"
+    ],
+    "machine": true
+  },
+  "L1-0316": {
+    "ind": [
+      "berangkat kerja",
+      "masuk kerja"
+    ],
+    "machine": true
+  },
+  "L1-0317": {
+    "ind": [
+      "sisi atas",
+      "atas"
+    ],
+    "machine": true
+  },
+  "L1-0318": {
+    "ind": [
+      "naik kendaraan"
+    ],
+    "machine": true
+  },
+  "L1-0319": {
+    "ind": [
+      "kali yang lalu",
+      "lain kali yang lalu"
+    ],
+    "machine": true
+  },
+  "L1-0320": {
+    "ind": [
+      "masuk kelas",
+      "mengikuti pelajaran"
+    ],
+    "machine": true
+  },
+  "L1-0321": {
+    "ind": [
+      "berselancar di internet",
+      "online"
+    ],
+    "machine": true
+  },
+  "L1-0322": {
+    "ind": [
+      "pagi"
+    ],
+    "machine": true
+  },
+  "L1-0323": {
+    "ind": [
+      "pergi ke sekolah",
+      "bersekolah"
+    ],
+    "machine": true
+  },
+  "L1-0324": {
+    "ind": [
+      "sedikit",
+      "kurang"
+    ],
+    "machine": true
+  },
+  "L1-0325": {
+    "ind": [
+      "siapa"
+    ],
+    "machine": true
+  },
+  "L1-0326": {
+    "ind": [
+      "di badan",
+      "pada tubuh"
+    ],
+    "machine": true
+  },
+  "L1-0327": {
+    "ind": [
+      "badan",
+      "tubuh",
+      "kesehatan"
+    ],
+    "machine": true
+  },
+  "L1-0328": {
+    "ind": [
+      "apa"
+    ],
+    "machine": true
+  },
+  "L1-0329": {
+    "ind": [
+      "jatuh sakit",
+      "sakit"
+    ],
+    "machine": true
+  },
+  "L1-0330": {
+    "ind": [
+      "marah"
+    ],
+    "machine": true
+  },
+  "L1-0331": {
+    "ind": [
+      "ulang tahun"
+    ],
+    "machine": true
+  },
+  "L1-0332": {
+    "ind": [
+      "sepuluh"
+    ],
+    "machine": true
+  },
+  "L1-0333": {
+    "ind": [
+      "waktu",
+      "saat"
+    ],
+    "machine": true
+  },
+  "L1-0334": {
+    "ind": [
+      "waktu",
+      "jam"
+    ],
+    "machine": true
+  },
+  "L1-0335": {
+    "ind": [
+      "urusan",
+      "hal",
+      "perkara"
+    ],
+    "machine": true
+  },
+  "L1-0336": {
+    "ind": [
+      "mencoba",
+      "menguji"
+    ],
+    "machine": true
+  },
+  "L1-0337": {
+    "ind": [
+      "adalah",
+      "ya",
+      "benar"
+    ],
+    "machine": true
+  },
+  "L1-0338": {
+    "ind": [
+      "apakah ... atau tidak",
+      "benar tidak"
+    ],
+    "machine": true
+  },
+  "L1-0339": {
+    "ind": [
+      "tangan"
+    ],
+    "machine": true
+  },
+  "L1-0340": {
+    "ind": [
+      "ponsel",
+      "telepon genggam"
+    ],
+    "machine": true
+  },
+  "L1-0341": {
+    "ind": [
+      "buku",
+      "menulis"
+    ],
+    "machine": true
+  },
+  "L1-0342": {
+    "ind": [
+      "tas sekolah"
+    ],
+    "machine": true
+  },
+  "L1-0343": {
+    "ind": [
+      "toko buku"
+    ],
+    "machine": true
+  },
+  "L1-0344": {
+    "ind": [
+      "pohon"
+    ],
+    "machine": true
+  },
+  "L1-0345": {
+    "ind": [
+      "air"
+    ],
+    "machine": true
+  },
+  "L1-0346": {
+    "ind": [
+      "buah",
+      "buah-buahan"
+    ],
+    "machine": true
+  },
+  "L1-0347": {
+    "ind": [
+      "tidur"
+    ],
+    "machine": true
+  },
+  "L1-0348": {
+    "ind": [
+      "tidur"
+    ],
+    "machine": true
+  },
+  "L1-0349": {
+    "ind": [
+      "berkata",
+      "berbicara",
+      "mengatakan"
+    ],
+    "machine": true
+  },
+  "L1-0350": {
+    "ind": [
+      "berbicara",
+      "bicara"
+    ],
+    "machine": true
+  },
+  "L1-0351": {
+    "ind": [
+      "empat"
+    ],
+    "machine": true
+  },
+  "L1-0352": {
+    "ind": [
+      "mengantar",
+      "memberi",
+      "mengirim"
+    ],
+    "machine": true
+  },
+  "L1-0353": {
+    "ind": [
+      "tahun (untuk umur)",
+      "usia"
+    ],
+    "machine": true
+  },
+  "L1-0354": {
+    "ind": [
+      "dia (laki-laki)",
+      "ia"
+    ],
+    "machine": true
+  },
+  "L1-0355": {
+    "ind": [
+      "mereka"
+    ],
+    "machine": true
+  },
+  "L1-0356": {
+    "ind": [
+      "dia (perempuan)",
+      "ia"
+    ],
+    "machine": true
+  },
+  "L1-0357": {
+    "ind": [
+      "mereka (perempuan)"
+    ],
+    "machine": true
+  },
+  "L1-0358": {
+    "ind": [
+      "terlalu",
+      "sangat"
+    ],
+    "machine": true
+  },
+  "L1-0359": {
+    "ind": [
+      "hari",
+      "langit"
+    ],
+    "machine": true
+  },
+  "L1-0360": {
+    "ind": [
+      "cuaca"
+    ],
+    "machine": true
+  },
+  "L1-0361": {
+    "ind": [
+      "mendengar",
+      "mendengarkan"
+    ],
+    "machine": true
+  },
+  "L1-0362": {
+    "ind": [
+      "mendengar"
+    ],
+    "machine": true
+  },
+  "L1-0363": {
+    "ind": [
+      "mendengar",
+      "terdengar"
+    ],
+    "machine": true
+  },
+  "L1-0364": {
+    "ind": [
+      "dikte",
+      "menulis dari dikte"
+    ],
+    "machine": true
+  },
+  "L1-0365": {
+    "ind": [
+      "teman sekelas",
+      "murid"
+    ],
+    "machine": true
+  },
+  "L1-0366": {
+    "ind": [
+      "perpustakaan"
+    ],
+    "machine": true
+  },
+  "L1-0367": {
+    "ind": [
+      "luar",
+      "asing"
+    ],
+    "machine": true
+  },
+  "L1-0368": {
+    "ind": [
+      "sisi luar",
+      "luar"
+    ],
+    "machine": true
+  },
+  "L1-0369": {
+    "ind": [
+      "luar negeri",
+      "negara asing"
+    ],
+    "machine": true
+  },
+  "L1-0370": {
+    "ind": [
+      "bahasa asing"
+    ],
+    "machine": true
+  },
+  "L1-0371": {
+    "ind": [
+      "bermain",
+      "bersenang-senang"
+    ],
+    "machine": true
+  },
+  "L1-0372": {
+    "ind": [
+      "malam",
+      "terlambat"
+    ],
+    "machine": true
+  },
+  "L1-0373": {
+    "ind": [
+      "makan malam"
+    ],
+    "machine": true
+  },
+  "L1-0374": {
+    "ind": [
+      "malam",
+      "malam hari"
+    ],
+    "machine": true
+  },
+  "L1-0375": {
+    "ind": [
+      "di internet",
+      "online"
+    ],
+    "machine": true
+  },
+  "L1-0376": {
+    "ind": [
+      "teman online"
+    ],
+    "machine": true
+  },
+  "L1-0377": {
+    "ind": [
+      "lupa"
+    ],
+    "machine": true
+  },
+  "L1-0378": {
+    "ind": [
+      "lupa"
+    ],
+    "machine": true
+  },
+  "L1-0379": {
+    "ind": [
+      "bertanya"
+    ],
+    "machine": true
+  },
+  "L1-0380": {
+    "ind": [
+      "saya",
+      "aku"
+    ],
+    "machine": true
+  },
+  "L1-0381": {
+    "ind": [
+      "kami",
+      "kita"
+    ],
+    "machine": true
+  },
+  "L1-0382": {
+    "ind": [
+      "lima"
+    ],
+    "machine": true
+  },
+  "L1-0383": {
+    "ind": [
+      "makan siang"
+    ],
+    "machine": true
+  },
+  "L1-0384": {
+    "ind": [
+      "barat"
+    ],
+    "machine": true
+  },
+  "L1-0385": {
+    "ind": [
+      "sisi barat",
+      "sebelah barat"
+    ],
+    "machine": true
+  },
+  "L1-0386": {
+    "ind": [
+      "mencuci"
+    ],
+    "machine": true
+  },
+  "L1-0387": {
+    "ind": [
+      "toilet",
+      "kamar kecil"
+    ],
+    "machine": true
+  },
+  "L1-0388": {
+    "ind": [
+      "suka",
+      "menyukai"
+    ],
+    "machine": true
+  },
+  "L1-0389": {
+    "ind": [
+      "bawah",
+      "turun",
+      "berikutnya"
+    ],
+    "machine": true
+  },
+  "L1-0390": {
+    "ind": [
+      "pulang kerja",
+      "selesai kerja"
+    ],
+    "machine": true
+  },
+  "L1-0391": {
+    "ind": [
+      "sisi bawah",
+      "bawah"
+    ],
+    "machine": true
+  },
+  "L1-0392": {
+    "ind": [
+      "turun dari kendaraan"
+    ],
+    "machine": true
+  },
+  "L1-0393": {
+    "ind": [
+      "lain kali",
+      "kali berikutnya"
+    ],
+    "machine": true
+  },
+  "L1-0394": {
+    "ind": [
+      "pelajaran selesai",
+      "bubar kelas"
+    ],
+    "machine": true
+  },
+  "L1-0395": {
+    "ind": [
+      "sore"
+    ],
+    "machine": true
+  },
+  "L1-0396": {
+    "ind": [
+      "hujan turun"
+    ],
+    "machine": true
+  },
+  "L1-0397": {
+    "ind": [
+      "dulu",
+      "lebih dahulu"
+    ],
+    "machine": true
+  },
+  "L1-0398": {
+    "ind": [
+      "Tuan",
+      "bapak",
+      "suami"
+    ],
+    "machine": true
+  },
+  "L1-0399": {
+    "ind": [
+      "sekarang"
+    ],
+    "machine": true
+  },
+  "L1-0400": {
+    "ind": [
+      "ingin",
+      "berpikir",
+      "merindukan"
+    ],
+    "machine": true
+  },
+  "L1-0401": {
+    "ind": [
+      "kecil"
+    ],
+    "machine": true
+  },
+  "L1-0402": {
+    "ind": [
+      "anak kecil",
+      "anak"
+    ],
+    "machine": true
+  },
+  "L1-0403": {
+    "ind": [
+      "nona",
+      "kakak perempuan (sapaan sopan)"
+    ],
+    "machine": true
+  },
+  "L1-0404": {
+    "ind": [
+      "anak kecil",
+      "adik kecil"
+    ],
+    "machine": true
+  },
+  "L1-0405": {
+    "ind": [
+      "jam",
+      "satu jam"
+    ],
+    "machine": true
+  },
+  "L1-0406": {
+    "ind": [
+      "sekolah dasar"
+    ],
+    "machine": true
+  },
+  "L1-0407": {
+    "ind": [
+      "murid sekolah dasar"
+    ],
+    "machine": true
+  },
+  "L1-0408": {
+    "ind": [
+      "tertawa",
+      "tersenyum"
+    ],
+    "machine": true
+  },
+  "L1-0409": {
+    "ind": [
+      "menulis"
+    ],
+    "machine": true
+  },
+  "L1-0410": {
+    "ind": [
+      "terima kasih"
+    ],
+    "machine": true
+  },
+  "L1-0411": {
+    "ind": [
+      "baru"
+    ],
+    "machine": true
+  },
+  "L1-0412": {
+    "ind": [
+      "tahun baru"
+    ],
+    "machine": true
+  },
+  "L1-0413": {
+    "ind": [
+      "minggu",
+      "pekan"
+    ],
+    "machine": true
+  },
+  "L1-0414": {
+    "ind": [
+      "hari Minggu"
+    ],
+    "machine": true
+  },
+  "L1-0415": {
+    "ind": [
+      "hari Minggu"
+    ],
+    "machine": true
+  },
+  "L1-0416": {
+    "ind": [
+      "boleh",
+      "bisa",
+      "mampu"
+    ],
+    "machine": true
+  },
+  "L1-0417": {
+    "ind": [
+      "istirahat",
+      "beristirahat"
+    ],
+    "machine": true
+  },
+  "L1-0418": {
+    "ind": [
+      "belajar"
+    ],
+    "machine": true
+  },
+  "L1-0419": {
+    "ind": [
+      "siswa",
+      "pelajar"
+    ],
+    "machine": true
+  },
+  "L1-0420": {
+    "ind": [
+      "belajar",
+      "mempelajari"
+    ],
+    "machine": true
+  },
+  "L1-0421": {
+    "ind": [
+      "sekolah"
+    ],
+    "machine": true
+  },
+  "L1-0422": {
+    "ind": [
+      "akademi",
+      "institut",
+      "fakultas"
+    ],
+    "machine": true
+  },
+  "L1-0423": {
+    "ind": [
+      "ingin",
+      "perlu",
+      "akan"
+    ],
+    "machine": true
+  },
+  "L1-0424": {
+    "ind": [
+      "kakek"
+    ],
+    "machine": true
+  },
+  "L1-0425": {
+    "ind": [
+      "juga"
+    ],
+    "machine": true
+  },
+  "L1-0426": {
+    "ind": [
+      "halaman"
+    ],
+    "machine": true
+  },
+  "L1-0427": {
+    "ind": [
+      "satu"
+    ],
+    "machine": true
+  },
+  "L1-0428": {
+    "ind": [
+      "pakaian",
+      "baju"
+    ],
+    "machine": true
+  },
+  "L1-0429": {
+    "ind": [
+      "dokter"
+    ],
+    "machine": true
+  },
+  "L1-0430": {
+    "ind": [
+      "rumah sakit"
+    ],
+    "machine": true
+  },
+  "L1-0431": {
+    "ind": [
+      "setengah",
+      "separuh"
+    ],
+    "machine": true
+  },
+  "L1-0432": {
+    "ind": [
+      "sebentar",
+      "sesaat"
+    ],
+    "machine": true
+  },
+  "L1-0433": {
+    "ind": [
+      "bersama-sama",
+      "sama-sama"
+    ],
+    "machine": true
+  },
+  "L1-0434": {
+    "ind": [
+      "sebentar",
+      "coba (melunakkan kalimat)"
+    ],
+    "machine": true
+  },
+  "L1-0435": {
+    "ind": [
+      "sama",
+      "serupa"
+    ],
+    "machine": true
+  },
+  "L1-0436": {
+    "ind": [
+      "sambil",
+      "di satu sisi"
+    ],
+    "machine": true
+  },
+  "L1-0437": {
+    "ind": [
+      "sedikit",
+      "agak"
+    ],
+    "machine": true
+  },
+  "L1-0438": {
+    "ind": [
+      "bersama",
+      "bersama-sama"
+    ],
+    "machine": true
+  },
+  "L1-0439": {
+    "ind": [
+      "beberapa",
+      "sedikit"
+    ],
+    "machine": true
+  },
+  "L1-0440": {
+    "ind": [
+      "memakai",
+      "menggunakan"
+    ],
+    "machine": true
+  },
+  "L1-0441": {
+    "ind": [
+      "ada",
+      "punya"
+    ],
+    "machine": true
+  },
+  "L1-0442": {
+    "ind": [
+      "beberapa (orang atau benda)",
+      "ada yang"
+    ],
+    "machine": true
+  },
+  "L1-0443": {
+    "ind": [
+      "terkenal"
+    ],
+    "machine": true
+  },
+  "L1-0444": {
+    "ind": [
+      "kadang-kadang",
+      "terkadang"
+    ],
+    "machine": true
+  },
+  "L1-0445": {
+    "ind": [
+      "beberapa",
+      "agak"
+    ],
+    "machine": true
+  },
+  "L1-0446": {
+    "ind": [
+      "berguna",
+      "bermanfaat"
+    ],
+    "machine": true
+  },
+  "L1-0447": {
+    "ind": [
+      "kanan"
+    ],
+    "machine": true
+  },
+  "L1-0448": {
+    "ind": [
+      "sisi kanan",
+      "sebelah kanan"
+    ],
+    "machine": true
+  },
+  "L1-0449": {
+    "ind": [
+      "hujan"
+    ],
+    "machine": true
+  },
+  "L1-0450": {
+    "ind": [
+      "yuan (satuan mata uang)"
+    ],
+    "machine": true
+  },
+  "L1-0451": {
+    "ind": [
+      "jauh"
+    ],
+    "machine": true
+  },
+  "L1-0452": {
+    "ind": [
+      "bulan"
+    ],
+    "machine": true
+  },
+  "L1-0453": {
+    "ind": [
+      "lagi",
+      "kemudian"
+    ],
+    "machine": true
+  },
+  "L1-0454": {
+    "ind": [
+      "sampai jumpa",
+      "selamat tinggal"
+    ],
+    "machine": true
+  },
+  "L1-0455": {
+    "ind": [
+      "di",
+      "berada di",
+      "sedang"
+    ],
+    "machine": true
+  },
+  "L1-0456": {
+    "ind": [
+      "di rumah",
+      "ada di rumah"
+    ],
+    "machine": true
+  },
+  "L1-0457": {
+    "ind": [
+      "pagi",
+      "awal",
+      "cepat"
+    ],
+    "machine": true
+  },
+  "L1-0458": {
+    "ind": [
+      "sarapan"
+    ],
+    "machine": true
+  },
+  "L1-0459": {
+    "ind": [
+      "pagi hari",
+      "pagi"
+    ],
+    "machine": true
+  },
+  "L1-0460": {
+    "ind": [
+      "bagaimana",
+      "kenapa"
+    ],
+    "machine": true
+  },
+  "L1-0461": {
+    "ind": [
+      "berdiri",
+      "stasiun",
+      "halte"
+    ],
+    "machine": true
+  },
+  "L1-0462": {
+    "ind": [
+      "mencari",
+      "menemui"
+    ],
+    "machine": true
+  },
+  "L1-0463": {
+    "ind": [
+      "menemukan"
+    ],
+    "machine": true
+  },
+  "L1-0464": {
+    "ind": [
+      "ini"
+    ],
+    "machine": true
+  },
+  "L1-0465": {
+    "ind": [
+      "sebelah sini",
+      "di sini"
+    ],
+    "machine": true
+  },
+  "L1-0466": {
+    "ind": [
+      "di sini",
+      "tempat ini"
+    ],
+    "machine": true
+  },
+  "L1-0467": {
+    "ind": [
+      "di sini"
+    ],
+    "machine": true
+  },
+  "L1-0468": {
+    "ind": [
+      "ini (jamak)",
+      "hal-hal ini"
+    ],
+    "machine": true
+  },
+  "L1-0469": {
+    "ind": [
+      "(penanda keadaan berlangsung atau berlanjut)"
+    ],
+    "machine": true
+  },
+  "L1-0470": {
+    "ind": [
+      "sungguh",
+      "benar-benar",
+      "asli"
+    ],
+    "machine": true
+  },
+  "L1-0471": {
+    "ind": [
+      "benar-benar",
+      "sungguh",
+      "memang betul"
+    ],
+    "machine": true
+  },
+  "L1-0472": {
+    "ind": [
+      "tepat",
+      "lurus",
+      "sedang"
+    ],
+    "machine": true
+  },
+  "L1-0473": {
+    "ind": [
+      "sedang (melakukan sesuatu)"
+    ],
+    "machine": true
+  },
+  "L1-0474": {
+    "ind": [
+      "tahu",
+      "mengetahui"
+    ],
+    "machine": true
+  },
+  "L1-0475": {
+    "ind": [
+      "pengetahuan",
+      "ilmu"
+    ],
+    "machine": true
+  },
+  "L1-0476": {
+    "ind": [
+      "tengah",
+      "dalam",
+      "di tengah"
+    ],
+    "machine": true
+  },
+  "L1-0477": {
+    "ind": [
+      "Tiongkok",
+      "Cina"
+    ],
+    "machine": true
+  },
+  "L1-0478": {
+    "ind": [
+      "tengah",
+      "di antara"
+    ],
+    "machine": true
+  },
+  "L1-0479": {
+    "ind": [
+      "bahasa Mandarin",
+      "bahasa Tionghoa"
+    ],
+    "machine": true
+  },
+  "L1-0480": {
+    "ind": [
+      "tengah hari",
+      "siang"
+    ],
+    "machine": true
+  },
+  "L1-0481": {
+    "ind": [
+      "sekolah menengah"
+    ],
+    "machine": true
+  },
+  "L1-0482": {
+    "ind": [
+      "siswa sekolah menengah"
+    ],
+    "machine": true
+  },
+  "L1-0483": {
+    "ind": [
+      "berat",
+      "penting"
+    ],
+    "machine": true
+  },
+  "L1-0484": {
+    "ind": [
+      "penting"
+    ],
+    "machine": true
+  },
+  "L1-0485": {
+    "ind": [
+      "tinggal",
+      "menetap"
+    ],
+    "machine": true
+  },
+  "L1-0486": {
+    "ind": [
+      "bersiap",
+      "menyiapkan",
+      "persiapan"
+    ],
+    "machine": true
+  },
+  "L1-0487": {
+    "ind": [
+      "meja"
+    ],
+    "machine": true
+  },
+  "L1-0488": {
+    "ind": [
+      "huruf",
+      "aksara",
+      "kata"
+    ],
+    "machine": true
+  },
+  "L1-0489": {
+    "ind": [
+      "(akhiran kata benda, mis. 桌子 \"meja\")"
+    ],
+    "machine": true
+  },
+  "L1-0490": {
+    "ind": [
+      "berjalan",
+      "pergi"
+    ],
+    "machine": true
+  },
+  "L1-0491": {
+    "ind": [
+      "berjalan kaki"
+    ],
+    "machine": true
+  },
+  "L1-0492": {
+    "ind": [
+      "paling"
+    ],
+    "machine": true
+  },
+  "L1-0493": {
+    "ind": [
+      "sebaiknya",
+      "paling baik"
+    ],
+    "machine": true
+  },
+  "L1-0494": {
+    "ind": [
+      "terakhir",
+      "akhirnya"
+    ],
+    "machine": true
+  },
+  "L1-0495": {
+    "ind": [
+      "kemarin"
+    ],
+    "machine": true
+  },
+  "L1-0496": {
+    "ind": [
+      "kiri"
+    ],
+    "machine": true
+  },
+  "L1-0497": {
+    "ind": [
+      "sisi kiri",
+      "sebelah kiri"
+    ],
+    "machine": true
+  },
+  "L1-0498": {
+    "ind": [
+      "duduk",
+      "naik (kendaraan)"
+    ],
+    "machine": true
+  },
+  "L1-0499": {
+    "ind": [
+      "duduk"
+    ],
+    "machine": true
+  },
+  "L1-0500": {
+    "ind": [
+      "membuat",
+      "melakukan"
+    ],
+    "machine": true
+  }
+}

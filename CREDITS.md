@@ -14,7 +14,7 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Kalimat contoh dan audio
 
-- **Tatoeba**: [tatoeba.org](https://tatoeba.org). Kalimat berlisensi CC BY 2.0 FR. Lisensi audio mengikuti masing-masing perekam.
+- **Tatoeba**: [tatoeba.org](https://tatoeba.org). Kalimat contoh (Mandarin, Inggris, Indonesia) berlisensi CC BY 2.0 FR; sebagian berlisensi CC0 (ditandai di data). Nama penulis dan id Tatoeba tiap kalimat dan terjemahan disimpan di `data/hsk1/sentences.json`. Lisensi dan nama perekam audio disimpan per rekaman (tiap perekam bisa memakai lisensi berbeda, sebagian CC BY-NC); file audio belum dipakai. Kalimat diambil otomatis dari ekspor resmi Tatoeba oleh `.github/workflows/fetch-tatoeba.yml`; tanggal unduhan tercatat di `data/hsk1/sentences-report.json` (berubah tiap unduhan).
 
 ## Animasi goresan karakter
 

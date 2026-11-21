@@ -10,7 +10,8 @@
     "lint": "oxlint",
     "typecheck": "tsc -b",
     "test": "vitest run",
-    "build:words": "tsx scripts/build-words.ts"
+    "build:words": "tsx scripts/build-words.ts",
+    "build:sentences": "tsx scripts/filter-sentences.ts"
   },
   "dependencies": {
     "react": "^19.3.1",

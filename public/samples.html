@@ -261,7 +261,7 @@
     card.appendChild(head);
 
     if (skipped) {
-      card.appendChild(el('p', 'reason', 'Tidak tersedia: ' + (voice.reason || 'gagal dibuat') + '.'));
+      card.appendChild(el('p', 'reason', 'Tidak tersedia: ' + String(voice.reason || 'gagal dibuat').slice(0, 200) + '.'));
       return card;
     }
 

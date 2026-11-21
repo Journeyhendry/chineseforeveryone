@@ -1,13 +1,13 @@
 {
   "version": 1,
   "voices": [
-    { "code": "P1", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": null, "voiceId": "zf_xiaoxiao", "license": "Apache-2.0" },
-    { "code": "P2", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": null, "voiceId": "zf_xiaoyi", "license": "Apache-2.0" },
-    { "code": "P3", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.1-zh", "repoId": "hexgrad/Kokoro-82M-v1.1-zh", "modelRevision": null, "voiceId": "zf_001", "license": "Apache-2.0" },
-    { "code": "P4", "gender": "female", "engine": "melo", "model": "MeloTTS ZH", "repoId": "myshell-ai/MeloTTS-Chinese", "modelRevision": null, "voiceId": "ZH", "license": "MIT" },
-    { "code": "P5", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": null, "voiceId": "zf_xiaobei", "license": "Apache-2.0", "onlyIfSkipped": "P4" },
-    { "code": "L1", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": null, "voiceId": "zm_yunxi", "license": "Apache-2.0" },
-    { "code": "L2", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": null, "voiceId": "zm_yunjian", "license": "Apache-2.0" },
-    { "code": "L3", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.1-zh", "repoId": "hexgrad/Kokoro-82M-v1.1-zh", "modelRevision": null, "voiceId": "zm_010", "license": "Apache-2.0" }
+    { "code": "P1", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987", "voiceId": "zf_xiaoxiao", "license": "Apache-2.0" },
+    { "code": "P2", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987", "voiceId": "zf_xiaoyi", "license": "Apache-2.0" },
+    { "code": "P3", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.1-zh", "repoId": "hexgrad/Kokoro-82M-v1.1-zh", "modelRevision": "01e7505bd6a7a2ac4975463114c3a7650a9f7218", "voiceId": "zf_001", "license": "Apache-2.0" },
+    { "code": "P4", "gender": "female", "engine": "melo", "model": "MeloTTS ZH", "repoId": "myshell-ai/MeloTTS-Chinese", "modelRevision": "af5d207a364ea4208c6f589c89f57f88414bdd16", "voiceId": "ZH", "license": "MIT" },
+    { "code": "P5", "gender": "female", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987", "voiceId": "zf_xiaobei", "license": "Apache-2.0", "onlyIfSkipped": "P4" },
+    { "code": "L1", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987", "voiceId": "zm_yunxi", "license": "Apache-2.0" },
+    { "code": "L2", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.0", "repoId": "hexgrad/Kokoro-82M", "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987", "voiceId": "zm_yunjian", "license": "Apache-2.0" },
+    { "code": "L3", "gender": "male", "engine": "kokoro", "model": "Kokoro-82M v1.1-zh", "repoId": "hexgrad/Kokoro-82M-v1.1-zh", "modelRevision": "01e7505bd6a7a2ac4975463114c3a7650a9f7218", "voiceId": "zm_010", "license": "Apache-2.0" }
   ]
 }

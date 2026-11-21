@@ -137,12 +137,15 @@ def synth_melo(voices, items, work: Path):
     try:
         from melo.api import TTS
 
-        sha = None
-        try:
-            sha, _ = hf_snapshot_info(voices[0]["repoId"], voices[0].get("modelRevision"))
-        except Exception as e:  # noqa: BLE001
-            log(f"[melo] tidak bisa baca revisi: {e}")
-        tts = TTS(language="ZH", device="cpu")
+        from huggingface_hub import hf_hub_download
+
+        repo = voices[0]["repoId"]
+        sha, _ = hf_snapshot_info(repo, voices[0].get("modelRevision"))
+        if voices[0].get("modelRevision"):
+            sha = voices[0]["modelRevision"]
+        cfg = hf_hub_download(repo, "config.json", revision=sha)
+        ckpt = hf_hub_download(repo, "checkpoint.pth", revision=sha)
+        tts = TTS(language="ZH", device="cpu", config_path=cfg, ckpt_path=ckpt)
         sr = int(tts.hps.data.sampling_rate)
         spk = tts.hps.data.spk2id
         log(f"[melo] sample rate {sr}, speakers {dict(spk)}")
@@ -189,30 +192,55 @@ def run(cmd, **kw):
     return subprocess.run(cmd, check=True, capture_output=True, text=True, **kw)
 
 
+def measure_lufs(wav: Path) -> float:
+    """Kenyaringan terpadu (LUFS) lewat loudnorm (mode ukur). Klip pendek (< 0,4 dtk
+    bersuara) tidak bisa diukur apa adanya (hasil -inf), jadi diukur versi yang
+    diulang 5x (kenyaringannya sama)."""
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af",
+                        "aloop=loop=4:size=2147483647,loudnorm=I=-16:TP=-2:LRA=11:print_format=json",
+                        "-f", "null", "-"], capture_output=True, text=True, check=True)
+    m = re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", p.stderr, re.S)
+    val = float(json.loads(m.group(0))["input_i"])
+    if val in (float("inf"), float("-inf")):
+        raise RuntimeError("audio terlalu pelan/kosong untuk diukur")
+    return val
+
+
 def normalize(src: Path, dst: Path, tmpdir: Path):
-    """Pangkas sunyi, loudnorm dua lintasan (-16 LUFS, <= -1.5 dBTP), beri jeda, mp3."""
+    """Pangkas sunyi, samakan kenyaringan ke -16 LUFS dengan pembatas puncak (<= -2,3 dBFS,
+    sisa ruang untuk lonjakan mp3; batas akhir -1.5 dBTP), beri jeda, mp3."""
     trimmed = tmpdir / "trim.wav"
     sil = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.03"
     run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-af", f"{sil},areverse,{sil},areverse",
          "-ac", "1", str(trimmed)])
-    base = f"loudnorm=I={LUFS}:TP={TRUE_PEAK}:LRA=11"
-    # Kata pendek (< 0,4 dtk bersuara) tidak bisa diukur loudnorm (hasil -inf); ukur
-    # versi yang diulang 5x (kenyaringannya sama), lalu terapkan ke klip aslinya.
-    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(trimmed), "-af",
-                        "aloop=loop=4:size=2147483647," + base + ":print_format=json",
-                        "-f", "null", "-"], capture_output=True, text=True, check=True)
-    m = re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", p.stderr, re.S)
-    stats = json.loads(m.group(0))
-    if stats["input_i"] in ("-inf", "inf"):
-        raise RuntimeError("audio terlalu pelan/kosong untuk diukur")
-    second = (f"{base}:measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
-              f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
-              f"offset={stats['target_offset']}:linear=true")
+    limiter = "alimiter=limit=0.77:attack=3:release=30:level=disabled"
     pad_ms = int(PAD_SEC * 1000)
-    chain = f"{second},aresample={SAMPLE_RATE},adelay={pad_ms}:all=1,apad=pad_dur={PAD_SEC}"
     dst.parent.mkdir(parents=True, exist_ok=True)
-    run(["ffmpeg", "-y", "-v", "error", "-i", str(trimmed), "-af", chain, "-ac", "1", "-ar", str(SAMPLE_RATE),
-         "-c:a", "libmp3lame", "-b:a", BITRATE, str(dst)])
+
+    def build(gain: float):
+        chain = (f"volume={gain:.3f}dB,{limiter},aresample={SAMPLE_RATE},"
+                 f"adelay={pad_ms}:all=1,apad=pad_dur={PAD_SEC}")
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(trimmed), "-af", chain, "-ac", "1",
+             "-ar", str(SAMPLE_RATE), "-c:a", "libmp3lame", "-b:a", BITRATE, str(dst)])
+
+    # Tebakan awal dari klip tanpa jeda, lalu koreksi berdasarkan file jadi diukur apa adanya
+    # (cara yang sama dengan cek ebur128 di acceptance), supaya antar file rata.
+    gain = LUFS - measure_lufs(trimmed)
+    for _ in range(4):
+        build(gain)
+        err = LUFS - file_lufs(dst)
+        if abs(err) < 0.25:
+            break
+        gain += err
+
+
+def file_lufs(path: Path) -> float:
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", "ebur128", "-f", "null", "-"],
+                       capture_output=True, text=True, check=True)
+    m = re.findall(r"^\s+I:\s+(-?[\d.]+|-?inf)\s+LUFS", p.stderr, re.M)
+    if not m or "inf" in m[-1]:
+        raise RuntimeError("kenyaringan file tidak bisa diukur")
+    return float(m[-1])
 
 
 def duration(path: Path) -> float:

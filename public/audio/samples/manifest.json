@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-21T19:52:47Z",
+  "generatedAt": "2026-11-21T20:00:41Z",
   "items": [
     {
       "id": "w-nihao",
@@ -137,11 +137,11 @@
         "s-dialog": {
           "path": "P1/s-dialog.mp3",
           "durationSec": 1.76,
-          "transcript": "您好 请进 请坐",
-          "whisperOk": true
+          "transcript": "你好 请进 请坐",
+          "whisperOk": false
         }
       },
-      "whisperPassed": 7,
+      "whisperPassed": 6,
       "whisperTotal": 7
     },
     {
@@ -152,9 +152,53 @@
       "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
       "voiceId": "zf_xiaoyi",
       "license": "Apache-2.0",
-      "status": "skipped",
-      "files": {},
-      "reason": "pasca-proses gagal: CalledProcessError: Command '['ffmpeg', '-y', '-v', 'error', '-i', '/home/runner/work/chineseforeveryone/chineseforeveryone/.tts-work/tmp/trim.wav', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=-inf:measured_TP=-8.68:measured_LRA=0.00:measured_thresh=-70.00:offset=inf:linear=true,aresample=24000,adelay=150:all=1,apad=pad_dur=0.15', '-ac', '1', '-ar', '24000', '-c:a', 'libmp"
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P2/w-nihao.mp3",
+          "durationSec": 0.82,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P2/w-xiexie.mp3",
+          "durationSec": 0.78,
+          "transcript": "谢了",
+          "whisperOk": false
+        },
+        "w-mama": {
+          "path": "P2/w-mama.mp3",
+          "durationSec": 0.68,
+          "transcript": "麥",
+          "whisperOk": false
+        },
+        "w-xuexiao": {
+          "path": "P2/w-xuexiao.mp3",
+          "durationSec": 0.8,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P2/w-heshui.mp3",
+          "durationSec": 0.85,
+          "transcript": "河水",
+          "whisperOk": false
+        },
+        "s-tatoeba": {
+          "path": "P2/s-tatoeba.mp3",
+          "durationSec": 1.91,
+          "transcript": "我非常喜歡這本書。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P2/s-dialog.mp3",
+          "durationSec": 1.75,
+          "transcript": "您好 请进请坐。",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 4,
+      "whisperTotal": 7
     },
     {
       "code": "P3",
@@ -168,7 +212,7 @@
       "files": {
         "w-nihao": {
           "path": "P3/w-nihao.mp3",
-          "durationSec": 0.85,
+          "durationSec": 0.84,
           "transcript": "你好",
           "whisperOk": true
         },
@@ -181,7 +225,7 @@
         "w-mama": {
           "path": "P3/w-mama.mp3",
           "durationSec": 0.81,
-          "transcript": "Nama",
+          "transcript": "nama",
           "whisperOk": false
         },
         "w-xuexiao": {
@@ -220,9 +264,53 @@
       "modelRevision": "af5d207a364ea4208c6f589c89f57f88414bdd16",
       "voiceId": "ZH",
       "license": "MIT",
-      "status": "skipped",
-      "files": {},
-      "reason": "pasca-proses gagal: CalledProcessError: Command '['ffmpeg', '-y', '-v', 'error', '-i', '/home/runner/work/chineseforeveryone/chineseforeveryone/.tts-work/tmp/trim.wav', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=-inf:measured_TP=-26.72:measured_LRA=0.00:measured_thresh=-70.00:offset=inf:linear=true,aresample=24000,adelay=150:all=1,apad=pad_dur=0.15', '-ac', '1', '-ar', '24000', '-c:a', 'libm"
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P4/w-nihao.mp3",
+          "durationSec": 0.66,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P4/w-xiexie.mp3",
+          "durationSec": 0.62,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "P4/w-mama.mp3",
+          "durationSec": 0.7,
+          "transcript": "喃喃",
+          "whisperOk": false
+        },
+        "w-xuexiao": {
+          "path": "P4/w-xuexiao.mp3",
+          "durationSec": 0.77,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P4/w-heshui.mp3",
+          "durationSec": 0.68,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "P4/s-tatoeba.mp3",
+          "durationSec": 1.71,
+          "transcript": "我非常喜歡這本書",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P4/s-dialog.mp3",
+          "durationSec": 1.71,
+          "transcript": "你好 請進 請坐",
+          "whisperOk": false
+        }
+      },
+      "whisperPassed": 5,
+      "whisperTotal": 7
     },
     {
       "code": "L1",
@@ -232,9 +320,53 @@
       "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
       "voiceId": "zm_yunxi",
       "license": "Apache-2.0",
-      "status": "skipped",
-      "files": {},
-      "reason": "pasca-proses gagal: CalledProcessError: Command '['ffmpeg', '-y', '-v', 'error', '-i', '/home/runner/work/chineseforeveryone/chineseforeveryone/.tts-work/tmp/trim.wav', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=-inf:measured_TP=-9.69:measured_LRA=0.00:measured_thresh=-70.00:offset=inf:linear=true,aresample=24000,adelay=150:all=1,apad=pad_dur=0.15', '-ac', '1', '-ar', '24000', '-c:a', 'libmp"
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "L1/w-nihao.mp3",
+          "durationSec": 0.76,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "L1/w-xiexie.mp3",
+          "durationSec": 0.59,
+          "transcript": "先",
+          "whisperOk": false
+        },
+        "w-mama": {
+          "path": "L1/w-mama.mp3",
+          "durationSec": 0.64,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "L1/w-xuexiao.mp3",
+          "durationSec": 0.79,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "L1/w-heshui.mp3",
+          "durationSec": 0.73,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "L1/s-tatoeba.mp3",
+          "durationSec": 1.83,
+          "transcript": "我非常喜欢这本书。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "L1/s-dialog.mp3",
+          "durationSec": 1.61,
+          "transcript": "您好,请进请坐。",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 6,
+      "whisperTotal": 7
     },
     {
       "code": "L2",
@@ -244,9 +376,53 @@
       "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
       "voiceId": "zm_yunjian",
       "license": "Apache-2.0",
-      "status": "skipped",
-      "files": {},
-      "reason": "pasca-proses gagal: CalledProcessError: Command '['ffmpeg', '-y', '-v', 'error', '-i', '/home/runner/work/chineseforeveryone/chineseforeveryone/.tts-work/tmp/trim.wav', '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=-inf:measured_TP=-11.66:measured_LRA=0.00:measured_thresh=-70.00:offset=inf:linear=true,aresample=24000,adelay=150:all=1,apad=pad_dur=0.15', '-ac', '1', '-ar', '24000', '-c:a', 'libm"
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "L2/w-nihao.mp3",
+          "durationSec": 0.78,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "L2/w-xiexie.mp3",
+          "durationSec": 0.76,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "L2/w-mama.mp3",
+          "durationSec": 0.66,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "L2/w-xuexiao.mp3",
+          "durationSec": 0.78,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "L2/w-heshui.mp3",
+          "durationSec": 0.8,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "L2/s-tatoeba.mp3",
+          "durationSec": 2.02,
+          "transcript": "我非常喜欢这本书。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "L2/s-dialog.mp3",
+          "durationSec": 1.83,
+          "transcript": "您好 请见请坐。",
+          "whisperOk": false
+        }
+      },
+      "whisperPassed": 6,
+      "whisperTotal": 7
     },
     {
       "code": "L3",
@@ -272,7 +448,7 @@
         },
         "w-mama": {
           "path": "L3/w-mama.mp3",
-          "durationSec": 0.8,
+          "durationSec": 0.79,
           "transcript": "媽媽",
           "whisperOk": true
         },
@@ -284,7 +460,7 @@
         },
         "w-heshui": {
           "path": "L3/w-heshui.mp3",
-          "durationSec": 0.8,
+          "durationSec": 0.78,
           "transcript": "喝水",
           "whisperOk": true
         },
@@ -307,7 +483,7 @@
   ],
   "whisper": {
     "model": "faster-whisper small",
-    "passed": 24,
-    "total": 26
+    "passed": 40,
+    "total": 49
   }
 }

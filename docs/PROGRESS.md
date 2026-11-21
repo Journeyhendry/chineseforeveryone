@@ -13,7 +13,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Menunggu pemilik memilih suara.**
 - [ ] 4b · Audio semua materi
 - [x] 5 · Tampilan dasar — 2026-11-21 — Sonnet (diperiksa Opus) — tema + mode gelap, menu samping (layar lebar) / menu bawah (layar sempit), hash router, teks ID/EN tanpa reload, halaman Pengaturan; axe & tanpa scroll samping di 375/1366 lolos
-- [ ] 5b · Font Mandarin self-host — SEDANG DIKERJAKAN (mulai 2026-11-21 21:43 UTC)
+- [x] 5b · Font Mandarin self-host — 2026-11-21 — Haiku (diperiksa Opus) — LXGW WenKai disubset & disimpan sendiri (inti 300 huruf HSK 1 ±64 KB per ketebalan, tambahan ±246 KB dimuat hanya bila perlu); Noto Sans SC dari Google Fonts dihapus; `npm run build:font`
 - [ ] 6 · Layar unit + peta belajar
 - [ ] 6b · Ilustrasi + animasi semua kata
 - [ ] 7 · Empat game
@@ -36,3 +36,4 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - 2026-11-21 (task 3c): Kakak digambar remaja (±90 % tinggi dewasa), padahal di dialog temannya "teman kuliah"; beberapa adegan visual menaruh Kakak di sekolah menengah. Perlu diselaraskan saat task 6b (cukup ubah umur di satu tempat). Alis gelap kurang terlihat di depan poni gelap (Guru, Teman kuliah) pada beberapa ekspresi. Pose tangan baru netral saja; pose lain dibuat di task 6b.
 - 2026-11-21 (task 4a): `你好` dan `喝水` bukan entri tersendiri di `words.json` (dipecah 你+好, 喝+水); contoh tetap memakai keduanya. MeloTTS butuh versi pustaka lama, jadi dijalankan di lingkungan Python terpisah dalam workflow; unduhan BERT tambahannya belum dipatok versinya. Workflow hanya jalan otomatis di cabang selain `main` (atau dijalankan manual).
 - 2026-11-21 (task 5): Warna nada 3 (#2B8A3E) hanya mencapai kontras 4,39:1 di atas putih (batas AA teks biasa 4,5), jadi nada 3 sebaiknya dipakai untuk huruf besar/tebal saja (batas 3:1). Teks putih di atas hijau #2F9E44 dan jingga #E8590C tidak cukup kontras, jadi tombol berteks putih memakai versi lebih gelap (#25803A, #C2410C); warna merek aslinya tetap dipakai untuk hiasan. Di layar sempit tombol bahasa ID/EN hanya ada di halaman Pengaturan.
+- 2026-11-21 (task 5b): Tanda kutip ‘ ’ tidak ada di font WenKai (memakai font cadangan). File tambahan (extra, 970 huruf) ikut memuat huruf dari file bukti mentah (mis. `casual-evidence-raw.json`) yang tidak tampil di website; bisa dipersempit nanti bila perlu. Preload memakai versi tebal-biasa (400) padahal logo memakai 700; tidak merusak, bisa disesuaikan saat task 6.

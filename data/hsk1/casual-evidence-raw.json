@@ -6580,6 +6580,344 @@
       }
     },
     {
+      "id": "c-u13-07",
+      "hanzi": "走人",
+      "variants": [],
+      "cedict": {
+        "found": true,
+        "form": "走人",
+        "entries": [
+          {
+            "pinyin": "zou3 ren2",
+            "english": [
+              "(coll.) to leave; to beat it"
+            ]
+          }
+        ],
+        "markers": [
+          "colloquial"
+        ],
+        "regionalOnly": false,
+        "vulgar": false
+      },
+      "wiktionary": {
+        "status": "found",
+        "pages": [
+          {
+            "site": "en",
+            "title": "走人",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [
+                "colloquial"
+              ],
+              "senses": [
+                [
+                  "colloquial"
+                ],
+                [
+                  "colloquial"
+                ],
+                [
+                  "colloquial"
+                ]
+              ],
+              "see": null
+            }
+          }
+        ],
+        "labels": [
+          "colloquial"
+        ],
+        "senses": [
+          [
+            "colloquial"
+          ],
+          [
+            "colloquial"
+          ],
+          [
+            "colloquial"
+          ]
+        ]
+      },
+      "tatoeba": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    {
+      "id": "c-u13-08",
+      "hanzi": "好久不见",
+      "variants": [],
+      "cedict": {
+        "found": true,
+        "form": "好久不见",
+        "entries": [
+          {
+            "pinyin": "hao3 jiu3 bu5 jian4",
+            "english": [
+              "long time no see"
+            ]
+          }
+        ],
+        "markers": [],
+        "regionalOnly": false,
+        "vulgar": false
+      },
+      "wiktionary": {
+        "status": "found",
+        "pages": [
+          {
+            "site": "en",
+            "title": "好久不见",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [],
+              "senses": [],
+              "see": "好久不見"
+            }
+          },
+          {
+            "site": "en",
+            "title": "好久不見",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [],
+              "senses": [
+                []
+              ],
+              "see": null
+            }
+          }
+        ],
+        "labels": [],
+        "senses": [
+          []
+        ]
+      },
+      "tatoeba": {
+        "count": 10,
+        "examples": [
+          {
+            "id": 710777,
+            "text": "好久不见了。"
+          },
+          {
+            "id": 1216127,
+            "text": "好久不见了！"
+          },
+          {
+            "id": 1357629,
+            "text": "好久不见！"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c-u13-09",
+      "hanzi": "不见不散",
+      "variants": [],
+      "cedict": {
+        "found": true,
+        "form": "不见不散",
+        "entries": [
+          {
+            "pinyin": "bu4 jian4 bu4 san4",
+            "english": [
+              "lit. Even if we don't see each other, don't give up and leave (idiom)",
+              "fig. Be sure to wait!",
+              "See you there!"
+            ]
+          }
+        ],
+        "markers": [],
+        "regionalOnly": false,
+        "vulgar": false
+      },
+      "wiktionary": {
+        "status": "found",
+        "pages": [
+          {
+            "site": "en",
+            "title": "不见不散",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [],
+              "senses": [],
+              "see": "不見不散"
+            }
+          },
+          {
+            "site": "en",
+            "title": "不見不散",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [],
+              "senses": [
+                [],
+                []
+              ],
+              "see": null
+            }
+          }
+        ],
+        "labels": [],
+        "senses": [
+          [],
+          []
+        ]
+      },
+      "tatoeba": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    {
+      "id": "c-u13-10",
+      "hanzi": "串门",
+      "variants": [
+        "串门儿"
+      ],
+      "cedict": {
+        "found": true,
+        "form": "串门",
+        "entries": [
+          {
+            "pinyin": "chuan4 men2",
+            "english": [
+              "to call on sb",
+              "to drop in",
+              "to visit sb's home"
+            ]
+          }
+        ],
+        "markers": [],
+        "regionalOnly": false,
+        "vulgar": false
+      },
+      "wiktionary": {
+        "status": "found",
+        "pages": [
+          {
+            "site": "en",
+            "title": "串门",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [],
+              "senses": [],
+              "see": "串門"
+            }
+          },
+          {
+            "site": "en",
+            "title": "串門",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [
+                "colloquial"
+              ],
+              "senses": [
+                [
+                  "colloquial"
+                ]
+              ],
+              "see": null
+            }
+          }
+        ],
+        "labels": [
+          "colloquial"
+        ],
+        "senses": [
+          [
+            "colloquial"
+          ]
+        ]
+      },
+      "tatoeba": {
+        "count": 0,
+        "examples": []
+      }
+    },
+    {
+      "id": "c-u13-11",
+      "hanzi": "打卡",
+      "variants": [],
+      "cedict": {
+        "found": true,
+        "form": "打卡",
+        "entries": [
+          {
+            "pinyin": "da3 ka3",
+            "english": [
+              "(of an employee) to clock on (or off); to punch in (or out)",
+              "(on social media) to check in to a location"
+            ]
+          }
+        ],
+        "markers": [],
+        "regionalOnly": false,
+        "vulgar": false
+      },
+      "wiktionary": {
+        "status": "found",
+        "pages": [
+          {
+            "site": "en",
+            "title": "打卡",
+            "status": "found",
+            "info": {
+              "hasChinese": true,
+              "labels": [
+                "originally",
+                "Taiwan",
+                "Internet slang"
+              ],
+              "senses": [
+                [],
+                [
+                  "originally",
+                  "Taiwan",
+                  "Internet slang"
+                ]
+              ],
+              "see": null
+            }
+          }
+        ],
+        "labels": [
+          "originally",
+          "Taiwan",
+          "Internet slang"
+        ],
+        "senses": [
+          [],
+          [
+            "originally",
+            "Taiwan",
+            "Internet slang"
+          ]
+        ]
+      },
+      "tatoeba": {
+        "count": 1,
+        "examples": [
+          {
+            "id": 2757111,
+            "text": "下班前別忘了打卡。"
+          }
+        ]
+      }
+    },
+    {
       "id": "c-u14-01",
       "hanzi": "学霸",
       "variants": [],

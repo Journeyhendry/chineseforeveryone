@@ -11,7 +11,9 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "build:words": "tsx scripts/build-words.ts",
-    "build:sentences": "tsx scripts/filter-sentences.ts"
+    "build:sentences": "tsx scripts/filter-sentences.ts",
+    "fetch:casual-evidence": "tsx scripts/fetch-casual-evidence.ts",
+    "build:casual": "tsx scripts/build-casual.ts"
   },
   "dependencies": {
     "react": "^19.3.1",

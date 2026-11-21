@@ -1,0 +1,2746 @@
+{
+  "version": 1,
+  "evidenceFetchedAt": null,
+  "items": [
+    {
+      "id": "c-u01-01",
+      "unit": "u01",
+      "hanzi": "拜拜",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-02",
+      "unit": "u01",
+      "hanzi": "多谢",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-03",
+      "unit": "u01",
+      "hanzi": "回头见",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-04",
+      "unit": "u01",
+      "hanzi": "别客气",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-05",
+      "unit": "u01",
+      "hanzi": "不好意思",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-06",
+      "unit": "u01",
+      "hanzi": "没事",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-07",
+      "unit": "u01",
+      "hanzi": "哈喽",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u01-08",
+      "unit": "u01",
+      "hanzi": "谢啦",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-01",
+      "unit": "u02",
+      "hanzi": "俩",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-02",
+      "unit": "u02",
+      "hanzi": "仨",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-03",
+      "unit": "u02",
+      "hanzi": "好多",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-04",
+      "unit": "u02",
+      "hanzi": "一点点",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-05",
+      "unit": "u02",
+      "hanzi": "好几个",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u02-06",
+      "unit": "u02",
+      "hanzi": "一堆",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-01",
+      "unit": "u03",
+      "hanzi": "干嘛",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-02",
+      "unit": "u03",
+      "hanzi": "没错",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-03",
+      "unit": "u03",
+      "hanzi": "可不是",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-04",
+      "unit": "u03",
+      "hanzi": "怎么回事",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-05",
+      "unit": "u03",
+      "hanzi": "真的假的",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-06",
+      "unit": "u03",
+      "hanzi": "不会吧",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u03-07",
+      "unit": "u03",
+      "hanzi": "嗯",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-01",
+      "unit": "u04",
+      "hanzi": "帅哥",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-02",
+      "unit": "u04",
+      "hanzi": "美女",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-03",
+      "unit": "u04",
+      "hanzi": "哥们儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-04",
+      "unit": "u04",
+      "hanzi": "闺蜜",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-05",
+      "unit": "u04",
+      "hanzi": "老铁",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-06",
+      "unit": "u04",
+      "hanzi": "小姐姐",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u04-07",
+      "unit": "u04",
+      "hanzi": "小伙子",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-01",
+      "unit": "u05",
+      "hanzi": "老爸",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-02",
+      "unit": "u05",
+      "hanzi": "老妈",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-03",
+      "unit": "u05",
+      "hanzi": "爸妈",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-04",
+      "unit": "u05",
+      "hanzi": "宝贝",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-05",
+      "unit": "u05",
+      "hanzi": "闺女",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-06",
+      "unit": "u05",
+      "hanzi": "宅",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u05-07",
+      "unit": "u05",
+      "hanzi": "老弟",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-01",
+      "unit": "u06",
+      "hanzi": "吃货",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-02",
+      "unit": "u06",
+      "hanzi": "买单",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-03",
+      "unit": "u06",
+      "hanzi": "饿死了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-04",
+      "unit": "u06",
+      "hanzi": "打包",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-05",
+      "unit": "u06",
+      "hanzi": "馋",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u06-06",
+      "unit": "u06",
+      "hanzi": "开吃",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-01",
+      "unit": "u07",
+      "hanzi": "礼拜天",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-02",
+      "unit": "u07",
+      "hanzi": "礼拜",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-03",
+      "unit": "u07",
+      "hanzi": "改天",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-04",
+      "unit": "u07",
+      "hanzi": "回头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-05",
+      "unit": "u07",
+      "hanzi": "一大早",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-06",
+      "unit": "u07",
+      "hanzi": "天天",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u07-07",
+      "unit": "u07",
+      "hanzi": "明儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-01",
+      "unit": "u08",
+      "hanzi": "等会儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-02",
+      "unit": "u08",
+      "hanzi": "稍等",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-03",
+      "unit": "u08",
+      "hanzi": "赶紧",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-04",
+      "unit": "u08",
+      "hanzi": "磨蹭",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-05",
+      "unit": "u08",
+      "hanzi": "来不及",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-06",
+      "unit": "u08",
+      "hanzi": "早着呢",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u08-07",
+      "unit": "u08",
+      "hanzi": "熬夜",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-01",
+      "unit": "u09",
+      "hanzi": "里头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-02",
+      "unit": "u09",
+      "hanzi": "外头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-03",
+      "unit": "u09",
+      "hanzi": "前头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-04",
+      "unit": "u09",
+      "hanzi": "后头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-05",
+      "unit": "u09",
+      "hanzi": "上头",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u09-06",
+      "unit": "u09",
+      "hanzi": "隔壁",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-01",
+      "unit": "u10",
+      "hanzi": "逛街",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-02",
+      "unit": "u10",
+      "hanzi": "溜达",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-03",
+      "unit": "u10",
+      "hanzi": "老远",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-04",
+      "unit": "u10",
+      "hanzi": "地儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-05",
+      "unit": "u10",
+      "hanzi": "出门",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u10-06",
+      "unit": "u10",
+      "hanzi": "大晴天",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-01",
+      "unit": "u11",
+      "hanzi": "赖床",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-02",
+      "unit": "u11",
+      "hanzi": "睡懒觉",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-03",
+      "unit": "u11",
+      "hanzi": "搞定",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-04",
+      "unit": "u11",
+      "hanzi": "弄",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-05",
+      "unit": "u11",
+      "hanzi": "困死了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-06",
+      "unit": "u11",
+      "hanzi": "收拾",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u11-07",
+      "unit": "u11",
+      "hanzi": "起不来",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-01",
+      "unit": "u12",
+      "hanzi": "打的",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-02",
+      "unit": "u12",
+      "hanzi": "堵车",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-03",
+      "unit": "u12",
+      "hanzi": "师傅",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-04",
+      "unit": "u12",
+      "hanzi": "慢走",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-05",
+      "unit": "u12",
+      "hanzi": "快点儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u12-06",
+      "unit": "u12",
+      "hanzi": "搭车",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-01",
+      "unit": "u13",
+      "hanzi": "回见",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-02",
+      "unit": "u13",
+      "hanzi": "碰面",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-03",
+      "unit": "u13",
+      "hanzi": "闪人",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-04",
+      "unit": "u13",
+      "hanzi": "撤",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-05",
+      "unit": "u13",
+      "hanzi": "走啦",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u13-06",
+      "unit": "u13",
+      "hanzi": "来了来了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-01",
+      "unit": "u14",
+      "hanzi": "学霸",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-02",
+      "unit": "u14",
+      "hanzi": "学渣",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-03",
+      "unit": "u14",
+      "hanzi": "考砸了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-04",
+      "unit": "u14",
+      "hanzi": "挂科",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-05",
+      "unit": "u14",
+      "hanzi": "逃课",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u14-06",
+      "unit": "u14",
+      "hanzi": "同桌",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-01",
+      "unit": "u15",
+      "hanzi": "老外",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-02",
+      "unit": "u15",
+      "hanzi": "聊天",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-03",
+      "unit": "u15",
+      "hanzi": "吹牛",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-04",
+      "unit": "u15",
+      "hanzi": "瞎说",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-05",
+      "unit": "u15",
+      "hanzi": "唠叨",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-06",
+      "unit": "u15",
+      "hanzi": "听不懂",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u15-07",
+      "unit": "u15",
+      "hanzi": "废话",
+      "label": "kasar",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-01",
+      "unit": "u16",
+      "hanzi": "懂",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-02",
+      "unit": "u16",
+      "hanzi": "搞不懂",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-03",
+      "unit": "u16",
+      "hanzi": "靠谱",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-04",
+      "unit": "u16",
+      "hanzi": "牛",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-05",
+      "unit": "u16",
+      "hanzi": "厉害",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-06",
+      "unit": "u16",
+      "hanzi": "没戏",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-07",
+      "unit": "u16",
+      "hanzi": "估计",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u16-08",
+      "unit": "u16",
+      "hanzi": "没门儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-01",
+      "unit": "u17",
+      "hanzi": "累死了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-02",
+      "unit": "u17",
+      "hanzi": "忙死了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-03",
+      "unit": "u17",
+      "hanzi": "打工",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-04",
+      "unit": "u17",
+      "hanzi": "打工人",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-05",
+      "unit": "u17",
+      "hanzi": "摸鱼",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-06",
+      "unit": "u17",
+      "hanzi": "歇会儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u17-07",
+      "unit": "u17",
+      "hanzi": "难受",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-01",
+      "unit": "u18",
+      "hanzi": "扫码",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-02",
+      "unit": "u18",
+      "hanzi": "划算",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-03",
+      "unit": "u18",
+      "hanzi": "砍价",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-04",
+      "unit": "u18",
+      "hanzi": "坑",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-05",
+      "unit": "u18",
+      "hanzi": "老板",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-06",
+      "unit": "u18",
+      "hanzi": "便宜点儿",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u18-07",
+      "unit": "u18",
+      "hanzi": "剁手",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-01",
+      "unit": "u19",
+      "hanzi": "追剧",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-02",
+      "unit": "u19",
+      "hanzi": "刷手机",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-03",
+      "unit": "u19",
+      "hanzi": "打游戏",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-04",
+      "unit": "u19",
+      "hanzi": "有意思",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-05",
+      "unit": "u19",
+      "hanzi": "没意思",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-06",
+      "unit": "u19",
+      "hanzi": "无聊",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-07",
+      "unit": "u19",
+      "hanzi": "笑死我了",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u19-08",
+      "unit": "u19",
+      "hanzi": "哈哈",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-01",
+      "unit": "u20",
+      "hanzi": "挺",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-02",
+      "unit": "u20",
+      "hanzi": "超",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-03",
+      "unit": "u20",
+      "hanzi": "开心",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-04",
+      "unit": "u20",
+      "hanzi": "太棒了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-05",
+      "unit": "u20",
+      "hanzi": "热死了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-06",
+      "unit": "u20",
+      "hanzi": "气死我了",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-07",
+      "unit": "u20",
+      "hanzi": "绝了",
+      "label": "gaul",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    },
+    {
+      "id": "c-u20-08",
+      "unit": "u20",
+      "hanzi": "一般般",
+      "label": "santai",
+      "sources": {
+        "cedict": null,
+        "wiktionary": null,
+        "tatoeba": null
+      },
+      "counted": [],
+      "flags": [],
+      "review": null,
+      "passed": false,
+      "failedAt": 2,
+      "reasons": [
+        "no evidence fetched",
+        "no review"
+      ]
+    }
+  ]
+}

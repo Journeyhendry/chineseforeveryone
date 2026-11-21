@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "speakers": {
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "seller": {
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female"
+    },
+    "doctor": {
+      "name": {
+        "id": "Dokter",
+        "en": "Doctor"
+      },
+      "gender": "male"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "waiter": {
+      "name": {
+        "id": "Pelayan",
+        "en": "Waiter"
+      },
+      "gender": "male"
+    },
+    "driver": {
+      "name": {
+        "id": "Sopir",
+        "en": "Driver"
+      },
+      "gender": "male"
+    },
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    }
+  },
+  "dialogs": []
+}

@@ -1,381 +1,129 @@
 {
-  "evidenceFetchedAt": null,
-  "reviewPresent": false,
+  "evidenceFetchedAt": "2026-11-21",
+  "reviewPresent": true,
   "totals": {
-    "candidates": 137,
-    "passed": 0,
-    "selected": 0,
-    "failedLayer2": 137,
-    "failedLayer3": 0,
+    "candidates": 142,
+    "passed": 107,
+    "selected": 94,
+    "failedLayer2": 26,
+    "failedLayer3": 9,
     "dialogs": 20,
-    "dialogsPassed": 0
+    "dialogsPassed": 20
   },
   "perUnit": {
     "u01": {
       "candidates": 8,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u02": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u03": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 4,
+      "selected": 4
     },
     "u04": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u05": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u06": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u07": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u08": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u09": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u10": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u11": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u12": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u13": {
-      "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "candidates": 11,
+      "passed": 1,
+      "selected": 1
     },
     "u14": {
       "candidates": 6,
-      "passed": 0,
-      "selected": 0
+      "passed": 6,
+      "selected": 5
     },
     "u15": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 7,
+      "selected": 5
     },
     "u16": {
       "candidates": 8,
-      "passed": 0,
-      "selected": 0
+      "passed": 8,
+      "selected": 5
     },
     "u17": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 4,
+      "selected": 4
     },
     "u18": {
       "candidates": 7,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     },
     "u19": {
       "candidates": 8,
-      "passed": 0,
-      "selected": 0
+      "passed": 7,
+      "selected": 5
     },
     "u20": {
       "candidates": 8,
-      "passed": 0,
-      "selected": 0
+      "passed": 5,
+      "selected": 5
     }
   },
   "unitsBelowThree": [
     {
-      "unit": "u01",
-      "count": 0
-    },
-    {
-      "unit": "u02",
-      "count": 0
-    },
-    {
-      "unit": "u03",
-      "count": 0
-    },
-    {
-      "unit": "u04",
-      "count": 0
-    },
-    {
-      "unit": "u05",
-      "count": 0
-    },
-    {
-      "unit": "u06",
-      "count": 0
-    },
-    {
-      "unit": "u07",
-      "count": 0
-    },
-    {
-      "unit": "u08",
-      "count": 0
-    },
-    {
-      "unit": "u09",
-      "count": 0
-    },
-    {
-      "unit": "u10",
-      "count": 0
-    },
-    {
-      "unit": "u11",
-      "count": 0
-    },
-    {
-      "unit": "u12",
-      "count": 0
-    },
-    {
       "unit": "u13",
-      "count": 0
-    },
-    {
-      "unit": "u14",
-      "count": 0
-    },
-    {
-      "unit": "u15",
-      "count": 0
-    },
-    {
-      "unit": "u16",
-      "count": 0
-    },
-    {
-      "unit": "u17",
-      "count": 0
-    },
-    {
-      "unit": "u18",
-      "count": 0
-    },
-    {
-      "unit": "u19",
-      "count": 0
-    },
-    {
-      "unit": "u20",
-      "count": 0
+      "count": 1
     }
   ],
-  "unitsWithoutDialog": [
-    "u01",
-    "u02",
-    "u03",
-    "u04",
-    "u05",
-    "u06",
-    "u07",
-    "u08",
-    "u09",
-    "u10",
-    "u11",
-    "u12",
-    "u13",
-    "u14",
-    "u15",
-    "u16",
-    "u17",
-    "u18",
-    "u19",
-    "u20"
-  ],
-  "failedDialogs": [
-    {
-      "id": "d-u01",
-      "unit": "u01",
-      "reasons": [
-        "line 6: casual \"拜拜\" (c-u01-01) did not pass"
-      ]
-    },
-    {
-      "id": "d-u02",
-      "unit": "u02",
-      "reasons": [
-        "line 2: casual \"俩\" (c-u02-01) did not pass",
-        "line 4: casual \"好多\" (c-u02-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u03",
-      "unit": "u03",
-      "reasons": [
-        "line 1: casual \"干嘛\" (c-u03-01) did not pass",
-        "line 6: casual \"嗯\" (c-u03-07) did not pass"
-      ]
-    },
-    {
-      "id": "d-u04",
-      "unit": "u04",
-      "reasons": [
-        "line 1: casual \"哥们儿\" (c-u04-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u05",
-      "unit": "u05",
-      "reasons": [
-        "line 1: casual \"爸妈\" (c-u05-03) did not pass",
-        "line 4: casual \"宅\" (c-u05-06) did not pass"
-      ]
-    },
-    {
-      "id": "d-u06",
-      "unit": "u06",
-      "reasons": [
-        "line 6: casual \"买单\" (c-u06-02) did not pass"
-      ]
-    },
-    {
-      "id": "d-u07",
-      "unit": "u07",
-      "reasons": [
-        "line 2: casual \"礼拜天\" (c-u07-01) did not pass",
-        "line 4: casual \"礼拜天\" (c-u07-01) did not pass",
-        "line 4: casual \"改天\" (c-u07-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u08",
-      "unit": "u08",
-      "reasons": [
-        "line 1: casual \"赶紧\" (c-u08-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u09",
-      "unit": "u09",
-      "reasons": [
-        "line 2: casual \"前头\" (c-u09-03) did not pass",
-        "line 3: casual \"前头\" (c-u09-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u10",
-      "unit": "u10",
-      "reasons": [
-        "line 1: casual \"逛街\" (c-u10-01) did not pass",
-        "line 4: casual \"出门\" (c-u10-05) did not pass"
-      ]
-    },
-    {
-      "id": "d-u11",
-      "unit": "u11",
-      "reasons": [
-        "line 1: casual \"睡懒觉\" (c-u11-02) did not pass",
-        "line 5: casual \"搞定\" (c-u11-03) did not pass"
-      ]
-    },
-    {
-      "id": "d-u12",
-      "unit": "u12",
-      "reasons": [
-        "line 1: casual \"师傅\" (c-u12-03) did not pass",
-        "line 4: casual \"堵车\" (c-u12-02) did not pass"
-      ]
-    },
-    {
-      "id": "d-u13",
-      "unit": "u13",
-      "reasons": [
-        "line 4: casual \"回见\" (c-u13-01) did not pass"
-      ]
-    },
-    {
-      "id": "d-u14",
-      "unit": "u14",
-      "reasons": [
-        "line 2: casual \"考砸了\" (c-u14-03) did not pass",
-        "line 4: casual \"学霸\" (c-u14-01) did not pass"
-      ]
-    },
-    {
-      "id": "d-u15",
-      "unit": "u15",
-      "reasons": [
-        "line 1: casual \"老外\" (c-u15-01) did not pass",
-        "line 3: casual \"聊天\" (c-u15-02) did not pass"
-      ]
-    },
-    {
-      "id": "d-u16",
-      "unit": "u16",
-      "reasons": [
-        "line 1: casual \"搞不懂\" (c-u16-02) did not pass",
-        "line 3: casual \"懂\" (c-u16-01) did not pass"
-      ]
-    },
-    {
-      "id": "d-u17",
-      "unit": "u17",
-      "reasons": [
-        "line 5: casual \"没事\" (c-u01-06) did not pass"
-      ]
-    },
-    {
-      "id": "d-u18",
-      "unit": "u18",
-      "reasons": [
-        "line 1: casual \"老板\" (c-u18-05) did not pass",
-        "line 6: casual \"扫码\" (c-u18-01) did not pass"
-      ]
-    },
-    {
-      "id": "d-u19",
-      "unit": "u19",
-      "reasons": [
-        "line 1: casual \"无聊\" (c-u19-06) did not pass",
-        "line 5: casual \"有意思\" (c-u19-04) did not pass"
-      ]
-    },
-    {
-      "id": "d-u20",
-      "unit": "u20",
-      "reasons": [
-        "line 6: casual \"一般般\" (c-u20-08) did not pass"
-      ]
-    }
-  ],
+  "unitsWithoutDialog": [],
+  "failedDialogs": [],
   "dialogs": [
     {
       "id": "d-u01",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u01-01"
       ],
@@ -385,7 +133,7 @@
     },
     {
       "id": "d-u02",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u02-01",
         "c-u02-03"
@@ -397,9 +145,8 @@
     },
     {
       "id": "d-u03",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
-        "c-u03-01",
         "c-u03-07"
       ],
       "laterUnitWords": [
@@ -409,7 +156,7 @@
     },
     {
       "id": "d-u04",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u04-03"
       ],
@@ -420,7 +167,7 @@
     },
     {
       "id": "d-u05",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u05-03",
         "c-u05-06"
@@ -431,7 +178,7 @@
     },
     {
       "id": "d-u06",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u06-02"
       ],
@@ -442,7 +189,7 @@
     },
     {
       "id": "d-u07",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u07-01",
         "c-u07-03"
@@ -453,7 +200,7 @@
     },
     {
       "id": "d-u08",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u08-03"
       ],
@@ -464,7 +211,7 @@
     },
     {
       "id": "d-u09",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u09-03"
       ],
@@ -472,7 +219,7 @@
     },
     {
       "id": "d-u10",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u10-01",
         "c-u10-05"
@@ -484,7 +231,7 @@
     },
     {
       "id": "d-u11",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u11-02",
         "c-u11-03"
@@ -495,7 +242,7 @@
     },
     {
       "id": "d-u12",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u12-03",
         "c-u12-02"
@@ -507,15 +254,15 @@
     },
     {
       "id": "d-u13",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
-        "c-u13-01"
+        "c-u01-03"
       ],
       "laterUnitWords": []
     },
     {
       "id": "d-u14",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u14-03",
         "c-u14-01"
@@ -527,7 +274,7 @@
     },
     {
       "id": "d-u15",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u15-01",
         "c-u15-02"
@@ -539,7 +286,7 @@
     },
     {
       "id": "d-u16",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u16-02",
         "c-u16-01"
@@ -548,7 +295,7 @@
     },
     {
       "id": "d-u17",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u01-06"
       ],
@@ -558,7 +305,7 @@
     },
     {
       "id": "d-u18",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u18-05",
         "c-u18-01"
@@ -569,7 +316,7 @@
     },
     {
       "id": "d-u19",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u19-06",
         "c-u19-04"
@@ -581,7 +328,7 @@
     },
     {
       "id": "d-u20",
-      "passed": false,
+      "passed": true,
       "casualUsed": [
         "c-u20-08"
       ],

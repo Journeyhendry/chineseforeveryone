@@ -3247,6 +3247,132 @@
         "en": "Rating something as so-so."
       },
       "note": "CEDICT entry."
+    },
+    {
+      "id": "c-u13-07",
+      "unit": "u13",
+      "hanzi": "走人",
+      "variants": [],
+      "pinyin": "zǒu rén",
+      "label": "santai",
+      "hsk": {
+        "hanzi": "走",
+        "wordIds": [
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "pergi, cabut",
+        "en": "to leave, to head off"
+      },
+      "situation": {
+        "id": "Bilang sudah waktunya pergi, misalnya \"Ayo, kita pergi!\" setelah urusan selesai.",
+        "en": "Saying it is time to leave, e.g. once you are done somewhere."
+      },
+      "note": "CEDICT (coll.) to leave. Very common in mainland speech (该走人了)."
+    },
+    {
+      "id": "c-u13-08",
+      "unit": "u13",
+      "hanzi": "好久不见",
+      "variants": [],
+      "pinyin": "hǎo jiǔ bù jiàn",
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多天没见面",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094",
+          "L1-0359",
+          "L1-0232",
+          "L1-0174"
+        ]
+      },
+      "meaning": {
+        "id": "lama nggak ketemu",
+        "en": "long time no see"
+      },
+      "situation": {
+        "id": "Menyapa teman yang sudah lama tidak bertemu.",
+        "en": "Greeting a friend you have not seen for a long time."
+      },
+      "note": "CEDICT entry; extremely common greeting."
+    },
+    {
+      "id": "c-u13-09",
+      "unit": "u13",
+      "hanzi": "不见不散",
+      "variants": [],
+      "pinyin": "bù jiàn bù sàn",
+      "label": "santai",
+      "hsk": {
+        "hanzi": "到时候见",
+        "wordIds": [
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
+        ]
+      },
+      "meaning": {
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
+      },
+      "situation": {
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
+      },
+      "note": "CEDICT entry (idiom); everyday when arranging to meet."
+    },
+    {
+      "id": "c-u13-10",
+      "unit": "u13",
+      "hanzi": "串门",
+      "variants": [
+        "串门儿"
+      ],
+      "pinyin": "chuàn mén",
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去朋友家",
+        "wordIds": [
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
+        ]
+      },
+      "meaning": {
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
+      },
+      "situation": {
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
+      },
+      "note": "CEDICT 串门 + erhua 串门儿. Nationwide, not Beijing-only (main form without erhua)."
+    },
+    {
+      "id": "c-u13-11",
+      "unit": "u13",
+      "hanzi": "打卡",
+      "variants": [],
+      "pinyin": "dǎ kǎ",
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "去看看",
+        "wordIds": [
+          "L1-0302",
+          "L1-0192"
+        ]
+      },
+      "meaning": {
+        "id": "mampir (ke tempat hits)",
+        "en": "to check in at a trendy spot"
+      },
+      "situation": {
+        "id": "Pergi ke tempat yang sedang viral lalu foto dan unggah ke media sosial.",
+        "en": "Visiting a trendy place, taking photos and posting them online."
+      },
+      "note": "CEDICT: (on social media) to check in to a location. Very current mainland usage."
     }
   ]
 }

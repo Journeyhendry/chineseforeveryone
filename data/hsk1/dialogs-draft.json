@@ -59,7 +59,7 @@
         "en": "In the morning before leaving, big brother looks for his phone in the living room. Mom helps."
       },
       "lines": [
-        { "speaker": "mama", "gender": "female", "cmn": "你在干嘛？", "en": "What are you doing?", "id": "Kamu lagi ngapain?" },
+        { "speaker": "mama", "gender": "female", "cmn": "你在干什么？", "en": "What are you doing?", "id": "Kamu lagi ngapain?" },
         { "speaker": "gege", "gender": "male", "cmn": "我的手机呢？", "en": "Where's my phone?", "id": "HP-ku mana?" },
         { "speaker": "mama", "gender": "female", "cmn": "那是不是你的？", "en": "Is that yours?", "id": "Itu punyamu bukan?" },
         { "speaker": "gege", "gender": "male", "cmn": "哪个？这个？不对，这是爸爸的。", "en": "Which one? This one? No, this is Dad's.", "id": "Yang mana? Yang ini? Bukan, ini punya Ayah." },
@@ -228,7 +228,7 @@
         { "speaker": "mama", "gender": "female", "cmn": "你去哪儿？", "en": "Where are you going?", "id": "Kamu mau ke mana?" },
         { "speaker": "gege", "gender": "male", "cmn": "我出去见朋友。", "en": "I'm going out to see friends.", "id": "Aku keluar ketemu teman." },
         { "speaker": "mama", "gender": "female", "cmn": "晚上回来吃饭吗？", "en": "Are you coming back for dinner?", "id": "Malam pulang makan?" },
-        { "speaker": "gege", "gender": "male", "cmn": "不回来了。回见！", "en": "No, I won't be back. See you!", "id": "Nggak pulang. Sampai nanti!" },
+        { "speaker": "gege", "gender": "male", "cmn": "不回来了。回头见！", "en": "No, I won't be back. See you later!", "id": "Nggak pulang. Sampai nanti!" },
         { "speaker": "mama", "gender": "female", "cmn": "好，早一点儿回来。", "en": "OK, come back a bit early.", "id": "Oke, pulangnya jangan terlalu malam." }
       ]
     },

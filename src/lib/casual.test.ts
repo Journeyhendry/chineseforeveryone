@@ -422,13 +422,10 @@ const allUnits = unitsFile.units as UnitInput[]
 
 describe('data/hsk1/casual-candidates.json', () => {
   const items = (candidatesFile as CandidatesFile).items
-  it('is valid and has 6-8 candidates per unit', () => {
+  // 6-8 per unit in the first draft; replacement candidates may be appended later for units that ran short.
+  it('is valid and has at least 6 candidates per unit', () => {
     expect(validateCandidates(items, allWords, allUnits)).toEqual([])
-    for (const u of allUnits) {
-      const n = items.filter((c) => c.unit === u.id).length
-      expect(n, u.id).toBeGreaterThanOrEqual(6)
-      expect(n, u.id).toBeLessThanOrEqual(8)
-    }
+    for (const u of allUnits) expect(items.filter((c) => c.unit === u.id).length, u.id).toBeGreaterThanOrEqual(6)
   })
 })
 

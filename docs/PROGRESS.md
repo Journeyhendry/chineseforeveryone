@@ -12,7 +12,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Menunggu pemilik memilih suara.**
 - [ ] 4b · Audio semua materi
-- [ ] 5 · Tampilan dasar
+- [ ] 5 · Tampilan dasar — SEDANG DIKERJAKAN (mulai 2026-11-21T20:41Z)
 - [ ] 5b · Font Mandarin self-host
 - [ ] 6 · Layar unit + peta belajar
 - [ ] 6b · Ilustrasi + animasi semua kata

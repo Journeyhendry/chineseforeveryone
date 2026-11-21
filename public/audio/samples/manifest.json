@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-21T20:00:41Z",
+  "generatedAt": "2026-11-21T20:09:52Z",
   "items": [
     {
       "id": "w-nihao",
@@ -169,13 +169,13 @@
         "w-mama": {
           "path": "P2/w-mama.mp3",
           "durationSec": 0.68,
-          "transcript": "麥",
+          "transcript": "嘛",
           "whisperOk": false
         },
         "w-xuexiao": {
           "path": "P2/w-xuexiao.mp3",
           "durationSec": 0.8,
-          "transcript": "學校",
+          "transcript": "学校",
           "whisperOk": true
         },
         "w-heshui": {
@@ -193,7 +193,7 @@
         "s-dialog": {
           "path": "P2/s-dialog.mp3",
           "durationSec": 1.75,
-          "transcript": "您好 请进请坐。",
+          "transcript": "您好 请进 请坐。",
           "whisperOk": true
         }
       },
@@ -219,14 +219,14 @@
         "w-xiexie": {
           "path": "P3/w-xiexie.mp3",
           "durationSec": 0.89,
-          "transcript": "謝謝",
+          "transcript": "谢谢",
           "whisperOk": true
         },
         "w-mama": {
           "path": "P3/w-mama.mp3",
           "durationSec": 0.81,
-          "transcript": "nama",
-          "whisperOk": false
+          "transcript": "媽媽",
+          "whisperOk": true
         },
         "w-xuexiao": {
           "path": "P3/w-xuexiao.mp3",
@@ -253,7 +253,7 @@
           "whisperOk": true
         }
       },
-      "whisperPassed": 6,
+      "whisperPassed": 7,
       "whisperTotal": 7
     },
     {
@@ -268,48 +268,48 @@
       "files": {
         "w-nihao": {
           "path": "P4/w-nihao.mp3",
-          "durationSec": 0.66,
+          "durationSec": 0.65,
           "transcript": "你好",
           "whisperOk": true
         },
         "w-xiexie": {
           "path": "P4/w-xiexie.mp3",
-          "durationSec": 0.62,
+          "durationSec": 0.63,
           "transcript": "谢谢",
           "whisperOk": true
         },
         "w-mama": {
           "path": "P4/w-mama.mp3",
-          "durationSec": 0.7,
-          "transcript": "喃喃",
-          "whisperOk": false
+          "durationSec": 0.71,
+          "transcript": "妈妈",
+          "whisperOk": true
         },
         "w-xuexiao": {
           "path": "P4/w-xuexiao.mp3",
-          "durationSec": 0.77,
+          "durationSec": 0.79,
           "transcript": "學校",
           "whisperOk": true
         },
         "w-heshui": {
           "path": "P4/w-heshui.mp3",
-          "durationSec": 0.68,
+          "durationSec": 0.69,
           "transcript": "喝水",
           "whisperOk": true
         },
         "s-tatoeba": {
           "path": "P4/s-tatoeba.mp3",
-          "durationSec": 1.71,
+          "durationSec": 1.69,
           "transcript": "我非常喜歡這本書",
           "whisperOk": true
         },
         "s-dialog": {
           "path": "P4/s-dialog.mp3",
-          "durationSec": 1.71,
-          "transcript": "你好 請進 請坐",
+          "durationSec": 1.69,
+          "transcript": "你好 请进 请坐",
           "whisperOk": false
         }
       },
-      "whisperPassed": 5,
+      "whisperPassed": 6,
       "whisperTotal": 7
     },
     {
@@ -349,23 +349,23 @@
         "w-heshui": {
           "path": "L1/w-heshui.mp3",
           "durationSec": 0.73,
-          "transcript": "喝水",
-          "whisperOk": true
+          "transcript": "河水",
+          "whisperOk": false
         },
         "s-tatoeba": {
           "path": "L1/s-tatoeba.mp3",
           "durationSec": 1.83,
-          "transcript": "我非常喜欢这本书。",
+          "transcript": "我非常喜欢这本书",
           "whisperOk": true
         },
         "s-dialog": {
           "path": "L1/s-dialog.mp3",
           "durationSec": 1.61,
-          "transcript": "您好,请进请坐。",
+          "transcript": "您好 请进请坐",
           "whisperOk": true
         }
       },
-      "whisperPassed": 6,
+      "whisperPassed": 5,
       "whisperTotal": 7
     },
     {
@@ -417,11 +417,11 @@
         "s-dialog": {
           "path": "L2/s-dialog.mp3",
           "durationSec": 1.83,
-          "transcript": "您好 请见请坐。",
-          "whisperOk": false
+          "transcript": "您好请进请坐。",
+          "whisperOk": true
         }
       },
-      "whisperPassed": 6,
+      "whisperPassed": 7,
       "whisperTotal": 7
     },
     {
@@ -460,7 +460,7 @@
         },
         "w-heshui": {
           "path": "L3/w-heshui.mp3",
-          "durationSec": 0.78,
+          "durationSec": 0.79,
           "transcript": "喝水",
           "whisperOk": true
         },
@@ -483,7 +483,7 @@
   ],
   "whisper": {
     "model": "faster-whisper small",
-    "passed": 40,
+    "passed": 42,
     "total": 49
   }
 }

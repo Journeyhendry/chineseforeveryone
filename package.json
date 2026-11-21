@@ -15,7 +15,8 @@
     "fetch:casual-evidence": "tsx scripts/fetch-casual-evidence.ts",
     "build:casual": "tsx scripts/build-casual.ts",
     "check:visuals": "tsx scripts/check-visuals.ts",
-    "build:characters": "tsx scripts/build-characters.ts"
+    "build:characters": "tsx scripts/build-characters.ts",
+    "build:font": "python3 scripts/font/build_font.py"
   },
   "dependencies": {
     "react": "^19.3.1",

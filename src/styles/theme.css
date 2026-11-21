@@ -41,7 +41,7 @@
   /* Font */
   --font-display: 'Baloo 2', Nunito, system-ui, sans-serif;
   --font-body: Nunito, system-ui, sans-serif;
-  --font-hanzi: 'Noto Sans SC', system-ui, sans-serif;
+  --font-hanzi: 'LXGW WenKai', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 
   /* Radius, garis, jarak */
   --radius-sm: 10px;

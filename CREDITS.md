@@ -38,7 +38,8 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Font
 
-- **Baloo 2**, **Nunito**, **Noto Sans SC**: berlisensi SIL Open Font License.
+- **Baloo 2**, **Nunito**: berlisensi SIL Open Font License (dimuat dari Google Fonts).
+- **LXGW WenKai** (霞鹜文楷), font Mandarin untuk huruf besar: berlisensi SIL Open Font License 1.1 (teks lisensi: `public/fonts/LXGW-WenKai-OFL.txt`). Hak cipta: LXGW dan The Klee Project Authors (tercantum di tabel nama font). Versi font 1.250, diambil dari paket npm [`lxgw-wenkai-webfont@1.7.0`](https://github.com/chawyehsu/lxgw-wenkai-webfont) (paket berlisensi MIT). Font disubset untuk website ini oleh `scripts/font/build_font.py` (hanya huruf yang dipakai di data HSK 1 dan kode); nama font tidak diubah karena font ini tidak memiliki Reserved Font Name. Daftar huruf tercatat di `src/assets/fonts/lxgw-wenkai-chars.json`.
 
 ## Ilustrasi
 

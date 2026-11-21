@@ -1,0 +1,11 @@
+# Lingkungan utama (Kokoro + cek Whisper). MeloTTS dipasang terpisah di workflow
+# (venv sendiri) karena ia mematok versi lama yang bentrok dengan paket di sini.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+numpy==1.26.4
+soundfile==0.12.1
+kokoro==0.9.4
+misaki[zh]==0.9.4
+faster-whisper==1.1.1
+opencc-python-reimplemented==0.1.7
+huggingface_hub>=0.25,<1

@@ -16,6 +16,13 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 - **Tatoeba**: [tatoeba.org](https://tatoeba.org). Kalimat contoh (Mandarin, Inggris, Indonesia) berlisensi CC BY 2.0 FR; sebagian berlisensi CC0 (ditandai di data). Nama penulis dan id Tatoeba tiap kalimat dan terjemahan disimpan di `data/hsk1/sentences.json`. Lisensi dan nama perekam audio disimpan per rekaman (tiap perekam bisa memakai lisensi berbeda, sebagian CC BY-NC); file audio belum dipakai. Kalimat diambil otomatis dari ekspor resmi Tatoeba oleh `.github/workflows/fetch-tatoeba.yml`; tanggal unduhan tercatat di `data/hsk1/sentences-report.json` (berubah tiap unduhan).
 
+## Contoh suara dan audio TTS
+
+- **Kokoro-82M** (hexgrad; model `hexgrad/Kokoro-82M` v1.0 dan `hexgrad/Kokoro-82M-v1.1-zh`): lisensi Apache-2.0. Kandidat suara Mandarin `zf_*` / `zm_*` untuk audio website.
+- **MeloTTS** (MyShell.ai; model `myshell-ai/MeloTTS-Chinese`): lisensi MIT. Hanya dipakai bila berhasil dipasang di runner; kalau tidak, diganti suara Kokoro lain.
+- **faster-whisper / OpenAI Whisper** (MIT): hanya untuk mengecek apakah audio terdengar sama dengan teksnya; hasilnya tidak ditampilkan sebagai materi belajar.
+- Contoh suara (`public/audio/samples/`, halaman `samples.html`) dibuat otomatis oleh `.github/workflows/tts-samples.yml` memakai `scripts/tts/make_samples.py`; versi paket dipatok di `scripts/tts/requirements.txt`.
+
 ## Versi santai dan dialog
 
 - **Ungkapan santai dan dialog** (`data/hsk1/casual.json`, `data/hsk1/dialogs.json`) ditulis oleh AI, lalu dicek berlapis: (1) draf AI; (2) tiap ungkapan harus ada di minimal 2 sumber luar di bawah; (3) dinilai oleh pemeriksa AI kedua yang tidak melihat alasan penulis; (4) dialog dicek otomatis hanya memakai kata HSK 1 dan ungkapan yang lolos; (5) yang gagal satu lapis dibuang. Arti, situasi, dan terjemahan dialog adalah terjemahan mesin (ditandai `machine: true`). Bukti tiap ungkapan tercatat di `data/hsk1/casual-evidence.json`.

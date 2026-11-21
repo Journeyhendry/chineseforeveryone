@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contoh suara · Xué Mandarin</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFF7E8;
+    --ink: #231942;
+    --purple: #6741D9;
+    --yellow: #FFD43B;
+    --green: #2F9E44;
+    --orange: #E8590C;
+    --muted: #5C5470;
+    --card: #FFFFFF;
+    --t1: #C92A2A;
+    --t2: #B45309;
+    --t3: #2B8A3E;
+    --t4: #1864AB;
+    --t5: #5C5470;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1, h2, h3 { font-family: "Baloo 2", "Nunito", sans-serif; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; }
+  h2 { font-size: 1.7rem; font-weight: 800; margin: 40px 0 4px; }
+  .hanzi { font-family: "Noto Sans SC", sans-serif; font-weight: 700; }
+  .en { color: var(--muted); font-size: 0.88rem; }
+  .lead { font-size: 1.1rem; margin: 8px 0 0; }
+  .howto {
+    background: var(--yellow);
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--ink);
+    padding: 16px 20px;
+    margin-top: 20px;
+  }
+  .howto p { margin: 0 0 6px; }
+  .howto .en { color: var(--ink); }
+  .howto strong { font-weight: 800; }
+  .brand { font-family: "Baloo 2", sans-serif; font-weight: 800; color: var(--purple); text-decoration: none; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 24px; margin-top: 16px; }
+  .card {
+    background: var(--card);
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--ink);
+    padding: 16px;
+    min-width: 0;
+  }
+  .card.skipped { background: #EDEAF2; box-shadow: 6px 6px 0 #9A93A8; border-color: #6F6882; color: #4A4458; }
+  .head { display: flex; align-items: center; gap: 14px; }
+  .code {
+    font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 2.4rem; line-height: 1;
+    min-width: 76px; text-align: center; padding: 8px 10px 4px;
+    border: 3px solid var(--ink); border-radius: 16px; color: #fff;
+  }
+  .female .code { background: var(--purple); }
+  .male .code { background: var(--green); }
+  .skipped .code { background: #8A8399; }
+  .meta { min-width: 0; }
+  .meta .engine { font-weight: 800; }
+  .meta .small { font-size: 0.85rem; color: var(--muted); }
+  .skipped .meta .small { color: #4A4458; }
+  .score { margin: 12px 0 8px; font-size: 0.92rem; }
+  .badge {
+    display: inline-block; border: 2px solid var(--ink); border-radius: 999px;
+    padding: 0 10px; font-weight: 800; font-size: 0.85rem; background: #fff;
+  }
+  .reason { font-size: 0.9rem; margin: 12px 0 0; }
+  .items { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .items li { min-width: 0; }
+  button {
+    font: inherit; color: var(--ink); cursor: pointer;
+    background: var(--bg); border: 2px solid var(--ink); border-radius: 14px;
+    padding: 8px 12px; text-align: left; width: 100%;
+    display: flex; align-items: center; gap: 10px; min-height: 48px;
+  }
+  button:hover { background: #fff; }
+  button:focus-visible { outline: 4px solid var(--orange); outline-offset: 2px; }
+  button .ic { flex: none; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--yellow); border: 2px solid var(--ink); display: grid; place-items: center; font-size: 0.75rem; }
+  button[aria-pressed="true"] { background: var(--yellow); box-shadow: 3px 3px 0 var(--ink); }
+  button .txt { min-width: 0; flex: 1; }
+  button .hz { font-family: "Noto Sans SC", sans-serif; font-weight: 700; font-size: 1.15rem; display: block; line-height: 1.3; }
+  button .py { font-size: 0.9rem; display: block; font-weight: 700; }
+  button .ok, button .bad { flex: none; font-size: 0.8rem; font-weight: 800; border-radius: 999px; padding: 0 8px; border: 2px solid var(--ink); background: #fff; }
+  button .ok { color: var(--green); }
+  button .bad { color: var(--orange); }
+  .playall { margin-top: 12px; background: var(--purple); color: #fff; justify-content: center; font-weight: 800; box-shadow: 3px 3px 0 var(--ink); }
+  .playall:hover { background: #5933c4; }
+  .playall[aria-pressed="true"] { background: var(--orange); }
+  .heard { display: block; font-size: 0.78rem; color: var(--muted); margin: 2px 0 0 4px; }
+  .t1 { color: var(--t1); } .t2 { color: var(--t2); } .t3 { color: var(--t3); }
+  .t4 { color: var(--t4); } .t5 { color: var(--t5); }
+  .msg { border: 3px dashed var(--ink); border-radius: 20px; padding: 24px; margin-top: 24px; background: #fff; }
+  footer { margin-top: 48px; font-size: 0.85rem; color: var(--muted); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (prefers-reduced-motion: no-preference) {
+    button { transition: background 0.15s, box-shadow 0.15s; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./">Xué Mandarin</a>
+    <h1>Pilih suara untuk Xué Mandarin</h1>
+    <p class="lead">Dengarkan contoh suara di bawah, lalu pilih yang paling enak didengar.</p>
+    <p class="en">Listen to the voice samples below and pick the ones you like best.</p>
+    <div class="howto">
+      <p><strong>Cara memilih:</strong> dengarkan semua kartu, lalu balas dengan kode suara. Pilih <strong>1 suara perempuan</strong> (P) dan <strong>1 suara laki-laki</strong> (L), misalnya <strong>P2 + L1</strong>.</p>
+      <p class="en">Reply with a voice code, e.g. P2 + L1: one female (P) and one male (L) voice. All voices read the same words and sentences at the same speed and volume.</p>
+      <p>Suara perempuan dipakai untuk semua kata dan kalimat; suara laki-laki hanya untuk tokoh laki-laki di dialog.</p>
+    </div>
+  </header>
+  <main id="app" aria-live="polite"><p>Memuat contoh suara… <span class="en">Loading samples…</span></p></main>
+  <footer>
+    <p>Semua suara dibuat otomatis oleh komputer dari model terbuka (lihat <code>CREDITS.md</code>). Tanda <b>✓ cocok</b> artinya program pengenal suara (Whisper) menangkap kalimat yang sama persis; <b>⚠ beda</b> artinya ia menangkap hal lain, mungkin karena pengucapannya kurang jelas. Itu hanya petunjuk, telingamu yang menentukan.</p>
+    <p class="en">All voices are machine-generated from open models. ✓ means the speech checker (Whisper) heard exactly the intended text; ⚠ means it heard something different. It is only a hint; your ears decide.</p>
+  </footer>
+</div>
+<script>
+(function () {
+  'use strict';
+  var app = document.getElementById('app');
+  var current = null; // {audio, btn, stop}
+  var seq = 0;
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  // Warna nada dari tanda pada suku kata: ā=1 á=2 ǎ=3 à=4, tanpa tanda = ringan.
+  var TONE_CHARS = {
+    1: 'āēīōūǖ', 2: 'áéíóúǘ', 3: 'ǎěǐǒǔǚ', 4: 'àèìòùǜ'
+  };
+  function toneOf(syl) {
+    for (var t = 1; t <= 4; t++) {
+      for (var i = 0; i < syl.length; i++) {
+        if (TONE_CHARS[t].indexOf(syl[i]) !== -1) return t;
+      }
+    }
+    return 5;
+  }
+  function pinyinNode(text) {
+    var wrap = el('span', 'py');
+    text.split(/\s+/).forEach(function (syl, i) {
+      if (!syl) return;
+      if (i) wrap.appendChild(document.createTextNode(' '));
+      var s = el('span', 't' + toneOf(syl), syl);
+      wrap.appendChild(s);
+    });
+    return wrap;
+  }
+
+  var chain = 0; // naik tiap kali pemutaran berantai ("Putar semua") dibatalkan
+  var allBtn = null;
+
+  function stopAll() {
+    chain++;
+    if (allBtn) { allBtn.setAttribute('aria-pressed', 'false'); allBtn = null; }
+    stopCurrent();
+  }
+
+  function stopCurrent() {
+    seq++;
+    if (current) {
+      try { current.audio.pause(); } catch (e) { /* abaikan */ }
+      current.btn.setAttribute('aria-pressed', 'false');
+      if (current.label) current.btn.setAttribute('aria-label', current.label);
+      current = null;
+    }
+  }
+
+  // Putar satu file; selesai -> promise terpenuhi. Batal -> promise ditolak.
+  function playFile(src, btn, label) {
+    return new Promise(function (resolve, reject) {
+      stopCurrent();
+      var my = ++seq;
+      var audio = new Audio(src);
+      current = { audio: audio, btn: btn, label: label };
+      btn.setAttribute('aria-pressed', 'true');
+      audio.addEventListener('ended', function () {
+        if (my !== seq) return;
+        btn.setAttribute('aria-pressed', 'false');
+        current = null;
+        resolve();
+      });
+      audio.addEventListener('error', function () {
+        if (my !== seq) return;
+        btn.setAttribute('aria-pressed', 'false');
+        current = null;
+        reject(new Error('error'));
+      });
+      var p = audio.play();
+      if (p && p.catch) p.catch(function () {
+        if (my !== seq) return;
+        btn.setAttribute('aria-pressed', 'false');
+        current = null;
+        reject(new Error('blocked'));
+      });
+    });
+  }
+
+  function itemButton(item, file, voice) {
+    var li = el('li');
+    var btn = el('button');
+    btn.type = 'button';
+    btn.setAttribute('aria-pressed', 'false');
+    btn.setAttribute('aria-label', 'Putar ' + item.hanzi + ' suara ' + voice.code);
+    btn.appendChild(el('span', 'ic', '▶'));
+    var txt = el('span', 'txt');
+    txt.appendChild(el('span', 'hz', item.hanzi));
+    var py = el('span', 'py');
+    py.appendChild(pinyinNode(item.pinyin));
+    txt.appendChild(py);
+    btn.appendChild(txt);
+    var flag = file.whisperOk ? el('span', 'ok', '✓ cocok') : el('span', 'bad', '⚠ beda');
+    btn.appendChild(flag);
+    btn.addEventListener('click', function () {
+      if (btn.getAttribute('aria-pressed') === 'true') { stopAll(); return; }
+      stopAll();
+      playFile('audio/samples/' + file.path, btn).catch(function () {});
+    });
+    li.appendChild(btn);
+    if (!file.whisperOk) {
+      var heard = el('span', 'heard', 'Whisper menangkap: ' + (file.transcript || '(kosong)'));
+      li.appendChild(heard);
+    }
+    return { li: li, btn: btn, src: 'audio/samples/' + file.path };
+  }
+
+  function voiceCard(voice, items) {
+    var skipped = voice.status !== 'ok';
+    var card = el('article', 'card ' + voice.gender + (skipped ? ' skipped' : ''));
+    var head = el('div', 'head');
+    head.appendChild(el('div', 'code', voice.code));
+    var meta = el('div', 'meta');
+    meta.appendChild(el('div', 'engine', voice.model));
+    meta.appendChild(el('div', 'small', 'Suara: ' + voice.voiceId + ' · Lisensi ' + voice.license));
+    head.appendChild(meta);
+    card.appendChild(head);
+
+    if (skipped) {
+      card.appendChild(el('p', 'reason', 'Tidak tersedia: ' + (voice.reason || 'gagal dibuat') + '.'));
+      return card;
+    }
+
+    var passed = voice.whisperPassed != null ? voice.whisperPassed :
+      Object.keys(voice.files).filter(function (k) { return voice.files[k].whisperOk; }).length;
+    var total = voice.whisperTotal != null ? voice.whisperTotal : Object.keys(voice.files).length;
+    var score = el('p', 'score');
+    var b = el('span', 'badge', 'Whisper: ' + passed + '/' + total + ' cocok');
+    score.appendChild(b);
+    card.appendChild(score);
+
+    var ul = el('ul', 'items');
+    var queue = [];
+    items.forEach(function (it) {
+      var f = voice.files[it.id];
+      if (!f) return;
+      var r = itemButton(it, f, voice);
+      queue.push(r);
+      ul.appendChild(r.li);
+    });
+    card.appendChild(ul);
+
+    var all = el('button', 'playall');
+    all.type = 'button';
+    all.setAttribute('aria-pressed', 'false');
+    all.appendChild(el('span', null, '▶ Putar semua · Play all'));
+    all.addEventListener('click', function () {
+      if (all.getAttribute('aria-pressed') === 'true') { stopAll(); return; }
+      stopAll();
+      allBtn = all;
+      all.setAttribute('aria-pressed', 'true');
+      var token = chain;
+      var i = 0;
+      (function next() {
+        if (token !== chain) return;
+        if (i >= queue.length) { stopAll(); return; }
+        var q = queue[i++];
+        playFile(q.src, q.btn).then(function () {
+          setTimeout(next, 350);
+        }, function () { if (token === chain) stopAll(); });
+      })();
+    });
+    card.appendChild(all);
+    return card;
+  }
+
+  function section(title, en, voices, items) {
+    var frag = document.createDocumentFragment();
+    var h = el('h2', null, title);
+    frag.appendChild(h);
+    frag.appendChild(el('div', 'en', en));
+    var grid = el('div', 'grid');
+    voices.forEach(function (v) { grid.appendChild(voiceCard(v, items)); });
+    frag.appendChild(grid);
+    return frag;
+  }
+
+  function showMessage(idText, enText) {
+    app.textContent = '';
+    var box = el('div', 'msg');
+    box.appendChild(el('p', null, idText));
+    box.appendChild(el('p', 'en', enText));
+    app.appendChild(box);
+  }
+
+  function render(m) {
+    app.textContent = '';
+    var fem = m.voices.filter(function (v) { return v.gender === 'female'; });
+    var mal = m.voices.filter(function (v) { return v.gender === 'male'; });
+    app.appendChild(section('Suara perempuan', 'Female voices (P)', fem, m.items));
+    app.appendChild(section('Suara laki-laki', 'Male voices (L)', mal, m.items));
+  }
+
+  fetch('audio/samples/manifest.json', { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(render)
+    .catch(function () {
+      showMessage(
+        'Contoh suara belum siap. Sebentar lagi akan muncul di sini; coba buka halaman ini lagi nanti ya.',
+        'The voice samples are not ready yet. Please check back soon.'
+      );
+    });
+})();
+</script>
+</body>
+</html>

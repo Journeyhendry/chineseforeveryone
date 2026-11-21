@@ -26,6 +26,7 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 
 1. Baca file ini dan `docs/PROGRESS.md`. Ambil **task pertama yang belum selesai dan semua prasyaratnya sudah selesai**. Kerjakan **satu task per sesi** (boleh dua kalau task kecil bertanda Haiku).
 2. Sebelum mulai, `git pull` di `main`. Jangan ubah keputusan di bagian 1.
+   Supaya dua sesi tidak mengerjakan task yang sama: lewati task yang di PROGRESS.md bertanda `SEDANG DIKERJAKAN` dengan waktu mulai kurang dari 3 jam lalu. Sebelum mulai, tulis `SEDANG DIKERJAKAN (mulai <waktu UTC>)` di baris task itu, commit, dan push; hapus tanda itu saat selesai atau berhenti.
 3. Tulis PRD kecil task itu ke `docs/tasks/task-XX.md` (tujuan, scope, out-of-scope, acceptance criteria, file terkait) berdasarkan bagian 4.
 4. **Delegasikan implementasi ke subagent** dengan model sesuai bagian 3. Sesi utama tidak menulis kode fitur sendiri; sesi utama merencanakan dan memeriksa.
 5. **Periksa hasil** terhadap acceptance criteria: jalankan sendiri `npm ci`, `npm run typecheck`, `npm run lint`, `npm run build`, `npm test` (kalau ada), dan cek lain yang disebut di task. Gambar SVG dicek dengan render ke PNG (`rsvg-convert`) lalu dilihat.

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "w-nihao",
+      "kind": "word",
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "source": { "type": "words", "wordIds": ["L1-0271", "L1-0138"], "note": "nada 3+3 (perubahan nada); kata majemuk, dibentuk dari 你 + 好" }
+    },
+    {
+      "id": "w-xiexie",
+      "kind": "word",
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "source": { "type": "word", "wordId": "L1-0410", "note": "nada 4 + ringan" }
+    },
+    {
+      "id": "w-mama",
+      "kind": "word",
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "source": { "type": "word", "wordId": "L1-0224", "note": "nada 1 + ringan" }
+    },
+    {
+      "id": "w-xuexiao",
+      "kind": "word",
+      "hanzi": "学校",
+      "pinyin": "xué xiào",
+      "source": { "type": "word", "wordId": "L1-0421", "note": "nada 2+4" }
+    },
+    {
+      "id": "w-heshui",
+      "kind": "word",
+      "hanzi": "喝水",
+      "pinyin": "hē shuǐ",
+      "source": { "type": "words", "wordIds": ["L1-0144", "L1-0345"], "note": "nada 1+3; frasa, dibentuk dari 喝 + 水" }
+    },
+    {
+      "id": "s-tatoeba",
+      "kind": "sentence",
+      "hanzi": "我非常喜欢这本书。",
+      "pinyin": "wǒ fēi cháng xǐ huan zhè běn shū.",
+      "source": { "type": "tatoeba", "tatoebaId": 4270137, "author": "notabene", "license": "CC BY 2.0 FR" }
+    },
+    {
+      "id": "s-dialog",
+      "kind": "sentence",
+      "hanzi": "您好！请进，请坐。",
+      "pinyin": "nín hǎo! qǐng jìn, qǐng zuò.",
+      "source": { "type": "dialog", "dialogId": "d-u01", "line": 1 }
+    }
+  ]
+}

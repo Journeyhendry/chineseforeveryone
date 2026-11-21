@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-21T20:09:52Z",
+  "items": [
+    {
+      "id": "w-nihao",
+      "kind": "word",
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "source": {
+        "type": "words",
+        "wordIds": [
+          "L1-0271",
+          "L1-0138"
+        ],
+        "note": "nada 3+3 (perubahan nada); kata majemuk, dibentuk dari 你 + 好"
+      }
+    },
+    {
+      "id": "w-xiexie",
+      "kind": "word",
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "source": {
+        "type": "word",
+        "wordId": "L1-0410",
+        "note": "nada 4 + ringan"
+      }
+    },
+    {
+      "id": "w-mama",
+      "kind": "word",
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "source": {
+        "type": "word",
+        "wordId": "L1-0224",
+        "note": "nada 1 + ringan"
+      }
+    },
+    {
+      "id": "w-xuexiao",
+      "kind": "word",
+      "hanzi": "学校",
+      "pinyin": "xué xiào",
+      "source": {
+        "type": "word",
+        "wordId": "L1-0421",
+        "note": "nada 2+4"
+      }
+    },
+    {
+      "id": "w-heshui",
+      "kind": "word",
+      "hanzi": "喝水",
+      "pinyin": "hē shuǐ",
+      "source": {
+        "type": "words",
+        "wordIds": [
+          "L1-0144",
+          "L1-0345"
+        ],
+        "note": "nada 1+3; frasa, dibentuk dari 喝 + 水"
+      }
+    },
+    {
+      "id": "s-tatoeba",
+      "kind": "sentence",
+      "hanzi": "我非常喜欢这本书。",
+      "pinyin": "wǒ fēi cháng xǐ huan zhè běn shū.",
+      "source": {
+        "type": "tatoeba",
+        "tatoebaId": 4270137,
+        "author": "notabene",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "s-dialog",
+      "kind": "sentence",
+      "hanzi": "您好！请进，请坐。",
+      "pinyin": "nín hǎo! qǐng jìn, qǐng zuò.",
+      "source": {
+        "type": "dialog",
+        "dialogId": "d-u01",
+        "line": 1
+      }
+    }
+  ],
+  "voices": [
+    {
+      "code": "P1",
+      "gender": "female",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.0",
+      "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "voiceId": "zf_xiaoxiao",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P1/w-nihao.mp3",
+          "durationSec": 0.96,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P1/w-xiexie.mp3",
+          "durationSec": 0.83,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "P1/w-mama.mp3",
+          "durationSec": 0.77,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "P1/w-xuexiao.mp3",
+          "durationSec": 1.05,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P1/w-heshui.mp3",
+          "durationSec": 0.98,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "P1/s-tatoeba.mp3",
+          "durationSec": 2.06,
+          "transcript": "我非常喜歡這本書。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P1/s-dialog.mp3",
+          "durationSec": 1.76,
+          "transcript": "你好 请进 请坐",
+          "whisperOk": false
+        }
+      },
+      "whisperPassed": 6,
+      "whisperTotal": 7
+    },
+    {
+      "code": "P2",
+      "gender": "female",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.0",
+      "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "voiceId": "zf_xiaoyi",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P2/w-nihao.mp3",
+          "durationSec": 0.82,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P2/w-xiexie.mp3",
+          "durationSec": 0.78,
+          "transcript": "谢了",
+          "whisperOk": false
+        },
+        "w-mama": {
+          "path": "P2/w-mama.mp3",
+          "durationSec": 0.68,
+          "transcript": "嘛",
+          "whisperOk": false
+        },
+        "w-xuexiao": {
+          "path": "P2/w-xuexiao.mp3",
+          "durationSec": 0.8,
+          "transcript": "学校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P2/w-heshui.mp3",
+          "durationSec": 0.85,
+          "transcript": "河水",
+          "whisperOk": false
+        },
+        "s-tatoeba": {
+          "path": "P2/s-tatoeba.mp3",
+          "durationSec": 1.91,
+          "transcript": "我非常喜歡這本書。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P2/s-dialog.mp3",
+          "durationSec": 1.75,
+          "transcript": "您好 请进 请坐。",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 4,
+      "whisperTotal": 7
+    },
+    {
+      "code": "P3",
+      "gender": "female",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.1-zh",
+      "modelRevision": "01e7505bd6a7a2ac4975463114c3a7650a9f7218",
+      "voiceId": "zf_001",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P3/w-nihao.mp3",
+          "durationSec": 0.84,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P3/w-xiexie.mp3",
+          "durationSec": 0.89,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "P3/w-mama.mp3",
+          "durationSec": 0.81,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "P3/w-xuexiao.mp3",
+          "durationSec": 0.81,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P3/w-heshui.mp3",
+          "durationSec": 0.87,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "P3/s-tatoeba.mp3",
+          "durationSec": 2.16,
+          "transcript": "我非常喜歡這本書",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P3/s-dialog.mp3",
+          "durationSec": 1.91,
+          "transcript": "您好 請進 請坐",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 7,
+      "whisperTotal": 7
+    },
+    {
+      "code": "P4",
+      "gender": "female",
+      "engine": "melo",
+      "model": "MeloTTS ZH",
+      "modelRevision": "af5d207a364ea4208c6f589c89f57f88414bdd16",
+      "voiceId": "ZH",
+      "license": "MIT",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "P4/w-nihao.mp3",
+          "durationSec": 0.65,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "P4/w-xiexie.mp3",
+          "durationSec": 0.63,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "P4/w-mama.mp3",
+          "durationSec": 0.71,
+          "transcript": "妈妈",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "P4/w-xuexiao.mp3",
+          "durationSec": 0.79,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "P4/w-heshui.mp3",
+          "durationSec": 0.69,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "P4/s-tatoeba.mp3",
+          "durationSec": 1.69,
+          "transcript": "我非常喜歡這本書",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "P4/s-dialog.mp3",
+          "durationSec": 1.69,
+          "transcript": "你好 请进 请坐",
+          "whisperOk": false
+        }
+      },
+      "whisperPassed": 6,
+      "whisperTotal": 7
+    },
+    {
+      "code": "L1",
+      "gender": "male",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.0",
+      "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "voiceId": "zm_yunxi",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "L1/w-nihao.mp3",
+          "durationSec": 0.76,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "L1/w-xiexie.mp3",
+          "durationSec": 0.59,
+          "transcript": "先",
+          "whisperOk": false
+        },
+        "w-mama": {
+          "path": "L1/w-mama.mp3",
+          "durationSec": 0.64,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "L1/w-xuexiao.mp3",
+          "durationSec": 0.79,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "L1/w-heshui.mp3",
+          "durationSec": 0.73,
+          "transcript": "河水",
+          "whisperOk": false
+        },
+        "s-tatoeba": {
+          "path": "L1/s-tatoeba.mp3",
+          "durationSec": 1.83,
+          "transcript": "我非常喜欢这本书",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "L1/s-dialog.mp3",
+          "durationSec": 1.61,
+          "transcript": "您好 请进请坐",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 5,
+      "whisperTotal": 7
+    },
+    {
+      "code": "L2",
+      "gender": "male",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.0",
+      "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "voiceId": "zm_yunjian",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "L2/w-nihao.mp3",
+          "durationSec": 0.78,
+          "transcript": "你好",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "L2/w-xiexie.mp3",
+          "durationSec": 0.76,
+          "transcript": "谢谢",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "L2/w-mama.mp3",
+          "durationSec": 0.66,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "L2/w-xuexiao.mp3",
+          "durationSec": 0.78,
+          "transcript": "學校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "L2/w-heshui.mp3",
+          "durationSec": 0.8,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "L2/s-tatoeba.mp3",
+          "durationSec": 2.02,
+          "transcript": "我非常喜欢这本书。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "L2/s-dialog.mp3",
+          "durationSec": 1.83,
+          "transcript": "您好请进请坐。",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 7,
+      "whisperTotal": 7
+    },
+    {
+      "code": "L3",
+      "gender": "male",
+      "engine": "kokoro",
+      "model": "Kokoro-82M v1.1-zh",
+      "modelRevision": "01e7505bd6a7a2ac4975463114c3a7650a9f7218",
+      "voiceId": "zm_010",
+      "license": "Apache-2.0",
+      "status": "ok",
+      "files": {
+        "w-nihao": {
+          "path": "L3/w-nihao.mp3",
+          "durationSec": 0.8,
+          "transcript": "你好!",
+          "whisperOk": true
+        },
+        "w-xiexie": {
+          "path": "L3/w-xiexie.mp3",
+          "durationSec": 0.86,
+          "transcript": "謝謝",
+          "whisperOk": true
+        },
+        "w-mama": {
+          "path": "L3/w-mama.mp3",
+          "durationSec": 0.79,
+          "transcript": "媽媽",
+          "whisperOk": true
+        },
+        "w-xuexiao": {
+          "path": "L3/w-xuexiao.mp3",
+          "durationSec": 0.76,
+          "transcript": "学校",
+          "whisperOk": true
+        },
+        "w-heshui": {
+          "path": "L3/w-heshui.mp3",
+          "durationSec": 0.79,
+          "transcript": "喝水",
+          "whisperOk": true
+        },
+        "s-tatoeba": {
+          "path": "L3/s-tatoeba.mp3",
+          "durationSec": 2.23,
+          "transcript": "我非常喜欢这本书。",
+          "whisperOk": true
+        },
+        "s-dialog": {
+          "path": "L3/s-dialog.mp3",
+          "durationSec": 1.96,
+          "transcript": "您好 请进 请坐",
+          "whisperOk": true
+        }
+      },
+      "whisperPassed": 7,
+      "whisperTotal": 7
+    }
+  ],
+  "whisper": {
+    "model": "faster-whisper small",
+    "passed": 42,
+    "total": 49
+  }
+}

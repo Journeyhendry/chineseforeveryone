@@ -1,0 +1,107 @@
+name: TTS voice samples
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - scripts/tts/**
+      - .github/workflows/tts-samples.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tts-samples-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      WORK: ${{ github.workspace }}/.tts-work
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system packages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+          ffmpeg -version | head -1
+
+      - name: Cache pip and Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: tts-${{ runner.os }}-${{ hashFiles('scripts/tts/requirements.txt', 'scripts/tts/voices.json', '.github/workflows/tts-samples.yml') }}
+          restore-keys: |
+            tts-${{ runner.os }}-
+
+      - name: Install main environment (Kokoro + Whisper)
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv-main"
+          "$RUNNER_TEMP/venv-main/bin/pip" install --upgrade pip
+          "$RUNNER_TEMP/venv-main/bin/pip" install -r scripts/tts/requirements.txt
+          "$RUNNER_TEMP/venv-main/bin/pip" freeze | tee "$RUNNER_TEMP/freeze-main.txt" | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|soundfile|huggingface)" || true
+
+      - name: Synthesize Kokoro voices
+        run: |
+          set -euo pipefail
+          mkdir -p "$WORK"
+          "$RUNNER_TEMP/venv-main/bin/python" scripts/tts/make_samples.py synth --engine kokoro --work "$WORK"
+
+      - name: Install MeloTTS (isolated, may fail)
+        id: melo_install
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv-melo"
+          PIP="$RUNNER_TEMP/venv-melo/bin/pip"
+          "$PIP" install --upgrade pip
+          "$PIP" install --extra-index-url https://download.pytorch.org/whl/cpu torch==2.5.1 torchaudio==2.5.1 numpy==1.26.4 soundfile==0.12.1
+          "$PIP" install "git+https://github.com/myshell-ai/MeloTTS.git@209145371cff8fc3bd60d7be902ea69cbdb7965a"
+          "$RUNNER_TEMP/venv-melo/bin/python" -m unidic download
+          "$RUNNER_TEMP/venv-melo/bin/python" -c "import nltk; nltk.download('averaged_perceptron_tagger_eng'); nltk.download('averaged_perceptron_tagger'); nltk.download('cmudict')"
+
+      - name: Synthesize MeloTTS voice
+        if: steps.melo_install.outcome == 'success'
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv-melo/bin/python" scripts/tts/make_samples.py synth --engine melo --work "$WORK"
+
+      - name: Normalize, Whisper check, write manifest
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv-main/bin/python" scripts/tts/make_samples.py finish --work "$WORK"
+          du -sh public/audio/samples
+          rm -rf "$WORK"
+
+      - name: Commit samples
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/audio/samples
+          if git diff --cached --quiet; then
+            echo "No changes in public/audio/samples"
+            exit 0
+          fi
+          git commit -m "Data: TTS voice samples"
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"

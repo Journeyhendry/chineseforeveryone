@@ -1,14 +1,14 @@
+import { AppShell } from './components/AppShell'
+import { SettingsProvider } from './components/SettingsProvider'
+import { I18nProvider } from './i18n'
+
 function App() {
   return (
-    <main className="home">
-      <p className="home-char" lang="zh-Hans" aria-hidden="true">
-        学
-      </p>
-      <h1 className="home-title">Xué Mandarin</h1>
-      <p className="home-tagline">
-        Belajar Mandarin dari nol, gratis untuk semua. Segera hadir.
-      </p>
-    </main>
+    <SettingsProvider>
+      <I18nProvider>
+        <AppShell />
+      </I18nProvider>
+    </SettingsProvider>
   )
 }
 

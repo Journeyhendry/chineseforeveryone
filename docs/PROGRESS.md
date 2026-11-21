@@ -9,7 +9,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 2 · Data kata HSK 1 — 2026-11-21 — Sonnet (diperiksa Opus) — 500 kata HSK 3.0 level 1 (pinyin, nada, jenis kata, arti EN CC-CEDICT, arti ID terjemahan mesin), skrip bisa diulang, 540 tes
 - [x] 3 · Unit bertema + kalimat contoh — 2026-11-21 — Sonnet (diperiksa Opus, 1 kali perbaikan) — 20 unit bertema (20–31 kata), 2.405 kalimat Tatoeba beratribusi lewat workflow `fetch-tatoeba.yml`; semua unit ≥ 11 kalimat
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
-- [ ] 3c · Character sheet + daftar visual
+- [ ] 3c · Character sheet + daftar visual — SEDANG DIKERJAKAN (mulai 2026-11-21T18:41Z)
 - [ ] 4a · Contoh suara (butuh pilihan pemilik)
 - [ ] 4b · Audio semua materi
 - [ ] 5 · Tampilan dasar

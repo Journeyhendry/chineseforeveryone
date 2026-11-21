@@ -2010,6 +2010,151 @@
       "machine": true
     },
     {
+      "id": "c-u13-08",
+      "unit": "u13",
+      "hanzi": "好久不见",
+      "variants": [],
+      "pinyin": "hǎo jiǔ bù jiàn",
+      "pinyinNumbered": "hao3 jiu3 bu4 jian4",
+      "tones": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多天没见面",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094",
+          "L1-0359",
+          "L1-0232",
+          "L1-0174"
+        ]
+      },
+      "meaning": {
+        "id": "lama nggak ketemu",
+        "en": "long time no see"
+      },
+      "situation": {
+        "id": "Menyapa teman yang sudah lama tidak bertemu.",
+        "en": "Greeting a friend you have not seen for a long time."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-09",
+      "unit": "u13",
+      "hanzi": "不见不散",
+      "variants": [],
+      "pinyin": "bù jiàn bù sàn",
+      "pinyinNumbered": "bu4 jian4 bu4 san4",
+      "tones": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "到时候见",
+        "wordIds": [
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
+        ]
+      },
+      "meaning": {
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
+      },
+      "situation": {
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-10",
+      "unit": "u13",
+      "hanzi": "串门",
+      "variants": [
+        "串门儿"
+      ],
+      "pinyin": "chuàn mén",
+      "pinyinNumbered": "chuan4 men2",
+      "tones": [
+        4,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去朋友家",
+        "wordIds": [
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
+        ]
+      },
+      "meaning": {
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
+      },
+      "situation": {
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-11",
+      "unit": "u13",
+      "hanzi": "打卡",
+      "variants": [],
+      "pinyin": "dǎ kǎ",
+      "pinyinNumbered": "da3 ka3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "去看看",
+        "wordIds": [
+          "L1-0302",
+          "L1-0192"
+        ]
+      },
+      "meaning": {
+        "id": "mampir (ke tempat hits)",
+        "en": "to check in at a trendy spot"
+      },
+      "situation": {
+        "id": "Pergi ke tempat yang sedang viral lalu foto dan unggah ke media sosial.",
+        "en": "Visiting a trendy place, taking photos and posting them online."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
       "id": "c-u14-01",
       "unit": "u14",
       "hanzi": "学霸",

@@ -10525,18 +10525,68 @@
       "hanzi": "走人",
       "label": "santai",
       "sources": {
-        "cedict": null,
-        "wiktionary": null,
-        "tatoeba": null
+        "cedict": {
+          "found": true,
+          "form": "走人",
+          "entries": [
+            {
+              "pinyin": "zou3 ren2",
+              "english": [
+                "(coll.) to leave; to beat it"
+              ]
+            }
+          ],
+          "markers": [
+            "colloquial"
+          ],
+          "regionalOnly": false,
+          "vulgar": false
+        },
+        "wiktionary": {
+          "status": "found",
+          "labels": [
+            "colloquial"
+          ],
+          "senses": [
+            [
+              "colloquial"
+            ],
+            [
+              "colloquial"
+            ],
+            [
+              "colloquial"
+            ]
+          ],
+          "pages": [
+            {
+              "site": "en",
+              "title": "走人",
+              "status": "found"
+            }
+          ]
+        },
+        "tatoeba": {
+          "count": 0,
+          "examples": []
+        }
       },
-      "counted": [],
+      "counted": [
+        "cedict",
+        "wiktionary"
+      ],
       "flags": [],
-      "review": null,
+      "review": {
+        "verdict": "fail",
+        "natural": 3,
+        "labelOk": true,
+        "comment": "Mainland-used, but abrupt/brusque and often means walking out or being let go; 我们走吧 is the natural way to say it is time to leave."
+      },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": 3,
       "reasons": [
-        "no evidence fetched",
-        "no review"
+        "verdict fail",
+        "natural 3 < 4"
       ]
     },
     {
@@ -10545,19 +10595,73 @@
       "hanzi": "好久不见",
       "label": "santai",
       "sources": {
-        "cedict": null,
-        "wiktionary": null,
-        "tatoeba": null
+        "cedict": {
+          "found": true,
+          "form": "好久不见",
+          "entries": [
+            {
+              "pinyin": "hao3 jiu3 bu5 jian4",
+              "english": [
+                "long time no see"
+              ]
+            }
+          ],
+          "markers": [],
+          "regionalOnly": false,
+          "vulgar": false
+        },
+        "wiktionary": {
+          "status": "found",
+          "labels": [],
+          "senses": [
+            []
+          ],
+          "pages": [
+            {
+              "site": "en",
+              "title": "好久不见",
+              "status": "found"
+            },
+            {
+              "site": "en",
+              "title": "好久不見",
+              "status": "found"
+            }
+          ]
+        },
+        "tatoeba": {
+          "count": 10,
+          "examples": [
+            {
+              "id": 710777,
+              "text": "好久不见了。"
+            },
+            {
+              "id": 1216127,
+              "text": "好久不见了！"
+            },
+            {
+              "id": 1357629,
+              "text": "好久不见！"
+            }
+          ]
+        }
       },
-      "counted": [],
+      "counted": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
       "flags": [],
-      "review": null,
-      "passed": false,
-      "failedAt": 2,
-      "reasons": [
-        "no evidence fetched",
-        "no review"
-      ]
+      "review": {
+        "verdict": "pass",
+        "natural": 5,
+        "labelOk": true,
+        "comment": "Very common mainland greeting; pinyin and meaning fine; neutral-friendly, fine as santai."
+      },
+      "passed": true,
+      "failedAt": null,
+      "reasons": []
     },
     {
       "id": "c-u13-09",
@@ -10565,19 +10669,62 @@
       "hanzi": "不见不散",
       "label": "santai",
       "sources": {
-        "cedict": null,
-        "wiktionary": null,
-        "tatoeba": null
+        "cedict": {
+          "found": true,
+          "form": "不见不散",
+          "entries": [
+            {
+              "pinyin": "bu4 jian4 bu4 san4",
+              "english": [
+                "lit. Even if we don't see each other, don't give up and leave (idiom)",
+                "fig. Be sure to wait!",
+                "See you there!"
+              ]
+            }
+          ],
+          "markers": [],
+          "regionalOnly": false,
+          "vulgar": false
+        },
+        "wiktionary": {
+          "status": "found",
+          "labels": [],
+          "senses": [
+            [],
+            []
+          ],
+          "pages": [
+            {
+              "site": "en",
+              "title": "不见不散",
+              "status": "found"
+            },
+            {
+              "site": "en",
+              "title": "不見不散",
+              "status": "found"
+            }
+          ]
+        },
+        "tatoeba": {
+          "count": 0,
+          "examples": []
+        }
       },
-      "counted": [],
+      "counted": [
+        "cedict",
+        "wiktionary"
+      ],
       "flags": [],
-      "review": null,
-      "passed": false,
-      "failedAt": 2,
-      "reasons": [
-        "no evidence fetched",
-        "no review"
-      ]
+      "review": {
+        "verdict": "pass",
+        "natural": 4,
+        "labelOk": true,
+        "comment": "Still used in mainland chats to close a meeting plan; slightly set-phrase, and stronger than 到时候见 (wait until you come)."
+      },
+      "passed": true,
+      "failedAt": null,
+      "reasons": []
     },
     {
       "id": "c-u13-10",
@@ -10585,19 +10732,65 @@
       "hanzi": "串门",
       "label": "santai",
       "sources": {
-        "cedict": null,
-        "wiktionary": null,
-        "tatoeba": null
+        "cedict": {
+          "found": true,
+          "form": "串门",
+          "entries": [
+            {
+              "pinyin": "chuan4 men2",
+              "english": [
+                "to call on sb",
+                "to drop in",
+                "to visit sb's home"
+              ]
+            }
+          ],
+          "markers": [],
+          "regionalOnly": false,
+          "vulgar": false
+        },
+        "wiktionary": {
+          "status": "found",
+          "labels": [
+            "colloquial"
+          ],
+          "senses": [
+            [
+              "colloquial"
+            ]
+          ],
+          "pages": [
+            {
+              "site": "en",
+              "title": "串门",
+              "status": "found"
+            },
+            {
+              "site": "en",
+              "title": "串門",
+              "status": "found"
+            }
+          ]
+        },
+        "tatoeba": {
+          "count": 0,
+          "examples": []
+        }
       },
-      "counted": [],
+      "counted": [
+        "cedict",
+        "wiktionary"
+      ],
       "flags": [],
-      "review": null,
-      "passed": false,
-      "failedAt": 2,
-      "reasons": [
-        "no evidence fetched",
-        "no review"
-      ]
+      "review": {
+        "verdict": "pass",
+        "natural": 4,
+        "labelOk": true,
+        "comment": "Real mainland word (esp. north, often 串门儿); somewhat less common among young urban people but understood everywhere."
+      },
+      "passed": true,
+      "failedAt": null,
+      "reasons": []
     },
     {
       "id": "c-u13-11",
@@ -10605,19 +10798,70 @@
       "hanzi": "打卡",
       "label": "gaul",
       "sources": {
-        "cedict": null,
-        "wiktionary": null,
-        "tatoeba": null
+        "cedict": {
+          "found": true,
+          "form": "打卡",
+          "entries": [
+            {
+              "pinyin": "da3 ka3",
+              "english": [
+                "(of an employee) to clock on (or off); to punch in (or out)",
+                "(on social media) to check in to a location"
+              ]
+            }
+          ],
+          "markers": [],
+          "regionalOnly": false,
+          "vulgar": false
+        },
+        "wiktionary": {
+          "status": "found",
+          "labels": [
+            "originally",
+            "Taiwan",
+            "Internet slang"
+          ],
+          "senses": [
+            [],
+            [
+              "originally",
+              "Taiwan",
+              "Internet slang"
+            ]
+          ],
+          "pages": [
+            {
+              "site": "en",
+              "title": "打卡",
+              "status": "found"
+            }
+          ]
+        },
+        "tatoeba": {
+          "count": 1,
+          "examples": [
+            {
+              "id": 2757111,
+              "text": "下班前別忘了打卡。"
+            }
+          ]
+        }
       },
-      "counted": [],
+      "counted": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
       "flags": [],
-      "review": null,
-      "passed": false,
-      "failedAt": 2,
-      "reasons": [
-        "no evidence fetched",
-        "no review"
-      ]
+      "review": {
+        "verdict": "pass",
+        "natural": 5,
+        "labelOk": true,
+        "comment": "Very current mainland trendy usage (check in at a spot and post it); gaul label right; also means clock in at work."
+      },
+      "passed": true,
+      "failedAt": null,
+      "reasons": []
     }
   ]
 }

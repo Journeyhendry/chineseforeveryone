@@ -960,6 +960,41 @@
       "natural": 5,
       "labelOk": true,
       "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u13-07",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "Mainland-used, but abrupt/brusque and often means walking out or being let go; 我们走吧 is the natural way to say it is time to leave."
+    },
+    {
+      "id": "c-u13-08",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Very common mainland greeting; pinyin and meaning fine; neutral-friendly, fine as santai."
+    },
+    {
+      "id": "c-u13-09",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Still used in mainland chats to close a meeting plan; slightly set-phrase, and stronger than 到时候见 (wait until you come)."
+    },
+    {
+      "id": "c-u13-10",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Real mainland word (esp. north, often 串门儿); somewhat less common among young urban people but understood everywhere."
+    },
+    {
+      "id": "c-u13-11",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Very current mainland trendy usage (check in at a spot and post it); gaul label right; also means clock in at work."
     }
   ]
 }

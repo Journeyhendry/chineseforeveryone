@@ -3,10 +3,10 @@
   "reviewPresent": true,
   "totals": {
     "candidates": 142,
-    "passed": 107,
-    "selected": 94,
-    "failedLayer2": 26,
-    "failedLayer3": 9,
+    "passed": 111,
+    "selected": 98,
+    "failedLayer2": 21,
+    "failedLayer3": 10,
     "dialogs": 20,
     "dialogsPassed": 20
   },
@@ -73,8 +73,8 @@
     },
     "u13": {
       "candidates": 11,
-      "passed": 1,
-      "selected": 1
+      "passed": 5,
+      "selected": 5
     },
     "u14": {
       "candidates": 6,
@@ -112,12 +112,7 @@
       "selected": 5
     }
   },
-  "unitsBelowThree": [
-    {
-      "unit": "u13",
-      "count": 1
-    }
-  ],
+  "unitsBelowThree": [],
   "unitsWithoutDialog": [],
   "failedDialogs": [],
   "dialogs": [

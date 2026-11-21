@@ -13,7 +13,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Menunggu pemilik memilih suara.**
 - [ ] 4b · Audio semua materi
 - [x] 5 · Tampilan dasar — 2026-11-21 — Sonnet (diperiksa Opus) — tema + mode gelap, menu samping (layar lebar) / menu bawah (layar sempit), hash router, teks ID/EN tanpa reload, halaman Pengaturan; axe & tanpa scroll samping di 375/1366 lolos
-- [ ] 5b · Font Mandarin self-host
+- [ ] 5b · Font Mandarin self-host — SEDANG DIKERJAKAN (mulai 2026-11-21 21:43 UTC)
 - [ ] 6 · Layar unit + peta belajar
 - [ ] 6b · Ilustrasi + animasi semua kata
 - [ ] 7 · Empat game

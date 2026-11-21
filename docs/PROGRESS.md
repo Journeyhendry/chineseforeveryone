@@ -7,7 +7,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 1 · Kerangka proyek + deploy — 2026-11-21 — Haiku (diperiksa Opus) — Vite+React+TS, halaman "segera hadir", deploy GitHub Pages sukses
 - [x] 1b · Cek otomatis di CI + favicon — 2026-11-21 — Haiku (diperiksa Opus) — job `check` (typecheck, lint, test) wajib lolos sebelum build/deploy; favicon 学 ungu
 - [x] 2 · Data kata HSK 1 — 2026-11-21 — Sonnet (diperiksa Opus) — 500 kata HSK 3.0 level 1 (pinyin, nada, jenis kata, arti EN CC-CEDICT, arti ID terjemahan mesin), skrip bisa diulang, 540 tes
-- [ ] 3 · Unit bertema + kalimat contoh
+- [ ] 3 · Unit bertema + kalimat contoh — SEDANG DIKERJAKAN (mulai 2026-11-21T17:01Z)
 - [ ] 3b · Versi santai + dialog
 - [ ] 3c · Character sheet + daftar visual
 - [ ] 4a · Contoh suara (butuh pilihan pemilik)

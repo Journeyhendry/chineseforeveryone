@@ -14,7 +14,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [ ] 4b · Audio semua materi
 - [x] 5 · Tampilan dasar — 2026-11-21 — Sonnet (diperiksa Opus) — tema + mode gelap, menu samping (layar lebar) / menu bawah (layar sempit), hash router, teks ID/EN tanpa reload, halaman Pengaturan; axe & tanpa scroll samping di 375/1366 lolos
 - [x] 5b · Font Mandarin self-host — 2026-11-21 — Haiku (diperiksa Opus) — LXGW WenKai disubset & disimpan sendiri (inti 300 huruf HSK 1 ±64 KB per ketebalan, tambahan ±246 KB dimuat hanya bila perlu); Noto Sans SC dari Google Fonts dihapus; `npm run build:font`
-- [ ] 6 · Layar unit + peta belajar
+- [ ] 6 · Layar unit + peta belajar — SEDANG DIKERJAKAN (mulai 2026-11-21T22:41Z)
 - [ ] 6b · Ilustrasi + animasi semua kata
 - [ ] 7 · Empat game
 - [ ] 8 · Progres + ulangan harian + cadangan

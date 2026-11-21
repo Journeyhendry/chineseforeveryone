@@ -34,7 +34,8 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Animasi goresan karakter
 
-- **Hanzi Writer**: [hanziwriter.org](https://hanziwriter.org). Kode bersifat MIT; data goresan berlisensi Arphic Public License.
+- **Hanzi Writer** ([hanziwriter.org](https://hanziwriter.org), [github.com/chanind/hanzi-writer](https://github.com/chanind/hanzi-writer)), paket npm `hanzi-writer@3.7.3`, oleh David Chanin: berlisensi MIT. Dipakai untuk animasi urutan coretan di layar kenalan kata.
+- **Data coretan** dari paket npm [`hanzi-writer-data@2.0.1`](https://github.com/chanind/hanzi-writer-data), diturunkan dari proyek [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) yang memakai font Arphic PL KaitiM GB dan Arphic PL UKai. Berlisensi **Arphic Public License** (teks lengkap: `public/hanzi/ARPHICPL.TXT`; hak cipta © 1999 Arphic Technology Co., Ltd.). Hanya huruf yang muncul di kata HSK 1 dan ungkapan santai yang disalin ke `public/hanzi/` oleh `scripts/build-strokes.ts` (`npm run build:strokes`); isi file tidak diubah. Data dimuat dari website ini sendiri, tidak dari CDN.
 
 ## Font
 

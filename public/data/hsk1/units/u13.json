@@ -1,0 +1,2051 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u13",
+    "order": 13,
+    "slug": "pergi-datang",
+    "title": {
+      "id": "Pergi, datang & bergerak",
+      "en": "Going, coming & moving"
+    },
+    "description": {
+      "id": "Datang, pergi, pulang, masuk, keluar, dan gabungannya.",
+      "en": "Come, go, return, enter, exit and their combinations."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0205",
+      "hanzi": "来",
+      "pinyin": "lái",
+      "syllables": [
+        "lái"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to come",
+        "(used as a substitute for a more specific verb)",
+        "hither (directional complement for motion toward the speaker, as in 回來|回来[hui2 lai5])",
+        "ever since (as in 自古以來|自古以来[zi4 gu3 yi3 lai2])",
+        "for the past (amount of time)",
+        "(prefix) the coming ...; the next ... (as in 來世|来世[lai2 shi4])"
+      ],
+      "ind": [
+        "datang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11502926,
+          "cmn": "你什么时候来？",
+          "author": "Aphima",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1312116,
+            "text": "When will you come?",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12319844,
+            "text": "Kapan kamu datang?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 336234,
+          "cmn": "来我家吧。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3823679,
+            "text": "Come over to my house.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 466246,
+          "cmn": "请跟我来。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 249620,
+            "text": "Come along with me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0302",
+      "hanzi": "去",
+      "pinyin": "qù",
+      "syllables": [
+        "qù"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to go",
+        "to go to (a place)",
+        "(of a time etc) last",
+        "just passed",
+        "to send",
+        "to remove"
+      ],
+      "ind": [
+        "pergi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "去"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 353483,
+          "cmn": "你不去吗？",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 241051,
+            "text": "Won't you go?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 380734,
+          "cmn": "我走路去。",
+          "author": "sherryyyf",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 261669,
+            "text": "I will go on foot.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 389803,
+          "cmn": "你去哪儿？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 416367,
+            "text": "Where are you going?",
+            "author": "phrasemix",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0154",
+      "hanzi": "回",
+      "pinyin": "huí",
+      "syllables": [
+        "huí"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to circle",
+        "to go back",
+        "to turn around",
+        "to answer",
+        "to return",
+        "to revolve"
+      ],
+      "ind": [
+        "kembali",
+        "pulang",
+        "(penghitung untuk kali)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5550146,
+          "cmn": "你去了几回？",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7841344,
+            "text": "How many trips did you make?",
+            "author": "basilhan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12478438,
+          "cmn": "他去去就回。",
+          "author": "DaoSeng",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 290243,
+            "text": "He will be back soon.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10602058,
+          "cmn": "我坐火车回了家。",
+          "author": "DaoSeng",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 262273,
+            "text": "I returned home by train.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0064",
+      "hanzi": "到",
+      "pinyin": "dào",
+      "syllables": [
+        "dào"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to reach; to arrive",
+        "to leave for; to go to",
+        "to (a place); until (a time); up to (a point)",
+        "(verb complement indicating arriving at a place or reaching a point)",
+        "considerate; thoughtful; thorough"
+      ],
+      "ind": [
+        "tiba",
+        "sampai",
+        "ke"
+      ],
+      "idMachine": true,
+      "chars": [
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 767733,
+          "cmn": "他从早吃到晚。",
+          "author": "eastasiastudent",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 767734,
+            "text": "He eats non-stop.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335520,
+          "cmn": "前几天我见到了她。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 33058,
+            "text": "I saw her just the other day.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1865015,
+          "cmn": "他们到了。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9984725,
+            "text": "They have arrived.",
+            "author": "tsp_2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0182",
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "syllables": [
+        "jìn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to go forward",
+        "to advance",
+        "to go in",
+        "to enter",
+        "to put in",
+        "to submit"
+      ],
+      "ind": [
+        "masuk",
+        "maju"
+      ],
+      "idMachine": true,
+      "chars": [
+        "进"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 444694,
+          "cmn": "跟我进房间。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 453006,
+            "text": "Follow me into the room.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5701333,
+          "cmn": "进你的车里。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3636095,
+            "text": "Get into your car.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5967290,
+          "cmn": "她进了房间。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 308492,
+            "text": "She came into the room.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0048",
+      "hanzi": "出",
+      "pinyin": "chū",
+      "syllables": [
+        "chū"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to go out; to come out",
+        "to arise; to occur",
+        "to produce; to yield",
+        "to go beyond; to exceed",
+        "(used after a verb to indicate an outward direction or a positive result)",
+        "classifier for dramas, plays, operas etc"
+      ],
+      "ind": [
+        "keluar",
+        "mengeluarkan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "出"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2300121,
+          "cmn": "我出门了。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301432,
+            "text": "I'm gone.",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2300116,
+          "cmn": "你出门了吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301435,
+            "text": "Did you go out?",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2300112,
+          "cmn": "你们出门了吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301438,
+            "text": "Did you guys go out?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0049",
+      "hanzi": "出来",
+      "pinyin": "chūlái",
+      "syllables": [
+        "chū",
+        "lái"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to come out",
+        "to appear",
+        "to arise"
+      ],
+      "ind": [
+        "keluar (ke arah pembicara)",
+        "muncul"
+      ],
+      "idMachine": true,
+      "chars": [
+        "出",
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 407251,
+          "cmn": "她从车里出来了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 314809,
+            "text": "She got out of the car.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1944807,
+          "cmn": "她从家里跑了出来。",
+          "author": "bigfatpanda",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1570754,
+            "text": "She's running from home.",
+            "author": "fanty",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5983592,
+          "cmn": "你怎么从你的房间里出来？",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3731173,
+            "text": "How did you get out of your room?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0050",
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "syllables": [
+        "chū",
+        "qù"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to go out"
+      ],
+      "ind": [
+        "pergi keluar",
+        "keluar (menjauhi pembicara)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "出",
+        "去"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7812138,
+          "cmn": "她出去了",
+          "author": "watsonjamisont",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 312983,
+            "text": "She went out.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 354509,
+          "cmn": "她很少出去。",
+          "author": "ruicong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 312305,
+            "text": "She seldom goes out.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13822753,
+          "cmn": "弟弟出去了。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13822761,
+            "text": "My little brother has gone out.",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0183",
+      "hanzi": "进来",
+      "pinyin": "jìnlái",
+      "syllables": [
+        "jìn",
+        "lái"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to come in"
+      ],
+      "ind": [
+        "masuk (ke arah pembicara)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "进",
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2680431,
+          "cmn": "你是怎么进来的？",
+          "author": "User5120",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1885925,
+            "text": "How did you get in here?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11243452,
+          "cmn": "你们怎么进来的？",
+          "author": "klzlueylx",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3396701,
+            "text": "How did you guys get in?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 794243,
+          "cmn": "带他进来。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "带",
+          "en": {
+            "tatoebaId": 307895,
+            "text": "Bring him in.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0184",
+      "hanzi": "进去",
+      "pinyin": "jìnqù",
+      "syllables": [
+        "jìn",
+        "qù"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to go in"
+      ],
+      "ind": [
+        "masuk (menjauhi pembicara)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "进",
+        "去"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 333350,
+          "cmn": "让我进去。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "让",
+          "en": {
+            "tatoebaId": 277466,
+            "text": "Let me in.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9415046,
+          "cmn": "他自己进去。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": "自己",
+          "en": {
+            "tatoebaId": 7382560,
+            "text": "He went in by himself.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5568064,
+          "cmn": "汤姆进去我家里了。",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": "汤姆",
+          "en": {
+            "tatoebaId": 5568061,
+            "text": "Tom entered my house.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0158",
+      "hanzi": "回来",
+      "pinyin": "huílái",
+      "syllables": [
+        "huí",
+        "lái"
+      ],
+      "tones": [
+        2,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to return; to come back"
+      ],
+      "ind": [
+        "pulang",
+        "kembali (ke arah pembicara)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回",
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5580842,
+          "cmn": "他回来了。",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6610868,
+            "text": "He's back.",
+            "author": "Eccles17",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 11633742,
+            "text": "Dia kembali.",
+            "author": "Pacific",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 591712,
+          "cmn": "我回来了。",
+          "author": "ver",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 564159,
+            "text": "I'm back.",
+            "author": "darinmex",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5580840,
+          "cmn": "你回来了。",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3282474,
+            "text": "You returned.",
+            "author": "shekitten",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0159",
+      "hanzi": "回去",
+      "pinyin": "huíqù",
+      "syllables": [
+        "huí",
+        "qù"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to return",
+        "to go back"
+      ],
+      "ind": [
+        "pulang",
+        "kembali (menjauhi pembicara)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回",
+        "去"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 6111870,
+          "cmn": "我不回去。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2547698,
+            "text": "I'm not turning back.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13153747,
+          "cmn": "回去找他。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11980860,
+            "text": "Come back to him.",
+            "author": "LeeSooHa",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9797473,
+          "cmn": "让我们回去。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": "让",
+          "en": {
+            "tatoebaId": 8920646,
+            "text": "Let us back in.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0206",
+      "hanzi": "来到",
+      "pinyin": "láidào",
+      "syllables": [
+        "lái",
+        "dào"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to arrive; to come"
+      ],
+      "ind": [
+        "tiba",
+        "datang ke"
+      ],
+      "idMachine": true,
+      "chars": [
+        "来",
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1753035,
+          "cmn": "欢迎来到我们家。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": "欢迎",
+          "en": {
+            "tatoebaId": 247442,
+            "text": "Welcome to our home.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8591238,
+          "cmn": "我们的火车准时来到。",
+          "author": "easononizuka",
+          "license": "CC BY 2.0 FR",
+          "outside": "准时",
+          "en": {
+            "tatoebaId": 247704,
+            "text": "Our train arrived on time.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1397135,
+          "cmn": "她18岁的时候来到东京。",
+          "author": "mtdot",
+          "license": "CC BY 2.0 FR",
+          "outside": "东京",
+          "en": {
+            "tatoebaId": 431139,
+            "text": "She came to Tokyo at the age of 18.",
+            "author": "witbrock",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0156",
+      "hanzi": "回到",
+      "pinyin": "huídào",
+      "syllables": [
+        "huí",
+        "dào"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to return to"
+      ],
+      "ind": [
+        "kembali ke",
+        "pulang ke"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回",
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14038213,
+          "cmn": "我回到了过去。",
+          "author": "jan_OkulaJu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 14038214,
+            "text": "I've gone back to the past.",
+            "author": "jan_OkulaJu",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335119,
+          "cmn": "他刚回到家。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "刚",
+          "en": {
+            "tatoebaId": 995359,
+            "text": "He just got home.",
+            "author": "NickC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 834384,
+          "cmn": "回到你的座位。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": "座位",
+          "en": {
+            "tatoebaId": 17013,
+            "text": "Go back to your seat.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0287",
+      "hanzi": "起",
+      "pinyin": "qǐ",
+      "syllables": [
+        "qǐ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to rise",
+        "to raise",
+        "to get up",
+        "to set out",
+        "to start",
+        "to appear"
+      ],
+      "ind": [
+        "bangun",
+        "naik",
+        "mulai"
+      ],
+      "idMachine": true,
+      "chars": [
+        "起"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 336654,
+          "cmn": "他不早起。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 300824,
+            "text": "He does not get up early.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11509565,
+          "cmn": "我不早起。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 259166,
+            "text": "I do not get up early.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 336851,
+          "cmn": "他没有早起。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 300825,
+            "text": "He did not get up early.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0289",
+      "hanzi": "起来",
+      "pinyin": "qǐlái",
+      "syllables": [
+        "qǐ",
+        "lái"
+      ],
+      "tones": [
+        3,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to stand up; to get up",
+        "(after a verb) indicating the beginning and continuation of an action or a state",
+        "indicating an upward movement (e.g. after 站[zhan4])",
+        "indicating completion",
+        "(after a perception verb, e.g. 看[kan4]) expressing preliminary judgment"
+      ],
+      "ind": [
+        "berdiri",
+        "bangun",
+        "(penanda mulai atau naik)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "起",
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 463883,
+          "cmn": "跑到山里躲起来。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "躲",
+          "en": {
+            "tatoebaId": 280103,
+            "text": "Run and hide in the mountains.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 651229,
+          "cmn": "两个男孩儿吵起来了。",
+          "author": "peipei",
+          "license": "CC BY 2.0 FR",
+          "outside": "吵",
+          "en": {
+            "tatoebaId": 7222068,
+            "text": "The two boys are quarreling.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1808254,
+          "cmn": "看起来不错。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1808249,
+            "text": "It looks good.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0131",
+      "hanzi": "过",
+      "pinyin": "guò",
+      "syllables": [
+        "guò"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to cross",
+        "to go over",
+        "to pass (time)",
+        "to celebrate (a holiday)",
+        "to live",
+        "to get along"
+      ],
+      "ind": [
+        "melewati",
+        "menghabiskan (waktu)",
+        "merayakan",
+        "(penanda pengalaman)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "过"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4270097,
+          "cmn": "他不过是个孩子。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 33043,
+            "text": "He is but a child.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 382318,
+          "cmn": "吃过了没？",
+          "author": "cburgmer",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 382317,
+            "text": "Have you eaten yet?",
+            "author": "cburgmer",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1404406,
+          "cmn": "你做过没？",
+          "author": "sirpoot",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 770402,
+            "text": "Have you ever done it?",
+            "author": "marloncori",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0087",
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "syllables": [
+        "dòng"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "(of sth) to move",
+        "to set in movement",
+        "to displace",
+        "to touch",
+        "to make use of",
+        "to stir (emotions)"
+      ],
+      "ind": [
+        "bergerak",
+        "menggerakkan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "动"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 348266,
+          "cmn": "我走不动了。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 31628,
+            "text": "I can't walk any farther.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10460422,
+          "cmn": "什么都没动。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8481072,
+            "text": "Nothing moved.",
+            "author": "shekitten",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332468,
+          "cmn": "待在那儿别动。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "待",
+          "en": {
+            "tatoebaId": 4577209,
+            "text": "Remain there and don't move.",
+            "author": "smomo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0088",
+      "hanzi": "动作",
+      "pinyin": "dòngzuò",
+      "syllables": [
+        "dòng",
+        "zuò"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "movement; motion; action",
+        "to act; to move"
+      ],
+      "ind": [
+        "gerakan",
+        "aksi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "动",
+        "作"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 348588,
+          "cmn": "松鼠动作很快。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": "松鼠",
+          "en": {
+            "tatoebaId": 29688,
+            "text": "Squirrels are quick of movement.",
+            "author": "Mar1L",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1894685,
+          "cmn": "要想赶上火车就动作快点。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": "赶上",
+          "en": {
+            "tatoebaId": 688004,
+            "text": "You'll have to get a move on if you want to catch the train.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0173",
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "syllables": [
+        "jiàn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to see",
+        "to meet",
+        "to appear (to be sth)",
+        "to interview",
+        "opinion",
+        "view"
+      ],
+      "ind": [
+        "melihat",
+        "bertemu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 335520,
+          "cmn": "前几天我见到了她。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 33058,
+            "text": "I saw her just the other day.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 337874,
+          "cmn": "一会儿见！",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32672,
+            "text": "See you soon!",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 340647,
+          "cmn": "下个星期见！",
+          "author": "aaroned",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32557,
+            "text": "See you next week!",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0174",
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "syllables": [
+        "jiàn",
+        "miàn"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to meet; to see each other"
+      ],
+      "ind": [
+        "bertemu",
+        "berjumpa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "见",
+        "面"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7768148,
+          "cmn": "我们在哪里见面？",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4656828,
+            "text": "Where are we meeting?",
+            "author": "AqQoyriq_1",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 933959,
+          "cmn": "我将明天和他见面。",
+          "author": "zhaoxin",
+          "license": "CC BY 2.0 FR",
+          "outside": "将",
+          "en": {
+            "tatoebaId": 509196,
+            "text": "I'll meet him tomorrow.",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9955775,
+          "cmn": "让我们在一点见面。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "让",
+          "en": {
+            "tatoebaId": 73173,
+            "text": "Let's meet at one o'clock.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0065",
+      "hanzi": "得到",
+      "pinyin": "dédào",
+      "syllables": [
+        "dé",
+        "dào"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to get; to obtain; to receive"
+      ],
+      "ind": [
+        "mendapat",
+        "memperoleh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "得",
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11702403,
+          "cmn": "我们什么也没有得到。",
+          "author": "Jokubas",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12273120,
+            "text": "We got absolutely nothing.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 396173,
+          "cmn": "你从哪得到它的？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "它",
+          "en": {
+            "tatoebaId": 38196,
+            "text": "Where did you get it?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 833145,
+          "cmn": "他英文得到了九十分。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": "英文",
+          "en": {
+            "tatoebaId": 418443,
+            "text": "He got 90% in English.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u13-04",
+      "unit": "u13",
+      "hanzi": "撤",
+      "pinyin": "chè",
+      "syllables": [
+        "chè"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "走",
+        "wordIds": [
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "cabut",
+        "en": "to head off (let's go)"
+      },
+      "situation": {
+        "id": "Mengajak teman pergi dari suatu tempat, \"ayo cabut\".",
+        "en": "Telling friends it is time to leave, \"let us go\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-08",
+      "unit": "u13",
+      "hanzi": "好久不见",
+      "pinyin": "hǎo jiǔ bù jiàn",
+      "syllables": [
+        "hǎo",
+        "jiǔ",
+        "bù",
+        "jiàn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多天没见面",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094",
+          "L1-0359",
+          "L1-0232",
+          "L1-0174"
+        ]
+      },
+      "meaning": {
+        "id": "lama nggak ketemu",
+        "en": "long time no see"
+      },
+      "situation": {
+        "id": "Menyapa teman yang sudah lama tidak bertemu.",
+        "en": "Greeting a friend you have not seen for a long time."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-09",
+      "unit": "u13",
+      "hanzi": "不见不散",
+      "pinyin": "bù jiàn bù sàn",
+      "syllables": [
+        "bù",
+        "jiàn",
+        "bù",
+        "sàn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "到时候见",
+        "wordIds": [
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
+        ]
+      },
+      "meaning": {
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
+      },
+      "situation": {
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-10",
+      "unit": "u13",
+      "hanzi": "串门",
+      "pinyin": "chuàn mén",
+      "syllables": [
+        "chuàn",
+        "mén"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去朋友家",
+        "wordIds": [
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
+        ]
+      },
+      "meaning": {
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
+      },
+      "situation": {
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-11",
+      "unit": "u13",
+      "hanzi": "打卡",
+      "pinyin": "dǎ kǎ",
+      "syllables": [
+        "dǎ",
+        "kǎ"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "去看看",
+        "wordIds": [
+          "L1-0302",
+          "L1-0192"
+        ]
+      },
+      "meaning": {
+        "id": "mampir (ke tempat hits)",
+        "en": "to check in at a trendy spot"
+      },
+      "situation": {
+        "id": "Pergi ke tempat yang sedang viral lalu foto dan unggah ke media sosial.",
+        "en": "Visiting a trendy place, taking photos and posting them online."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u10-01",
+      "unit": "u10",
+      "hanzi": "逛街",
+      "pinyin": "guàng jiē",
+      "syllables": [
+        "guàng",
+        "jiē"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去商店",
+        "wordIds": [
+          "L1-0302",
+          "L1-0314"
+        ]
+      },
+      "meaning": {
+        "id": "jalan-jalan ke toko, cuci mata",
+        "en": "to go shopping, window-shop"
+      },
+      "situation": {
+        "id": "Mengajak teman jalan-jalan di pertokoan.",
+        "en": "Inviting a friend to wander around the shops."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-05",
+      "unit": "u10",
+      "hanzi": "出门",
+      "pinyin": "chū mén",
+      "syllables": [
+        "chū",
+        "mén"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "出去",
+        "wordIds": [
+          "L1-0050"
+        ]
+      },
+      "meaning": {
+        "id": "keluar rumah",
+        "en": "to go out (of the house)"
+      },
+      "situation": {
+        "id": "Bilang sedang atau akan keluar rumah.",
+        "en": "Saying you are going out of the house."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-04",
+      "unit": "u14",
+      "hanzi": "挂科",
+      "pinyin": "guà kē",
+      "syllables": [
+        "guà",
+        "kē"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "考试没过",
+        "wordIds": [
+          "L1-0197",
+          "L1-0232",
+          "L1-0131"
+        ]
+      },
+      "meaning": {
+        "id": "nggak lulus mata kuliah",
+        "en": "to fail a course"
+      },
+      "situation": {
+        "id": "Mahasiswa bilang tidak lulus satu mata kuliah.",
+        "en": "A student saying they failed a course."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": {
+    "id": "d-u13",
+    "title": {
+      "id": "Mau ke mana?",
+      "en": "Where are you going?"
+    },
+    "situation": {
+      "id": "Sore hari, Kakak bersiap keluar untuk bertemu teman. Ibu bertanya kapan dia pulang.",
+      "en": "In the late afternoon, big brother is getting ready to meet friends. Mom asks when he'll be back."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "你去哪儿？",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "去",
+            "pinyin": "qù"
+          },
+          {
+            "text": "哪儿",
+            "pinyin": "nǎr"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Where are you going?",
+        "id": "Kamu mau ke mana?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "我出去见朋友。",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "出去",
+            "pinyin": "chūqù"
+          },
+          {
+            "text": "见",
+            "pinyin": "jiàn"
+          },
+          {
+            "text": "朋友",
+            "pinyin": "péngyou"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "I'm going out to see friends.",
+        "id": "Aku keluar ketemu teman.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "晚上回来吃饭吗？",
+        "tokens": [
+          {
+            "text": "晚上",
+            "pinyin": "wǎnshang"
+          },
+          {
+            "text": "回来",
+            "pinyin": "huílái"
+          },
+          {
+            "text": "吃饭",
+            "pinyin": "chīfàn"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Are you coming back for dinner?",
+        "id": "Malam pulang makan?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "不回来了。回头见！",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "回来",
+            "pinyin": "huílái"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "回头见",
+            "pinyin": "huí tóu jiàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "No, I won't be back. See you later!",
+        "id": "Nggak pulang. Sampai nanti!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "好，早一点儿回来。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "早",
+            "pinyin": "zǎo"
+          },
+          {
+            "text": "一点儿",
+            "pinyin": "yīdiǎnr"
+          },
+          {
+            "text": "回来",
+            "pinyin": "huílái"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, come back a bit early.",
+        "id": "Oke, pulangnya jangan terlalu malam.",
+        "machine": true
+      }
+    ]
+  }
+}

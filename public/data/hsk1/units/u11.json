@@ -1,0 +1,2131 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u11",
+    "order": 11,
+    "slug": "rutinitas",
+    "title": {
+      "id": "Kegiatan sehari-hari",
+      "en": "Daily routine"
+    },
+    "description": {
+      "id": "Bangun, tidur, mencuci, berpakaian, membuka, menutup, mencari, dan membantu.",
+      "en": "Getting up, sleeping, washing, dressing, opening, closing, looking for and helping."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0288",
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "syllables": [
+        "qǐ",
+        "chuáng"
+      ],
+      "tones": [
+        3,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to get out of bed; to get up"
+      ],
+      "ind": [
+        "bangun tidur",
+        "bangun"
+      ],
+      "idMachine": true,
+      "chars": [
+        "起",
+        "床"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5555832,
+          "cmn": "我起床早。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 259164,
+            "text": "I got up early.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 424526,
+          "cmn": "你几点起床？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 24579,
+            "text": "What time do you get up?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 593129,
+          "cmn": "她晚了起床。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 313150,
+            "text": "She got up late.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0347",
+      "hanzi": "睡",
+      "pinyin": "shuì",
+      "syllables": [
+        "shuì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to sleep",
+        "to lie down"
+      ],
+      "ind": [
+        "tidur"
+      ],
+      "idMachine": true,
+      "chars": [
+        "睡"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3003775,
+          "cmn": "我睡不好。",
+          "author": "egg0073",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 29912,
+            "text": "I can't sleep well.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9433041,
+          "cmn": "你睡了吗？",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1885965,
+            "text": "Have you slept?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9007523,
+          "cmn": "她睡了几小时。",
+          "author": "jacintoo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1532049,
+            "text": "She slept for a few hours.",
+            "author": "LittleBoy",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0348",
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "syllables": [
+        "shuì",
+        "jiào"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to go to bed",
+        "to sleep"
+      ],
+      "ind": [
+        "tidur"
+      ],
+      "idMachine": true,
+      "chars": [
+        "睡",
+        "觉"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5580849,
+          "cmn": "我在睡觉。",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2203803,
+            "text": "I'm sleeping.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13732833,
+            "text": "Aku sedang tidur.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 1877244,
+          "cmn": "我晚上睡觉很早。",
+          "author": "street",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 324011,
+            "text": "I go to bed early at night.",
+            "author": "CN",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2357582,
+          "cmn": "你睡觉吗？",
+          "author": "anndiana",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2244966,
+            "text": "Are you sleeping?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0386",
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "syllables": [
+        "xǐ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to wash; to bathe",
+        "to develop (photographs)",
+        "to shuffle (cards etc)",
+        "to erase (a recording)"
+      ],
+      "ind": [
+        "mencuci"
+      ],
+      "idMachine": true,
+      "chars": [
+        "洗"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2300033,
+          "cmn": "我洗好了。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301461,
+            "text": "I'm all washed up.",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 334417,
+          "cmn": "洗后弄平。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "弄平",
+          "en": {
+            "tatoebaId": 8930879,
+            "text": "After washing, de-wrinkle it.",
+            "author": "Ag12x",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5113315,
+          "cmn": "我洗手了。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2206395,
+            "text": "I washed my hands.",
+            "author": "Ploomich",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0051",
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "syllables": [
+        "chuān"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to wear",
+        "to put on",
+        "to dress",
+        "to bore through",
+        "to pierce",
+        "to perforate"
+      ],
+      "ind": [
+        "memakai (pakaian)",
+        "mengenakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "穿"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 13210529,
+          "cmn": "穿上衣服。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5431156,
+            "text": "Put on some clothes.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13210530,
+          "cmn": "穿上衣服！",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9756889,
+            "text": "Dress up!",
+            "author": "Nylez",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1516142,
+          "cmn": "她帮她女儿穿好衣服。",
+          "author": "gonnastop",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1115745,
+            "text": "She helped her daughter get dressed.",
+            "author": "CS",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0428",
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "syllables": [
+        "yī",
+        "fu"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "clothes"
+      ],
+      "ind": [
+        "pakaian",
+        "baju"
+      ],
+      "idMachine": true,
+      "chars": [
+        "衣",
+        "服"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 13210529,
+          "cmn": "穿上衣服。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5431156,
+            "text": "Put on some clothes.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13210530,
+          "cmn": "穿上衣服！",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9756889,
+            "text": "Dress up!",
+            "author": "Nylez",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1516142,
+          "cmn": "她帮她女儿穿好衣服。",
+          "author": "gonnastop",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1115745,
+            "text": "She helped her daughter get dressed.",
+            "author": "CS",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0052",
+      "hanzi": "床",
+      "pinyin": "chuáng",
+      "syllables": [
+        "chuáng"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "bed; couch (furniture that one can lie down on)",
+        "bed; bottom (of rivers, oceans, gardens etc)",
+        "frame; chassis",
+        "classifier for blankets, quilts etc"
+      ],
+      "ind": [
+        "tempat tidur",
+        "ranjang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "床"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2309633,
+          "cmn": "我在床上。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2311273,
+            "text": "I'm in bed.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5554058,
+          "cmn": "我十一点上床。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 73354,
+            "text": "I go to bed at eleven.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7769300,
+          "cmn": "我不在床上睡觉。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2431669,
+            "text": "I don't sleep in a bed.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0188",
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "syllables": [
+        "kāi"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to open (transitive or intransitive)",
+        "(of ships, vehicles, troops etc) to start",
+        "to turn on; to put in operation; to operate; to run",
+        "to boil",
+        "to write out (a prescription, check, invoice etc)",
+        "(directional complement) away; off"
+      ],
+      "ind": [
+        "membuka",
+        "mengemudikan",
+        "menyalakan",
+        "mengadakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "开"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 335134,
+          "cmn": "什么时候开门？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 24558,
+            "text": "What time does it open?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12686305,
+          "cmn": "下次会议10月20日开。",
+          "author": "soueihin",
+          "license": "CC BY 2.0 FR",
+          "outside": "会议",
+          "en": {
+            "tatoebaId": 11837478,
+            "text": "The next meeting will be on the twentieth of October.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9409627,
+          "cmn": "他开口了。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1564976,
+            "text": "He spoke.",
+            "author": "marcelostockle",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0059",
+      "hanzi": "打开",
+      "pinyin": "dǎkāi",
+      "syllables": [
+        "dǎ",
+        "kāi"
+      ],
+      "tones": [
+        3,
+        1
+      ],
+      "pos": [],
+      "en": [
+        "to open",
+        "to show (a ticket)",
+        "to turn on",
+        "to switch on"
+      ],
+      "ind": [
+        "membuka",
+        "menyalakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "打",
+        "开"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 471198,
+          "cmn": "你用什么打开的？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16553,
+            "text": "What did you open it with?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 432984,
+          "cmn": "请打开箱子。",
+          "author": "aliene",
+          "license": "CC BY 2.0 FR",
+          "outside": "箱子",
+          "en": {
+            "tatoebaId": 57490,
+            "text": "Please open this box.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1878381,
+          "cmn": "关上门，打开窗！",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": "窗",
+          "en": {
+            "tatoebaId": 1609287,
+            "text": "Close the door and open the window!",
+            "author": "marcelostockle",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0125",
+      "hanzi": "关",
+      "pinyin": "guān",
+      "syllables": [
+        "guān"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "mountain pass",
+        "to close; to shut; to turn off",
+        "to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
+        "to concern; to involve"
+      ],
+      "ind": [
+        "menutup",
+        "mematikan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "关"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2233632,
+          "cmn": "他关了门。",
+          "author": "aruhito",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 478255,
+            "text": "He closed the door.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12884221,
+          "cmn": "门没有关好。",
+          "author": "Josephlingo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12884223,
+            "text": "The door is not closed properly.",
+            "author": "Josephlingo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1785977,
+          "cmn": "你们几点关门？",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 503520,
+            "text": "What time do you close?",
+            "author": "darinmex",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0126",
+      "hanzi": "关上",
+      "pinyin": "guānshang",
+      "syllables": [
+        "guān",
+        "shang"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "to close (a door)",
+        "to turn off (light, electrical equipment etc)"
+      ],
+      "ind": [
+        "menutup",
+        "mematikan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "关",
+        "上"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3976893,
+          "cmn": "关上窗户！",
+          "author": "xinyuan0604",
+          "license": "CC BY 2.0 FR",
+          "outside": "窗户",
+          "en": {
+            "tatoebaId": 274237,
+            "text": "Close the window.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5691276,
+          "cmn": "关上见鬼的门！",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "见鬼",
+          "en": {
+            "tatoebaId": 1042721,
+            "text": "Close the damned door!",
+            "author": "GPHemsley",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1878381,
+          "cmn": "关上门，打开窗！",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": "窗",
+          "en": {
+            "tatoebaId": 1609287,
+            "text": "Close the door and open the window!",
+            "author": "marcelostockle",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0103",
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "syllables": [
+        "fàng"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to put",
+        "to place",
+        "to release",
+        "to free",
+        "to let go",
+        "to let out"
+      ],
+      "ind": [
+        "menaruh",
+        "meletakkan",
+        "melepaskan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "放"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12569618,
+          "cmn": "我放不下。",
+          "author": "lnvq",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2476746,
+            "text": "I couldn't let it go.",
+            "author": "arnxy20",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9135872,
+          "cmn": "把刀放下！",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": "把刀",
+          "en": {
+            "tatoebaId": 2245412,
+            "text": "Drop the knife!",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 420002,
+          "cmn": "轻一点儿放！",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": "轻",
+          "en": {
+            "tatoebaId": 8264662,
+            "text": "Put it down lightly!",
+            "author": "francaisr0wlet",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0249",
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "syllables": [
+        "ná"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to hold",
+        "to seize",
+        "to catch",
+        "to apprehend",
+        "to take",
+        "(used in the same way as 把[ba3]: to mark the following noun as a direct object)"
+      ],
+      "ind": [
+        "mengambil",
+        "memegang",
+        "membawa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "拿"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 332742,
+          "cmn": "我错拿了你的雨伞。",
+          "author": "popolady",
+          "license": "CC BY 2.0 FR",
+          "outside": "雨伞",
+          "en": {
+            "tatoebaId": 17401,
+            "text": "I took your umbrella by mistake.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 389789,
+          "cmn": "拿本书读！",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1803,
+            "text": "Take a book and read it.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 819360,
+          "cmn": "拿你想要的。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 37992,
+            "text": "Take whichever you want.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0440",
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "syllables": [
+        "yòng"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to use; to make use of; to employ",
+        "(coverb) with; using",
+        "to need; to have to (usu. used in the negative or in questions)",
+        "usefulness; utility",
+        "(bound form) expense; outlay",
+        "(courteous) to eat; to drink"
+      ],
+      "ind": [
+        "memakai",
+        "menggunakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "用"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9490109,
+          "cmn": "请用这个。",
+          "author": "jin1",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1954278,
+            "text": "Use this.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10266087,
+          "cmn": "这一点用都没。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1785974,
+            "text": "That is completely useless.",
+            "author": "sadhen",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 471198,
+          "cmn": "你用什么打开的？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16553,
+            "text": "What did you open it with?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0446",
+      "hanzi": "有用",
+      "pinyin": "yǒuyòng",
+      "syllables": [
+        "yǒu",
+        "yòng"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "useful"
+      ],
+      "ind": [
+        "berguna",
+        "bermanfaat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "有",
+        "用"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 440111,
+          "cmn": "这个网站很有用。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "网站",
+          "en": {
+            "tatoebaId": 440110,
+            "text": "This website is very useful.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1397334,
+          "cmn": "电很有用。",
+          "author": "mtdot",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 279145,
+            "text": "Electricity is very useful.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9953347,
+          "cmn": "真的有用。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2032690,
+            "text": "It really works.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0112",
+      "hanzi": "干净",
+      "pinyin": "gānjìng",
+      "syllables": [
+        "gān",
+        "jìng"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "clean",
+        "neat"
+      ],
+      "ind": [
+        "bersih"
+      ],
+      "idMachine": true,
+      "chars": [
+        "干",
+        "净"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 6956997,
+          "cmn": "杯子里的水干净吗？",
+          "author": "znc",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6841939,
+            "text": "Is the water in the glass clean?",
+            "author": "lev4uk_pavel2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1411704,
+          "cmn": "浴室干净吗？",
+          "author": "asosan",
+          "license": "CC BY 2.0 FR",
+          "outside": "浴室",
+          "en": {
+            "tatoebaId": 324958,
+            "text": "Is the bath clean?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11553983,
+          "cmn": "厨房不干净。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": "厨房",
+          "en": {
+            "tatoebaId": 11553975,
+            "text": "The kitchen is not clean.",
+            "author": "megamanenm",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0500",
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "syllables": [
+        "zuò"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to make; to produce",
+        "to write; to compose",
+        "to do; to engage in; to hold (a party etc)",
+        "(of a person) to be (an intermediary, a good student etc); to become (husband and wife, friends etc)",
+        "(of a thing) to serve as; to be used for",
+        "to assume (an air or manner)"
+      ],
+      "ind": [
+        "membuat",
+        "melakukan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "做"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 336262,
+          "cmn": "现在就做！",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12436924,
+            "text": "Do it now!",
+            "author": "Miktsoanit",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2307383,
+          "cmn": "饭做好了。",
+          "author": "iMaple",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1806424,
+            "text": "The food is ready.",
+            "author": "Ameer",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961159,
+          "cmn": "饭做好了！",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1806424,
+            "text": "The food is ready.",
+            "author": "Ameer",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0013",
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "syllables": [
+        "bāng"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to help",
+        "to assist",
+        "to support",
+        "for sb (i.e. as a help)",
+        "hired (as worker)",
+        "side (of pail, boat etc)"
+      ],
+      "ind": [
+        "membantu",
+        "menolong"
+      ],
+      "idMachine": true,
+      "chars": [
+        "帮"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 344180,
+          "cmn": "昨天我帮了我爸爸。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 257806,
+            "text": "I helped my father yesterday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12816289,
+            "text": "Kemarin aku membantu ayahku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 332800,
+          "cmn": "帮我一下。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 266065,
+            "text": "Help me.",
+            "author": "Zifre",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2411931,
+          "cmn": "谁帮帮她？",
+          "author": "User5120",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 276385,
+            "text": "Who helps her?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0014",
+      "hanzi": "帮忙",
+      "pinyin": "bāngmáng",
+      "syllables": [
+        "bāng",
+        "máng"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to help",
+        "to lend a hand",
+        "to do a favor",
+        "to do a good turn"
+      ],
+      "ind": [
+        "membantu",
+        "menolong"
+      ],
+      "idMachine": true,
+      "chars": [
+        "帮",
+        "忙"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7781732,
+          "cmn": "他们不帮忙。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2243102,
+            "text": "They don't help.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 396374,
+          "cmn": "我先谢谢你的帮忙。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 54482,
+            "text": "Thank you in advance for your help.",
+            "author": "kebukebu",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9958568,
+          "cmn": "我必须帮忙。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "必须",
+          "en": {
+            "tatoebaId": 2360532,
+            "text": "I have to help.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0462",
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "syllables": [
+        "zhǎo"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to try to find",
+        "to look for",
+        "to call on sb",
+        "to find",
+        "to seek",
+        "to return"
+      ],
+      "ind": [
+        "mencari",
+        "menemui"
+      ],
+      "idMachine": true,
+      "chars": [
+        "找"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2062938,
+          "cmn": "有人找你。",
+          "author": "mrtaistoi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3349412,
+            "text": "There is someone looking for you.",
+            "author": "mrtaistoi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1188965,
+          "cmn": "你们在找什么？",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16255,
+            "text": "What are you looking for?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332834,
+          "cmn": "这是找零。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 540287,
+            "text": "Here's the change.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0463",
+      "hanzi": "找到",
+      "pinyin": "zhǎodào",
+      "syllables": [
+        "zhǎo",
+        "dào"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to find"
+      ],
+      "ind": [
+        "menemukan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "找",
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4270133,
+          "cmn": "你怎么找到我的房子的？",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 38354,
+            "text": "How did you find my house?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4763885,
+          "cmn": "我们找到她了。",
+          "author": "billt_estates",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3884360,
+            "text": "We found her.",
+            "author": "raggione",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5554541,
+          "cmn": "请帮我找到他。",
+          "author": "Alieen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3918139,
+            "text": "I need you to find him.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0068",
+      "hanzi": "等",
+      "pinyin": "děng",
+      "syllables": [
+        "děng"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to wait for; to await",
+        "by the time; when; till",
+        "and so on; etc.; et al.",
+        "(bound form) class; rank; grade",
+        "(bound form) equal to; same as",
+        "(used to end an enumeration)"
+      ],
+      "ind": [
+        "menunggu",
+        "dan seterusnya"
+      ],
+      "idMachine": true,
+      "chars": [
+        "等"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3367336,
+          "cmn": "时间不等人。",
+          "author": "go_oo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1744302,
+            "text": "Time waits for no one.",
+            "author": "belgavox",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 420070,
+          "cmn": "我不等谁。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 822097,
+            "text": "I'm not waiting for anyone.",
+            "author": "U2FS",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1227093,
+          "cmn": "我在等他。",
+          "author": "tsayng",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 260962,
+            "text": "I'm waiting for him.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u11-01",
+      "unit": "u11",
+      "hanzi": "赖床",
+      "pinyin": "lài chuáng",
+      "syllables": [
+        "lài",
+        "chuáng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不起床",
+        "wordIds": [
+          "L1-0034",
+          "L1-0288"
+        ]
+      },
+      "meaning": {
+        "id": "malas bangun",
+        "en": "to lie in bed (not get up)"
+      },
+      "situation": {
+        "id": "Bercanda tentang orang yang tidak mau bangun pagi.",
+        "en": "Joking about someone who will not get out of bed."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-02",
+      "unit": "u11",
+      "hanzi": "睡懒觉",
+      "pinyin": "shuì lǎn jiào",
+      "syllables": [
+        "shuì",
+        "lǎn",
+        "jiào"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "睡觉",
+        "wordIds": [
+          "L1-0348"
+        ]
+      },
+      "meaning": {
+        "id": "tidur sampai siang",
+        "en": "to sleep in"
+      },
+      "situation": {
+        "id": "Bilang bangun siang saat hari libur.",
+        "en": "Saying you slept in on a day off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-03",
+      "unit": "u11",
+      "hanzi": "搞定",
+      "pinyin": "gǎo dìng",
+      "syllables": [
+        "gǎo",
+        "dìng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "做好",
+        "wordIds": [
+          "L1-0500",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "beres!",
+        "en": "done, sorted"
+      },
+      "situation": {
+        "id": "Bilang pekerjaan sudah selesai dengan baik.",
+        "en": "Saying a job is done and sorted."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-04",
+      "unit": "u11",
+      "hanzi": "弄",
+      "pinyin": "nòng",
+      "syllables": [
+        "nòng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "做",
+        "wordIds": [
+          "L1-0500"
+        ]
+      },
+      "meaning": {
+        "id": "bikin, urus",
+        "en": "to do, to fix"
+      },
+      "situation": {
+        "id": "Mengganti kata \"melakukan/membuat\" dalam obrolan, misalnya membereskan barang.",
+        "en": "A general \"do/make\" in conversation, e.g. fixing or sorting things."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-06",
+      "unit": "u11",
+      "hanzi": "收拾",
+      "pinyin": "shōu shi",
+      "syllables": [
+        "shōu",
+        "shi"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "放好",
+        "wordIds": [
+          "L1-0103",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "beres-beres",
+        "en": "to tidy up"
+      },
+      "situation": {
+        "id": "Membereskan kamar atau barang.",
+        "en": "Tidying up a room or things."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u06-04",
+      "unit": "u06",
+      "hanzi": "打包",
+      "pinyin": "dǎ bāo",
+      "syllables": [
+        "dǎ",
+        "bāo"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "拿走",
+        "wordIds": [
+          "L1-0249",
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "dibungkus",
+        "en": "to take away, doggy bag"
+      },
+      "situation": {
+        "id": "Minta sisa makanan atau pesanan dibungkus.",
+        "en": "Asking for leftovers or an order to be packed to go."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-02",
+      "unit": "u08",
+      "hanzi": "稍等",
+      "pinyin": "shāo děng",
+      "syllables": [
+        "shāo",
+        "děng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "等一下儿",
+        "wordIds": [
+          "L1-0068",
+          "L1-0434"
+        ]
+      },
+      "meaning": {
+        "id": "tunggu sebentar",
+        "en": "just a moment"
+      },
+      "situation": {
+        "id": "Pelayan atau penjual minta kamu menunggu sebentar.",
+        "en": "A waiter or seller asking you to wait a moment."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-07",
+      "unit": "u08",
+      "hanzi": "熬夜",
+      "pinyin": "áo yè",
+      "syllables": [
+        "áo",
+        "yè"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "晚睡",
+        "wordIds": [
+          "L1-0372",
+          "L1-0347"
+        ]
+      },
+      "meaning": {
+        "id": "begadang",
+        "en": "to stay up late"
+      },
+      "situation": {
+        "id": "Bilang tidur larut karena kerja, belajar, atau main HP.",
+        "en": "Saying you stayed up late for work, study or your phone."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": {
+    "id": "d-u11",
+    "title": {
+      "id": "Sabtu pagi",
+      "en": "Saturday morning"
+    },
+    "situation": {
+      "id": "Sabtu pagi, Adik masih di tempat tidur. Ibu menyuruhnya bangun dan merapikan bajunya sebelum sarapan.",
+      "en": "Saturday morning, little sister is still in bed. Mom tells her to get up and put her clothes away before breakfast."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "九点了，别睡懒觉了！起床吧！",
+        "tokens": [
+          {
+            "text": "九",
+            "pinyin": "jiǔ"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "别",
+            "pinyin": "bié"
+          },
+          {
+            "text": "睡懒觉",
+            "pinyin": "shuì lǎn jiào"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "起床",
+            "pinyin": "qǐchuáng"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It's nine o'clock, stop sleeping in! Get up!",
+        "id": "Sudah jam sembilan, jangan tidur terus! Bangun!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "好……我起床。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "起床",
+            "pinyin": "qǐchuáng"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK... I'm getting up.",
+        "id": "Iya... aku bangun.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "衣服都在床上，你去放好。",
+        "tokens": [
+          {
+            "text": "衣服",
+            "pinyin": "yīfu"
+          },
+          {
+            "text": "都",
+            "pinyin": "dōu"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "床",
+            "pinyin": "chuáng"
+          },
+          {
+            "text": "上",
+            "pinyin": "shàng"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "去",
+            "pinyin": "qù"
+          },
+          {
+            "text": "放",
+            "pinyin": "fàng"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Your clothes are all on the bed, go and put them away.",
+        "id": "Bajunya berserakan di kasur, sana dirapikan.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "好的。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK.",
+        "id": "Oke.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "妈妈，搞定！",
+        "tokens": [
+          {
+            "text": "妈妈",
+            "pinyin": "māma"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "搞定",
+            "pinyin": "gǎo dìng"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Mom, all done!",
+        "id": "Bu, beres!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "很好！我们吃早饭吧。",
+        "tokens": [
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我们",
+            "pinyin": "wǒmen"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "早饭",
+            "pinyin": "zǎofàn"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Great! Let's have breakfast.",
+        "id": "Bagus! Ayo sarapan.",
+        "machine": true
+      }
+    ]
+  }
+}

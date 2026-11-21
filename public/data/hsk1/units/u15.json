@@ -1,0 +1,1945 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u15",
+    "order": 15,
+    "slug": "bahasa",
+    "title": {
+      "id": "Bahasa & negara",
+      "en": "Language & countries"
+    },
+    "description": {
+      "id": "Tiongkok, Beijing, bahasa Mandarin, aksara, berbicara, mendengar, bertanya, dan menjawab.",
+      "en": "China, Beijing, the Chinese language, characters, speaking, listening, asking and answering."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0128",
+      "hanzi": "国",
+      "pinyin": "guó",
+      "syllables": [
+        "guó"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "country; nation; state",
+        "(bound form) national"
+      ],
+      "ind": [
+        "negara"
+      ],
+      "idMachine": true,
+      "chars": [
+        "国"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1163567,
+          "cmn": "你是哪国人？",
+          "author": "cntrational",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 17150,
+            "text": "Where do you come from?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8857236,
+          "cmn": "她是哪国人？",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2700606,
+            "text": "What's her nationality?",
+            "author": "_undertoad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 343360,
+          "cmn": "他从中国回来了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 387585,
+            "text": "He came back from China.",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0129",
+      "hanzi": "国家",
+      "pinyin": "guójiā",
+      "syllables": [
+        "guó",
+        "jiā"
+      ],
+      "tones": [
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "country; nation; state"
+      ],
+      "ind": [
+        "negara",
+        "negeri"
+      ],
+      "idMachine": true,
+      "chars": [
+        "国",
+        "家"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3703482,
+          "cmn": "你是哪国家？",
+          "author": "katshi94",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 17150,
+            "text": "Where do you come from?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1428132,
+          "cmn": "你去过哪些国家？",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 682337,
+            "text": "Which countries have you visited?",
+            "author": "Source_VOA",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 75,
+          "cmn": "你是从哪个国家来的？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 329612,
+            "text": "Which country are you from?",
+            "author": "fcbond",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0130",
+      "hanzi": "国外",
+      "pinyin": "guówài",
+      "syllables": [
+        "guó",
+        "wài"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "abroad",
+        "external (affairs)",
+        "overseas",
+        "foreign"
+      ],
+      "ind": [
+        "luar negeri"
+      ],
+      "idMachine": true,
+      "chars": [
+        "国",
+        "外"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 719761,
+          "cmn": "他现在住在国外。",
+          "author": "Yashanti",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 719759,
+            "text": "He's living abroad at the moment.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 408247,
+          "cmn": "他一个人去了国外。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 292559,
+            "text": "He has gone abroad by himself.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1324011,
+          "cmn": "我有几个朋友在国外。",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7785098,
+            "text": "I have some friends abroad.",
+            "author": "sharris123",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0369",
+      "hanzi": "外国",
+      "pinyin": "wàiguó",
+      "syllables": [
+        "wài",
+        "guó"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "foreign country"
+      ],
+      "ind": [
+        "luar negeri",
+        "negara asing"
+      ],
+      "idMachine": true,
+      "chars": [
+        "外",
+        "国"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2221094,
+          "cmn": "我是外国人。",
+          "author": "joulin",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 809719,
+            "text": "I'm a foreigner.",
+            "author": "Martha",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 868472,
+          "cmn": "小朋友多是外国人。",
+          "author": "ColinG",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13120033,
+            "text": "Most of the kids are foreigners.",
+            "author": "LeviHighway",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7677086,
+          "cmn": "小朋友都是外国人。",
+          "author": "eiocha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 868166,
+            "text": "Children are all foreigners.",
+            "author": "Scott",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0370",
+      "hanzi": "外语",
+      "pinyin": "wàiyǔ",
+      "syllables": [
+        "wài",
+        "yǔ"
+      ],
+      "tones": [
+        4,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "foreign language"
+      ],
+      "ind": [
+        "bahasa asing"
+      ],
+      "idMachine": true,
+      "chars": [
+        "外",
+        "语"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 400992,
+          "cmn": "我学两种外语。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "种",
+          "en": {
+            "tatoebaId": 256624,
+            "text": "I am learning two foreign languages.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3694742,
+          "cmn": "他外语学得很快。",
+          "author": "katshi94",
+          "license": "CC BY 2.0 FR",
+          "outside": "得很",
+          "en": {
+            "tatoebaId": 294741,
+            "text": "He is quick at learning a foreign language.",
+            "author": "U2FS",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4047395,
+          "cmn": "外语很多，时间很短",
+          "author": "Chrikaru",
+          "license": "CC BY 2.0 FR",
+          "outside": "短",
+          "en": {
+            "tatoebaId": 4047389,
+            "text": "So many languages, so little time...",
+            "author": "Chrikaru",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0136",
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "syllables": [
+        "Hàn",
+        "yǔ"
+      ],
+      "tones": [
+        4,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Chinese language"
+      ],
+      "ind": [
+        "bahasa Mandarin",
+        "bahasa Tionghoa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "汉",
+        "语"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2223944,
+          "cmn": "你学了几年的汉语？",
+          "author": "Kiwi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2229486,
+            "text": "How many years have you studied Mandarin for?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10338222,
+          "cmn": "这是我们汉语老师的车。",
+          "author": "vetreny",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10338232,
+            "text": "This is our Chinese language teacher's car.",
+            "author": "vetreny",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335139,
+          "cmn": "他学习汉语。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 288241,
+            "text": "He studies Chinese.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0479",
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "syllables": [
+        "Zhōng",
+        "wén"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Chinese language"
+      ],
+      "ind": [
+        "bahasa Mandarin",
+        "bahasa Tionghoa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "中",
+        "文"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1746084,
+          "cmn": "我教中文。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 436977,
+            "text": "I teach Chinese.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8860672,
+          "cmn": "她写中文。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 462412,
+            "text": "She writes Chinese.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3521456,
+          "cmn": "我们在学习中文。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 555191,
+            "text": "We're learning Chinese.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0137",
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "syllables": [
+        "Hàn",
+        "zì"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Chinese character(s)"
+      ],
+      "ind": [
+        "aksara Mandarin",
+        "huruf Hanzi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "汉",
+        "字"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1843469,
+          "cmn": "我在学汉字。",
+          "author": "LanguageExpert",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 792548,
+            "text": "I am studying kanji.",
+            "author": "ryanthewired",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1749271,
+          "cmn": "我正在读汉字。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1686852,
+            "text": "I am pronouncing Chinese words.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961163,
+          "cmn": "汉字有多少个？",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10115637,
+            "text": "How many Chinese characters are there?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0488",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "syllables": [
+        "zì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "letter",
+        "symbol",
+        "character",
+        "word",
+        "courtesy or style name traditionally given to males aged 20 in dynastic China"
+      ],
+      "ind": [
+        "huruf",
+        "aksara",
+        "kata"
+      ],
+      "idMachine": true,
+      "chars": [
+        "字"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1889352,
+          "cmn": "她一个字都没对我说。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1442205,
+            "text": "She didn't say even one word to me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 389828,
+          "cmn": "在十字路口右转。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "右转",
+          "en": {
+            "tatoebaId": 6047,
+            "text": "Turn right at the crossroad.",
+            "author": "shortiiboy",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9401505,
+          "cmn": "十字路口出了车祸。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": "车祸",
+          "en": {
+            "tatoebaId": 6575232,
+            "text": "There's been an accident at the crossroads.",
+            "author": "Eccles17",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0151",
+      "hanzi": "话",
+      "pinyin": "huà",
+      "syllables": [
+        "huà"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "dialect",
+        "language",
+        "spoken words",
+        "speech",
+        "talk",
+        "words"
+      ],
+      "ind": [
+        "perkataan",
+        "bahasa",
+        "kata-kata"
+      ],
+      "idMachine": true,
+      "chars": [
+        "话"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1216145,
+          "cmn": "哪儿的话！",
+          "author": "Takuya",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 63874,
+            "text": "Don't mention it.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 944065,
+          "cmn": "她的话很多。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 312397,
+            "text": "She talks a lot.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4764610,
+          "cmn": "我儿子不听我话。",
+          "author": "ryanwoo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4759178,
+            "text": "My son doesn't obey me.",
+            "author": "cairnhead",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0349",
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "syllables": [
+        "shuō"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to speak; to talk; to say",
+        "to explain; to comment",
+        "to scold; to tell off",
+        "(bound form) theory; doctrine"
+      ],
+      "ind": [
+        "berkata",
+        "berbicara",
+        "mengatakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "说"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3349253,
+          "cmn": "你说的对。",
+          "author": "bailujia",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 411667,
+            "text": "You're right.",
+            "author": "Alkrasnov",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2076255,
+          "cmn": "请说慢一些。",
+          "author": "User5120",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 403059,
+            "text": "Please speak slowly.",
+            "author": "Ramses",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 669008,
+          "cmn": "别说这个。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 41572,
+            "text": "Don't say that.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0350",
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "syllables": [
+        "shuō",
+        "huà"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to speak",
+        "to say",
+        "to talk",
+        "to gossip",
+        "to tell stories",
+        "talk"
+      ],
+      "ind": [
+        "berbicara",
+        "bicara"
+      ],
+      "idMachine": true,
+      "chars": [
+        "说",
+        "话"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9409628,
+          "cmn": "他说话了。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1564976,
+            "text": "He spoke.",
+            "author": "marcelostockle",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11510495,
+          "cmn": "她不说话。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11510492,
+            "text": "She doesn't talk.",
+            "author": "megamanenm",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 336110,
+          "cmn": "他说话很快。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2799233,
+            "text": "He is speaking quickly.",
+            "author": "Cainntear",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0477",
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "syllables": [
+        "Zhōng",
+        "guó"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "China"
+      ],
+      "ind": [
+        "Tiongkok",
+        "Cina"
+      ],
+      "idMachine": true,
+      "chars": [
+        "中",
+        "国"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9453444,
+          "cmn": "我从来没吃过中国菜。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5118368,
+            "text": "I have never eaten Chinese food.",
+            "author": "Lindoula",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13669208,
+            "text": "Aku belum pernah makan makanan Cina.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 335137,
+          "cmn": "我是中国人。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 335138,
+            "text": "I am Chinese.",
+            "author": "CN",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3377911,
+          "cmn": "这是中国菜。",
+          "author": "Ivan24",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3377912,
+            "text": "This is Chinese food.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0021",
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "syllables": [
+        "Běi",
+        "jīng"
+      ],
+      "tones": [
+        3,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Beijing municipality, capital of the People's Republic of China (abbr. to 京[Jing1])"
+      ],
+      "ind": [
+        "Beijing"
+      ],
+      "idMachine": true,
+      "chars": [
+        "北",
+        "京"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1766267,
+          "cmn": "我现在在北京。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5574827,
+            "text": "I am in Beijing right now.",
+            "author": "n1ls",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10966852,
+          "cmn": "你去北京学习几天？",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11092301,
+            "text": "For how many days will you be staying in Beijing to study?",
+            "author": "risewithelsa",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2737457,
+          "cmn": "我是上个月来的北京。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2737465,
+            "text": "I came to Beijing last month.",
+            "author": "eastasiastudent",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0361",
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "syllables": [
+        "tīng"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to listen to; to hear",
+        "to heed; to obey",
+        "a can (loanword from English \"tin\")",
+        "classifier for canned beverages",
+        "to let be; to allow (Taiwan pr. [ting4])",
+        "(literary) to administer; to deal with (Taiwan pr. [ting4])"
+      ],
+      "ind": [
+        "mendengar",
+        "mendengarkan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1541732,
+          "cmn": "他们没听。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1540367,
+            "text": "They didn't listen.",
+            "author": "Zaghawa",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4761428,
+          "cmn": "别听她的。",
+          "author": "billt_estates",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 309239,
+            "text": "Don't listen to her.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8727966,
+          "cmn": "我听得到。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301250,
+            "text": "I can hear you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0362",
+      "hanzi": "听到",
+      "pinyin": "tīngdào",
+      "syllables": [
+        "tīng",
+        "dào"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to hear"
+      ],
+      "ind": [
+        "mendengar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听",
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 759368,
+          "cmn": "你听到没有！",
+          "author": "vgigregg",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 759369,
+            "text": "Did you hear me?",
+            "author": "vgigregg",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 472981,
+          "cmn": "我听到门关了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 39100,
+            "text": "I heard the door close.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7769294,
+          "cmn": "您听到什么了？",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 464532,
+            "text": "What did you hear?",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0363",
+      "hanzi": "听见",
+      "pinyin": "tīngjiàn",
+      "syllables": [
+        "tīng",
+        "jiàn"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to hear"
+      ],
+      "ind": [
+        "mendengar",
+        "terdengar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听",
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1417573,
+          "cmn": "我没听见。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 680110,
+            "text": "I didn't hear it.",
+            "author": "Source_VOA",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 414025,
+          "cmn": "我听见有人叫我。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 251973,
+            "text": "I heard my name called.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 848524,
+          "cmn": "我们听见他下楼了。",
+          "author": "kooler",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 283487,
+            "text": "We heard him come downstairs.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0379",
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "syllables": [
+        "wèn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to ask; to inquire"
+      ],
+      "ind": [
+        "bertanya"
+      ],
+      "idMachine": true,
+      "chars": [
+        "问"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5092545,
+          "cmn": "没人问过。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1737422,
+            "text": "Nobody asked.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10086133,
+          "cmn": "我问问路。",
+          "author": "ColawithIce",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2546108,
+            "text": "I'll ask for directions.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10252146,
+          "cmn": "我们问他。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3920154,
+            "text": "We'll ask him.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0155",
+      "hanzi": "回答",
+      "pinyin": "huídá",
+      "syllables": [
+        "huí",
+        "dá"
+      ],
+      "tones": [
+        2,
+        2
+      ],
+      "pos": [
+        "V",
+        "N"
+      ],
+      "en": [
+        "to reply; to answer",
+        "reply; answer"
+      ],
+      "ind": [
+        "menjawab",
+        "jawaban"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回",
+        "答"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12169566,
+          "cmn": "回答我们。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12169561,
+            "text": "Answer us.",
+            "author": "megamanenm",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335067,
+          "cmn": "你回答了什么？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1426,
+            "text": "What did you answer?",
+            "author": "Zifre",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1492091,
+          "cmn": "你怎么回答的？",
+          "author": "gxv2",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 416890,
+            "text": "How did you reply?",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0117",
+      "hanzi": "告诉",
+      "pinyin": "gàosu",
+      "syllables": [
+        "gào",
+        "su"
+      ],
+      "tones": [
+        4,
+        5
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to tell; to inform; to let know"
+      ],
+      "ind": [
+        "memberi tahu",
+        "mengatakan kepada"
+      ],
+      "idMachine": true,
+      "chars": [
+        "告",
+        "诉"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10747502,
+          "cmn": "他告诉她。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2862602,
+            "text": "He told her.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1314397,
+          "cmn": "他都告诉我了。",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1112373,
+            "text": "He told me everything.",
+            "author": "Scott",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11509462,
+          "cmn": "再告诉我一次。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2250076,
+            "text": "Tell me again.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u15-01",
+      "unit": "u15",
+      "hanzi": "老外",
+      "pinyin": "lǎo wài",
+      "syllables": [
+        "lǎo",
+        "wài"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "外国人",
+        "wordIds": [
+          "L1-0369",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "bule, orang asing",
+        "en": "foreigner"
+      },
+      "situation": {
+        "id": "Orang China menyebut orang asing dalam obrolan santai.",
+        "en": "Chinese people talking about a foreigner casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-02",
+      "unit": "u15",
+      "hanzi": "聊天",
+      "pinyin": "liáo tiān",
+      "syllables": [
+        "liáo",
+        "tiān"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说话",
+        "wordIds": [
+          "L1-0350"
+        ]
+      },
+      "meaning": {
+        "id": "ngobrol",
+        "en": "to chat"
+      },
+      "situation": {
+        "id": "Ngobrol dengan teman, langsung atau lewat aplikasi.",
+        "en": "Chatting with friends, in person or on an app."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-03",
+      "unit": "u15",
+      "hanzi": "吹牛",
+      "pinyin": "chuī niú",
+      "syllables": [
+        "chuī",
+        "niú"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说大话",
+        "wordIds": [
+          "L1-0349",
+          "L1-0061",
+          "L1-0151"
+        ]
+      },
+      "meaning": {
+        "id": "membual",
+        "en": "to brag"
+      },
+      "situation": {
+        "id": "Bilang seseorang membual atau melebih-lebihkan.",
+        "en": "Saying someone is bragging or exaggerating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-04",
+      "unit": "u15",
+      "hanzi": "瞎说",
+      "pinyin": "xiā shuō",
+      "syllables": [
+        "xiā",
+        "shuō"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说错",
+        "wordIds": [
+          "L1-0349",
+          "L1-0055"
+        ]
+      },
+      "meaning": {
+        "id": "ngawur",
+        "en": "to talk nonsense"
+      },
+      "situation": {
+        "id": "Membantah perkataan teman yang tidak benar.",
+        "en": "Contradicting a friend who says something untrue."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-05",
+      "unit": "u15",
+      "hanzi": "唠叨",
+      "pinyin": "láo dao",
+      "syllables": [
+        "láo",
+        "dao"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说很多",
+        "wordIds": [
+          "L1-0349",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "cerewet, mengomel",
+        "en": "to nag"
+      },
+      "situation": {
+        "id": "Mengeluh orang yang terus mengulang nasihat.",
+        "en": "Complaining someone keeps repeating advice."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u18-03",
+      "unit": "u18",
+      "hanzi": "砍价",
+      "pinyin": "kǎn jià",
+      "syllables": [
+        "kǎn",
+        "jià"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说便宜点儿",
+        "wordIds": [
+          "L1-0349"
+        ]
+      },
+      "meaning": {
+        "id": "menawar",
+        "en": "to haggle"
+      },
+      "situation": {
+        "id": "Menawar harga di pasar.",
+        "en": "Bargaining at the market."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": {
+    "id": "d-u15",
+    "title": {
+      "id": "Orang asing yang bisa bahasa Mandarin",
+      "en": "A foreigner who speaks Chinese"
+    },
+    "situation": {
+      "id": "Kakak bercerita kepada Kakek tentang orang asing yang mengajaknya mengobrol dalam bahasa Mandarin di taman.",
+      "en": "Big brother tells Grandpa about a foreigner who chatted with him in Chinese in the park."
+    },
+    "machine": true,
+    "speakers": {
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      },
+      "yeye": {
+        "name": {
+          "id": "Kakek",
+          "en": "Grandpa"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "爷爷，今天一个老外跟我说汉语！",
+        "tokens": [
+          {
+            "text": "爷爷",
+            "pinyin": "yéye"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "老外",
+            "pinyin": "lǎo wài"
+          },
+          {
+            "text": "跟",
+            "pinyin": "gēn"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "说",
+            "pinyin": "shuō"
+          },
+          {
+            "text": "汉语",
+            "pinyin": "Hànyǔ"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Grandpa, today a foreigner spoke Chinese with me!",
+        "id": "Kek, hari ini ada bule ngajak aku ngomong bahasa Mandarin!",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "他会说汉语？",
+        "tokens": [
+          {
+            "text": "他",
+            "pinyin": "tā"
+          },
+          {
+            "text": "会",
+            "pinyin": "huì"
+          },
+          {
+            "text": "说",
+            "pinyin": "shuō"
+          },
+          {
+            "text": "汉语",
+            "pinyin": "Hànyǔ"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "He can speak Chinese?",
+        "id": "Dia bisa bahasa Mandarin?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "会！他的汉语很好，我们聊天了。",
+        "tokens": [
+          {
+            "text": "会",
+            "pinyin": "huì"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "他",
+            "pinyin": "tā"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "汉语",
+            "pinyin": "Hànyǔ"
+          },
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "我们",
+            "pinyin": "wǒmen"
+          },
+          {
+            "text": "聊天",
+            "pinyin": "liáo tiān"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Yes! His Chinese is very good, we had a chat.",
+        "id": "Bisa! Bahasa Mandarinnya bagus, kami ngobrol.",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "他是哪国人？",
+        "tokens": [
+          {
+            "text": "他",
+            "pinyin": "tā"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "哪",
+            "pinyin": "nǎ"
+          },
+          {
+            "text": "国",
+            "pinyin": "guó"
+          },
+          {
+            "text": "人",
+            "pinyin": "rén"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Which country is he from?",
+        "id": "Dia orang mana?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "他是外国学生，在北京学习。",
+        "tokens": [
+          {
+            "text": "他",
+            "pinyin": "tā"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "外国",
+            "pinyin": "wàiguó"
+          },
+          {
+            "text": "学生",
+            "pinyin": "xuéshēng"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "北京",
+            "pinyin": "Běijīng"
+          },
+          {
+            "text": "学习",
+            "pinyin": "xuéxí"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "He's a foreign student studying in Beijing.",
+        "id": "Dia mahasiswa asing, kuliah di Beijing.",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "很好，你也要学外语！",
+        "tokens": [
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "学",
+            "pinyin": "xué"
+          },
+          {
+            "text": "外语",
+            "pinyin": "wàiyǔ"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Good, you should learn a foreign language too!",
+        "id": "Bagus, kamu juga harus belajar bahasa asing!",
+        "machine": true
+      }
+    ]
+  }
+}

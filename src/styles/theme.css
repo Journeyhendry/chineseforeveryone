@@ -175,41 +175,6 @@ a {
   color: var(--link);
 }
 
-/* Warna nada */
-.tone-list {
-  list-style: none;
-  margin: var(--space-4) 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-}
-
-.tone-chip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  min-width: 96px;
-  padding: var(--space-3) var(--space-4);
-  background: var(--tone-surface);
-  border: var(--border-w) solid var(--ink);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-btn);
-}
-
-.tone-pinyin {
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.tone-label {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--tone-label);
-}
-
 /* Pengaturan */
 .settings-list {
   display: flex;

@@ -53,9 +53,11 @@ export function AppShell() {
   const firstRender = useRef(true)
 
   const title = t('app.titleTemplate', { page: t(TITLE_KEYS[route.name]) })
+  // Layar Belajar mengatur judulnya sendiri (judul per layar).
+  const ownsTitle = route.name !== 'belajar'
   useEffect(() => {
-    document.title = title
-  }, [title])
+    if (ownsTitle) document.title = title
+  }, [title, ownsTitle])
 
   useEffect(() => {
     if (firstRender.current) {

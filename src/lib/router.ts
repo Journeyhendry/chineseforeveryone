@@ -67,3 +67,48 @@ export function useRoute(): Route {
   }, [emptyHash])
   return parseHash(hash)
 }
+
+// ---------- sub-rute Belajar ----------
+
+export type LearnRoute =
+  | { screen: 'map' }
+  | { screen: 'unit'; unitId: string }
+  | { screen: 'word'; unitId: string; index: number }
+  | { screen: 'practice'; unitId: string }
+  | { screen: 'skip'; unitId: string }
+  | { screen: 'notfound' }
+
+const UNIT_SEGMENT = /^[a-z0-9-]{1,32}$/
+
+/** Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan, loncat/<id>. */
+export function parseLearnRoute(segments: string[]): LearnRoute {
+  const s = segments.map((x) => x.toLowerCase())
+  if (s.length === 0) return { screen: 'map' }
+  const id = s[1]
+  if (id === undefined || !UNIT_SEGMENT.test(id)) return { screen: 'notfound' }
+  if (s[0] === 'unit') {
+    if (s.length === 2) return { screen: 'unit', unitId: id }
+    if (s.length === 3 && s[2] === 'latihan') return { screen: 'practice', unitId: id }
+    if (s.length === 4 && s[2] === 'kata' && /^[1-9]\d{0,2}$/.test(s[3])) {
+      return { screen: 'word', unitId: id, index: Number(s[3]) }
+    }
+  }
+  if (s[0] === 'loncat' && s.length === 2) return { screen: 'skip', unitId: id }
+  return { screen: 'notfound' }
+}
+
+export function learnHref(route: LearnRoute): string {
+  switch (route.screen) {
+    case 'map':
+    case 'notfound':
+      return '#/belajar'
+    case 'unit':
+      return `#/belajar/unit/${route.unitId}`
+    case 'word':
+      return `#/belajar/unit/${route.unitId}/kata/${route.index}`
+    case 'practice':
+      return `#/belajar/unit/${route.unitId}/latihan`
+    case 'skip':
+      return `#/belajar/loncat/${route.unitId}`
+  }
+}

@@ -1,0 +1,2305 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u14",
+    "order": 14,
+    "slug": "sekolah",
+    "title": {
+      "id": "Sekolah",
+      "en": "School"
+    },
+    "description": {
+      "id": "Jenjang sekolah, pelajaran, kelas, ujian, libur, dan kegiatan belajar.",
+      "en": "School levels, lessons, class, exams, holidays and study activities."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0421",
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "syllables": [
+        "xué",
+        "xiào"
+      ],
+      "tones": [
+        2,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "school"
+      ],
+      "ind": [
+        "sekolah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "学",
+        "校"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4878932,
+          "cmn": "我去学校。",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 472089,
+            "text": "I go to school.",
+            "author": "tamsanh",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3293790,
+            "text": "Saya pergi ke sekolah.",
+            "author": "orion17",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 1054527,
+          "cmn": "学校在哪儿？",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1054512,
+            "text": "Where is the school?",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11514881,
+          "cmn": "你在学校。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11004611,
+            "text": "You are at school.",
+            "author": "Danika_Dakika",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0419",
+      "hanzi": "学生",
+      "pinyin": "xuéshēng",
+      "syllables": [
+        "xué",
+        "shēng"
+      ],
+      "tones": [
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "student",
+        "schoolchild"
+      ],
+      "ind": [
+        "siswa",
+        "pelajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "学",
+        "生"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2202342,
+          "cmn": "您是学生吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 69521,
+            "text": "Are you a student?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2042219,
+          "cmn": "昨天没学生去那。",
+          "author": "somekinda",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 244391,
+            "text": "No students went there yesterday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2202377,
+          "cmn": "是的，我也是学生。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2202375,
+            "text": "Yes, I'm a student too.",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0209",
+      "hanzi": "老师",
+      "pinyin": "lǎoshī",
+      "syllables": [
+        "lǎo",
+        "shī"
+      ],
+      "tones": [
+        3,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "teacher"
+      ],
+      "ind": [
+        "guru"
+      ],
+      "idMachine": true,
+      "chars": [
+        "老",
+        "师"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1050441,
+          "cmn": "我是老师。",
+          "author": "tatomeimei",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 256929,
+            "text": "I'm a teacher.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12297723,
+            "text": "Saya seorang guru.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 7768345,
+          "cmn": "他是老师。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 295346,
+            "text": "He is a teacher.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012002,
+            "text": "Dia guru.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 787631,
+          "cmn": "谁是你老师？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 17660,
+            "text": "Who is your teacher?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0063",
+      "hanzi": "大学生",
+      "pinyin": "dàxuéshēng",
+      "syllables": [
+        "dà",
+        "xué",
+        "shēng"
+      ],
+      "tones": [
+        4,
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "university student; college student"
+      ],
+      "ind": [
+        "mahasiswa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "大",
+        "学",
+        "生"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 567558,
+          "cmn": "我是大学生。",
+          "author": "gnomebubble",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 275627,
+            "text": "I am a university student.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7848332,
+            "text": "Saya mahasiswa.",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 475871,
+          "cmn": "你是大学生吗？",
+          "author": "biglion",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 275628,
+            "text": "Are you a college student?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2031433,
+          "cmn": "我是个大学生。",
+          "author": "ydcok",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 275627,
+            "text": "I am a university student.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0062",
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "syllables": [
+        "dà",
+        "xué"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "the Great Learning, one of the Four Books 四書|四书[Si4 shu1] in Confucianism",
+        "university",
+        "college"
+      ],
+      "ind": [
+        "universitas",
+        "perguruan tinggi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "大",
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 348014,
+          "cmn": "他在读大学。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 387501,
+            "text": "He is in college.",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378097,
+          "cmn": "我去上大学。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378098,
+            "text": "I go to university.",
+            "author": "_undertoad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12686379,
+          "cmn": "大学四月开学。",
+          "author": "soueihin",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12613091,
+            "text": "University starts in April.",
+            "author": "urro",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0406",
+      "hanzi": "小学",
+      "pinyin": "xiǎoxué",
+      "syllables": [
+        "xiǎo",
+        "xué"
+      ],
+      "tones": [
+        3,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "elementary school; primary school"
+      ],
+      "ind": [
+        "sekolah dasar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "小",
+        "学"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0407",
+      "hanzi": "小学生",
+      "pinyin": "xiǎoxuéshēng",
+      "syllables": [
+        "xiǎo",
+        "xué",
+        "shēng"
+      ],
+      "tones": [
+        3,
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "primary school student",
+        "schoolchild",
+        "(fig.) beginner"
+      ],
+      "ind": [
+        "murid sekolah dasar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "小",
+        "学",
+        "生"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 13138444,
+          "cmn": "我是小学生。",
+          "author": "JackyJiaqiSun",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10657350,
+            "text": "I'm a pupil.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1394866,
+          "cmn": "很多小学生学不好代数。",
+          "author": "mtdot",
+          "license": "CC BY 2.0 FR",
+          "outside": "代数",
+          "en": {
+            "tatoebaId": 275389,
+            "text": "Many pupils are poor at algebra.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0481",
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "syllables": [
+        "zhōng",
+        "xué"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "middle school"
+      ],
+      "ind": [
+        "sekolah menengah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "中",
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 820899,
+          "cmn": "我和她在中学是一个班的。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 820897,
+            "text": "She and I were in the same class in middle school.",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2737437,
+          "cmn": "我是在日本上的中学。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2737513,
+            "text": "I went to middle school in Japan.",
+            "author": "eastasiastudent",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6452012,
+          "cmn": "他在一所中学工作。",
+          "author": "Lemmih",
+          "license": "CC BY 2.0 FR",
+          "outside": "所",
+          "en": {
+            "tatoebaId": 6452013,
+            "text": "He works in a secondary school.",
+            "author": "Lemmih",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0482",
+      "hanzi": "中学生",
+      "pinyin": "zhōngxuéshēng",
+      "syllables": [
+        "zhōng",
+        "xué",
+        "shēng"
+      ],
+      "tones": [
+        1,
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "middle-school student",
+        "high school student"
+      ],
+      "ind": [
+        "siswa sekolah menengah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "中",
+        "学",
+        "生"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0177",
+      "hanzi": "教学楼",
+      "pinyin": "jiàoxuélóu",
+      "syllables": [
+        "jiào",
+        "xué",
+        "lóu"
+      ],
+      "tones": [
+        4,
+        2,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "school building; academic building"
+      ],
+      "ind": [
+        "gedung kelas",
+        "gedung belajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "教",
+        "学",
+        "楼"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0199",
+      "hanzi": "课",
+      "pinyin": "kè",
+      "syllables": [
+        "kè"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "subject",
+        "course",
+        "class",
+        "lesson",
+        "to levy",
+        "tax"
+      ],
+      "ind": [
+        "pelajaran",
+        "mata pelajaran",
+        "kelas"
+      ],
+      "idMachine": true,
+      "chars": [
+        "课"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 503098,
+          "cmn": "我明天有课。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2075,
+            "text": "I have class tomorrow.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1363295,
+          "cmn": "她缺课了。",
+          "author": "si",
+          "license": "CC BY 2.0 FR",
+          "outside": "缺",
+          "en": {
+            "tatoebaId": 1362474,
+            "text": "She was absent from class.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 333141,
+          "cmn": "8月份没课。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "月份",
+          "en": {
+            "tatoebaId": 72325,
+            "text": "There is no school during August.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0200",
+      "hanzi": "课本",
+      "pinyin": "kèběn",
+      "syllables": [
+        "kè",
+        "běn"
+      ],
+      "tones": [
+        4,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "textbook"
+      ],
+      "ind": [
+        "buku pelajaran"
+      ],
+      "idMachine": true,
+      "chars": [
+        "课",
+        "本"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 475474,
+          "cmn": "这本课本很好。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 55820,
+            "text": "This is a good textbook.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0201",
+      "hanzi": "课文",
+      "pinyin": "kèwén",
+      "syllables": [
+        "kè",
+        "wén"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "text"
+      ],
+      "ind": [
+        "teks pelajaran",
+        "bacaan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "课",
+        "文"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7817194,
+          "cmn": "请你读一下课文。",
+          "author": "User83002",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8249318,
+            "text": "Please read the passage.",
+            "author": "francaisr0wlet",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0320",
+      "hanzi": "上课",
+      "pinyin": "shàngkè",
+      "syllables": [
+        "shàng",
+        "kè"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to go to class",
+        "to attend class",
+        "to go to teach a class"
+      ],
+      "ind": [
+        "masuk kelas",
+        "mengikuti pelajaran"
+      ],
+      "idMachine": true,
+      "chars": [
+        "上",
+        "课"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2302763,
+          "cmn": "你几点上课？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2304084,
+            "text": "What time is class for you?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9475931,
+          "cmn": "学校九点上课。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 21526,
+            "text": "School begins at nine.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2302765,
+          "cmn": "你明天几点上课？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2304082,
+            "text": "What time does class start for you tomorrow?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0394",
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "syllables": [
+        "xià",
+        "kè"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to finish class",
+        "to get out of class",
+        "(fig.) (esp. of a sports coach) to be dismissed",
+        "to be fired"
+      ],
+      "ind": [
+        "pelajaran selesai",
+        "bubar kelas"
+      ],
+      "idMachine": true,
+      "chars": [
+        "下",
+        "课"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2298602,
+          "cmn": "下课了吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2301470,
+            "text": "You get out of class?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 410476,
+          "cmn": "您几点下课？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1892006,
+            "text": "At what time does your class end?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2302301,
+          "cmn": "你几点下课？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2304092,
+            "text": "What time do you get out of class?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0323",
+      "hanzi": "上学",
+      "pinyin": "shàngxué",
+      "syllables": [
+        "shàng",
+        "xué"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to go to school",
+        "to attend school"
+      ],
+      "ind": [
+        "pergi ke sekolah",
+        "bersekolah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "上",
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1866971,
+          "cmn": "今天不用上学。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 242804,
+            "text": "There is no school today.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378287,
+          "cmn": "他上学去了吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378288,
+            "text": "Does he go to school?",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 346832,
+          "cmn": "他昨天没来上学。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 296900,
+            "text": "He was absent from school yesterday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0105",
+      "hanzi": "放学",
+      "pinyin": "fàngxué",
+      "syllables": [
+        "fàng",
+        "xué"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "to dismiss students at the end of the school day"
+      ],
+      "ind": [
+        "pulang sekolah",
+        "sekolah bubar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "放",
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1912307,
+          "cmn": "什么时候放学？",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 21543,
+            "text": "When is school over?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 375357,
+          "cmn": "学校3点半放学。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2937733,
+            "text": "School is over at 3:30.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 427648,
+          "cmn": "你放学以后干什么？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "以后",
+          "en": {
+            "tatoebaId": 320992,
+            "text": "What do you do after school?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0104",
+      "hanzi": "放假",
+      "pinyin": "fàngjià",
+      "syllables": [
+        "fàng",
+        "jià"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to have a holiday or vacation"
+      ],
+      "ind": [
+        "libur",
+        "mulai liburan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "放",
+        "假"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 343741,
+          "cmn": "现在学生在放假。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1498976,
+            "text": "The students are currently on holiday.",
+            "author": "dracae",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 359530,
+          "cmn": "我这个星期放假了。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 252252,
+            "text": "I am on holiday this week.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1148245,
+          "cmn": "我们今天放假一天。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 242879,
+            "text": "We have a holiday today.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0297",
+      "hanzi": "请假",
+      "pinyin": "qǐngjià",
+      "syllables": [
+        "qǐng",
+        "jià"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to request leave of absence"
+      ],
+      "ind": [
+        "izin tidak masuk",
+        "minta izin"
+      ],
+      "idMachine": true,
+      "chars": [
+        "请",
+        "假"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0196",
+      "hanzi": "考",
+      "pinyin": "kǎo",
+      "syllables": [
+        "kǎo"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to check",
+        "to verify",
+        "to test",
+        "to examine",
+        "to take an exam",
+        "to take an entrance exam for"
+      ],
+      "ind": [
+        "ujian",
+        "mengikuti ujian"
+      ],
+      "idMachine": true,
+      "chars": [
+        "考"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 767731,
+          "cmn": "我从早考到晚。",
+          "author": "eastasiastudent",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 767732,
+            "text": "I have exams from dawn till dusk.",
+            "author": "eastasiastudent",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13667864,
+          "cmn": "我考得很好。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": "得很",
+          "en": {
+            "tatoebaId": 5119610,
+            "text": "I did well on the test.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7841398,
+          "cmn": "他重考也没及格。",
+          "author": "basilhan",
+          "license": "CC BY 2.0 FR",
+          "outside": "及格",
+          "en": {
+            "tatoebaId": 6119964,
+            "text": "He also didn't pass the re-exam.",
+            "author": "Mandalay",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0197",
+      "hanzi": "考试",
+      "pinyin": "kǎoshì",
+      "syllables": [
+        "kǎo",
+        "shì"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to take an exam",
+        "exam"
+      ],
+      "ind": [
+        "ujian",
+        "mengikuti ujian"
+      ],
+      "idMachine": true,
+      "chars": [
+        "考",
+        "试"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4885094,
+          "cmn": "考试加油！",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": "加油",
+          "en": {
+            "tatoebaId": 3616228,
+            "text": "Good luck on your test.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5581609,
+          "cmn": "你不需要考试。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "需要",
+          "en": {
+            "tatoebaId": 69289,
+            "text": "You don't have to take an examination.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3700290,
+          "cmn": "你的考试通过了吗？",
+          "author": "katshi94",
+          "license": "CC BY 2.0 FR",
+          "outside": "通过",
+          "en": {
+            "tatoebaId": 3700295,
+            "text": "Did you pass your exams?",
+            "author": "katshi94",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0009",
+      "hanzi": "班",
+      "pinyin": "bān",
+      "syllables": [
+        "bān"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "N",
+        "M"
+      ],
+      "en": [
+        "team; class; grade",
+        "(military) squad",
+        "work shift",
+        "classifier for groups of people and scheduled transport vehicles"
+      ],
+      "ind": [
+        "kelas",
+        "(kelompok atau regu)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "班"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 332709,
+          "cmn": "这个班有多少男生？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 61193,
+            "text": "How many boys are there in this class?",
+            "author": "saeb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 333354,
+          "cmn": "我们班有四十个学生。",
+          "author": "al",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 506898,
+            "text": "There are forty students in our class.",
+            "author": "nickyeow",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378109,
+          "cmn": "我们班有十多个学生。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378110,
+            "text": "Our class has more than ten students.",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0426",
+      "hanzi": "页",
+      "pinyin": "yè",
+      "syllables": [
+        "yè"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "page",
+        "leaf"
+      ],
+      "ind": [
+        "halaman"
+      ],
+      "idMachine": true,
+      "chars": [
+        "页"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 970198,
+          "cmn": "请读第四十九页。",
+          "author": "hsuan07",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9419703,
+            "text": "Please read out page 49.",
+            "author": "BobbyLee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 409456,
+          "cmn": "有一页缺了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "缺",
+          "en": {
+            "tatoebaId": 73207,
+            "text": "There is a page missing.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3859475,
+          "cmn": "请过目25页的地图。",
+          "author": "rickjiang",
+          "license": "CC BY 2.0 FR",
+          "outside": "过目",
+          "en": {
+            "tatoebaId": 3962586,
+            "text": "Please look over the map on page 25.",
+            "author": "JSakuragi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0175",
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "syllables": [
+        "jiāo"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to teach; to instruct"
+      ],
+      "ind": [
+        "mengajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "教"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8835055,
+          "cmn": "老师教我的。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10650646,
+            "text": "The teacher taught me that.",
+            "author": "DJ_Saidez",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8934293,
+          "cmn": "我教历史。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": "历史",
+          "en": {
+            "tatoebaId": 5858195,
+            "text": "I teach history.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12725571,
+            "text": "Saya mengajar Sejarah.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 1071026,
+          "cmn": "今年，山田先生教二年班。",
+          "author": "funghsu",
+          "license": "CC BY 2.0 FR",
+          "outside": "山田",
+          "en": {
+            "tatoebaId": 245120,
+            "text": "Miss Yamada is in charge of the 2nd year class this year.",
+            "author": "CN",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0418",
+      "hanzi": "学",
+      "pinyin": "xué",
+      "syllables": [
+        "xué"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to learn",
+        "to study",
+        "to imitate",
+        "science",
+        "-ology"
+      ],
+      "ind": [
+        "belajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 349704,
+          "cmn": "学学你姐姐。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 620391,
+            "text": "Follow your sister's example.",
+            "author": "kebukebu",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10007046,
+          "cmn": "你在学什么？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1169786,
+            "text": "What are you learning?",
+            "author": "Chrikaru",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 688808,
+          "cmn": "明天就开学了。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 21509,
+            "text": "School begins tomorrow.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0420",
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "syllables": [
+        "xué",
+        "xí"
+      ],
+      "tones": [
+        2,
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to learn",
+        "to study"
+      ],
+      "ind": [
+        "belajar",
+        "mempelajari"
+      ],
+      "idMachine": true,
+      "chars": [
+        "学",
+        "习"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3350510,
+          "cmn": "你在哪儿学习？",
+          "author": "feiningyuan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3350506,
+            "text": "Where do you study?",
+            "author": "feiningyuan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332662,
+          "cmn": "您学习吗？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 68954,
+            "text": "Are you studying?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5092230,
+          "cmn": "好好学习。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 53465,
+            "text": "Study hard.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0090",
+      "hanzi": "读",
+      "pinyin": "dú",
+      "syllables": [
+        "dú"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to read out; to read aloud",
+        "to read",
+        "to attend (school); to study (a subject in school)",
+        "to pronounce"
+      ],
+      "ind": [
+        "membaca",
+        "belajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "读"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10537182,
+          "cmn": "我读错了。",
+          "author": "howie",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6174133,
+            "text": "I read it wrong.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 348014,
+          "cmn": "他在读大学。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 387501,
+            "text": "He is in college.",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 970198,
+          "cmn": "请读第四十九页。",
+          "author": "hsuan07",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9419703,
+            "text": "Please read out page 49.",
+            "author": "BobbyLee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0091",
+      "hanzi": "读书",
+      "pinyin": "dúshū",
+      "syllables": [
+        "dú",
+        "shū"
+      ],
+      "tones": [
+        2,
+        1
+      ],
+      "pos": [],
+      "en": [
+        "to read a book",
+        "to study",
+        "to attend school"
+      ],
+      "ind": [
+        "membaca buku",
+        "belajar",
+        "bersekolah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "读",
+        "书"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843491,
+          "cmn": "我在学校读书。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 256661,
+            "text": "I study at school.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9990149,
+          "cmn": "你在哪里读书？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3350506,
+            "text": "Where do you study?",
+            "author": "feiningyuan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9432392,
+          "cmn": "他在图书馆读书。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8316660,
+            "text": "He studies in the library.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0409",
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "syllables": [
+        "xiě"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to write"
+      ],
+      "ind": [
+        "menulis"
+      ],
+      "idMachine": true,
+      "chars": [
+        "写"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 663264,
+          "cmn": "请您在这里写。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 61741,
+            "text": "Write it down here, please.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 442288,
+          "cmn": "他写了一封信。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "封信",
+          "en": {
+            "tatoebaId": 299227,
+            "text": "He has written a letter.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1509223,
+            "text": "Dia telah menulis sebuah surat.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 2051558,
+          "cmn": "这个故事是我朋友写的。",
+          "author": "cranewang",
+          "license": "CC BY 2.0 FR",
+          "outside": "故事",
+          "en": {
+            "tatoebaId": 2051556,
+            "text": "This story was written by my friend.",
+            "author": "Dejo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0364",
+      "hanzi": "听写",
+      "pinyin": "tīngxiě",
+      "syllables": [
+        "tīng",
+        "xiě"
+      ],
+      "tones": [
+        1,
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "(of a pupil) to write down (in a dictation exercise); dictation",
+        "(music) to transcribe by ear"
+      ],
+      "ind": [
+        "dikte",
+        "menulis dari dikte"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听",
+        "写"
+      ],
+      "examples": []
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u14-01",
+      "unit": "u14",
+      "hanzi": "学霸",
+      "pinyin": "xué bà",
+      "syllables": [
+        "xué",
+        "bà"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "好学生",
+        "wordIds": [
+          "L1-0138",
+          "L1-0419"
+        ]
+      },
+      "meaning": {
+        "id": "si jago belajar",
+        "en": "straight-A student"
+      },
+      "situation": {
+        "id": "Memuji teman yang sangat pintar dan rajin belajar.",
+        "en": "Praising a classmate who studies hard and gets top marks."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-02",
+      "unit": "u14",
+      "hanzi": "学渣",
+      "pinyin": "xué zhā",
+      "syllables": [
+        "xué",
+        "zhā"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "不认真的学生",
+        "wordIds": [
+          "L1-0034",
+          "L1-0307",
+          "L1-0067",
+          "L1-0419"
+        ]
+      },
+      "meaning": {
+        "id": "murid malas (bercanda)",
+        "en": "slacker student (joking)"
+      },
+      "situation": {
+        "id": "Bercanda tentang diri sendiri yang nilainya jelek.",
+        "en": "Joking about yourself having bad grades."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-03",
+      "unit": "u14",
+      "hanzi": "考砸了",
+      "pinyin": "kǎo zá le",
+      "syllables": [
+        "kǎo",
+        "zá",
+        "le"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "没考好",
+        "wordIds": [
+          "L1-0232",
+          "L1-0196",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "ujiannya jeblok",
+        "en": "flunked the exam"
+      },
+      "situation": {
+        "id": "Bilang ujiannya gagal atau nilainya jelek.",
+        "en": "Saying the exam went badly."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-04",
+      "unit": "u14",
+      "hanzi": "挂科",
+      "pinyin": "guà kē",
+      "syllables": [
+        "guà",
+        "kē"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "考试没过",
+        "wordIds": [
+          "L1-0197",
+          "L1-0232",
+          "L1-0131"
+        ]
+      },
+      "meaning": {
+        "id": "nggak lulus mata kuliah",
+        "en": "to fail a course"
+      },
+      "situation": {
+        "id": "Mahasiswa bilang tidak lulus satu mata kuliah.",
+        "en": "A student saying they failed a course."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-05",
+      "unit": "u14",
+      "hanzi": "逃课",
+      "pinyin": "táo kè",
+      "syllables": [
+        "táo",
+        "kè"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不上课",
+        "wordIds": [
+          "L1-0034",
+          "L1-0320"
+        ]
+      },
+      "meaning": {
+        "id": "bolos",
+        "en": "to skip class"
+      },
+      "situation": {
+        "id": "Bilang seseorang bolos sekolah atau kuliah.",
+        "en": "Saying someone skipped class."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [],
+  "dialog": {
+    "id": "d-u14",
+    "title": {
+      "id": "Setelah ujian",
+      "en": "After the exam"
+    },
+    "situation": {
+      "id": "Adik pulang sekolah setelah ujian dan bercerita kepada Ibu.",
+      "en": "Little sister comes home after an exam and tells Mom about it."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "今天的考试难吗？",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "考试",
+            "pinyin": "kǎoshì"
+          },
+          {
+            "text": "难",
+            "pinyin": "nán"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Was today's exam hard?",
+        "id": "Ujian hari ini susah?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "很难！我考砸了。",
+        "tokens": [
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "难",
+            "pinyin": "nán"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "考砸了",
+            "pinyin": "kǎo zá le"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Very hard! I flunked it.",
+        "id": "Susah banget! Ujianku jeblok.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "没关系，下次好好学习。",
+        "tokens": [
+          {
+            "text": "没关系",
+            "pinyin": "méiguānxi"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "下次",
+            "pinyin": "xiàcì"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "学习",
+            "pinyin": "xuéxí"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Never mind, study hard next time.",
+        "id": "Nggak apa-apa, lain kali belajar yang rajin.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我的同学考了一百。她是学霸！",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "同学",
+            "pinyin": "tóngxué"
+          },
+          {
+            "text": "考",
+            "pinyin": "kǎo"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "百",
+            "pinyin": "bǎi"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "学霸",
+            "pinyin": "xué bà"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "My classmate got a hundred. She's a top student!",
+        "id": "Temanku dapat seratus. Dia jago banget belajarnya!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "你也会的！",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "会",
+            "pinyin": "huì"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "You'll get there too!",
+        "id": "Kamu juga pasti bisa!",
+        "machine": true
+      }
+    ]
+  }
+}

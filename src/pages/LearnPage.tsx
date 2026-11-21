@@ -1,36 +1,57 @@
-import { ComingSoon, PageHeader } from '../components/ComingSoon'
+import { NotFoundPage } from './NotFoundPage'
 import { useT } from '../i18n/context'
+import { loadIndex, loadUnit, type LessonIndex, type LessonUnitInfo } from '../lib/lessons'
+import { isUnitUnlocked } from '../lib/progress'
+import { parseLearnRoute, useRoute, type LearnRoute } from '../lib/router'
+import { useDocumentTitle, useProgress, useResource } from './learn/hooks'
+import { LockedScreen } from './learn/LockedScreen'
+import { MapScreen } from './learn/MapScreen'
+import { LoadState } from './learn/parts'
+import { PracticeScreen } from './learn/PracticeScreen'
+import { SkipScreen } from './learn/SkipScreen'
+import { UnitScreen } from './learn/UnitScreen'
+import { WordScreen } from './learn/WordScreen'
 
-const TONE_SAMPLES = [
-  { tone: 1, pinyin: 'mā' },
-  { tone: 2, pinyin: 'má' },
-  { tone: 3, pinyin: 'mǎ' },
-  { tone: 4, pinyin: 'mà' },
-  { tone: 5, pinyin: 'ma' },
-] as const
-
+/** Halaman Belajar: peta, ringkasan unit, kenalan kata, latihan, tes loncat. */
 export function LearnPage() {
+  const route = parseLearnRoute(useRoute().segments)
+  const index = useResource('index', loadIndex)
+  if (route.screen === 'notfound') return <LearnNotFound />
+  if (index.status !== 'ready') return <LearnLoading status={index.status} retry={index.retry} />
+  if (route.screen === 'map') return <MapScreen index={index.data} />
+  const info = index.data.units.find((u) => u.id === route.unitId)
+  if (!info) return <LearnNotFound />
+  if (route.screen === 'skip') return <SkipScreen key={info.id} index={index.data} info={info} />
+  return <UnitRoute key={info.id} route={route} index={index.data} info={info} />
+}
+
+function UnitRoute({ route, index, info }: { route: LearnRoute; index: LessonIndex; info: LessonUnitInfo }) {
+  const progress = useProgress()
+  const unlocked = isUnitUnlocked(info, index.units, progress)
+  const data = useResource(`unit:${info.id}`, () => loadUnit(info.id))
+  if (!unlocked) return <LockedScreen info={info} />
+  if (data.status !== 'ready') return <LearnLoading status={data.status} retry={data.retry} />
+  switch (route.screen) {
+    case 'unit':
+      return <UnitScreen info={info} data={data.data} />
+    case 'word':
+      if (route.index > data.data.words.length) return <LearnNotFound />
+      return <WordScreen info={info} data={data.data} n={route.index} />
+    case 'practice':
+      return <PracticeScreen index={index} info={info} data={data.data} />
+    default:
+      return <LearnNotFound />
+  }
+}
+
+function LearnLoading({ status, retry }: { status: 'loading' | 'error'; retry: () => void }) {
   const t = useT()
-  return (
-    <>
-      <PageHeader title={t('page.learn.title')} eyebrow={t('page.learn.eyebrow')} />
-      <ComingSoon message={t('page.learn.soon')} />
-      <section className="card" aria-labelledby="tone-title">
-        <h2 id="tone-title" className="card-title">
-          {t('tone.title')}
-        </h2>
-        <p className="muted">{t('tone.desc')}</p>
-        <ul className="tone-list">
-          {TONE_SAMPLES.map(({ tone, pinyin }) => (
-            <li key={tone} className="tone-chip" style={{ color: `var(--tone-${tone})` }}>
-              <span className="tone-pinyin" lang="zh-Latn-pinyin">
-                {pinyin}
-              </span>
-              <span className="tone-label">{t(`tone.${tone}`)}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </>
-  )
+  useDocumentTitle(t('page.learn.title'))
+  return <LoadState status={status} retry={retry} />
+}
+
+function LearnNotFound() {
+  const t = useT()
+  useDocumentTitle(t('notfound.title'))
+  return <NotFoundPage />
 }

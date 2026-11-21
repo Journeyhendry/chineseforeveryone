@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseHash } from './router'
+import { learnHref, parseHash, parseLearnRoute } from './router'
 
 describe('parseHash', () => {
   it.each(['', '#', '#/', '/', '#//'])('kosong %j -> belajar', (h) => {
@@ -39,5 +39,52 @@ describe('parseHash', () => {
   it('huruf besar dan encoding rusak tidak melempar', () => {
     expect(parseHash('#/KAMUS').name).toBe('kamus')
     expect(parseHash('#/kamus/%E0%A4%A').segments).toEqual(['%E0%A4%A'])
+  })
+})
+
+describe('parseLearnRoute', () => {
+  const learn = (h: string) => parseLearnRoute(parseHash(h).segments)
+
+  it('peta', () => {
+    expect(learn('#/belajar')).toEqual({ screen: 'map' })
+    expect(learn('#/belajar/')).toEqual({ screen: 'map' })
+  })
+
+  it('ringkasan unit, kenalan kata, latihan, tes loncat', () => {
+    expect(learn('#/belajar/unit/u03')).toEqual({ screen: 'unit', unitId: 'u03' })
+    expect(learn('#/belajar/unit/u03/kata/2')).toEqual({ screen: 'word', unitId: 'u03', index: 2 })
+    expect(learn('#/belajar/unit/u03/latihan')).toEqual({ screen: 'practice', unitId: 'u03' })
+    expect(learn('#/belajar/loncat/u05')).toEqual({ screen: 'skip', unitId: 'u05' })
+  })
+
+  it('garis miring berlebih dan huruf besar', () => {
+    expect(learn('#//belajar//unit//u03//kata//2//')).toEqual({ screen: 'word', unitId: 'u03', index: 2 })
+    expect(learn('#/Belajar/UNIT/U03/Latihan')).toEqual({ screen: 'practice', unitId: 'u03' })
+  })
+
+  it.each([
+    '#/belajar/unit',
+    '#/belajar/unit/u03/kata',
+    '#/belajar/unit/u03/kata/0',
+    '#/belajar/unit/u03/kata/abc',
+    '#/belajar/unit/u03/kata/1/x',
+    '#/belajar/unit/u03/lain',
+    '#/belajar/loncat',
+    '#/belajar/loncat/u03/x',
+    '#/belajar/xyz',
+    '#/belajar/unit/%3Cscript%3E',
+  ])('tidak dikenal %s', (h) => {
+    expect(learn(h)).toEqual({ screen: 'notfound' })
+  })
+
+  it('learnHref kebalikan dari parse', () => {
+    const routes = [
+      { screen: 'map' },
+      { screen: 'unit', unitId: 'u01' },
+      { screen: 'word', unitId: 'u01', index: 3 },
+      { screen: 'practice', unitId: 'u01' },
+      { screen: 'skip', unitId: 'u04' },
+    ] as const
+    for (const r of routes) expect(learn(learnHref(r))).toEqual(r)
   })
 })

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Soal tebak nada</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=Noto+Sans+SC:wght@500;700&display=swap">
+<style>
+body{margin:0;background:#FFF7E8;color:#231942;font-family:'Nunito',system-ui,sans-serif}
+a{color:#5F3DC4}a:hover{color:#3B1F94}
+@keyframes stamp{0%{transform:scale(1.8) rotate(-18deg);opacity:0}60%{transform:scale(.92) rotate(-8deg);opacity:1}100%{transform:scale(1) rotate(-10deg);opacity:1}}
+@keyframes pop{0%{transform:translateY(8px);opacity:0}100%{transform:none;opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="min-height: 100vh; box-sizing: border-box; background: #FFF7E8; font-family: 'Nunito', system-ui, sans-serif; color: #231942; padding: 28px 40px 48px; display: flex; flex-direction: column; gap: 28px">
+
+  <header style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+    <a href="Main.dc.html" aria-label="Keluar ke peta belajar" style="width: 48px; height: 48px; flex: none; border-radius: 14px; border: 3px solid #231942; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #231942">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </a>
+    <div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 320px; min-width: 0">
+      <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 15px">
+        <span>Unit 3 · Keluarga · Latihan</span>
+        <span>Soal 4 dari 10</span>
+      </div>
+      <div role="progressbar" aria-label="Kemajuan latihan" aria-valuemin="0" aria-valuemax="10" aria-valuenow="4" style="height: 18px; border-radius: 9px; background: #EFE9DE; border: 2px solid #231942; overflow: hidden">
+        <div style="width: 40%; height: 100%; background: #6741D9"></div>
+      </div>
+    </div>
+  </header>
+
+  <main style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 28px; width: 100%; max-width: 960px; margin: 0 auto">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center">
+      <span style="padding: 4px 14px; border-radius: 999px; background: #E5DBFF; font-weight: 800; font-size: 14px">TEBAK NADA</span>
+      <h1 style="margin: 0; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.15">Dengar, lalu pilih nadanya</h1>
+    </div>
+
+    <div style="position: relative; display: flex; align-items: center; gap: 28px; padding: 24px 40px; border-radius: 28px; background: #FFFFFF; border: 3px solid #231942; box-shadow: 0 6px 0 #231942">
+      <button type="button" aria-label="Putar suara lagi" style="width: 96px; height: 96px; flex: none; border-radius: 50%; border: 4px solid #231942; background: #FFD43B; color: #231942; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 0 #231942; cursor: pointer">
+        <svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9Z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg>
+      </button>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span lang="zh-CN" style="font-family: 'Noto Sans SC', sans-serif; font-weight: 700; font-size: 84px; line-height: 1">我</span>
+        <span style="font-size: 22px; font-weight: 800; color: #5C5470">wo · saya</span>
+      </div>
+      <sc-if value="{{isRight}}" hint-placeholder-val="{{false}}">
+        <div aria-hidden="true" style="position: absolute; right: -36px; top: -30px; width: 108px; height: 108px; border-radius: 50%; border: 5px solid #C92A2A; color: #C92A2A; background: #FFF5F5; display: flex; align-items: center; justify-content: center; font-family: 'Noto Sans SC', sans-serif; font-weight: 700; font-size: 40px; transform: rotate(-10deg); animation: stamp 420ms cubic-bezier(.3,1.4,.5,1) both">对!</div>
+      </sc-if>
+    </div>
+
+    <div role="radiogroup" aria-label="Pilihan nada" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 16px; width: 100%">
+      <sc-for list="{{choices}}" as="c" hint-placeholder-count="4">
+        <button type="button" role="radio" aria-checked="{{c.checked}}" aria-label="{{c.aria}}" onClick="{{c.pick}}" style="min-height: 168px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-radius: 24px; border: 4px solid #231942; background: {{c.bg}}; color: #231942; font: inherit; cursor: pointer; box-shadow: {{c.shadow}}; transform: {{c.lift}}; transition: transform 160ms ease-out, box-shadow 160ms ease-out, background 160ms ease-out">
+          <span style="align-self: flex-start; margin-left: 16px; width: 30px; height: 30px; border-radius: 8px; border: 2px solid #231942; background: #FFFFFF; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center">{{c.key}}</span>
+          <span style="font-size: 44px; font-weight: 800; color: {{c.color}}; line-height: 1">{{c.py}}</span>
+          <svg aria-hidden="true" width="64" height="32" viewBox="0 0 40 24" fill="none" stroke="{{c.color}}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="{{c.curve}}"/></svg>
+          <span style="font-size: 15px; font-weight: 800">{{c.label}}</span>
+        </button>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{answered}}" hint-placeholder-val="{{false}}">
+      <div role="status" style="width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; border-radius: 24px; border: 3px solid #231942; background: {{fbBg}}; animation: pop 240ms ease-out both">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <strong style="font-family: 'Baloo 2', sans-serif; font-size: 26px; line-height: 1.1">{{fbTitle}}</strong>
+          <span style="font-size: 17px">我 = <b style="color: #2B8A3E">wǒ</b>, nada 3 (turun lalu naik). Dengar sekali lagi, ya.</span>
+        </div>
+        <div style="display: flex; gap: 10px">
+          <button type="button" onClick="{{reset}}" style="min-height: 52px; padding: 0 20px; border-radius: 16px; border: 3px solid #231942; background: #FFFFFF; color: #231942; font: inherit; font-weight: 800; font-size: 16px; cursor: pointer">Ulangi soal</button>
+          <a href="Game.dc.html" style="display: flex; align-items: center; min-height: 52px; padding: 0 32px; border-radius: 16px; background: #2F9E44; color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 18px; border: 3px solid #231942; box-shadow: 0 4px 0 #231942">Lanjut</a>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{notAnswered}}" hint-placeholder-val="{{true}}">
+      <p style="margin: 0; font-size: 15px; font-weight: 700; color: #5C5470">Klik pilihan, atau tekan 1–4 · Spasi = dengar lagi</p>
+    </sc-if>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":960}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { picked: null };
+  }
+  renderVals() {
+    const correct = 3;
+    const picked = this.state.picked;
+    const answered = picked !== null;
+    const base = [
+      { n: 1, py: 'wō', color: '#C92A2A', curve: 'M4 6H36', label: 'Nada 1 · datar tinggi' },
+      { n: 2, py: 'wó', color: '#B45309', curve: 'M4 19 36 5', label: 'Nada 2 · naik' },
+      { n: 3, py: 'wǒ', color: '#2B8A3E', curve: 'M4 9 18 20 36 4', label: 'Nada 3 · turun-naik' },
+      { n: 4, py: 'wò', color: '#1864AB', curve: 'M4 4 36 20', label: 'Nada 4 · turun' }
+    ];
+    const choices = base.map((c) => {
+      const isPicked = picked === c.n;
+      const isCorrect = c.n === correct;
+      let bg = '#FFFFFF';
+      if (answered && isCorrect) bg = '#D3F9D8';
+      else if (answered && isPicked) bg = '#FFE3E3';
+      return {
+        ...c,
+        key: String(c.n),
+        checked: isPicked ? 'true' : 'false',
+        aria: c.label + ', ' + c.py,
+        bg,
+        shadow: isPicked ? '0 2px 0 #231942' : '0 6px 0 #231942',
+        lift: isPicked ? 'translateY(4px)' : 'none',
+        pick: () => { if (this.state.picked === null) this.setState({ picked: c.n }); }
+      };
+    });
+    const isRight = picked === correct;
+    return {
+      choices,
+      answered,
+      notAnswered: !answered,
+      isRight,
+      fbBg: isRight ? '#D3F9D8' : '#FFE8CC',
+      fbTitle: isRight ? 'Benar! Pendengaranmu tajam.' : 'Hampir! Jawabannya nada 3.',
+      reset: () => this.setState({ picked: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

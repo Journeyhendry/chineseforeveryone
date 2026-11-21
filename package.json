@@ -16,9 +16,12 @@
     "build:casual": "tsx scripts/build-casual.ts",
     "check:visuals": "tsx scripts/check-visuals.ts",
     "build:characters": "tsx scripts/build-characters.ts",
+    "build:lessons": "tsx scripts/build-lessons.ts",
+    "build:strokes": "tsx scripts/build-strokes.ts",
     "build:font": "python3 scripts/font/build_font.py"
   },
   "dependencies": {
+    "hanzi-writer": "3.7.3",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
@@ -28,6 +31,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "cedict-json": "1.3.20251213",
+    "hanzi-writer-data": "2.0.1",
     "opencc-js": "1.4.2",
     "oxlint": "^1.90.0",
     "tsx": "^4.23.15",

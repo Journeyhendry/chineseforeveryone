@@ -1,0 +1,2519 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u02",
+    "order": 2,
+    "slug": "angka",
+    "title": {
+      "id": "Angka & jumlah",
+      "en": "Numbers & quantities"
+    },
+    "description": {
+      "id": "Angka 0 sampai 100, cara bertanya jumlah, usia, dan kata untuk \"sedikit\" atau \"banyak\".",
+      "en": "Numbers 0 to 100, asking how many, age, and words for \"a little\" or \"a lot\"."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0427",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "syllables": [
+        "yī"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "one",
+        "single",
+        "a (article)",
+        "as soon as",
+        "entire; whole; all; throughout"
+      ],
+      "ind": [
+        "satu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12993361,
+          "cmn": "一，二，三，四，五。",
+          "author": "XZJqz",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12993387,
+            "text": "One, two, three, four, five.",
+            "author": "XZJqz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012298,
+            "text": "Satu, dua, tiga, empat, lima.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 8686688,
+          "cmn": "我是第一。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2202863,
+            "text": "I'm first.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0098",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "syllables": [
+        "èr"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "two",
+        "2",
+        "(Beijing dialect) stupid"
+      ],
+      "ind": [
+        "dua"
+      ],
+      "idMachine": true,
+      "chars": [
+        "二"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12993361,
+          "cmn": "一，二，三，四，五。",
+          "author": "XZJqz",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12993387,
+            "text": "One, two, three, four, five.",
+            "author": "XZJqz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012298,
+            "text": "Satu, dua, tiga, empat, lima.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0311",
+      "hanzi": "三",
+      "pinyin": "sān",
+      "syllables": [
+        "sān"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "three",
+        "3"
+      ],
+      "ind": [
+        "tiga"
+      ],
+      "idMachine": true,
+      "chars": [
+        "三"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12993361,
+          "cmn": "一，二，三，四，五。",
+          "author": "XZJqz",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12993387,
+            "text": "One, two, three, four, five.",
+            "author": "XZJqz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012298,
+            "text": "Satu, dua, tiga, empat, lima.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0351",
+      "hanzi": "四",
+      "pinyin": "sì",
+      "syllables": [
+        "sì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "four",
+        "4"
+      ],
+      "ind": [
+        "empat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "四"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12993361,
+          "cmn": "一，二，三，四，五。",
+          "author": "XZJqz",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12993387,
+            "text": "One, two, three, four, five.",
+            "author": "XZJqz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012298,
+            "text": "Satu, dua, tiga, empat, lima.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 8928640,
+          "cmn": "她是四十岁。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4566557,
+            "text": "She is forty years old.",
+            "author": "maydoo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0382",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "syllables": [
+        "wǔ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "five",
+        "5"
+      ],
+      "ind": [
+        "lima"
+      ],
+      "idMachine": true,
+      "chars": [
+        "五"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 12993361,
+          "cmn": "一，二，三，四，五。",
+          "author": "XZJqz",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 12993387,
+            "text": "One, two, three, four, five.",
+            "author": "XZJqz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13012298,
+            "text": "Satu, dua, tiga, empat, lima.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0217",
+      "hanzi": "六",
+      "pinyin": "liù",
+      "syllables": [
+        "liù"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "six",
+        "6"
+      ],
+      "ind": [
+        "enam"
+      ],
+      "idMachine": true,
+      "chars": [
+        "六"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 519938,
+          "cmn": "他们差六岁。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 305284,
+            "text": "The difference in their ages is six years.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0286",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "syllables": [
+        "qī"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "seven",
+        "7"
+      ],
+      "ind": [
+        "tujuh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "七"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 743100,
+          "cmn": "她七点起床。",
+          "author": "Zifre",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 743104,
+            "text": "She gets up at seven.",
+            "author": "Zifre",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0003",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "syllables": [
+        "bā"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "eight"
+      ],
+      "ind": [
+        "delapan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "八"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 349902,
+          "cmn": "我十八岁。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 282225,
+            "text": "I am eighteen years old.",
+            "author": "human600",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4552681,
+            "text": "Saya berusia 18 tahun.",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0185",
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "syllables": [
+        "jiǔ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "nine",
+        "9"
+      ],
+      "ind": [
+        "sembilan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "九"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 812214,
+          "cmn": "他说九点了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 288667,
+            "text": "He said that it was nine o'clock.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0332",
+      "hanzi": "十",
+      "pinyin": "shí",
+      "syllables": [
+        "shí"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "ten",
+        "10"
+      ],
+      "ind": [
+        "sepuluh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "十"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 349902,
+          "cmn": "我十八岁。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 282225,
+            "text": "I am eighteen years old.",
+            "author": "human600",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4552681,
+            "text": "Saya berusia 18 tahun.",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 382212,
+          "cmn": "一、二、三、四、五、六、七、八、九、十。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413731,
+            "text": "One, two, three, four, five, six, seven, eight, nine, ten.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546079,
+            "text": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 8928640,
+          "cmn": "她是四十岁。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4566557,
+            "text": "She is forty years old.",
+            "author": "maydoo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0216",
+      "hanzi": "零",
+      "pinyin": "líng",
+      "syllables": [
+        "líng"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "zero",
+        "nought",
+        "zero sign",
+        "fractional",
+        "fragmentary",
+        "odd (of numbers)"
+      ],
+      "ind": [
+        "nol"
+      ],
+      "idMachine": true,
+      "chars": [
+        "零"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 332834,
+          "cmn": "这是找零。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 540287,
+            "text": "Here's the change.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12686118,
+          "cmn": "有零钱吗？",
+          "author": "soueihin",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 267634,
+            "text": "Do you have any small change?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1411509,
+          "cmn": "不用找零钱了。",
+          "author": "asosan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 39748,
+            "text": "Keep the change!",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0215",
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "syllables": [
+        "liǎng"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "two",
+        "both",
+        "some",
+        "a few",
+        "tael, unit of weight equal to 50 grams (modern) or 1⁄16 of a catty 斤[jin1] (old)"
+      ],
+      "ind": [
+        "dua (sebelum kata penghitung)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "两"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 524451,
+          "cmn": "你有两本书。",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 69062,
+            "text": "You have two books.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 719711,
+          "cmn": "我有两本书。",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 259771,
+            "text": "I have two books.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 420472,
+          "cmn": "还有两站下去。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7789269,
+            "text": "There are still two stops left.",
+            "author": "sharris123",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0008",
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "syllables": [
+        "bǎi"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "hundred",
+        "numerous",
+        "all kinds of"
+      ],
+      "ind": [
+        "seratus",
+        "ratusan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "百"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 622486,
+          "cmn": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
+          "author": "shanghainese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 622303,
+            "text": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 760850,
+          "cmn": "五百年前是一家。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7770325,
+            "text": "Five hundred years ago it was a house.",
+            "author": "sharris123",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3890918,
+          "cmn": "我的学校里有一百个人。",
+          "author": "trieuho",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3890920,
+            "text": "There are one hundred people in my school.",
+            "author": "trieuho",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0165",
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "syllables": [
+        "jǐ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Num",
+        "Pron"
+      ],
+      "en": [
+        "how much",
+        "how many",
+        "several",
+        "a few"
+      ],
+      "ind": [
+        "berapa",
+        "beberapa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "几"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 419685,
+          "cmn": "你们是几位？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "位",
+          "en": {
+            "tatoebaId": 68772,
+            "text": "How many of you are there?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 385098,
+          "cmn": "今天星期几？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 476431,
+            "text": "What day is it today?",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13678462,
+            "text": "Hari ini hari apa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 3377949,
+          "cmn": "现在几点了？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 428402,
+            "text": "What time is it?",
+            "author": "laofmoonster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7021377,
+            "text": "Jam berapa sekarang?",
+            "author": "purichan",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0095",
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "syllables": [
+        "duō",
+        "shao"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "how much?; how many?",
+        "(phone number, student ID etc) what number?"
+      ],
+      "ind": [
+        "berapa",
+        "berapa banyak"
+      ],
+      "idMachine": true,
+      "chars": [
+        "多",
+        "少"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10966785,
+          "cmn": "你的电话是多少？",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 466624,
+            "text": "What's your phone number?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13732892,
+            "text": "Nomor teleponmu berapa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 677657,
+          "cmn": "你有多少姐妹呢？",
+          "author": "aye1995",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 69563,
+            "text": "How many sisters do you have?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 338799,
+          "cmn": "这个多少？",
+          "author": "Sprachprofi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2418,
+            "text": "How much is it?",
+            "author": "brauliobezerra",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0075",
+      "hanzi": "第",
+      "pinyin": "dì",
+      "syllables": [
+        "dì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Prefix"
+      ],
+      "en": [
+        "(prefix indicating ordinal number, as in 第六[di4 liu4] \"sixth\")",
+        "(literary) grades in which successful candidates in the imperial examinations were placed",
+        "(old) residence of a high official",
+        "(literary) but; however",
+        "(literary) only; just"
+      ],
+      "ind": [
+        "(awalan bilangan urutan, mirip \"ke-\")"
+      ],
+      "idMachine": true,
+      "chars": [
+        "第"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8686688,
+          "cmn": "我是第一。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2202863,
+            "text": "I'm first.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9473401,
+          "cmn": "你是第一。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2218427,
+            "text": "You're the first.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2367523,
+          "cmn": "这是第一点。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2367524,
+            "text": "That’s the first point.",
+            "author": "eastasiastudent",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0143",
+      "hanzi": "号",
+      "pinyin": "hào",
+      "syllables": [
+        "hào"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N",
+        "M"
+      ],
+      "en": [
+        "ordinal number",
+        "day of a month",
+        "mark",
+        "sign",
+        "business establishment",
+        "size"
+      ],
+      "ind": [
+        "tanggal",
+        "nomor"
+      ],
+      "idMachine": true,
+      "chars": [
+        "号"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 382981,
+          "cmn": "你的生日是几月几号？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16997,
+            "text": "When is your birthday?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 366005,
+            "text": "Kapan ulang tahunmu?",
+            "author": "hayabusa_future",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 2561534,
+          "cmn": "我三月二十二号生日。",
+          "author": "svhschinese",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 251418,
+            "text": "My birthday is on March 22.",
+            "author": "CN",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 408909,
+          "cmn": "今天是几号？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 408906,
+            "text": "What's the date today?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0120",
+      "hanzi": "个",
+      "pinyin": "gè",
+      "syllables": [
+        "gè"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "(classifier used before a noun that has no specific classifier)",
+        "(bound form) individual"
+      ],
+      "ind": [
+        "(penghitung umum untuk orang dan benda)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "个"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 380721,
+          "cmn": "他是个天才。",
+          "author": "sherryyyf",
+          "license": "CC BY 2.0 FR",
+          "outside": "天才",
+          "en": {
+            "tatoebaId": 301761,
+            "text": "He is a genius.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 469383,
+          "cmn": "你不是个懦夫。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "懦夫",
+          "en": {
+            "tatoebaId": 16281,
+            "text": "You are not a coward.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 659658,
+          "cmn": "哪个是我的？",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 38002,
+            "text": "Which is mine?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3864920,
+            "text": "Yang mana punyaku?",
+            "author": "orion17",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0010",
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "syllables": [
+        "bàn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "half",
+        "semi-",
+        "incomplete",
+        "(after a number) and a half"
+      ],
+      "ind": [
+        "setengah",
+        "separuh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "半"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14111617,
+          "cmn": "现在一点半。",
+          "author": "jan_OkulaJu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10713655,
+            "text": "It's now half past one.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 375357,
+          "cmn": "学校3点半放学。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2937733,
+            "text": "School is over at 3:30.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11264792,
+          "cmn": "开了半小时，车就坏了。",
+          "author": "asuliu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 72738,
+            "text": "The car broke down after half an hour's driving.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0431",
+      "hanzi": "一半",
+      "pinyin": "yībàn",
+      "syllables": [
+        "yī",
+        "bàn"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [
+        "Num"
+      ],
+      "en": [
+        "half"
+      ],
+      "ind": [
+        "setengah",
+        "separuh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一",
+        "半"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14023304,
+          "cmn": "面包被吃了一半。",
+          "author": "jan_OkulaJu",
+          "license": "CC BY 2.0 FR",
+          "outside": "被",
+          "en": {
+            "tatoebaId": 5023017,
+            "text": "The bun was half eaten.",
+            "author": "Lindoula",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5907644,
+          "cmn": "别留着一半工作没干。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "留",
+          "en": {
+            "tatoebaId": 245455,
+            "text": "Don't leave your work half finished.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 12568749,
+          "cmn": "差不多一半同学都学过英语。",
+          "author": "omerfarukckmk",
+          "license": "CC BY 2.0 FR",
+          "outside": "英语",
+          "en": {
+            "tatoebaId": 12568750,
+            "text": "Nearly half the students have learned English.",
+            "author": "omerfarukckmk",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0353",
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "syllables": [
+        "suì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "classifier for years (of age)",
+        "year",
+        "year (of crop harvests)"
+      ],
+      "ind": [
+        "tahun (untuk umur)",
+        "usia"
+      ],
+      "idMachine": true,
+      "chars": [
+        "岁"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 349902,
+          "cmn": "我十八岁。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 282225,
+            "text": "I am eighteen years old.",
+            "author": "human600",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4552681,
+            "text": "Saya berusia 18 tahun.",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 8928640,
+          "cmn": "她是四十岁。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4566557,
+            "text": "She is forty years old.",
+            "author": "maydoo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2292923,
+          "cmn": "我二十五岁了。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 957242,
+            "text": "I'm 25 years old.",
+            "author": "Artfanster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13225019,
+            "text": "Saya berumur dua puluh lima tahun.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0439",
+      "hanzi": "一些",
+      "pinyin": "yīxiē",
+      "syllables": [
+        "yī",
+        "xiē"
+      ],
+      "tones": [
+        1,
+        1
+      ],
+      "pos": [],
+      "en": [
+        "some; a few; a little; (following an adjective) slightly ...er"
+      ],
+      "ind": [
+        "beberapa",
+        "sedikit"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一",
+        "些"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2076255,
+          "cmn": "请说慢一些。",
+          "author": "User5120",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 403059,
+            "text": "Please speak slowly.",
+            "author": "Ramses",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8859474,
+          "cmn": "给他一些时间。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3915848,
+            "text": "Give him some time.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9423561,
+          "cmn": "我看了一些书。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9419746,
+            "text": "I have read some books.",
+            "author": "abracadebby",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0437",
+      "hanzi": "一点儿",
+      "pinyin": "yīdiǎnr",
+      "syllables": [
+        "yī",
+        "diǎn",
+        "r"
+      ],
+      "tones": [
+        1,
+        3,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "a bit; a little bit",
+        "(not) the least bit (in negative expressions)",
+        "(after an adjective) a bit more, -er"
+      ],
+      "ind": [
+        "sedikit",
+        "agak"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一",
+        "点",
+        "儿"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2337135,
+          "cmn": "这一点儿也不好。",
+          "author": "anndiana",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1682678,
+            "text": "This is not good at all.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 400212,
+          "cmn": "还要一点儿。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 495631,
+            "text": "Just a little more.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 869811,
+          "cmn": "给我一点儿。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1034563,
+            "text": "Give me a little.",
+            "author": "Brian255",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0434",
+      "hanzi": "一下儿",
+      "pinyin": "yīxiàr",
+      "syllables": [
+        "yī",
+        "xià",
+        "r"
+      ],
+      "tones": [
+        1,
+        4,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
+        "all at once; suddenly"
+      ],
+      "ind": [
+        "sebentar",
+        "coba (melunakkan kalimat)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一",
+        "下",
+        "儿"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0094",
+      "hanzi": "多",
+      "pinyin": "duō",
+      "syllables": [
+        "duō"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Adj",
+        "Pron"
+      ],
+      "en": [
+        "many; much; more; a lot of",
+        "too many; in excess",
+        "(after a numeral) ... odd",
+        "how (to what extent) (Taiwan pr. [duo2])",
+        "(bound form) multi-; poly-"
+      ],
+      "ind": [
+        "banyak",
+        "lebih"
+      ],
+      "idMachine": true,
+      "chars": [
+        "多"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10552154,
+          "cmn": "我蛀牙很多。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "蛀牙",
+          "en": {
+            "tatoebaId": 241841,
+            "text": "I have a lot of bad teeth.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11077429,
+          "cmn": "八点多了。",
+          "author": "LeeSooHa",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5825535,
+            "text": "It's past eight.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 10744623,
+            "text": "Sekarang lewat jam delapan.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 710167,
+          "cmn": "你们有很多书。",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16525,
+            "text": "You have many books.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12775404,
+            "text": "Kalian punya banyak buku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0324",
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "syllables": [
+        "shǎo"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Adj",
+        "V"
+      ],
+      "en": [
+        "few",
+        "less",
+        "to lack",
+        "to be missing",
+        "to stop (doing sth)",
+        "seldom"
+      ],
+      "ind": [
+        "sedikit",
+        "kurang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "少"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 472901,
+          "cmn": "少了什么？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 25227,
+            "text": "What is missing?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 354509,
+          "cmn": "她很少出去。",
+          "author": "ruicong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 312305,
+            "text": "She seldom goes out.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 794234,
+          "cmn": "什么也没少。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 264932,
+            "text": "Nothing is missing.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0053",
+      "hanzi": "次",
+      "pinyin": "cì",
+      "syllables": [
+        "cì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "time; occurrence (classifier for repeated events)",
+        "next in sequence; second",
+        "secondary"
+      ],
+      "ind": [
+        "kali",
+        "(penghitung untuk frekuensi)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "次"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 796840,
+          "cmn": "再试一次。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 31497,
+            "text": "Try it once again.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1077784,
+          "cmn": "再来一次！",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4736846,
+            "text": "One more time!",
+            "author": "paper1n0",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9990131,
+          "cmn": "请再试一次。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1444842,
+            "text": "Please try again.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u02-01",
+      "unit": "u02",
+      "hanzi": "俩",
+      "pinyin": "liǎ",
+      "syllables": [
+        "liǎ"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "两个",
+        "wordIds": [
+          "L1-0215",
+          "L1-0120"
+        ]
+      },
+      "meaning": {
+        "id": "dua (orang/buah)",
+        "en": "two (of something), the two of"
+      },
+      "situation": {
+        "id": "Menyebut dua orang atau dua benda dalam obrolan, misalnya \"kita berdua\".",
+        "en": "Talking about two people or things in conversation, e.g. \"the two of us\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-02",
+      "unit": "u02",
+      "hanzi": "仨",
+      "pinyin": "sā",
+      "syllables": [
+        "sā"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "三个",
+        "wordIds": [
+          "L1-0311",
+          "L1-0120"
+        ]
+      },
+      "meaning": {
+        "id": "tiga (orang/buah)",
+        "en": "three (of something)"
+      },
+      "situation": {
+        "id": "Menyebut tiga orang atau benda dalam obrolan santai.",
+        "en": "Talking about three people or things casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-03",
+      "unit": "u02",
+      "hanzi": "好多",
+      "pinyin": "hǎo duō",
+      "syllables": [
+        "hǎo",
+        "duō"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "banyak banget",
+        "en": "lots of, so many"
+      },
+      "situation": {
+        "id": "Bilang ada banyak sekali orang atau barang, misalnya di pasar.",
+        "en": "Saying there are lots of people or things, e.g. at the market."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-04",
+      "unit": "u02",
+      "hanzi": "一点点",
+      "pinyin": "yī diǎn diǎn",
+      "syllables": [
+        "yī",
+        "diǎn",
+        "diǎn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "一点儿",
+        "wordIds": [
+          "L1-0437"
+        ]
+      },
+      "meaning": {
+        "id": "sedikit saja",
+        "en": "just a little bit"
+      },
+      "situation": {
+        "id": "Minta sedikit saja, misalnya gula di bubble tea.",
+        "en": "Asking for just a little, e.g. sugar in bubble tea."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-06",
+      "unit": "u02",
+      "hanzi": "一堆",
+      "pinyin": "yī duī",
+      "syllables": [
+        "yī",
+        "duī"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "segudang, setumpuk",
+        "en": "a pile of, loads of"
+      },
+      "situation": {
+        "id": "Bilang ada banyak sekali, misalnya pekerjaan atau baju.",
+        "en": "Saying there is a whole pile, e.g. of work or clothes."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u08-02",
+      "unit": "u08",
+      "hanzi": "稍等",
+      "pinyin": "shāo děng",
+      "syllables": [
+        "shāo",
+        "děng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "等一下儿",
+        "wordIds": [
+          "L1-0068",
+          "L1-0434"
+        ]
+      },
+      "meaning": {
+        "id": "tunggu sebentar",
+        "en": "just a moment"
+      },
+      "situation": {
+        "id": "Pelayan atau penjual minta kamu menunggu sebentar.",
+        "en": "A waiter or seller asking you to wait a moment."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-02",
+      "unit": "u12",
+      "hanzi": "堵车",
+      "pinyin": "dǔ chē",
+      "syllables": [
+        "dǔ",
+        "chē"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "车很多",
+        "wordIds": [
+          "L1-0042",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "macet",
+        "en": "traffic jam"
+      },
+      "situation": {
+        "id": "Bilang jalan macet sehingga terlambat.",
+        "en": "Saying the traffic is jammed so you are late."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-08",
+      "unit": "u13",
+      "hanzi": "好久不见",
+      "pinyin": "hǎo jiǔ bù jiàn",
+      "syllables": [
+        "hǎo",
+        "jiǔ",
+        "bù",
+        "jiàn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多天没见面",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094",
+          "L1-0359",
+          "L1-0232",
+          "L1-0174"
+        ]
+      },
+      "meaning": {
+        "id": "lama nggak ketemu",
+        "en": "long time no see"
+      },
+      "situation": {
+        "id": "Menyapa teman yang sudah lama tidak bertemu.",
+        "en": "Greeting a friend you have not seen for a long time."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-05",
+      "unit": "u15",
+      "hanzi": "唠叨",
+      "pinyin": "láo dao",
+      "syllables": [
+        "láo",
+        "dao"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说很多",
+        "wordIds": [
+          "L1-0349",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "cerewet, mengomel",
+        "en": "to nag"
+      },
+      "situation": {
+        "id": "Mengeluh orang yang terus mengulang nasihat.",
+        "en": "Complaining someone keeps repeating advice."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": {
+    "id": "d-u02",
+    "title": {
+      "id": "Restoran yang ramai",
+      "en": "A busy restaurant"
+    },
+    "situation": {
+      "id": "Jam makan siang di restoran mi yang ramai. Pelayan di pintu menanyakan jumlah tamu kepada Ayah dan Ibu.",
+      "en": "Lunchtime at a busy noodle restaurant. The waiter at the door asks Dad and Mom how many they are."
+    },
+    "machine": true,
+    "speakers": {
+      "waiter": {
+        "name": {
+          "id": "Pelayan",
+          "en": "Waiter"
+        },
+        "gender": "male"
+      },
+      "baba": {
+        "name": {
+          "id": "Ayah",
+          "en": "Dad"
+        },
+        "gender": "male"
+      },
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "你好！几个人？",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "几",
+            "pinyin": "jǐ"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "人",
+            "pinyin": "rén"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hello! How many people?",
+        "id": "Halo! Berapa orang?",
+        "machine": true
+      },
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "我们俩。",
+        "tokens": [
+          {
+            "text": "我们",
+            "pinyin": "wǒmen"
+          },
+          {
+            "text": "俩",
+            "pinyin": "liǎ"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Just the two of us.",
+        "id": "Kami berdua.",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "好的，请坐。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "请坐",
+            "pinyin": "qǐngzuò"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, please have a seat.",
+        "id": "Baik, silakan duduk.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "人好多！",
+        "tokens": [
+          {
+            "text": "人",
+            "pinyin": "rén"
+          },
+          {
+            "text": "好多",
+            "pinyin": "hǎo duō"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "So many people!",
+        "id": "Ramai banget!",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "对不起，请等一下儿。",
+        "tokens": [
+          {
+            "text": "对不起",
+            "pinyin": "duìbuqǐ"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "请",
+            "pinyin": "qǐng"
+          },
+          {
+            "text": "等",
+            "pinyin": "děng"
+          },
+          {
+            "text": "一下儿",
+            "pinyin": "yīxiàr"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Sorry, please wait a moment.",
+        "id": "Maaf, mohon tunggu sebentar.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "没关系。",
+        "tokens": [
+          {
+            "text": "没关系",
+            "pinyin": "méiguānxi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "That's alright.",
+        "id": "Tidak apa-apa.",
+        "machine": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,2066 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u06",
+    "order": 6,
+    "slug": "makanan",
+    "title": {
+      "id": "Makanan & minuman",
+      "en": "Food & drink"
+    },
+    "description": {
+      "id": "Makan, minum, makanan pokok, lauk, buah, dan rasa lapar atau haus.",
+      "en": "Eating, drinking, staple foods, side dishes, fruit, and feeling hungry or thirsty."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0046",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "syllables": [
+        "chī"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to eat; to consume",
+        "to eat at (a cafeteria etc)",
+        "to eradicate; to destroy",
+        "to absorb",
+        "to suffer (shock, injury, defeat etc)"
+      ],
+      "ind": [
+        "makan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "吃"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843482,
+          "cmn": "我吃面包。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1867478,
+            "text": "I eat bread.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8854279,
+          "cmn": "他们吃肉。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2336608,
+            "text": "They eat meat.",
+            "author": "BraveSentry",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 334506,
+          "cmn": "我在吃米饭。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 334464,
+            "text": "I am eating rice.",
+            "author": "guyviet",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0047",
+      "hanzi": "吃饭",
+      "pinyin": "chīfàn",
+      "syllables": [
+        "chī",
+        "fàn"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to have a meal",
+        "to eat",
+        "to make a living"
+      ],
+      "ind": [
+        "makan",
+        "makan nasi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "吃",
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1163518,
+          "cmn": "他在吃饭。",
+          "author": "fengli",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 299788,
+            "text": "He is eating.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1189717,
+          "cmn": "我在吃饭。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1189719,
+            "text": "I'm eating.",
+            "author": "Vortarulo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2299590,
+          "cmn": "我没吃饭。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2245903,
+            "text": "I haven't eaten.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0099",
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "syllables": [
+        "fàn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "cooked rice",
+        "meal",
+        "(loanword) fan",
+        "devotee"
+      ],
+      "ind": [
+        "nasi",
+        "makanan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4761852,
+          "cmn": "我们今天吃了很多饭。",
+          "author": "DrWinters",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4761212,
+            "text": "Today we have a lot of food.",
+            "author": "cairnhead",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2307383,
+          "cmn": "饭做好了。",
+          "author": "iMaple",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1806424,
+            "text": "The food is ready.",
+            "author": "Ameer",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2934370,
+          "cmn": "她会做饭。",
+          "author": "Popolon",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2276710,
+            "text": "She knows how to cook.",
+            "author": "Hybrid",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0242",
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "syllables": [
+        "mǐ",
+        "fàn"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "(cooked) rice"
+      ],
+      "ind": [
+        "nasi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "米",
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 334506,
+          "cmn": "我在吃米饭。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 334464,
+            "text": "I am eating rice.",
+            "author": "guyviet",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1302376,
+          "cmn": "你们有没有米饭？",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 54336,
+            "text": "Do you have rice?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1788049,
+          "cmn": "他们吃很多米饭。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 307117,
+            "text": "They eat a lot of rice.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0243",
+      "hanzi": "面包",
+      "pinyin": "miànbāo",
+      "syllables": [
+        "miàn",
+        "bāo"
+      ],
+      "tones": [
+        4,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "bread"
+      ],
+      "ind": [
+        "roti"
+      ],
+      "idMachine": true,
+      "chars": [
+        "面",
+        "包"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843482,
+          "cmn": "我吃面包。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1867478,
+            "text": "I eat bread.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 843488,
+          "cmn": "我不吃面包。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3826038,
+            "text": "I don't eat bread.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8929172,
+          "cmn": "我们在吃面包。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8860712,
+            "text": "We are eating bread.",
+            "author": "AlanF_US",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0244",
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "syllables": [
+        "miàn",
+        "tiáo",
+        "r"
+      ],
+      "tones": [
+        4,
+        2,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "noodles"
+      ],
+      "ind": [
+        "mi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "面",
+        "条",
+        "儿"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0016",
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "syllables": [
+        "bāo",
+        "zi"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "baozi; bao (steamed stuffed bun)"
+      ],
+      "ind": [
+        "bakpao",
+        "roti kukus berisi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "包",
+        "子"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0035",
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "syllables": [
+        "cài"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "vegetable; greens",
+        "dish (of food)",
+        "(of one's skills etc) weak; poor",
+        "(coll.) (one's) type"
+      ],
+      "ind": [
+        "sayur",
+        "lauk",
+        "masakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "菜"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3742628,
+          "cmn": "她是我的菜。",
+          "author": "egg0073",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 314284,
+            "text": "She's my type.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 422951,
+          "cmn": "你们有什么菜？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 422947,
+            "text": "What kind of food do you have?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9453444,
+          "cmn": "我从来没吃过中国菜。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5118368,
+            "text": "I have never eaten Chinese food.",
+            "author": "Lindoula",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13669208,
+            "text": "Aku belum pernah makan makanan Cina.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0310",
+      "hanzi": "肉",
+      "pinyin": "ròu",
+      "syllables": [
+        "ròu"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "meat",
+        "flesh",
+        "pulp (of a fruit)",
+        "(coll.) (of a fruit) squashy",
+        "(of a person) flabby",
+        "irresolute"
+      ],
+      "ind": [
+        "daging"
+      ],
+      "idMachine": true,
+      "chars": [
+        "肉"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8854279,
+          "cmn": "他们吃肉。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2336608,
+            "text": "They eat meat.",
+            "author": "BraveSentry",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 427989,
+          "cmn": "您吃不吃肉？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 427988,
+            "text": "Do you eat meat?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 760125,
+          "cmn": "你们吃肉吗？",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 427988,
+            "text": "Do you eat meat?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0164",
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "syllables": [
+        "jī",
+        "dàn"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "(chicken) egg",
+        "hen's egg"
+      ],
+      "ind": [
+        "telur ayam"
+      ],
+      "idMachine": true,
+      "chars": [
+        "鸡",
+        "蛋"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 334425,
+          "cmn": "请问鸡蛋在哪里？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1565,
+            "text": "Where are the eggs, please?",
+            "author": "RoyalBee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4673809,
+          "cmn": "我不喜欢鸡蛋。",
+          "author": "McMeao",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 325226,
+            "text": "I don't care for eggs.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10064214,
+          "cmn": "一打鸡蛋多少钱？",
+          "author": "CreeperVLin",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5848416,
+            "text": "How much do a dozen eggs cost?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0346",
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "syllables": [
+        "shuǐ",
+        "guǒ"
+      ],
+      "tones": [
+        3,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "fruit"
+      ],
+      "ind": [
+        "buah",
+        "buah-buahan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "水",
+        "果"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11837677,
+          "cmn": "你爱吃什么水果？",
+          "author": "Lemmih",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10367534,
+            "text": "What kind of fruit do you like?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7768273,
+          "cmn": "他卖水果。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": "卖",
+          "en": {
+            "tatoebaId": 434998,
+            "text": "He sells fruit.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4105310,
+          "cmn": "我喜欢水果。",
+          "author": "wabisabi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1121362,
+            "text": "I like fruit.",
+            "author": "cntrational",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0139",
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "syllables": [
+        "hǎo",
+        "chī"
+      ],
+      "tones": [
+        3,
+        1
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "tasty; delicious"
+      ],
+      "ind": [
+        "enak (dimakan)",
+        "lezat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "好",
+        "吃"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2062924,
+          "cmn": "香蕉很好吃。",
+          "author": "mrtaistoi",
+          "license": "CC BY 2.0 FR",
+          "outside": "香蕉",
+          "en": {
+            "tatoebaId": 1098563,
+            "text": "Bananas are delicious.",
+            "author": "cntrational",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 348285,
+          "cmn": "全都好吃！",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": "全都",
+          "en": {
+            "tatoebaId": 1668021,
+            "text": "Everything was delicious!",
+            "author": "kerbear407",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2778814,
+          "cmn": "这条鱼很好吃。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "条鱼",
+          "en": {
+            "tatoebaId": 3049852,
+            "text": "This fish is delicious.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0096",
+      "hanzi": "饿",
+      "pinyin": "è",
+      "syllables": [
+        "è"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj",
+        "V"
+      ],
+      "en": [
+        "hungry",
+        "to starve (sb)"
+      ],
+      "ind": [
+        "lapar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "饿"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 380871,
+          "cmn": "你饿了吗？",
+          "author": "ver",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 434242,
+            "text": "Are you hungry?",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2357636,
+          "cmn": "我非常饿。",
+          "author": "anndiana",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 482432,
+            "text": "I'm really hungry.",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332706,
+          "cmn": "他说他饿了。",
+          "author": "popolady",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 319848,
+            "text": "He said that he was hungry.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0458",
+      "hanzi": "早饭",
+      "pinyin": "zǎofàn",
+      "syllables": [
+        "zǎo",
+        "fàn"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "breakfast"
+      ],
+      "ind": [
+        "sarapan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "早",
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7775489,
+          "cmn": "早饭吃什么？",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2234075,
+            "text": "What's for breakfast?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5684089,
+          "cmn": "包括早饭吗？",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "包括",
+          "en": {
+            "tatoebaId": 4870573,
+            "text": "Is breakfast included?",
+            "author": "zvzuibqx",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 782920,
+          "cmn": "早饭准备好了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 277773,
+            "text": "Breakfast is ready.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0383",
+      "hanzi": "午饭",
+      "pinyin": "wǔfàn",
+      "syllables": [
+        "wǔ",
+        "fàn"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "lunch"
+      ],
+      "ind": [
+        "makan siang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "午",
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1839200,
+          "cmn": "他们在吃午饭。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 307157,
+            "text": "They are at lunch.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6956996,
+          "cmn": "这是你的午饭吗？",
+          "author": "znc",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6953181,
+            "text": "Is this your lunch?",
+            "author": "Eccles17",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7767749,
+          "cmn": "你午饭吃的什么？",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2643465,
+            "text": "What did you have for lunch?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0373",
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "syllables": [
+        "wǎn",
+        "fàn"
+      ],
+      "tones": [
+        3,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "evening meal",
+        "dinner",
+        "supper"
+      ],
+      "ind": [
+        "makan malam"
+      ],
+      "idMachine": true,
+      "chars": [
+        "晚",
+        "饭"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1323692,
+          "cmn": "我们晚饭吃什么？",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1539913,
+            "text": "What are we having for dinner?",
+            "author": "SHamp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4265111,
+          "cmn": "晚饭我们吃什么？",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2259833,
+            "text": "What are we having for supper?",
+            "author": "_undertoad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1888718,
+          "cmn": "我不想吃晚饭。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 324626,
+            "text": "I don't want dinner.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0144",
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "syllables": [
+        "hē"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to drink"
+      ],
+      "ind": [
+        "minum"
+      ],
+      "idMachine": true,
+      "chars": [
+        "喝"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843489,
+          "cmn": "我不喝水。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1496058,
+            "text": "I don't drink water.",
+            "author": "weihaiping",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378129,
+          "cmn": "我也喝茶。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378130,
+            "text": "I drink tea, too.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378236,
+          "cmn": "你喝茶吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378237,
+            "text": "Do you drink tea?",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0345",
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "syllables": [
+        "shuǐ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "water",
+        "(after a name) ... River",
+        "to swim (used mostly in 會水|会水[hui4 shui3] and 水性[shui3 xing4])",
+        "(coll.) lacking in substance; shoddy",
+        "(bound form) additional cost; extra income",
+        "classifier for washings of a garment"
+      ],
+      "ind": [
+        "air"
+      ],
+      "idMachine": true,
+      "chars": [
+        "水"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843489,
+          "cmn": "我不喝水。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1496058,
+            "text": "I don't drink water.",
+            "author": "weihaiping",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3365840,
+          "cmn": "有很多水。",
+          "author": "hzy980512",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2713476,
+            "text": "There's plenty of water.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5542275,
+          "cmn": "喝一杯水。",
+          "author": "zvzuibqx",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5573309,
+            "text": "Drink a cup of water.",
+            "author": "n1ls",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0036",
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "syllables": [
+        "chá"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "tea",
+        "tea plant"
+      ],
+      "ind": [
+        "teh"
+      ],
+      "idMachine": true,
+      "chars": [
+        "茶"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3378129,
+          "cmn": "我也喝茶。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378130,
+            "text": "I drink tea, too.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378236,
+          "cmn": "你喝茶吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378237,
+            "text": "Do you drink tea?",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 482367,
+          "cmn": "奶茶在哪里？",
+          "author": "adjusting",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32223,
+            "text": "Where is the milk tea?",
+            "author": "Swift",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0275",
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "syllables": [
+        "niú",
+        "nǎi"
+      ],
+      "tones": [
+        2,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "cow's milk"
+      ],
+      "ind": [
+        "susu sapi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "牛",
+        "奶"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9543844,
+          "cmn": "喝牛奶吧！",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5360664,
+            "text": "Drink your milk!",
+            "author": "CarpeLanam",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3140495,
+          "cmn": "我在喝牛奶。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3132269,
+            "text": "I'm drinking milk.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8875017,
+          "cmn": "他在喝牛奶吗？",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8789014,
+            "text": "Is he drinking milk?",
+            "author": "deniko",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0198",
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "syllables": [
+        "kě"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "thirsty"
+      ],
+      "ind": [
+        "haus"
+      ],
+      "idMachine": true,
+      "chars": [
+        "渴"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5630451,
+          "cmn": "汤姆不渴。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "汤姆",
+          "en": {
+            "tatoebaId": 3099792,
+            "text": "Tom wasn't thirsty.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6744761,
+          "cmn": "我不太渴了。",
+          "author": "swolesuki",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6356703,
+            "text": "I wasn't very thirsty.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5911743,
+          "cmn": "觉得渴了就喝点。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 240643,
+            "text": "Feel free to get yourself a drink if you are thirsty.",
+            "author": "Zifre",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0017",
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "syllables": [
+        "bēi"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "cup",
+        "trophy cup",
+        "classifier for certain containers of liquids: glass, cup"
+      ],
+      "ind": [
+        "gelas",
+        "cangkir",
+        "(penghitung untuk gelas atau cangkir)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "杯"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5542275,
+          "cmn": "喝一杯水。",
+          "author": "zvzuibqx",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5573309,
+            "text": "Drink a cup of water.",
+            "author": "n1ls",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4885833,
+          "cmn": "给我一杯水。",
+          "author": "gumblex",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 250148,
+            "text": "Bring me a glass of water.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6158476,
+          "cmn": "我要一杯水。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6276484,
+            "text": "I want a glass of water.",
+            "author": "Kiwi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0018",
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "syllables": [
+        "bēi",
+        "zi"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "cup",
+        "glass"
+      ],
+      "ind": [
+        "gelas",
+        "cangkir"
+      ],
+      "idMachine": true,
+      "chars": [
+        "杯",
+        "子"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 4885037,
+          "cmn": "这是谁的杯子？",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3416475,
+            "text": "Whose glass is this?",
+            "author": "jackchak",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3580024,
+          "cmn": "哪个是你的杯子？",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1554393,
+            "text": "Which cup is yours?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3580026,
+          "cmn": "哪个杯子是你的？",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1554393,
+            "text": "Which cup is yours?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0015",
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "syllables": [
+        "bāo"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "N",
+        "M",
+        "V"
+      ],
+      "en": [
+        "to cover",
+        "to wrap",
+        "to hold",
+        "to include",
+        "to take charge of",
+        "to contract (to or for)"
+      ],
+      "ind": [
+        "tas",
+        "membungkus",
+        "(penghitung untuk bungkusan)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "包"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2040518,
+          "cmn": "那是我的包。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 55628,
+            "text": "This is my bag.",
+            "author": "jakov",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332741,
+          "cmn": "这不是我的包。",
+          "author": "popolady",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 55621,
+            "text": "This isn't my bag.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 486991,
+          "cmn": "那个包是我的。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 68476,
+            "text": "That bag is mine.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u06-01",
+      "unit": "u06",
+      "hanzi": "吃货",
+      "pinyin": "chī huò",
+      "syllables": [
+        "chī",
+        "huò"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "爱吃的人",
+        "wordIds": [
+          "L1-0001",
+          "L1-0046",
+          "L1-0067",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "si doyan makan",
+        "en": "foodie"
+      },
+      "situation": {
+        "id": "Bercanda tentang orang yang sangat suka makan.",
+        "en": "Joking about someone who loves eating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-02",
+      "unit": "u06",
+      "hanzi": "买单",
+      "pinyin": "mǎi dān",
+      "syllables": [
+        "mǎi",
+        "dān"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "给钱",
+        "wordIds": [
+          "L1-0121",
+          "L1-0294"
+        ]
+      },
+      "meaning": {
+        "id": "minta bon, bayar",
+        "en": "to pay the bill"
+      },
+      "situation": {
+        "id": "Minta bon atau membayar di restoran.",
+        "en": "Asking for or paying the bill in a restaurant."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-04",
+      "unit": "u06",
+      "hanzi": "打包",
+      "pinyin": "dǎ bāo",
+      "syllables": [
+        "dǎ",
+        "bāo"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "拿走",
+        "wordIds": [
+          "L1-0249",
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "dibungkus",
+        "en": "to take away, doggy bag"
+      },
+      "situation": {
+        "id": "Minta sisa makanan atau pesanan dibungkus.",
+        "en": "Asking for leftovers or an order to be packed to go."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-05",
+      "unit": "u06",
+      "hanzi": "馋",
+      "pinyin": "chán",
+      "syllables": [
+        "chán"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "想吃",
+        "wordIds": [
+          "L1-0400",
+          "L1-0046"
+        ]
+      },
+      "meaning": {
+        "id": "ngiler, pengin makan",
+        "en": "craving (food)"
+      },
+      "situation": {
+        "id": "Melihat makanan enak dan jadi ingin makan.",
+        "en": "Seeing tasty food and craving it."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-06",
+      "unit": "u06",
+      "hanzi": "开吃",
+      "pinyin": "kāi chī",
+      "syllables": [
+        "kāi",
+        "chī"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "吃饭",
+        "wordIds": [
+          "L1-0047"
+        ]
+      },
+      "meaning": {
+        "id": "ayo mulai makan",
+        "en": "let's dig in"
+      },
+      "situation": {
+        "id": "Mengajak mulai makan setelah makanan datang.",
+        "en": "Saying it is time to start eating once the food arrives."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [],
+  "dialog": {
+    "id": "d-u06",
+    "title": {
+      "id": "Makan di warung mi",
+      "en": "Eating at a noodle shop"
+    },
+    "situation": {
+      "id": "Pulang sekolah, Ibu mengajak Kakak makan di warung mi dekat stasiun metro.",
+      "en": "After school, Mom takes big brother to a noodle shop near the metro station."
+    },
+    "machine": true,
+    "speakers": {
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      },
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "waiter": {
+        "name": {
+          "id": "Pelayan",
+          "en": "Waiter"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "我很饿！我们吃什么？",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "饿",
+            "pinyin": "è"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我们",
+            "pinyin": "wǒmen"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "I'm so hungry! What shall we eat?",
+        "id": "Aku lapar sekali! Kita makan apa?",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "吃面条儿吧。你要包子吗？",
+        "tokens": [
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "面条儿",
+            "pinyin": "miàntiáor"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "包子",
+            "pinyin": "bāozi"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Let's have noodles. Do you want baozi?",
+        "id": "Makan mi saja. Kamu mau bakpao?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "要！我也要一杯茶。",
+        "tokens": [
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "杯",
+            "pinyin": "bēi"
+          },
+          {
+            "text": "茶",
+            "pinyin": "chá"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Yes! And I want a cup of tea too.",
+        "id": "Mau! Aku juga mau segelas teh.",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "好，请等一下儿。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "请",
+            "pinyin": "qǐng"
+          },
+          {
+            "text": "等",
+            "pinyin": "děng"
+          },
+          {
+            "text": "一下儿",
+            "pinyin": "yīxiàr"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, just a moment please.",
+        "id": "Baik, tunggu sebentar ya.",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "很好吃！",
+        "tokens": [
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好吃",
+            "pinyin": "hǎochī"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It's delicious!",
+        "id": "Enak sekali!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "你好，买单！",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "买单",
+            "pinyin": "mǎi dān"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Excuse me, the bill please!",
+        "id": "Permisi, minta bon!",
+        "machine": true
+      }
+    ]
+  }
+}

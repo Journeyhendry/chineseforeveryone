@@ -1,0 +1,2605 @@
+{
+  "version": 1,
+  "unit": {
+    "id": "u20",
+    "order": 20,
+    "slug": "sifat",
+    "title": {
+      "id": "Sifat, perasaan & penguat",
+      "en": "Describing things & feelings"
+    },
+    "description": {
+      "id": "Besar, kecil, baru, panas, dingin, senang, marah, dan kata penguat seperti \"sangat\" dan \"paling\".",
+      "en": "Big, small, new, hot, cold, happy, angry, and intensifiers such as \"very\" and \"most\"."
+    }
+  },
+  "words": [
+    {
+      "id": "L1-0061",
+      "hanzi": "大",
+      "pinyin": "dà",
+      "syllables": [
+        "dà"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "big; large; great",
+        "older (than another person)",
+        "eldest (as in 大姐[da4 jie3])",
+        "greatly; freely; fully",
+        "(dialect) father",
+        "(dialect) uncle (father's brother)"
+      ],
+      "ind": [
+        "besar",
+        "tua (usia)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "大"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 458163,
+          "cmn": "大家都在等你。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32112,
+            "text": "Everybody is waiting for you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 9975781,
+            "text": "Semua orang menunggumu.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 405261,
+          "cmn": "大家都想坐在她旁边。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32165,
+            "text": "Everybody wants to sit beside her.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1503866,
+            "text": "Semuanya ingin duduk disampingnya.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 870126,
+          "cmn": "昨天下大雨。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 244525,
+            "text": "We had a heavy rain yesterday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0401",
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "syllables": [
+        "xiǎo"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "small",
+        "tiny",
+        "few",
+        "young"
+      ],
+      "ind": [
+        "kecil"
+      ],
+      "idMachine": true,
+      "chars": [
+        "小"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 6382731,
+          "cmn": "我爱看小说。",
+          "author": "mervert1",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6067780,
+            "text": "I love reading novels.",
+            "author": "mailohilohi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 6387630,
+            "text": "Saya suka membaca novel.",
+            "author": "qazz0003",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 5869913,
+          "cmn": "这本书小。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 56916,
+            "text": "This book is small.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6142020,
+          "cmn": "我叫小雨。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7242769,
+            "text": "My name is Xiao Yu.",
+            "author": "RoyalBee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0115",
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "syllables": [
+        "gāo"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "high",
+        "tall",
+        "above average",
+        "loud",
+        "your (honorific)"
+      ],
+      "ind": [
+        "tinggi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "高"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 393593,
+          "cmn": "你有多高？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16472,
+            "text": "How tall are you?",
+            "author": "xtofu80",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 760547,
+          "cmn": "他比我高。",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 749281,
+            "text": "He's taller than me.",
+            "author": "Serhiy",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 833198,
+          "cmn": "我比你高。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 257131,
+            "text": "I'm taller than you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0006",
+      "hanzi": "白",
+      "pinyin": "bái",
+      "syllables": [
+        "bái"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "white",
+        "snowy",
+        "pure",
+        "bright",
+        "empty",
+        "blank"
+      ],
+      "ind": [
+        "putih",
+        "kosong"
+      ],
+      "idMachine": true,
+      "chars": [
+        "白"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 340435,
+          "cmn": "我不明白。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": "不明",
+          "en": {
+            "tatoebaId": 38392,
+            "text": "I don't get it.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 638775,
+            "text": "Saya tidak mengerti.",
+            "author": "noniq",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 2032284,
+          "cmn": "你不明白。",
+          "author": "ydcok",
+          "license": "CC BY 2.0 FR",
+          "outside": "不明",
+          "en": {
+            "tatoebaId": 18073,
+            "text": "You don't understand.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3710646,
+          "cmn": "他没有白死。",
+          "author": "trieuho",
+          "license": "CC BY 2.0 FR",
+          "outside": "死",
+          "en": {
+            "tatoebaId": 3962751,
+            "text": "He didn't die in vain.",
+            "author": "JSakuragi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0411",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "syllables": [
+        "xīn"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "new",
+        "newly",
+        "meso- (chemistry)"
+      ],
+      "ind": [
+        "baru"
+      ],
+      "idMachine": true,
+      "chars": [
+        "新"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 686937,
+          "cmn": "这些书是新的。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 55079,
+            "text": "These books are new.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13434575,
+            "text": "Buku-buku ini baru.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 429821,
+          "cmn": "你是新来的吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 429820,
+            "text": "Are you new?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 822110,
+          "cmn": "这是新的。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 703077,
+            "text": "This is new.",
+            "author": "papabear",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0483",
+      "hanzi": "重",
+      "pinyin": "zhòng",
+      "syllables": [
+        "zhòng"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "heavy",
+        "serious",
+        "to attach importance to"
+      ],
+      "ind": [
+        "berat",
+        "penting"
+      ],
+      "idMachine": true,
+      "chars": [
+        "重"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2915893,
+          "cmn": "我的书很重。",
+          "author": "j0rd4nkzf",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2915895,
+            "text": "My book is very heavy.",
+            "author": "j0rd4nkzf",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11509755,
+          "cmn": "你不比我重。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9517664,
+            "text": "You don't weigh more than me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10617224,
+          "cmn": "我的包非常重。",
+          "author": "DaoSeng",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4670942,
+            "text": "My bag is very heavy.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0152",
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "syllables": [
+        "huài"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "bad",
+        "spoiled",
+        "broken",
+        "to break down",
+        "(suffix) to the utmost"
+      ],
+      "ind": [
+        "buruk",
+        "jahat",
+        "rusak"
+      ],
+      "idMachine": true,
+      "chars": [
+        "坏"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 817677,
+          "cmn": "电视坏了。",
+          "author": "schur",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 39262,
+            "text": "The television doesn't work.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1817809,
+            "text": "Televisinya sudah rusak.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 4313892,
+          "cmn": "一个爱花的人坏不到哪里去。",
+          "author": "cindycute",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4313650,
+            "text": "A person who likes flowers can't be evil.",
+            "author": "mervert1",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3673765,
+          "cmn": "我累坏了",
+          "author": "zy605334918",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 501385,
+            "text": "I'm dead tired.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0111",
+      "hanzi": "干",
+      "pinyin": "gān",
+      "syllables": [
+        "gān"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "dry",
+        "dried food",
+        "empty; hollow",
+        "taken in to nominal kinship; adoptive; foster",
+        "futile; in vain",
+        "(dialect) rude; blunt"
+      ],
+      "ind": [
+        "kering"
+      ],
+      "idMachine": true,
+      "chars": [
+        "干"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 755819,
+          "cmn": "她昨天没事干。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 313805,
+            "text": "She had nothing to do yesterday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1804209,
+            "text": "Kemarin, dia tidak melakukan apa-apa.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 1442801,
+          "cmn": "我爱树干。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1442805,
+            "text": "I love the trunk.",
+            "author": "rul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9569182,
+          "cmn": "我不干了。",
+          "author": "MiracleQ",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 731636,
+            "text": "I quit.",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0212",
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "syllables": [
+        "lěng"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "cold"
+      ],
+      "ind": [
+        "dingin"
+      ],
+      "idMachine": true,
+      "chars": [
+        "冷"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 352054,
+          "cmn": "我觉得冷。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 21124,
+            "text": "I feel cold.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 381930,
+          "cmn": "这里很冷。",
+          "author": "ver",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 61669,
+            "text": "It is very cold here.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 841845,
+          "cmn": "天气冷了。",
+          "author": "eastasiastudent",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 841847,
+            "text": "The weather is cold now.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0304",
+      "hanzi": "热",
+      "pinyin": "rè",
+      "syllables": [
+        "rè"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj",
+        "V"
+      ],
+      "en": [
+        "to warm up",
+        "to heat up",
+        "hot (of weather)",
+        "heat",
+        "fervent"
+      ],
+      "ind": [
+        "panas",
+        "hangat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "热"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 343752,
+          "cmn": "今天很热。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1689,
+            "text": "It is very hot today.",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3586044,
+          "cmn": "真他妈热。",
+          "author": "Tximist",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 429537,
+            "text": "It's fucking hot.",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4956714,
+          "cmn": "你不热吗？",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2951539,
+            "text": "Aren't you hot?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0116",
+      "hanzi": "高兴",
+      "pinyin": "gāoxìng",
+      "syllables": [
+        "gāo",
+        "xìng"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "happy",
+        "glad",
+        "willing (to do sth)",
+        "in a cheerful mood"
+      ],
+      "ind": [
+        "senang",
+        "gembira"
+      ],
+      "idMachine": true,
+      "chars": [
+        "高",
+        "兴"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 393275,
+          "cmn": "认识您很高兴。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 64646,
+            "text": "I'm very happy to make your acquaintance.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 338023,
+          "cmn": "他很高兴。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 296294,
+            "text": "He is happy.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 924590,
+          "cmn": "我很高兴。",
+          "author": "jessie0422",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 436371,
+            "text": "I am happy.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0330",
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "syllables": [
+        "shēng",
+        "qì"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to get angry; to be furious",
+        "vitality; liveliness"
+      ],
+      "ind": [
+        "marah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "生",
+        "气"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 389804,
+          "cmn": "他生气了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 507233,
+            "text": "He got angry.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5684117,
+          "cmn": "我会生气。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3994494,
+            "text": "I can become angry.",
+            "author": "ehsansia",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13052744,
+          "cmn": "我很生气！",
+          "author": "maina",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1682964,
+            "text": "I'm outraged!",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0443",
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "syllables": [
+        "yǒu",
+        "míng"
+      ],
+      "tones": [
+        3,
+        2
+      ],
+      "pos": [],
+      "en": [
+        "famous",
+        "well-known"
+      ],
+      "ind": [
+        "terkenal"
+      ],
+      "idMachine": true,
+      "chars": [
+        "有",
+        "名"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1176883,
+          "cmn": "我的妹妹有名。",
+          "author": "treskro3",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 251921,
+            "text": "My sister is famous.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 882990,
+          "cmn": "他在日本也很有名。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 302210,
+            "text": "He is also very famous in Japan.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 334921,
+          "cmn": "大家都想见到你，你太有名了！",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1468,
+            "text": "Everyone wants to meet you. You're famous!",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0435",
+      "hanzi": "一样",
+      "pinyin": "yīyàng",
+      "syllables": [
+        "yī",
+        "yàng"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "same",
+        "like",
+        "equal to",
+        "the same as",
+        "just like"
+      ],
+      "ind": [
+        "sama",
+        "serupa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "一",
+        "样"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 333772,
+          "cmn": "他和我一样高。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5528543,
+            "text": "He's as tall as me.",
+            "author": "Giselle128F",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335147,
+          "cmn": "他和她一样高。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 302633,
+            "text": "He is as tall as her.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1173004,
+          "cmn": "你跟我一样大。",
+          "author": "eastasiastudent",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1173005,
+            "text": "You and me are the same age.",
+            "author": "eastasiastudent",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0358",
+      "hanzi": "太",
+      "pinyin": "tài",
+      "syllables": [
+        "tài"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "highest",
+        "greatest",
+        "too (much)",
+        "very",
+        "extremely"
+      ],
+      "ind": [
+        "terlalu",
+        "sangat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "太"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 332655,
+          "cmn": "我不太明白他说什么。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 286016,
+            "text": "I don't quite understand what he says.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 366327,
+            "text": "Saya tidak terlalu mengerti apa yang ia(laki-laki) katakan.",
+            "author": "exodream",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 4270105,
+          "cmn": "他说话太快了。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 288819,
+            "text": "He talks too fast.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 348262,
+          "cmn": "我太累了。",
+          "author": "visualtoday",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 31439,
+            "text": "I'm done up.",
+            "author": "katix824",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0108",
+      "hanzi": "非常",
+      "pinyin": "fēicháng",
+      "syllables": [
+        "fēi",
+        "cháng"
+      ],
+      "tones": [
+        1,
+        2
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "very; really",
+        "unusual; extraordinary"
+      ],
+      "ind": [
+        "sangat",
+        "luar biasa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "非",
+        "常"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8888006,
+          "cmn": "水非常重要。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5358554,
+            "text": "Water is very important.",
+            "author": "dfordivam",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13666755,
+            "text": "Air sangatlah penting.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 4270137,
+          "cmn": "我非常喜欢这本书。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3523965,
+            "text": "I like this book very much.",
+            "author": "agio",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2357636,
+          "cmn": "我非常饿。",
+          "author": "anndiana",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 482432,
+            "text": "I'm really hungry.",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0470",
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "syllables": [
+        "zhēn"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "Adv",
+        "Adj"
+      ],
+      "en": [
+        "really",
+        "truly",
+        "indeed",
+        "real",
+        "true",
+        "genuine"
+      ],
+      "ind": [
+        "sungguh",
+        "benar-benar",
+        "asli"
+      ],
+      "idMachine": true,
+      "chars": [
+        "真"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3586044,
+          "cmn": "真他妈热。",
+          "author": "Tximist",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 429537,
+            "text": "It's fucking hot.",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9433052,
+          "cmn": "天气真好。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5090002,
+            "text": "The weather is just perfect.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 795754,
+          "cmn": "见到你真好。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32688,
+            "text": "Nice to see you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0471",
+      "hanzi": "真的",
+      "pinyin": "zhēnde",
+      "syllables": [
+        "zhēn",
+        "de"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "really; truly; indeed",
+        "real; true; genuine",
+        "(math.) proper"
+      ],
+      "ind": [
+        "benar-benar",
+        "sungguh",
+        "memang betul"
+      ],
+      "idMachine": true,
+      "chars": [
+        "真",
+        "的"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3377988,
+          "cmn": "是真的吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 378827,
+            "text": "Is it true?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5611557,
+          "cmn": "不是真的！",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2282392,
+            "text": "It's not true!",
+            "author": "Hybrid",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6065730,
+          "cmn": "我真的冷。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 37828,
+            "text": "I feel very cold.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0492",
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "syllables": [
+        "zuì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "(before an adjective or verb) to the highest degree; (the) most ...; -est",
+        "(after 之[zhi1]) best or most extreme example (e.g. 世界之最[shi4 jie4 zhi1 zui4] \"the greatest in the world\")"
+      ],
+      "ind": [
+        "paling"
+      ],
+      "idMachine": true,
+      "chars": [
+        "最"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1561053,
+          "cmn": "你是最高的。",
+          "author": "cc_neko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1391804,
+            "text": "You're the tallest one.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378202,
+          "cmn": "你是最快的。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378203,
+            "text": "You are the fastest.",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 442067,
+          "cmn": "做人是最难的。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 442071,
+            "text": "Nothing is as difficult as becoming a person.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0493",
+      "hanzi": "最好",
+      "pinyin": "zuìhǎo",
+      "syllables": [
+        "zuì",
+        "hǎo"
+      ],
+      "tones": [
+        4,
+        3
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "best",
+        "had better ...; it would be best to ..."
+      ],
+      "ind": [
+        "sebaiknya",
+        "paling baik"
+      ],
+      "idMachine": true,
+      "chars": [
+        "最",
+        "好"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 826070,
+          "cmn": "你最好走。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 518555,
+            "text": "You'd better go.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 844117,
+          "cmn": "你最好去。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 518556,
+            "text": "You should go.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13511689,
+          "cmn": "你最好了。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1752568,
+            "text": "You're the best.",
+            "author": "donkirkby",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0132",
+      "hanzi": "还",
+      "pinyin": "hái",
+      "syllables": [
+        "hái"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "still",
+        "still in progress",
+        "still more",
+        "yet",
+        "even more",
+        "in addition"
+      ],
+      "ind": [
+        "masih",
+        "juga",
+        "lebih"
+      ],
+      "idMachine": true,
+      "chars": [
+        "还"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5918636,
+          "cmn": "他还睡觉。",
+          "author": "Sethlang",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5917195,
+            "text": "He is still sleeping.",
+            "author": "CarpeLanam",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12638349,
+            "text": "Dia masih tidur.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 465860,
+          "cmn": "他还在这儿。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 292828,
+            "text": "He is still here.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3478824,
+            "text": "Dia masih di sini.",
+            "author": "lewis",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 9415195,
+          "cmn": "他还在睡觉。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 292838,
+            "text": "He is still in bed.",
+            "author": "kebukebu",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12638349,
+            "text": "Dia masih tidur.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0133",
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "syllables": [
+        "hái",
+        "shi"
+      ],
+      "tones": [
+        2,
+        5
+      ],
+      "pos": [
+        "Adv",
+        "Conj"
+      ],
+      "en": [
+        "still (as before)",
+        "had better",
+        "unexpectedly",
+        "or"
+      ],
+      "ind": [
+        "atau",
+        "masih",
+        "sebaiknya"
+      ],
+      "idMachine": true,
+      "chars": [
+        "还",
+        "是"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2607380,
+          "cmn": "你家还是我家？",
+          "author": "visualtoday",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1148389,
+            "text": "Your place or mine?",
+            "author": "cntrational",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9573085,
+          "cmn": "我还是个新手。",
+          "author": "jin1",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9583340,
+            "text": "I'm still a beginner.",
+            "author": "shekitten",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 395058,
+          "cmn": "你还是去看病吧。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2659685,
+            "text": "You'd better see a doctor.",
+            "author": "WestofEden",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0134",
+      "hanzi": "还有",
+      "pinyin": "háiyǒu",
+      "syllables": [
+        "hái",
+        "yǒu"
+      ],
+      "tones": [
+        2,
+        3
+      ],
+      "pos": [],
+      "en": [
+        "there still remain(s); there is (or are) still",
+        "in addition"
+      ],
+      "ind": [
+        "masih ada",
+        "selain itu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "还",
+        "有"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 407088,
+          "cmn": "还有什么？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 407085,
+            "text": "What else?",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5102215,
+          "cmn": "还有别的吗？",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 434224,
+            "text": "Anything else?",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9958404,
+          "cmn": "我还有点事。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1113425,
+            "text": "I still have things left to do.",
+            "author": "Scott",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0066",
+      "hanzi": "地",
+      "pinyin": "de",
+      "syllables": [
+        "de"
+      ],
+      "tones": [
+        5
+      ],
+      "pos": [
+        "Aux"
+      ],
+      "en": [
+        "-ly",
+        "structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct"
+      ],
+      "ind": [
+        "(partikel yang menghubungkan kata keterangan dengan kata kerja, mirip akhiran \"-nya\")"
+      ],
+      "idMachine": true,
+      "chars": [
+        "地"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 512111,
+          "cmn": "他慢慢地走。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 293207,
+            "text": "He walks slowly.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 799117,
+          "cmn": "他坐在地上。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 299626,
+            "text": "He was sitting on the floor.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9954763,
+          "cmn": "他是本地人。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9954764,
+            "text": "He is a local.",
+            "author": "GlossaMatik",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0469",
+      "hanzi": "着",
+      "pinyin": "zhe",
+      "syllables": [
+        "zhe"
+      ],
+      "tones": [
+        5
+      ],
+      "pos": [
+        "Aux"
+      ],
+      "en": [
+        "aspect particle indicating action in progress or ongoing state"
+      ],
+      "ind": [
+        "(penanda keadaan berlangsung atau berlanjut)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "着"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1189409,
+          "cmn": "我睡不着。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 322736,
+            "text": "I couldn't sleep.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5092669,
+          "cmn": "一边站着。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1935050,
+            "text": "Stand aside.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5102308,
+          "cmn": "在这等着。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1841188,
+            "text": "Wait here.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0416",
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "syllables": [
+        "xíng"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V",
+        "Adj"
+      ],
+      "en": [
+        "OK; all right",
+        "capable; competent",
+        "(bound form) to walk; to go; to travel"
+      ],
+      "ind": [
+        "boleh",
+        "bisa",
+        "mampu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "行"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5092290,
+          "cmn": "她在行走。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 316925,
+            "text": "She walks.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 794037,
+          "cmn": "六点您行吗？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 72439,
+            "text": "Will six o'clock suit you?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 874154,
+          "cmn": "那天我不行。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 44597,
+            "text": "That's a bad day for me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0030",
+      "hanzi": "不大",
+      "pinyin": "bùdà",
+      "syllables": [
+        "bù",
+        "dà"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "not very",
+        "not too",
+        "not often"
+      ],
+      "ind": [
+        "tidak terlalu",
+        "tidak begitu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "不",
+        "大"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5574365,
+          "cmn": "你看来不大高兴。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2044558,
+            "text": "You don't look so happy.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3376512,
+          "cmn": "你的船不大。",
+          "author": "go_oo",
+          "license": "CC BY 2.0 FR",
+          "outside": "船",
+          "en": {
+            "tatoebaId": 6443372,
+            "text": "Your boat is not big.",
+            "author": "RudeGuyGames",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    }
+  ],
+  "casual": [
+    {
+      "id": "c-u20-01",
+      "unit": "u20",
+      "hanzi": "挺",
+      "pinyin": "tǐng",
+      "syllables": [
+        "tǐng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很",
+        "wordIds": [
+          "L1-0146"
+        ]
+      },
+      "meaning": {
+        "id": "cukup, lumayan",
+        "en": "quite, pretty"
+      },
+      "situation": {
+        "id": "Bilang \"cukup/lumayan\", misalnya \"lumayan enak\".",
+        "en": "Saying \"pretty/quite\", e.g. \"pretty good\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-02",
+      "unit": "u20",
+      "hanzi": "超",
+      "pinyin": "chāo",
+      "syllables": [
+        "chāo"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "非常",
+        "wordIds": [
+          "L1-0108"
+        ]
+      },
+      "meaning": {
+        "id": "super, banget",
+        "en": "super, so"
+      },
+      "situation": {
+        "id": "Melebih-lebihkan, misalnya \"super enak\".",
+        "en": "Exaggerating, e.g. \"super tasty\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-03",
+      "unit": "u20",
+      "hanzi": "开心",
+      "pinyin": "kāi xīn",
+      "syllables": [
+        "kāi",
+        "xīn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "高兴",
+        "wordIds": [
+          "L1-0116"
+        ]
+      },
+      "meaning": {
+        "id": "senang",
+        "en": "happy"
+      },
+      "situation": {
+        "id": "Bilang merasa senang.",
+        "en": "Saying you feel happy."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-07",
+      "unit": "u20",
+      "hanzi": "绝了",
+      "pinyin": "jué le",
+      "syllables": [
+        "jué",
+        "le"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "太好了",
+        "wordIds": [
+          "L1-0358",
+          "L1-0138",
+          "L1-0210"
+        ]
+      },
+      "meaning": {
+        "id": "mantap jiwa",
+        "en": "amazing, unbeatable"
+      },
+      "situation": {
+        "id": "Memuji sesuatu yang luar biasa enak atau bagus.",
+        "en": "Praising something amazingly good."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-08",
+      "unit": "u20",
+      "hanzi": "一般般",
+      "pinyin": "yī bān bān",
+      "syllables": [
+        "yī",
+        "bān",
+        "bān"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不大好",
+        "wordIds": [
+          "L1-0030",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "biasa aja",
+        "en": "so-so"
+      },
+      "situation": {
+        "id": "Menilai sesuatu biasa saja, tidak bagus tidak jelek.",
+        "en": "Rating something as so-so."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u15-03",
+      "unit": "u15",
+      "hanzi": "吹牛",
+      "pinyin": "chuī niú",
+      "syllables": [
+        "chuī",
+        "niú"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说大话",
+        "wordIds": [
+          "L1-0349",
+          "L1-0061",
+          "L1-0151"
+        ]
+      },
+      "meaning": {
+        "id": "membual",
+        "en": "to brag"
+      },
+      "situation": {
+        "id": "Bilang seseorang membual atau melebih-lebihkan.",
+        "en": "Saying someone is bragging or exaggerating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-03",
+      "unit": "u16",
+      "hanzi": "靠谱",
+      "pinyin": "kào pǔ",
+      "syllables": [
+        "kào",
+        "pǔ"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "行",
+        "wordIds": [
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "bisa diandalkan, masuk akal",
+        "en": "reliable, makes sense"
+      },
+      "situation": {
+        "id": "Menilai orang atau rencana bisa dipercaya.",
+        "en": "Judging a person or plan as reliable."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-04",
+      "unit": "u16",
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "syllables": [
+        "niú"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "真行",
+        "wordIds": [
+          "L1-0470",
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "keren, hebat",
+        "en": "awesome"
+      },
+      "situation": {
+        "id": "Memuji orang yang hebat sekali.",
+        "en": "Praising someone as really awesome."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-05",
+      "unit": "u16",
+      "hanzi": "厉害",
+      "pinyin": "lì hai",
+      "syllables": [
+        "lì",
+        "hai"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "真行",
+        "wordIds": [
+          "L1-0470",
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "hebat, jago",
+        "en": "amazing, impressive"
+      },
+      "situation": {
+        "id": "Memuji kemampuan seseorang.",
+        "en": "Praising someone's skill."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-04",
+      "unit": "u18",
+      "hanzi": "坑",
+      "pinyin": "kēng",
+      "syllables": [
+        "kēng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "太贵",
+        "wordIds": [
+          "L1-0358",
+          "L1-0127"
+        ]
+      },
+      "meaning": {
+        "id": "kemahalan, ditipu",
+        "en": "rip-off, to scam"
+      },
+      "situation": {
+        "id": "Mengeluh harga terlalu mahal atau merasa ditipu.",
+        "en": "Complaining that something is a rip-off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": {
+    "id": "d-u20",
+    "title": {
+      "id": "Hari yang panas",
+      "en": "A hot day"
+    },
+    "situation": {
+      "id": "Siang hari di musim panas. Adik dan temannya membeli teh susu di kedai bubble tea baru.",
+      "en": "A summer afternoon. Little sister and her friend buy milk tea at a new bubble tea shop."
+    },
+    "machine": true,
+    "speakers": {
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      },
+      "friend": {
+        "name": {
+          "id": "Teman",
+          "en": "Friend"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "今天太热了！",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "太",
+            "pinyin": "tài"
+          },
+          {
+            "text": "热",
+            "pinyin": "rè"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It's so hot today!",
+        "id": "Hari ini panas sekali!",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "对！我们去买喝的吧！",
+        "tokens": [
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我们",
+            "pinyin": "wǒmen"
+          },
+          {
+            "text": "去",
+            "pinyin": "qù"
+          },
+          {
+            "text": "买",
+            "pinyin": "mǎi"
+          },
+          {
+            "text": "喝",
+            "pinyin": "hē"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Yes! Let's go buy something to drink!",
+        "id": "Iya! Ayo beli minuman!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "好！我要一杯冷的。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "杯",
+            "pinyin": "bēi"
+          },
+          {
+            "text": "冷",
+            "pinyin": "lěng"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK! I want a cold one.",
+        "id": "Oke! Aku mau yang dingin.",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "你看，那边有一个新的商店。",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "那边",
+            "pinyin": "nàbiān"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "新",
+            "pinyin": "xīn"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "商店",
+            "pinyin": "shāngdiàn"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Look, there's a new shop over there.",
+        "id": "Lihat, di sana ada toko baru.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "这个茶真不错！",
+        "tokens": [
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "茶",
+            "pinyin": "chá"
+          },
+          {
+            "text": "真",
+            "pinyin": "zhēn"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "错",
+            "pinyin": "cuò"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "This tea is really good!",
+        "id": "Tehnya enak banget!",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "真的？我觉得一般般。",
+        "tokens": [
+          {
+            "text": "真的",
+            "pinyin": "zhēnde"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "觉得",
+            "pinyin": "juéde"
+          },
+          {
+            "text": "一般般",
+            "pinyin": "yī bān bān"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Really? I think it's just so-so.",
+        "id": "Masa? Menurutku biasa aja.",
+        "machine": true
+      }
+    ]
+  }
+}

@@ -10,7 +10,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3 · Unit bertema + kalimat contoh — 2026-11-21 — Sonnet (diperiksa Opus, 1 kali perbaikan) — 20 unit bertema (20–31 kata), 2.405 kalimat Tatoeba beratribusi lewat workflow `fetch-tatoeba.yml`; semua unit ≥ 11 kalimat
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
-- [ ] 4a · Contoh suara (butuh pilihan pemilik)
+- [ ] 4a · Contoh suara (butuh pilihan pemilik) — SEDANG DIKERJAKAN (mulai 2026-11-21T19:40Z)
 - [ ] 4b · Audio semua materi
 - [ ] 5 · Tampilan dasar
 - [ ] 5b · Font Mandarin self-host

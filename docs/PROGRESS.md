@@ -5,7 +5,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 ## Status task
 
 - [x] 1 · Kerangka proyek + deploy — 2026-11-21 — Haiku (diperiksa Opus) — Vite+React+TS, halaman "segera hadir", deploy GitHub Pages sukses
-- [ ] 1b · Cek otomatis di CI + favicon — SEDANG DIKERJAKAN (mulai 2026-11-21T16:42Z)
+- [x] 1b · Cek otomatis di CI + favicon — 2026-11-21 — Haiku (diperiksa Opus) — job `check` (typecheck, lint, test) wajib lolos sebelum build/deploy; favicon 学 ungu
 - [ ] 2 · Data kata HSK 1
 - [ ] 3 · Unit bertema + kalimat contoh
 - [ ] 3b · Versi santai + dialog

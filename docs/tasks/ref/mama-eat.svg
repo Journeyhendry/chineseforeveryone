@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ibu makan nasi dengan sumpit" viewBox="0 0 320 320"><!-- meja -->
+  <rect x="20" y="262" width="280" height="40" rx="8" fill="#C98B5B" stroke="#231942" stroke-width="4"/>
+  <path d="M30 276 H290" stroke="#231942" stroke-width="3" opacity="0.35"/>
+
+  <g class="breath2">
+  <!-- badan -->
+  <path d="M84 270 L92 196 Q94 176 118 172 L202 172 Q226 176 228 196 L236 270 Z" fill="#D9534F" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="149" y="150" width="22" height="26" rx="6" fill="#EDBE98" stroke="#231942" stroke-width="4"/>
+
+  <!-- kepala (sama dengan tokoh Ibu, digeser) -->
+  <g class="eathead"><g transform="translate(10 -18)">
+    <circle cx="150" cy="54" r="24" fill="#2B2233" stroke="#231942" stroke-width="4"/>
+    <path d="M90 128 Q86 60 150 54 Q214 60 210 128 Q212 150 200 160 L100 160 Q88 150 90 128 Z" fill="#2B2233" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="94" cy="124" rx="10" ry="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+    <ellipse cx="206" cy="124" rx="10" ry="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+    <path d="M96 112 Q96 66 150 66 Q204 66 204 112 Q204 168 150 172 Q96 168 96 112 Z" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+    <path d="M96 112 Q92 70 150 66 Q208 70 204 112 Q186 100 176 82 Q160 100 120 102 Q108 104 96 112 Z" fill="#2B2233" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="116" cy="138" rx="12" ry="8" fill="#F28B82" opacity="0.55"/>
+    <ellipse cx="184" cy="138" rx="12" ry="8" fill="#F28B82" opacity="0.55"/>
+    <path d="M114 106 Q124 100 134 105 M166 105 Q176 100 186 106" fill="none" stroke="#231942" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- mata senang (melengkung) -->
+    <path d="M118 124 Q126 116 134 124 M166 124 Q174 116 182 124" fill="none" stroke="#231942" stroke-width="4" stroke-linecap="round"/>
+    <path d="M150 128 Q147 138 152 140" fill="none" stroke="#C98B6B" stroke-width="3" stroke-linecap="round"/>
+    <!-- mulut terbuka -->
+    <ellipse class="mouth" cx="150" cy="154" rx="10" ry="8" fill="#8E2B2B" stroke="#231942" stroke-width="3.5"/>
+  </g></g>
+
+  </g>
+  <!-- mangkuk + tangan kiri -->
+  <circle cx="112" cy="250" r="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+  <path d="M100 222 Q102 268 150 270 Q198 268 200 222 Z" fill="#FFFFFF" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M112 240 Q150 250 188 240" fill="none" stroke="#4C9BE8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 222 Q108 204 128 206 Q136 194 152 200 Q168 192 178 206 Q196 204 196 222 Z" fill="#FFFDF5" stroke="#231942" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- uap -->
+  <g class="steam" fill="none" stroke="#B8AFC9" stroke-width="3" stroke-linecap="round">
+    <path d="M126 198 Q120 190 126 182 Q132 174 126 166"/>
+    <path d="M176 198 Q182 190 176 182 Q170 174 176 166"/>
+  </g>
+
+  <!-- tangan kanan + sumpit (bergerak ke mulut) -->
+  <g class="chop">
+    <path d="M226 262 Q240 230 222 206" fill="none" stroke="#231942" stroke-width="24" stroke-linecap="round"/>
+    <path d="M226 262 Q240 230 222 206" fill="none" stroke="#D9534F" stroke-width="16" stroke-linecap="round"/>
+    <path d="M226 206 L176 146 M232 200 L180 142" stroke="#231942" stroke-width="7" stroke-linecap="round"/>
+    <path d="M226 206 L176 146 M232 200 L180 142" stroke="#E0B070" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="176" cy="142" r="8" fill="#FFFDF5" stroke="#231942" stroke-width="3"/>
+    <circle cx="222" cy="204" r="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+  </g></svg>

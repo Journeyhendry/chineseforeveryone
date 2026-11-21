@@ -13,7 +13,9 @@
     "build:words": "tsx scripts/build-words.ts",
     "build:sentences": "tsx scripts/filter-sentences.ts",
     "fetch:casual-evidence": "tsx scripts/fetch-casual-evidence.ts",
-    "build:casual": "tsx scripts/build-casual.ts"
+    "build:casual": "tsx scripts/build-casual.ts",
+    "check:visuals": "tsx scripts/check-visuals.ts",
+    "build:characters": "tsx scripts/build-characters.ts"
   },
   "dependencies": {
     "react": "^19.3.1",

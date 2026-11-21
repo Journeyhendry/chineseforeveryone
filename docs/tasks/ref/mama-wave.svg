@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ibu melambai sambil tersenyum" viewBox="0 0 300 470"><!-- bayangan lantai -->
+  <ellipse cx="150" cy="446" rx="78" ry="10" fill="#231942" opacity="0.12"/>
+
+  <g class="breath">
+  <!-- kaki -->
+  <g stroke="#231942" stroke-width="4" stroke-linejoin="round">
+    <path d="M110 300 L148 300 L146 420 L114 420 Z" fill="#3D4B80"/>
+    <path d="M152 300 L190 300 L186 420 L154 420 Z" fill="#3D4B80"/>
+    <path d="M108 418 Q108 406 120 406 L144 406 Q150 406 150 418 L150 432 L104 432 Q100 432 102 426 Z" fill="#8A5A3B"/>
+    <path d="M152 418 Q152 406 158 406 L182 406 Q194 406 194 418 L196 426 Q198 432 194 432 L152 432 Z" fill="#8A5A3B"/>
+  </g>
+
+  <!-- lengan kiri (turun) -->
+  <g>
+    <path d="M108 200 Q88 230 86 290" fill="none" stroke="#231942" stroke-width="24" stroke-linecap="round"/>
+    <path d="M108 200 Q88 230 86 290" fill="none" stroke="#D9534F" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="86" cy="296" r="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+  </g>
+
+  <!-- badan -->
+  <path d="M102 204 Q102 188 120 186 L180 186 Q198 188 198 204 L204 306 L96 306 Z" fill="#D9534F" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <!-- celemek -->
+  <path d="M120 216 L180 216 L190 318 L110 318 Z" fill="#FFF4E0" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M120 216 L136 190 M180 216 L164 190" stroke="#231942" stroke-width="4" stroke-linecap="round"/>
+  <path d="M130 262 L170 262 L168 292 L132 292 Z" fill="#FFD9A8" stroke="#231942" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M150 262 L150 292" stroke="#231942" stroke-width="3"/>
+
+  <!-- lengan kanan (melambai) -->
+  <g class="wave">
+    <path d="M194 202 Q222 190 230 150" fill="none" stroke="#231942" stroke-width="24" stroke-linecap="round"/>
+    <path d="M194 202 Q222 190 230 150" fill="none" stroke="#D9534F" stroke-width="16" stroke-linecap="round"/>
+    <g class="hand">
+      <path d="M230 150 Q232 128 236 112" fill="none" stroke="#231942" stroke-width="24" stroke-linecap="round"/>
+      <path d="M230 150 Q232 128 236 112" fill="none" stroke="#D9534F" stroke-width="16" stroke-linecap="round"/>
+      <circle cx="230" cy="150" r="8" fill="#D9534F"/>
+      <path d="M226 110 Q224 92 230 88 Q236 86 237 98 L238 84 Q240 76 246 78 Q251 80 249 92 L251 86 Q255 80 259 84 Q262 88 258 100 Q254 116 244 120 Q230 122 226 110 Z" fill="#F6D3B3" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- leher -->
+  <rect x="139" y="166" width="22" height="24" rx="6" fill="#EDBE98" stroke="#231942" stroke-width="4"/>
+
+  <g class="head">
+  <!-- rambut belakang + sanggul -->
+  <circle cx="150" cy="54" r="24" fill="#2B2233" stroke="#231942" stroke-width="4"/>
+  <path d="M90 128 Q86 60 150 54 Q214 60 210 128 Q212 150 200 160 L100 160 Q88 150 90 128 Z" fill="#2B2233" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- telinga -->
+  <ellipse cx="94" cy="124" rx="10" ry="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+  <ellipse cx="206" cy="124" rx="10" ry="13" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+
+  <!-- wajah -->
+  <path d="M96 112 Q96 66 150 66 Q204 66 204 112 Q204 168 150 172 Q96 168 96 112 Z" fill="#F6D3B3" stroke="#231942" stroke-width="4"/>
+
+  <!-- poni -->
+  <path d="M96 112 Q92 70 150 66 Q208 70 204 112 Q186 100 176 82 Q160 100 120 102 Q108 104 96 112 Z" fill="#2B2233" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- pipi -->
+  <ellipse cx="116" cy="138" rx="12" ry="8" fill="#F28B82" opacity="0.55"/>
+  <ellipse cx="184" cy="138" rx="12" ry="8" fill="#F28B82" opacity="0.55"/>
+
+  <!-- alis -->
+  <path d="M114 106 Q124 100 134 105 M166 105 Q176 100 186 106" fill="none" stroke="#231942" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- mata -->
+  <g class="blink">
+    <ellipse cx="126" cy="122" rx="6.5" ry="8.5" fill="#231942"/>
+    <ellipse cx="174" cy="122" rx="6.5" ry="8.5" fill="#231942"/>
+    <circle cx="128.5" cy="119" r="2.2" fill="#FFFFFF"/>
+    <circle cx="176.5" cy="119" r="2.2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- hidung + senyum -->
+  <path d="M150 128 Q147 138 152 140" fill="none" stroke="#C98B6B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M136 150 Q150 162 164 150" fill="#B23A3A" stroke="#231942" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g></svg>

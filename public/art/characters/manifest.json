@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "viewBox": "0 0 300 470",
+  "views": [
+    "front",
+    "side",
+    "back"
+  ],
+  "expressions": [
+    "happy",
+    "sad",
+    "surprised",
+    "angry"
+  ],
+  "characters": [
+    {
+      "id": "yeye",
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male",
+      "role": "family",
+      "files": {
+        "front": "yeye/front.svg",
+        "side": "yeye/side.svg",
+        "back": "yeye/back.svg",
+        "expressions": {
+          "happy": "yeye/expr-happy.svg",
+          "sad": "yeye/expr-sad.svg",
+          "surprised": "yeye/expr-surprised.svg",
+          "angry": "yeye/expr-angry.svg"
+        },
+        "sheet": "yeye/sheet.svg"
+      }
+    },
+    {
+      "id": "nainai",
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female",
+      "role": "family",
+      "files": {
+        "front": "nainai/front.svg",
+        "side": "nainai/side.svg",
+        "back": "nainai/back.svg",
+        "expressions": {
+          "happy": "nainai/expr-happy.svg",
+          "sad": "nainai/expr-sad.svg",
+          "surprised": "nainai/expr-surprised.svg",
+          "angry": "nainai/expr-angry.svg"
+        },
+        "sheet": "nainai/sheet.svg"
+      }
+    },
+    {
+      "id": "baba",
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male",
+      "role": "family",
+      "files": {
+        "front": "baba/front.svg",
+        "side": "baba/side.svg",
+        "back": "baba/back.svg",
+        "expressions": {
+          "happy": "baba/expr-happy.svg",
+          "sad": "baba/expr-sad.svg",
+          "surprised": "baba/expr-surprised.svg",
+          "angry": "baba/expr-angry.svg"
+        },
+        "sheet": "baba/sheet.svg"
+      }
+    },
+    {
+      "id": "mama",
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female",
+      "role": "family",
+      "files": {
+        "front": "mama/front.svg",
+        "side": "mama/side.svg",
+        "back": "mama/back.svg",
+        "expressions": {
+          "happy": "mama/expr-happy.svg",
+          "sad": "mama/expr-sad.svg",
+          "surprised": "mama/expr-surprised.svg",
+          "angry": "mama/expr-angry.svg"
+        },
+        "sheet": "mama/sheet.svg"
+      }
+    },
+    {
+      "id": "gege",
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male",
+      "role": "family",
+      "files": {
+        "front": "gege/front.svg",
+        "side": "gege/side.svg",
+        "back": "gege/back.svg",
+        "expressions": {
+          "happy": "gege/expr-happy.svg",
+          "sad": "gege/expr-sad.svg",
+          "surprised": "gege/expr-surprised.svg",
+          "angry": "gege/expr-angry.svg"
+        },
+        "sheet": "gege/sheet.svg"
+      }
+    },
+    {
+      "id": "meimei",
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female",
+      "role": "family",
+      "files": {
+        "front": "meimei/front.svg",
+        "side": "meimei/side.svg",
+        "back": "meimei/back.svg",
+        "expressions": {
+          "happy": "meimei/expr-happy.svg",
+          "sad": "meimei/expr-sad.svg",
+          "surprised": "meimei/expr-surprised.svg",
+          "angry": "meimei/expr-angry.svg"
+        },
+        "sheet": "meimei/sheet.svg"
+      }
+    },
+    {
+      "id": "seller",
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female",
+      "role": "support",
+      "files": {
+        "front": "seller/front.svg",
+        "side": "seller/side.svg",
+        "back": "seller/back.svg",
+        "expressions": {
+          "happy": "seller/expr-happy.svg",
+          "sad": "seller/expr-sad.svg",
+          "surprised": "seller/expr-surprised.svg",
+          "angry": "seller/expr-angry.svg"
+        },
+        "sheet": "seller/sheet.svg"
+      }
+    },
+    {
+      "id": "doctor",
+      "name": {
+        "id": "Dokter",
+        "en": "Doctor"
+      },
+      "gender": "male",
+      "role": "support",
+      "files": {
+        "front": "doctor/front.svg",
+        "side": "doctor/side.svg",
+        "back": "doctor/back.svg",
+        "expressions": {
+          "happy": "doctor/expr-happy.svg",
+          "sad": "doctor/expr-sad.svg",
+          "surprised": "doctor/expr-surprised.svg",
+          "angry": "doctor/expr-angry.svg"
+        },
+        "sheet": "doctor/sheet.svg"
+      }
+    },
+    {
+      "id": "teacher",
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female",
+      "role": "support",
+      "files": {
+        "front": "teacher/front.svg",
+        "side": "teacher/side.svg",
+        "back": "teacher/back.svg",
+        "expressions": {
+          "happy": "teacher/expr-happy.svg",
+          "sad": "teacher/expr-sad.svg",
+          "surprised": "teacher/expr-surprised.svg",
+          "angry": "teacher/expr-angry.svg"
+        },
+        "sheet": "teacher/sheet.svg"
+      }
+    },
+    {
+      "id": "waiter",
+      "name": {
+        "id": "Pelayan",
+        "en": "Waiter"
+      },
+      "gender": "male",
+      "role": "support",
+      "files": {
+        "front": "waiter/front.svg",
+        "side": "waiter/side.svg",
+        "back": "waiter/back.svg",
+        "expressions": {
+          "happy": "waiter/expr-happy.svg",
+          "sad": "waiter/expr-sad.svg",
+          "surprised": "waiter/expr-surprised.svg",
+          "angry": "waiter/expr-angry.svg"
+        },
+        "sheet": "waiter/sheet.svg"
+      }
+    },
+    {
+      "id": "driver",
+      "name": {
+        "id": "Sopir",
+        "en": "Driver"
+      },
+      "gender": "male",
+      "role": "support",
+      "files": {
+        "front": "driver/front.svg",
+        "side": "driver/side.svg",
+        "back": "driver/back.svg",
+        "expressions": {
+          "happy": "driver/expr-happy.svg",
+          "sad": "driver/expr-sad.svg",
+          "surprised": "driver/expr-surprised.svg",
+          "angry": "driver/expr-angry.svg"
+        },
+        "sheet": "driver/sheet.svg"
+      }
+    },
+    {
+      "id": "friend",
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female",
+      "role": "support",
+      "files": {
+        "front": "friend/front.svg",
+        "side": "friend/side.svg",
+        "back": "friend/back.svg",
+        "expressions": {
+          "happy": "friend/expr-happy.svg",
+          "sad": "friend/expr-sad.svg",
+          "surprised": "friend/expr-surprised.svg",
+          "angry": "friend/expr-angry.svg"
+        },
+        "sheet": "friend/sheet.svg"
+      }
+    },
+    {
+      "id": "classmate",
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male",
+      "role": "support",
+      "files": {
+        "front": "classmate/front.svg",
+        "side": "classmate/side.svg",
+        "back": "classmate/back.svg",
+        "expressions": {
+          "happy": "classmate/expr-happy.svg",
+          "sad": "classmate/expr-sad.svg",
+          "surprised": "classmate/expr-surprised.svg",
+          "angry": "classmate/expr-angry.svg"
+        },
+        "sheet": "classmate/sheet.svg"
+      }
+    }
+  ]
+}

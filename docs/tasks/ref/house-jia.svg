@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rumah bergaya Tionghoa dengan lampion merah" viewBox="0 0 380 320"><ellipse cx="190" cy="292" rx="160" ry="12" fill="#231942" opacity="0.12"/>
+  <!-- dinding -->
+  <rect x="72" y="140" width="236" height="150" rx="6" fill="#FBE3C4" stroke="#231942" stroke-width="4"/>
+  <!-- tiang -->
+  <rect x="80" y="140" width="16" height="150" fill="#C0392B" stroke="#231942" stroke-width="4"/>
+  <rect x="284" y="140" width="16" height="150" fill="#C0392B" stroke="#231942" stroke-width="4"/>
+  <!-- atap melengkung -->
+  <path d="M30 150 Q60 146 80 128 L130 72 Q190 58 250 72 L300 128 Q320 146 350 150 Q350 160 338 158 Q300 152 286 146 L94 146 Q80 152 42 158 Q30 160 30 150 Z" fill="#2F7D6B" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M100 118 L280 118" stroke="#231942" stroke-width="3" opacity="0.5"/>
+  <path d="M116 96 L264 96" stroke="#231942" stroke-width="3" opacity="0.5"/>
+  <path d="M118 70 Q122 62 130 68 Q190 54 250 68 Q258 62 262 70" fill="none" stroke="#231942" stroke-width="6" stroke-linecap="round"/>
+  <!-- pintu -->
+  <path d="M164 290 L164 212 Q164 196 190 196 Q216 196 216 212 L216 290 Z" fill="#C0392B" stroke="#231942" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M190 198 L190 290" stroke="#231942" stroke-width="3"/>
+  <circle cx="182" cy="248" r="3.5" fill="#F2C14E" stroke="#231942" stroke-width="2"/>
+  <circle cx="198" cy="248" r="3.5" fill="#F2C14E" stroke="#231942" stroke-width="2"/>
+  <!-- jendela bulat kiri -->
+  <g>
+    <circle cx="128" cy="206" r="26" class="lamp" fill="#FFE08A" stroke="#231942" stroke-width="4"/>
+    <path d="M128 180 V232 M102 206 H154" stroke="#231942" stroke-width="3"/>
+  </g>
+  <!-- jendela bulat kanan -->
+  <g>
+    <circle cx="252" cy="206" r="26" class="lamp lamp2" fill="#FFE08A" stroke="#231942" stroke-width="4"/>
+    <path d="M252 180 V232 M226 206 H278" stroke="#231942" stroke-width="3"/>
+  </g>
+  <!-- lampion -->
+  <g class="swing">
+    <path d="M44 152 L44 170" stroke="#231942" stroke-width="3"/>
+    <ellipse cx="44" cy="186" rx="15" ry="17" fill="#E03131" stroke="#231942" stroke-width="3.5"/>
+    <rect x="37" y="166" width="14" height="5" rx="2" fill="#F2C14E" stroke="#231942" stroke-width="2.5"/>
+    <rect x="37" y="201" width="14" height="5" rx="2" fill="#F2C14E" stroke="#231942" stroke-width="2.5"/>
+    <path d="M44 206 L44 218" stroke="#F2C14E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g class="swing swing2">
+    <path d="M336 152 L336 170" stroke="#231942" stroke-width="3"/>
+    <ellipse cx="336" cy="186" rx="15" ry="17" fill="#E03131" stroke="#231942" stroke-width="3.5"/>
+    <rect x="329" y="166" width="14" height="5" rx="2" fill="#F2C14E" stroke="#231942" stroke-width="2.5"/>
+    <rect x="329" y="201" width="14" height="5" rx="2" fill="#F2C14E" stroke="#231942" stroke-width="2.5"/>
+    <path d="M336 206 L336 218" stroke="#F2C14E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- tangga -->
+  <rect x="150" y="288" width="80" height="10" rx="3" fill="#B9A58A" stroke="#231942" stroke-width="3.5"/></svg>

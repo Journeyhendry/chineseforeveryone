@@ -31,7 +31,7 @@ ROOT = HERE.parent.parent
 SAMPLE_RATE = 24000
 BITRATE = "64k"
 LUFS = -16
-TRUE_PEAK = -1.5
+TRUE_PEAK = -2.0  # sisa ruang untuk lonjakan akibat mp3 (batas akhir: -1.5 dBTP)
 PAD_SEC = 0.15
 WHISPER_MODEL = "small"
 
@@ -196,10 +196,15 @@ def normalize(src: Path, dst: Path, tmpdir: Path):
     run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-af", f"{sil},areverse,{sil},areverse",
          "-ac", "1", str(trimmed)])
     base = f"loudnorm=I={LUFS}:TP={TRUE_PEAK}:LRA=11"
-    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(trimmed), "-af", base + ":print_format=json",
+    # Kata pendek (< 0,4 dtk bersuara) tidak bisa diukur loudnorm (hasil -inf); ukur
+    # versi yang diulang 5x (kenyaringannya sama), lalu terapkan ke klip aslinya.
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(trimmed), "-af",
+                        "aloop=loop=4:size=2147483647," + base + ":print_format=json",
                         "-f", "null", "-"], capture_output=True, text=True, check=True)
     m = re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", p.stderr, re.S)
     stats = json.loads(m.group(0))
+    if stats["input_i"] in ("-inf", "inf"):
+        raise RuntimeError("audio terlalu pelan/kosong untuk diukur")
     second = (f"{base}:measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
               f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
               f"offset={stats['target_offset']}:linear=true")

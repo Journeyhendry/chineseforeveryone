@@ -10,7 +10,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3 · Unit bertema + kalimat contoh — 2026-11-21 — Sonnet (diperiksa Opus, 1 kali perbaikan) — 20 unit bertema (20–31 kata), 2.405 kalimat Tatoeba beratribusi lewat workflow `fetch-tatoeba.yml`; semua unit ≥ 11 kalimat
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
-- [ ] 4a · Contoh suara (butuh pilihan pemilik) — SEDANG DIKERJAKAN (mulai 2026-11-21T19:40Z)
+- [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Menunggu pemilik memilih suara.**
 - [ ] 4b · Audio semua materi
 - [ ] 5 · Tampilan dasar
 - [ ] 5b · Font Mandarin self-host
@@ -23,6 +23,8 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 
 ## Butuh pemilik
 
+- **Pilih suara (task 4a, menghalangi task 4b)**: buka https://journeyhendry.github.io/chineseforeveryone/samples.html, dengarkan, lalu tulis kode 1 suara perempuan (P1–P4) + 1 suara laki-laki (L1–L3), mis. "P3 + L2". Catatan cek otomatis: P3, L2, L3 dikenali 7/7; P2 paling sering salah (4/7).
+
 - **Keputusan jumlah kata HSK 1 (tidak mendesak)**: menurut beberapa sekolah Mandarin, silabus HSK 3.0 versi final (terbit Nov 2025, ujian baru mulai 13 Des 2026) memangkas HSK 1 dari 500 kata menjadi 300 kata. Sekarang website tetap memakai 500 kata (sesuai keputusan awal). Pilihan: tetap 500, atau ganti ke daftar 300 kata (perlu daftar resmi). Pekerjaan lanjut tetap jalan dengan 500 kata sampai pemilik memutuskan.
 
 ## Catatan & temuan
@@ -32,3 +34,4 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - 2026-11-21 (task 3): 27 kata belum punya kalimat contoh Tatoeba yang lolos filter: 包子 本子 不客气 打球 东边 好玩儿 后边 教学楼 里边 没事儿 面条儿 女生 前边 请假 请进 日期 上车 书包 听写 外边 网友 小学 一块儿 一下儿 右边 中间 中学生. Bisa diisi nanti (mis. kalimat dialog task 3b). Kalimat dengan terjemahan Indonesia masih sedikit; kebanyakan hanya Inggris.
 - 2026-11-21 (task 3b): 142 kandidat → 111 lolos (21 gugur karena < 2 sumber luar, mis. bentuk X死了/X啦/太棒了 tidak ada di kamus; 10 gugur di pemeriksa kedua, mis. 多谢 老铁 打的 回见 走人). 干嘛 gugur karena Wiktionary menandai satu artinya kasar. Unit 3 dan 17 hanya 4 ungkapan (masih dalam batas 3–5). Kalau `casual-candidates.json` diubah, workflow bukti jalan lagi; setelah itu jalankan `npm run build:casual` dan review ulang kandidat baru, supaya tes "hasil = build ulang" tetap lolos.
 - 2026-11-21 (task 3c): Kakak digambar remaja (±90 % tinggi dewasa), padahal di dialog temannya "teman kuliah"; beberapa adegan visual menaruh Kakak di sekolah menengah. Perlu diselaraskan saat task 6b (cukup ubah umur di satu tempat). Alis gelap kurang terlihat di depan poni gelap (Guru, Teman kuliah) pada beberapa ekspresi. Pose tangan baru netral saja; pose lain dibuat di task 6b.
+- 2026-11-21 (task 4a): `你好` dan `喝水` bukan entri tersendiri di `words.json` (dipecah 你+好, 喝+水); contoh tetap memakai keduanya. MeloTTS butuh versi pustaka lama, jadi dijalankan di lingkungan Python terpisah dalam workflow; unduhan BERT tambahannya belum dipatok versinya. Workflow hanya jalan otomatis di cabang selain `main` (atau dijalankan manual).

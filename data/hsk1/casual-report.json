@@ -1,0 +1,333 @@
+{
+  "evidenceFetchedAt": "2026-11-21",
+  "reviewPresent": true,
+  "totals": {
+    "candidates": 142,
+    "passed": 111,
+    "selected": 98,
+    "failedLayer2": 21,
+    "failedLayer3": 10,
+    "dialogs": 20,
+    "dialogsPassed": 20
+  },
+  "perUnit": {
+    "u01": {
+      "candidates": 8,
+      "passed": 6,
+      "selected": 5
+    },
+    "u02": {
+      "candidates": 6,
+      "passed": 5,
+      "selected": 5
+    },
+    "u03": {
+      "candidates": 7,
+      "passed": 4,
+      "selected": 4
+    },
+    "u04": {
+      "candidates": 7,
+      "passed": 6,
+      "selected": 5
+    },
+    "u05": {
+      "candidates": 7,
+      "passed": 6,
+      "selected": 5
+    },
+    "u06": {
+      "candidates": 6,
+      "passed": 5,
+      "selected": 5
+    },
+    "u07": {
+      "candidates": 7,
+      "passed": 6,
+      "selected": 5
+    },
+    "u08": {
+      "candidates": 7,
+      "passed": 5,
+      "selected": 5
+    },
+    "u09": {
+      "candidates": 6,
+      "passed": 6,
+      "selected": 5
+    },
+    "u10": {
+      "candidates": 6,
+      "passed": 5,
+      "selected": 5
+    },
+    "u11": {
+      "candidates": 7,
+      "passed": 5,
+      "selected": 5
+    },
+    "u12": {
+      "candidates": 6,
+      "passed": 5,
+      "selected": 5
+    },
+    "u13": {
+      "candidates": 11,
+      "passed": 5,
+      "selected": 5
+    },
+    "u14": {
+      "candidates": 6,
+      "passed": 6,
+      "selected": 5
+    },
+    "u15": {
+      "candidates": 7,
+      "passed": 7,
+      "selected": 5
+    },
+    "u16": {
+      "candidates": 8,
+      "passed": 8,
+      "selected": 5
+    },
+    "u17": {
+      "candidates": 7,
+      "passed": 4,
+      "selected": 4
+    },
+    "u18": {
+      "candidates": 7,
+      "passed": 5,
+      "selected": 5
+    },
+    "u19": {
+      "candidates": 8,
+      "passed": 7,
+      "selected": 5
+    },
+    "u20": {
+      "candidates": 8,
+      "passed": 5,
+      "selected": 5
+    }
+  },
+  "unitsBelowThree": [],
+  "unitsWithoutDialog": [],
+  "failedDialogs": [],
+  "dialogs": [
+    {
+      "id": "d-u01",
+      "passed": true,
+      "casualUsed": [
+        "c-u01-01"
+      ],
+      "laterUnitWords": [
+        "L1-0209"
+      ]
+    },
+    {
+      "id": "d-u02",
+      "passed": true,
+      "casualUsed": [
+        "c-u02-01",
+        "c-u02-03"
+      ],
+      "laterUnitWords": [
+        "L1-0305",
+        "L1-0068"
+      ]
+    },
+    {
+      "id": "d-u03",
+      "passed": true,
+      "casualUsed": [
+        "c-u03-07"
+      ],
+      "laterUnitWords": [
+        "L1-0340",
+        "L1-0004"
+      ]
+    },
+    {
+      "id": "d-u04",
+      "passed": true,
+      "casualUsed": [
+        "c-u04-03"
+      ],
+      "laterUnitWords": [
+        "L1-0062",
+        "L1-0237"
+      ]
+    },
+    {
+      "id": "d-u05",
+      "passed": true,
+      "casualUsed": [
+        "c-u05-03",
+        "c-u05-06"
+      ],
+      "laterUnitWords": [
+        "L1-0302"
+      ]
+    },
+    {
+      "id": "d-u06",
+      "passed": true,
+      "casualUsed": [
+        "c-u06-02"
+      ],
+      "laterUnitWords": [
+        "L1-0423",
+        "L1-0068"
+      ]
+    },
+    {
+      "id": "d-u07",
+      "passed": true,
+      "casualUsed": [
+        "c-u07-01",
+        "c-u07-03"
+      ],
+      "laterUnitWords": [
+        "L1-0205"
+      ]
+    },
+    {
+      "id": "d-u08",
+      "passed": true,
+      "casualUsed": [
+        "c-u08-03"
+      ],
+      "laterUnitWords": [
+        "L1-0347",
+        "L1-0320"
+      ]
+    },
+    {
+      "id": "d-u09",
+      "passed": true,
+      "casualUsed": [
+        "c-u09-03"
+      ],
+      "laterUnitWords": []
+    },
+    {
+      "id": "d-u10",
+      "passed": true,
+      "casualUsed": [
+        "c-u10-01",
+        "c-u10-05"
+      ],
+      "laterUnitWords": [
+        "L1-0302",
+        "L1-0057"
+      ]
+    },
+    {
+      "id": "d-u11",
+      "passed": true,
+      "casualUsed": [
+        "c-u11-02",
+        "c-u11-03"
+      ],
+      "laterUnitWords": [
+        "L1-0302"
+      ]
+    },
+    {
+      "id": "d-u12",
+      "passed": true,
+      "casualUsed": [
+        "c-u12-03",
+        "c-u12-02"
+      ],
+      "laterUnitWords": [
+        "L1-0302",
+        "L1-0358"
+      ]
+    },
+    {
+      "id": "d-u13",
+      "passed": true,
+      "casualUsed": [
+        "c-u01-03"
+      ],
+      "laterUnitWords": []
+    },
+    {
+      "id": "d-u14",
+      "passed": true,
+      "casualUsed": [
+        "c-u14-03",
+        "c-u14-01"
+      ],
+      "laterUnitWords": [
+        "L1-0268",
+        "L1-0160"
+      ]
+    },
+    {
+      "id": "d-u15",
+      "passed": true,
+      "casualUsed": [
+        "c-u15-01",
+        "c-u15-02"
+      ],
+      "laterUnitWords": [
+        "L1-0160",
+        "L1-0423"
+      ]
+    },
+    {
+      "id": "d-u16",
+      "passed": true,
+      "casualUsed": [
+        "c-u16-02",
+        "c-u16-01"
+      ],
+      "laterUnitWords": []
+    },
+    {
+      "id": "d-u17",
+      "passed": true,
+      "casualUsed": [
+        "c-u01-06"
+      ],
+      "laterUnitWords": [
+        "L1-0358"
+      ]
+    },
+    {
+      "id": "d-u18",
+      "passed": true,
+      "casualUsed": [
+        "c-u18-05",
+        "c-u18-01"
+      ],
+      "laterUnitWords": [
+        "L1-0358"
+      ]
+    },
+    {
+      "id": "d-u19",
+      "passed": true,
+      "casualUsed": [
+        "c-u19-06",
+        "c-u19-04"
+      ],
+      "laterUnitWords": [
+        "L1-0411",
+        "L1-0470"
+      ]
+    },
+    {
+      "id": "d-u20",
+      "passed": true,
+      "casualUsed": [
+        "c-u20-08"
+      ],
+      "laterUnitWords": []
+    }
+  ]
+}

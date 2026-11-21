@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "reviewer": "claude-sonnet (independent, layer 3)",
+  "reviews": [
+    {
+      "id": "c-u01-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u01-02",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "Understood, but 多谢 sounds stiff/old-fashioned; people say 谢谢 or 谢了."
+    },
+    {
+      "id": "c-u01-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u01-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u01-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u01-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u01-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u01-08",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u02-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u02-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u02-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u02-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u02-05",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u02-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u03-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u03-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u03-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u03-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u03-05",
+      "verdict": "fail",
+      "natural": 5,
+      "labelOk": false,
+      "comment": "Very common but used by all ages as plain colloquial speech, not slang; label should be santai."
+    },
+    {
+      "id": "c-u03-06",
+      "verdict": "fail",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Natural phrase but means \"no way!\", not \"是不是\" (is it so?); equivalent mismatched."
+    },
+    {
+      "id": "c-u03-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u04-01",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u04-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u04-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u04-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u04-05",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "Northeastern/livestream slang peaking around 2018-20; regional and dated, risky for beginners."
+    },
+    {
+      "id": "c-u04-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u04-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u05-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u05-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u05-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u05-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u05-05",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u05-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u05-07",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "老弟 is mainly a northern address for a younger man; for one's own brother people say 弟弟/弟."
+    },
+    {
+      "id": "c-u06-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u06-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u06-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u06-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u06-05",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u06-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u07-01",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u07-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u07-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u07-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u07-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u07-06",
+      "verdict": "fail",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "天天 means every day (每天), not 常常 (often); equivalent mismatched."
+    },
+    {
+      "id": "c-u07-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u08-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u08-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u08-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u08-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u08-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u08-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u08-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u09-01",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u09-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u09-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u09-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u09-05",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u09-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u10-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u10-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u10-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u10-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u10-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u10-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u11-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u12-01",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "打的 is dated; 打车 / app-hailing is what people say now."
+    },
+    {
+      "id": "c-u12-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u12-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u12-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u12-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u12-06",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u13-01",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "回见 is Beijing-flavoured and much rarer than 回头见; not widely used."
+    },
+    {
+      "id": "c-u13-02",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "碰面 is more Taiwan usage; mainland says 见面/碰头."
+    },
+    {
+      "id": "c-u13-03",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "闪人 is dated slang; few younger speakers use it now."
+    },
+    {
+      "id": "c-u13-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u13-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u13-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u14-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u14-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u14-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u14-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u14-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u14-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u15-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u15-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u16-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u16-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u16-03",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u16-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u16-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u16-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u16-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u16-08",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u17-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u17-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u17-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u17-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u17-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u17-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u17-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-04",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u18-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u18-07",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u19-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-02",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u19-08",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-01",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-02",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
+    },
+    {
+      "id": "c-u20-03",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-04",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-05",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-06",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-07",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u20-08",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
+    },
+    {
+      "id": "c-u13-07",
+      "verdict": "fail",
+      "natural": 3,
+      "labelOk": true,
+      "comment": "Mainland-used, but abrupt/brusque and often means walking out or being let go; 我们走吧 is the natural way to say it is time to leave."
+    },
+    {
+      "id": "c-u13-08",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Very common mainland greeting; pinyin and meaning fine; neutral-friendly, fine as santai."
+    },
+    {
+      "id": "c-u13-09",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Still used in mainland chats to close a meeting plan; slightly set-phrase, and stronger than 到时候见 (wait until you come)."
+    },
+    {
+      "id": "c-u13-10",
+      "verdict": "pass",
+      "natural": 4,
+      "labelOk": true,
+      "comment": "Real mainland word (esp. north, often 串门儿); somewhat less common among young urban people but understood everywhere."
+    },
+    {
+      "id": "c-u13-11",
+      "verdict": "pass",
+      "natural": 5,
+      "labelOk": true,
+      "comment": "Very current mainland trendy usage (check in at a spot and post it); gaul label right; also means clock in at work."
+    }
+  ]
+}

@@ -1,0 +1,3307 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "c-u01-01",
+      "unit": "u01",
+      "hanzi": "拜拜",
+      "variants": [],
+      "pinyin": "bái bái",
+      "pinyinNumbered": "bai2 bai2",
+      "tones": [
+        2,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "再见",
+        "wordIds": [
+          "L1-0454"
+        ]
+      },
+      "meaning": {
+        "id": "dah, bye-bye",
+        "en": "bye-bye"
+      },
+      "situation": {
+        "id": "Pamit ke teman atau keluarga, juga di akhir telepon atau chat.",
+        "en": "Saying goodbye to friends or family, also at the end of a call or chat."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u01-03",
+      "unit": "u01",
+      "hanzi": "回头见",
+      "variants": [],
+      "pinyin": "huí tóu jiàn",
+      "pinyinNumbered": "hui2 tou2 jian4",
+      "tones": [
+        2,
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "再见",
+        "wordIds": [
+          "L1-0454"
+        ]
+      },
+      "meaning": {
+        "id": "sampai nanti",
+        "en": "see you later"
+      },
+      "situation": {
+        "id": "Pamit ke orang yang akan segera kamu temui lagi.",
+        "en": "Saying bye to someone you will see again soon."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u01-04",
+      "unit": "u01",
+      "hanzi": "别客气",
+      "variants": [],
+      "pinyin": "bié kèqi",
+      "pinyinNumbered": "bie2 ke4 qi5",
+      "tones": [
+        2,
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不客气",
+        "wordIds": [
+          "L1-0032"
+        ]
+      },
+      "meaning": {
+        "id": "santai saja, sama-sama",
+        "en": "don't mention it"
+      },
+      "situation": {
+        "id": "Menjawab ucapan terima kasih, atau menyuruh tamu jangan sungkan.",
+        "en": "Answering thanks, or telling a guest not to stand on ceremony."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u01-05",
+      "unit": "u01",
+      "hanzi": "不好意思",
+      "variants": [],
+      "pinyin": "bù hǎo yìsi",
+      "pinyinNumbered": "bu4 hao3 yi4 si5",
+      "tones": [
+        4,
+        3,
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "对不起",
+        "wordIds": [
+          "L1-0093"
+        ]
+      },
+      "meaning": {
+        "id": "maaf ya, permisi",
+        "en": "sorry, excuse me"
+      },
+      "situation": {
+        "id": "Minta maaf untuk hal kecil, atau minta jalan di metro yang penuh.",
+        "en": "Apologising for something small, or asking to get past in a crowded metro."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u01-06",
+      "unit": "u01",
+      "hanzi": "没事",
+      "variants": [],
+      "pinyin": "méi shì",
+      "pinyinNumbered": "mei2 shi4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "没关系",
+        "wordIds": [
+          "L1-0233"
+        ]
+      },
+      "meaning": {
+        "id": "nggak apa-apa",
+        "en": "it's nothing, no problem"
+      },
+      "situation": {
+        "id": "Menjawab permintaan maaf atau terima kasih dengan santai.",
+        "en": "Answering an apology or thanks casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-01",
+      "unit": "u02",
+      "hanzi": "俩",
+      "variants": [],
+      "pinyin": "liǎ",
+      "pinyinNumbered": "lia3",
+      "tones": [
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "两个",
+        "wordIds": [
+          "L1-0215",
+          "L1-0120"
+        ]
+      },
+      "meaning": {
+        "id": "dua (orang/buah)",
+        "en": "two (of something), the two of"
+      },
+      "situation": {
+        "id": "Menyebut dua orang atau dua benda dalam obrolan, misalnya \"kita berdua\".",
+        "en": "Talking about two people or things in conversation, e.g. \"the two of us\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-02",
+      "unit": "u02",
+      "hanzi": "仨",
+      "variants": [],
+      "pinyin": "sā",
+      "pinyinNumbered": "sa1",
+      "tones": [
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "三个",
+        "wordIds": [
+          "L1-0311",
+          "L1-0120"
+        ]
+      },
+      "meaning": {
+        "id": "tiga (orang/buah)",
+        "en": "three (of something)"
+      },
+      "situation": {
+        "id": "Menyebut tiga orang atau benda dalam obrolan santai.",
+        "en": "Talking about three people or things casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-03",
+      "unit": "u02",
+      "hanzi": "好多",
+      "variants": [],
+      "pinyin": "hǎo duō",
+      "pinyinNumbered": "hao3 duo1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "banyak banget",
+        "en": "lots of, so many"
+      },
+      "situation": {
+        "id": "Bilang ada banyak sekali orang atau barang, misalnya di pasar.",
+        "en": "Saying there are lots of people or things, e.g. at the market."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-04",
+      "unit": "u02",
+      "hanzi": "一点点",
+      "variants": [],
+      "pinyin": "yī diǎn diǎn",
+      "pinyinNumbered": "yi1 dian3 dian3",
+      "tones": [
+        1,
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "一点儿",
+        "wordIds": [
+          "L1-0437"
+        ]
+      },
+      "meaning": {
+        "id": "sedikit saja",
+        "en": "just a little bit"
+      },
+      "situation": {
+        "id": "Minta sedikit saja, misalnya gula di bubble tea.",
+        "en": "Asking for just a little, e.g. sugar in bubble tea."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u02-06",
+      "unit": "u02",
+      "hanzi": "一堆",
+      "variants": [],
+      "pinyin": "yī duī",
+      "pinyinNumbered": "yi1 dui1",
+      "tones": [
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "segudang, setumpuk",
+        "en": "a pile of, loads of"
+      },
+      "situation": {
+        "id": "Bilang ada banyak sekali, misalnya pekerjaan atau baju.",
+        "en": "Saying there is a whole pile, e.g. of work or clothes."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u03-02",
+      "unit": "u03",
+      "hanzi": "没错",
+      "variants": [],
+      "pinyin": "méi cuò",
+      "pinyinNumbered": "mei2 cuo4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "对",
+        "wordIds": [
+          "L1-0092"
+        ]
+      },
+      "meaning": {
+        "id": "betul, tepat",
+        "en": "that's right"
+      },
+      "situation": {
+        "id": "Setuju dengan kuat pada perkataan orang lain.",
+        "en": "Agreeing strongly with what someone said."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u03-03",
+      "unit": "u03",
+      "hanzi": "可不是",
+      "variants": [],
+      "pinyin": "kě bu shì",
+      "pinyinNumbered": "ke3 bu5 shi4",
+      "tones": [
+        3,
+        5,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "是",
+        "wordIds": [
+          "L1-0337"
+        ]
+      },
+      "meaning": {
+        "id": "iya banget, memang",
+        "en": "exactly!, sure is"
+      },
+      "situation": {
+        "id": "Setuju dengan semangat, misalnya \"Iya, panas banget!\"",
+        "en": "Agreeing heartily, e.g. \"It sure is hot!\""
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u03-04",
+      "unit": "u03",
+      "hanzi": "怎么回事",
+      "variants": [],
+      "pinyin": "zěnme huí shì",
+      "pinyinNumbered": "zen3 me5 hui2 shi4",
+      "tones": [
+        3,
+        5,
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "怎么了",
+        "wordIds": [
+          "L1-0460",
+          "L1-0210"
+        ]
+      },
+      "meaning": {
+        "id": "ada apa sih",
+        "en": "what's going on?"
+      },
+      "situation": {
+        "id": "Bertanya ketika ada sesuatu yang aneh atau salah.",
+        "en": "Asking when something seems strange or wrong."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u03-07",
+      "unit": "u03",
+      "hanzi": "嗯",
+      "variants": [],
+      "pinyin": "èn",
+      "pinyinNumbered": "en4",
+      "tones": [
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "对",
+        "wordIds": [
+          "L1-0092"
+        ]
+      },
+      "meaning": {
+        "id": "hmm, iya",
+        "en": "mm-hmm, yeah"
+      },
+      "situation": {
+        "id": "Menjawab \"iya\" dengan singkat, atau menunjukkan sedang mendengarkan.",
+        "en": "A short \"yes\", or showing you are listening."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u04-01",
+      "unit": "u04",
+      "hanzi": "帅哥",
+      "variants": [],
+      "pinyin": "shuài gē",
+      "pinyinNumbered": "shuai4 ge1",
+      "tones": [
+        4,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "mas ganteng (sapaan)",
+        "en": "handsome (way to address a young man)"
+      },
+      "situation": {
+        "id": "Memanggil pelayan atau penjual laki-laki muda dengan ramah.",
+        "en": "Calling a young male waiter or seller in a friendly way."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u04-02",
+      "unit": "u04",
+      "hanzi": "美女",
+      "variants": [],
+      "pinyin": "měi nǚ",
+      "pinyinNumbered": "mei3 nv3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "小姐",
+        "wordIds": [
+          "L1-0403"
+        ]
+      },
+      "meaning": {
+        "id": "mbak cantik (sapaan)",
+        "en": "beautiful (way to address a young woman)"
+      },
+      "situation": {
+        "id": "Memanggil pelayan atau penjual perempuan muda dengan ramah.",
+        "en": "Calling a young female waiter or seller in a friendly way."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u04-03",
+      "unit": "u04",
+      "hanzi": "哥们儿",
+      "variants": [
+        "哥们"
+      ],
+      "pinyin": "gē menr",
+      "pinyinNumbered": "ge1 men5 r5",
+      "tones": [
+        1,
+        5,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "朋友",
+        "wordIds": [
+          "L1-0284"
+        ]
+      },
+      "meaning": {
+        "id": "bro, sobat (antara laki-laki)",
+        "en": "buddy, bro"
+      },
+      "situation": {
+        "id": "Laki-laki menyebut atau memanggil sahabatnya.",
+        "en": "Men talking about or calling a close male friend."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u04-04",
+      "unit": "u04",
+      "hanzi": "闺蜜",
+      "variants": [],
+      "pinyin": "guī mì",
+      "pinyinNumbered": "gui1 mi4",
+      "tones": [
+        1,
+        4
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "朋友",
+        "wordIds": [
+          "L1-0284"
+        ]
+      },
+      "meaning": {
+        "id": "sahabat cewek",
+        "en": "bestie (a woman's close female friend)"
+      },
+      "situation": {
+        "id": "Perempuan menyebut sahabat dekatnya.",
+        "en": "A woman talking about her best friend."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u04-06",
+      "unit": "u04",
+      "hanzi": "小姐姐",
+      "variants": [],
+      "pinyin": "xiǎo jiějie",
+      "pinyinNumbered": "xiao3 jie3 jie5",
+      "tones": [
+        3,
+        3,
+        5
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "小姐",
+        "wordIds": [
+          "L1-0403"
+        ]
+      },
+      "meaning": {
+        "id": "kakak (sapaan ramah untuk wanita muda)",
+        "en": "young lady (friendly address)"
+      },
+      "situation": {
+        "id": "Memanggil wanita muda yang tidak dikenal dengan ramah, misalnya kasir.",
+        "en": "Addressing an unknown young woman politely, e.g. a cashier."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u05-01",
+      "unit": "u05",
+      "hanzi": "老爸",
+      "variants": [],
+      "pinyin": "lǎo bà",
+      "pinyinNumbered": "lao3 ba4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "爸爸",
+        "wordIds": [
+          "L1-0004"
+        ]
+      },
+      "meaning": {
+        "id": "bapak, bokap",
+        "en": "dad"
+      },
+      "situation": {
+        "id": "Anak menyebut ayahnya dengan akrab.",
+        "en": "A child talking about their father affectionately."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u05-02",
+      "unit": "u05",
+      "hanzi": "老妈",
+      "variants": [],
+      "pinyin": "lǎo mā",
+      "pinyinNumbered": "lao3 ma1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "妈妈",
+        "wordIds": [
+          "L1-0224"
+        ]
+      },
+      "meaning": {
+        "id": "ibu, nyokap",
+        "en": "mom"
+      },
+      "situation": {
+        "id": "Anak menyebut ibunya dengan akrab.",
+        "en": "A child talking about their mother affectionately."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u05-03",
+      "unit": "u05",
+      "hanzi": "爸妈",
+      "variants": [],
+      "pinyin": "bà mā",
+      "pinyinNumbered": "ba4 ma1",
+      "tones": [
+        4,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "爸爸妈妈",
+        "wordIds": [
+          "L1-0004",
+          "L1-0224"
+        ]
+      },
+      "meaning": {
+        "id": "ayah-ibu, ortu",
+        "en": "mom and dad, parents"
+      },
+      "situation": {
+        "id": "Menyebut kedua orang tua sekaligus dalam obrolan.",
+        "en": "Talking about both parents at once."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u05-04",
+      "unit": "u05",
+      "hanzi": "宝贝",
+      "variants": [],
+      "pinyin": "bǎo bèi",
+      "pinyinNumbered": "bao3 bei4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "孩子",
+        "wordIds": [
+          "L1-0135"
+        ]
+      },
+      "meaning": {
+        "id": "sayang (untuk anak)",
+        "en": "darling, sweetie (to a child)"
+      },
+      "situation": {
+        "id": "Orang tua atau kakek-nenek memanggil anak kecil.",
+        "en": "Parents or grandparents calling a small child."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u05-05",
+      "unit": "u05",
+      "hanzi": "闺女",
+      "variants": [],
+      "pinyin": "guī nü",
+      "pinyinNumbered": "gui1 nv5",
+      "tones": [
+        1,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "女儿",
+        "wordIds": [
+          "L1-0277"
+        ]
+      },
+      "meaning": {
+        "id": "anak perempuan",
+        "en": "daughter (colloquial)"
+      },
+      "situation": {
+        "id": "Orang tua (sering di utara) menyebut anak perempuannya.",
+        "en": "Parents (often in the north) talking about their daughter."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-01",
+      "unit": "u06",
+      "hanzi": "吃货",
+      "variants": [],
+      "pinyin": "chī huò",
+      "pinyinNumbered": "chi1 huo4",
+      "tones": [
+        1,
+        4
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "爱吃的人",
+        "wordIds": [
+          "L1-0001",
+          "L1-0046",
+          "L1-0067",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "si doyan makan",
+        "en": "foodie"
+      },
+      "situation": {
+        "id": "Bercanda tentang orang yang sangat suka makan.",
+        "en": "Joking about someone who loves eating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-02",
+      "unit": "u06",
+      "hanzi": "买单",
+      "variants": [],
+      "pinyin": "mǎi dān",
+      "pinyinNumbered": "mai3 dan1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "给钱",
+        "wordIds": [
+          "L1-0121",
+          "L1-0294"
+        ]
+      },
+      "meaning": {
+        "id": "minta bon, bayar",
+        "en": "to pay the bill"
+      },
+      "situation": {
+        "id": "Minta bon atau membayar di restoran.",
+        "en": "Asking for or paying the bill in a restaurant."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-04",
+      "unit": "u06",
+      "hanzi": "打包",
+      "variants": [],
+      "pinyin": "dǎ bāo",
+      "pinyinNumbered": "da3 bao1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "拿走",
+        "wordIds": [
+          "L1-0249",
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "dibungkus",
+        "en": "to take away, doggy bag"
+      },
+      "situation": {
+        "id": "Minta sisa makanan atau pesanan dibungkus.",
+        "en": "Asking for leftovers or an order to be packed to go."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-05",
+      "unit": "u06",
+      "hanzi": "馋",
+      "variants": [],
+      "pinyin": "chán",
+      "pinyinNumbered": "chan2",
+      "tones": [
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "想吃",
+        "wordIds": [
+          "L1-0400",
+          "L1-0046"
+        ]
+      },
+      "meaning": {
+        "id": "ngiler, pengin makan",
+        "en": "craving (food)"
+      },
+      "situation": {
+        "id": "Melihat makanan enak dan jadi ingin makan.",
+        "en": "Seeing tasty food and craving it."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-06",
+      "unit": "u06",
+      "hanzi": "开吃",
+      "variants": [],
+      "pinyin": "kāi chī",
+      "pinyinNumbered": "kai1 chi1",
+      "tones": [
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "吃饭",
+        "wordIds": [
+          "L1-0047"
+        ]
+      },
+      "meaning": {
+        "id": "ayo mulai makan",
+        "en": "let's dig in"
+      },
+      "situation": {
+        "id": "Mengajak mulai makan setelah makanan datang.",
+        "en": "Saying it is time to start eating once the food arrives."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u07-01",
+      "unit": "u07",
+      "hanzi": "礼拜天",
+      "variants": [],
+      "pinyin": "lǐ bài tiān",
+      "pinyinNumbered": "li3 bai4 tian1",
+      "tones": [
+        3,
+        4,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "星期天",
+        "wordIds": [
+          "L1-0415"
+        ]
+      },
+      "meaning": {
+        "id": "hari Minggu",
+        "en": "Sunday"
+      },
+      "situation": {
+        "id": "Menyebut hari Minggu dalam obrolan sehari-hari.",
+        "en": "Talking about Sunday in everyday speech."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u07-02",
+      "unit": "u07",
+      "hanzi": "礼拜",
+      "variants": [],
+      "pinyin": "lǐ bài",
+      "pinyinNumbered": "li3 bai4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "星期",
+        "wordIds": [
+          "L1-0413"
+        ]
+      },
+      "meaning": {
+        "id": "minggu (pekan)",
+        "en": "week"
+      },
+      "situation": {
+        "id": "Menyebut pekan, misalnya \"minggu depan\".",
+        "en": "Talking about a week, e.g. \"next week\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u07-03",
+      "unit": "u07",
+      "hanzi": "改天",
+      "variants": [],
+      "pinyin": "gǎi tiān",
+      "pinyinNumbered": "gai3 tian1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "下次",
+        "wordIds": [
+          "L1-0393"
+        ]
+      },
+      "meaning": {
+        "id": "lain kali, lain hari",
+        "en": "another day, some other time"
+      },
+      "situation": {
+        "id": "Menunda janji dengan sopan, misalnya makan bersama.",
+        "en": "Politely postponing plans, e.g. a meal together."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u07-04",
+      "unit": "u07",
+      "hanzi": "回头",
+      "variants": [],
+      "pinyin": "huí tóu",
+      "pinyinNumbered": "hui2 tou2",
+      "tones": [
+        2,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "下次",
+        "wordIds": [
+          "L1-0393"
+        ]
+      },
+      "meaning": {
+        "id": "nanti (lain waktu)",
+        "en": "later"
+      },
+      "situation": {
+        "id": "Bilang akan melakukan sesuatu nanti, tidak sekarang.",
+        "en": "Saying you will do something later, not now."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u07-05",
+      "unit": "u07",
+      "hanzi": "一大早",
+      "variants": [],
+      "pinyin": "yī dà zǎo",
+      "pinyinNumbered": "yi1 da4 zao3",
+      "tones": [
+        1,
+        4,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "早上",
+        "wordIds": [
+          "L1-0459"
+        ]
+      },
+      "meaning": {
+        "id": "pagi-pagi sekali",
+        "en": "first thing in the morning"
+      },
+      "situation": {
+        "id": "Menceritakan sesuatu yang terjadi pagi sekali.",
+        "en": "Telling about something that happened very early."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-02",
+      "unit": "u08",
+      "hanzi": "稍等",
+      "variants": [],
+      "pinyin": "shāo děng",
+      "pinyinNumbered": "shao1 deng3",
+      "tones": [
+        1,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "等一下儿",
+        "wordIds": [
+          "L1-0068",
+          "L1-0434"
+        ]
+      },
+      "meaning": {
+        "id": "tunggu sebentar",
+        "en": "just a moment"
+      },
+      "situation": {
+        "id": "Pelayan atau penjual minta kamu menunggu sebentar.",
+        "en": "A waiter or seller asking you to wait a moment."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-03",
+      "unit": "u08",
+      "hanzi": "赶紧",
+      "variants": [],
+      "pinyin": "gǎn jǐn",
+      "pinyinNumbered": "gan3 jin3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "马上",
+        "wordIds": [
+          "L1-0226"
+        ]
+      },
+      "meaning": {
+        "id": "cepetan, buru-buru",
+        "en": "hurry, right away"
+      },
+      "situation": {
+        "id": "Menyuruh cepat karena waktunya mepet.",
+        "en": "Telling someone to hurry because time is short."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-04",
+      "unit": "u08",
+      "hanzi": "磨蹭",
+      "variants": [],
+      "pinyin": "mó ceng",
+      "pinyinNumbered": "mo2 ceng5",
+      "tones": [
+        2,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "慢",
+        "wordIds": [
+          "L1-0229"
+        ]
+      },
+      "meaning": {
+        "id": "lelet, berlambat-lambat",
+        "en": "to dawdle"
+      },
+      "situation": {
+        "id": "Mengeluh seseorang lambat bersiap-siap.",
+        "en": "Complaining that someone is slow to get ready."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-05",
+      "unit": "u08",
+      "hanzi": "来不及",
+      "variants": [],
+      "pinyin": "lái bu jí",
+      "pinyinNumbered": "lai2 bu5 ji2",
+      "tones": [
+        2,
+        5,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "没时间",
+        "wordIds": [
+          "L1-0232",
+          "L1-0334"
+        ]
+      },
+      "meaning": {
+        "id": "nggak keburu",
+        "en": "there's no time, too late"
+      },
+      "situation": {
+        "id": "Bilang waktunya tidak cukup, misalnya mengejar kereta.",
+        "en": "Saying there is not enough time, e.g. to catch a train."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u08-07",
+      "unit": "u08",
+      "hanzi": "熬夜",
+      "variants": [],
+      "pinyin": "áo yè",
+      "pinyinNumbered": "ao2 ye4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "晚睡",
+        "wordIds": [
+          "L1-0372",
+          "L1-0347"
+        ]
+      },
+      "meaning": {
+        "id": "begadang",
+        "en": "to stay up late"
+      },
+      "situation": {
+        "id": "Bilang tidur larut karena kerja, belajar, atau main HP.",
+        "en": "Saying you stayed up late for work, study or your phone."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-01",
+      "unit": "u09",
+      "hanzi": "里头",
+      "variants": [],
+      "pinyin": "lǐ tou",
+      "pinyinNumbered": "li3 tou5",
+      "tones": [
+        3,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "里边",
+        "wordIds": [
+          "L1-0214"
+        ]
+      },
+      "meaning": {
+        "id": "di dalam",
+        "en": "inside"
+      },
+      "situation": {
+        "id": "Menunjukkan sesuatu ada di dalam tas, kamar, atau toko.",
+        "en": "Saying something is inside a bag, room or shop."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-02",
+      "unit": "u09",
+      "hanzi": "外头",
+      "variants": [],
+      "pinyin": "wài tou",
+      "pinyinNumbered": "wai4 tou5",
+      "tones": [
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "外边",
+        "wordIds": [
+          "L1-0368"
+        ]
+      },
+      "meaning": {
+        "id": "di luar",
+        "en": "outside"
+      },
+      "situation": {
+        "id": "Bilang sesuatu ada di luar, misalnya \"di luar hujan\".",
+        "en": "Saying something is outside, e.g. \"it is raining outside\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-03",
+      "unit": "u09",
+      "hanzi": "前头",
+      "variants": [],
+      "pinyin": "qián tou",
+      "pinyinNumbered": "qian2 tou5",
+      "tones": [
+        2,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "前边",
+        "wordIds": [
+          "L1-0292"
+        ]
+      },
+      "meaning": {
+        "id": "di depan",
+        "en": "ahead, in front"
+      },
+      "situation": {
+        "id": "Menunjukkan arah: tempatnya ada di depan.",
+        "en": "Giving directions: the place is up ahead."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-04",
+      "unit": "u09",
+      "hanzi": "后头",
+      "variants": [],
+      "pinyin": "hòu tou",
+      "pinyinNumbered": "hou4 tou5",
+      "tones": [
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "后边",
+        "wordIds": [
+          "L1-0148"
+        ]
+      },
+      "meaning": {
+        "id": "di belakang",
+        "en": "behind, at the back"
+      },
+      "situation": {
+        "id": "Menunjukkan sesuatu ada di belakang.",
+        "en": "Saying something is at the back."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-05",
+      "unit": "u09",
+      "hanzi": "上头",
+      "variants": [],
+      "pinyin": "shàng tou",
+      "pinyinNumbered": "shang4 tou5",
+      "tones": [
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "上边",
+        "wordIds": [
+          "L1-0317"
+        ]
+      },
+      "meaning": {
+        "id": "di atas",
+        "en": "on top, above"
+      },
+      "situation": {
+        "id": "Bilang sesuatu ada di atas meja atau lemari.",
+        "en": "Saying something is on top of a table or shelf."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-01",
+      "unit": "u10",
+      "hanzi": "逛街",
+      "variants": [],
+      "pinyin": "guàng jiē",
+      "pinyinNumbered": "guang4 jie1",
+      "tones": [
+        4,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去商店",
+        "wordIds": [
+          "L1-0302",
+          "L1-0314"
+        ]
+      },
+      "meaning": {
+        "id": "jalan-jalan ke toko, cuci mata",
+        "en": "to go shopping, window-shop"
+      },
+      "situation": {
+        "id": "Mengajak teman jalan-jalan di pertokoan.",
+        "en": "Inviting a friend to wander around the shops."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-02",
+      "unit": "u10",
+      "hanzi": "溜达",
+      "variants": [],
+      "pinyin": "liū da",
+      "pinyinNumbered": "liu1 da5",
+      "tones": [
+        1,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "走走",
+        "wordIds": [
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "jalan-jalan santai",
+        "en": "to stroll"
+      },
+      "situation": {
+        "id": "Jalan kaki santai setelah makan atau di taman.",
+        "en": "Taking a relaxed walk after a meal or in a park."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-03",
+      "unit": "u10",
+      "hanzi": "老远",
+      "variants": [],
+      "pinyin": "lǎo yuǎn",
+      "pinyinNumbered": "lao3 yuan3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很远",
+        "wordIds": [
+          "L1-0146",
+          "L1-0451"
+        ]
+      },
+      "meaning": {
+        "id": "jauh banget",
+        "en": "very far"
+      },
+      "situation": {
+        "id": "Mengeluh tempatnya jauh sekali.",
+        "en": "Complaining that a place is really far."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-04",
+      "unit": "u10",
+      "hanzi": "地儿",
+      "variants": [],
+      "pinyin": "dìr",
+      "pinyinNumbered": "di4 r5",
+      "tones": [
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "地方",
+        "wordIds": [
+          "L1-0071"
+        ]
+      },
+      "meaning": {
+        "id": "tempat",
+        "en": "place, spot"
+      },
+      "situation": {
+        "id": "Menyebut tempat, misalnya \"tempat yang enak\".",
+        "en": "Talking about a place, e.g. \"a nice spot\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u10-05",
+      "unit": "u10",
+      "hanzi": "出门",
+      "variants": [],
+      "pinyin": "chū mén",
+      "pinyinNumbered": "chu1 men2",
+      "tones": [
+        1,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "出去",
+        "wordIds": [
+          "L1-0050"
+        ]
+      },
+      "meaning": {
+        "id": "keluar rumah",
+        "en": "to go out (of the house)"
+      },
+      "situation": {
+        "id": "Bilang sedang atau akan keluar rumah.",
+        "en": "Saying you are going out of the house."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-01",
+      "unit": "u11",
+      "hanzi": "赖床",
+      "variants": [],
+      "pinyin": "lài chuáng",
+      "pinyinNumbered": "lai4 chuang2",
+      "tones": [
+        4,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不起床",
+        "wordIds": [
+          "L1-0034",
+          "L1-0288"
+        ]
+      },
+      "meaning": {
+        "id": "malas bangun",
+        "en": "to lie in bed (not get up)"
+      },
+      "situation": {
+        "id": "Bercanda tentang orang yang tidak mau bangun pagi.",
+        "en": "Joking about someone who will not get out of bed."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-02",
+      "unit": "u11",
+      "hanzi": "睡懒觉",
+      "variants": [],
+      "pinyin": "shuì lǎn jiào",
+      "pinyinNumbered": "shui4 lan3 jiao4",
+      "tones": [
+        4,
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "睡觉",
+        "wordIds": [
+          "L1-0348"
+        ]
+      },
+      "meaning": {
+        "id": "tidur sampai siang",
+        "en": "to sleep in"
+      },
+      "situation": {
+        "id": "Bilang bangun siang saat hari libur.",
+        "en": "Saying you slept in on a day off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-03",
+      "unit": "u11",
+      "hanzi": "搞定",
+      "variants": [],
+      "pinyin": "gǎo dìng",
+      "pinyinNumbered": "gao3 ding4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "做好",
+        "wordIds": [
+          "L1-0500",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "beres!",
+        "en": "done, sorted"
+      },
+      "situation": {
+        "id": "Bilang pekerjaan sudah selesai dengan baik.",
+        "en": "Saying a job is done and sorted."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-04",
+      "unit": "u11",
+      "hanzi": "弄",
+      "variants": [],
+      "pinyin": "nòng",
+      "pinyinNumbered": "nong4",
+      "tones": [
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "做",
+        "wordIds": [
+          "L1-0500"
+        ]
+      },
+      "meaning": {
+        "id": "bikin, urus",
+        "en": "to do, to fix"
+      },
+      "situation": {
+        "id": "Mengganti kata \"melakukan/membuat\" dalam obrolan, misalnya membereskan barang.",
+        "en": "A general \"do/make\" in conversation, e.g. fixing or sorting things."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u11-06",
+      "unit": "u11",
+      "hanzi": "收拾",
+      "variants": [],
+      "pinyin": "shōu shi",
+      "pinyinNumbered": "shou1 shi5",
+      "tones": [
+        1,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "放好",
+        "wordIds": [
+          "L1-0103",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "beres-beres",
+        "en": "to tidy up"
+      },
+      "situation": {
+        "id": "Membereskan kamar atau barang.",
+        "en": "Tidying up a room or things."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-02",
+      "unit": "u12",
+      "hanzi": "堵车",
+      "variants": [],
+      "pinyin": "dǔ chē",
+      "pinyinNumbered": "du3 che1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "车很多",
+        "wordIds": [
+          "L1-0042",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "macet",
+        "en": "traffic jam"
+      },
+      "situation": {
+        "id": "Bilang jalan macet sehingga terlambat.",
+        "en": "Saying the traffic is jammed so you are late."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-03",
+      "unit": "u12",
+      "hanzi": "师傅",
+      "variants": [],
+      "pinyin": "shī fu",
+      "pinyinNumbered": "shi1 fu5",
+      "tones": [
+        1,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "pak (sapaan sopir, tukang)",
+        "en": "master (to address a driver or worker)"
+      },
+      "situation": {
+        "id": "Memanggil sopir taksi atau tukang dengan sopan.",
+        "en": "Politely addressing a taxi driver or worker."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-04",
+      "unit": "u12",
+      "hanzi": "慢走",
+      "variants": [],
+      "pinyin": "màn zǒu",
+      "pinyinNumbered": "man4 zou3",
+      "tones": [
+        4,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "再见",
+        "wordIds": [
+          "L1-0454"
+        ]
+      },
+      "meaning": {
+        "id": "hati-hati di jalan",
+        "en": "take care (to a departing guest)"
+      },
+      "situation": {
+        "id": "Tuan rumah atau penjual mengantar tamu yang pulang.",
+        "en": "A host or shopkeeper seeing a guest off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-05",
+      "unit": "u12",
+      "hanzi": "快点儿",
+      "variants": [
+        "快点"
+      ],
+      "pinyin": "kuài diǎnr",
+      "pinyinNumbered": "kuai4 dian3 r5",
+      "tones": [
+        4,
+        3,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "快",
+        "wordIds": [
+          "L1-0204"
+        ]
+      },
+      "meaning": {
+        "id": "cepetan",
+        "en": "hurry up"
+      },
+      "situation": {
+        "id": "Menyuruh orang lebih cepat, misalnya mengejar bus.",
+        "en": "Telling someone to hurry, e.g. to catch a bus."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-06",
+      "unit": "u12",
+      "hanzi": "搭车",
+      "variants": [],
+      "pinyin": "dā chē",
+      "pinyinNumbered": "da1 che1",
+      "tones": [
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "坐车",
+        "wordIds": [
+          "L1-0498",
+          "L1-0042"
+        ]
+      },
+      "meaning": {
+        "id": "nebeng",
+        "en": "to get a lift"
+      },
+      "situation": {
+        "id": "Ikut mobil orang lain ke tujuan yang sama.",
+        "en": "Riding along in someone else's car."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-04",
+      "unit": "u13",
+      "hanzi": "撤",
+      "variants": [],
+      "pinyin": "chè",
+      "pinyinNumbered": "che4",
+      "tones": [
+        4
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "走",
+        "wordIds": [
+          "L1-0490"
+        ]
+      },
+      "meaning": {
+        "id": "cabut",
+        "en": "to head off (let's go)"
+      },
+      "situation": {
+        "id": "Mengajak teman pergi dari suatu tempat, \"ayo cabut\".",
+        "en": "Telling friends it is time to leave, \"let us go\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-08",
+      "unit": "u13",
+      "hanzi": "好久不见",
+      "variants": [],
+      "pinyin": "hǎo jiǔ bù jiàn",
+      "pinyinNumbered": "hao3 jiu3 bu4 jian4",
+      "tones": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很多天没见面",
+        "wordIds": [
+          "L1-0146",
+          "L1-0094",
+          "L1-0359",
+          "L1-0232",
+          "L1-0174"
+        ]
+      },
+      "meaning": {
+        "id": "lama nggak ketemu",
+        "en": "long time no see"
+      },
+      "situation": {
+        "id": "Menyapa teman yang sudah lama tidak bertemu.",
+        "en": "Greeting a friend you have not seen for a long time."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-09",
+      "unit": "u13",
+      "hanzi": "不见不散",
+      "variants": [],
+      "pinyin": "bù jiàn bù sàn",
+      "pinyinNumbered": "bu4 jian4 bu4 san4",
+      "tones": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "到时候见",
+        "wordIds": [
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
+        ]
+      },
+      "meaning": {
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
+      },
+      "situation": {
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-10",
+      "unit": "u13",
+      "hanzi": "串门",
+      "variants": [
+        "串门儿"
+      ],
+      "pinyin": "chuàn mén",
+      "pinyinNumbered": "chuan4 men2",
+      "tones": [
+        4,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "去朋友家",
+        "wordIds": [
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
+        ]
+      },
+      "meaning": {
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
+      },
+      "situation": {
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u13-11",
+      "unit": "u13",
+      "hanzi": "打卡",
+      "variants": [],
+      "pinyin": "dǎ kǎ",
+      "pinyinNumbered": "da3 ka3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "去看看",
+        "wordIds": [
+          "L1-0302",
+          "L1-0192"
+        ]
+      },
+      "meaning": {
+        "id": "mampir (ke tempat hits)",
+        "en": "to check in at a trendy spot"
+      },
+      "situation": {
+        "id": "Pergi ke tempat yang sedang viral lalu foto dan unggah ke media sosial.",
+        "en": "Visiting a trendy place, taking photos and posting them online."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-01",
+      "unit": "u14",
+      "hanzi": "学霸",
+      "variants": [],
+      "pinyin": "xué bà",
+      "pinyinNumbered": "xue2 ba4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "好学生",
+        "wordIds": [
+          "L1-0138",
+          "L1-0419"
+        ]
+      },
+      "meaning": {
+        "id": "si jago belajar",
+        "en": "straight-A student"
+      },
+      "situation": {
+        "id": "Memuji teman yang sangat pintar dan rajin belajar.",
+        "en": "Praising a classmate who studies hard and gets top marks."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-02",
+      "unit": "u14",
+      "hanzi": "学渣",
+      "variants": [],
+      "pinyin": "xué zhā",
+      "pinyinNumbered": "xue2 zha1",
+      "tones": [
+        2,
+        1
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "不认真的学生",
+        "wordIds": [
+          "L1-0034",
+          "L1-0307",
+          "L1-0067",
+          "L1-0419"
+        ]
+      },
+      "meaning": {
+        "id": "murid malas (bercanda)",
+        "en": "slacker student (joking)"
+      },
+      "situation": {
+        "id": "Bercanda tentang diri sendiri yang nilainya jelek.",
+        "en": "Joking about yourself having bad grades."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-03",
+      "unit": "u14",
+      "hanzi": "考砸了",
+      "variants": [
+        "考砸"
+      ],
+      "pinyin": "kǎo zá le",
+      "pinyinNumbered": "kao3 za2 le5",
+      "tones": [
+        3,
+        2,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "没考好",
+        "wordIds": [
+          "L1-0232",
+          "L1-0196",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "ujiannya jeblok",
+        "en": "flunked the exam"
+      },
+      "situation": {
+        "id": "Bilang ujiannya gagal atau nilainya jelek.",
+        "en": "Saying the exam went badly."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-04",
+      "unit": "u14",
+      "hanzi": "挂科",
+      "variants": [],
+      "pinyin": "guà kē",
+      "pinyinNumbered": "gua4 ke1",
+      "tones": [
+        4,
+        1
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "考试没过",
+        "wordIds": [
+          "L1-0197",
+          "L1-0232",
+          "L1-0131"
+        ]
+      },
+      "meaning": {
+        "id": "nggak lulus mata kuliah",
+        "en": "to fail a course"
+      },
+      "situation": {
+        "id": "Mahasiswa bilang tidak lulus satu mata kuliah.",
+        "en": "A student saying they failed a course."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-05",
+      "unit": "u14",
+      "hanzi": "逃课",
+      "variants": [],
+      "pinyin": "táo kè",
+      "pinyinNumbered": "tao2 ke4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不上课",
+        "wordIds": [
+          "L1-0034",
+          "L1-0320"
+        ]
+      },
+      "meaning": {
+        "id": "bolos",
+        "en": "to skip class"
+      },
+      "situation": {
+        "id": "Bilang seseorang bolos sekolah atau kuliah.",
+        "en": "Saying someone skipped class."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-01",
+      "unit": "u15",
+      "hanzi": "老外",
+      "variants": [],
+      "pinyin": "lǎo wài",
+      "pinyinNumbered": "lao3 wai4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "外国人",
+        "wordIds": [
+          "L1-0369",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "bule, orang asing",
+        "en": "foreigner"
+      },
+      "situation": {
+        "id": "Orang China menyebut orang asing dalam obrolan santai.",
+        "en": "Chinese people talking about a foreigner casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-02",
+      "unit": "u15",
+      "hanzi": "聊天",
+      "variants": [],
+      "pinyin": "liáo tiān",
+      "pinyinNumbered": "liao2 tian1",
+      "tones": [
+        2,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说话",
+        "wordIds": [
+          "L1-0350"
+        ]
+      },
+      "meaning": {
+        "id": "ngobrol",
+        "en": "to chat"
+      },
+      "situation": {
+        "id": "Ngobrol dengan teman, langsung atau lewat aplikasi.",
+        "en": "Chatting with friends, in person or on an app."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-03",
+      "unit": "u15",
+      "hanzi": "吹牛",
+      "variants": [],
+      "pinyin": "chuī niú",
+      "pinyinNumbered": "chui1 niu2",
+      "tones": [
+        1,
+        2
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说大话",
+        "wordIds": [
+          "L1-0349",
+          "L1-0061",
+          "L1-0151"
+        ]
+      },
+      "meaning": {
+        "id": "membual",
+        "en": "to brag"
+      },
+      "situation": {
+        "id": "Bilang seseorang membual atau melebih-lebihkan.",
+        "en": "Saying someone is bragging or exaggerating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-04",
+      "unit": "u15",
+      "hanzi": "瞎说",
+      "variants": [],
+      "pinyin": "xiā shuō",
+      "pinyinNumbered": "xia1 shuo1",
+      "tones": [
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说错",
+        "wordIds": [
+          "L1-0349",
+          "L1-0055"
+        ]
+      },
+      "meaning": {
+        "id": "ngawur",
+        "en": "to talk nonsense"
+      },
+      "situation": {
+        "id": "Membantah perkataan teman yang tidak benar.",
+        "en": "Contradicting a friend who says something untrue."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-05",
+      "unit": "u15",
+      "hanzi": "唠叨",
+      "variants": [],
+      "pinyin": "láo dao",
+      "pinyinNumbered": "lao2 dao5",
+      "tones": [
+        2,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说很多",
+        "wordIds": [
+          "L1-0349",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "cerewet, mengomel",
+        "en": "to nag"
+      },
+      "situation": {
+        "id": "Mengeluh orang yang terus mengulang nasihat.",
+        "en": "Complaining someone keeps repeating advice."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-01",
+      "unit": "u16",
+      "hanzi": "懂",
+      "variants": [],
+      "pinyin": "dǒng",
+      "pinyinNumbered": "dong3",
+      "tones": [
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "明白",
+        "wordIds": [
+          "L1-0246"
+        ]
+      },
+      "meaning": {
+        "id": "paham, ngerti",
+        "en": "to understand"
+      },
+      "situation": {
+        "id": "Bilang paham, misalnya \"Paham?\" \"Paham!\"",
+        "en": "Saying you understand, e.g. \"Got it?\" \"Got it!\""
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-02",
+      "unit": "u16",
+      "hanzi": "搞不懂",
+      "variants": [],
+      "pinyin": "gǎo bu dǒng",
+      "pinyinNumbered": "gao3 bu5 dong3",
+      "tones": [
+        3,
+        5,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不明白",
+        "wordIds": [
+          "L1-0034",
+          "L1-0246"
+        ]
+      },
+      "meaning": {
+        "id": "nggak ngerti",
+        "en": "can't figure it out"
+      },
+      "situation": {
+        "id": "Bingung tidak mengerti sesuatu.",
+        "en": "Being puzzled and not getting something."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-03",
+      "unit": "u16",
+      "hanzi": "靠谱",
+      "variants": [],
+      "pinyin": "kào pǔ",
+      "pinyinNumbered": "kao4 pu3",
+      "tones": [
+        4,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "行",
+        "wordIds": [
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "bisa diandalkan, masuk akal",
+        "en": "reliable, makes sense"
+      },
+      "situation": {
+        "id": "Menilai orang atau rencana bisa dipercaya.",
+        "en": "Judging a person or plan as reliable."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-04",
+      "unit": "u16",
+      "hanzi": "牛",
+      "variants": [],
+      "pinyin": "niú",
+      "pinyinNumbered": "niu2",
+      "tones": [
+        2
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "真行",
+        "wordIds": [
+          "L1-0470",
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "keren, hebat",
+        "en": "awesome"
+      },
+      "situation": {
+        "id": "Memuji orang yang hebat sekali.",
+        "en": "Praising someone as really awesome."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u16-05",
+      "unit": "u16",
+      "hanzi": "厉害",
+      "variants": [],
+      "pinyin": "lì hai",
+      "pinyinNumbered": "li4 hai5",
+      "tones": [
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "真行",
+        "wordIds": [
+          "L1-0470",
+          "L1-0416"
+        ]
+      },
+      "meaning": {
+        "id": "hebat, jago",
+        "en": "amazing, impressive"
+      },
+      "situation": {
+        "id": "Memuji kemampuan seseorang.",
+        "en": "Praising someone's skill."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u17-03",
+      "unit": "u17",
+      "hanzi": "打工",
+      "variants": [],
+      "pinyin": "dǎ gōng",
+      "pinyinNumbered": "da3 gong1",
+      "tones": [
+        3,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "工作",
+        "wordIds": [
+          "L1-0124"
+        ]
+      },
+      "meaning": {
+        "id": "kerja (sambilan)",
+        "en": "to work (a job)"
+      },
+      "situation": {
+        "id": "Bilang sedang kerja sambilan atau bekerja di kota lain.",
+        "en": "Saying you have a (part-time) job."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u17-04",
+      "unit": "u17",
+      "hanzi": "打工人",
+      "variants": [],
+      "pinyin": "dǎ gōng rén",
+      "pinyinNumbered": "da3 gong1 ren2",
+      "tones": [
+        3,
+        1,
+        2
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "工人",
+        "wordIds": [
+          "L1-0123"
+        ]
+      },
+      "meaning": {
+        "id": "pekerja (bercanda)",
+        "en": "worker (joking about office life)"
+      },
+      "situation": {
+        "id": "Pekerja kantoran bercanda tentang hidupnya yang sibuk.",
+        "en": "Office workers joking about their busy lives."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u17-05",
+      "unit": "u17",
+      "hanzi": "摸鱼",
+      "variants": [],
+      "pinyin": "mō yú",
+      "pinyinNumbered": "mo1 yu2",
+      "tones": [
+        1,
+        2
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "不认真工作",
+        "wordIds": [
+          "L1-0034",
+          "L1-0307",
+          "L1-0124"
+        ]
+      },
+      "meaning": {
+        "id": "malas-malasan saat kerja",
+        "en": "to slack off at work"
+      },
+      "situation": {
+        "id": "Bercanda tentang curi waktu santai saat jam kerja.",
+        "en": "Joking about slacking off during work hours."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u17-07",
+      "unit": "u17",
+      "hanzi": "难受",
+      "variants": [],
+      "pinyin": "nán shòu",
+      "pinyinNumbered": "nan2 shou4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不好",
+        "wordIds": [
+          "L1-0034",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "nggak enak badan",
+        "en": "to feel unwell"
+      },
+      "situation": {
+        "id": "Bilang badan terasa tidak enak atau sakit.",
+        "en": "Saying you feel unwell."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-01",
+      "unit": "u18",
+      "hanzi": "扫码",
+      "variants": [],
+      "pinyin": "sǎo mǎ",
+      "pinyinNumbered": "sao3 ma3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "给钱",
+        "wordIds": [
+          "L1-0121",
+          "L1-0294"
+        ]
+      },
+      "meaning": {
+        "id": "scan (kode QR)",
+        "en": "to scan the QR code"
+      },
+      "situation": {
+        "id": "Bayar dengan scan kode QR di toko atau pasar.",
+        "en": "Paying by scanning a QR code in a shop or market."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-02",
+      "unit": "u18",
+      "hanzi": "划算",
+      "variants": [],
+      "pinyin": "huá suàn",
+      "pinyinNumbered": "hua2 suan4",
+      "tones": [
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不贵",
+        "wordIds": [
+          "L1-0034",
+          "L1-0127"
+        ]
+      },
+      "meaning": {
+        "id": "worth it, murah",
+        "en": "good value"
+      },
+      "situation": {
+        "id": "Bilang harganya pantas atau untung.",
+        "en": "Saying something is good value."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-03",
+      "unit": "u18",
+      "hanzi": "砍价",
+      "variants": [],
+      "pinyin": "kǎn jià",
+      "pinyinNumbered": "kan3 jia4",
+      "tones": [
+        3,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说便宜点儿",
+        "wordIds": [
+          "L1-0349"
+        ]
+      },
+      "meaning": {
+        "id": "menawar",
+        "en": "to haggle"
+      },
+      "situation": {
+        "id": "Menawar harga di pasar.",
+        "en": "Bargaining at the market."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-04",
+      "unit": "u18",
+      "hanzi": "坑",
+      "variants": [],
+      "pinyin": "kēng",
+      "pinyinNumbered": "keng1",
+      "tones": [
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "太贵",
+        "wordIds": [
+          "L1-0358",
+          "L1-0127"
+        ]
+      },
+      "meaning": {
+        "id": "kemahalan, ditipu",
+        "en": "rip-off, to scam"
+      },
+      "situation": {
+        "id": "Mengeluh harga terlalu mahal atau merasa ditipu.",
+        "en": "Complaining that something is a rip-off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-05",
+      "unit": "u18",
+      "hanzi": "老板",
+      "variants": [],
+      "pinyin": "lǎo bǎn",
+      "pinyinNumbered": "lao3 ban3",
+      "tones": [
+        3,
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "bos (sapaan pemilik toko)",
+        "en": "boss (to address a shop owner)"
+      },
+      "situation": {
+        "id": "Memanggil pemilik toko atau warung.",
+        "en": "Calling a shop or stall owner."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u19-01",
+      "unit": "u19",
+      "hanzi": "追剧",
+      "variants": [],
+      "pinyin": "zhuī jù",
+      "pinyinNumbered": "zhui1 ju4",
+      "tones": [
+        1,
+        4
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "看电视",
+        "wordIds": [
+          "L1-0192",
+          "L1-0080"
+        ]
+      },
+      "meaning": {
+        "id": "maraton drama",
+        "en": "to binge-watch a series"
+      },
+      "situation": {
+        "id": "Menonton serial drama terus-menerus.",
+        "en": "Watching a TV series episode after episode."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u19-02",
+      "unit": "u19",
+      "hanzi": "刷手机",
+      "variants": [],
+      "pinyin": "shuā shǒu jī",
+      "pinyinNumbered": "shua1 shou3 ji1",
+      "tones": [
+        1,
+        3,
+        1
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "看手机",
+        "wordIds": [
+          "L1-0192",
+          "L1-0340"
+        ]
+      },
+      "meaning": {
+        "id": "scroll HP",
+        "en": "to scroll on your phone"
+      },
+      "situation": {
+        "id": "Bilang terus-terusan melihat HP.",
+        "en": "Saying someone keeps scrolling their phone."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u19-03",
+      "unit": "u19",
+      "hanzi": "打游戏",
+      "variants": [],
+      "pinyin": "dǎ yóu xì",
+      "pinyinNumbered": "da3 you2 xi4",
+      "tones": [
+        3,
+        2,
+        4
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "玩儿电脑",
+        "wordIds": [
+          "L1-0371",
+          "L1-0079"
+        ]
+      },
+      "meaning": {
+        "id": "main game",
+        "en": "to play video games"
+      },
+      "situation": {
+        "id": "Main game di HP atau komputer.",
+        "en": "Playing games on a phone or computer."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u19-04",
+      "unit": "u19",
+      "hanzi": "有意思",
+      "variants": [],
+      "pinyin": "yǒu yìsi",
+      "pinyinNumbered": "you3 yi4 si5",
+      "tones": [
+        3,
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "好玩儿",
+        "wordIds": [
+          "L1-0142"
+        ]
+      },
+      "meaning": {
+        "id": "seru, menarik",
+        "en": "interesting, fun"
+      },
+      "situation": {
+        "id": "Bilang film atau kegiatan itu seru.",
+        "en": "Saying a film or activity is fun."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u19-05",
+      "unit": "u19",
+      "hanzi": "没意思",
+      "variants": [],
+      "pinyin": "méi yìsi",
+      "pinyinNumbered": "mei2 yi4 si5",
+      "tones": [
+        2,
+        4,
+        5
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不好玩儿",
+        "wordIds": [
+          "L1-0034",
+          "L1-0142"
+        ]
+      },
+      "meaning": {
+        "id": "nggak seru",
+        "en": "boring"
+      },
+      "situation": {
+        "id": "Bilang sesuatu membosankan.",
+        "en": "Saying something is boring."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-01",
+      "unit": "u20",
+      "hanzi": "挺",
+      "variants": [],
+      "pinyin": "tǐng",
+      "pinyinNumbered": "ting3",
+      "tones": [
+        3
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "很",
+        "wordIds": [
+          "L1-0146"
+        ]
+      },
+      "meaning": {
+        "id": "cukup, lumayan",
+        "en": "quite, pretty"
+      },
+      "situation": {
+        "id": "Bilang \"cukup/lumayan\", misalnya \"lumayan enak\".",
+        "en": "Saying \"pretty/quite\", e.g. \"pretty good\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-02",
+      "unit": "u20",
+      "hanzi": "超",
+      "variants": [],
+      "pinyin": "chāo",
+      "pinyinNumbered": "chao1",
+      "tones": [
+        1
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "非常",
+        "wordIds": [
+          "L1-0108"
+        ]
+      },
+      "meaning": {
+        "id": "super, banget",
+        "en": "super, so"
+      },
+      "situation": {
+        "id": "Melebih-lebihkan, misalnya \"super enak\".",
+        "en": "Exaggerating, e.g. \"super tasty\"."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-03",
+      "unit": "u20",
+      "hanzi": "开心",
+      "variants": [],
+      "pinyin": "kāi xīn",
+      "pinyinNumbered": "kai1 xin1",
+      "tones": [
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "高兴",
+        "wordIds": [
+          "L1-0116"
+        ]
+      },
+      "meaning": {
+        "id": "senang",
+        "en": "happy"
+      },
+      "situation": {
+        "id": "Bilang merasa senang.",
+        "en": "Saying you feel happy."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-07",
+      "unit": "u20",
+      "hanzi": "绝了",
+      "variants": [],
+      "pinyin": "jué le",
+      "pinyinNumbered": "jue2 le5",
+      "tones": [
+        2,
+        5
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "太好了",
+        "wordIds": [
+          "L1-0358",
+          "L1-0138",
+          "L1-0210"
+        ]
+      },
+      "meaning": {
+        "id": "mantap jiwa",
+        "en": "amazing, unbeatable"
+      },
+      "situation": {
+        "id": "Memuji sesuatu yang luar biasa enak atau bagus.",
+        "en": "Praising something amazingly good."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u20-08",
+      "unit": "u20",
+      "hanzi": "一般般",
+      "variants": [],
+      "pinyin": "yī bān bān",
+      "pinyinNumbered": "yi1 ban1 ban1",
+      "tones": [
+        1,
+        1,
+        1
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "不大好",
+        "wordIds": [
+          "L1-0030",
+          "L1-0138"
+        ]
+      },
+      "meaning": {
+        "id": "biasa aja",
+        "en": "so-so"
+      },
+      "situation": {
+        "id": "Menilai sesuatu biasa saja, tidak bagus tidak jelek.",
+        "en": "Rating something as so-so."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ]
+}

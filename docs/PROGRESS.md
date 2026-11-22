@@ -11,7 +11,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
 - [x] 2b · Ganti HSK 1 ke 300 kata silabus 2025 — 2026-11-22 — Sonnet (diperiksa Opus, 1 kali perbaikan font) — 300 kata silabus ujian 2025 (becky82/mteh CC BY-SA 4.0, cocok 1:1 dengan PDF resmi CLEC); 266 ID lama dipakai ulang, 34 kata baru (L1-0501…0534), 234 kata lama ke `data/hsk2-preview/`; 21 unit (12–17 kata); 1.579 kalimat Tatoeba; 72 ungkapan santai; `npm run check:data` baru di CI
-- [ ] 3d · Tulis ulang dialog jadi alami (kritik pemilik 2026-11-22) — SEDANG DIKERJAKAN (mulai 2026-11-22 00:58 UTC)
+- [ ] 3d · Tulis ulang dialog jadi alami (kritik pemilik 2026-11-22) — SEDANG DIKERJAKAN (mulai 2026-11-22 04:41 UTC)
 - [ ] 0 · Tahap 0 "Dasar sebelum HSK 1" (keputusan pemilik 2026-11-22)
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Pemilik memilih P3 (perempuan) + L3 (laki-laki) pada 2026-11-22.**
 - [ ] 4b · Audio semua materi

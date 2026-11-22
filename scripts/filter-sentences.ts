@@ -1,10 +1,15 @@
 // Filters the Tatoeba exports down to HSK 1 example sentences.
 //
 //   npm run build:sentences -- --in <folder with the extracted Tatoeba files> [--out <folder>] [--date <ISO date>]
+//   npm run build:sentences -- --refilter [<sentences.json>] [--out <folder>]
 //
 // Writes sentences.json and sentences-report.json (default folder data/hsk1). The files are streamed line by
 // line; only rows for sentences that survived the filter are kept in memory. The rules live in src/lib/sentences.ts.
-import { createReadStream, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+//
+// --refilter needs no Tatoeba files: it re-applies the rules to the sentences already in sentences.json (after
+// words.json / units.json changed), so the result is a subset of what the full run would find. The full run
+// (workflow fetch-tatoeba.yml) replaces it as soon as it runs. The report keeps the date of the earlier download.
+import { createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join, resolve } from 'node:path'
 import { createInterface } from 'node:readline'
 import { fileURLToPath } from 'node:url'
@@ -107,30 +112,116 @@ async function eachRow(spec: FileSpec, path: string, onRow: (cols: string[]) => 
 }
 
 // ---------- main ----------
-async function main() {
-  const inDir = argValue('--in')
-  if (!inDir) return fail('usage: npm run build:sentences -- --in <folder> [--out <folder>] [--date <ISO date>]')
-  const outDir = resolve(argValue('--out') ?? fileURLToPath(new URL('data/hsk1', root)))
-  const generatedAt = argValue('--date') ?? new Date().toISOString()
-  const files = locate(resolve(inDir))
-  const spec = Object.fromEntries(FILES.map((f) => [f.key, f]))
+interface Inputs {
+  words: WordInput[]
+  units: UnitInput[]
+  lex: ReturnType<typeof buildLexicon>
+}
 
+function loadInputs(): Inputs {
   const words = JSON.parse(readFileSync(new URL('data/hsk1/words.json', root), 'utf8')) as WordInput[]
   const units = (JSON.parse(readFileSync(new URL('data/hsk1/units.json', root), 'utf8')) as { units: UnitInput[] }).units
   // CC-CEDICT headwords only help to find word boundaries (太阳 is one word, not 太 + 阳).
   const cedict = JSON.parse(readFileSync(new URL('node_modules/cedict-json/cedict.json', root), 'utf8')) as { simplified: string }[]
   const dictionary = new Set(cedict.map((e) => e.simplified).filter((w) => /^\p{Script=Han}+$/u.test(w)))
   console.log(`dictionary words: ${dictionary.size}`)
-  const lex = buildLexicon(words, units, dictionary)
+  return { words, units, lex: buildLexicon(words, units, dictionary) }
+}
+
+const emptyStats = (): FilterStats => ({
+  cmnSentences: 0,
+  rejected: Object.fromEntries(REJECT_REASONS.map((r) => [r, 0])) as FilterStats['rejected'],
+  noAuthor: 0,
+  noEnglish: 0,
+  candidates: 0,
+})
+
+/** Ranks per word, caps (shrinking the cap while the file is too big) and writes sentences.json + the report. */
+function writeOutputs(all: Map<number, SentenceEntry>, stats: FilterStats, inputs: Inputs, outDir: string, generatedAt: string, extra: object) {
+  const { words, units } = inputs
+  stats.candidates = stats.candidates || all.size
+  const candidates: Candidate[] = [...all.values()].map((e) => ({
+    tatoebaId: e.tatoebaId,
+    words: e.words,
+    ok: e.ok,
+    licensedAudio: e.audio.some((a) => a.license !== ''),
+    hasInd: e.ind.length > 0,
+    outside: e.outside,
+    length: [...e.cmn].length,
+  }))
+  candidates.sort(compareCandidates)
+
+  const wordIds = words.map((w) => w.id)
+  let perWord = DEFAULT_PER_WORD
+  let entries: SentenceEntry[] = []
+  let text = ''
+  for (const cap of [DEFAULT_PER_WORD, 6, 5]) {
+    perWord = cap
+    const chosen = selectPerWord(candidates, wordIds, cap)
+    entries = [...chosen].sort((a, b) => a - b).map((id) => all.get(id)!)
+    text = formatSentences(entries, cap)
+    if (Buffer.byteLength(text) <= MAX_FILE_BYTES) break
+  }
+
+  const report = { ...buildReport(entries, words, units, stats, { generatedAt, perWordLimit: perWord, fileBytes: Buffer.byteLength(text) }), ...extra }
+  mkdirSync(outDir, { recursive: true })
+  writeFileSync(join(outDir, 'sentences.json'), text)
+  writeFileSync(join(outDir, 'sentences-report.json'), `${JSON.stringify(report, null, 2)}\n`)
+
+  console.log(`\nsentences written: ${entries.length} (limit ${perWord} per word, ${report.fileBytes} bytes) -> ${outDir}`)
+  console.log(`rejected: ${JSON.stringify(stats.rejected)}, no author: ${stats.noAuthor}, no English: ${stats.noEnglish}`)
+  console.log(`units below 5 sentences: ${report.unitsBelowFive.map((u) => `${u.unit}(${u.count})`).join(' ') || 'none'}`)
+  console.log(`words without sentences: ${report.wordsWithoutSentences.length}`)
+}
+
+/** Re-applies the text rules to the sentences of an earlier run (no Tatoeba files needed). */
+function refilter(sentencesPath: string, outDir: string) {
+  const inputs = loadInputs()
+  const previous = JSON.parse(readFileSync(sentencesPath, 'utf8')) as { sentences: SentenceEntry[] }
+  const reportUrl = new URL('data/hsk1/sentences-report.json', root)
+  type Earlier = { generatedAt?: string; stats?: FilterStats; refilteredFrom?: { generatedAt: string; sentences: number } }
+  const previousReport = existsSync(reportUrl) ? (JSON.parse(readFileSync(reportUrl, 'utf8')) as Earlier) : {}
+  const downloadedAt = previousReport.refilteredFrom?.generatedAt ?? previousReport.generatedAt ?? 'unknown'
+
+  // Running --refilter again must give the same files: counts of an earlier refilter carry over, only new rejections are added.
+  const stats = emptyStats()
+  const carried = previousReport.refilteredFrom && previousReport.stats ? previousReport.stats : null
+  const originalCount = previousReport.refilteredFrom?.sentences ?? previous.sentences.length
+  if (carried) {
+    for (const r of REJECT_REASONS) stats.rejected[r] = carried.rejected[r] ?? 0
+    stats.candidates = carried.candidates
+  }
+  const all = new Map<number, SentenceEntry>()
+  stats.cmnSentences = originalCount
+  for (const e of previous.sentences) {
+    const result = analyzeSentence(e.cmn, inputs.lex)
+    if (!result.ok) {
+      stats.rejected[result.reason]++
+      continue
+    }
+    all.set(e.tatoebaId, { ...e, words: result.value.words, unit: result.value.unit, outside: result.value.outside })
+  }
+  console.log(`sentences passing the rules for the new word list: ${all.size} of ${previous.sentences.length}`)
+  writeOutputs(all, stats, inputs, outDir, downloadedAt, { refilteredFrom: { generatedAt: downloadedAt, sentences: originalCount, note: 'subset of the earlier Tatoeba download; the workflow fetch-tatoeba.yml replaces this with a full run' } })
+}
+
+async function main() {
+  const outDir = resolve(argValue('--out') ?? fileURLToPath(new URL('data/hsk1', root)))
+  if (process.argv.includes('--refilter')) {
+    const given = process.argv[process.argv.indexOf('--refilter') + 1]
+    return refilter(given && !given.startsWith('--') ? resolve(given) : join(outDir, 'sentences.json'), outDir)
+  }
+  const inDir = argValue('--in')
+  if (!inDir) return fail('usage: npm run build:sentences -- --in <folder> [--out <folder>] [--date <ISO date>]   or   -- --refilter [<sentences.json>]')
+  const generatedAt = argValue('--date') ?? new Date().toISOString()
+  const files = locate(resolve(inDir))
+  const spec = Object.fromEntries(FILES.map((f) => [f.key, f]))
+
+  const inputs = loadInputs()
+  const { lex } = inputs
 
   // 1. Mandarin sentences: apply the text rules right away.
-  const stats: FilterStats = {
-    cmnSentences: 0,
-    rejected: Object.fromEntries(REJECT_REASONS.map((r) => [r, 0])) as FilterStats['rejected'],
-    noAuthor: 0,
-    noEnglish: 0,
-    candidates: 0,
-  }
+  const stats = emptyStats()
   const survivors = new Map<number, Analysis & { author: string }>()
   await eachRow(spec.cmn, files.cmn, (c) => {
     if (!isId(c[0]) || c[1] !== 'cmn') return
@@ -237,39 +328,7 @@ async function main() {
       audio: (audio.get(id) ?? []).sort((a, b) => a.audioId - b.audioId),
     })
   }
-  stats.candidates = all.size
-  const candidates: Candidate[] = [...all.values()].map((e) => ({
-    tatoebaId: e.tatoebaId,
-    words: e.words,
-    ok: e.ok,
-    licensedAudio: e.audio.some((a) => a.license !== ''),
-    hasInd: e.ind.length > 0,
-    outside: e.outside,
-    length: [...e.cmn].length,
-  }))
-  candidates.sort(compareCandidates)
-
-  const wordIds = words.map((w) => w.id)
-  let perWord = DEFAULT_PER_WORD
-  let entries: SentenceEntry[] = []
-  let text = ''
-  for (const cap of [DEFAULT_PER_WORD, 6, 5]) {
-    perWord = cap
-    const chosen = selectPerWord(candidates, wordIds, cap)
-    entries = [...chosen].sort((a, b) => a - b).map((id) => all.get(id)!)
-    text = formatSentences(entries, cap)
-    if (Buffer.byteLength(text) <= MAX_FILE_BYTES) break
-  }
-
-  const report = buildReport(entries, words, units, stats, { generatedAt, perWordLimit: perWord, fileBytes: Buffer.byteLength(text) })
-  mkdirSync(outDir, { recursive: true })
-  writeFileSync(join(outDir, 'sentences.json'), text)
-  writeFileSync(join(outDir, 'sentences-report.json'), `${JSON.stringify(report, null, 2)}\n`)
-
-  console.log(`\nsentences written: ${entries.length} (limit ${perWord} per word, ${report.fileBytes} bytes) -> ${outDir}`)
-  console.log(`rejected: ${JSON.stringify(stats.rejected)}, no author: ${stats.noAuthor}, no English: ${stats.noEnglish}`)
-  console.log(`units below 5 sentences: ${report.unitsBelowFive.map((u) => `${u.unit}(${u.count})`).join(' ') || 'none'}`)
-  console.log(`words without sentences: ${report.wordsWithoutSentences.length}`)
+  writeOutputs(all, stats, inputs, outDir, generatedAt, {})
 }
 
 await main()

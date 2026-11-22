@@ -9,11 +9,81 @@
       "en": "Greetings & politeness"
     },
     "description": {
-      "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan menyebut diri serta orang lain.",
-      "en": "First words for greeting, thanking, apologising and referring to yourself and others."
+      "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan bertanya kabar.",
+      "en": "First words for greeting, thanking, apologising and asking after someone."
     }
   },
   "words": [
+    {
+      "id": "L1-0517",
+      "hanzi": "你好",
+      "pinyin": "nǐhǎo",
+      "syllables": [
+        "nǐ",
+        "hǎo"
+      ],
+      "tones": [
+        3,
+        3
+      ],
+      "pos": [],
+      "en": [
+        "hello; hi"
+      ],
+      "ind": [
+        "halo",
+        "hai (salam)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "你",
+        "好"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 545888,
+          "cmn": "晚上好，你好吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 413820,
+            "text": "Good evening, how are you?",
+            "author": "Dorenda",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2390042,
+          "cmn": "你好像很忙。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": "像",
+          "en": {
+            "tatoebaId": 68945,
+            "text": "You look busy.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 14020244,
+          "cmn": "你好。我叫包。",
+          "author": "TanukiKun",
+          "license": "CC BY 2.0 FR",
+          "outside": "包",
+          "en": {
+            "tatoebaId": 14020243,
+            "text": "Hello. I am Bao.",
+            "author": "TanukiKun",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
     {
       "id": "L1-0271",
       "hanzi": "你",
@@ -40,34 +110,6 @@
       ],
       "examples": [
         {
-          "tatoebaId": 3084458,
-          "cmn": "你对不起我。",
-          "author": "serendipity42",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 16077,
-            "text": "You do me wrong.",
-            "author": "serendipity42",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 12569616,
-          "cmn": "请问你的名字是？",
-          "author": "lnvq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 63911,
-            "text": "May I have your name, please?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 347326,
           "cmn": "请问你贵姓？",
           "author": "sysko",
@@ -83,6 +125,44 @@
             "tatoebaId": 1503865,
             "text": "Maaf, siapakah nama Anda?",
             "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 5584071,
+          "cmn": "你在家吗",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1126543,
+            "text": "Are you home?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4329157,
+            "text": "Apa kamu ada di rumah?",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 7768155,
+          "cmn": "你在这里。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2202941,
+            "text": "You're here.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13713049,
+            "text": "Kamu di sini.",
+            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -134,29 +214,34 @@
           "ind": null
         },
         {
-          "tatoebaId": 718424,
-          "cmn": "他的名声很好。",
-          "author": "serendipity42",
+          "tatoebaId": 333127,
+          "cmn": "今天天气很好。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "名声",
+          "outside": null,
           "en": {
-            "tatoebaId": 303085,
-            "text": "He has a good reputation.",
+            "tatoebaId": 242938,
+            "text": "It's fine today.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 13732610,
+            "text": "Hari ini cuacanya bagus sekali.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 335252,
-          "cmn": "没什么好怕的。",
-          "author": "fucongcong",
+          "tatoebaId": 2337135,
+          "cmn": "这一点儿也不好。",
+          "author": "anndiana",
           "license": "CC BY 2.0 FR",
-          "outside": "怕",
+          "outside": null,
           "en": {
-            "tatoebaId": 19177,
-            "text": "There's nothing to be afraid of.",
-            "author": "CK",
+            "tatoebaId": 1682678,
+            "text": "This is not good at all.",
+            "author": "Spamster",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -188,25 +273,6 @@
       ],
       "examples": [
         {
-          "tatoebaId": 700502,
-          "cmn": "谢谢您的答复。",
-          "author": "weipipi",
-          "license": "CC BY 2.0 FR",
-          "outside": "答复",
-          "en": {
-            "tatoebaId": 3134794,
-            "text": "Thanks for your answer.",
-            "author": "gdaniel",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 3290582,
-            "text": "Terima kasih untuk jawaban Anda.",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
           "tatoebaId": 426430,
           "cmn": "请您原谅。",
           "author": "GlossaMatik",
@@ -238,1257 +304,23 @@
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
-        }
-      ]
-    },
-    {
-      "id": "L1-0380",
-      "hanzi": "我",
-      "pinyin": "wǒ",
-      "syllables": [
-        "wǒ"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "I; me; my"
-      ],
-      "ind": [
-        "saya",
-        "aku"
-      ],
-      "idMachine": true,
-      "chars": [
-        "我"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1134898,
-          "cmn": "我也不是。",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 456389,
-            "text": "Me neither.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
         },
         {
-          "tatoebaId": 3084458,
-          "cmn": "你对不起我。",
-          "author": "serendipity42",
+          "tatoebaId": 444659,
+          "cmn": "您叫什么名字？",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 16077,
-            "text": "You do me wrong.",
-            "author": "serendipity42",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1850482,
-          "cmn": "我的名字是汤姆。",
-          "author": "patricedenis",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 1173265,
-            "text": "My name is Tom.",
-            "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 10717828,
-            "text": "Nama saya Tom.",
-            "author": "warikdigital",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0410",
-      "hanzi": "谢谢",
-      "pinyin": "xièxie",
-      "syllables": [
-        "xiè",
-        "xie"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to thank",
-        "thanks",
-        "thank you"
-      ],
-      "ind": [
-        "terima kasih"
-      ],
-      "idMachine": true,
-      "chars": [
-        "谢"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 707194,
-          "cmn": "很好，谢谢。",
-          "author": "Ayalche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 464308,
-            "text": "Very good, thank you.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 700502,
-          "cmn": "谢谢您的答复。",
-          "author": "weipipi",
-          "license": "CC BY 2.0 FR",
-          "outside": "答复",
-          "en": {
-            "tatoebaId": 3134794,
-            "text": "Thanks for your answer.",
-            "author": "gdaniel",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 3290582,
-            "text": "Terima kasih untuk jawaban Anda.",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 573549,
-          "cmn": "不用，谢谢。我累了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 456509,
-            "text": "No, thanks. I am tired.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12559401,
-            "text": "Tidak, terima kasih. Saya lelah.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0032",
-      "hanzi": "不客气",
-      "pinyin": "bùkèqì",
-      "syllables": [
-        "bù",
-        "kè",
-        "qì"
-      ],
-      "tones": [
-        4,
-        4,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "you're welcome",
-        "don't mention it",
-        "impolite",
-        "rude",
-        "blunt"
-      ],
-      "ind": [
-        "sama-sama",
-        "jangan sungkan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "不",
-        "客",
-        "气"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0093",
-      "hanzi": "对不起",
-      "pinyin": "duìbuqǐ",
-      "syllables": [
-        "duì",
-        "bu",
-        "qǐ"
-      ],
-      "tones": [
-        4,
-        5,
-        3
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "I'm sorry; excuse me; I beg your pardon",
-        "to let (sb) down; to disappoint"
-      ],
-      "ind": [
-        "maaf",
-        "minta maaf"
-      ],
-      "idMachine": true,
-      "chars": [
-        "对",
-        "不",
-        "起"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3084458,
-          "cmn": "你对不起我。",
-          "author": "serendipity42",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 16077,
-            "text": "You do me wrong.",
-            "author": "serendipity42",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4881640,
-          "cmn": "对不起，我错了。",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2312025,
-            "text": "Sorry, I made a mistake.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3378156,
-          "cmn": "对不起，我来晚了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 277376,
-            "text": "I'm sorry I'm late.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0233",
-      "hanzi": "没关系",
-      "pinyin": "méiguānxi",
-      "syllables": [
-        "méi",
-        "guān",
-        "xi"
-      ],
-      "tones": [
-        2,
-        1,
-        5
-      ],
-      "pos": [],
-      "en": [
-        "it doesn't matter"
-      ],
-      "ind": [
-        "tidak apa-apa",
-        "tidak masalah"
-      ],
-      "idMachine": true,
-      "chars": [
-        "没",
-        "关",
-        "系"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10961070,
-          "cmn": "不，没关系。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13949862,
-            "text": "No, there's no problem.",
+            "tatoebaId": 70623,
+            "text": "What is your name?",
             "author": "frpzzd",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
-        },
-        {
-          "tatoebaId": 14095648,
-          "cmn": "犯错没关系。",
-          "author": "noahall",
-          "license": "CC BY 2.0 FR",
-          "outside": "犯错",
-          "en": {
-            "tatoebaId": 8078849,
-            "text": "It's OK to make mistakes.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6608385,
-          "cmn": "对，我没关系。",
-          "author": "RainShelter",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6608034,
-            "text": "Yes, I'm fine.",
-            "author": "MaryJ",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0234",
-      "hanzi": "没什么",
-      "pinyin": "méishénme",
-      "syllables": [
-        "méi",
-        "shén",
-        "me"
-      ],
-      "tones": [
-        2,
-        2,
-        5
-      ],
-      "pos": [],
-      "en": [
-        "it doesn't matter; it's nothing; never mind",
-        "think nothing of it; it's my pleasure; you're welcome"
-      ],
-      "ind": [
-        "tidak apa-apa",
-        "bukan apa-apa"
-      ],
-      "idMachine": true,
-      "chars": [
-        "没",
-        "什",
-        "么"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 335252,
-          "cmn": "没什么好怕的。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "怕",
-          "en": {
-            "tatoebaId": 19177,
-            "text": "There's nothing to be afraid of.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9489470,
-          "cmn": "我没什么选择。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "选择",
-          "en": {
-            "tatoebaId": 6257279,
-            "text": "I don't really have much choice.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2456036,
-          "cmn": "这没什么大不了的。",
-          "author": "fenfang557",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 532854,
-            "text": "It's no big deal.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0454",
-      "hanzi": "再见",
-      "pinyin": "zàijiàn",
-      "syllables": [
-        "zài",
-        "jiàn"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "goodbye",
-        "see you again later"
-      ],
-      "ind": [
-        "sampai jumpa",
-        "selamat tinggal"
-      ],
-      "idMachine": true,
-      "chars": [
-        "再",
-        "见"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 794188,
-          "cmn": "很高兴再见到您。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2441,
-            "text": "I'm glad to see you back.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 794189,
-          "cmn": "很高兴再见到你。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2441,
-            "text": "I'm glad to see you back.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1446889,
-          "cmn": "我不会再见他了。",
-          "author": "asosan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 255792,
-            "text": "I will not see him any more.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0296",
-      "hanzi": "请",
-      "pinyin": "qǐng",
-      "syllables": [
-        "qǐng"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to ask",
-        "to invite",
-        "please (do sth)",
-        "to treat (to a meal etc)",
-        "to request"
-      ],
-      "ind": [
-        "silakan",
-        "mohon",
-        "mengundang"
-      ],
-      "idMachine": true,
-      "chars": [
-        "请"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 426430,
-          "cmn": "请您原谅。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "原谅",
-          "en": {
-            "tatoebaId": 38820,
-            "text": "Please forgive me.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2076255,
-          "cmn": "请说慢一些。",
-          "author": "User5120",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 403059,
-            "text": "Please speak slowly.",
-            "author": "Ramses",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 402752,
-          "cmn": "请吃点菜。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 402749,
-            "text": "Please eat something.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0299",
-      "hanzi": "请问",
-      "pinyin": "qǐngwèn",
-      "syllables": [
-        "qǐng",
-        "wèn"
-      ],
-      "tones": [
-        3,
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "Excuse me, may I ask...?"
-      ],
-      "ind": [
-        "permisi, boleh tanya",
-        "numpang tanya"
-      ],
-      "idMachine": true,
-      "chars": [
-        "请",
-        "问"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 12569616,
-          "cmn": "请问你的名字是？",
-          "author": "lnvq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 63911,
-            "text": "May I have your name, please?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 347326,
-          "cmn": "请问你贵姓？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "贵姓",
-          "en": {
-            "tatoebaId": 347327,
-            "text": "May I ask your name?",
-            "author": "sysko",
-            "license": "CC BY 2.0 FR"
-          },
           "ind": {
-            "tatoebaId": 1503865,
-            "text": "Maaf, siapakah nama Anda?",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 334425,
-          "cmn": "请问鸡蛋在哪里？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1565,
-            "text": "Where are the eggs, please?",
-            "author": "RoyalBee",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0298",
-      "hanzi": "请进",
-      "pinyin": "qǐngjìn",
-      "syllables": [
-        "qǐng",
-        "jìn"
-      ],
-      "tones": [
-        3,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "\"please come in\""
-      ],
-      "ind": [
-        "silakan masuk"
-      ],
-      "idMachine": true,
-      "chars": [
-        "请",
-        "进"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0300",
-      "hanzi": "请坐",
-      "pinyin": "qǐngzuò",
-      "syllables": [
-        "qǐng",
-        "zuò"
-      ],
-      "tones": [
-        3,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "please, have a seat"
-      ],
-      "ind": [
-        "silakan duduk"
-      ],
-      "idMachine": true,
-      "chars": [
-        "请",
-        "坐"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 415599,
-          "cmn": "请坐一下。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 38572,
-            "text": "Please have a seat.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8685595,
-          "cmn": "请坐一会。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 53407,
-            "text": "Please remain seated for a few minutes.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0227",
-      "hanzi": "吗",
-      "pinyin": "ma",
-      "syllables": [
-        "ma"
-      ],
-      "tones": [
-        5
-      ],
-      "pos": [
-        "Aux"
-      ],
-      "en": [
-        "(question particle for \"yes-no\" questions)"
-      ],
-      "ind": [
-        "(partikel tanya untuk pertanyaan ya/tidak)"
-      ],
-      "idMachine": true,
-      "chars": [
-        "吗"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3783369,
-          "cmn": "她是正确的吗？",
-          "author": "Debbie_Linder",
-          "license": "CC BY 2.0 FR",
-          "outside": "正确",
-          "en": {
-            "tatoebaId": 7680282,
-            "text": "Is she right?",
-            "author": "deniko",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5584071,
-          "cmn": "你在家吗",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1126543,
-            "text": "Are you home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4329157,
-            "text": "Apa kamu ada di rumah?",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 406192,
-          "cmn": "你在家里吗？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 405500,
-            "text": "Are you at home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4329157,
-            "text": "Apa kamu ada di rumah?",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0269",
-      "hanzi": "呢",
-      "pinyin": "ne",
-      "syllables": [
-        "ne"
-      ],
-      "tones": [
-        5
-      ],
-      "pos": [
-        "Aux"
-      ],
-      "en": [
-        "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\")",
-        "particle for inquiring about location (\"Where is ...?\")",
-        "particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
-        "(at the end of a declarative sentence) particle indicating continuation of a state or action",
-        "particle indicating strong affirmation"
-      ],
-      "ind": [
-        "(partikel tanya lanjutan, mirip \"bagaimana dengan ...?\"",
-        "juga penanda keadaan berlangsung)"
-      ],
-      "idMachine": true,
-      "chars": [
-        "呢"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 677657,
-          "cmn": "你有多少姐妹呢？",
-          "author": "aye1995",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69563,
-            "text": "How many sisters do you have?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2000277,
-          "cmn": "我正在和朋友打电话呢。",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 40151,
-            "text": "I've got my friend on the line right now.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4970124,
-          "cmn": "怎么会呢？",
-          "author": "wzhd",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2116272,
-            "text": "How come?",
-            "author": "freddy1",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0034",
-      "hanzi": "不",
-      "pinyin": "bù",
-      "syllables": [
-        "bù"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "Adv"
-      ],
-      "en": [
-        "no; not so",
-        "(bound form) not; un-"
-      ],
-      "ind": [
-        "tidak",
-        "bukan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "不"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1134898,
-          "cmn": "我也不是。",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 456389,
-            "text": "Me neither.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10961070,
-          "cmn": "不，没关系。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13949862,
-            "text": "No, there's no problem.",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 782332,
-          "cmn": "您不是医生。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69692,
-            "text": "You are not a doctor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12747555,
-            "text": "Anda bukan dokter.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0337",
-      "hanzi": "是",
-      "pinyin": "shì",
-      "syllables": [
-        "shì"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to be (followed by substantives only)",
-        "correct; right; true",
-        "(respectful acknowledgement of a command) very well",
-        "(adverb for emphatic assertion)"
-      ],
-      "ind": [
-        "adalah",
-        "ya",
-        "benar"
-      ],
-      "idMachine": true,
-      "chars": [
-        "是"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1134898,
-          "cmn": "我也不是。",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 456389,
-            "text": "Me neither.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 12569616,
-          "cmn": "请问你的名字是？",
-          "author": "lnvq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 63911,
-            "text": "May I have your name, please?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1850482,
-          "cmn": "我的名字是汤姆。",
-          "author": "patricedenis",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 1173265,
-            "text": "My name is Tom.",
-            "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 10717828,
-            "text": "Nama saya Tom.",
-            "author": "warikdigital",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0146",
-      "hanzi": "很",
-      "pinyin": "hěn",
-      "syllables": [
-        "hěn"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "Adv"
-      ],
-      "en": [
-        "very; quite",
-        "(also, often used before an adjective without intensifying its meaning, i.e. as a meaningless syntactic element)"
-      ],
-      "ind": [
-        "sangat",
-        "cukup"
-      ],
-      "idMachine": true,
-      "chars": [
-        "很"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 707194,
-          "cmn": "很好，谢谢。",
-          "author": "Ayalche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 464308,
-            "text": "Very good, thank you.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 718424,
-          "cmn": "他的名声很好。",
-          "author": "serendipity42",
-          "license": "CC BY 2.0 FR",
-          "outside": "名声",
-          "en": {
-            "tatoebaId": 303085,
-            "text": "He has a good reputation.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 333127,
-          "cmn": "今天天气很好。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 242938,
-            "text": "It's fine today.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 13732610,
-            "text": "Hari ini cuacanya bagus sekali.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0425",
-      "hanzi": "也",
-      "pinyin": "yě",
-      "syllables": [
-        "yě"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "Adv"
-      ],
-      "en": [
-        "also; too; as well; (not ...) either",
-        "(used after a verbal or nominal expression X to indicate that X is an extreme or unexpected case) even (X)",
-        "(literary) particle having functions similar to 啊[a5]"
-      ],
-      "ind": [
-        "juga"
-      ],
-      "idMachine": true,
-      "chars": [
-        "也"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1134898,
-          "cmn": "我也不是。",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 456389,
-            "text": "Me neither.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1228438,
-          "cmn": "你累了，我也累了。",
-          "author": "penguooo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1230449,
-            "text": "You're tired. I'm also tired.",
-            "author": "alec",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12392753,
-            "text": "Kamu lelah. Aku juga lelah.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 2337135,
-          "cmn": "这一点儿也不好。",
-          "author": "anndiana",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1682678,
-            "text": "This is not good at all.",
-            "author": "Spamster",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0067",
-      "hanzi": "的",
-      "pinyin": "de",
-      "syllables": [
-        "de"
-      ],
-      "tones": [
-        5
-      ],
-      "pos": [
-        "Aux"
-      ],
-      "en": [
-        "of; ~'s (possessive particle)",
-        "(used after an attribute when it modifies a noun)",
-        "(used at the end of a declarative sentence for emphasis)",
-        "(used after a noun, verb or adjective to form a nominal expression, as in 皮革的[pi2 ge2 de5] \"one made of leather\" or 跑堂兒的|跑堂儿的[pao3 tang2 r5 de5] \"a waiter (literally, one who runs back and forth in a restaurant)\" or 新的[xin1 de5] \"new one\")"
-      ],
-      "ind": [
-        "(partikel penanda kepemilikan atau penjelas kata benda, mirip \"milik\" atau \"yang\")"
-      ],
-      "idMachine": true,
-      "chars": [
-        "的"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 12569616,
-          "cmn": "请问你的名字是？",
-          "author": "lnvq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 63911,
-            "text": "May I have your name, please?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 700502,
-          "cmn": "谢谢您的答复。",
-          "author": "weipipi",
-          "license": "CC BY 2.0 FR",
-          "outside": "答复",
-          "en": {
-            "tatoebaId": 3134794,
-            "text": "Thanks for your answer.",
-            "author": "gdaniel",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 3290582,
-            "text": "Terima kasih untuk jawaban Anda.",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 1850482,
-          "cmn": "我的名字是汤姆。",
-          "author": "patricedenis",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 1173265,
-            "text": "My name is Tom.",
-            "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 10717828,
-            "text": "Nama saya Tom.",
-            "author": "warikdigital",
+            "tatoebaId": 365994,
+            "text": "Siapa nama Anda?",
+            "author": "hayabusa_future",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -1571,563 +403,140 @@
       ]
     },
     {
-      "id": "L1-0381",
-      "hanzi": "我们",
-      "pinyin": "wǒmen",
+      "id": "L1-0296",
+      "hanzi": "请",
+      "pinyin": "qǐng",
       "syllables": [
-        "wǒ",
-        "men"
+        "qǐng"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to ask",
+        "to invite",
+        "please (do sth)",
+        "to treat (to a meal etc)",
+        "to request"
+      ],
+      "ind": [
+        "silakan",
+        "mohon",
+        "mengundang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "请"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 426430,
+          "cmn": "请您原谅。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "原谅",
+          "en": {
+            "tatoebaId": 38820,
+            "text": "Please forgive me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 402752,
+          "cmn": "请吃点菜。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 402749,
+            "text": "Please eat something.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 415599,
+          "cmn": "请坐一下。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 38572,
+            "text": "Please have a seat.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0299",
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "syllables": [
+        "qǐng",
+        "wèn"
       ],
       "tones": [
         3,
-        5
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "we; us; ourselves; our"
-      ],
-      "ind": [
-        "kami",
-        "kita"
-      ],
-      "idMachine": true,
-      "chars": [
-        "我",
-        "们"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 333784,
-          "cmn": "我们是同学。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 247946,
-            "text": "We're classmates.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 940015,
-            "text": "Kita teman sekelas.",
-            "author": "fuwafuwa",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 4761852,
-          "cmn": "我们今天吃了很多饭。",
-          "author": "DrWinters",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4761212,
-            "text": "Today we have a lot of food.",
-            "author": "cairnhead",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10338222,
-          "cmn": "这是我们汉语老师的车。",
-          "author": "vetreny",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10338232,
-            "text": "This is our Chinese language teacher's car.",
-            "author": "vetreny",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0354",
-      "hanzi": "他",
-      "pinyin": "tā",
-      "syllables": [
-        "tā"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "(third-person singular) (since the early 20th century, usu. male) he; him; his",
-        "(bound form) other; another; some other (as in 他日[ta1 ri4] and 他人[ta1 ren2])"
-      ],
-      "ind": [
-        "dia (laki-laki)",
-        "ia"
-      ],
-      "idMachine": true,
-      "chars": [
-        "他"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 718424,
-          "cmn": "他的名声很好。",
-          "author": "serendipity42",
-          "license": "CC BY 2.0 FR",
-          "outside": "名声",
-          "en": {
-            "tatoebaId": 303085,
-            "text": "He has a good reputation.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 982224,
-          "cmn": "他生病了。",
-          "author": "shanghainese",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 371409,
-            "text": "He is ill.",
-            "author": "saeb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11260567,
-            "text": "Dia sakit.",
-            "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 5580842,
-          "cmn": "他回来了。",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6610868,
-            "text": "He's back.",
-            "author": "Eccles17",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11633742,
-            "text": "Dia kembali.",
-            "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0356",
-      "hanzi": "她",
-      "pinyin": "tā",
-      "syllables": [
-        "tā"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "she"
-      ],
-      "ind": [
-        "dia (perempuan)",
-        "ia"
-      ],
-      "idMachine": true,
-      "chars": [
-        "她"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3783369,
-          "cmn": "她是正确的吗？",
-          "author": "Debbie_Linder",
-          "license": "CC BY 2.0 FR",
-          "outside": "正确",
-          "en": {
-            "tatoebaId": 7680282,
-            "text": "Is she right?",
-            "author": "deniko",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3378168,
-          "cmn": "她生病了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3378169,
-            "text": "She is sick.",
-            "author": "_undertoad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11260567,
-            "text": "Dia sakit.",
-            "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 13210555,
-          "cmn": "她想知道。",
-          "author": "LeviHighway",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 12046426,
-            "text": "She wants to know.",
-            "author": "Aghanim",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 14054153,
-            "text": "Dia ingin tahu.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0355",
-      "hanzi": "他们",
-      "pinyin": "tāmen",
-      "syllables": [
-        "tā",
-        "men"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "they; them"
-      ],
-      "ind": [
-        "mereka"
-      ],
-      "idMachine": true,
-      "chars": [
-        "他",
-        "们"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3378284,
-          "cmn": "他们一起去看电影。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3378285,
-            "text": "They go to movies together.",
-            "author": "CH",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1120763,
-          "cmn": "他们不累。",
-          "author": "cntrational",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1120764,
-            "text": "They are not tired.",
-            "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1541732,
-          "cmn": "他们没听。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1540367,
-            "text": "They didn't listen.",
-            "author": "Zaghawa",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0357",
-      "hanzi": "她们",
-      "pinyin": "tāmen",
-      "syllables": [
-        "tā",
-        "men"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "Pron"
-      ],
-      "en": [
-        "they; them (females)"
-      ],
-      "ind": [
-        "mereka (perempuan)"
-      ],
-      "idMachine": true,
-      "chars": [
-        "她",
-        "们"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5580870,
-          "cmn": "她们害怕。",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": "害怕",
-          "en": {
-            "tatoebaId": 4401018,
-            "text": "They're afraid.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3579729,
-          "cmn": "她们是孩子。",
-          "author": "CLARET",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2111267,
-            "text": "They're kids.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5580945,
-          "cmn": "她们在读书。",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3622102,
-            "text": "They are reading a book.",
-            "author": "weihaiping",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0241",
-      "hanzi": "们",
-      "pinyin": "men",
-      "syllables": [
-        "men"
-      ],
-      "tones": [
-        5
-      ],
-      "pos": [
-        "Suffix"
-      ],
-      "en": [
-        "plural marker for pronouns, and nouns referring to individuals"
-      ],
-      "ind": [
-        "(akhiran jamak untuk orang, mis. 朋友们 \"teman-teman\")"
-      ],
-      "idMachine": true,
-      "chars": [
-        "们"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 799209,
-          "cmn": "学生们回来了。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1165016,
-            "text": "The students have returned.",
-            "author": "emmettricks",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1777928,
-          "cmn": "听着！孩子们。",
-          "author": "sunnywqing",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1192984,
-            "text": "Children, listen!",
-            "author": "perry",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5762990,
-          "cmn": "我爱这里的人们。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4980045,
-            "text": "I love the people here.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0176",
-      "hanzi": "叫",
-      "pinyin": "jiào",
-      "syllables": [
-        "jiào"
-      ],
-      "tones": [
         4
       ],
       "pos": [
         "V"
       ],
       "en": [
-        "to shout",
-        "to call",
-        "to order",
-        "to ask",
-        "to be called",
-        "by (indicates agent in the passive mood)"
+        "Excuse me, may I ask...?"
       ],
       "ind": [
-        "memanggil",
-        "bernama",
-        "menyuruh"
+        "permisi, boleh tanya",
+        "numpang tanya"
       ],
       "idMachine": true,
       "chars": [
-        "叫"
+        "请",
+        "问"
       ],
       "examples": [
         {
-          "tatoebaId": 3365894,
-          "cmn": "我叫山田。",
-          "author": "go_oo",
+          "tatoebaId": 347326,
+          "cmn": "请问你贵姓？",
+          "author": "sysko",
           "license": "CC BY 2.0 FR",
-          "outside": "山田",
+          "outside": "贵姓",
           "en": {
-            "tatoebaId": 251979,
-            "text": "My name is Yamada.",
-            "author": "CN",
+            "tatoebaId": 347327,
+            "text": "May I ask your name?",
+            "author": "sysko",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1503865,
+            "text": "Maaf, siapakah nama Anda?",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 334425,
+          "cmn": "请问鸡蛋在哪里？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1565,
+            "text": "Where are the eggs, please?",
+            "author": "RoyalBee",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
-        {
-          "tatoebaId": 346883,
-          "cmn": "你叫什么名字？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 70623,
-            "text": "What is your name?",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 3371508,
-            "text": "Siapa namamu?",
-            "author": "nasirusman",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 444659,
-          "cmn": "您叫什么名字？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 70623,
-            "text": "What is your name?",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 365994,
-            "text": "Siapa nama Anda?",
-            "author": "hayabusa_future",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0245",
-      "hanzi": "名字",
-      "pinyin": "míngzi",
-      "syllables": [
-        "míng",
-        "zi"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "name (of a person or thing)"
-      ],
-      "ind": [
-        "nama"
-      ],
-      "idMachine": true,
-      "chars": [
-        "名",
-        "字"
-      ],
-      "examples": [
         {
           "tatoebaId": 12569616,
           "cmn": "请问你的名字是？",
@@ -2141,44 +550,570 @@
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        },
+        }
+      ]
+    },
+    {
+      "id": "L1-0410",
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "syllables": [
+        "xiè",
+        "xie"
+      ],
+      "tones": [
+        4,
+        5
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to thank",
+        "thanks",
+        "thank you"
+      ],
+      "ind": [
+        "terima kasih"
+      ],
+      "idMachine": true,
+      "chars": [
+        "谢"
+      ],
+      "examples": [
         {
-          "tatoebaId": 1850482,
-          "cmn": "我的名字是汤姆。",
-          "author": "patricedenis",
+          "tatoebaId": 707194,
+          "cmn": "很好，谢谢。",
+          "author": "Ayalche",
           "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
+          "outside": null,
           "en": {
-            "tatoebaId": 1173265,
-            "text": "My name is Tom.",
-            "author": "cntrational",
+            "tatoebaId": 464308,
+            "text": "Very good, thank you.",
+            "author": "lukaszpp",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 10717828,
-            "text": "Nama saya Tom.",
-            "author": "warikdigital",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 346883,
-          "cmn": "你叫什么名字？",
+          "tatoebaId": 9992034,
+          "cmn": "谢谢大家！",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10251062,
+            "text": "Thanks, everybody!",
+            "author": "bekindtoall",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961137,
+          "cmn": "不冷，谢谢。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11277842,
+            "text": "I'm not cold, thanks.",
+            "author": "Aphima",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0032",
+      "hanzi": "不客气",
+      "pinyin": "búkèqi",
+      "syllables": [
+        "bú",
+        "kè",
+        "qi"
+      ],
+      "tones": [
+        2,
+        4,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "you're welcome",
+        "don't mention it",
+        "impolite",
+        "rude",
+        "blunt"
+      ],
+      "ind": [
+        "sama-sama",
+        "jangan sungkan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "不",
+        "客",
+        "气"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0093",
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "syllables": [
+        "duì",
+        "bu",
+        "qǐ"
+      ],
+      "tones": [
+        4,
+        5,
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "I'm sorry; excuse me; I beg your pardon",
+        "to let (sb) down; to disappoint"
+      ],
+      "ind": [
+        "maaf",
+        "minta maaf"
+      ],
+      "idMachine": true,
+      "chars": [
+        "对",
+        "不",
+        "起"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3084458,
+          "cmn": "你对不起我。",
+          "author": "serendipity42",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16077,
+            "text": "You do me wrong.",
+            "author": "serendipity42",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378156,
+          "cmn": "对不起，我来晚了。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 277376,
+            "text": "I'm sorry I'm late.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 750140,
+          "cmn": "对不起，火车晚点了。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 56385,
+            "text": "Sorry. The train was late.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0233",
+      "hanzi": "没关系",
+      "pinyin": "méiguānxi",
+      "syllables": [
+        "méi",
+        "guān",
+        "xi"
+      ],
+      "tones": [
+        2,
+        1,
+        5
+      ],
+      "pos": [],
+      "en": [
+        "it doesn't matter"
+      ],
+      "ind": [
+        "tidak apa-apa",
+        "tidak masalah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "没",
+        "关",
+        "系"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14095648,
+          "cmn": "犯错没关系。",
+          "author": "noahall",
+          "license": "CC BY 2.0 FR",
+          "outside": "犯错",
+          "en": {
+            "tatoebaId": 8078849,
+            "text": "It's OK to make mistakes.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961070,
+          "cmn": "不，没关系。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13949862,
+            "text": "No, there's no problem.",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6608385,
+          "cmn": "对，我没关系。",
+          "author": "RainShelter",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6608034,
+            "text": "Yes, I'm fine.",
+            "author": "MaryJ",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0454",
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "syllables": [
+        "zài",
+        "jiàn"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "goodbye",
+        "see you again later"
+      ],
+      "ind": [
+        "sampai jumpa",
+        "selamat tinggal"
+      ],
+      "idMachine": true,
+      "chars": [
+        "再",
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 794188,
+          "cmn": "很高兴再见到您。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 70623,
-            "text": "What is your name?",
-            "author": "frpzzd",
+            "tatoebaId": 2441,
+            "text": "I'm glad to see you back.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 794189,
+          "cmn": "很高兴再见到你。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2441,
+            "text": "I'm glad to see you back.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1446889,
+          "cmn": "我不会再见他了。",
+          "author": "asosan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 255792,
+            "text": "I will not see him any more.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0227",
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "syllables": [
+        "ma"
+      ],
+      "tones": [
+        5
+      ],
+      "pos": [
+        "Aux"
+      ],
+      "en": [
+        "(question particle for \"yes-no\" questions)"
+      ],
+      "ind": [
+        "(partikel tanya untuk pertanyaan ya/tidak)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "吗"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5584071,
+          "cmn": "你在家吗",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1126543,
+            "text": "Are you home?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 3371508,
-            "text": "Siapa namamu?",
-            "author": "nasirusman",
+            "tatoebaId": 4329157,
+            "text": "Apa kamu ada di rumah?",
+            "author": "Bilmanda",
             "license": "CC BY 2.0 FR"
           }
+        },
+        {
+          "tatoebaId": 406192,
+          "cmn": "你在家里吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 405500,
+            "text": "Are you at home?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4329157,
+            "text": "Apa kamu ada di rumah?",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 4881670,
+          "cmn": "这是谁的你知道吗？",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2837952,
+            "text": "Do you know who this belongs to?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7546975,
+            "text": "Tahukah kamu milik siapa ini?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0146",
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "syllables": [
+        "hěn"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Adv"
+      ],
+      "en": [
+        "very; quite",
+        "(also, often used before an adjective without intensifying its meaning, i.e. as a meaningless syntactic element)"
+      ],
+      "ind": [
+        "sangat",
+        "cukup"
+      ],
+      "idMachine": true,
+      "chars": [
+        "很"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 707194,
+          "cmn": "很好，谢谢。",
+          "author": "Ayalche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 464308,
+            "text": "Very good, thank you.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 333127,
+          "cmn": "今天天气很好。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 242938,
+            "text": "It's fine today.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13732610,
+            "text": "Hari ini cuacanya bagus sekali.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 710167,
+          "cmn": "你们有很多书。",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 16525,
+            "text": "You have many books.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12775404,
+            "text": "Kalian punya banyak buku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0269",
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "syllables": [
+        "ne"
+      ],
+      "tones": [
+        5
+      ],
+      "pos": [
+        "Aux"
+      ],
+      "en": [
+        "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\")",
+        "particle for inquiring about location (\"Where is ...?\")",
+        "particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
+        "(at the end of a declarative sentence) particle indicating continuation of a state or action",
+        "particle indicating strong affirmation"
+      ],
+      "ind": [
+        "(partikel tanya lanjutan, mirip \"bagaimana dengan ...?\"",
+        "juga penanda keadaan berlangsung)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "呢"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 677657,
+          "cmn": "你有多少姐妹呢？",
+          "author": "aye1995",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 69563,
+            "text": "How many sisters do you have?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2000277,
+          "cmn": "我正在和朋友打电话呢。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 40151,
+            "text": "I've got my friend on the line right now.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4970124,
+          "cmn": "怎么会呢？",
+          "author": "wzhd",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2116272,
+            "text": "How come?",
+            "author": "freddy1",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
         }
       ]
     },
@@ -2389,33 +1324,32 @@
       "machine": true
     },
     {
-      "id": "c-u01-06",
+      "id": "c-u01-07",
       "unit": "u01",
-      "hanzi": "没事",
-      "pinyin": "méi shì",
+      "hanzi": "哈喽",
+      "pinyin": "hā lóu",
       "syllables": [
-        "méi",
-        "shì"
+        "hā",
+        "lóu"
       ],
-      "label": "santai",
+      "label": "gaul",
       "hsk": {
-        "hanzi": "没关系",
+        "hanzi": "你好",
         "wordIds": [
-          "L1-0233"
+          "L1-0517"
         ]
       },
       "meaning": {
-        "id": "nggak apa-apa",
-        "en": "it's nothing, no problem"
+        "id": "halo",
+        "en": "hello"
       },
       "situation": {
-        "id": "Menjawab permintaan maaf atau terima kasih dengan santai.",
-        "en": "Answering an apology or thanks casually."
+        "id": "Menyapa teman dengan gaya santai, sering di chat atau video.",
+        "en": "Greeting friends in a playful way, often in chats or videos."
       },
       "evidence": [
         "cedict",
-        "wiktionary",
-        "tatoeba"
+        "wiktionary"
       ],
       "machine": true
     }
@@ -2423,7 +1357,7 @@
   "relatedCasual": [
     {
       "id": "c-u02-03",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "好多",
       "pinyin": "hǎo duō",
       "syllables": [
@@ -2455,7 +1389,7 @@
     },
     {
       "id": "c-u02-06",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "一堆",
       "pinyin": "yī duī",
       "syllables": [
@@ -2486,201 +1420,8 @@
       "machine": true
     },
     {
-      "id": "c-u03-03",
-      "unit": "u03",
-      "hanzi": "可不是",
-      "pinyin": "kě bu shì",
-      "syllables": [
-        "kě",
-        "bu",
-        "shì"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "是",
-        "wordIds": [
-          "L1-0337"
-        ]
-      },
-      "meaning": {
-        "id": "iya banget, memang",
-        "en": "exactly!, sure is"
-      },
-      "situation": {
-        "id": "Setuju dengan semangat, misalnya \"Iya, panas banget!\"",
-        "en": "Agreeing heartily, e.g. \"It sure is hot!\""
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u06-01",
-      "unit": "u06",
-      "hanzi": "吃货",
-      "pinyin": "chī huò",
-      "syllables": [
-        "chī",
-        "huò"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "爱吃的人",
-        "wordIds": [
-          "L1-0001",
-          "L1-0046",
-          "L1-0067",
-          "L1-0305"
-        ]
-      },
-      "meaning": {
-        "id": "si doyan makan",
-        "en": "foodie"
-      },
-      "situation": {
-        "id": "Bercanda tentang orang yang sangat suka makan.",
-        "en": "Joking about someone who loves eating."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u10-03",
-      "unit": "u10",
-      "hanzi": "老远",
-      "pinyin": "lǎo yuǎn",
-      "syllables": [
-        "lǎo",
-        "yuǎn"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "很远",
-        "wordIds": [
-          "L1-0146",
-          "L1-0451"
-        ]
-      },
-      "meaning": {
-        "id": "jauh banget",
-        "en": "very far"
-      },
-      "situation": {
-        "id": "Mengeluh tempatnya jauh sekali.",
-        "en": "Complaining that a place is really far."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u11-01",
-      "unit": "u11",
-      "hanzi": "赖床",
-      "pinyin": "lài chuáng",
-      "syllables": [
-        "lài",
-        "chuáng"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不起床",
-        "wordIds": [
-          "L1-0034",
-          "L1-0288"
-        ]
-      },
-      "meaning": {
-        "id": "malas bangun",
-        "en": "to lie in bed (not get up)"
-      },
-      "situation": {
-        "id": "Bercanda tentang orang yang tidak mau bangun pagi.",
-        "en": "Joking about someone who will not get out of bed."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u11-03",
-      "unit": "u11",
-      "hanzi": "搞定",
-      "pinyin": "gǎo dìng",
-      "syllables": [
-        "gǎo",
-        "dìng"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "做好",
-        "wordIds": [
-          "L1-0500",
-          "L1-0138"
-        ]
-      },
-      "meaning": {
-        "id": "beres!",
-        "en": "done, sorted"
-      },
-      "situation": {
-        "id": "Bilang pekerjaan sudah selesai dengan baik.",
-        "en": "Saying a job is done and sorted."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u11-06",
-      "unit": "u11",
-      "hanzi": "收拾",
-      "pinyin": "shōu shi",
-      "syllables": [
-        "shōu",
-        "shi"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "放好",
-        "wordIds": [
-          "L1-0103",
-          "L1-0138"
-        ]
-      },
-      "meaning": {
-        "id": "beres-beres",
-        "en": "to tidy up"
-      },
-      "situation": {
-        "id": "Membereskan kamar atau barang.",
-        "en": "Tidying up a room or things."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
       "id": "c-u12-02",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "堵车",
       "pinyin": "dǔ chē",
       "syllables": [
@@ -2713,7 +1454,7 @@
     },
     {
       "id": "c-u12-04",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "慢走",
       "pinyin": "màn zǒu",
       "syllables": [
@@ -2743,34 +1484,29 @@
       "machine": true
     },
     {
-      "id": "c-u13-08",
-      "unit": "u13",
-      "hanzi": "好久不见",
-      "pinyin": "hǎo jiǔ bù jiàn",
+      "id": "c-u11-03",
+      "unit": "u14",
+      "hanzi": "搞定",
+      "pinyin": "gǎo dìng",
       "syllables": [
-        "hǎo",
-        "jiǔ",
-        "bù",
-        "jiàn"
+        "gǎo",
+        "dìng"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "很多天没见面",
+        "hanzi": "做好",
         "wordIds": [
-          "L1-0146",
-          "L1-0094",
-          "L1-0359",
-          "L1-0232",
-          "L1-0174"
+          "L1-0500",
+          "L1-0138"
         ]
       },
       "meaning": {
-        "id": "lama nggak ketemu",
-        "en": "long time no see"
+        "id": "beres!",
+        "en": "done, sorted"
       },
       "situation": {
-        "id": "Menyapa teman yang sudah lama tidak bertemu.",
-        "en": "Greeting a friend you have not seen for a long time."
+        "id": "Bilang pekerjaan sudah selesai dengan baik.",
+        "en": "Saying a job is done and sorted."
       },
       "evidence": [
         "cedict",
@@ -2781,7 +1517,7 @@
     },
     {
       "id": "c-u14-01",
-      "unit": "u14",
+      "unit": "u16",
       "hanzi": "学霸",
       "pinyin": "xué bà",
       "syllables": [
@@ -2811,106 +1547,8 @@
       "machine": true
     },
     {
-      "id": "c-u14-02",
-      "unit": "u14",
-      "hanzi": "学渣",
-      "pinyin": "xué zhā",
-      "syllables": [
-        "xué",
-        "zhā"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "不认真的学生",
-        "wordIds": [
-          "L1-0034",
-          "L1-0307",
-          "L1-0067",
-          "L1-0419"
-        ]
-      },
-      "meaning": {
-        "id": "murid malas (bercanda)",
-        "en": "slacker student (joking)"
-      },
-      "situation": {
-        "id": "Bercanda tentang diri sendiri yang nilainya jelek.",
-        "en": "Joking about yourself having bad grades."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u14-03",
-      "unit": "u14",
-      "hanzi": "考砸了",
-      "pinyin": "kǎo zá le",
-      "syllables": [
-        "kǎo",
-        "zá",
-        "le"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "没考好",
-        "wordIds": [
-          "L1-0232",
-          "L1-0196",
-          "L1-0138"
-        ]
-      },
-      "meaning": {
-        "id": "ujiannya jeblok",
-        "en": "flunked the exam"
-      },
-      "situation": {
-        "id": "Bilang ujiannya gagal atau nilainya jelek.",
-        "en": "Saying the exam went badly."
-      },
-      "evidence": [
-        "cedict",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u14-05",
-      "unit": "u14",
-      "hanzi": "逃课",
-      "pinyin": "táo kè",
-      "syllables": [
-        "táo",
-        "kè"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不上课",
-        "wordIds": [
-          "L1-0034",
-          "L1-0320"
-        ]
-      },
-      "meaning": {
-        "id": "bolos",
-        "en": "to skip class"
-      },
-      "situation": {
-        "id": "Bilang seseorang bolos sekolah atau kuliah.",
-        "en": "Saying someone skipped class."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
       "id": "c-u15-05",
-      "unit": "u15",
+      "unit": "u17",
       "hanzi": "唠叨",
       "pinyin": "láo dao",
       "syllables": [
@@ -2942,72 +1580,8 @@
       "machine": true
     },
     {
-      "id": "c-u16-02",
-      "unit": "u16",
-      "hanzi": "搞不懂",
-      "pinyin": "gǎo bu dǒng",
-      "syllables": [
-        "gǎo",
-        "bu",
-        "dǒng"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不明白",
-        "wordIds": [
-          "L1-0034",
-          "L1-0246"
-        ]
-      },
-      "meaning": {
-        "id": "nggak ngerti",
-        "en": "can't figure it out"
-      },
-      "situation": {
-        "id": "Bingung tidak mengerti sesuatu.",
-        "en": "Being puzzled and not getting something."
-      },
-      "evidence": [
-        "cedict",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u17-05",
-      "unit": "u17",
-      "hanzi": "摸鱼",
-      "pinyin": "mō yú",
-      "syllables": [
-        "mō",
-        "yú"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "不认真工作",
-        "wordIds": [
-          "L1-0034",
-          "L1-0307",
-          "L1-0124"
-        ]
-      },
-      "meaning": {
-        "id": "malas-malasan saat kerja",
-        "en": "to slack off at work"
-      },
-      "situation": {
-        "id": "Bercanda tentang curi waktu santai saat jam kerja.",
-        "en": "Joking about slacking off during work hours."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
       "id": "c-u17-07",
-      "unit": "u17",
+      "unit": "u18",
       "hanzi": "难受",
       "pinyin": "nán shòu",
       "syllables": [
@@ -3038,73 +1612,8 @@
       "machine": true
     },
     {
-      "id": "c-u18-02",
-      "unit": "u18",
-      "hanzi": "划算",
-      "pinyin": "huá suàn",
-      "syllables": [
-        "huá",
-        "suàn"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不贵",
-        "wordIds": [
-          "L1-0034",
-          "L1-0127"
-        ]
-      },
-      "meaning": {
-        "id": "worth it, murah",
-        "en": "good value"
-      },
-      "situation": {
-        "id": "Bilang harganya pantas atau untung.",
-        "en": "Saying something is good value."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u19-05",
-      "unit": "u19",
-      "hanzi": "没意思",
-      "pinyin": "méi yìsi",
-      "syllables": [
-        "méi",
-        "yì",
-        "si"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不好玩儿",
-        "wordIds": [
-          "L1-0034",
-          "L1-0142"
-        ]
-      },
-      "meaning": {
-        "id": "nggak seru",
-        "en": "boring"
-      },
-      "situation": {
-        "id": "Bilang sesuatu membosankan.",
-        "en": "Saying something is boring."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
       "id": "c-u20-01",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "挺",
       "pinyin": "tǐng",
       "syllables": [
@@ -3134,7 +1643,7 @@
     },
     {
       "id": "c-u20-07",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "绝了",
       "pinyin": "jué le",
       "syllables": [
@@ -3167,7 +1676,7 @@
     },
     {
       "id": "c-u20-08",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "一般般",
       "pinyin": "yī bān bān",
       "syllables": [
@@ -3179,7 +1688,8 @@
       "hsk": {
         "hanzi": "不大好",
         "wordIds": [
-          "L1-0030",
+          "L1-0034",
+          "L1-0061",
           "L1-0138"
         ]
       },
@@ -3199,212 +1709,5 @@
       "machine": true
     }
   ],
-  "dialog": {
-    "id": "d-u01",
-    "title": {
-      "id": "Tamu di rumah",
-      "en": "A visitor at home"
-    },
-    "situation": {
-      "id": "Guru Adik datang ke apartemen keluarga Xiǎo. Nenek membuka pintu dan mempersilakannya masuk; saat guru pulang, Adik melambaikan tangan.",
-      "en": "Little sister's teacher visits the Xiǎo family's flat. Grandma opens the door and invites her in; when the teacher leaves, little sister waves goodbye."
-    },
-    "machine": true,
-    "speakers": {
-      "nainai": {
-        "name": {
-          "id": "Nenek",
-          "en": "Grandma"
-        },
-        "gender": "female"
-      },
-      "teacher": {
-        "name": {
-          "id": "Guru",
-          "en": "Teacher"
-        },
-        "gender": "female"
-      },
-      "meimei": {
-        "name": {
-          "id": "Adik perempuan",
-          "en": "Little sister"
-        },
-        "gender": "female"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "nainai",
-        "gender": "female",
-        "cmn": "您好！请进，请坐。",
-        "tokens": [
-          {
-            "text": "您",
-            "pinyin": "nín"
-          },
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "！"
-          },
-          {
-            "text": "请进",
-            "pinyin": "qǐngjìn"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "请坐",
-            "pinyin": "qǐngzuò"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Hello! Please come in and sit down.",
-        "id": "Halo! Silakan masuk, silakan duduk.",
-        "machine": true
-      },
-      {
-        "speaker": "teacher",
-        "gender": "female",
-        "cmn": "谢谢您！",
-        "tokens": [
-          {
-            "text": "谢谢",
-            "pinyin": "xièxie"
-          },
-          {
-            "text": "您",
-            "pinyin": "nín"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Thank you!",
-        "id": "Terima kasih!",
-        "machine": true
-      },
-      {
-        "speaker": "nainai",
-        "gender": "female",
-        "cmn": "不客气。请问，您是……？",
-        "tokens": [
-          {
-            "text": "不客气",
-            "pinyin": "bùkèqì"
-          },
-          {
-            "text": "。"
-          },
-          {
-            "text": "请问",
-            "pinyin": "qǐngwèn"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "您",
-            "pinyin": "nín"
-          },
-          {
-            "text": "是",
-            "pinyin": "shì"
-          },
-          {
-            "text": "…"
-          },
-          {
-            "text": "…"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "You're welcome. May I ask, you are...?",
-        "id": "Sama-sama. Maaf, Anda siapa ya...?",
-        "machine": true
-      },
-      {
-        "speaker": "teacher",
-        "gender": "female",
-        "cmn": "我是她的老师。",
-        "tokens": [
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "是",
-            "pinyin": "shì"
-          },
-          {
-            "text": "她",
-            "pinyin": "tā"
-          },
-          {
-            "text": "的",
-            "pinyin": "de"
-          },
-          {
-            "text": "老师",
-            "pinyin": "lǎoshī"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "I'm her teacher.",
-        "id": "Saya gurunya.",
-        "machine": true
-      },
-      {
-        "speaker": "teacher",
-        "gender": "female",
-        "cmn": "再见！",
-        "tokens": [
-          {
-            "text": "再见",
-            "pinyin": "zàijiàn"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Goodbye!",
-        "id": "Sampai jumpa!",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "老师，拜拜！",
-        "tokens": [
-          {
-            "text": "老师",
-            "pinyin": "lǎoshī"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "拜拜",
-            "pinyin": "bái bái"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Bye-bye, teacher!",
-        "id": "Dah, Bu Guru!",
-        "machine": true
-      }
-    ]
-  }
+  "dialog": null
 }

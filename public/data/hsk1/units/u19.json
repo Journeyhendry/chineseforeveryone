@@ -3,23 +3,97 @@
   "unit": {
     "id": "u19",
     "order": 19,
-    "slug": "hobi",
+    "slug": "belanja",
     "title": {
-      "id": "Hobi & hiburan",
-      "en": "Hobbies & fun"
+      "id": "Belanja & uang",
+      "en": "Shopping & money"
     },
     "description": {
-      "id": "Menyanyi, film, olahraga, gawai, internet, tertawa, dan melakukan sesuatu bersama.",
-      "en": "Singing, films, sports, devices, the internet, laughing and doing things together."
+      "id": "Membeli, menjual, harga, uang, dan benda yang dibeli.",
+      "en": "Buying, selling, prices, money and things you buy."
     }
   },
   "words": [
     {
-      "id": "L1-0040",
-      "hanzi": "唱",
-      "pinyin": "chàng",
+      "id": "L1-0228",
+      "hanzi": "买",
+      "pinyin": "mǎi",
       "syllables": [
-        "chàng"
+        "mǎi"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to buy",
+        "to purchase"
+      ],
+      "ind": [
+        "membeli"
+      ],
+      "idMachine": true,
+      "chars": [
+        "买"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11521704,
+          "cmn": "你给他买了什么？",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10114061,
+            "text": "What did you buy him?",
+            "author": "ddnktr",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12406645,
+            "text": "Kamu membelikannya apa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 2147632,
+          "cmn": "我去买面包。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2147637,
+            "text": "I'm going to buy some bread.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1988878,
+          "cmn": "我要买了。",
+          "author": "grindeldore",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 536457,
+            "text": "I want to buy.",
+            "author": "king999",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0513",
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "syllables": [
+        "mài"
       ],
       "tones": [
         4
@@ -28,619 +102,40 @@
         "V"
       ],
       "en": [
-        "to sing",
-        "to call loudly",
-        "to chant"
+        "to sell"
       ],
       "ind": [
-        "bernyanyi"
+        "menjual"
       ],
       "idMachine": true,
       "chars": [
-        "唱"
+        "卖"
       ],
       "examples": [
         {
-          "tatoebaId": 628538,
-          "cmn": "跟我一起来唱吧。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 563197,
-            "text": "Come sing with me.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 348876,
-          "cmn": "他唱得不好。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": "得",
-          "en": {
-            "tatoebaId": 531489,
-            "text": "He doesn't sing well.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4965656,
-          "cmn": "我唱得好听。",
-          "author": "bojnin",
-          "license": "CC BY 2.0 FR",
-          "outside": "得",
-          "en": {
-            "tatoebaId": 3685178,
-            "text": "I sing well.",
-            "author": "MTC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0041",
-      "hanzi": "唱歌",
-      "pinyin": "chànggē",
-      "syllables": [
-        "chàng",
-        "gē"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to sing a song"
-      ],
-      "ind": [
-        "bernyanyi",
-        "menyanyikan lagu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "唱",
-        "歌"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 357940,
-          "cmn": "我喜欢唱歌。",
-          "author": "ruicong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 256531,
-            "text": "I like to sing.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 8864689,
-            "text": "Aku suka bernyanyi.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 10696069,
-          "cmn": "您会唱歌吗？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6358649,
-            "text": "Can you sing?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 397199,
-          "cmn": "你喜欢唱歌吗？",
-          "author": "kellenparker",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 23929,
-            "text": "Do you like singing?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0119",
-      "hanzi": "歌",
-      "pinyin": "gē",
-      "syllables": [
-        "gē"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "song",
-        "(bound form) to sing"
-      ],
-      "ind": [
-        "lagu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "歌"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 13953734,
-          "cmn": "来听歌吧！",
-          "author": "jan_OkulaJu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13953736,
-            "text": "Let's listen to music!",
-            "author": "jan_OkulaJu",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5780566,
-          "cmn": "你不是歌手。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2218226,
-            "text": "You're no singer.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5153284,
-          "cmn": "歌手你喜欢谁？",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5173113,
-            "text": "Which singer do you like?",
-            "author": "hello",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0141",
-      "hanzi": "好听",
-      "pinyin": "hǎotīng",
-      "syllables": [
-        "hǎo",
-        "tīng"
-      ],
-      "tones": [
-        3,
-        1
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "pleasant to hear"
-      ],
-      "ind": [
-        "enak didengar",
-        "merdu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "好",
-        "听"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 6884328,
-          "cmn": "我唱歌很好听。",
-          "author": "maggiesq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 256534,
-            "text": "I'm good at singing.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4965656,
-          "cmn": "我唱得好听。",
-          "author": "bojnin",
-          "license": "CC BY 2.0 FR",
-          "outside": "得",
-          "en": {
-            "tatoebaId": 3685178,
-            "text": "I sing well.",
-            "author": "MTC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8743233,
-          "cmn": "这首歌很好听。",
-          "author": "LeeSooHa",
-          "license": "CC BY 2.0 FR",
-          "outside": "首",
-          "en": {
-            "tatoebaId": 8743231,
-            "text": "This song is nice.",
-            "author": "LeeSooHa",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0082",
-      "hanzi": "电影",
-      "pinyin": "diànyǐng",
-      "syllables": [
-        "diàn",
-        "yǐng"
-      ],
-      "tones": [
-        4,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "movie; film"
-      ],
-      "ind": [
-        "film"
-      ],
-      "idMachine": true,
-      "chars": [
-        "电",
-        "影"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3378284,
-          "cmn": "他们一起去看电影。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3378285,
-            "text": "They go to movies together.",
-            "author": "CH",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7771886,
-          "cmn": "我去看电影。",
+          "tatoebaId": 7768273,
+          "cmn": "他卖水果。",
           "author": "jiangche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1055075,
-            "text": "I'm going to the cinema.",
-            "author": "Eldad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 11845629,
-          "cmn": "你看电影吗？",
-          "author": "ejvalle",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2795488,
-            "text": "Do you watch movies?",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0080",
-      "hanzi": "电视",
-      "pinyin": "diànshì",
-      "syllables": [
-        "diàn",
-        "shì"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "television; TV"
-      ],
-      "ind": [
-        "televisi"
-      ],
-      "idMachine": true,
-      "chars": [
-        "电",
-        "视"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1050439,
-          "cmn": "看电视吧。",
-          "author": "tatomeimei",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 39186,
-            "text": "Let's watch TV.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 493892,
-          "cmn": "我看电视。",
-          "author": "adjusting",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 39164,
-            "text": "I watch television.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 347031,
-          "cmn": "他在看电视。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 288039,
-            "text": "He is watching TV.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0081",
-      "hanzi": "电视机",
-      "pinyin": "diànshìjī",
-      "syllables": [
-        "diàn",
-        "shì",
-        "jī"
-      ],
-      "tones": [
-        4,
-        4,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "television set"
-      ],
-      "ind": [
-        "pesawat televisi",
-        "TV"
-      ],
-      "idMachine": true,
-      "chars": [
-        "电",
-        "视",
-        "机"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 333126,
-          "cmn": "这个房间里有个电视机。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 57350,
-            "text": "There is a television in this room.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 866211,
-          "cmn": "关闭电视机",
-          "author": "kooler",
-          "license": "CC BY 2.0 FR",
-          "outside": "关闭",
-          "en": {
-            "tatoebaId": 39148,
-            "text": "Turn off the TV.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 866210,
-          "cmn": "请关闭电视机。",
-          "author": "kooler",
-          "license": "CC BY 2.0 FR",
-          "outside": "关闭",
-          "en": {
-            "tatoebaId": 39147,
-            "text": "Please turn off the TV.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0079",
-      "hanzi": "电脑",
-      "pinyin": "diànnǎo",
-      "syllables": [
-        "diàn",
-        "nǎo"
-      ],
-      "tones": [
-        4,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "computer"
-      ],
-      "ind": [
-        "komputer"
-      ],
-      "idMachine": true,
-      "chars": [
-        "电",
-        "脑"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2003361,
-          "cmn": "你会用电脑吗？",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 513513,
-            "text": "Do you know how to use a computer?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 420048,
-          "cmn": "我正在用电脑。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3007688,
-            "text": "I'm using the computer.",
-            "author": "Balamax",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 710294,
-          "cmn": "我家没有电脑。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 708138,
-            "text": "I don't have a computer at home.",
-            "author": "Nevado",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0321",
-      "hanzi": "上网",
-      "pinyin": "shàngwǎng",
-      "syllables": [
-        "shàng",
-        "wǎng"
-      ],
-      "tones": [
-        4,
-        3
-      ],
-      "pos": [],
-      "en": [
-        "to go online",
-        "to connect to the Internet",
-        "(of a document etc) to be uploaded to the Internet",
-        "(tennis, volleyball etc) to move in close to the net"
-      ],
-      "ind": [
-        "berselancar di internet",
-        "online"
-      ],
-      "idMachine": true,
-      "chars": [
-        "上",
-        "网"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 797368,
-          "cmn": "我上网了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 436415,
-            "text": "I am online.",
+            "tatoebaId": 434998,
+            "text": "He sells fruit.",
             "author": "lukaszpp",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 3378268,
-          "cmn": "他在上网。",
-          "author": "GlossaMatik",
+          "tatoebaId": 844711,
+          "cmn": "我是在网上卖的衣服。",
+          "author": "eastasiastudent",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "网上",
           "en": {
-            "tatoebaId": 3378269,
-            "text": "He is on the Internet.",
-            "author": "_undertoad",
+            "tatoebaId": 844712,
+            "text": "It was online that I sold the clothes.",
+            "author": "eastasiastudent",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -648,147 +143,79 @@
       ]
     },
     {
-      "id": "L1-0375",
-      "hanzi": "网上",
-      "pinyin": "wǎngshang",
+      "id": "L1-0294",
+      "hanzi": "钱",
+      "pinyin": "qián",
       "syllables": [
-        "wǎng",
-        "shang"
+        "qián"
       ],
       "tones": [
-        3,
-        5
-      ],
-      "pos": [],
-      "en": [
-        "online"
-      ],
-      "ind": [
-        "di internet",
-        "online"
-      ],
-      "idMachine": true,
-      "chars": [
-        "网",
-        "上"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1099124,
-          "cmn": "我在帮人在网上买东西。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1790832,
-            "text": "I'm helping people to buy things online.",
-            "author": "newkome",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3686664,
-          "cmn": "他总是在网上。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "总是",
-          "en": {
-            "tatoebaId": 3378258,
-            "text": "He is always online.",
-            "author": "_undertoad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10457792,
-          "cmn": "这可以在网上读。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "可以",
-          "en": {
-            "tatoebaId": 13981589,
-            "text": "This can be read online.",
-            "author": "LeviHighway",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0078",
-      "hanzi": "电话",
-      "pinyin": "diànhuà",
-      "syllables": [
-        "diàn",
-        "huà"
-      ],
-      "tones": [
-        4,
-        4
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "telephone",
-        "phone call",
-        "phone number"
+        "coin",
+        "money",
+        "unit of weight, one tenth of a tael 兩|两[liang3]"
       ],
       "ind": [
-        "telepon"
+        "uang"
       ],
       "idMachine": true,
       "chars": [
-        "电",
-        "话"
+        "钱"
       ],
       "examples": [
         {
-          "tatoebaId": 10966785,
-          "cmn": "你的电话是多少？",
-          "author": "xjjAstrus",
+          "tatoebaId": 687042,
+          "cmn": "我没有钱。",
+          "author": "peipei",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 466624,
-            "text": "What's your phone number?",
-            "author": "CM",
+            "tatoebaId": 433613,
+            "text": "I have no money.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 13732892,
-            "text": "Nomor teleponmu berapa?",
+            "tatoebaId": 10363928,
+            "text": "Aku tak punya uang.",
+            "author": "koala",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 8863158,
+          "cmn": "我知道你很有钱。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 17881,
+            "text": "I know you are rich.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12132490,
+            "text": "Aku tahu kamu kaya.",
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 6055432,
-          "cmn": "你没有电话吗？",
-          "author": "verdakoro",
+          "tatoebaId": 1862268,
+          "cmn": "他没有钱。",
+          "author": "sysko",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 7816289,
-            "text": "Don't you have a phone number?",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8932005,
-          "cmn": "你有一个电话。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 20113,
-            "text": "You have a telephone.",
-            "author": "fishda",
+            "tatoebaId": 289446,
+            "text": "He had no money.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -796,145 +223,141 @@
       ]
     },
     {
-      "id": "L1-0058",
-      "hanzi": "打电话",
-      "pinyin": "dǎdiànhuà",
+      "id": "L1-0203",
+      "hanzi": "块",
+      "pinyin": "kuài",
       "syllables": [
-        "dǎ",
-        "diàn",
-        "huà"
+        "kuài"
       ],
       "tones": [
-        3,
-        4,
         4
       ],
-      "pos": [],
+      "pos": [
+        "N",
+        "M"
+      ],
       "en": [
-        "to make a telephone call"
+        "lump; chunk; piece",
+        "classifier for pieces of cloth, cake, soap etc",
+        "(coll.) classifier for money and currency units"
       ],
       "ind": [
-        "menelepon"
+        "(penghitung untuk potongan atau keping)",
+        "yuan (dalam percakapan sehari-hari)"
       ],
       "idMachine": true,
       "chars": [
-        "打",
-        "电",
-        "话"
+        "块"
       ],
       "examples": [
         {
-          "tatoebaId": 2000277,
-          "cmn": "我正在和朋友打电话呢。",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 40151,
-            "text": "I've got my friend on the line right now.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5092540,
-          "cmn": "打电话回家！",
-          "author": "mirrorvan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1730009,
-            "text": "Call home!",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10695961,
-          "cmn": "我在打电话。",
+          "tatoebaId": 10052320,
+          "cmn": "这个几块？",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2280346,
-            "text": "I'm on the phone.",
+            "tatoebaId": 2418,
+            "text": "How much is it?",
+            "author": "brauliobezerra",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 400199,
+          "cmn": "你喜欢哪一块？这块还是那块？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 400201,
+            "text": "Which one do you prefer, this one or that one?",
+            "author": "sysko",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 334594,
+          "cmn": "那有两块蛋糕。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "蛋糕",
+          "en": {
+            "tatoebaId": 430064,
+            "text": "There were two cakes.",
+            "author": "witbrock",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0450",
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "syllables": [
+        "yuán"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "yuan (basic unit of Chinese currency)",
+        "(bound form) first; original; primary",
+        "Yuan dynasty (1279-1368)"
+      ],
+      "ind": [
+        "yuan (satuan mata uang)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "元"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8388775,
+          "cmn": "只要十元！",
+          "author": "wangchou",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 40834,
+            "text": "It only costs $10.00!",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0371",
-      "hanzi": "玩儿",
-      "pinyin": "wánr",
-      "syllables": [
-        "wán",
-        "r"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to play",
-        "to have fun",
-        "to hang out"
-      ],
-      "ind": [
-        "bermain",
-        "bersenang-senang"
-      ],
-      "idMachine": true,
-      "chars": [
-        "玩",
-        "儿"
-      ],
-      "examples": [
+        },
         {
-          "tatoebaId": 10604652,
-          "cmn": "我晚上常常跟朋友出去玩儿。",
-          "author": "DaoSeng",
+          "tatoebaId": 3283115,
+          "cmn": "五千元是很多钱。",
+          "author": "yangmaster",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 718369,
-            "text": "I often go out with friends in the evening.",
-            "author": "CM",
+            "tatoebaId": 1454609,
+            "text": "5000 yuan is a lot of money.",
+            "author": "qana",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 718368,
-          "cmn": "我常常在晚上跟朋友出去玩儿。",
-          "author": "tommyfang95",
+          "tatoebaId": 8883985,
+          "cmn": "日元涨了。",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "涨",
           "en": {
-            "tatoebaId": 718369,
-            "text": "I often go out with friends in the evening.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 374669,
-          "cmn": "再见！有空多来玩儿！",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "有空",
-          "en": {
-            "tatoebaId": 379146,
-            "text": "Goodbye! When you have more time, come back and play!",
-            "author": "kellenparker",
+            "tatoebaId": 281337,
+            "text": "The Japanese yen appreciated.",
+            "author": "shekitten",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -942,69 +365,284 @@
       ]
     },
     {
-      "id": "L1-0142",
-      "hanzi": "好玩儿",
-      "pinyin": "hǎowánr",
+      "id": "L1-0127",
+      "hanzi": "贵",
+      "pinyin": "guì",
       "syllables": [
-        "hǎo",
-        "wán",
-        "r"
+        "guì"
       ],
       "tones": [
-        3,
-        2,
-        5
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "amusing",
-        "fun",
-        "interesting"
-      ],
-      "ind": [
-        "seru",
-        "asyik",
-        "menyenangkan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "好",
-        "玩",
-        "儿"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0140",
-      "hanzi": "好看",
-      "pinyin": "hǎokàn",
-      "syllables": [
-        "hǎo",
-        "kàn"
-      ],
-      "tones": [
-        3,
         4
       ],
       "pos": [
         "Adj"
       ],
       "en": [
-        "good-looking; nice-looking",
-        "(of a movie, book, TV show etc) good",
-        "in an embarrassing situation"
+        "expensive",
+        "(bound form) highly valued; precious",
+        "(bound form) noble; of high rank",
+        "(prefix) (honorific) your"
       ],
       "ind": [
-        "bagus dilihat",
-        "cantik",
-        "menarik"
+        "mahal",
+        "(kata hormat untuk milik lawan bicara)"
       ],
       "idMachine": true,
       "chars": [
-        "好",
-        "看"
+        "贵"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 924018,
+          "cmn": "这个不贵。",
+          "author": "jessie0422",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1216159,
+            "text": "This is not expensive.",
+            "author": "jared1981",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8511490,
+          "cmn": "车子很贵。",
+          "author": "gumblex",
+          "license": "CC BY 2.0 FR",
+          "outside": "车子",
+          "en": {
+            "tatoebaId": 1126518,
+            "text": "Cars are expensive.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11698443,
+          "cmn": "茶比牛奶贵吗？",
+          "author": "Jokubas",
+          "license": "CC BY 2.0 FR",
+          "outside": "比",
+          "en": {
+            "tatoebaId": 6825981,
+            "text": "Is tea more expensive than milk?",
+            "author": "mervert1",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0519",
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "syllables": [
+        "pián",
+        "yi"
+      ],
+      "tones": [
+        2,
+        5
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "cheap; inexpensive"
+      ],
+      "ind": [
+        "murah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "便",
+        "宜"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0086",
+      "hanzi": "东西",
+      "pinyin": "dōngxi",
+      "syllables": [
+        "dōng",
+        "xi"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "thing",
+        "stuff",
+        "person"
+      ],
+      "ind": [
+        "barang",
+        "benda"
+      ],
+      "idMachine": true,
+      "chars": [
+        "东",
+        "西"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2200437,
+          "cmn": "她去买东西。",
+          "author": "johannjunge",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2210387,
+            "text": "She's going out to buy some things.",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 380256,
+          "cmn": "这是什么东西？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 380257,
+            "text": "What the hell is this?",
+            "author": "megamanenm",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 420698,
+          "cmn": "这东西多少钱？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 432824,
+            "text": "How much does this cost?",
+            "author": "aliene",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0121",
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "syllables": [
+        "gěi"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V",
+        "Prep"
+      ],
+      "en": [
+        "to",
+        "for",
+        "for the benefit of",
+        "to give",
+        "to allow",
+        "to do sth (for sb)"
+      ],
+      "ind": [
+        "memberi",
+        "kepada",
+        "untuk"
+      ],
+      "idMachine": true,
+      "chars": [
+        "给"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11521704,
+          "cmn": "你给他买了什么？",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10114061,
+            "text": "What did you buy him?",
+            "author": "ddnktr",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12406645,
+            "text": "Kamu membelikannya apa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 3377929,
+          "cmn": "请给我钱。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3377930,
+            "text": "Please give me money.",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4831139,
+          "cmn": "我给你钱。",
+          "author": "feichaishu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4831012,
+            "text": "I'll give you money.",
+            "author": "Tbilisshi",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0510",
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "syllables": [
+        "jiàn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "M"
+      ],
+      "en": [
+        "classifier for clothes, events, things",
+        "item"
+      ],
+      "ind": [
+        "(penggolong untuk pakaian dan urusan)",
+        "potong"
+      ],
+      "idMachine": true,
+      "chars": [
+        "件"
       ],
       "examples": [
         {
@@ -1012,7 +650,7 @@
           "cmn": "这件衣服很好看的。",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": "件",
+          "outside": null,
           "en": {
             "tatoebaId": 12090934,
             "text": "This shirt looks great.",
@@ -1020,782 +658,207 @@
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        },
-        {
-          "tatoebaId": 1366190,
-          "cmn": "你看过这么好看的电影吗？",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": "这么",
-          "en": {
-            "tatoebaId": 581887,
-            "text": "Have you ever seen such a nice film?",
-            "author": "qdii",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9958206,
-          "cmn": "这部电影真的很好看。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "部",
-          "en": {
-            "tatoebaId": 5077903,
-            "text": "The movie was really good.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
         }
       ]
     },
     {
-      "id": "L1-0056",
-      "hanzi": "打",
-      "pinyin": "dǎ",
+      "id": "L1-0022",
+      "hanzi": "本",
+      "pinyin": "běn",
       "syllables": [
-        "dǎ"
+        "běn"
       ],
       "tones": [
         3
       ],
       "pos": [
-        "V"
+        "M"
       ],
       "en": [
-        "to hit; to strike",
-        "to play (a ball game)",
-        "to make (a phone call)",
-        "to fight"
+        "classifier for books, volumes",
+        "(bound form) root; origin",
+        "(bound form) this; the current (year etc)"
       ],
       "ind": [
-        "memukul",
-        "bermain (permainan bola)",
-        "melakukan (mis. menelepon)"
+        "(penghitung untuk buku)"
       ],
       "idMachine": true,
       "chars": [
-        "打"
+        "本"
       ],
       "examples": [
         {
-          "tatoebaId": 5670795,
-          "cmn": "她打了他。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 887215,
-            "text": "She hit him.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 345859,
-          "cmn": "我晚点打给你。",
+          "tatoebaId": 461535,
+          "cmn": "看这本书。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 71680,
-            "text": "I'll call you later.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 844697,
-          "cmn": "他给谁打的电话？",
-          "author": "eastasiastudent",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 844698,
-            "text": "Who was it that he phoned?",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0060",
-      "hanzi": "打球",
-      "pinyin": "dǎqiú",
-      "syllables": [
-        "dǎ",
-        "qiú"
-      ],
-      "tones": [
-        3,
-        2
-      ],
-      "pos": [],
-      "en": [
-        "to play ball",
-        "to play with a ball"
-      ],
-      "ind": [
-        "bermain bola"
-      ],
-      "idMachine": true,
-      "chars": [
-        "打",
-        "球"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0301",
-      "hanzi": "球",
-      "pinyin": "qiú",
-      "syllables": [
-        "qiú"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "ball",
-        "sphere",
-        "globe",
-        "ball game",
-        "match"
-      ],
-      "ind": [
-        "bola"
-      ],
-      "idMachine": true,
-      "chars": [
-        "球"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 6031937,
-          "cmn": "今天是地球日。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6031798,
-            "text": "Today is Earth day.",
-            "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6031936,
-          "cmn": "地球是我们的家。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6031802,
-            "text": "The Earth is our home.",
-            "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1397373,
-          "cmn": "球是圆的。",
-          "author": "mtdot",
-          "license": "CC BY 2.0 FR",
-          "outside": "圆",
-          "en": {
-            "tatoebaId": 33654,
-            "text": "Balls are round.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0002",
-      "hanzi": "爱好",
-      "pinyin": "àihào",
-      "syllables": [
-        "ài",
-        "hào"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [
-        "V",
-        "N"
-      ],
-      "en": [
-        "to like; to be fond of; to take pleasure in; to be keen on",
-        "interest; hobby"
-      ],
-      "ind": [
-        "hobi",
-        "gemar",
-        "suka"
-      ],
-      "idMachine": true,
-      "chars": [
-        "爱",
-        "好"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3658530,
-          "cmn": "那是我的爱好。",
-          "author": "hefeiming",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3658521,
-            "text": "That's my hobby.",
-            "author": "rokito",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2185225,
-          "cmn": "你的爱好是什么？",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 594511,
-            "text": "What's your hobby?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9991916,
-          "cmn": "我爱好翻译。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "翻译",
-          "en": {
-            "tatoebaId": 6102194,
-            "text": "I love translating.",
-            "author": "mailohilohi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0388",
-      "hanzi": "喜欢",
-      "pinyin": "xǐhuan",
-      "syllables": [
-        "xǐ",
-        "huan"
-      ],
-      "tones": [
-        3,
-        5
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to like; to be fond of"
-      ],
-      "ind": [
-        "suka",
-        "menyukai"
-      ],
-      "idMachine": true,
-      "chars": [
-        "喜",
-        "欢"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 357940,
-          "cmn": "我喜欢唱歌。",
-          "author": "ruicong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 256531,
-            "text": "I like to sing.",
+            "tatoebaId": 56828,
+            "text": "Read this book.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 8864689,
-            "text": "Aku suka bernyanyi.",
-            "author": "HAGNi",
+            "tatoebaId": 11171991,
+            "text": "Bacalah buku ini.",
+            "author": "Pacific",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 8688060,
-          "cmn": "你喜欢雨对吧？",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 20103,
-            "text": "You like rain, don't you?",
-            "author": "blay_paul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11023614,
-            "text": "Kamu suka hujan, kan?",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 894324,
-          "cmn": "你喜欢下雨吗？",
+          "tatoebaId": 526974,
+          "cmn": "我有一本书。",
           "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 434604,
-            "text": "Do you like rain?",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0408",
-      "hanzi": "笑",
-      "pinyin": "xiào",
-      "syllables": [
-        "xiào"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to laugh; to smile",
-        "to laugh at"
-      ],
-      "ind": [
-        "tertawa",
-        "tersenyum"
-      ],
-      "idMachine": true,
-      "chars": [
-        "笑"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3783468,
-          "cmn": "我从来没有看到她笑过。",
-          "author": "Debbie_Linder",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3780413,
-            "text": "I've never seen her laugh.",
-            "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1786116,
-          "cmn": "这不好笑。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1749344,
-            "text": "It's not funny.",
-            "author": "Spamster",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2332840,
-          "cmn": "那不好笑。",
-          "author": "User5120",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1897771,
-            "text": "That wasn't funny.",
+            "tatoebaId": 2793249,
+            "text": "I have a book.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0191",
-      "hanzi": "开玩笑",
-      "pinyin": "kāiwánxiào",
-      "syllables": [
-        "kāi",
-        "wán",
-        "xiào"
-      ],
-      "tones": [
-        1,
-        2,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "to play a joke; to make fun of; to joke"
-      ],
-      "ind": [
-        "bercanda",
-        "mengolok-olok"
-      ],
-      "idMachine": true,
-      "chars": [
-        "开",
-        "玩",
-        "笑"
-      ],
-      "examples": [
+          "ind": {
+            "tatoebaId": 13732287,
+            "text": "Aku punya buku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
         {
-          "tatoebaId": 398518,
-          "cmn": "我开玩笑。",
-          "author": "GlossaMatik",
+          "tatoebaId": 9436230,
+          "cmn": "我是日本人。",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 398513,
-            "text": "I'm just kidding.",
+            "tatoebaId": 252311,
+            "text": "I am a Japanese.",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3656925,
-          "cmn": "我不开玩笑。",
-          "author": "Wu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 555316,
-            "text": "I'm not kidding.",
-            "author": "CM",
+          "ind": {
+            "tatoebaId": 13576070,
+            "text": "Saya orang Jepang.",
+            "author": "Krisna68",
             "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7768013,
-          "cmn": "你在开玩笑吗？",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 270147,
-            "text": "Are you kidding?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
+          }
         }
       ]
     },
     {
-      "id": "L1-0077",
-      "hanzi": "电",
-      "pinyin": "diàn",
+      "id": "L1-0341",
+      "hanzi": "书",
+      "pinyin": "shū",
       "syllables": [
-        "diàn"
+        "shū"
       ],
       "tones": [
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "lightning",
-        "electricity",
-        "electric (bound form)",
-        "to get (or give) an electric shock",
-        "phone call or telegram etc",
-        "to send via telephone or telegram etc"
-      ],
-      "ind": [
-        "listrik",
-        "petir"
-      ],
-      "idMachine": true,
-      "chars": [
-        "电"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1397334,
-          "cmn": "电很有用。",
-          "author": "mtdot",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 279145,
-            "text": "Electricity is very useful.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 984472,
-          "cmn": "我的手机没电了。",
-          "author": "hsuan07",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 995335,
-            "text": "My phone is out of battery.",
-            "author": "NickC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8734985,
-          "cmn": "我会给你回电话的。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 508782,
-            "text": "I'll call you back.",
-            "author": "kebukebu",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0438",
-      "hanzi": "一起",
-      "pinyin": "yīqǐ",
-      "syllables": [
-        "yī",
-        "qǐ"
-      ],
-      "tones": [
-        1,
-        3
-      ],
-      "pos": [
-        "Adv",
-        "N"
-      ],
-      "en": [
-        "(in) the same place",
-        "together; in company (with)",
-        "altogether; in total",
-        "an instance of; a case of (murder, accident, dispute etc)"
-      ],
-      "ind": [
-        "bersama",
-        "bersama-sama"
-      ],
-      "idMachine": true,
-      "chars": [
-        "一",
-        "起"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3378284,
-          "cmn": "他们一起去看电影。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3378285,
-            "text": "They go to movies together.",
-            "author": "CH",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13150949,
-          "cmn": "一起工作。",
-          "author": "LeviHighway",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10807779,
-            "text": "Work together.",
-            "author": "Amastan",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10733681,
-          "cmn": "我们在一起。",
-          "author": "megamanenm",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3735551,
-            "text": "We were together.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0433",
-      "hanzi": "一块儿",
-      "pinyin": "yīkuàir",
-      "syllables": [
-        "yī",
-        "kuài",
-        "r"
-      ],
-      "tones": [
-        1,
-        4,
-        5
-      ],
-      "pos": [
-        "N",
-        "Adv"
-      ],
-      "en": [
-        "together; in the same place",
-        "in company (with)"
-      ],
-      "ind": [
-        "bersama-sama",
-        "sama-sama"
-      ],
-      "idMachine": true,
-      "chars": [
-        "一",
-        "块",
-        "儿"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0436",
-      "hanzi": "一边",
-      "pinyin": "yībiān",
-      "syllables": [
-        "yī",
-        "biān"
-      ],
-      "tones": [
-        1,
         1
       ],
       "pos": [
-        "N",
-        "Adv"
+        "N"
       ],
       "en": [
-        "one side",
-        "either side",
-        "on the one hand",
-        "on the other hand",
-        "doing while"
+        "book",
+        "letter",
+        "document",
+        "to write"
       ],
       "ind": [
-        "sambil",
-        "di satu sisi"
+        "buku",
+        "menulis"
       ],
       "idMachine": true,
       "chars": [
-        "一",
-        "边"
+        "书"
       ],
       "examples": [
         {
-          "tatoebaId": 1454456,
-          "cmn": "他一边唱歌一边工作。",
-          "author": "sadhen",
+          "tatoebaId": 461535,
+          "cmn": "看这本书。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 294485,
-            "text": "He sang while working.",
+            "tatoebaId": 56828,
+            "text": "Read this book.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 11171991,
+            "text": "Bacalah buku ini.",
+            "author": "Pacific",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 5092669,
-          "cmn": "一边站着。",
-          "author": "mirrorvan",
+          "tatoebaId": 334383,
+          "cmn": "这是我的书。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1935050,
-            "text": "Stand aside.",
-            "author": "Spamster",
+            "tatoebaId": 463306,
+            "text": "This is my book.",
+            "author": "lukaszpp",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 13012193,
+            "text": "Ini bukuku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 493888,
+          "cmn": "这是谁的书？",
+          "author": "adjusting",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 54871,
+            "text": "Whose book is this?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3864961,
+            "text": "Buku siapa ini?",
+            "author": "orion17",
+            "license": "CC BY 2.0 FR"
+          }
         }
       ]
     }
   ],
   "casual": [
     {
-      "id": "c-u19-01",
+      "id": "c-u18-01",
       "unit": "u19",
-      "hanzi": "追剧",
-      "pinyin": "zhuī jù",
+      "hanzi": "扫码",
+      "pinyin": "sǎo mǎ",
       "syllables": [
-        "zhuī",
-        "jù"
+        "sǎo",
+        "mǎ"
       ],
-      "label": "gaul",
+      "label": "santai",
       "hsk": {
-        "hanzi": "看电视",
+        "hanzi": "给钱",
         "wordIds": [
-          "L1-0192",
-          "L1-0080"
+          "L1-0121",
+          "L1-0294"
         ]
       },
       "meaning": {
-        "id": "maraton drama",
-        "en": "to binge-watch a series"
+        "id": "scan (kode QR)",
+        "en": "to scan the QR code"
       },
       "situation": {
-        "id": "Menonton serial drama terus-menerus.",
-        "en": "Watching a TV series episode after episode."
+        "id": "Bayar dengan scan kode QR di toko atau pasar.",
+        "en": "Paying by scanning a QR code in a shop or market."
       },
       "evidence": [
         "cedict",
@@ -1804,127 +867,91 @@
       "machine": true
     },
     {
-      "id": "c-u19-02",
+      "id": "c-u18-02",
       "unit": "u19",
-      "hanzi": "刷手机",
-      "pinyin": "shuā shǒu jī",
+      "hanzi": "划算",
+      "pinyin": "huá suàn",
       "syllables": [
-        "shuā",
-        "shǒu",
-        "jī"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "看手机",
-        "wordIds": [
-          "L1-0192",
-          "L1-0340"
-        ]
-      },
-      "meaning": {
-        "id": "scroll HP",
-        "en": "to scroll on your phone"
-      },
-      "situation": {
-        "id": "Bilang terus-terusan melihat HP.",
-        "en": "Saying someone keeps scrolling their phone."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u19-03",
-      "unit": "u19",
-      "hanzi": "打游戏",
-      "pinyin": "dǎ yóu xì",
-      "syllables": [
-        "dǎ",
-        "yóu",
-        "xì"
+        "huá",
+        "suàn"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "玩儿电脑",
-        "wordIds": [
-          "L1-0371",
-          "L1-0079"
-        ]
-      },
-      "meaning": {
-        "id": "main game",
-        "en": "to play video games"
-      },
-      "situation": {
-        "id": "Main game di HP atau komputer.",
-        "en": "Playing games on a phone or computer."
-      },
-      "evidence": [
-        "cedict",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u19-04",
-      "unit": "u19",
-      "hanzi": "有意思",
-      "pinyin": "yǒu yìsi",
-      "syllables": [
-        "yǒu",
-        "yì",
-        "si"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "好玩儿",
-        "wordIds": [
-          "L1-0142"
-        ]
-      },
-      "meaning": {
-        "id": "seru, menarik",
-        "en": "interesting, fun"
-      },
-      "situation": {
-        "id": "Bilang film atau kegiatan itu seru.",
-        "en": "Saying a film or activity is fun."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u19-05",
-      "unit": "u19",
-      "hanzi": "没意思",
-      "pinyin": "méi yìsi",
-      "syllables": [
-        "méi",
-        "yì",
-        "si"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "不好玩儿",
+        "hanzi": "不贵",
         "wordIds": [
           "L1-0034",
-          "L1-0142"
+          "L1-0127"
         ]
       },
       "meaning": {
-        "id": "nggak seru",
-        "en": "boring"
+        "id": "worth it, murah",
+        "en": "good value"
       },
       "situation": {
-        "id": "Bilang sesuatu membosankan.",
-        "en": "Saying something is boring."
+        "id": "Bilang harganya pantas atau untung.",
+        "en": "Saying something is good value."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-04",
+      "unit": "u19",
+      "hanzi": "坑",
+      "pinyin": "kēng",
+      "syllables": [
+        "kēng"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "太贵",
+        "wordIds": [
+          "L1-0358",
+          "L1-0127"
+        ]
+      },
+      "meaning": {
+        "id": "kemahalan, ditipu",
+        "en": "rip-off, to scam"
+      },
+      "situation": {
+        "id": "Mengeluh harga terlalu mahal atau merasa ditipu.",
+        "en": "Complaining that something is a rip-off."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-05",
+      "unit": "u19",
+      "hanzi": "老板",
+      "pinyin": "lǎo bǎn",
+      "syllables": [
+        "lǎo",
+        "bǎn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "bos (sapaan pemilik toko)",
+        "en": "boss (to address a shop owner)"
+      },
+      "situation": {
+        "id": "Memanggil pemilik toko atau warung.",
+        "en": "Calling a shop or stall owner."
       },
       "evidence": [
         "cedict",
@@ -1934,87 +961,249 @@
       "machine": true
     }
   ],
-  "relatedCasual": [],
+  "relatedCasual": [
+    {
+      "id": "c-u06-02",
+      "unit": "u09",
+      "hanzi": "买单",
+      "pinyin": "mǎi dān",
+      "syllables": [
+        "mǎi",
+        "dān"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "给钱",
+        "wordIds": [
+          "L1-0121",
+          "L1-0294"
+        ]
+      },
+      "meaning": {
+        "id": "minta bon, bayar",
+        "en": "to pay the bill"
+      },
+      "situation": {
+        "id": "Minta bon atau membayar di restoran.",
+        "en": "Asking for or paying the bill in a restaurant."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
   "dialog": {
-    "id": "d-u19",
+    "id": "d-u18",
     "title": {
-      "id": "Malam Minggu",
-      "en": "Weekend evening"
+      "id": "Menawar di pasar",
+      "en": "Bargaining at the market"
     },
     "situation": {
-      "id": "Sabtu malam di rumah. Adik bosan, lalu Kakak mengajaknya menonton film baru di TV.",
-      "en": "Saturday evening at home. Little sister is bored, so big brother suggests watching a new film on TV."
+      "id": "Nenek membeli buah di pasar pagi dan membayar dengan scan kode QR di HP.",
+      "en": "Grandma buys fruit at the morning market and pays by scanning a QR code with her phone."
     },
     "machine": true,
     "speakers": {
-      "meimei": {
+      "nainai": {
         "name": {
-          "id": "Adik perempuan",
-          "en": "Little sister"
+          "id": "Nenek",
+          "en": "Grandma"
         },
         "gender": "female"
       },
-      "gege": {
+      "seller": {
         "name": {
-          "id": "Kakak laki-laki",
-          "en": "Big brother"
+          "id": "Penjual",
+          "en": "Seller"
         },
-        "gender": "male"
+        "gender": "female"
       }
     },
     "lines": [
       {
-        "speaker": "meimei",
+        "speaker": "nainai",
         "gender": "female",
-        "cmn": "好无聊！我们干什么？",
+        "cmn": "老板，这个多少钱？",
+        "tokens": [
+          {
+            "text": "老板",
+            "pinyin": "lǎo bǎn"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "这个",
+            "pinyin": "zhège"
+          },
+          {
+            "text": "多少",
+            "pinyin": "duōshao"
+          },
+          {
+            "text": "钱",
+            "pinyin": "qián"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Boss, how much is this?",
+        "id": "Bu, ini berapa?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "十块。",
+        "tokens": [
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "块",
+            "pinyin": "kuài"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Ten yuan.",
+        "id": "Sepuluh yuan.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "太贵了！",
+        "tokens": [
+          {
+            "text": "太",
+            "pinyin": "tài"
+          },
+          {
+            "text": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Too expensive!",
+        "id": "Mahal banget!",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "不贵，八块吧。",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "八",
+            "pinyin": "bā"
+          },
+          {
+            "text": "块",
+            "pinyin": "kuài"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "It's not expensive. Eight, then.",
+        "id": "Nggak mahal kok. Delapan yuan deh.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "好，我买两个。",
         "tokens": [
           {
             "text": "好",
             "pinyin": "hǎo"
           },
           {
-            "text": "无聊",
-            "pinyin": "wú liáo"
+            "text": "，"
           },
           {
-            "text": "！"
+            "text": "我",
+            "pinyin": "wǒ"
           },
           {
-            "text": "我们",
-            "pinyin": "wǒmen"
+            "text": "买",
+            "pinyin": "mǎi"
           },
           {
-            "text": "干什么",
-            "pinyin": "gànshénme"
+            "text": "两",
+            "pinyin": "liǎng"
           },
           {
-            "text": "？"
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "。"
           }
         ],
-        "en": "I'm so bored! What shall we do?",
-        "id": "Bosan banget! Kita ngapain?",
+        "en": "OK, I'll take two.",
+        "id": "Oke, saya beli dua.",
         "machine": true
       },
       {
-        "speaker": "gege",
-        "gender": "male",
-        "cmn": "我们一起看电影吧！",
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "两个十六块，扫码吧！",
         "tokens": [
           {
-            "text": "我们",
-            "pinyin": "wǒmen"
+            "text": "两",
+            "pinyin": "liǎng"
           },
           {
-            "text": "一起",
-            "pinyin": "yīqǐ"
+            "text": "个",
+            "pinyin": "gè"
           },
           {
-            "text": "看",
-            "pinyin": "kàn"
+            "text": "十",
+            "pinyin": "shí"
           },
           {
-            "text": "电影",
-            "pinyin": "diànyǐng"
+            "text": "六",
+            "pinyin": "liù"
+          },
+          {
+            "text": "块",
+            "pinyin": "kuài"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "扫码",
+            "pinyin": "sǎo mǎ"
           },
           {
             "text": "吧",
@@ -2024,102 +1213,8 @@
             "text": "！"
           }
         ],
-        "en": "Let's watch a film together!",
-        "id": "Ayo kita nonton film bareng!",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "什么电影？",
-        "tokens": [
-          {
-            "text": "什么",
-            "pinyin": "shénme"
-          },
-          {
-            "text": "电影",
-            "pinyin": "diànyǐng"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "What film?",
-        "id": "Film apa?",
-        "machine": true
-      },
-      {
-        "speaker": "gege",
-        "gender": "male",
-        "cmn": "一个新电影，很好看。",
-        "tokens": [
-          {
-            "text": "一",
-            "pinyin": "yī"
-          },
-          {
-            "text": "个",
-            "pinyin": "gè"
-          },
-          {
-            "text": "新",
-            "pinyin": "xīn"
-          },
-          {
-            "text": "电影",
-            "pinyin": "diànyǐng"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "很",
-            "pinyin": "hěn"
-          },
-          {
-            "text": "好看",
-            "pinyin": "hǎokàn"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "A new one, it's really good.",
-        "id": "Film baru, bagus banget.",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "这个电影真有意思！",
-        "tokens": [
-          {
-            "text": "这",
-            "pinyin": "zhè"
-          },
-          {
-            "text": "个",
-            "pinyin": "gè"
-          },
-          {
-            "text": "电影",
-            "pinyin": "diànyǐng"
-          },
-          {
-            "text": "真",
-            "pinyin": "zhēn"
-          },
-          {
-            "text": "有意思",
-            "pinyin": "yǒu yìsi"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "This film is really fun!",
-        "id": "Filmnya seru banget!",
+        "en": "Two is sixteen yuan, scan the code!",
+        "id": "Dua jadi enam belas yuan, silakan scan!",
         "machine": true
       }
     ]

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import scenesData from '../../data/hsk1/scenes.json'
+import previewScenes from '../../data/hsk2-preview/scenes.json'
 import unitsData from '../../data/hsk1/units.json'
 import wordsData from '../../data/hsk1/words.json'
 import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, VIEWS } from './characters/index.ts'
@@ -21,14 +22,15 @@ import { checkXml } from './xml-check.ts'
 const data = scenesData as ScenesFile
 const units = (unitsData as { units: { id: string; words: string[] }[] }).units
 const words = new Map((wordsData as { id: string; hanzi: string }[]).map((w) => [w.id, w]))
-const STAGE_UNITS = ['u01', 'u02', 'u03']
 
 const committed = Object.fromEntries(
   Object.entries(import.meta.glob('../../public/art/scenes/*.{svg,json}', { query: '?raw', import: 'default', eager: true }) as Record<string, string>).map(
     ([path, text]) => [path.replace('../../public/art/scenes/', ''), text],
   ),
 )
+const preview = previewScenes as ScenesFile
 const built = buildScenes(data)
+const previewBuilt = buildScenes(preview)
 const svgFiles = [...built].filter(([path]) => path.endsWith('.svg'))
 const KB = 1024
 
@@ -36,10 +38,19 @@ const KB = 1024
 const NUMBERS: Record<string, number> = { 零: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 }
 
 describe('scenes.json', () => {
-  it('has exactly one scene per word of units 1-3, in unit order', () => {
-    const expected = units.filter((u) => STAGE_UNITS.includes(u.id)).flatMap((u) => u.words.map((w) => ({ unitId: u.id, wordId: w })))
+  it('has at most one scene per HSK 1 word, listed in unit order with the unit the word is in now', () => {
+    const sceneWords = new Set(data.scenes.map((s) => s.wordId))
+    expect(sceneWords.size).toBe(data.scenes.length)
+    const expected = units.flatMap((u) => u.words.filter((w) => sceneWords.has(w)).map((w) => ({ unitId: u.id, wordId: w })))
     expect(data.version).toBe(1)
     expect(data.scenes.map((s) => ({ unitId: s.unitId, wordId: s.wordId }))).toEqual(expected)
+  })
+
+  it('keeps the scenes of the 2021 words that are not in the 300 words in data/hsk2-preview/scenes.json', () => {
+    const hsk1 = new Set(words.keys())
+    for (const s of data.scenes) expect(hsk1.has(s.wordId), s.wordId).toBe(true)
+    for (const s of preview.scenes) expect(hsk1.has(s.wordId), `preview ${s.wordId}`).toBe(false)
+    expect(preview.scenes).toHaveLength(12)
   })
 
   it('matches words.json and has a bilingual alt text', () => {
@@ -125,8 +136,11 @@ describe('scenes.json', () => {
 describe('build-scenes', () => {
   it('is deterministic and matches the committed files (run npm run build:scenes)', () => {
     expect([...buildScenes(data)]).toEqual([...built])
-    expect(Object.keys(committed).sort()).toEqual([...built.keys()].sort())
-    for (const [path, src] of built) expect(committed[path], path).toBe(src)
+    // the SVG files of the HSK 2 preview scenes stay in the same folder (they are not in index.json)
+    const expected = new Map(built)
+    for (const [path, src] of previewBuilt) if (path !== 'index.json') expected.set(path, src)
+    expect(Object.keys(committed).sort()).toEqual([...expected.keys()].sort())
+    for (const [path, src] of expected) expect(committed[path], path).toBe(src)
   })
 
   it('writes a complete index', () => {

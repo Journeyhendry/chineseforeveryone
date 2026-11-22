@@ -72,9 +72,9 @@ describe('validateVisuals', () => {
 })
 
 describe('data/hsk1/visuals.json', () => {
-  it('passes validation (500 words, words.json order)', () => {
+  it('passes validation (300 words, words.json order)', () => {
     expect(validateVisuals(file, wordRefs)).toEqual([])
-    expect(file.items).toHaveLength(500)
+    expect(file.items).toHaveLength(300)
   })
   it('knows every dialog speaker', () => {
     expect([...CHARACTER_IDS].sort()).toEqual(Object.keys(dialogs.speakers).sort())

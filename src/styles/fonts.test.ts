@@ -15,7 +15,7 @@ const css = readFileSync(new URL('./fonts.css', import.meta.url), 'utf8')
 type CharsFile = { source: string; fontVersion: string; core: string; extra: string; missing: string[] }
 const chars = JSON.parse(readFileSync(new URL('lxgw-wenkai-chars.json', fontDir), 'utf8')) as CharsFile
 
-const HAN = /[㐀-鿿豈-﫿]/g
+const HAN = /[\u3400-\u9fff\uf900-\ufaff]/g
 
 function hanIn(text: string): Set<string> {
   return new Set(text.match(HAN) ?? [])

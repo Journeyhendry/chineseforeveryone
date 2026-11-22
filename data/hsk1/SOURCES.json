@@ -1,11 +1,91 @@
 {
   "hskList": {
+    "name": "HSK 3.1: the HSK syllabus published by CLEC in Nov 2025 (new exam from 13 Dec 2026), level 1",
+    "url": "https://raw.githubusercontent.com/becky82/mteh/6be297fc92f85590a4fc001f8f734ed5624497fc/sources/HSK3.1/HSK3.1_words_level1.txt",
+    "repo": "https://github.com/becky82/mteh",
+    "commit": "6be297fc92f85590a4fc001f8f734ed5624497fc",
+    "localCopy": "data/raw/hsk31_words_level1.txt",
+    "license": "CC BY-SA 4.0, © 2025 Rebecca J. Stones (repo README, section \"License\")",
+    "entries": 300,
+    "order": "words.json follows the order of this list (alphabetical by pinyin, same as the official table)"
+  },
+  "officialTable": {
+    "files": [
+      "新版HSK考试大纲（词汇、汉字、语法）.pdf (published 2025-11, in force 2026-07)",
+      "新版HSK考试大纲1219.pdf"
+    ],
+    "location": "github.com/becky82/mteh, sources/HSK3.1/, same commit",
+    "localCopy": "data/raw/hsk31_syllabus_level1.tsv",
+    "use": "cross-check of the 300 words, official pinyin (all 300 words use it) and the part of speech of the new words. Only the list itself (words, numbers, pinyin, POS) is copied, not the document."
+  },
+  "crossCheck": {
+    "listVsOfficialPdf": "300 of 300 words identical to rows 1-300 of the vocabulary table of the first PDF, same order",
+    "listVsSecondPdf": "same 300 words (second PDF sorts differently); only two spellings differ: 没（有） / 有（一）点儿 are printed 没有 / 有点儿 there",
+    "npmPackage": "@leonsilicon/hsk3.1@0.0.1 (derived from mteh, only a sanity check): the same 300 words in the same order; it writes the two optional forms as arrays [\"没\",\"没有\"] and [\"有点儿\",\"有一点儿\"]",
+    "pinyinVsOfficialTable": "all 300 words have the pinyin of the official table (checked by this script)",
+    "pinyinChangedFrom2021": [
+      {
+        "id": "L1-0032",
+        "hanzi": "不客气",
+        "from": "bùkèqì",
+        "to": "búkèqi"
+      },
+      {
+        "id": "L1-0235",
+        "hanzi": "没事",
+        "from": "méishìr",
+        "to": "méishì"
+      },
+      {
+        "id": "L1-0371",
+        "hanzi": "玩",
+        "from": "wánr",
+        "to": "wán"
+      },
+      {
+        "id": "L1-0431",
+        "hanzi": "一半",
+        "from": "yībàn",
+        "to": "yíbàn"
+      },
+      {
+        "id": "L1-0437",
+        "hanzi": "一点儿",
+        "from": "yīdiǎnr",
+        "to": "yìdiǎnr"
+      },
+      {
+        "id": "L1-0434",
+        "hanzi": "一下",
+        "from": "yīxiàr",
+        "to": "yíxià"
+      },
+      {
+        "id": "L1-0439",
+        "hanzi": "一些",
+        "from": "yīxiē",
+        "to": "yìxiē"
+      }
+    ],
+    "pinyinChangedNote": "2021 list wrote 不客气 bùkèqì and 一-words without tone change; the 2025 syllabus writes the pronounced tones (bú kèqi, yíbàn, yìdiǎnr, yíxià, yìxiē). 还 is the reading hái (the 2021 list also had huán, which is not in the 2025 syllabus). 没事 / 玩 / 一下 lost the erhua r of the 2021 forms.",
+    "newWordPinyinDifferingFromCedict": [
+      {
+        "id": "L1-0502",
+        "hanzi": "不要",
+        "syllabus": "búyào",
+        "cedict": "bu4 yao4"
+      }
+    ],
+    "unexplainedDifferences": 0
+  },
+  "hsk2021List": {
     "url": "https://raw.githubusercontent.com/ivankra/hsk30/4ff9e3915ce87baaecd7ebe263085573a4ea3192/hsk30.csv",
     "repo": "https://github.com/ivankra/hsk30",
     "commit": "4ff9e3915ce87baaecd7ebe263085573a4ea3192",
     "localCopy": "data/raw/hsk30.csv",
     "license": "Code MIT; word list derived from the official HSK 3.0 (2021) list",
-    "level1Rows": 500
+    "level1Rows": 500,
+    "use": "only for the ids of words that stay and for data/hsk2-preview/ (the old words that are not in the 2025 syllabus)"
   },
   "cedict": {
     "package": "cedict-json",
@@ -14,55 +94,511 @@
     "license": "CC BY-SA 4.0"
   },
   "indonesian": "data/hsk1/translations-id.json: machine translation (written by Claude) from the English meaning and HSK 1 context; every entry is flagged machine: true",
-  "wordCount": 500,
-  "englishMeaning": {
-    "exactPinyinMatch": 467,
-    "fallbackSameSimplified": 16,
-    "erhuaRedirect": 6,
-    "manualOverride": 11,
-    "fallbackIds": [
+  "wordCount": 300,
+  "ids": {
+    "reused": 266,
+    "newIds": [
+      "L1-0501",
+      "L1-0502",
+      "L1-0503",
+      "L1-0504",
+      "L1-0505",
+      "L1-0506",
+      "L1-0507",
+      "L1-0508",
+      "L1-0509",
+      "L1-0510",
+      "L1-0511",
+      "L1-0512",
+      "L1-0513",
+      "L1-0514",
+      "L1-0515",
+      "L1-0516",
+      "L1-0517",
+      "L1-0518",
+      "L1-0519",
+      "L1-0520",
+      "L1-0521",
+      "L1-0522",
+      "L1-0523",
+      "L1-0524",
+      "L1-0525",
+      "L1-0526",
+      "L1-0527",
+      "L1-0528",
+      "L1-0529",
+      "L1-0530",
+      "L1-0531",
+      "L1-0532",
+      "L1-0533",
+      "L1-0534"
+    ],
+    "reusedWithChangedForm": [
+      {
+        "id": "L1-0235",
+        "from": "没事儿",
+        "to": "没事",
+        "why": "the 2021 list had the erhua form 没事儿; the id is reused."
+      },
+      {
+        "id": "L1-0371",
+        "from": "玩儿",
+        "to": "玩",
+        "why": "the 2021 list had the erhua form 玩儿; the id is reused."
+      },
+      {
+        "id": "L1-0434",
+        "from": "一下儿",
+        "to": "一下",
+        "why": "the 2021 list had the erhua form 一下儿; the id is reused."
+      }
+    ],
+    "movedToHsk2Preview": [
+      "L1-0002",
+      "L1-0006",
+      "L1-0009",
+      "L1-0011",
+      "L1-0012",
+      "L1-0013",
+      "L1-0014",
+      "L1-0015",
+      "L1-0017",
+      "L1-0019",
       "L1-0020",
-      "L1-0027",
-      "L1-0032",
-      "L1-0126",
-      "L1-0158",
-      "L1-0159",
-      "L1-0168",
-      "L1-0170",
-      "L1-0255",
-      "L1-0256",
-      "L1-0289",
-      "L1-0338",
-      "L1-0375",
-      "L1-0385",
-      "L1-0403",
-      "L1-0419"
-    ],
-    "erhuaRedirectIds": [
-      "L1-0142",
-      "L1-0244",
-      "L1-0262",
-      "L1-0278",
-      "L1-0402",
-      "L1-0434"
-    ],
-    "overrideIds": [
-      "L1-0022",
+      "L1-0021",
+      "L1-0023",
       "L1-0024",
       "L1-0025",
+      "L1-0026",
+      "L1-0027",
+      "L1-0029",
+      "L1-0030",
+      "L1-0031",
+      "L1-0033",
+      "L1-0037",
+      "L1-0038",
+      "L1-0039",
+      "L1-0041",
+      "L1-0043",
       "L1-0044",
+      "L1-0045",
+      "L1-0047",
+      "L1-0048",
+      "L1-0049",
+      "L1-0050",
+      "L1-0052",
       "L1-0053",
+      "L1-0054",
+      "L1-0055",
       "L1-0056",
-      "L1-0076",
+      "L1-0057",
+      "L1-0059",
+      "L1-0060",
+      "L1-0065",
+      "L1-0066",
+      "L1-0068",
+      "L1-0069",
+      "L1-0070",
+      "L1-0071",
+      "L1-0072",
+      "L1-0073",
+      "L1-0077",
+      "L1-0081",
+      "L1-0084",
+      "L1-0085",
+      "L1-0087",
+      "L1-0088",
+      "L1-0096",
+      "L1-0102",
+      "L1-0103",
+      "L1-0104",
+      "L1-0105",
+      "L1-0106",
+      "L1-0110",
+      "L1-0111",
+      "L1-0112",
+      "L1-0113",
+      "L1-0114",
+      "L1-0115",
+      "L1-0117",
+      "L1-0122",
+      "L1-0123",
+      "L1-0125",
+      "L1-0126",
+      "L1-0129",
+      "L1-0130",
+      "L1-0131",
+      "L1-0133",
+      "L1-0134",
+      "L1-0148",
+      "L1-0149",
+      "L1-0150",
+      "L1-0151",
+      "L1-0152",
+      "L1-0153",
+      "L1-0155",
+      "L1-0156",
+      "L1-0157",
+      "L1-0158",
+      "L1-0159",
+      "L1-0162",
+      "L1-0163",
+      "L1-0166",
+      "L1-0167",
+      "L1-0168",
+      "L1-0170",
+      "L1-0172",
+      "L1-0174",
+      "L1-0175",
+      "L1-0177",
+      "L1-0179",
+      "L1-0182",
+      "L1-0183",
+      "L1-0184",
+      "L1-0186",
+      "L1-0190",
+      "L1-0191",
+      "L1-0194",
+      "L1-0196",
+      "L1-0197",
+      "L1-0198",
+      "L1-0200",
+      "L1-0201",
+      "L1-0204",
+      "L1-0206",
+      "L1-0207",
+      "L1-0208",
+      "L1-0211",
+      "L1-0214",
+      "L1-0218",
+      "L1-0219",
+      "L1-0220",
+      "L1-0221",
+      "L1-0222",
+      "L1-0223",
+      "L1-0225",
+      "L1-0226",
+      "L1-0229",
+      "L1-0231",
+      "L1-0232",
+      "L1-0234",
+      "L1-0238",
+      "L1-0239",
+      "L1-0240",
+      "L1-0246",
+      "L1-0249",
+      "L1-0259",
+      "L1-0260",
+      "L1-0262",
+      "L1-0264",
+      "L1-0265",
+      "L1-0266",
+      "L1-0267",
+      "L1-0268",
+      "L1-0278",
+      "L1-0280",
+      "L1-0281",
+      "L1-0282",
+      "L1-0283",
+      "L1-0285",
+      "L1-0287",
+      "L1-0289",
+      "L1-0290",
+      "L1-0292",
+      "L1-0293",
+      "L1-0295",
+      "L1-0297",
+      "L1-0298",
+      "L1-0300",
+      "L1-0301",
+      "L1-0307",
+      "L1-0309",
+      "L1-0310",
+      "L1-0312",
+      "L1-0313",
+      "L1-0317",
+      "L1-0318",
+      "L1-0319",
+      "L1-0321",
+      "L1-0326",
+      "L1-0327",
+      "L1-0330",
+      "L1-0331",
+      "L1-0336",
+      "L1-0338",
+      "L1-0339",
+      "L1-0342",
+      "L1-0344",
+      "L1-0352",
+      "L1-0362",
+      "L1-0364",
+      "L1-0366",
+      "L1-0369",
+      "L1-0370",
+      "L1-0375",
+      "L1-0376",
+      "L1-0377",
+      "L1-0378",
+      "L1-0384",
+      "L1-0385",
+      "L1-0386",
+      "L1-0387",
+      "L1-0391",
+      "L1-0392",
+      "L1-0393",
+      "L1-0397",
+      "L1-0402",
+      "L1-0403",
+      "L1-0408",
+      "L1-0412",
       "L1-0416",
+      "L1-0422",
+      "L1-0424",
+      "L1-0426",
+      "L1-0432",
       "L1-0433",
+      "L1-0435",
+      "L1-0436",
+      "L1-0438",
+      "L1-0440",
+      "L1-0443",
+      "L1-0444",
+      "L1-0446",
+      "L1-0447",
+      "L1-0448",
+      "L1-0451",
+      "L1-0456",
+      "L1-0461",
+      "L1-0463",
+      "L1-0469",
+      "L1-0471",
+      "L1-0472",
+      "L1-0475",
+      "L1-0476",
+      "L1-0478",
+      "L1-0483",
+      "L1-0484",
+      "L1-0486",
+      "L1-0489",
+      "L1-0490",
+      "L1-0491",
+      "L1-0492",
+      "L1-0493",
+      "L1-0494",
+      "L1-0496",
+      "L1-0497",
+      "L1-0499"
+    ],
+    "movedToHsk2PreviewCount": 234
+  },
+  "englishMeaning": {
+    "kept2021": 259,
+    "newExactPinyinMatch": 15,
+    "newFallbackSameSimplified": 1,
+    "newErhuaRedirect": 0,
+    "manualOverride": 25,
+    "fallbackIds": [
+      "L1-0434"
+    ],
+    "erhuaRedirectIds": [],
+    "overrideIds": [
+      "L1-0022",
+      "L1-0501",
+      "L1-0502",
+      "L1-0503",
+      "L1-0504",
+      "L1-0505",
+      "L1-0506",
+      "L1-0076",
+      "L1-0510",
+      "L1-0513",
+      "L1-0514",
+      "L1-0235",
+      "L1-0515",
+      "L1-0516",
+      "L1-0519",
+      "L1-0521",
+      "L1-0371",
+      "L1-0525",
+      "L1-0527",
+      "L1-0528",
       "L1-0437",
-      "L1-0450"
+      "L1-0530",
+      "L1-0450",
+      "L1-0532",
+      "L1-0533"
     ]
   },
+  "partOfSpeech": {
+    "fromOfficialTable": [
+      "L1-0501",
+      "L1-0502",
+      "L1-0503",
+      "L1-0504",
+      "L1-0505",
+      "L1-0506",
+      "L1-0507",
+      "L1-0508",
+      "L1-0509",
+      "L1-0510",
+      "L1-0511",
+      "L1-0512",
+      "L1-0513",
+      "L1-0514",
+      "L1-0515",
+      "L1-0516",
+      "L1-0517",
+      "L1-0518",
+      "L1-0519",
+      "L1-0520",
+      "L1-0521",
+      "L1-0522",
+      "L1-0523",
+      "L1-0524",
+      "L1-0525",
+      "L1-0526",
+      "L1-0527",
+      "L1-0528",
+      "L1-0529",
+      "L1-0530",
+      "L1-0531",
+      "L1-0532",
+      "L1-0533",
+      "L1-0534"
+    ],
+    "note": "words that were already in the 2021 list keep their POS from that list; new words take the official POS label (名 N, 动 V, 形 Adj, 副 Adv, 代 Pron, 量 M, 数 Num, 助 Aux, 介 Prep, 连 Conj, 叹 Interj, 前缀 Prefix, 后缀 Suffix; 数量 = Num + M), brackets removed. Some words have no POS in the table (不客气 打电话 没关系 你好 下雨 做饭).",
+    "distribution": {
+      "V": 55,
+      "Aux": 5,
+      "Num": 17,
+      "N": 124,
+      "M": 16,
+      "Suffix": 2,
+      "Adv": 14,
+      "(none)": 24,
+      "Adj": 24,
+      "Pron": 38,
+      "Prefix": 1,
+      "Prep": 3,
+      "Conj": 1,
+      "Interj": 1
+    }
+  },
   "specialCases": {
-    "syllableCharMismatch": [],
+    "syllableCharMismatch2021": [],
     "wordsWithVariants": [
+      {
+        "id": "L1-0004",
+        "hanzi": "爸爸",
+        "variants": [
+          "爸"
+        ]
+      },
+      {
+        "id": "L1-0074",
+        "hanzi": "弟弟",
+        "variants": [
+          "弟"
+        ]
+      },
+      {
+        "id": "L1-0118",
+        "hanzi": "哥哥",
+        "variants": [
+          "哥"
+        ]
+      },
+      {
+        "id": "L1-0178",
+        "hanzi": "姐姐",
+        "variants": [
+          "姐"
+        ]
+      },
+      {
+        "id": "L1-0216",
+        "hanzi": "零",
+        "variants": [
+          "〇"
+        ]
+      },
+      {
+        "id": "L1-0224",
+        "hanzi": "妈妈",
+        "variants": [
+          "妈"
+        ]
+      },
+      {
+        "id": "L1-0237",
+        "hanzi": "妹妹",
+        "variants": [
+          "妹"
+        ]
+      },
+      {
+        "id": "L1-0235",
+        "hanzi": "没事",
+        "variants": [
+          "没事儿"
+        ]
+      },
+      {
+        "id": "L1-0236",
+        "hanzi": "没有",
+        "variants": [
+          "没"
+        ]
+      },
+      {
+        "id": "L1-0371",
+        "hanzi": "玩",
+        "variants": [
+          "玩儿"
+        ]
+      },
+      {
+        "id": "L1-0434",
+        "hanzi": "一下",
+        "variants": [
+          "一下儿"
+        ]
+      },
+      {
+        "id": "L1-0445",
+        "hanzi": "有些",
+        "variants": [
+          "有一些"
+        ]
+      },
+      {
+        "id": "L1-0530",
+        "hanzi": "有点儿",
+        "variants": [
+          "有一点儿"
+        ]
+      }
+    ],
+    "alternativePronunciationsIgnored2021": [
+      {
+        "id": "L1-0325",
+        "hanzi": "谁",
+        "used": "shéi",
+        "ignored": "shuí"
+      }
+    ],
+    "rules": [
+      "The 2025 list decides which words exist and their order. A word keeps its 2021 id (L1-0xxx) when the written form is the same (or differs only by erhua / an optional part, see formDecisions); other words get L1-0501... in list order.",
+      "formDecisions: 没（有） -> 没有 [没]: optional part: the second official PDF (1219) prints 没有; 没 stays as a variant. Reuses the 2021 word 没有. | 有（一）点儿 -> 有点儿 [有一点儿]: optional part: the second official PDF (1219) prints 有点儿 (shorter, the common form); 有一点儿 stays as a variant. | 没事 -> 没事 [没事儿]: the 2021 list had the erhua form 没事儿; the id is reused. | 一下 -> 一下 [一下儿]: the 2021 list had the erhua form 一下儿; the id is reused. | 玩 -> 玩 [玩儿]: the 2021 list had the erhua form 玩儿; the id is reused.",
+      "Erhua r is its own syllable (tone 5) and its Han character 儿 counts as one character.",
+      "pinyin has no spaces; apostrophes are kept (nǚ'ér). pinyinNumbered is space separated per syllable, ü written as v. Where the official table gives two readings (谁 shéi/shuí) the first is used.",
+      "en[]: for 2021 words with an unchanged form the 2021 meaning is kept. Otherwise: CEDICT entries with the same simplified form and exact numbered pinyin (traditional form preferred); else same simplified form; senses starting with CL:, variant of, surname, abbr. for, (slang), Japanese-style, Taiwan pr., also pr., also written, or mentioning Kangxi radical are dropped unless they are all there is; erhua entries take the meaning of X; at most 6. Manual overrides in en-overrides.json win over everything.",
+      "traditional[] of new words comes from the CC-CEDICT entry of the written form."
+    ]
+  },
+  "hsk2021Details": {
+    "note": "details of the 2021 build (task 2) that still apply to the kept words",
+    "wordsWithVariants2021": [
       {
         "id": "L1-0004",
         "hanzi": "爸爸",
@@ -125,14 +661,6 @@
         "variants": [
           "有一些"
         ]
-      }
-    ],
-    "alternativePronunciationsIgnored": [
-      {
-        "id": "L1-0325",
-        "hanzi": "谁",
-        "used": "shéi",
-        "ignored": "shuí"
       }
     ],
     "pinyinDisagreeingWithCsvCedictColumn": [
@@ -233,15 +761,14 @@
         "csv": "xue2 sheng5"
       }
     ],
-    "rules": [
-      "hanzi = first form in the Variants column (or first of \"a|b\"); other forms go to variants[]. Rows whose Variants entry is only an example (第（第二）, 们（朋友们）, 子（桌子）) keep just the bare character.",
-      "Erhua r is its own syllable (tone 5) and its Han character 儿 counts as one character.",
-      "pinyin has no spaces; apostrophes are kept (nǚ'ér). pinyinNumbered is space separated per syllable, ü written as v.",
-      "en[]: CEDICT entries with the same simplified form and exact numbered pinyin (traditional form preferred); else same simplified form; senses starting with CL:, variant of, surname, abbr. for, (slang), Japanese-style, Taiwan pr., also pr., also written, or mentioning Kangxi radical are dropped unless they are all there is; erhua entries (erhua variant of X) take the meaning of X; at most 6.",
-      "Manual English overrides (en-overrides.json) are used for the one word missing from CEDICT and for words whose first six CEDICT senses miss the HSK 1 usage (本 次 比 打 点 别 元 行 一块儿 一点儿)."
-    ]
+    "englishMeaning2021": {
+      "exactPinyinMatch": 465,
+      "fallbackSameSimplified": 16,
+      "erhuaRedirect": 6,
+      "manualOverride": 13
+    }
   },
   "notes": [
-    "HSK 3.0 final syllabus (CLEC, published Nov 2025, new exam from 13 Dec 2026): according to secondary sources (studycli.org, thatsmandarin.com, hsklord.com) it cuts HSK 1 to 300 words (from 500 in the 2021 list). The full official list was not obtained. BUILD_PLAN section 1 keeps 500 words; changing to 300 needs a decision by the owner."
+    "BUILD_PLAN section 1 (owner decision 2026-11-22): HSK 1 = the 300 words of the 2025 syllabus. Words of the 2021 list that are not in it moved to data/hsk2-preview/ (task 2b)."
   ]
 }

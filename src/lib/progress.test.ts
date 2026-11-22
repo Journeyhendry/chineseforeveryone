@@ -141,3 +141,43 @@ describe('recordSkipResult', () => {
     expect(recordSkipResult(p, 3, 1)).toBe(p)
   })
 })
+
+describe('progres lama dengan unit / kata yang sudah tidak ada (task 2b: HSK 1 jadi 300 kata)', () => {
+  // Progres yang disimpan sebelum silabus 2025: unit u06..u20 dan id kata L1-0xxx yang kini ada di unit lain atau di pratinjau HSK 2.
+  const old = {
+    version: 1,
+    units: { u01: { bestScore: 0.9 }, u02: { bestScore: 0.7 }, u20: { bestScore: 1 }, u45: { bestScore: 1 }, 'L1-0436': { bestScore: 1 } },
+    skipUnlockedThrough: 99,
+    words: { 'L1-0436': { box: 3, due: '2026-12-01' }, 'L1-0001': { box: 1 } },
+    streak: 4,
+  }
+
+  it('dibaca tanpa error; kolom yang belum dikenal dan id aneh diabaikan', () => {
+    expect(() => normalizeProgress(JSON.stringify(old))).not.toThrow()
+    const p = normalizeProgress(JSON.stringify(old))
+    expect(Object.keys(p.units).sort()).toEqual(['u01', 'u02', 'u20', 'u45'])
+    expect(p).not.toHaveProperty('words')
+  })
+
+  it('unit di luar daftar yang sekarang dibuang bila daftar diberikan', () => {
+    const ids = units.map((u) => u.id)
+    const p = normalizeProgress(old, ids)
+    expect(Object.keys(p.units).sort()).toEqual(['u01', 'u02'])
+  })
+
+  it('aturan buka unit dan unit yang disarankan tetap jalan untuk daftar unit yang sekarang', () => {
+    const p = normalizeProgress(old)
+    expect(units.map((u) => unitStatus(u, units, p))).toEqual(['done', 'done', 'open', 'open', 'open'])
+    expect(doneCount(units, p)).toBe(2)
+    expect(suggestedUnit(units, p)?.id).toBeDefined()
+    const q = normalizeProgress({ units: { u20: { bestScore: 1 } } })
+    expect(doneCount(units, q)).toBe(0)
+    expect(unitStatus(units[0], units, q)).toBe('open')
+  })
+
+  it('hasil latihan baru tetap bisa disimpan di atas progres lama', () => {
+    const p = recordUnitResult(normalizeProgress(old), 'u03', 0.8, now)
+    expect(p.units.u03.stars).toBe(2)
+    expect(p.units.u45.stars).toBe(3)
+  })
+})

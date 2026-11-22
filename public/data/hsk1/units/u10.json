@@ -3,423 +3,83 @@
   "unit": {
     "id": "u10",
     "order": 10,
-    "slug": "tempat",
+    "slug": "tanggal",
     "title": {
-      "id": "Tempat, jalan & alam",
-      "en": "Places, roads & nature"
+      "id": "Hari, tanggal & tahun",
+      "en": "Days, dates & years"
     },
     "description": {
-      "id": "Toko, jalan, stasiun, bandara, gunung, serta cuaca dan tumbuhan.",
-      "en": "Shops, roads, stations, the airport, mountains, plus weather and plants."
+      "id": "Hari ini, besok, minggu, bulan, dan tahun.",
+      "en": "Today, tomorrow, weeks, months and years."
     }
   },
   "words": [
     {
-      "id": "L1-0070",
-      "hanzi": "地点",
-      "pinyin": "dìdiǎn",
+      "id": "L1-0359",
+      "hanzi": "天",
+      "pinyin": "tiān",
       "syllables": [
-        "dì",
-        "diǎn"
+        "tiān"
       ],
       "tones": [
-        4,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "place",
-        "site",
-        "location",
-        "venue"
-      ],
-      "ind": [
-        "tempat",
-        "lokasi"
-      ],
-      "idMachine": true,
-      "chars": [
-        "地",
-        "点"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5153278,
-          "cmn": "集合地点是哪儿？",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": "集合",
-          "en": {
-            "tatoebaId": 5241606,
-            "text": "Where is the assembly point?",
-            "author": "cinqhiboux",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0071",
-      "hanzi": "地方",
-      "pinyin": "dìfang",
-      "syllables": [
-        "dì",
-        "fang"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "area",
-        "place",
-        "space",
-        "room",
-        "territory"
-      ],
-      "ind": [
-        "tempat",
-        "daerah"
-      ],
-      "idMachine": true,
-      "chars": [
-        "地",
-        "方"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 9419169,
-          "cmn": "那是个好地方吗？",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4999985,
-            "text": "Is it a nice place?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 420468,
-          "cmn": "下一站是什么地方？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1130652,
-            "text": "What's the next station?",
-            "author": "Brian255",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3493146,
-          "cmn": "我常常在这个地方。",
-          "author": "Mojo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2674372,
-            "text": "I'm often here.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0073",
-      "hanzi": "地图",
-      "pinyin": "dìtú",
-      "syllables": [
-        "dì",
-        "tú"
-      ],
-      "tones": [
-        4,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "map"
-      ],
-      "ind": [
-        "peta"
-      ],
-      "idMachine": true,
-      "chars": [
-        "地",
-        "图"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 12422335,
-          "cmn": "我在这张地图上的哪里？",
-          "author": "jkyochen",
-          "license": "CC BY 2.0 FR",
-          "outside": "张",
-          "en": {
-            "tatoebaId": 7967792,
-            "text": "Where am I on this map?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3859476,
-          "cmn": "请看25页的地图。",
-          "author": "rickjiang",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3962588,
-            "text": "Please look at the map on page 25.",
-            "author": "JSakuragi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 330589,
-          "cmn": "我在旅行中用了地图。",
-          "author": "Kiwi",
-          "license": "CC BY 2.0 FR",
-          "outside": "旅行",
-          "en": {
-            "tatoebaId": 7156437,
-            "text": "I used a map during my trip.",
-            "author": "Kiwi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0221",
-      "hanzi": "路",
-      "pinyin": "lù",
-      "syllables": [
-        "lù"
-      ],
-      "tones": [
-        4
+        1
       ],
       "pos": [
         "N",
         "M"
       ],
       "en": [
-        "road",
-        "journey",
-        "route",
-        "line (bus etc)",
-        "sort; kind"
+        "day",
+        "sky",
+        "heaven"
       ],
       "ind": [
-        "jalan",
-        "rute"
+        "hari",
+        "langit"
       ],
       "idMachine": true,
       "chars": [
-        "路"
+        "天"
       ],
       "examples": [
         {
-          "tatoebaId": 5658827,
-          "cmn": "我上路了！",
-          "author": "verdastelo9604",
+          "tatoebaId": 13203871,
+          "cmn": "今天是第一天。",
+          "author": "1753191944",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 5101657,
-            "text": "I'm going now!",
-            "author": "sundown",
+            "tatoebaId": 13203453,
+            "text": "Today is the first day.",
+            "author": "frpzzd",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 707204,
-          "cmn": "我这就上路。",
-          "author": "Yashanti",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 707205,
-            "text": "I'm on my way.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6149486,
-          "cmn": "路正在建。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": "建",
-          "en": {
-            "tatoebaId": 5444080,
-            "text": "The road is under construction.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0222",
-      "hanzi": "路口",
-      "pinyin": "lùkǒu",
-      "syllables": [
-        "lù",
-        "kǒu"
-      ],
-      "tones": [
-        4,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "crossing",
-        "intersection (of roads)"
-      ],
-      "ind": [
-        "persimpangan jalan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "路",
-        "口"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 389828,
-          "cmn": "在十字路口右转。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "右转",
-          "en": {
-            "tatoebaId": 6047,
-            "text": "Turn right at the crossroad.",
-            "author": "shortiiboy",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9401505,
-          "cmn": "十字路口出了车祸。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "车祸",
-          "en": {
-            "tatoebaId": 6575232,
-            "text": "There's been an accident at the crossroads.",
-            "author": "Eccles17",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4147433,
-          "cmn": "请在下一个十字路口右转。",
-          "author": "sissima",
-          "license": "CC BY 2.0 FR",
-          "outside": "右转",
-          "en": {
-            "tatoebaId": 658059,
-            "text": "Turn right at the next intersection.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0225",
-      "hanzi": "马路",
-      "pinyin": "mǎlù",
-      "syllables": [
-        "mǎ",
-        "lù"
-      ],
-      "tones": [
-        3,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "street",
-        "road"
-      ],
-      "ind": [
-        "jalan raya"
-      ],
-      "idMachine": true,
-      "chars": [
-        "马",
-        "路"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 836905,
-          "cmn": "马路是滑的。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": "滑",
-          "en": {
-            "tatoebaId": 837412,
-            "text": "The street is slippery.",
-            "author": "Mouseneb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2411916,
-          "cmn": "她过了马路。",
-          "author": "User5120",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 315882,
-            "text": "She came across the street.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 405046,
-          "cmn": "我看见他穿过了马路。",
+          "tatoebaId": 335520,
+          "cmn": "前几天我见到了她。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 260124,
-            "text": "I saw him cross the street.",
-            "author": "CK",
+            "tatoebaId": 33058,
+            "text": "I saw her just the other day.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 351230,
+          "cmn": "请后天来吧。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8316003,
+            "text": "Please come the day after tomorrow.",
+            "author": "AlanF_US",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -427,349 +87,306 @@
       ]
     },
     {
-      "id": "L1-0223",
-      "hanzi": "路上",
-      "pinyin": "lùshang",
+      "id": "L1-0181",
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
       "syllables": [
-        "lù",
-        "shang"
+        "jīn",
+        "tiān"
       ],
       "tones": [
-        4,
-        5
+        1,
+        1
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "on the road",
-        "on the way; en route"
+        "today",
+        "the present time; now"
       ],
       "ind": [
-        "di jalan",
-        "dalam perjalanan"
+        "hari ini"
       ],
       "idMachine": true,
       "chars": [
-        "路",
-        "上"
+        "今",
+        "天"
       ],
       "examples": [
         {
-          "tatoebaId": 3378267,
-          "cmn": "他在路上。",
+          "tatoebaId": 385098,
+          "cmn": "今天星期几？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 476431,
+            "text": "What day is it today?",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13678462,
+            "text": "Hari ini hari apa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 348445,
+          "cmn": "今天是星期一。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 238862,
+            "text": "It's Monday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 408909,
+          "cmn": "今天是几号？",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 3446741,
-            "text": "He is on the road.",
-            "author": "pauldhunt",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10477406,
-          "cmn": "我在回家的路上。",
-          "author": "DaoSeng",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5168521,
-            "text": "I'm on the way home.",
+            "tatoebaId": 408906,
+            "text": "What's the date today?",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        },
-        {
-          "tatoebaId": 7950268,
-          "cmn": "路上小心！",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "小心",
-          "en": {
-            "tatoebaId": 10251057,
-            "text": "Have a safe trip!",
-            "author": "bekindtoall",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
         }
       ]
     },
     {
-      "id": "L1-0314",
-      "hanzi": "商店",
-      "pinyin": "shāngdiàn",
+      "id": "L1-0248",
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
       "syllables": [
-        "shāng",
-        "diàn"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "store; shop"
-      ],
-      "ind": [
-        "toko"
-      ],
-      "idMachine": true,
-      "chars": [
-        "商",
-        "店"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 408838,
-          "cmn": "我家旁边有几家商店。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 662701,
-            "text": "There are a few shops next to my house.",
-            "author": "bluepie88",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1504028,
-          "cmn": "我去商店。",
-          "author": "Tsetseg",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 654928,
-            "text": "I am going to the shop.",
-            "author": "cl",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 785849,
-          "cmn": "他去了商店。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 485111,
-            "text": "He went to the store.",
-            "author": "Scott",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0313",
-      "hanzi": "商场",
-      "pinyin": "shāngchǎng",
-      "syllables": [
-        "shāng",
-        "chǎng"
-      ],
-      "tones": [
-        1,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "shopping mall",
-        "shopping center",
-        "department store",
-        "emporium",
-        "the business world"
-      ],
-      "ind": [
-        "pusat perbelanjaan",
-        "mal"
-      ],
-      "idMachine": true,
-      "chars": [
-        "商",
-        "场"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5556118,
-          "cmn": "我想去商场。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1936463,
-            "text": "I'd like to go to the mall.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9969145,
-          "cmn": "你知道商场什么时候关门吗？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 9628426,
-            "text": "Do you know when the supermarket closes?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0343",
-      "hanzi": "书店",
-      "pinyin": "shūdiàn",
-      "syllables": [
-        "shū",
-        "diàn"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "bookstore"
-      ],
-      "ind": [
-        "toko buku"
-      ],
-      "idMachine": true,
-      "chars": [
-        "书",
-        "店"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10966742,
-          "cmn": "明天下午我在我爸爸的书店。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13805339,
-            "text": "I'll be at my dad's bookstore tomorrow afternoon.",
-            "author": "haohao",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7774821,
-          "cmn": "我想要本书。书店在什么地方？",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 437015,
-            "text": "I want a book. Where is the bookstore?",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9963090,
-          "cmn": "这里的书店和图书馆没有外语书。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6099003,
-            "text": "The book stores and libraries here have no books in foreign languages.",
-            "author": "mailohilohi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0366",
-      "hanzi": "图书馆",
-      "pinyin": "túshūguǎn",
-      "syllables": [
-        "tú",
-        "shū",
-        "guǎn"
+        "míng",
+        "tiān"
       ],
       "tones": [
         2,
-        1,
-        3
+        1
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "library"
+        "tomorrow"
       ],
       "ind": [
-        "perpustakaan"
+        "besok"
       ],
       "idMachine": true,
       "chars": [
-        "图",
-        "书",
-        "馆"
+        "明",
+        "天"
       ],
       "examples": [
         {
-          "tatoebaId": 2200423,
-          "cmn": "在图书馆。",
-          "author": "johannjunge",
+          "tatoebaId": 11837632,
+          "cmn": "明天星期六。",
+          "author": "Lemmih",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2210463,
-            "text": "At the library.",
-            "author": "FeuDRenais2",
+            "tatoebaId": 3062005,
+            "text": "Tomorrow is Saturday.",
+            "author": "CN",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 8932579,
-          "cmn": "我爱图书馆。",
-          "author": "iiujik",
+          "tatoebaId": 409409,
+          "cmn": "明天是星期天。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 3823055,
-            "text": "I love libraries.",
+            "tatoebaId": 323310,
+            "text": "It is Sunday tomorrow.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 3378272,
-          "cmn": "他在图书馆里。",
-          "author": "GlossaMatik",
+          "tatoebaId": 1415796,
+          "cmn": "我明天不在这儿。",
+          "author": "sadhen",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 299429,
-            "text": "He is in his library.",
+            "tatoebaId": 749293,
+            "text": "Tomorrow I won't be here.",
+            "author": "Serhiy",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0495",
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "syllables": [
+        "zuó",
+        "tiān"
+      ],
+      "tones": [
+        2,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "yesterday"
+      ],
+      "ind": [
+        "kemarin"
+      ],
+      "idMachine": true,
+      "chars": [
+        "昨",
+        "天"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3076600,
+          "cmn": "昨天是星期四。",
+          "author": "tommyfang95",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 528533,
+            "text": "Yesterday was Thursday.",
+            "author": "wma",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12981762,
+            "text": "Kemarin hari Kamis.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 6486900,
+          "cmn": "昨天星期六。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5579558,
+            "text": "Yesterday was Saturday.",
+            "author": "garynw",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5500482,
+          "cmn": "昨天是星期五。",
+          "author": "egg0073",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5499845,
+            "text": "Yesterday was Friday.",
+            "author": "Adelpa",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0413",
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "syllables": [
+        "xīng",
+        "qī"
+      ],
+      "tones": [
+        1,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "week",
+        "day of the week",
+        "Sunday"
+      ],
+      "ind": [
+        "minggu",
+        "pekan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "星",
+        "期"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 385098,
+          "cmn": "今天星期几？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 476431,
+            "text": "What day is it today?",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13678462,
+            "text": "Hari ini hari apa?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 3076600,
+          "cmn": "昨天是星期四。",
+          "author": "tommyfang95",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 528533,
+            "text": "Yesterday was Thursday.",
+            "author": "wma",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12981762,
+            "text": "Kemarin hari Kamis.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 348445,
+          "cmn": "今天是星期一。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 238862,
+            "text": "It's Monday.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -778,73 +395,219 @@
       ]
     },
     {
-      "id": "L1-0083",
-      "hanzi": "电影院",
-      "pinyin": "diànyǐngyuàn",
+      "id": "L1-0415",
+      "hanzi": "星期天",
+      "pinyin": "xīngqītiān",
       "syllables": [
-        "diàn",
-        "yǐng",
-        "yuàn"
+        "xīng",
+        "qī",
+        "tiān"
       ],
       "tones": [
-        4,
-        3,
+        1,
+        1,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Sunday"
+      ],
+      "ind": [
+        "hari Minggu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "星",
+        "期",
+        "天"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 409409,
+          "cmn": "明天是星期天。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 323310,
+            "text": "It is Sunday tomorrow.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5911623,
+          "cmn": "我星期天在家。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 281868,
+            "text": "I stay at home on Sundays.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 779808,
+          "cmn": "昨天是星期天，不是星期六。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 244532,
+            "text": "Yesterday was Sunday, not Saturday.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0414",
+      "hanzi": "星期日",
+      "pinyin": "xīngqīrì",
+      "syllables": [
+        "xīng",
+        "qī",
+        "rì"
+      ],
+      "tones": [
+        1,
+        1,
         4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "cinema; movie theater"
+        "Sunday"
       ],
       "ind": [
-        "bioskop"
+        "hari Minggu"
       ],
       "idMachine": true,
       "chars": [
-        "电",
-        "影",
-        "院"
+        "星",
+        "期",
+        "日"
       ],
       "examples": [
         {
-          "tatoebaId": 10961151,
-          "cmn": "电影院有多少人？",
+          "tatoebaId": 1178260,
+          "cmn": "今天是星期日。",
+          "author": "treskro3",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 63119,
+            "text": "Today is Sunday.",
+            "author": "sacredceltic",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 676498,
+          "cmn": "星期日营业吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": "营业",
+          "en": {
+            "tatoebaId": 7704630,
+            "text": "Are you open for business on Sunday?",
+            "author": "potatoindespair",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 919630,
+          "cmn": "我的生日在星期日。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": "生日",
+          "en": {
+            "tatoebaId": 251422,
+            "text": "My birthday falls on Sunday.",
+            "author": "CN",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0308",
+      "hanzi": "日",
+      "pinyin": "rì",
+      "syllables": [
+        "rì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "sun",
+        "day",
+        "date, day of the month"
+      ],
+      "ind": [
+        "hari",
+        "tanggal",
+        "matahari"
+      ],
+      "idMachine": true,
+      "chars": [
+        "日"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 398978,
+          "cmn": "是十月三日。",
+          "author": "kellenparker",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 73449,
+            "text": "It's the third of October.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6056537,
+          "cmn": "今天是二〇一六年十一月二十三日。",
           "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 12114691,
-            "text": "How many people were in the cinema?",
+            "tatoebaId": 10540232,
+            "text": "Today is 23 November 2016.",
             "author": "sundown",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 2779141,
-          "cmn": "昨天我去电影院。",
-          "author": "Kiwi",
+          "tatoebaId": 6486872,
+          "cmn": "今天是二零一六年十一月二十三日。",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2600846,
-            "text": "I went to the cinema yesterday.",
-            "author": "anemone",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6918909,
-          "cmn": "你常常去电影院吗？",
-          "author": "ShaniceTomlinson7",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6918908,
-            "text": "Do you go to the movies often?",
-            "author": "kaiperkins271",
+            "tatoebaId": 10540232,
+            "text": "Today is 23 November 2016.",
+            "author": "sundown",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -852,72 +615,69 @@
       ]
     },
     {
-      "id": "L1-0100",
-      "hanzi": "饭店",
-      "pinyin": "fàndiàn",
+      "id": "L1-0452",
+      "hanzi": "月",
+      "pinyin": "yuè",
       "syllables": [
-        "fàn",
-        "diàn"
+        "yuè"
       ],
       "tones": [
-        4,
         4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "restaurant",
-        "hotel"
+        "moon",
+        "month",
+        "monthly"
       ],
       "ind": [
-        "restoran",
-        "hotel"
+        "bulan"
       ],
       "idMachine": true,
       "chars": [
-        "饭",
-        "店"
+        "月"
       ],
       "examples": [
         {
-          "tatoebaId": 1120765,
-          "cmn": "我要去饭店。",
-          "author": "cntrational",
+          "tatoebaId": 398978,
+          "cmn": "是十月三日。",
+          "author": "kellenparker",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1120766,
-            "text": "I'm going to the restaurant.",
-            "author": "cntrational",
+            "tatoebaId": 73449,
+            "text": "It's the third of October.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 452577,
-          "cmn": "我想去饭店吃晚饭。",
-          "author": "peipei",
+          "tatoebaId": 1182328,
+          "cmn": "是十月三号。",
+          "author": "Vortarulo",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 452580,
-            "text": "I wanna have dinner in a restaurant.",
-            "author": "peipei",
+            "tatoebaId": 398977,
+            "text": "It's October the third.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 431118,
-          "cmn": "我们的饭店是最好的。",
-          "author": "GlossaMatik",
+          "tatoebaId": 332135,
+          "cmn": "今天是几月几号？",
+          "author": "Aerhus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 431117,
-            "text": "Our restaurant is the best.",
-            "author": "CM",
+            "tatoebaId": 332138,
+            "text": "What is the date today?",
+            "author": "Aerhus",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -925,150 +685,67 @@
       ]
     },
     {
-      "id": "L1-0451",
-      "hanzi": "远",
-      "pinyin": "yuǎn",
+      "id": "L1-0273",
+      "hanzi": "年",
+      "pinyin": "nián",
       "syllables": [
-        "yuǎn"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "far",
-        "distant",
-        "remote",
-        "(intensifier in a comparison) by far",
-        "much (lower etc)"
-      ],
-      "ind": [
-        "jauh"
-      ],
-      "idMachine": true,
-      "chars": [
-        "远"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 4764659,
-          "cmn": "我家很远。",
-          "author": "ryanwoo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4757673,
-            "text": "My home is far away.",
-            "author": "Doremi391",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7768295,
-          "cmn": "我们有多远了？",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 619764,
-            "text": "How far away are we?",
-            "author": "ulyssemc1",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 404631,
-          "cmn": "南非很远。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "南非",
-          "en": {
-            "tatoebaId": 404626,
-            "text": "South Africa is far away.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0054",
-      "hanzi": "从",
-      "pinyin": "cóng",
-      "syllables": [
-        "cóng"
+        "nián"
       ],
       "tones": [
         2
       ],
       "pos": [
-        "Prep"
+        "M"
       ],
       "en": [
-        "from; through; via",
-        "(bound form) to follow",
-        "(bound form) to obey",
-        "(bound form) to engage in (an activity)",
-        "(used before a negative) ever",
-        "(bound form) (Taiwan pr. [zong4]) retainer; attendant"
+        "year"
       ],
       "ind": [
-        "dari",
-        "sejak"
+        "tahun"
       ],
       "idMachine": true,
       "chars": [
-        "从"
+        "年"
       ],
       "examples": [
         {
-          "tatoebaId": 2078427,
-          "cmn": "他从不喝酒。",
-          "author": "User5120",
+          "tatoebaId": 760902,
+          "cmn": "今年是哪一年？",
+          "author": "ednorog",
           "license": "CC BY 2.0 FR",
-          "outside": "喝酒",
+          "outside": null,
           "en": {
-            "tatoebaId": 288897,
-            "text": "He never drinks alcohol.",
-            "author": "CK",
+            "tatoebaId": 682508,
+            "text": "What year is it?",
+            "author": "Source_VOA",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 9453444,
-          "cmn": "我从来没吃过中国菜。",
-          "author": "BobbyLee",
+          "tatoebaId": 333474,
+          "cmn": "一年有十二个月。",
+          "author": "al",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 5118368,
-            "text": "I have never eaten Chinese food.",
-            "author": "Lindoula",
+            "tatoebaId": 73060,
+            "text": "A year has twelve months.",
+            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 13669208,
-            "text": "Aku belum pernah makan makanan Cina.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 767733,
-          "cmn": "他从早吃到晚。",
-          "author": "eastasiastudent",
+          "tatoebaId": 5297688,
+          "cmn": "今年是二零一一年。",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 767734,
-            "text": "He eats non-stop.",
-            "author": "sundown",
+            "tatoebaId": 5327634,
+            "text": "This year is 2011.",
+            "author": "Jeannierocket",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1076,140 +753,69 @@
       ]
     },
     {
-      "id": "L1-0312",
-      "hanzi": "山",
-      "pinyin": "shān",
+      "id": "L1-0180",
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
       "syllables": [
-        "shān"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "mountain; hill",
-        "(coll.) small bundle of straw for silkworms to spin cocoons on"
-      ],
-      "ind": [
-        "gunung",
-        "bukit"
-      ],
-      "idMachine": true,
-      "chars": [
-        "山"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 15,
-          "cmn": "我以前在山里。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "以前",
-          "en": {
-            "tatoebaId": 1290,
-            "text": "I was in the mountains.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8875031,
-          "cmn": "山是绿色的。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": "绿色",
-          "en": {
-            "tatoebaId": 963699,
-            "text": "The mountain is green.",
-            "author": "Eevee",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9501215,
-          "cmn": "太阳下山了。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "太阳",
-          "en": {
-            "tatoebaId": 275033,
-            "text": "The sun is going down.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0162",
-      "hanzi": "机场",
-      "pinyin": "jīchǎng",
-      "syllables": [
-        "jī",
-        "chǎng"
+        "jīn",
+        "nián"
       ],
       "tones": [
         1,
-        3
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "airport; airfield"
+        "this year"
       ],
       "ind": [
-        "bandara",
-        "bandar udara"
+        "tahun ini"
       ],
       "idMachine": true,
       "chars": [
-        "机",
-        "场"
+        "今",
+        "年"
       ],
       "examples": [
         {
-          "tatoebaId": 794232,
-          "cmn": "我现在在机场。",
-          "author": "fucongcong",
+          "tatoebaId": 760902,
+          "cmn": "今年是哪一年？",
+          "author": "ednorog",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 257501,
-            "text": "I'm at the airport now.",
-            "author": "CK",
+            "tatoebaId": 682508,
+            "text": "What year is it?",
+            "author": "Source_VOA",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 344190,
-          "cmn": "到机场有多远？",
-          "author": "fucongcong",
+          "tatoebaId": 5297688,
+          "cmn": "今年是二零一一年。",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 18189,
-            "text": "How far is it to the airport?",
-            "author": "CK",
+            "tatoebaId": 5327634,
+            "text": "This year is 2011.",
+            "author": "Jeannierocket",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 745828,
-          "cmn": "我会开车送你去机场。",
-          "author": "fucongcong",
+          "tatoebaId": 8738755,
+          "cmn": "汤姆今年三十岁。",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "汤姆",
           "en": {
-            "tatoebaId": 18185,
-            "text": "I'll drive you to the airport.",
+            "tatoebaId": 1024810,
+            "text": "Tom is thirty years old.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1218,71 +824,69 @@
       ]
     },
     {
-      "id": "L1-0045",
-      "hanzi": "车站",
-      "pinyin": "chēzhàn",
+      "id": "L1-0247",
+      "hanzi": "明年",
+      "pinyin": "míngnián",
       "syllables": [
-        "chē",
-        "zhàn"
+        "míng",
+        "nián"
       ],
       "tones": [
-        1,
-        4
+        2,
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "rail station",
-        "bus stop"
+        "next year"
       ],
       "ind": [
-        "stasiun",
-        "halte"
+        "tahun depan"
       ],
       "idMachine": true,
       "chars": [
-        "车",
-        "站"
+        "明",
+        "年"
       ],
       "examples": [
         {
-          "tatoebaId": 2318424,
-          "cmn": "这就是车站吗？",
-          "author": "User5120",
+          "tatoebaId": 1446903,
+          "cmn": "我明年17岁。",
+          "author": "asosan",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1460446,
-            "text": "Is this the train station?",
-            "author": "piksea",
+            "tatoebaId": 325124,
+            "text": "I'll be seventeen next year.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 334028,
-          "cmn": "附近有个车站。",
-          "author": "fucongcong",
+          "tatoebaId": 336175,
+          "cmn": "我明年想学中文。",
+          "author": "domi",
           "license": "CC BY 2.0 FR",
-          "outside": "附近",
+          "outside": null,
           "en": {
-            "tatoebaId": 18740,
-            "text": "There is a bus stop near by.",
-            "author": "piksea",
+            "tatoebaId": 409536,
+            "text": "I want to learn Chinese next year.",
+            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 347124,
-          "cmn": "他要去车站。",
-          "author": "zhouj1955",
+          "tatoebaId": 857223,
+          "cmn": "我明年想学汉语。",
+          "author": "U2FS",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 294089,
-            "text": "He will have to go to the station.",
+            "tatoebaId": 409536,
+            "text": "I want to learn Chinese next year.",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
@@ -1291,407 +895,70 @@
       ]
     },
     {
-      "id": "L1-0461",
-      "hanzi": "站",
-      "pinyin": "zhàn",
+      "id": "L1-0303",
+      "hanzi": "去年",
+      "pinyin": "qùnián",
       "syllables": [
-        "zhàn"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "station",
-        "to stand",
-        "to halt",
-        "to stop",
-        "branch of a company or organization",
-        "website"
-      ],
-      "ind": [
-        "berdiri",
-        "stasiun",
-        "halte"
-      ],
-      "idMachine": true,
-      "chars": [
-        "站"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 6559053,
-          "cmn": "我在哪站下？",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 9414946,
-            "text": "Which stop do I alight at?",
-            "author": "BobbyLee",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1394786,
-          "cmn": "我站在你这边。",
-          "author": "mtdot",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 68795,
-            "text": "I'm on your side.",
-            "author": "oschwimmer",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1450414,
-          "cmn": "他站在了门口。",
-          "author": "asosan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 302277,
-            "text": "He was standing at the door.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0422",
-      "hanzi": "学院",
-      "pinyin": "xuéyuàn",
-      "syllables": [
-        "xué",
-        "yuàn"
-      ],
-      "tones": [
-        2,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "college",
-        "educational institute",
-        "school",
-        "faculty"
-      ],
-      "ind": [
-        "akademi",
-        "institut",
-        "fakultas"
-      ],
-      "idMachine": true,
-      "chars": [
-        "学",
-        "院"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1577196,
-          "cmn": "去年我们学院建了一个新教学楼。",
-          "author": "eastasiastudent",
-          "license": "CC BY 2.0 FR",
-          "outside": "建",
-          "en": {
-            "tatoebaId": 1577215,
-            "text": "A new classroom building was built in our institute last year.",
-            "author": "eastasiastudent",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0110",
-      "hanzi": "风",
-      "pinyin": "fēng",
-      "syllables": [
-        "fēng"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "wind",
-        "news",
-        "style",
-        "custom",
-        "manner"
-      ],
-      "ind": [
-        "angin"
-      ],
-      "idMachine": true,
-      "chars": [
-        "风"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 510694,
-          "cmn": "今天有风。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 242970,
-            "text": "It is windy today.",
-            "author": "CC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 12420144,
-          "cmn": "昨天一点风也没有。",
-          "author": "jkyochen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 244523,
-            "text": "There was no wind at all yesterday.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2456085,
-          "cmn": "刮的是北风。",
-          "author": "fenfang557",
-          "license": "CC BY 2.0 FR",
-          "outside": "刮",
-          "en": {
-            "tatoebaId": 2476360,
-            "text": "A north wind is blowing.",
-            "author": "FeuDRenais2",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0449",
-      "hanzi": "雨",
-      "pinyin": "yǔ",
-      "syllables": [
-        "yǔ"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "rain"
-      ],
-      "ind": [
-        "hujan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "雨"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10617221,
-          "cmn": "在下雨吗？",
-          "author": "DaoSeng",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1289095,
-            "text": "Is it raining?",
-            "author": "Vortarulo",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2807844,
-          "cmn": "雨下了三天。",
-          "author": "cienias",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2566602,
-            "text": "It was rainy for three days.",
-            "author": "AsliAbbasi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 333989,
-          "cmn": "雨下了一周。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "一周",
-          "en": {
-            "tatoebaId": 26703,
-            "text": "The rain lasted a week.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0396",
-      "hanzi": "下雨",
-      "pinyin": "xiàyǔ",
-      "syllables": [
-        "xià",
-        "yǔ"
+        "qù",
+        "nián"
       ],
       "tones": [
         4,
-        3
-      ],
-      "pos": [],
-      "en": [
-        "to rain"
-      ],
-      "ind": [
-        "hujan turun"
-      ],
-      "idMachine": true,
-      "chars": [
-        "下",
-        "雨"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1366202,
-          "cmn": "不在下雨。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 773233,
-            "text": "It is not raining.",
-            "author": "marloncori",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3952421,
-          "cmn": "正在下雨。",
-          "author": "cooper",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2713757,
-            "text": "It's raining now.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10534879,
-          "cmn": "今天下雨。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4646117,
-            "text": "It's raining today.",
-            "author": "zpaden",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0360",
-      "hanzi": "天气",
-      "pinyin": "tiānqì",
-      "syllables": [
-        "tiān",
-        "qì"
-      ],
-      "tones": [
-        1,
-        4
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "weather"
+        "last year"
       ],
       "ind": [
-        "cuaca"
+        "tahun lalu"
       ],
       "idMachine": true,
       "chars": [
-        "天",
-        "气"
+        "去",
+        "年"
       ],
       "examples": [
         {
-          "tatoebaId": 333127,
-          "cmn": "今天天气很好。",
-          "author": "fucongcong",
+          "tatoebaId": 8924835,
+          "cmn": "你去年住在哪儿？",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 242938,
-            "text": "It's fine today.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 13732610,
-            "text": "Hari ini cuacanya bagus sekali.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 11837650,
-          "cmn": "天气很好。",
-          "author": "Lemmih",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 11073213,
-            "text": "The weather is nice.",
+            "tatoebaId": 69492,
+            "text": "Where did you live last year?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 1413689,
-          "cmn": "今天天气不错！",
-          "author": "lingxy",
+          "tatoebaId": 5907629,
+          "cmn": "她去年出生。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "出生",
+          "en": {
+            "tatoebaId": 313842,
+            "text": "She was born last year.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 336618,
+          "cmn": "去年下了很多雪。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1413691,
-            "text": "The weather is fine today!",
-            "author": "lingxy",
+            "tatoebaId": 19421,
+            "text": "We had a lot of snow last year.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1699,143 +966,72 @@
       ]
     },
     {
-      "id": "L1-0344",
-      "hanzi": "树",
-      "pinyin": "shù",
+      "id": "L1-0007",
+      "hanzi": "白天",
+      "pinyin": "báitiān",
       "syllables": [
-        "shù"
+        "bái",
+        "tiān"
       ],
       "tones": [
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "tree",
-        "to cultivate",
-        "to set up"
-      ],
-      "ind": [
-        "pohon"
-      ],
-      "idMachine": true,
-      "chars": [
-        "树"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1442801,
-          "cmn": "我爱树干。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1442805,
-            "text": "I love the trunk.",
-            "author": "rul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4761858,
-          "cmn": "树在哪里？",
-          "author": "DrWinters",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4759519,
-            "text": "Where is the tree?",
-            "author": "aldar",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 442154,
-          "cmn": "树是绿的。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "绿",
-          "en": {
-            "tatoebaId": 182196,
-            "text": "The trees are green.",
-            "author": "TRANG",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0150",
-      "hanzi": "花",
-      "pinyin": "huā",
-      "syllables": [
-        "huā"
-      ],
-      "tones": [
+        2,
         1
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "flower",
-        "blossom",
-        "fancy pattern",
-        "florid",
-        "to spend (money, time)",
-        "(coll.) lecherous"
+        "daytime",
+        "during the day",
+        "day"
       ],
       "ind": [
-        "bunga",
-        "menghabiskan (uang atau waktu)"
+        "siang hari"
       ],
       "idMachine": true,
       "chars": [
-        "花"
+        "白",
+        "天"
       ],
       "examples": [
         {
-          "tatoebaId": 1187312,
-          "cmn": "这是花吗？",
-          "author": "Vortarulo",
+          "tatoebaId": 10484361,
+          "cmn": "那时是白天。",
+          "author": "BobbyLee",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "那时",
           "en": {
-            "tatoebaId": 1187305,
-            "text": "Is this a flower?",
-            "author": "FiRez",
+            "tatoebaId": 9116537,
+            "text": "It was daytime.",
+            "author": "Amastan",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 5624923,
-          "cmn": "谢谢你的花！",
-          "author": "verdastelo9604",
+          "tatoebaId": 333994,
+          "cmn": "他白天睡觉，晚上工作。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2785937,
-            "text": "Thank you for the flowers!",
-            "author": "Dejo",
+            "tatoebaId": 301559,
+            "text": "He sleeps by day and works by night.",
+            "author": "shekitten",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 4313892,
-          "cmn": "一个爱花的人坏不到哪里去。",
-          "author": "cindycute",
+          "tatoebaId": 1316024,
+          "cmn": "他白天睡夜晚工作。",
+          "author": "shanghainese",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "夜晚",
           "en": {
-            "tatoebaId": 4313650,
-            "text": "A person who likes flowers can't be evil.",
-            "author": "mervert1",
+            "tatoebaId": 1211531,
+            "text": "He sleeps during the day and works at night.",
+            "author": "alec",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1845,29 +1041,29 @@
   ],
   "casual": [
     {
-      "id": "c-u10-01",
+      "id": "c-u07-01",
       "unit": "u10",
-      "hanzi": "逛街",
-      "pinyin": "guàng jiē",
+      "hanzi": "礼拜天",
+      "pinyin": "lǐ bài tiān",
       "syllables": [
-        "guàng",
-        "jiē"
+        "lǐ",
+        "bài",
+        "tiān"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "去商店",
+        "hanzi": "星期天",
         "wordIds": [
-          "L1-0302",
-          "L1-0314"
+          "L1-0415"
         ]
       },
       "meaning": {
-        "id": "jalan-jalan ke toko, cuci mata",
-        "en": "to go shopping, window-shop"
+        "id": "hari Minggu",
+        "en": "Sunday"
       },
       "situation": {
-        "id": "Mengajak teman jalan-jalan di pertokoan.",
-        "en": "Inviting a friend to wander around the shops."
+        "id": "Menyebut hari Minggu dalam obrolan sehari-hari.",
+        "en": "Talking about Sunday in everyday speech."
       },
       "evidence": [
         "cedict",
@@ -1877,28 +1073,28 @@
       "machine": true
     },
     {
-      "id": "c-u10-02",
+      "id": "c-u07-02",
       "unit": "u10",
-      "hanzi": "溜达",
-      "pinyin": "liū da",
+      "hanzi": "礼拜",
+      "pinyin": "lǐ bài",
       "syllables": [
-        "liū",
-        "da"
+        "lǐ",
+        "bài"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "走走",
+        "hanzi": "星期",
         "wordIds": [
-          "L1-0490"
+          "L1-0413"
         ]
       },
       "meaning": {
-        "id": "jalan-jalan santai",
-        "en": "to stroll"
+        "id": "minggu (pekan)",
+        "en": "week"
       },
       "situation": {
-        "id": "Jalan kaki santai setelah makan atau di taman.",
-        "en": "Taking a relaxed walk after a meal or in a park."
+        "id": "Menyebut pekan, misalnya \"minggu depan\".",
+        "en": "Talking about a week, e.g. \"next week\"."
       },
       "evidence": [
         "cedict",
@@ -1908,269 +1104,36 @@
       "machine": true
     },
     {
-      "id": "c-u10-03",
+      "id": "c-u07-07",
       "unit": "u10",
-      "hanzi": "老远",
-      "pinyin": "lǎo yuǎn",
+      "hanzi": "明儿",
+      "pinyin": "míngr",
       "syllables": [
-        "lǎo",
-        "yuǎn"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "很远",
-        "wordIds": [
-          "L1-0146",
-          "L1-0451"
-        ]
-      },
-      "meaning": {
-        "id": "jauh banget",
-        "en": "very far"
-      },
-      "situation": {
-        "id": "Mengeluh tempatnya jauh sekali.",
-        "en": "Complaining that a place is really far."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u10-04",
-      "unit": "u10",
-      "hanzi": "地儿",
-      "pinyin": "dìr",
-      "syllables": [
-        "dì",
+        "míng",
         "r"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "地方",
+        "hanzi": "明天",
         "wordIds": [
-          "L1-0071"
+          "L1-0248"
         ]
       },
       "meaning": {
-        "id": "tempat",
-        "en": "place, spot"
+        "id": "besok",
+        "en": "tomorrow"
       },
       "situation": {
-        "id": "Menyebut tempat, misalnya \"tempat yang enak\".",
-        "en": "Talking about a place, e.g. \"a nice spot\"."
+        "id": "Bilang \"besok\" dengan logat utara yang santai.",
+        "en": "Saying \"tomorrow\" in a relaxed northern way."
       },
       "evidence": [
         "cedict",
         "wiktionary"
       ],
       "machine": true
-    },
-    {
-      "id": "c-u10-05",
-      "unit": "u10",
-      "hanzi": "出门",
-      "pinyin": "chū mén",
-      "syllables": [
-        "chū",
-        "mén"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "出去",
-        "wordIds": [
-          "L1-0050"
-        ]
-      },
-      "meaning": {
-        "id": "keluar rumah",
-        "en": "to go out (of the house)"
-      },
-      "situation": {
-        "id": "Bilang sedang atau akan keluar rumah.",
-        "en": "Saying you are going out of the house."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
     }
   ],
   "relatedCasual": [],
-  "dialog": {
-    "id": "d-u10",
-    "title": {
-      "id": "Jalan-jalan saat hujan",
-      "en": "Going out in the rain"
-    },
-    "situation": {
-      "id": "Sabtu siang. Adik ingin jalan-jalan ke mal, tapi di luar sedang hujan. Mereka memutuskan pesan taksi lewat aplikasi.",
-      "en": "Saturday afternoon. Little sister wants to go to the mall, but it's raining. They decide to book a taxi on an app."
-    },
-    "machine": true,
-    "speakers": {
-      "meimei": {
-        "name": {
-          "id": "Adik perempuan",
-          "en": "Little sister"
-        },
-        "gender": "female"
-      },
-      "mama": {
-        "name": {
-          "id": "Ibu",
-          "en": "Mom"
-        },
-        "gender": "female"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "妈妈，我们去逛街吧！",
-        "tokens": [
-          {
-            "text": "妈妈",
-            "pinyin": "māma"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "我们",
-            "pinyin": "wǒmen"
-          },
-          {
-            "text": "去",
-            "pinyin": "qù"
-          },
-          {
-            "text": "逛街",
-            "pinyin": "guàng jiē"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Mom, let's go shopping!",
-        "id": "Bu, ayo jalan-jalan ke toko!",
-        "machine": true
-      },
-      {
-        "speaker": "mama",
-        "gender": "female",
-        "cmn": "外边下雨了。",
-        "tokens": [
-          {
-            "text": "外边",
-            "pinyin": "wàibian"
-          },
-          {
-            "text": "下雨",
-            "pinyin": "xiàyǔ"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "It's raining outside.",
-        "id": "Di luar hujan.",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "商场不远，我们打车去。",
-        "tokens": [
-          {
-            "text": "商场",
-            "pinyin": "shāngchǎng"
-          },
-          {
-            "text": "不",
-            "pinyin": "bù"
-          },
-          {
-            "text": "远",
-            "pinyin": "yuǎn"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "我们",
-            "pinyin": "wǒmen"
-          },
-          {
-            "text": "打车",
-            "pinyin": "dǎchē"
-          },
-          {
-            "text": "去",
-            "pinyin": "qù"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "The mall isn't far, we'll take a taxi.",
-        "id": "Malnya nggak jauh, kita naik taksi saja.",
-        "machine": true
-      },
-      {
-        "speaker": "mama",
-        "gender": "female",
-        "cmn": "好吧，那我们出门吧。",
-        "tokens": [
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "那",
-            "pinyin": "nà"
-          },
-          {
-            "text": "我们",
-            "pinyin": "wǒmen"
-          },
-          {
-            "text": "出门",
-            "pinyin": "chū mén"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Alright, let's head out then.",
-        "id": "Ya sudah, ayo kita berangkat.",
-        "machine": true
-      }
-    ]
-  }
+  "dialog": null
 }

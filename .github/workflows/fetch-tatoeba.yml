@@ -10,6 +10,7 @@ on:
       - scripts/filter-sentences.ts
       - src/lib/sentences.ts
       - data/hsk1/units.json
+      - data/hsk1/words.json
 
 permissions:
   contents: write
@@ -68,15 +69,18 @@ jobs:
       - name: Build sentences
         run: npm run build:sentences -- --in "$RUNNER_TEMP/tatoeba"
 
+      - name: Rebuild lesson files
+        run: npm run build:lessons
+
       - name: Commit sentences
         if: github.ref == 'refs/heads/main'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/hsk1/sentences.json data/hsk1/sentences-report.json
+          git add data/hsk1/sentences.json data/hsk1/sentences-report.json public/data/hsk1
           if git diff --cached --quiet; then
-            echo "No changes in data/hsk1/sentences*.json"
+            echo "No changes in sentences or lesson files"
             exit 0
           fi
           git commit -m "Data: update Tatoeba sentences"

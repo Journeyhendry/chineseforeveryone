@@ -15,6 +15,7 @@
     "fetch:casual-evidence": "tsx scripts/fetch-casual-evidence.ts",
     "build:casual": "tsx scripts/build-casual.ts",
     "check:visuals": "tsx scripts/check-visuals.ts",
+    "check:data": "tsx scripts/check-data.ts",
     "build:characters": "tsx scripts/build-characters.ts",
     "build:scenes": "tsx scripts/build-scenes.ts",
     "build:lessons": "tsx scripts/build-lessons.ts",

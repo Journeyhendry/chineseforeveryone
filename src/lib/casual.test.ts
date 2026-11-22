@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import unitsFile from '../../data/hsk1/units.json'
 import words from '../../data/hsk1/words.json'
 import candidatesFile from '../../data/hsk1/casual-candidates.json'
+import remapFile from '../../data/hsk1/casual-remap.json'
 import {
   buildCasual,
   buildDialogContext,
@@ -31,7 +32,8 @@ import {
   type Speaker,
   type WiktionaryPage,
 } from './casual.ts'
-import type { UnitInput, WordInput } from './sentences.ts'
+import { buildCasualRemapped, remapCandidates, type CasualRemap } from './casual-remap.ts'
+import { buildLexicon, segment, type UnitInput, type WordInput } from './sentences.ts'
 
 // ---------- fixtures ----------
 const smallWords: (WordInput & { pinyin: string })[] = [
@@ -419,36 +421,55 @@ describe('buildCasual', () => {
 // ---------- data ----------
 const allWords = words as (WordInput & { pinyin: string })[]
 const allUnits = unitsFile.units as UnitInput[]
+const remap = remapFile as CasualRemap
 
-describe('data/hsk1/casual-candidates.json', () => {
+describe('data/hsk1/casual-candidates.json + casual-remap.json (task 2b)', () => {
   const items = (candidatesFile as CandidatesFile).items
-  // 6-8 per unit in the first draft; replacement candidates may be appended later for units that ran short.
-  it('is valid and has at least 6 candidates per unit', () => {
-    expect(validateCandidates(items, allWords, allUnits)).toEqual([])
-    for (const u of allUnits) expect(items.filter((c) => c.unit === u.id).length, u.id).toBeGreaterThanOrEqual(6)
+  const mapped = remapCandidates(items, remap, allWords, allUnits)
+  it('keeps the 142 drafts of task 3b untouched and has a decision for each of them', () => {
+    expect(items).toHaveLength(142)
+    for (const c of items) expect(remap.candidates[c.id], c.id).toBeDefined()
+    expect(Object.keys(remap.candidates).sort()).toEqual(items.map((c) => c.id).sort())
+  })
+  it('puts every kept candidate in a known unit with HSK words from the 300', () => {
+    expect(validateCandidates(mapped.items, allWords, allUnits)).toEqual([])
+    expect(mapped.items.length + mapped.dropped.length).toBe(items.length)
+    for (const d of mapped.dropped) expect(d.reason.length, d.id).toBeGreaterThan(5)
+  })
+  it('only keeps candidates whose HSK version is made of the 300 words', () => {
+    const lex = buildLexicon(allWords, allUnits)
+    for (const c of mapped.items) {
+      expect(segment(c.hsk.hanzi, lex).filter((t) => t.kind === 'foreign'), `${c.id} ${c.hsk.hanzi}`).toEqual([])
+    }
+  })
+  it('places every draft dialog in a known unit', () => {
+    const ids = new Set(allUnits.map((u) => u.id))
+    for (const [id, rule] of Object.entries(remap.dialogs)) expect(ids.has(rule.unit), id).toBe(true)
   })
 })
 
 const optional = import.meta.glob('../../data/hsk1/{dialogs-draft,casual-evidence-raw,casual-review}.json', { eager: true, import: 'default' })
-const committed = import.meta.glob('../../data/hsk1/{casual,casual-evidence,dialogs,casual-report}.json', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>
+const committed = import.meta.glob('../../data/hsk1/{casual,casual-evidence,dialogs,dialogs-retired,casual-report}.json', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>
 const get = <T,>(name: string): T | null => (optional[`../../data/hsk1/${name}`] as T | undefined) ?? null
 const raw = (name: string): string | undefined => committed[`../../data/hsk1/${name}`]
-const haveOutputs = ['casual.json', 'casual-evidence.json', 'dialogs.json', 'casual-report.json'].every((n) => raw(n) !== undefined)
+const haveOutputs = ['casual.json', 'casual-evidence.json', 'dialogs.json', 'dialogs-retired.json', 'casual-report.json'].every((n) => raw(n) !== undefined)
 
 describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
   const casual = haveOutputs ? JSON.parse(raw('casual.json')!) : { items: [] }
   const evid = haveOutputs ? JSON.parse(raw('casual-evidence.json')!) : { items: [] }
   const dialogs = haveOutputs ? JSON.parse(raw('dialogs.json')!) : { speakers: {}, dialogs: [] }
+  const retired = haveOutputs ? JSON.parse(raw('dialogs-retired.json')!) : { dialogs: [] }
   const report = haveOutputs ? JSON.parse(raw('casual-report.json')!) : {}
 
   it('equals a fresh build (run npm run build:casual)', () => {
-    const fresh = buildCasual({
+    const fresh = buildCasualRemapped({
       words: allWords,
       units: allUnits,
       candidates: candidatesFile as CandidatesFile,
       dialogs: get<DialogsFile>('dialogs-draft.json'),
       evidence: get<RawEvidenceFile>('casual-evidence-raw.json'),
       reviews: get<ReviewFile>('casual-review.json'),
+      remap,
     })
     for (const [name, text] of Object.entries(fresh)) expect(raw(name), name).toBe(text)
   })
@@ -469,12 +490,18 @@ describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
       expect(e.review && checkLayer3({ id: i.id, comment: '', ...e.review } as never).passed, i.id).toBe(true)
     }
   })
+  it('keeps a line of evidence for all 142 drafts, marking the dropped ones', () => {
+    expect(evid.items).toHaveLength(142)
+    expect(evid.items.filter((e: { dropped?: string }) => e.dropped).length).toBe(report.droppedCandidates.length)
+    for (const e of evid.items as { dropped?: string; passed: boolean }[]) if (e.dropped) expect(e.passed).toBe(false)
+  })
   it('has at most one dialog per unit with 4-8 lines and known speakers; missing units are reported', () => {
     const missing = new Set(report.unitsWithoutDialog as string[])
     for (const u of allUnits) {
       const ds = dialogs.dialogs.filter((d: { unit: string }) => d.unit === u.id)
       expect(ds.length, u.id).toBeLessThanOrEqual(1)
       if (ds.length === 0) expect(missing.has(u.id), u.id).toBe(true)
+      else expect(missing.has(u.id), u.id).toBe(false)
     }
     for (const d of dialogs.dialogs as { id: string; lines: { speaker: string; gender: string }[] }[]) {
       expect(d.lines.length, d.id).toBeGreaterThanOrEqual(4)
@@ -485,14 +512,12 @@ describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
       }
     }
   })
-})
-
-describe.skipIf(!get('dialogs-draft.json'))('data/hsk1/dialogs-draft.json', () => {
-  it('passes the dialog check when every candidate is treated as passed (only HSK 1 + candidate text)', () => {
+  it('splits the 20 draft dialogs into kept (dialogs.json) and retired (dialogs-retired.json) with a reason', () => {
     const draft = get<DialogsFile>('dialogs-draft.json')!
-    const items = (candidatesFile as CandidatesFile).items
-    const ctx = buildDialogContext(allWords, allUnits, items, items.map((c) => c.id))
-    expect(draft.dialogs.map((d) => d.unit)).toEqual(allUnits.map((u) => u.id))
-    for (const d of draft.dialogs) expect(checkDialog(d, draft.speakers, ctx).reasons, d.id).toEqual([])
+    const kept = dialogs.dialogs.map((d: { id: string }) => d.id)
+    const gone = retired.dialogs.map((d: { id: string }) => d.id)
+    expect([...kept, ...gone].sort()).toEqual(draft.dialogs.map((d) => d.id).sort())
+    expect(kept.filter((id: string) => gone.includes(id))).toEqual([])
+    for (const d of retired.dialogs as { retired: { reason: string; details: string[] } }[]) expect(d.retired.reason.length).toBeGreaterThan(5)
   })
 })

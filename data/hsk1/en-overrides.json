@@ -57,6 +57,22 @@
     ],
     "source": "manual (wording from CC-CEDICT 点 dian3): the first six CEDICT senses omit the o'clock and dot uses taught in HSK 1"
   },
+  "L1-0235": {
+    "en": [
+      "it's nothing; never mind",
+      "to be free (have nothing to do)",
+      "to be all right (not hurt)"
+    ],
+    "source": "manual (wording from CC-CEDICT 没事 mei2 shi4): reordered so the everyday \"never mind\" comes first"
+  },
+  "L1-0371": {
+    "en": [
+      "to play",
+      "to have fun",
+      "to hang out"
+    ],
+    "source": "manual (kept from the 2021 entry 玩儿): CEDICT 玩 wan2 lists rarer senses (toy, to trifle with) first"
+  },
   "L1-0416": {
     "en": [
       "OK; all right",
@@ -87,5 +103,131 @@
       "Yuan dynasty (1279-1368)"
     ],
     "source": "manual (wording from CC-CEDICT 元 yuan2): reordered so the currency sense taught in HSK 1 comes first"
+  },
+  "L1-0501": {
+    "en": [
+      "side; edge",
+      "border; boundary"
+    ],
+    "source": "manual (wording from CC-CEDICT 边 bian1): CEDICT lists \"simultaneously\" and the suffix use among six senses; shortened to the two basic ones"
+  },
+  "L1-0502": {
+    "en": [
+      "don't",
+      "do not want; no need to"
+    ],
+    "source": "manual (wording from CC-CEDICT 不要 bu2 yao4): CEDICT only has the prohibition; the \"do not want\" use is added"
+  },
+  "L1-0503": {
+    "en": [
+      "supermarket"
+    ],
+    "source": "manual (wording from CC-CEDICT 超市 chao1 shi4): CEDICT adds an abbreviation note"
+  },
+  "L1-0504": {
+    "en": [
+      "taxi"
+    ],
+    "source": "manual (wording from CC-CEDICT 出租车 chu1 zu1 che1): CEDICT adds a Taiwan-only sense"
+  },
+  "L1-0505": {
+    "en": [
+      "everyone",
+      "everybody"
+    ],
+    "source": "manual (wording from CC-CEDICT 大家 da4 jia1): CEDICT also has two rare noun senses (influential family, great expert)"
+  },
+  "L1-0506": {
+    "en": [
+      "shop; store",
+      "inn; old-style hotel"
+    ],
+    "source": "manual (wording from CC-CEDICT 店 dian4): senses swapped so the HSK 1 sense comes first"
+  },
+  "L1-0510": {
+    "en": [
+      "classifier for clothes, events, things",
+      "item"
+    ],
+    "source": "manual (wording from CC-CEDICT 件 jian4): CEDICT lists \"component\" before the classifier use"
+  },
+  "L1-0513": {
+    "en": [
+      "to sell"
+    ],
+    "source": "manual (wording from CC-CEDICT 卖 mai4): the other senses (to betray, to show off) are not HSK 1"
+  },
+  "L1-0514": {
+    "en": [
+      "cat"
+    ],
+    "source": "manual (wording from CC-CEDICT 猫 mao1): CEDICT adds dialect and loanword (modem) senses"
+  },
+  "L1-0515": {
+    "en": [
+      "that one",
+      "that (as opposed to this)",
+      "(filler) um; you know"
+    ],
+    "source": "manual (wording from CC-CEDICT 那个 na4 ge5): CEDICT lists six senses, shortened to the three a beginner meets"
+  },
+  "L1-0516": {
+    "en": [
+      "which one",
+      "which"
+    ],
+    "source": "manual (wording from CC-CEDICT 哪个 na3 ge5): CEDICT gives \"which\" and \"who\"; 谁 is the HSK 1 word for who"
+  },
+  "L1-0519": {
+    "en": [
+      "cheap; inexpensive"
+    ],
+    "source": "manual (wording from CC-CEDICT 便宜 pian2 yi5): the other senses are not HSK 1"
+  },
+  "L1-0521": {
+    "en": [
+      "apple"
+    ],
+    "source": "manual (wording from CC-CEDICT 苹果 ping2 guo3): CEDICT lists the company first"
+  },
+  "L1-0525": {
+    "en": [
+      "hello (answering or making a phone call)",
+      "hey (to get attention)",
+      "to feed (an animal, baby, patient)"
+    ],
+    "source": "manual (wording from CC-CEDICT 喂 wei4): HSK 1 teaches 喂 as the telephone greeting and attention call; the feeding sense is kept last"
+  },
+  "L1-0527": {
+    "en": [
+      "a few; some (classifier for an indefinite small number)"
+    ],
+    "source": "manual (wording from CC-CEDICT 些 xie1): shortened"
+  },
+  "L1-0528": {
+    "en": [
+      "snow"
+    ],
+    "source": "manual (wording from CC-CEDICT 雪 xue3): CEDICT adds a literary sense"
+  },
+  "L1-0530": {
+    "en": [
+      "a bit; somewhat (usually of something undesirable)"
+    ],
+    "source": "manual (wording from CC-CEDICT 有点儿 you3 dian3 r5): wording from CEDICT 有點兒 senses; adds the usual connotation"
+  },
+  "L1-0532": {
+    "en": [
+      "this",
+      "this one"
+    ],
+    "source": "manual (wording from CC-CEDICT 这个 zhe4 ge5): CEDICT only repeats \"this\" as pronoun and adjective"
+  },
+  "L1-0533": {
+    "en": [
+      "classifier for animals and birds",
+      "classifier for one of a pair (hands, eyes, etc.)"
+    ],
+    "source": "manual (wording from CC-CEDICT 隻 zhi1): CEDICT 只 zhi1 only says \"variant of 隻|只\"; wording taken from the senses of 隻"
   }
 }

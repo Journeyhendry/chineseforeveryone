@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest'
 import words from '../../data/hsk1/words.json'
 import sentencesFile from '../../data/hsk1/sentences.json'
 import dialogsFile from '../../data/hsk1/dialogs.json'
+import retiredFile from '../../data/hsk1/dialogs-retired.json'
 import samples from '../../scripts/tts/samples.json'
 import voicesFile from '../../scripts/tts/voices.json'
 
@@ -66,7 +67,8 @@ describe('samples.json', () => {
   it('dialog line exists with same hanzi', () => {
     const it = samples.items.find((i) => (i.source as Source).dialogId)!
     const s = it.source as Source
-    const d = dialogsFile.dialogs.find((x) => x.id === s.dialogId)
+    // The sample line comes from the first draft dialog (task 4a); that dialog may have moved to dialogs-retired.json (task 2b).
+    const d = [...dialogsFile.dialogs, ...retiredFile.dialogs].find((x) => x.id === s.dialogId)
     expect(d).toBeDefined()
     expect(d?.lines[(s.line ?? 0) - 1]?.cmn).toBe(it.hanzi)
   })

@@ -1,0 +1,1252 @@
+{
+  "version": 1,
+  "speakers": {
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "seller": {
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female"
+    },
+    "doctor": {
+      "name": {
+        "id": "Dokter",
+        "en": "Doctor"
+      },
+      "gender": "male"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "waiter": {
+      "name": {
+        "id": "Pelayan",
+        "en": "Waiter"
+      },
+      "gender": "male"
+    },
+    "driver": {
+      "name": {
+        "id": "Sopir",
+        "en": "Driver"
+      },
+      "gender": "male"
+    },
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    }
+  },
+  "note": "Dialogs of the 500-word draft (task 3b) that are not used in the 300-word units. Material for task 3d (rewrite); not shown on the site.",
+  "dialogs": [
+    {
+      "id": "d-u01",
+      "unit": "u01",
+      "title": {
+        "id": "Tamu di rumah",
+        "en": "A visitor at home"
+      },
+      "situation": {
+        "id": "Guru Adik datang ke apartemen keluarga Xiǎo. Nenek membuka pintu dan mempersilakannya masuk; saat guru pulang, Adik melambaikan tangan.",
+        "en": "Little sister's teacher visits the Xiǎo family's flat. Grandma opens the door and invites her in; when the teacher leaves, little sister waves goodbye."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "您好！请进，请坐。",
+          "en": "Hello! Please come in and sit down.",
+          "id": "Halo! Silakan masuk, silakan duduk."
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "谢谢您！",
+          "en": "Thank you!",
+          "id": "Terima kasih!"
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "不客气。请问，您是……？",
+          "en": "You're welcome. May I ask, you are...?",
+          "id": "Sama-sama. Maaf, Anda siapa ya...?"
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "我是她的老师。",
+          "en": "I'm her teacher.",
+          "id": "Saya gurunya."
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "再见！",
+          "en": "Goodbye!",
+          "id": "Sampai jumpa!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "老师，拜拜！",
+          "en": "Bye-bye, teacher!",
+          "id": "Dah, Bu Guru!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"进\""
+        ]
+      }
+    },
+    {
+      "id": "d-u02",
+      "unit": "u02",
+      "title": {
+        "id": "Restoran yang ramai",
+        "en": "A busy restaurant"
+      },
+      "situation": {
+        "id": "Jam makan siang di restoran mi yang ramai. Pelayan di pintu menanyakan jumlah tamu kepada Ayah dan Ibu.",
+        "en": "Lunchtime at a busy noodle restaurant. The waiter at the door asks Dad and Mom how many they are."
+      },
+      "lines": [
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "你好！几个人？",
+          "en": "Hello! How many people?",
+          "id": "Halo! Berapa orang?"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "我们俩。",
+          "en": "Just the two of us.",
+          "id": "Kami berdua."
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "好的，请坐。",
+          "en": "OK, please have a seat.",
+          "id": "Baik, silakan duduk."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "人好多！",
+          "en": "So many people!",
+          "id": "Ramai banget!"
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "对不起，请等一下儿。",
+          "en": "Sorry, please wait a moment.",
+          "id": "Maaf, mohon tunggu sebentar."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "没关系。",
+          "en": "That's alright.",
+          "id": "Tidak apa-apa."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 5: not HSK 1 \"等\""
+        ]
+      }
+    },
+    {
+      "id": "d-u03",
+      "unit": "u03",
+      "title": {
+        "id": "Mana HP-ku?",
+        "en": "Where's my phone?"
+      },
+      "situation": {
+        "id": "Pagi hari sebelum berangkat, Kakak mencari HP-nya di ruang tamu. Ibu membantu mencari.",
+        "en": "In the morning before leaving, big brother looks for his phone in the living room. Mom helps."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你在干什么？",
+          "en": "What are you doing?",
+          "id": "Kamu lagi ngapain?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我的手机呢？",
+          "en": "Where's my phone?",
+          "id": "HP-ku mana?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那是不是你的？",
+          "en": "Is that yours?",
+          "id": "Itu punyamu bukan?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "哪个？这个？不对，这是爸爸的。",
+          "en": "Which one? This one? No, this is Dad's.",
+          "id": "Yang mana? Yang ini? Bukan, ini punya Ayah."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那边有一个。",
+          "en": "There's one over there.",
+          "id": "Di sebelah sana ada satu."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "嗯，对，是我的！",
+          "en": "Mm, yes, that's mine!",
+          "id": "Hmm, iya, itu punyaku!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"干\"",
+          "line 6: casual \"嗯\" (c-u03-07) is from later unit u05"
+        ]
+      }
+    },
+    {
+      "id": "d-u04",
+      "unit": "u04",
+      "title": {
+        "id": "Kenalan dengan sahabat Kakak",
+        "en": "Meeting big brother's friend"
+      },
+      "situation": {
+        "id": "Di kedai kopi dekat kampus, Kakak memperkenalkan sahabatnya kepada Adik.",
+        "en": "At a coffee shop near campus, big brother introduces his best friend to little sister."
+      },
+      "lines": [
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "介绍一下儿，这是我哥们儿。",
+          "en": "Let me introduce you: this is my buddy.",
+          "id": "Kenalin, ini sobatku."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "你好！你们是同学吗？",
+          "en": "Hi! Are you classmates?",
+          "id": "Halo! Kalian teman sekelas?"
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "对，我们是大学同学。",
+          "en": "Yes, we're university classmates.",
+          "id": "Iya, kami teman kuliah."
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "她是你女朋友？",
+          "en": "Is she your girlfriend?",
+          "id": "Dia pacarmu?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不是不是！她是我妹妹。",
+          "en": "No, no! She's my little sister.",
+          "id": "Bukan, bukan! Dia adikku."
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "你好你好！",
+          "en": "Oh, hi, hi!",
+          "id": "Halo, halo!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"介绍\""
+        ]
+      }
+    },
+    {
+      "id": "d-u05",
+      "unit": "u05",
+      "title": {
+        "id": "Semua di mana?",
+        "en": "Where is everyone?"
+      },
+      "situation": {
+        "id": "Nenek baru pulang ke apartemen dan menanyakan anggota keluarga lain kepada Adik.",
+        "en": "Grandma comes back to the flat and asks little sister where the rest of the family is."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "你爸妈在家吗？",
+          "en": "Are your mom and dad home?",
+          "id": "Ayah-ibumu ada di rumah?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "不在，他们在楼下。",
+          "en": "No, they're downstairs.",
+          "id": "Nggak, mereka di bawah."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "你哥哥呢？",
+          "en": "What about your brother?",
+          "id": "Kakakmu?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "他在房间。他很宅！",
+          "en": "He's in his room. He never goes out!",
+          "id": "Di kamar. Dia mager banget!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "奶奶，我在这儿！",
+          "en": "Grandma, I'm here!",
+          "id": "Nek, aku di sini!"
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "你也去楼下吧。",
+          "en": "You go downstairs too.",
+          "id": "Kamu turun ke bawah juga, ya."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 2: not HSK 1 \"楼\"",
+          "line 4: casual \"宅\" (c-u05-06) is from later unit u14",
+          "line 5: not HSK 1 \"奶奶\"",
+          "line 6: not HSK 1 \"楼\""
+        ]
+      }
+    },
+    {
+      "id": "d-u06",
+      "unit": "u06",
+      "title": {
+        "id": "Makan di warung mi",
+        "en": "Eating at a noodle shop"
+      },
+      "situation": {
+        "id": "Pulang sekolah, Ibu mengajak Kakak makan di warung mi dekat stasiun metro.",
+        "en": "After school, Mom takes big brother to a noodle shop near the metro station."
+      },
+      "lines": [
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我很饿！我们吃什么？",
+          "en": "I'm so hungry! What shall we eat?",
+          "id": "Aku lapar sekali! Kita makan apa?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "吃面条儿吧。你要包子吗？",
+          "en": "Let's have noodles. Do you want baozi?",
+          "id": "Makan mi saja. Kamu mau bakpao?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "要！我也要一杯茶。",
+          "en": "Yes! And I want a cup of tea too.",
+          "id": "Mau! Aku juga mau segelas teh."
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "好，请等一下儿。",
+          "en": "OK, just a moment please.",
+          "id": "Baik, tunggu sebentar ya."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "很好吃！",
+          "en": "It's delicious!",
+          "id": "Enak sekali!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你好，买单！",
+          "en": "Excuse me, the bill please!",
+          "id": "Permisi, minta bon!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"饿\"",
+          "line 3: not HSK 1 \"杯\"",
+          "line 4: not HSK 1 \"等\""
+        ]
+      }
+    },
+    {
+      "id": "d-u07",
+      "unit": "u07",
+      "title": {
+        "id": "Undangan ulang tahun",
+        "en": "A birthday invitation"
+      },
+      "situation": {
+        "id": "Di gerbang sekolah, teman Adik mengundangnya ke pesta ulang tahun, tapi Adik ada acara keluarga.",
+        "en": "At the school gate, little sister's friend invites her to a birthday party, but she has a family plan."
+      },
+      "lines": [
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "后天是我的生日！",
+          "en": "The day after tomorrow is my birthday!",
+          "id": "Lusa ulang tahunku!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "后天是礼拜天吧？",
+          "en": "That's Sunday, right?",
+          "id": "Lusa hari Minggu, kan?"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "对！你来我家吗？",
+          "en": "Yes! Will you come to my house?",
+          "id": "Iya! Kamu datang ke rumahku?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "对不起，礼拜天我不在家。改天吧！",
+          "en": "Sorry, I won't be home on Sunday. Another day!",
+          "id": "Maaf, hari Minggu aku nggak di rumah. Lain kali, ya!"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "好，没关系！",
+          "en": "OK, no problem!",
+          "id": "Oke, nggak apa-apa!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"生\"",
+          "line 4: not HSK 1 \"改\""
+        ]
+      }
+    },
+    {
+      "id": "d-u08",
+      "unit": "u08",
+      "title": {
+        "id": "Pagi yang buru-buru",
+        "en": "A rushed morning"
+      },
+      "situation": {
+        "id": "Hari Senin pagi. Ibu membangunkan Kakak yang masih tidur, padahal kelasnya mulai jam delapan.",
+        "en": "Monday morning. Mom wakes big brother, who is still asleep although class starts at eight."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "七点半了！赶紧！",
+          "en": "It's half past seven! Hurry!",
+          "id": "Sudah setengah delapan! Cepetan!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我再睡一会儿……",
+          "en": "Let me sleep a little longer...",
+          "id": "Aku tidur sebentar lagi..."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "不早了！你八点上课！",
+          "en": "It's not early! Your class is at eight!",
+          "id": "Sudah nggak pagi! Kamu masuk kelas jam delapan!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "什么？现在几点？",
+          "en": "What? What time is it now?",
+          "id": "Apa? Sekarang jam berapa?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "七点四十分了。",
+          "en": "It's seven forty.",
+          "id": "Sudah jam tujuh empat puluh."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "好好好，马上！",
+          "en": "OK, OK, right away!",
+          "id": "Iya, iya, segera!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"赶紧\"",
+          "line 2: not HSK 1 \"儿\"",
+          "line 6: not HSK 1 \"马\""
+        ]
+      }
+    },
+    {
+      "id": "d-u09",
+      "unit": "u09",
+      "title": {
+        "id": "Mencari toilet di mal",
+        "en": "Finding the toilet in a mall"
+      },
+      "situation": {
+        "id": "Kakek berbelanja di mal besar dan bertanya kepada penjaga toko di mana toiletnya.",
+        "en": "Grandpa is shopping in a big mall and asks a shop assistant where the toilet is."
+      },
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "请问，洗手间在哪儿？",
+          "en": "Excuse me, where is the toilet?",
+          "id": "Permisi, toiletnya di mana?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "在前头，左边。",
+          "en": "Up ahead, on the left.",
+          "id": "Di depan, sebelah kiri."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "前头？那边吗？",
+          "en": "Up ahead? Over there?",
+          "id": "Di depan? Sebelah sana?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "对，在那个门的旁边。",
+          "en": "Yes, next to that door.",
+          "id": "Iya, di samping pintu itu."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "谢谢！",
+          "en": "Thank you!",
+          "id": "Terima kasih!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "en": "You're welcome.",
+          "id": "Sama-sama."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"洗手间\"",
+          "line 2: not HSK 1 \"左\"",
+          "line 4: not HSK 1 \"门\"",
+          "line 4: not HSK 1 \"旁\""
+        ]
+      }
+    },
+    {
+      "id": "d-u10",
+      "unit": "u10",
+      "title": {
+        "id": "Jalan-jalan saat hujan",
+        "en": "Going out in the rain"
+      },
+      "situation": {
+        "id": "Sabtu siang. Adik ingin jalan-jalan ke mal, tapi di luar sedang hujan. Mereka memutuskan pesan taksi lewat aplikasi.",
+        "en": "Saturday afternoon. Little sister wants to go to the mall, but it's raining. They decide to book a taxi on an app."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "妈妈，我们去逛街吧！",
+          "en": "Mom, let's go shopping!",
+          "id": "Bu, ayo jalan-jalan ke toko!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "外边下雨了。",
+          "en": "It's raining outside.",
+          "id": "Di luar hujan."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "商场不远，我们打车去。",
+          "en": "The mall isn't far, we'll take a taxi.",
+          "id": "Malnya nggak jauh, kita naik taksi saja."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好吧，那我们出门吧。",
+          "en": "Alright, let's head out then.",
+          "id": "Ya sudah, ayo kita berangkat."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 3: not HSK 1 \"商场\"",
+          "line 3: not HSK 1 \"远\"",
+          "line 3: not HSK 1 \"打\"",
+          "line 4: not HSK 1 \"出门\""
+        ]
+      }
+    },
+    {
+      "id": "d-u11",
+      "unit": "u11",
+      "title": {
+        "id": "Sabtu pagi",
+        "en": "Saturday morning"
+      },
+      "situation": {
+        "id": "Sabtu pagi, Adik masih di tempat tidur. Ibu menyuruhnya bangun dan merapikan bajunya sebelum sarapan.",
+        "en": "Saturday morning, little sister is still in bed. Mom tells her to get up and put her clothes away before breakfast."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "九点了，别睡懒觉了！起床吧！",
+          "en": "It's nine o'clock, stop sleeping in! Get up!",
+          "id": "Sudah jam sembilan, jangan tidur terus! Bangun!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好……我起床。",
+          "en": "OK... I'm getting up.",
+          "id": "Iya... aku bangun."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "衣服都在床上，你去放好。",
+          "en": "Your clothes are all on the bed, go and put them away.",
+          "id": "Bajunya berserakan di kasur, sana dirapikan."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好的。",
+          "en": "OK.",
+          "id": "Oke."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "妈妈，搞定！",
+          "en": "Mom, all done!",
+          "id": "Bu, beres!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "很好！我们吃早饭吧。",
+          "en": "Great! Let's have breakfast.",
+          "id": "Bagus! Ayo sarapan."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"别\"",
+          "line 3: not HSK 1 \"床\"",
+          "line 3: not HSK 1 \"放\""
+        ]
+      }
+    },
+    {
+      "id": "d-u12",
+      "unit": "u12",
+      "title": {
+        "id": "Naik taksi ke bandara",
+        "en": "Taxi to the airport"
+      },
+      "situation": {
+        "id": "Ayah memesan taksi online untuk ke bandara dan mengobrol dengan sopirnya.",
+        "en": "Dad books a ride-hailing taxi to the airport and chats with the driver."
+      },
+      "lines": [
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "师傅，去机场。",
+          "en": "To the airport, please.",
+          "id": "Pak, ke bandara."
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "好。你坐飞机？几点的？",
+          "en": "OK. Catching a flight? What time?",
+          "id": "Baik. Mau naik pesawat? Jam berapa?"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "十点的。路上车多吗？",
+          "en": "At ten. Is there much traffic on the way?",
+          "id": "Jam sepuluh. Di jalan ramai?"
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "今天不堵车，很快。",
+          "en": "No traffic jams today, it'll be quick.",
+          "id": "Hari ini nggak macet, cepat kok."
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "太好了。",
+          "en": "Great.",
+          "id": "Bagus sekali."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"机场\"",
+          "line 3: not HSK 1 \"路\"",
+          "line 4: not HSK 1 \"快\""
+        ]
+      }
+    },
+    {
+      "id": "d-u13",
+      "unit": "u13",
+      "title": {
+        "id": "Mau ke mana?",
+        "en": "Where are you going?"
+      },
+      "situation": {
+        "id": "Sore hari, Kakak bersiap keluar untuk bertemu teman. Ibu bertanya kapan dia pulang.",
+        "en": "In the late afternoon, big brother is getting ready to meet friends. Mom asks when he'll be back."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你去哪儿？",
+          "en": "Where are you going?",
+          "id": "Kamu mau ke mana?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我出去见朋友。",
+          "en": "I'm going out to see friends.",
+          "id": "Aku keluar ketemu teman."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "晚上回来吃饭吗？",
+          "en": "Are you coming back for dinner?",
+          "id": "Malam pulang makan?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不回来了。回头见！",
+          "en": "No, I won't be back. See you later!",
+          "id": "Nggak pulang. Sampai nanti!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好，早一点儿回来。",
+          "en": "OK, come back a bit early.",
+          "id": "Oke, pulangnya jangan terlalu malam."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 2: not HSK 1 \"出\""
+        ]
+      }
+    },
+    {
+      "id": "d-u14",
+      "unit": "u14",
+      "title": {
+        "id": "Setelah ujian",
+        "en": "After the exam"
+      },
+      "situation": {
+        "id": "Adik pulang sekolah setelah ujian dan bercerita kepada Ibu.",
+        "en": "Little sister comes home after an exam and tells Mom about it."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "今天的考试难吗？",
+          "en": "Was today's exam hard?",
+          "id": "Ujian hari ini susah?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "很难！我考砸了。",
+          "en": "Very hard! I flunked it.",
+          "id": "Susah banget! Ujianku jeblok."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "没关系，下次好好学习。",
+          "en": "Never mind, study hard next time.",
+          "id": "Nggak apa-apa, lain kali belajar yang rajin."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我的同学考了一百。她是学霸！",
+          "en": "My classmate got a hundred. She's a top student!",
+          "id": "Temanku dapat seratus. Dia jago banget belajarnya!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你也会的！",
+          "en": "You'll get there too!",
+          "id": "Kamu juga pasti bisa!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"考试难\"",
+          "line 2: not HSK 1 \"难\"",
+          "line 2: not HSK 1 \"考砸\"",
+          "line 3: not HSK 1 \"次\"",
+          "line 4: not HSK 1 \"考\""
+        ]
+      }
+    },
+    {
+      "id": "d-u15",
+      "unit": "u15",
+      "title": {
+        "id": "Orang asing yang bisa bahasa Mandarin",
+        "en": "A foreigner who speaks Chinese"
+      },
+      "situation": {
+        "id": "Kakak bercerita kepada Kakek tentang orang asing yang mengajaknya mengobrol dalam bahasa Mandarin di taman.",
+        "en": "Big brother tells Grandpa about a foreigner who chatted with him in Chinese in the park."
+      },
+      "lines": [
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "爷爷，今天一个老外跟我说汉语！",
+          "en": "Grandpa, today a foreigner spoke Chinese with me!",
+          "id": "Kek, hari ini ada bule ngajak aku ngomong bahasa Mandarin!"
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "他会说汉语？",
+          "en": "He can speak Chinese?",
+          "id": "Dia bisa bahasa Mandarin?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "会！他的汉语很好，我们聊天了。",
+          "en": "Yes! His Chinese is very good, we had a chat.",
+          "id": "Bisa! Bahasa Mandarinnya bagus, kami ngobrol."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "他是哪国人？",
+          "en": "Which country is he from?",
+          "id": "Dia orang mana?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "他是外国学生，在北京学习。",
+          "en": "He's a foreign student studying in Beijing.",
+          "id": "Dia mahasiswa asing, kuliah di Beijing."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "很好，你也要学外语！",
+          "en": "Good, you should learn a foreign language too!",
+          "id": "Bagus, kamu juga harus belajar bahasa asing!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"爷爷\"",
+          "line 1: not HSK 1 \"跟\"",
+          "line 5: not HSK 1 \"北京\"",
+          "line 6: not HSK 1 \"语\""
+        ]
+      }
+    },
+    {
+      "id": "d-u16",
+      "unit": "u16",
+      "title": {
+        "id": "Huruf yang sulit",
+        "en": "A tricky character"
+      },
+      "situation": {
+        "id": "Malam hari, Adik mengerjakan PR menulis huruf Mandarin dan minta bantuan Kakak.",
+        "en": "In the evening, little sister is doing her character-writing homework and asks big brother for help."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "哥，这个字我搞不懂。",
+          "en": "Bro, I can't figure out this character.",
+          "id": "Kak, huruf ini aku nggak ngerti."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我看看。你先写这边，再写那边。",
+          "en": "Let me see. Write this side first, then that side.",
+          "id": "Coba kulihat. Tulis bagian sini dulu, lalu bagian sana."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我懂了！谢谢哥！",
+          "en": "I get it! Thanks, bro!",
+          "id": "Aku paham! Makasih, Kak!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "你记住了吗？",
+          "en": "Have you got it memorised?",
+          "id": "Sudah hafal?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "记住了！",
+          "en": "Got it!",
+          "id": "Sudah!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"搞\"",
+          "line 1: not HSK 1 \"懂\"",
+          "line 2: not HSK 1 \"先\"",
+          "line 3: not HSK 1 \"懂\"",
+          "line 4: not HSK 1 \"记\"",
+          "line 5: not HSK 1 \"记\""
+        ]
+      }
+    },
+    {
+      "id": "d-u17",
+      "unit": "u17",
+      "title": {
+        "id": "Pulang kerja",
+        "en": "Home from work"
+      },
+      "situation": {
+        "id": "Ayah pulang larut dari kantor. Ibu khawatir karena Ayah bekerja terlalu keras.",
+        "en": "Dad comes home late from the office. Mom worries that he is working too hard."
+      },
+      "lines": [
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "我回来了，太累了！",
+          "en": "I'm home. I'm so tired!",
+          "id": "Aku pulang. Capek sekali!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "今天工作很忙吗？",
+          "en": "Was work busy today?",
+          "id": "Hari ini kerjaannya sibuk?"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "很忙，下午开了三个会。",
+          "en": "Very. I had three meetings this afternoon.",
+          "id": "Sibuk, sore tadi rapat tiga kali."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你身体不好，别太累了。",
+          "en": "You're not in great health, don't wear yourself out.",
+          "id": "Badanmu lagi kurang sehat, jangan terlalu capek."
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "没事，我先休息一会儿。",
+          "en": "I'm fine, I'll rest for a bit first.",
+          "id": "Nggak apa-apa, aku istirahat sebentar dulu."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"累\"",
+          "line 4: not HSK 1 \"身体\"",
+          "line 4: not HSK 1 \"别\"",
+          "line 4: not HSK 1 \"累\"",
+          "line 5: not HSK 1 \"先\"",
+          "line 5: not HSK 1 \"儿\""
+        ]
+      }
+    },
+    {
+      "id": "d-u19",
+      "unit": "u19",
+      "title": {
+        "id": "Malam Minggu",
+        "en": "Weekend evening"
+      },
+      "situation": {
+        "id": "Sabtu malam di rumah. Adik bosan, lalu Kakak mengajaknya menonton film baru di TV.",
+        "en": "Saturday evening at home. Little sister is bored, so big brother suggests watching a new film on TV."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好无聊！我们干什么？",
+          "en": "I'm so bored! What shall we do?",
+          "id": "Bosan banget! Kita ngapain?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我们一起看电影吧！",
+          "en": "Let's watch a film together!",
+          "id": "Ayo kita nonton film bareng!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "什么电影？",
+          "en": "What film?",
+          "id": "Film apa?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "一个新电影，很好看。",
+          "en": "A new one, it's really good.",
+          "id": "Film baru, bagus banget."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这个电影真有意思！",
+          "en": "This film is really fun!",
+          "id": "Filmnya seru banget!"
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 1: not HSK 1 \"干\"",
+          "line 2: not HSK 1 \"起\""
+        ]
+      }
+    },
+    {
+      "id": "d-u20",
+      "unit": "u20",
+      "title": {
+        "id": "Hari yang panas",
+        "en": "A hot day"
+      },
+      "situation": {
+        "id": "Siang hari di musim panas. Adik dan temannya membeli teh susu di kedai bubble tea baru.",
+        "en": "A summer afternoon. Little sister and her friend buy milk tea at a new bubble tea shop."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "今天太热了！",
+          "en": "It's so hot today!",
+          "id": "Hari ini panas sekali!"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "对！我们去买喝的吧！",
+          "en": "Yes! Let's go buy something to drink!",
+          "id": "Iya! Ayo beli minuman!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好！我要一杯冷的。",
+          "en": "OK! I want a cold one.",
+          "id": "Oke! Aku mau yang dingin."
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "你看，那边有一个新的商店。",
+          "en": "Look, there's a new shop over there.",
+          "id": "Lihat, di sana ada toko baru."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这个茶真不错！",
+          "en": "This tea is really good!",
+          "id": "Tehnya enak banget!"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "真的？我觉得一般般。",
+          "en": "Really? I think it's just so-so.",
+          "id": "Masa? Menurutku biasa aja."
+        }
+      ],
+      "retired": {
+        "reason": "failed the vocabulary check against the 300 words / passed expressions",
+        "details": [
+          "line 3: not HSK 1 \"杯\"",
+          "line 5: not HSK 1 \"错\""
+        ]
+      }
+    }
+  ]
+}

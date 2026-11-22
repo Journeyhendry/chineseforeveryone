@@ -3,386 +3,83 @@
   "unit": {
     "id": "u09",
     "order": 9,
-    "slug": "arah",
+    "slug": "makanan",
     "title": {
-      "id": "Arah & posisi",
-      "en": "Directions & position"
+      "id": "Makanan & minuman",
+      "en": "Food & drink"
     },
     "description": {
-      "id": "Atas, bawah, kiri, kanan, depan, belakang, dan mata angin.",
-      "en": "Up, down, left, right, front, back and the compass points."
+      "id": "Makan, minum, dan hidangan sehari-hari.",
+      "en": "Eating, drinking and everyday dishes."
     }
   },
   "words": [
     {
-      "id": "L1-0315",
-      "hanzi": "上",
-      "pinyin": "shàng",
+      "id": "L1-0046",
+      "hanzi": "吃",
+      "pinyin": "chī",
       "syllables": [
-        "shàng"
+        "chī"
       ],
       "tones": [
-        4
+        1
       ],
       "pos": [
-        "N",
         "V"
       ],
       "en": [
-        "(bound form) up; upper; above; previous",
-        "first (of multiple parts)",
-        "to climb; to get onto; to go up",
-        "to attend (class or university)",
-        "(directional complement) up",
-        "(noun suffix) on; above"
+        "to eat; to consume",
+        "to eat at (a cafeteria etc)",
+        "to eradicate; to destroy",
+        "to absorb",
+        "to suffer (shock, injury, defeat etc)"
       ],
       "ind": [
-        "atas",
-        "naik",
-        "menghadiri (kelas)"
+        "makan"
       ],
       "idMachine": true,
       "chars": [
-        "上"
+        "吃"
       ],
       "examples": [
         {
-          "tatoebaId": 2390036,
-          "cmn": "她上个月不在。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1977707,
-            "text": "She wasn't there last month.",
-            "author": "Spamster",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2309633,
-          "cmn": "我在床上。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2311273,
-            "text": "I'm in bed.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5658827,
-          "cmn": "我上路了！",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5101657,
-            "text": "I'm going now!",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0389",
-      "hanzi": "下",
-      "pinyin": "xià",
-      "syllables": [
-        "xià"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "N",
-        "V"
-      ],
-      "en": [
-        "down",
-        "downwards",
-        "below",
-        "lower",
-        "later",
-        "next (week etc)"
-      ],
-      "ind": [
-        "bawah",
-        "turun",
-        "berikutnya"
-      ],
-      "idMachine": true,
-      "chars": [
-        "下"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 415599,
-          "cmn": "请坐一下。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 38572,
-            "text": "Please have a seat.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1441829,
-          "cmn": "我介绍一下。",
-          "author": "egg0073",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5496592,
-            "text": "Let me introduce it.",
-            "author": "egg0073",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 11837314,
-          "cmn": "请你介绍一下你的家人。",
-          "author": "Lemmih",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 11837315,
-            "text": "Please introduce your family.",
-            "author": "Lemmih",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0496",
-      "hanzi": "左",
-      "pinyin": "zuǒ",
-      "syllables": [
-        "zuǒ"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "left",
-        "the Left (politics)",
-        "east",
-        "unorthodox",
-        "queer",
-        "wrong"
-      ],
-      "ind": [
-        "kiri"
-      ],
-      "idMachine": true,
-      "chars": [
-        "左"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 9797457,
-          "cmn": "萨米十六岁左右。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "萨米",
-          "en": {
-            "tatoebaId": 6810571,
-            "text": "Sami was about sixteen years old.",
-            "author": "OsoHombre",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 657628,
-          "cmn": "她用左手写字。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 313756,
-            "text": "She writes with her left hand.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12662667,
-            "text": "Dia menulis dengan tangan kiri.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 5113391,
-          "cmn": "左看右看",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6750280,
-            "text": "Look to your left, look to your right.",
-            "author": "swolesuki",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0447",
-      "hanzi": "右",
-      "pinyin": "yòu",
-      "syllables": [
-        "yòu"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "(bound form) right; right-hand side",
-        "(bound form) (politics) right of center",
-        "(bound form) (old) west",
-        "(literary) the right side as the side of precedence"
-      ],
-      "ind": [
-        "kanan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "右"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 919860,
-          "cmn": "我的右眼瞎了。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": "眼瞎",
-          "en": {
-            "tatoebaId": 256128,
-            "text": "I am blind in the right eye.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9797457,
-          "cmn": "萨米十六岁左右。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "萨米",
-          "en": {
-            "tatoebaId": 6810571,
-            "text": "Sami was about sixteen years old.",
-            "author": "OsoHombre",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5113391,
-          "cmn": "左看右看",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6750280,
-            "text": "Look to your left, look to your right.",
-            "author": "swolesuki",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0291",
-      "hanzi": "前",
-      "pinyin": "qián",
-      "syllables": [
-        "qián"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "front",
-        "forward",
-        "ahead",
-        "first",
-        "top (followed by a number)",
-        "future"
-      ],
-      "ind": [
-        "depan",
-        "sebelum"
-      ],
-      "idMachine": true,
-      "chars": [
-        "前"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 760850,
-          "cmn": "五百年前是一家。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 7770325,
-            "text": "Five hundred years ago it was a house.",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 335520,
-          "cmn": "前几天我见到了她。",
+          "tatoebaId": 843482,
+          "cmn": "我吃面包。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 33058,
-            "text": "I saw her just the other day.",
-            "author": "CH",
+            "tatoebaId": 1867478,
+            "text": "I eat bread.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 544891,
-          "cmn": "饭前要洗手。",
-          "author": "biglion",
+          "tatoebaId": 1163518,
+          "cmn": "他在吃饭。",
+          "author": "fengli",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 268719,
-            "text": "Wash your hands before meals.",
-            "author": "Barbiche0",
+            "tatoebaId": 299788,
+            "text": "He is eating.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1189717,
+          "cmn": "我在吃饭。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1189719,
+            "text": "I'm eating.",
+            "author": "Vortarulo",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -390,151 +87,67 @@
       ]
     },
     {
-      "id": "L1-0147",
-      "hanzi": "后",
-      "pinyin": "hòu",
+      "id": "L1-0144",
+      "hanzi": "喝",
+      "pinyin": "hē",
       "syllables": [
-        "hòu"
+        "hē"
       ],
       "tones": [
-        4
+        1
       ],
       "pos": [
-        "N"
+        "V"
       ],
       "en": [
-        "back",
-        "behind",
-        "rear",
-        "afterwards",
-        "after",
-        "later"
+        "to drink"
       ],
       "ind": [
-        "belakang",
-        "sesudah",
-        "kemudian"
+        "minum"
       ],
       "idMachine": true,
       "chars": [
-        "后"
+        "喝"
       ],
       "examples": [
         {
-          "tatoebaId": 11508939,
-          "cmn": "你的后门是开着的。",
-          "author": "megamanenm",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 11508938,
-            "text": "Your back door was open.",
-            "author": "megamanenm",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13063667,
-          "cmn": "我会在三天后回来。",
-          "author": "maina",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6265992,
-            "text": "I'll be back in three days.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 332421,
-          "cmn": "她半年后就要出国了。",
+          "tatoebaId": 843489,
+          "cmn": "我不喝水。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 10674360,
-            "text": "In half a year she'll be going abroad.",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0213",
-      "hanzi": "里",
-      "pinyin": "lǐ",
-      "syllables": [
-        "lǐ"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "lining",
-        "interior",
-        "inside",
-        "internal"
-      ],
-      "ind": [
-        "di dalam",
-        "dalam"
-      ],
-      "idMachine": true,
-      "chars": [
-        "里"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 406192,
-          "cmn": "你在家里吗？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 405500,
-            "text": "Are you at home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4329157,
-            "text": "Apa kamu ada di rumah?",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 10961067,
-          "cmn": "杯子里有水。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 11252828,
-            "text": "There is water in the glass.",
+            "tatoebaId": 1496058,
+            "text": "I don't drink water.",
             "author": "weihaiping",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 349657,
-          "cmn": "房间里有人吗？",
-          "author": "fucongcong",
+          "tatoebaId": 3378129,
+          "cmn": "我也喝茶。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 319501,
-            "text": "Was there anyone in the room?",
+            "tatoebaId": 3378130,
+            "text": "I drink tea, too.",
             "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378236,
+          "cmn": "你喝茶吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378237,
+            "text": "Do you drink tea?",
+            "author": "Jesse",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -542,11 +155,11 @@
       ]
     },
     {
-      "id": "L1-0367",
-      "hanzi": "外",
-      "pinyin": "wài",
+      "id": "L1-0099",
+      "hanzi": "饭",
+      "pinyin": "fàn",
       "syllables": [
-        "wài"
+        "fàn"
       ],
       "tones": [
         4
@@ -555,99 +168,57 @@
         "N"
       ],
       "en": [
-        "outside",
-        "in addition",
-        "foreign",
-        "external"
+        "cooked rice",
+        "meal",
+        "(loanword) fan",
+        "devotee"
       ],
       "ind": [
-        "luar",
-        "asing"
+        "nasi",
+        "makanan"
       ],
       "idMachine": true,
       "chars": [
-        "外"
+        "饭"
       ],
       "examples": [
         {
-          "tatoebaId": 14123691,
-          "cmn": "太见外了。",
-          "author": "jan_OkulaJu",
+          "tatoebaId": 1163518,
+          "cmn": "他在吃饭。",
+          "author": "fengli",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 14123692,
-            "text": "Don't be such a stranger.",
-            "author": "jan_OkulaJu",
+            "tatoebaId": 299788,
+            "text": "He is eating.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 10011709,
-          "cmn": "他们是外行。",
-          "author": "GlossaMatik",
+          "tatoebaId": 1189717,
+          "cmn": "我在吃饭。",
+          "author": "Vortarulo",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 11272798,
-            "text": "They are laymen.",
-            "author": "Aphima",
+            "tatoebaId": 1189719,
+            "text": "I'm eating.",
+            "author": "Vortarulo",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 804994,
-          "cmn": "我想有一天去国外。",
-          "author": "fucongcong",
+          "tatoebaId": 2299590,
+          "cmn": "我没吃饭。",
+          "author": "sysko",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 792350,
-            "text": "I'd like to go abroad one day.",
-            "author": "Swift",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0084",
-      "hanzi": "东",
-      "pinyin": "dōng",
-      "syllables": [
-        "dōng"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "east",
-        "host (i.e. sitting on east side of guest)",
-        "landlord"
-      ],
-      "ind": [
-        "timur"
-      ],
-      "idMachine": true,
-      "chars": [
-        "东"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5094129,
-          "cmn": "你会东山再起的。",
-          "author": "mirrorvan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2255348,
-            "text": "You'll bounce back.",
+            "tatoebaId": 2245903,
+            "text": "I haven't eaten.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -656,67 +227,70 @@
       ]
     },
     {
-      "id": "L1-0266",
-      "hanzi": "南",
-      "pinyin": "nán",
+      "id": "L1-0242",
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
       "syllables": [
-        "nán"
+        "mǐ",
+        "fàn"
       ],
       "tones": [
-        2
+        3,
+        4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "south"
+        "(cooked) rice"
       ],
       "ind": [
-        "selatan"
+        "nasi"
       ],
       "idMachine": true,
       "chars": [
-        "南"
+        "米",
+        "饭"
       ],
       "examples": [
         {
-          "tatoebaId": 3217147,
-          "cmn": "南男北女。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2834013,
-            "text": "Southern men, Northern women.",
-            "author": "0ni",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 332699,
-          "cmn": "告诉我你对湘南做了什么。",
+          "tatoebaId": 334506,
+          "cmn": "我在吃米饭。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "湘",
+          "outside": null,
           "en": {
-            "tatoebaId": 939301,
-            "text": "Tell me what you did to Shounan.",
-            "author": "U2FS",
+            "tatoebaId": 334464,
+            "text": "I am eating rice.",
+            "author": "guyviet",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 939299,
-          "cmn": "告诉我你在湘南做了什么。",
-          "author": "U2FS",
+          "tatoebaId": 1302376,
+          "cmn": "你们有没有米饭？",
+          "author": "Vortarulo",
           "license": "CC BY 2.0 FR",
-          "outside": "湘",
+          "outside": null,
           "en": {
-            "tatoebaId": 268174,
-            "text": "Tell me what you did in Shounan.",
-            "author": "Eldad",
+            "tatoebaId": 54336,
+            "text": "Do you have rice?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1788049,
+          "cmn": "他们吃很多米饭。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 307117,
+            "text": "They eat a lot of rice.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -724,109 +298,71 @@
       ]
     },
     {
-      "id": "L1-0384",
-      "hanzi": "西",
-      "pinyin": "xī",
+      "id": "L1-0035",
+      "hanzi": "菜",
+      "pinyin": "cài",
       "syllables": [
-        "xī"
+        "cài"
       ],
       "tones": [
-        1
+        4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "the West",
-        "Spanish",
-        "west"
+        "vegetable; greens",
+        "dish (of food)",
+        "(of one's skills etc) weak; poor",
+        "(coll.) (one's) type"
       ],
       "ind": [
-        "barat"
+        "sayur",
+        "lauk",
+        "masakan"
       ],
       "idMachine": true,
       "chars": [
-        "西"
+        "菜"
       ],
       "examples": [
         {
-          "tatoebaId": 10972064,
-          "cmn": "西西里是一座岛。",
-          "author": "xjjAstrus",
+          "tatoebaId": 3742628,
+          "cmn": "她是我的菜。",
+          "author": "egg0073",
           "license": "CC BY 2.0 FR",
-          "outside": "座岛",
+          "outside": null,
           "en": {
-            "tatoebaId": 7129127,
-            "text": "Sicily is an island.",
-            "author": "Adelpa",
+            "tatoebaId": 314284,
+            "text": "She's my type.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0019",
-      "hanzi": "北",
-      "pinyin": "běi",
-      "syllables": [
-        "běi"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "north",
-        "(classical) to be defeated"
-      ],
-      "ind": [
-        "utara"
-      ],
-      "idMachine": true,
-      "chars": [
-        "北"
-      ],
-      "examples": [
+        },
         {
-          "tatoebaId": 3217147,
-          "cmn": "南男北女。",
+          "tatoebaId": 422951,
+          "cmn": "你们有什么菜？",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2834013,
-            "text": "Southern men, Northern women.",
-            "author": "0ni",
+            "tatoebaId": 422947,
+            "text": "What kind of food do you have?",
+            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 2456085,
-          "cmn": "刮的是北风。",
-          "author": "fenfang557",
+          "tatoebaId": 402752,
+          "cmn": "请吃点菜。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": "刮",
+          "outside": null,
           "en": {
-            "tatoebaId": 2476360,
-            "text": "A north wind is blowing.",
-            "author": "FeuDRenais2",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 365790,
-          "cmn": "我的家坐北向南。",
-          "author": "nickyeow",
-          "license": "CC BY 2.0 FR",
-          "outside": "向南",
-          "en": {
-            "tatoebaId": 250207,
-            "text": "My house looks to the south.",
+            "tatoebaId": 402749,
+            "text": "Please eat something.",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
@@ -835,121 +371,71 @@
       ]
     },
     {
-      "id": "L1-0476",
-      "hanzi": "中",
-      "pinyin": "zhōng",
+      "id": "L1-0345",
+      "hanzi": "水",
+      "pinyin": "shuǐ",
       "syllables": [
-        "zhōng"
+        "shuǐ"
       ],
       "tones": [
-        1
+        3
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "(bound form) China; Chinese",
-        "within; among; in",
-        "middle; center",
-        "while (doing sth); during",
-        "(dialect) OK; all right"
+        "water",
+        "(after a name) ... River",
+        "to swim (used mostly in 會水|会水[hui4 shui3] and 水性[shui3 xing4])",
+        "(coll.) lacking in substance; shoddy",
+        "(bound form) additional cost; extra income",
+        "classifier for washings of a garment"
       ],
       "ind": [
-        "tengah",
-        "dalam",
-        "di tengah"
+        "air"
       ],
       "idMachine": true,
       "chars": [
-        "中"
+        "水"
       ],
       "examples": [
         {
-          "tatoebaId": 335890,
-          "cmn": "他十年中第一次回家。",
+          "tatoebaId": 843489,
+          "cmn": "我不喝水。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 73396,
-            "text": "He returned home for the first time in ten years.",
-            "author": "CK",
+            "tatoebaId": 1496058,
+            "text": "I don't drink water.",
+            "author": "weihaiping",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 892487,
-          "cmn": "她上女子高中。",
-          "author": "Martha",
+          "tatoebaId": 3365840,
+          "cmn": "有很多水。",
+          "author": "hzy980512",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 314983,
-            "text": "She goes to a girls' high school.",
+            "tatoebaId": 2713476,
+            "text": "There's plenty of water.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 343360,
-          "cmn": "他从中国回来了。",
-          "author": "fucongcong",
+          "tatoebaId": 6774612,
+          "cmn": "我们没水。",
+          "author": "basilhan",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 387585,
-            "text": "He came back from China.",
-            "author": "Mouseneb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0317",
-      "hanzi": "上边",
-      "pinyin": "shàngbian",
-      "syllables": [
-        "shàng",
-        "bian"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the top",
-        "above",
-        "overhead",
-        "upwards",
-        "the top margin",
-        "above-mentioned"
-      ],
-      "ind": [
-        "sisi atas",
-        "atas"
-      ],
-      "idMachine": true,
-      "chars": [
-        "上",
-        "边"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5091438,
-          "cmn": "我想要你睡在它上边。",
-          "author": "mirrorvan",
-          "license": "CC BY 2.0 FR",
-          "outside": "它",
-          "en": {
-            "tatoebaId": 2033205,
-            "text": "I want you to sleep on it.",
+            "tatoebaId": 4497887,
+            "text": "We don't have any water.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -958,397 +444,67 @@
       ]
     },
     {
-      "id": "L1-0391",
-      "hanzi": "下边",
-      "pinyin": "xiàbian",
+      "id": "L1-0036",
+      "hanzi": "茶",
+      "pinyin": "chá",
       "syllables": [
-        "xià",
-        "bian"
+        "chá"
       ],
       "tones": [
-        4,
-        5
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "under",
-        "the underside",
-        "below"
+        "tea",
+        "tea plant"
       ],
       "ind": [
-        "sisi bawah",
-        "bawah"
+        "teh"
       ],
       "idMachine": true,
       "chars": [
-        "下",
-        "边"
+        "茶"
       ],
       "examples": [
         {
-          "tatoebaId": 6002105,
-          "cmn": "狗在桌子下边。",
-          "author": "Thai",
-          "license": "CC BY 2.0 FR",
-          "outside": "狗",
-          "en": {
-            "tatoebaId": 6004778,
-            "text": "The dog is under the table.",
-            "author": "tvindy",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0497",
-      "hanzi": "左边",
-      "pinyin": "zuǒbian",
-      "syllables": [
-        "zuǒ",
-        "bian"
-      ],
-      "tones": [
-        3,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "left",
-        "the left side",
-        "to the left of"
-      ],
-      "ind": [
-        "sisi kiri",
-        "sebelah kiri"
-      ],
-      "idMachine": true,
-      "chars": [
-        "左",
-        "边"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1865299,
-          "cmn": "左边的车门将会打开。",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": "将会",
-          "en": {
-            "tatoebaId": 438731,
-            "text": "The doors on the left side will open.",
-            "author": "beauzavier",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0448",
-      "hanzi": "右边",
-      "pinyin": "yòubian",
-      "syllables": [
-        "yòu",
-        "bian"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "right side",
-        "right, to the right"
-      ],
-      "ind": [
-        "sisi kanan",
-        "sebelah kanan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "右",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0292",
-      "hanzi": "前边",
-      "pinyin": "qiánbian",
-      "syllables": [
-        "qián",
-        "bian"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "front",
-        "the front side",
-        "in front of"
-      ],
-      "ind": [
-        "bagian depan",
-        "di depan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "前",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0148",
-      "hanzi": "后边",
-      "pinyin": "hòubian",
-      "syllables": [
-        "hòu",
-        "bian"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the back; the rear; the last bit",
-        "behind; near the end; at the back",
-        "later; afterwards"
-      ],
-      "ind": [
-        "bagian belakang",
-        "belakang"
-      ],
-      "idMachine": true,
-      "chars": [
-        "后",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0214",
-      "hanzi": "里边",
-      "pinyin": "lǐbian",
-      "syllables": [
-        "lǐ",
-        "bian"
-      ],
-      "tones": [
-        3,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "inside"
-      ],
-      "ind": [
-        "bagian dalam",
-        "di dalam"
-      ],
-      "idMachine": true,
-      "chars": [
-        "里",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0368",
-      "hanzi": "外边",
-      "pinyin": "wàibian",
-      "syllables": [
-        "wài",
-        "bian"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "outside",
-        "outer surface",
-        "abroad",
-        "place other than one's home"
-      ],
-      "ind": [
-        "sisi luar",
-        "luar"
-      ],
-      "idMachine": true,
-      "chars": [
-        "外",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0085",
-      "hanzi": "东边",
-      "pinyin": "dōngbian",
-      "syllables": [
-        "dōng",
-        "bian"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "east",
-        "east side",
-        "eastern part",
-        "to the east of"
-      ],
-      "ind": [
-        "sisi timur",
-        "sebelah timur"
-      ],
-      "idMachine": true,
-      "chars": [
-        "东",
-        "边"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0267",
-      "hanzi": "南边",
-      "pinyin": "nánbian",
-      "syllables": [
-        "nán",
-        "bian"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "south",
-        "south side",
-        "southern part",
-        "to the south of"
-      ],
-      "ind": [
-        "sisi selatan",
-        "sebelah selatan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "南",
-        "边"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 6833033,
-          "cmn": "我的家在公园南边",
-          "author": "atsukoloid",
-          "license": "CC BY 2.0 FR",
-          "outside": "公园",
-          "en": {
-            "tatoebaId": 6833034,
-            "text": "My house is on the south side of the park.",
-            "author": "atsukoloid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7704609,
-          "cmn": "萨米是从南边来的。",
-          "author": "leafjensen",
-          "license": "CC BY 2.0 FR",
-          "outside": "萨米",
-          "en": {
-            "tatoebaId": 7250367,
-            "text": "Sami is from the South.",
-            "author": "OsoHombre",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 766037,
-          "cmn": "在中国南边的情况不一样。",
-          "author": "eastasiastudent",
-          "license": "CC BY 2.0 FR",
-          "outside": "情况",
-          "en": {
-            "tatoebaId": 766038,
-            "text": "In the south of China, the situation is different.",
-            "author": "eastasiastudent",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0385",
-      "hanzi": "西边",
-      "pinyin": "xībian",
-      "syllables": [
-        "xī",
-        "bian"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "west",
-        "west side",
-        "western part",
-        "to the west of"
-      ],
-      "ind": [
-        "sisi barat",
-        "sebelah barat"
-      ],
-      "idMachine": true,
-      "chars": [
-        "西",
-        "边"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2595792,
-          "cmn": "太阳在西边下山。",
+          "tatoebaId": 3378129,
+          "cmn": "我也喝茶。",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": "太阳",
+          "outside": null,
           "en": {
-            "tatoebaId": 275141,
-            "text": "The sun sets in the west.",
+            "tatoebaId": 3378130,
+            "text": "I drink tea, too.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378236,
+          "cmn": "你喝茶吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378237,
+            "text": "Do you drink tea?",
+            "author": "Jesse",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4751229,
+          "cmn": "这是谁的茶？",
+          "author": "billt_estates",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1764980,
+            "text": "Whose tea is this?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1357,45 +513,142 @@
       ]
     },
     {
-      "id": "L1-0020",
-      "hanzi": "北边",
-      "pinyin": "běibian",
+      "id": "L1-0275",
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
       "syllables": [
-        "běi",
-        "bian"
+        "niú",
+        "nǎi"
       ],
       "tones": [
-        3,
+        2,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "cow's milk"
+      ],
+      "ind": [
+        "susu sapi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "牛",
+        "奶"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9543844,
+          "cmn": "喝牛奶吧！",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5360664,
+            "text": "Drink your milk!",
+            "author": "CarpeLanam",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3140495,
+          "cmn": "我在喝牛奶。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3132269,
+            "text": "I'm drinking milk.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8875017,
+          "cmn": "他在喝牛奶吗？",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8789014,
+            "text": "Is he drinking milk?",
+            "author": "deniko",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0018",
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "syllables": [
+        "bēi",
+        "zi"
+      ],
+      "tones": [
+        1,
         5
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "north",
-        "north side",
-        "northern part",
-        "to the north of"
+        "cup",
+        "glass"
       ],
       "ind": [
-        "sisi utara",
-        "sebelah utara"
+        "gelas",
+        "cangkir"
       ],
       "idMachine": true,
       "chars": [
-        "北",
-        "边"
+        "杯",
+        "子"
       ],
       "examples": [
         {
-          "tatoebaId": 2456086,
-          "cmn": "风从北边来。",
-          "author": "fenfang557",
+          "tatoebaId": 4885037,
+          "cmn": "这是谁的杯子？",
+          "author": "musclegirlxyp",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 319712,
-            "text": "The wind is blowing from the north.",
+            "tatoebaId": 3416475,
+            "text": "Whose glass is this?",
+            "author": "jackchak",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3580024,
+          "cmn": "哪个是你的杯子？",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1554393,
+            "text": "Which cup is yours?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3580026,
+          "cmn": "哪个杯子是你的？",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1554393,
+            "text": "Which cup is yours?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1404,238 +657,404 @@
       ]
     },
     {
-      "id": "L1-0282",
-      "hanzi": "旁边",
-      "pinyin": "pángbiān",
+      "id": "L1-0346",
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
       "syllables": [
-        "páng",
-        "biān"
+        "shuǐ",
+        "guǒ"
+      ],
+      "tones": [
+        3,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "fruit"
+      ],
+      "ind": [
+        "buah",
+        "buah-buahan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "水",
+        "果"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7768273,
+          "cmn": "他卖水果。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 434998,
+            "text": "He sells fruit.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4105310,
+          "cmn": "我喜欢水果。",
+          "author": "wabisabi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1121362,
+            "text": "I like fruit.",
+            "author": "cntrational",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10696147,
+          "cmn": "他们喜欢水果。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3326989,
+            "text": "They like fruit.",
+            "author": "pne",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0521",
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "syllables": [
+        "píng",
+        "guǒ"
       ],
       "tones": [
         2,
-        1
+        3
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "side; adjacent place"
+        "apple"
       ],
       "ind": [
-        "samping",
-        "sebelah"
+        "apel"
       ],
       "idMachine": true,
       "chars": [
-        "旁",
-        "边"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 405261,
-          "cmn": "大家都想坐在她旁边。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 32165,
-            "text": "Everybody wants to sit beside her.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 1503866,
-            "text": "Semuanya ingin duduk disampingnya.",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 1424389,
-          "cmn": "坐我旁边。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 250344,
-            "text": "Sit beside me.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 334889,
-          "cmn": "我坐在他旁边。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 250343,
-            "text": "I sat by his side.",
-            "author": "CS",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0478",
-      "hanzi": "中间",
-      "pinyin": "zhōngjiān",
-      "syllables": [
-        "zhōng",
-        "jiān"
-      ],
-      "tones": [
-        1,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the middle; the inside",
-        "in the middle; within; between; among",
-        "during; in the meantime"
-      ],
-      "ind": [
-        "tengah",
-        "di antara"
-      ],
-      "idMachine": true,
-      "chars": [
-        "中",
-        "间"
+        "苹",
+        "果"
       ],
       "examples": []
     },
     {
-      "id": "L1-0072",
-      "hanzi": "地上",
-      "pinyin": "dìshang",
+      "id": "L1-0164",
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
       "syllables": [
-        "dì",
-        "shang"
+        "jī",
+        "dàn"
       ],
       "tones": [
-        4,
-        5
-      ],
-      "pos": [],
-      "en": [
-        "on the ground",
-        "on the floor"
-      ],
-      "ind": [
-        "di tanah",
-        "di lantai"
-      ],
-      "idMachine": true,
-      "chars": [
-        "地",
-        "上"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1366219,
-          "cmn": "树倒在了地上。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": "倒",
-          "en": {
-            "tatoebaId": 2839189,
-            "text": "The tree fell to the ground.",
-            "author": "AlanF_US",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 11019968,
-          "cmn": "别坐在水泥地上。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": "水泥",
-          "en": {
-            "tatoebaId": 11149230,
-            "text": "Don't sit on the cement floor.",
-            "author": "cypherpartiv",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0069",
-      "hanzi": "地",
-      "pinyin": "dì",
-      "syllables": [
-        "dì"
-      ],
-      "tones": [
+        1,
         4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "earth",
-        "ground",
-        "field",
-        "place",
-        "land"
+        "(chicken) egg",
+        "hen's egg"
       ],
       "ind": [
-        "tanah",
-        "bumi",
-        "tempat"
+        "telur ayam"
       ],
       "idMachine": true,
       "chars": [
-        "地"
+        "鸡",
+        "蛋"
       ],
       "examples": [
         {
-          "tatoebaId": 512111,
-          "cmn": "他慢慢地走。",
+          "tatoebaId": 334425,
+          "cmn": "请问鸡蛋在哪里？",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 293207,
-            "text": "He walks slowly.",
+            "tatoebaId": 1565,
+            "text": "Where are the eggs, please?",
+            "author": "RoyalBee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4673809,
+          "cmn": "我不喜欢鸡蛋。",
+          "author": "McMeao",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 325226,
+            "text": "I don't care for eggs.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 799117,
-          "cmn": "他坐在地上。",
-          "author": "GlossaMatik",
+          "tatoebaId": 347058,
+          "cmn": "我买了几个鸡蛋和一点牛奶。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 299626,
-            "text": "He was sitting on the floor.",
+            "tatoebaId": 262176,
+            "text": "I bought a few eggs and a little milk.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0243",
+      "hanzi": "面包",
+      "pinyin": "miànbāo",
+      "syllables": [
+        "miàn",
+        "bāo"
+      ],
+      "tones": [
+        4,
+        1
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "bread"
+      ],
+      "ind": [
+        "roti"
+      ],
+      "idMachine": true,
+      "chars": [
+        "面",
+        "包"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 843482,
+          "cmn": "我吃面包。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1867478,
+            "text": "I eat bread.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 9954763,
-          "cmn": "他是本地人。",
-          "author": "GlossaMatik",
+          "tatoebaId": 843488,
+          "cmn": "我不吃面包。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 9954764,
-            "text": "He is a local.",
-            "author": "GlossaMatik",
+            "tatoebaId": 3826038,
+            "text": "I don't eat bread.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8929172,
+          "cmn": "我们在吃面包。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8860712,
+            "text": "We are eating bread.",
+            "author": "AlanF_US",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0016",
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "syllables": [
+        "bāo",
+        "zi"
+      ],
+      "tones": [
+        1,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "baozi; bao (steamed stuffed bun)"
+      ],
+      "ind": [
+        "bakpao",
+        "roti kukus berisi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "包",
+        "子"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0511",
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "syllables": [
+        "jiǎo",
+        "zi"
+      ],
+      "tones": [
+        3,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "dumpling",
+        "pot-sticker"
+      ],
+      "ind": [
+        "pangsit Tiongkok",
+        "jiaozi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "饺",
+        "子"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0244",
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "syllables": [
+        "miàn",
+        "tiáo",
+        "r"
+      ],
+      "tones": [
+        4,
+        2,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "noodles"
+      ],
+      "ind": [
+        "mi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "面",
+        "条",
+        "儿"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0139",
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "syllables": [
+        "hǎo",
+        "chī"
+      ],
+      "tones": [
+        3,
+        1
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "tasty; delicious"
+      ],
+      "ind": [
+        "enak (dimakan)",
+        "lezat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "好",
+        "吃"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2062924,
+          "cmn": "香蕉很好吃。",
+          "author": "mrtaistoi",
+          "license": "CC BY 2.0 FR",
+          "outside": "香蕉",
+          "en": {
+            "tatoebaId": 1098563,
+            "text": "Bananas are delicious.",
+            "author": "cntrational",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 348285,
+          "cmn": "全都好吃！",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": "全都",
+          "en": {
+            "tatoebaId": 1668021,
+            "text": "Everything was delicious!",
+            "author": "kerbear407",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2778814,
+          "cmn": "这条鱼很好吃。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "条鱼",
+          "en": {
+            "tatoebaId": 3049852,
+            "text": "This fish is delicious.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1645,90 +1064,31 @@
   ],
   "casual": [
     {
-      "id": "c-u09-01",
+      "id": "c-u06-01",
       "unit": "u09",
-      "hanzi": "里头",
-      "pinyin": "lǐ tou",
+      "hanzi": "吃货",
+      "pinyin": "chī huò",
       "syllables": [
-        "lǐ",
-        "tou"
+        "chī",
+        "huò"
       ],
-      "label": "santai",
+      "label": "gaul",
       "hsk": {
-        "hanzi": "里边",
+        "hanzi": "爱吃的人",
         "wordIds": [
-          "L1-0214"
+          "L1-0001",
+          "L1-0046",
+          "L1-0067",
+          "L1-0305"
         ]
       },
       "meaning": {
-        "id": "di dalam",
-        "en": "inside"
+        "id": "si doyan makan",
+        "en": "foodie"
       },
       "situation": {
-        "id": "Menunjukkan sesuatu ada di dalam tas, kamar, atau toko.",
-        "en": "Saying something is inside a bag, room or shop."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u09-02",
-      "unit": "u09",
-      "hanzi": "外头",
-      "pinyin": "wài tou",
-      "syllables": [
-        "wài",
-        "tou"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "外边",
-        "wordIds": [
-          "L1-0368"
-        ]
-      },
-      "meaning": {
-        "id": "di luar",
-        "en": "outside"
-      },
-      "situation": {
-        "id": "Bilang sesuatu ada di luar, misalnya \"di luar hujan\".",
-        "en": "Saying something is outside, e.g. \"it is raining outside\"."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u09-03",
-      "unit": "u09",
-      "hanzi": "前头",
-      "pinyin": "qián tou",
-      "syllables": [
-        "qián",
-        "tou"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "前边",
-        "wordIds": [
-          "L1-0292"
-        ]
-      },
-      "meaning": {
-        "id": "di depan",
-        "en": "ahead, in front"
-      },
-      "situation": {
-        "id": "Menunjukkan arah: tempatnya ada di depan.",
-        "en": "Giving directions: the place is up ahead."
+        "id": "Bercanda tentang orang yang sangat suka makan.",
+        "en": "Joking about someone who loves eating."
       },
       "evidence": [
         "cedict",
@@ -1737,28 +1097,29 @@
       "machine": true
     },
     {
-      "id": "c-u09-04",
+      "id": "c-u06-02",
       "unit": "u09",
-      "hanzi": "后头",
-      "pinyin": "hòu tou",
+      "hanzi": "买单",
+      "pinyin": "mǎi dān",
       "syllables": [
-        "hòu",
-        "tou"
+        "mǎi",
+        "dān"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "后边",
+        "hanzi": "给钱",
         "wordIds": [
-          "L1-0148"
+          "L1-0121",
+          "L1-0294"
         ]
       },
       "meaning": {
-        "id": "di belakang",
-        "en": "behind, at the back"
+        "id": "minta bon, bayar",
+        "en": "to pay the bill"
       },
       "situation": {
-        "id": "Menunjukkan sesuatu ada di belakang.",
-        "en": "Saying something is at the back."
+        "id": "Minta bon atau membayar di restoran.",
+        "en": "Asking for or paying the bill in a restaurant."
       },
       "evidence": [
         "cedict",
@@ -1768,28 +1129,61 @@
       "machine": true
     },
     {
-      "id": "c-u09-05",
+      "id": "c-u06-06",
       "unit": "u09",
-      "hanzi": "上头",
-      "pinyin": "shàng tou",
+      "hanzi": "开吃",
+      "pinyin": "kāi chī",
       "syllables": [
-        "shàng",
-        "tou"
+        "kāi",
+        "chī"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "上边",
+        "hanzi": "吃饭",
         "wordIds": [
-          "L1-0317"
+          "L1-0046",
+          "L1-0099"
         ]
       },
       "meaning": {
-        "id": "di atas",
-        "en": "on top, above"
+        "id": "ayo mulai makan",
+        "en": "let's dig in"
       },
       "situation": {
-        "id": "Bilang sesuatu ada di atas meja atau lemari.",
-        "en": "Saying something is on top of a table or shelf."
+        "id": "Mengajak mulai makan setelah makanan datang.",
+        "en": "Saying it is time to start eating once the food arrives."
+      },
+      "evidence": [
+        "cedict",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "relatedCasual": [
+    {
+      "id": "c-u06-05",
+      "unit": "u15",
+      "hanzi": "馋",
+      "pinyin": "chán",
+      "syllables": [
+        "chán"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "想吃",
+        "wordIds": [
+          "L1-0400",
+          "L1-0046"
+        ]
+      },
+      "meaning": {
+        "id": "ngiler, pengin makan",
+        "en": "craving (food)"
+      },
+      "situation": {
+        "id": "Melihat makanan enak dan jadi ingin makan.",
+        "en": "Seeing tasty food and craving it."
       },
       "evidence": [
         "cedict",
@@ -1799,201 +1193,5 @@
       "machine": true
     }
   ],
-  "relatedCasual": [],
-  "dialog": {
-    "id": "d-u09",
-    "title": {
-      "id": "Mencari toilet di mal",
-      "en": "Finding the toilet in a mall"
-    },
-    "situation": {
-      "id": "Kakek berbelanja di mal besar dan bertanya kepada penjaga toko di mana toiletnya.",
-      "en": "Grandpa is shopping in a big mall and asks a shop assistant where the toilet is."
-    },
-    "machine": true,
-    "speakers": {
-      "yeye": {
-        "name": {
-          "id": "Kakek",
-          "en": "Grandpa"
-        },
-        "gender": "male"
-      },
-      "seller": {
-        "name": {
-          "id": "Penjual",
-          "en": "Seller"
-        },
-        "gender": "female"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "yeye",
-        "gender": "male",
-        "cmn": "请问，洗手间在哪儿？",
-        "tokens": [
-          {
-            "text": "请问",
-            "pinyin": "qǐngwèn"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "洗手间",
-            "pinyin": "xǐshǒujiān"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "哪儿",
-            "pinyin": "nǎr"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "Excuse me, where is the toilet?",
-        "id": "Permisi, toiletnya di mana?",
-        "machine": true
-      },
-      {
-        "speaker": "seller",
-        "gender": "female",
-        "cmn": "在前头，左边。",
-        "tokens": [
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "前头",
-            "pinyin": "qián tou"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "左边",
-            "pinyin": "zuǒbian"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Up ahead, on the left.",
-        "id": "Di depan, sebelah kiri.",
-        "machine": true
-      },
-      {
-        "speaker": "yeye",
-        "gender": "male",
-        "cmn": "前头？那边吗？",
-        "tokens": [
-          {
-            "text": "前头",
-            "pinyin": "qián tou"
-          },
-          {
-            "text": "？"
-          },
-          {
-            "text": "那边",
-            "pinyin": "nàbiān"
-          },
-          {
-            "text": "吗",
-            "pinyin": "ma"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "Up ahead? Over there?",
-        "id": "Di depan? Sebelah sana?",
-        "machine": true
-      },
-      {
-        "speaker": "seller",
-        "gender": "female",
-        "cmn": "对，在那个门的旁边。",
-        "tokens": [
-          {
-            "text": "对",
-            "pinyin": "duì"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "那",
-            "pinyin": "nà"
-          },
-          {
-            "text": "个",
-            "pinyin": "gè"
-          },
-          {
-            "text": "门",
-            "pinyin": "mén"
-          },
-          {
-            "text": "的",
-            "pinyin": "de"
-          },
-          {
-            "text": "旁边",
-            "pinyin": "pángbiān"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Yes, next to that door.",
-        "id": "Iya, di samping pintu itu.",
-        "machine": true
-      },
-      {
-        "speaker": "yeye",
-        "gender": "male",
-        "cmn": "谢谢！",
-        "tokens": [
-          {
-            "text": "谢谢",
-            "pinyin": "xièxie"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Thank you!",
-        "id": "Terima kasih!",
-        "machine": true
-      },
-      {
-        "speaker": "seller",
-        "gender": "female",
-        "cmn": "不客气。",
-        "tokens": [
-          {
-            "text": "不客气",
-            "pinyin": "bùkèqì"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "You're welcome.",
-        "id": "Sama-sama.",
-        "machine": true
-      }
-    ]
-  }
+  "dialog": null
 }

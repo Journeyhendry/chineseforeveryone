@@ -3,58 +3,203 @@
   "unit": {
     "id": "u05",
     "order": 5,
-    "slug": "keluarga",
+    "slug": "bertanya",
     "title": {
-      "id": "Keluarga & tempat tinggal",
-      "en": "Family & home"
+      "id": "Bertanya & menjawab",
+      "en": "Asking & answering"
     },
     "description": {
-      "id": "Anggota keluarga, rumah, kamar, lantai, dan pintu.",
-      "en": "Family members, the house, rooms, floors and doors."
+      "id": "Kata tanya (apa, siapa, mana, bagaimana) dan cara menjawab.",
+      "en": "Question words (what, who, which, how) and how to answer."
     }
   },
   "words": [
     {
-      "id": "L1-0004",
-      "hanzi": "爸爸",
-      "pinyin": "bàba",
+      "id": "L1-0328",
+      "hanzi": "什么",
+      "pinyin": "shénme",
       "syllables": [
-        "bà",
-        "ba"
+        "shén",
+        "me"
       ],
       "tones": [
-        4,
+        2,
         5
       ],
       "pos": [
-        "N"
+        "Pron"
       ],
       "en": [
-        "(coll.) father; dad"
+        "what?",
+        "something; anything"
       ],
       "ind": [
-        "ayah",
-        "papa"
+        "apa"
       ],
       "idMachine": true,
       "chars": [
-        "爸"
+        "什",
+        "么"
       ],
       "examples": [
         {
-          "tatoebaId": 2235467,
-          "cmn": "爸爸，我爱你！",
-          "author": "Vortarulo",
+          "tatoebaId": 346883,
+          "cmn": "你叫什么名字？",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2075226,
-            "text": "Daddy, I love you!",
-            "author": "Vened",
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3371508,
+            "text": "Siapa namamu?",
+            "author": "nasirusman",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 444659,
+          "cmn": "您叫什么名字？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 365994,
+            "text": "Siapa nama Anda?",
+            "author": "hayabusa_future",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 1212007,
+          "cmn": "你的名字叫什么？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3371508,
+            "text": "Siapa namamu?",
+            "author": "nasirusman",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0325",
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "syllables": [
+        "shéi"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "who"
+      ],
+      "ind": [
+        "siapa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "谁"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1314463,
+          "cmn": "这是谁的？",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2302,
+            "text": "Whose is this?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
+        {
+          "tatoebaId": 9496181,
+          "cmn": "谁也不在那里。",
+          "author": "jin1",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 50961,
+            "text": "There was nobody there.",
+            "author": "adjusting",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 493888,
+          "cmn": "这是谁的书？",
+          "author": "adjusting",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 54871,
+            "text": "Whose book is this?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 3864961,
+            "text": "Buku siapa ini?",
+            "author": "orion17",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L1-0250",
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "syllables": [
+        "nǎ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "how",
+        "which"
+      ],
+      "ind": [
+        "yang mana",
+        "mana"
+      ],
+      "idMachine": true,
+      "chars": [
+        "哪"
+      ],
+      "examples": [
         {
           "tatoebaId": 13119020,
           "cmn": "爸爸在哪？",
@@ -70,808 +215,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 343312,
-          "cmn": "爸爸，你在干吗？",
-          "author": "fucongcong",
+          "tatoebaId": 1163567,
+          "cmn": "你是哪国人？",
+          "author": "cntrational",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 64110,
-            "text": "What are you doing, Dad?",
+            "tatoebaId": 17150,
+            "text": "Where do you come from?",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0224",
-      "hanzi": "妈妈",
-      "pinyin": "māma",
-      "syllables": [
-        "mā",
-        "ma"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "mama",
-        "mommy",
-        "mother"
-      ],
-      "ind": [
-        "ibu",
-        "mama"
-      ],
-      "idMachine": true,
-      "chars": [
-        "妈"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 330581,
-          "cmn": "这是我的妈妈。",
-          "author": "vermouthmjl",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1061529,
-            "text": "This is my mom.",
-            "author": "ArizonaJim",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 13700517,
-            "text": "Ini ibuku.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 10966817,
-          "cmn": "你妈妈呢？",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2254687,
-            "text": "Where's your mom?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1342264,
-          "cmn": "你是我妈妈。",
-          "author": "Shishir",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1097988,
-            "text": "You are my mother.",
-            "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0118",
-      "hanzi": "哥哥",
-      "pinyin": "gēge",
-      "syllables": [
-        "gē",
-        "ge"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "older brother"
-      ],
-      "ind": [
-        "kakak laki-laki"
-      ],
-      "idMachine": true,
-      "chars": [
-        "哥"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 825802,
-          "cmn": "他是我的哥哥。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 511849,
-            "text": "He's my older brother.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4629635,
-            "text": "Dia kakak laki-lakiku.",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 2144004,
-          "cmn": "他有三个哥哥。",
-          "author": "ydcok",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 284807,
-            "text": "He has three brothers.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 679442,
-          "cmn": "我有个哥哥。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 237828,
-            "text": "I have an older brother.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0178",
-      "hanzi": "姐姐",
-      "pinyin": "jiějie",
-      "syllables": [
-        "jiě",
-        "jie"
-      ],
-      "tones": [
-        3,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "older sister"
-      ],
-      "ind": [
-        "kakak perempuan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "姐"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 677657,
-          "cmn": "你有多少姐妹呢？",
-          "author": "aye1995",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69563,
-            "text": "How many sisters do you have?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2174231,
-          "cmn": "我没有姐妹。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 249753,
-            "text": "I don't have any sisters.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5691648,
-          "cmn": "你的姐姐呢？",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10612053,
-            "text": "Where did your sister just go?",
-            "author": "DaoSeng",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0074",
-      "hanzi": "弟弟",
-      "pinyin": "dìdi",
-      "syllables": [
-        "dì",
-        "di"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "younger brother"
-      ],
-      "ind": [
-        "adik laki-laki"
-      ],
-      "idMachine": true,
-      "chars": [
-        "弟"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 771449,
-          "cmn": "他是我弟弟。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 511852,
-            "text": "He's my younger brother.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5595168,
-          "cmn": "她和我是姐弟。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1989050,
-            "text": "She and I are brother and sister.",
-            "author": "Eldad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3488735,
-          "cmn": "她弟弟学习很认真。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 7770407,
-            "text": "Her brother studies hard.",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0237",
-      "hanzi": "妹妹",
-      "pinyin": "mèimei",
-      "syllables": [
-        "mèi",
-        "mei"
-      ],
-      "tones": [
-        4,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "younger sister",
-        "young woman"
-      ],
-      "ind": [
-        "adik perempuan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "妹"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 677657,
-          "cmn": "你有多少姐妹呢？",
-          "author": "aye1995",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69563,
-            "text": "How many sisters do you have?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2174231,
-          "cmn": "我没有姐妹。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 249753,
-            "text": "I don't have any sisters.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5691647,
-          "cmn": "你的妹妹呢？",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10612053,
-            "text": "Where did your sister just go?",
-            "author": "DaoSeng",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0097",
-      "hanzi": "儿子",
-      "pinyin": "érzi",
-      "syllables": [
-        "ér",
-        "zi"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "son"
-      ],
-      "ind": [
-        "anak laki-laki",
-        "putra"
-      ],
-      "idMachine": true,
-      "chars": [
-        "儿",
-        "子"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 651219,
-          "cmn": "你也是，儿子！",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1165008,
-            "text": "You are too, son!",
-            "author": "emmettricks",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1943933,
-          "cmn": "我不是你儿子。",
-          "author": "LanguageExpert",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1943921,
-            "text": "I'm not your son.",
-            "author": "Spamster",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6055135,
-          "cmn": "他有没有儿子？",
-          "author": "verdakoro",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6055934,
-            "text": "Does he have a son?",
-            "author": "sergiomelo",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0277",
-      "hanzi": "女儿",
-      "pinyin": "nǚ'ér",
-      "syllables": [
-        "nǚ",
-        "ér"
-      ],
-      "tones": [
-        3,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "daughter"
-      ],
-      "ind": [
-        "anak perempuan",
-        "putri"
-      ],
-      "idMachine": true,
-      "chars": [
-        "女",
-        "儿"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1428124,
-          "cmn": "她是我女儿。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 724401,
-            "text": "She's my daughter.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 383300,
-          "cmn": "他有三个女儿。",
-          "author": "ver",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 452768,
-            "text": "He has three daughters.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 399944,
-          "cmn": "我有一个女儿。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 261892,
-            "text": "I have a daughter.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0424",
-      "hanzi": "爷爷",
-      "pinyin": "yéye",
-      "syllables": [
-        "yé",
-        "ye"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "(coll.) paternal grandfather; grandpa"
-      ],
-      "ind": [
-        "kakek"
-      ],
-      "idMachine": true,
-      "chars": [
-        "爷"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 334262,
-          "cmn": "爷爷买给我的！",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 73932,
-            "text": "Grandpa bought it for me!",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1147872,
-          "cmn": "你爷爷多大了？",
-          "author": "Shishir",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 71000,
-            "text": "How old is your grandfather?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 453721,
-          "cmn": "我和妈妈，弟弟还有爷爷奶奶住在一起。",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 320536,
-            "text": "I live with my mother, brother and my grandparents.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0260",
-      "hanzi": "奶奶",
-      "pinyin": "nǎinai",
-      "syllables": [
-        "nǎi",
-        "nai"
-      ],
-      "tones": [
-        3,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "(informal) grandma (paternal grandmother)",
-        "(respectful) mistress of the house",
-        "(coll.) boobies",
-        "breasts"
-      ],
-      "ind": [
-        "nenek"
-      ],
-      "idMachine": true,
-      "chars": [
-        "奶"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 11571977,
-          "cmn": "这是我奶奶的假牙。",
-          "author": "TinBreker",
-          "license": "CC BY 2.0 FR",
-          "outside": "假牙",
-          "en": {
-            "tatoebaId": 42380,
-            "text": "These are my grandmother's artificial teeth.",
-            "author": "rul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12470958,
-            "text": "Ini gigi palsu nenekku.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 10340680,
-          "cmn": "这是我奶奶的食谱。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": "食谱",
-          "en": {
-            "tatoebaId": 4133555,
-            "text": "This recipe is my grandmother's.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 453721,
-          "cmn": "我和妈妈，弟弟还有爷爷奶奶住在一起。",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 320536,
-            "text": "I live with my mother, brother and my grandparents.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0259",
-      "hanzi": "奶",
-      "pinyin": "nǎi",
-      "syllables": [
-        "nǎi"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "breast",
-        "milk",
-        "to breastfeed"
-      ],
-      "ind": [
-        "susu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "奶"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 482367,
-          "cmn": "奶茶在哪里？",
-          "author": "adjusting",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 32223,
-            "text": "Where is the milk tea?",
-            "author": "Swift",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2782744,
-          "cmn": "我想吃奶酪。",
-          "author": "Kiwi",
-          "license": "CC BY 2.0 FR",
-          "outside": "酪",
-          "en": {
-            "tatoebaId": 7156634,
-            "text": "I want to eat cheese.",
-            "author": "Kiwi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 487605,
-          "cmn": "请来两杯奶咖。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "咖",
-          "en": {
-            "tatoebaId": 484733,
-            "text": "Two coffees with milk, please.",
-            "author": "FeuDRenais",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0169",
-      "hanzi": "家",
-      "pinyin": "jiā",
-      "syllables": [
-        "jiā"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N",
-        "M"
-      ],
-      "en": [
-        "home",
-        "family",
-        "(polite) my (sister, uncle etc)",
-        "classifier for families or businesses",
-        "refers to the philosophical schools of pre-Han China",
-        "noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian"
-      ],
-      "ind": [
-        "rumah",
-        "keluarga",
-        "(penghitung untuk toko atau keluarga)"
-      ],
-      "idMachine": true,
-      "chars": [
-        "家"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1691786,
-          "cmn": "她家在哪儿？",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 481895,
-            "text": "Where is her house?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 13674492,
-            "text": "Di mana rumahnya?",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 765282,
-          "cmn": "他不在家。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1310853,
-            "text": "He's not home.",
-            "author": "donkirkby",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -893,220 +245,76 @@
       ]
     },
     {
-      "id": "L1-0171",
-      "hanzi": "家人",
-      "pinyin": "jiārén",
+      "id": "L1-0516",
+      "hanzi": "哪个",
+      "pinyin": "nǎge",
       "syllables": [
-        "jiā",
-        "rén"
+        "nǎ",
+        "ge"
       ],
       "tones": [
-        1,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "family member",
-        "(old) servant"
-      ],
-      "ind": [
-        "anggota keluarga",
-        "keluarga"
-      ],
-      "idMachine": true,
-      "chars": [
-        "家",
-        "人"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 471395,
-          "cmn": "这是你的家人吗？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2661923,
-            "text": "Is this your family?",
-            "author": "WestofEden",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8875033,
-          "cmn": "我的家人住在那间房子。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5144447,
-            "text": "My family live in that house.",
-            "author": "Barra",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6169159,
-          "cmn": "你的家人在等你。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3831465,
-            "text": "Your family's waiting for you.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0170",
-      "hanzi": "家里",
-      "pinyin": "jiāli",
-      "syllables": [
-        "jiā",
-        "li"
-      ],
-      "tones": [
-        1,
+        3,
         5
       ],
-      "pos": [],
-      "en": [
-        "home"
-      ],
-      "ind": [
-        "di rumah",
-        "di dalam rumah"
-      ],
-      "idMachine": true,
-      "chars": [
-        "家",
-        "里"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 12918650,
-          "cmn": "家里有人吗？",
-          "author": "aldar",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 276298,
-            "text": "Is anybody home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 408723,
-          "cmn": "家里有没有人？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 276298,
-            "text": "Is anybody home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3537983,
-          "cmn": "你家里都有谁？",
-          "author": "trieuho",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 700113,
-            "text": "Who do you live with?",
-            "author": "Zifre",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0456",
-      "hanzi": "在家",
-      "pinyin": "zàijiā",
-      "syllables": [
-        "zài",
-        "jiā"
-      ],
-      "tones": [
-        4,
-        1
-      ],
       "pos": [
-        "V"
+        "Pron"
       ],
       "en": [
-        "to be at home",
-        "(at a workplace) to be in (as opposed to being away on official business 出差[chu1 chai1])",
-        "(Buddhism etc) to remain a layman (as opposed to becoming a monk or a nun 出家[chu1 jia1])"
+        "which one",
+        "which"
       ],
       "ind": [
-        "di rumah",
-        "ada di rumah"
+        "yang mana",
+        "mana"
       ],
       "idMachine": true,
       "chars": [
-        "在",
-        "家"
+        "哪",
+        "个"
       ],
       "examples": [
         {
-          "tatoebaId": 5584071,
-          "cmn": "你在家吗",
-          "author": "grindeldore",
+          "tatoebaId": 659658,
+          "cmn": "哪个是我的？",
+          "author": "Vortarulo",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1126543,
-            "text": "Are you home?",
+            "tatoebaId": 38002,
+            "text": "Which is mine?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 4329157,
-            "text": "Apa kamu ada di rumah?",
-            "author": "Bilmanda",
+            "tatoebaId": 3864920,
+            "text": "Yang mana punyaku?",
+            "author": "orion17",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 5584076,
-          "cmn": "您在家吗",
-          "author": "grindeldore",
+          "tatoebaId": 6183644,
+          "cmn": "哪个包是你的？",
+          "author": "yuiyu",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "包",
           "en": {
-            "tatoebaId": 1126543,
-            "text": "Are you home?",
+            "tatoebaId": 37977,
+            "text": "Which bag is yours?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 5584074,
-          "cmn": "你们在家吗",
-          "author": "grindeldore",
+          "tatoebaId": 3580024,
+          "cmn": "哪个是你的杯子？",
+          "author": "CLARET",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1126543,
-            "text": "Are you home?",
+            "tatoebaId": 1554393,
+            "text": "Which cup is yours?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1115,792 +323,154 @@
       ]
     },
     {
-      "id": "L1-0157",
-      "hanzi": "回家",
-      "pinyin": "huíjiā",
+      "id": "L1-0253",
+      "hanzi": "哪些",
+      "pinyin": "nǎxiē",
       "syllables": [
-        "huí",
-        "jiā"
+        "nǎ",
+        "xiē"
       ],
       "tones": [
-        2,
+        3,
         1
       ],
-      "pos": [],
+      "pos": [
+        "Pron"
+      ],
       "en": [
-        "to return home"
+        "which ones?",
+        "who?",
+        "what?"
       ],
       "ind": [
-        "pulang ke rumah"
+        "yang mana saja"
       ],
       "idMachine": true,
       "chars": [
-        "回",
-        "家"
+        "哪",
+        "些"
       ],
       "examples": [
         {
-          "tatoebaId": 1228436,
-          "cmn": "你可以回家。",
-          "author": "penguooo",
+          "tatoebaId": 9432354,
+          "cmn": "哪些是汤姆的？",
+          "author": "BobbyLee",
           "license": "CC BY 2.0 FR",
-          "outside": "可以",
+          "outside": "汤姆",
           "en": {
-            "tatoebaId": 1230452,
-            "text": "You can go home.",
-            "author": "alec",
+            "tatoebaId": 4495277,
+            "text": "Which are Tom's?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11321735,
+          "cmn": "哪些是最好的？",
+          "author": "untruth0423",
+          "license": "CC BY 2.0 FR",
+          "outside": "最好",
+          "en": {
+            "tatoebaId": 1078276,
+            "text": "Which are the best ones?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10966749,
+          "cmn": "哪些人想去？",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2011330,
+            "text": "Who wants to go?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0252",
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "syllables": [
+        "nǎ",
+        "r"
+      ],
+      "tones": [
+        3,
+        5
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "where?",
+        "wherever; anywhere; somewhere",
+        "(used in rhetorical questions) how can ...?; how could ...?"
+      ],
+      "ind": [
+        "di mana"
+      ],
+      "idMachine": true,
+      "chars": [
+        "哪",
+        "儿"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 336028,
+          "cmn": "鞋子在哪儿？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "鞋子",
+          "en": {
+            "tatoebaId": 18105,
+            "text": "Where're the shoes?",
+            "author": "Zifre",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 12442436,
-            "text": "Kamu boleh pulang.",
+            "tatoebaId": 13660260,
+            "text": "Di mana sepatunya?",
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 334555,
-          "cmn": "我们何不回家呢？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "何不",
-          "en": {
-            "tatoebaId": 1540,
-            "text": "Why don't we go home?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 781610,
-            "text": "Mengapa kita tidak pulang?",
-            "author": "windra",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 359017,
-          "cmn": "她回家了。",
-          "author": "nickyeow",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 312850,
-            "text": "She went home.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0102",
-      "hanzi": "房子",
-      "pinyin": "fángzi",
-      "syllables": [
-        "fáng",
-        "zi"
-      ],
-      "tones": [
-        2,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "house",
-        "building (single- or two-story)",
-        "apartment",
-        "room"
-      ],
-      "ind": [
-        "rumah",
-        "bangunan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "房",
-        "子"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 334564,
-          "cmn": "他没有房子住。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 284839,
-            "text": "He has no house in which to live.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4264997,
-          "cmn": "这是她的房子。",
-          "author": "notabene",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 457547,
-            "text": "This is her house.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 438990,
-          "cmn": "这个房子是我的。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 60147,
-            "text": "This house is mine.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0101",
-      "hanzi": "房间",
-      "pinyin": "fángjiān",
-      "syllables": [
-        "fáng",
-        "jiān"
-      ],
-      "tones": [
-        2,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "room"
-      ],
-      "ind": [
-        "kamar",
-        "ruangan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "房",
-        "间"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 686926,
-          "cmn": "这间房间是谁的？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 55514,
-            "text": "Whose room is this?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 332881,
-          "cmn": "我的房间号是多少？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 464588,
-            "text": "What is my room number?",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2254246,
-          "cmn": "这个房间超赞的，对不对？",
-          "author": "KerenDeng",
-          "license": "CC BY 2.0 FR",
-          "outside": "超赞",
-          "en": {
-            "tatoebaId": 2296720,
-            "text": "This room's pretty awesome, eh?",
-            "author": "FeuDRenais2",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0485",
-      "hanzi": "住",
-      "pinyin": "zhù",
-      "syllables": [
-        "zhù"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to live",
-        "to dwell",
-        "to stay",
-        "to reside",
-        "to stop",
-        "(suffix indicating firmness, steadiness, or coming to a halt)"
-      ],
-      "ind": [
-        "tinggal",
-        "menetap"
-      ],
-      "idMachine": true,
-      "chars": [
-        "住"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 748307,
-          "cmn": "你住哪里？",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 370708,
-            "text": "Where do you live?",
-            "author": "saeb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 136401,
-          "cmn": "你住在哪里？",
-          "author": "momowuwen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 370708,
-            "text": "Where do you live?",
-            "author": "saeb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 391063,
-          "cmn": "你住在哪儿？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 370708,
-            "text": "Where do you live?",
-            "author": "saeb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0001",
-      "hanzi": "爱",
-      "pinyin": "ài",
-      "syllables": [
-        "ài"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to love; to be fond of; to like",
-        "affection",
-        "to be inclined (to do sth); to tend to (happen)"
-      ],
-      "ind": [
-        "cinta",
-        "mencintai",
-        "menyukai"
-      ],
-      "idMachine": true,
-      "chars": [
-        "爱"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2235467,
-          "cmn": "爸爸，我爱你！",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2075226,
-            "text": "Daddy, I love you!",
-            "author": "Vened",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1211987,
-          "cmn": "我不爱你。",
-          "author": "Takuya",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1213414,
-            "text": "I don't love you.",
-            "author": "alec",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2233803,
-          "cmn": "这不是爱。",
+          "tatoebaId": 1691786,
+          "cmn": "她家在哪儿？",
           "author": "sadhen",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2233756,
-            "text": "This isn't love.",
+            "tatoebaId": 481895,
+            "text": "Where is her house?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0218",
-      "hanzi": "楼",
-      "pinyin": "lóu",
-      "syllables": [
-        "lóu"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "house with more than 1 story",
-        "storied building",
-        "floor"
-      ],
-      "ind": [
-        "gedung bertingkat",
-        "lantai"
-      ],
-      "idMachine": true,
-      "chars": [
-        "楼"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 8690283,
-          "cmn": "我们在三楼。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 7722416,
-            "text": "We're on the third floor.",
-            "author": "CK",
+          "ind": {
+            "tatoebaId": 13674492,
+            "text": "Di mana rumahnya?",
+            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
-          },
-          "ind": null
+          }
         },
         {
-          "tatoebaId": 8696275,
-          "cmn": "我们住在三楼。",
-          "author": "crescat",
+          "tatoebaId": 1054527,
+          "cmn": "学校在哪儿？",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2649822,
-            "text": "We live on the third floor.",
-            "author": "sharptoothed",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8511512,
-          "cmn": "这是幢老楼。",
-          "author": "gumblex",
-          "license": "CC BY 2.0 FR",
-          "outside": "幢",
-          "en": {
-            "tatoebaId": 3422036,
-            "text": "This is an old building.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0219",
-      "hanzi": "楼上",
-      "pinyin": "lóushàng",
-      "syllables": [
-        "lóu",
-        "shàng"
-      ],
-      "tones": [
-        2,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "upstairs"
-      ],
-      "ind": [
-        "di lantai atas",
-        "atas"
-      ],
-      "idMachine": true,
-      "chars": [
-        "楼",
-        "上"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3011116,
-          "cmn": "我要去楼上。",
-          "author": "j0rd4nkzf",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2248019,
-            "text": "I'm going upstairs.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3586055,
-          "cmn": "我去楼上看看。",
-          "author": "Tximist",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2543593,
-            "text": "I'm going to check upstairs.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8932580,
-          "cmn": "图书馆在楼上。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4494345,
-            "text": "The library is upstairs.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0220",
-      "hanzi": "楼下",
-      "pinyin": "lóuxià",
-      "syllables": [
-        "lóu",
-        "xià"
-      ],
-      "tones": [
-        2,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "downstairs"
-      ],
-      "ind": [
-        "di lantai bawah",
-        "bawah"
-      ],
-      "idMachine": true,
-      "chars": [
-        "楼",
-        "下"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5973401,
-          "cmn": "在楼下等我",
-          "author": "zhangxr91",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3735982,
-            "text": "Wait for me downstairs.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 938054,
-          "cmn": "楼下有人在等您。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 938029,
-            "text": "Someone is waiting for you downstairs.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0239",
-      "hanzi": "门口",
-      "pinyin": "ménkǒu",
-      "syllables": [
-        "mén",
-        "kǒu"
-      ],
-      "tones": [
-        2,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "doorway",
-        "gate"
-      ],
-      "ind": [
-        "pintu masuk",
-        "depan pintu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "门",
-        "口"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 397356,
-          "cmn": "门口有个人。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 397357,
-            "text": "There's someone at the doorway.",
-            "author": "sysko",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13912885,
-          "cmn": "门口有一个纸箱。",
-          "author": "jan_OkulaJu",
-          "license": "CC BY 2.0 FR",
-          "outside": "纸箱",
-          "en": {
-            "tatoebaId": 13922470,
-            "text": "There's a box at the door.",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 811019,
-          "cmn": "在门口的女孩是谁？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "女孩",
-          "en": {
-            "tatoebaId": 239939,
-            "text": "Who is the girl at the door?",
-            "author": "CC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0238",
-      "hanzi": "门",
-      "pinyin": "mén",
-      "syllables": [
-        "mén"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "N",
-        "M"
-      ],
-      "en": [
-        "gate",
-        "door",
-        "gateway",
-        "doorway",
-        "opening",
-        "valve"
-      ],
-      "ind": [
-        "pintu",
-        "gerbang"
-      ],
-      "idMachine": true,
-      "chars": [
-        "门"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10007048,
-          "cmn": "门在哪里？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 687650,
-            "text": "Where is the gate?",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2233632,
-          "cmn": "他关了门。",
-          "author": "aruhito",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 478255,
-            "text": "He closed the door.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2300121,
-          "cmn": "我出门了。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2301432,
-            "text": "I'm gone.",
-            "author": "FeuDRenais2",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0387",
-      "hanzi": "洗手间",
-      "pinyin": "xǐshǒujiān",
-      "syllables": [
-        "xǐ",
-        "shǒu",
-        "jiān"
-      ],
-      "tones": [
-        3,
-        3,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "toilet",
-        "lavatory",
-        "washroom"
-      ],
-      "ind": [
-        "toilet",
-        "kamar kecil"
-      ],
-      "idMachine": true,
-      "chars": [
-        "洗",
-        "手",
-        "间"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 13751781,
-          "cmn": "洗手间没人。",
-          "author": "_LoLa_",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2469512,
-            "text": "Bathroom's free.",
-            "author": "raggione",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 346667,
-          "cmn": "洗手间在哪里？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2136,
-            "text": "Where is the bathroom?",
-            "author": "brauliobezerra",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9927011,
-          "cmn": "请问，洗手间在哪里？",
-          "author": "Laoan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1504125,
-            "text": "Where are the toilets, please?",
+            "tatoebaId": 1054512,
+            "text": "Where is the school?",
             "author": "Eldad",
             "license": "CC BY 2.0 FR"
           },
@@ -1909,78 +479,386 @@
       ]
     },
     {
-      "id": "L1-0172",
-      "hanzi": "间",
-      "pinyin": "jiān",
+      "id": "L1-0251",
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
       "syllables": [
-        "jiān"
+        "nǎ",
+        "lǐ"
       ],
       "tones": [
-        1
+        3,
+        3
       ],
       "pos": [
-        "M"
+        "Pron"
       ],
       "en": [
-        "between",
-        "among",
-        "within a definite time or space",
-        "room",
-        "section of a room or lateral space between two pairs of pillars",
-        "classifier for rooms"
+        "where?",
+        "somewhere",
+        "anywhere",
+        "wherever",
+        "nowhere (negative answer to question)",
+        "humble expression denying compliment"
       ],
       "ind": [
-        "(penghitung untuk kamar)",
-        "di antara"
+        "di mana",
+        "(jawaban merendah: \"ah, tidak juga\")"
       ],
       "idMachine": true,
       "chars": [
-        "间"
+        "哪",
+        "里"
       ],
       "examples": [
         {
-          "tatoebaId": 686926,
-          "cmn": "这间房间是谁的？",
-          "author": "sysko",
+          "tatoebaId": 677779,
+          "cmn": "你们哪里的？",
+          "author": "Nina_1A",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 55514,
-            "text": "Whose room is this?",
-            "author": "CK",
+            "tatoebaId": 1790822,
+            "text": "Where are you guys from?",
+            "author": "newkome",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 8875033,
-          "cmn": "我的家人住在那间房子。",
-          "author": "iiujik",
+          "tatoebaId": 11541431,
+          "cmn": "绳子在哪里？",
+          "author": "megamanenm",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "绳子",
           "en": {
-            "tatoebaId": 5144447,
-            "text": "My family live in that house.",
-            "author": "Barra",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4859550,
-          "cmn": "我有时间。",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2245901,
-            "text": "I have time.",
+            "tatoebaId": 2549199,
+            "text": "Where's the rope?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 10008934,
-            "text": "Aku punya waktu.",
+            "tatoebaId": 12470951,
+            "text": "Di mana talinya?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 428004,
+          "cmn": "厨师在哪里？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "厨师",
+          "en": {
+            "tatoebaId": 428003,
+            "text": "Where's the cook?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0460",
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "syllables": [
+        "zěn",
+        "me"
+      ],
+      "tones": [
+        3,
+        5
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "how?",
+        "what?",
+        "why?"
+      ],
+      "ind": [
+        "bagaimana",
+        "kenapa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "怎",
+        "么"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10552169,
+          "cmn": "您怎么回答的？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "回答",
+          "en": {
+            "tatoebaId": 1426,
+            "text": "What did you answer?",
+            "author": "Zifre",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1470423,
+          "cmn": "怎么会有？",
+          "author": "bfsutian",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8261956,
+            "text": "Why would there be?",
+            "author": "francaisr0wlet",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4970124,
+          "cmn": "怎么会呢？",
+          "author": "wzhd",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2116272,
+            "text": "How come?",
+            "author": "freddy1",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0531",
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "syllables": [
+        "zěn",
+        "me",
+        "yàng"
+      ],
+      "tones": [
+        3,
+        5,
+        4
+      ],
+      "pos": [
+        "Pron"
+      ],
+      "en": [
+        "how?",
+        "how about?",
+        "how was it?",
+        "how are things?"
+      ],
+      "ind": [
+        "bagaimana",
+        "bagaimana kalau"
+      ],
+      "idMachine": true,
+      "chars": [
+        "怎",
+        "么",
+        "样"
+      ],
+      "examples": []
+    },
+    {
+      "id": "L1-0379",
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "syllables": [
+        "wèn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to ask; to inquire"
+      ],
+      "ind": [
+        "bertanya"
+      ],
+      "idMachine": true,
+      "chars": [
+        "问"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 10252146,
+          "cmn": "我们问他。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3920154,
+            "text": "We'll ask him.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10086133,
+          "cmn": "我问问路。",
+          "author": "ColawithIce",
+          "license": "CC BY 2.0 FR",
+          "outside": "问路",
+          "en": {
+            "tatoebaId": 2546108,
+            "text": "I'll ask for directions.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5624882,
+          "cmn": "我会问他们。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3920017,
+            "text": "I'll ask them.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0526",
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "syllables": [
+        "wèn",
+        "tí"
+      ],
+      "tones": [
+        4,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "question",
+        "problem",
+        "issue",
+        "topic"
+      ],
+      "ind": [
+        "pertanyaan",
+        "masalah"
+      ],
+      "idMachine": true,
+      "chars": [
+        "问",
+        "题"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1516205,
+          "cmn": "我觉得没什么问题。",
+          "author": "gonnastop",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 271563,
+            "text": "I think it will be fine.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0092",
+      "hanzi": "对",
+      "pinyin": "duì",
+      "syllables": [
+        "duì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "Adj"
+      ],
+      "en": [
+        "right; correct",
+        "towards; at; for",
+        "concerning; regarding",
+        "to treat (sb a certain way)",
+        "to face",
+        "(bound form) opposite; facing; matching"
+      ],
+      "ind": [
+        "benar",
+        "betul",
+        "terhadap",
+        "kepada"
+      ],
+      "idMachine": true,
+      "chars": [
+        "对"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 349193,
+          "cmn": "你是对的。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 411667,
+            "text": "You're right.",
+            "author": "Alkrasnov",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 6608385,
+          "cmn": "对，我没关系。",
+          "author": "RainShelter",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6608034,
+            "text": "Yes, I'm fine.",
+            "author": "MaryJ",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8688060,
+          "cmn": "你喜欢雨对吧？",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 20103,
+            "text": "You like rain, don't you?",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 11023614,
+            "text": "Kamu suka hujan, kan?",
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
@@ -1990,28 +868,28 @@
   ],
   "casual": [
     {
-      "id": "c-u05-01",
+      "id": "c-u03-02",
       "unit": "u05",
-      "hanzi": "老爸",
-      "pinyin": "lǎo bà",
+      "hanzi": "没错",
+      "pinyin": "méi cuò",
       "syllables": [
-        "lǎo",
-        "bà"
+        "méi",
+        "cuò"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "爸爸",
+        "hanzi": "对",
         "wordIds": [
-          "L1-0004"
+          "L1-0092"
         ]
       },
       "meaning": {
-        "id": "bapak, bokap",
-        "en": "dad"
+        "id": "betul, tepat",
+        "en": "that's right"
       },
       "situation": {
-        "id": "Anak menyebut ayahnya dengan akrab.",
-        "en": "A child talking about their father affectionately."
+        "id": "Setuju dengan kuat pada perkataan orang lain.",
+        "en": "Agreeing strongly with what someone said."
       },
       "evidence": [
         "cedict",
@@ -2021,59 +899,29 @@
       "machine": true
     },
     {
-      "id": "c-u05-02",
+      "id": "c-u03-03",
       "unit": "u05",
-      "hanzi": "老妈",
-      "pinyin": "lǎo mā",
+      "hanzi": "可不是",
+      "pinyin": "kě bu shì",
       "syllables": [
-        "lǎo",
-        "mā"
+        "kě",
+        "bu",
+        "shì"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "妈妈",
+        "hanzi": "是",
         "wordIds": [
-          "L1-0224"
+          "L1-0337"
         ]
       },
       "meaning": {
-        "id": "ibu, nyokap",
-        "en": "mom"
+        "id": "iya banget, memang",
+        "en": "exactly!, sure is"
       },
       "situation": {
-        "id": "Anak menyebut ibunya dengan akrab.",
-        "en": "A child talking about their mother affectionately."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u05-03",
-      "unit": "u05",
-      "hanzi": "爸妈",
-      "pinyin": "bà mā",
-      "syllables": [
-        "bà",
-        "mā"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "爸爸妈妈",
-        "wordIds": [
-          "L1-0004",
-          "L1-0224"
-        ]
-      },
-      "meaning": {
-        "id": "ayah-ibu, ortu",
-        "en": "mom and dad, parents"
-      },
-      "situation": {
-        "id": "Menyebut kedua orang tua sekaligus dalam obrolan.",
-        "en": "Talking about both parents at once."
+        "id": "Setuju dengan semangat, misalnya \"Iya, panas banget!\"",
+        "en": "Agreeing heartily, e.g. \"It sure is hot!\""
       },
       "evidence": [
         "cedict",
@@ -2083,28 +931,31 @@
       "machine": true
     },
     {
-      "id": "c-u05-04",
+      "id": "c-u03-04",
       "unit": "u05",
-      "hanzi": "宝贝",
-      "pinyin": "bǎo bèi",
+      "hanzi": "怎么回事",
+      "pinyin": "zěnme huí shì",
       "syllables": [
-        "bǎo",
-        "bèi"
+        "zěn",
+        "me",
+        "huí",
+        "shì"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "孩子",
+        "hanzi": "怎么了",
         "wordIds": [
-          "L1-0135"
+          "L1-0460",
+          "L1-0210"
         ]
       },
       "meaning": {
-        "id": "sayang (untuk anak)",
-        "en": "darling, sweetie (to a child)"
+        "id": "ada apa sih",
+        "en": "what's going on?"
       },
       "situation": {
-        "id": "Orang tua atau kakek-nenek memanggil anak kecil.",
-        "en": "Parents or grandparents calling a small child."
+        "id": "Bertanya ketika ada sesuatu yang aneh atau salah.",
+        "en": "Asking when something seems strange or wrong."
       },
       "evidence": [
         "cedict",
@@ -2114,28 +965,27 @@
       "machine": true
     },
     {
-      "id": "c-u05-05",
+      "id": "c-u03-07",
       "unit": "u05",
-      "hanzi": "闺女",
-      "pinyin": "guī nü",
+      "hanzi": "嗯",
+      "pinyin": "èn",
       "syllables": [
-        "guī",
-        "nü"
+        "èn"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "女儿",
+        "hanzi": "对",
         "wordIds": [
-          "L1-0277"
+          "L1-0092"
         ]
       },
       "meaning": {
-        "id": "anak perempuan",
-        "en": "daughter (colloquial)"
+        "id": "hmm, iya",
+        "en": "mm-hmm, yeah"
       },
       "situation": {
-        "id": "Orang tua (sering di utara) menyebut anak perempuannya.",
-        "en": "Parents (often in the north) talking about their daughter."
+        "id": "Menjawab \"iya\" dengan singkat, atau menunjukkan sedang mendengarkan.",
+        "en": "A short \"yes\", or showing you are listening."
       },
       "evidence": [
         "cedict",
@@ -2145,303 +995,6 @@
       "machine": true
     }
   ],
-  "relatedCasual": [
-    {
-      "id": "c-u06-01",
-      "unit": "u06",
-      "hanzi": "吃货",
-      "pinyin": "chī huò",
-      "syllables": [
-        "chī",
-        "huò"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "爱吃的人",
-        "wordIds": [
-          "L1-0001",
-          "L1-0046",
-          "L1-0067",
-          "L1-0305"
-        ]
-      },
-      "meaning": {
-        "id": "si doyan makan",
-        "en": "foodie"
-      },
-      "situation": {
-        "id": "Bercanda tentang orang yang sangat suka makan.",
-        "en": "Joking about someone who loves eating."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u13-10",
-      "unit": "u13",
-      "hanzi": "串门",
-      "pinyin": "chuàn mén",
-      "syllables": [
-        "chuàn",
-        "mén"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "去朋友家",
-        "wordIds": [
-          "L1-0302",
-          "L1-0284",
-          "L1-0169"
-        ]
-      },
-      "meaning": {
-        "id": "main ke rumah orang",
-        "en": "to drop in on someone"
-      },
-      "situation": {
-        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
-        "en": "Dropping by a neighbour or friend without a special reason."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    }
-  ],
-  "dialog": {
-    "id": "d-u05",
-    "title": {
-      "id": "Semua di mana?",
-      "en": "Where is everyone?"
-    },
-    "situation": {
-      "id": "Nenek baru pulang ke apartemen dan menanyakan anggota keluarga lain kepada Adik.",
-      "en": "Grandma comes back to the flat and asks little sister where the rest of the family is."
-    },
-    "machine": true,
-    "speakers": {
-      "nainai": {
-        "name": {
-          "id": "Nenek",
-          "en": "Grandma"
-        },
-        "gender": "female"
-      },
-      "meimei": {
-        "name": {
-          "id": "Adik perempuan",
-          "en": "Little sister"
-        },
-        "gender": "female"
-      },
-      "gege": {
-        "name": {
-          "id": "Kakak laki-laki",
-          "en": "Big brother"
-        },
-        "gender": "male"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "nainai",
-        "gender": "female",
-        "cmn": "你爸妈在家吗？",
-        "tokens": [
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "爸妈",
-            "pinyin": "bà mā"
-          },
-          {
-            "text": "在家",
-            "pinyin": "zàijiā"
-          },
-          {
-            "text": "吗",
-            "pinyin": "ma"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "Are your mom and dad home?",
-        "id": "Ayah-ibumu ada di rumah?",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "不在，他们在楼下。",
-        "tokens": [
-          {
-            "text": "不",
-            "pinyin": "bù"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "他们",
-            "pinyin": "tāmen"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "楼下",
-            "pinyin": "lóuxià"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "No, they're downstairs.",
-        "id": "Nggak, mereka di bawah.",
-        "machine": true
-      },
-      {
-        "speaker": "nainai",
-        "gender": "female",
-        "cmn": "你哥哥呢？",
-        "tokens": [
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "哥哥",
-            "pinyin": "gēge"
-          },
-          {
-            "text": "呢",
-            "pinyin": "ne"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "What about your brother?",
-        "id": "Kakakmu?",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "他在房间。他很宅！",
-        "tokens": [
-          {
-            "text": "他",
-            "pinyin": "tā"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "房间",
-            "pinyin": "fángjiān"
-          },
-          {
-            "text": "。"
-          },
-          {
-            "text": "他",
-            "pinyin": "tā"
-          },
-          {
-            "text": "很",
-            "pinyin": "hěn"
-          },
-          {
-            "text": "宅",
-            "pinyin": "zhái"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "He's in his room. He never goes out!",
-        "id": "Di kamar. Dia mager banget!",
-        "machine": true
-      },
-      {
-        "speaker": "gege",
-        "gender": "male",
-        "cmn": "奶奶，我在这儿！",
-        "tokens": [
-          {
-            "text": "奶奶",
-            "pinyin": "nǎinai"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "在",
-            "pinyin": "zài"
-          },
-          {
-            "text": "这儿",
-            "pinyin": "zhèr"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Grandma, I'm here!",
-        "id": "Nek, aku di sini!",
-        "machine": true
-      },
-      {
-        "speaker": "nainai",
-        "gender": "female",
-        "cmn": "你也去楼下吧。",
-        "tokens": [
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "也",
-            "pinyin": "yě"
-          },
-          {
-            "text": "去",
-            "pinyin": "qù"
-          },
-          {
-            "text": "楼下",
-            "pinyin": "lóuxià"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "You go downstairs too.",
-        "id": "Kamu turun ke bawah juga, ya.",
-        "machine": true
-      }
-    ]
-  }
+  "relatedCasual": [],
+  "dialog": null
 }

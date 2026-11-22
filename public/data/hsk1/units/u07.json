@@ -3,88 +3,90 @@
   "unit": {
     "id": "u07",
     "order": 7,
-    "slug": "tanggal",
+    "slug": "orang",
     "title": {
-      "id": "Hari, tanggal & tahun",
-      "en": "Days, dates & years"
+      "id": "Orang di sekitar",
+      "en": "People around you"
     },
     "description": {
-      "id": "Kemarin, hari ini, besok, hari dalam seminggu, bulan, tahun, dan ulang tahun.",
-      "en": "Yesterday, today, tomorrow, days of the week, months, years and birthdays."
+      "id": "Menyebut teman, teman sekelas, laki-laki, perempuan, dan anak-anak.",
+      "en": "Naming friends, classmates, men, women and children."
     }
   },
   "words": [
     {
-      "id": "L1-0181",
-      "hanzi": "今天",
-      "pinyin": "jīntiān",
+      "id": "L1-0305",
+      "hanzi": "人",
+      "pinyin": "rén",
       "syllables": [
-        "jīn",
-        "tiān"
+        "rén"
       ],
       "tones": [
-        1,
-        1
+        2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "today",
-        "the present time; now"
+        "person; people"
       ],
       "ind": [
-        "hari ini"
+        "orang",
+        "manusia"
       ],
       "idMachine": true,
       "chars": [
-        "今",
-        "天"
+        "人"
       ],
       "examples": [
         {
-          "tatoebaId": 385098,
-          "cmn": "今天星期几？",
-          "author": "sysko",
+          "tatoebaId": 747591,
+          "cmn": "我是女人。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 476431,
-            "text": "What day is it today?",
-            "author": "minshirui",
+            "tatoebaId": 740214,
+            "text": "I am a woman.",
+            "author": "CC",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 13678462,
-            "text": "Hari ini hari apa?",
-            "author": "HAGNi",
+            "tatoebaId": 7024445,
+            "text": "Aku perempuan.",
+            "author": "purichan",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 348445,
-          "cmn": "今天是星期一。",
-          "author": "zhouj1955",
+          "tatoebaId": 9980215,
+          "cmn": "这里有三十个人。",
+          "author": "Arania",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 238862,
-            "text": "It's Monday.",
+            "tatoebaId": 9801282,
+            "text": "There are thirty people here.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 12709831,
+            "text": "Ada tiga puluh orang di sini.",
+            "author": "Pacific",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 1480125,
-          "cmn": "今天是我的生日。",
-          "author": "egg0073",
+          "tatoebaId": 2217670,
+          "cmn": "那个女人在哪里？",
+          "author": "aruhito",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 985108,
-            "text": "Today is my birthday.",
-            "author": "riccioberto",
+            "tatoebaId": 9414941,
+            "text": "Where is that woman?",
+            "author": "BobbyLee",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -92,70 +94,160 @@
       ]
     },
     {
-      "id": "L1-0248",
-      "hanzi": "明天",
-      "pinyin": "míngtiān",
+      "id": "L1-0284",
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
       "syllables": [
-        "míng",
-        "tiān"
+        "péng",
+        "you"
       ],
       "tones": [
         2,
-        1
+        5
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "tomorrow"
+        "friend"
       ],
       "ind": [
-        "besok"
+        "teman",
+        "sahabat"
       ],
       "idMachine": true,
       "chars": [
-        "明",
-        "天"
+        "朋",
+        "友"
       ],
       "examples": [
         {
-          "tatoebaId": 2928042,
-          "cmn": "明天我回家。",
-          "author": "malaili",
+          "tatoebaId": 7768285,
+          "cmn": "我没有朋友。",
+          "author": "jiangche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2926313,
-            "text": "Tomorrow I'm going back home.",
+            "tatoebaId": 478568,
+            "text": "I have no friends.",
+            "author": "BlueLagoon",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 11349447,
+            "text": "Aku tidak punya teman.",
+            "author": "Pacific",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 490784,
+          "cmn": "他是我的朋友。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 298009,
+            "text": "He is my friend.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12137361,
+            "text": "Dia temanku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 3478455,
+          "cmn": "她朋友很少。",
+          "author": "schlagermanx",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 451212,
+            "text": "She has few friends.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0365",
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "syllables": [
+        "tóng",
+        "xué"
+      ],
+      "tones": [
+        2,
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "to study at the same school",
+        "fellow student",
+        "classmate"
+      ],
+      "ind": [
+        "teman sekelas",
+        "murid"
+      ],
+      "idMachine": true,
+      "chars": [
+        "同",
+        "学"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 333784,
+          "cmn": "我们是同学。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 247946,
+            "text": "We're classmates.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 940015,
+            "text": "Kita teman sekelas.",
+            "author": "fuwafuwa",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 11837632,
-          "cmn": "明天星期六。",
+          "tatoebaId": 11837695,
+          "cmn": "他是我的同学。",
           "author": "Lemmih",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 3062005,
-            "text": "Tomorrow is Saturday.",
-            "author": "CN",
+            "tatoebaId": 297810,
+            "text": "He is my classmate.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 409409,
-          "cmn": "明天是星期天。",
-          "author": "GlossaMatik",
+          "tatoebaId": 4761463,
+          "cmn": "同学们都在学英文。",
+          "author": "billt_estates",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "英文",
           "en": {
-            "tatoebaId": 323310,
-            "text": "It is Sunday tomorrow.",
-            "author": "CK",
+            "tatoebaId": 4761866,
+            "text": "The students are all learning English.",
+            "author": "DrWinters",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -163,80 +255,78 @@
       ]
     },
     {
-      "id": "L1-0495",
-      "hanzi": "昨天",
-      "pinyin": "zuótiān",
+      "id": "L1-0505",
+      "hanzi": "大家",
+      "pinyin": "dàjiā",
       "syllables": [
-        "zuó",
-        "tiān"
+        "dà",
+        "jiā"
       ],
       "tones": [
-        2,
+        4,
         1
       ],
       "pos": [
-        "N"
+        "Pron"
       ],
       "en": [
-        "yesterday"
+        "everyone",
+        "everybody"
       ],
       "ind": [
-        "kemarin"
+        "semuanya",
+        "kalian semua",
+        "hadirin"
       ],
       "idMachine": true,
       "chars": [
-        "昨",
-        "天"
+        "大",
+        "家"
       ],
       "examples": [
         {
-          "tatoebaId": 3076600,
-          "cmn": "昨天是星期四。",
-          "author": "tommyfang95",
+          "tatoebaId": 9992034,
+          "cmn": "谢谢大家！",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 528533,
-            "text": "Yesterday was Thursday.",
-            "author": "wma",
+            "tatoebaId": 10251062,
+            "text": "Thanks, everybody!",
+            "author": "bekindtoall",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 458163,
+          "cmn": "大家都在等你。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": "等",
+          "en": {
+            "tatoebaId": 32112,
+            "text": "Everybody is waiting for you.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 12981762,
-            "text": "Kemarin hari Kamis.",
+            "tatoebaId": 9975781,
+            "text": "Semua orang menunggumu.",
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         },
         {
-          "tatoebaId": 793308,
-          "cmn": "昨天是我的生日。",
-          "author": "Martha",
+          "tatoebaId": 385298,
+          "cmn": "大家都笑我。",
+          "author": "nickyeow",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "笑",
           "en": {
-            "tatoebaId": 244539,
-            "text": "Yesterday was my birthday.",
+            "tatoebaId": 255696,
+            "text": "I was laughed at by everyone.",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4323202,
-            "text": "Kemarin adalah hari ulang tahunku.",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 6486900,
-          "cmn": "昨天星期六。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5579558,
-            "text": "Yesterday was Saturday.",
-            "author": "garynw",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -244,501 +334,75 @@
       ]
     },
     {
-      "id": "L1-0149",
-      "hanzi": "后天",
-      "pinyin": "hòutiān",
+      "id": "L1-0398",
+      "hanzi": "先生",
+      "pinyin": "xiānsheng",
       "syllables": [
-        "hòu",
-        "tiān"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the day after tomorrow",
-        "life after birth (the period in which one develops through experiences, contrasted with 先天[xian1 tian1])",
-        "acquired (not innate or congenital)",
-        "a posteriori"
-      ],
-      "ind": [
-        "lusa"
-      ],
-      "idMachine": true,
-      "chars": [
-        "后",
-        "天"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 411701,
-          "cmn": "我们后天出发。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "出发",
-          "en": {
-            "tatoebaId": 249408,
-            "text": "We're leaving the day after tomorrow.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 687045,
-          "cmn": "你后天有空吗？",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": "有空",
-          "en": {
-            "tatoebaId": 71871,
-            "text": "Do you have time the day after tomorrow?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 351230,
-          "cmn": "请后天来吧。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 8316003,
-            "text": "Please come the day after tomorrow.",
-            "author": "AlanF_US",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0293",
-      "hanzi": "前天",
-      "pinyin": "qiántiān",
-      "syllables": [
-        "qián",
-        "tiān"
-      ],
-      "tones": [
-        2,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the day before yesterday"
-      ],
-      "ind": [
-        "kemarin dulu",
-        "dua hari lalu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "前",
-        "天"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2889963,
-          "cmn": "他前天去伦敦。",
-          "author": "Popolon",
-          "license": "CC BY 2.0 FR",
-          "outside": "伦敦",
-          "en": {
-            "tatoebaId": 64965,
-            "text": "He departed for London the day before yesterday.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 634828,
-          "cmn": "她前天去了美国。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "美国",
-          "en": {
-            "tatoebaId": 310585,
-            "text": "She left for America the day before yesterday.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10350436,
-          "cmn": "我前天碰到了他。",
-          "author": "DaoSeng",
-          "license": "CC BY 2.0 FR",
-          "outside": "碰到",
-          "en": {
-            "tatoebaId": 2980022,
-            "text": "I met him the day before yesterday.",
-            "author": "pne",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0180",
-      "hanzi": "今年",
-      "pinyin": "jīnnián",
-      "syllables": [
-        "jīn",
-        "nián"
+        "xiān",
+        "sheng"
       ],
       "tones": [
         1,
-        2
+        5
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "this year"
+        "teacher",
+        "gentleman; sir; mister (Mr.)",
+        "husband",
+        "(dialect) doctor"
       ],
       "ind": [
-        "tahun ini"
+        "Tuan",
+        "bapak",
+        "suami"
       ],
       "idMachine": true,
       "chars": [
-        "今",
-        "年"
+        "先",
+        "生"
       ],
       "examples": [
         {
-          "tatoebaId": 760902,
-          "cmn": "今年是哪一年？",
-          "author": "ednorog",
+          "tatoebaId": 710691,
+          "cmn": "谢谢您，先生。",
+          "author": "Ayalche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 682508,
-            "text": "What year is it?",
-            "author": "Source_VOA",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5297688,
-          "cmn": "今年是二零一一年。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5327634,
-            "text": "This year is 2011.",
-            "author": "Jeannierocket",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8738755,
-          "cmn": "汤姆今年三十岁。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 1024810,
-            "text": "Tom is thirty years old.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0247",
-      "hanzi": "明年",
-      "pinyin": "míngnián",
-      "syllables": [
-        "míng",
-        "nián"
-      ],
-      "tones": [
-        2,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "next year"
-      ],
-      "ind": [
-        "tahun depan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "明",
-        "年"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1446903,
-          "cmn": "我明年17岁。",
-          "author": "asosan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 325124,
-            "text": "I'll be seventeen next year.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 336175,
-          "cmn": "我明年想学中文。",
-          "author": "domi",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 409536,
-            "text": "I want to learn Chinese next year.",
+            "tatoebaId": 710692,
+            "text": "Thank you, sir.",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 857223,
-          "cmn": "我明年想学汉语。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 409536,
-            "text": "I want to learn Chinese next year.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0303",
-      "hanzi": "去年",
-      "pinyin": "qùnián",
-      "syllables": [
-        "qù",
-        "nián"
-      ],
-      "tones": [
-        4,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "last year"
-      ],
-      "ind": [
-        "tahun lalu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "去",
-        "年"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 8924835,
-          "cmn": "你去年住在哪儿？",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69492,
-            "text": "Where did you live last year?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 788579,
-          "cmn": "我是去年认识他的。",
-          "author": "bfsutian",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 256889,
-            "text": "I got acquainted with him last year.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5907629,
-          "cmn": "她去年出生。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": "出生",
-          "en": {
-            "tatoebaId": 313842,
-            "text": "She was born last year.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0273",
-      "hanzi": "年",
-      "pinyin": "nián",
-      "syllables": [
-        "nián"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "M"
-      ],
-      "en": [
-        "year"
-      ],
-      "ind": [
-        "tahun"
-      ],
-      "idMachine": true,
-      "chars": [
-        "年"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 760902,
-          "cmn": "今年是哪一年？",
-          "author": "ednorog",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 682508,
-            "text": "What year is it?",
-            "author": "Source_VOA",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 333474,
-          "cmn": "一年有十二个月。",
-          "author": "al",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 73060,
-            "text": "A year has twelve months.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5297688,
-          "cmn": "今年是二零一一年。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5327634,
-            "text": "This year is 2011.",
-            "author": "Jeannierocket",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0452",
-      "hanzi": "月",
-      "pinyin": "yuè",
-      "syllables": [
-        "yuè"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "moon",
-        "month",
-        "monthly"
-      ],
-      "ind": [
-        "bulan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "月"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 382981,
-          "cmn": "你的生日是几月几号？",
+          "tatoebaId": 420438,
+          "cmn": "有的，先生你有几位？",
           "author": "sysko",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "位",
           "en": {
-            "tatoebaId": 16997,
-            "text": "When is your birthday?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 366005,
-            "text": "Kapan ulang tahunmu?",
-            "author": "hayabusa_future",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 2561534,
-          "cmn": "我三月二十二号生日。",
-          "author": "svhschinese",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 251418,
-            "text": "My birthday is on March 22.",
-            "author": "CN",
+            "tatoebaId": 2227912,
+            "text": "Yes, there are. How many of you are there, Sir?",
+            "author": "FeuDRenais2",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 398978,
-          "cmn": "是十月三日。",
-          "author": "kellenparker",
+          "tatoebaId": 10966854,
+          "cmn": "你认识钱先生吗？",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 73449,
-            "text": "It's the third of October.",
-            "author": "CK",
+            "tatoebaId": 11092298,
+            "text": "Do you know Mr Qian?",
+            "author": "risewithelsa",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -746,183 +410,101 @@
       ]
     },
     {
-      "id": "L1-0308",
-      "hanzi": "日",
-      "pinyin": "rì",
+      "id": "L1-0518",
+      "hanzi": "女士",
+      "pinyin": "nǚshì",
       "syllables": [
-        "rì"
+        "nǚ",
+        "shì"
       ],
       "tones": [
+        3,
         4
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "sun",
-        "day",
-        "date, day of the month"
+        "lady",
+        "madam",
+        "Miss",
+        "Ms"
       ],
       "ind": [
-        "hari",
-        "tanggal",
-        "matahari"
+        "ibu (sopan)",
+        "nyonya",
+        "wanita"
       ],
       "idMachine": true,
       "chars": [
-        "日"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 398978,
-          "cmn": "是十月三日。",
-          "author": "kellenparker",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 73449,
-            "text": "It's the third of October.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6056537,
-          "cmn": "今天是二〇一六年十一月二十三日。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10540232,
-            "text": "Today is 23 November 2016.",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6486872,
-          "cmn": "今天是二零一六年十一月二十三日。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10540232,
-            "text": "Today is 23 November 2016.",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0309",
-      "hanzi": "日期",
-      "pinyin": "rìqī",
-      "syllables": [
-        "rì",
-        "qī"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "date"
-      ],
-      "ind": [
-        "tanggal",
-        "tenggat waktu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "日",
-        "期"
+        "女",
+        "士"
       ],
       "examples": []
     },
     {
-      "id": "L1-0413",
-      "hanzi": "星期",
-      "pinyin": "xīngqī",
+      "id": "L1-0261",
+      "hanzi": "男",
+      "pinyin": "nán",
       "syllables": [
-        "xīng",
-        "qī"
+        "nán"
       ],
       "tones": [
-        1,
-        1
+        2
       ],
       "pos": [
-        "N"
+        "Adj"
       ],
       "en": [
-        "week",
-        "day of the week",
-        "Sunday"
+        "(bound form) male",
+        "baron, the lowest of the five ranks of nobility 五等爵位[wu3 deng3 jue2 wei4]"
       ],
       "ind": [
-        "minggu",
-        "pekan"
+        "laki-laki",
+        "pria"
       ],
       "idMachine": true,
       "chars": [
-        "星",
-        "期"
+        "男"
       ],
       "examples": [
         {
-          "tatoebaId": 385098,
-          "cmn": "今天星期几？",
+          "tatoebaId": 333655,
+          "cmn": "我是个男人。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 386704,
+            "text": "I am a man.",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 706434,
+          "cmn": "我们是男人。",
           "author": "sysko",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 476431,
-            "text": "What day is it today?",
-            "author": "minshirui",
+            "tatoebaId": 388869,
+            "text": "We are men.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 13678462,
-            "text": "Hari ini hari apa?",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 3076600,
-          "cmn": "昨天是星期四。",
-          "author": "tommyfang95",
+          "tatoebaId": 7773140,
+          "cmn": "那男人是谁？",
+          "author": "jiangche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 528533,
-            "text": "Yesterday was Thursday.",
-            "author": "wma",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12981762,
-            "text": "Kemarin hari Kamis.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 348445,
-          "cmn": "今天是星期一。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 238862,
-            "text": "It's Monday.",
+            "tatoebaId": 67951,
+            "text": "Who is that man?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -931,73 +513,75 @@
       ]
     },
     {
-      "id": "L1-0414",
-      "hanzi": "星期日",
-      "pinyin": "xīngqīrì",
+      "id": "L1-0276",
+      "hanzi": "女",
+      "pinyin": "nǚ",
       "syllables": [
-        "xīng",
-        "qī",
-        "rì"
+        "nǚ"
       ],
       "tones": [
-        1,
-        1,
-        4
+        3
       ],
       "pos": [
-        "N"
+        "Adj"
       ],
       "en": [
-        "Sunday"
+        "female",
+        "woman",
+        "daughter"
       ],
       "ind": [
-        "hari Minggu"
+        "perempuan",
+        "wanita"
       ],
       "idMachine": true,
       "chars": [
-        "星",
-        "期",
-        "日"
+        "女"
       ],
       "examples": [
         {
-          "tatoebaId": 1178260,
-          "cmn": "今天是星期日。",
-          "author": "treskro3",
+          "tatoebaId": 747591,
+          "cmn": "我是女人。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 63119,
-            "text": "Today is Sunday.",
-            "author": "sacredceltic",
+            "tatoebaId": 740214,
+            "text": "I am a woman.",
+            "author": "CC",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7024445,
+            "text": "Aku perempuan.",
+            "author": "purichan",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 2217670,
+          "cmn": "那个女人在哪里？",
+          "author": "aruhito",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 9414941,
+            "text": "Where is that woman?",
+            "author": "BobbyLee",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 919630,
-          "cmn": "我的生日在星期日。",
-          "author": "Martha",
+          "tatoebaId": 7774367,
+          "cmn": "我是个女人。",
+          "author": "jiangche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 251422,
-            "text": "My birthday falls on Sunday.",
-            "author": "CN",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 676498,
-          "cmn": "星期日营业吗？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "营业",
-          "en": {
-            "tatoebaId": 7704630,
-            "text": "Are you open for business on Sunday?",
-            "author": "potatoindespair",
+            "tatoebaId": 1122514,
+            "text": "I'm a woman.",
+            "author": "Shishir",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1005,508 +589,290 @@
       ]
     },
     {
-      "id": "L1-0415",
-      "hanzi": "星期天",
-      "pinyin": "xīngqītiān",
+      "id": "L1-0135",
+      "hanzi": "孩子",
+      "pinyin": "háizi",
       "syllables": [
-        "xīng",
-        "qī",
-        "tiān"
+        "hái",
+        "zi"
       ],
       "tones": [
-        1,
-        1,
-        1
+        2,
+        5
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "Sunday"
+        "child"
       ],
       "ind": [
-        "hari Minggu"
+        "anak"
       ],
       "idMachine": true,
       "chars": [
-        "星",
-        "期",
-        "天"
+        "孩",
+        "子"
       ],
       "examples": [
         {
-          "tatoebaId": 409409,
-          "cmn": "明天是星期天。",
-          "author": "GlossaMatik",
+          "tatoebaId": 344213,
+          "cmn": "我没有孩子。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 323310,
-            "text": "It is Sunday tomorrow.",
+            "tatoebaId": 257961,
+            "text": "I don't have any children.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12395841,
+            "text": "Aku tidak punya anak.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 181028,
+          "cmn": "他没有孩子。",
+          "author": "Kiwi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 284815,
+            "text": "He has no children.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 5911623,
-          "cmn": "我星期天在家。",
-          "author": "verdastelo9604",
+          "tatoebaId": 3579720,
+          "cmn": "他们是孩子。",
+          "author": "CLARET",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 281868,
-            "text": "I stay at home on Sundays.",
+            "tatoebaId": 2111267,
+            "text": "They're kids.",
             "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0404",
+      "hanzi": "小朋友",
+      "pinyin": "xiǎopéngyǒu",
+      "syllables": [
+        "xiǎo",
+        "péng",
+        "yǒu"
+      ],
+      "tones": [
+        3,
+        2,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "child; kid (used to refer to a child, or by an adult to address a child, or, in Taiwan, to refer to sb's own child)"
+      ],
+      "ind": [
+        "anak kecil",
+        "adik kecil"
+      ],
+      "idMachine": true,
+      "chars": [
+        "小",
+        "朋",
+        "友"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 868472,
+          "cmn": "小朋友多是外国人。",
+          "author": "ColinG",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13120033,
+            "text": "Most of the kids are foreigners.",
+            "author": "LeviHighway",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 779808,
-          "cmn": "昨天是星期天，不是星期六。",
+          "tatoebaId": 7677086,
+          "cmn": "小朋友都是外国人。",
+          "author": "eiocha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 868166,
+            "text": "Children are all foreigners.",
+            "author": "Scott",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0263",
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "syllables": [
+        "nán",
+        "péng",
+        "you"
+      ],
+      "tones": [
+        2,
+        2,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "boyfriend"
+      ],
+      "ind": [
+        "pacar laki-laki",
+        "pacar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "男",
+        "朋",
+        "友"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8934410,
+          "cmn": "他不是我的男朋友。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1935032,
+            "text": "He's not my boyfriend.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 11197987,
+            "text": "Dia bukan pacarku.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 5359883,
+          "cmn": "我是你的男朋友。",
           "author": "nickyeow",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 244532,
-            "text": "Yesterday was Sunday, not Saturday.",
+            "tatoebaId": 2248321,
+            "text": "I'm your boyfriend.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0359",
-      "hanzi": "天",
-      "pinyin": "tiān",
-      "syllables": [
-        "tiān"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N",
-        "M"
-      ],
-      "en": [
-        "day",
-        "sky",
-        "heaven"
-      ],
-      "ind": [
-        "hari",
-        "langit"
-      ],
-      "idMachine": true,
-      "chars": [
-        "天"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 13203871,
-          "cmn": "今天是第一天。",
-          "author": "1753191944",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13203453,
-            "text": "Today is the first day.",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
         },
         {
-          "tatoebaId": 335520,
-          "cmn": "前几天我见到了她。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 33058,
-            "text": "I saw her just the other day.",
-            "author": "CH",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 874154,
-          "cmn": "那天我不行。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 44597,
-            "text": "That's a bad day for me.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0331",
-      "hanzi": "生日",
-      "pinyin": "shēngrì",
-      "syllables": [
-        "shēng",
-        "rì"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "birthday"
-      ],
-      "ind": [
-        "ulang tahun"
-      ],
-      "idMachine": true,
-      "chars": [
-        "生",
-        "日"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 793308,
-          "cmn": "昨天是我的生日。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 244539,
-            "text": "Yesterday was my birthday.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 4323202,
-            "text": "Kemarin adalah hari ulang tahunku.",
-            "author": "Bilmanda",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 382981,
-          "cmn": "你的生日是几月几号？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 16997,
-            "text": "When is your birthday?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 366005,
-            "text": "Kapan ulang tahunmu?",
-            "author": "hayabusa_future",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 1480125,
-          "cmn": "今天是我的生日。",
-          "author": "egg0073",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 985108,
-            "text": "Today is my birthday.",
-            "author": "riccioberto",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0412",
-      "hanzi": "新年",
-      "pinyin": "xīnnián",
-      "syllables": [
-        "xīn",
-        "nián"
-      ],
-      "tones": [
-        1,
-        2
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "New Year"
-      ],
-      "ind": [
-        "tahun baru"
-      ],
-      "idMachine": true,
-      "chars": [
-        "新",
-        "年"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 347260,
-          "cmn": "新年快到了。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 534694,
-            "text": "The new year drew closer.",
-            "author": "blay_paul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6799676,
-          "cmn": "新年！新事业！",
-          "author": "basilhan",
-          "license": "CC BY 2.0 FR",
-          "outside": "事业",
-          "en": {
-            "tatoebaId": 4258881,
-            "text": "New Year! New Career!",
-            "author": "JFMorais",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0011",
-      "hanzi": "半年",
-      "pinyin": "bànnián",
-      "syllables": [
-        "bàn",
-        "nián"
-      ],
-      "tones": [
-        4,
-        2
-      ],
-      "pos": [],
-      "en": [
-        "half a year"
-      ],
-      "ind": [
-        "setengah tahun"
-      ],
-      "idMachine": true,
-      "chars": [
-        "半",
-        "年"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 332421,
-          "cmn": "她半年后就要出国了。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10674360,
-            "text": "In half a year she'll be going abroad.",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0012",
-      "hanzi": "半天",
-      "pinyin": "bàntiān",
-      "syllables": [
-        "bàn",
-        "tiān"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "half of the day",
-        "a long time",
-        "quite a while",
-        "midair"
-      ],
-      "ind": [
-        "setengah hari",
-        "lama sekali"
-      ],
-      "idMachine": true,
-      "chars": [
-        "半",
-        "天"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1305934,
-          "cmn": "他们看了那部电影半天了。",
-          "author": "eastasiastudent",
-          "license": "CC BY 2.0 FR",
-          "outside": "部",
-          "en": {
-            "tatoebaId": 1305935,
-            "text": "They’ve been watching that film for ages.",
-            "author": "eastasiastudent",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0319",
-      "hanzi": "上次",
-      "pinyin": "shàngcì",
-      "syllables": [
-        "shàng",
-        "cì"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "last time"
-      ],
-      "ind": [
-        "kali yang lalu",
-        "lain kali yang lalu"
-      ],
-      "idMachine": true,
-      "chars": [
-        "上",
-        "次"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 804775,
-          "cmn": "你上次小便是什么时候？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "小便",
-          "en": {
-            "tatoebaId": 7780695,
-            "text": "When was the last time you urinated?",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5136652,
-          "cmn": "你上次禁食是什么时候？",
-          "author": "JimmyUK",
-          "license": "CC BY 2.0 FR",
-          "outside": "禁食",
-          "en": {
-            "tatoebaId": 1747713,
-            "text": "When was the last time you fasted?",
-            "author": "Amastan",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8860609,
-          "cmn": "我不记得上次看到她微笑。",
+          "tatoebaId": 8853885,
+          "cmn": "那是她的男朋友。",
           "author": "iiujik",
           "license": "CC BY 2.0 FR",
-          "outside": "微笑",
+          "outside": null,
           "en": {
-            "tatoebaId": 3633492,
-            "text": "I can't remember when was the last time I've seen her smile.",
+            "tatoebaId": 1357090,
+            "text": "That's her boyfriend.",
+            "author": "sacredceltic",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0279",
+      "hanzi": "女朋友",
+      "pinyin": "nǚpéngyou",
+      "syllables": [
+        "nǚ",
+        "péng",
+        "you"
+      ],
+      "tones": [
+        3,
+        2,
+        5
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "girlfriend"
+      ],
+      "ind": [
+        "pacar perempuan",
+        "pacar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "女",
+        "朋",
+        "友"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 432313,
+          "cmn": "他没有女朋友。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 284658,
+            "text": "He has no girlfriend.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4473139,
+          "cmn": "你女朋友是谁？",
+          "author": "yuiyu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2240401,
+            "text": "Who's your girlfriend?",
             "author": "Hybrid",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0393",
-      "hanzi": "下次",
-      "pinyin": "xiàcì",
-      "syllables": [
-        "xià",
-        "cì"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "next time"
-      ],
-      "ind": [
-        "lain kali",
-        "kali berikutnya"
-      ],
-      "idMachine": true,
-      "chars": [
-        "下",
-        "次"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1408027,
-          "cmn": "下次再说吧。",
-          "author": "wangzi0921",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 32652,
-            "text": "Let's do it another time.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
         },
         {
-          "tatoebaId": 794241,
-          "cmn": "下次我不做了。",
-          "author": "fucongcong",
+          "tatoebaId": 397209,
+          "cmn": "她是我的女朋友。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 280961,
-            "text": "I will not do it again.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 794242,
-          "cmn": "不会再有下次了。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 280961,
-            "text": "I will not do it again.",
+            "tatoebaId": 312168,
+            "text": "She is my girlfriend.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1515,72 +881,153 @@
       ]
     },
     {
-      "id": "L1-0007",
-      "hanzi": "白天",
-      "pinyin": "báitiān",
+      "id": "L1-0089",
+      "hanzi": "都",
+      "pinyin": "dōu",
       "syllables": [
-        "bái",
-        "tiān"
+        "dōu"
       ],
       "tones": [
-        2,
         1
       ],
       "pos": [
-        "N"
+        "Adv"
       ],
       "en": [
-        "daytime",
-        "during the day",
-        "day"
+        "all; both; entirely",
+        "(used for emphasis) even",
+        "already",
+        "(not) at all"
       ],
       "ind": [
-        "siang hari"
+        "semua",
+        "semuanya",
+        "bahkan (penekanan)"
       ],
       "idMachine": true,
       "chars": [
-        "白",
-        "天"
+        "都"
       ],
       "examples": [
         {
-          "tatoebaId": 10484361,
-          "cmn": "那时是白天。",
-          "author": "BobbyLee",
-          "license": "CC BY 2.0 FR",
-          "outside": "那时",
-          "en": {
-            "tatoebaId": 9116537,
-            "text": "It was daytime.",
-            "author": "Amastan",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 333994,
-          "cmn": "他白天睡觉，晚上工作。",
-          "author": "fucongcong",
+          "tatoebaId": 11902437,
+          "cmn": "他们都在那里。",
+          "author": "ejvalle",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 301559,
-            "text": "He sleeps by day and works by night.",
-            "author": "shekitten",
+            "tatoebaId": 8898665,
+            "text": "They are all there.",
+            "author": "Ergulis",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 1316024,
-          "cmn": "他白天睡夜晚工作。",
-          "author": "shanghainese",
+          "tatoebaId": 458163,
+          "cmn": "大家都在等你。",
+          "author": "nickyeow",
           "license": "CC BY 2.0 FR",
-          "outside": "夜晚",
+          "outside": "等",
           "en": {
-            "tatoebaId": 1211531,
-            "text": "He sleeps during the day and works at night.",
-            "author": "alec",
+            "tatoebaId": 32112,
+            "text": "Everybody is waiting for you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 9975781,
+            "text": "Semua orang menunggumu.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 385298,
+          "cmn": "大家都笑我。",
+          "author": "nickyeow",
+          "license": "CC BY 2.0 FR",
+          "outside": "笑",
+          "en": {
+            "tatoebaId": 255696,
+            "text": "I was laughed at by everyone.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0145",
+      "hanzi": "和",
+      "pinyin": "hé",
+      "syllables": [
+        "hé"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "Prep",
+        "Conj"
+      ],
+      "en": [
+        "(joining two nouns) and; together with; with (Taiwan pr. [han4])",
+        "(math.) sum",
+        "to make peace",
+        "(sports) to draw; to tie",
+        "(bound form) harmonious",
+        "(bound form) Japan; Japanese"
+      ],
+      "ind": [
+        "dan",
+        "dengan",
+        "bersama"
+      ],
+      "idMachine": true,
+      "chars": [
+        "和"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1275327,
+          "cmn": "我和他是朋友。",
+          "author": "egg0073",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1283961,
+            "text": "I'm friends with him.",
+            "author": "Trailsend",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2000277,
+          "cmn": "我正在和朋友打电话呢。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 40151,
+            "text": "I've got my friend on the line right now.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8888035,
+          "cmn": "我和他认识。",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 260219,
+            "text": "I am acquainted with him.",
+            "author": "CH",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1590,29 +1037,28 @@
   ],
   "casual": [
     {
-      "id": "c-u07-01",
+      "id": "c-u04-01",
       "unit": "u07",
-      "hanzi": "礼拜天",
-      "pinyin": "lǐ bài tiān",
+      "hanzi": "帅哥",
+      "pinyin": "shuài gē",
       "syllables": [
-        "lǐ",
-        "bài",
-        "tiān"
+        "shuài",
+        "gē"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "星期天",
+        "hanzi": "先生",
         "wordIds": [
-          "L1-0415"
+          "L1-0398"
         ]
       },
       "meaning": {
-        "id": "hari Minggu",
-        "en": "Sunday"
+        "id": "mas ganteng (sapaan)",
+        "en": "handsome (way to address a young man)"
       },
       "situation": {
-        "id": "Menyebut hari Minggu dalam obrolan sehari-hari.",
-        "en": "Talking about Sunday in everyday speech."
+        "id": "Memanggil pelayan atau penjual laki-laki muda dengan ramah.",
+        "en": "Calling a young male waiter or seller in a friendly way."
       },
       "evidence": [
         "cedict",
@@ -1622,28 +1068,29 @@
       "machine": true
     },
     {
-      "id": "c-u07-02",
+      "id": "c-u04-03",
       "unit": "u07",
-      "hanzi": "礼拜",
-      "pinyin": "lǐ bài",
+      "hanzi": "哥们儿",
+      "pinyin": "gē menr",
       "syllables": [
-        "lǐ",
-        "bài"
+        "gē",
+        "men",
+        "r"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "星期",
+        "hanzi": "朋友",
         "wordIds": [
-          "L1-0413"
+          "L1-0284"
         ]
       },
       "meaning": {
-        "id": "minggu (pekan)",
-        "en": "week"
+        "id": "bro, sobat (antara laki-laki)",
+        "en": "buddy, bro"
       },
       "situation": {
-        "id": "Menyebut pekan, misalnya \"minggu depan\".",
-        "en": "Talking about a week, e.g. \"next week\"."
+        "id": "Laki-laki menyebut atau memanggil sahabatnya.",
+        "en": "Men talking about or calling a close male friend."
       },
       "evidence": [
         "cedict",
@@ -1653,130 +1100,251 @@
       "machine": true
     },
     {
-      "id": "c-u07-03",
+      "id": "c-u04-04",
       "unit": "u07",
-      "hanzi": "改天",
-      "pinyin": "gǎi tiān",
+      "hanzi": "闺蜜",
+      "pinyin": "guī mì",
       "syllables": [
-        "gǎi",
-        "tiān"
+        "guī",
+        "mì"
       ],
-      "label": "santai",
+      "label": "gaul",
       "hsk": {
-        "hanzi": "下次",
+        "hanzi": "朋友",
         "wordIds": [
-          "L1-0393"
+          "L1-0284"
         ]
       },
       "meaning": {
-        "id": "lain kali, lain hari",
-        "en": "another day, some other time"
+        "id": "sahabat cewek",
+        "en": "bestie (a woman's close female friend)"
       },
       "situation": {
-        "id": "Menunda janji dengan sopan, misalnya makan bersama.",
-        "en": "Politely postponing plans, e.g. a meal together."
+        "id": "Perempuan menyebut sahabat dekatnya.",
+        "en": "A woman talking about her best friend."
       },
       "evidence": [
         "cedict",
-        "wiktionary",
-        "tatoeba"
+        "wiktionary"
       ],
       "machine": true
     },
     {
-      "id": "c-u07-04",
+      "id": "c-u13-10",
       "unit": "u07",
-      "hanzi": "回头",
-      "pinyin": "huí tóu",
+      "hanzi": "串门",
+      "pinyin": "chuàn mén",
       "syllables": [
-        "huí",
-        "tóu"
+        "chuàn",
+        "mén"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "下次",
+        "hanzi": "去朋友家",
         "wordIds": [
-          "L1-0393"
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
         ]
       },
       "meaning": {
-        "id": "nanti (lain waktu)",
-        "en": "later"
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
       },
       "situation": {
-        "id": "Bilang akan melakukan sesuatu nanti, tidak sekarang.",
-        "en": "Saying you will do something later, not now."
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
       },
       "evidence": [
         "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u07-05",
-      "unit": "u07",
-      "hanzi": "一大早",
-      "pinyin": "yī dà zǎo",
-      "syllables": [
-        "yī",
-        "dà",
-        "zǎo"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "早上",
-        "wordIds": [
-          "L1-0459"
-        ]
-      },
-      "meaning": {
-        "id": "pagi-pagi sekali",
-        "en": "first thing in the morning"
-      },
-      "situation": {
-        "id": "Menceritakan sesuatu yang terjadi pagi sekali.",
-        "en": "Telling about something that happened very early."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
+        "wiktionary"
       ],
       "machine": true
     }
   ],
   "relatedCasual": [
     {
-      "id": "c-u13-08",
-      "unit": "u13",
-      "hanzi": "好久不见",
-      "pinyin": "hǎo jiǔ bù jiàn",
+      "id": "c-u05-04",
+      "unit": "u08",
+      "hanzi": "宝贝",
+      "pinyin": "bǎo bèi",
       "syllables": [
-        "hǎo",
-        "jiǔ",
-        "bù",
-        "jiàn"
+        "bǎo",
+        "bèi"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "很多天没见面",
+        "hanzi": "孩子",
         "wordIds": [
-          "L1-0146",
-          "L1-0094",
-          "L1-0359",
-          "L1-0232",
-          "L1-0174"
+          "L1-0135"
         ]
       },
       "meaning": {
-        "id": "lama nggak ketemu",
-        "en": "long time no see"
+        "id": "sayang (untuk anak)",
+        "en": "darling, sweetie (to a child)"
       },
       "situation": {
-        "id": "Menyapa teman yang sudah lama tidak bertemu.",
-        "en": "Greeting a friend you have not seen for a long time."
+        "id": "Orang tua atau kakek-nenek memanggil anak kecil.",
+        "en": "Parents or grandparents calling a small child."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u06-01",
+      "unit": "u09",
+      "hanzi": "吃货",
+      "pinyin": "chī huò",
+      "syllables": [
+        "chī",
+        "huò"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "爱吃的人",
+        "wordIds": [
+          "L1-0001",
+          "L1-0046",
+          "L1-0067",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "si doyan makan",
+        "en": "foodie"
+      },
+      "situation": {
+        "id": "Bercanda tentang orang yang sangat suka makan.",
+        "en": "Joking about someone who loves eating."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u12-03",
+      "unit": "u13",
+      "hanzi": "师傅",
+      "pinyin": "shī fu",
+      "syllables": [
+        "shī",
+        "fu"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "pak (sapaan sopir, tukang)",
+        "en": "master (to address a driver or worker)"
+      },
+      "situation": {
+        "id": "Memanggil sopir taksi atau tukang dengan sopan.",
+        "en": "Politely addressing a taxi driver or worker."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u14-06",
+      "unit": "u16",
+      "hanzi": "同桌",
+      "pinyin": "tóng zhuō",
+      "syllables": [
+        "tóng",
+        "zhuō"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "同学",
+        "wordIds": [
+          "L1-0365"
+        ]
+      },
+      "meaning": {
+        "id": "teman sebangku",
+        "en": "desk-mate"
+      },
+      "situation": {
+        "id": "Menyebut teman yang duduk di sebelahmu di kelas.",
+        "en": "Talking about the classmate who sits next to you."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-01",
+      "unit": "u17",
+      "hanzi": "老外",
+      "pinyin": "lǎo wài",
+      "syllables": [
+        "lǎo",
+        "wài"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "外国人",
+        "wordIds": [
+          "L1-0367",
+          "L1-0128",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "bule, orang asing",
+        "en": "foreigner"
+      },
+      "situation": {
+        "id": "Orang China menyebut orang asing dalam obrolan santai.",
+        "en": "Chinese people talking about a foreigner casually."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u18-05",
+      "unit": "u19",
+      "hanzi": "老板",
+      "pinyin": "lǎo bǎn",
+      "syllables": [
+        "lǎo",
+        "bǎn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "先生",
+        "wordIds": [
+          "L1-0398"
+        ]
+      },
+      "meaning": {
+        "id": "bos (sapaan pemilik toko)",
+        "en": "boss (to address a shop owner)"
+      },
+      "situation": {
+        "id": "Memanggil pemilik toko atau warung.",
+        "en": "Calling a shop or stall owner."
       },
       "evidence": [
         "cedict",
@@ -1786,207 +1354,5 @@
       "machine": true
     }
   ],
-  "dialog": {
-    "id": "d-u07",
-    "title": {
-      "id": "Undangan ulang tahun",
-      "en": "A birthday invitation"
-    },
-    "situation": {
-      "id": "Di gerbang sekolah, teman Adik mengundangnya ke pesta ulang tahun, tapi Adik ada acara keluarga.",
-      "en": "At the school gate, little sister's friend invites her to a birthday party, but she has a family plan."
-    },
-    "machine": true,
-    "speakers": {
-      "friend": {
-        "name": {
-          "id": "Teman",
-          "en": "Friend"
-        },
-        "gender": "female"
-      },
-      "meimei": {
-        "name": {
-          "id": "Adik perempuan",
-          "en": "Little sister"
-        },
-        "gender": "female"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "friend",
-        "gender": "female",
-        "cmn": "后天是我的生日！",
-        "tokens": [
-          {
-            "text": "后天",
-            "pinyin": "hòutiān"
-          },
-          {
-            "text": "是",
-            "pinyin": "shì"
-          },
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "的",
-            "pinyin": "de"
-          },
-          {
-            "text": "生日",
-            "pinyin": "shēngrì"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "The day after tomorrow is my birthday!",
-        "id": "Lusa ulang tahunku!",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "后天是礼拜天吧？",
-        "tokens": [
-          {
-            "text": "后天",
-            "pinyin": "hòutiān"
-          },
-          {
-            "text": "是",
-            "pinyin": "shì"
-          },
-          {
-            "text": "礼拜天",
-            "pinyin": "lǐ bài tiān"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "That's Sunday, right?",
-        "id": "Lusa hari Minggu, kan?",
-        "machine": true
-      },
-      {
-        "speaker": "friend",
-        "gender": "female",
-        "cmn": "对！你来我家吗？",
-        "tokens": [
-          {
-            "text": "对",
-            "pinyin": "duì"
-          },
-          {
-            "text": "！"
-          },
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "来",
-            "pinyin": "lái"
-          },
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "家",
-            "pinyin": "jiā"
-          },
-          {
-            "text": "吗",
-            "pinyin": "ma"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "Yes! Will you come to my house?",
-        "id": "Iya! Kamu datang ke rumahku?",
-        "machine": true
-      },
-      {
-        "speaker": "meimei",
-        "gender": "female",
-        "cmn": "对不起，礼拜天我不在家。改天吧！",
-        "tokens": [
-          {
-            "text": "对不起",
-            "pinyin": "duìbuqǐ"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "礼拜天",
-            "pinyin": "lǐ bài tiān"
-          },
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "不",
-            "pinyin": "bù"
-          },
-          {
-            "text": "在家",
-            "pinyin": "zàijiā"
-          },
-          {
-            "text": "。"
-          },
-          {
-            "text": "改天",
-            "pinyin": "gǎi tiān"
-          },
-          {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "Sorry, I won't be home on Sunday. Another day!",
-        "id": "Maaf, hari Minggu aku nggak di rumah. Lain kali, ya!",
-        "machine": true
-      },
-      {
-        "speaker": "friend",
-        "gender": "female",
-        "cmn": "好，没关系！",
-        "tokens": [
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "没关系",
-            "pinyin": "méiguānxi"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "OK, no problem!",
-        "id": "Oke, nggak apa-apa!",
-        "machine": true
-      }
-    ]
-  }
+  "dialog": null
 }

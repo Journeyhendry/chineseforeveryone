@@ -37,6 +37,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Check data links
+        run: npm run check:data
+
       - name: Test
         run: npm test --if-present
 

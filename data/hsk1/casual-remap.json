@@ -1,0 +1,636 @@
+{
+  "version": 1,
+  "note": "Task 2b. Where each draft of the 500-word era goes in the 2025 units (21 units). casual-candidates.json and dialogs-draft.json are not edited (editing them would restart the evidence workflow); scripts/build-casual.ts applies this file through src/lib/casual-remap.ts. candidates: new unit chosen by theme (not by the old unit number), or \"drop\" when the HSK version shown with the expression is not made of the 300 words, or the expression itself became an HSK 1 word. dialogs: unit where the old dialog is tried; the vocabulary check decides (failures go to dialogs-retired.json).",
+  "candidates": {
+    "c-u01-01": {
+      "hanzi": "拜拜",
+      "unit": "u01"
+    },
+    "c-u01-02": {
+      "hanzi": "多谢",
+      "unit": "u01"
+    },
+    "c-u01-03": {
+      "hanzi": "回头见",
+      "unit": "u01"
+    },
+    "c-u01-04": {
+      "hanzi": "别客气",
+      "unit": "u01"
+    },
+    "c-u01-05": {
+      "hanzi": "不好意思",
+      "unit": "u01"
+    },
+    "c-u01-06": {
+      "hanzi": "没事",
+      "drop": "没事 sekarang kata HSK 1 sendiri (silabus 2025)"
+    },
+    "c-u01-07": {
+      "hanzi": "哈喽",
+      "unit": "u01"
+    },
+    "c-u01-08": {
+      "hanzi": "谢啦",
+      "unit": "u01"
+    },
+    "c-u02-01": {
+      "hanzi": "俩",
+      "unit": "u06"
+    },
+    "c-u02-02": {
+      "hanzi": "仨",
+      "unit": "u06"
+    },
+    "c-u02-03": {
+      "hanzi": "好多",
+      "unit": "u06"
+    },
+    "c-u02-04": {
+      "hanzi": "一点点",
+      "unit": "u06"
+    },
+    "c-u02-05": {
+      "hanzi": "好几个",
+      "unit": "u06"
+    },
+    "c-u02-06": {
+      "hanzi": "一堆",
+      "unit": "u06"
+    },
+    "c-u03-01": {
+      "hanzi": "干嘛",
+      "drop": "padanan HSK 「干什么」 memuat kata di luar 300: 干"
+    },
+    "c-u03-02": {
+      "hanzi": "没错",
+      "unit": "u05"
+    },
+    "c-u03-03": {
+      "hanzi": "可不是",
+      "unit": "u05"
+    },
+    "c-u03-04": {
+      "hanzi": "怎么回事",
+      "unit": "u05"
+    },
+    "c-u03-05": {
+      "hanzi": "真的假的",
+      "unit": "u05"
+    },
+    "c-u03-06": {
+      "hanzi": "不会吧",
+      "unit": "u05"
+    },
+    "c-u03-07": {
+      "hanzi": "嗯",
+      "unit": "u05"
+    },
+    "c-u04-01": {
+      "hanzi": "帅哥",
+      "unit": "u07"
+    },
+    "c-u04-02": {
+      "hanzi": "美女",
+      "drop": "padanan HSK 小姐 bukan kata silabus 2025"
+    },
+    "c-u04-03": {
+      "hanzi": "哥们儿",
+      "unit": "u07"
+    },
+    "c-u04-04": {
+      "hanzi": "闺蜜",
+      "unit": "u07"
+    },
+    "c-u04-05": {
+      "hanzi": "老铁",
+      "unit": "u07"
+    },
+    "c-u04-06": {
+      "hanzi": "小姐姐",
+      "drop": "padanan HSK 小姐 bukan kata silabus 2025"
+    },
+    "c-u04-07": {
+      "hanzi": "小伙子",
+      "drop": "padanan HSK 「男孩儿」 memuat kata di luar 300: 孩儿"
+    },
+    "c-u05-01": {
+      "hanzi": "老爸",
+      "unit": "u08"
+    },
+    "c-u05-02": {
+      "hanzi": "老妈",
+      "unit": "u08"
+    },
+    "c-u05-03": {
+      "hanzi": "爸妈",
+      "unit": "u08"
+    },
+    "c-u05-04": {
+      "hanzi": "宝贝",
+      "unit": "u08"
+    },
+    "c-u05-05": {
+      "hanzi": "闺女",
+      "unit": "u08"
+    },
+    "c-u05-06": {
+      "hanzi": "宅",
+      "unit": "u14"
+    },
+    "c-u05-07": {
+      "hanzi": "老弟",
+      "unit": "u08"
+    },
+    "c-u06-01": {
+      "hanzi": "吃货",
+      "unit": "u09"
+    },
+    "c-u06-02": {
+      "hanzi": "买单",
+      "unit": "u09"
+    },
+    "c-u06-03": {
+      "hanzi": "饿死了",
+      "drop": "padanan HSK 「很饿」 memuat kata di luar 300: 饿"
+    },
+    "c-u06-04": {
+      "hanzi": "打包",
+      "drop": "padanan HSK 「拿走」 memuat kata di luar 300: 拿走"
+    },
+    "c-u06-05": {
+      "hanzi": "馋",
+      "unit": "u15"
+    },
+    "c-u06-06": {
+      "hanzi": "开吃",
+      "unit": "u09"
+    },
+    "c-u07-01": {
+      "hanzi": "礼拜天",
+      "unit": "u10"
+    },
+    "c-u07-02": {
+      "hanzi": "礼拜",
+      "unit": "u10"
+    },
+    "c-u07-03": {
+      "hanzi": "改天",
+      "drop": "padanan HSK 「下次」 memuat kata di luar 300: 次"
+    },
+    "c-u07-04": {
+      "hanzi": "回头",
+      "drop": "padanan HSK 「下次」 memuat kata di luar 300: 次"
+    },
+    "c-u07-05": {
+      "hanzi": "一大早",
+      "unit": "u11"
+    },
+    "c-u07-06": {
+      "hanzi": "天天",
+      "drop": "padanan HSK 「常常」 memuat kata di luar 300: 常常"
+    },
+    "c-u07-07": {
+      "hanzi": "明儿",
+      "unit": "u10"
+    },
+    "c-u08-01": {
+      "hanzi": "等会儿",
+      "drop": "padanan HSK 「一会儿」 memuat kata di luar 300: 儿"
+    },
+    "c-u08-02": {
+      "hanzi": "稍等",
+      "drop": "padanan HSK 「等一下儿」 memuat kata di luar 300: 等"
+    },
+    "c-u08-03": {
+      "hanzi": "赶紧",
+      "drop": "padanan HSK 「马上」 memuat kata di luar 300: 马"
+    },
+    "c-u08-04": {
+      "hanzi": "磨蹭",
+      "drop": "padanan HSK 「慢」 memuat kata di luar 300: 慢"
+    },
+    "c-u08-05": {
+      "hanzi": "来不及",
+      "unit": "u11"
+    },
+    "c-u08-06": {
+      "hanzi": "早着呢",
+      "unit": "u11"
+    },
+    "c-u08-07": {
+      "hanzi": "熬夜",
+      "unit": "u18"
+    },
+    "c-u09-01": {
+      "hanzi": "里头",
+      "unit": "u12"
+    },
+    "c-u09-02": {
+      "hanzi": "外头",
+      "unit": "u12"
+    },
+    "c-u09-03": {
+      "hanzi": "前头",
+      "unit": "u12"
+    },
+    "c-u09-04": {
+      "hanzi": "后头",
+      "unit": "u12"
+    },
+    "c-u09-05": {
+      "hanzi": "上头",
+      "unit": "u12"
+    },
+    "c-u09-06": {
+      "hanzi": "隔壁",
+      "drop": "padanan HSK 「旁边」 memuat kata di luar 300: 旁"
+    },
+    "c-u10-01": {
+      "hanzi": "逛街",
+      "unit": "u13"
+    },
+    "c-u10-02": {
+      "hanzi": "溜达",
+      "drop": "padanan HSK 「走走」 memuat kata di luar 300: 走走"
+    },
+    "c-u10-03": {
+      "hanzi": "老远",
+      "drop": "padanan HSK 「很远」 memuat kata di luar 300: 远"
+    },
+    "c-u10-04": {
+      "hanzi": "地儿",
+      "drop": "padanan HSK 「地方」 memuat kata di luar 300: 地方"
+    },
+    "c-u10-05": {
+      "hanzi": "出门",
+      "drop": "padanan HSK 「出去」 memuat kata di luar 300: 出"
+    },
+    "c-u10-06": {
+      "hanzi": "大晴天",
+      "unit": "u21"
+    },
+    "c-u11-01": {
+      "hanzi": "赖床",
+      "unit": "u14"
+    },
+    "c-u11-02": {
+      "hanzi": "睡懒觉",
+      "unit": "u14"
+    },
+    "c-u11-03": {
+      "hanzi": "搞定",
+      "unit": "u14"
+    },
+    "c-u11-04": {
+      "hanzi": "弄",
+      "unit": "u14"
+    },
+    "c-u11-05": {
+      "hanzi": "困死了",
+      "unit": "u14"
+    },
+    "c-u11-06": {
+      "hanzi": "收拾",
+      "drop": "padanan HSK 「放好」 memuat kata di luar 300: 放"
+    },
+    "c-u11-07": {
+      "hanzi": "起不来",
+      "unit": "u14"
+    },
+    "c-u12-01": {
+      "hanzi": "打的",
+      "drop": "padanan HSK 「打车」 memuat kata di luar 300: 打"
+    },
+    "c-u12-02": {
+      "hanzi": "堵车",
+      "unit": "u13"
+    },
+    "c-u12-03": {
+      "hanzi": "师傅",
+      "unit": "u13"
+    },
+    "c-u12-04": {
+      "hanzi": "慢走",
+      "unit": "u13"
+    },
+    "c-u12-05": {
+      "hanzi": "快点儿",
+      "drop": "padanan HSK 「快」 memuat kata di luar 300: 快"
+    },
+    "c-u12-06": {
+      "hanzi": "搭车",
+      "unit": "u13"
+    },
+    "c-u13-01": {
+      "hanzi": "回见",
+      "unit": "u01"
+    },
+    "c-u13-02": {
+      "hanzi": "碰面",
+      "drop": "padanan HSK 「见面」 memuat kata di luar 300: 面"
+    },
+    "c-u13-03": {
+      "hanzi": "闪人",
+      "drop": "padanan HSK 「走」 memuat kata di luar 300: 走"
+    },
+    "c-u13-04": {
+      "hanzi": "撤",
+      "drop": "padanan HSK 「走」 memuat kata di luar 300: 走"
+    },
+    "c-u13-05": {
+      "hanzi": "走啦",
+      "drop": "padanan HSK 「走了」 memuat kata di luar 300: 走"
+    },
+    "c-u13-06": {
+      "hanzi": "来了来了",
+      "unit": "u14"
+    },
+    "c-u14-01": {
+      "hanzi": "学霸",
+      "unit": "u16"
+    },
+    "c-u14-02": {
+      "hanzi": "学渣",
+      "drop": "padanan HSK 「不认真的学生」 memuat kata di luar 300: 认"
+    },
+    "c-u14-03": {
+      "hanzi": "考砸了",
+      "drop": "padanan HSK 「没考好」 memuat kata di luar 300: 考"
+    },
+    "c-u14-04": {
+      "hanzi": "挂科",
+      "drop": "padanan HSK 「考试没过」 memuat kata di luar 300: 考试 过"
+    },
+    "c-u14-05": {
+      "hanzi": "逃课",
+      "unit": "u16"
+    },
+    "c-u14-06": {
+      "hanzi": "同桌",
+      "unit": "u16"
+    },
+    "c-u15-01": {
+      "hanzi": "老外",
+      "unit": "u17"
+    },
+    "c-u15-02": {
+      "hanzi": "聊天",
+      "unit": "u17"
+    },
+    "c-u15-03": {
+      "hanzi": "吹牛",
+      "drop": "padanan HSK 「说大话」 memuat kata di luar 300: 话"
+    },
+    "c-u15-04": {
+      "hanzi": "瞎说",
+      "drop": "padanan HSK 「说错」 memuat kata di luar 300: 错"
+    },
+    "c-u15-05": {
+      "hanzi": "唠叨",
+      "unit": "u17"
+    },
+    "c-u15-06": {
+      "hanzi": "听不懂",
+      "drop": "padanan HSK 「不明白」 memuat kata di luar 300: 明白"
+    },
+    "c-u15-07": {
+      "hanzi": "废话",
+      "drop": "padanan HSK 「不用说」 memuat kata di luar 300: 用"
+    },
+    "c-u16-01": {
+      "hanzi": "懂",
+      "drop": "padanan HSK 「明白」 memuat kata di luar 300: 明白"
+    },
+    "c-u16-02": {
+      "hanzi": "搞不懂",
+      "drop": "padanan HSK 「不明白」 memuat kata di luar 300: 明白"
+    },
+    "c-u16-03": {
+      "hanzi": "靠谱",
+      "drop": "padanan HSK 「行」 memuat kata di luar 300: 行"
+    },
+    "c-u16-04": {
+      "hanzi": "牛",
+      "drop": "padanan HSK 「真行」 memuat kata di luar 300: 行"
+    },
+    "c-u16-05": {
+      "hanzi": "厉害",
+      "drop": "padanan HSK 「真行」 memuat kata di luar 300: 行"
+    },
+    "c-u16-06": {
+      "hanzi": "没戏",
+      "drop": "padanan HSK 「不行」 memuat kata di luar 300: 行"
+    },
+    "c-u16-07": {
+      "hanzi": "估计",
+      "unit": "u15"
+    },
+    "c-u16-08": {
+      "hanzi": "没门儿",
+      "drop": "padanan HSK 「不行」 memuat kata di luar 300: 行"
+    },
+    "c-u17-01": {
+      "hanzi": "累死了",
+      "drop": "padanan HSK 「很累」 memuat kata di luar 300: 累"
+    },
+    "c-u17-02": {
+      "hanzi": "忙死了",
+      "unit": "u18"
+    },
+    "c-u17-03": {
+      "hanzi": "打工",
+      "unit": "u18"
+    },
+    "c-u17-04": {
+      "hanzi": "打工人",
+      "drop": "padanan HSK 「工人」 memuat kata di luar 300: 工"
+    },
+    "c-u17-05": {
+      "hanzi": "摸鱼",
+      "drop": "padanan HSK 「不认真工作」 memuat kata di luar 300: 认"
+    },
+    "c-u17-06": {
+      "hanzi": "歇会儿",
+      "drop": "padanan HSK 「休息一会儿」 memuat kata di luar 300: 儿"
+    },
+    "c-u17-07": {
+      "hanzi": "难受",
+      "unit": "u18"
+    },
+    "c-u18-01": {
+      "hanzi": "扫码",
+      "unit": "u19"
+    },
+    "c-u18-02": {
+      "hanzi": "划算",
+      "unit": "u19"
+    },
+    "c-u18-03": {
+      "hanzi": "砍价",
+      "drop": "padanan HSK 「说便宜点儿」 memuat kata di luar 300: 儿"
+    },
+    "c-u18-04": {
+      "hanzi": "坑",
+      "unit": "u19"
+    },
+    "c-u18-05": {
+      "hanzi": "老板",
+      "unit": "u19"
+    },
+    "c-u18-06": {
+      "hanzi": "便宜点儿",
+      "unit": "u19"
+    },
+    "c-u18-07": {
+      "hanzi": "剁手",
+      "unit": "u19"
+    },
+    "c-u19-01": {
+      "hanzi": "追剧",
+      "unit": "u20"
+    },
+    "c-u19-02": {
+      "hanzi": "刷手机",
+      "unit": "u20"
+    },
+    "c-u19-03": {
+      "hanzi": "打游戏",
+      "unit": "u20"
+    },
+    "c-u19-04": {
+      "hanzi": "有意思",
+      "unit": "u20"
+    },
+    "c-u19-05": {
+      "hanzi": "没意思",
+      "unit": "u20"
+    },
+    "c-u19-06": {
+      "hanzi": "无聊",
+      "unit": "u20"
+    },
+    "c-u19-07": {
+      "hanzi": "笑死我了",
+      "drop": "padanan HSK 「很好笑」 memuat kata di luar 300: 笑"
+    },
+    "c-u19-08": {
+      "hanzi": "哈哈",
+      "drop": "padanan HSK 「笑」 memuat kata di luar 300: 笑"
+    },
+    "c-u20-01": {
+      "hanzi": "挺",
+      "unit": "u21"
+    },
+    "c-u20-02": {
+      "hanzi": "超",
+      "unit": "u21"
+    },
+    "c-u20-03": {
+      "hanzi": "开心",
+      "unit": "u15"
+    },
+    "c-u20-04": {
+      "hanzi": "太棒了",
+      "unit": "u21"
+    },
+    "c-u20-05": {
+      "hanzi": "热死了",
+      "unit": "u21"
+    },
+    "c-u20-06": {
+      "hanzi": "气死我了",
+      "drop": "padanan HSK 「很生气」 memuat kata di luar 300: 生气"
+    },
+    "c-u20-07": {
+      "hanzi": "绝了",
+      "unit": "u21"
+    },
+    "c-u20-08": {
+      "hanzi": "一般般",
+      "unit": "u21"
+    },
+    "c-u13-07": {
+      "hanzi": "走人",
+      "drop": "padanan HSK 「走」 memuat kata di luar 300: 走"
+    },
+    "c-u13-08": {
+      "hanzi": "好久不见",
+      "drop": "padanan HSK 「很多天没见面」 memuat kata di luar 300: 面"
+    },
+    "c-u13-09": {
+      "hanzi": "不见不散",
+      "unit": "u11"
+    },
+    "c-u13-10": {
+      "hanzi": "串门",
+      "unit": "u07"
+    },
+    "c-u13-11": {
+      "hanzi": "打卡",
+      "unit": "u13"
+    }
+  },
+  "dialogs": {
+    "d-u01": {
+      "unit": "u01"
+    },
+    "d-u02": {
+      "unit": "u09"
+    },
+    "d-u03": {
+      "unit": "u04"
+    },
+    "d-u04": {
+      "unit": "u07"
+    },
+    "d-u05": {
+      "unit": "u08"
+    },
+    "d-u06": {
+      "unit": "u09"
+    },
+    "d-u07": {
+      "unit": "u10"
+    },
+    "d-u08": {
+      "unit": "u11"
+    },
+    "d-u09": {
+      "unit": "u12"
+    },
+    "d-u10": {
+      "unit": "u13"
+    },
+    "d-u11": {
+      "unit": "u14"
+    },
+    "d-u12": {
+      "unit": "u13"
+    },
+    "d-u13": {
+      "unit": "u12"
+    },
+    "d-u14": {
+      "unit": "u16"
+    },
+    "d-u15": {
+      "unit": "u17"
+    },
+    "d-u16": {
+      "unit": "u17"
+    },
+    "d-u17": {
+      "unit": "u18"
+    },
+    "d-u18": {
+      "unit": "u19"
+    },
+    "d-u19": {
+      "unit": "u20"
+    },
+    "d-u20": {
+      "unit": "u21"
+    }
+  }
+}

@@ -4,7 +4,8 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Data kosakata dan tata bahasa
 
-- **Daftar kata HSK 3.0** (daftar 2021, level 1 = 500 kata): [github.com/ivankra/hsk30](https://github.com/ivankra/hsk30), dipatok pada commit `4ff9e3915ce87baaecd7ebe263085573a4ea3192`. Lisensi repo tersebut: kode MIT; data diturunkan dari daftar resmi HSK 3.0. Salinan asli: `data/raw/hsk30.csv`.
+- **Daftar kata HSK 1 (silabus ujian HSK 2025, 300 kata)**: [github.com/becky82/mteh](https://github.com/becky82/mteh), berkas `sources/HSK3.1/HSK3.1_words_level1.txt`, dipatok pada commit `6be297fc92f85590a4fc001f8f734ed5624497fc`. Lisensi: CC BY-SA 4.0, (c) 2025 Rebecca J. Stones. Salinan asli: `data/raw/hsk31_words_level1.txt`. Dicocokkan dengan PDF resmi silabus di repo yang sama (`新版HSK考试大纲（词汇、汉字、语法）.pdf` dan versi 1219) dan paket npm `@leonsilicon/hsk3.1`; hasilnya cocok tanpa beda yang tidak terjelaskan (lihat `data/hsk1/SOURCES.json`). Kelas kata dan tabel pinyin dari PDF disimpan di `data/raw/hsk31_syllabus_level1.tsv`.
+- **Daftar kata HSK 3.0 (2021)**: [github.com/ivankra/hsk30](https://github.com/ivankra/hsk30), dipatok pada commit `4ff9e3915ce87baaecd7ebe263085573a4ea3192`. Kini hanya dipakai untuk pratinjau HSK 2 (`data/hsk2-preview/`) dan sebagai asal id kata lama. Lisensi repo tersebut: kode MIT; data diturunkan dari daftar resmi HSK 3.0. Salinan asli: `data/raw/hsk30.csv`.
 - **Daftar tata bahasa HSK**: [github.com/krmanik/HSK-3.0](https://github.com/krmanik/HSK-3.0). Lisensi akan diperiksa sebelum digunakan.
 
 ## Kamus

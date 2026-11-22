@@ -32,38 +32,35 @@
     ]
   },
   {
-    "id": "L1-0002",
-    "hanzi": "爱好",
+    "id": "L1-0005",
+    "hanzi": "吧",
     "variants": [],
-    "traditional": "愛好",
-    "pinyin": "àihào",
-    "pinyinNumbered": "ai4 hao4",
+    "traditional": "吧",
+    "pinyin": "ba",
+    "pinyinNumbered": "ba5",
     "syllables": [
-      "ài",
-      "hào"
+      "ba"
     ],
     "tones": [
-      4,
-      4
+      5
     ],
     "pos": [
-      "V",
-      "N"
+      "Aux"
     ],
     "en": [
-      "to like; to be fond of; to take pleasure in; to be keen on",
-      "interest; hobby"
+      "(modal particle indicating suggestion or surmise)",
+      "...right?",
+      "...OK?",
+      "...I presume."
     ],
     "ind": [
-      "hobi",
-      "gemar",
-      "suka"
+      "(partikel untuk ajakan, saran, atau dugaan",
+      "mirip \"ya\", \"dong\")"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "爱",
-      "好"
+      "吧"
     ]
   },
   {
@@ -128,69 +125,34 @@
     ]
   },
   {
-    "id": "L1-0005",
-    "hanzi": "吧",
+    "id": "L1-0008",
+    "hanzi": "百",
     "variants": [],
-    "traditional": "吧",
-    "pinyin": "ba",
-    "pinyinNumbered": "ba5",
+    "traditional": "百",
+    "pinyin": "bǎi",
+    "pinyinNumbered": "bai3",
     "syllables": [
-      "ba"
+      "bǎi"
     ],
     "tones": [
-      5
+      3
     ],
     "pos": [
-      "Aux"
+      "Num"
     ],
     "en": [
-      "(modal particle indicating suggestion or surmise)",
-      "...right?",
-      "...OK?",
-      "...I presume."
+      "hundred",
+      "numerous",
+      "all kinds of"
     ],
     "ind": [
-      "(partikel untuk ajakan, saran, atau dugaan",
-      "mirip \"ya\", \"dong\")"
+      "seratus",
+      "ratusan"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "吧"
-    ]
-  },
-  {
-    "id": "L1-0006",
-    "hanzi": "白",
-    "variants": [],
-    "traditional": "白",
-    "pinyin": "bái",
-    "pinyinNumbered": "bai2",
-    "syllables": [
-      "bái"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "white",
-      "snowy",
-      "pure",
-      "bright",
-      "empty",
-      "blank"
-    ],
-    "ind": [
-      "putih",
-      "kosong"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "白"
+      "百"
     ]
   },
   {
@@ -227,70 +189,6 @@
     ]
   },
   {
-    "id": "L1-0008",
-    "hanzi": "百",
-    "variants": [],
-    "traditional": "百",
-    "pinyin": "bǎi",
-    "pinyinNumbered": "bai3",
-    "syllables": [
-      "bǎi"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "Num"
-    ],
-    "en": [
-      "hundred",
-      "numerous",
-      "all kinds of"
-    ],
-    "ind": [
-      "seratus",
-      "ratusan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "百"
-    ]
-  },
-  {
-    "id": "L1-0009",
-    "hanzi": "班",
-    "variants": [],
-    "traditional": "班",
-    "pinyin": "bān",
-    "pinyinNumbered": "ban1",
-    "syllables": [
-      "bān"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N",
-      "M"
-    ],
-    "en": [
-      "team; class; grade",
-      "(military) squad",
-      "work shift",
-      "classifier for groups of people and scheduled transport vehicles"
-    ],
-    "ind": [
-      "kelas",
-      "(kelompok atau regu)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "班"
-    ]
-  },
-  {
     "id": "L1-0010",
     "hanzi": "半",
     "variants": [],
@@ -323,172 +221,6 @@
     ]
   },
   {
-    "id": "L1-0011",
-    "hanzi": "半年",
-    "variants": [],
-    "traditional": "半年",
-    "pinyin": "bànnián",
-    "pinyinNumbered": "ban4 nian2",
-    "syllables": [
-      "bàn",
-      "nián"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "half a year"
-    ],
-    "ind": [
-      "setengah tahun"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "半",
-      "年"
-    ]
-  },
-  {
-    "id": "L1-0012",
-    "hanzi": "半天",
-    "variants": [],
-    "traditional": "半天",
-    "pinyin": "bàntiān",
-    "pinyinNumbered": "ban4 tian1",
-    "syllables": [
-      "bàn",
-      "tiān"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "half of the day",
-      "a long time",
-      "quite a while",
-      "midair"
-    ],
-    "ind": [
-      "setengah hari",
-      "lama sekali"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "半",
-      "天"
-    ]
-  },
-  {
-    "id": "L1-0013",
-    "hanzi": "帮",
-    "variants": [],
-    "traditional": "幫",
-    "pinyin": "bāng",
-    "pinyinNumbered": "bang1",
-    "syllables": [
-      "bāng"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to help",
-      "to assist",
-      "to support",
-      "for sb (i.e. as a help)",
-      "hired (as worker)",
-      "side (of pail, boat etc)"
-    ],
-    "ind": [
-      "membantu",
-      "menolong"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "帮"
-    ]
-  },
-  {
-    "id": "L1-0014",
-    "hanzi": "帮忙",
-    "variants": [],
-    "traditional": "幫忙",
-    "pinyin": "bāngmáng",
-    "pinyinNumbered": "bang1 mang2",
-    "syllables": [
-      "bāng",
-      "máng"
-    ],
-    "tones": [
-      1,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to help",
-      "to lend a hand",
-      "to do a favor",
-      "to do a good turn"
-    ],
-    "ind": [
-      "membantu",
-      "menolong"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "帮",
-      "忙"
-    ]
-  },
-  {
-    "id": "L1-0015",
-    "hanzi": "包",
-    "variants": [],
-    "traditional": "包",
-    "pinyin": "bāo",
-    "pinyinNumbered": "bao1",
-    "syllables": [
-      "bāo"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N",
-      "M",
-      "V"
-    ],
-    "en": [
-      "to cover",
-      "to wrap",
-      "to hold",
-      "to include",
-      "to take charge of",
-      "to contract (to or for)"
-    ],
-    "ind": [
-      "tas",
-      "membungkus",
-      "(penghitung untuk bungkusan)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "包"
-    ]
-  },
-  {
     "id": "L1-0016",
     "hanzi": "包子",
     "variants": [],
@@ -518,38 +250,6 @@
     "chars": [
       "包",
       "子"
-    ]
-  },
-  {
-    "id": "L1-0017",
-    "hanzi": "杯",
-    "variants": [],
-    "traditional": "杯",
-    "pinyin": "bēi",
-    "pinyinNumbered": "bei1",
-    "syllables": [
-      "bēi"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "M"
-    ],
-    "en": [
-      "cup",
-      "trophy cup",
-      "classifier for certain containers of liquids: glass, cup"
-    ],
-    "ind": [
-      "gelas",
-      "cangkir",
-      "(penghitung untuk gelas atau cangkir)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "杯"
     ]
   },
   {
@@ -586,101 +286,6 @@
     ]
   },
   {
-    "id": "L1-0019",
-    "hanzi": "北",
-    "variants": [],
-    "traditional": "北",
-    "pinyin": "běi",
-    "pinyinNumbered": "bei3",
-    "syllables": [
-      "běi"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "north",
-      "(classical) to be defeated"
-    ],
-    "ind": [
-      "utara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "北"
-    ]
-  },
-  {
-    "id": "L1-0020",
-    "hanzi": "北边",
-    "variants": [],
-    "traditional": "北邊",
-    "pinyin": "běibian",
-    "pinyinNumbered": "bei3 bian5",
-    "syllables": [
-      "běi",
-      "bian"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "north",
-      "north side",
-      "northern part",
-      "to the north of"
-    ],
-    "ind": [
-      "sisi utara",
-      "sebelah utara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "北",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0021",
-    "hanzi": "北京",
-    "variants": [],
-    "traditional": "北京",
-    "pinyin": "Běijīng",
-    "pinyinNumbered": "Bei3 jing1",
-    "syllables": [
-      "Běi",
-      "jīng"
-    ],
-    "tones": [
-      3,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "Beijing municipality, capital of the People's Republic of China (abbr. to 京[Jing1])"
-    ],
-    "ind": [
-      "Beijing"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "北",
-      "京"
-    ]
-  },
-  {
     "id": "L1-0022",
     "hanzi": "本",
     "variants": [],
@@ -711,164 +316,34 @@
     ]
   },
   {
-    "id": "L1-0023",
-    "hanzi": "本子",
+    "id": "L1-0501",
+    "hanzi": "边",
     "variants": [],
-    "traditional": "本子",
-    "pinyin": "běnzi",
-    "pinyinNumbered": "ben3 zi5",
+    "traditional": "邊",
+    "pinyin": "biān",
+    "pinyinNumbered": "bian1",
     "syllables": [
-      "běn",
-      "zi"
+      "biān"
     ],
     "tones": [
-      3,
-      5
+      1
     ],
     "pos": [
-      "N"
+      "N",
+      "Suffix"
     ],
     "en": [
-      "book",
-      "notebook",
-      "edition"
+      "side; edge",
+      "border; boundary"
     ],
     "ind": [
-      "buku tulis"
+      "sisi",
+      "(akhiran arah/sisi, mis. 东边)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "本",
-      "子"
-    ]
-  },
-  {
-    "id": "L1-0024",
-    "hanzi": "比",
-    "variants": [],
-    "traditional": "比",
-    "pinyin": "bǐ",
-    "pinyinNumbered": "bi3",
-    "syllables": [
-      "bǐ"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "Prep",
-      "V"
-    ],
-    "en": [
-      "to compare",
-      "than (X 比 Y + adjective: more ... than)",
-      "ratio"
-    ],
-    "ind": [
-      "membandingkan",
-      "(kata \"daripada\" dalam perbandingan)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "比"
-    ]
-  },
-  {
-    "id": "L1-0025",
-    "hanzi": "别",
-    "variants": [],
-    "traditional": "別",
-    "pinyin": "bié",
-    "pinyinNumbered": "bie2",
-    "syllables": [
-      "bié"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "don't ...!",
-      "other; another; different (bound form)",
-      "to leave; to part (from)"
-    ],
-    "ind": [
-      "jangan",
-      "lain",
-      "yang lain"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "别"
-    ]
-  },
-  {
-    "id": "L1-0026",
-    "hanzi": "别的",
-    "variants": [],
-    "traditional": "別的",
-    "pinyin": "biéde",
-    "pinyinNumbered": "bie2 de5",
-    "syllables": [
-      "bié",
-      "de"
-    ],
-    "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "else",
-      "other"
-    ],
-    "ind": [
-      "yang lain",
-      "lainnya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "别",
-      "的"
-    ]
-  },
-  {
-    "id": "L1-0027",
-    "hanzi": "别人",
-    "variants": [],
-    "traditional": "別人",
-    "pinyin": "biérén",
-    "pinyinNumbered": "bie2 ren2",
-    "syllables": [
-      "bié",
-      "rén"
-    ],
-    "tones": [
-      2,
-      2
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "other people; others; other person"
-    ],
-    "ind": [
-      "orang lain"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "别",
-      "人"
+      "边"
     ]
   },
   {
@@ -905,177 +380,6 @@
     ]
   },
   {
-    "id": "L1-0029",
-    "hanzi": "病人",
-    "variants": [],
-    "traditional": "病人",
-    "pinyin": "bìngrén",
-    "pinyinNumbered": "bing4 ren2",
-    "syllables": [
-      "bìng",
-      "rén"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "sick person",
-      "patient",
-      "invalid"
-    ],
-    "ind": [
-      "pasien",
-      "orang sakit"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "病",
-      "人"
-    ]
-  },
-  {
-    "id": "L1-0030",
-    "hanzi": "不大",
-    "variants": [],
-    "traditional": "不大",
-    "pinyin": "bùdà",
-    "pinyinNumbered": "bu4 da4",
-    "syllables": [
-      "bù",
-      "dà"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "not very",
-      "not too",
-      "not often"
-    ],
-    "ind": [
-      "tidak terlalu",
-      "tidak begitu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "不",
-      "大"
-    ]
-  },
-  {
-    "id": "L1-0031",
-    "hanzi": "不对",
-    "variants": [],
-    "traditional": "不對",
-    "pinyin": "bùduì",
-    "pinyinNumbered": "bu4 dui4",
-    "syllables": [
-      "bù",
-      "duì"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "incorrect",
-      "wrong",
-      "amiss",
-      "abnormal",
-      "queer"
-    ],
-    "ind": [
-      "salah",
-      "tidak benar"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "不",
-      "对"
-    ]
-  },
-  {
-    "id": "L1-0032",
-    "hanzi": "不客气",
-    "variants": [],
-    "traditional": "不客氣",
-    "pinyin": "bùkèqì",
-    "pinyinNumbered": "bu4 ke4 qi4",
-    "syllables": [
-      "bù",
-      "kè",
-      "qì"
-    ],
-    "tones": [
-      4,
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "you're welcome",
-      "don't mention it",
-      "impolite",
-      "rude",
-      "blunt"
-    ],
-    "ind": [
-      "sama-sama",
-      "jangan sungkan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "不",
-      "客",
-      "气"
-    ]
-  },
-  {
-    "id": "L1-0033",
-    "hanzi": "不用",
-    "variants": [],
-    "traditional": "不用",
-    "pinyin": "bùyòng",
-    "pinyinNumbered": "bu4 yong4",
-    "syllables": [
-      "bù",
-      "yòng"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "need not"
-    ],
-    "ind": [
-      "tidak usah",
-      "tidak perlu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "不",
-      "用"
-    ]
-  },
-  {
     "id": "L1-0034",
     "hanzi": "不",
     "variants": [],
@@ -1103,6 +407,77 @@
     "hsk": 1,
     "chars": [
       "不"
+    ]
+  },
+  {
+    "id": "L1-0032",
+    "hanzi": "不客气",
+    "variants": [],
+    "traditional": "不客氣",
+    "pinyin": "búkèqi",
+    "pinyinNumbered": "bu2 ke4 qi5",
+    "syllables": [
+      "bú",
+      "kè",
+      "qi"
+    ],
+    "tones": [
+      2,
+      4,
+      5
+    ],
+    "pos": [],
+    "en": [
+      "you're welcome",
+      "don't mention it",
+      "impolite",
+      "rude",
+      "blunt"
+    ],
+    "ind": [
+      "sama-sama",
+      "jangan sungkan"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "不",
+      "客",
+      "气"
+    ]
+  },
+  {
+    "id": "L1-0502",
+    "hanzi": "不要",
+    "variants": [],
+    "traditional": "不要",
+    "pinyin": "búyào",
+    "pinyinNumbered": "bu2 yao4",
+    "syllables": [
+      "bú",
+      "yào"
+    ],
+    "tones": [
+      2,
+      4
+    ],
+    "pos": [
+      "Adv"
+    ],
+    "en": [
+      "don't",
+      "do not want; no need to"
+    ],
+    "ind": [
+      "jangan",
+      "tidak mau",
+      "tidak usah"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "不",
+      "要"
     ]
   },
   {
@@ -1168,104 +543,6 @@
     ]
   },
   {
-    "id": "L1-0037",
-    "hanzi": "差",
-    "variants": [],
-    "traditional": "差",
-    "pinyin": "chà",
-    "pinyinNumbered": "cha4",
-    "syllables": [
-      "chà"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V",
-      "Adj"
-    ],
-    "en": [
-      "different",
-      "wrong; mistaken",
-      "to fall short; to lack",
-      "not up to standard; inferior"
-    ],
-    "ind": [
-      "kurang",
-      "buruk",
-      "berbeda"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "差"
-    ]
-  },
-  {
-    "id": "L1-0038",
-    "hanzi": "常",
-    "variants": [],
-    "traditional": "常",
-    "pinyin": "cháng",
-    "pinyinNumbered": "chang2",
-    "syllables": [
-      "cháng"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "always",
-      "ever",
-      "often",
-      "frequently",
-      "common",
-      "general"
-    ],
-    "ind": [
-      "sering"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "常"
-    ]
-  },
-  {
-    "id": "L1-0039",
-    "hanzi": "常常",
-    "variants": [],
-    "traditional": "常常",
-    "pinyin": "chángcháng",
-    "pinyinNumbered": "chang2 chang2",
-    "syllables": [
-      "cháng",
-      "cháng"
-    ],
-    "tones": [
-      2,
-      2
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "frequently; often"
-    ],
-    "ind": [
-      "sering",
-      "biasanya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "常"
-    ]
-  },
-  {
     "id": "L1-0040",
     "hanzi": "唱",
     "variants": [],
@@ -1296,33 +573,35 @@
     ]
   },
   {
-    "id": "L1-0041",
-    "hanzi": "唱歌",
+    "id": "L1-0503",
+    "hanzi": "超市",
     "variants": [],
-    "traditional": "唱歌",
-    "pinyin": "chànggē",
-    "pinyinNumbered": "chang4 ge1",
+    "traditional": "超市",
+    "pinyin": "chāoshì",
+    "pinyinNumbered": "chao1 shi4",
     "syllables": [
-      "chàng",
-      "gē"
+      "chāo",
+      "shì"
     ],
     "tones": [
-      4,
-      1
+      1,
+      4
     ],
-    "pos": [],
+    "pos": [
+      "N"
+    ],
     "en": [
-      "to sing a song"
+      "supermarket"
     ],
     "ind": [
-      "bernyanyi",
-      "menyanyikan lagu"
+      "supermarket",
+      "swalayan"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "唱",
-      "歌"
+      "超",
+      "市"
     ]
   },
   {
@@ -1358,101 +637,6 @@
     ]
   },
   {
-    "id": "L1-0043",
-    "hanzi": "车票",
-    "variants": [],
-    "traditional": "車票",
-    "pinyin": "chēpiào",
-    "pinyinNumbered": "che1 piao4",
-    "syllables": [
-      "chē",
-      "piào"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "ticket (for a bus or train)"
-    ],
-    "ind": [
-      "tiket (bus, kereta, dsb.)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "车",
-      "票"
-    ]
-  },
-  {
-    "id": "L1-0044",
-    "hanzi": "车上",
-    "variants": [],
-    "traditional": "車上",
-    "pinyin": "chēshang",
-    "pinyinNumbered": "che1 shang5",
-    "syllables": [
-      "chē",
-      "shang"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "in the car",
-      "on the vehicle"
-    ],
-    "ind": [
-      "di dalam mobil",
-      "di atas kendaraan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "车",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0045",
-    "hanzi": "车站",
-    "variants": [],
-    "traditional": "車站",
-    "pinyin": "chēzhàn",
-    "pinyinNumbered": "che1 zhan4",
-    "syllables": [
-      "chē",
-      "zhàn"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "rail station",
-      "bus stop"
-    ],
-    "ind": [
-      "stasiun",
-      "halte"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "车",
-      "站"
-    ]
-  },
-  {
     "id": "L1-0046",
     "hanzi": "吃",
     "variants": [],
@@ -1482,134 +666,6 @@
     "hsk": 1,
     "chars": [
       "吃"
-    ]
-  },
-  {
-    "id": "L1-0047",
-    "hanzi": "吃饭",
-    "variants": [],
-    "traditional": "吃飯",
-    "pinyin": "chīfàn",
-    "pinyinNumbered": "chi1 fan4",
-    "syllables": [
-      "chī",
-      "fàn"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to have a meal",
-      "to eat",
-      "to make a living"
-    ],
-    "ind": [
-      "makan",
-      "makan nasi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "吃",
-      "饭"
-    ]
-  },
-  {
-    "id": "L1-0048",
-    "hanzi": "出",
-    "variants": [],
-    "traditional": "出",
-    "pinyin": "chū",
-    "pinyinNumbered": "chu1",
-    "syllables": [
-      "chū"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to go out; to come out",
-      "to arise; to occur",
-      "to produce; to yield",
-      "to go beyond; to exceed",
-      "(used after a verb to indicate an outward direction or a positive result)",
-      "classifier for dramas, plays, operas etc"
-    ],
-    "ind": [
-      "keluar",
-      "mengeluarkan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "出"
-    ]
-  },
-  {
-    "id": "L1-0049",
-    "hanzi": "出来",
-    "variants": [],
-    "traditional": "出來",
-    "pinyin": "chūlái",
-    "pinyinNumbered": "chu1 lai2",
-    "syllables": [
-      "chū",
-      "lái"
-    ],
-    "tones": [
-      1,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to come out",
-      "to appear",
-      "to arise"
-    ],
-    "ind": [
-      "keluar (ke arah pembicara)",
-      "muncul"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "出",
-      "来"
-    ]
-  },
-  {
-    "id": "L1-0050",
-    "hanzi": "出去",
-    "variants": [],
-    "traditional": "出去",
-    "pinyin": "chūqù",
-    "pinyinNumbered": "chu1 qu4",
-    "syllables": [
-      "chū",
-      "qù"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to go out"
-    ],
-    "ind": [
-      "pergi keluar",
-      "keluar (menjauhi pembicara)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "出",
-      "去"
     ]
   },
   {
@@ -1647,199 +703,71 @@
     ]
   },
   {
-    "id": "L1-0052",
-    "hanzi": "床",
+    "id": "L1-0504",
+    "hanzi": "出租车",
     "variants": [],
-    "traditional": "床",
-    "pinyin": "chuáng",
-    "pinyinNumbered": "chuang2",
+    "traditional": "出租車",
+    "pinyin": "chūzūchē",
+    "pinyinNumbered": "chu1 zu1 che1",
     "syllables": [
-      "chuáng"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "bed; couch (furniture that one can lie down on)",
-      "bed; bottom (of rivers, oceans, gardens etc)",
-      "frame; chassis",
-      "classifier for blankets, quilts etc"
-    ],
-    "ind": [
-      "tempat tidur",
-      "ranjang"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "床"
-    ]
-  },
-  {
-    "id": "L1-0053",
-    "hanzi": "次",
-    "variants": [],
-    "traditional": "次",
-    "pinyin": "cì",
-    "pinyinNumbered": "ci4",
-    "syllables": [
-      "cì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "M"
-    ],
-    "en": [
-      "time; occurrence (classifier for repeated events)",
-      "next in sequence; second",
-      "secondary"
-    ],
-    "ind": [
-      "kali",
-      "(penghitung untuk frekuensi)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "次"
-    ]
-  },
-  {
-    "id": "L1-0054",
-    "hanzi": "从",
-    "variants": [],
-    "traditional": "從",
-    "pinyin": "cóng",
-    "pinyinNumbered": "cong2",
-    "syllables": [
-      "cóng"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "Prep"
-    ],
-    "en": [
-      "from; through; via",
-      "(bound form) to follow",
-      "(bound form) to obey",
-      "(bound form) to engage in (an activity)",
-      "(used before a negative) ever",
-      "(bound form) (Taiwan pr. [zong4]) retainer; attendant"
-    ],
-    "ind": [
-      "dari",
-      "sejak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "从"
-    ]
-  },
-  {
-    "id": "L1-0055",
-    "hanzi": "错",
-    "variants": [],
-    "traditional": "錯",
-    "pinyin": "cuò",
-    "pinyinNumbered": "cuo4",
-    "syllables": [
-      "cuò"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj",
-      "N"
-    ],
-    "en": [
-      "mistake",
-      "wrong",
-      "bad",
-      "interlocking",
-      "complex",
-      "to grind"
-    ],
-    "ind": [
-      "salah",
-      "keliru"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "错"
-    ]
-  },
-  {
-    "id": "L1-0056",
-    "hanzi": "打",
-    "variants": [],
-    "traditional": "打",
-    "pinyin": "dǎ",
-    "pinyinNumbered": "da3",
-    "syllables": [
-      "dǎ"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to hit; to strike",
-      "to play (a ball game)",
-      "to make (a phone call)",
-      "to fight"
-    ],
-    "ind": [
-      "memukul",
-      "bermain (permainan bola)",
-      "melakukan (mis. menelepon)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "打"
-    ]
-  },
-  {
-    "id": "L1-0057",
-    "hanzi": "打车",
-    "variants": [],
-    "traditional": "打車",
-    "pinyin": "dǎchē",
-    "pinyinNumbered": "da3 che1",
-    "syllables": [
-      "dǎ",
+      "chū",
+      "zū",
       "chē"
     ],
     "tones": [
-      3,
+      1,
+      1,
       1
     ],
-    "pos": [],
+    "pos": [
+      "N"
+    ],
     "en": [
-      "to take a taxi (in town)",
-      "to hitch a lift"
+      "taxi"
     ],
     "ind": [
-      "naik taksi",
-      "memesan taksi"
+      "taksi"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "打",
+      "出",
+      "租",
       "车"
+    ]
+  },
+  {
+    "id": "L1-0061",
+    "hanzi": "大",
+    "variants": [],
+    "traditional": "大",
+    "pinyin": "dà",
+    "pinyinNumbered": "da4",
+    "syllables": [
+      "dà"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "Adj"
+    ],
+    "en": [
+      "big; large; great",
+      "older (than another person)",
+      "eldest (as in 大姐[da4 jie3])",
+      "greatly; freely; fully",
+      "(dialect) father",
+      "(dialect) uncle (father's brother)"
+    ],
+    "ind": [
+      "besar",
+      "tua (usia)"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "大"
     ]
   },
   {
@@ -1875,100 +803,71 @@
     ]
   },
   {
-    "id": "L1-0059",
-    "hanzi": "打开",
+    "id": "L1-0505",
+    "hanzi": "大家",
     "variants": [],
-    "traditional": "打開",
-    "pinyin": "dǎkāi",
-    "pinyinNumbered": "da3 kai1",
+    "traditional": "大家",
+    "pinyin": "dàjiā",
+    "pinyinNumbered": "da4 jia1",
     "syllables": [
-      "dǎ",
-      "kāi"
+      "dà",
+      "jiā"
     ],
     "tones": [
-      3,
+      4,
       1
     ],
-    "pos": [],
+    "pos": [
+      "Pron"
+    ],
     "en": [
-      "to open",
-      "to show (a ticket)",
-      "to turn on",
-      "to switch on"
+      "everyone",
+      "everybody"
     ],
     "ind": [
-      "membuka",
-      "menyalakan"
+      "semuanya",
+      "kalian semua",
+      "hadirin"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "打",
-      "开"
+      "大",
+      "家"
     ]
   },
   {
-    "id": "L1-0060",
-    "hanzi": "打球",
+    "id": "L1-0064",
+    "hanzi": "到",
     "variants": [],
-    "traditional": "打球",
-    "pinyin": "dǎqiú",
-    "pinyinNumbered": "da3 qiu2",
+    "traditional": "到",
+    "pinyin": "dào",
+    "pinyinNumbered": "dao4",
     "syllables": [
-      "dǎ",
-      "qiú"
-    ],
-    "tones": [
-      3,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to play ball",
-      "to play with a ball"
-    ],
-    "ind": [
-      "bermain bola"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "打",
-      "球"
-    ]
-  },
-  {
-    "id": "L1-0061",
-    "hanzi": "大",
-    "variants": [],
-    "traditional": "大",
-    "pinyin": "dà",
-    "pinyinNumbered": "da4",
-    "syllables": [
-      "dà"
+      "dào"
     ],
     "tones": [
       4
     ],
     "pos": [
-      "Adj"
+      "V"
     ],
     "en": [
-      "big; large; great",
-      "older (than another person)",
-      "eldest (as in 大姐[da4 jie3])",
-      "greatly; freely; fully",
-      "(dialect) father",
-      "(dialect) uncle (father's brother)"
+      "to reach; to arrive",
+      "to leave for; to go to",
+      "to (a place); until (a time); up to (a point)",
+      "(verb complement indicating arriving at a place or reaching a point)",
+      "considerate; thoughtful; thorough"
     ],
     "ind": [
-      "besar",
-      "tua (usia)"
+      "tiba",
+      "sampai",
+      "ke"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "大"
+      "到"
     ]
   },
   {
@@ -2040,99 +939,6 @@
     ]
   },
   {
-    "id": "L1-0064",
-    "hanzi": "到",
-    "variants": [],
-    "traditional": "到",
-    "pinyin": "dào",
-    "pinyinNumbered": "dao4",
-    "syllables": [
-      "dào"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to reach; to arrive",
-      "to leave for; to go to",
-      "to (a place); until (a time); up to (a point)",
-      "(verb complement indicating arriving at a place or reaching a point)",
-      "considerate; thoughtful; thorough"
-    ],
-    "ind": [
-      "tiba",
-      "sampai",
-      "ke"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "到"
-    ]
-  },
-  {
-    "id": "L1-0065",
-    "hanzi": "得到",
-    "variants": [],
-    "traditional": "得到",
-    "pinyin": "dédào",
-    "pinyinNumbered": "de2 dao4",
-    "syllables": [
-      "dé",
-      "dào"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to get; to obtain; to receive"
-    ],
-    "ind": [
-      "mendapat",
-      "memperoleh"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "得",
-      "到"
-    ]
-  },
-  {
-    "id": "L1-0066",
-    "hanzi": "地",
-    "variants": [],
-    "traditional": "地",
-    "pinyin": "de",
-    "pinyinNumbered": "de5",
-    "syllables": [
-      "de"
-    ],
-    "tones": [
-      5
-    ],
-    "pos": [
-      "Aux"
-    ],
-    "en": [
-      "-ly",
-      "structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct"
-    ],
-    "ind": [
-      "(partikel yang menghubungkan kata keterangan dengan kata kerja, mirip akhiran \"-nya\")"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地"
-    ]
-  },
-  {
     "id": "L1-0067",
     "hanzi": "的",
     "variants": [],
@@ -2161,239 +967,6 @@
     "hsk": 1,
     "chars": [
       "的"
-    ]
-  },
-  {
-    "id": "L1-0068",
-    "hanzi": "等",
-    "variants": [],
-    "traditional": "等",
-    "pinyin": "děng",
-    "pinyinNumbered": "deng3",
-    "syllables": [
-      "děng"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to wait for; to await",
-      "by the time; when; till",
-      "and so on; etc.; et al.",
-      "(bound form) class; rank; grade",
-      "(bound form) equal to; same as",
-      "(used to end an enumeration)"
-    ],
-    "ind": [
-      "menunggu",
-      "dan seterusnya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "等"
-    ]
-  },
-  {
-    "id": "L1-0069",
-    "hanzi": "地",
-    "variants": [],
-    "traditional": "地",
-    "pinyin": "dì",
-    "pinyinNumbered": "di4",
-    "syllables": [
-      "dì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "earth",
-      "ground",
-      "field",
-      "place",
-      "land"
-    ],
-    "ind": [
-      "tanah",
-      "bumi",
-      "tempat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地"
-    ]
-  },
-  {
-    "id": "L1-0070",
-    "hanzi": "地点",
-    "variants": [],
-    "traditional": "地點",
-    "pinyin": "dìdiǎn",
-    "pinyinNumbered": "di4 dian3",
-    "syllables": [
-      "dì",
-      "diǎn"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "place",
-      "site",
-      "location",
-      "venue"
-    ],
-    "ind": [
-      "tempat",
-      "lokasi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地",
-      "点"
-    ]
-  },
-  {
-    "id": "L1-0071",
-    "hanzi": "地方",
-    "variants": [],
-    "traditional": "地方",
-    "pinyin": "dìfang",
-    "pinyinNumbered": "di4 fang5",
-    "syllables": [
-      "dì",
-      "fang"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "area",
-      "place",
-      "space",
-      "room",
-      "territory"
-    ],
-    "ind": [
-      "tempat",
-      "daerah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地",
-      "方"
-    ]
-  },
-  {
-    "id": "L1-0072",
-    "hanzi": "地上",
-    "variants": [],
-    "traditional": "地上",
-    "pinyin": "dìshang",
-    "pinyinNumbered": "di4 shang5",
-    "syllables": [
-      "dì",
-      "shang"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "on the ground",
-      "on the floor"
-    ],
-    "ind": [
-      "di tanah",
-      "di lantai"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0073",
-    "hanzi": "地图",
-    "variants": [],
-    "traditional": "地圖",
-    "pinyin": "dìtú",
-    "pinyinNumbered": "di4 tu2",
-    "syllables": [
-      "dì",
-      "tú"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "map"
-    ],
-    "ind": [
-      "peta"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "地",
-      "图"
-    ]
-  },
-  {
-    "id": "L1-0074",
-    "hanzi": "弟弟",
-    "variants": [
-      "弟"
-    ],
-    "traditional": "弟弟",
-    "pinyin": "dìdi",
-    "pinyinNumbered": "di4 di5",
-    "syllables": [
-      "dì",
-      "di"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "younger brother"
-    ],
-    "ind": [
-      "adik laki-laki"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "弟"
     ]
   },
   {
@@ -2426,6 +999,36 @@
     "hsk": 1,
     "chars": [
       "第"
+    ]
+  },
+  {
+    "id": "L1-0506",
+    "hanzi": "店",
+    "variants": [],
+    "traditional": "店",
+    "pinyin": "diàn",
+    "pinyinNumbered": "dian4",
+    "syllables": [
+      "diàn"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "shop; store",
+      "inn; old-style hotel"
+    ],
+    "ind": [
+      "toko",
+      "kedai"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "店"
     ]
   },
   {
@@ -2463,40 +1066,6 @@
     "hsk": 1,
     "chars": [
       "点"
-    ]
-  },
-  {
-    "id": "L1-0077",
-    "hanzi": "电",
-    "variants": [],
-    "traditional": "電",
-    "pinyin": "diàn",
-    "pinyinNumbered": "dian4",
-    "syllables": [
-      "diàn"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "lightning",
-      "electricity",
-      "electric (bound form)",
-      "to get (or give) an electric shock",
-      "phone call or telegram etc",
-      "to send via telephone or telegram etc"
-    ],
-    "ind": [
-      "listrik",
-      "petir"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "电"
     ]
   },
   {
@@ -2595,41 +1164,6 @@
     ]
   },
   {
-    "id": "L1-0081",
-    "hanzi": "电视机",
-    "variants": [],
-    "traditional": "電視機",
-    "pinyin": "diànshìjī",
-    "pinyinNumbered": "dian4 shi4 ji1",
-    "syllables": [
-      "diàn",
-      "shì",
-      "jī"
-    ],
-    "tones": [
-      4,
-      4,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "television set"
-    ],
-    "ind": [
-      "pesawat televisi",
-      "TV"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "电",
-      "视",
-      "机"
-    ]
-  },
-  {
     "id": "L1-0082",
     "hanzi": "电影",
     "variants": [],
@@ -2695,68 +1229,35 @@
     ]
   },
   {
-    "id": "L1-0084",
-    "hanzi": "东",
-    "variants": [],
-    "traditional": "東",
-    "pinyin": "dōng",
-    "pinyinNumbered": "dong1",
+    "id": "L1-0074",
+    "hanzi": "弟弟",
+    "variants": [
+      "弟"
+    ],
+    "traditional": "弟弟",
+    "pinyin": "dìdi",
+    "pinyinNumbered": "di4 di5",
     "syllables": [
-      "dōng"
+      "dì",
+      "di"
     ],
     "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "east",
-      "host (i.e. sitting on east side of guest)",
-      "landlord"
-    ],
-    "ind": [
-      "timur"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "东"
-    ]
-  },
-  {
-    "id": "L1-0085",
-    "hanzi": "东边",
-    "variants": [],
-    "traditional": "東邊",
-    "pinyin": "dōngbian",
-    "pinyinNumbered": "dong1 bian5",
-    "syllables": [
-      "dōng",
-      "bian"
-    ],
-    "tones": [
-      1,
+      4,
       5
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "east",
-      "east side",
-      "eastern part",
-      "to the east of"
+      "younger brother"
     ],
     "ind": [
-      "sisi timur",
-      "sebelah timur"
+      "adik laki-laki"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "东",
-      "边"
+      "弟"
     ]
   },
   {
@@ -2791,73 +1292,6 @@
     "chars": [
       "东",
       "西"
-    ]
-  },
-  {
-    "id": "L1-0087",
-    "hanzi": "动",
-    "variants": [],
-    "traditional": "動",
-    "pinyin": "dòng",
-    "pinyinNumbered": "dong4",
-    "syllables": [
-      "dòng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "(of sth) to move",
-      "to set in movement",
-      "to displace",
-      "to touch",
-      "to make use of",
-      "to stir (emotions)"
-    ],
-    "ind": [
-      "bergerak",
-      "menggerakkan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "动"
-    ]
-  },
-  {
-    "id": "L1-0088",
-    "hanzi": "动作",
-    "variants": [],
-    "traditional": "動作",
-    "pinyin": "dòngzuò",
-    "pinyinNumbered": "dong4 zuo4",
-    "syllables": [
-      "dòng",
-      "zuò"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "movement; motion; action",
-      "to act; to move"
-    ],
-    "ind": [
-      "gerakan",
-      "aksi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "动",
-      "作"
     ]
   },
   {
@@ -2923,39 +1357,6 @@
     "hsk": 1,
     "chars": [
       "读"
-    ]
-  },
-  {
-    "id": "L1-0091",
-    "hanzi": "读书",
-    "variants": [],
-    "traditional": "讀書",
-    "pinyin": "dúshū",
-    "pinyinNumbered": "du2 shu1",
-    "syllables": [
-      "dú",
-      "shū"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "to read a book",
-      "to study",
-      "to attend school"
-    ],
-    "ind": [
-      "membaca buku",
-      "belajar",
-      "bersekolah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "读",
-      "书"
     ]
   },
   {
@@ -3098,33 +1499,66 @@
     ]
   },
   {
-    "id": "L1-0096",
-    "hanzi": "饿",
+    "id": "L1-0091",
+    "hanzi": "读书",
     "variants": [],
-    "traditional": "餓",
-    "pinyin": "è",
-    "pinyinNumbered": "e4",
+    "traditional": "讀書",
+    "pinyin": "dúshū",
+    "pinyinNumbered": "du2 shu1",
     "syllables": [
-      "è"
+      "dú",
+      "shū"
+    ],
+    "tones": [
+      2,
+      1
+    ],
+    "pos": [],
+    "en": [
+      "to read a book",
+      "to study",
+      "to attend school"
+    ],
+    "ind": [
+      "membaca buku",
+      "belajar",
+      "bersekolah"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "读",
+      "书"
+    ]
+  },
+  {
+    "id": "L1-0098",
+    "hanzi": "二",
+    "variants": [],
+    "traditional": "二",
+    "pinyin": "èr",
+    "pinyinNumbered": "er4",
+    "syllables": [
+      "èr"
     ],
     "tones": [
       4
     ],
     "pos": [
-      "Adj",
-      "V"
+      "Num"
     ],
     "en": [
-      "hungry",
-      "to starve (sb)"
+      "two",
+      "2",
+      "(Beijing dialect) stupid"
     ],
     "ind": [
-      "lapar"
+      "dua"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "饿"
+      "二"
     ]
   },
   {
@@ -3157,36 +1591,6 @@
     "chars": [
       "儿",
       "子"
-    ]
-  },
-  {
-    "id": "L1-0098",
-    "hanzi": "二",
-    "variants": [],
-    "traditional": "二",
-    "pinyin": "èr",
-    "pinyinNumbered": "er4",
-    "syllables": [
-      "èr"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Num"
-    ],
-    "en": [
-      "two",
-      "2",
-      "(Beijing dialect) stupid"
-    ],
-    "ind": [
-      "dua"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "二"
     ]
   },
   {
@@ -3287,161 +1691,36 @@
     ]
   },
   {
-    "id": "L1-0102",
-    "hanzi": "房子",
+    "id": "L1-0108",
+    "hanzi": "非常",
     "variants": [],
-    "traditional": "房子",
-    "pinyin": "fángzi",
-    "pinyinNumbered": "fang2 zi5",
+    "traditional": "非常",
+    "pinyin": "fēicháng",
+    "pinyinNumbered": "fei1 chang2",
     "syllables": [
-      "fáng",
-      "zi"
+      "fēi",
+      "cháng"
     ],
     "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "house",
-      "building (single- or two-story)",
-      "apartment",
-      "room"
-    ],
-    "ind": [
-      "rumah",
-      "bangunan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "房",
-      "子"
-    ]
-  },
-  {
-    "id": "L1-0103",
-    "hanzi": "放",
-    "variants": [],
-    "traditional": "放",
-    "pinyin": "fàng",
-    "pinyinNumbered": "fang4",
-    "syllables": [
-      "fàng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to put",
-      "to place",
-      "to release",
-      "to free",
-      "to let go",
-      "to let out"
-    ],
-    "ind": [
-      "menaruh",
-      "meletakkan",
-      "melepaskan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "放"
-    ]
-  },
-  {
-    "id": "L1-0104",
-    "hanzi": "放假",
-    "variants": [],
-    "traditional": "放假",
-    "pinyin": "fàngjià",
-    "pinyinNumbered": "fang4 jia4",
-    "syllables": [
-      "fàng",
-      "jià"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to have a holiday or vacation"
-    ],
-    "ind": [
-      "libur",
-      "mulai liburan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "放",
-      "假"
-    ]
-  },
-  {
-    "id": "L1-0105",
-    "hanzi": "放学",
-    "variants": [],
-    "traditional": "放學",
-    "pinyin": "fàngxué",
-    "pinyinNumbered": "fang4 xue2",
-    "syllables": [
-      "fàng",
-      "xué"
-    ],
-    "tones": [
-      4,
+      1,
       2
     ],
-    "pos": [],
-    "en": [
-      "to dismiss students at the end of the school day"
-    ],
-    "ind": [
-      "pulang sekolah",
-      "sekolah bubar"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "放",
-      "学"
-    ]
-  },
-  {
-    "id": "L1-0106",
-    "hanzi": "飞",
-    "variants": [],
-    "traditional": "飛",
-    "pinyin": "fēi",
-    "pinyinNumbered": "fei1",
-    "syllables": [
-      "fēi"
-    ],
-    "tones": [
-      1
-    ],
     "pos": [
-      "V"
+      "Adv"
     ],
     "en": [
-      "to fly"
+      "very; really",
+      "unusual; extraordinary"
     ],
     "ind": [
-      "terbang"
+      "sangat",
+      "luar biasa"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "飞"
+      "非",
+      "常"
     ]
   },
   {
@@ -3473,39 +1752,6 @@
     "chars": [
       "飞",
       "机"
-    ]
-  },
-  {
-    "id": "L1-0108",
-    "hanzi": "非常",
-    "variants": [],
-    "traditional": "非常",
-    "pinyin": "fēicháng",
-    "pinyinNumbered": "fei1 chang2",
-    "syllables": [
-      "fēi",
-      "cháng"
-    ],
-    "tones": [
-      1,
-      2
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "very; really",
-      "unusual; extraordinary"
-    ],
-    "ind": [
-      "sangat",
-      "luar biasa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "非",
-      "常"
     ]
   },
   {
@@ -3546,200 +1792,34 @@
     ]
   },
   {
-    "id": "L1-0110",
-    "hanzi": "风",
+    "id": "L1-0507",
+    "hanzi": "分钟",
     "variants": [],
-    "traditional": "風",
-    "pinyin": "fēng",
-    "pinyinNumbered": "feng1",
+    "traditional": "分鐘",
+    "pinyin": "fēnzhōng",
+    "pinyinNumbered": "fen1 zhong1",
     "syllables": [
-      "fēng"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "wind",
-      "news",
-      "style",
-      "custom",
-      "manner"
-    ],
-    "ind": [
-      "angin"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "风"
-    ]
-  },
-  {
-    "id": "L1-0111",
-    "hanzi": "干",
-    "variants": [],
-    "traditional": "乾",
-    "pinyin": "gān",
-    "pinyinNumbered": "gan1",
-    "syllables": [
-      "gān"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "dry",
-      "dried food",
-      "empty; hollow",
-      "taken in to nominal kinship; adoptive; foster",
-      "futile; in vain",
-      "(dialect) rude; blunt"
-    ],
-    "ind": [
-      "kering"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "干"
-    ]
-  },
-  {
-    "id": "L1-0112",
-    "hanzi": "干净",
-    "variants": [],
-    "traditional": "乾淨",
-    "pinyin": "gānjìng",
-    "pinyinNumbered": "gan1 jing4",
-    "syllables": [
-      "gān",
-      "jìng"
+      "fēn",
+      "zhōng"
     ],
     "tones": [
       1,
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "clean",
-      "neat"
-    ],
-    "ind": [
-      "bersih"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "干",
-      "净"
-    ]
-  },
-  {
-    "id": "L1-0113",
-    "hanzi": "干",
-    "variants": [],
-    "traditional": "幹",
-    "pinyin": "gàn",
-    "pinyinNumbered": "gan4",
-    "syllables": [
-      "gàn"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "tree trunk",
-      "main part of sth",
-      "to manage",
-      "to work",
-      "to do",
-      "capable"
-    ],
-    "ind": [
-      "melakukan",
-      "mengerjakan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "干"
-    ]
-  },
-  {
-    "id": "L1-0114",
-    "hanzi": "干什么",
-    "variants": [],
-    "traditional": "幹什麼",
-    "pinyin": "gànshénme",
-    "pinyinNumbered": "gan4 shen2 me5",
-    "syllables": [
-      "gàn",
-      "shén",
-      "me"
-    ],
-    "tones": [
-      4,
-      2,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "what are you doing?",
-      "what's he up to?"
-    ],
-    "ind": [
-      "sedang apa",
-      "mau apa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "干",
-      "什",
-      "么"
-    ]
-  },
-  {
-    "id": "L1-0115",
-    "hanzi": "高",
-    "variants": [],
-    "traditional": "高",
-    "pinyin": "gāo",
-    "pinyinNumbered": "gao1",
-    "syllables": [
-      "gāo"
-    ],
-    "tones": [
       1
     ],
     "pos": [
-      "Adj"
+      "M"
     ],
     "en": [
-      "high",
-      "tall",
-      "above average",
-      "loud",
-      "your (honorific)"
+      "minute"
     ],
     "ind": [
-      "tinggi"
+      "menit"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "高"
+      "分",
+      "钟"
     ]
   },
   {
@@ -3778,67 +1858,32 @@
     ]
   },
   {
-    "id": "L1-0117",
-    "hanzi": "告诉",
+    "id": "L1-0120",
+    "hanzi": "个",
     "variants": [],
-    "traditional": "告訴",
-    "pinyin": "gàosu",
-    "pinyinNumbered": "gao4 su5",
+    "traditional": "個",
+    "pinyin": "gè",
+    "pinyinNumbered": "ge4",
     "syllables": [
-      "gào",
-      "su"
+      "gè"
     ],
     "tones": [
-      4,
-      5
+      4
     ],
     "pos": [
-      "V"
+      "M"
     ],
     "en": [
-      "to tell; to inform; to let know"
+      "(classifier used before a noun that has no specific classifier)",
+      "(bound form) individual"
     ],
     "ind": [
-      "memberi tahu",
-      "mengatakan kepada"
+      "(penghitung umum untuk orang dan benda)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "告",
-      "诉"
-    ]
-  },
-  {
-    "id": "L1-0118",
-    "hanzi": "哥哥",
-    "variants": [
-      "哥"
-    ],
-    "traditional": "哥哥",
-    "pinyin": "gēge",
-    "pinyinNumbered": "ge1 ge5",
-    "syllables": [
-      "gē",
-      "ge"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "older brother"
-    ],
-    "ind": [
-      "kakak laki-laki"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "哥"
+      "个"
     ]
   },
   {
@@ -3871,32 +1916,35 @@
     ]
   },
   {
-    "id": "L1-0120",
-    "hanzi": "个",
-    "variants": [],
-    "traditional": "個",
-    "pinyin": "gè",
-    "pinyinNumbered": "ge4",
+    "id": "L1-0118",
+    "hanzi": "哥哥",
+    "variants": [
+      "哥"
+    ],
+    "traditional": "哥哥",
+    "pinyin": "gēge",
+    "pinyinNumbered": "ge1 ge5",
     "syllables": [
-      "gè"
+      "gē",
+      "ge"
     ],
     "tones": [
-      4
+      1,
+      5
     ],
     "pos": [
-      "M"
+      "N"
     ],
     "en": [
-      "(classifier used before a noun that has no specific classifier)",
-      "(bound form) individual"
+      "older brother"
     ],
     "ind": [
-      "(penghitung umum untuk orang dan benda)"
+      "kakak laki-laki"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "个"
+      "哥"
     ]
   },
   {
@@ -3936,72 +1984,35 @@
     ]
   },
   {
-    "id": "L1-0122",
-    "hanzi": "跟",
+    "id": "L1-0508",
+    "hanzi": "公司",
     "variants": [],
-    "traditional": "跟",
-    "pinyin": "gēn",
-    "pinyinNumbered": "gen1",
-    "syllables": [
-      "gēn"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "Prep",
-      "Conj",
-      "V"
-    ],
-    "en": [
-      "heel",
-      "to follow closely",
-      "to go with",
-      "(of a woman) to marry sb",
-      "with",
-      "compared with"
-    ],
-    "ind": [
-      "dengan",
-      "bersama",
-      "mengikuti"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "跟"
-    ]
-  },
-  {
-    "id": "L1-0123",
-    "hanzi": "工人",
-    "variants": [],
-    "traditional": "工人",
-    "pinyin": "gōngrén",
-    "pinyinNumbered": "gong1 ren2",
+    "traditional": "公司",
+    "pinyin": "gōngsī",
+    "pinyinNumbered": "gong1 si1",
     "syllables": [
       "gōng",
-      "rén"
+      "sī"
     ],
     "tones": [
       1,
-      2
+      1
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "worker"
+      "company; firm; corporation"
     ],
     "ind": [
-      "pekerja",
-      "buruh"
+      "perusahaan",
+      "kantor (perusahaan)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "工",
-      "人"
+      "公",
+      "司"
     ]
   },
   {
@@ -4042,66 +2053,31 @@
     ]
   },
   {
-    "id": "L1-0125",
-    "hanzi": "关",
+    "id": "L1-0509",
+    "hanzi": "狗",
     "variants": [],
-    "traditional": "關",
-    "pinyin": "guān",
-    "pinyinNumbered": "guan1",
+    "traditional": "狗",
+    "pinyin": "gǒu",
+    "pinyinNumbered": "gou3",
     "syllables": [
-      "guān"
+      "gǒu"
     ],
     "tones": [
-      1
+      3
     ],
     "pos": [
-      "V"
+      "N"
     ],
     "en": [
-      "mountain pass",
-      "to close; to shut; to turn off",
-      "to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
-      "to concern; to involve"
+      "dog"
     ],
     "ind": [
-      "menutup",
-      "mematikan"
+      "anjing"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "关"
-    ]
-  },
-  {
-    "id": "L1-0126",
-    "hanzi": "关上",
-    "variants": [],
-    "traditional": "關上",
-    "pinyin": "guānshang",
-    "pinyinNumbered": "guan1 shang5",
-    "syllables": [
-      "guān",
-      "shang"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "to close (a door)",
-      "to turn off (light, electrical equipment etc)"
-    ],
-    "ind": [
-      "menutup",
-      "mematikan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "关",
-      "上"
+      "狗"
     ]
   },
   {
@@ -4166,106 +2142,6 @@
     ]
   },
   {
-    "id": "L1-0129",
-    "hanzi": "国家",
-    "variants": [],
-    "traditional": "國家",
-    "pinyin": "guójiā",
-    "pinyinNumbered": "guo2 jia1",
-    "syllables": [
-      "guó",
-      "jiā"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "country; nation; state"
-    ],
-    "ind": [
-      "negara",
-      "negeri"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "国",
-      "家"
-    ]
-  },
-  {
-    "id": "L1-0130",
-    "hanzi": "国外",
-    "variants": [],
-    "traditional": "國外",
-    "pinyin": "guówài",
-    "pinyinNumbered": "guo2 wai4",
-    "syllables": [
-      "guó",
-      "wài"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "abroad",
-      "external (affairs)",
-      "overseas",
-      "foreign"
-    ],
-    "ind": [
-      "luar negeri"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "国",
-      "外"
-    ]
-  },
-  {
-    "id": "L1-0131",
-    "hanzi": "过",
-    "variants": [],
-    "traditional": "過",
-    "pinyin": "guò",
-    "pinyinNumbered": "guo4",
-    "syllables": [
-      "guò"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to cross",
-      "to go over",
-      "to pass (time)",
-      "to celebrate (a holiday)",
-      "to live",
-      "to get along"
-    ],
-    "ind": [
-      "melewati",
-      "menghabiskan (waktu)",
-      "merayakan",
-      "(penanda pengalaman)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "过"
-    ]
-  },
-  {
     "id": "L1-0132",
     "hanzi": "还",
     "variants": [],
@@ -4298,74 +2174,6 @@
     "hsk": 1,
     "chars": [
       "还"
-    ]
-  },
-  {
-    "id": "L1-0133",
-    "hanzi": "还是",
-    "variants": [],
-    "traditional": "還是",
-    "pinyin": "háishi",
-    "pinyinNumbered": "hai2 shi5",
-    "syllables": [
-      "hái",
-      "shi"
-    ],
-    "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "Adv",
-      "Conj"
-    ],
-    "en": [
-      "still (as before)",
-      "had better",
-      "unexpectedly",
-      "or"
-    ],
-    "ind": [
-      "atau",
-      "masih",
-      "sebaiknya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "还",
-      "是"
-    ]
-  },
-  {
-    "id": "L1-0134",
-    "hanzi": "还有",
-    "variants": [],
-    "traditional": "還有",
-    "pinyin": "háiyǒu",
-    "pinyinNumbered": "hai2 you3",
-    "syllables": [
-      "hái",
-      "yǒu"
-    ],
-    "tones": [
-      2,
-      3
-    ],
-    "pos": [],
-    "en": [
-      "there still remain(s); there is (or are) still",
-      "in addition"
-    ],
-    "ind": [
-      "masih ada",
-      "selain itu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "还",
-      "有"
     ]
   },
   {
@@ -4461,6 +2269,41 @@
     "chars": [
       "汉",
       "字"
+    ]
+  },
+  {
+    "id": "L1-0143",
+    "hanzi": "号",
+    "variants": [],
+    "traditional": "號",
+    "pinyin": "hào",
+    "pinyinNumbered": "hao4",
+    "syllables": [
+      "hào"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "N",
+      "M"
+    ],
+    "en": [
+      "ordinal number",
+      "day of a month",
+      "mark",
+      "sign",
+      "business establishment",
+      "size"
+    ],
+    "ind": [
+      "tanggal",
+      "nomor"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "号"
     ]
   },
   {
@@ -4636,69 +2479,6 @@
     ]
   },
   {
-    "id": "L1-0143",
-    "hanzi": "号",
-    "variants": [],
-    "traditional": "號",
-    "pinyin": "hào",
-    "pinyinNumbered": "hao4",
-    "syllables": [
-      "hào"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N",
-      "M"
-    ],
-    "en": [
-      "ordinal number",
-      "day of a month",
-      "mark",
-      "sign",
-      "business establishment",
-      "size"
-    ],
-    "ind": [
-      "tanggal",
-      "nomor"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "号"
-    ]
-  },
-  {
-    "id": "L1-0144",
-    "hanzi": "喝",
-    "variants": [],
-    "traditional": "喝",
-    "pinyin": "hē",
-    "pinyinNumbered": "he1",
-    "syllables": [
-      "hē"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to drink"
-    ],
-    "ind": [
-      "minum"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "喝"
-    ]
-  },
-  {
     "id": "L1-0145",
     "hanzi": "和",
     "variants": [],
@@ -4732,6 +2512,34 @@
     "hsk": 1,
     "chars": [
       "和"
+    ]
+  },
+  {
+    "id": "L1-0144",
+    "hanzi": "喝",
+    "variants": [],
+    "traditional": "喝",
+    "pinyin": "hē",
+    "pinyinNumbered": "he1",
+    "syllables": [
+      "hē"
+    ],
+    "tones": [
+      1
+    ],
+    "pos": [
+      "V"
+    ],
+    "en": [
+      "to drink"
+    ],
+    "ind": [
+      "minum"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "喝"
     ]
   },
   {
@@ -4800,207 +2608,6 @@
     ]
   },
   {
-    "id": "L1-0148",
-    "hanzi": "后边",
-    "variants": [],
-    "traditional": "後邊",
-    "pinyin": "hòubian",
-    "pinyinNumbered": "hou4 bian5",
-    "syllables": [
-      "hòu",
-      "bian"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the back; the rear; the last bit",
-      "behind; near the end; at the back",
-      "later; afterwards"
-    ],
-    "ind": [
-      "bagian belakang",
-      "belakang"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "后",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0149",
-    "hanzi": "后天",
-    "variants": [],
-    "traditional": "後天",
-    "pinyin": "hòutiān",
-    "pinyinNumbered": "hou4 tian1",
-    "syllables": [
-      "hòu",
-      "tiān"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the day after tomorrow",
-      "life after birth (the period in which one develops through experiences, contrasted with 先天[xian1 tian1])",
-      "acquired (not innate or congenital)",
-      "a posteriori"
-    ],
-    "ind": [
-      "lusa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "后",
-      "天"
-    ]
-  },
-  {
-    "id": "L1-0150",
-    "hanzi": "花",
-    "variants": [],
-    "traditional": "花",
-    "pinyin": "huā",
-    "pinyinNumbered": "hua1",
-    "syllables": [
-      "huā"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "flower",
-      "blossom",
-      "fancy pattern",
-      "florid",
-      "to spend (money, time)",
-      "(coll.) lecherous"
-    ],
-    "ind": [
-      "bunga",
-      "menghabiskan (uang atau waktu)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "花"
-    ]
-  },
-  {
-    "id": "L1-0151",
-    "hanzi": "话",
-    "variants": [],
-    "traditional": "話",
-    "pinyin": "huà",
-    "pinyinNumbered": "hua4",
-    "syllables": [
-      "huà"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "dialect",
-      "language",
-      "spoken words",
-      "speech",
-      "talk",
-      "words"
-    ],
-    "ind": [
-      "perkataan",
-      "bahasa",
-      "kata-kata"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "话"
-    ]
-  },
-  {
-    "id": "L1-0152",
-    "hanzi": "坏",
-    "variants": [],
-    "traditional": "壞",
-    "pinyin": "huài",
-    "pinyinNumbered": "huai4",
-    "syllables": [
-      "huài"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "bad",
-      "spoiled",
-      "broken",
-      "to break down",
-      "(suffix) to the utmost"
-    ],
-    "ind": [
-      "buruk",
-      "jahat",
-      "rusak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "坏"
-    ]
-  },
-  {
-    "id": "L1-0153",
-    "hanzi": "还",
-    "variants": [],
-    "traditional": "還",
-    "pinyin": "huán",
-    "pinyinNumbered": "huan2",
-    "syllables": [
-      "huán"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to pay back",
-      "to return"
-    ],
-    "ind": [
-      "mengembalikan",
-      "membayar kembali"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "还"
-    ]
-  },
-  {
     "id": "L1-0154",
     "hanzi": "回",
     "variants": [],
@@ -5033,162 +2640,6 @@
     "hsk": 1,
     "chars": [
       "回"
-    ]
-  },
-  {
-    "id": "L1-0155",
-    "hanzi": "回答",
-    "variants": [],
-    "traditional": "回答",
-    "pinyin": "huídá",
-    "pinyinNumbered": "hui2 da2",
-    "syllables": [
-      "huí",
-      "dá"
-    ],
-    "tones": [
-      2,
-      2
-    ],
-    "pos": [
-      "V",
-      "N"
-    ],
-    "en": [
-      "to reply; to answer",
-      "reply; answer"
-    ],
-    "ind": [
-      "menjawab",
-      "jawaban"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "回",
-      "答"
-    ]
-  },
-  {
-    "id": "L1-0156",
-    "hanzi": "回到",
-    "variants": [],
-    "traditional": "回到",
-    "pinyin": "huídào",
-    "pinyinNumbered": "hui2 dao4",
-    "syllables": [
-      "huí",
-      "dào"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to return to"
-    ],
-    "ind": [
-      "kembali ke",
-      "pulang ke"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "回",
-      "到"
-    ]
-  },
-  {
-    "id": "L1-0157",
-    "hanzi": "回家",
-    "variants": [],
-    "traditional": "回家",
-    "pinyin": "huíjiā",
-    "pinyinNumbered": "hui2 jia1",
-    "syllables": [
-      "huí",
-      "jiā"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "to return home"
-    ],
-    "ind": [
-      "pulang ke rumah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "回",
-      "家"
-    ]
-  },
-  {
-    "id": "L1-0158",
-    "hanzi": "回来",
-    "variants": [],
-    "traditional": "回來",
-    "pinyin": "huílái",
-    "pinyinNumbered": "hui2 lai2",
-    "syllables": [
-      "huí",
-      "lái"
-    ],
-    "tones": [
-      2,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to return; to come back"
-    ],
-    "ind": [
-      "pulang",
-      "kembali (ke arah pembicara)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "回",
-      "来"
-    ]
-  },
-  {
-    "id": "L1-0159",
-    "hanzi": "回去",
-    "variants": [],
-    "traditional": "回去",
-    "pinyin": "huíqù",
-    "pinyinNumbered": "hui2 qu4",
-    "syllables": [
-      "huí",
-      "qù"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to return",
-      "to go back"
-    ],
-    "ind": [
-      "pulang",
-      "kembali (menjauhi pembicara)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "回",
-      "去"
     ]
   },
   {
@@ -5259,101 +2710,6 @@
     ]
   },
   {
-    "id": "L1-0162",
-    "hanzi": "机场",
-    "variants": [],
-    "traditional": "機場",
-    "pinyin": "jīchǎng",
-    "pinyinNumbered": "ji1 chang3",
-    "syllables": [
-      "jī",
-      "chǎng"
-    ],
-    "tones": [
-      1,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "airport; airfield"
-    ],
-    "ind": [
-      "bandara",
-      "bandar udara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "机",
-      "场"
-    ]
-  },
-  {
-    "id": "L1-0163",
-    "hanzi": "机票",
-    "variants": [],
-    "traditional": "機票",
-    "pinyin": "jīpiào",
-    "pinyinNumbered": "ji1 piao4",
-    "syllables": [
-      "jī",
-      "piào"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "plane ticket; airline ticket"
-    ],
-    "ind": [
-      "tiket pesawat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "机",
-      "票"
-    ]
-  },
-  {
-    "id": "L1-0164",
-    "hanzi": "鸡蛋",
-    "variants": [],
-    "traditional": "雞蛋",
-    "pinyin": "jīdàn",
-    "pinyinNumbered": "ji1 dan4",
-    "syllables": [
-      "jī",
-      "dàn"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(chicken) egg",
-      "hen's egg"
-    ],
-    "ind": [
-      "telur ayam"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "鸡",
-      "蛋"
-    ]
-  },
-  {
     "id": "L1-0165",
     "hanzi": "几",
     "variants": [],
@@ -5384,104 +2740,6 @@
     "hsk": 1,
     "chars": [
       "几"
-    ]
-  },
-  {
-    "id": "L1-0166",
-    "hanzi": "记",
-    "variants": [],
-    "traditional": "記",
-    "pinyin": "jì",
-    "pinyinNumbered": "ji4",
-    "syllables": [
-      "jì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to record",
-      "to note",
-      "to memorize",
-      "to remember",
-      "mark",
-      "sign"
-    ],
-    "ind": [
-      "mencatat",
-      "mengingat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "记"
-    ]
-  },
-  {
-    "id": "L1-0167",
-    "hanzi": "记得",
-    "variants": [],
-    "traditional": "記得",
-    "pinyin": "jìde",
-    "pinyinNumbered": "ji4 de5",
-    "syllables": [
-      "jì",
-      "de"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to remember"
-    ],
-    "ind": [
-      "ingat",
-      "masih ingat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "记",
-      "得"
-    ]
-  },
-  {
-    "id": "L1-0168",
-    "hanzi": "记住",
-    "variants": [],
-    "traditional": "記住",
-    "pinyin": "jìzhù",
-    "pinyinNumbered": "ji4 zhu4",
-    "syllables": [
-      "jì",
-      "zhù"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to remember",
-      "to bear in mind",
-      "to learn by heart"
-    ],
-    "ind": [
-      "mengingat",
-      "menghafal"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "记",
-      "住"
     ]
   },
   {
@@ -5521,103 +2779,6 @@
     ]
   },
   {
-    "id": "L1-0170",
-    "hanzi": "家里",
-    "variants": [],
-    "traditional": "家裡",
-    "pinyin": "jiāli",
-    "pinyinNumbered": "jia1 li5",
-    "syllables": [
-      "jiā",
-      "li"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "home"
-    ],
-    "ind": [
-      "di rumah",
-      "di dalam rumah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "家",
-      "里"
-    ]
-  },
-  {
-    "id": "L1-0171",
-    "hanzi": "家人",
-    "variants": [],
-    "traditional": "家人",
-    "pinyin": "jiārén",
-    "pinyinNumbered": "jia1 ren2",
-    "syllables": [
-      "jiā",
-      "rén"
-    ],
-    "tones": [
-      1,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "family member",
-      "(old) servant"
-    ],
-    "ind": [
-      "anggota keluarga",
-      "keluarga"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "家",
-      "人"
-    ]
-  },
-  {
-    "id": "L1-0172",
-    "hanzi": "间",
-    "variants": [],
-    "traditional": "間",
-    "pinyin": "jiān",
-    "pinyinNumbered": "jian1",
-    "syllables": [
-      "jiān"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "M"
-    ],
-    "en": [
-      "between",
-      "among",
-      "within a definite time or space",
-      "room",
-      "section of a room or lateral space between two pairs of pillars",
-      "classifier for rooms"
-    ],
-    "ind": [
-      "(penghitung untuk kamar)",
-      "di antara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "间"
-    ]
-  },
-  {
     "id": "L1-0173",
     "hanzi": "见",
     "variants": [],
@@ -5652,61 +2813,33 @@
     ]
   },
   {
-    "id": "L1-0174",
-    "hanzi": "见面",
+    "id": "L1-0510",
+    "hanzi": "件",
     "variants": [],
-    "traditional": "見面",
-    "pinyin": "jiànmiàn",
-    "pinyinNumbered": "jian4 mian4",
+    "traditional": "件",
+    "pinyin": "jiàn",
+    "pinyinNumbered": "jian4",
     "syllables": [
-      "jiàn",
-      "miàn"
+      "jiàn"
     ],
     "tones": [
-      4,
       4
     ],
-    "pos": [],
-    "en": [
-      "to meet; to see each other"
-    ],
-    "ind": [
-      "bertemu",
-      "berjumpa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "见",
-      "面"
-    ]
-  },
-  {
-    "id": "L1-0175",
-    "hanzi": "教",
-    "variants": [],
-    "traditional": "教",
-    "pinyin": "jiāo",
-    "pinyinNumbered": "jiao1",
-    "syllables": [
-      "jiāo"
-    ],
-    "tones": [
-      1
-    ],
     "pos": [
-      "V"
+      "M"
     ],
     "en": [
-      "to teach; to instruct"
+      "classifier for clothes, events, things",
+      "item"
     ],
     "ind": [
-      "mengajar"
+      "(penggolong untuk pakaian dan urusan)",
+      "potong"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "教"
+      "件"
     ]
   },
   {
@@ -5745,38 +2878,101 @@
     ]
   },
   {
-    "id": "L1-0177",
-    "hanzi": "教学楼",
+    "id": "L1-0511",
+    "hanzi": "饺子",
     "variants": [],
-    "traditional": "教學樓",
-    "pinyin": "jiàoxuélóu",
-    "pinyinNumbered": "jiao4 xue2 lou2",
+    "traditional": "餃子",
+    "pinyin": "jiǎozi",
+    "pinyinNumbered": "jiao3 zi5",
     "syllables": [
-      "jiào",
-      "xué",
-      "lóu"
+      "jiǎo",
+      "zi"
     ],
     "tones": [
-      4,
-      2,
+      3,
+      5
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "dumpling",
+      "pot-sticker"
+    ],
+    "ind": [
+      "pangsit Tiongkok",
+      "jiaozi"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "饺",
+      "子"
+    ]
+  },
+  {
+    "id": "L1-0171",
+    "hanzi": "家人",
+    "variants": [],
+    "traditional": "家人",
+    "pinyin": "jiārén",
+    "pinyinNumbered": "jia1 ren2",
+    "syllables": [
+      "jiā",
+      "rén"
+    ],
+    "tones": [
+      1,
       2
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "school building; academic building"
+      "family member",
+      "(old) servant"
     ],
     "ind": [
-      "gedung kelas",
-      "gedung belajar"
+      "anggota keluarga",
+      "keluarga"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "教",
-      "学",
-      "楼"
+      "家",
+      "人"
+    ]
+  },
+  {
+    "id": "L1-0164",
+    "hanzi": "鸡蛋",
+    "variants": [],
+    "traditional": "雞蛋",
+    "pinyin": "jīdàn",
+    "pinyinNumbered": "ji1 dan4",
+    "syllables": [
+      "jī",
+      "dàn"
+    ],
+    "tones": [
+      1,
+      4
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "(chicken) egg",
+      "hen's egg"
+    ],
+    "ind": [
+      "telur ayam"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "鸡",
+      "蛋"
     ]
   },
   {
@@ -5809,41 +3005,6 @@
     "hsk": 1,
     "chars": [
       "姐"
-    ]
-  },
-  {
-    "id": "L1-0179",
-    "hanzi": "介绍",
-    "variants": [],
-    "traditional": "介紹",
-    "pinyin": "jièshào",
-    "pinyinNumbered": "jie4 shao4",
-    "syllables": [
-      "jiè",
-      "shào"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to introduce (sb to sb)",
-      "to give a presentation",
-      "to present (sb for a job etc)",
-      "introduction"
-    ],
-    "ind": [
-      "memperkenalkan",
-      "perkenalan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "介",
-      "绍"
     ]
   },
   {
@@ -5910,98 +3071,6 @@
     ]
   },
   {
-    "id": "L1-0182",
-    "hanzi": "进",
-    "variants": [],
-    "traditional": "進",
-    "pinyin": "jìn",
-    "pinyinNumbered": "jin4",
-    "syllables": [
-      "jìn"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to go forward",
-      "to advance",
-      "to go in",
-      "to enter",
-      "to put in",
-      "to submit"
-    ],
-    "ind": [
-      "masuk",
-      "maju"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "进"
-    ]
-  },
-  {
-    "id": "L1-0183",
-    "hanzi": "进来",
-    "variants": [],
-    "traditional": "進來",
-    "pinyin": "jìnlái",
-    "pinyinNumbered": "jin4 lai2",
-    "syllables": [
-      "jìn",
-      "lái"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to come in"
-    ],
-    "ind": [
-      "masuk (ke arah pembicara)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "进",
-      "来"
-    ]
-  },
-  {
-    "id": "L1-0184",
-    "hanzi": "进去",
-    "variants": [],
-    "traditional": "進去",
-    "pinyin": "jìnqù",
-    "pinyinNumbered": "jin4 qu4",
-    "syllables": [
-      "jìn",
-      "qù"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to go in"
-    ],
-    "ind": [
-      "masuk (menjauhi pembicara)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "进",
-      "去"
-    ]
-  },
-  {
     "id": "L1-0185",
     "hanzi": "九",
     "variants": [],
@@ -6028,42 +3097,6 @@
     "hsk": 1,
     "chars": [
       "九"
-    ]
-  },
-  {
-    "id": "L1-0186",
-    "hanzi": "就",
-    "variants": [],
-    "traditional": "就",
-    "pinyin": "jiù",
-    "pinyinNumbered": "jiu4",
-    "syllables": [
-      "jiù"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "(after a suppositional clause) in that case; then",
-      "(after a clause of action) as soon as; immediately after",
-      "(same as 就是[jiu4 shi4]) merely; nothing else but; simply; just; precisely; exactly",
-      "only; as little as",
-      "as much as; as many as",
-      "to approach; to move towards"
-    ],
-    "ind": [
-      "langsung",
-      "segera",
-      "maka",
-      "hanya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "就"
     ]
   },
   {
@@ -6166,70 +3199,6 @@
     ]
   },
   {
-    "id": "L1-0190",
-    "hanzi": "开会",
-    "variants": [],
-    "traditional": "開會",
-    "pinyin": "kāihuì",
-    "pinyinNumbered": "kai1 hui4",
-    "syllables": [
-      "kāi",
-      "huì"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to hold a meeting",
-      "to attend a meeting"
-    ],
-    "ind": [
-      "rapat",
-      "mengadakan rapat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "开",
-      "会"
-    ]
-  },
-  {
-    "id": "L1-0191",
-    "hanzi": "开玩笑",
-    "variants": [],
-    "traditional": "開玩笑",
-    "pinyin": "kāiwánxiào",
-    "pinyinNumbered": "kai1 wan2 xiao4",
-    "syllables": [
-      "kāi",
-      "wán",
-      "xiào"
-    ],
-    "tones": [
-      1,
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to play a joke; to make fun of; to joke"
-    ],
-    "ind": [
-      "bercanda",
-      "mengolok-olok"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "开",
-      "玩",
-      "笑"
-    ]
-  },
-  {
     "id": "L1-0192",
     "hanzi": "看",
     "variants": [],
@@ -6297,35 +3266,6 @@
     ]
   },
   {
-    "id": "L1-0194",
-    "hanzi": "看到",
-    "variants": [],
-    "traditional": "看到",
-    "pinyin": "kàndào",
-    "pinyinNumbered": "kan4 dao4",
-    "syllables": [
-      "kàn",
-      "dào"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to see"
-    ],
-    "ind": [
-      "melihat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "看",
-      "到"
-    ]
-  },
-  {
     "id": "L1-0195",
     "hanzi": "看见",
     "variants": [],
@@ -6353,99 +3293,6 @@
     "chars": [
       "看",
       "见"
-    ]
-  },
-  {
-    "id": "L1-0196",
-    "hanzi": "考",
-    "variants": [],
-    "traditional": "考",
-    "pinyin": "kǎo",
-    "pinyinNumbered": "kao3",
-    "syllables": [
-      "kǎo"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to check",
-      "to verify",
-      "to test",
-      "to examine",
-      "to take an exam",
-      "to take an entrance exam for"
-    ],
-    "ind": [
-      "ujian",
-      "mengikuti ujian"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "考"
-    ]
-  },
-  {
-    "id": "L1-0197",
-    "hanzi": "考试",
-    "variants": [],
-    "traditional": "考試",
-    "pinyin": "kǎoshì",
-    "pinyinNumbered": "kao3 shi4",
-    "syllables": [
-      "kǎo",
-      "shì"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to take an exam",
-      "exam"
-    ],
-    "ind": [
-      "ujian",
-      "mengikuti ujian"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "考",
-      "试"
-    ]
-  },
-  {
-    "id": "L1-0198",
-    "hanzi": "渴",
-    "variants": [],
-    "traditional": "渴",
-    "pinyin": "kě",
-    "pinyinNumbered": "ke3",
-    "syllables": [
-      "kě"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "thirsty"
-    ],
-    "ind": [
-      "haus"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "渴"
     ]
   },
   {
@@ -6484,66 +3331,42 @@
     ]
   },
   {
-    "id": "L1-0200",
-    "hanzi": "课本",
+    "id": "L1-0512",
+    "hanzi": "可以",
     "variants": [],
-    "traditional": "課本",
-    "pinyin": "kèběn",
-    "pinyinNumbered": "ke4 ben3",
+    "traditional": "可以",
+    "pinyin": "kěyǐ",
+    "pinyinNumbered": "ke3 yi3",
     "syllables": [
-      "kè",
-      "běn"
+      "kě",
+      "yǐ"
     ],
     "tones": [
-      4,
+      3,
       3
     ],
     "pos": [
-      "N"
+      "V",
+      "Adj"
     ],
     "en": [
-      "textbook"
+      "can",
+      "may",
+      "possible",
+      "able to",
+      "not bad",
+      "pretty good"
     ],
     "ind": [
-      "buku pelajaran"
+      "boleh",
+      "bisa",
+      "dapat"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "课",
-      "本"
-    ]
-  },
-  {
-    "id": "L1-0201",
-    "hanzi": "课文",
-    "variants": [],
-    "traditional": "課文",
-    "pinyin": "kèwén",
-    "pinyinNumbered": "ke4 wen2",
-    "syllables": [
-      "kè",
-      "wén"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "text"
-    ],
-    "ind": [
-      "teks pelajaran",
-      "bacaan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "课",
-      "文"
+      "可",
+      "以"
     ]
   },
   {
@@ -6611,41 +3434,6 @@
     ]
   },
   {
-    "id": "L1-0204",
-    "hanzi": "快",
-    "variants": [],
-    "traditional": "快",
-    "pinyin": "kuài",
-    "pinyinNumbered": "kuai4",
-    "syllables": [
-      "kuài"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj",
-      "Adv"
-    ],
-    "en": [
-      "rapid",
-      "quick",
-      "speed",
-      "rate",
-      "soon",
-      "almost"
-    ],
-    "ind": [
-      "cepat",
-      "segera"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "快"
-    ]
-  },
-  {
     "id": "L1-0205",
     "hanzi": "来",
     "variants": [],
@@ -6676,106 +3464,6 @@
     "hsk": 1,
     "chars": [
       "来"
-    ]
-  },
-  {
-    "id": "L1-0206",
-    "hanzi": "来到",
-    "variants": [],
-    "traditional": "來到",
-    "pinyin": "láidào",
-    "pinyinNumbered": "lai2 dao4",
-    "syllables": [
-      "lái",
-      "dào"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to arrive; to come"
-    ],
-    "ind": [
-      "tiba",
-      "datang ke"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "来",
-      "到"
-    ]
-  },
-  {
-    "id": "L1-0207",
-    "hanzi": "老",
-    "variants": [],
-    "traditional": "老",
-    "pinyin": "lǎo",
-    "pinyinNumbered": "lao3",
-    "syllables": [
-      "lǎo"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity",
-      "old (of people)",
-      "venerable (person)",
-      "experienced",
-      "of long standing",
-      "always"
-    ],
-    "ind": [
-      "tua",
-      "(awalan akrab sebelum nama atau gelar)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "老"
-    ]
-  },
-  {
-    "id": "L1-0208",
-    "hanzi": "老人",
-    "variants": [],
-    "traditional": "老人",
-    "pinyin": "lǎorén",
-    "pinyinNumbered": "lao3 ren2",
-    "syllables": [
-      "lǎo",
-      "rén"
-    ],
-    "tones": [
-      3,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "old man or woman",
-      "the elderly",
-      "one's aged parents or grandparents"
-    ],
-    "ind": [
-      "orang tua",
-      "lansia"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "老",
-      "人"
     ]
   },
   {
@@ -6840,39 +3528,6 @@
     ]
   },
   {
-    "id": "L1-0211",
-    "hanzi": "累",
-    "variants": [],
-    "traditional": "累",
-    "pinyin": "lèi",
-    "pinyinNumbered": "lei4",
-    "syllables": [
-      "lèi"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "tired",
-      "weary",
-      "to strain",
-      "to wear out",
-      "to work hard"
-    ],
-    "ind": [
-      "capai",
-      "lelah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "累"
-    ]
-  },
-  {
     "id": "L1-0212",
     "hanzi": "冷",
     "variants": [],
@@ -6930,38 +3585,6 @@
     "hsk": 1,
     "chars": [
       "里"
-    ]
-  },
-  {
-    "id": "L1-0214",
-    "hanzi": "里边",
-    "variants": [],
-    "traditional": "裡邊",
-    "pinyin": "lǐbian",
-    "pinyinNumbered": "li3 bian5",
-    "syllables": [
-      "lǐ",
-      "bian"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "inside"
-    ],
-    "ind": [
-      "bagian dalam",
-      "di dalam"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "里",
-      "边"
     ]
   },
   {
@@ -7061,193 +3684,88 @@
     ]
   },
   {
-    "id": "L1-0218",
-    "hanzi": "楼",
+    "id": "L1-0227",
+    "hanzi": "吗",
     "variants": [],
-    "traditional": "樓",
-    "pinyin": "lóu",
-    "pinyinNumbered": "lou2",
+    "traditional": "嗎",
+    "pinyin": "ma",
+    "pinyinNumbered": "ma5",
     "syllables": [
-      "lóu"
+      "ma"
     ],
     "tones": [
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "house with more than 1 story",
-      "storied building",
-      "floor"
-    ],
-    "ind": [
-      "gedung bertingkat",
-      "lantai"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "楼"
-    ]
-  },
-  {
-    "id": "L1-0219",
-    "hanzi": "楼上",
-    "variants": [],
-    "traditional": "樓上",
-    "pinyin": "lóushàng",
-    "pinyinNumbered": "lou2 shang4",
-    "syllables": [
-      "lóu",
-      "shàng"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "upstairs"
-    ],
-    "ind": [
-      "di lantai atas",
-      "atas"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "楼",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0220",
-    "hanzi": "楼下",
-    "variants": [],
-    "traditional": "樓下",
-    "pinyin": "lóuxià",
-    "pinyinNumbered": "lou2 xia4",
-    "syllables": [
-      "lóu",
-      "xià"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "downstairs"
-    ],
-    "ind": [
-      "di lantai bawah",
-      "bawah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "楼",
-      "下"
-    ]
-  },
-  {
-    "id": "L1-0221",
-    "hanzi": "路",
-    "variants": [],
-    "traditional": "路",
-    "pinyin": "lù",
-    "pinyinNumbered": "lu4",
-    "syllables": [
-      "lù"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N",
-      "M"
-    ],
-    "en": [
-      "road",
-      "journey",
-      "route",
-      "line (bus etc)",
-      "sort; kind"
-    ],
-    "ind": [
-      "jalan",
-      "rute"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "路"
-    ]
-  },
-  {
-    "id": "L1-0222",
-    "hanzi": "路口",
-    "variants": [],
-    "traditional": "路口",
-    "pinyin": "lùkǒu",
-    "pinyinNumbered": "lu4 kou3",
-    "syllables": [
-      "lù",
-      "kǒu"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "crossing",
-      "intersection (of roads)"
-    ],
-    "ind": [
-      "persimpangan jalan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "路",
-      "口"
-    ]
-  },
-  {
-    "id": "L1-0223",
-    "hanzi": "路上",
-    "variants": [],
-    "traditional": "路上",
-    "pinyin": "lùshang",
-    "pinyinNumbered": "lu4 shang5",
-    "syllables": [
-      "lù",
-      "shang"
-    ],
-    "tones": [
-      4,
       5
     ],
     "pos": [
-      "N"
+      "Aux"
     ],
     "en": [
-      "on the road",
-      "on the way; en route"
+      "(question particle for \"yes-no\" questions)"
     ],
     "ind": [
-      "di jalan",
-      "dalam perjalanan"
+      "(partikel tanya untuk pertanyaan ya/tidak)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "路",
-      "上"
+      "吗"
+    ]
+  },
+  {
+    "id": "L1-0513",
+    "hanzi": "卖",
+    "variants": [],
+    "traditional": "賣",
+    "pinyin": "mài",
+    "pinyinNumbered": "mai4",
+    "syllables": [
+      "mài"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "V"
+    ],
+    "en": [
+      "to sell"
+    ],
+    "ind": [
+      "menjual"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "卖"
+    ]
+  },
+  {
+    "id": "L1-0228",
+    "hanzi": "买",
+    "variants": [],
+    "traditional": "買",
+    "pinyin": "mǎi",
+    "pinyinNumbered": "mai3",
+    "syllables": [
+      "mǎi"
+    ],
+    "tones": [
+      3
+    ],
+    "pos": [
+      "V"
+    ],
+    "en": [
+      "to buy",
+      "to purchase"
+    ],
+    "ind": [
+      "membeli"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "买"
     ]
   },
   {
@@ -7286,159 +3804,6 @@
     ]
   },
   {
-    "id": "L1-0225",
-    "hanzi": "马路",
-    "variants": [],
-    "traditional": "馬路",
-    "pinyin": "mǎlù",
-    "pinyinNumbered": "ma3 lu4",
-    "syllables": [
-      "mǎ",
-      "lù"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "street",
-      "road"
-    ],
-    "ind": [
-      "jalan raya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "马",
-      "路"
-    ]
-  },
-  {
-    "id": "L1-0226",
-    "hanzi": "马上",
-    "variants": [],
-    "traditional": "馬上",
-    "pinyin": "mǎshàng",
-    "pinyinNumbered": "ma3 shang4",
-    "syllables": [
-      "mǎ",
-      "shàng"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "at once",
-      "right away",
-      "immediately",
-      "on horseback (i.e. by military force)"
-    ],
-    "ind": [
-      "segera",
-      "langsung"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "马",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0227",
-    "hanzi": "吗",
-    "variants": [],
-    "traditional": "嗎",
-    "pinyin": "ma",
-    "pinyinNumbered": "ma5",
-    "syllables": [
-      "ma"
-    ],
-    "tones": [
-      5
-    ],
-    "pos": [
-      "Aux"
-    ],
-    "en": [
-      "(question particle for \"yes-no\" questions)"
-    ],
-    "ind": [
-      "(partikel tanya untuk pertanyaan ya/tidak)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "吗"
-    ]
-  },
-  {
-    "id": "L1-0228",
-    "hanzi": "买",
-    "variants": [],
-    "traditional": "買",
-    "pinyin": "mǎi",
-    "pinyinNumbered": "mai3",
-    "syllables": [
-      "mǎi"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to buy",
-      "to purchase"
-    ],
-    "ind": [
-      "membeli"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "买"
-    ]
-  },
-  {
-    "id": "L1-0229",
-    "hanzi": "慢",
-    "variants": [],
-    "traditional": "慢",
-    "pinyin": "màn",
-    "pinyinNumbered": "man4",
-    "syllables": [
-      "màn"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "slow"
-    ],
-    "ind": [
-      "lambat",
-      "pelan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "慢"
-    ]
-  },
-  {
     "id": "L1-0230",
     "hanzi": "忙",
     "variants": [],
@@ -7470,68 +3835,31 @@
     ]
   },
   {
-    "id": "L1-0231",
-    "hanzi": "毛",
+    "id": "L1-0514",
+    "hanzi": "猫",
     "variants": [],
-    "traditional": "毛",
-    "pinyin": "máo",
-    "pinyinNumbered": "mao2",
+    "traditional": "貓",
+    "pinyin": "māo",
+    "pinyinNumbered": "mao1",
     "syllables": [
-      "máo"
+      "māo"
     ],
     "tones": [
-      2
+      1
     ],
     "pos": [
-      "M"
+      "N"
     ],
     "en": [
-      "hair",
-      "feather",
-      "down",
-      "wool",
-      "mildew",
-      "mold"
+      "cat"
     ],
     "ind": [
-      "mao (satuan uang, sepersepuluh yuan)",
-      "bulu"
+      "kucing"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "毛"
-    ]
-  },
-  {
-    "id": "L1-0232",
-    "hanzi": "没",
-    "variants": [],
-    "traditional": "沒",
-    "pinyin": "méi",
-    "pinyinNumbered": "mei2",
-    "syllables": [
-      "méi"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "Adv",
-      "V"
-    ],
-    "en": [
-      "(negative prefix for verbs) have not; not"
-    ],
-    "ind": [
-      "tidak ada",
-      "belum",
-      "tidak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "没"
+      "猫"
     ]
   },
   {
@@ -7568,63 +3896,60 @@
     ]
   },
   {
-    "id": "L1-0234",
-    "hanzi": "没什么",
-    "variants": [],
-    "traditional": "沒什麼",
-    "pinyin": "méishénme",
-    "pinyinNumbered": "mei2 shen2 me5",
+    "id": "L1-0237",
+    "hanzi": "妹妹",
+    "variants": [
+      "妹"
+    ],
+    "traditional": "妹妹",
+    "pinyin": "mèimei",
+    "pinyinNumbered": "mei4 mei5",
     "syllables": [
-      "méi",
-      "shén",
-      "me"
+      "mèi",
+      "mei"
     ],
     "tones": [
-      2,
-      2,
+      4,
       5
     ],
-    "pos": [],
+    "pos": [
+      "N"
+    ],
     "en": [
-      "it doesn't matter; it's nothing; never mind",
-      "think nothing of it; it's my pleasure; you're welcome"
+      "younger sister",
+      "young woman"
     ],
     "ind": [
-      "tidak apa-apa",
-      "bukan apa-apa"
+      "adik perempuan"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "没",
-      "什",
-      "么"
+      "妹"
     ]
   },
   {
     "id": "L1-0235",
-    "hanzi": "没事儿",
-    "variants": [],
-    "traditional": "沒事兒",
-    "pinyin": "méishìr",
-    "pinyinNumbered": "mei2 shi4 r5",
+    "hanzi": "没事",
+    "variants": [
+      "没事儿"
+    ],
+    "traditional": "沒事",
+    "pinyin": "méishì",
+    "pinyinNumbered": "mei2 shi4",
     "syllables": [
       "méi",
-      "shì",
-      "r"
+      "shì"
     ],
     "tones": [
       2,
-      4,
-      5
+      4
     ],
     "pos": [],
     "en": [
-      "to have spare time",
-      "free from work",
-      "it's not important",
-      "it's nothing",
-      "never mind"
+      "it's nothing; never mind",
+      "to be free (have nothing to do)",
+      "to be all right (not hurt)"
     ],
     "ind": [
       "tidak apa-apa",
@@ -7634,14 +3959,15 @@
     "hsk": 1,
     "chars": [
       "没",
-      "事",
-      "儿"
+      "事"
     ]
   },
   {
     "id": "L1-0236",
     "hanzi": "没有",
-    "variants": [],
+    "variants": [
+      "没"
+    ],
     "traditional": "沒有",
     "pinyin": "méiyǒu",
     "pinyinNumbered": "mei2 you3",
@@ -7677,138 +4003,6 @@
     ]
   },
   {
-    "id": "L1-0237",
-    "hanzi": "妹妹",
-    "variants": [
-      "妹"
-    ],
-    "traditional": "妹妹",
-    "pinyin": "mèimei",
-    "pinyinNumbered": "mei4 mei5",
-    "syllables": [
-      "mèi",
-      "mei"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "younger sister",
-      "young woman"
-    ],
-    "ind": [
-      "adik perempuan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "妹"
-    ]
-  },
-  {
-    "id": "L1-0238",
-    "hanzi": "门",
-    "variants": [],
-    "traditional": "門",
-    "pinyin": "mén",
-    "pinyinNumbered": "men2",
-    "syllables": [
-      "mén"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "N",
-      "M"
-    ],
-    "en": [
-      "gate",
-      "door",
-      "gateway",
-      "doorway",
-      "opening",
-      "valve"
-    ],
-    "ind": [
-      "pintu",
-      "gerbang"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "门"
-    ]
-  },
-  {
-    "id": "L1-0239",
-    "hanzi": "门口",
-    "variants": [],
-    "traditional": "門口",
-    "pinyin": "ménkǒu",
-    "pinyinNumbered": "men2 kou3",
-    "syllables": [
-      "mén",
-      "kǒu"
-    ],
-    "tones": [
-      2,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "doorway",
-      "gate"
-    ],
-    "ind": [
-      "pintu masuk",
-      "depan pintu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "门",
-      "口"
-    ]
-  },
-  {
-    "id": "L1-0240",
-    "hanzi": "门票",
-    "variants": [],
-    "traditional": "門票",
-    "pinyin": "ménpiào",
-    "pinyinNumbered": "men2 piao4",
-    "syllables": [
-      "mén",
-      "piào"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "ticket (for theater, cinema etc)"
-    ],
-    "ind": [
-      "tiket masuk"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "门",
-      "票"
-    ]
-  },
-  {
     "id": "L1-0241",
     "hanzi": "们",
     "variants": [],
@@ -7834,37 +4028,6 @@
     "hsk": 1,
     "chars": [
       "们"
-    ]
-  },
-  {
-    "id": "L1-0242",
-    "hanzi": "米饭",
-    "variants": [],
-    "traditional": "米飯",
-    "pinyin": "mǐfàn",
-    "pinyinNumbered": "mi3 fan4",
-    "syllables": [
-      "mǐ",
-      "fàn"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(cooked) rice"
-    ],
-    "ind": [
-      "nasi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "米",
-      "饭"
     ]
   },
   {
@@ -7933,70 +4096,34 @@
     ]
   },
   {
-    "id": "L1-0245",
-    "hanzi": "名字",
+    "id": "L1-0242",
+    "hanzi": "米饭",
     "variants": [],
-    "traditional": "名字",
-    "pinyin": "míngzi",
-    "pinyinNumbered": "ming2 zi5",
+    "traditional": "米飯",
+    "pinyin": "mǐfàn",
+    "pinyinNumbered": "mi3 fan4",
     "syllables": [
-      "míng",
-      "zi"
+      "mǐ",
+      "fàn"
     ],
     "tones": [
-      2,
-      5
+      3,
+      4
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "name (of a person or thing)"
+      "(cooked) rice"
     ],
     "ind": [
-      "nama"
+      "nasi"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "名",
-      "字"
-    ]
-  },
-  {
-    "id": "L1-0246",
-    "hanzi": "明白",
-    "variants": [],
-    "traditional": "明白",
-    "pinyin": "míngbai",
-    "pinyinNumbered": "ming2 bai5",
-    "syllables": [
-      "míng",
-      "bai"
-    ],
-    "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "Adj",
-      "V"
-    ],
-    "en": [
-      "clear; obvious; unequivocal",
-      "sensible; reasonable",
-      "to understand; to realize"
-    ],
-    "ind": [
-      "mengerti",
-      "paham",
-      "jelas"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "明",
-      "白"
+      "米",
+      "饭"
     ]
   },
   {
@@ -8062,38 +4189,65 @@
     ]
   },
   {
-    "id": "L1-0249",
-    "hanzi": "拿",
+    "id": "L1-0245",
+    "hanzi": "名字",
     "variants": [],
-    "traditional": "拿",
-    "pinyin": "ná",
-    "pinyinNumbered": "na2",
+    "traditional": "名字",
+    "pinyin": "míngzi",
+    "pinyinNumbered": "ming2 zi5",
     "syllables": [
-      "ná"
+      "míng",
+      "zi"
     ],
     "tones": [
-      2
+      2,
+      5
     ],
     "pos": [
-      "V"
+      "N"
     ],
     "en": [
-      "to hold",
-      "to seize",
-      "to catch",
-      "to apprehend",
-      "to take",
-      "(used in the same way as 把[ba3]: to mark the following noun as a direct object)"
+      "name (of a person or thing)"
     ],
     "ind": [
-      "mengambil",
-      "memegang",
-      "membawa"
+      "nama"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "拿"
+      "名",
+      "字"
+    ]
+  },
+  {
+    "id": "L1-0254",
+    "hanzi": "那",
+    "variants": [],
+    "traditional": "那",
+    "pinyin": "nà",
+    "pinyinNumbered": "na4",
+    "syllables": [
+      "nà"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "(specifier) that; the; those (colloquial pr. [nei4])",
+      "(pronoun) that (referring to persons, things or situations)",
+      "then (in that case)"
+    ],
+    "ind": [
+      "itu",
+      "kalau begitu"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "那"
     ]
   },
   {
@@ -8124,6 +4278,138 @@
     "hsk": 1,
     "chars": [
       "哪"
+    ]
+  },
+  {
+    "id": "L1-0255",
+    "hanzi": "那边",
+    "variants": [],
+    "traditional": "那邊",
+    "pinyin": "nàbiān",
+    "pinyinNumbered": "na4 bian1",
+    "syllables": [
+      "nà",
+      "biān"
+    ],
+    "tones": [
+      4,
+      1
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "over there",
+      "yonder"
+    ],
+    "ind": [
+      "sebelah sana",
+      "di sana"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "那",
+      "边"
+    ]
+  },
+  {
+    "id": "L1-0515",
+    "hanzi": "那个",
+    "variants": [],
+    "traditional": "那個",
+    "pinyin": "nàge",
+    "pinyinNumbered": "na4 ge5",
+    "syllables": [
+      "nà",
+      "ge"
+    ],
+    "tones": [
+      4,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "that one",
+      "that (as opposed to this)",
+      "(filler) um; you know"
+    ],
+    "ind": [
+      "yang itu",
+      "itu"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "那",
+      "个"
+    ]
+  },
+  {
+    "id": "L1-0516",
+    "hanzi": "哪个",
+    "variants": [],
+    "traditional": "哪個",
+    "pinyin": "nǎge",
+    "pinyinNumbered": "na3 ge5",
+    "syllables": [
+      "nǎ",
+      "ge"
+    ],
+    "tones": [
+      3,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "which one",
+      "which"
+    ],
+    "ind": [
+      "yang mana",
+      "mana"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "哪",
+      "个"
+    ]
+  },
+  {
+    "id": "L1-0256",
+    "hanzi": "那里",
+    "variants": [],
+    "traditional": "那裡",
+    "pinyin": "nàlǐ",
+    "pinyinNumbered": "na4 li3",
+    "syllables": [
+      "nà",
+      "lǐ"
+    ],
+    "tones": [
+      4,
+      3
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "there; that place"
+    ],
+    "ind": [
+      "di sana",
+      "tempat itu"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "那",
+      "里"
     ]
   },
   {
@@ -8164,294 +4450,6 @@
     ]
   },
   {
-    "id": "L1-0252",
-    "hanzi": "哪儿",
-    "variants": [],
-    "traditional": "哪兒",
-    "pinyin": "nǎr",
-    "pinyinNumbered": "na3 r5",
-    "syllables": [
-      "nǎ",
-      "r"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "where?",
-      "wherever; anywhere; somewhere",
-      "(used in rhetorical questions) how can ...?; how could ...?"
-    ],
-    "ind": [
-      "di mana"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "哪",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0253",
-    "hanzi": "哪些",
-    "variants": [],
-    "traditional": "哪些",
-    "pinyin": "nǎxiē",
-    "pinyinNumbered": "na3 xie1",
-    "syllables": [
-      "nǎ",
-      "xiē"
-    ],
-    "tones": [
-      3,
-      1
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "which ones?",
-      "who?",
-      "what?"
-    ],
-    "ind": [
-      "yang mana saja"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "哪",
-      "些"
-    ]
-  },
-  {
-    "id": "L1-0254",
-    "hanzi": "那",
-    "variants": [],
-    "traditional": "那",
-    "pinyin": "nà",
-    "pinyinNumbered": "na4",
-    "syllables": [
-      "nà"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "(specifier) that; the; those (colloquial pr. [nei4])",
-      "(pronoun) that (referring to persons, things or situations)",
-      "then (in that case)"
-    ],
-    "ind": [
-      "itu",
-      "kalau begitu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "那"
-    ]
-  },
-  {
-    "id": "L1-0255",
-    "hanzi": "那边",
-    "variants": [],
-    "traditional": "那邊",
-    "pinyin": "nàbiān",
-    "pinyinNumbered": "na4 bian1",
-    "syllables": [
-      "nà",
-      "biān"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "over there",
-      "yonder"
-    ],
-    "ind": [
-      "sebelah sana",
-      "di sana"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "那",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0256",
-    "hanzi": "那里",
-    "variants": [],
-    "traditional": "那裡",
-    "pinyin": "nàlǐ",
-    "pinyinNumbered": "na4 li3",
-    "syllables": [
-      "nà",
-      "lǐ"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "there; that place"
-    ],
-    "ind": [
-      "di sana",
-      "tempat itu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "那",
-      "里"
-    ]
-  },
-  {
-    "id": "L1-0257",
-    "hanzi": "那儿",
-    "variants": [],
-    "traditional": "那兒",
-    "pinyin": "nàr",
-    "pinyinNumbered": "na4 r5",
-    "syllables": [
-      "nà",
-      "r"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "there"
-    ],
-    "ind": [
-      "di sana"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "那",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0258",
-    "hanzi": "那些",
-    "variants": [],
-    "traditional": "那些",
-    "pinyin": "nàxiē",
-    "pinyinNumbered": "na4 xie1",
-    "syllables": [
-      "nà",
-      "xiē"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "those"
-    ],
-    "ind": [
-      "itu (jamak)",
-      "hal-hal itu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "那",
-      "些"
-    ]
-  },
-  {
-    "id": "L1-0259",
-    "hanzi": "奶",
-    "variants": [],
-    "traditional": "奶",
-    "pinyin": "nǎi",
-    "pinyinNumbered": "nai3",
-    "syllables": [
-      "nǎi"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "breast",
-      "milk",
-      "to breastfeed"
-    ],
-    "ind": [
-      "susu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "奶"
-    ]
-  },
-  {
-    "id": "L1-0260",
-    "hanzi": "奶奶",
-    "variants": [],
-    "traditional": "奶奶",
-    "pinyin": "nǎinai",
-    "pinyinNumbered": "nai3 nai5",
-    "syllables": [
-      "nǎi",
-      "nai"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(informal) grandma (paternal grandmother)",
-      "(respectful) mistress of the house",
-      "(coll.) boobies",
-      "breasts"
-    ],
-    "ind": [
-      "nenek"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "奶"
-    ]
-  },
-  {
     "id": "L1-0261",
     "hanzi": "男",
     "variants": [],
@@ -8479,40 +4477,6 @@
     "hsk": 1,
     "chars": [
       "男"
-    ]
-  },
-  {
-    "id": "L1-0262",
-    "hanzi": "男孩儿",
-    "variants": [],
-    "traditional": "男孩兒",
-    "pinyin": "nánháir",
-    "pinyinNumbered": "nan2 hai2 r5",
-    "syllables": [
-      "nán",
-      "hái",
-      "r"
-    ],
-    "tones": [
-      2,
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "boy"
-    ],
-    "ind": [
-      "anak laki-laki"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "男",
-      "孩",
-      "儿"
     ]
   },
   {
@@ -8551,168 +4515,132 @@
     ]
   },
   {
-    "id": "L1-0264",
-    "hanzi": "男人",
+    "id": "L1-0257",
+    "hanzi": "那儿",
     "variants": [],
-    "traditional": "男人",
-    "pinyin": "nánrén",
-    "pinyinNumbered": "nan2 ren2",
+    "traditional": "那兒",
+    "pinyin": "nàr",
+    "pinyinNumbered": "na4 r5",
     "syllables": [
-      "nán",
-      "rén"
+      "nà",
+      "r"
     ],
     "tones": [
-      2,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "a man",
-      "a male",
-      "men"
-    ],
-    "ind": [
-      "pria",
-      "laki-laki"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "男",
-      "人"
-    ]
-  },
-  {
-    "id": "L1-0265",
-    "hanzi": "男生",
-    "variants": [],
-    "traditional": "男生",
-    "pinyin": "nánshēng",
-    "pinyinNumbered": "nan2 sheng1",
-    "syllables": [
-      "nán",
-      "shēng"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "schoolboy",
-      "male student",
-      "boy",
-      "guy (young adult male)"
-    ],
-    "ind": [
-      "siswa laki-laki",
-      "cowok"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "男",
-      "生"
-    ]
-  },
-  {
-    "id": "L1-0266",
-    "hanzi": "南",
-    "variants": [],
-    "traditional": "南",
-    "pinyin": "nán",
-    "pinyinNumbered": "nan2",
-    "syllables": [
-      "nán"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "south"
-    ],
-    "ind": [
-      "selatan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "南"
-    ]
-  },
-  {
-    "id": "L1-0267",
-    "hanzi": "南边",
-    "variants": [],
-    "traditional": "南邊",
-    "pinyin": "nánbian",
-    "pinyinNumbered": "nan2 bian5",
-    "syllables": [
-      "nán",
-      "bian"
-    ],
-    "tones": [
-      2,
+      4,
       5
     ],
     "pos": [
-      "N"
+      "Pron"
     ],
     "en": [
-      "south",
-      "south side",
-      "southern part",
-      "to the south of"
+      "there"
     ],
     "ind": [
-      "sisi selatan",
-      "sebelah selatan"
+      "di sana"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "南",
-      "边"
+      "那",
+      "儿"
     ]
   },
   {
-    "id": "L1-0268",
-    "hanzi": "难",
+    "id": "L1-0252",
+    "hanzi": "哪儿",
     "variants": [],
-    "traditional": "難",
-    "pinyin": "nán",
-    "pinyinNumbered": "nan2",
+    "traditional": "哪兒",
+    "pinyin": "nǎr",
+    "pinyinNumbered": "na3 r5",
     "syllables": [
-      "nán"
+      "nǎ",
+      "r"
     ],
     "tones": [
-      2
+      3,
+      5
     ],
     "pos": [
-      "Adj"
+      "Pron"
     ],
     "en": [
-      "difficult (to...)",
-      "problem",
-      "difficulty",
-      "difficult",
-      "not good"
+      "where?",
+      "wherever; anywhere; somewhere",
+      "(used in rhetorical questions) how can ...?; how could ...?"
     ],
     "ind": [
-      "sulit",
-      "susah"
+      "di mana"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "难"
+      "哪",
+      "儿"
+    ]
+  },
+  {
+    "id": "L1-0258",
+    "hanzi": "那些",
+    "variants": [],
+    "traditional": "那些",
+    "pinyin": "nàxiē",
+    "pinyinNumbered": "na4 xie1",
+    "syllables": [
+      "nà",
+      "xiē"
+    ],
+    "tones": [
+      4,
+      1
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "those"
+    ],
+    "ind": [
+      "itu (jamak)",
+      "hal-hal itu"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "那",
+      "些"
+    ]
+  },
+  {
+    "id": "L1-0253",
+    "hanzi": "哪些",
+    "variants": [],
+    "traditional": "哪些",
+    "pinyin": "nǎxiē",
+    "pinyinNumbered": "na3 xie1",
+    "syllables": [
+      "nǎ",
+      "xiē"
+    ],
+    "tones": [
+      3,
+      1
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "which ones?",
+      "who?",
+      "what?"
+    ],
+    "ind": [
+      "yang mana saja"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "哪",
+      "些"
     ]
   },
   {
@@ -8812,34 +4740,33 @@
     ]
   },
   {
-    "id": "L1-0272",
-    "hanzi": "你们",
+    "id": "L1-0517",
+    "hanzi": "你好",
     "variants": [],
-    "traditional": "你們",
-    "pinyin": "nǐmen",
-    "pinyinNumbered": "ni3 men5",
+    "traditional": "你好",
+    "pinyin": "nǐhǎo",
+    "pinyinNumbered": "ni3 hao3",
     "syllables": [
       "nǐ",
-      "men"
+      "hǎo"
     ],
     "tones": [
       3,
-      5
+      3
     ],
-    "pos": [
-      "Pron"
-    ],
+    "pos": [],
     "en": [
-      "you (plural)"
+      "hello; hi"
     ],
     "ind": [
-      "kalian"
+      "halo",
+      "hai (salam)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
       "你",
-      "们"
+      "好"
     ]
   },
   {
@@ -8868,6 +4795,37 @@
     "hsk": 1,
     "chars": [
       "年"
+    ]
+  },
+  {
+    "id": "L1-0272",
+    "hanzi": "你们",
+    "variants": [],
+    "traditional": "你們",
+    "pinyin": "nǐmen",
+    "pinyinNumbered": "ni3 men5",
+    "syllables": [
+      "nǐ",
+      "men"
+    ],
+    "tones": [
+      3,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "you (plural)"
+    ],
+    "ind": [
+      "kalian"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "你",
+      "们"
     ]
   },
   {
@@ -8993,41 +4951,6 @@
     ]
   },
   {
-    "id": "L1-0278",
-    "hanzi": "女孩儿",
-    "variants": [],
-    "traditional": "女孩兒",
-    "pinyin": "nǚháir",
-    "pinyinNumbered": "nv3 hai2 r5",
-    "syllables": [
-      "nǚ",
-      "hái",
-      "r"
-    ],
-    "tones": [
-      3,
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "girl; lass"
-    ],
-    "ind": [
-      "anak perempuan",
-      "gadis"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "女",
-      "孩",
-      "儿"
-    ]
-  },
-  {
     "id": "L1-0279",
     "hanzi": "女朋友",
     "variants": [],
@@ -9063,135 +4986,39 @@
     ]
   },
   {
-    "id": "L1-0280",
-    "hanzi": "女人",
+    "id": "L1-0518",
+    "hanzi": "女士",
     "variants": [],
-    "traditional": "女人",
-    "pinyin": "nǚrén",
-    "pinyinNumbered": "nv3 ren2",
+    "traditional": "女士",
+    "pinyin": "nǚshì",
+    "pinyinNumbered": "nv3 shi4",
     "syllables": [
       "nǚ",
-      "rén"
+      "shì"
     ],
     "tones": [
       3,
-      2
+      4
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "woman"
+      "lady",
+      "madam",
+      "Miss",
+      "Ms"
     ],
     "ind": [
-      "wanita",
-      "perempuan"
+      "ibu (sopan)",
+      "nyonya",
+      "wanita"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
       "女",
-      "人"
-    ]
-  },
-  {
-    "id": "L1-0281",
-    "hanzi": "女生",
-    "variants": [],
-    "traditional": "女生",
-    "pinyin": "nǚshēng",
-    "pinyinNumbered": "nv3 sheng1",
-    "syllables": [
-      "nǚ",
-      "shēng"
-    ],
-    "tones": [
-      3,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "schoolgirl",
-      "female student",
-      "girl"
-    ],
-    "ind": [
-      "siswi",
-      "cewek"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "女",
-      "生"
-    ]
-  },
-  {
-    "id": "L1-0282",
-    "hanzi": "旁边",
-    "variants": [],
-    "traditional": "旁邊",
-    "pinyin": "pángbiān",
-    "pinyinNumbered": "pang2 bian1",
-    "syllables": [
-      "páng",
-      "biān"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "side; adjacent place"
-    ],
-    "ind": [
-      "samping",
-      "sebelah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "旁",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0283",
-    "hanzi": "跑",
-    "variants": [],
-    "traditional": "跑",
-    "pinyin": "pǎo",
-    "pinyinNumbered": "pao3",
-    "syllables": [
-      "pǎo"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to run",
-      "to run away",
-      "to escape",
-      "to run around (on errands etc)",
-      "(of a gas or liquid) to leak or evaporate",
-      "(verb complement) away"
-    ],
-    "ind": [
-      "berlari",
-      "lari"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "跑"
+      "士"
     ]
   },
   {
@@ -9227,37 +5054,97 @@
     ]
   },
   {
-    "id": "L1-0285",
-    "hanzi": "票",
+    "id": "L1-0519",
+    "hanzi": "便宜",
     "variants": [],
-    "traditional": "票",
-    "pinyin": "piào",
-    "pinyinNumbered": "piao4",
+    "traditional": "便宜",
+    "pinyin": "piányi",
+    "pinyinNumbered": "pian2 yi5",
     "syllables": [
-      "piào"
+      "pián",
+      "yi"
     ],
     "tones": [
-      4
+      2,
+      5
+    ],
+    "pos": [
+      "Adj"
+    ],
+    "en": [
+      "cheap; inexpensive"
+    ],
+    "ind": [
+      "murah"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "便",
+      "宜"
+    ]
+  },
+  {
+    "id": "L1-0520",
+    "hanzi": "漂亮",
+    "variants": [],
+    "traditional": "漂亮",
+    "pinyin": "piàoliang",
+    "pinyinNumbered": "piao4 liang5",
+    "syllables": [
+      "piào",
+      "liang"
+    ],
+    "tones": [
+      4,
+      5
+    ],
+    "pos": [
+      "Adj"
+    ],
+    "en": [
+      "pretty; beautiful"
+    ],
+    "ind": [
+      "cantik",
+      "bagus"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "漂",
+      "亮"
+    ]
+  },
+  {
+    "id": "L1-0521",
+    "hanzi": "苹果",
+    "variants": [],
+    "traditional": "蘋果",
+    "pinyin": "píngguǒ",
+    "pinyinNumbered": "ping2 guo3",
+    "syllables": [
+      "píng",
+      "guǒ"
+    ],
+    "tones": [
+      2,
+      3
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "ticket",
-      "ballot",
-      "banknote",
-      "person held for ransom",
-      "amateur performance of Chinese opera",
-      "classifier for groups, batches, business transactions"
+      "apple"
     ],
     "ind": [
-      "tiket",
-      "karcis"
+      "apel"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "票"
+      "苹",
+      "果"
     ]
   },
   {
@@ -9287,139 +5174,6 @@
     "hsk": 1,
     "chars": [
       "七"
-    ]
-  },
-  {
-    "id": "L1-0287",
-    "hanzi": "起",
-    "variants": [],
-    "traditional": "起",
-    "pinyin": "qǐ",
-    "pinyinNumbered": "qi3",
-    "syllables": [
-      "qǐ"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to rise",
-      "to raise",
-      "to get up",
-      "to set out",
-      "to start",
-      "to appear"
-    ],
-    "ind": [
-      "bangun",
-      "naik",
-      "mulai"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "起"
-    ]
-  },
-  {
-    "id": "L1-0288",
-    "hanzi": "起床",
-    "variants": [],
-    "traditional": "起床",
-    "pinyin": "qǐchuáng",
-    "pinyinNumbered": "qi3 chuang2",
-    "syllables": [
-      "qǐ",
-      "chuáng"
-    ],
-    "tones": [
-      3,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to get out of bed; to get up"
-    ],
-    "ind": [
-      "bangun tidur",
-      "bangun"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "起",
-      "床"
-    ]
-  },
-  {
-    "id": "L1-0289",
-    "hanzi": "起来",
-    "variants": [],
-    "traditional": "起來",
-    "pinyin": "qǐlái",
-    "pinyinNumbered": "qi3 lai2",
-    "syllables": [
-      "qǐ",
-      "lái"
-    ],
-    "tones": [
-      3,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "to stand up; to get up",
-      "(after a verb) indicating the beginning and continuation of an action or a state",
-      "indicating an upward movement (e.g. after 站[zhan4])",
-      "indicating completion",
-      "(after a perception verb, e.g. 看[kan4]) expressing preliminary judgment"
-    ],
-    "ind": [
-      "berdiri",
-      "bangun",
-      "(penanda mulai atau naik)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "起",
-      "来"
-    ]
-  },
-  {
-    "id": "L1-0290",
-    "hanzi": "汽车",
-    "variants": [],
-    "traditional": "汽車",
-    "pinyin": "qìchē",
-    "pinyinNumbered": "qi4 che1",
-    "syllables": [
-      "qì",
-      "chē"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "car",
-      "automobile",
-      "bus"
-    ],
-    "ind": [
-      "mobil"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "汽",
-      "车"
     ]
   },
   {
@@ -9457,72 +5211,6 @@
     ]
   },
   {
-    "id": "L1-0292",
-    "hanzi": "前边",
-    "variants": [],
-    "traditional": "前邊",
-    "pinyin": "qiánbian",
-    "pinyinNumbered": "qian2 bian5",
-    "syllables": [
-      "qián",
-      "bian"
-    ],
-    "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "front",
-      "the front side",
-      "in front of"
-    ],
-    "ind": [
-      "bagian depan",
-      "di depan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "前",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0293",
-    "hanzi": "前天",
-    "variants": [],
-    "traditional": "前天",
-    "pinyin": "qiántiān",
-    "pinyinNumbered": "qian2 tian1",
-    "syllables": [
-      "qián",
-      "tiān"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the day before yesterday"
-    ],
-    "ind": [
-      "kemarin dulu",
-      "dua hari lalu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "前",
-      "天"
-    ]
-  },
-  {
     "id": "L1-0294",
     "hanzi": "钱",
     "variants": [],
@@ -9553,35 +5241,61 @@
     ]
   },
   {
-    "id": "L1-0295",
-    "hanzi": "钱包",
+    "id": "L1-0522",
+    "hanzi": "千",
     "variants": [],
-    "traditional": "錢包",
-    "pinyin": "qiánbāo",
-    "pinyinNumbered": "qian2 bao1",
+    "traditional": "千",
+    "pinyin": "qiān",
+    "pinyinNumbered": "qian1",
     "syllables": [
-      "qián",
-      "bāo"
+      "qiān"
     ],
     "tones": [
-      2,
       1
     ],
     "pos": [
-      "N"
+      "Num"
     ],
     "en": [
-      "purse",
-      "wallet"
+      "thousand"
     ],
     "ind": [
-      "dompet"
+      "seribu"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "钱",
-      "包"
+      "千"
+    ]
+  },
+  {
+    "id": "L1-0288",
+    "hanzi": "起床",
+    "variants": [],
+    "traditional": "起床",
+    "pinyin": "qǐchuáng",
+    "pinyinNumbered": "qi3 chuang2",
+    "syllables": [
+      "qǐ",
+      "chuáng"
+    ],
+    "tones": [
+      3,
+      2
+    ],
+    "pos": [],
+    "en": [
+      "to get out of bed; to get up"
+    ],
+    "ind": [
+      "bangun tidur",
+      "bangun"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "起",
+      "床"
     ]
   },
   {
@@ -9619,65 +5333,6 @@
     ]
   },
   {
-    "id": "L1-0297",
-    "hanzi": "请假",
-    "variants": [],
-    "traditional": "請假",
-    "pinyin": "qǐngjià",
-    "pinyinNumbered": "qing3 jia4",
-    "syllables": [
-      "qǐng",
-      "jià"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to request leave of absence"
-    ],
-    "ind": [
-      "izin tidak masuk",
-      "minta izin"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "请",
-      "假"
-    ]
-  },
-  {
-    "id": "L1-0298",
-    "hanzi": "请进",
-    "variants": [],
-    "traditional": "請進",
-    "pinyin": "qǐngjìn",
-    "pinyinNumbered": "qing3 jin4",
-    "syllables": [
-      "qǐng",
-      "jìn"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "\"please come in\""
-    ],
-    "ind": [
-      "silakan masuk"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "请",
-      "进"
-    ]
-  },
-  {
     "id": "L1-0299",
     "hanzi": "请问",
     "variants": [],
@@ -9707,67 +5362,6 @@
     "chars": [
       "请",
       "问"
-    ]
-  },
-  {
-    "id": "L1-0300",
-    "hanzi": "请坐",
-    "variants": [],
-    "traditional": "請坐",
-    "pinyin": "qǐngzuò",
-    "pinyinNumbered": "qing3 zuo4",
-    "syllables": [
-      "qǐng",
-      "zuò"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "please, have a seat"
-    ],
-    "ind": [
-      "silakan duduk"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "请",
-      "坐"
-    ]
-  },
-  {
-    "id": "L1-0301",
-    "hanzi": "球",
-    "variants": [],
-    "traditional": "球",
-    "pinyin": "qiú",
-    "pinyinNumbered": "qiu2",
-    "syllables": [
-      "qiú"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "ball",
-      "sphere",
-      "globe",
-      "ball game",
-      "match"
-    ],
-    "ind": [
-      "bola"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "球"
     ]
   },
   {
@@ -9937,43 +5531,6 @@
     ]
   },
   {
-    "id": "L1-0307",
-    "hanzi": "认真",
-    "variants": [],
-    "traditional": "認真",
-    "pinyin": "rènzhēn",
-    "pinyinNumbered": "ren4 zhen1",
-    "syllables": [
-      "rèn",
-      "zhēn"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "conscientious",
-      "earnest",
-      "serious",
-      "to take seriously",
-      "to take to heart"
-    ],
-    "ind": [
-      "serius",
-      "sungguh-sungguh",
-      "teliti"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "认",
-      "真"
-    ]
-  },
-  {
     "id": "L1-0308",
     "hanzi": "日",
     "variants": [],
@@ -10006,71 +5563,6 @@
     ]
   },
   {
-    "id": "L1-0309",
-    "hanzi": "日期",
-    "variants": [],
-    "traditional": "日期",
-    "pinyin": "rìqī",
-    "pinyinNumbered": "ri4 qi1",
-    "syllables": [
-      "rì",
-      "qī"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "date"
-    ],
-    "ind": [
-      "tanggal",
-      "tenggat waktu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "日",
-      "期"
-    ]
-  },
-  {
-    "id": "L1-0310",
-    "hanzi": "肉",
-    "variants": [],
-    "traditional": "肉",
-    "pinyin": "ròu",
-    "pinyinNumbered": "rou4",
-    "syllables": [
-      "ròu"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "meat",
-      "flesh",
-      "pulp (of a fruit)",
-      "(coll.) (of a fruit) squashy",
-      "(of a person) flabby",
-      "irresolute"
-    ],
-    "ind": [
-      "daging"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "肉"
-    ]
-  },
-  {
     "id": "L1-0311",
     "hanzi": "三",
     "variants": [],
@@ -10097,103 +5589,6 @@
     "hsk": 1,
     "chars": [
       "三"
-    ]
-  },
-  {
-    "id": "L1-0312",
-    "hanzi": "山",
-    "variants": [],
-    "traditional": "山",
-    "pinyin": "shān",
-    "pinyinNumbered": "shan1",
-    "syllables": [
-      "shān"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "mountain; hill",
-      "(coll.) small bundle of straw for silkworms to spin cocoons on"
-    ],
-    "ind": [
-      "gunung",
-      "bukit"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "山"
-    ]
-  },
-  {
-    "id": "L1-0313",
-    "hanzi": "商场",
-    "variants": [],
-    "traditional": "商場",
-    "pinyin": "shāngchǎng",
-    "pinyinNumbered": "shang1 chang3",
-    "syllables": [
-      "shāng",
-      "chǎng"
-    ],
-    "tones": [
-      1,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "shopping mall",
-      "shopping center",
-      "department store",
-      "emporium",
-      "the business world"
-    ],
-    "ind": [
-      "pusat perbelanjaan",
-      "mal"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "商",
-      "场"
-    ]
-  },
-  {
-    "id": "L1-0314",
-    "hanzi": "商店",
-    "variants": [],
-    "traditional": "商店",
-    "pinyin": "shāngdiàn",
-    "pinyinNumbered": "shang1 dian4",
-    "syllables": [
-      "shāng",
-      "diàn"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "store; shop"
-    ],
-    "ind": [
-      "toko"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "商",
-      "店"
     ]
   },
   {
@@ -10266,99 +5661,34 @@
     ]
   },
   {
-    "id": "L1-0317",
-    "hanzi": "上边",
+    "id": "L1-0314",
+    "hanzi": "商店",
     "variants": [],
-    "traditional": "上邊",
-    "pinyin": "shàngbian",
-    "pinyinNumbered": "shang4 bian5",
+    "traditional": "商店",
+    "pinyin": "shāngdiàn",
+    "pinyinNumbered": "shang1 dian4",
     "syllables": [
-      "shàng",
-      "bian"
+      "shāng",
+      "diàn"
     ],
     "tones": [
-      4,
-      5
+      1,
+      4
     ],
     "pos": [
       "N"
     ],
     "en": [
-      "the top",
-      "above",
-      "overhead",
-      "upwards",
-      "the top margin",
-      "above-mentioned"
+      "store; shop"
     ],
     "ind": [
-      "sisi atas",
-      "atas"
+      "toko"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "上",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0318",
-    "hanzi": "上车",
-    "variants": [],
-    "traditional": "上車",
-    "pinyin": "shàngchē",
-    "pinyinNumbered": "shang4 che1",
-    "syllables": [
-      "shàng",
-      "chē"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "to get on or into (a bus, train, car etc)"
-    ],
-    "ind": [
-      "naik kendaraan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "上",
-      "车"
-    ]
-  },
-  {
-    "id": "L1-0319",
-    "hanzi": "上次",
-    "variants": [],
-    "traditional": "上次",
-    "pinyin": "shàngcì",
-    "pinyinNumbered": "shang4 ci4",
-    "syllables": [
-      "shàng",
-      "cì"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "last time"
-    ],
-    "ind": [
-      "kali yang lalu",
-      "lain kali yang lalu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "上",
-      "次"
+      "商",
+      "店"
     ]
   },
   {
@@ -10391,39 +5721,6 @@
     "chars": [
       "上",
       "课"
-    ]
-  },
-  {
-    "id": "L1-0321",
-    "hanzi": "上网",
-    "variants": [],
-    "traditional": "上網",
-    "pinyin": "shàngwǎng",
-    "pinyinNumbered": "shang4 wang3",
-    "syllables": [
-      "shàng",
-      "wǎng"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [],
-    "en": [
-      "to go online",
-      "to connect to the Internet",
-      "(of a document etc) to be uploaded to the Internet",
-      "(tennis, volleyball etc) to move in close to the net"
-    ],
-    "ind": [
-      "berselancar di internet",
-      "online"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "上",
-      "网"
     ]
   },
   {
@@ -10552,71 +5849,33 @@
     ]
   },
   {
-    "id": "L1-0326",
-    "hanzi": "身上",
+    "id": "L1-0329",
+    "hanzi": "生病",
     "variants": [],
-    "traditional": "身上",
-    "pinyin": "shēnshang",
-    "pinyinNumbered": "shen1 shang5",
+    "traditional": "生病",
+    "pinyin": "shēngbìng",
+    "pinyinNumbered": "sheng1 bing4",
     "syllables": [
-      "shēn",
-      "shang"
+      "shēng",
+      "bìng"
     ],
     "tones": [
       1,
-      5
+      4
     ],
-    "pos": [
-      "N"
-    ],
+    "pos": [],
     "en": [
-      "on the body",
-      "at hand",
-      "among"
+      "to fall ill"
     ],
     "ind": [
-      "di badan",
-      "pada tubuh"
+      "jatuh sakit",
+      "sakit"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "身",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0327",
-    "hanzi": "身体",
-    "variants": [],
-    "traditional": "身體",
-    "pinyin": "shēntǐ",
-    "pinyinNumbered": "shen1 ti3",
-    "syllables": [
-      "shēn",
-      "tǐ"
-    ],
-    "tones": [
-      1,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the body",
-      "one's health"
-    ],
-    "ind": [
-      "badan",
-      "tubuh",
-      "kesehatan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "身",
-      "体"
+      "生",
+      "病"
     ]
   },
   {
@@ -10652,97 +5911,6 @@
     ]
   },
   {
-    "id": "L1-0329",
-    "hanzi": "生病",
-    "variants": [],
-    "traditional": "生病",
-    "pinyin": "shēngbìng",
-    "pinyinNumbered": "sheng1 bing4",
-    "syllables": [
-      "shēng",
-      "bìng"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to fall ill"
-    ],
-    "ind": [
-      "jatuh sakit",
-      "sakit"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "生",
-      "病"
-    ]
-  },
-  {
-    "id": "L1-0330",
-    "hanzi": "生气",
-    "variants": [],
-    "traditional": "生氣",
-    "pinyin": "shēngqì",
-    "pinyinNumbered": "sheng1 qi4",
-    "syllables": [
-      "shēng",
-      "qì"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to get angry; to be furious",
-      "vitality; liveliness"
-    ],
-    "ind": [
-      "marah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "生",
-      "气"
-    ]
-  },
-  {
-    "id": "L1-0331",
-    "hanzi": "生日",
-    "variants": [],
-    "traditional": "生日",
-    "pinyin": "shēngrì",
-    "pinyinNumbered": "sheng1 ri4",
-    "syllables": [
-      "shēng",
-      "rì"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "birthday"
-    ],
-    "ind": [
-      "ulang tahun"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "生",
-      "日"
-    ]
-  },
-  {
     "id": "L1-0332",
     "hanzi": "十",
     "variants": [],
@@ -10769,6 +5937,73 @@
     "hsk": 1,
     "chars": [
       "十"
+    ]
+  },
+  {
+    "id": "L1-0335",
+    "hanzi": "事",
+    "variants": [],
+    "traditional": "事",
+    "pinyin": "shì",
+    "pinyinNumbered": "shi4",
+    "syllables": [
+      "shì"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "matter",
+      "thing",
+      "item",
+      "work",
+      "affair"
+    ],
+    "ind": [
+      "urusan",
+      "hal",
+      "perkara"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "事"
+    ]
+  },
+  {
+    "id": "L1-0337",
+    "hanzi": "是",
+    "variants": [],
+    "traditional": "是",
+    "pinyin": "shì",
+    "pinyinNumbered": "shi4",
+    "syllables": [
+      "shì"
+    ],
+    "tones": [
+      4
+    ],
+    "pos": [
+      "V"
+    ],
+    "en": [
+      "to be (followed by substantives only)",
+      "correct; right; true",
+      "(respectful acknowledgement of a command) very well",
+      "(adverb for emphatic assertion)"
+    ],
+    "ind": [
+      "adalah",
+      "ya",
+      "benar"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "是"
     ]
   },
   {
@@ -10841,173 +6076,6 @@
     ]
   },
   {
-    "id": "L1-0335",
-    "hanzi": "事",
-    "variants": [],
-    "traditional": "事",
-    "pinyin": "shì",
-    "pinyinNumbered": "shi4",
-    "syllables": [
-      "shì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "matter",
-      "thing",
-      "item",
-      "work",
-      "affair"
-    ],
-    "ind": [
-      "urusan",
-      "hal",
-      "perkara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "事"
-    ]
-  },
-  {
-    "id": "L1-0336",
-    "hanzi": "试",
-    "variants": [],
-    "traditional": "試",
-    "pinyin": "shì",
-    "pinyinNumbered": "shi4",
-    "syllables": [
-      "shì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to test",
-      "to try",
-      "experiment",
-      "examination",
-      "test"
-    ],
-    "ind": [
-      "mencoba",
-      "menguji"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "试"
-    ]
-  },
-  {
-    "id": "L1-0337",
-    "hanzi": "是",
-    "variants": [],
-    "traditional": "是",
-    "pinyin": "shì",
-    "pinyinNumbered": "shi4",
-    "syllables": [
-      "shì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to be (followed by substantives only)",
-      "correct; right; true",
-      "(respectful acknowledgement of a command) very well",
-      "(adverb for emphatic assertion)"
-    ],
-    "ind": [
-      "adalah",
-      "ya",
-      "benar"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "是"
-    ]
-  },
-  {
-    "id": "L1-0338",
-    "hanzi": "是不是",
-    "variants": [],
-    "traditional": "是不是",
-    "pinyin": "shìbushì",
-    "pinyinNumbered": "shi4 bu5 shi4",
-    "syllables": [
-      "shì",
-      "bu",
-      "shì"
-    ],
-    "tones": [
-      4,
-      5,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "is or isn't",
-      "yes or no",
-      "whether or not"
-    ],
-    "ind": [
-      "apakah ... atau tidak",
-      "benar tidak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "是",
-      "不"
-    ]
-  },
-  {
-    "id": "L1-0339",
-    "hanzi": "手",
-    "variants": [],
-    "traditional": "手",
-    "pinyin": "shǒu",
-    "pinyinNumbered": "shou3",
-    "syllables": [
-      "shǒu"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "hand",
-      "(formal) to hold",
-      "person engaged in certain types of work",
-      "person skilled in certain types of work",
-      "personal(ly)",
-      "convenient"
-    ],
-    "ind": [
-      "tangan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "手"
-    ]
-  },
-  {
     "id": "L1-0340",
     "hanzi": "手机",
     "variants": [],
@@ -11072,39 +6140,6 @@
     ]
   },
   {
-    "id": "L1-0342",
-    "hanzi": "书包",
-    "variants": [],
-    "traditional": "書包",
-    "pinyin": "shūbāo",
-    "pinyinNumbered": "shu1 bao1",
-    "syllables": [
-      "shū",
-      "bāo"
-    ],
-    "tones": [
-      1,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "schoolbag",
-      "satchel",
-      "bookbag"
-    ],
-    "ind": [
-      "tas sekolah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "书",
-      "包"
-    ]
-  },
-  {
     "id": "L1-0343",
     "hanzi": "书店",
     "variants": [],
@@ -11136,33 +6171,32 @@
     ]
   },
   {
-    "id": "L1-0344",
-    "hanzi": "树",
+    "id": "L1-0347",
+    "hanzi": "睡",
     "variants": [],
-    "traditional": "樹",
-    "pinyin": "shù",
-    "pinyinNumbered": "shu4",
+    "traditional": "睡",
+    "pinyin": "shuì",
+    "pinyinNumbered": "shui4",
     "syllables": [
-      "shù"
+      "shuì"
     ],
     "tones": [
       4
     ],
     "pos": [
-      "N"
+      "V"
     ],
     "en": [
-      "tree",
-      "to cultivate",
-      "to set up"
+      "to sleep",
+      "to lie down"
     ],
     "ind": [
-      "pohon"
+      "tidur"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "树"
+      "睡"
     ]
   },
   {
@@ -11228,35 +6262,6 @@
     "chars": [
       "水",
       "果"
-    ]
-  },
-  {
-    "id": "L1-0347",
-    "hanzi": "睡",
-    "variants": [],
-    "traditional": "睡",
-    "pinyin": "shuì",
-    "pinyinNumbered": "shui4",
-    "syllables": [
-      "shuì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to sleep",
-      "to lie down"
-    ],
-    "ind": [
-      "tidur"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "睡"
     ]
   },
   {
@@ -11387,39 +6392,6 @@
     ]
   },
   {
-    "id": "L1-0352",
-    "hanzi": "送",
-    "variants": [],
-    "traditional": "送",
-    "pinyin": "sòng",
-    "pinyinNumbered": "song4",
-    "syllables": [
-      "sòng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to send; to deliver; to transmit",
-      "to give (as a present)",
-      "to see (sb) off",
-      "to accompany; to go along with"
-    ],
-    "ind": [
-      "mengantar",
-      "memberi",
-      "mengirim"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "送"
-    ]
-  },
-  {
     "id": "L1-0353",
     "hanzi": "岁",
     "variants": [],
@@ -11481,34 +6453,32 @@
     ]
   },
   {
-    "id": "L1-0355",
-    "hanzi": "他们",
+    "id": "L1-0523",
+    "hanzi": "它",
     "variants": [],
-    "traditional": "他們",
-    "pinyin": "tāmen",
-    "pinyinNumbered": "ta1 men5",
+    "traditional": "它",
+    "pinyin": "tā",
+    "pinyinNumbered": "ta1",
     "syllables": [
-      "tā",
-      "men"
+      "tā"
     ],
     "tones": [
-      1,
-      5
+      1
     ],
     "pos": [
       "Pron"
     ],
     "en": [
-      "they; them"
+      "it"
     ],
     "ind": [
-      "mereka"
+      "dia (untuk benda atau hewan)",
+      "itu"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "他",
-      "们"
+      "它"
     ]
   },
   {
@@ -11538,37 +6508,6 @@
     "hsk": 1,
     "chars": [
       "她"
-    ]
-  },
-  {
-    "id": "L1-0357",
-    "hanzi": "她们",
-    "variants": [],
-    "traditional": "她們",
-    "pinyin": "tāmen",
-    "pinyinNumbered": "ta1 men5",
-    "syllables": [
-      "tā",
-      "men"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [
-      "Pron"
-    ],
-    "en": [
-      "they; them (females)"
-    ],
-    "ind": [
-      "mereka (perempuan)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "她",
-      "们"
     ]
   },
   {
@@ -11602,6 +6541,99 @@
     "hsk": 1,
     "chars": [
       "太"
+    ]
+  },
+  {
+    "id": "L1-0355",
+    "hanzi": "他们",
+    "variants": [],
+    "traditional": "他們",
+    "pinyin": "tāmen",
+    "pinyinNumbered": "ta1 men5",
+    "syllables": [
+      "tā",
+      "men"
+    ],
+    "tones": [
+      1,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "they; them"
+    ],
+    "ind": [
+      "mereka"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "他",
+      "们"
+    ]
+  },
+  {
+    "id": "L1-0524",
+    "hanzi": "它们",
+    "variants": [],
+    "traditional": "它們",
+    "pinyin": "tāmen",
+    "pinyinNumbered": "ta1 men5",
+    "syllables": [
+      "tā",
+      "men"
+    ],
+    "tones": [
+      1,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "they; them"
+    ],
+    "ind": [
+      "mereka (benda atau hewan)"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "它",
+      "们"
+    ]
+  },
+  {
+    "id": "L1-0357",
+    "hanzi": "她们",
+    "variants": [],
+    "traditional": "她們",
+    "pinyin": "tāmen",
+    "pinyinNumbered": "ta1 men5",
+    "syllables": [
+      "tā",
+      "men"
+    ],
+    "tones": [
+      1,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "they; them (females)"
+    ],
+    "ind": [
+      "mereka (perempuan)"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "她",
+      "们"
     ]
   },
   {
@@ -11702,35 +6734,6 @@
     ]
   },
   {
-    "id": "L1-0362",
-    "hanzi": "听到",
-    "variants": [],
-    "traditional": "聽到",
-    "pinyin": "tīngdào",
-    "pinyinNumbered": "ting1 dao4",
-    "syllables": [
-      "tīng",
-      "dào"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to hear"
-    ],
-    "ind": [
-      "mendengar"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "听",
-      "到"
-    ]
-  },
-  {
     "id": "L1-0363",
     "hanzi": "听见",
     "variants": [],
@@ -11758,39 +6761,6 @@
     "chars": [
       "听",
       "见"
-    ]
-  },
-  {
-    "id": "L1-0364",
-    "hanzi": "听写",
-    "variants": [],
-    "traditional": "聽寫",
-    "pinyin": "tīngxiě",
-    "pinyinNumbered": "ting1 xie3",
-    "syllables": [
-      "tīng",
-      "xiě"
-    ],
-    "tones": [
-      1,
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "(of a pupil) to write down (in a dictation exercise); dictation",
-      "(music) to transcribe by ear"
-    ],
-    "ind": [
-      "dikte",
-      "menulis dari dikte"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "听",
-      "写"
     ]
   },
   {
@@ -11825,40 +6795,6 @@
     "chars": [
       "同",
       "学"
-    ]
-  },
-  {
-    "id": "L1-0366",
-    "hanzi": "图书馆",
-    "variants": [],
-    "traditional": "圖書館",
-    "pinyin": "túshūguǎn",
-    "pinyinNumbered": "tu2 shu1 guan3",
-    "syllables": [
-      "tú",
-      "shū",
-      "guǎn"
-    ],
-    "tones": [
-      2,
-      1,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "library"
-    ],
-    "ind": [
-      "perpustakaan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "图",
-      "书",
-      "馆"
     ]
   },
   {
@@ -11929,82 +6865,19 @@
     ]
   },
   {
-    "id": "L1-0369",
-    "hanzi": "外国",
-    "variants": [],
-    "traditional": "外國",
-    "pinyin": "wàiguó",
-    "pinyinNumbered": "wai4 guo2",
-    "syllables": [
-      "wài",
-      "guó"
-    ],
-    "tones": [
-      4,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "foreign country"
-    ],
-    "ind": [
-      "luar negeri",
-      "negara asing"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "外",
-      "国"
-    ]
-  },
-  {
-    "id": "L1-0370",
-    "hanzi": "外语",
-    "variants": [],
-    "traditional": "外語",
-    "pinyin": "wàiyǔ",
-    "pinyinNumbered": "wai4 yu3",
-    "syllables": [
-      "wài",
-      "yǔ"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "foreign language"
-    ],
-    "ind": [
-      "bahasa asing"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "外",
-      "语"
-    ]
-  },
-  {
     "id": "L1-0371",
-    "hanzi": "玩儿",
-    "variants": [],
-    "traditional": "玩兒",
-    "pinyin": "wánr",
-    "pinyinNumbered": "wan2 r5",
+    "hanzi": "玩",
+    "variants": [
+      "玩儿"
+    ],
+    "traditional": "玩",
+    "pinyin": "wán",
+    "pinyinNumbered": "wan2",
     "syllables": [
-      "wán",
-      "r"
+      "wán"
     ],
     "tones": [
-      2,
-      5
+      2
     ],
     "pos": [
       "V"
@@ -12021,8 +6894,7 @@
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "玩",
-      "儿"
+      "玩"
     ]
   },
   {
@@ -12124,126 +6996,34 @@
     ]
   },
   {
-    "id": "L1-0375",
-    "hanzi": "网上",
+    "id": "L1-0525",
+    "hanzi": "喂",
     "variants": [],
-    "traditional": "網上",
-    "pinyin": "wǎngshang",
-    "pinyinNumbered": "wang3 shang5",
+    "traditional": "喂",
+    "pinyin": "wèi",
+    "pinyinNumbered": "wei4",
     "syllables": [
-      "wǎng",
-      "shang"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "online"
-    ],
-    "ind": [
-      "di internet",
-      "online"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "网",
-      "上"
-    ]
-  },
-  {
-    "id": "L1-0376",
-    "hanzi": "网友",
-    "variants": [],
-    "traditional": "網友",
-    "pinyin": "wǎngyǒu",
-    "pinyinNumbered": "wang3 you3",
-    "syllables": [
-      "wǎng",
-      "yǒu"
-    ],
-    "tones": [
-      3,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "online friend",
-      "netizen; Internet user"
-    ],
-    "ind": [
-      "teman online"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "网",
-      "友"
-    ]
-  },
-  {
-    "id": "L1-0377",
-    "hanzi": "忘",
-    "variants": [],
-    "traditional": "忘",
-    "pinyin": "wàng",
-    "pinyinNumbered": "wang4",
-    "syllables": [
-      "wàng"
+      "wèi"
     ],
     "tones": [
       4
     ],
     "pos": [
-      "V"
+      "Interj"
     ],
     "en": [
-      "to forget",
-      "to overlook",
-      "to neglect"
+      "hello (answering or making a phone call)",
+      "hey (to get attention)",
+      "to feed (an animal, baby, patient)"
     ],
     "ind": [
-      "lupa"
+      "halo (di telepon)",
+      "hei"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "忘"
-    ]
-  },
-  {
-    "id": "L1-0378",
-    "hanzi": "忘记",
-    "variants": [],
-    "traditional": "忘記",
-    "pinyin": "wàngjì",
-    "pinyinNumbered": "wang4 ji4",
-    "syllables": [
-      "wàng",
-      "jì"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to forget"
-    ],
-    "ind": [
-      "lupa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "忘",
-      "记"
+      "喂"
     ]
   },
   {
@@ -12272,6 +7052,41 @@
     "hsk": 1,
     "chars": [
       "问"
+    ]
+  },
+  {
+    "id": "L1-0526",
+    "hanzi": "问题",
+    "variants": [],
+    "traditional": "問題",
+    "pinyin": "wèntí",
+    "pinyinNumbered": "wen4 ti2",
+    "syllables": [
+      "wèn",
+      "tí"
+    ],
+    "tones": [
+      4,
+      2
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "question",
+      "problem",
+      "issue",
+      "topic"
+    ],
+    "ind": [
+      "pertanyaan",
+      "masalah"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "问",
+      "题"
     ]
   },
   {
@@ -12396,171 +7211,6 @@
     ]
   },
   {
-    "id": "L1-0384",
-    "hanzi": "西",
-    "variants": [],
-    "traditional": "西",
-    "pinyin": "xī",
-    "pinyinNumbered": "xi1",
-    "syllables": [
-      "xī"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the West",
-      "Spanish",
-      "west"
-    ],
-    "ind": [
-      "barat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "西"
-    ]
-  },
-  {
-    "id": "L1-0385",
-    "hanzi": "西边",
-    "variants": [],
-    "traditional": "西邊",
-    "pinyin": "xībian",
-    "pinyinNumbered": "xi1 bian5",
-    "syllables": [
-      "xī",
-      "bian"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "west",
-      "west side",
-      "western part",
-      "to the west of"
-    ],
-    "ind": [
-      "sisi barat",
-      "sebelah barat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "西",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0386",
-    "hanzi": "洗",
-    "variants": [],
-    "traditional": "洗",
-    "pinyin": "xǐ",
-    "pinyinNumbered": "xi3",
-    "syllables": [
-      "xǐ"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to wash; to bathe",
-      "to develop (photographs)",
-      "to shuffle (cards etc)",
-      "to erase (a recording)"
-    ],
-    "ind": [
-      "mencuci"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "洗"
-    ]
-  },
-  {
-    "id": "L1-0387",
-    "hanzi": "洗手间",
-    "variants": [],
-    "traditional": "洗手間",
-    "pinyin": "xǐshǒujiān",
-    "pinyinNumbered": "xi3 shou3 jian1",
-    "syllables": [
-      "xǐ",
-      "shǒu",
-      "jiān"
-    ],
-    "tones": [
-      3,
-      3,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "toilet",
-      "lavatory",
-      "washroom"
-    ],
-    "ind": [
-      "toilet",
-      "kamar kecil"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "洗",
-      "手",
-      "间"
-    ]
-  },
-  {
-    "id": "L1-0388",
-    "hanzi": "喜欢",
-    "variants": [],
-    "traditional": "喜歡",
-    "pinyin": "xǐhuan",
-    "pinyinNumbered": "xi3 huan5",
-    "syllables": [
-      "xǐ",
-      "huan"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to like; to be fond of"
-    ],
-    "ind": [
-      "suka",
-      "menyukai"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "喜",
-      "欢"
-    ]
-  },
-  {
     "id": "L1-0389",
     "hanzi": "下",
     "variants": [],
@@ -12597,6 +7247,35 @@
     ]
   },
   {
+    "id": "L1-0396",
+    "hanzi": "下雨",
+    "variants": [],
+    "traditional": "下雨",
+    "pinyin": "xiàyǔ",
+    "pinyinNumbered": "xia4 yu3",
+    "syllables": [
+      "xià",
+      "yǔ"
+    ],
+    "tones": [
+      4,
+      3
+    ],
+    "pos": [],
+    "en": [
+      "to rain"
+    ],
+    "ind": [
+      "hujan turun"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "下",
+      "雨"
+    ]
+  },
+  {
     "id": "L1-0390",
     "hanzi": "下班",
     "variants": [],
@@ -12625,99 +7304,6 @@
     "chars": [
       "下",
       "班"
-    ]
-  },
-  {
-    "id": "L1-0391",
-    "hanzi": "下边",
-    "variants": [],
-    "traditional": "下邊",
-    "pinyin": "xiàbian",
-    "pinyinNumbered": "xia4 bian5",
-    "syllables": [
-      "xià",
-      "bian"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "under",
-      "the underside",
-      "below"
-    ],
-    "ind": [
-      "sisi bawah",
-      "bawah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "下",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0392",
-    "hanzi": "下车",
-    "variants": [],
-    "traditional": "下車",
-    "pinyin": "xiàchē",
-    "pinyinNumbered": "xia4 che1",
-    "syllables": [
-      "xià",
-      "chē"
-    ],
-    "tones": [
-      4,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "to get off or out of (a bus, train, car etc)"
-    ],
-    "ind": [
-      "turun dari kendaraan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "下",
-      "车"
-    ]
-  },
-  {
-    "id": "L1-0393",
-    "hanzi": "下次",
-    "variants": [],
-    "traditional": "下次",
-    "pinyin": "xiàcì",
-    "pinyinNumbered": "xia4 ci4",
-    "syllables": [
-      "xià",
-      "cì"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "next time"
-    ],
-    "ind": [
-      "lain kali",
-      "kali berikutnya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "下",
-      "次"
     ]
   },
   {
@@ -12754,96 +7340,37 @@
     ]
   },
   {
-    "id": "L1-0395",
-    "hanzi": "下午",
+    "id": "L1-0400",
+    "hanzi": "想",
     "variants": [],
-    "traditional": "下午",
-    "pinyin": "xiàwǔ",
-    "pinyinNumbered": "xia4 wu3",
+    "traditional": "想",
+    "pinyin": "xiǎng",
+    "pinyinNumbered": "xiang3",
     "syllables": [
-      "xià",
-      "wǔ"
+      "xiǎng"
     ],
     "tones": [
-      4,
       3
     ],
     "pos": [
-      "N"
+      "V"
     ],
     "en": [
-      "afternoon",
-      "p.m."
+      "to think (about)",
+      "to think of; to devise",
+      "to think (that); to believe (that)",
+      "to desire; to want (to)",
+      "to miss (feel wistful about the absence of)"
     ],
     "ind": [
-      "sore"
+      "ingin",
+      "berpikir",
+      "merindukan"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "下",
-      "午"
-    ]
-  },
-  {
-    "id": "L1-0396",
-    "hanzi": "下雨",
-    "variants": [],
-    "traditional": "下雨",
-    "pinyin": "xiàyǔ",
-    "pinyinNumbered": "xia4 yu3",
-    "syllables": [
-      "xià",
-      "yǔ"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [],
-    "en": [
-      "to rain"
-    ],
-    "ind": [
-      "hujan turun"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "下",
-      "雨"
-    ]
-  },
-  {
-    "id": "L1-0397",
-    "hanzi": "先",
-    "variants": [],
-    "traditional": "先",
-    "pinyin": "xiān",
-    "pinyinNumbered": "xian1",
-    "syllables": [
-      "xiān"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "beforehand; first; earlier",
-      "at first; originally",
-      "for the time being; for now",
-      "(prefix) my late (in referring to deceased relatives older than oneself)"
-    ],
-    "ind": [
-      "dulu",
-      "lebih dahulu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "先"
+      "想"
     ]
   },
   {
@@ -12914,40 +7441,6 @@
     ]
   },
   {
-    "id": "L1-0400",
-    "hanzi": "想",
-    "variants": [],
-    "traditional": "想",
-    "pinyin": "xiǎng",
-    "pinyinNumbered": "xiang3",
-    "syllables": [
-      "xiǎng"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to think (about)",
-      "to think of; to devise",
-      "to think (that); to believe (that)",
-      "to desire; to want (to)",
-      "to miss (feel wistful about the absence of)"
-    ],
-    "ind": [
-      "ingin",
-      "berpikir",
-      "merindukan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "想"
-    ]
-  },
-  {
     "id": "L1-0401",
     "hanzi": "小",
     "variants": [],
@@ -12976,74 +7469,6 @@
     "hsk": 1,
     "chars": [
       "小"
-    ]
-  },
-  {
-    "id": "L1-0402",
-    "hanzi": "小孩儿",
-    "variants": [],
-    "traditional": "小孩兒",
-    "pinyin": "xiǎoháir",
-    "pinyinNumbered": "xiao3 hai2 r5",
-    "syllables": [
-      "xiǎo",
-      "hái",
-      "r"
-    ],
-    "tones": [
-      3,
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "child"
-    ],
-    "ind": [
-      "anak kecil",
-      "anak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "小",
-      "孩",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0403",
-    "hanzi": "小姐",
-    "variants": [],
-    "traditional": "小姐",
-    "pinyin": "xiǎojiě",
-    "pinyinNumbered": "xiao3 jie3",
-    "syllables": [
-      "xiǎo",
-      "jiě"
-    ],
-    "tones": [
-      3,
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "young lady",
-      "miss"
-    ],
-    "ind": [
-      "nona",
-      "kakak perempuan (sapaan sopan)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "小",
-      "姐"
     ]
   },
   {
@@ -13181,33 +7606,35 @@
     ]
   },
   {
-    "id": "L1-0408",
-    "hanzi": "笑",
+    "id": "L1-0395",
+    "hanzi": "下午",
     "variants": [],
-    "traditional": "笑",
-    "pinyin": "xiào",
-    "pinyinNumbered": "xiao4",
+    "traditional": "下午",
+    "pinyin": "xiàwǔ",
+    "pinyinNumbered": "xia4 wu3",
     "syllables": [
-      "xiào"
+      "xià",
+      "wǔ"
     ],
     "tones": [
-      4
+      4,
+      3
     ],
     "pos": [
-      "V"
+      "N"
     ],
     "en": [
-      "to laugh; to smile",
-      "to laugh at"
+      "afternoon",
+      "p.m."
     ],
     "ind": [
-      "tertawa",
-      "tersenyum"
+      "sore"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "笑"
+      "下",
+      "午"
     ]
   },
   {
@@ -13236,6 +7663,35 @@
     "hsk": 1,
     "chars": [
       "写"
+    ]
+  },
+  {
+    "id": "L1-0527",
+    "hanzi": "些",
+    "variants": [],
+    "traditional": "些",
+    "pinyin": "xiē",
+    "pinyinNumbered": "xie1",
+    "syllables": [
+      "xiē"
+    ],
+    "tones": [
+      1
+    ],
+    "pos": [
+      "M"
+    ],
+    "en": [
+      "a few; some (classifier for an indefinite small number)"
+    ],
+    "ind": [
+      "beberapa",
+      "sedikit"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "些"
     ]
   },
   {
@@ -13271,6 +7727,38 @@
     ]
   },
   {
+    "id": "L1-0388",
+    "hanzi": "喜欢",
+    "variants": [],
+    "traditional": "喜歡",
+    "pinyin": "xǐhuan",
+    "pinyinNumbered": "xi3 huan5",
+    "syllables": [
+      "xǐ",
+      "huan"
+    ],
+    "tones": [
+      3,
+      5
+    ],
+    "pos": [
+      "V"
+    ],
+    "en": [
+      "to like; to be fond of"
+    ],
+    "ind": [
+      "suka",
+      "menyukai"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "喜",
+      "欢"
+    ]
+  },
+  {
     "id": "L1-0411",
     "hanzi": "新",
     "variants": [],
@@ -13298,37 +7786,6 @@
     "hsk": 1,
     "chars": [
       "新"
-    ]
-  },
-  {
-    "id": "L1-0412",
-    "hanzi": "新年",
-    "variants": [],
-    "traditional": "新年",
-    "pinyin": "xīnnián",
-    "pinyinNumbered": "xin1 nian2",
-    "syllables": [
-      "xīn",
-      "nián"
-    ],
-    "tones": [
-      1,
-      2
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "New Year"
-    ],
-    "ind": [
-      "tahun baru"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "新",
-      "年"
     ]
   },
   {
@@ -13434,39 +7891,6 @@
     ]
   },
   {
-    "id": "L1-0416",
-    "hanzi": "行",
-    "variants": [],
-    "traditional": "行",
-    "pinyin": "xíng",
-    "pinyinNumbered": "xing2",
-    "syllables": [
-      "xíng"
-    ],
-    "tones": [
-      2
-    ],
-    "pos": [
-      "V",
-      "Adj"
-    ],
-    "en": [
-      "OK; all right",
-      "capable; competent",
-      "(bound form) to walk; to go; to travel"
-    ],
-    "ind": [
-      "boleh",
-      "bisa",
-      "mampu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "行"
-    ]
-  },
-  {
     "id": "L1-0417",
     "hanzi": "休息",
     "variants": [],
@@ -13529,6 +7953,34 @@
     "hsk": 1,
     "chars": [
       "学"
+    ]
+  },
+  {
+    "id": "L1-0528",
+    "hanzi": "雪",
+    "variants": [],
+    "traditional": "雪",
+    "pinyin": "xuě",
+    "pinyinNumbered": "xue3",
+    "syllables": [
+      "xuě"
+    ],
+    "tones": [
+      3
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "snow"
+    ],
+    "ind": [
+      "salju"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "雪"
     ]
   },
   {
@@ -13629,42 +8081,6 @@
     ]
   },
   {
-    "id": "L1-0422",
-    "hanzi": "学院",
-    "variants": [],
-    "traditional": "學院",
-    "pinyin": "xuéyuàn",
-    "pinyinNumbered": "xue2 yuan4",
-    "syllables": [
-      "xué",
-      "yuàn"
-    ],
-    "tones": [
-      2,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "college",
-      "educational institute",
-      "school",
-      "faculty"
-    ],
-    "ind": [
-      "akademi",
-      "institut",
-      "fakultas"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "学",
-      "院"
-    ]
-  },
-  {
     "id": "L1-0423",
     "hanzi": "要",
     "variants": [],
@@ -13699,36 +8115,6 @@
     ]
   },
   {
-    "id": "L1-0424",
-    "hanzi": "爷爷",
-    "variants": [],
-    "traditional": "爺爺",
-    "pinyin": "yéye",
-    "pinyinNumbered": "ye2 ye5",
-    "syllables": [
-      "yé",
-      "ye"
-    ],
-    "tones": [
-      2,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(coll.) paternal grandfather; grandpa"
-    ],
-    "ind": [
-      "kakek"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "爷"
-    ]
-  },
-  {
     "id": "L1-0425",
     "hanzi": "也",
     "variants": [],
@@ -13756,35 +8142,6 @@
     "hsk": 1,
     "chars": [
       "也"
-    ]
-  },
-  {
-    "id": "L1-0426",
-    "hanzi": "页",
-    "variants": [],
-    "traditional": "頁",
-    "pinyin": "yè",
-    "pinyinNumbered": "ye4",
-    "syllables": [
-      "yè"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "M"
-    ],
-    "en": [
-      "page",
-      "leaf"
-    ],
-    "ind": [
-      "halaman"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "页"
     ]
   },
   {
@@ -13817,6 +8174,73 @@
     "hsk": 1,
     "chars": [
       "一"
+    ]
+  },
+  {
+    "id": "L1-0431",
+    "hanzi": "一半",
+    "variants": [],
+    "traditional": "一半",
+    "pinyin": "yíbàn",
+    "pinyinNumbered": "yi2 ban4",
+    "syllables": [
+      "yí",
+      "bàn"
+    ],
+    "tones": [
+      2,
+      4
+    ],
+    "pos": [
+      "Num"
+    ],
+    "en": [
+      "half"
+    ],
+    "ind": [
+      "setengah",
+      "separuh"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "一",
+      "半"
+    ]
+  },
+  {
+    "id": "L1-0437",
+    "hanzi": "一点儿",
+    "variants": [],
+    "traditional": "一點兒",
+    "pinyin": "yìdiǎnr",
+    "pinyinNumbered": "yi4 dian3 r5",
+    "syllables": [
+      "yì",
+      "diǎn",
+      "r"
+    ],
+    "tones": [
+      4,
+      3,
+      5
+    ],
+    "pos": [],
+    "en": [
+      "a bit; a little bit",
+      "(not) the least bit (in negative expressions)",
+      "(after an adjective) a bit more, -er"
+    ],
+    "ind": [
+      "sedikit",
+      "agak"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "一",
+      "点",
+      "儿"
     ]
   },
   {
@@ -13883,6 +8307,69 @@
     ]
   },
   {
+    "id": "L1-0434",
+    "hanzi": "一下",
+    "variants": [
+      "一下儿"
+    ],
+    "traditional": "一下",
+    "pinyin": "yíxià",
+    "pinyinNumbered": "yi2 xia4",
+    "syllables": [
+      "yí",
+      "xià"
+    ],
+    "tones": [
+      2,
+      4
+    ],
+    "pos": [],
+    "en": [
+      "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
+      "all at once; suddenly"
+    ],
+    "ind": [
+      "sebentar",
+      "coba (melunakkan kalimat)"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "一",
+      "下"
+    ]
+  },
+  {
+    "id": "L1-0439",
+    "hanzi": "一些",
+    "variants": [],
+    "traditional": "一些",
+    "pinyin": "yìxiē",
+    "pinyinNumbered": "yi4 xie1",
+    "syllables": [
+      "yì",
+      "xiē"
+    ],
+    "tones": [
+      4,
+      1
+    ],
+    "pos": [],
+    "en": [
+      "some; a few; a little; (following an adjective) slightly ...er"
+    ],
+    "ind": [
+      "beberapa",
+      "sedikit"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "一",
+      "些"
+    ]
+  },
+  {
     "id": "L1-0430",
     "hanzi": "医院",
     "variants": [],
@@ -13914,350 +8401,34 @@
     ]
   },
   {
-    "id": "L1-0431",
-    "hanzi": "一半",
+    "id": "L1-0529",
+    "hanzi": "椅子",
     "variants": [],
-    "traditional": "一半",
-    "pinyin": "yībàn",
-    "pinyinNumbered": "yi1 ban4",
+    "traditional": "椅子",
+    "pinyin": "yǐzi",
+    "pinyinNumbered": "yi3 zi5",
     "syllables": [
-      "yī",
-      "bàn"
+      "yǐ",
+      "zi"
     ],
     "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "Num"
-    ],
-    "en": [
-      "half"
-    ],
-    "ind": [
-      "setengah",
-      "separuh"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "半"
-    ]
-  },
-  {
-    "id": "L1-0432",
-    "hanzi": "一会儿",
-    "variants": [],
-    "traditional": "一會兒",
-    "pinyin": "yīhuìr",
-    "pinyinNumbered": "yi1 hui4 r5",
-    "syllables": [
-      "yī",
-      "huì",
-      "r"
-    ],
-    "tones": [
-      1,
-      4,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "a moment",
-      "a while",
-      "in a moment",
-      "now...now..."
-    ],
-    "ind": [
-      "sebentar",
-      "sesaat"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "会",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0433",
-    "hanzi": "一块儿",
-    "variants": [],
-    "traditional": "一塊兒",
-    "pinyin": "yīkuàir",
-    "pinyinNumbered": "yi1 kuai4 r5",
-    "syllables": [
-      "yī",
-      "kuài",
-      "r"
-    ],
-    "tones": [
-      1,
-      4,
-      5
-    ],
-    "pos": [
-      "N",
-      "Adv"
-    ],
-    "en": [
-      "together; in the same place",
-      "in company (with)"
-    ],
-    "ind": [
-      "bersama-sama",
-      "sama-sama"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "块",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0434",
-    "hanzi": "一下儿",
-    "variants": [],
-    "traditional": "一下兒",
-    "pinyin": "yīxiàr",
-    "pinyinNumbered": "yi1 xia4 r5",
-    "syllables": [
-      "yī",
-      "xià",
-      "r"
-    ],
-    "tones": [
-      1,
-      4,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
-      "all at once; suddenly"
-    ],
-    "ind": [
-      "sebentar",
-      "coba (melunakkan kalimat)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "下",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0435",
-    "hanzi": "一样",
-    "variants": [],
-    "traditional": "一樣",
-    "pinyin": "yīyàng",
-    "pinyinNumbered": "yi1 yang4",
-    "syllables": [
-      "yī",
-      "yàng"
-    ],
-    "tones": [
-      1,
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "same",
-      "like",
-      "equal to",
-      "the same as",
-      "just like"
-    ],
-    "ind": [
-      "sama",
-      "serupa"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "样"
-    ]
-  },
-  {
-    "id": "L1-0436",
-    "hanzi": "一边",
-    "variants": [],
-    "traditional": "一邊",
-    "pinyin": "yībiān",
-    "pinyinNumbered": "yi1 bian1",
-    "syllables": [
-      "yī",
-      "biān"
-    ],
-    "tones": [
-      1,
-      1
-    ],
-    "pos": [
-      "N",
-      "Adv"
-    ],
-    "en": [
-      "one side",
-      "either side",
-      "on the one hand",
-      "on the other hand",
-      "doing while"
-    ],
-    "ind": [
-      "sambil",
-      "di satu sisi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "边"
-    ]
-  },
-  {
-    "id": "L1-0437",
-    "hanzi": "一点儿",
-    "variants": [],
-    "traditional": "一點兒",
-    "pinyin": "yīdiǎnr",
-    "pinyinNumbered": "yi1 dian3 r5",
-    "syllables": [
-      "yī",
-      "diǎn",
-      "r"
-    ],
-    "tones": [
-      1,
       3,
       5
     ],
-    "pos": [],
-    "en": [
-      "a bit; a little bit",
-      "(not) the least bit (in negative expressions)",
-      "(after an adjective) a bit more, -er"
-    ],
-    "ind": [
-      "sedikit",
-      "agak"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "点",
-      "儿"
-    ]
-  },
-  {
-    "id": "L1-0438",
-    "hanzi": "一起",
-    "variants": [],
-    "traditional": "一起",
-    "pinyin": "yīqǐ",
-    "pinyinNumbered": "yi1 qi3",
-    "syllables": [
-      "yī",
-      "qǐ"
-    ],
-    "tones": [
-      1,
-      3
-    ],
     "pos": [
-      "Adv",
       "N"
     ],
     "en": [
-      "(in) the same place",
-      "together; in company (with)",
-      "altogether; in total",
-      "an instance of; a case of (murder, accident, dispute etc)"
+      "chair"
     ],
     "ind": [
-      "bersama",
-      "bersama-sama"
+      "kursi"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "一",
-      "起"
-    ]
-  },
-  {
-    "id": "L1-0439",
-    "hanzi": "一些",
-    "variants": [],
-    "traditional": "一些",
-    "pinyin": "yīxiē",
-    "pinyinNumbered": "yi1 xie1",
-    "syllables": [
-      "yī",
-      "xiē"
-    ],
-    "tones": [
-      1,
-      1
-    ],
-    "pos": [],
-    "en": [
-      "some; a few; a little; (following an adjective) slightly ...er"
-    ],
-    "ind": [
-      "beberapa",
-      "sedikit"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "一",
-      "些"
-    ]
-  },
-  {
-    "id": "L1-0440",
-    "hanzi": "用",
-    "variants": [],
-    "traditional": "用",
-    "pinyin": "yòng",
-    "pinyinNumbered": "yong4",
-    "syllables": [
-      "yòng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to use; to make use of; to employ",
-      "(coverb) with; using",
-      "to need; to have to (usu. used in the negative or in questions)",
-      "usefulness; utility",
-      "(bound form) expense; outlay",
-      "(courteous) to eat; to drink"
-    ],
-    "ind": [
-      "memakai",
-      "menggunakan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "用"
+      "椅",
+      "子"
     ]
   },
   {
@@ -14324,73 +8495,6 @@
     ]
   },
   {
-    "id": "L1-0443",
-    "hanzi": "有名",
-    "variants": [],
-    "traditional": "有名",
-    "pinyin": "yǒumíng",
-    "pinyinNumbered": "you3 ming2",
-    "syllables": [
-      "yǒu",
-      "míng"
-    ],
-    "tones": [
-      3,
-      2
-    ],
-    "pos": [],
-    "en": [
-      "famous",
-      "well-known"
-    ],
-    "ind": [
-      "terkenal"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "有",
-      "名"
-    ]
-  },
-  {
-    "id": "L1-0444",
-    "hanzi": "有时候",
-    "variants": [
-      "有时"
-    ],
-    "traditional": "有時候",
-    "pinyin": "yǒushíhou",
-    "pinyinNumbered": "you3 shi2 hou5",
-    "syllables": [
-      "yǒu",
-      "shí",
-      "hou"
-    ],
-    "tones": [
-      3,
-      2,
-      5
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "sometimes"
-    ],
-    "ind": [
-      "kadang-kadang",
-      "terkadang"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "有",
-      "时",
-      "候"
-    ]
-  },
-  {
     "id": "L1-0445",
     "hanzi": "有些",
     "variants": [
@@ -14426,99 +8530,40 @@
     ]
   },
   {
-    "id": "L1-0446",
-    "hanzi": "有用",
-    "variants": [],
-    "traditional": "有用",
-    "pinyin": "yǒuyòng",
-    "pinyinNumbered": "you3 yong4",
+    "id": "L1-0530",
+    "hanzi": "有点儿",
+    "variants": [
+      "有一点儿"
+    ],
+    "traditional": "有點兒",
+    "pinyin": "yǒudiǎnr",
+    "pinyinNumbered": "you3 dian3 r5",
     "syllables": [
       "yǒu",
-      "yòng"
+      "diǎn",
+      "r"
     ],
     "tones": [
       3,
-      4
+      3,
+      5
     ],
     "pos": [
-      "V"
+      "Adv"
     ],
     "en": [
-      "useful"
+      "a bit; somewhat (usually of something undesirable)"
     ],
     "ind": [
-      "berguna",
-      "bermanfaat"
+      "agak",
+      "sedikit (biasanya hal yang kurang baik)"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
       "有",
-      "用"
-    ]
-  },
-  {
-    "id": "L1-0447",
-    "hanzi": "右",
-    "variants": [],
-    "traditional": "右",
-    "pinyin": "yòu",
-    "pinyinNumbered": "you4",
-    "syllables": [
-      "yòu"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(bound form) right; right-hand side",
-      "(bound form) (politics) right of center",
-      "(bound form) (old) west",
-      "(literary) the right side as the side of precedence"
-    ],
-    "ind": [
-      "kanan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "右"
-    ]
-  },
-  {
-    "id": "L1-0448",
-    "hanzi": "右边",
-    "variants": [],
-    "traditional": "右邊",
-    "pinyin": "yòubian",
-    "pinyinNumbered": "you4 bian5",
-    "syllables": [
-      "yòu",
-      "bian"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "right side",
-      "right, to the right"
-    ],
-    "ind": [
-      "sisi kanan",
-      "sebelah kanan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "右",
-      "边"
+      "点",
+      "儿"
     ]
   },
   {
@@ -14577,38 +8622,6 @@
     "hsk": 1,
     "chars": [
       "元"
-    ]
-  },
-  {
-    "id": "L1-0451",
-    "hanzi": "远",
-    "variants": [],
-    "traditional": "遠",
-    "pinyin": "yuǎn",
-    "pinyinNumbered": "yuan3",
-    "syllables": [
-      "yuǎn"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "far",
-      "distant",
-      "remote",
-      "(intensifier in a comparison) by far",
-      "much (lower etc)"
-    ],
-    "ind": [
-      "jauh"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "远"
     ]
   },
   {
@@ -14676,39 +8689,6 @@
     ]
   },
   {
-    "id": "L1-0454",
-    "hanzi": "再见",
-    "variants": [],
-    "traditional": "再見",
-    "pinyin": "zàijiàn",
-    "pinyinNumbered": "zai4 jian4",
-    "syllables": [
-      "zài",
-      "jiàn"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "goodbye",
-      "see you again later"
-    ],
-    "ind": [
-      "sampai jumpa",
-      "selamat tinggal"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "再",
-      "见"
-    ]
-  },
-  {
     "id": "L1-0455",
     "hanzi": "在",
     "variants": [],
@@ -14743,37 +8723,36 @@
     ]
   },
   {
-    "id": "L1-0456",
-    "hanzi": "在家",
+    "id": "L1-0454",
+    "hanzi": "再见",
     "variants": [],
-    "traditional": "在家",
-    "pinyin": "zàijiā",
-    "pinyinNumbered": "zai4 jia1",
+    "traditional": "再見",
+    "pinyin": "zàijiàn",
+    "pinyinNumbered": "zai4 jian4",
     "syllables": [
       "zài",
-      "jiā"
+      "jiàn"
     ],
     "tones": [
       4,
-      1
+      4
     ],
     "pos": [
       "V"
     ],
     "en": [
-      "to be at home",
-      "(at a workplace) to be in (as opposed to being away on official business 出差[chu1 chai1])",
-      "(Buddhism etc) to remain a layman (as opposed to becoming a monk or a nun 出家[chu1 jia1])"
+      "goodbye",
+      "see you again later"
     ],
     "ind": [
-      "di rumah",
-      "ada di rumah"
+      "sampai jumpa",
+      "selamat tinggal"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "在",
-      "家"
+      "再",
+      "见"
     ]
   },
   {
@@ -14908,38 +8887,41 @@
     ]
   },
   {
-    "id": "L1-0461",
-    "hanzi": "站",
+    "id": "L1-0531",
+    "hanzi": "怎么样",
     "variants": [],
-    "traditional": "站",
-    "pinyin": "zhàn",
-    "pinyinNumbered": "zhan4",
+    "traditional": "怎麼樣",
+    "pinyin": "zěnmeyàng",
+    "pinyinNumbered": "zen3 me5 yang4",
     "syllables": [
-      "zhàn"
+      "zěn",
+      "me",
+      "yàng"
     ],
     "tones": [
+      3,
+      5,
       4
     ],
     "pos": [
-      "N"
+      "Pron"
     ],
     "en": [
-      "station",
-      "to stand",
-      "to halt",
-      "to stop",
-      "branch of a company or organization",
-      "website"
+      "how?",
+      "how about?",
+      "how was it?",
+      "how are things?"
     ],
     "ind": [
-      "berdiri",
-      "stasiun",
-      "halte"
+      "bagaimana",
+      "bagaimana kalau"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "站"
+      "怎",
+      "么",
+      "样"
     ]
   },
   {
@@ -14974,35 +8956,6 @@
     "hsk": 1,
     "chars": [
       "找"
-    ]
-  },
-  {
-    "id": "L1-0463",
-    "hanzi": "找到",
-    "variants": [],
-    "traditional": "找到",
-    "pinyin": "zhǎodào",
-    "pinyinNumbered": "zhao3 dao4",
-    "syllables": [
-      "zhǎo",
-      "dào"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to find"
-    ],
-    "ind": [
-      "menemukan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "找",
-      "到"
     ]
   },
   {
@@ -15069,6 +9022,39 @@
     ]
   },
   {
+    "id": "L1-0532",
+    "hanzi": "这个",
+    "variants": [],
+    "traditional": "這個",
+    "pinyin": "zhège",
+    "pinyinNumbered": "zhe4 ge5",
+    "syllables": [
+      "zhè",
+      "ge"
+    ],
+    "tones": [
+      4,
+      5
+    ],
+    "pos": [
+      "Pron"
+    ],
+    "en": [
+      "this",
+      "this one"
+    ],
+    "ind": [
+      "yang ini",
+      "ini"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "这",
+      "个"
+    ]
+  },
+  {
     "id": "L1-0466",
     "hanzi": "这里",
     "variants": [],
@@ -15098,6 +9084,73 @@
     "chars": [
       "这",
       "里"
+    ]
+  },
+  {
+    "id": "L1-0470",
+    "hanzi": "真",
+    "variants": [],
+    "traditional": "真",
+    "pinyin": "zhēn",
+    "pinyinNumbered": "zhen1",
+    "syllables": [
+      "zhēn"
+    ],
+    "tones": [
+      1
+    ],
+    "pos": [
+      "Adv",
+      "Adj"
+    ],
+    "en": [
+      "really",
+      "truly",
+      "indeed",
+      "real",
+      "true",
+      "genuine"
+    ],
+    "ind": [
+      "sungguh",
+      "benar-benar",
+      "asli"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "真"
+    ]
+  },
+  {
+    "id": "L1-0473",
+    "hanzi": "正在",
+    "variants": [],
+    "traditional": "正在",
+    "pinyin": "zhèngzài",
+    "pinyinNumbered": "zheng4 zai4",
+    "syllables": [
+      "zhèng",
+      "zài"
+    ],
+    "tones": [
+      4,
+      4
+    ],
+    "pos": [
+      "Adv"
+    ],
+    "en": [
+      "to be in the process of (doing sth); to be currently ...-ing"
+    ],
+    "ind": [
+      "sedang (melakukan sesuatu)"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "正",
+      "在"
     ]
   },
   {
@@ -15164,166 +9217,33 @@
     ]
   },
   {
-    "id": "L1-0469",
-    "hanzi": "着",
+    "id": "L1-0533",
+    "hanzi": "只",
     "variants": [],
-    "traditional": "著",
-    "pinyin": "zhe",
-    "pinyinNumbered": "zhe5",
+    "traditional": "只",
+    "pinyin": "zhī",
+    "pinyinNumbered": "zhi1",
     "syllables": [
-      "zhe"
-    ],
-    "tones": [
-      5
-    ],
-    "pos": [
-      "Aux"
-    ],
-    "en": [
-      "aspect particle indicating action in progress or ongoing state"
-    ],
-    "ind": [
-      "(penanda keadaan berlangsung atau berlanjut)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "着"
-    ]
-  },
-  {
-    "id": "L1-0470",
-    "hanzi": "真",
-    "variants": [],
-    "traditional": "真",
-    "pinyin": "zhēn",
-    "pinyinNumbered": "zhen1",
-    "syllables": [
-      "zhēn"
+      "zhī"
     ],
     "tones": [
       1
     ],
     "pos": [
-      "Adv",
-      "Adj"
+      "M"
     ],
     "en": [
-      "really",
-      "truly",
-      "indeed",
-      "real",
-      "true",
-      "genuine"
+      "classifier for animals and birds",
+      "classifier for one of a pair (hands, eyes, etc.)"
     ],
     "ind": [
-      "sungguh",
-      "benar-benar",
-      "asli"
+      "(penggolong untuk hewan kecil)",
+      "ekor"
     ],
     "idMachine": true,
     "hsk": 1,
     "chars": [
-      "真"
-    ]
-  },
-  {
-    "id": "L1-0471",
-    "hanzi": "真的",
-    "variants": [],
-    "traditional": "真的",
-    "pinyin": "zhēnde",
-    "pinyinNumbered": "zhen1 de5",
-    "syllables": [
-      "zhēn",
-      "de"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "really; truly; indeed",
-      "real; true; genuine",
-      "(math.) proper"
-    ],
-    "ind": [
-      "benar-benar",
-      "sungguh",
-      "memang betul"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "真",
-      "的"
-    ]
-  },
-  {
-    "id": "L1-0472",
-    "hanzi": "正",
-    "variants": [],
-    "traditional": "正",
-    "pinyin": "zhèng",
-    "pinyinNumbered": "zheng4",
-    "syllables": [
-      "zhèng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "straight",
-      "upright",
-      "proper",
-      "main",
-      "principal",
-      "to correct"
-    ],
-    "ind": [
-      "tepat",
-      "lurus",
-      "sedang"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "正"
-    ]
-  },
-  {
-    "id": "L1-0473",
-    "hanzi": "正在",
-    "variants": [],
-    "traditional": "正在",
-    "pinyin": "zhèngzài",
-    "pinyinNumbered": "zheng4 zai4",
-    "syllables": [
-      "zhèng",
-      "zài"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "to be in the process of (doing sth); to be currently ...-ing"
-    ],
-    "ind": [
-      "sedang (melakukan sesuatu)"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "正",
-      "在"
+      "只"
     ]
   },
   {
@@ -15359,73 +9279,6 @@
     ]
   },
   {
-    "id": "L1-0475",
-    "hanzi": "知识",
-    "variants": [],
-    "traditional": "知識",
-    "pinyin": "zhīshi",
-    "pinyinNumbered": "zhi1 shi5",
-    "syllables": [
-      "zhī",
-      "shi"
-    ],
-    "tones": [
-      1,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "knowledge",
-      "intellectual"
-    ],
-    "ind": [
-      "pengetahuan",
-      "ilmu"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "知",
-      "识"
-    ]
-  },
-  {
-    "id": "L1-0476",
-    "hanzi": "中",
-    "variants": [],
-    "traditional": "中",
-    "pinyin": "zhōng",
-    "pinyinNumbered": "zhong1",
-    "syllables": [
-      "zhōng"
-    ],
-    "tones": [
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "(bound form) China; Chinese",
-      "within; among; in",
-      "middle; center",
-      "while (doing sth); during",
-      "(dialect) OK; all right"
-    ],
-    "ind": [
-      "tengah",
-      "dalam",
-      "di tengah"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "中"
-    ]
-  },
-  {
     "id": "L1-0477",
     "hanzi": "中国",
     "variants": [],
@@ -15455,40 +9308,6 @@
     "chars": [
       "中",
       "国"
-    ]
-  },
-  {
-    "id": "L1-0478",
-    "hanzi": "中间",
-    "variants": [],
-    "traditional": "中間",
-    "pinyin": "zhōngjiān",
-    "pinyinNumbered": "zhong1 jian1",
-    "syllables": [
-      "zhōng",
-      "jiān"
-    ],
-    "tones": [
-      1,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "the middle; the inside",
-      "in the middle; within; between; among",
-      "during; in the meantime"
-    ],
-    "ind": [
-      "tengah",
-      "di antara"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "中",
-      "间"
     ]
   },
   {
@@ -15623,68 +9442,6 @@
     ]
   },
   {
-    "id": "L1-0483",
-    "hanzi": "重",
-    "variants": [],
-    "traditional": "重",
-    "pinyin": "zhòng",
-    "pinyinNumbered": "zhong4",
-    "syllables": [
-      "zhòng"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "heavy",
-      "serious",
-      "to attach importance to"
-    ],
-    "ind": [
-      "berat",
-      "penting"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "重"
-    ]
-  },
-  {
-    "id": "L1-0484",
-    "hanzi": "重要",
-    "variants": [],
-    "traditional": "重要",
-    "pinyin": "zhòngyào",
-    "pinyinNumbered": "zhong4 yao4",
-    "syllables": [
-      "zhòng",
-      "yào"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "Adj"
-    ],
-    "en": [
-      "important; significant; major"
-    ],
-    "ind": [
-      "penting"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "重",
-      "要"
-    ]
-  },
-  {
     "id": "L1-0485",
     "hanzi": "住",
     "variants": [],
@@ -15716,43 +9473,6 @@
     "hsk": 1,
     "chars": [
       "住"
-    ]
-  },
-  {
-    "id": "L1-0486",
-    "hanzi": "准备",
-    "variants": [],
-    "traditional": "準備",
-    "pinyin": "zhǔnbèi",
-    "pinyinNumbered": "zhun3 bei4",
-    "syllables": [
-      "zhǔn",
-      "bèi"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "preparation",
-      "to prepare",
-      "to intend",
-      "to be about to",
-      "reserve (fund)"
-    ],
-    "ind": [
-      "bersiap",
-      "menyiapkan",
-      "persiapan"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "准",
-      "备"
     ]
   },
   {
@@ -15822,293 +9542,6 @@
     ]
   },
   {
-    "id": "L1-0489",
-    "hanzi": "子",
-    "variants": [],
-    "traditional": "子",
-    "pinyin": "zi",
-    "pinyinNumbered": "zi5",
-    "syllables": [
-      "zi"
-    ],
-    "tones": [
-      5
-    ],
-    "pos": [
-      "Suffix"
-    ],
-    "en": [
-      "noun suffix, as in 椅子[yi3 zi5] \"chair\""
-    ],
-    "ind": [
-      "(akhiran kata benda, mis. 桌子 \"meja\")"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "子"
-    ]
-  },
-  {
-    "id": "L1-0490",
-    "hanzi": "走",
-    "variants": [],
-    "traditional": "走",
-    "pinyin": "zǒu",
-    "pinyinNumbered": "zou3",
-    "syllables": [
-      "zǒu"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "V"
-    ],
-    "en": [
-      "to walk",
-      "to go",
-      "to run",
-      "to move (of vehicle)",
-      "to visit",
-      "to leave"
-    ],
-    "ind": [
-      "berjalan",
-      "pergi"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "走"
-    ]
-  },
-  {
-    "id": "L1-0491",
-    "hanzi": "走路",
-    "variants": [],
-    "traditional": "走路",
-    "pinyin": "zǒulù",
-    "pinyinNumbered": "zou3 lu4",
-    "syllables": [
-      "zǒu",
-      "lù"
-    ],
-    "tones": [
-      3,
-      4
-    ],
-    "pos": [],
-    "en": [
-      "to walk; to go on foot",
-      "to leave; to depart",
-      "(informal) to clear off; to beat it",
-      "(of sb who gets fired or resigns) to leave the job; to get out"
-    ],
-    "ind": [
-      "berjalan kaki"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "走",
-      "路"
-    ]
-  },
-  {
-    "id": "L1-0492",
-    "hanzi": "最",
-    "variants": [],
-    "traditional": "最",
-    "pinyin": "zuì",
-    "pinyinNumbered": "zui4",
-    "syllables": [
-      "zuì"
-    ],
-    "tones": [
-      4
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "(before an adjective or verb) to the highest degree; (the) most ...; -est",
-      "(after 之[zhi1]) best or most extreme example (e.g. 世界之最[shi4 jie4 zhi1 zui4] \"the greatest in the world\")"
-    ],
-    "ind": [
-      "paling"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "最"
-    ]
-  },
-  {
-    "id": "L1-0493",
-    "hanzi": "最好",
-    "variants": [],
-    "traditional": "最好",
-    "pinyin": "zuìhǎo",
-    "pinyinNumbered": "zui4 hao3",
-    "syllables": [
-      "zuì",
-      "hǎo"
-    ],
-    "tones": [
-      4,
-      3
-    ],
-    "pos": [
-      "Adv"
-    ],
-    "en": [
-      "best",
-      "had better ...; it would be best to ..."
-    ],
-    "ind": [
-      "sebaiknya",
-      "paling baik"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "最",
-      "好"
-    ]
-  },
-  {
-    "id": "L1-0494",
-    "hanzi": "最后",
-    "variants": [],
-    "traditional": "最後",
-    "pinyin": "zuìhòu",
-    "pinyinNumbered": "zui4 hou4",
-    "syllables": [
-      "zuì",
-      "hòu"
-    ],
-    "tones": [
-      4,
-      4
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "final; last; ultimate",
-      "finally; in the end"
-    ],
-    "ind": [
-      "terakhir",
-      "akhirnya"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "最",
-      "后"
-    ]
-  },
-  {
-    "id": "L1-0495",
-    "hanzi": "昨天",
-    "variants": [],
-    "traditional": "昨天",
-    "pinyin": "zuótiān",
-    "pinyinNumbered": "zuo2 tian1",
-    "syllables": [
-      "zuó",
-      "tiān"
-    ],
-    "tones": [
-      2,
-      1
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "yesterday"
-    ],
-    "ind": [
-      "kemarin"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "昨",
-      "天"
-    ]
-  },
-  {
-    "id": "L1-0496",
-    "hanzi": "左",
-    "variants": [],
-    "traditional": "左",
-    "pinyin": "zuǒ",
-    "pinyinNumbered": "zuo3",
-    "syllables": [
-      "zuǒ"
-    ],
-    "tones": [
-      3
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "left",
-      "the Left (politics)",
-      "east",
-      "unorthodox",
-      "queer",
-      "wrong"
-    ],
-    "ind": [
-      "kiri"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "左"
-    ]
-  },
-  {
-    "id": "L1-0497",
-    "hanzi": "左边",
-    "variants": [],
-    "traditional": "左邊",
-    "pinyin": "zuǒbian",
-    "pinyinNumbered": "zuo3 bian5",
-    "syllables": [
-      "zuǒ",
-      "bian"
-    ],
-    "tones": [
-      3,
-      5
-    ],
-    "pos": [
-      "N"
-    ],
-    "en": [
-      "left",
-      "the left side",
-      "to the left of"
-    ],
-    "ind": [
-      "sisi kiri",
-      "sebelah kiri"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "左",
-      "边"
-    ]
-  },
-  {
     "id": "L1-0498",
     "hanzi": "坐",
     "variants": [],
@@ -16138,35 +9571,6 @@
     "hsk": 1,
     "chars": [
       "坐"
-    ]
-  },
-  {
-    "id": "L1-0499",
-    "hanzi": "坐下",
-    "variants": [],
-    "traditional": "坐下",
-    "pinyin": "zuòxia",
-    "pinyinNumbered": "zuo4 xia5",
-    "syllables": [
-      "zuò",
-      "xia"
-    ],
-    "tones": [
-      4,
-      5
-    ],
-    "pos": [],
-    "en": [
-      "to sit down"
-    ],
-    "ind": [
-      "duduk"
-    ],
-    "idMachine": true,
-    "hsk": 1,
-    "chars": [
-      "坐",
-      "下"
     ]
   },
   {
@@ -16201,6 +9605,68 @@
     "hsk": 1,
     "chars": [
       "做"
+    ]
+  },
+  {
+    "id": "L1-0534",
+    "hanzi": "做饭",
+    "variants": [],
+    "traditional": "做飯",
+    "pinyin": "zuòfàn",
+    "pinyinNumbered": "zuo4 fan4",
+    "syllables": [
+      "zuò",
+      "fàn"
+    ],
+    "tones": [
+      4,
+      4
+    ],
+    "pos": [],
+    "en": [
+      "to prepare a meal",
+      "to cook"
+    ],
+    "ind": [
+      "memasak",
+      "menyiapkan makanan"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "做",
+      "饭"
+    ]
+  },
+  {
+    "id": "L1-0495",
+    "hanzi": "昨天",
+    "variants": [],
+    "traditional": "昨天",
+    "pinyin": "zuótiān",
+    "pinyinNumbered": "zuo2 tian1",
+    "syllables": [
+      "zuó",
+      "tiān"
+    ],
+    "tones": [
+      2,
+      1
+    ],
+    "pos": [
+      "N"
+    ],
+    "en": [
+      "yesterday"
+    ],
+    "ind": [
+      "kemarin"
+    ],
+    "idMachine": true,
+    "hsk": 1,
+    "chars": [
+      "昨",
+      "天"
     ]
   }
 ]

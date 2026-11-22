@@ -10,54 +10,69 @@
         "en": "Greetings & politeness"
       },
       "description": {
-        "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan menyebut diri serta orang lain.",
-        "en": "First words for greeting, thanking, apologising and referring to yourself and others."
+        "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan bertanya kabar.",
+        "en": "First words for greeting, thanking, apologising and asking after someone."
       },
       "words": [
+        "L1-0517",
         "L1-0271",
         "L1-0138",
         "L1-0274",
-        "L1-0380",
+        "L1-0272",
+        "L1-0296",
+        "L1-0299",
         "L1-0410",
         "L1-0032",
         "L1-0093",
         "L1-0233",
-        "L1-0234",
         "L1-0454",
-        "L1-0296",
-        "L1-0299",
-        "L1-0298",
-        "L1-0300",
         "L1-0227",
-        "L1-0269",
-        "L1-0034",
-        "L1-0337",
         "L1-0146",
-        "L1-0425",
-        "L1-0067",
-        "L1-0272",
-        "L1-0381",
-        "L1-0354",
-        "L1-0356",
-        "L1-0355",
-        "L1-0357",
-        "L1-0241",
-        "L1-0176",
-        "L1-0245",
+        "L1-0269",
         "L1-0005"
       ]
     },
     {
       "id": "u02",
       "order": 2,
-      "slug": "angka",
+      "slug": "diri",
       "title": {
-        "id": "Angka & jumlah",
-        "en": "Numbers & quantities"
+        "id": "Aku, kamu & dia",
+        "en": "Me, you & them"
       },
       "description": {
-        "id": "Angka 0 sampai 100, cara bertanya jumlah, usia, dan kata untuk \"sedikit\" atau \"banyak\".",
-        "en": "Numbers 0 to 100, asking how many, age, and words for \"a little\" or \"a lot\"."
+        "id": "Kata ganti orang, memperkenalkan nama, dan kalimat dasar \"A adalah B\".",
+        "en": "Pronouns, introducing your name and the basic \"A is B\" sentence."
+      },
+      "words": [
+        "L1-0380",
+        "L1-0354",
+        "L1-0356",
+        "L1-0523",
+        "L1-0381",
+        "L1-0355",
+        "L1-0357",
+        "L1-0524",
+        "L1-0241",
+        "L1-0337",
+        "L1-0034",
+        "L1-0425",
+        "L1-0176",
+        "L1-0245",
+        "L1-0067"
+      ]
+    },
+    {
+      "id": "u03",
+      "order": 3,
+      "slug": "angka",
+      "title": {
+        "id": "Angka 0–10",
+        "en": "Numbers 0–10"
+      },
+      "description": {
+        "id": "Angka dari nol sampai sepuluh, \"dua\" yang dipakai untuk menghitung, dan bertanya \"berapa\".",
+        "en": "Numbers from zero to ten, the counting form \"two\" and asking \"how many\"."
       },
       "words": [
         "L1-0427",
@@ -72,125 +87,142 @@
         "L1-0332",
         "L1-0216",
         "L1-0215",
-        "L1-0008",
         "L1-0165",
-        "L1-0095",
-        "L1-0075",
-        "L1-0143",
-        "L1-0120",
-        "L1-0010",
-        "L1-0431",
-        "L1-0353",
-        "L1-0439",
-        "L1-0437",
-        "L1-0434",
-        "L1-0094",
-        "L1-0324",
-        "L1-0053"
-      ]
-    },
-    {
-      "id": "u03",
-      "order": 3,
-      "slug": "ini-itu",
-      "title": {
-        "id": "Ini, itu & bertanya",
-        "en": "This, that & asking questions"
-      },
-      "description": {
-        "id": "Kata tunjuk, kata tanya dasar, dan kata ada, tidak ada, benar, salah.",
-        "en": "Demonstratives, basic question words, and words for having, not having, right and wrong."
-      },
-      "words": [
-        "L1-0464",
-        "L1-0254",
-        "L1-0250",
-        "L1-0466",
-        "L1-0467",
-        "L1-0256",
-        "L1-0257",
-        "L1-0251",
-        "L1-0252",
-        "L1-0468",
-        "L1-0258",
-        "L1-0253",
-        "L1-0465",
-        "L1-0255",
-        "L1-0328",
-        "L1-0325",
-        "L1-0460",
-        "L1-0114",
-        "L1-0113",
-        "L1-0338",
-        "L1-0031",
-        "L1-0092",
-        "L1-0055",
-        "L1-0441",
-        "L1-0236",
-        "L1-0232",
-        "L1-0455",
-        "L1-0025",
-        "L1-0033"
+        "L1-0095"
       ]
     },
     {
       "id": "u04",
       "order": 4,
+      "slug": "ini-itu",
+      "title": {
+        "id": "Ini, itu & ada",
+        "en": "This, that & being there"
+      },
+      "description": {
+        "id": "Menunjuk benda dan tempat, serta mengatakan ada, tidak ada, dan berada di mana.",
+        "en": "Pointing at things and places, and saying something is, is not, or is located somewhere."
+      },
+      "words": [
+        "L1-0464",
+        "L1-0254",
+        "L1-0532",
+        "L1-0515",
+        "L1-0468",
+        "L1-0258",
+        "L1-0467",
+        "L1-0257",
+        "L1-0466",
+        "L1-0256",
+        "L1-0465",
+        "L1-0255",
+        "L1-0441",
+        "L1-0236",
+        "L1-0455"
+      ]
+    },
+    {
+      "id": "u05",
+      "order": 5,
+      "slug": "bertanya",
+      "title": {
+        "id": "Bertanya & menjawab",
+        "en": "Asking & answering"
+      },
+      "description": {
+        "id": "Kata tanya (apa, siapa, mana, bagaimana) dan cara menjawab.",
+        "en": "Question words (what, who, which, how) and how to answer."
+      },
+      "words": [
+        "L1-0328",
+        "L1-0325",
+        "L1-0250",
+        "L1-0516",
+        "L1-0253",
+        "L1-0252",
+        "L1-0251",
+        "L1-0460",
+        "L1-0531",
+        "L1-0379",
+        "L1-0526",
+        "L1-0092"
+      ]
+    },
+    {
+      "id": "u06",
+      "order": 6,
+      "slug": "jumlah",
+      "title": {
+        "id": "Jumlah, ukuran & nomor",
+        "en": "Amounts, sizes & ordinals"
+      },
+      "description": {
+        "id": "Ratusan dan ribuan, nomor urut, usia, serta kata untuk banyak, sedikit, dan setengah.",
+        "en": "Hundreds and thousands, ordinals, age, and words for many, few and half."
+      },
+      "words": [
+        "L1-0120",
+        "L1-0008",
+        "L1-0522",
+        "L1-0075",
+        "L1-0143",
+        "L1-0353",
+        "L1-0094",
+        "L1-0324",
+        "L1-0010",
+        "L1-0431",
+        "L1-0437",
+        "L1-0530",
+        "L1-0439",
+        "L1-0527",
+        "L1-0442",
+        "L1-0445"
+      ]
+    },
+    {
+      "id": "u07",
+      "order": 7,
       "slug": "orang",
       "title": {
         "id": "Orang di sekitar",
         "en": "People around you"
       },
       "description": {
-        "id": "Teman, laki-laki, perempuan, anak, dan kata untuk menggabungkan atau memperkenalkan orang.",
-        "en": "Friends, men, women, children, and words for joining or introducing people."
+        "id": "Menyebut teman, teman sekelas, laki-laki, perempuan, dan anak-anak.",
+        "en": "Naming friends, classmates, men, women and children."
       },
       "words": [
         "L1-0305",
         "L1-0284",
         "L1-0365",
+        "L1-0505",
+        "L1-0398",
+        "L1-0518",
         "L1-0261",
         "L1-0276",
-        "L1-0264",
-        "L1-0280",
-        "L1-0262",
-        "L1-0278",
-        "L1-0281",
-        "L1-0265",
+        "L1-0135",
+        "L1-0404",
         "L1-0263",
         "L1-0279",
-        "L1-0135",
-        "L1-0402",
-        "L1-0404",
-        "L1-0208",
-        "L1-0027",
-        "L1-0026",
-        "L1-0376",
-        "L1-0398",
-        "L1-0403",
-        "L1-0306",
-        "L1-0207",
-        "L1-0442",
-        "L1-0445",
         "L1-0089",
-        "L1-0145",
-        "L1-0122",
-        "L1-0179"
+        "L1-0145"
       ]
     },
     {
-      "id": "u05",
-      "order": 5,
+      "id": "u08",
+      "order": 8,
       "slug": "keluarga",
       "title": {
-        "id": "Keluarga & tempat tinggal",
-        "en": "Family & home"
+        "id": "Keluarga, rumah & hewan",
+        "en": "Family, home & pets"
       },
       "description": {
-        "id": "Anggota keluarga, rumah, kamar, lantai, dan pintu.",
-        "en": "Family members, the house, rooms, floors and doors."
+        "id": "Anggota keluarga, tempat tinggal, perabot, dan hewan peliharaan.",
+        "en": "Family members, where you live, furniture and pets."
       },
       "words": [
+        "L1-0169",
+        "L1-0171",
         "L1-0004",
         "L1-0224",
         "L1-0118",
@@ -199,606 +231,389 @@
         "L1-0237",
         "L1-0097",
         "L1-0277",
-        "L1-0424",
-        "L1-0260",
-        "L1-0259",
-        "L1-0169",
-        "L1-0171",
-        "L1-0170",
-        "L1-0456",
-        "L1-0157",
-        "L1-0102",
-        "L1-0101",
         "L1-0485",
-        "L1-0001",
-        "L1-0218",
-        "L1-0219",
-        "L1-0220",
-        "L1-0239",
-        "L1-0238",
-        "L1-0387",
-        "L1-0172"
+        "L1-0101",
+        "L1-0487",
+        "L1-0529",
+        "L1-0509",
+        "L1-0514",
+        "L1-0533"
       ]
     },
     {
-      "id": "u06",
-      "order": 6,
+      "id": "u09",
+      "order": 9,
       "slug": "makanan",
       "title": {
         "id": "Makanan & minuman",
         "en": "Food & drink"
       },
       "description": {
-        "id": "Makan, minum, makanan pokok, lauk, buah, dan rasa lapar atau haus.",
-        "en": "Eating, drinking, staple foods, side dishes, fruit, and feeling hungry or thirsty."
+        "id": "Makan, minum, dan hidangan sehari-hari.",
+        "en": "Eating, drinking and everyday dishes."
       },
       "words": [
         "L1-0046",
-        "L1-0047",
+        "L1-0144",
         "L1-0099",
         "L1-0242",
-        "L1-0243",
-        "L1-0244",
-        "L1-0016",
         "L1-0035",
-        "L1-0310",
-        "L1-0164",
-        "L1-0346",
-        "L1-0139",
-        "L1-0096",
-        "L1-0458",
-        "L1-0383",
-        "L1-0373",
-        "L1-0144",
         "L1-0345",
         "L1-0036",
         "L1-0275",
-        "L1-0198",
-        "L1-0017",
         "L1-0018",
-        "L1-0015"
+        "L1-0346",
+        "L1-0521",
+        "L1-0164",
+        "L1-0243",
+        "L1-0016",
+        "L1-0511",
+        "L1-0244",
+        "L1-0139"
       ]
     },
     {
-      "id": "u07",
-      "order": 7,
+      "id": "u10",
+      "order": 10,
       "slug": "tanggal",
       "title": {
         "id": "Hari, tanggal & tahun",
         "en": "Days, dates & years"
       },
       "description": {
-        "id": "Kemarin, hari ini, besok, hari dalam seminggu, bulan, tahun, dan ulang tahun.",
-        "en": "Yesterday, today, tomorrow, days of the week, months, years and birthdays."
+        "id": "Hari ini, besok, minggu, bulan, dan tahun.",
+        "en": "Today, tomorrow, weeks, months and years."
       },
       "words": [
+        "L1-0359",
         "L1-0181",
         "L1-0248",
         "L1-0495",
-        "L1-0149",
-        "L1-0293",
+        "L1-0413",
+        "L1-0415",
+        "L1-0414",
+        "L1-0308",
+        "L1-0452",
+        "L1-0273",
         "L1-0180",
         "L1-0247",
         "L1-0303",
-        "L1-0273",
-        "L1-0452",
-        "L1-0308",
-        "L1-0309",
-        "L1-0413",
-        "L1-0414",
-        "L1-0415",
-        "L1-0359",
-        "L1-0331",
-        "L1-0412",
-        "L1-0011",
-        "L1-0012",
-        "L1-0319",
-        "L1-0393",
         "L1-0007"
       ]
     },
     {
-      "id": "u08",
-      "order": 8,
+      "id": "u11",
+      "order": 11,
       "slug": "waktu",
       "title": {
         "id": "Jam & waktu",
         "en": "Clock time & timing"
       },
       "description": {
-        "id": "Jam, bagian hari, dan kata yang menunjukkan kapan atau seberapa sering sesuatu terjadi.",
-        "en": "The clock, parts of the day, and words for when or how often something happens."
+        "id": "Menyebut jam dan menit, bagian hari, dan menanyakan waktu.",
+        "en": "Telling the hour and minutes, parts of the day, and asking about time."
       },
       "words": [
         "L1-0399",
-        "L1-0333",
-        "L1-0334",
-        "L1-0405",
         "L1-0076",
         "L1-0109",
-        "L1-0432",
+        "L1-0507",
+        "L1-0405",
+        "L1-0334",
+        "L1-0333",
         "L1-0459",
         "L1-0322",
         "L1-0480",
         "L1-0395",
         "L1-0374",
-        "L1-0372",
         "L1-0457",
-        "L1-0444",
-        "L1-0038",
-        "L1-0039",
-        "L1-0397",
-        "L1-0453",
-        "L1-0186",
-        "L1-0226",
-        "L1-0473",
-        "L1-0472",
-        "L1-0494",
-        "L1-0210"
-      ]
-    },
-    {
-      "id": "u09",
-      "order": 9,
-      "slug": "arah",
-      "title": {
-        "id": "Arah & posisi",
-        "en": "Directions & position"
-      },
-      "description": {
-        "id": "Atas, bawah, kiri, kanan, depan, belakang, dan mata angin.",
-        "en": "Up, down, left, right, front, back and the compass points."
-      },
-      "words": [
-        "L1-0315",
-        "L1-0389",
-        "L1-0496",
-        "L1-0447",
-        "L1-0291",
-        "L1-0147",
-        "L1-0213",
-        "L1-0367",
-        "L1-0084",
-        "L1-0266",
-        "L1-0384",
-        "L1-0019",
-        "L1-0476",
-        "L1-0317",
-        "L1-0391",
-        "L1-0497",
-        "L1-0448",
-        "L1-0292",
-        "L1-0148",
-        "L1-0214",
-        "L1-0368",
-        "L1-0085",
-        "L1-0267",
-        "L1-0385",
-        "L1-0020",
-        "L1-0282",
-        "L1-0478",
-        "L1-0072",
-        "L1-0069"
-      ]
-    },
-    {
-      "id": "u10",
-      "order": 10,
-      "slug": "tempat",
-      "title": {
-        "id": "Tempat, jalan & alam",
-        "en": "Places, roads & nature"
-      },
-      "description": {
-        "id": "Toko, jalan, stasiun, bandara, gunung, serta cuaca dan tumbuhan.",
-        "en": "Shops, roads, stations, the airport, mountains, plus weather and plants."
-      },
-      "words": [
-        "L1-0070",
-        "L1-0071",
-        "L1-0073",
-        "L1-0221",
-        "L1-0222",
-        "L1-0225",
-        "L1-0223",
-        "L1-0314",
-        "L1-0313",
-        "L1-0343",
-        "L1-0366",
-        "L1-0083",
-        "L1-0100",
-        "L1-0451",
-        "L1-0054",
-        "L1-0312",
-        "L1-0162",
-        "L1-0045",
-        "L1-0461",
-        "L1-0422",
-        "L1-0110",
-        "L1-0449",
-        "L1-0396",
-        "L1-0360",
-        "L1-0344",
-        "L1-0150"
-      ]
-    },
-    {
-      "id": "u11",
-      "order": 11,
-      "slug": "rutinitas",
-      "title": {
-        "id": "Kegiatan sehari-hari",
-        "en": "Daily routine"
-      },
-      "description": {
-        "id": "Bangun, tidur, mencuci, berpakaian, membuka, menutup, mencari, dan membantu.",
-        "en": "Getting up, sleeping, washing, dressing, opening, closing, looking for and helping."
-      },
-      "words": [
-        "L1-0288",
-        "L1-0347",
-        "L1-0348",
-        "L1-0386",
-        "L1-0051",
-        "L1-0428",
-        "L1-0052",
-        "L1-0188",
-        "L1-0059",
-        "L1-0125",
-        "L1-0126",
-        "L1-0103",
-        "L1-0249",
-        "L1-0440",
-        "L1-0446",
-        "L1-0112",
-        "L1-0500",
-        "L1-0013",
-        "L1-0014",
-        "L1-0462",
-        "L1-0463",
-        "L1-0068"
+        "L1-0372"
       ]
     },
     {
       "id": "u12",
       "order": 12,
-      "slug": "transportasi",
+      "slug": "arah",
       "title": {
-        "id": "Transportasi",
-        "en": "Transport"
+        "id": "Arah, pergi & datang",
+        "en": "Directions, going & coming"
       },
       "description": {
-        "id": "Kendaraan, tiket, naik, turun, dan cara bepergian.",
-        "en": "Vehicles, tickets, getting on and off, and ways of getting around."
+        "id": "Atas, bawah, depan, belakang, dalam, luar, serta pergi, datang, pulang, dan tiba.",
+        "en": "Up, down, front, back, inside, outside, and going, coming, returning and arriving."
       },
       "words": [
-        "L1-0042",
-        "L1-0290",
-        "L1-0161",
-        "L1-0107",
-        "L1-0043",
-        "L1-0163",
-        "L1-0285",
-        "L1-0240",
-        "L1-0057",
-        "L1-0189",
-        "L1-0044",
-        "L1-0318",
-        "L1-0392",
-        "L1-0498",
-        "L1-0499",
-        "L1-0106",
-        "L1-0490",
-        "L1-0491",
-        "L1-0283",
-        "L1-0204",
-        "L1-0229"
+        "L1-0315",
+        "L1-0389",
+        "L1-0291",
+        "L1-0147",
+        "L1-0213",
+        "L1-0367",
+        "L1-0368",
+        "L1-0501",
+        "L1-0205",
+        "L1-0302",
+        "L1-0154",
+        "L1-0064"
       ]
     },
     {
       "id": "u13",
       "order": 13,
-      "slug": "pergi-datang",
+      "slug": "kota",
       "title": {
-        "id": "Pergi, datang & bergerak",
-        "en": "Going, coming & moving"
+        "id": "Tempat di kota & transportasi",
+        "en": "Places in town & transport"
       },
       "description": {
-        "id": "Datang, pergi, pulang, masuk, keluar, dan gabungannya.",
-        "en": "Come, go, return, enter, exit and their combinations."
+        "id": "Toko, restoran, bioskop, kantor, dan kendaraan.",
+        "en": "Shops, restaurants, the cinema, offices and vehicles."
       },
       "words": [
-        "L1-0205",
-        "L1-0302",
-        "L1-0154",
-        "L1-0064",
-        "L1-0182",
-        "L1-0048",
-        "L1-0049",
-        "L1-0050",
-        "L1-0183",
-        "L1-0184",
-        "L1-0158",
-        "L1-0159",
-        "L1-0206",
-        "L1-0156",
-        "L1-0287",
-        "L1-0289",
-        "L1-0131",
-        "L1-0087",
-        "L1-0088",
-        "L1-0173",
-        "L1-0174",
-        "L1-0065"
+        "L1-0506",
+        "L1-0314",
+        "L1-0343",
+        "L1-0503",
+        "L1-0100",
+        "L1-0083",
+        "L1-0508",
+        "L1-0042",
+        "L1-0504",
+        "L1-0161",
+        "L1-0107",
+        "L1-0498",
+        "L1-0189"
       ]
     },
     {
       "id": "u14",
       "order": 14,
+      "slug": "kegiatan",
+      "title": {
+        "id": "Kegiatan sehari-hari",
+        "en": "Daily routine"
+      },
+      "description": {
+        "id": "Bangun, berpakaian, makan, memasak, tidur, dan kata bantu untuk \"sudah\", \"sedang\", dan \"lagi\".",
+        "en": "Getting up, dressing, eating, cooking, sleeping, and the helpers for \"already\", \"currently\" and \"again\"."
+      },
+      "words": [
+        "L1-0288",
+        "L1-0051",
+        "L1-0428",
+        "L1-0458",
+        "L1-0383",
+        "L1-0373",
+        "L1-0534",
+        "L1-0347",
+        "L1-0348",
+        "L1-0500",
+        "L1-0462",
+        "L1-0188",
+        "L1-0210",
+        "L1-0473",
+        "L1-0453",
+        "L1-0132",
+        "L1-0434"
+      ]
+    },
+    {
+      "id": "u15",
+      "order": 15,
+      "slug": "keinginan",
+      "title": {
+        "id": "Suka, mau & bisa",
+        "en": "Liking, wanting & being able"
+      },
+      "description": {
+        "id": "Menyatakan suka, ingin, bisa, boleh, tahu, dan merasa.",
+        "en": "Saying what you like, want, can, may, know and feel."
+      },
+      "words": [
+        "L1-0388",
+        "L1-0001",
+        "L1-0116",
+        "L1-0400",
+        "L1-0423",
+        "L1-0502",
+        "L1-0160",
+        "L1-0270",
+        "L1-0512",
+        "L1-0187",
+        "L1-0474",
+        "L1-0306"
+      ]
+    },
+    {
+      "id": "u16",
+      "order": 16,
       "slug": "sekolah",
       "title": {
         "id": "Sekolah",
         "en": "School"
       },
       "description": {
-        "id": "Jenjang sekolah, pelajaran, kelas, ujian, libur, dan kegiatan belajar.",
-        "en": "School levels, lessons, class, exams, holidays and study activities."
+        "id": "Sekolah, guru, murid, pelajaran, dan jenjang pendidikan.",
+        "en": "School, teachers, students, lessons and school levels."
       },
       "words": [
         "L1-0421",
         "L1-0419",
         "L1-0209",
-        "L1-0063",
-        "L1-0062",
+        "L1-0418",
+        "L1-0420",
+        "L1-0323",
+        "L1-0199",
+        "L1-0320",
+        "L1-0394",
         "L1-0406",
         "L1-0407",
         "L1-0481",
         "L1-0482",
-        "L1-0177",
-        "L1-0199",
-        "L1-0200",
-        "L1-0201",
-        "L1-0320",
-        "L1-0394",
-        "L1-0323",
-        "L1-0105",
-        "L1-0104",
-        "L1-0297",
-        "L1-0196",
-        "L1-0197",
-        "L1-0009",
-        "L1-0426",
-        "L1-0175",
-        "L1-0418",
-        "L1-0420",
-        "L1-0090",
-        "L1-0091",
-        "L1-0409",
-        "L1-0364"
-      ]
-    },
-    {
-      "id": "u15",
-      "order": 15,
-      "slug": "bahasa",
-      "title": {
-        "id": "Bahasa & negara",
-        "en": "Language & countries"
-      },
-      "description": {
-        "id": "Tiongkok, Beijing, bahasa Mandarin, aksara, berbicara, mendengar, bertanya, dan menjawab.",
-        "en": "China, Beijing, the Chinese language, characters, speaking, listening, asking and answering."
-      },
-      "words": [
-        "L1-0128",
-        "L1-0129",
-        "L1-0130",
-        "L1-0369",
-        "L1-0370",
-        "L1-0136",
-        "L1-0479",
-        "L1-0137",
-        "L1-0488",
-        "L1-0151",
-        "L1-0349",
-        "L1-0350",
-        "L1-0477",
-        "L1-0021",
-        "L1-0361",
-        "L1-0362",
-        "L1-0363",
-        "L1-0379",
-        "L1-0155",
-        "L1-0117"
-      ]
-    },
-    {
-      "id": "u16",
-      "order": 16,
-      "slug": "berpikir",
-      "title": {
-        "id": "Berpikir & kemampuan",
-        "en": "Thinking & ability"
-      },
-      "description": {
-        "id": "Berpikir, tahu, ingat, lupa, bisa, mau, dan memperhatikan.",
-        "en": "Thinking, knowing, remembering, forgetting, can, want, and looking."
-      },
-      "words": [
-        "L1-0400",
-        "L1-0187",
-        "L1-0474",
-        "L1-0475",
-        "L1-0246",
-        "L1-0166",
-        "L1-0167",
-        "L1-0168",
-        "L1-0377",
-        "L1-0378",
-        "L1-0307",
-        "L1-0484",
-        "L1-0268",
-        "L1-0336",
-        "L1-0486",
-        "L1-0270",
-        "L1-0160",
-        "L1-0423",
-        "L1-0192",
-        "L1-0194",
-        "L1-0195"
+        "L1-0062",
+        "L1-0063"
       ]
     },
     {
       "id": "u17",
       "order": 17,
-      "slug": "kerja",
+      "slug": "bahasa",
       "title": {
-        "id": "Pekerjaan, tubuh & kesehatan",
-        "en": "Work, body & health"
+        "id": "Bahasa Mandarin & indera",
+        "en": "Mandarin & the senses"
       },
       "description": {
-        "id": "Bekerja, rapat, istirahat, dokter, sakit, dan bagian tubuh.",
-        "en": "Working, meetings, resting, doctors, illness and parts of the body."
+        "id": "Negara, bahasa, huruf, serta berbicara, membaca, menulis, melihat, dan mendengar.",
+        "en": "Countries, language, characters, and speaking, reading, writing, seeing and hearing."
       },
       "words": [
-        "L1-0124",
-        "L1-0123",
-        "L1-0316",
-        "L1-0390",
-        "L1-0190",
-        "L1-0230",
-        "L1-0417",
-        "L1-0429",
-        "L1-0430",
-        "L1-0028",
-        "L1-0029",
-        "L1-0329",
-        "L1-0193",
-        "L1-0327",
-        "L1-0326",
-        "L1-0339",
-        "L1-0202",
-        "L1-0211",
-        "L1-0235",
-        "L1-0335"
+        "L1-0477",
+        "L1-0128",
+        "L1-0479",
+        "L1-0136",
+        "L1-0137",
+        "L1-0488",
+        "L1-0349",
+        "L1-0350",
+        "L1-0090",
+        "L1-0091",
+        "L1-0409",
+        "L1-0361",
+        "L1-0363",
+        "L1-0192",
+        "L1-0195",
+        "L1-0173"
       ]
     },
     {
       "id": "u18",
       "order": 18,
-      "slug": "belanja",
+      "slug": "kerja",
       "title": {
-        "id": "Belanja, uang & barang",
-        "en": "Shopping, money & things"
+        "id": "Pekerjaan & kesehatan",
+        "en": "Work & health"
       },
       "description": {
-        "id": "Membeli, uang, harga, dan benda sehari-hari seperti buku, tas, meja, dan baju.",
-        "en": "Buying, money, prices, and everyday things like books, bags and tables."
+        "id": "Bekerja, istirahat, sakit, ke dokter, dan menenangkan \"tidak apa-apa\".",
+        "en": "Working, resting, being ill, seeing a doctor and saying \"no problem\"."
       },
       "words": [
-        "L1-0228",
-        "L1-0294",
-        "L1-0295",
-        "L1-0450",
-        "L1-0203",
-        "L1-0231",
-        "L1-0127",
-        "L1-0086",
-        "L1-0022",
-        "L1-0023",
-        "L1-0341",
-        "L1-0342",
-        "L1-0340",
-        "L1-0121",
-        "L1-0352",
-        "L1-0153",
-        "L1-0024",
-        "L1-0037",
-        "L1-0487",
-        "L1-0489"
+        "L1-0124",
+        "L1-0316",
+        "L1-0390",
+        "L1-0230",
+        "L1-0417",
+        "L1-0335",
+        "L1-0235",
+        "L1-0028",
+        "L1-0329",
+        "L1-0193",
+        "L1-0429",
+        "L1-0430",
+        "L1-0202"
       ]
     },
     {
       "id": "u19",
       "order": 19,
-      "slug": "hobi",
+      "slug": "belanja",
       "title": {
-        "id": "Hobi & hiburan",
-        "en": "Hobbies & fun"
+        "id": "Belanja & uang",
+        "en": "Shopping & money"
       },
       "description": {
-        "id": "Menyanyi, film, olahraga, gawai, internet, tertawa, dan melakukan sesuatu bersama.",
-        "en": "Singing, films, sports, devices, the internet, laughing and doing things together."
+        "id": "Membeli, menjual, harga, uang, dan benda yang dibeli.",
+        "en": "Buying, selling, prices, money and things you buy."
       },
       "words": [
-        "L1-0040",
-        "L1-0041",
-        "L1-0119",
-        "L1-0141",
-        "L1-0082",
-        "L1-0080",
-        "L1-0081",
-        "L1-0079",
-        "L1-0321",
-        "L1-0375",
-        "L1-0078",
-        "L1-0058",
-        "L1-0371",
-        "L1-0142",
-        "L1-0140",
-        "L1-0056",
-        "L1-0060",
-        "L1-0301",
-        "L1-0002",
-        "L1-0388",
-        "L1-0408",
-        "L1-0191",
-        "L1-0077",
-        "L1-0438",
-        "L1-0433",
-        "L1-0436"
+        "L1-0228",
+        "L1-0513",
+        "L1-0294",
+        "L1-0203",
+        "L1-0450",
+        "L1-0127",
+        "L1-0519",
+        "L1-0086",
+        "L1-0121",
+        "L1-0510",
+        "L1-0022",
+        "L1-0341"
       ]
     },
     {
       "id": "u20",
       "order": 20,
-      "slug": "sifat",
+      "slug": "hiburan",
       "title": {
-        "id": "Sifat, perasaan & penguat",
-        "en": "Describing things & feelings"
+        "id": "Hiburan & teknologi",
+        "en": "Fun & technology"
       },
       "description": {
-        "id": "Besar, kecil, baru, panas, dingin, senang, marah, dan kata penguat seperti \"sangat\" dan \"paling\".",
-        "en": "Big, small, new, hot, cold, happy, angry, and intensifiers such as \"very\" and \"most\"."
+        "id": "Film, lagu, telepon, komputer, dan hal-hal yang menyenangkan.",
+        "en": "Films, songs, phones, computers and things that are fun."
+      },
+      "words": [
+        "L1-0371",
+        "L1-0040",
+        "L1-0119",
+        "L1-0082",
+        "L1-0080",
+        "L1-0079",
+        "L1-0340",
+        "L1-0078",
+        "L1-0525",
+        "L1-0058",
+        "L1-0140",
+        "L1-0141",
+        "L1-0142"
+      ]
+    },
+    {
+      "id": "u21",
+      "order": 21,
+      "slug": "sifat",
+      "title": {
+        "id": "Sifat, cuaca & penguat",
+        "en": "Describing things & weather"
+      },
+      "description": {
+        "id": "Besar, kecil, baru, cantik, panas, dingin, hujan, salju, dan kata penguat.",
+        "en": "Big, small, new, pretty, hot, cold, rain, snow and intensifiers."
       },
       "words": [
         "L1-0061",
         "L1-0401",
-        "L1-0115",
-        "L1-0006",
         "L1-0411",
-        "L1-0483",
-        "L1-0152",
-        "L1-0111",
+        "L1-0520",
         "L1-0212",
         "L1-0304",
-        "L1-0116",
-        "L1-0330",
-        "L1-0443",
-        "L1-0435",
+        "L1-0360",
+        "L1-0396",
+        "L1-0449",
+        "L1-0528",
         "L1-0358",
         "L1-0108",
-        "L1-0470",
-        "L1-0471",
-        "L1-0492",
-        "L1-0493",
-        "L1-0132",
-        "L1-0133",
-        "L1-0134",
-        "L1-0066",
-        "L1-0469",
-        "L1-0416",
-        "L1-0030"
+        "L1-0470"
       ]
     }
   ]

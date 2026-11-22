@@ -3400,5 +3400,236 @@
       "melakukan"
     ],
     "machine": true
+  },
+  "L1-0501": {
+    "ind": [
+      "sisi",
+      "(akhiran arah/sisi, mis. 东边)"
+    ],
+    "machine": true
+  },
+  "L1-0502": {
+    "ind": [
+      "jangan",
+      "tidak mau",
+      "tidak usah"
+    ],
+    "machine": true
+  },
+  "L1-0503": {
+    "ind": [
+      "supermarket",
+      "swalayan"
+    ],
+    "machine": true
+  },
+  "L1-0504": {
+    "ind": [
+      "taksi"
+    ],
+    "machine": true
+  },
+  "L1-0505": {
+    "ind": [
+      "semuanya",
+      "kalian semua",
+      "hadirin"
+    ],
+    "machine": true
+  },
+  "L1-0506": {
+    "ind": [
+      "toko",
+      "kedai"
+    ],
+    "machine": true
+  },
+  "L1-0507": {
+    "ind": [
+      "menit"
+    ],
+    "machine": true
+  },
+  "L1-0508": {
+    "ind": [
+      "perusahaan",
+      "kantor (perusahaan)"
+    ],
+    "machine": true
+  },
+  "L1-0509": {
+    "ind": [
+      "anjing"
+    ],
+    "machine": true
+  },
+  "L1-0510": {
+    "ind": [
+      "(penggolong untuk pakaian dan urusan)",
+      "potong"
+    ],
+    "machine": true
+  },
+  "L1-0511": {
+    "ind": [
+      "pangsit Tiongkok",
+      "jiaozi"
+    ],
+    "machine": true
+  },
+  "L1-0512": {
+    "ind": [
+      "boleh",
+      "bisa",
+      "dapat"
+    ],
+    "machine": true
+  },
+  "L1-0513": {
+    "ind": [
+      "menjual"
+    ],
+    "machine": true
+  },
+  "L1-0514": {
+    "ind": [
+      "kucing"
+    ],
+    "machine": true
+  },
+  "L1-0515": {
+    "ind": [
+      "yang itu",
+      "itu"
+    ],
+    "machine": true
+  },
+  "L1-0516": {
+    "ind": [
+      "yang mana",
+      "mana"
+    ],
+    "machine": true
+  },
+  "L1-0517": {
+    "ind": [
+      "halo",
+      "hai (salam)"
+    ],
+    "machine": true
+  },
+  "L1-0518": {
+    "ind": [
+      "ibu (sopan)",
+      "nyonya",
+      "wanita"
+    ],
+    "machine": true
+  },
+  "L1-0519": {
+    "ind": [
+      "murah"
+    ],
+    "machine": true
+  },
+  "L1-0520": {
+    "ind": [
+      "cantik",
+      "bagus"
+    ],
+    "machine": true
+  },
+  "L1-0521": {
+    "ind": [
+      "apel"
+    ],
+    "machine": true
+  },
+  "L1-0522": {
+    "ind": [
+      "seribu"
+    ],
+    "machine": true
+  },
+  "L1-0523": {
+    "ind": [
+      "dia (untuk benda atau hewan)",
+      "itu"
+    ],
+    "machine": true
+  },
+  "L1-0524": {
+    "ind": [
+      "mereka (benda atau hewan)"
+    ],
+    "machine": true
+  },
+  "L1-0525": {
+    "ind": [
+      "halo (di telepon)",
+      "hei"
+    ],
+    "machine": true
+  },
+  "L1-0526": {
+    "ind": [
+      "pertanyaan",
+      "masalah"
+    ],
+    "machine": true
+  },
+  "L1-0527": {
+    "ind": [
+      "beberapa",
+      "sedikit"
+    ],
+    "machine": true
+  },
+  "L1-0528": {
+    "ind": [
+      "salju"
+    ],
+    "machine": true
+  },
+  "L1-0529": {
+    "ind": [
+      "kursi"
+    ],
+    "machine": true
+  },
+  "L1-0530": {
+    "ind": [
+      "agak",
+      "sedikit (biasanya hal yang kurang baik)"
+    ],
+    "machine": true
+  },
+  "L1-0531": {
+    "ind": [
+      "bagaimana",
+      "bagaimana kalau"
+    ],
+    "machine": true
+  },
+  "L1-0532": {
+    "ind": [
+      "yang ini",
+      "ini"
+    ],
+    "machine": true
+  },
+  "L1-0533": {
+    "ind": [
+      "(penggolong untuk hewan kecil)",
+      "ekor"
+    ],
+    "machine": true
+  },
+  "L1-0534": {
+    "ind": [
+      "memasak",
+      "menyiapkan makanan"
+    ],
+    "machine": true
   }
 }

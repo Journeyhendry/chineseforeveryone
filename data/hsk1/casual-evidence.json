@@ -397,7 +397,7 @@
     },
     {
       "id": "c-u01-06",
-      "unit": "u01",
+      "unit": null,
       "hanzi": "没事",
       "label": "santai",
       "sources": {
@@ -476,8 +476,9 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "没事 sekarang kata HSK 1 sendiri (silabus 2025)",
       "reasons": []
     },
     {
@@ -596,7 +597,7 @@
     },
     {
       "id": "c-u02-01",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "俩",
       "label": "santai",
       "sources": {
@@ -694,7 +695,7 @@
     },
     {
       "id": "c-u02-02",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "仨",
       "label": "santai",
       "sources": {
@@ -763,7 +764,7 @@
     },
     {
       "id": "c-u02-03",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "好多",
       "label": "santai",
       "sources": {
@@ -840,7 +841,7 @@
     },
     {
       "id": "c-u02-04",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "一点点",
       "label": "santai",
       "sources": {
@@ -914,7 +915,7 @@
     },
     {
       "id": "c-u02-05",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "好几个",
       "label": "santai",
       "sources": {
@@ -979,7 +980,7 @@
     },
     {
       "id": "c-u02-06",
-      "unit": "u02",
+      "unit": "u06",
       "hanzi": "一堆",
       "label": "santai",
       "sources": {
@@ -1054,7 +1055,7 @@
     },
     {
       "id": "c-u03-01",
-      "unit": "u03",
+      "unit": null,
       "hanzi": "干嘛",
       "label": "santai",
       "sources": {
@@ -1138,14 +1139,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「干什么」 memuat kata di luar 300: 干",
       "reasons": [
         "flag vulgar (wiktionary)"
       ]
     },
     {
       "id": "c-u03-02",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "没错",
       "label": "santai",
       "sources": {
@@ -1224,7 +1226,7 @@
     },
     {
       "id": "c-u03-03",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "可不是",
       "label": "santai",
       "sources": {
@@ -1296,7 +1298,7 @@
     },
     {
       "id": "c-u03-04",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "怎么回事",
       "label": "santai",
       "sources": {
@@ -1374,7 +1376,7 @@
     },
     {
       "id": "c-u03-05",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "真的假的",
       "label": "gaul",
       "sources": {
@@ -1430,7 +1432,7 @@
     },
     {
       "id": "c-u03-06",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "不会吧",
       "label": "santai",
       "sources": {
@@ -1495,7 +1497,7 @@
     },
     {
       "id": "c-u03-07",
-      "unit": "u03",
+      "unit": "u05",
       "hanzi": "嗯",
       "label": "santai",
       "sources": {
@@ -1591,7 +1593,7 @@
     },
     {
       "id": "c-u04-01",
-      "unit": "u04",
+      "unit": "u07",
       "hanzi": "帅哥",
       "label": "santai",
       "sources": {
@@ -1667,7 +1669,7 @@
     },
     {
       "id": "c-u04-02",
-      "unit": "u04",
+      "unit": null,
       "hanzi": "美女",
       "label": "santai",
       "sources": {
@@ -1731,13 +1733,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 小姐 bukan kata silabus 2025",
       "reasons": []
     },
     {
       "id": "c-u04-03",
-      "unit": "u04",
+      "unit": "u07",
       "hanzi": "哥们儿",
       "label": "santai",
       "sources": {
@@ -1811,7 +1814,7 @@
     },
     {
       "id": "c-u04-04",
-      "unit": "u04",
+      "unit": "u07",
       "hanzi": "闺蜜",
       "label": "gaul",
       "sources": {
@@ -1880,7 +1883,7 @@
     },
     {
       "id": "c-u04-05",
-      "unit": "u04",
+      "unit": "u07",
       "hanzi": "老铁",
       "label": "gaul",
       "sources": {
@@ -1961,7 +1964,7 @@
     },
     {
       "id": "c-u04-06",
-      "unit": "u04",
+      "unit": null,
       "hanzi": "小姐姐",
       "label": "gaul",
       "sources": {
@@ -2023,13 +2026,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 小姐 bukan kata silabus 2025",
       "reasons": []
     },
     {
       "id": "c-u04-07",
-      "unit": "u04",
+      "unit": null,
       "hanzi": "小伙子",
       "label": "santai",
       "sources": {
@@ -2105,13 +2109,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「男孩儿」 memuat kata di luar 300: 孩儿",
       "reasons": []
     },
     {
       "id": "c-u05-01",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "老爸",
       "label": "santai",
       "sources": {
@@ -2198,7 +2203,7 @@
     },
     {
       "id": "c-u05-02",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "老妈",
       "label": "santai",
       "sources": {
@@ -2282,7 +2287,7 @@
     },
     {
       "id": "c-u05-03",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "爸妈",
       "label": "santai",
       "sources": {
@@ -2356,7 +2361,7 @@
     },
     {
       "id": "c-u05-04",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "宝贝",
       "label": "santai",
       "sources": {
@@ -2474,7 +2479,7 @@
     },
     {
       "id": "c-u05-05",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "闺女",
       "label": "santai",
       "sources": {
@@ -2557,7 +2562,7 @@
     },
     {
       "id": "c-u05-06",
-      "unit": "u05",
+      "unit": "u14",
       "hanzi": "宅",
       "label": "gaul",
       "sources": {
@@ -2643,7 +2648,7 @@
     },
     {
       "id": "c-u05-07",
-      "unit": "u05",
+      "unit": "u08",
       "hanzi": "老弟",
       "label": "santai",
       "sources": {
@@ -2723,7 +2728,7 @@
     },
     {
       "id": "c-u06-01",
-      "unit": "u06",
+      "unit": "u09",
       "hanzi": "吃货",
       "label": "gaul",
       "sources": {
@@ -2811,7 +2816,7 @@
     },
     {
       "id": "c-u06-02",
-      "unit": "u06",
+      "unit": "u09",
       "hanzi": "买单",
       "label": "santai",
       "sources": {
@@ -2896,7 +2901,7 @@
     },
     {
       "id": "c-u06-03",
-      "unit": "u06",
+      "unit": null,
       "hanzi": "饿死了",
       "label": "santai",
       "sources": {
@@ -2954,14 +2959,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「很饿」 memuat kata di luar 300: 饿",
       "reasons": [
         "only 1 source(s): tatoeba"
       ]
     },
     {
       "id": "c-u06-04",
-      "unit": "u06",
+      "unit": null,
       "hanzi": "打包",
       "label": "santai",
       "sources": {
@@ -3038,13 +3044,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「拿走」 memuat kata di luar 300: 拿走",
       "reasons": []
     },
     {
       "id": "c-u06-05",
-      "unit": "u06",
+      "unit": "u15",
       "hanzi": "馋",
       "label": "santai",
       "sources": {
@@ -3123,7 +3130,7 @@
     },
     {
       "id": "c-u06-06",
-      "unit": "u06",
+      "unit": "u09",
       "hanzi": "开吃",
       "label": "santai",
       "sources": {
@@ -3186,7 +3193,7 @@
     },
     {
       "id": "c-u07-01",
-      "unit": "u07",
+      "unit": "u10",
       "hanzi": "礼拜天",
       "label": "santai",
       "sources": {
@@ -3256,7 +3263,7 @@
     },
     {
       "id": "c-u07-02",
-      "unit": "u07",
+      "unit": "u10",
       "hanzi": "礼拜",
       "label": "santai",
       "sources": {
@@ -3353,7 +3360,7 @@
     },
     {
       "id": "c-u07-03",
-      "unit": "u07",
+      "unit": null,
       "hanzi": "改天",
       "label": "santai",
       "sources": {
@@ -3419,13 +3426,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「下次」 memuat kata di luar 300: 次",
       "reasons": []
     },
     {
       "id": "c-u07-04",
-      "unit": "u07",
+      "unit": null,
       "hanzi": "回头",
       "label": "santai",
       "sources": {
@@ -3521,13 +3529,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「下次」 memuat kata di luar 300: 次",
       "reasons": []
     },
     {
       "id": "c-u07-05",
-      "unit": "u07",
+      "unit": "u11",
       "hanzi": "一大早",
       "label": "santai",
       "sources": {
@@ -3598,7 +3607,7 @@
     },
     {
       "id": "c-u07-06",
-      "unit": "u07",
+      "unit": null,
       "hanzi": "天天",
       "label": "santai",
       "sources": {
@@ -3674,14 +3683,15 @@
         "comment": "天天 means every day (每天), not 常常 (often); equivalent mismatched."
       },
       "passed": false,
-      "failedAt": 3,
+      "failedAt": null,
+      "dropped": "padanan HSK 「常常」 memuat kata di luar 300: 常常",
       "reasons": [
         "verdict fail"
       ]
     },
     {
       "id": "c-u07-07",
-      "unit": "u07",
+      "unit": "u10",
       "hanzi": "明儿",
       "label": "santai",
       "sources": {
@@ -3759,7 +3769,7 @@
     },
     {
       "id": "c-u08-01",
-      "unit": "u08",
+      "unit": null,
       "hanzi": "等会儿",
       "label": "santai",
       "sources": {
@@ -3807,14 +3817,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「一会儿」 memuat kata di luar 300: 儿",
       "reasons": [
         "only 1 source(s): wiktionary"
       ]
     },
     {
       "id": "c-u08-02",
-      "unit": "u08",
+      "unit": null,
       "hanzi": "稍等",
       "label": "santai",
       "sources": {
@@ -3877,13 +3888,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「等一下儿」 memuat kata di luar 300: 等",
       "reasons": []
     },
     {
       "id": "c-u08-03",
-      "unit": "u08",
+      "unit": null,
       "hanzi": "赶紧",
       "label": "santai",
       "sources": {
@@ -3952,13 +3964,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「马上」 memuat kata di luar 300: 马",
       "reasons": []
     },
     {
       "id": "c-u08-04",
-      "unit": "u08",
+      "unit": null,
       "hanzi": "磨蹭",
       "label": "santai",
       "sources": {
@@ -4028,13 +4041,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「慢」 memuat kata di luar 300: 慢",
       "reasons": []
     },
     {
       "id": "c-u08-05",
-      "unit": "u08",
+      "unit": "u11",
       "hanzi": "来不及",
       "label": "santai",
       "sources": {
@@ -4109,7 +4123,7 @@
     },
     {
       "id": "c-u08-06",
-      "unit": "u08",
+      "unit": "u11",
       "hanzi": "早着呢",
       "label": "santai",
       "sources": {
@@ -4174,7 +4188,7 @@
     },
     {
       "id": "c-u08-07",
-      "unit": "u08",
+      "unit": "u18",
       "hanzi": "熬夜",
       "label": "santai",
       "sources": {
@@ -4243,7 +4257,7 @@
     },
     {
       "id": "c-u09-01",
-      "unit": "u09",
+      "unit": "u12",
       "hanzi": "里头",
       "label": "santai",
       "sources": {
@@ -4321,7 +4335,7 @@
     },
     {
       "id": "c-u09-02",
-      "unit": "u09",
+      "unit": "u12",
       "hanzi": "外头",
       "label": "santai",
       "sources": {
@@ -4399,7 +4413,7 @@
     },
     {
       "id": "c-u09-03",
-      "unit": "u09",
+      "unit": "u12",
       "hanzi": "前头",
       "label": "santai",
       "sources": {
@@ -4462,7 +4476,7 @@
     },
     {
       "id": "c-u09-04",
-      "unit": "u09",
+      "unit": "u12",
       "hanzi": "后头",
       "label": "santai",
       "sources": {
@@ -4541,7 +4555,7 @@
     },
     {
       "id": "c-u09-05",
-      "unit": "u09",
+      "unit": "u12",
       "hanzi": "上头",
       "label": "santai",
       "sources": {
@@ -4703,7 +4717,7 @@
     },
     {
       "id": "c-u09-06",
-      "unit": "u09",
+      "unit": null,
       "hanzi": "隔壁",
       "label": "santai",
       "sources": {
@@ -4775,13 +4789,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「旁边」 memuat kata di luar 300: 旁",
       "reasons": []
     },
     {
       "id": "c-u10-01",
-      "unit": "u10",
+      "unit": "u13",
       "hanzi": "逛街",
       "label": "santai",
       "sources": {
@@ -4852,7 +4867,7 @@
     },
     {
       "id": "c-u10-02",
-      "unit": "u10",
+      "unit": null,
       "hanzi": "溜达",
       "label": "santai",
       "sources": {
@@ -4917,13 +4932,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「走走」 memuat kata di luar 300: 走走",
       "reasons": []
     },
     {
       "id": "c-u10-03",
-      "unit": "u10",
+      "unit": null,
       "hanzi": "老远",
       "label": "santai",
       "sources": {
@@ -4983,13 +4999,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「很远」 memuat kata di luar 300: 远",
       "reasons": []
     },
     {
       "id": "c-u10-04",
-      "unit": "u10",
+      "unit": null,
       "hanzi": "地儿",
       "label": "santai",
       "sources": {
@@ -5048,13 +5065,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「地方」 memuat kata di luar 300: 地方",
       "reasons": []
     },
     {
       "id": "c-u10-05",
-      "unit": "u10",
+      "unit": null,
       "hanzi": "出门",
       "label": "santai",
       "sources": {
@@ -5140,13 +5158,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「出去」 memuat kata di luar 300: 出",
       "reasons": []
     },
     {
       "id": "c-u10-06",
-      "unit": "u10",
+      "unit": "u21",
       "hanzi": "大晴天",
       "label": "santai",
       "sources": {
@@ -5207,7 +5226,7 @@
     },
     {
       "id": "c-u11-01",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "赖床",
       "label": "santai",
       "sources": {
@@ -5274,7 +5293,7 @@
     },
     {
       "id": "c-u11-02",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "睡懒觉",
       "label": "santai",
       "sources": {
@@ -5344,7 +5363,7 @@
     },
     {
       "id": "c-u11-03",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "搞定",
       "label": "santai",
       "sources": {
@@ -5415,7 +5434,7 @@
     },
     {
       "id": "c-u11-04",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "弄",
       "label": "santai",
       "sources": {
@@ -5553,7 +5572,7 @@
     },
     {
       "id": "c-u11-05",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "困死了",
       "label": "santai",
       "sources": {
@@ -5610,7 +5629,7 @@
     },
     {
       "id": "c-u11-06",
-      "unit": "u11",
+      "unit": null,
       "hanzi": "收拾",
       "label": "santai",
       "sources": {
@@ -5698,13 +5717,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「放好」 memuat kata di luar 300: 放",
       "reasons": []
     },
     {
       "id": "c-u11-07",
-      "unit": "u11",
+      "unit": "u14",
       "hanzi": "起不来",
       "label": "santai",
       "sources": {
@@ -5761,7 +5781,7 @@
     },
     {
       "id": "c-u12-01",
-      "unit": "u12",
+      "unit": null,
       "hanzi": "打的",
       "label": "santai",
       "sources": {
@@ -5828,7 +5848,8 @@
         "comment": "打的 is dated; 打车 / app-hailing is what people say now."
       },
       "passed": false,
-      "failedAt": 3,
+      "failedAt": null,
+      "dropped": "padanan HSK 「打车」 memuat kata di luar 300: 打",
       "reasons": [
         "verdict fail",
         "natural 3 < 4"
@@ -5836,7 +5857,7 @@
     },
     {
       "id": "c-u12-02",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "堵车",
       "label": "santai",
       "sources": {
@@ -5911,7 +5932,7 @@
     },
     {
       "id": "c-u12-03",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "师傅",
       "label": "santai",
       "sources": {
@@ -5997,7 +6018,7 @@
     },
     {
       "id": "c-u12-04",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "慢走",
       "label": "santai",
       "sources": {
@@ -6073,7 +6094,7 @@
     },
     {
       "id": "c-u12-05",
-      "unit": "u12",
+      "unit": null,
       "hanzi": "快点儿",
       "label": "santai",
       "sources": {
@@ -6142,13 +6163,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「快」 memuat kata di luar 300: 快",
       "reasons": []
     },
     {
       "id": "c-u12-06",
-      "unit": "u12",
+      "unit": "u13",
       "hanzi": "搭车",
       "label": "santai",
       "sources": {
@@ -6221,7 +6243,7 @@
     },
     {
       "id": "c-u13-01",
-      "unit": "u13",
+      "unit": "u01",
       "hanzi": "回见",
       "label": "santai",
       "sources": {
@@ -6292,7 +6314,7 @@
     },
     {
       "id": "c-u13-02",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "碰面",
       "label": "santai",
       "sources": {
@@ -6358,7 +6380,8 @@
         "comment": "碰面 is more Taiwan usage; mainland says 见面/碰头."
       },
       "passed": false,
-      "failedAt": 3,
+      "failedAt": null,
+      "dropped": "padanan HSK 「见面」 memuat kata di luar 300: 面",
       "reasons": [
         "verdict fail",
         "natural 3 < 4"
@@ -6366,7 +6389,7 @@
     },
     {
       "id": "c-u13-03",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "闪人",
       "label": "gaul",
       "sources": {
@@ -6432,7 +6455,8 @@
         "comment": "闪人 is dated slang; few younger speakers use it now."
       },
       "passed": false,
-      "failedAt": 3,
+      "failedAt": null,
+      "dropped": "padanan HSK 「走」 memuat kata di luar 300: 走",
       "reasons": [
         "verdict fail",
         "natural 3 < 4"
@@ -6440,7 +6464,7 @@
     },
     {
       "id": "c-u13-04",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "撤",
       "label": "gaul",
       "sources": {
@@ -6510,13 +6534,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「走」 memuat kata di luar 300: 走",
       "reasons": []
     },
     {
       "id": "c-u13-05",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "走啦",
       "label": "santai",
       "sources": {
@@ -6559,14 +6584,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「走了」 memuat kata di luar 300: 走",
       "reasons": [
         "only 0 source(s): none"
       ]
     },
     {
       "id": "c-u13-06",
-      "unit": "u13",
+      "unit": "u14",
       "hanzi": "来了来了",
       "label": "santai",
       "sources": {
@@ -6616,7 +6642,7 @@
     },
     {
       "id": "c-u14-01",
-      "unit": "u14",
+      "unit": "u16",
       "hanzi": "学霸",
       "label": "gaul",
       "sources": {
@@ -6684,7 +6710,7 @@
     },
     {
       "id": "c-u14-02",
-      "unit": "u14",
+      "unit": null,
       "hanzi": "学渣",
       "label": "gaul",
       "sources": {
@@ -6747,13 +6773,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不认真的学生」 memuat kata di luar 300: 认",
       "reasons": []
     },
     {
       "id": "c-u14-03",
-      "unit": "u14",
+      "unit": null,
       "hanzi": "考砸了",
       "label": "santai",
       "sources": {
@@ -6825,13 +6852,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「没考好」 memuat kata di luar 300: 考",
       "reasons": []
     },
     {
       "id": "c-u14-04",
-      "unit": "u14",
+      "unit": null,
       "hanzi": "挂科",
       "label": "gaul",
       "sources": {
@@ -6906,13 +6934,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「考试没过」 memuat kata di luar 300: 考试 过",
       "reasons": []
     },
     {
       "id": "c-u14-05",
-      "unit": "u14",
+      "unit": "u16",
       "hanzi": "逃课",
       "label": "santai",
       "sources": {
@@ -6986,7 +7015,7 @@
     },
     {
       "id": "c-u14-06",
-      "unit": "u14",
+      "unit": "u16",
       "hanzi": "同桌",
       "label": "santai",
       "sources": {
@@ -7056,7 +7085,7 @@
     },
     {
       "id": "c-u15-01",
-      "unit": "u15",
+      "unit": "u17",
       "hanzi": "老外",
       "label": "santai",
       "sources": {
@@ -7141,7 +7170,7 @@
     },
     {
       "id": "c-u15-02",
-      "unit": "u15",
+      "unit": "u17",
       "hanzi": "聊天",
       "label": "santai",
       "sources": {
@@ -7210,7 +7239,7 @@
     },
     {
       "id": "c-u15-03",
-      "unit": "u15",
+      "unit": null,
       "hanzi": "吹牛",
       "label": "santai",
       "sources": {
@@ -7277,13 +7306,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「说大话」 memuat kata di luar 300: 话",
       "reasons": []
     },
     {
       "id": "c-u15-04",
-      "unit": "u15",
+      "unit": null,
       "hanzi": "瞎说",
       "label": "santai",
       "sources": {
@@ -7353,13 +7383,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「说错」 memuat kata di luar 300: 错",
       "reasons": []
     },
     {
       "id": "c-u15-05",
-      "unit": "u15",
+      "unit": "u17",
       "hanzi": "唠叨",
       "label": "santai",
       "sources": {
@@ -7441,7 +7472,7 @@
     },
     {
       "id": "c-u15-06",
-      "unit": "u15",
+      "unit": null,
       "hanzi": "听不懂",
       "label": "santai",
       "sources": {
@@ -7509,13 +7540,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不明白」 memuat kata di luar 300: 明白",
       "reasons": []
     },
     {
       "id": "c-u15-07",
-      "unit": "u15",
+      "unit": null,
       "hanzi": "废话",
       "label": "kasar",
       "sources": {
@@ -7590,13 +7622,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不用说」 memuat kata di luar 300: 用",
       "reasons": []
     },
     {
       "id": "c-u16-01",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "懂",
       "label": "santai",
       "sources": {
@@ -7678,13 +7711,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「明白」 memuat kata di luar 300: 明白",
       "reasons": []
     },
     {
       "id": "c-u16-02",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "搞不懂",
       "label": "santai",
       "sources": {
@@ -7749,13 +7783,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不明白」 memuat kata di luar 300: 明白",
       "reasons": []
     },
     {
       "id": "c-u16-03",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "靠谱",
       "label": "santai",
       "sources": {
@@ -7827,13 +7862,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「行」 memuat kata di luar 300: 行",
       "reasons": []
     },
     {
       "id": "c-u16-04",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "牛",
       "label": "gaul",
       "sources": {
@@ -7938,13 +7974,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「真行」 memuat kata di luar 300: 行",
       "reasons": []
     },
     {
       "id": "c-u16-05",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "厉害",
       "label": "santai",
       "sources": {
@@ -8030,13 +8067,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「真行」 memuat kata di luar 300: 行",
       "reasons": []
     },
     {
       "id": "c-u16-06",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "没戏",
       "label": "santai",
       "sources": {
@@ -8098,13 +8136,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不行」 memuat kata di luar 300: 行",
       "reasons": []
     },
     {
       "id": "c-u16-07",
-      "unit": "u16",
+      "unit": "u15",
       "hanzi": "估计",
       "label": "santai",
       "sources": {
@@ -8181,7 +8220,7 @@
     },
     {
       "id": "c-u16-08",
-      "unit": "u16",
+      "unit": null,
       "hanzi": "没门儿",
       "label": "santai",
       "sources": {
@@ -8251,13 +8290,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不行」 memuat kata di luar 300: 行",
       "reasons": []
     },
     {
       "id": "c-u17-01",
-      "unit": "u17",
+      "unit": null,
       "hanzi": "累死了",
       "label": "santai",
       "sources": {
@@ -8315,14 +8355,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「很累」 memuat kata di luar 300: 累",
       "reasons": [
         "only 1 source(s): tatoeba"
       ]
     },
     {
       "id": "c-u17-02",
-      "unit": "u17",
+      "unit": "u18",
       "hanzi": "忙死了",
       "label": "santai",
       "sources": {
@@ -8387,7 +8428,7 @@
     },
     {
       "id": "c-u17-03",
-      "unit": "u17",
+      "unit": "u18",
       "hanzi": "打工",
       "label": "santai",
       "sources": {
@@ -8469,7 +8510,7 @@
     },
     {
       "id": "c-u17-04",
-      "unit": "u17",
+      "unit": null,
       "hanzi": "打工人",
       "label": "gaul",
       "sources": {
@@ -8524,13 +8565,14 @@
         "labelOk": true,
         "comment": "Fairly common (somewhat northern, trendy or looser match to the equivalent) but acceptable; pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「工人」 memuat kata di luar 300: 工",
       "reasons": []
     },
     {
       "id": "c-u17-05",
-      "unit": "u17",
+      "unit": null,
       "hanzi": "摸鱼",
       "label": "gaul",
       "sources": {
@@ -8595,13 +8637,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「不认真工作」 memuat kata di luar 300: 认",
       "reasons": []
     },
     {
       "id": "c-u17-06",
-      "unit": "u17",
+      "unit": null,
       "hanzi": "歇会儿",
       "label": "santai",
       "sources": {
@@ -8654,14 +8697,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「休息一会儿」 memuat kata di luar 300: 儿",
       "reasons": [
         "only 0 source(s): none"
       ]
     },
     {
       "id": "c-u17-07",
-      "unit": "u17",
+      "unit": "u18",
       "hanzi": "难受",
       "label": "santai",
       "sources": {
@@ -8739,7 +8783,7 @@
     },
     {
       "id": "c-u18-01",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "扫码",
       "label": "santai",
       "sources": {
@@ -8803,7 +8847,7 @@
     },
     {
       "id": "c-u18-02",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "划算",
       "label": "santai",
       "sources": {
@@ -8879,7 +8923,7 @@
     },
     {
       "id": "c-u18-03",
-      "unit": "u18",
+      "unit": null,
       "hanzi": "砍价",
       "label": "santai",
       "sources": {
@@ -8944,13 +8988,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「说便宜点儿」 memuat kata di luar 300: 儿",
       "reasons": []
     },
     {
       "id": "c-u18-04",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "坑",
       "label": "santai",
       "sources": {
@@ -9075,7 +9120,7 @@
     },
     {
       "id": "c-u18-05",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "老板",
       "label": "santai",
       "sources": {
@@ -9171,7 +9216,7 @@
     },
     {
       "id": "c-u18-06",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "便宜点儿",
       "label": "santai",
       "sources": {
@@ -9246,7 +9291,7 @@
     },
     {
       "id": "c-u18-07",
-      "unit": "u18",
+      "unit": "u19",
       "hanzi": "剁手",
       "label": "gaul",
       "sources": {
@@ -9300,7 +9345,7 @@
     },
     {
       "id": "c-u19-01",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "追剧",
       "label": "gaul",
       "sources": {
@@ -9371,7 +9416,7 @@
     },
     {
       "id": "c-u19-02",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "刷手机",
       "label": "gaul",
       "sources": {
@@ -9442,7 +9487,7 @@
     },
     {
       "id": "c-u19-03",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "打游戏",
       "label": "santai",
       "sources": {
@@ -9513,7 +9558,7 @@
     },
     {
       "id": "c-u19-04",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "有意思",
       "label": "santai",
       "sources": {
@@ -9588,7 +9633,7 @@
     },
     {
       "id": "c-u19-05",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "没意思",
       "label": "santai",
       "sources": {
@@ -9665,7 +9710,7 @@
     },
     {
       "id": "c-u19-06",
-      "unit": "u19",
+      "unit": "u20",
       "hanzi": "无聊",
       "label": "santai",
       "sources": {
@@ -9752,7 +9797,7 @@
     },
     {
       "id": "c-u19-07",
-      "unit": "u19",
+      "unit": null,
       "hanzi": "笑死我了",
       "label": "gaul",
       "sources": {
@@ -9810,14 +9855,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「很好笑」 memuat kata di luar 300: 笑",
       "reasons": [
         "only 1 source(s): tatoeba"
       ]
     },
     {
       "id": "c-u19-08",
-      "unit": "u19",
+      "unit": null,
       "hanzi": "哈哈",
       "label": "santai",
       "sources": {
@@ -9893,13 +9939,14 @@
         "labelOk": true,
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「笑」 memuat kata di luar 300: 笑",
       "reasons": []
     },
     {
       "id": "c-u20-01",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "挺",
       "label": "santai",
       "sources": {
@@ -10007,7 +10054,7 @@
     },
     {
       "id": "c-u20-02",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "超",
       "label": "gaul",
       "sources": {
@@ -10107,7 +10154,7 @@
     },
     {
       "id": "c-u20-03",
-      "unit": "u20",
+      "unit": "u15",
       "hanzi": "开心",
       "label": "santai",
       "sources": {
@@ -10190,7 +10237,7 @@
     },
     {
       "id": "c-u20-04",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "太棒了",
       "label": "santai",
       "sources": {
@@ -10255,7 +10302,7 @@
     },
     {
       "id": "c-u20-05",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "热死了",
       "label": "santai",
       "sources": {
@@ -10316,7 +10363,7 @@
     },
     {
       "id": "c-u20-06",
-      "unit": "u20",
+      "unit": null,
       "hanzi": "气死我了",
       "label": "santai",
       "sources": {
@@ -10366,14 +10413,15 @@
         "comment": "Common and natural in mainland speech; meaning, pinyin and label fine."
       },
       "passed": false,
-      "failedAt": 2,
+      "failedAt": null,
+      "dropped": "padanan HSK 「很生气」 memuat kata di luar 300: 生气",
       "reasons": [
         "only 1 source(s): tatoeba"
       ]
     },
     {
       "id": "c-u20-07",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "绝了",
       "label": "gaul",
       "sources": {
@@ -10454,7 +10502,7 @@
     },
     {
       "id": "c-u20-08",
-      "unit": "u20",
+      "unit": "u21",
       "hanzi": "一般般",
       "label": "santai",
       "sources": {
@@ -10521,7 +10569,7 @@
     },
     {
       "id": "c-u13-07",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "走人",
       "label": "santai",
       "sources": {
@@ -10583,7 +10631,8 @@
         "comment": "Mainland-used, but abrupt/brusque and often means walking out or being let go; 我们走吧 is the natural way to say it is time to leave."
       },
       "passed": false,
-      "failedAt": 3,
+      "failedAt": null,
+      "dropped": "padanan HSK 「走」 memuat kata di luar 300: 走",
       "reasons": [
         "verdict fail",
         "natural 3 < 4"
@@ -10591,7 +10640,7 @@
     },
     {
       "id": "c-u13-08",
-      "unit": "u13",
+      "unit": null,
       "hanzi": "好久不见",
       "label": "santai",
       "sources": {
@@ -10659,13 +10708,14 @@
         "labelOk": true,
         "comment": "Very common mainland greeting; pinyin and meaning fine; neutral-friendly, fine as santai."
       },
-      "passed": true,
+      "passed": false,
       "failedAt": null,
+      "dropped": "padanan HSK 「很多天没见面」 memuat kata di luar 300: 面",
       "reasons": []
     },
     {
       "id": "c-u13-09",
-      "unit": "u13",
+      "unit": "u11",
       "hanzi": "不见不散",
       "label": "santai",
       "sources": {
@@ -10728,7 +10778,7 @@
     },
     {
       "id": "c-u13-10",
-      "unit": "u13",
+      "unit": "u07",
       "hanzi": "串门",
       "label": "santai",
       "sources": {

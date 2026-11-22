@@ -3,699 +3,87 @@
   "unit": {
     "id": "u12",
     "order": 12,
-    "slug": "transportasi",
+    "slug": "arah",
     "title": {
-      "id": "Transportasi",
-      "en": "Transport"
+      "id": "Arah, pergi & datang",
+      "en": "Directions, going & coming"
     },
     "description": {
-      "id": "Kendaraan, tiket, naik, turun, dan cara bepergian.",
-      "en": "Vehicles, tickets, getting on and off, and ways of getting around."
+      "id": "Atas, bawah, depan, belakang, dalam, luar, serta pergi, datang, pulang, dan tiba.",
+      "en": "Up, down, front, back, inside, outside, and going, coming, returning and arriving."
     }
   },
   "words": [
     {
-      "id": "L1-0042",
-      "hanzi": "车",
-      "pinyin": "chē",
+      "id": "L1-0315",
+      "hanzi": "上",
+      "pinyin": "shàng",
       "syllables": [
-        "chē"
-      ],
-      "tones": [
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "car",
-        "vehicle",
-        "machine",
-        "to shape with a lathe"
-      ],
-      "ind": [
-        "mobil",
-        "kendaraan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 472404,
-          "cmn": "你有车吗？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69236,
-            "text": "Do you have a car?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 710299,
-          "cmn": "您有车吗？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69236,
-            "text": "Do you have a car?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 789581,
-          "cmn": "这是我的车。",
-          "author": "jimcor",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 56205,
-            "text": "This is my car.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0290",
-      "hanzi": "汽车",
-      "pinyin": "qìchē",
-      "syllables": [
-        "qì",
-        "chē"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "car",
-        "automobile",
-        "bus"
-      ],
-      "ind": [
-        "mobil"
-      ],
-      "idMachine": true,
-      "chars": [
-        "汽",
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 651178,
-          "cmn": "他在汽车站等候。",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": "等候",
-          "en": {
-            "tatoebaId": 10529589,
-            "text": "He is waiting at the Greyhound station.",
-            "author": "DaoSeng",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8902704,
-          "cmn": "汽车有四个轮胎。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": "轮胎",
-          "en": {
-            "tatoebaId": 6689437,
-            "text": "Cars have four wheels.",
-            "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3378177,
-          "cmn": "去年我有五辆汽车。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "辆",
-          "en": {
-            "tatoebaId": 3378178,
-            "text": "Last year I had five cars.",
-            "author": "Jesse",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0161",
-      "hanzi": "火车",
-      "pinyin": "huǒchē",
-      "syllables": [
-        "huǒ",
-        "chē"
-      ],
-      "tones": [
-        3,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "train"
-      ],
-      "ind": [
-        "kereta api"
-      ],
-      "idMachine": true,
-      "chars": [
-        "火",
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 544885,
-          "cmn": "这是火车站吗？",
-          "author": "biglion",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 403071,
-            "text": "Is that the railroad station?",
-            "author": "Ramses",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1470393,
-          "cmn": "我坐火车回家了。",
-          "author": "bfsutian",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 262273,
-            "text": "I returned home by train.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 750140,
-          "cmn": "对不起，火车晚点了。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 56385,
-            "text": "Sorry. The train was late.",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0107",
-      "hanzi": "飞机",
-      "pinyin": "fēijī",
-      "syllables": [
-        "fēi",
-        "jī"
-      ],
-      "tones": [
-        1,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "airplane"
-      ],
-      "ind": [
-        "pesawat terbang"
-      ],
-      "idMachine": true,
-      "chars": [
-        "飞",
-        "机"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2117476,
-          "cmn": "这是他的飞机。",
-          "author": "joulin",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2166225,
-            "text": "This is his plane.",
-            "author": "faraway9911",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 512931,
-          "cmn": "他怕坐飞机。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "怕",
-          "en": {
-            "tatoebaId": 303270,
-            "text": "He is afraid to fly in an airplane.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1928585,
-          "cmn": "他们组装飞机。",
-          "author": "EDOBEAR",
-          "license": "CC BY 2.0 FR",
-          "outside": "组装",
-          "en": {
-            "tatoebaId": 1709185,
-            "text": "They assemble planes.",
-            "author": "Amastan",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0043",
-      "hanzi": "车票",
-      "pinyin": "chēpiào",
-      "syllables": [
-        "chē",
-        "piào"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "ticket (for a bus or train)"
-      ],
-      "ind": [
-        "tiket (bus, kereta, dsb.)"
-      ],
-      "idMachine": true,
-      "chars": [
-        "车",
-        "票"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 11837111,
-          "cmn": "我去火车站买车票。",
-          "author": "Lemmih",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 11837112,
-            "text": "I went to the train station to buy a ticket.",
-            "author": "Lemmih",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2394804,
-          "cmn": "在哪里可以买到车票？",
-          "author": "fenfang557",
-          "license": "CC BY 2.0 FR",
-          "outside": "可以",
-          "en": {
-            "tatoebaId": 2403395,
-            "text": "Where can you get tickets?",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0163",
-      "hanzi": "机票",
-      "pinyin": "jīpiào",
-      "syllables": [
-        "jī",
-        "piào"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "plane ticket; airline ticket"
-      ],
-      "ind": [
-        "tiket pesawat"
-      ],
-      "idMachine": true,
-      "chars": [
-        "机",
-        "票"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1927048,
-          "cmn": "订机票了吗？",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": "订",
-          "en": {
-            "tatoebaId": 318021,
-            "text": "Have you already booked our seats on a plane?",
-            "author": "CN",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6482556,
-          "cmn": "你买回程机票了吗？",
-          "author": "FAErika",
-          "license": "CC BY 2.0 FR",
-          "outside": "程",
-          "en": {
-            "tatoebaId": 891658,
-            "text": "Did you buy a return ticket?",
-            "author": "Swift",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 604478,
-          "cmn": "我能在机场领取机票吗？",
-          "author": "xiuqin",
-          "license": "CC BY 2.0 FR",
-          "outside": "领取",
-          "en": {
-            "tatoebaId": 241034,
-            "text": "Can I pick my ticket up at the airport?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0285",
-      "hanzi": "票",
-      "pinyin": "piào",
-      "syllables": [
-        "piào"
+        "shàng"
       ],
       "tones": [
         4
       ],
       "pos": [
-        "N"
+        "N",
+        "V"
       ],
       "en": [
-        "ticket",
-        "ballot",
-        "banknote",
-        "person held for ransom",
-        "amateur performance of Chinese opera",
-        "classifier for groups, batches, business transactions"
+        "(bound form) up; upper; above; previous",
+        "first (of multiple parts)",
+        "to climb; to get onto; to go up",
+        "to attend (class or university)",
+        "(directional complement) up",
+        "(noun suffix) on; above"
       ],
       "ind": [
-        "tiket",
-        "karcis"
+        "atas",
+        "naik",
+        "menghadiri (kelas)"
       ],
       "idMachine": true,
       "chars": [
-        "票"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5554545,
-          "cmn": "现在有票。",
-          "author": "Alieen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4494155,
-            "text": "Tickets are available now.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1020090,
-          "cmn": "你有今天的票吗？",
-          "author": "joro",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 280033,
-            "text": "Do you have today's tickets?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 389446,
-          "cmn": "不要忘了票。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2424,
-            "text": "Don't forget the ticket.",
-            "author": "Dorenda",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0240",
-      "hanzi": "门票",
-      "pinyin": "ménpiào",
-      "syllables": [
-        "mén",
-        "piào"
-      ],
-      "tones": [
-        2,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "ticket (for theater, cinema etc)"
-      ],
-      "ind": [
-        "tiket masuk"
-      ],
-      "idMachine": true,
-      "chars": [
-        "门",
-        "票"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 457644,
-          "cmn": "门票多少钱？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 281941,
-            "text": "How much is the entrance fee?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0057",
-      "hanzi": "打车",
-      "pinyin": "dǎchē",
-      "syllables": [
-        "dǎ",
-        "chē"
-      ],
-      "tones": [
-        3,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to take a taxi (in town)",
-        "to hitch a lift"
-      ],
-      "ind": [
-        "naik taksi",
-        "memesan taksi"
-      ],
-      "idMachine": true,
-      "chars": [
-        "打",
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 4900904,
-          "cmn": "我们打车去吧！",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13687836,
-            "text": "Let's catch a taxi!",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0189",
-      "hanzi": "开车",
-      "pinyin": "kāichē",
-      "syllables": [
-        "kāi",
-        "chē"
-      ],
-      "tones": [
-        1,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to drive a car (or train etc)"
-      ],
-      "ind": [
-        "mengemudi",
-        "menyetir"
-      ],
-      "idMachine": true,
-      "chars": [
-        "开",
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5092212,
-          "cmn": "开车慢点。",
-          "author": "mirrorvan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 30126,
-            "text": "Drive slowly.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4265129,
-          "cmn": "你开车很好。",
-          "author": "notabene",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4770663,
-            "text": "You are a good driver.",
-            "author": "garborg",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4764637,
-          "cmn": "我会开车。",
-          "author": "ryanwoo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 258393,
-            "text": "I know how to drive a car.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0044",
-      "hanzi": "车上",
-      "pinyin": "chēshang",
-      "syllables": [
-        "chē",
-        "shang"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [],
-      "en": [
-        "in the car",
-        "on the vehicle"
-      ],
-      "ind": [
-        "di dalam mobil",
-        "di atas kendaraan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "车",
         "上"
       ],
       "examples": [
         {
-          "tatoebaId": 10961059,
-          "cmn": "东西在爸爸的车上。",
-          "author": "xjjAstrus",
+          "tatoebaId": 2390036,
+          "cmn": "她上个月不在。",
+          "author": "sysko",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 10967202,
-            "text": "The things are in dad's car.",
-            "author": "carlosalberto",
+            "tatoebaId": 1977707,
+            "text": "She wasn't there last month.",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8976061,
+          "cmn": "桌子上有什么？",
+          "author": "crescat",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 20561,
+            "text": "What is on the desk?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 347218,
+          "cmn": "猫坐在桌子上。",
+          "author": "tommyfang95",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 535007,
+            "text": "The cat is sitting on top of the table.",
+            "author": "blay_paul",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -703,165 +91,228 @@
       ]
     },
     {
-      "id": "L1-0318",
-      "hanzi": "上车",
-      "pinyin": "shàngchē",
+      "id": "L1-0389",
+      "hanzi": "下",
+      "pinyin": "xià",
       "syllables": [
-        "shàng",
-        "chē"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to get on or into (a bus, train, car etc)"
-      ],
-      "ind": [
-        "naik kendaraan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "上",
-        "车"
-      ],
-      "examples": []
-    },
-    {
-      "id": "L1-0392",
-      "hanzi": "下车",
-      "pinyin": "xiàchē",
-      "syllables": [
-        "xià",
-        "chē"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to get off or out of (a bus, train, car etc)"
-      ],
-      "ind": [
-        "turun dari kendaraan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "下",
-        "车"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 375320,
-          "cmn": "我下一站下车。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 258187,
-            "text": "I am getting off at the next station.",
-            "author": "autuno",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 334085,
-          "cmn": "我在下一站下车。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 258187,
-            "text": "I am getting off at the next station.",
-            "author": "autuno",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13476739,
-          "cmn": "你在哪一站下车？",
-          "author": "ninefi",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13731455,
-            "text": "Which stop are you getting off at?",
-            "author": "humorous9830",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0498",
-      "hanzi": "坐",
-      "pinyin": "zuò",
-      "syllables": [
-        "zuò"
+        "xià"
       ],
       "tones": [
         4
       ],
       "pos": [
+        "N",
         "V"
       ],
       "en": [
-        "to sit",
-        "to take a seat",
-        "to take (a bus, airplane etc)",
-        "to bear fruit"
+        "down",
+        "downwards",
+        "below",
+        "lower",
+        "later",
+        "next (week etc)"
       ],
       "ind": [
-        "duduk",
-        "naik (kendaraan)"
+        "bawah",
+        "turun",
+        "berikutnya"
       ],
       "idMachine": true,
       "chars": [
-        "坐"
+        "下"
       ],
       "examples": [
         {
-          "tatoebaId": 1424389,
-          "cmn": "坐我旁边。",
-          "author": "sadhen",
+          "tatoebaId": 6002105,
+          "cmn": "狗在桌子下边。",
+          "author": "Thai",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 250344,
-            "text": "Sit beside me.",
+            "tatoebaId": 6004778,
+            "text": "The dog is under the table.",
+            "author": "tvindy",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13971953,
+          "cmn": "桌子下有老鼠。",
+          "author": "LeviHighway",
+          "license": "CC BY 2.0 FR",
+          "outside": "老鼠",
+          "en": {
+            "tatoebaId": 13971609,
+            "text": "There is a mouse under the table.",
+            "author": "rul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13975018,
+            "text": "Ada tikus di bawah meja.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 7779226,
+          "cmn": "从那儿下来！",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": "从",
+          "en": {
+            "tatoebaId": 51042,
+            "text": "Get down from there.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0291",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "syllables": [
+        "qián"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "front",
+        "forward",
+        "ahead",
+        "first",
+        "top (followed by a number)",
+        "future"
+      ],
+      "ind": [
+        "depan",
+        "sebelum"
+      ],
+      "idMachine": true,
+      "chars": [
+        "前"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 760850,
+          "cmn": "五百年前是一家。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7770325,
+            "text": "Five hundred years ago it was a house.",
+            "author": "sharris123",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4287494,
+          "cmn": "我到东京是两个月前。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": "东京",
+          "en": {
+            "tatoebaId": 4334407,
+            "text": "It was two months ago that I arrived in Tokyo.",
+            "author": "Blair0113",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2889963,
+          "cmn": "他前天去伦敦。",
+          "author": "Popolon",
+          "license": "CC BY 2.0 FR",
+          "outside": "伦敦",
+          "en": {
+            "tatoebaId": 64965,
+            "text": "He departed for London the day before yesterday.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0147",
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "syllables": [
+        "hòu"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "back",
+        "behind",
+        "rear",
+        "afterwards",
+        "after",
+        "later"
+      ],
+      "ind": [
+        "belakang",
+        "sesudah",
+        "kemudian"
+      ],
+      "idMachine": true,
+      "chars": [
+        "后"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 351230,
+          "cmn": "请后天来吧。",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8316003,
+            "text": "Please come the day after tomorrow.",
+            "author": "AlanF_US",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 411701,
+          "cmn": "我们后天出发。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "出发",
+          "en": {
+            "tatoebaId": 249408,
+            "text": "We're leaving the day after tomorrow.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 799117,
-          "cmn": "他坐在地上。",
-          "author": "GlossaMatik",
+          "tatoebaId": 687045,
+          "cmn": "你后天有空吗？",
+          "author": "peipei",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "有空",
           "en": {
-            "tatoebaId": 299626,
-            "text": "He was sitting on the floor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7823009,
-          "cmn": "我就坐这儿。",
-          "author": "basilhan",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2548773,
-            "text": "I'll just sit here.",
+            "tatoebaId": 71871,
+            "text": "Do you have time the day after tomorrow?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -870,500 +321,551 @@
       ]
     },
     {
-      "id": "L1-0499",
-      "hanzi": "坐下",
-      "pinyin": "zuòxia",
+      "id": "L1-0213",
+      "hanzi": "里",
+      "pinyin": "lǐ",
       "syllables": [
-        "zuò",
-        "xia"
+        "lǐ"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "lining",
+        "interior",
+        "inside",
+        "internal"
+      ],
+      "ind": [
+        "di dalam",
+        "dalam"
+      ],
+      "idMachine": true,
+      "chars": [
+        "里"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 406192,
+          "cmn": "你在家里吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 405500,
+            "text": "Are you at home?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4329157,
+            "text": "Apa kamu ada di rumah?",
+            "author": "Bilmanda",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 9958335,
+          "cmn": "请来我家里。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1225105,
+            "text": "Please come into my home.",
+            "author": "AlanF_US",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961067,
+          "cmn": "杯子里有水。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11252828,
+            "text": "There is water in the glass.",
+            "author": "weihaiping",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0367",
+      "hanzi": "外",
+      "pinyin": "wài",
+      "syllables": [
+        "wài"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "outside",
+        "in addition",
+        "foreign",
+        "external"
+      ],
+      "ind": [
+        "luar",
+        "asing"
+      ],
+      "idMachine": true,
+      "chars": [
+        "外"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14123691,
+          "cmn": "太见外了。",
+          "author": "jan_OkulaJu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 14123692,
+            "text": "Don't be such a stranger.",
+            "author": "jan_OkulaJu",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 382414,
+          "cmn": "我想去外国。",
+          "author": "ver",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 21938,
+            "text": "I want to go abroad.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2221094,
+          "cmn": "我是外国人。",
+          "author": "joulin",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 809719,
+            "text": "I'm a foreigner.",
+            "author": "Martha",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0368",
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "syllables": [
+        "wài",
+        "bian"
       ],
       "tones": [
         4,
         5
       ],
-      "pos": [],
+      "pos": [
+        "N"
+      ],
       "en": [
-        "to sit down"
+        "outside",
+        "outer surface",
+        "abroad",
+        "place other than one's home"
       ],
       "ind": [
-        "duduk"
+        "sisi luar",
+        "luar"
       ],
       "idMachine": true,
       "chars": [
-        "坐",
-        "下"
+        "外",
+        "边"
       ],
-      "examples": [
-        {
-          "tatoebaId": 1516179,
-          "cmn": "她叫他坐下。",
-          "author": "gonnastop",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 316254,
-            "text": "She asked him to sit down.",
-            "author": "Eldad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13839317,
-          "cmn": "汤姆在他弟弟旁边坐下了。",
-          "author": "JackyJiaqiSun",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 12213469,
-            "text": "Tom sat down next to his younger brother.",
-            "author": "Miktsoanit",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5780508,
-          "cmn": "我要坐下。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2545401,
-            "text": "I'm going to go sit down.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
+      "examples": []
     },
     {
-      "id": "L1-0106",
-      "hanzi": "飞",
-      "pinyin": "fēi",
+      "id": "L1-0501",
+      "hanzi": "边",
+      "pinyin": "biān",
       "syllables": [
-        "fēi"
+        "biān"
       ],
       "tones": [
         1
       ],
       "pos": [
-        "V"
+        "N",
+        "Suffix"
       ],
       "en": [
-        "to fly"
+        "side; edge",
+        "border; boundary"
       ],
       "ind": [
-        "terbang"
+        "sisi",
+        "(akhiran arah/sisi, mis. 东边)"
       ],
       "idMachine": true,
       "chars": [
-        "飞"
+        "边"
       ],
       "examples": [
         {
-          "tatoebaId": 5768184,
-          "cmn": "我很爱飞。",
-          "author": "mao",
+          "tatoebaId": 6002105,
+          "cmn": "狗在桌子下边。",
+          "author": "Thai",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 12624899,
-            "text": "I love flying.",
-            "author": "Enzo",
+            "tatoebaId": 6004778,
+            "text": "The dog is under the table.",
+            "author": "tvindy",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 1737985,
-          "cmn": "放飞鸟儿。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": "鸟儿",
-          "en": {
-            "tatoebaId": 278223,
-            "text": "Let the bird fly away.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8883976,
-          "cmn": "飞机快要起飞了。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 318068,
-            "text": "The plane is about to take off.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0490",
-      "hanzi": "走",
-      "pinyin": "zǒu",
-      "syllables": [
-        "zǒu"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to walk",
-        "to go",
-        "to run",
-        "to move (of vehicle)",
-        "to visit",
-        "to leave"
-      ],
-      "ind": [
-        "berjalan",
-        "pergi"
-      ],
-      "idMachine": true,
-      "chars": [
-        "走"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 345398,
-          "cmn": "我这就走。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2248015,
-            "text": "I'm going now.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 400812,
-          "cmn": "我快走了。",
-          "author": "nickyeow",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 40133,
-            "text": "I'm about to leave.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9868432,
-          "cmn": "跟我走吧！",
-          "author": "Ivanovb",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 884684,
-            "text": "Follow me!",
-            "author": "mccarras",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0491",
-      "hanzi": "走路",
-      "pinyin": "zǒulù",
-      "syllables": [
-        "zǒu",
-        "lù"
-      ],
-      "tones": [
-        3,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "to walk; to go on foot",
-        "to leave; to depart",
-        "(informal) to clear off; to beat it",
-        "(of sb who gets fired or resigns) to leave the job; to get out"
-      ],
-      "ind": [
-        "berjalan kaki"
-      ],
-      "idMachine": true,
-      "chars": [
-        "走",
-        "路"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1112831,
-          "cmn": "他走路回家。",
-          "author": "hkfreddy",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 294415,
-            "text": "He walked home.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4757681,
-          "cmn": "我爸爸走路。",
-          "author": "ryanwoo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 557422,
-            "text": "My father walks.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8888278,
-          "cmn": "他走路很快。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 303614,
-            "text": "He's a quick walker.",
-            "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0283",
-      "hanzi": "跑",
-      "pinyin": "pǎo",
-      "syllables": [
-        "pǎo"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "to run",
-        "to run away",
-        "to escape",
-        "to run around (on errands etc)",
-        "(of a gas or liquid) to leak or evaporate",
-        "(verb complement) away"
-      ],
-      "ind": [
-        "berlari",
-        "lari"
-      ],
-      "idMachine": true,
-      "chars": [
-        "跑"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3748344,
-          "cmn": "你用跑的。",
-          "author": "egg0073",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 4008918,
-            "text": "Run.",
-            "author": "JSakuragi",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3695646,
-          "cmn": "我上午慢跑。",
-          "author": "trieuho",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3695647,
-            "text": "I jog in the morning.",
-            "author": "trieuho",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 14028805,
-          "cmn": "我先跑路了。",
-          "author": "jan_OkulaJu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 455837,
-            "text": "I'm out of here.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0204",
-      "hanzi": "快",
-      "pinyin": "kuài",
-      "syllables": [
-        "kuài"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "Adj",
-        "Adv"
-      ],
-      "en": [
-        "rapid",
-        "quick",
-        "speed",
-        "rate",
-        "soon",
-        "almost"
-      ],
-      "ind": [
-        "cepat",
-        "segera"
-      ],
-      "idMachine": true,
-      "chars": [
-        "快"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 400812,
-          "cmn": "我快走了。",
-          "author": "nickyeow",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 40133,
-            "text": "I'm about to leave.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 793259,
-          "cmn": "我快好了。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 33483,
-            "text": "I'm about ready.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3081256,
-          "cmn": "快点回家。",
-          "author": "hsuan07",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 274014,
-            "text": "Go home quickly.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0229",
-      "hanzi": "慢",
-      "pinyin": "màn",
-      "syllables": [
-        "màn"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "slow"
-      ],
-      "ind": [
-        "lambat",
-        "pelan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "慢"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 5092212,
-          "cmn": "开车慢点。",
+          "tatoebaId": 5092669,
+          "cmn": "一边站着。",
           "author": "mirrorvan",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "站着",
           "en": {
-            "tatoebaId": 30126,
-            "text": "Drive slowly.",
-            "author": "CK",
+            "tatoebaId": 1935050,
+            "text": "Stand aside.",
+            "author": "Spamster",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 512111,
-          "cmn": "他慢慢地走。",
+          "tatoebaId": 1454456,
+          "cmn": "他一边唱歌一边工作。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 294485,
+            "text": "He sang while working.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0205",
+      "hanzi": "来",
+      "pinyin": "lái",
+      "syllables": [
+        "lái"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to come",
+        "(used as a substitute for a more specific verb)",
+        "hither (directional complement for motion toward the speaker, as in 回來|回来[hui2 lai5])",
+        "ever since (as in 自古以來|自古以来[zi4 gu3 yi3 lai2])",
+        "for the past (amount of time)",
+        "(prefix) the coming ...; the next ... (as in 來世|来世[lai2 shi4])"
+      ],
+      "ind": [
+        "datang"
+      ],
+      "idMachine": true,
+      "chars": [
+        "来"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 11502926,
+          "cmn": "你什么时候来？",
+          "author": "Aphima",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1312116,
+            "text": "When will you come?",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12319844,
+            "text": "Kapan kamu datang?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 336234,
+          "cmn": "来我家吧。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 293207,
-            "text": "He walks slowly.",
+            "tatoebaId": 3823679,
+            "text": "Come over to my house.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 3695646,
-          "cmn": "我上午慢跑。",
-          "author": "trieuho",
+          "tatoebaId": 351230,
+          "cmn": "请后天来吧。",
+          "author": "zhouj1955",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 3695647,
-            "text": "I jog in the morning.",
-            "author": "trieuho",
+            "tatoebaId": 8316003,
+            "text": "Please come the day after tomorrow.",
+            "author": "AlanF_US",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0302",
+      "hanzi": "去",
+      "pinyin": "qù",
+      "syllables": [
+        "qù"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to go",
+        "to go to (a place)",
+        "(of a time etc) last",
+        "just passed",
+        "to send",
+        "to remove"
+      ],
+      "ind": [
+        "pergi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "去"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 353483,
+          "cmn": "你不去吗？",
+          "author": "zhouj1955",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 241051,
+            "text": "Won't you go?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 389803,
+          "cmn": "你去哪儿？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 416367,
+            "text": "Where are you going?",
+            "author": "phrasemix",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4477000,
+          "cmn": "你什么时候去？",
+          "author": "menyo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1886666,
+            "text": "When are you going?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0154",
+      "hanzi": "回",
+      "pinyin": "huí",
+      "syllables": [
+        "huí"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to circle",
+        "to go back",
+        "to turn around",
+        "to answer",
+        "to return",
+        "to revolve"
+      ],
+      "ind": [
+        "kembali",
+        "pulang",
+        "(penghitung untuk kali)"
+      ],
+      "idMachine": true,
+      "chars": [
+        "回"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 781124,
+          "cmn": "她很晚回家。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 528259,
+            "text": "She came home very late.",
+            "author": "fanty",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2104089,
+          "cmn": "他很晚回家。",
+          "author": "kaenif",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 291589,
+            "text": "He came home very late.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2928042,
+          "cmn": "明天我回家。",
+          "author": "malaili",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2926313,
+            "text": "Tomorrow I'm going back home.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0064",
+      "hanzi": "到",
+      "pinyin": "dào",
+      "syllables": [
+        "dào"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to reach; to arrive",
+        "to leave for; to go to",
+        "to (a place); until (a time); up to (a point)",
+        "(verb complement indicating arriving at a place or reaching a point)",
+        "considerate; thoughtful; thorough"
+      ],
+      "ind": [
+        "tiba",
+        "sampai",
+        "ke"
+      ],
+      "idMachine": true,
+      "chars": [
+        "到"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 7774362,
+          "cmn": "您到这边来！",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5295840,
+            "text": "Come here!",
+            "author": "KatKoba",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 767733,
+          "cmn": "他从早吃到晚。",
+          "author": "eastasiastudent",
+          "license": "CC BY 2.0 FR",
+          "outside": "从",
+          "en": {
+            "tatoebaId": 767734,
+            "text": "He eats non-stop.",
+            "author": "sundown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4287494,
+          "cmn": "我到东京是两个月前。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": "东京",
+          "en": {
+            "tatoebaId": 4334407,
+            "text": "It was two months ago that I arrived in Tokyo.",
+            "author": "Blair0113",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1373,30 +875,29 @@
   ],
   "casual": [
     {
-      "id": "c-u12-02",
+      "id": "c-u09-01",
       "unit": "u12",
-      "hanzi": "堵车",
-      "pinyin": "dǔ chē",
+      "hanzi": "里头",
+      "pinyin": "lǐ tou",
       "syllables": [
-        "dǔ",
-        "chē"
+        "lǐ",
+        "tou"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "车很多",
+        "hanzi": "里边",
         "wordIds": [
-          "L1-0042",
-          "L1-0146",
-          "L1-0094"
+          "L1-0213",
+          "L1-0501"
         ]
       },
       "meaning": {
-        "id": "macet",
-        "en": "traffic jam"
+        "id": "di dalam",
+        "en": "inside"
       },
       "situation": {
-        "id": "Bilang jalan macet sehingga terlambat.",
-        "en": "Saying the traffic is jammed so you are late."
+        "id": "Menunjukkan sesuatu ada di dalam tas, kamar, atau toko.",
+        "en": "Saying something is inside a bag, room or shop."
       },
       "evidence": [
         "cedict",
@@ -1406,28 +907,28 @@
       "machine": true
     },
     {
-      "id": "c-u12-03",
+      "id": "c-u09-02",
       "unit": "u12",
-      "hanzi": "师傅",
-      "pinyin": "shī fu",
+      "hanzi": "外头",
+      "pinyin": "wài tou",
       "syllables": [
-        "shī",
-        "fu"
+        "wài",
+        "tou"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "先生",
+        "hanzi": "外边",
         "wordIds": [
-          "L1-0398"
+          "L1-0368"
         ]
       },
       "meaning": {
-        "id": "pak (sapaan sopir, tukang)",
-        "en": "master (to address a driver or worker)"
+        "id": "di luar",
+        "en": "outside"
       },
       "situation": {
-        "id": "Memanggil sopir taksi atau tukang dengan sopan.",
-        "en": "Politely addressing a taxi driver or worker."
+        "id": "Bilang sesuatu ada di luar, misalnya \"di luar hujan\".",
+        "en": "Saying something is outside, e.g. \"it is raining outside\"."
       },
       "evidence": [
         "cedict",
@@ -1437,28 +938,60 @@
       "machine": true
     },
     {
-      "id": "c-u12-04",
+      "id": "c-u09-03",
       "unit": "u12",
-      "hanzi": "慢走",
-      "pinyin": "màn zǒu",
+      "hanzi": "前头",
+      "pinyin": "qián tou",
       "syllables": [
-        "màn",
-        "zǒu"
+        "qián",
+        "tou"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "再见",
+        "hanzi": "前边",
         "wordIds": [
-          "L1-0454"
+          "L1-0291",
+          "L1-0501"
         ]
       },
       "meaning": {
-        "id": "hati-hati di jalan",
-        "en": "take care (to a departing guest)"
+        "id": "di depan",
+        "en": "ahead, in front"
       },
       "situation": {
-        "id": "Tuan rumah atau penjual mengantar tamu yang pulang.",
-        "en": "A host or shopkeeper seeing a guest off."
+        "id": "Menunjukkan arah: tempatnya ada di depan.",
+        "en": "Giving directions: the place is up ahead."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u09-04",
+      "unit": "u12",
+      "hanzi": "后头",
+      "pinyin": "hòu tou",
+      "syllables": [
+        "hòu",
+        "tou"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "后边",
+        "wordIds": [
+          "L1-0147",
+          "L1-0501"
+        ]
+      },
+      "meaning": {
+        "id": "di belakang",
+        "en": "behind, at the back"
+      },
+      "situation": {
+        "id": "Menunjukkan sesuatu ada di belakang.",
+        "en": "Saying something is at the back."
       },
       "evidence": [
         "cedict",
@@ -1468,61 +1001,29 @@
       "machine": true
     },
     {
-      "id": "c-u12-05",
+      "id": "c-u09-05",
       "unit": "u12",
-      "hanzi": "快点儿",
-      "pinyin": "kuài diǎnr",
+      "hanzi": "上头",
+      "pinyin": "shàng tou",
       "syllables": [
-        "kuài",
-        "diǎn",
-        "r"
+        "shàng",
+        "tou"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "快",
+        "hanzi": "上边",
         "wordIds": [
-          "L1-0204"
+          "L1-0315",
+          "L1-0501"
         ]
       },
       "meaning": {
-        "id": "cepetan",
-        "en": "hurry up"
+        "id": "di atas",
+        "en": "on top, above"
       },
       "situation": {
-        "id": "Menyuruh orang lebih cepat, misalnya mengejar bus.",
-        "en": "Telling someone to hurry, e.g. to catch a bus."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u12-06",
-      "unit": "u12",
-      "hanzi": "搭车",
-      "pinyin": "dā chē",
-      "syllables": [
-        "dā",
-        "chē"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "坐车",
-        "wordIds": [
-          "L1-0498",
-          "L1-0042"
-        ]
-      },
-      "meaning": {
-        "id": "nebeng",
-        "en": "to get a lift"
-      },
-      "situation": {
-        "id": "Ikut mobil orang lain ke tujuan yang sama.",
-        "en": "Riding along in someone else's car."
+        "id": "Bilang sesuatu ada di atas meja atau lemari.",
+        "en": "Saying something is on top of a table or shelf."
       },
       "evidence": [
         "cedict",
@@ -1534,121 +1035,128 @@
   ],
   "relatedCasual": [
     {
-      "id": "c-u06-04",
-      "unit": "u06",
-      "hanzi": "打包",
-      "pinyin": "dǎ bāo",
+      "id": "c-u13-10",
+      "unit": "u07",
+      "hanzi": "串门",
+      "pinyin": "chuàn mén",
       "syllables": [
-        "dǎ",
-        "bāo"
+        "chuàn",
+        "mén"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "拿走",
+        "hanzi": "去朋友家",
         "wordIds": [
-          "L1-0249",
-          "L1-0490"
+          "L1-0302",
+          "L1-0284",
+          "L1-0169"
         ]
       },
       "meaning": {
-        "id": "dibungkus",
-        "en": "to take away, doggy bag"
+        "id": "main ke rumah orang",
+        "en": "to drop in on someone"
       },
       "situation": {
-        "id": "Minta sisa makanan atau pesanan dibungkus.",
-        "en": "Asking for leftovers or an order to be packed to go."
+        "id": "Bertamu santai ke rumah tetangga atau teman tanpa acara khusus.",
+        "en": "Dropping by a neighbour or friend without a special reason."
       },
       "evidence": [
         "cedict",
-        "wiktionary",
-        "tatoeba"
+        "wiktionary"
       ],
       "machine": true
     },
     {
-      "id": "c-u08-04",
-      "unit": "u08",
-      "hanzi": "磨蹭",
-      "pinyin": "mó ceng",
+      "id": "c-u13-09",
+      "unit": "u11",
+      "hanzi": "不见不散",
+      "pinyin": "bù jiàn bù sàn",
       "syllables": [
-        "mó",
-        "ceng"
+        "bù",
+        "jiàn",
+        "bù",
+        "sàn"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "慢",
+        "hanzi": "到时候见",
         "wordIds": [
-          "L1-0229"
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
         ]
       },
       "meaning": {
-        "id": "lelet, berlambat-lambat",
-        "en": "to dawdle"
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
       },
       "situation": {
-        "id": "Mengeluh seseorang lambat bersiap-siap.",
-        "en": "Complaining that someone is slow to get ready."
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
       },
       "evidence": [
         "cedict",
-        "wiktionary",
-        "tatoeba"
+        "wiktionary"
       ],
       "machine": true
     },
     {
-      "id": "c-u10-02",
-      "unit": "u10",
-      "hanzi": "溜达",
-      "pinyin": "liū da",
-      "syllables": [
-        "liū",
-        "da"
-      ],
-      "label": "santai",
-      "hsk": {
-        "hanzi": "走走",
-        "wordIds": [
-          "L1-0490"
-        ]
-      },
-      "meaning": {
-        "id": "jalan-jalan santai",
-        "en": "to stroll"
-      },
-      "situation": {
-        "id": "Jalan kaki santai setelah makan atau di taman.",
-        "en": "Taking a relaxed walk after a meal or in a park."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary",
-        "tatoeba"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u13-04",
+      "id": "c-u10-01",
       "unit": "u13",
-      "hanzi": "撤",
-      "pinyin": "chè",
+      "hanzi": "逛街",
+      "pinyin": "guàng jiē",
       "syllables": [
-        "chè"
+        "guàng",
+        "jiē"
       ],
-      "label": "gaul",
+      "label": "santai",
       "hsk": {
-        "hanzi": "走",
+        "hanzi": "去商店",
         "wordIds": [
-          "L1-0490"
+          "L1-0302",
+          "L1-0314"
         ]
       },
       "meaning": {
-        "id": "cabut",
-        "en": "to head off (let's go)"
+        "id": "jalan-jalan ke toko, cuci mata",
+        "en": "to go shopping, window-shop"
       },
       "situation": {
-        "id": "Mengajak teman pergi dari suatu tempat, \"ayo cabut\".",
-        "en": "Telling friends it is time to leave, \"let us go\"."
+        "id": "Mengajak teman jalan-jalan di pertokoan.",
+        "en": "Inviting a friend to wander around the shops."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-01",
+      "unit": "u17",
+      "hanzi": "老外",
+      "pinyin": "lǎo wài",
+      "syllables": [
+        "lǎo",
+        "wài"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "外国人",
+        "wordIds": [
+          "L1-0367",
+          "L1-0128",
+          "L1-0305"
+        ]
+      },
+      "meaning": {
+        "id": "bule, orang asing",
+        "en": "foreigner"
+      },
+      "situation": {
+        "id": "Orang China menyebut orang asing dalam obrolan santai.",
+        "en": "Chinese people talking about a foreigner casually."
       },
       "evidence": [
         "cedict",
@@ -1658,214 +1166,5 @@
       "machine": true
     }
   ],
-  "dialog": {
-    "id": "d-u12",
-    "title": {
-      "id": "Naik taksi ke bandara",
-      "en": "Taxi to the airport"
-    },
-    "situation": {
-      "id": "Ayah memesan taksi online untuk ke bandara dan mengobrol dengan sopirnya.",
-      "en": "Dad books a ride-hailing taxi to the airport and chats with the driver."
-    },
-    "machine": true,
-    "speakers": {
-      "baba": {
-        "name": {
-          "id": "Ayah",
-          "en": "Dad"
-        },
-        "gender": "male"
-      },
-      "driver": {
-        "name": {
-          "id": "Sopir",
-          "en": "Driver"
-        },
-        "gender": "male"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "师傅，去机场。",
-        "tokens": [
-          {
-            "text": "师傅",
-            "pinyin": "shī fu"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "去",
-            "pinyin": "qù"
-          },
-          {
-            "text": "机场",
-            "pinyin": "jīchǎng"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "To the airport, please.",
-        "id": "Pak, ke bandara.",
-        "machine": true
-      },
-      {
-        "speaker": "driver",
-        "gender": "male",
-        "cmn": "好。你坐飞机？几点的？",
-        "tokens": [
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "。"
-          },
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "坐",
-            "pinyin": "zuò"
-          },
-          {
-            "text": "飞机",
-            "pinyin": "fēijī"
-          },
-          {
-            "text": "？"
-          },
-          {
-            "text": "几",
-            "pinyin": "jǐ"
-          },
-          {
-            "text": "点",
-            "pinyin": "diǎn"
-          },
-          {
-            "text": "的",
-            "pinyin": "de"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "OK. Catching a flight? What time?",
-        "id": "Baik. Mau naik pesawat? Jam berapa?",
-        "machine": true
-      },
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "十点的。路上车多吗？",
-        "tokens": [
-          {
-            "text": "十",
-            "pinyin": "shí"
-          },
-          {
-            "text": "点",
-            "pinyin": "diǎn"
-          },
-          {
-            "text": "的",
-            "pinyin": "de"
-          },
-          {
-            "text": "。"
-          },
-          {
-            "text": "路上",
-            "pinyin": "lùshang"
-          },
-          {
-            "text": "车",
-            "pinyin": "chē"
-          },
-          {
-            "text": "多",
-            "pinyin": "duō"
-          },
-          {
-            "text": "吗",
-            "pinyin": "ma"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "At ten. Is there much traffic on the way?",
-        "id": "Jam sepuluh. Di jalan ramai?",
-        "machine": true
-      },
-      {
-        "speaker": "driver",
-        "gender": "male",
-        "cmn": "今天不堵车，很快。",
-        "tokens": [
-          {
-            "text": "今天",
-            "pinyin": "jīntiān"
-          },
-          {
-            "text": "不",
-            "pinyin": "bù"
-          },
-          {
-            "text": "堵车",
-            "pinyin": "dǔ chē"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "很",
-            "pinyin": "hěn"
-          },
-          {
-            "text": "快",
-            "pinyin": "kuài"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "No traffic jams today, it'll be quick.",
-        "id": "Hari ini nggak macet, cepat kok.",
-        "machine": true
-      },
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "太好了。",
-        "tokens": [
-          {
-            "text": "太",
-            "pinyin": "tài"
-          },
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Great.",
-        "id": "Bagus sekali.",
-        "machine": true
-      }
-    ]
-  }
+  "dialog": null
 }

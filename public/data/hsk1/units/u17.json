@@ -3,101 +3,24 @@
   "unit": {
     "id": "u17",
     "order": 17,
-    "slug": "kerja",
+    "slug": "bahasa",
     "title": {
-      "id": "Pekerjaan, tubuh & kesehatan",
-      "en": "Work, body & health"
+      "id": "Bahasa Mandarin & indera",
+      "en": "Mandarin & the senses"
     },
     "description": {
-      "id": "Bekerja, rapat, istirahat, dokter, sakit, dan bagian tubuh.",
-      "en": "Working, meetings, resting, doctors, illness and parts of the body."
+      "id": "Negara, bahasa, huruf, serta berbicara, membaca, menulis, melihat, dan mendengar.",
+      "en": "Countries, language, characters, and speaking, reading, writing, seeing and hearing."
     }
   },
   "words": [
     {
-      "id": "L1-0124",
-      "hanzi": "工作",
-      "pinyin": "gōngzuò",
+      "id": "L1-0477",
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
       "syllables": [
-        "gōng",
-        "zuò"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "V",
-        "N"
-      ],
-      "en": [
-        "to work",
-        "(of a machine) to operate",
-        "job",
-        "work",
-        "task"
-      ],
-      "ind": [
-        "bekerja",
-        "pekerjaan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "工",
-        "作"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2076335,
-          "cmn": "你是干什么工作的？",
-          "author": "User5120",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5577230,
-            "text": "What do you do for work?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5580883,
-          "cmn": "他在工作。",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 8481155,
-            "text": "He is working.",
-            "author": "Luiaard",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5580885,
-          "cmn": "她在工作。",
-          "author": "grindeldore",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 7808539,
-            "text": "She is at work.",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0123",
-      "hanzi": "工人",
-      "pinyin": "gōngrén",
-      "syllables": [
-        "gōng",
-        "rén"
+        "Zhōng",
+        "guó"
       ],
       "tones": [
         1,
@@ -107,630 +30,55 @@
         "N"
       ],
       "en": [
-        "worker"
+        "China"
       ],
       "ind": [
-        "pekerja",
-        "buruh"
+        "Tiongkok",
+        "Cina"
       ],
       "idMachine": true,
       "chars": [
-        "工",
-        "人"
+        "中",
+        "国"
       ],
       "examples": [
         {
-          "tatoebaId": 8881120,
-          "cmn": "工人罢工。",
-          "author": "Rebecca",
-          "license": "CC BY 2.0 FR",
-          "outside": "罢工",
-          "en": {
-            "tatoebaId": 326360,
-            "text": "The workers are on strike.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 6028029,
-          "cmn": "你真是个努力的工人。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": "努力",
-          "en": {
-            "tatoebaId": 16343,
-            "text": "You're really a hard worker.",
-            "author": "xtofu80",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0316",
-      "hanzi": "上班",
-      "pinyin": "shàngbān",
-      "syllables": [
-        "shàng",
-        "bān"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to go to work",
-        "to be on duty",
-        "to start work",
-        "to go to the office"
-      ],
-      "ind": [
-        "berangkat kerja",
-        "masuk kerja"
-      ],
-      "idMachine": true,
-      "chars": [
-        "上",
-        "班"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2302762,
-          "cmn": "你几点上班？",
+          "tatoebaId": 335137,
+          "cmn": "我是中国人。",
           "author": "sysko",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2304085,
-            "text": "What time are you going to work?",
-            "author": "CM",
+            "tatoebaId": 335138,
+            "text": "I am Chinese.",
+            "author": "CN",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 5575448,
-          "cmn": "你九点上班。",
-          "author": "grindeldore",
+          "tatoebaId": 1333143,
+          "cmn": "我喜欢中国。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 5575451,
-            "text": "You start working at nine.",
-            "author": "grindeldore",
+            "tatoebaId": 1098224,
+            "text": "I like China.",
+            "author": "cntrational",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 13158370,
-          "cmn": "她走路上班。",
-          "author": "DaoSeng",
+          "tatoebaId": 3377911,
+          "cmn": "这是中国菜。",
+          "author": "Ivan24",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 4623242,
-            "text": "She walks to work.",
-            "author": "LeeSooHa",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0390",
-      "hanzi": "下班",
-      "pinyin": "xiàbān",
-      "syllables": [
-        "xià",
-        "bān"
-      ],
-      "tones": [
-        4,
-        1
-      ],
-      "pos": [],
-      "en": [
-        "to finish work; to get off work",
-        "next service (train, bus etc)"
-      ],
-      "ind": [
-        "pulang kerja",
-        "selesai kerja"
-      ],
-      "idMachine": true,
-      "chars": [
-        "下",
-        "班"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2302302,
-          "cmn": "你几点下班？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2304090,
-            "text": "When are you getting off work?",
-            "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 13938564,
-          "cmn": "我今天能早点下班吗？",
-          "author": "jan_OkulaJu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 6972077,
-            "text": "Would it be OK if I left work early today?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 14004668,
-          "cmn": "该下班了。",
-          "author": "jan_OkulaJu",
-          "license": "CC BY 2.0 FR",
-          "outside": "该",
-          "en": {
-            "tatoebaId": 14004670,
-            "text": "It's time to get off work.",
-            "author": "jan_OkulaJu",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0190",
-      "hanzi": "开会",
-      "pinyin": "kāihuì",
-      "syllables": [
-        "kāi",
-        "huì"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "to hold a meeting",
-        "to attend a meeting"
-      ],
-      "ind": [
-        "rapat",
-        "mengadakan rapat"
-      ],
-      "idMachine": true,
-      "chars": [
-        "开",
-        "会"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10275146,
-          "cmn": "我现在必须去开会。",
-          "author": "miaojiandao",
-          "license": "CC BY 2.0 FR",
-          "outside": "必须",
-          "en": {
-            "tatoebaId": 2826511,
-            "text": "I have to go to a meeting now.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4760079,
-          "cmn": "茶点过后我们接着开会。",
-          "author": "ryanwoo",
-          "license": "CC BY 2.0 FR",
-          "outside": "接着",
-          "en": {
-            "tatoebaId": 4763339,
-            "text": "We will continue the meeting after some light refreshments.",
-            "author": "garborg",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 381090,
-          "cmn": "我会告诉她开会的时候说些什么。",
-          "author": "sherryyyf",
-          "license": "CC BY 2.0 FR",
-          "outside": "些",
-          "en": {
-            "tatoebaId": 22454,
-            "text": "I will tell her what to say at the meeting.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0230",
-      "hanzi": "忙",
-      "pinyin": "máng",
-      "syllables": [
-        "máng"
-      ],
-      "tones": [
-        2
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "busy",
-        "hurriedly",
-        "to hurry",
-        "to rush"
-      ],
-      "ind": [
-        "sibuk"
-      ],
-      "idMachine": true,
-      "chars": [
-        "忙"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 487275,
-          "cmn": "你忙不忙？",
-          "author": "adjusting",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 68948,
-            "text": "Are you busy?",
-            "author": "adjusting",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7768164,
-          "cmn": "我没在忙。",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 261730,
-            "text": "I'm not busy.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7772049,
-          "cmn": "您在忙吗？",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 68948,
-            "text": "Are you busy?",
-            "author": "adjusting",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0417",
-      "hanzi": "休息",
-      "pinyin": "xiūxi",
-      "syllables": [
-        "xiū",
-        "xi"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "V"
-      ],
-      "en": [
-        "rest",
-        "to rest"
-      ],
-      "ind": [
-        "istirahat",
-        "beristirahat"
-      ],
-      "idMachine": true,
-      "chars": [
-        "休",
-        "息"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 8877801,
-          "cmn": "休息一下。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2249847,
-            "text": "Relax a moment.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10283157,
-          "cmn": "我在休息。",
-          "author": "DaoSeng",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 790043,
-            "text": "I'm resting.",
-            "author": "Swift",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1990181,
-          "cmn": "我今天休息。",
-          "author": "sunnywqing",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 242826,
-            "text": "I am off today.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0429",
-      "hanzi": "医生",
-      "pinyin": "yīshēng",
-      "syllables": [
-        "yī",
-        "shēng"
-      ],
-      "tones": [
-        1,
-        1
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "doctor"
-      ],
-      "ind": [
-        "dokter"
-      ],
-      "idMachine": true,
-      "chars": [
-        "医",
-        "生"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 2370671,
-          "cmn": "我是医生。",
-          "author": "anndiana",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 256018,
-            "text": "I'm a doctor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12392763,
-            "text": "Saya dokter.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 782332,
-          "cmn": "您不是医生。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 69692,
-            "text": "You are not a doctor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12747555,
-            "text": "Anda bukan dokter.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 334971,
-          "cmn": "她是医生。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 309938,
-            "text": "She is a doctor.",
-            "author": "CC",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0430",
-      "hanzi": "医院",
-      "pinyin": "yīyuàn",
-      "syllables": [
-        "yī",
-        "yuàn"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "hospital"
-      ],
-      "ind": [
-        "rumah sakit"
-      ],
-      "idMachine": true,
-      "chars": [
-        "医",
-        "院"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1169502,
-          "cmn": "他在医院。",
-          "author": "Vortarulo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 378501,
-            "text": "He is in hospital.",
-            "author": "Ricardo14",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5072292,
-          "cmn": "这是医院。",
-          "author": "musclegirlxyp",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 61614,
-            "text": "This is a hospital.",
-            "author": "adjusting",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2662232,
-          "cmn": "我去了医院。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2661742,
-            "text": "I went to the hospital.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0028",
-      "hanzi": "病",
-      "pinyin": "bìng",
-      "syllables": [
-        "bìng"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "N",
-        "V"
-      ],
-      "en": [
-        "illness",
-        "disease",
-        "to fall ill",
-        "defect"
-      ],
-      "ind": [
-        "sakit",
-        "penyakit"
-      ],
-      "idMachine": true,
-      "chars": [
-        "病"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 10699407,
-          "cmn": "我的孩子病了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 10696153,
-            "text": "My child is ill.",
-            "author": "tokzyk",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12816245,
-            "text": "Anakku sakit.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 859469,
-          "cmn": "我要看病。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 28045,
-            "text": "I'd like to see a doctor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1397139,
-          "cmn": "她说她病了。",
-          "author": "mtdot",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 316673,
-            "text": "She said that she was ill.",
+            "tatoebaId": 3377912,
+            "text": "This is Chinese food.",
             "author": "CM",
             "license": "CC BY 2.0 FR"
           },
@@ -739,455 +87,68 @@
       ]
     },
     {
-      "id": "L1-0029",
-      "hanzi": "病人",
-      "pinyin": "bìngrén",
+      "id": "L1-0128",
+      "hanzi": "国",
+      "pinyin": "guó",
       "syllables": [
-        "bìng",
-        "rén"
+        "guó"
       ],
       "tones": [
-        4,
         2
       ],
       "pos": [
         "N"
       ],
       "en": [
-        "sick person",
-        "patient",
-        "invalid"
+        "country; nation; state",
+        "(bound form) national"
       ],
       "ind": [
-        "pasien",
-        "orang sakit"
+        "negara"
       ],
       "idMachine": true,
       "chars": [
-        "病",
-        "人"
+        "国"
       ],
       "examples": [
         {
-          "tatoebaId": 769699,
-          "cmn": "病人躺在床上。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": "躺",
-          "en": {
-            "tatoebaId": 432153,
-            "text": "The patient lies in bed.",
-            "author": "Luornu",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4265074,
-          "cmn": "没人照顾这个病人。",
-          "author": "notabene",
-          "license": "CC BY 2.0 FR",
-          "outside": "照顾",
-          "en": {
-            "tatoebaId": 5574939,
-            "text": "No one is caring for this patient.",
-            "author": "n1ls",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2200417,
-          "cmn": "医生在给病人看病。",
-          "author": "johannjunge",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5896513,
-            "text": "The doctor was giving a patient a checkup.",
-            "author": "peterius",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0329",
-      "hanzi": "生病",
-      "pinyin": "shēngbìng",
-      "syllables": [
-        "shēng",
-        "bìng"
-      ],
-      "tones": [
-        1,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "to fall ill"
-      ],
-      "ind": [
-        "jatuh sakit",
-        "sakit"
-      ],
-      "idMachine": true,
-      "chars": [
-        "生",
-        "病"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 780291,
-          "cmn": "我生病了。",
-          "author": "Martha",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 436427,
-            "text": "I am sick.",
-            "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 13986954,
-            "text": "Aku sakit.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 982224,
-          "cmn": "他生病了。",
-          "author": "shanghainese",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 371409,
-            "text": "He is ill.",
-            "author": "saeb",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11260567,
-            "text": "Dia sakit.",
-            "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 3378168,
-          "cmn": "她生病了。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3378169,
-            "text": "She is sick.",
-            "author": "_undertoad",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11260567,
-            "text": "Dia sakit.",
-            "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        }
-      ]
-    },
-    {
-      "id": "L1-0193",
-      "hanzi": "看病",
-      "pinyin": "kànbìng",
-      "syllables": [
-        "kàn",
-        "bìng"
-      ],
-      "tones": [
-        4,
-        4
-      ],
-      "pos": [],
-      "en": [
-        "to visit a doctor",
-        "to see a patient"
-      ],
-      "ind": [
-        "berobat",
-        "periksa ke dokter"
-      ],
-      "idMachine": true,
-      "chars": [
-        "看",
-        "病"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3699941,
-          "cmn": "你应该去看病。",
-          "author": "katshi94",
-          "license": "CC BY 2.0 FR",
-          "outside": "应该",
-          "en": {
-            "tatoebaId": 28059,
-            "text": "You need to see a doctor.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 395058,
-          "cmn": "你还是去看病吧。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2659685,
-            "text": "You'd better see a doctor.",
-            "author": "WestofEden",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2200417,
-          "cmn": "医生在给病人看病。",
-          "author": "johannjunge",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 5896513,
-            "text": "The doctor was giving a patient a checkup.",
-            "author": "peterius",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0327",
-      "hanzi": "身体",
-      "pinyin": "shēntǐ",
-      "syllables": [
-        "shēn",
-        "tǐ"
-      ],
-      "tones": [
-        1,
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "the body",
-        "one's health"
-      ],
-      "ind": [
-        "badan",
-        "tubuh",
-        "kesehatan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "身",
-        "体"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 3378000,
-          "cmn": "我身体很好。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 259288,
-            "text": "I'm healthy.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2357831,
-          "cmn": "他的身体很好。",
-          "author": "iMaple",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2357834,
-            "text": "He is in good health.",
-            "author": "huo3xing1ren2",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1454459,
-          "cmn": "早睡早起身体好。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 7844489,
-            "text": "Going to sleep and waking up early is good for the body.",
-            "author": "sharris123",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0326",
-      "hanzi": "身上",
-      "pinyin": "shēnshang",
-      "syllables": [
-        "shēn",
-        "shang"
-      ],
-      "tones": [
-        1,
-        5
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "on the body",
-        "at hand",
-        "among"
-      ],
-      "ind": [
-        "di badan",
-        "pada tubuh"
-      ],
-      "idMachine": true,
-      "chars": [
-        "身",
-        "上"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 7771683,
-          "cmn": "你身上发臭了。",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": "发臭",
-          "en": {
-            "tatoebaId": 4834656,
-            "text": "You stink.",
-            "author": "shekitten",
-            "license": "CC0 1.0"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 389824,
-          "cmn": "你身上有铅笔吗？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "铅笔",
-          "en": {
-            "tatoebaId": 2301,
-            "text": "Do you have a pen on you?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1776624,
-          "cmn": "我不指望从你身上得到什么。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": "指望",
-          "en": {
-            "tatoebaId": 2357,
-            "text": "I don't expect anything from you.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0339",
-      "hanzi": "手",
-      "pinyin": "shǒu",
-      "syllables": [
-        "shǒu"
-      ],
-      "tones": [
-        3
-      ],
-      "pos": [
-        "N"
-      ],
-      "en": [
-        "hand",
-        "(formal) to hold",
-        "person engaged in certain types of work",
-        "person skilled in certain types of work",
-        "personal(ly)",
-        "convenient"
-      ],
-      "ind": [
-        "tangan"
-      ],
-      "idMachine": true,
-      "chars": [
-        "手"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 657628,
-          "cmn": "她用左手写字。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 313756,
-            "text": "She writes with her left hand.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12662667,
-            "text": "Dia menulis dengan tangan kiri.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 4302120,
-          "cmn": "他是我的手下。",
+          "tatoebaId": 4705988,
+          "cmn": "她要回国。",
           "author": "trieuho",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 4334380,
-            "text": "He's my underling.",
-            "author": "Blair0113",
+            "tatoebaId": 4705989,
+            "text": "She's going to return to her country.",
+            "author": "trieuho",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 5113315,
-          "cmn": "我洗手了。",
-          "author": "xjjAstrus",
+          "tatoebaId": 382414,
+          "cmn": "我想去外国。",
+          "author": "ver",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2206395,
-            "text": "I washed my hands.",
-            "author": "Ploomich",
+            "tatoebaId": 21938,
+            "text": "I want to go abroad.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1163567,
+          "cmn": "你是哪国人？",
+          "author": "cntrational",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 17150,
+            "text": "Where do you come from?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1195,36 +156,416 @@
       ]
     },
     {
-      "id": "L1-0202",
-      "hanzi": "口",
-      "pinyin": "kǒu",
+      "id": "L1-0479",
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
       "syllables": [
-        "kǒu"
+        "Zhōng",
+        "wén"
       ],
       "tones": [
-        3
+        1,
+        2
       ],
       "pos": [
-        "M",
         "N"
       ],
       "en": [
-        "mouth",
-        "classifier for things with mouths (people, domestic animals, cannons, wells etc)",
-        "classifier for bites or mouthfuls"
+        "Chinese language"
       ],
       "ind": [
-        "mulut",
-        "(penghitung untuk anggota keluarga)"
+        "bahasa Mandarin",
+        "bahasa Tionghoa"
       ],
       "idMachine": true,
       "chars": [
-        "口"
+        "中",
+        "文"
       ],
       "examples": [
         {
-          "tatoebaId": 9409627,
-          "cmn": "他开口了。",
+          "tatoebaId": 8860672,
+          "cmn": "她写中文。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 462412,
+            "text": "She writes Chinese.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4768190,
+          "cmn": "她会读中文。",
+          "author": "garborg",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 462382,
+            "text": "She reads Chinese.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 336175,
+          "cmn": "我明年想学中文。",
+          "author": "domi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 409536,
+            "text": "I want to learn Chinese next year.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0136",
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "syllables": [
+        "Hàn",
+        "yǔ"
+      ],
+      "tones": [
+        4,
+        3
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Chinese language"
+      ],
+      "ind": [
+        "bahasa Mandarin",
+        "bahasa Tionghoa"
+      ],
+      "idMachine": true,
+      "chars": [
+        "汉",
+        "语"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 2223944,
+          "cmn": "你学了几年的汉语？",
+          "author": "Kiwi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2229486,
+            "text": "How many years have you studied Mandarin for?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10338222,
+          "cmn": "这是我们汉语老师的车。",
+          "author": "vetreny",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10338232,
+            "text": "This is our Chinese language teacher's car.",
+            "author": "vetreny",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 335139,
+          "cmn": "他学习汉语。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 288241,
+            "text": "He studies Chinese.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0137",
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "syllables": [
+        "Hàn",
+        "zì"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "Chinese character(s)"
+      ],
+      "ind": [
+        "aksara Mandarin",
+        "huruf Hanzi"
+      ],
+      "idMachine": true,
+      "chars": [
+        "汉",
+        "字"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1843469,
+          "cmn": "我在学汉字。",
+          "author": "LanguageExpert",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 792548,
+            "text": "I am studying kanji.",
+            "author": "ryanthewired",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1749271,
+          "cmn": "我正在读汉字。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1686852,
+            "text": "I am pronouncing Chinese words.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961163,
+          "cmn": "汉字有多少个？",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 10115637,
+            "text": "How many Chinese characters are there?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0488",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "syllables": [
+        "zì"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "N"
+      ],
+      "en": [
+        "letter",
+        "symbol",
+        "character",
+        "word",
+        "courtesy or style name traditionally given to males aged 20 in dynastic China"
+      ],
+      "ind": [
+        "huruf",
+        "aksara",
+        "kata"
+      ],
+      "idMachine": true,
+      "chars": [
+        "字"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1454431,
+          "cmn": "她不会读书写字。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1442138,
+            "text": "She can't write or read.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1368241,
+          "cmn": "他会不会写这个字？",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 57223,
+            "text": "Can he write this character?",
+            "author": "shekitten",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1889352,
+          "cmn": "她一个字都没对我说。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1442205,
+            "text": "She didn't say even one word to me.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0349",
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "syllables": [
+        "shuō"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to speak; to talk; to say",
+        "to explain; to comment",
+        "to scold; to tell off",
+        "(bound form) theory; doctrine"
+      ],
+      "ind": [
+        "berkata",
+        "berbicara",
+        "mengatakan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "说"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 3349253,
+          "cmn": "你说的对。",
+          "author": "bailujia",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 411667,
+            "text": "You're right.",
+            "author": "Alkrasnov",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 796833,
+          "cmn": "我不能说。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 24897,
+            "text": "I can't say.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9401550,
+          "cmn": "他没多说。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8679847,
+            "text": "He didn't say much.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0350",
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "syllables": [
+        "shuō",
+        "huà"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to speak",
+        "to say",
+        "to talk",
+        "to gossip",
+        "to tell stories",
+        "talk"
+      ],
+      "ind": [
+        "berbicara",
+        "bicara"
+      ],
+      "idMachine": true,
+      "chars": [
+        "说",
+        "话"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 5321371,
+          "cmn": "我想说话",
+          "author": "boyhero",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5327624,
+            "text": "I want to speak.",
+            "author": "Jeannierocket",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9409628,
+          "cmn": "他说话了。",
           "author": "BobbyLee",
           "license": "CC BY 2.0 FR",
           "outside": null,
@@ -1237,112 +578,87 @@
           "ind": null
         },
         {
-          "tatoebaId": 347602,
-          "cmn": "就要说出口了。",
+          "tatoebaId": 11510495,
+          "cmn": "她不说话。",
+          "author": "megamanenm",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11510492,
+            "text": "She doesn't talk.",
+            "author": "megamanenm",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0090",
+      "hanzi": "读",
+      "pinyin": "dú",
+      "syllables": [
+        "dú"
+      ],
+      "tones": [
+        2
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to read out; to read aloud",
+        "to read",
+        "to attend (school); to study (a subject in school)",
+        "to pronounce"
+      ],
+      "ind": [
+        "membaca",
+        "belajar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "读"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 14067858,
+          "cmn": "我不会读。",
+          "author": "CanonNi",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 6577442,
+            "text": "I can't pronounce it.",
+            "author": "Eccles17",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 348014,
+          "cmn": "他在读大学。",
           "author": "zhouj1955",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 139274,
-            "text": "It's on the tip of my tongue.",
-            "author": "fcbond",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2078356,
-          "cmn": "你家有几口人？",
-          "author": "User5120",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 387554,
-            "text": "How many people are there in your family?",
+            "tatoebaId": 387501,
+            "text": "He is in college.",
             "author": "Mouseneb",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        }
-      ]
-    },
-    {
-      "id": "L1-0211",
-      "hanzi": "累",
-      "pinyin": "lèi",
-      "syllables": [
-        "lèi"
-      ],
-      "tones": [
-        4
-      ],
-      "pos": [
-        "Adj"
-      ],
-      "en": [
-        "tired",
-        "weary",
-        "to strain",
-        "to wear out",
-        "to work hard"
-      ],
-      "ind": [
-        "capai",
-        "lelah"
-      ],
-      "idMachine": true,
-      "chars": [
-        "累"
-      ],
-      "examples": [
-        {
-          "tatoebaId": 1228438,
-          "cmn": "你累了，我也累了。",
-          "author": "penguooo",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1230449,
-            "text": "You're tired. I'm also tired.",
-            "author": "alec",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12392753,
-            "text": "Kamu lelah. Aku juga lelah.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
         },
         {
-          "tatoebaId": 573549,
-          "cmn": "不用，谢谢。我累了。",
-          "author": "GlossaMatik",
+          "tatoebaId": 4768190,
+          "cmn": "她会读中文。",
+          "author": "garborg",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 456509,
-            "text": "No, thanks. I am tired.",
+            "tatoebaId": 462382,
+            "text": "She reads Chinese.",
             "author": "lukaszpp",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12559401,
-            "text": "Tidak, terima kasih. Saya lelah.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 713089,
-          "cmn": "他很累了。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 292157,
-            "text": "He was very tired.",
-            "author": "CS",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1350,116 +666,503 @@
       ]
     },
     {
-      "id": "L1-0235",
-      "hanzi": "没事儿",
-      "pinyin": "méishìr",
+      "id": "L1-0091",
+      "hanzi": "读书",
+      "pinyin": "dúshū",
       "syllables": [
-        "méi",
-        "shì",
-        "r"
+        "dú",
+        "shū"
       ],
       "tones": [
         2,
-        4,
-        5
+        1
       ],
       "pos": [],
       "en": [
-        "to have spare time",
-        "free from work",
-        "it's not important",
-        "it's nothing",
-        "never mind"
+        "to read a book",
+        "to study",
+        "to attend school"
       ],
       "ind": [
-        "tidak apa-apa",
-        "tidak sibuk"
+        "membaca buku",
+        "belajar",
+        "bersekolah"
       ],
       "idMachine": true,
       "chars": [
-        "没",
-        "事",
-        "儿"
+        "读",
+        "书"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 8930164,
+          "cmn": "我要读书。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5057575,
+            "text": "I'm going to read.",
+            "author": "CarpeLanam",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 843491,
+          "cmn": "我在学校读书。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 256661,
+            "text": "I study at school.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9990149,
+          "cmn": "你在哪里读书？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3350506,
+            "text": "Where do you study?",
+            "author": "feiningyuan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
-      "id": "L1-0335",
-      "hanzi": "事",
-      "pinyin": "shì",
+      "id": "L1-0409",
+      "hanzi": "写",
+      "pinyin": "xiě",
       "syllables": [
-        "shì"
+        "xiě"
+      ],
+      "tones": [
+        3
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to write"
+      ],
+      "ind": [
+        "menulis"
+      ],
+      "idMachine": true,
+      "chars": [
+        "写"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 8860672,
+          "cmn": "她写中文。",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 462412,
+            "text": "She writes Chinese.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 663264,
+          "cmn": "请您在这里写。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 61741,
+            "text": "Write it down here, please.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1454431,
+          "cmn": "她不会读书写字。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1442138,
+            "text": "She can't write or read.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0361",
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "syllables": [
+        "tīng"
+      ],
+      "tones": [
+        1
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to listen to; to hear",
+        "to heed; to obey",
+        "a can (loanword from English \"tin\")",
+        "classifier for canned beverages",
+        "to let be; to allow (Taiwan pr. [ting4])",
+        "(literary) to administer; to deal with (Taiwan pr. [ting4])"
+      ],
+      "ind": [
+        "mendengar",
+        "mendengarkan"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1541732,
+          "cmn": "他们没听。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1540367,
+            "text": "They didn't listen.",
+            "author": "Zaghawa",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10083963,
+          "cmn": "说来听听。",
+          "author": "ColawithIce",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 50394,
+            "text": "Tell me about it.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10961053,
+          "cmn": "爱听不听！",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13112421,
+            "text": "Listen to it if you want!",
+            "author": "LeviHighway",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0363",
+      "hanzi": "听见",
+      "pinyin": "tīngjiàn",
+      "syllables": [
+        "tīng",
+        "jiàn"
+      ],
+      "tones": [
+        1,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to hear"
+      ],
+      "ind": [
+        "mendengar",
+        "terdengar"
+      ],
+      "idMachine": true,
+      "chars": [
+        "听",
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 1417573,
+          "cmn": "我没听见。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 680110,
+            "text": "I didn't hear it.",
+            "author": "Source_VOA",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 414025,
+          "cmn": "我听见有人叫我。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 251973,
+            "text": "I heard my name called.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 819717,
+          "cmn": "他没听见有人叫他的名字。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 298851,
+            "text": "He didn't hear his name called.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0192",
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "syllables": [
+        "kàn"
       ],
       "tones": [
         4
       ],
       "pos": [
-        "N"
+        "V"
       ],
       "en": [
-        "matter",
-        "thing",
-        "item",
-        "work",
-        "affair"
+        "to see; to look at",
+        "to read",
+        "to watch",
+        "to visit; to call on",
+        "to consider; to regard as",
+        "to look after"
       ],
       "ind": [
-        "urusan",
-        "hal",
-        "perkara"
+        "melihat",
+        "menonton",
+        "membaca",
+        "mengunjungi"
       ],
       "idMachine": true,
       "chars": [
-        "事"
+        "看"
       ],
       "examples": [
         {
-          "tatoebaId": 755819,
-          "cmn": "她昨天没事干。",
-          "author": "U2FS",
+          "tatoebaId": 1783787,
+          "cmn": "你能看吗？",
+          "author": "sadhen",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 313805,
-            "text": "She had nothing to do yesterday.",
+            "tatoebaId": 1553530,
+            "text": "Can you see?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 1804209,
-            "text": "Kemarin, dia tidak melakukan apa-apa.",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 408894,
-          "cmn": "您有什么事想对我说吗？",
-          "author": "GlossaMatik",
+          "tatoebaId": 3586030,
+          "cmn": "他们在看。",
+          "author": "Tximist",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 408891,
-            "text": "Do you have something that you want to say to me?",
-            "author": "CM",
+            "tatoebaId": 1148307,
+            "text": "They are watching.",
+            "author": "cntrational",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 1503783,
-            "text": "Ada hal yang ingin Anda sampaikan pada saya?",
-            "author": "menyo",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 4297298,
-          "cmn": "不关我的事。",
-          "author": "trieuho",
+          "tatoebaId": 8935907,
+          "cmn": "请看一看。",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2323,
-            "text": "I don't care.",
+            "tatoebaId": 2245539,
+            "text": "Have a look.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0195",
+      "hanzi": "看见",
+      "pinyin": "kànjiàn",
+      "syllables": [
+        "kàn",
+        "jiàn"
+      ],
+      "tones": [
+        4,
+        4
+      ],
+      "pos": [],
+      "en": [
+        "to see; to catch sight of"
+      ],
+      "ind": [
+        "melihat",
+        "terlihat"
+      ],
+      "idMachine": true,
+      "chars": [
+        "看",
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 9415404,
+          "cmn": "没人看见你。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8922189,
+            "text": "No one has seen you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11502931,
+          "cmn": "我们没看见。",
+          "author": "Aphima",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 8359928,
+            "text": "We didn't see it.",
+            "author": "Amastan",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1372536,
+          "cmn": "我看见五个男人。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 370730,
+            "text": "I saw five men.",
+            "author": "saeb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
+    },
+    {
+      "id": "L1-0173",
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "syllables": [
+        "jiàn"
+      ],
+      "tones": [
+        4
+      ],
+      "pos": [
+        "V"
+      ],
+      "en": [
+        "to see",
+        "to meet",
+        "to appear (to be sth)",
+        "to interview",
+        "opinion",
+        "view"
+      ],
+      "ind": [
+        "melihat",
+        "bertemu"
+      ],
+      "idMachine": true,
+      "chars": [
+        "见"
+      ],
+      "examples": [
+        {
+          "tatoebaId": 335520,
+          "cmn": "前几天我见到了她。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 33058,
+            "text": "I saw her just the other day.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 8863215,
+          "cmn": "谁想见我？",
+          "author": "iiujik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2011531,
+            "text": "Who wants to see me?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 340647,
+          "cmn": "下个星期见！",
+          "author": "aaroned",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 32557,
+            "text": "See you next week!",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1470,28 +1173,30 @@
   ],
   "casual": [
     {
-      "id": "c-u17-03",
+      "id": "c-u15-01",
       "unit": "u17",
-      "hanzi": "打工",
-      "pinyin": "dǎ gōng",
+      "hanzi": "老外",
+      "pinyin": "lǎo wài",
       "syllables": [
-        "dǎ",
-        "gōng"
+        "lǎo",
+        "wài"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "工作",
+        "hanzi": "外国人",
         "wordIds": [
-          "L1-0124"
+          "L1-0367",
+          "L1-0128",
+          "L1-0305"
         ]
       },
       "meaning": {
-        "id": "kerja (sambilan)",
-        "en": "to work (a job)"
+        "id": "bule, orang asing",
+        "en": "foreigner"
       },
       "situation": {
-        "id": "Bilang sedang kerja sambilan atau bekerja di kota lain.",
-        "en": "Saying you have a (part-time) job."
+        "id": "Orang China menyebut orang asing dalam obrolan santai.",
+        "en": "Chinese people talking about a foreigner casually."
       },
       "evidence": [
         "cedict",
@@ -1501,92 +1206,61 @@
       "machine": true
     },
     {
-      "id": "c-u17-04",
+      "id": "c-u15-02",
       "unit": "u17",
-      "hanzi": "打工人",
-      "pinyin": "dǎ gōng rén",
+      "hanzi": "聊天",
+      "pinyin": "liáo tiān",
       "syllables": [
-        "dǎ",
-        "gōng",
-        "rén"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "工人",
-        "wordIds": [
-          "L1-0123"
-        ]
-      },
-      "meaning": {
-        "id": "pekerja (bercanda)",
-        "en": "worker (joking about office life)"
-      },
-      "situation": {
-        "id": "Pekerja kantoran bercanda tentang hidupnya yang sibuk.",
-        "en": "Office workers joking about their busy lives."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u17-05",
-      "unit": "u17",
-      "hanzi": "摸鱼",
-      "pinyin": "mō yú",
-      "syllables": [
-        "mō",
-        "yú"
-      ],
-      "label": "gaul",
-      "hsk": {
-        "hanzi": "不认真工作",
-        "wordIds": [
-          "L1-0034",
-          "L1-0307",
-          "L1-0124"
-        ]
-      },
-      "meaning": {
-        "id": "malas-malasan saat kerja",
-        "en": "to slack off at work"
-      },
-      "situation": {
-        "id": "Bercanda tentang curi waktu santai saat jam kerja.",
-        "en": "Joking about slacking off during work hours."
-      },
-      "evidence": [
-        "cedict",
-        "wiktionary"
-      ],
-      "machine": true
-    },
-    {
-      "id": "c-u17-07",
-      "unit": "u17",
-      "hanzi": "难受",
-      "pinyin": "nán shòu",
-      "syllables": [
-        "nán",
-        "shòu"
+        "liáo",
+        "tiān"
       ],
       "label": "santai",
       "hsk": {
-        "hanzi": "不好",
+        "hanzi": "说话",
         "wordIds": [
-          "L1-0034",
-          "L1-0138"
+          "L1-0350"
         ]
       },
       "meaning": {
-        "id": "nggak enak badan",
-        "en": "to feel unwell"
+        "id": "ngobrol",
+        "en": "to chat"
       },
       "situation": {
-        "id": "Bilang badan terasa tidak enak atau sakit.",
-        "en": "Saying you feel unwell."
+        "id": "Ngobrol dengan teman, langsung atau lewat aplikasi.",
+        "en": "Chatting with friends, in person or on an app."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    },
+    {
+      "id": "c-u15-05",
+      "unit": "u17",
+      "hanzi": "唠叨",
+      "pinyin": "láo dao",
+      "syllables": [
+        "láo",
+        "dao"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "说很多",
+        "wordIds": [
+          "L1-0349",
+          "L1-0146",
+          "L1-0094"
+        ]
+      },
+      "meaning": {
+        "id": "cerewet, mengomel",
+        "en": "to nag"
+      },
+      "situation": {
+        "id": "Mengeluh orang yang terus mengulang nasihat.",
+        "en": "Complaining someone keeps repeating advice."
       },
       "evidence": [
         "cedict",
@@ -1596,240 +1270,105 @@
       "machine": true
     }
   ],
-  "relatedCasual": [],
-  "dialog": {
-    "id": "d-u17",
-    "title": {
-      "id": "Pulang kerja",
-      "en": "Home from work"
+  "relatedCasual": [
+    {
+      "id": "c-u13-09",
+      "unit": "u11",
+      "hanzi": "不见不散",
+      "pinyin": "bù jiàn bù sàn",
+      "syllables": [
+        "bù",
+        "jiàn",
+        "bù",
+        "sàn"
+      ],
+      "label": "santai",
+      "hsk": {
+        "hanzi": "到时候见",
+        "wordIds": [
+          "L1-0064",
+          "L1-0333",
+          "L1-0173"
+        ]
+      },
+      "meaning": {
+        "id": "sampai ketemu di sana, ya!",
+        "en": "see you there (be sure to wait)"
+      },
+      "situation": {
+        "id": "Menutup janji ketemuan: harus datang dan saling menunggu.",
+        "en": "Closing a plan to meet: both will come and wait for each other."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
     },
-    "situation": {
-      "id": "Ayah pulang larut dari kantor. Ibu khawatir karena Ayah bekerja terlalu keras.",
-      "en": "Dad comes home late from the office. Mom worries that he is working too hard."
+    {
+      "id": "c-u19-01",
+      "unit": "u20",
+      "hanzi": "追剧",
+      "pinyin": "zhuī jù",
+      "syllables": [
+        "zhuī",
+        "jù"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "看电视",
+        "wordIds": [
+          "L1-0192",
+          "L1-0080"
+        ]
+      },
+      "meaning": {
+        "id": "maraton drama",
+        "en": "to binge-watch a series"
+      },
+      "situation": {
+        "id": "Menonton serial drama terus-menerus.",
+        "en": "Watching a TV series episode after episode."
+      },
+      "evidence": [
+        "cedict",
+        "wiktionary"
+      ],
+      "machine": true
     },
-    "machine": true,
-    "speakers": {
-      "baba": {
-        "name": {
-          "id": "Ayah",
-          "en": "Dad"
-        },
-        "gender": "male"
+    {
+      "id": "c-u19-02",
+      "unit": "u20",
+      "hanzi": "刷手机",
+      "pinyin": "shuā shǒu jī",
+      "syllables": [
+        "shuā",
+        "shǒu",
+        "jī"
+      ],
+      "label": "gaul",
+      "hsk": {
+        "hanzi": "看手机",
+        "wordIds": [
+          "L1-0192",
+          "L1-0340"
+        ]
       },
-      "mama": {
-        "name": {
-          "id": "Ibu",
-          "en": "Mom"
-        },
-        "gender": "female"
-      }
-    },
-    "lines": [
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "我回来了，太累了！",
-        "tokens": [
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "回来",
-            "pinyin": "huílái"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "太",
-            "pinyin": "tài"
-          },
-          {
-            "text": "累",
-            "pinyin": "lèi"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "！"
-          }
-        ],
-        "en": "I'm home. I'm so tired!",
-        "id": "Aku pulang. Capek sekali!",
-        "machine": true
+      "meaning": {
+        "id": "scroll HP",
+        "en": "to scroll on your phone"
       },
-      {
-        "speaker": "mama",
-        "gender": "female",
-        "cmn": "今天工作很忙吗？",
-        "tokens": [
-          {
-            "text": "今天",
-            "pinyin": "jīntiān"
-          },
-          {
-            "text": "工作",
-            "pinyin": "gōngzuò"
-          },
-          {
-            "text": "很",
-            "pinyin": "hěn"
-          },
-          {
-            "text": "忙",
-            "pinyin": "máng"
-          },
-          {
-            "text": "吗",
-            "pinyin": "ma"
-          },
-          {
-            "text": "？"
-          }
-        ],
-        "en": "Was work busy today?",
-        "id": "Hari ini kerjaannya sibuk?",
-        "machine": true
+      "situation": {
+        "id": "Bilang terus-terusan melihat HP.",
+        "en": "Saying someone keeps scrolling their phone."
       },
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "很忙，下午开了三个会。",
-        "tokens": [
-          {
-            "text": "很",
-            "pinyin": "hěn"
-          },
-          {
-            "text": "忙",
-            "pinyin": "máng"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "下午",
-            "pinyin": "xiàwǔ"
-          },
-          {
-            "text": "开",
-            "pinyin": "kāi"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "三",
-            "pinyin": "sān"
-          },
-          {
-            "text": "个",
-            "pinyin": "gè"
-          },
-          {
-            "text": "会",
-            "pinyin": "huì"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "Very. I had three meetings this afternoon.",
-        "id": "Sibuk, sore tadi rapat tiga kali.",
-        "machine": true
-      },
-      {
-        "speaker": "mama",
-        "gender": "female",
-        "cmn": "你身体不好，别太累了。",
-        "tokens": [
-          {
-            "text": "你",
-            "pinyin": "nǐ"
-          },
-          {
-            "text": "身体",
-            "pinyin": "shēntǐ"
-          },
-          {
-            "text": "不",
-            "pinyin": "bù"
-          },
-          {
-            "text": "好",
-            "pinyin": "hǎo"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "别",
-            "pinyin": "bié"
-          },
-          {
-            "text": "太",
-            "pinyin": "tài"
-          },
-          {
-            "text": "累",
-            "pinyin": "lèi"
-          },
-          {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "You're not in great health, don't wear yourself out.",
-        "id": "Badanmu lagi kurang sehat, jangan terlalu capek.",
-        "machine": true
-      },
-      {
-        "speaker": "baba",
-        "gender": "male",
-        "cmn": "没事，我先休息一会儿。",
-        "tokens": [
-          {
-            "text": "没事",
-            "pinyin": "méi shì"
-          },
-          {
-            "text": "，"
-          },
-          {
-            "text": "我",
-            "pinyin": "wǒ"
-          },
-          {
-            "text": "先",
-            "pinyin": "xiān"
-          },
-          {
-            "text": "休息",
-            "pinyin": "xiūxi"
-          },
-          {
-            "text": "一会儿",
-            "pinyin": "yīhuìr"
-          },
-          {
-            "text": "。"
-          }
-        ],
-        "en": "I'm fine, I'll rest for a bit first.",
-        "id": "Nggak apa-apa, aku istirahat sebentar dulu.",
-        "machine": true
-      }
-    ]
-  }
+      "evidence": [
+        "cedict",
+        "wiktionary",
+        "tatoeba"
+      ],
+      "machine": true
+    }
+  ],
+  "dialog": null
 }

@@ -10,276 +10,290 @@
         "en": "Greetings & politeness"
       },
       "description": {
-        "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan menyebut diri serta orang lain.",
-        "en": "First words for greeting, thanking, apologising and referring to yourself and others."
+        "id": "Kata pertama untuk menyapa, berterima kasih, minta maaf, dan bertanya kabar.",
+        "en": "First words for greeting, thanking, apologising and asking after someone."
       },
-      "wordCount": 31
+      "wordCount": 16
     },
     {
       "id": "u02",
       "order": 2,
-      "slug": "angka",
+      "slug": "diri",
       "title": {
-        "id": "Angka & jumlah",
-        "en": "Numbers & quantities"
+        "id": "Aku, kamu & dia",
+        "en": "Me, you & them"
       },
       "description": {
-        "id": "Angka 0 sampai 100, cara bertanya jumlah, usia, dan kata untuk \"sedikit\" atau \"banyak\".",
-        "en": "Numbers 0 to 100, asking how many, age, and words for \"a little\" or \"a lot\"."
+        "id": "Kata ganti orang, memperkenalkan nama, dan kalimat dasar \"A adalah B\".",
+        "en": "Pronouns, introducing your name and the basic \"A is B\" sentence."
       },
-      "wordCount": 27
+      "wordCount": 15
     },
     {
       "id": "u03",
       "order": 3,
-      "slug": "ini-itu",
+      "slug": "angka",
       "title": {
-        "id": "Ini, itu & bertanya",
-        "en": "This, that & asking questions"
+        "id": "Angka 0–10",
+        "en": "Numbers 0–10"
       },
       "description": {
-        "id": "Kata tunjuk, kata tanya dasar, dan kata ada, tidak ada, benar, salah.",
-        "en": "Demonstratives, basic question words, and words for having, not having, right and wrong."
+        "id": "Angka dari nol sampai sepuluh, \"dua\" yang dipakai untuk menghitung, dan bertanya \"berapa\".",
+        "en": "Numbers from zero to ten, the counting form \"two\" and asking \"how many\"."
       },
-      "wordCount": 29
+      "wordCount": 14
     },
     {
       "id": "u04",
       "order": 4,
+      "slug": "ini-itu",
+      "title": {
+        "id": "Ini, itu & ada",
+        "en": "This, that & being there"
+      },
+      "description": {
+        "id": "Menunjuk benda dan tempat, serta mengatakan ada, tidak ada, dan berada di mana.",
+        "en": "Pointing at things and places, and saying something is, is not, or is located somewhere."
+      },
+      "wordCount": 15
+    },
+    {
+      "id": "u05",
+      "order": 5,
+      "slug": "bertanya",
+      "title": {
+        "id": "Bertanya & menjawab",
+        "en": "Asking & answering"
+      },
+      "description": {
+        "id": "Kata tanya (apa, siapa, mana, bagaimana) dan cara menjawab.",
+        "en": "Question words (what, who, which, how) and how to answer."
+      },
+      "wordCount": 12
+    },
+    {
+      "id": "u06",
+      "order": 6,
+      "slug": "jumlah",
+      "title": {
+        "id": "Jumlah, ukuran & nomor",
+        "en": "Amounts, sizes & ordinals"
+      },
+      "description": {
+        "id": "Ratusan dan ribuan, nomor urut, usia, serta kata untuk banyak, sedikit, dan setengah.",
+        "en": "Hundreds and thousands, ordinals, age, and words for many, few and half."
+      },
+      "wordCount": 16
+    },
+    {
+      "id": "u07",
+      "order": 7,
       "slug": "orang",
       "title": {
         "id": "Orang di sekitar",
         "en": "People around you"
       },
       "description": {
-        "id": "Teman, laki-laki, perempuan, anak, dan kata untuk menggabungkan atau memperkenalkan orang.",
-        "en": "Friends, men, women, children, and words for joining or introducing people."
+        "id": "Menyebut teman, teman sekelas, laki-laki, perempuan, dan anak-anak.",
+        "en": "Naming friends, classmates, men, women and children."
       },
-      "wordCount": 30
+      "wordCount": 14
     },
     {
-      "id": "u05",
-      "order": 5,
+      "id": "u08",
+      "order": 8,
       "slug": "keluarga",
       "title": {
-        "id": "Keluarga & tempat tinggal",
-        "en": "Family & home"
+        "id": "Keluarga, rumah & hewan",
+        "en": "Family, home & pets"
       },
       "description": {
-        "id": "Anggota keluarga, rumah, kamar, lantai, dan pintu.",
-        "en": "Family members, the house, rooms, floors and doors."
+        "id": "Anggota keluarga, tempat tinggal, perabot, dan hewan peliharaan.",
+        "en": "Family members, where you live, furniture and pets."
       },
-      "wordCount": 27
+      "wordCount": 17
     },
     {
-      "id": "u06",
-      "order": 6,
+      "id": "u09",
+      "order": 9,
       "slug": "makanan",
       "title": {
         "id": "Makanan & minuman",
         "en": "Food & drink"
       },
       "description": {
-        "id": "Makan, minum, makanan pokok, lauk, buah, dan rasa lapar atau haus.",
-        "en": "Eating, drinking, staple foods, side dishes, fruit, and feeling hungry or thirsty."
+        "id": "Makan, minum, dan hidangan sehari-hari.",
+        "en": "Eating, drinking and everyday dishes."
       },
-      "wordCount": 24
+      "wordCount": 17
     },
     {
-      "id": "u07",
-      "order": 7,
+      "id": "u10",
+      "order": 10,
       "slug": "tanggal",
       "title": {
         "id": "Hari, tanggal & tahun",
         "en": "Days, dates & years"
       },
       "description": {
-        "id": "Kemarin, hari ini, besok, hari dalam seminggu, bulan, tahun, dan ulang tahun.",
-        "en": "Yesterday, today, tomorrow, days of the week, months, years and birthdays."
+        "id": "Hari ini, besok, minggu, bulan, dan tahun.",
+        "en": "Today, tomorrow, weeks, months and years."
       },
-      "wordCount": 23
+      "wordCount": 14
     },
     {
-      "id": "u08",
-      "order": 8,
+      "id": "u11",
+      "order": 11,
       "slug": "waktu",
       "title": {
         "id": "Jam & waktu",
         "en": "Clock time & timing"
       },
       "description": {
-        "id": "Jam, bagian hari, dan kata yang menunjukkan kapan atau seberapa sering sesuatu terjadi.",
-        "en": "The clock, parts of the day, and words for when or how often something happens."
+        "id": "Menyebut jam dan menit, bagian hari, dan menanyakan waktu.",
+        "en": "Telling the hour and minutes, parts of the day, and asking about time."
       },
-      "wordCount": 25
+      "wordCount": 14
     },
     {
-      "id": "u09",
-      "order": 9,
+      "id": "u12",
+      "order": 12,
       "slug": "arah",
       "title": {
-        "id": "Arah & posisi",
-        "en": "Directions & position"
+        "id": "Arah, pergi & datang",
+        "en": "Directions, going & coming"
       },
       "description": {
-        "id": "Atas, bawah, kiri, kanan, depan, belakang, dan mata angin.",
-        "en": "Up, down, left, right, front, back and the compass points."
+        "id": "Atas, bawah, depan, belakang, dalam, luar, serta pergi, datang, pulang, dan tiba.",
+        "en": "Up, down, front, back, inside, outside, and going, coming, returning and arriving."
       },
-      "wordCount": 29
+      "wordCount": 12
     },
     {
-      "id": "u10",
-      "order": 10,
-      "slug": "tempat",
+      "id": "u13",
+      "order": 13,
+      "slug": "kota",
       "title": {
-        "id": "Tempat, jalan & alam",
-        "en": "Places, roads & nature"
+        "id": "Tempat di kota & transportasi",
+        "en": "Places in town & transport"
       },
       "description": {
-        "id": "Toko, jalan, stasiun, bandara, gunung, serta cuaca dan tumbuhan.",
-        "en": "Shops, roads, stations, the airport, mountains, plus weather and plants."
+        "id": "Toko, restoran, bioskop, kantor, dan kendaraan.",
+        "en": "Shops, restaurants, the cinema, offices and vehicles."
       },
-      "wordCount": 26
+      "wordCount": 13
     },
     {
-      "id": "u11",
-      "order": 11,
-      "slug": "rutinitas",
+      "id": "u14",
+      "order": 14,
+      "slug": "kegiatan",
       "title": {
         "id": "Kegiatan sehari-hari",
         "en": "Daily routine"
       },
       "description": {
-        "id": "Bangun, tidur, mencuci, berpakaian, membuka, menutup, mencari, dan membantu.",
-        "en": "Getting up, sleeping, washing, dressing, opening, closing, looking for and helping."
+        "id": "Bangun, berpakaian, makan, memasak, tidur, dan kata bantu untuk \"sudah\", \"sedang\", dan \"lagi\".",
+        "en": "Getting up, dressing, eating, cooking, sleeping, and the helpers for \"already\", \"currently\" and \"again\"."
       },
-      "wordCount": 22
+      "wordCount": 17
     },
     {
-      "id": "u12",
-      "order": 12,
-      "slug": "transportasi",
+      "id": "u15",
+      "order": 15,
+      "slug": "keinginan",
       "title": {
-        "id": "Transportasi",
-        "en": "Transport"
+        "id": "Suka, mau & bisa",
+        "en": "Liking, wanting & being able"
       },
       "description": {
-        "id": "Kendaraan, tiket, naik, turun, dan cara bepergian.",
-        "en": "Vehicles, tickets, getting on and off, and ways of getting around."
+        "id": "Menyatakan suka, ingin, bisa, boleh, tahu, dan merasa.",
+        "en": "Saying what you like, want, can, may, know and feel."
       },
-      "wordCount": 21
+      "wordCount": 12
     },
     {
-      "id": "u13",
-      "order": 13,
-      "slug": "pergi-datang",
-      "title": {
-        "id": "Pergi, datang & bergerak",
-        "en": "Going, coming & moving"
-      },
-      "description": {
-        "id": "Datang, pergi, pulang, masuk, keluar, dan gabungannya.",
-        "en": "Come, go, return, enter, exit and their combinations."
-      },
-      "wordCount": 22
-    },
-    {
-      "id": "u14",
-      "order": 14,
+      "id": "u16",
+      "order": 16,
       "slug": "sekolah",
       "title": {
         "id": "Sekolah",
         "en": "School"
       },
       "description": {
-        "id": "Jenjang sekolah, pelajaran, kelas, ujian, libur, dan kegiatan belajar.",
-        "en": "School levels, lessons, class, exams, holidays and study activities."
+        "id": "Sekolah, guru, murid, pelajaran, dan jenjang pendidikan.",
+        "en": "School, teachers, students, lessons and school levels."
       },
-      "wordCount": 30
-    },
-    {
-      "id": "u15",
-      "order": 15,
-      "slug": "bahasa",
-      "title": {
-        "id": "Bahasa & negara",
-        "en": "Language & countries"
-      },
-      "description": {
-        "id": "Tiongkok, Beijing, bahasa Mandarin, aksara, berbicara, mendengar, bertanya, dan menjawab.",
-        "en": "China, Beijing, the Chinese language, characters, speaking, listening, asking and answering."
-      },
-      "wordCount": 20
-    },
-    {
-      "id": "u16",
-      "order": 16,
-      "slug": "berpikir",
-      "title": {
-        "id": "Berpikir & kemampuan",
-        "en": "Thinking & ability"
-      },
-      "description": {
-        "id": "Berpikir, tahu, ingat, lupa, bisa, mau, dan memperhatikan.",
-        "en": "Thinking, knowing, remembering, forgetting, can, want, and looking."
-      },
-      "wordCount": 21
+      "wordCount": 15
     },
     {
       "id": "u17",
       "order": 17,
-      "slug": "kerja",
+      "slug": "bahasa",
       "title": {
-        "id": "Pekerjaan, tubuh & kesehatan",
-        "en": "Work, body & health"
+        "id": "Bahasa Mandarin & indera",
+        "en": "Mandarin & the senses"
       },
       "description": {
-        "id": "Bekerja, rapat, istirahat, dokter, sakit, dan bagian tubuh.",
-        "en": "Working, meetings, resting, doctors, illness and parts of the body."
+        "id": "Negara, bahasa, huruf, serta berbicara, membaca, menulis, melihat, dan mendengar.",
+        "en": "Countries, language, characters, and speaking, reading, writing, seeing and hearing."
       },
-      "wordCount": 20
+      "wordCount": 16
     },
     {
       "id": "u18",
       "order": 18,
-      "slug": "belanja",
+      "slug": "kerja",
       "title": {
-        "id": "Belanja, uang & barang",
-        "en": "Shopping, money & things"
+        "id": "Pekerjaan & kesehatan",
+        "en": "Work & health"
       },
       "description": {
-        "id": "Membeli, uang, harga, dan benda sehari-hari seperti buku, tas, meja, dan baju.",
-        "en": "Buying, money, prices, and everyday things like books, bags and tables."
+        "id": "Bekerja, istirahat, sakit, ke dokter, dan menenangkan \"tidak apa-apa\".",
+        "en": "Working, resting, being ill, seeing a doctor and saying \"no problem\"."
       },
-      "wordCount": 20
+      "wordCount": 13
     },
     {
       "id": "u19",
       "order": 19,
-      "slug": "hobi",
+      "slug": "belanja",
       "title": {
-        "id": "Hobi & hiburan",
-        "en": "Hobbies & fun"
+        "id": "Belanja & uang",
+        "en": "Shopping & money"
       },
       "description": {
-        "id": "Menyanyi, film, olahraga, gawai, internet, tertawa, dan melakukan sesuatu bersama.",
-        "en": "Singing, films, sports, devices, the internet, laughing and doing things together."
+        "id": "Membeli, menjual, harga, uang, dan benda yang dibeli.",
+        "en": "Buying, selling, prices, money and things you buy."
       },
-      "wordCount": 26
+      "wordCount": 12
     },
     {
       "id": "u20",
       "order": 20,
-      "slug": "sifat",
+      "slug": "hiburan",
       "title": {
-        "id": "Sifat, perasaan & penguat",
-        "en": "Describing things & feelings"
+        "id": "Hiburan & teknologi",
+        "en": "Fun & technology"
       },
       "description": {
-        "id": "Besar, kecil, baru, panas, dingin, senang, marah, dan kata penguat seperti \"sangat\" dan \"paling\".",
-        "en": "Big, small, new, hot, cold, happy, angry, and intensifiers such as \"very\" and \"most\"."
+        "id": "Film, lagu, telepon, komputer, dan hal-hal yang menyenangkan.",
+        "en": "Films, songs, phones, computers and things that are fun."
       },
-      "wordCount": 27
+      "wordCount": 13
+    },
+    {
+      "id": "u21",
+      "order": 21,
+      "slug": "sifat",
+      "title": {
+        "id": "Sifat, cuaca & penguat",
+        "en": "Describing things & weather"
+      },
+      "description": {
+        "id": "Besar, kecil, baru, cantik, panas, dingin, hujan, salju, dan kata penguat.",
+        "en": "Big, small, new, pretty, hot, cold, rain, snow and intensifiers."
+      },
+      "wordCount": 13
     }
   ]
 }

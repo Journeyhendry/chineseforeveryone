@@ -1,0 +1,3945 @@
+{
+  "version": 1,
+  "previewFrom": "hsk1-2021",
+  "items": [
+    {
+      "wordId": "L1-0002",
+      "hanzi": "爱好",
+      "type": "comic",
+      "scene": {
+        "id": "Empat kotak kecil: Kakek memancing, Nenek menari dengan kipas di alun-alun, Kakak bermain basket, dan Adik menggambar.",
+        "en": "Four small panels: Grandpa fishing, Grandma doing square dancing with a fan, Big Brother playing basketball and Little Sister drawing."
+      },
+      "characters": [
+        "yeye",
+        "nainai",
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "fishing-rod",
+        "fan",
+        "basketball",
+        "crayons"
+      ]
+    },
+    {
+      "wordId": "L1-0006",
+      "hanzi": "白",
+      "type": "pair",
+      "scene": {
+        "id": "Seekor kelinci putih duduk di atas salju; di sebelahnya seekor kelinci hitam sebagai pembanding.",
+        "en": "A white rabbit sits in the snow; next to it is a black rabbit for contrast."
+      },
+      "characters": [],
+      "props": [
+        "rabbit",
+        "snow"
+      ]
+    },
+    {
+      "wordId": "L1-0009",
+      "hanzi": "班",
+      "type": "object",
+      "scene": {
+        "id": "Foto kelas: guru dan para murid berbaris tiga baris dan tersenyum.",
+        "en": "A class photo: the teacher and the students stand in three rows, smiling."
+      },
+      "characters": [
+        "teacher",
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "class-photo"
+      ]
+    },
+    {
+      "wordId": "L1-0011",
+      "hanzi": "半年",
+      "type": "comic",
+      "scene": {
+        "id": "Kalender tahunan dibagi dua; enam bulan pertama disorot, dan Adik menunjuk separuh itu.",
+        "en": "A year calendar split in two; the first six months are highlighted and Little Sister points at that half."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "year-calendar"
+      ]
+    },
+    {
+      "wordId": "L1-0012",
+      "hanzi": "半天",
+      "type": "comic",
+      "scene": {
+        "id": "Panel 1, pagi: Ibu mulai mencoba baju di toko. Panel 2, siang: Ayah masih menunggu di bangku, tertidur bersandar pada tas belanja.",
+        "en": "Panel 1, morning: Mom starts trying on clothes in a shop. Panel 2, midday: Dad is still waiting on the bench, asleep against the shopping bags."
+      },
+      "characters": [
+        "baba",
+        "mama"
+      ],
+      "props": [
+        "clothes-rack",
+        "bench",
+        "shopping-bag",
+        "sun"
+      ]
+    },
+    {
+      "wordId": "L1-0013",
+      "hanzi": "帮",
+      "type": "action",
+      "scene": {
+        "id": "Kakak membantu Kakek mengangkat kotak yang berat.",
+        "en": "Big Brother helps Grandpa lift a heavy box."
+      },
+      "characters": [
+        "gege",
+        "yeye"
+      ],
+      "props": [
+        "box"
+      ]
+    },
+    {
+      "wordId": "L1-0014",
+      "hanzi": "帮忙",
+      "type": "action",
+      "scene": {
+        "id": "Adik membantu Ibu menata piring dan mangkuk di meja makan.",
+        "en": "Little Sister helps Mom set plates and bowls on the dinner table."
+      },
+      "characters": [
+        "meimei",
+        "mama"
+      ],
+      "props": [
+        "plate",
+        "bowl",
+        "table"
+      ]
+    },
+    {
+      "wordId": "L1-0015",
+      "hanzi": "包",
+      "type": "object",
+      "scene": {
+        "id": "Ibu membuka tas tangannya dan mengeluarkan sebungkus biskuit untuk Adik.",
+        "en": "Mom opens her handbag and takes out a packet of biscuits for Little Sister."
+      },
+      "characters": [
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "handbag",
+        "snack-pack"
+      ]
+    },
+    {
+      "wordId": "L1-0017",
+      "hanzi": "杯",
+      "type": "count",
+      "scene": {
+        "id": "Penjual menaruh tiga gelas bubble tea berjajar di meja kios, dengan angka 3 di atasnya.",
+        "en": "The seller lines up three cups of bubble tea on the stall counter, with the digit 3 above them."
+      },
+      "characters": [
+        "seller"
+      ],
+      "props": [
+        "bubble-tea",
+        "counter"
+      ]
+    },
+    {
+      "wordId": "L1-0019",
+      "hanzi": "北",
+      "type": "position",
+      "scene": {
+        "id": "Peta dengan mawar angin tanpa huruf; sisi atas (utara) disorot dan jarum kompas merah menunjuk ke sana, ke arah gunung bersalju.",
+        "en": "A map with a letterless compass rose; the top side (north) is highlighted and a red compass needle points that way, toward snowy mountains."
+      },
+      "characters": [],
+      "props": [
+        "compass",
+        "map",
+        "mountain",
+        "snow"
+      ]
+    },
+    {
+      "wordId": "L1-0020",
+      "hanzi": "北边",
+      "type": "position",
+      "scene": {
+        "id": "Peta kecil: taman di tengah; stasiun kereta di sisi utara (atas) taman disorot. Ada mawar angin di pojok.",
+        "en": "A small map: a park in the middle; the train station on the north (top) side of the park is highlighted. A compass rose sits in the corner."
+      },
+      "characters": [],
+      "props": [
+        "map",
+        "compass",
+        "park",
+        "train-station"
+      ]
+    },
+    {
+      "wordId": "L1-0021",
+      "hanzi": "北京",
+      "type": "object",
+      "scene": {
+        "id": "Kuil Langit dengan atap bundar biru di tengah kota; gang hutong beratap abu-abu di depan dan Tembok Besar di kejauhan.",
+        "en": "The Temple of Heaven with its round blue roof; grey-roofed hutong lanes in front and the Great Wall in the distance."
+      },
+      "characters": [],
+      "props": [
+        "temple-of-heaven",
+        "hutong",
+        "great-wall"
+      ]
+    },
+    {
+      "wordId": "L1-0023",
+      "hanzi": "本子",
+      "type": "object",
+      "scene": {
+        "id": "Sebuah buku tulis berspiral dengan sampul bergaris; pensil tergeletak di atasnya.",
+        "en": "A spiral notebook with a striped cover; a pencil lies on top."
+      },
+      "characters": [],
+      "props": [
+        "notebook",
+        "pencil"
+      ]
+    },
+    {
+      "wordId": "L1-0024",
+      "hanzi": "比",
+      "type": "comic",
+      "scene": {
+        "id": "Ayah dan Kakak berdiri saling memunggungi untuk membandingkan tinggi badan; Ibu meletakkan tangannya di atas kepala mereka.",
+        "en": "Dad and Big Brother stand back to back to compare heights; Mom rests her hand flat across the tops of their heads."
+      },
+      "characters": [
+        "baba",
+        "gege",
+        "mama"
+      ],
+      "props": []
+    },
+    {
+      "wordId": "L1-0025",
+      "hanzi": "别",
+      "type": "comic",
+      "scene": {
+        "id": "Adik hendak menyentuh panci panas di atas kompor. Ibu mengangkat telapak tangan untuk menahannya (balon berisi tanda silang).",
+        "en": "Little Sister reaches for a hot pot on the stove. Mom raises her palm to stop her (bubble with a cross)."
+      },
+      "characters": [
+        "meimei",
+        "mama"
+      ],
+      "props": [
+        "pot",
+        "stove",
+        "cross-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0026",
+      "hanzi": "别的",
+      "type": "comic",
+      "scene": {
+        "id": "Penjual menawarkan baju merah. Ibu menggeleng dan menunjuk baju-baju lain di rak.",
+        "en": "The seller offers a red top. Mom shakes her head and points at the other clothes on the rack."
+      },
+      "characters": [
+        "seller",
+        "mama"
+      ],
+      "props": [
+        "clothes",
+        "clothes-rack"
+      ]
+    },
+    {
+      "wordId": "L1-0027",
+      "hanzi": "别人",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak berdiri di dalam lingkaran; di luar lingkaran ada teman kuliah, guru, dan penjual. Kakak menunjuk mereka.",
+        "en": "Big Brother stands inside a circle; outside it are his classmate, the teacher and the seller. He points at them."
+      },
+      "characters": [
+        "gege",
+        "classmate",
+        "teacher",
+        "seller"
+      ],
+      "props": [
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0029",
+      "hanzi": "病人",
+      "type": "object",
+      "scene": {
+        "id": "Kakek berbaring di ranjang rumah sakit; dokter memeriksanya dengan stetoskop.",
+        "en": "Grandpa lies in a hospital bed; the doctor checks him with a stethoscope."
+      },
+      "characters": [
+        "yeye",
+        "doctor"
+      ],
+      "props": [
+        "hospital-bed",
+        "stethoscope"
+      ]
+    },
+    {
+      "wordId": "L1-0030",
+      "hanzi": "不大",
+      "type": "comic",
+      "scene": {
+        "id": "Penjual menunjukkan semangka yang tidak terlalu besar, ukurannya sedang; Ibu menimbangnya di tangan dengan wajah biasa saja.",
+        "en": "The seller shows a watermelon that isn't very big, just medium-sized; Mom weighs it in her hand with a so-so face."
+      },
+      "characters": [
+        "mama",
+        "seller"
+      ],
+      "props": [
+        "watermelon",
+        "market-stall"
+      ]
+    },
+    {
+      "wordId": "L1-0031",
+      "hanzi": "不对",
+      "type": "pair",
+      "scene": {
+        "id": "Di papan tulis tertulis 2 + 2 = 5. Guru menggeleng dan menandainya dengan tanda silang merah; Adik menggaruk kepala.",
+        "en": "The blackboard shows 2 + 2 = 5. The teacher shakes her head and marks it with a red cross; Little Sister scratches her head."
+      },
+      "characters": [
+        "teacher",
+        "meimei"
+      ],
+      "props": [
+        "blackboard",
+        "cross-mark"
+      ],
+      "pairWordId": "L1-0092"
+    },
+    {
+      "wordId": "L1-0033",
+      "hanzi": "不用",
+      "type": "comic",
+      "scene": {
+        "id": "Ayah hendak membuka payung. Kakek menunjuk langit yang cerah dan mengibaskan tangan.",
+        "en": "Dad is about to open an umbrella. Grandpa points at the clear, sunny sky and waves the idea away."
+      },
+      "characters": [
+        "baba",
+        "yeye"
+      ],
+      "props": [
+        "umbrella",
+        "sun"
+      ]
+    },
+    {
+      "wordId": "L1-0037",
+      "hanzi": "差",
+      "type": "comic",
+      "scene": {
+        "id": "Puzzle hampir selesai, tinggal kurang satu keping; Adik mencari-cari keping yang hilang itu.",
+        "en": "The jigsaw is almost finished, with just one piece missing; Little Sister hunts for it."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "jigsaw-puzzle"
+      ]
+    },
+    {
+      "wordId": "L1-0038",
+      "hanzi": "常",
+      "type": "comic",
+      "scene": {
+        "id": "Kalender mingguan dengan tanda centang di lima dari tujuh kotak; di sebelahnya Kakek duduk di bangku taman favoritnya.",
+        "en": "A weekly calendar with ticks in five of the seven boxes; next to it Grandpa sits on his favourite park bench."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "week-calendar",
+        "check-mark",
+        "bench"
+      ]
+    },
+    {
+      "wordId": "L1-0039",
+      "hanzi": "常常",
+      "type": "comic",
+      "scene": {
+        "id": "Tiga panel kecil: Kakek memberi makan burung di taman saat cerah, saat hujan dengan payung, dan saat bersalju.",
+        "en": "Three small panels: Grandpa feeds the birds in the park on a sunny day, on a rainy day with an umbrella, and on a snowy day."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "bird",
+        "bench",
+        "umbrella",
+        "snow",
+        "sun"
+      ]
+    },
+    {
+      "wordId": "L1-0041",
+      "hanzi": "唱歌",
+      "type": "action",
+      "scene": {
+        "id": "Di ruang karaoke berlampu warna-warni, Ayah dan Kakak bernyanyi dengan mikrofon; Ibu bertepuk tangan.",
+        "en": "In a karaoke room with colourful lights, Dad and Big Brother sing into microphones; Mom claps."
+      },
+      "characters": [
+        "baba",
+        "gege",
+        "mama"
+      ],
+      "props": [
+        "microphone",
+        "karaoke-screen",
+        "music-note"
+      ]
+    },
+    {
+      "wordId": "L1-0043",
+      "hanzi": "车票",
+      "type": "object",
+      "scene": {
+        "id": "Di gerbang tiket stasiun, Ayah memegang tiket kereta dengan nomor kursi 12.",
+        "en": "At the station ticket gate, Dad holds a train ticket showing seat number 12."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "train-ticket",
+        "ticket-gate"
+      ]
+    },
+    {
+      "wordId": "L1-0044",
+      "hanzi": "车上",
+      "type": "position",
+      "scene": {
+        "id": "Potongan mobil: Kakek duduk di kursi depan, Adik di kursi belakang memakai sabuk pengaman.",
+        "en": "A cutaway of a car: Grandpa sits in the front seat and Little Sister in the back with her seat belt on."
+      },
+      "characters": [
+        "yeye",
+        "meimei"
+      ],
+      "props": [
+        "car",
+        "seat-belt"
+      ]
+    },
+    {
+      "wordId": "L1-0045",
+      "hanzi": "车站",
+      "type": "object",
+      "scene": {
+        "id": "Halte bus beratap dengan bangku dan papan berikon bus; Nenek duduk menunggu.",
+        "en": "A covered bus stop with a bench and a sign with a bus icon; Grandma sits waiting."
+      },
+      "characters": [
+        "nainai"
+      ],
+      "props": [
+        "bus-stop",
+        "bench",
+        "bus"
+      ]
+    },
+    {
+      "wordId": "L1-0047",
+      "hanzi": "吃饭",
+      "type": "action",
+      "scene": {
+        "id": "Seluruh keluarga duduk mengelilingi meja bundar dan makan bersama; mangkuk nasi dan lauk ada di tengah meja.",
+        "en": "The whole family sits around a round table eating together; rice bowls and dishes fill the middle of the table."
+      },
+      "characters": [
+        "yeye",
+        "nainai",
+        "baba",
+        "mama",
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "round-table",
+        "bowl",
+        "rice",
+        "chopsticks",
+        "vegetables"
+      ]
+    },
+    {
+      "wordId": "L1-0048",
+      "hanzi": "出",
+      "type": "action",
+      "scene": {
+        "id": "Seekor anak ayam keluar dari cangkang telur yang retak; panah mengarah ke luar.",
+        "en": "A chick comes out of its cracked eggshell; an arrow points outward."
+      },
+      "characters": [],
+      "props": [
+        "egg",
+        "chick",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0049",
+      "hanzi": "出来",
+      "type": "action",
+      "scene": {
+        "id": "Ibu berdiri di luar tirai dan memanggil; Adik keluar dari balik tirai ke arah Ibu. Panah mengarah ke Ibu.",
+        "en": "Mom stands outside the curtain and calls; Little Sister comes out from behind it toward her. An arrow points toward Mom."
+      },
+      "characters": [
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "curtain",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0050",
+      "hanzi": "出去",
+      "type": "action",
+      "scene": {
+        "id": "Kakak memakai sepatu lalu keluar rumah, menjauh dari Nenek yang tetap di dalam; panah mengarah menjauhi Nenek.",
+        "en": "Big Brother puts on his shoes and heads out of the house, away from Grandma, who stays inside; an arrow points away from her."
+      },
+      "characters": [
+        "gege",
+        "nainai"
+      ],
+      "props": [
+        "door",
+        "shoe",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0052",
+      "hanzi": "床",
+      "type": "object",
+      "scene": {
+        "id": "Tempat tidur rapi dengan bantal empuk dan selimut bergaris.",
+        "en": "A neatly made bed with a fluffy pillow and a striped blanket."
+      },
+      "characters": [],
+      "props": [
+        "bed",
+        "pillow",
+        "blanket"
+      ]
+    },
+    {
+      "wordId": "L1-0053",
+      "hanzi": "次",
+      "type": "count",
+      "scene": {
+        "id": "Adik melompat tali; tiga bayangan gerakannya berjajar dengan angka 1, 2, 3.",
+        "en": "Little Sister jumps rope; three motion snapshots of her are lined up with the digits 1, 2, 3."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "jump-rope"
+      ]
+    },
+    {
+      "wordId": "L1-0054",
+      "hanzi": "从",
+      "type": "comic",
+      "scene": {
+        "id": "Garis putus-putus berawal dari rumah (titik awalnya disorot) menuju sekolah; Kakak baru melangkah keluar dari pintu rumah.",
+        "en": "A dotted line starts at the house (its starting point highlighted) and leads to the school; Big Brother is just stepping out of the front door."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "house",
+        "school-building",
+        "dotted-line",
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0055",
+      "hanzi": "错",
+      "type": "pair",
+      "scene": {
+        "id": "Adik memakai sepatu terbalik, kiri di kaki kanan. Ibu menunjuknya sambil tertawa; ada tanda silang di atas sepatu. Di sebelahnya sepasang sepatu yang dipakai benar.",
+        "en": "Little Sister has her shoes on the wrong feet. Mom points and laughs; a cross sits above the shoes. Next to them is a pair worn the right way."
+      },
+      "characters": [
+        "meimei",
+        "mama"
+      ],
+      "props": [
+        "shoe",
+        "cross-mark"
+      ],
+      "pairWordId": "L1-0092"
+    },
+    {
+      "wordId": "L1-0056",
+      "hanzi": "打",
+      "type": "action",
+      "scene": {
+        "id": "Kakak memukul bola ping-pong dengan bet; bola melesat melewati net.",
+        "en": "Big Brother hits a ping-pong ball with his paddle; the ball zips over the net."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "ping-pong-paddle",
+        "ping-pong-ball",
+        "ping-pong-table"
+      ]
+    },
+    {
+      "wordId": "L1-0057",
+      "hanzi": "打车",
+      "type": "action",
+      "scene": {
+        "id": "Ayah memesan taksi lewat ponsel di pinggir jalan; taksi berhenti dan sopir menurunkan kaca jendela.",
+        "en": "Dad books a taxi on his phone at the roadside; the taxi pulls up and the driver rolls down the window."
+      },
+      "characters": [
+        "baba",
+        "driver"
+      ],
+      "props": [
+        "phone",
+        "taxi"
+      ]
+    },
+    {
+      "wordId": "L1-0059",
+      "hanzi": "打开",
+      "type": "action",
+      "scene": {
+        "id": "Adik membuka tutup kotak hadiah; cahaya berkilauan keluar dari dalamnya.",
+        "en": "Little Sister lifts the lid of a gift box; sparkling light spills out."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "gift-box",
+        "sparkles"
+      ]
+    },
+    {
+      "wordId": "L1-0060",
+      "hanzi": "打球",
+      "type": "action",
+      "scene": {
+        "id": "Kakak dan teman kuliahnya bermain basket di lapangan; Kakak melompat untuk menembak.",
+        "en": "Big Brother and his classmate play basketball on the court; Big Brother jumps to shoot."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "basketball",
+        "hoop"
+      ]
+    },
+    {
+      "wordId": "L1-0065",
+      "hanzi": "得到",
+      "type": "action",
+      "scene": {
+        "id": "Guru menempelkan stiker bintang di buku Adik; Adik menerimanya dengan bangga.",
+        "en": "The teacher puts a gold star sticker in Little Sister's book; she receives it proudly."
+      },
+      "characters": [
+        "meimei",
+        "teacher"
+      ],
+      "props": [
+        "star-sticker"
+      ]
+    },
+    {
+      "wordId": "L1-0066",
+      "hanzi": "地",
+      "type": "comic",
+      "scene": {
+        "id": "Adik berjalan pelan-pelan dan hati-hati sambil membawa semangkuk sup penuh di atas nampan.",
+        "en": "Little Sister walks slowly and carefully, carrying a full bowl of soup on a tray."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "bowl",
+        "tray"
+      ]
+    },
+    {
+      "wordId": "L1-0068",
+      "hanzi": "等",
+      "type": "action",
+      "scene": {
+        "id": "Kakak menunggu di halte sambil melirik jam tangan; bus terlihat kecil di kejauhan.",
+        "en": "Big Brother waits at the bus stop, glancing at his watch; a bus is a tiny shape in the distance."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "bus-stop",
+        "wristwatch",
+        "bus"
+      ]
+    },
+    {
+      "wordId": "L1-0069",
+      "hanzi": "地",
+      "type": "object",
+      "scene": {
+        "id": "Kakek berjongkok menanam bibit di tanah kebun; tangannya penuh tanah.",
+        "en": "Grandpa crouches to plant a seedling in the garden soil; his hands are covered in earth."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "soil",
+        "seedling",
+        "garden"
+      ]
+    },
+    {
+      "wordId": "L1-0070",
+      "hanzi": "地点",
+      "type": "object",
+      "scene": {
+        "id": "Ayah melihat peta di ponselnya; pin merah menandai tempat janjian, dan bangunan itu tampak di kejauhan.",
+        "en": "Dad checks a map on his phone; a red pin marks the meeting place, and that building can be seen in the distance."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "phone",
+        "location-pin",
+        "restaurant"
+      ]
+    },
+    {
+      "wordId": "L1-0071",
+      "hanzi": "地方",
+      "type": "object",
+      "scene": {
+        "id": "Di kereta metro yang penuh, Kakak celingukan dan akhirnya menemukan satu kursi kosong.",
+        "en": "On a crowded metro train, Big Brother looks around and finally finds one empty seat."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "metro-train",
+        "seat"
+      ]
+    },
+    {
+      "wordId": "L1-0072",
+      "hanzi": "地上",
+      "type": "position",
+      "scene": {
+        "id": "Mainan berserakan di lantai; Ibu menunjuk ke lantai dengan alis terangkat.",
+        "en": "Toys are scattered all over the floor; Mom points at the floor with raised eyebrows."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "toy-bear",
+        "ball",
+        "toy-car",
+        "floor"
+      ]
+    },
+    {
+      "wordId": "L1-0073",
+      "hanzi": "地图",
+      "type": "object",
+      "scene": {
+        "id": "Ayah dan Adik membentangkan peta kertas besar bergambar sungai, jalan, dan gunung.",
+        "en": "Dad and Little Sister spread out a big paper map showing rivers, roads and mountains."
+      },
+      "characters": [
+        "baba",
+        "meimei"
+      ],
+      "props": [
+        "map",
+        "location-pin"
+      ]
+    },
+    {
+      "wordId": "L1-0077",
+      "hanzi": "电",
+      "type": "object",
+      "scene": {
+        "id": "Steker dicolokkan ke stopkontak; ikon petir kecil mengalir lewat kabel dan lampu menyala.",
+        "en": "A plug goes into the socket; a little lightning icon runs along the cable and the lamp lights up."
+      },
+      "characters": [],
+      "props": [
+        "plug",
+        "socket",
+        "lightning",
+        "lamp"
+      ]
+    },
+    {
+      "wordId": "L1-0081",
+      "hanzi": "电视机",
+      "type": "object",
+      "scene": {
+        "id": "Televisi layar datar yang mati di dinding ruang tamu, dengan remote di meja di bawahnya.",
+        "en": "A switched-off flat-screen TV on the living-room wall, with the remote on the stand below."
+      },
+      "characters": [],
+      "props": [
+        "tv",
+        "tv-stand",
+        "remote-control"
+      ]
+    },
+    {
+      "wordId": "L1-0084",
+      "hanzi": "东",
+      "type": "position",
+      "scene": {
+        "id": "Peta dengan mawar angin tanpa huruf; sisi kanan (timur) disorot dan matahari terbit di sisi itu.",
+        "en": "A map with a letterless compass rose; the right side (east) is highlighted and the sun rises on that side."
+      },
+      "characters": [],
+      "props": [
+        "compass",
+        "sun",
+        "map"
+      ]
+    },
+    {
+      "wordId": "L1-0085",
+      "hanzi": "东边",
+      "type": "position",
+      "scene": {
+        "id": "Peta kecil: taman di tengah; sekolah di sisi timur (kanan) taman disorot. Ada mawar angin di pojok.",
+        "en": "A small map: a park in the middle; the school on the east (right) side of the park is highlighted. A compass rose sits in the corner."
+      },
+      "characters": [],
+      "props": [
+        "map",
+        "compass",
+        "park",
+        "school-building"
+      ]
+    },
+    {
+      "wordId": "L1-0087",
+      "hanzi": "动",
+      "type": "action",
+      "scene": {
+        "id": "Main \"patung\": Adik diam membeku, sedangkan tangan Kakak bergerak dan ketahuan; ada garis-garis gerak di tangan Kakak.",
+        "en": "Playing \"statues\": Little Sister stays frozen, but Big Brother's hand moves and he gets caught; motion lines around his hand."
+      },
+      "characters": [
+        "meimei",
+        "gege"
+      ],
+      "props": [
+        "motion-lines"
+      ]
+    },
+    {
+      "wordId": "L1-0088",
+      "hanzi": "动作",
+      "type": "action",
+      "scene": {
+        "id": "Kakek memperagakan gerakan tai chi dalam tiga tahap; garis putus-putus menunjukkan alur gerak tangannya.",
+        "en": "Grandpa demonstrates a tai chi movement in three stages; dotted lines show the path of his hands."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "motion-lines",
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0096",
+      "hanzi": "饿",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak lemas memegang perutnya yang keroncongan sambil menatap kukusan bakpao. Di sebelahnya, Kakak bersandar kenyang dan puas.",
+        "en": "Big Brother droops, holding his rumbling tummy and staring at a steamer of buns. Next to it, he leans back, full and satisfied."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "steamer-basket",
+        "baozi"
+      ]
+    },
+    {
+      "wordId": "L1-0102",
+      "hanzi": "房子",
+      "type": "object",
+      "scene": {
+        "id": "Ayah dan Ibu berdiri di depan gedung apartemen baru sambil mengangkat kunci rumah mereka dengan gembira.",
+        "en": "Dad and Mom stand in front of a new apartment block, happily holding up the key to their home."
+      },
+      "characters": [
+        "baba",
+        "mama"
+      ],
+      "props": [
+        "apartment-building",
+        "key"
+      ]
+    },
+    {
+      "wordId": "L1-0103",
+      "hanzi": "放",
+      "type": "action",
+      "scene": {
+        "id": "Adik dengan hati-hati menaruh sebuah apel di atas meja.",
+        "en": "Little Sister carefully puts an apple down on the table."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "apple",
+        "table"
+      ]
+    },
+    {
+      "wordId": "L1-0104",
+      "hanzi": "放假",
+      "type": "action",
+      "scene": {
+        "id": "Kakak melempar tas sekolahnya ke udara dan memakai topi pantai; di kalender, deretan hari libur disorot.",
+        "en": "Big Brother tosses his schoolbag in the air and puts on a beach hat; on the calendar a row of holiday days is highlighted."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "schoolbag",
+        "sun-hat",
+        "calendar"
+      ]
+    },
+    {
+      "wordId": "L1-0105",
+      "hanzi": "放学",
+      "type": "action",
+      "scene": {
+        "id": "Sore hari, gerbang sekolah terbuka; Adik berlari keluar ke pelukan Kakek yang menjemputnya.",
+        "en": "In the afternoon the school gate opens; Little Sister runs out into the arms of Grandpa, who has come to pick her up."
+      },
+      "characters": [
+        "meimei",
+        "yeye"
+      ],
+      "props": [
+        "school-gate",
+        "schoolbag",
+        "sun"
+      ]
+    },
+    {
+      "wordId": "L1-0106",
+      "hanzi": "飞",
+      "type": "action",
+      "scene": {
+        "id": "Seekor burung terbang di atas gedung; Adik merentangkan kedua tangan, pura-pura ikut terbang.",
+        "en": "A bird flies over the buildings; Little Sister spreads her arms wide, pretending to fly too."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "bird",
+        "apartment-building"
+      ]
+    },
+    {
+      "wordId": "L1-0110",
+      "hanzi": "风",
+      "type": "object",
+      "scene": {
+        "id": "Angin kencang meniup daun-daun dan rambut Nenek; topi Ayah terbang ke udara.",
+        "en": "A strong wind blows the leaves and Grandma's hair; Dad's hat flies up into the air."
+      },
+      "characters": [
+        "nainai",
+        "baba"
+      ],
+      "props": [
+        "tree",
+        "hat",
+        "wind-lines"
+      ]
+    },
+    {
+      "wordId": "L1-0111",
+      "hanzi": "干",
+      "type": "pair",
+      "scene": {
+        "id": "Handuk kering yang mengembang di jemuran di bawah matahari, di samping handuk basah yang meneteskan air.",
+        "en": "A fluffy dry towel on the clothesline under the sun, next to a wet towel dripping water."
+      },
+      "characters": [],
+      "props": [
+        "towel",
+        "clothesline",
+        "sun",
+        "water"
+      ]
+    },
+    {
+      "wordId": "L1-0112",
+      "hanzi": "干净",
+      "type": "pair",
+      "scene": {
+        "id": "Dua piring berdampingan: satu bersih berkilau, satu kotor penuh noda saus. Ibu mengangkat yang bersih.",
+        "en": "Two plates side by side: one sparkling clean, one dirty with sauce stains. Mom holds up the clean one."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "plate",
+        "sparkles"
+      ]
+    },
+    {
+      "wordId": "L1-0113",
+      "hanzi": "干",
+      "type": "action",
+      "scene": {
+        "id": "Kakak sibuk menyapu dan mengepel lantai dengan lengan baju tergulung dan keringat di dahi.",
+        "en": "Big Brother is busy sweeping and mopping the floor, sleeves rolled up and sweat on his forehead."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "broom",
+        "mop"
+      ]
+    },
+    {
+      "wordId": "L1-0114",
+      "hanzi": "干什么",
+      "type": "comic",
+      "scene": {
+        "id": "Ibu membuka pintu kamar dan melihat Kakak mengobrak-abrik lemari; Ibu berkacak pinggang dan bertanya (balon tanda tanya).",
+        "en": "Mom opens the bedroom door and finds Big Brother turning the wardrobe upside down; hands on hips, she asks (question-mark bubble)."
+      },
+      "characters": [
+        "mama",
+        "gege"
+      ],
+      "props": [
+        "wardrobe",
+        "clothes",
+        "question-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0115",
+      "hanzi": "高",
+      "type": "pair",
+      "scene": {
+        "id": "Gedung pencakar langit yang tinggi menjulang di samping sebuah rumah kecil satu lantai.",
+        "en": "A tall skyscraper towers next to a small one-storey house."
+      },
+      "characters": [],
+      "props": [
+        "skyscraper",
+        "house"
+      ]
+    },
+    {
+      "wordId": "L1-0117",
+      "hanzi": "告诉",
+      "type": "action",
+      "scene": {
+        "id": "Adik berbisik di telinga Ibu dengan tangan menutupi mulut; mata Ibu membulat terkejut.",
+        "en": "Little Sister whispers in Mom's ear with a hand cupped round her mouth; Mom's eyes go wide in surprise."
+      },
+      "characters": [
+        "meimei",
+        "mama"
+      ],
+      "props": [
+        "speech-bubble"
+      ]
+    },
+    {
+      "wordId": "L1-0122",
+      "hanzi": "跟",
+      "type": "comic",
+      "scene": {
+        "id": "Adik berjalan di belakang Ayah, menirukan setiap langkahnya persis seperti anak bebek mengikuti induknya.",
+        "en": "Little Sister walks behind Dad, copying every step he takes like a duckling following its mother."
+      },
+      "characters": [
+        "baba",
+        "meimei"
+      ],
+      "props": []
+    },
+    {
+      "wordId": "L1-0123",
+      "hanzi": "工人",
+      "type": "object",
+      "scene": {
+        "id": "Kakek menunjukkan foto lama dirinya waktu muda sebagai pekerja pabrik, memakai helm kerja dan baju kerja biru.",
+        "en": "Grandpa shows an old photo of himself as a young factory worker in a hard hat and blue overalls."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "photo",
+        "hard-hat"
+      ]
+    },
+    {
+      "wordId": "L1-0125",
+      "hanzi": "关",
+      "type": "action",
+      "scene": {
+        "id": "Ibu menekan sakelar dan lampu kamar padam; separuh ruangan menjadi gelap.",
+        "en": "Mom flicks the switch and the room light goes off; half the room turns dark."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "light-switch",
+        "lamp"
+      ]
+    },
+    {
+      "wordId": "L1-0126",
+      "hanzi": "关上",
+      "type": "action",
+      "scene": {
+        "id": "Kakak menutup pintu lemari yang penuh sesak dengan mendorongnya kuat-kuat sampai rapat.",
+        "en": "Big Brother pushes the door of the overstuffed wardrobe hard until it shuts."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "wardrobe",
+        "clothes"
+      ]
+    },
+    {
+      "wordId": "L1-0129",
+      "hanzi": "国家",
+      "type": "object",
+      "scene": {
+        "id": "Peta dunia dengan negara-negara berwarna berbeda; Kakak menunjuk satu negara.",
+        "en": "A world map with countries in different colours; Big Brother points at one."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "world-map"
+      ]
+    },
+    {
+      "wordId": "L1-0130",
+      "hanzi": "国外",
+      "type": "position",
+      "scene": {
+        "id": "Ayah menarik koper menuju pesawat; di balon pikirannya, panah melintas keluar dari batas negara di peta.",
+        "en": "Dad pulls his suitcase toward a plane; in his thought bubble, an arrow crosses out over the country's border on a map."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "suitcase",
+        "plane",
+        "thought-bubble",
+        "world-map",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0131",
+      "hanzi": "过",
+      "type": "action",
+      "scene": {
+        "id": "Kakak menggandeng Nenek menyeberang jalan di zebra cross; panah melintasi jalan.",
+        "en": "Big Brother walks Grandma across the road at the zebra crossing; an arrow goes across the road."
+      },
+      "characters": [
+        "nainai",
+        "gege"
+      ],
+      "props": [
+        "crosswalk",
+        "road",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0133",
+      "hanzi": "还是",
+      "type": "comic",
+      "scene": {
+        "id": "Penjual menyodorkan dua gelas bubble tea, satu rasa stroberi dan satu rasa taro ungu; Adik ragu memilih (tanda tanya).",
+        "en": "The seller holds out two cups of bubble tea, one strawberry and one purple taro; Little Sister can't decide (question mark)."
+      },
+      "characters": [
+        "seller",
+        "meimei"
+      ],
+      "props": [
+        "bubble-tea",
+        "strawberry",
+        "question-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0134",
+      "hanzi": "还有",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak baru menghabiskan satu bakpao; Nenek membuka kukusan berikutnya, dan masih ada banyak lagi.",
+        "en": "Big Brother has just finished a steamed bun; Grandma opens another steamer, and there are lots more."
+      },
+      "characters": [
+        "gege",
+        "nainai"
+      ],
+      "props": [
+        "steamer-basket",
+        "baozi"
+      ]
+    },
+    {
+      "wordId": "L1-0148",
+      "hanzi": "后边",
+      "type": "position",
+      "scene": {
+        "id": "Adik bersembunyi di belakang pohon; hanya kuncirnya yang terlihat dari balik batang.",
+        "en": "Little Sister hides behind a tree; only her pigtails stick out from behind the trunk."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0149",
+      "hanzi": "后天",
+      "type": "comic",
+      "scene": {
+        "id": "Kalender: panah melompati satu kotak dan mendarat dua hari ke depan di kotak bergambar kue; Adik menghitung dengan dua jari.",
+        "en": "A calendar: an arrow skips one box and lands two days ahead on a box with a cake; Little Sister counts on two fingers."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "calendar",
+        "arrow",
+        "cake"
+      ]
+    },
+    {
+      "wordId": "L1-0150",
+      "hanzi": "花",
+      "type": "object",
+      "scene": {
+        "id": "Bunga merah mekar di pot di balkon; Nenek membungkuk menciumnya.",
+        "en": "A red flower blooms in a pot on the balcony; Grandma bends down to smell it."
+      },
+      "characters": [
+        "nainai"
+      ],
+      "props": [
+        "flower",
+        "flowerpot",
+        "balcony"
+      ]
+    },
+    {
+      "wordId": "L1-0151",
+      "hanzi": "话",
+      "type": "comic",
+      "scene": {
+        "id": "Ayah dan Kakek mengobrol sambil minum teh; banyak balon kata kosong melayang di antara mereka.",
+        "en": "Dad and Grandpa chat over tea; lots of empty speech bubbles float between them."
+      },
+      "characters": [
+        "baba",
+        "yeye"
+      ],
+      "props": [
+        "speech-bubble",
+        "teapot",
+        "cup"
+      ]
+    },
+    {
+      "wordId": "L1-0152",
+      "hanzi": "坏",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak menatap sedih ponselnya yang layarnya retak dan tidak menyala; di sebelahnya ada ponsel yang utuh dan menyala.",
+        "en": "Big Brother looks sadly at his phone, its screen cracked and dark; next to it is an intact phone that lights up."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "phone"
+      ],
+      "pairWordId": "L1-0138"
+    },
+    {
+      "wordId": "L1-0153",
+      "hanzi": "还",
+      "type": "action",
+      "scene": {
+        "id": "Kakak mengembalikan buku yang ia pinjam kepada guru; panah mengarah dari Kakak ke guru.",
+        "en": "Big Brother gives back the book he borrowed to the teacher; an arrow goes from him to her."
+      },
+      "characters": [
+        "gege",
+        "teacher"
+      ],
+      "props": [
+        "book",
+        "desk",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0155",
+      "hanzi": "回答",
+      "type": "action",
+      "scene": {
+        "id": "Guru menunjuk; Kakak berdiri dan menjawab dengan yakin (balon berisi tanda seru dan centang).",
+        "en": "The teacher points; Big Brother stands up and answers confidently (bubble with an exclamation mark and a tick)."
+      },
+      "characters": [
+        "gege",
+        "teacher"
+      ],
+      "props": [
+        "speech-bubble",
+        "check-mark",
+        "exclamation-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0156",
+      "hanzi": "回到",
+      "type": "action",
+      "scene": {
+        "id": "Setelah perjalanan jauh, Ayah dan Kakek tiba kembali di rumah tua berpintu merah di desa asal Kakek; Kakek tersenyum haru.",
+        "en": "After a long journey, Dad and Grandpa arrive back at the old red-doored house in Grandpa's home village; Grandpa smiles, moved."
+      },
+      "characters": [
+        "baba",
+        "yeye"
+      ],
+      "props": [
+        "suitcase",
+        "village-house",
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0157",
+      "hanzi": "回家",
+      "type": "action",
+      "scene": {
+        "id": "Ayah membuka pintu apartemen sambil menenteng tas kerja; Adik berlari menyambutnya. Panah menunjuk ke dalam rumah.",
+        "en": "Dad opens the apartment door carrying his briefcase; Little Sister runs to greet him. An arrow points into the home."
+      },
+      "characters": [
+        "baba",
+        "meimei"
+      ],
+      "props": [
+        "door",
+        "briefcase",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0158",
+      "hanzi": "回来",
+      "type": "action",
+      "scene": {
+        "id": "Nenek di dapur menoleh; Kakek baru pulang dari pasar dan masuk ke arahnya membawa sayur. Panah mengarah ke Nenek.",
+        "en": "Grandma looks round in the kitchen; Grandpa, just back from the market, comes in toward her carrying vegetables. An arrow points toward Grandma."
+      },
+      "characters": [
+        "nainai",
+        "yeye"
+      ],
+      "props": [
+        "door",
+        "vegetables",
+        "shopping-bag",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0159",
+      "hanzi": "回去",
+      "type": "action",
+      "scene": {
+        "id": "Teman Adik berpamitan di pintu lalu berjalan pulang menjauh ke rumahnya di kejauhan; Ibu dan Adik melambai. Panah mengarah ke rumah teman.",
+        "en": "Little Sister's friend says goodbye at the door and walks off toward her own home in the distance; Mom and Little Sister wave. An arrow points to the friend's home."
+      },
+      "characters": [
+        "friend",
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "door",
+        "house",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0162",
+      "hanzi": "机场",
+      "type": "object",
+      "scene": {
+        "id": "Bandara: pesawat di landasan terlihat lewat kaca besar terminal; Ayah menarik koper.",
+        "en": "An airport: a plane on the runway seen through the big terminal windows; Dad pulls a suitcase."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "airport",
+        "plane",
+        "suitcase"
+      ]
+    },
+    {
+      "wordId": "L1-0163",
+      "hanzi": "机票",
+      "type": "object",
+      "scene": {
+        "id": "Di konter bandara, Ibu menunjukkan tiket pesawat di layar ponselnya; ada ikon pesawat di layar.",
+        "en": "At the airport counter, Mom shows her plane ticket on her phone screen; a plane icon is on the screen."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "phone",
+        "plane",
+        "check-in-counter"
+      ]
+    },
+    {
+      "wordId": "L1-0166",
+      "hanzi": "记",
+      "type": "action",
+      "scene": {
+        "id": "Ayah mencatat sesuatu di buku kecil sambil menjepit ponsel di antara bahu dan telinga.",
+        "en": "Dad jots something down in a little notebook while holding the phone between his shoulder and ear."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "notebook",
+        "pen",
+        "phone"
+      ]
+    },
+    {
+      "wordId": "L1-0167",
+      "hanzi": "记得",
+      "type": "comic",
+      "scene": {
+        "id": "Nenek memandangi foto lama dan tersenyum; balon pikirannya berisi hari pernikahannya dengan Kakek.",
+        "en": "Grandma gazes at an old photo and smiles; her thought bubble shows her wedding day with Grandpa."
+      },
+      "characters": [
+        "nainai"
+      ],
+      "props": [
+        "photo",
+        "thought-bubble",
+        "heart"
+      ]
+    },
+    {
+      "wordId": "L1-0168",
+      "hanzi": "记住",
+      "type": "action",
+      "scene": {
+        "id": "Adik menghafal: matanya terpejam, jari di pelipis, kartu hafalan di tangan.",
+        "en": "Little Sister memorises: eyes shut, finger on her temple, a flashcard in her hand."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "flashcard"
+      ]
+    },
+    {
+      "wordId": "L1-0170",
+      "hanzi": "家里",
+      "type": "position",
+      "scene": {
+        "id": "Potongan rumah: di dalam, Ibu memasak, Kakek membaca, dan Adik bermain; di luar sedang hujan.",
+        "en": "A cutaway of the home: inside, Mom cooks, Grandpa reads and Little Sister plays; outside it is raining."
+      },
+      "characters": [
+        "mama",
+        "yeye",
+        "meimei"
+      ],
+      "props": [
+        "house",
+        "wok",
+        "book",
+        "toy-bear",
+        "rain"
+      ]
+    },
+    {
+      "wordId": "L1-0172",
+      "hanzi": "间",
+      "type": "count",
+      "scene": {
+        "id": "Denah rumah dilihat dari atas dengan tiga kamar, masing-masing diberi angka 1, 2, dan 3.",
+        "en": "A top-down floor plan of a home with three rooms, numbered 1, 2 and 3."
+      },
+      "characters": [],
+      "props": [
+        "floor-plan"
+      ]
+    },
+    {
+      "wordId": "L1-0174",
+      "hanzi": "见面",
+      "type": "action",
+      "scene": {
+        "id": "Kakak dan teman kuliahnya bertemu di kedai kopi dekat kampus: saling melambai dari jauh, lalu duduk berhadapan.",
+        "en": "Big Brother and his classmate meet at a coffee shop near campus: they wave to each other from afar, then sit face to face."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "table",
+        "cup"
+      ]
+    },
+    {
+      "wordId": "L1-0175",
+      "hanzi": "教",
+      "type": "action",
+      "scene": {
+        "id": "Guru menjelaskan di depan papan tulis sambil menunjuk gambar apel; para murid memperhatikan.",
+        "en": "The teacher explains at the blackboard, pointing to a picture of an apple; the students pay attention."
+      },
+      "characters": [
+        "teacher",
+        "meimei",
+        "gege"
+      ],
+      "props": [
+        "blackboard",
+        "apple"
+      ]
+    },
+    {
+      "wordId": "L1-0177",
+      "hanzi": "教学楼",
+      "type": "object",
+      "scene": {
+        "id": "Gedung kelas lima lantai dengan deretan jendela kelas; guru menaiki tangga depan.",
+        "en": "A five-storey teaching building with rows of classroom windows; the teacher climbs the front steps."
+      },
+      "characters": [
+        "teacher"
+      ],
+      "props": [
+        "school-building",
+        "stairs",
+        "window"
+      ]
+    },
+    {
+      "wordId": "L1-0179",
+      "hanzi": "介绍",
+      "type": "action",
+      "scene": {
+        "id": "Kakak membawa teman kuliahnya pulang dan memperkenalkannya ke Ayah dan Ibu, telapak tangan terbuka ke arah temannya.",
+        "en": "Big Brother brings his classmate home and introduces him to Mom and Dad, an open palm toward his friend."
+      },
+      "characters": [
+        "gege",
+        "classmate",
+        "mama",
+        "baba"
+      ],
+      "props": [
+        "speech-bubble"
+      ]
+    },
+    {
+      "wordId": "L1-0182",
+      "hanzi": "进",
+      "type": "action",
+      "scene": {
+        "id": "Kakak melangkah masuk lewat pintu kelas; panah mengarah ke dalam.",
+        "en": "Big Brother steps in through the classroom door; an arrow points inside."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "door",
+        "classroom",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0183",
+      "hanzi": "进来",
+      "type": "action",
+      "scene": {
+        "id": "Guru di dalam kelas melambai; Kakak yang berdiri di pintu masuk ke arahnya. Panah mengarah ke guru.",
+        "en": "The teacher inside the classroom beckons; Big Brother at the door comes in toward her. An arrow points toward the teacher."
+      },
+      "characters": [
+        "teacher",
+        "gege"
+      ],
+      "props": [
+        "door",
+        "classroom",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0184",
+      "hanzi": "进去",
+      "type": "action",
+      "scene": {
+        "id": "Ayah berdiri di luar dan mendorong lembut Adik masuk ke ruang dokter; panah mengarah menjauhi Ayah.",
+        "en": "Dad stands outside and gently nudges Little Sister into the doctor's room; an arrow points away from Dad."
+      },
+      "characters": [
+        "baba",
+        "meimei",
+        "doctor"
+      ],
+      "props": [
+        "door",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0186",
+      "hanzi": "就",
+      "type": "comic",
+      "scene": {
+        "id": "Begitu bel sekolah berbunyi, Kakak langsung melesat keluar kelas dengan tas di bahu.",
+        "en": "As soon as the school bell rings, Big Brother shoots straight out of the classroom with his bag on his shoulder."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "school-bell",
+        "classroom",
+        "schoolbag"
+      ]
+    },
+    {
+      "wordId": "L1-0190",
+      "hanzi": "开会",
+      "type": "action",
+      "scene": {
+        "id": "Ayah berdiri di ujung meja rapat sambil menunjuk grafik batang di layar; di laptop tampak kotak-kotak wajah kecil rekan kerjanya.",
+        "en": "Dad stands at the end of a meeting table pointing at a bar chart on the screen; a laptop shows little boxes with his colleagues' faces."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "meeting-table",
+        "chart",
+        "computer"
+      ]
+    },
+    {
+      "wordId": "L1-0191",
+      "hanzi": "开玩笑",
+      "type": "action",
+      "scene": {
+        "id": "Kakak memakai kacamata berhidung palsu dan mengagetkan Adik; lalu keduanya tertawa.",
+        "en": "Big Brother puts on fake nose-and-glasses and startles Little Sister; then they both burst out laughing."
+      },
+      "characters": [
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "joke-glasses"
+      ]
+    },
+    {
+      "wordId": "L1-0194",
+      "hanzi": "看到",
+      "type": "action",
+      "scene": {
+        "id": "Kakak melihat bus datang di ujung jalan dan menunjuknya.",
+        "en": "Big Brother sees the bus coming at the end of the road and points at it."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "bus",
+        "bus-stop",
+        "road"
+      ]
+    },
+    {
+      "wordId": "L1-0196",
+      "hanzi": "考",
+      "type": "action",
+      "scene": {
+        "id": "Kakak mengerjakan soal di mejanya; keringat menetes dan pensilnya bergerak cepat.",
+        "en": "Big Brother works through test questions at his desk; sweat drips and his pencil moves fast."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "desk",
+        "pencil",
+        "exam-paper"
+      ]
+    },
+    {
+      "wordId": "L1-0197",
+      "hanzi": "考试",
+      "type": "action",
+      "scene": {
+        "id": "Ruang ujian: deretan meja, murid-murid menulis dengan serius, guru mengawasi, jam di dinding.",
+        "en": "An exam room: rows of desks, students writing seriously, the teacher keeping watch, a clock on the wall."
+      },
+      "characters": [
+        "teacher",
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "desk",
+        "exam-paper",
+        "clock"
+      ]
+    },
+    {
+      "wordId": "L1-0198",
+      "hanzi": "渴",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak berkeringat di bawah terik matahari, lidahnya terjulur, menatap botol air. Di sebelahnya, Kakak segar setelah minum.",
+        "en": "Big Brother sweats under the blazing sun, tongue out, staring at a water bottle. Next to it, he looks refreshed after a drink."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "sun",
+        "water-bottle"
+      ]
+    },
+    {
+      "wordId": "L1-0200",
+      "hanzi": "课本",
+      "type": "object",
+      "scene": {
+        "id": "Buku pelajaran terbuka dengan gambar-gambar berwarna; Adik menunjuk satu halaman.",
+        "en": "An open textbook with colourful pictures; Little Sister points at one page."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "textbook"
+      ]
+    },
+    {
+      "wordId": "L1-0201",
+      "hanzi": "课文",
+      "type": "object",
+      "scene": {
+        "id": "Kakak membaca keras-keras satu bacaan di buku pelajaran; baris-baris abu-abu mewakili teksnya.",
+        "en": "Big Brother reads a lesson text aloud from his textbook; grey lines stand in for the text."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "textbook",
+        "speech-bubble"
+      ]
+    },
+    {
+      "wordId": "L1-0204",
+      "hanzi": "快",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak berlari kencang melewati Kakek, dengan garis-garis kecepatan; panah menunjuk Kakak.",
+        "en": "Big Brother dashes past Grandpa with speed lines; an arrow points at Big Brother."
+      },
+      "characters": [
+        "gege",
+        "yeye"
+      ],
+      "props": [
+        "speed-lines",
+        "walking-stick"
+      ],
+      "pairWordId": "L1-0229"
+    },
+    {
+      "wordId": "L1-0206",
+      "hanzi": "来到",
+      "type": "action",
+      "scene": {
+        "id": "Keluarga Xiǎo tiba di kaki Tembok Besar; Adik melompat girang.",
+        "en": "The Xiǎo family arrives at the foot of the Great Wall; Little Sister jumps for joy."
+      },
+      "characters": [
+        "yeye",
+        "nainai",
+        "baba",
+        "mama",
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "great-wall",
+        "mountain"
+      ]
+    },
+    {
+      "wordId": "L1-0207",
+      "hanzi": "老",
+      "type": "pair",
+      "scene": {
+        "id": "Kakek yang tua dengan rambut putih dan tongkat berdiri di samping Adik yang masih kecil.",
+        "en": "Old Grandpa, with white hair and a walking stick, stands next to young Little Sister."
+      },
+      "characters": [
+        "yeye",
+        "meimei"
+      ],
+      "props": [
+        "walking-stick"
+      ]
+    },
+    {
+      "wordId": "L1-0208",
+      "hanzi": "老人",
+      "type": "object",
+      "scene": {
+        "id": "Kakek dan Nenek duduk di bangku taman; Kakek memegang tongkat.",
+        "en": "Grandpa and Grandma sit on a park bench; Grandpa holds a walking stick."
+      },
+      "characters": [
+        "yeye",
+        "nainai"
+      ],
+      "props": [
+        "bench",
+        "walking-stick",
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0211",
+      "hanzi": "累",
+      "type": "pair",
+      "scene": {
+        "id": "Ayah pulang kerja dan terkapar di sofa, keringatan, dasinya longgar; di sebelahnya, Ayah di pagi hari yang segar bugar.",
+        "en": "Dad gets home from work and collapses on the sofa, sweaty with his tie loose; next to it, fresh and lively morning Dad."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "sofa",
+        "briefcase"
+      ]
+    },
+    {
+      "wordId": "L1-0214",
+      "hanzi": "里边",
+      "type": "position",
+      "scene": {
+        "id": "Kulkas terbuka: di dalamnya ada susu, telur, dan semangka. Kakak melongok ke dalam.",
+        "en": "An open fridge: inside are milk, eggs and a watermelon. Big Brother peers in."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "fridge",
+        "milk-carton",
+        "egg",
+        "watermelon"
+      ]
+    },
+    {
+      "wordId": "L1-0218",
+      "hanzi": "楼",
+      "type": "object",
+      "scene": {
+        "id": "Gedung apartemen bertingkat dengan angka lantai 1 sampai 6 di sisinya; Kakak melambai dari jendela lantai paling atas.",
+        "en": "A multi-storey apartment building with floor numbers 1 to 6 down its side; Big Brother waves from a top-floor window."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "apartment-building"
+      ]
+    },
+    {
+      "wordId": "L1-0219",
+      "hanzi": "楼上",
+      "type": "position",
+      "scene": {
+        "id": "Potongan gedung dua lantai: Adik di lantai atas melambai ke bawah; Ayah di lantai bawah mendongak. Panah ke atas menunjuk Adik.",
+        "en": "A cutaway of a two-storey building: Little Sister on the upper floor waves down; Dad on the lower floor looks up. An up arrow points at her."
+      },
+      "characters": [
+        "meimei",
+        "baba"
+      ],
+      "props": [
+        "apartment-building",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0220",
+      "hanzi": "楼下",
+      "type": "position",
+      "scene": {
+        "id": "Kakak melongok dari jendela lantai atas dan menunjuk ke bawah, ke Kakek yang menunggu di halaman gedung. Panah ke bawah menunjuk Kakek.",
+        "en": "Big Brother leans out of an upstairs window and points down at Grandpa waiting in the courtyard below. A down arrow points at Grandpa."
+      },
+      "characters": [
+        "gege",
+        "yeye"
+      ],
+      "props": [
+        "apartment-building",
+        "window",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0221",
+      "hanzi": "路",
+      "type": "object",
+      "scene": {
+        "id": "Jalan panjang berkelok menuju gunung; Ayah dan Kakak berjalan di atasnya.",
+        "en": "A long winding road leads to the mountains; Dad and Big Brother walk along it."
+      },
+      "characters": [
+        "baba",
+        "gege"
+      ],
+      "props": [
+        "road",
+        "mountain"
+      ]
+    },
+    {
+      "wordId": "L1-0222",
+      "hanzi": "路口",
+      "type": "object",
+      "scene": {
+        "id": "Perempatan jalan dengan lampu lalu lintas dan zebra cross; mobil datang dari empat arah.",
+        "en": "A crossroads with traffic lights and zebra crossings; cars come from four directions."
+      },
+      "characters": [],
+      "props": [
+        "crossroads",
+        "traffic-light",
+        "crosswalk",
+        "car"
+      ]
+    },
+    {
+      "wordId": "L1-0223",
+      "hanzi": "路上",
+      "type": "position",
+      "scene": {
+        "id": "Dalam perjalanan ke kampus, Kakak membeli bakpao di kios pinggir jalan; garis putus-putus menunjukkan rute dari rumah ke kampus.",
+        "en": "On the way to campus, Big Brother buys a steamed bun from a roadside stall; a dotted line shows the route from home to campus."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "road",
+        "backpack",
+        "baozi",
+        "market-stall",
+        "dotted-line"
+      ]
+    },
+    {
+      "wordId": "L1-0225",
+      "hanzi": "马路",
+      "type": "object",
+      "scene": {
+        "id": "Jalan raya lebar dengan beberapa lajur; bus dan mobil melaju, trotoar di tepinya.",
+        "en": "A wide road with several lanes; buses and cars drive along, with pavements at the sides."
+      },
+      "characters": [],
+      "props": [
+        "road",
+        "bus",
+        "car",
+        "pavement"
+      ]
+    },
+    {
+      "wordId": "L1-0226",
+      "hanzi": "马上",
+      "type": "comic",
+      "scene": {
+        "id": "Ibu baru selesai memesan, dan penjual sudah menyodorkan bubble tea dengan secepat kilat; ada garis-garis kecepatan.",
+        "en": "Mom has only just ordered and the seller is already handing over the bubble tea in a flash; speed lines all around."
+      },
+      "characters": [
+        "seller",
+        "mama"
+      ],
+      "props": [
+        "bubble-tea",
+        "counter",
+        "speed-lines"
+      ]
+    },
+    {
+      "wordId": "L1-0229",
+      "hanzi": "慢",
+      "type": "pair",
+      "scene": {
+        "id": "Kakek berjalan pelan-pelan dengan tongkat sementara Kakak melesat melewatinya; panah menunjuk Kakek.",
+        "en": "Grandpa walks slowly with his stick as Big Brother zooms past; an arrow points at Grandpa."
+      },
+      "characters": [
+        "yeye",
+        "gege"
+      ],
+      "props": [
+        "walking-stick",
+        "speed-lines"
+      ],
+      "pairWordId": "L1-0204"
+    },
+    {
+      "wordId": "L1-0231",
+      "hanzi": "毛",
+      "type": "count",
+      "scene": {
+        "id": "Sepuluh koin kecil berjajar, tanda sama dengan, lalu satu koin besar.",
+        "en": "Ten small coins in a row, an equals sign, then one big coin."
+      },
+      "characters": [],
+      "props": [
+        "coin",
+        "equals-sign"
+      ]
+    },
+    {
+      "wordId": "L1-0232",
+      "hanzi": "没",
+      "type": "comic",
+      "scene": {
+        "id": "Ibu bertanya sambil menunjuk mangkuk; Adik menggeleng, dan mangkuk nasinya masih penuh tidak tersentuh.",
+        "en": "Mom asks, pointing at the bowl; Little Sister shakes her head, and her bowl of rice is still full and untouched."
+      },
+      "characters": [
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "bowl",
+        "rice",
+        "cross-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0234",
+      "hanzi": "没什么",
+      "type": "comic",
+      "scene": {
+        "id": "Ibu melihat Kakak termenung dan bertanya (balon tanda tanya). Kakak mengangkat bahu sambil tersenyum, balonnya kosong.",
+        "en": "Mom sees Big Brother lost in thought and asks (question-mark bubble). He shrugs with a smile; his bubble is empty."
+      },
+      "characters": [
+        "mama",
+        "gege"
+      ],
+      "props": [
+        "speech-bubble",
+        "question-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0238",
+      "hanzi": "门",
+      "type": "object",
+      "scene": {
+        "id": "Pintu apartemen merah dengan gagang bulat; Ayah memegang gagangnya dan membukanya.",
+        "en": "A red apartment door with a round handle; Dad holds the handle and opens it."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0239",
+      "hanzi": "门口",
+      "type": "position",
+      "scene": {
+        "id": "Sepasang sepatu dan sebuah paket tergeletak tepat di depan pintu apartemen; Adik mengintip dari balik pintu.",
+        "en": "A pair of shoes and a parcel sit right outside the apartment door; Little Sister peeks out from behind it."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "door",
+        "shoe",
+        "parcel"
+      ]
+    },
+    {
+      "wordId": "L1-0240",
+      "hanzi": "门票",
+      "type": "object",
+      "scene": {
+        "id": "Di gerbang kebun binatang, Kakek menyerahkan dua tiket masuk; di balik gerbang tampak panda.",
+        "en": "At the zoo gate, Grandpa hands over two entry tickets; a panda can be seen beyond the gate."
+      },
+      "characters": [
+        "yeye",
+        "meimei"
+      ],
+      "props": [
+        "ticket",
+        "gate",
+        "panda"
+      ]
+    },
+    {
+      "wordId": "L1-0246",
+      "hanzi": "明白",
+      "type": "comic",
+      "scene": {
+        "id": "Panel 1: Adik bingung menatap soal (tanda tanya). Panel 2: bohlam menyala di atas kepalanya dan ia tersenyum lebar.",
+        "en": "Panel 1: Little Sister stares at a problem, confused (question mark). Panel 2: a light bulb switches on above her head and she grins."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "exam-paper",
+        "light-bulb",
+        "question-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0249",
+      "hanzi": "拿",
+      "type": "action",
+      "scene": {
+        "id": "Kakek mengambil cangkir teh dari meja dan memegangnya dengan satu tangan.",
+        "en": "Grandpa picks up a teacup from the table and holds it in one hand."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "cup",
+        "table"
+      ]
+    },
+    {
+      "wordId": "L1-0259",
+      "hanzi": "奶",
+      "type": "object",
+      "scene": {
+        "id": "Adik menghabiskan segelas susu dan tersenyum dengan kumis susu putih di atas bibirnya.",
+        "en": "Little Sister finishes a glass of milk and grins with a white milk moustache."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "glass",
+        "milk"
+      ]
+    },
+    {
+      "wordId": "L1-0260",
+      "hanzi": "奶奶",
+      "type": "object",
+      "scene": {
+        "id": "Nenek bersanggul abu-abu dan berkardigan duduk di meja sambil membuat pangsit.",
+        "en": "Grandma, with her grey bun and cardigan, sits at the table making dumplings."
+      },
+      "characters": [
+        "nainai"
+      ],
+      "props": [
+        "dumplings",
+        "table"
+      ]
+    },
+    {
+      "wordId": "L1-0262",
+      "hanzi": "男孩儿",
+      "type": "object",
+      "scene": {
+        "id": "Kakak, seorang anak laki-laki, menendang bola di halaman kompleks apartemen.",
+        "en": "Big Brother, a boy, kicks a ball in the courtyard of an apartment complex."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "ball",
+        "apartment-building"
+      ]
+    },
+    {
+      "wordId": "L1-0264",
+      "hanzi": "男人",
+      "type": "object",
+      "scene": {
+        "id": "Ayah, pria dewasa berkemeja, berdiri tegak dengan tangan di pinggang.",
+        "en": "Dad, a grown man in a shirt, stands tall with his hands on his hips."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": []
+    },
+    {
+      "wordId": "L1-0265",
+      "hanzi": "男生",
+      "type": "object",
+      "scene": {
+        "id": "Kakak dan teman kuliahnya, dua cowok, bermain basket di lapangan kampus.",
+        "en": "Big Brother and his classmate, two young guys, play basketball on the campus court."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "basketball",
+        "hoop"
+      ]
+    },
+    {
+      "wordId": "L1-0266",
+      "hanzi": "南",
+      "type": "position",
+      "scene": {
+        "id": "Peta dengan mawar angin tanpa huruf; sisi bawah (selatan) disorot dan sekawanan burung terbang ke arah itu.",
+        "en": "A map with a letterless compass rose; the bottom side (south) is highlighted and a flock of birds flies that way."
+      },
+      "characters": [],
+      "props": [
+        "compass",
+        "map",
+        "bird"
+      ]
+    },
+    {
+      "wordId": "L1-0267",
+      "hanzi": "南边",
+      "type": "position",
+      "scene": {
+        "id": "Peta kecil: taman di tengah; rumah sakit di sisi selatan (bawah) taman disorot. Ada mawar angin di pojok.",
+        "en": "A small map: a park in the middle; the hospital on the south (bottom) side of the park is highlighted. A compass rose sits in the corner."
+      },
+      "characters": [],
+      "props": [
+        "map",
+        "compass",
+        "park",
+        "hospital"
+      ]
+    },
+    {
+      "wordId": "L1-0268",
+      "hanzi": "难",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak memegangi kepala di depan soal matematika yang panjang dan berbelit; di sebelahnya ada soal 1 + 1 yang mudah.",
+        "en": "Big Brother clutches his head in front of a long, tangled maths problem; next to it is an easy 1 + 1."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "exam-paper"
+      ]
+    },
+    {
+      "wordId": "L1-0278",
+      "hanzi": "女孩儿",
+      "type": "object",
+      "scene": {
+        "id": "Adik, anak perempuan berkuncir dua, melompat tali di halaman.",
+        "en": "Little Sister, a girl with two pigtails, jumps rope in the courtyard."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "jump-rope"
+      ]
+    },
+    {
+      "wordId": "L1-0280",
+      "hanzi": "女人",
+      "type": "object",
+      "scene": {
+        "id": "Ibu, wanita dewasa, berdiri sambil menenteng tas belanja.",
+        "en": "Mom, a grown woman, stands holding a shopping bag."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "shopping-bag"
+      ]
+    },
+    {
+      "wordId": "L1-0281",
+      "hanzi": "女生",
+      "type": "object",
+      "scene": {
+        "id": "Di kelas, Adik yang berseragam sekolah mengangkat tangan dari bangkunya; guru menunjuknya.",
+        "en": "In class, Little Sister in her school uniform raises her hand from her desk; the teacher points to her."
+      },
+      "characters": [
+        "meimei",
+        "teacher"
+      ],
+      "props": [
+        "desk"
+      ]
+    },
+    {
+      "wordId": "L1-0282",
+      "hanzi": "旁边",
+      "type": "position",
+      "scene": {
+        "id": "Adik duduk tepat di samping Kakek di bangku taman.",
+        "en": "Little Sister sits right beside Grandpa on a park bench."
+      },
+      "characters": [
+        "meimei",
+        "yeye"
+      ],
+      "props": [
+        "bench",
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0283",
+      "hanzi": "跑",
+      "type": "action",
+      "scene": {
+        "id": "Kakak berlari kencang di lintasan lari; ada garis-garis kecepatan di belakangnya.",
+        "en": "Big Brother sprints along the running track with speed lines behind him."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "running-track",
+        "speed-lines"
+      ]
+    },
+    {
+      "wordId": "L1-0285",
+      "hanzi": "票",
+      "type": "object",
+      "scene": {
+        "id": "Adik memegang selembar tiket kertas bergerigi dengan bangga di depan loket.",
+        "en": "Little Sister proudly holds up a paper ticket with jagged edges in front of the ticket window."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "ticket",
+        "ticket-window"
+      ]
+    },
+    {
+      "wordId": "L1-0287",
+      "hanzi": "起",
+      "type": "action",
+      "scene": {
+        "id": "Kakek bangkit dari kursi malas dengan bertumpu pada tongkatnya; panah ke atas.",
+        "en": "Grandpa rises from his armchair, leaning on his walking stick; an up arrow."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "armchair",
+        "walking-stick",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0289",
+      "hanzi": "起来",
+      "type": "action",
+      "scene": {
+        "id": "Guru masuk kelas; Kakak dan teman kuliahnya berdiri tegak dari kursi. Panah ke atas.",
+        "en": "The teacher walks into class; Big Brother and his classmate stand straight up from their chairs. An up arrow."
+      },
+      "characters": [
+        "teacher",
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "desk",
+        "chair",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0290",
+      "hanzi": "汽车",
+      "type": "object",
+      "scene": {
+        "id": "Mobil keluarga Xiǎo diparkir di depan apartemen; Ayah memasukkan koper ke bagasi.",
+        "en": "The Xiǎo family's car is parked outside the apartment; Dad loads a suitcase into the boot."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "car",
+        "suitcase",
+        "apartment-building"
+      ]
+    },
+    {
+      "wordId": "L1-0292",
+      "hanzi": "前边",
+      "type": "position",
+      "scene": {
+        "id": "Di jalan, sebuah taksi melaju di depan bus; panah menunjuk taksi.",
+        "en": "On the road, a taxi drives in front of a bus; an arrow points at the taxi."
+      },
+      "characters": [],
+      "props": [
+        "taxi",
+        "bus",
+        "road",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0293",
+      "hanzi": "前天",
+      "type": "comic",
+      "scene": {
+        "id": "Kalender: panah melompat mundur dua kotak dari hari ini ke kotak bergambar hujan; Kakak mengingat-ingat sambil menghitung dua jari.",
+        "en": "A calendar: an arrow jumps back two boxes from today to a box with rain in it; Big Brother remembers, counting on two fingers."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "calendar",
+        "arrow",
+        "thought-bubble",
+        "rain"
+      ]
+    },
+    {
+      "wordId": "L1-0295",
+      "hanzi": "钱包",
+      "type": "object",
+      "scene": {
+        "id": "Dompet kulit cokelat yang terbuka berisi kartu dan uang kertas; Ayah memegangnya.",
+        "en": "An open brown leather wallet with cards and banknotes inside; Dad holds it."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "wallet",
+        "banknote",
+        "card"
+      ]
+    },
+    {
+      "wordId": "L1-0297",
+      "hanzi": "请假",
+      "type": "action",
+      "scene": {
+        "id": "Kakak demam di tempat tidur dengan termometer; Ibu menelepon guru untuk minta izin.",
+        "en": "Big Brother lies in bed with a fever and a thermometer; Mom phones the teacher to ask for a day off for him."
+      },
+      "characters": [
+        "gege",
+        "mama"
+      ],
+      "props": [
+        "bed",
+        "thermometer",
+        "phone"
+      ]
+    },
+    {
+      "wordId": "L1-0298",
+      "hanzi": "请进",
+      "type": "comic",
+      "scene": {
+        "id": "Nenek membuka pintu lebar-lebar dan merentangkan tangan ke dalam, mempersilakan teman Adik masuk. Panah menunjuk ke dalam rumah.",
+        "en": "Grandma opens the door wide and sweeps her arm inward, inviting Little Sister's friend to come in. An arrow points into the home."
+      },
+      "characters": [
+        "nainai",
+        "friend"
+      ],
+      "props": [
+        "door",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0300",
+      "hanzi": "请坐",
+      "type": "comic",
+      "scene": {
+        "id": "Kakek menunjuk kursi kosong dengan telapak tangan terbuka, mempersilakan guru duduk.",
+        "en": "Grandpa points to an empty chair with an open palm, inviting the teacher to sit down."
+      },
+      "characters": [
+        "yeye",
+        "teacher"
+      ],
+      "props": [
+        "chair"
+      ]
+    },
+    {
+      "wordId": "L1-0301",
+      "hanzi": "球",
+      "type": "object",
+      "scene": {
+        "id": "Bermacam bola di keranjang: bola basket, bola sepak, dan bola ping-pong.",
+        "en": "Different balls in a basket: a basketball, a football and a ping-pong ball."
+      },
+      "characters": [],
+      "props": [
+        "basketball",
+        "ball",
+        "ping-pong-ball",
+        "basket"
+      ]
+    },
+    {
+      "wordId": "L1-0307",
+      "hanzi": "认真",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak belajar dengan sangat serius, punggung tegak dan fokus penuh; di sebelahnya teman kuliah bermain ponsel.",
+        "en": "Big Brother studies very seriously, back straight and fully focused; next to him his classmate plays on his phone."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "desk",
+        "book",
+        "phone"
+      ]
+    },
+    {
+      "wordId": "L1-0309",
+      "hanzi": "日期",
+      "type": "object",
+      "scene": {
+        "id": "Ayah memegang tiket kereta dan menunjuk tanggal yang sama (angka 8) di kalender meja.",
+        "en": "Dad holds a train ticket and points to the same date (the digit 8) on a desk calendar."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "calendar",
+        "train-ticket"
+      ]
+    },
+    {
+      "wordId": "L1-0310",
+      "hanzi": "肉",
+      "type": "object",
+      "scene": {
+        "id": "Sepiring daging masak kecap yang mengilap; Kakak menatapnya dengan lapar.",
+        "en": "A plate of glossy braised pork; Big Brother stares at it hungrily."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "plate",
+        "meat"
+      ]
+    },
+    {
+      "wordId": "L1-0312",
+      "hanzi": "山",
+      "type": "object",
+      "scene": {
+        "id": "Tiga puncak gunung hijau di bawah awan, yang tengah paling tinggi; Kakek dan Adik mendaki jalan setapak.",
+        "en": "Three green mountain peaks under the clouds, the middle one tallest; Grandpa and Little Sister hike up a path."
+      },
+      "characters": [
+        "yeye",
+        "meimei"
+      ],
+      "props": [
+        "mountain",
+        "cloud"
+      ]
+    },
+    {
+      "wordId": "L1-0313",
+      "hanzi": "商场",
+      "type": "object",
+      "scene": {
+        "id": "Mal besar bertingkat dengan eskalator di tengah; Ibu dan Adik menenteng tas belanja.",
+        "en": "A big multi-level shopping mall with escalators in the middle; Mom and Little Sister carry shopping bags."
+      },
+      "characters": [
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "shopping-mall",
+        "escalator",
+        "shopping-bag"
+      ]
+    },
+    {
+      "wordId": "L1-0317",
+      "hanzi": "上边",
+      "type": "position",
+      "scene": {
+        "id": "Boneka beruang duduk di rak paling atas; Adik berjinjit meraihnya. Panah menunjuk rak atas.",
+        "en": "A teddy bear sits on the top shelf; Little Sister stands on tiptoe to reach it. An arrow points at the top shelf."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "shelf",
+        "toy-bear",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0318",
+      "hanzi": "上车",
+      "type": "action",
+      "scene": {
+        "id": "Nenek naik ke bus lewat pintu depan sambil memindai kode QR di mesin; panah mengarah ke dalam bus.",
+        "en": "Grandma steps onto the bus through the front door, scanning a QR code at the reader; an arrow points into the bus."
+      },
+      "characters": [
+        "nainai"
+      ],
+      "props": [
+        "bus",
+        "qr-code",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0319",
+      "hanzi": "上次",
+      "type": "comic",
+      "scene": {
+        "id": "Di restoran, Adik menunjuk ke balon kenangan di belakangnya: terakhir kali di sini ia menumpahkan semangkuk sup.",
+        "en": "In a restaurant, Little Sister points to a memory bubble behind her: last time here, she spilled a bowl of soup."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "thought-bubble",
+        "bowl",
+        "arrow",
+        "restaurant"
+      ]
+    },
+    {
+      "wordId": "L1-0321",
+      "hanzi": "上网",
+      "type": "action",
+      "scene": {
+        "id": "Kakak berselancar di internet lewat laptop; ikon wifi melayang di atasnya.",
+        "en": "Big Brother browses the internet on his laptop; a wifi icon floats above."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "computer",
+        "wifi"
+      ]
+    },
+    {
+      "wordId": "L1-0326",
+      "hanzi": "身上",
+      "type": "position",
+      "scene": {
+        "id": "Adik diam-diam menempelkan stiker bintang di punggung Ayah; Ayah meraba-raba badannya mencarinya. Panah menunjuk stiker itu.",
+        "en": "Little Sister secretly sticks a star sticker on Dad's back; Dad pats himself all over looking for it. An arrow points at the sticker."
+      },
+      "characters": [
+        "meimei",
+        "baba"
+      ],
+      "props": [
+        "star-sticker",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0327",
+      "hanzi": "身体",
+      "type": "object",
+      "scene": {
+        "id": "Kakek senam pagi di taman dan memamerkan otot lengannya dengan bangga; badannya sehat dan bugar.",
+        "en": "Grandpa does his morning exercises in the park and proudly flexes his arm; he looks fit and healthy."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0330",
+      "hanzi": "生气",
+      "type": "pair",
+      "scene": {
+        "id": "Ibu berkacak pinggang dengan wajah merah padam melihat dinding yang dicoret-coret krayon; di sebelahnya Ibu yang sedang tersenyum senang.",
+        "en": "Mom stands with her hands on her hips, red in the face, looking at a wall covered in crayon scribbles; next to it is Mom smiling happily."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "crayons",
+        "wall"
+      ],
+      "pairWordId": "L1-0116"
+    },
+    {
+      "wordId": "L1-0331",
+      "hanzi": "生日",
+      "type": "object",
+      "scene": {
+        "id": "Adik memakai topi pesta dan meniup lilin di kue ulang tahun; Ayah dan Ibu bertepuk tangan.",
+        "en": "Little Sister in a party hat blows out the candles on her birthday cake; Mom and Dad clap."
+      },
+      "characters": [
+        "meimei",
+        "mama",
+        "baba"
+      ],
+      "props": [
+        "cake",
+        "candle",
+        "party-hat"
+      ]
+    },
+    {
+      "wordId": "L1-0336",
+      "hanzi": "试",
+      "type": "action",
+      "scene": {
+        "id": "Ibu mencoba baju di depan cermin kamar pas, memutar badan untuk melihat.",
+        "en": "Mom tries on a top in front of the fitting-room mirror, turning to look."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "clothes",
+        "mirror",
+        "fitting-room"
+      ]
+    },
+    {
+      "wordId": "L1-0338",
+      "hanzi": "是不是",
+      "type": "comic",
+      "scene": {
+        "id": "Adik menunjuk foto anak kecil di ponsel Ayah, lalu menunjuk Ayah; di balonnya ada ikon centang dan silang.",
+        "en": "Little Sister points at a photo of a small child on Dad's phone, then at Dad; her bubble shows a tick and a cross."
+      },
+      "characters": [
+        "meimei",
+        "baba"
+      ],
+      "props": [
+        "phone",
+        "photo",
+        "check-mark",
+        "cross-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0339",
+      "hanzi": "手",
+      "type": "object",
+      "scene": {
+        "id": "Adik mengangkat kedua telapak tangannya yang belepotan cat warna-warni.",
+        "en": "Little Sister holds up both hands, covered in colourful paint."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "paint"
+      ]
+    },
+    {
+      "wordId": "L1-0342",
+      "hanzi": "书包",
+      "type": "object",
+      "scene": {
+        "id": "Tas sekolah kuning yang besar dan penuh buku di punggung Adik.",
+        "en": "A big yellow schoolbag stuffed with books on Little Sister's back."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "schoolbag",
+        "book"
+      ]
+    },
+    {
+      "wordId": "L1-0344",
+      "hanzi": "树",
+      "type": "object",
+      "scene": {
+        "id": "Pohon besar yang rindang di taman kompleks; Kakek duduk berteduh di bawahnya.",
+        "en": "A big shady tree in the estate's park; Grandpa sits in its shade."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "tree",
+        "bench"
+      ]
+    },
+    {
+      "wordId": "L1-0352",
+      "hanzi": "送",
+      "type": "action",
+      "scene": {
+        "id": "Ayah mengantar Nenek ke stasiun; ia melambai saat kereta Nenek mulai berangkat.",
+        "en": "Dad sees Grandma off at the station, waving as her train starts to pull away."
+      },
+      "characters": [
+        "baba",
+        "nainai"
+      ],
+      "props": [
+        "train",
+        "train-station"
+      ]
+    },
+    {
+      "wordId": "L1-0362",
+      "hanzi": "听到",
+      "type": "action",
+      "scene": {
+        "id": "Bel pintu berbunyi; Kakak menoleh kaget dan ada gelombang suara di dekat telinganya.",
+        "en": "The doorbell rings; Big Brother turns in surprise, with sound waves by his ear."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "doorbell",
+        "sound-waves",
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0364",
+      "hanzi": "听写",
+      "type": "action",
+      "scene": {
+        "id": "Guru membacakan kata (balon kosong); murid-murid menutup buku dan menulis apa yang mereka dengar di kertas.",
+        "en": "The teacher reads out words (empty speech bubble); the students keep their books shut and write what they hear on paper."
+      },
+      "characters": [
+        "teacher",
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "desk",
+        "paper",
+        "speech-bubble"
+      ]
+    },
+    {
+      "wordId": "L1-0366",
+      "hanzi": "图书馆",
+      "type": "object",
+      "scene": {
+        "id": "Perpustakaan yang tenang: meja panjang dan rak-rak tinggi; Kakak belajar dengan buku tebal.",
+        "en": "A quiet library: long tables and tall shelves; Big Brother studies with a thick book."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "bookshelf",
+        "book",
+        "long-table",
+        "lamp"
+      ]
+    },
+    {
+      "wordId": "L1-0369",
+      "hanzi": "外国",
+      "type": "object",
+      "scene": {
+        "id": "Adik melihat foto-foto liburan dari negara lain: kincir angin, piramida, dan menara.",
+        "en": "Little Sister looks at holiday photos from other countries: a windmill, a pyramid and a tower."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "photo",
+        "windmill",
+        "pyramid",
+        "tower"
+      ]
+    },
+    {
+      "wordId": "L1-0370",
+      "hanzi": "外语",
+      "type": "object",
+      "scene": {
+        "id": "Kakak memakai headphone dan belajar bahasa asing di laptop; balon kata berisi bendera-bendera kecil yang berbeda.",
+        "en": "Big Brother wears headphones and studies a foreign language on his laptop; the speech bubble holds several different little flags."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "computer",
+        "headphones",
+        "speech-bubble",
+        "flag"
+      ]
+    },
+    {
+      "wordId": "L1-0375",
+      "hanzi": "网上",
+      "type": "comic",
+      "scene": {
+        "id": "Panel 1: Ibu memilih baju di layar ponsel dan menekan ikon keranjang belanja. Panel 2: keesokan harinya paket tiba di depan pintu.",
+        "en": "Panel 1: Mom picks a top on her phone screen and taps the shopping-cart icon. Panel 2: the next day a parcel arrives at the door."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "phone",
+        "shopping-cart",
+        "parcel",
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0376",
+      "hanzi": "网友",
+      "type": "object",
+      "scene": {
+        "id": "Kakak bermain game online sambil mengobrol lewat headset dengan teman yang hanya tampil sebagai avatar kartun di layar.",
+        "en": "Big Brother plays an online game, chatting through his headset with a friend who appears on screen only as a cartoon avatar."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "computer",
+        "headphones",
+        "speech-bubble"
+      ]
+    },
+    {
+      "wordId": "L1-0377",
+      "hanzi": "忘",
+      "type": "comic",
+      "scene": {
+        "id": "Ayah sudah di luar pintu dan meraba saku kosongnya; payungnya tertinggal di dalam rumah, sementara awan mendung datang.",
+        "en": "Dad is already outside the door, patting his empty pockets; his umbrella is left inside, and rain clouds are rolling in."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "door",
+        "umbrella",
+        "cloud"
+      ]
+    },
+    {
+      "wordId": "L1-0378",
+      "hanzi": "忘记",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak tiba di kelas dan membuka tas, tapi buku PR-nya tidak ada; balon pikiran menunjukkan buku itu tertinggal di meja rumah.",
+        "en": "Big Brother gets to class and opens his bag, but his homework book isn't there; a thought bubble shows it left on the desk at home."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "schoolbag",
+        "notebook",
+        "thought-bubble",
+        "desk"
+      ]
+    },
+    {
+      "wordId": "L1-0384",
+      "hanzi": "西",
+      "type": "position",
+      "scene": {
+        "id": "Peta dengan mawar angin tanpa huruf; sisi kiri (barat) disorot dan matahari terbenam di sisi itu.",
+        "en": "A map with a letterless compass rose; the left side (west) is highlighted and the sun sets on that side."
+      },
+      "characters": [],
+      "props": [
+        "compass",
+        "sun",
+        "map"
+      ]
+    },
+    {
+      "wordId": "L1-0385",
+      "hanzi": "西边",
+      "type": "position",
+      "scene": {
+        "id": "Peta kecil: taman di tengah; pasar di sisi barat (kiri) taman disorot. Ada mawar angin di pojok.",
+        "en": "A small map: a park in the middle; the market on the west (left) side of the park is highlighted. A compass rose sits in the corner."
+      },
+      "characters": [],
+      "props": [
+        "map",
+        "compass",
+        "park",
+        "market-stall"
+      ]
+    },
+    {
+      "wordId": "L1-0386",
+      "hanzi": "洗",
+      "type": "action",
+      "scene": {
+        "id": "Ibu mencuci piring di wastafel yang penuh busa sabun.",
+        "en": "Mom washes the dishes in a sink full of soap bubbles."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "sink",
+        "plate",
+        "soap-bubbles"
+      ]
+    },
+    {
+      "wordId": "L1-0387",
+      "hanzi": "洗手间",
+      "type": "object",
+      "scene": {
+        "id": "Toilet yang bersih dengan wastafel; Adik mencuci tangan dengan sabun. Di pintunya ada ikon toilet.",
+        "en": "A clean restroom with a sink; Little Sister washes her hands with soap. A restroom icon is on the door."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "sink",
+        "toilet",
+        "soap",
+        "restroom-sign"
+      ]
+    },
+    {
+      "wordId": "L1-0391",
+      "hanzi": "下边",
+      "type": "position",
+      "scene": {
+        "id": "Bola ada di rak paling bawah; Kakak berjongkok mengambilnya. Panah menunjuk rak bawah.",
+        "en": "A ball is on the bottom shelf; Big Brother crouches to get it. An arrow points at the bottom shelf."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "shelf",
+        "ball",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0392",
+      "hanzi": "下车",
+      "type": "action",
+      "scene": {
+        "id": "Adik melompat turun dari pintu bus ke halte; panah mengarah ke luar bus.",
+        "en": "Little Sister hops down from the bus door onto the stop; an arrow points out of the bus."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "bus",
+        "bus-stop",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0393",
+      "hanzi": "下次",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak kalah main ping-pong dari teman kuliahnya dan mengepalkan tangan; di balon pikiran di depannya, ia menang dan memegang piala.",
+        "en": "Big Brother loses at ping-pong to his classmate and clenches his fist; in a thought bubble ahead of him, he wins and holds a trophy."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "ping-pong-paddle",
+        "thought-bubble",
+        "trophy"
+      ]
+    },
+    {
+      "wordId": "L1-0397",
+      "hanzi": "先",
+      "type": "comic",
+      "scene": {
+        "id": "Panel 1 berangka 1: Adik mencuci tangan. Panel 2 berangka 2: Adik makan.",
+        "en": "Panel 1, numbered 1: Little Sister washes her hands. Panel 2, numbered 2: she eats."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "sink",
+        "soap",
+        "bowl",
+        "chopsticks"
+      ]
+    },
+    {
+      "wordId": "L1-0402",
+      "hanzi": "小孩儿",
+      "type": "object",
+      "scene": {
+        "id": "Adik meluncur di perosotan taman bermain sambil tertawa, tangannya terangkat.",
+        "en": "Little Sister whooshes down a playground slide, laughing with her hands in the air."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "slide"
+      ]
+    },
+    {
+      "wordId": "L1-0403",
+      "hanzi": "小姐",
+      "type": "object",
+      "scene": {
+        "id": "Di toko, Ayah dengan sopan memanggil penjual muda di balik meja kasir sambil mengangkat satu tangan.",
+        "en": "In a shop, Dad politely calls to the young saleswoman behind the counter, raising one hand."
+      },
+      "characters": [
+        "baba",
+        "seller"
+      ],
+      "props": [
+        "counter",
+        "shop"
+      ]
+    },
+    {
+      "wordId": "L1-0408",
+      "hanzi": "笑",
+      "type": "action",
+      "scene": {
+        "id": "Kakek tertawa terbahak-bahak; matanya menyipit dan tangannya memegangi perut.",
+        "en": "Grandpa laughs out loud, eyes squeezed shut and hands on his belly."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": []
+    },
+    {
+      "wordId": "L1-0412",
+      "hanzi": "新年",
+      "type": "object",
+      "scene": {
+        "id": "Malam Tahun Baru: kembang api meledak di atas gedung; Ayah dan Ibu memegang lampion merah, Adik memegang angpau.",
+        "en": "New Year's Eve: fireworks burst over the buildings; Mom and Dad hold red lanterns and Little Sister holds a red envelope."
+      },
+      "characters": [
+        "baba",
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "fireworks",
+        "lantern",
+        "red-envelope",
+        "apartment-building"
+      ]
+    },
+    {
+      "wordId": "L1-0416",
+      "hanzi": "行",
+      "type": "comic",
+      "scene": {
+        "id": "Adik memegang bola dan minta izin main di luar; Ayah mengangguk dan membuat tanda OK dengan jarinya.",
+        "en": "Little Sister holds a ball and asks to play outside; Dad nods and makes an OK sign with his fingers."
+      },
+      "characters": [
+        "meimei",
+        "baba"
+      ],
+      "props": [
+        "ball",
+        "check-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0422",
+      "hanzi": "学院",
+      "type": "object",
+      "scene": {
+        "id": "Kampus dengan gedung bata merah dan tangga lebar; Kakak membawa buku dan melangkah masuk.",
+        "en": "A campus with red-brick buildings and wide steps; Big Brother, carrying books, walks in."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "campus",
+        "book"
+      ]
+    },
+    {
+      "wordId": "L1-0424",
+      "hanzi": "爷爷",
+      "type": "object",
+      "scene": {
+        "id": "Kakek berkacamata dan berambut putih menyiram tanaman di balkon apartemen.",
+        "en": "Grandpa, with glasses and white hair, waters the plants on the apartment balcony."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "watering-can",
+        "potted-plant",
+        "balcony"
+      ]
+    },
+    {
+      "wordId": "L1-0426",
+      "hanzi": "页",
+      "type": "count",
+      "scene": {
+        "id": "Buku terbuka dengan angka halaman 25 di pojok bawah; Adik membalik halamannya.",
+        "en": "An open book with page number 25 in the bottom corner; Little Sister turns the page."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "book"
+      ]
+    },
+    {
+      "wordId": "L1-0432",
+      "hanzi": "一会儿",
+      "type": "comic",
+      "scene": {
+        "id": "Adik menunggu di depan microwave yang sedang memanaskan susu; jam pasir kecil di atasnya hampir habis.",
+        "en": "Little Sister waits in front of the microwave warming her milk; a small hourglass above it is nearly run out."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "microwave",
+        "hourglass"
+      ]
+    },
+    {
+      "wordId": "L1-0433",
+      "hanzi": "一块儿",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak dan teman kuliahnya pulang bareng, berbagi satu payung di bawah hujan.",
+        "en": "Big Brother and his classmate walk home together, sharing one umbrella in the rain."
+      },
+      "characters": [
+        "gege",
+        "classmate"
+      ],
+      "props": [
+        "umbrella",
+        "rain",
+        "backpack"
+      ]
+    },
+    {
+      "wordId": "L1-0435",
+      "hanzi": "一样",
+      "type": "comic",
+      "scene": {
+        "id": "Dua apel yang persis sama berdampingan dengan tanda sama dengan di antaranya; Adik membandingkannya dengan teliti.",
+        "en": "Two identical apples side by side with an equals sign between them; Little Sister compares them closely."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "apple",
+        "equals-sign"
+      ]
+    },
+    {
+      "wordId": "L1-0436",
+      "hanzi": "一边",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak berjalan sambil makan bakpao dan melihat ponsel sekaligus.",
+        "en": "Big Brother walks while eating a steamed bun and looking at his phone at the same time."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "baozi",
+        "phone",
+        "pavement"
+      ]
+    },
+    {
+      "wordId": "L1-0438",
+      "hanzi": "一起",
+      "type": "comic",
+      "scene": {
+        "id": "Seluruh keluarga Xiǎo berbaris dan bersama-sama menarik sebuah lobak raksasa dari kebun.",
+        "en": "The whole Xiǎo family lines up and pulls a giant radish out of the garden together."
+      },
+      "characters": [
+        "yeye",
+        "nainai",
+        "baba",
+        "mama",
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "radish",
+        "garden"
+      ]
+    },
+    {
+      "wordId": "L1-0440",
+      "hanzi": "用",
+      "type": "action",
+      "scene": {
+        "id": "Ayah memakai palu untuk memasang paku di dinding, lalu menggantung bingkai foto.",
+        "en": "Dad uses a hammer to drive a nail into the wall, then hangs a photo frame."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "hammer",
+        "nail",
+        "photo-frame",
+        "wall"
+      ]
+    },
+    {
+      "wordId": "L1-0443",
+      "hanzi": "有名",
+      "type": "comic",
+      "scene": {
+        "id": "Seekor panda di kebun binatang dikerumuni banyak pengunjung yang memotretnya dengan ponsel.",
+        "en": "A panda at the zoo is surrounded by crowds of visitors taking photos of it with their phones."
+      },
+      "characters": [],
+      "props": [
+        "panda",
+        "phone",
+        "zoo-fence"
+      ]
+    },
+    {
+      "wordId": "L1-0444",
+      "hanzi": "有时候",
+      "type": "comic",
+      "scene": {
+        "id": "Kalender mingguan: beberapa kotak bergambar payung, kotak-kotak lainnya bergambar matahari.",
+        "en": "A weekly calendar: a few boxes have an umbrella in them, the others have a sun."
+      },
+      "characters": [],
+      "props": [
+        "week-calendar",
+        "umbrella",
+        "sun"
+      ]
+    },
+    {
+      "wordId": "L1-0446",
+      "hanzi": "有用",
+      "type": "pair",
+      "scene": {
+        "id": "Saat hujan, Adik tetap kering di bawah payungnya, sementara Kakak di sebelahnya basah kuyup tanpa payung.",
+        "en": "In the rain, Little Sister stays dry under her umbrella while Big Brother next to her is soaked without one."
+      },
+      "characters": [
+        "meimei",
+        "gege"
+      ],
+      "props": [
+        "umbrella",
+        "rain"
+      ]
+    },
+    {
+      "wordId": "L1-0447",
+      "hanzi": "右",
+      "type": "position",
+      "scene": {
+        "id": "Adik memegang sumpit dengan tangan kanannya; panah besar mengarah ke kanan.",
+        "en": "Little Sister holds her chopsticks in her right hand; a big arrow points right."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "chopsticks",
+        "bowl",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0448",
+      "hanzi": "右边",
+      "type": "position",
+      "scene": {
+        "id": "Di eskalator stasiun metro, Ayah berdiri di sisi kanan, sementara sisi kiri dibiarkan kosong untuk orang yang berjalan; panah menunjuk ke kanan.",
+        "en": "On a metro escalator, Dad stands on the right side, leaving the left side clear for people walking; an arrow points right."
+      },
+      "characters": [
+        "baba"
+      ],
+      "props": [
+        "escalator",
+        "metro-station",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0451",
+      "hanzi": "远",
+      "type": "pair",
+      "scene": {
+        "id": "Ayah menunjuk menara yang tampak kecil sekali di ujung jalan panjang, jauh di cakrawala; pohon di dekat mereka tampak besar.",
+        "en": "Dad points to a tower that looks tiny at the end of a long road, far off on the horizon; the tree beside them looks big."
+      },
+      "characters": [
+        "baba",
+        "meimei"
+      ],
+      "props": [
+        "tower",
+        "tree",
+        "road"
+      ]
+    },
+    {
+      "wordId": "L1-0456",
+      "hanzi": "在家",
+      "type": "position",
+      "scene": {
+        "id": "Adik berpiyama duduk santai di sofa rumah, sementara di luar jendela orang-orang bergegas berangkat kerja.",
+        "en": "Little Sister in pyjamas lounges on the sofa at home while outside the window people hurry off to work."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "sofa",
+        "window",
+        "pajamas"
+      ]
+    },
+    {
+      "wordId": "L1-0461",
+      "hanzi": "站",
+      "type": "action",
+      "scene": {
+        "id": "Di kereta metro yang penuh, Kakak berdiri berpegangan pada pegangan tangan, sementara Kakek duduk di kursi.",
+        "en": "On a crowded metro train, Big Brother stands holding the handrail while Grandpa sits on a seat."
+      },
+      "characters": [
+        "gege",
+        "yeye"
+      ],
+      "props": [
+        "metro-train",
+        "handrail",
+        "seat"
+      ]
+    },
+    {
+      "wordId": "L1-0463",
+      "hanzi": "找到",
+      "type": "action",
+      "scene": {
+        "id": "Adik akhirnya menemukan boneka beruangnya di bawah tempat tidur dan mengangkatnya dengan gembira.",
+        "en": "Little Sister finally finds her teddy bear under the bed and holds it up with joy."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "toy-bear",
+        "bed",
+        "sparkles"
+      ]
+    },
+    {
+      "wordId": "L1-0469",
+      "hanzi": "着",
+      "type": "comic",
+      "scene": {
+        "id": "Pintu terbuka lebar, lampu menyala, dan TV menyala, tapi tidak ada seorang pun di ruangan itu.",
+        "en": "The door is wide open, the lamp is on and the TV is on, but there is nobody in the room."
+      },
+      "characters": [],
+      "props": [
+        "door",
+        "lamp",
+        "tv",
+        "sofa"
+      ]
+    },
+    {
+      "wordId": "L1-0471",
+      "hanzi": "真的",
+      "type": "comic",
+      "scene": {
+        "id": "Kakak merentangkan tangan menceritakan ikan sebesar ini; Adik tidak percaya (tanda tanya); Kakak menunjukkan fotonya di ponsel sebagai bukti.",
+        "en": "Big Brother stretches his arms wide describing a fish this big; Little Sister doesn't believe him (question mark); he shows her the photo on his phone as proof."
+      },
+      "characters": [
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "phone",
+        "fish",
+        "question-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0472",
+      "hanzi": "正",
+      "type": "comic",
+      "scene": {
+        "id": "Kakek meluruskan bingkai foto yang miring di dinding sampai tegak lurus.",
+        "en": "Grandpa straightens a crooked photo frame on the wall until it hangs perfectly straight."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "photo-frame",
+        "wall"
+      ]
+    },
+    {
+      "wordId": "L1-0475",
+      "hanzi": "知识",
+      "type": "object",
+      "scene": {
+        "id": "Kakek membaca buku tebal; bohlam lampu dan bintang-bintang kecil mengalir dari buku ke kepalanya.",
+        "en": "Grandpa reads a thick book; light bulbs and little stars flow from the book into his head."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "book",
+        "light-bulb",
+        "star"
+      ]
+    },
+    {
+      "wordId": "L1-0476",
+      "hanzi": "中",
+      "type": "position",
+      "scene": {
+        "id": "Anak panah tertancap tepat di titik tengah papan sasaran; Kakak bersorak.",
+        "en": "A dart sticks right in the centre of the dartboard; Big Brother cheers."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "dartboard",
+        "dart"
+      ]
+    },
+    {
+      "wordId": "L1-0478",
+      "hanzi": "中间",
+      "type": "position",
+      "scene": {
+        "id": "Adik duduk di tengah, di antara Ayah dan Ibu, di sofa.",
+        "en": "Little Sister sits in the middle, between Dad and Mom, on the sofa."
+      },
+      "characters": [
+        "baba",
+        "mama",
+        "meimei"
+      ],
+      "props": [
+        "sofa"
+      ]
+    },
+    {
+      "wordId": "L1-0483",
+      "hanzi": "重",
+      "type": "pair",
+      "scene": {
+        "id": "Kakak terhuyung-huyung mengangkat koper berat dengan dua tangan; di sebelahnya Adik memegang balon ringan dengan satu jari.",
+        "en": "Big Brother staggers as he lifts a heavy suitcase with both hands; next to him Little Sister holds a light balloon with one finger."
+      },
+      "characters": [
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "suitcase",
+        "balloon"
+      ]
+    },
+    {
+      "wordId": "L1-0484",
+      "hanzi": "重要",
+      "type": "comic",
+      "scene": {
+        "id": "Ibu dengan hati-hati memasukkan paspor dan tiket ke tasnya; tanda seru besar di atasnya.",
+        "en": "Mom carefully tucks the passport and tickets into her bag; a big exclamation mark above."
+      },
+      "characters": [
+        "mama"
+      ],
+      "props": [
+        "passport",
+        "ticket",
+        "handbag",
+        "exclamation-mark"
+      ]
+    },
+    {
+      "wordId": "L1-0486",
+      "hanzi": "准备",
+      "type": "action",
+      "scene": {
+        "id": "Kakak berjongkok di garis start dengan posisi siap, menunggu aba-aba.",
+        "en": "Big Brother crouches at the starting line in the ready position, waiting for the signal."
+      },
+      "characters": [
+        "gege"
+      ],
+      "props": [
+        "running-track"
+      ]
+    },
+    {
+      "wordId": "L1-0489",
+      "hanzi": "子",
+      "type": "comic",
+      "scene": {
+        "id": "Lima benda berjajar yang namanya berakhiran \"-zi\": meja, kursi, gelas, rumah, dan bakpao, dihubungkan oleh satu garis berwarna.",
+        "en": "Five things in a row whose names end in \"-zi\": a table, a chair, a cup, a house and a steamed bun, linked by one coloured line."
+      },
+      "characters": [],
+      "props": [
+        "table",
+        "chair",
+        "cup",
+        "house",
+        "baozi"
+      ]
+    },
+    {
+      "wordId": "L1-0490",
+      "hanzi": "走",
+      "type": "action",
+      "scene": {
+        "id": "Kakek berjalan santai di taman dengan tongkatnya.",
+        "en": "Grandpa strolls through the park with his walking stick."
+      },
+      "characters": [
+        "yeye"
+      ],
+      "props": [
+        "walking-stick",
+        "tree"
+      ]
+    },
+    {
+      "wordId": "L1-0491",
+      "hanzi": "走路",
+      "type": "action",
+      "scene": {
+        "id": "Kakak dan Adik berjalan kaki ke sekolah di trotoar dengan tas di punggung.",
+        "en": "Big Brother and Little Sister walk to school along the pavement with bags on their backs."
+      },
+      "characters": [
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "pavement",
+        "schoolbag"
+      ]
+    },
+    {
+      "wordId": "L1-0492",
+      "hanzi": "最",
+      "type": "comic",
+      "scene": {
+        "id": "Tiga semangka berjajar dari kecil sampai besar; yang paling besar diberi bintang.",
+        "en": "Three watermelons in a row from small to large; the biggest one has a star."
+      },
+      "characters": [],
+      "props": [
+        "watermelon",
+        "star"
+      ]
+    },
+    {
+      "wordId": "L1-0493",
+      "hanzi": "最好",
+      "type": "comic",
+      "scene": {
+        "id": "Langit mendung; sebelum Kakak keluar, Ibu menyodorkan payung sambil menunjuk ke langit.",
+        "en": "The sky is cloudy; before Big Brother heads out, Mom hands him an umbrella and points at the sky."
+      },
+      "characters": [
+        "mama",
+        "gege"
+      ],
+      "props": [
+        "umbrella",
+        "cloud",
+        "door"
+      ]
+    },
+    {
+      "wordId": "L1-0494",
+      "hanzi": "最后",
+      "type": "comic",
+      "scene": {
+        "id": "Tinggal satu pangsit terakhir di piring; Kakak dan Adik sama-sama mengincarnya dengan sumpit.",
+        "en": "One last dumpling is left on the plate; Big Brother and Little Sister both go for it with their chopsticks."
+      },
+      "characters": [
+        "gege",
+        "meimei"
+      ],
+      "props": [
+        "plate",
+        "dumplings",
+        "chopsticks"
+      ]
+    },
+    {
+      "wordId": "L1-0496",
+      "hanzi": "左",
+      "type": "position",
+      "scene": {
+        "id": "Adik mengangkat tangan kirinya yang memakai gelang merah; panah besar mengarah ke kiri.",
+        "en": "Little Sister raises her left hand, which wears a red bracelet; a big arrow points left."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "bracelet",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0497",
+      "hanzi": "左边",
+      "type": "position",
+      "scene": {
+        "id": "Kakek, Adik, dan Nenek duduk berjajar di bangku; Kakek ada di ujung kiri, dan panah menunjuk sisi kiri.",
+        "en": "Grandpa, Little Sister and Grandma sit in a row on a bench; Grandpa is at the left end, and an arrow points to the left side."
+      },
+      "characters": [
+        "yeye",
+        "nainai",
+        "meimei"
+      ],
+      "props": [
+        "bench",
+        "arrow"
+      ]
+    },
+    {
+      "wordId": "L1-0499",
+      "hanzi": "坐下",
+      "type": "action",
+      "scene": {
+        "id": "Adik yang kelelahan menjatuhkan diri duduk di bangku taman; panah ke bawah.",
+        "en": "Tired Little Sister plops down onto a park bench; a down arrow."
+      },
+      "characters": [
+        "meimei"
+      ],
+      "props": [
+        "bench",
+        "arrow"
+      ]
+    }
+  ]
+}

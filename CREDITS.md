@@ -22,6 +22,8 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 - **Kokoro-82M** (hexgrad; model `hexgrad/Kokoro-82M` v1.0 dan `hexgrad/Kokoro-82M-v1.1-zh`): lisensi Apache-2.0. Kandidat suara Mandarin `zf_*` / `zm_*` untuk audio website.
 - **MeloTTS** (MyShell.ai; model `myshell-ai/MeloTTS-Chinese`): lisensi MIT. Hanya dipakai bila berhasil dipasang di runner; kalau tidak, diganti suara Kokoro lain.
 - **faster-whisper / OpenAI Whisper** (MIT): hanya untuk mengecek apakah audio terdengar sama dengan teksnya; hasilnya tidak ditampilkan sebagai materi belajar.
+- **Audio Tahap 0 · Dasar** (`public/audio/basics/`): dibuat dengan suara P3 = **Kokoro-82M v1.1-zh** (`hexgrad/Kokoro-82M-v1.1-zh`, suara `zf_001`, revisi model yang dipatok di `scripts/tts/voices.json`), lisensi Apache-2.0, lewat workflow `basics-audio.yml`. **faster-whisper** (MIT) dan **pypinyin** (MIT) hanya dipakai untuk mengecek hasilnya; **OpenCC** (Apache-2.0) untuk menyamakan huruf tradisional/sederhana saat mengecek.
+- **Isi Tahap 0** (`data/basics/basics.json`: contoh bunyi, nada, perubahan nada, coretan, radikal, ungkapan kelas) ditulis untuk proyek ini; bacaan huruf dicek otomatis dengan CC-CEDICT, huruf contoh radikal dan ungkapan kelas dicek dengan daftar 300 kata HSK 1. Data coretan dari Hanzi Writer (lihat bagian di bawah).
 - Contoh suara (`public/audio/samples/`, halaman `samples.html`) dibuat otomatis oleh `.github/workflows/tts-samples.yml` memakai `scripts/tts/make_samples.py`; versi paket dipatok di `scripts/tts/requirements.txt`.
 
 ## Versi santai dan dialog

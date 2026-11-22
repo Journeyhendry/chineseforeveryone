@@ -20,6 +20,8 @@
   Tetap gagal -> file terbaik disimpan (ok: false) dan dicatat di data/basics/audio-issues.json.
 - Item yang hanzi/pinyin-nya tidak berubah dan filenya ada tidak dibuat ulang (kecuali --force),
   supaya push berikutnya tidak mengubah mp3 yang sudah ada.
+- Batas waktu (--budget-min): item yang belum sempat dibuat ditandai `pending` di manifest
+  (`complete: false`); workflow lalu menjalankan dirinya lagi untuk melanjutkan.
 """
 from __future__ import annotations
 
@@ -29,6 +31,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import traceback
 import unicodedata
 from pathlib import Path
@@ -43,7 +46,7 @@ DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
 SCRIPT_VERSION = 1
-HAN = re.compile(r"[㐀-鿿]")
+HAN = re.compile(r"[\u3400-\u9fff]")
 DIGITS = {"0": "零", "1": "一", "2": "二", "3": "三", "4": "四", "5": "五", "6": "六", "7": "七", "8": "八", "9": "九"}
 
 log = ms.log
@@ -204,6 +207,7 @@ def main():
     ap.add_argument("--out", default=str(ROOT / "public" / "audio" / "basics"))
     ap.add_argument("--work", default=str(ROOT / ".basics-work"))
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--budget-min", type=float, default=38.0)
     args = ap.parse_args()
     out, work = Path(args.out), Path(args.work)
     out.mkdir(parents=True, exist_ok=True)
@@ -231,11 +235,19 @@ def main():
     checker = Checker() if todo else None
 
     files: dict[str, dict] = {}
+    pending: list[str] = []
+    t0 = time.monotonic()
     for it in items:
         aid = it["audioId"]
         if it not in todo:
             files[aid] = old_files[aid]
             continue
+        if time.monotonic() - t0 > args.budget_min * 60:
+            pending.append(aid)
+            if aid in old_files and (out / old_files[aid]["path"]).exists():
+                files[aid] = old_files[aid]
+            continue
+        started = time.monotonic()
         best = None
         attempts = 0
         for attempt in (1, 2, 3):
@@ -261,6 +273,7 @@ def main():
         if best is None:
             log(f"[basics] {aid}: semua percobaan gagal, tidak ada file")
             continue
+        log(f"[basics] {aid}: {time.monotonic() - started:.1f}s")
         rel = f"{aid}.mp3"
         (out / rel).write_bytes(best["mp3"].read_bytes())
         files[aid] = {
@@ -276,7 +289,8 @@ def main():
 
     passed = sum(1 for f in files.values() if f["ok"])
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    unchanged = old is not None and old.get("files") == files and old.get("scriptVersion") == SCRIPT_VERSION
+    unchanged = (old is not None and old.get("files") == files and old.get("scriptVersion") == SCRIPT_VERSION
+                 and old.get("pending", []) == pending)
     manifest = {
         "version": 1,
         "scriptVersion": SCRIPT_VERSION,
@@ -287,6 +301,8 @@ def main():
         "format": {"codec": "mp3", "channels": 1, "bitrate": ms.BITRATE, "sampleRate": ms.SAMPLE_RATE,
                    "loudnessLUFS": ms.LUFS},
         "whisper": {"model": f"faster-whisper {ms.WHISPER_MODEL}", "passed": passed, "total": len(items)},
+        "complete": not pending,
+        "pending": pending,
         "files": files,
     }
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -294,17 +310,23 @@ def main():
     by_id = {i["audioId"]: i for i in items}
     issues = [{"audioId": aid, "hanzi": by_id[aid]["hanzi"], "pinyin": by_id[aid]["pinyin"],
                "transcript": f["transcript"], "attempts": f["attempts"], "file": f["path"]}
-              for aid, f in files.items() if not f["ok"]]
+              for aid, f in files.items() if not f["ok"] and aid not in pending]
     issues += [{"audioId": i["audioId"], "hanzi": i["hanzi"], "pinyin": i["pinyin"], "transcript": None,
-                "attempts": 3, "file": None} for i in items if i["audioId"] not in files]
+                "attempts": 3, "file": None} for i in items if i["audioId"] not in files and i["audioId"] not in pending]
     issues_doc = {
         "version": 1,
         "note": "Dibuat oleh scripts/tts-basics/basics.py. File tetap dipakai situs (suara terbaik dari 3 percobaan), tetapi belum lolos cek Whisper.",
         "whisper": manifest["whisper"],
+        "pending": pending,
         "items": issues,
     }
     ISSUES.write_text(json.dumps(issues_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    log(f"[basics] selesai: lolos {passed}/{len(items)}; {len(issues)} tercatat di audio-issues.json")
+    log(f"[basics] selesai: lolos {passed}/{len(items)}; {len(issues)} tercatat di audio-issues.json; "
+        f"{len(pending)} belum dibuat (batas waktu)")
+    gh_out = __import__("os").environ.get("GITHUB_OUTPUT")
+    if gh_out:
+        with open(gh_out, "a", encoding="utf-8") as fh:
+            fh.write(f"complete={'true' if not pending else 'false'}\n")
 
 
 if __name__ == "__main__":

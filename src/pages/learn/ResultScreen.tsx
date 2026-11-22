@@ -15,19 +15,29 @@ export function ResultScreen({
   words,
   message,
   children,
+  wrongItems,
+  wrongTitle,
 }: {
   title: string
   stars: number | null
-  result: QuizResult
+  result: Pick<QuizResult, 'correct' | 'total' | 'wrong'>
   words: Map<string, LessonWord>
   message: string
   children: ReactNode
+  /** Pengganti daftar kata salah (mis. Tahap 0, yang tidak memakai kata unit). */
+  wrongItems?: { key: string; hanzi: string; pinyin: string; meaning: string }[]
+  wrongTitle?: string
 }) {
   const t = useT()
   const { settings } = useSettings()
   const h1 = useRef<HTMLHeadingElement>(null)
   useFocusOnChange(h1, 'result', true)
-  const wrong = result.wrong.map((id) => words.get(id)!).filter(Boolean)
+  const wrong =
+    wrongItems ??
+    result.wrong
+      .map((id) => words.get(id))
+      .filter((w) => w !== undefined)
+      .map((w) => ({ key: w.id, hanzi: w.hanzi, pinyin: w.pinyin, meaning: meaningShort(w, settings.lang) }))
   return (
     <section className="card result-card" aria-labelledby="result-title">
       <h1 id="result-title" ref={h1} tabIndex={-1} className="result-title">
@@ -50,18 +60,18 @@ export function ResultScreen({
       {wrong.length > 0 ? (
         <section className="result-wrong" aria-labelledby="wrong-title">
           <h2 id="wrong-title" className="card-title">
-            {t('learn.result.wrongTitle')}
+            {wrongTitle ?? t('learn.result.wrongTitle')}
           </h2>
           <ul className="wrong-list">
             {wrong.map((w) => (
-              <li key={w.id} className="wrong-item">
+              <li key={w.key} className="wrong-item">
                 <span lang="zh-CN" className="wrong-hanzi">
                   {w.hanzi}
                 </span>
                 <span lang="zh-Latn-pinyin" className="wrong-pinyin">
                   {w.pinyin}
                 </span>
-                <span className="wrong-meaning">{meaningShort(w, settings.lang)}</span>
+                <span className="wrong-meaning">{w.meaning}</span>
               </li>
             ))}
           </ul>

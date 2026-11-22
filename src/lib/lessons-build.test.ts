@@ -7,6 +7,8 @@ import dialogsFile from '../../data/hsk1/dialogs.json'
 import sentencesFile from '../../data/hsk1/sentences.json'
 import unitsFile from '../../data/hsk1/units.json'
 import wordsFile from '../../data/hsk1/words.json'
+import basicsFile from '../../data/basics/basics.json'
+import { basicsChars, type BasicsData } from './basics'
 import { buildLessons, strokeChars, strokeFileName, type LessonsInput } from './lessons-build'
 import type { UnitData } from './lesson-types'
 
@@ -73,7 +75,7 @@ describe('public/data/hsk1 (npm run build:lessons)', () => {
 })
 
 describe('public/hanzi (npm run build:strokes)', () => {
-  const chars = strokeChars(wordsFile, casualFile.items)
+  const chars = strokeChars(wordsFile, casualFile.items, basicsChars(basicsFile as unknown as BasicsData))
   const require = createRequire(import.meta.url)
   const dataDir = dirname(require.resolve('hanzi-writer-data/package.json'))
 

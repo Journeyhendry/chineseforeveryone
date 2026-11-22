@@ -1,0 +1,84 @@
+/* Kartu Tahap 0 di peta belajar. Hanya token dari src/styles/theme.css. */
+.basics-map-card {
+  background: var(--surface-2);
+}
+
+.basics-map-head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.basics-map-badge {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.basics-map-parts {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: var(--space-3);
+}
+
+.basics-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 100%;
+  min-height: var(--touch);
+  padding: var(--space-2) var(--space-3);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 3px 0 var(--shadow-color);
+}
+
+.basics-chip:hover .basics-chip-text {
+  text-decoration: underline;
+}
+
+.basics-chip-no {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 16px;
+  background: var(--surface-3);
+}
+
+.basics-chip-no svg {
+  width: 16px;
+  height: 16px;
+}
+
+.basics-chip.is-done .basics-chip-no {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.basics-chip-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.basics-chip-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.basics-map-go {
+  margin-top: var(--space-4);
+}

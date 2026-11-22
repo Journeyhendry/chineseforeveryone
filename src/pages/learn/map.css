@@ -22,8 +22,12 @@
   align-items: flex-start;
 }
 
-.unit-path-card {
+.map-main {
   flex: 999 1 480px;
+  min-width: 0;
+}
+
+.unit-path-card {
   min-width: 0;
 }
 

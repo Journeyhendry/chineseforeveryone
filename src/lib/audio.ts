@@ -60,6 +60,43 @@ export function stopAudio(): void {
   } catch {
     /* abaikan */
   }
+  stopFile()
+}
+
+// ---------- pemutar file mp3 (Tahap 0; kata HSK 1 tetap memakai speak() sampai task 4b) ----------
+
+let fileEl: HTMLAudioElement | null = null
+
+function stopFile() {
+  try {
+    fileEl?.pause()
+  } catch {
+    /* abaikan */
+  }
+  fileEl = null
+}
+
+/** Putar file audio (mis. public/audio/basics/x.mp3). Selesai dengan false bila gagal dimuat/diputar. */
+export function playFile(url: string, opts: { rate?: number } = {}): Promise<boolean> {
+  try {
+    synth()?.cancel()
+  } catch {
+    /* abaikan */
+  }
+  stopFile()
+  if (typeof Audio === 'undefined') return Promise.resolve(false)
+  try {
+    const el = new Audio(url)
+    el.preservesPitch = true
+    el.playbackRate = opts.rate ?? 1
+    fileEl = el
+    return el.play().then(
+      () => true,
+      () => false,
+    )
+  } catch {
+    return Promise.resolve(false)
+  }
 }
 
 /** Dipanggil saat daftar suara berubah (browser memuat suara secara asinkron). */

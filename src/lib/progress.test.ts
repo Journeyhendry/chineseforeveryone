@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import {
+  basicsDoneCount,
   doneCount,
   emptyProgress,
+  isBasicsDone,
   isUnitUnlocked,
   normalizeProgress,
+  recordBasicsResult,
   recordSkipResult,
   recordUnitResult,
   starsFor,
@@ -232,5 +235,38 @@ describe('kolom task 8 di normalizeProgress', () => {
   it('bolak-balik JSON stabil', () => {
     const p = normalizeProgress({ words: { a: { box: 2, due: '2026-12-01', seen: 1, wrong: 0, last: '2026-11-29' } }, streak: { last: '2026-11-29', current: 1, best: 2 } })
     expect(normalizeProgress(JSON.stringify(p))).toEqual(p)
+  })
+})
+
+describe('kolom Tahap 0 (basics)', () => {
+  const now = new Date('2026-11-22T10:00:00Z')
+  it('data lama tanpa basics tetap valid dan tidak mendapat kolom basics', () => {
+    const old = { version: 1, units: { u01: { bestScore: 0.8, stars: 2 } } }
+    const p = normalizeProgress(old)
+    expect(p.basics).toBeUndefined()
+    expect(p.units.u01.stars).toBe(2)
+  })
+  it('dipulihkan per bagian; bagian tak dikenal / rusak dibuang; bintang dihitung ulang', () => {
+    const p = normalizeProgress({
+      version: 1,
+      units: {},
+      basics: { nada: { bestScore: 0.95, stars: 1, completedAt: 'x' }, pinyin: 'rusak', zzz: { bestScore: 1 }, coretan: { bestScore: 9 } },
+    })
+    expect(p.basics).toEqual({ nada: { bestScore: 0.95, stars: 3, completedAt: 'x' }, coretan: { bestScore: 1, stars: 3 } })
+    expect(normalizeProgress({ version: 1, units: {}, basics: [] }).basics).toBeUndefined()
+    expect(normalizeProgress({ version: 1, units: {}, basics: { x: 1 } }).basics).toBeUndefined()
+  })
+  it('recordBasicsResult: nilai terbaik, tidak menyentuh unit/Leitner', () => {
+    let p = recordBasicsResult(emptyProgress(), 'nada', 0.5, now)
+    expect(p.basics?.nada).toEqual({ bestScore: 0.5, stars: 0 })
+    expect(isBasicsDone(p, 'nada')).toBe(false)
+    p = recordBasicsResult(p, 'nada', 0.75, now)
+    expect(p.basics?.nada).toEqual({ bestScore: 0.75, stars: 2, completedAt: now.toISOString() })
+    expect(recordBasicsResult(p, 'nada', 0.6, now)).toBe(p)
+    p = recordBasicsResult(p, 'pinyin', 1, now)
+    expect(basicsDoneCount(p)).toBe(2)
+    expect(p.units).toEqual({})
+    expect(p.words).toBeUndefined()
+    expect(normalizeProgress(JSON.parse(JSON.stringify(p)))).toEqual(p)
   })
 })

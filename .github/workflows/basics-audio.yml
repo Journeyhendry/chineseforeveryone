@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: basics-audio-${{ github.ref }}
@@ -66,11 +67,12 @@ jobs:
           "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|pypinyin|jieba|huggingface)" || true
 
       - name: Synthesize, check, write manifest
+        id: synth
         env:
           FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
         run: |
           set -euo pipefail
-          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE --work "$RUNNER_TEMP/basics-work"
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE --budget-min 38 --work "$RUNNER_TEMP/basics-work"
           du -sh public/audio/basics
           ls public/audio/basics | wc -l
 
@@ -89,3 +91,13 @@ jobs:
           git commit -m "Data: basics audio (P3)"
           git pull --rebase origin "$BRANCH"
           git push origin "HEAD:$BRANCH"
+
+      - name: Continue in a new run if the time budget ran out
+        if: steps.synth.outputs.complete == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          gh workflow run basics-audio.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+          echo "Dispatched a follow-up run to finish the remaining items."

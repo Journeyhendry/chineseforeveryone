@@ -1,5 +1,6 @@
 // Menyalin data coretan Hanzi Writer (paket hanzi-writer-data, lisensi Arphic Public License)
-// hanya untuk huruf kata HSK 1 dan ungkapan santai ke public/hanzi/<huruf>.json, plus ARPHICPL.TXT.
+// hanya untuk huruf kata HSK 1, ungkapan santai, dan Tahap 0 (data/basics/basics.json) ke
+// public/hanzi/<huruf>.json, plus ARPHICPL.TXT.
 //
 //   npm run build:strokes
 //
@@ -7,6 +8,7 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { dirname, join } from 'node:path'
+import { basicsChars, type BasicsData } from '../src/lib/basics.ts'
 import { strokeChars, strokeFileName } from '../src/lib/lessons-build.ts'
 
 const root = new URL('..', import.meta.url)
@@ -15,7 +17,8 @@ const require = createRequire(import.meta.url)
 const dataDir = dirname(require.resolve('hanzi-writer-data/package.json'))
 const outDir = new URL('public/hanzi/', root)
 
-const chars = strokeChars(read<{ hanzi: string }[]>('words.json'), read<{ items: { hanzi: string }[] }>('casual.json').items)
+const basics = JSON.parse(readFileSync(new URL('data/basics/basics.json', root), 'utf8')) as BasicsData
+const chars = strokeChars(read<{ hanzi: string }[]>('words.json'), read<{ items: { hanzi: string }[] }>('casual.json').items, basicsChars(basics))
 mkdirSync(outDir, { recursive: true })
 
 const wanted = new Set(['ARPHICPL.TXT'])

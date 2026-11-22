@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { NotFoundPage } from './NotFoundPage'
 import { useT } from '../i18n/context'
 import { loadIndex, loadUnit, type LessonIndex, type LessonUnitInfo } from '../lib/lessons'
@@ -12,11 +13,20 @@ import { SkipScreen } from './learn/SkipScreen'
 import { UnitScreen } from './learn/UnitScreen'
 import { WordScreen } from './learn/WordScreen'
 
-/** Halaman Belajar: peta, ringkasan unit, kenalan kata, latihan, tes loncat. */
+const BasicsRoute = lazy(() => import('./learn/basics/BasicsScreens').then((m) => ({ default: m.BasicsRoute })))
+
+/** Halaman Belajar: peta, Tahap 0, ringkasan unit, kenalan kata, latihan, tes loncat. */
 export function LearnPage() {
   const route = parseLearnRoute(useRoute().segments)
   const index = useResource('index', loadIndex)
   if (route.screen === 'notfound') return <LearnNotFound />
+  if (route.screen === 'basics' || route.screen === 'basics-part' || route.screen === 'basics-practice') {
+    return (
+      <Suspense fallback={<LoadState status="loading" retry={() => {}} />}>
+        <BasicsRoute route={route} />
+      </Suspense>
+    )
+  }
   if (index.status !== 'ready') return <LearnLoading status={index.status} retry={index.retry} />
   if (route.screen === 'map') return <MapScreen index={index.data} />
   const info = index.data.units.find((u) => u.id === route.unitId)

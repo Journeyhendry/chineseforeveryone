@@ -21,7 +21,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [ ] 6b · Ilustrasi + animasi semua kata (tahap berikutnya: unit 4 dst., setelah task 2b menyusun ulang unit)
   - [x] 6b tahap 1 · unit 1–3 — 2026-11-22 — Opus (diperiksa Opus) — 87 adegan SVG dari sistem rakit (`data/hsk1/scenes.json` → `npm run build:scenes`, ±10 KB/adegan), 39 pose tokoh, kartu ilustrasi di layar kenalan kata: gerak napas/kedip, klik/Enter/Spasi = aksi + suara, diam saat kurangi gerak; teks balon komik HTML huruf WenKai dengan kata disorot; axe lolos terang & gelap
 - [ ] 7 · Empat game — SEDANG DIKERJAKAN (mulai 2026-11-21 23:59 UTC)
-- [ ] 8 · Progres + ulangan harian + cadangan
+- [ ] 8 · Progres + ulangan harian + cadangan — SEDANG DIKERJAKAN (mulai 2026-11-22 00:40 UTC)
 - [ ] 9 · Kamus + Sumber + lapor salah
 - [ ] 10 · Pengecekan akhir + rilis v1
 

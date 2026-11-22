@@ -27,7 +27,7 @@ import make_samples as ms  # noqa: E402
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "xue-mandarin-audio-fetch/1.0 (open educational project)"
-CATEGORIES = ["Lingua Libre pronunciation-cmn", "Lingua Libre pronunciation-zh", "Lingua Libre pronunciation-zho"]
+CATEGORIES = ["Lingua Libre pronunciation-cmn", "Lingua Libre pronunciation-zh"]
 MAX_PER_WORD = 2
 MAX_SECONDS = 4.0
 ALLOWED = re.compile(r"^(CC0(?: 1\.0)?|CC BY(?: \d\.\d)?|CC BY-SA(?: \d\.\d)?)(?: [A-Za-z]+)?$", re.I)
@@ -41,7 +41,7 @@ def log(*a):
 
 
 def get(url: str, binary=False):
-    for i in range(5):
+    for i in range(6):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -49,11 +49,15 @@ def get(url: str, binary=False):
             return data if binary else json.loads(data)
         except Exception as e:  # noqa: BLE001
             log(f"[native] {type(e).__name__}: {e} (percobaan {i + 1})")
-            time.sleep(2 * (i + 1))
+            wait = 2 * (i + 1)
+            if getattr(e, "code", None) == 429:
+                wait = max(wait, int(getattr(e, "headers", {}).get("Retry-After", 0) or 0), 15 * (i + 1))
+            time.sleep(wait)
     raise RuntimeError(f"gagal mengambil {url}")
 
 
 def api(**params):
+    time.sleep(1.0)  # pelan-pelan: Commons membatasi laju permintaan (429)
     return get(API + "?" + urllib.parse.urlencode({**params, "format": "json", "formatversion": "2"}))
 
 
@@ -83,7 +87,11 @@ def main() -> int:
 
     titles: list[str] = []
     for cat in CATEGORIES:
-        t = category_titles(cat)
+        try:
+            t = category_titles(cat)
+        except RuntimeError as e:
+            log(f"[native] Category:{cat} dilewati: {e}")
+            continue
         log(f"[native] Category:{cat}: {len(t)} berkas")
         titles += t
     if not titles:

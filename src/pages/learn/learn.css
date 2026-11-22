@@ -254,6 +254,33 @@ h3 {
   color: var(--text-soft);
 }
 
+/* Penutur asli */
+.native-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.native-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px var(--space-3);
+}
+
+.native-item .btn {
+  min-height: 44px;
+  font-size: 15px;
+}
+
+.native-credit {
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
 /* Label nada */
 .tone-labels {
   list-style: none;

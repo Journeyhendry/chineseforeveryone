@@ -20,7 +20,8 @@
     "build:scenes": "tsx scripts/build-scenes.ts",
     "build:lessons": "tsx scripts/build-lessons.ts",
     "build:strokes": "tsx scripts/build-strokes.ts",
-    "build:font": "python3 scripts/font/build_font.py"
+    "build:font": "python3 scripts/font/build_font.py",
+    "build:audio-items": "python3 scripts/tts-hsk1/hsk1_items.py"
   },
   "dependencies": {
     "hanzi-writer": "3.7.3",

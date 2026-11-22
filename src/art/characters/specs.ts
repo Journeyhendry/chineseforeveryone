@@ -49,9 +49,9 @@ export const CHARACTERS: readonly CharacterSpec[] = [
   },
   {
     id: 'gege', name: { id: 'Kakak laki-laki', en: 'Big brother' }, gender: 'male', role: 'family',
-    label: 'Teenage big brother with spiky hair and an orange hoodie',
+    label: 'Big brother, a young university student with spiky hair and an orange hoodie',
     skin: SKIN.warm[0], skinShade: SKIN.warm[1], hair: 'spiky', hairColor: '#3A2C2A',
-    body: adult({ headScale: 0.96, legLen: 92, torsoLen: 96, shoulderHalf: 44, hemHalf: 46, armLen: 82, armHalf: 9.5, legWidth: 34, shoeScale: 0.95, neckLen: 12 }),
+    body: adult({ headScale: 0.97, legLen: 106, torsoLen: 114, shoulderHalf: 47, hemHalf: 49, armLen: 88, armHalf: 10, legWidth: 36, neckLen: 13 }),
   },
   {
     id: 'meimei', name: { id: 'Adik perempuan', en: 'Little sister' }, gender: 'female', role: 'family',

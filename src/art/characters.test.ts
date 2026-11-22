@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import dialogs from '../../data/hsk1/dialogs.json'
-import { buildAll, CHARACTERS, EXPRESSIONS, INK, manifest, VIEWBOX, VIEWS } from './characters/index.ts'
+import { buildAll, CHARACTERS, EXPRESSIONS, INK, manifest, POSE_IDS, POSES, posedFigure, VIEWBOX, VIEWS } from './characters/index.ts'
+import { makeRig } from './characters/body.ts'
+import { posedArmGeom, shoulderPoint } from './characters/pose.ts'
+import { checkXml } from './xml-check.ts'
 
 // Files committed in public/art/characters, read as text.
 const committed = Object.fromEntries(
@@ -14,28 +17,6 @@ const singleViews = svgFiles.filter(([path]) => !path.endsWith('sheet.svg') && p
 
 const KB = 1024
 const FORBIDDEN = ['style', 'script', 'text', 'image', 'foreignObject', 'filter', 'linearGradient', 'radialGradient', 'iframe']
-
-/** Minimal well-formedness check: balanced tags, quoted attributes, one root. */
-function checkXml(src: string): string | null {
-  const stack: string[] = []
-  const re = /<(\/?)([A-Za-z][\w:-]*)((?:\s+[\w:-]+="[^"<]*")*)\s*(\/?)>/g
-  let pos = 0
-  let roots = 0
-  for (let m = re.exec(src); m; m = re.exec(src)) {
-    if (src.slice(pos, m.index).includes('<')) return `stray "<" before offset ${m.index}`
-    pos = re.lastIndex
-    const [, close, name, , self] = m
-    if (close) {
-      if (stack.pop() !== name) return `unexpected </${name}>`
-    } else if (!self) {
-      if (stack.length === 0) roots++
-      stack.push(name)
-    } else if (stack.length === 0) roots++
-  }
-  if (src.slice(pos).trim() !== '') return 'trailing content'
-  if (stack.length) return `unclosed <${stack.at(-1)}>`
-  return roots === 1 ? null : `${roots} root elements`
-}
 
 describe('characters', () => {
   it('covers every speaker in dialogs.json with the same gender', () => {
@@ -99,3 +80,54 @@ describe('characters', () => {
     for (const [path, src] of built) expect(committed[path], path).toBe(src)
   })
 })
+
+describe('poses', () => {
+  const views = ['front', 'side', 'back'] as const
+
+  it('has the poses the scenes need', () => {
+    for (const id of ['wave', 'point', 'bow', 'handsTogether', 'shrug', 'thinking', 'holdObject', 'thumbsUp', 'armsCross', 'count', 'beckon', 'sit']) {
+      expect(POSE_IDS, id).toContain(id)
+    }
+  })
+
+  it('renders every character in every pose and view as valid markup with both arms', () => {
+    for (const c of CHARACTERS) {
+      for (const pose of POSE_IDS) {
+        for (const view of views) {
+          const f = posedFigure(c, view, 'happy', pose, { anim: true, fingers: 3 })
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg">${f.svg}</svg>`
+          expect(checkXml(svg), `${c.id} ${pose} ${view}`).toBeNull()
+          expect(svg).toContain('class="arm-left')
+          expect(svg).toContain('class="arm-right')
+          expect(svg).not.toMatch(/NaN|Infinity/)
+          for (const p of [f.anchors.mouth, f.anchors.hands.left, f.anchors.hands.right]) {
+            expect(Number.isFinite(p.x) && Number.isFinite(p.y), `${c.id} ${pose} ${view} anchor`).toBe(true)
+          }
+        }
+      }
+    }
+  })
+
+  it('keeps posed arms attached at the shoulder with constant bone lengths', () => {
+    for (const c of CHARACTERS) {
+      const b = makeRig(c)
+      for (const pose of POSE_IDS) {
+        for (const view of views) {
+          for (const side of ['left', 'right'] as const) {
+            const ap = (POSES[pose] as Record<string, unknown>)[side]
+            if (!ap) continue
+            const g = posedArmGeom(view, b, side, ap)
+            const s = shoulderPoint(view, b, side)
+            const where = `${c.id} ${pose} ${view} ${side}`
+            expect(g.s, where).toEqual(s)
+            // the shoulder end sits inside the torso (hidden under or on the shoulder)
+            expect(Math.abs(s.x - 150), where).toBeLessThan(c.body.shoulderHalf)
+            expect(Math.hypot(g.e.x - g.s.x, g.e.y - g.s.y), where).toBeCloseTo(c.body.armLen * 0.52, 3)
+            expect(Math.hypot(g.hand.x - g.e.x, g.hand.y - g.e.y), where).toBeCloseTo(c.body.armLen * 0.5 + 5, 3)
+          }
+        }
+      }
+    }
+  })
+})
+

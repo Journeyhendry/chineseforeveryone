@@ -1,4 +1,5 @@
-export { buildAll, characterFile, figure, lineupFile, manifest, sheetFile, VIEWBOX, type Manifest } from './render.ts'
+export { buildAll, characterFile, figure, lineupFile, manifest, pivot, posedFigure, sheetFile, VIEWBOX, type FigureAnchors, type Manifest, type PosedFigure, type PosedOptions } from './render.ts'
+export { POSE_IDS, POSES, type Pose, type PoseId } from './pose.ts'
 export { CHARACTERS } from './specs.ts'
 export { EXPRESSIONS, VIEWS, type CharacterSpec, type Expression, type View } from './types.ts'
 export { INK } from './svg.ts'

@@ -1,0 +1,1888 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "wordId": "L1-0271",
+      "hanzi": "你",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":140,"scale":1.15,"act":"arm-left"},{"id":"gege","expression":"surprised","x":350}],
+          "props": [],
+          "bubbles": [{"from":0,"x":30,"y":36,"w":130,"h":58,"text":"你好！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Adik menunjuk Kakak sambil berkata \"你好！\".","en":"Little Sister points at Big Brother and says \"你好！\"."},
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0138",
+      "hanzi": "好",
+      "unitId": "u01",
+      "type": "pair",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"thumbsUp","expression":"happy","x":160,"act":"head"}],
+          "props": [
+            {"id":"table","x":350,"y":336,"value":"170"},
+            {"id":"apple","x":350,"y":266,"scale":1.5},
+            {"id":"sparkle","x":318,"y":214},
+            {"id":"sparkle","x":388,"y":236,"scale":0.7}
+          ],
+          "bubbles": [{"from":0,"x":250,"y":40,"w":110,"h":58,"text":"好！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Ibu mengacungkan jempol untuk apel merah yang bagus: \"好！\"","en":"Mom gives a thumbs-up to a nice red apple: \"好！\""},
+      "play": "nod"
+    },
+    {
+      "wordId": "L1-0274",
+      "hanzi": "您",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "background": "room",
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":80,"scale":0.95},{"id":"gege","x":180,"scale":0.78}],
+          "props": [],
+          "bubbles": [{"from":0,"x":24,"y":30,"w":112,"h":52,"text":"你好！"}]
+        },
+        {
+          "background": "room",
+          "characters": [{"id":"meimei","pose":"bow","view":"side","x":300,"scale":0.95,"act":"upper"},{"id":"yeye","expression":"happy","x":405,"scale":0.8}],
+          "props": [],
+          "bubbles": [{"from":0,"x":254,"y":30,"w":112,"h":52,"text":"您好！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Panel 1: Adik menyapa Kakak dengan santai \"你好！\". Panel 2: Adik membungkuk sopan kepada Kakek, \"您好！\".",
+        "en": "Panel 1: Little Sister greets Big Brother casually, \"你好！\". Panel 2: she bows politely to Grandpa, \"您好！\"."
+      },
+      "play": "panels"
+    },
+    {
+      "wordId": "L1-0380",
+      "hanzi": "我",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "plain-lilac",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointSelf","expression":"happy","x":240,"scale":1.45,"act":"arm-right"}],
+          "props": [],
+          "bubbles": [{"from":0,"x":300,"y":52,"w":100,"h":64,"text":"我！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Adik menunjuk dadanya sendiri: \"我！\"","en":"Little Sister points at her own chest: \"我！\""},
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0410",
+      "hanzi": "谢谢",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"baba","pose":"offer","expression":"happy","x":130},
+            {"id":"meimei","pose":"holdUp","expression":"happy","x":340,"scale":1.1,"flip":true,"act":"char"}
+          ],
+          "props": [{"id":"balloon","x":0,"y":-4,"hold":[1,"left"],"scale":1.25,"roles":["sway"]}],
+          "bubbles": [{"from":1,"x":330,"y":56,"w":124,"h":58,"text":"谢谢！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Ayah memberi Adik balon. Adik senang dan berkata \"谢谢！\".","en":"Dad gives Little Sister a balloon. She is happy and says \"谢谢！\"."},
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0032",
+      "hanzi": "不客气",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"holdObject","expression":"happy","x":70,"scale":0.95},{"id":"gege","x":175,"scale":0.78}],
+          "props": [{"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":112,"h":52,"text":"谢谢！"}]
+        },
+        {
+          "characters": [
+            {"id":"meimei","pose":"holdObject","expression":"happy","x":290,"scale":0.95},
+            {"id":"gege","pose":"wave","expression":"happy","x":400,"scale":0.78,"flip":true,"act":"arm-left"}
+          ],
+          "props": [{"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}],
+          "bubbles": [{"from":1,"x":300,"y":28,"w":160,"h":52,"text":"不客气！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Panel 1: Adik berterima kasih kepada Kakak karena bolanya. Panel 2: Kakak melambai santai, \"不客气！\".",
+        "en": "Panel 1: Little Sister thanks Big Brother for her ball. Panel 2: he waves it off casually, \"不客气！\"."
+      },
+      "play": "panels"
+    },
+    {
+      "wordId": "L1-0093",
+      "hanzi": "对不起",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [{"id":"baba","expression":"surprised","x":360,"flip":true},{"id":"gege","pose":"bow","view":"side","x":150,"act":"upper"}],
+          "props": [
+            {"id":"table","x":270,"y":336,"value":"150","scale":0.9},
+            {"id":"puddle","x":250,"y":276,"scale":0.9},
+            {"id":"cup","x":290,"y":257,"rotate":-90,"variant":"empty"}
+          ],
+          "bubbles": [{"from":1,"x":30,"y":34,"w":150,"h":58,"text":"对不起！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Kakak menumpahkan teh di meja Ayah, lalu membungkuk: \"对不起！\"","en":"Big Brother spilled tea on Dad’s table and bows: \"对不起！\""},
+      "play": "bow"
+    },
+    {
+      "wordId": "L1-0233",
+      "hanzi": "没关系",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "street",
+      "panels": [
+        {
+          "characters": [
+            {"id":"nainai","expression":"surprised","x":75,"scale":0.8},
+            {"id":"meimei","pose":"handsTogether","expression":"sad","x":175,"scale":0.95,"flip":true}
+          ],
+          "props": [
+            {"id":"orange","x":110,"y":340,"scale":0.8},
+            {"id":"orange","x":140,"y":334,"scale":0.8},
+            {"id":"shopping-bag","x":130,"y":300,"rotate":70,"scale":0.7}
+          ],
+          "bubbles": [{"from":1,"x":120,"y":30,"w":108,"h":52,"text":"对不起！"}]
+        },
+        {
+          "characters": [
+            {"id":"nainai","pose":"wave","expression":"happy","x":300,"scale":0.8,"act":"arm-left"},
+            {"id":"meimei","expression":"happy","x":410,"scale":0.95,"flip":true}
+          ],
+          "props": [{"id":"orange","x":345,"y":340,"scale":0.8}],
+          "bubbles": [{"from":0,"x":252,"y":30,"w":160,"h":52,"text":"没关系！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Panel 1: Adik menabrak Nenek, jeruk jatuh, Adik minta maaf. Panel 2: Nenek tersenyum dan melambai, \"没关系！\".",
+        "en": "Panel 1: Little Sister bumps into Grandma, oranges fall, she says sorry. Panel 2: Grandma smiles and waves, \"没关系！\"."
+      },
+      "play": "panels"
+    },
+    {
+      "wordId": "L1-0234",
+      "hanzi": "没什么",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"mama","expression":"surprised","x":120},{"id":"gege","pose":"shrug","expression":"happy","x":340,"act":"char"}],
+          "props": [],
+          "bubbles": [{"from":0,"x":36,"y":30,"w":80,"h":60,"icon":"question"},{"from":1,"x":300,"y":26,"w":160,"h":58,"text":"没什么。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu bertanya ada apa. Kakak mengangkat bahu sambil tersenyum: \"没什么。\"",
+        "en": "Mom asks what is up. Big Brother shrugs with a smile: \"没什么。\""
+      },
+      "play": "shrug"
+    },
+    {
+      "wordId": "L1-0454",
+      "hanzi": "再见",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"waveBye","expression":"happy","x":150,"scale":1.15,"act":"arm-left"},
+            {"id":"nainai","pose":"wave","expression":"happy","x":375,"flip":true}
+          ],
+          "props": [{"id":"door","x":375,"y":300,"variant":"open"},{"id":"schoolbag","x":0,"y":60,"hold":[0,"right"],"scale":0.9}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":124,"h":58,"text":"再见！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik membawa tas sekolah dan melambai ke Nenek di pintu: \"再见！\"",
+        "en": "Little Sister, with her school bag, waves to Grandma at the door: \"再见！\""
+      },
+      "play": "wave"
+    },
+    {
+      "wordId": "L1-0296",
+      "hanzi": "请",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"offer","expression":"happy","x":140,"act":"head"},{"id":"friend","expression":"happy","x":370,"flip":true}],
+          "props": [
+            {"id":"plate","x":6,"y":4,"hold":[0,"left"],"scale":0.8},
+            {"id":"orange","x":-6,"y":-2,"hold":[0,"left"],"scale":0.75},
+            {"id":"orange","x":16,"y":-2,"hold":[0,"left"],"scale":0.75}
+          ],
+          "bubbles": [{"from":0,"x":30,"y":28,"w":100,"h":58,"text":"请！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu menyodorkan piring berisi jeruk kepada teman yang datang: \"请！\"",
+        "en": "Mom holds out a plate of oranges to a visiting friend: \"请！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0299",
+      "hanzi": "请问",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "market",
+      "panels": [
+        {
+          "characters": [
+            {"id":"seller","expression":"happy","x":360,"flip":true,"y":320},
+            {"id":"baba","pose":"beckon","expression":"happy","x":120,"act":"arm-left"}
+          ],
+          "props": [{"id":"market-stall","x":360,"y":336,"front":true,"scale":0.8},{"id":"orange","x":335,"y":276,"count":3,"dx":26,"front":true,"scale":0.8}],
+          "bubbles": [{"from":1,"x":180,"y":34,"w":140,"h":58,"text":"请问，","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di pasar, Ayah mengangkat tangan dengan sopan untuk bertanya kepada penjual: \"请问，……\"",
+        "en": "At the market, Dad politely raises a hand to ask the seller: \"请问，……\""
+      },
+      "play": "beckon"
+    },
+    {
+      "wordId": "L1-0298",
+      "hanzi": "请进",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "home",
+      "panels": [
+        {
+          "characters": [{"id":"nainai","pose":"offer","expression":"happy","x":230},{"id":"friend","expression":"happy","x":110,"roles":["mover","from-left"]}],
+          "props": [{"id":"door","x":385,"y":300,"variant":"open"},{"id":"arrow","x":330,"y":312,"scale":0.6}],
+          "bubbles": [{"from":0,"x":200,"y":30,"w":124,"h":58,"text":"请进！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Nenek membuka pintu dan mempersilakan teman masuk: \"请进！\"","en":"Grandma opens the door and invites the friend in: \"请进！\""},
+      "play": "move-to"
+    },
+    {
+      "wordId": "L1-0300",
+      "hanzi": "请坐",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"teacher","expression":"happy","x":380,"flip":true},{"id":"yeye","pose":"offer","expression":"happy","x":120,"act":"arm-left"}],
+          "props": [{"id":"chair","x":250,"y":330,"roles":["target"]}],
+          "bubbles": [{"from":1,"x":40,"y":34,"w":124,"h":58,"text":"请坐！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakek menunjuk kursi kosong dengan telapak terbuka untuk Bu Guru: \"请坐！\"",
+        "en": "Grandpa shows the empty chair with an open palm to the teacher: \"请坐！\""
+      },
+      "play": "beckon"
+    },
+    {
+      "wordId": "L1-0227",
+      "hanzi": "吗",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"offer","expression":"happy","x":150,"scale":1.15},
+            {"id":"gege","pose":"thinking","expression":"surprised","x":360,"act":"char"}
+          ],
+          "props": [{"id":"baozi","x":2,"y":0,"hold":[0,"left"],"scale":1}],
+          "bubbles": [
+            {"from":0,"x":20,"y":34,"w":140,"h":58,"text":"吃吗？","highlight":true},
+            {"from":1,"x":400,"y":40,"w":66,"h":56,"icon":"question","kind":"thought"}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Adik menawarkan bakpao kepada Kakak: \"吃吗？\" Kakak berpikir.",
+        "en": "Little Sister offers Big Brother a steamed bun: \"吃吗？\" He thinks about it."
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0269",
+      "hanzi": "呢",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"pointSelf","expression":"happy","x":110,"scale":0.85}],
+          "props": [{"id":"table","x":190,"y":340,"value":"90","scale":0.85},{"id":"cup","x":190,"y":280},{"id":"steam","x":190,"y":248,"scale":0.6}],
+          "bubbles": [{"from":0,"x":24,"y":26,"w":150,"h":52,"text":"我喝茶。"}]
+        },
+        {
+          "characters": [{"id":"mama","pose":"point","expression":"happy","x":300,"scale":0.85},{"id":"baba","x":415,"scale":0.8,"flip":true}],
+          "props": [],
+          "bubbles": [{"from":0,"x":254,"y":26,"w":112,"h":52,"text":"你呢？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Panel 1: Ibu menunjuk dirinya: \"我喝茶。\" Panel 2: Ibu menunjuk Ayah: \"你呢？\"",
+        "en": "Panel 1: Mom points at herself: \"我喝茶。\" Panel 2: she points at Dad: \"你呢？\""
+      },
+      "play": "panels"
+    },
+    {
+      "wordId": "L1-0034",
+      "hanzi": "不",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"offer","expression":"happy","x":130},
+            {"id":"meimei","pose":"armsCross","expression":"angry","x":350,"scale":1.15,"act":"head"}
+          ],
+          "props": [{"id":"bowl","x":4,"y":6,"hold":[0,"left"],"scale":0.7},{"id":"vegetables","x":4,"y":-14,"hold":[0,"left"],"scale":0.8}],
+          "bubbles": [{"from":1,"x":300,"y":34,"w":112,"h":58,"text":"不！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu menyodorkan sayur, Adik menyilangkan tangan dan menggeleng: \"不！\"",
+        "en": "Mom offers vegetables; Little Sister crosses her arms and shakes her head: \"不！\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0337",
+      "hanzi": "是",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","expression":"happy","x":130,"scale":1.15,"act":"head"},
+            {"id":"baba","pose":"pointHold","expression":"happy","x":345,"flip":true}
+          ],
+          "props": [{"id":"photo","x":0,"y":10,"hold":[1,"right"],"scale":0.9}],
+          "bubbles": [{"from":1,"x":300,"y":30,"w":150,"h":58,"text":"这是你。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ayah memegang foto bayi dan menunjuk Adik: \"这是你。\" Adik mengangguk.",
+        "en": "Dad holds a baby photo and points at Little Sister: \"这是你。\" She nods."
+      },
+      "play": "nod"
+    },
+    {
+      "wordId": "L1-0146",
+      "hanzi": "很",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointUp","expression":"surprised","x":130,"scale":1.15,"act":"char"}],
+          "props": [
+            {"id":"apartment-tower","x":340,"y":336,"scale":1.08},
+            {"id":"cloud","x":300,"y":96,"front":true},
+            {"id":"cloud","x":400,"y":140,"front":true,"scale":0.8}
+          ],
+          "bubbles": [{"from":0,"x":26,"y":30,"w":120,"h":58,"text":"很高！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik menengadah ke gedung yang sangat tinggi sampai menembus awan: \"很高！\"",
+        "en": "Little Sister looks up at a building so tall it reaches the clouds: \"很高！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0425",
+      "hanzi": "也",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "street",
+      "panels": [
+        {
+          "characters": [
+            {"id":"gege","pose":"raiseHand","expression":"happy","x":150},
+            {"id":"meimei","pose":"raiseHand","expression":"happy","x":335,"scale":1.15,"act":"char"}
+          ],
+          "props": [],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":112,"h":52,"text":"我要！"},{"from":1,"x":230,"y":46,"w":140,"h":56,"text":"我也要！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak mengangkat tangan: \"我要！\" Adik ikut mengangkat tangan: \"我也要！\"",
+        "en": "Big Brother raises his hand: \"我要！\" Little Sister raises hers too: \"我也要！\""
+      },
+      "play": "jump"
+    },
+    {
+      "wordId": "L1-0067",
+      "hanzi": "的",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"hug","expression":"happy","x":150,"scale":1.2,"act":"char"},
+            {"id":"gege","pose":"holdObject","expression":"happy","x":360}
+          ],
+          "props": [{"id":"toy-bear","x":0,"y":46,"hold":[0,"left"],"scale":1},{"id":"ball","x":0,"y":20,"hold":[1,"left"],"scale":1.2}],
+          "bubbles": [
+            {"from":0,"x":28,"y":34,"w":124,"h":58,"text":"我的！","highlight":true},
+            {"from":1,"x":310,"y":30,"w":124,"h":58,"text":"我的！","highlight":true}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Adik memeluk boneka beruangnya, Kakak memegang bolanya; masing-masing berkata \"我的！\"",
+        "en": "Little Sister hugs her teddy bear and Big Brother holds his ball; each says \"我的！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0272",
+      "hanzi": "你们",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "classroom",
+      "panels": [
+        {
+          "characters": [
+            {"id":"teacher","pose":"offer","expression":"happy","x":120,"act":"arm-left"},
+            {"id":"gege","expression":"happy","x":320,"flip":true},
+            {"id":"classmate","expression":"happy","x":420,"flip":true}
+          ],
+          "props": [],
+          "bubbles": [{"from":0,"x":20,"y":26,"w":150,"h":58,"text":"你们好！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Bu Guru membuka tangan ke arah Kakak dan temannya: \"你们好！\"",
+        "en": "The teacher opens her hand toward Big Brother and his classmate: \"你们好！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0381",
+      "hanzi": "我们",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","expression":"happy","x":110},
+            {"id":"gege","expression":"happy","x":370},
+            {"id":"meimei","pose":"armsOpen","expression":"happy","x":240,"scale":1.1,"act":"char"}
+          ],
+          "props": [{"id":"heart","x":240,"y":120,"roles":["bob"]}],
+          "bubbles": [{"from":2,"x":270,"y":30,"w":124,"h":58,"text":"我们！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Adik merentangkan tangan merangkul Ibu dan Kakak: \"我们！\"","en":"Little Sister opens her arms to include Mom and Big Brother: \"我们！\""},
+      "play": "jump"
+    },
+    {
+      "wordId": "L1-0354",
+      "hanzi": "他",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","expression":"happy","x":90},
+            {"id":"meimei","pose":"point","expression":"happy","x":210,"scale":1.1,"act":"arm-left"},
+            {"id":"baba","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}
+          ],
+          "props": [],
+          "bubbles": [{"from":1,"x":140,"y":30,"w":200,"h":58,"text":"他是我爸爸。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik berkata kepada Ibu sambil menunjuk Ayah di sana: \"他是我爸爸。\"",
+        "en": "Little Sister tells Mom while pointing at Dad over there: \"他是我爸爸。\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0356",
+      "hanzi": "她",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"baba","expression":"happy","x":85},
+            {"id":"gege","pose":"point","expression":"happy","x":215,"act":"arm-left"},
+            {"id":"nainai","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}
+          ],
+          "props": [],
+          "bubbles": [{"from":1,"x":140,"y":26,"w":200,"h":58,"text":"她是我奶奶。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak berkata kepada Ayah sambil menunjuk Nenek di seberang ruangan: \"她是我奶奶。\"",
+        "en": "Big Brother tells Dad while pointing at Grandma across the room: \"她是我奶奶。\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0355",
+      "hanzi": "他们",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"nainai","expression":"happy","x":60,"scale":0.95},
+            {"id":"mama","pose":"point","expression":"happy","x":160,"act":"arm-left"},
+            {"id":"baba","pose":"wave","expression":"happy","x":330,"scale":0.75,"y":296,"flip":true},
+            {"id":"gege","pose":"raiseHand","expression":"happy","x":430,"scale":0.75,"y":296}
+          ],
+          "props": [{"id":"ball","x":382,"y":190,"roles":["bob"],"scale":0.8}],
+          "bubbles": [{"from":1,"x":110,"y":26,"w":124,"h":58,"text":"他们！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Ibu menunjuk Ayah dan Kakak yang bermain bola: \"他们！\"","en":"Mom points at Dad and Big Brother playing ball: \"他们！\""},
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0357",
+      "hanzi": "她们",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [
+            {"id":"baba","pose":"point","expression":"happy","x":110,"act":"arm-left"},
+            {"id":"mama","expression":"happy","x":300,"scale":0.78,"y":300},
+            {"id":"nainai","expression":"happy","x":440,"scale":0.78,"y":300},
+            {"id":"meimei","expression":"happy","x":370,"scale":0.85,"y":300}
+          ],
+          "props": [{"id":"table","x":370,"y":336,"value":"220","front":true},{"id":"dumpling","x":370,"y":266,"count":4,"dx":32,"front":true,"scale":0.8}],
+          "bubbles": [{"from":0,"x":30,"y":26,"w":124,"h":58,"text":"她们！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ayah menunjuk Ibu, Nenek, dan Adik yang membuat pangsit bersama: \"她们！\"",
+        "en": "Dad points at Mom, Grandma and Little Sister making dumplings together: \"她们！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0241",
+      "hanzi": "们",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointSelf","expression":"neutral","x":122,"scale":1}],
+          "props": [],
+          "bubbles": [{"from":0,"x":30,"y":30,"w":80,"h":56,"text":"我"}]
+        },
+        {
+          "characters": [
+            {"id":"friend","expression":"happy","x":290,"scale":0.78},
+            {"id":"gege","expression":"happy","x":425,"scale":0.78},
+            {"id":"meimei","pose":"armsUp","expression":"happy","x":358,"scale":0.92,"act":"char"}
+          ],
+          "props": [],
+          "bubbles": [{"from":2,"x":262,"y":26,"w":100,"h":56,"text":"我们","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Panel 1: Adik sendirian, \"我\". Panel 2: Adik bersama teman dan Kakak, \"我们\".",
+        "en": "Panel 1: Little Sister alone, \"我\". Panel 2: with her friend and Big Brother, \"我们\"."
+      },
+      "play": "panels"
+    },
+    {
+      "wordId": "L1-0176",
+      "hanzi": "叫",
+      "unitId": "u01",
+      "type": "action",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"callOut","expression":"happy","x":120,"act":"head"},
+            {"id":"gege","pose":"holdObject","expression":"surprised","x":400,"scale":0.72,"y":290,"flip":true}
+          ],
+          "props": [{"id":"ball","x":0,"y":16,"hold":[1,"left"],"scale":0.9},{"id":"sound-lines","x":168,"y":168,"scale":1.1}],
+          "bubbles": [{"from":0,"x":180,"y":40,"w":150,"h":64,"text":"哥哥！"}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu memanggil Kakak yang sedang bermain bola dengan tangan di dekat mulut: \"哥哥！\"",
+        "en": "Mom calls Big Brother, who is playing ball, with a hand by her mouth: \"哥哥！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0245",
+      "hanzi": "名字",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "classroom",
+      "panels": [
+        {
+          "characters": [
+            {"id":"teacher","expression":"happy","x":370,"flip":true},
+            {"id":"meimei","pose":"pointSelf","expression":"happy","x":150,"scale":1.25,"act":"char"}
+          ],
+          "props": [{"id":"name-tag","x":162,"y":258,"front":true,"roles":["target"]}],
+          "bubbles": [{"from":1,"x":24,"y":26,"w":200,"h":58,"text":"我的名字是……","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Hari pertama sekolah: Adik menunjuk label nama di bajunya sambil berkenalan dengan Bu Guru: \"我的名字是……\"",
+        "en": "First day of school: Little Sister points at the name tag on her shirt and introduces herself to the teacher: \"我的名字是……\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0005",
+      "hanzi": "吧",
+      "unitId": "u01",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"gege","pose":"pointHold","expression":"happy","x":230},{"id":"meimei","expression":"happy","x":90,"scale":1.1,"act":"head"}],
+          "props": [{"id":"ball","x":0,"y":18,"hold":[0,"right"]},{"id":"door","x":410,"y":300,"scale":0.85,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":250,"y":30,"w":124,"h":58,"text":"走吧！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak memegang bola dan menunjuk ke pintu: \"走吧！\" Adik mengangguk senang.",
+        "en": "Big Brother holds a ball and points at the door: \"走吧！\" Little Sister nods happily."
+      },
+      "play": "nod"
+    },
+    {
+      "wordId": "L1-0427",
+      "hanzi": "一",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-peach",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"240"},
+            {"id":"apple","x":240,"y":268,"count":1,"scale":1.8},
+            {"id":"digit","x":240,"y":112,"value":"1","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {"id":"Satu apel merah di atas meja, dengan angka 1.","en":"One red apple on a table, with the digit 1."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0098",
+      "hanzi": "二",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"260"},
+            {"id":"plate","x":240,"y":268,"scale":1.5},
+            {"id":"baozi","x":240,"y":256,"count":2,"dx":64,"scale":1.4},
+            {"id":"digit","x":240,"y":112,"value":"2","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {"id":"Dua bakpao putih di atas piring, dengan angka 2.","en":"Two white steamed buns on a plate, with the digit 2."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0311",
+      "hanzi": "三",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-mint",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"300"},
+            {"id":"orange","x":240,"y":268,"count":3,"dx":70,"scale":1.6},
+            {"id":"digit","x":240,"y":112,"value":"3","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {"id":"Tiga jeruk berjajar di atas meja, dengan angka 3.","en":"Three oranges in a row on a table, with the digit 3."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0351",
+      "hanzi": "四",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-sky",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"340"},
+            {"id":"cup","x":240,"y":268,"count":4,"dx":66,"scale":1.4},
+            {"id":"digit","x":240,"y":112,"value":"4","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {"id":"Empat cangkir teh di atas meja, dengan angka 4.","en":"Four teacups on a table, with the digit 4."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0382",
+      "hanzi": "五",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-lilac",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"count","expression":"happy","x":140,"fingers":5,"scale":1.55,"act":"head"}],
+          "props": [
+            {"id":"star","x":330,"y":200,"count":3,"dx":62,"scale":1.3},
+            {"id":"star","x":330,"y":262,"count":2,"dx":62,"scale":1.3},
+            {"id":"digit","x":330,"y":112,"value":"5","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Adik membuka lima jari; di sebelahnya ada lima bintang dan angka 5.",
+        "en": "Little Sister holds up five fingers; next to her are five stars and the digit 5."
+      },
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0217",
+      "hanzi": "六",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-peach",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"360"},
+            {"id":"egg","x":240,"y":268,"count":6,"dx":52,"scale":1.25},
+            {"id":"digit","x":240,"y":112,"value":"6","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {"id":"Enam butir telur berjajar di atas meja, dengan angka 6.","en":"Six eggs in a row on a table, with the digit 6."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0286",
+      "hanzi": "七",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"table","x":240,"y":336,"value":"320"},
+            {"id":"dumpling","x":240,"y":240,"count":7,"cols":4,"dx":64,"dy":28,"scale":1.3},
+            {"id":"digit","x":240,"y":112,"value":"7","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Tujuh pangsit di atas meja (empat di belakang, tiga di depan), dengan angka 7.",
+        "en": "Seven dumplings on a table (four at the back, three in front), with the digit 7."
+      },
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0003",
+      "hanzi": "八",
+      "unitId": "u02",
+      "type": "count",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [],
+          "props": [{"id":"balloon","x":240,"y":330,"count":8,"dx":52,"scale":0.95,"roles":["bob"]},{"id":"digit","x":240,"y":104,"value":"8","scale":1.3}]
+        }
+      ],
+      "alt": {"id":"Delapan balon warna merah melayang berjajar, dengan angka 8.","en":"Eight red balloons floating in a row, with the digit 8."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0185",
+      "hanzi": "九",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-sky",
+      "panels": [
+        {
+          "characters": [],
+          "props": [{"id":"ball","x":240,"y":222,"count":9,"cols":3,"dx":84,"dy":54,"scale":1.2},{"id":"digit","x":240,"y":96,"value":"9","scale":1.3}]
+        }
+      ],
+      "alt": {"id":"Sembilan bola biru dalam tiga baris, dengan angka 9.","en":"Nine blue balls in three rows, with the digit 9."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0332",
+      "hanzi": "十",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-mint",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"shelfBoard","x":240,"y":226,"scale":2.1},
+            {"id":"shelfBoard","x":240,"y":316,"scale":2.1},
+            {"id":"apple","x":240,"y":205,"count":10,"cols":5,"dx":62,"dy":90,"scale":1.3},
+            {"id":"digit","x":240,"y":96,"value":"10","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Sepuluh apel di atas meja dalam dua baris (5 + 5), dengan angka 10.",
+        "en": "Ten apples on a table in two rows (5 + 5), with the digit 10."
+      },
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0216",
+      "hanzi": "零",
+      "unitId": "u02",
+      "type": "count",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointDown","expression":"sad","x":130,"scale":1.2,"act":"head"}],
+          "props": [
+            {"id":"table","x":320,"y":336,"value":"200"},
+            {"id":"plate","x":320,"y":268,"scale":1.5,"variant":"crumbs","roles":["target"]},
+            {"id":"digit","x":320,"y":120,"value":"0","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Piring kosong tinggal remah; Adik menunjuknya dengan kecewa. Angka 0.",
+        "en": "An empty plate with only crumbs; Little Sister points at it, disappointed. The digit 0."
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0215",
+      "hanzi": "两",
+      "unitId": "u02",
+      "type": "count",
+      "background": "street",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"holdUpBoth","expression":"happy","x":240,"scale":1.1,"act":"head"}],
+          "props": [
+            {"id":"bubble-tea","x":0,"y":0,"hold":[0,"left"],"count":1,"scale":1.1},
+            {"id":"bubble-tea","x":0,"y":0,"hold":[0,"right"],"count":1,"scale":1.1},
+            {"id":"digit","x":400,"y":110,"value":"2","scale":1.3}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Ibu memegang dua gelas teh susu, satu di tiap tangan, dengan angka 2.",
+        "en": "Mom holds two cups of milk tea, one in each hand, with the digit 2."
+      },
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0008",
+      "hanzi": "百",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-sky",
+      "panels": [
+        {
+          "characters": [],
+          "props": [
+            {"id":"board","x":240,"y":346,"scale":1.35},
+            {"id":"board100row","x":240,"y":173.6,"count":10,"cols":1,"dy":17.55,"scale":1.35},
+            {"id":"digit","x":240,"y":128,"value":"100","scale":1.2}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Papan berisi sepuluh baris bintang, sepuluh bintang tiap baris, dengan angka 100.",
+        "en": "A board with ten rows of ten stars each, with the digit 100."
+      },
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0165",
+      "hanzi": "几",
+      "unitId": "u02",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"holdUp","expression":"happy","x":130},
+            {"id":"meimei","pose":"count","expression":"happy","x":350,"fingers":3,"scale":1.2,"flip":true,"act":"char"}
+          ],
+          "props": [{"id":"candy","x":4,"y":-4,"hold":[0,"left"],"scale":0.8}],
+          "bubbles": [{"from":0,"x":26,"y":30,"w":130,"h":58,"text":"几个？","highlight":true},{"from":1,"x":360,"y":64,"w":80,"h":52,"icon":"dots"}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu bertanya \"几个？\" sambil memegang permen; Adik menebak dengan tiga jari.",
+        "en": "Mom asks \"几个？\" holding sweets; Little Sister guesses with three fingers."
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0095",
+      "hanzi": "多少",
+      "unitId": "u02",
+      "type": "comic",
+      "background": "market",
+      "panels": [
+        {
+          "characters": [
+            {"id":"seller","expression":"happy","x":370,"flip":true,"y":320},
+            {"id":"baba","pose":"point","expression":"happy","x":120,"act":"arm-left"}
+          ],
+          "props": [
+            {"id":"market-stall","x":370,"y":336,"front":true,"scale":0.8},
+            {"id":"orange","x":345,"y":250,"repeat":3,"dx":28,"front":true,"scale":0.8},
+            {"id":"orange","x":345,"y":276,"repeat":4,"dx":28,"front":true,"scale":0.8,"roles":["target"]}
+          ],
+          "bubbles": [{"from":1,"x":160,"y":30,"w":150,"h":58,"text":"多少钱？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di pasar, Ayah menunjuk tumpukan jeruk dan bertanya kepada penjual: \"多少钱？\"",
+        "en": "At the market, Dad points at a pile of oranges and asks the seller: \"多少钱？\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0075",
+      "hanzi": "第",
+      "unitId": "u02",
+      "type": "count",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"classmate","expression":"happy","x":120,"y":289,"scale":0.85},
+            {"id":"baba","expression":"sad","x":360,"y":294,"scale":0.85},
+            {"id":"gege","pose":"armsUp","expression":"happy","x":240,"y":258,"scale":0.85,"act":"char"}
+          ],
+          "props": [
+            {"id":"podium","x":120,"y":340,"value":"2","variant":"44","color":"#DDE3EE","scale":1.2},
+            {"id":"podium","x":360,"y":340,"value":"3","variant":"40","color":"#F3D9C4","scale":1.2},
+            {"id":"podium","x":240,"y":340,"value":"1","variant":"70","color":"#FFE08A","scale":1.2}
+          ]
+        }
+      ],
+      "alt": {
+        "id": "Podium lomba lari: Kakak di nomor 1, temannya nomor 2, Ayah yang kelelahan nomor 3.",
+        "en": "A race podium: Big Brother is number 1, his classmate number 2, and a tired Dad number 3."
+      },
+      "play": "jump"
+    },
+    {
+      "wordId": "L1-0143",
+      "hanzi": "号",
+      "unitId": "u02",
+      "type": "object",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointUp","expression":"happy","x":130,"scale":1.2,"act":"arm-left"}],
+          "props": [{"id":"calendar","x":330,"y":250,"value":"15","scale":1.4,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":150,"h":58,"text":"十五号！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kalender dinding dengan tanggal 15 dilingkari; Adik menunjuknya: \"十五号！\"",
+        "en": "A wall calendar with the 15th circled; Little Sister points at it: \"十五号！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0120",
+      "hanzi": "个",
+      "unitId": "u02",
+      "type": "count",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"point","expression":"happy","x":110,"act":"arm-left"}],
+          "props": [{"id":"table","x":330,"y":336,"value":"220"},{"id":"apple","x":330,"y":268,"repeat":3,"dx":62,"scale":1.4,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":30,"y":30,"w":130,"h":58,"text":"三个！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Ibu menunjuk tiga apel di meja: \"三个！\"","en":"Mom points at three apples on the table: \"三个！\""},
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0010",
+      "hanzi": "半",
+      "unitId": "u02",
+      "type": "count",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"holdUp","expression":"happy","x":150,"act":"char"}],
+          "props": [
+            {"id":"table","x":350,"y":336,"value":"200"},
+            {"id":"watermelon","x":350,"y":268,"variant":"half","scale":1.2},
+            {"id":"watermelon","x":0,"y":-2,"hold":[0,"left"],"variant":"half","scale":0.9}
+          ],
+          "bubbles": [{"from":0,"x":260,"y":40,"w":110,"h":58,"text":"半个","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu membelah semangka jadi dua bagian sama besar dan mengangkat setengahnya: \"半个\"",
+        "en": "Mom cuts a watermelon into two equal halves and lifts one: \"半个\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0431",
+      "hanzi": "一半",
+      "unitId": "u02",
+      "type": "count",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"gege","pose":"holdUpBoth","expression":"happy","x":150,"act":"head"},
+            {"id":"meimei","pose":"offer","expression":"happy","x":350,"scale":1.15,"flip":true,"act":"char"}
+          ],
+          "props": [
+            {"id":"baozi","x":0,"y":2,"hold":[0,"right"],"variant":"half","scale":1.2},
+            {"id":"baozi","x":0,"y":2,"hold":[0,"left"],"variant":"half","scale":1.2,"flip":true}
+          ],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"一半给你！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak membagi bakpao jadi dua dan memberi setengahnya kepada Adik: \"一半给你！\"",
+        "en": "Big Brother breaks a steamed bun in two and gives half to Little Sister: \"一半给你！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0353",
+      "hanzi": "岁",
+      "unitId": "u02",
+      "type": "count",
+      "background": "plain-peach",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"armsUp","expression":"happy","x":140,"scale":1.2,"act":"char"}],
+          "props": [{"id":"table","x":340,"y":336,"value":"200"},{"id":"cake","x":340,"y":268,"value":"6","scale":1.2}],
+          "bubbles": [{"from":0,"x":250,"y":30,"w":150,"h":58,"text":"我六岁！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik bersorak di depan kue ulang tahun dengan lilin angka 6: \"我六岁！\"",
+        "en": "Little Sister cheers in front of a birthday cake with a number-6 candle: \"我六岁！\""
+      },
+      "play": "jump"
+    },
+    {
+      "wordId": "L1-0439",
+      "hanzi": "一些",
+      "unitId": "u02",
+      "type": "count",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [{"id":"gege","pose":"holdObject","expression":"happy","x":140,"act":"head"}],
+          "props": [
+            {"id":"table","x":350,"y":336,"value":"210"},
+            {"id":"plate","x":350,"y":268,"scale":1.6},
+            {"id":"dumpling","x":350,"y":250,"repeat":7,"cols":4,"dx":30,"dy":10,"scale":0.9},
+            {"id":"bowl","x":0,"y":26,"hold":[0,"left"],"variant":"some","scale":0.85}
+          ],
+          "bubbles": [{"from":0,"x":240,"y":30,"w":170,"h":58,"text":"我吃一些。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ada banyak pangsit di piring; Kakak mengambil beberapa ke mangkuknya: \"我吃一些。\"",
+        "en": "There are lots of dumplings on a plate; Big Brother takes a few into his bowl: \"我吃一些。\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0437",
+      "hanzi": "一点儿",
+      "unitId": "u02",
+      "type": "count",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"baba","pose":"offer","expression":"happy","x":150},
+            {"id":"meimei","pose":"pinch","expression":"happy","x":390,"scale":1.15,"flip":true,"act":"char"}
+          ],
+          "props": [
+            {"id":"table","x":285,"y":336,"value":"140"},
+            {"id":"cup","x":285,"y":268,"variant":"little","scale":1.3,"roles":["target"]},
+            {"id":"teapot","x":4,"y":10,"hold":[0,"left"],"scale":0.9,"rotate":42}
+          ],
+          "bubbles": [{"from":1,"x":300,"y":30,"w":150,"h":58,"text":"一点儿！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ayah menuang teh sedikit saja ke cangkir Adik; Adik memberi isyarat \"sedikit\": \"一点儿！\"",
+        "en": "Dad pours just a little tea into Little Sister’s cup; she makes a \"little\" sign: \"一点儿！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0434",
+      "hanzi": "一下儿",
+      "unitId": "u02",
+      "type": "comic",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"beckon","expression":"happy","x":140,"act":"arm-left"},
+            {"id":"meimei","expression":"surprised","x":370,"scale":1.1,"flip":true}
+          ],
+          "props": [],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":190,"h":58,"text":"来一下儿！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Ibu melambai memanggil Adik sebentar: \"来一下儿！\"","en":"Mom waves Little Sister over for a moment: \"来一下儿！\""},
+      "play": "beckon"
+    },
+    {
+      "wordId": "L1-0094",
+      "hanzi": "多",
+      "unitId": "u02",
+      "type": "pair",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"gege","pose":"point","expression":"happy","x":110,"act":"arm-left"}],
+          "props": [
+            {"id":"table","x":340,"y":336,"value":"250"},
+            {"id":"bowl","x":290,"y":268,"variant":"full","scale":1.25,"roles":["target"]},
+            {"id":"bowl","x":395,"y":268,"variant":"few","scale":1.25}
+          ],
+          "bubbles": [{"from":0,"x":230,"y":30,"w":100,"h":58,"text":"多！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Dua mangkuk: satu penuh pangsit, satu hanya berisi dua. Kakak menunjuk yang penuh: \"多！\"",
+        "en": "Two bowls: one piled with dumplings, one with only two. Big Brother points at the full one: \"多！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0324",
+      "hanzi": "少",
+      "unitId": "u02",
+      "type": "pair",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"point","expression":"sad","x":400,"scale":1.15,"flip":true,"act":"arm-left"}],
+          "props": [
+            {"id":"table","x":170,"y":336,"value":"250"},
+            {"id":"bowl","x":115,"y":268,"variant":"full","scale":1.25},
+            {"id":"bowl","x":220,"y":268,"variant":"few","scale":1.25,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":330,"y":30,"w":100,"h":58,"text":"少！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Dua mangkuk: satu penuh pangsit, satu hanya berisi dua. Adik cemberut menunjuk yang hampir kosong: \"少！\"",
+        "en": "Two bowls: one piled with dumplings, one with only two. Little Sister pouts and points at the nearly empty one: \"少！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0053",
+      "hanzi": "次",
+      "unitId": "u02",
+      "type": "count",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"armsUp","expression":"happy","x":90,"scale":0.95,"y":310},
+            {"id":"meimei","pose":"armsUp","expression":"happy","x":240,"scale":0.95,"y":310},
+            {"id":"meimei","pose":"armsUp","expression":"happy","x":390,"scale":0.95,"y":310,"act":"char"}
+          ],
+          "props": [
+            {"id":"jump-rope","x":90,"y":336,"scale":1.1},
+            {"id":"jump-rope","x":240,"y":336,"scale":1.1},
+            {"id":"jump-rope","x":390,"y":336,"scale":1.1},
+            {"id":"digit","x":90,"y":96,"value":"1","count":1},
+            {"id":"digit","x":240,"y":96,"value":"2","count":1},
+            {"id":"digit","x":390,"y":96,"value":"3","count":1}
+          ]
+        }
+      ],
+      "alt": {"id":"Adik main lompat tali: tiga kali lompatan, diberi angka 1, 2, 3.","en":"Little Sister jumps rope: three jumps, numbered 1, 2, 3."},
+      "play": "count-up"
+    },
+    {
+      "wordId": "L1-0464",
+      "hanzi": "这",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"pointHeld","expression":"happy","x":170,"scale":1.25,"act":"arm-right"}],
+          "props": [
+            {"id":"table","x":390,"y":262,"value":"90","scale":0.6},
+            {"id":"apple","x":390,"y":218,"scale":0.6},
+            {"id":"apple","x":0,"y":6,"hold":[0,"left"],"scale":1.1}
+          ],
+          "bubbles": [{"from":0,"x":22,"y":40,"w":110,"h":56,"text":"这个！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik memegang apel di dekatnya dan menunjuknya: \"这个！\" Apel lain ada jauh di meja.",
+        "en": "Little Sister holds an apple close and points at it: \"这个！\" Another apple is far away on a table."
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0254",
+      "hanzi": "那",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":130,"scale":1.25,"act":"arm-left"}],
+          "props": [{"id":"table","x":390,"y":262,"value":"90","scale":0.6},{"id":"apple","x":390,"y":218,"scale":0.6,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":30,"y":40,"w":110,"h":56,"text":"那个！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik menunjuk apel yang jauh di meja seberang ruangan: \"那个！\"",
+        "en": "Little Sister points at an apple far away on a table across the room: \"那个！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0250",
+      "hanzi": "哪",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"point","expression":"surprised","x":140,"scale":1.2,"act":"head"}],
+          "props": [
+            {"id":"balloon-post","x":360,"y":336,"scale":0.9},
+            {"id":"balloon","x":320,"y":250,"color":"#E5484D","roles":["sway"]},
+            {"id":"balloon","x":362,"y":230,"color":"#4C9BE8","roles":["sway"]},
+            {"id":"balloon","x":404,"y":250,"color":"#FCC419","roles":["sway"]}
+          ],
+          "bubbles": [{"from":0,"x":30,"y":34,"w":120,"h":56,"text":"哪个？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di penjual balon, Adik ragu memilih di antara tiga balon berbeda warna: \"哪个？\"",
+        "en": "At a balloon stand, Little Sister can’t decide between three balloons of different colours: \"哪个？\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0466",
+      "hanzi": "这里",
+      "unitId": "u03",
+      "type": "position",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [{"id":"baba","pose":"pointDownHold","expression":"happy","x":200,"act":"arm-left"}],
+          "props": [{"id":"location-pin","x":272,"y":340,"scale":1.1,"roles":["target","bob"]},{"id":"map","x":0,"y":22,"hold":[0,"right"],"scale":0.85}],
+          "bubbles": [{"from":0,"x":280,"y":40,"w":120,"h":58,"text":"这里！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ayah memegang peta taman dan menunjuk tanah tepat di dekat kakinya, ada tanda lokasi: \"这里！\"",
+        "en": "Dad holds a park map and points at the ground right by his feet, where a location pin is: \"这里！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0467",
+      "hanzi": "这儿",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"sitPat","expression":"happy","x":150,"act":"arm-left","y":318},
+            {"id":"meimei","expression":"happy","x":400,"scale":1.1,"flip":true}
+          ],
+          "props": [{"id":"sofa","x":200,"y":336,"scale":1.1},{"id":"sparkle","x":262,"y":262,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":150,"h":58,"text":"坐这儿！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu duduk di sofa dan menepuk tempat kosong di sebelahnya, memanggil Adik: \"坐这儿！\"",
+        "en": "Mom sits on the sofa and pats the empty spot beside her, calling Little Sister: \"坐这儿！\""
+      },
+      "play": "beckon"
+    },
+    {
+      "wordId": "L1-0256",
+      "hanzi": "那里",
+      "unitId": "u03",
+      "type": "position",
+      "background": "sky",
+      "panels": [
+        {
+          "characters": [
+            {"id":"yeye","pose":"pointUp","expression":"happy","x":120,"act":"arm-left"},
+            {"id":"meimei","pose":"stand","expression":"surprised","x":230,"scale":1}
+          ],
+          "props": [{"id":"hill","x":400,"y":278,"scale":0.8},{"id":"pagoda","x":400,"y":178,"scale":0.9,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":20,"y":26,"w":150,"h":58,"text":"在那里！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakek menunjuk pagoda jauh di atas bukit; Adik ikut melihat: \"在那里！\"",
+        "en": "Grandpa points far off to a pagoda on a hill; Little Sister looks: \"在那里！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0257",
+      "hanzi": "那儿",
+      "unitId": "u03",
+      "type": "position",
+      "background": "street",
+      "panels": [
+        {
+          "characters": [{"id":"classmate","expression":"happy","x":80,"scale":0.95},{"id":"gege","pose":"point","expression":"happy","x":190,"act":"arm-left"}],
+          "props": [{"id":"tea-shop","x":400,"y":252,"scale":0.6,"roles":["target"]}],
+          "bubbles": [{"from":1,"x":230,"y":36,"w":110,"h":58,"text":"那儿！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak menunjuk kedai teh susu di seberang jalan sambil bicara dengan temannya: \"那儿！\"",
+        "en": "Big Brother points at the milk tea shop across the street while talking to his classmate: \"那儿！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0251",
+      "hanzi": "哪里",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "airport",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"carry","expression":"surprised","x":200,"act":"head"}],
+          "props": [{"id":"suitcase","x":262,"y":336,"scale":1.1},{"id":"plane","x":380,"y":110,"scale":1.2,"roles":["bob"]}],
+          "bubbles": [{"from":0,"x":30,"y":40,"w":160,"h":58,"text":"在哪里？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di bandara, Ibu menarik koper dan bingung mencari gerbangnya: \"在哪里？\"",
+        "en": "At the airport, Mom pulls her suitcase, looking around for her gate: \"在哪里？\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0252",
+      "hanzi": "哪儿",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "metro",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"headScratch","expression":"surprised","x":130,"scale":1.2,"act":"head"}],
+          "props": [{"id":"metro-map","x":340,"y":270,"scale":1.1},{"id":"location-pin","x":300,"y":160,"scale":0.6}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"我在哪儿？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di stasiun kereta bawah tanah, Adik bingung melihat peta jalur: \"我在哪儿？\"",
+        "en": "In a metro station, Little Sister looks at the route map, confused: \"我在哪儿？\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0468",
+      "hanzi": "这些",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"hug","expression":"happy","x":160,"scale":1.25,"act":"char"}],
+          "props": [
+            {"id":"shelf","x":400,"y":270,"scale":0.7},
+            {"id":"toy-bear","x":380,"y":216,"scale":0.45},
+            {"id":"toy-bear","x":418,"y":216,"scale":0.45,"color":"#F4A7B9"},
+            {"id":"toy-bear","x":4,"y":40,"hold":[0,"left"],"scale":0.9},
+            {"id":"toy-bear","x":-14,"y":26,"hold":[0,"left"],"scale":0.8,"color":"#F4A7B9"}
+          ],
+          "bubbles": [{"from":0,"x":230,"y":40,"w":120,"h":58,"text":"这些！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik memeluk beberapa boneka di dadanya: \"这些！\" Boneka lain ada jauh di rak.",
+        "en": "Little Sister hugs several stuffed toys to her chest: \"这些！\" Other toys sit far away on a shelf."
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0258",
+      "hanzi": "那些",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":130,"scale":1.25,"act":"arm-left"}],
+          "props": [
+            {"id":"shelf","x":390,"y":270,"scale":0.8},
+            {"id":"toy-bear","x":368,"y":214,"scale":0.5,"roles":["target"]},
+            {"id":"toy-bear","x":412,"y":214,"scale":0.5,"color":"#F4A7B9","roles":["target"]},
+            {"id":"toy-bear","x":390,"y":266,"scale":0.5,"color":"#B197FC","roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":30,"y":40,"w":120,"h":58,"text":"那些！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik menunjuk sekelompok boneka di rak yang jauh: \"那些！\"",
+        "en": "Little Sister points at a group of stuffed toys on a shelf far away: \"那些！\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0253",
+      "hanzi": "哪些",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "market",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"thinking","expression":"surprised","x":130,"act":"head"},
+            {"id":"seller","pose":"holdObject","expression":"happy","x":360,"flip":true}
+          ],
+          "props": [{"id":"basket","x":0,"y":36,"hold":[1,"left"],"scale":1}],
+          "bubbles": [{"from":0,"x":26,"y":30,"w":130,"h":58,"text":"哪些？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Penjual menyodorkan keranjang buah; Ibu berpikir mau pilih yang mana saja: \"哪些？\"",
+        "en": "The seller holds out a basket of fruit; Mom wonders which ones to pick: \"哪些？\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0465",
+      "hanzi": "这边",
+      "unitId": "u03",
+      "type": "position",
+      "background": "restaurant",
+      "panels": [
+        {
+          "characters": [{"id":"mama","expression":"happy","x":390,"flip":true},{"id":"waiter","pose":"offer","expression":"happy","x":150,"act":"arm-left"}],
+          "props": [{"id":"chair","x":265,"y":330,"scale":0.85},{"id":"table","x":265,"y":336,"value":"110","front":true,"roles":["target"]}],
+          "bubbles": [{"from":1,"x":24,"y":16,"w":150,"h":58,"text":"这边请！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di restoran, pelayan mempersilakan Ibu ke meja di dekatnya dengan telapak terbuka: \"这边请！\"",
+        "en": "In a restaurant, the waiter shows Mom to the table right next to him with an open palm: \"这边请！\""
+      },
+      "play": "beckon"
+    },
+    {
+      "wordId": "L1-0255",
+      "hanzi": "那边",
+      "unitId": "u03",
+      "type": "position",
+      "background": "restaurant",
+      "panels": [
+        {
+          "characters": [{"id":"mama","expression":"happy","x":60,"scale":0.95},{"id":"waiter","pose":"point","expression":"happy","x":170,"act":"arm-left"}],
+          "props": [
+            {"id":"window","x":400,"y":200,"scale":0.9},
+            {"id":"table","x":400,"y":290,"value":"120","scale":0.6,"roles":["target"]},
+            {"id":"chair","x":360,"y":290,"scale":0.55}
+          ],
+          "bubbles": [{"from":1,"x":200,"y":16,"w":120,"h":58,"text":"那边！","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Pelayan menunjuk meja kosong jauh di dekat jendela: \"那边！\"","en":"The waiter points to an empty table far away by the window: \"那边！\""},
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0328",
+      "hanzi": "什么",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "plain-peach",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","pose":"holdEar","expression":"surprised","x":210,"scale":1.35,"act":"upper"}],
+          "props": [{"id":"gift-box","x":10,"y":24,"hold":[0,"left"],"scale":0.85}],
+          "bubbles": [{"from":0,"x":40,"y":50,"w":130,"h":58,"text":"什么？","highlight":true},{"x":340,"y":60,"w":70,"h":64,"icon":"question","kind":"thought"}]
+        }
+      ],
+      "alt": {
+        "id": "Adik mengguncang kotak hadiah tertutup di dekat telinganya: \"什么？\"",
+        "en": "Little Sister shakes a closed gift box next to her ear: \"什么？\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0325",
+      "hanzi": "谁",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","expression":"surprised","x":160,"scale":1.2,"act":"char"}],
+          "props": [{"id":"door-shadow","x":340,"y":300},{"id":"bell","x":410,"y":120,"roles":["sway"]},{"id":"sound-lines","x":432,"y":120}],
+          "bubbles": [{"from":0,"x":30,"y":40,"w":100,"h":58,"text":"谁？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Bel pintu berbunyi. Di jendela kecil pintu ada bayangan orang; Adik bertanya: \"谁？\"",
+        "en": "The doorbell rings. A shadow shows in the door’s small window; Little Sister asks: \"谁？\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0460",
+      "hanzi": "怎么",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"yeye","pose":"holdUp","expression":"surprised","x":200,"scale":1.1,"act":"char"}],
+          "props": [{"id":"phone","x":0,"y":4,"hold":[0,"left"],"scale":1.1},{"id":"gear","x":330,"y":120,"scale":0.9,"roles":["sway"]}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"怎么用？","highlight":true}]
+        }
+      ],
+      "alt": {"id":"Kakek memegang ponsel baru dan bingung cara memakainya: \"怎么用？\"","en":"Grandpa holds a new phone, puzzled how to use it: \"怎么用？\""},
+      "play": "shrug"
+    },
+    {
+      "wordId": "L1-0114",
+      "hanzi": "干什么",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"mama","pose":"hips","expression":"angry","x":110,"act":"head"},{"id":"gege","pose":"shrug","expression":"surprised","x":330}],
+          "props": [
+            {"id":"wardrobe","x":420,"y":336,"variant":"open","scale":0.85},
+            {"id":"shirt","x":250,"y":340,"rotate":-20},
+            {"id":"shirt","x":400,"y":344,"color":"#FFA94D","rotate":15},
+            {"id":"shirt","x":300,"y":222,"color":"#B2F2BB","roles":["bob"]}
+          ],
+          "bubbles": [{"from":0,"x":20,"y":26,"w":190,"h":58,"text":"你干什么？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu bertolak pinggang melihat Kakak mengacak-acak lemari pakaian: \"你干什么？\"",
+        "en": "Hands on hips, Mom sees Big Brother turning the wardrobe upside down: \"你干什么？\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0113",
+      "hanzi": "干",
+      "unitId": "u03",
+      "type": "action",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"gege","pose":"sweep","expression":"happy","x":220,"scale":1.1,"act":"upper"}],
+          "props": [
+            {"id":"broom","x":0,"y":110,"hold":[0,"right"],"rotate":-8,"scale":1.05},
+            {"id":"sweat","x":290,"y":112},
+            {"id":"dust","x":300,"y":334,"scale":1.4}
+          ]
+        }
+      ],
+      "alt": {"id":"Kakak sibuk bekerja menyapu lantai sampai berkeringat.","en":"Big Brother is busy working, sweeping the floor until he sweats."},
+      "play": "bow"
+    },
+    {
+      "wordId": "L1-0338",
+      "hanzi": "是不是",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"point","expression":"surprised","x":130,"scale":1.15,"act":"arm-left"},
+            {"id":"baba","pose":"holdUp","expression":"happy","x":360,"flip":true}
+          ],
+          "props": [{"id":"photo","x":0,"y":4,"hold":[1,"left"],"scale":0.9,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"是不是你？","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik menunjuk foto anak kecil yang dipegang Ayah: \"是不是你？\"",
+        "en": "Little Sister points at a photo of a small child that Dad is holding: \"是不是你？\""
+      },
+      "play": "point"
+    },
+    {
+      "wordId": "L1-0031",
+      "hanzi": "不对",
+      "unitId": "u03",
+      "type": "pair",
+      "background": "classroom",
+      "panels": [
+        {
+          "characters": [
+            {"id":"teacher","pose":"stop","expression":"neutral","x":90,"act":"head","scale":0.95},
+            {"id":"meimei","pose":"headScratch","expression":"surprised","x":410,"scale":1.05,"flip":true}
+          ],
+          "props": [{"id":"blackboard","x":240,"y":210,"value":"2+2=5","scale":1},{"id":"cross","x":330,"y":120,"roles":["target"],"scale":1.3}],
+          "bubbles": [{"from":0,"x":20,"y":20,"w":110,"h":52,"text":"不对。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di papan tulis tertulis 2 + 2 = 5. Bu Guru menggeleng dan memberi tanda silang: \"不对。\"",
+        "en": "The blackboard shows 2 + 2 = 5. The teacher shakes her head and marks it with a cross: \"不对。\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0092",
+      "hanzi": "对",
+      "unitId": "u03",
+      "type": "pair",
+      "background": "classroom",
+      "panels": [
+        {
+          "characters": [
+            {"id":"teacher","pose":"thumbsUp","expression":"happy","x":90,"act":"head","scale":0.95},
+            {"id":"gege","expression":"happy","x":405,"flip":true}
+          ],
+          "props": [{"id":"blackboard","x":240,"y":210,"value":"2+2=4","scale":1},{"id":"check","x":330,"y":120,"roles":["target"],"scale":1.3}],
+          "bubbles": [{"from":0,"x":20,"y":20,"w":110,"h":52,"text":"对！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Di papan tulis tertulis 2 + 2 = 4. Bu Guru tersenyum dan memberi centang: \"对！\"",
+        "en": "The blackboard shows 2 + 2 = 4. The teacher smiles and adds a big tick: \"对！\""
+      },
+      "play": "nod"
+    },
+    {
+      "wordId": "L1-0055",
+      "hanzi": "错",
+      "unitId": "u03",
+      "type": "pair",
+      "background": "classroom",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"holdObject","expression":"sad","x":170,"scale":1.25,"act":"head"},
+            {"id":"teacher","expression":"neutral","x":390,"flip":true}
+          ],
+          "props": [{"id":"paper","x":0,"y":54,"hold":[0,"left"],"value":"3+4=8","variant":"cross","scale":1.1,"roles":["target"]}],
+          "bubbles": [{"from":0,"x":30,"y":30,"w":140,"h":58,"text":"错了……","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik memegang kertas ujian bertuliskan 3 + 4 = 8 dengan tanda silang besar, sedih: \"错了……\"",
+        "en": "Little Sister holds her test paper with 3 + 4 = 8 and a big cross, looking sad: \"错了……\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0441",
+      "hanzi": "有",
+      "unitId": "u03",
+      "type": "pair",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"meimei","pose":"holdObject","expression":"happy","x":140,"scale":1.2,"roles":["side-a"],"act":"head"},
+            {"id":"gege","pose":"emptyHands","expression":"sad","x":350,"roles":["side-b"]}
+          ],
+          "props": [{"id":"toy-bear","x":0,"y":46,"hold":[0,"left"],"scale":1}],
+          "bubbles": [{"from":0,"x":30,"y":30,"w":120,"h":58,"text":"我有！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik bangga memamerkan boneka beruangnya: \"我有！\" Kakak di sebelahnya menunjukkan dua tangan kosong.",
+        "en": "Little Sister proudly shows her teddy bear: \"我有！\" Big Brother next to her shows two empty hands."
+      },
+      "play": "swap-pair"
+    },
+    {
+      "wordId": "L1-0236",
+      "hanzi": "没有",
+      "unitId": "u03",
+      "type": "pair",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"gege","pose":"holdUp","expression":"sad","x":200,"scale":1.05,"act":"head"}],
+          "props": [
+            {"id":"wallet","x":0,"y":-36,"hold":[0,"left"],"rotate":180,"scale":1.1},
+            {"id":"dust","x":262,"y":236,"scale":1.6,"roles":["bob"]},
+            {"id":"dust","x":270,"y":262,"scale":1.2,"roles":["bob"]}
+          ],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"我没有钱。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Kakak membalik dompetnya, tetapi yang keluar hanya debu: \"我没有钱。\"",
+        "en": "Big Brother turns his wallet upside down, but only dust falls out: \"我没有钱。\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0232",
+      "hanzi": "没",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"point","expression":"surprised","x":110},
+            {"id":"meimei","pose":"armsCross","expression":"sad","x":380,"scale":1.15,"flip":true,"act":"head"}
+          ],
+          "props": [
+            {"id":"table","x":255,"y":336,"value":"140"},
+            {"id":"bowl","x":255,"y":268,"variant":"rice","scale":1.2,"roles":["target"]},
+            {"id":"chopsticks","x":290,"y":270,"rotate":70,"scale":0.7}
+          ],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":70,"h":58,"icon":"question"},{"from":1,"x":330,"y":30,"w":120,"h":58,"text":"没吃。","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ibu menunjuk mangkuk nasi yang masih penuh; Adik menggeleng: \"没吃。\"",
+        "en": "Mom points at a bowl of rice that is still full; Little Sister shakes her head: \"没吃。\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0455",
+      "hanzi": "在",
+      "unitId": "u03",
+      "type": "position",
+      "background": "room",
+      "panels": [
+        {
+          "characters": [{"id":"meimei","expression":"happy","x":240,"scale":1.05,"act":"head","y":326}],
+          "props": [
+            {"id":"wardrobe","x":240,"y":336,"variant":"open","scale":1.3},
+            {"id":"wardrobe-door","x":275,"y":320,"scale":1.3,"front":true},
+            {"id":"arrow","x":120,"y":250,"scale":0.8,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":30,"y":40,"w":170,"h":58,"text":"我在这儿！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik bersembunyi di dalam lemari, hanya kepalanya yang terlihat; panah menunjuk tempatnya: \"我在这儿！\"",
+        "en": "Little Sister hides in the wardrobe with only her head peeking out; an arrow points to her: \"我在这儿！\""
+      },
+      "play": "pop-bubble"
+    },
+    {
+      "wordId": "L1-0025",
+      "hanzi": "别",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "kitchen",
+      "panels": [
+        {
+          "characters": [
+            {"id":"mama","pose":"stop","expression":"surprised","x":110,"act":"head"},
+            {"id":"meimei","pose":"reach","expression":"happy","x":260,"scale":1.05}
+          ],
+          "props": [{"id":"stove","x":400,"y":336,"scale":0.9},{"id":"pot","x":400,"y":300,"scale":0.8},{"id":"hotLines","x":400,"y":220,"scale":0.8}],
+          "bubbles": [{"from":0,"x":20,"y":30,"w":130,"h":58,"text":"别动！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Adik mau menyentuh panci panas di kompor; Ibu mengangkat telapak tangan: \"别动！\"",
+        "en": "Little Sister reaches for a hot pot on the stove; Mom raises her palm: \"别动！\""
+      },
+      "play": "shake-head"
+    },
+    {
+      "wordId": "L1-0033",
+      "hanzi": "不用",
+      "unitId": "u03",
+      "type": "comic",
+      "background": "park",
+      "panels": [
+        {
+          "characters": [
+            {"id":"baba","pose":"carry","expression":"surprised","x":360,"flip":true},
+            {"id":"yeye","pose":"pointUp","expression":"happy","x":140,"act":"head"}
+          ],
+          "props": [{"id":"sun","x":290,"y":110},{"id":"umbrella","x":0,"y":20,"hold":[0,"left"],"scale":0.9}],
+          "bubbles": [{"from":1,"x":20,"y":34,"w":120,"h":58,"text":"不用！","highlight":true}]
+        }
+      ],
+      "alt": {
+        "id": "Ayah mau membuka payung, tetapi Kakek menunjuk langit yang cerah: \"不用！\"",
+        "en": "Dad is about to open an umbrella, but Grandpa points at the sunny sky: \"不用！\""
+      },
+      "play": "shake-head"
+    }
+  ]
+}

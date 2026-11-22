@@ -168,7 +168,7 @@ export function hairLayers(spec: CharacterSpec, view: View, k: number): HairLaye
         const lock = (s: number) => H(d('M', s * 52, -14, 'Q', s * 64, 10, s * 62, 40, 'Q', s * 52, 48, s * 42, 40, 'Q', s * 50, 18, s * 46, -10, 'Z'))
         return { ...none, coversEars: true,
           back: H(d('M', -62, 34, 'Q', -72, -62, 0, -64, 'Q', 72, -62, 62, 34, 'Q', 62, 44, 52, 44, 'L', -52, 44, 'Q', -62, 44, -62, 34, 'Z')),
-          front: H(d('M', -54, 6, 'Q', -60, -56, 0, -58, 'Q', 60, -54, 55, -2, 'Q', 50, -32, 18, -40, 'Q', -12, -34, -30, -18, 'Q', -44, -6, -54, 6, 'Z')) + lock(-1) + lock(1),
+          front: H(d('M', -54, 6, 'Q', -60, -56, 0, -58, 'Q', 60, -54, 55, -2, 'Q', 52, -36, 18, -44, 'Q', -12, -42, -32, -30, 'Q', -46, -20, -54, 6, 'Z')) + lock(-1) + lock(1),
         }
       }
       if (view === 'side') return { ...none, coversEars: true,
@@ -234,7 +234,7 @@ export function hairLayers(spec: CharacterSpec, view: View, k: number): HairLaye
       const top = ellipsePoints(0, -18, 64, 54, 168, 372, 11)
       if (view === 'front') return { ...none,
         back: H(bumps(top, 15) + d('Q', 0, 30, top[0][0], top[0][1], 'Z')),
-        front: H(bumps(ellipsePoints(0, -20, 58, 44, 175, 365, 9), 13) + bumps([[56, -8], [44, -26], [28, -24], [12, -30], [-6, -26], [-22, -30], [-38, -24], [-50, -26], [-57, -8]], 9, 1).replace('M', 'L') + 'Z'),
+        front: H(bumps(ellipsePoints(0, -20, 58, 44, 175, 365, 9), 13) + bumps([[56, -10], [46, -32], [30, -32], [13, -37], [-5, -33], [-22, -37], [-38, -32], [-50, -32], [-57, -10]], 9, 1).replace('M', 'L') + 'Z'),
       }
       if (view === 'side') {
         const pts = ellipsePoints(-6, -20, 60, 52, 150, 352, 10)

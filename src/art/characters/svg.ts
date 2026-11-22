@@ -155,3 +155,72 @@ export function tube(p0: Pt, p1: Pt, p2: Pt, w: number, capStart = true): string
     ...start, 'Z',
   )
 }
+
+/**
+ * Outline of a round-capped limb of half-width w along a polyline of two segments
+ * (shoulder → elbow → hand). The outer side of the elbow is a round arc, the inner side a
+ * soft crease, so a bent arm stays one filled shape with one ink outline.
+ */
+export function limb(p0: Pt, p1: Pt, p2: Pt, w: number): string {
+  const u1 = unit(sub(p1, p0))
+  const u2 = unit(sub(p2, p1))
+  const n1 = { x: -u1.y, y: u1.x }
+  const n2 = { x: -u2.y, y: u2.x }
+  const cross = u1.x * u2.y - u1.y * u2.x
+  const dot = u1.x * u2.x + u1.y * u2.y
+  if (Math.abs(cross) < 0.03 && dot > 0) {
+    // practically straight: one tube
+    return d(
+      'M', p0.x + n1.x * w, p0.y + n1.y * w, 'L', p2.x + n2.x * w, p2.y + n2.y * w,
+      'A', w, w, 0, 0, 0, p2.x - n2.x * w, p2.y - n2.y * w,
+      'L', p0.x - n1.x * w, p0.y - n1.y * w,
+      'A', w, w, 0, 0, 0, p0.x + n1.x * w, p0.y + n1.y * w, 'Z',
+    )
+  }
+  // +n side is the inner side when the polyline turns toward +n (cross > 0 in y-down coordinates)
+  const innerSign = cross > 0 ? 1 : -1
+  const len1 = Math.hypot(p1.x - p0.x, p1.y - p0.y)
+  const len2 = Math.hypot(p2.x - p1.x, p2.y - p1.y)
+  const bis = unit(add(n1, n2))
+  const cosHalf = Math.max(0.2, Math.sqrt(Math.max(0, (1 + (n1.x * n2.x + n1.y * n2.y)) / 2)))
+  const miter = Math.min(w / cosHalf, Math.min(len1, len2) * 0.85)
+  const inner = add(p1, mul(bis, innerSign * miter))
+  const side = (s: number) => ({
+    a0: add(p0, mul(n1, s * w)),
+    a1: add(p1, mul(n1, s * w)),
+    b1: add(p1, mul(n2, s * w)),
+    b2: add(p2, mul(n2, s * w)),
+  })
+  const P = side(1)
+  const M = side(-1)
+  const parts: (string | number)[] = ['M', P.a0.x, P.a0.y]
+  // +n side, going from shoulder to hand
+  if (innerSign === 1) parts.push('L', inner.x, inner.y)
+  else parts.push('L', P.a1.x, P.a1.y, 'A', w, w, 0, 0, 0, P.b1.x, P.b1.y)
+  parts.push('L', P.b2.x, P.b2.y, 'A', w, w, 0, 0, 0, M.b2.x, M.b2.y)
+  // -n side, going back from hand to shoulder
+  if (innerSign === -1) parts.push('L', inner.x, inner.y)
+  else parts.push('L', M.b1.x, M.b1.y, 'A', w, w, 0, 0, 0, M.a1.x, M.a1.y)
+  parts.push('L', M.a0.x, M.a0.y, 'A', w, w, 0, 0, 0, P.a0.x, P.a0.y, 'Z')
+  return d(...parts)
+}
+
+/** Sub-polyline between arc-length fractions t0..t1 of a two-segment polyline. */
+export function polySlice(p0: Pt, p1: Pt, p2: Pt, t0: number, t1: number): Pt[] {
+  const l1 = Math.hypot(p1.x - p0.x, p1.y - p0.y)
+  const l2 = Math.hypot(p2.x - p1.x, p2.y - p1.y)
+  const total = l1 + l2
+  const at = (t: number): Pt => {
+    const s = t * total
+    return s <= l1 ? lerp(p0, p1, l1 === 0 ? 0 : s / l1) : lerp(p1, p2, l2 === 0 ? 0 : (s - l1) / l2)
+  }
+  const a = at(t0)
+  const b = at(t1)
+  const tElbow = l1 / total
+  if (t0 < tElbow && t1 > tElbow) return [a, p1, b]
+  return [a, b]
+}
+
+export function polyPoint(p0: Pt, p1: Pt, p2: Pt, t: number): Pt {
+  return polySlice(p0, p1, p2, 0, t).at(-1) as Pt
+}

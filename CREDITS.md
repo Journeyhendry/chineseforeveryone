@@ -46,3 +46,4 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 - Ilustrasi dibuat sebagai SVG khusus untuk proyek ini.
 - **Tokoh "Keluarga Xiǎo" dan tokoh pendukung** (`public/art/characters/`): digambar oleh Claude (AI) sebagai karya asli untuk proyek ini, dirakit oleh `scripts/build-characters.ts` dari bagian-bagian di `src/art/characters/`. Lisensinya sama dengan repo ini (MIT); tidak meniru tokoh atau karakter terkenal mana pun.
+- **Ilustrasi adegan kata** (`public/art/scenes/`): digambar oleh Claude (AI) sebagai karya asli untuk proyek ini, dirakit oleh `scripts/build-scenes.ts` dari `data/hsk1/scenes.json` dengan tokoh, benda, dan latar di `src/art/`. Lisensinya sama dengan repo ini (MIT); tanpa merek dan tanpa tokoh terkenal.

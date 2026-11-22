@@ -8,6 +8,7 @@ import { CasualBox } from './CasualCard'
 import { go, isInteractiveTarget, useAudio, useDocumentTitle, useFocusOnChange, useHotkeys } from './hooks'
 import { AudioButtons, Badge, LessonBar, MachineTag, SpeakButton, ToneHanzi, TonePinyin, ToneLabels } from './parts'
 import { StrokePanel } from './StrokePanel'
+import { WordScene } from './WordScene'
 import { meaningFull, tatoebaUrl } from './text'
 import './word.css'
 
@@ -81,6 +82,8 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
               <AudioButtons text={word.hanzi} label={word.hanzi} />
             </div>
           </section>
+
+          <WordScene wordId={word.id} hanzi={word.hanzi} />
 
           <section className="card examples" aria-labelledby="examples-title">
             <h2 id="examples-title" className="card-title">

@@ -11,7 +11,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
 - [x] 2b · Ganti HSK 1 ke 300 kata silabus 2025 — 2026-11-22 — Sonnet (diperiksa Opus, 1 kali perbaikan font) — 300 kata silabus ujian 2025 (becky82/mteh CC BY-SA 4.0, cocok 1:1 dengan PDF resmi CLEC); 266 ID lama dipakai ulang, 34 kata baru (L1-0501…0534), 234 kata lama ke `data/hsk2-preview/`; 21 unit (12–17 kata); 1.579 kalimat Tatoeba; 72 ungkapan santai; `npm run check:data` baru di CI
-- [ ] 3d · Tulis ulang dialog jadi alami (kritik pemilik 2026-11-22) — SEDANG DIKERJAKAN (mulai 2026-11-22 04:41 UTC)
+- [x] 3d · Tulis ulang dialog jadi alami — 2026-11-22 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 ronde tulis ulang) — 21 dialog baru (1 per unit, 10 jenis tempat, tiap dialog punya tujuan), semua lolos cek kosakata 300 kata; 7 dialog ditulis ulang setelah ronde 1, semua akhirnya bernilai ≥ 4 (`data/hsk1/dialog-review.json`); kartu dialog kini menampilkan tempat + tujuan
 - [ ] 0 · Tahap 0 "Dasar sebelum HSK 1" (keputusan pemilik 2026-11-22)
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Pemilik memilih P3 (perempuan) + L3 (laki-laki) pada 2026-11-22.**
 - [ ] 4b · Audio semua materi
@@ -20,8 +20,8 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 6 · Layar unit + peta belajar — 2026-11-21 — Opus (diperiksa Opus, 1 kali perbaikan kecil) — peta 20 unit + bintang + tes loncat (≥ 80 %), ringkasan unit (versi santai + dialog), kenalan kata (huruf WenKai 120 px berwarna nada, animasi coretan Hanzi Writer data lokal 384 huruf, contoh kalimat Tatoeba), latihan 12 soal (4 jenis, keyboard 1–4/Enter/Spasi); suara sementara dari perangkat
 - [ ] 6b · Ilustrasi + animasi semua kata (tahap berikutnya: unit 4 dst., setelah task 2b menyusun ulang unit)
   - [x] 6b tahap 1 · unit 1–3 — 2026-11-22 — Opus (diperiksa Opus) — 87 adegan SVG dari sistem rakit (`data/hsk1/scenes.json` → `npm run build:scenes`, ±10 KB/adegan), 39 pose tokoh, kartu ilustrasi di layar kenalan kata: gerak napas/kedip, klik/Enter/Spasi = aksi + suara, diam saat kurangi gerak; teks balon komik HTML huruf WenKai dengan kata disorot; axe lolos terang & gelap
-- [ ] 7 · Empat game — SEDANG DIKERJAKAN (mulai 2026-11-21 23:59 UTC)
-- [ ] 8 · Progres + ulangan harian + cadangan — SEDANG DIKERJAKAN (mulai 2026-11-22 00:40 UTC)
+- [ ] 7 · Empat game
+- [x] 8 · Progres + ulangan harian + cadangan — 2026-11-22 — Sonnet (commit `Task 8` masuk & deploy sukses, tetapi sesinya terhenti sebelum mencentang; dicek ulang sesi 3d: semua tes lolos, layar Ulang & Progres terbuka tanpa galat, tanpa scroll samping di 375 px) — Leitner 5 kotak, target harian 10/20/30, hari berturut-turut, unduh/pulihkan cadangan
 - [ ] 9 · Kamus + Sumber + lapor salah
 - [ ] 10 · Pengecekan akhir + rilis v1
 
@@ -42,3 +42,31 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - 2026-11-21 (task 6): Suara di layar belajar SEMENTARA memakai suara bawaan browser/perangkat (ditandai di layar); bila perangkat tidak punya suara Mandarin, tombol suara mati dengan keterangan dan soal "dengar → huruf" diganti. Task 4b cukup mengganti `src/lib/audio.ts`. Progres disimpan di `xue.progress.v1` (siap diperluas task 8). Bintang: ≥ 90 % = 3, ≥ 75 % = 2, ≥ 60 % = 1 (unit selesai bila ≥ 1 bintang). Data per unit di `public/data/hsk1/units/` dibuat ulang dengan `npm run build:lessons` setiap data di `data/hsk1/` berubah. Tempat "satu game singkat" di layar nilai menunggu task 7.
 - 2026-11-22 (task 6b tahap 1): Kakak kini mahasiswa muda (±98 % tinggi dewasa); alis Guru & Teman sekelas kini terlihat. Adegan disimpan per id kata (`L1-xxxx`), jadi saat task 2b memindah kata ke `hsk2-preview`, adegannya tinggal ikut dipindah referensinya. Adegan terlemah: 他们/她们 (tokoh kecil), 们 (perlu membandingkan 2 panel), 叫 (balon "哥哥！" tidak memuat 叫, jadi tidak ada sorotan), 我/名字 (tangan menunjuk diri terbaca seperti tangan di dada), 次 (tali lompat kurang pas). Beberapa balon memakai huruf di luar HSK 1 (钱 茶 动 用). Angka 6–10 tidak memakai isyarat jari China (hanya benda + angka). Edit adegan langsung di `scenes.json`, lalu `npm run build:scenes`.
 - 2026-11-22 (task 2b): Hanya 1 dialog lama (d-u18, kini di unit 19) lolos cek kosakata 300 kata; 19 lainnya disimpan di `data/hsk1/dialogs-retired.json` untuk task 3d — sampai 3d selesai, 20 dari 21 unit belum punya dialog. Unit u02, u03, u04 belum punya ungkapan santai (50 dari 142 draf dikeluarkan karena padanannya di luar 300 kata); penempatan unit ada di `casual-remap.json` (draf `casual-candidates.json` sengaja tidak diubah supaya workflow bukti tidak jalan). u03 (Angka 0–10) hanya 3 kalimat contoh. Pinyin mengikuti tabel resmi 2025 (mis. 不客气 búkèqi, 一下 yíxià, 一些 yìxiē). 34 terjemahan Indonesia kata baru = terjemahan mesin. Adegan 6b tahap 1: 75 tetap di HSK 1, 12 ikut kata yang pindah ke `hsk2-preview` (SVG tidak dihapus) — tahap 6b berikutnya mengikuti unit baru. Workflow `fetch-tatoeba.yml` sekarang juga membangun ulang `build:lessons` dan subset font (kalimat baru bisa membawa huruf baru); commit dari bot tidak memicu deploy, jadi perubahan baru tampil di website setelah push berikutnya. Sesi task 7 dan 8 (berjalan bersamaan) perlu menyesuaikan diri dengan unit baru saat rebase.
+- 2026-11-22 (task 3d): Dialog lama (termasuk d-u18) tidak tampil lagi; semua ada di `dialogs-retired.json` sebagai arsip. Sumber dialog baru: `data/hsk1/dialogs-natural.json` → `npm run build:casual` → `dialogs.json` (+ `build:lessons`). Setiap perubahan teks Mandarin dialog harus dinilai ulang dan dicatat di `dialog-review.json` (ada tes yang mencocokkan teksnya). Batasan 300 kata membuat beberapa ungkapan paling alami tidak bisa dipakai (mis. 看不清, 试试, 头疼), jadi u17/u18/u21 memakai jalan lain (nilai 4). Pinyin dialog memakai nada dasar (一个 tertulis yī gè, bukan yí gè) — bawaan pemecah kata lama; bisa dibenahi saat task 0/4b. Di layar sempit, pinyin di atas huruf kadang berdempetan (tampilan ruby lama, bukan baru). Font tambahan dibangun ulang (+5 huruf dari laporan penilaian). Kunci "SEDANG DIKERJAKAN" task 7 dihapus karena basi (sesinya terhenti 2026-11-22 ±01:00 UTC tanpa hasil).
+
+### Contoh 3 dialog baru (untuk dilihat pemilik)
+
+**Unit 9 · Memesan di warung mi** (Warung mi)
+- Pelayan: 您好，吃什么？ — Halo, mau makan apa?
+- Ibu: 有包子吗？ — Ada bakpao?
+- Pelayan: 包子没有了。有饺子和面条儿。 — Bakpaonya habis. Ada pangsit dan mi.
+- Ibu: 那……饺子吧。 — Kalau begitu... pangsit saja.
+- Pelayan: 好的。喝什么？ — Baik. Minumnya apa?
+- Ibu: 不喝了，谢谢。 — Tidak usah, terima kasih.
+
+**Unit 11 · Janjian lewat telepon** (Telepon)
+- Teman kuliah: 喂，明天上午有时间吗？ — Halo, besok pagi ada waktu?
+- Kakak: 上午没有。下午呢？ — Pagi tidak bisa. Kalau siang?
+- Teman kuliah: 下午也好。几点？ — Siang juga boleh. Jam berapa?
+- Kakak: 两点半，在书店，怎么样？ — Setengah tiga, di toko buku. Bagaimana?
+- Teman kuliah: 好，两点半。不见不散！ — Oke, setengah tiga. Aku tunggu di sana, ya!
+- Kakak: 不见不散！ — Aku pasti datang!
+
+**Unit 13 · Macet di taksi** (Di dalam taksi)
+- Sopir: 去哪儿？ — Ke mana?
+- Ibu: 师傅，去电影院。 — Pak, ke bioskop.
+- Sopir: 好。……前头堵车了。电影院在那儿。 — Baik. ... Di depan macet. Bioskopnya di sana itu.
+- Ibu: 那我在这儿下车吧。多少钱？ — Kalau begitu saya turun di sini saja. Berapa?
+- Sopir: 十八块。 — Delapan belas yuan.
+- Ibu: 好。谢谢师傅！ — Oke. Terima kasih, Pak!
+- Sopir: 慢走！ — Hati-hati!

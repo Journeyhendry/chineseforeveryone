@@ -3,6 +3,7 @@ import unitsFile from '../../data/hsk1/units.json'
 import wordsFile from '../../data/hsk1/words.json'
 import { syllableTone } from './pinyin'
 import {
+  buildReviewQuiz,
   buildSkipQuiz,
   buildUnitQuiz,
   cleanEn,
@@ -138,5 +139,41 @@ describe('buildSkipQuiz', () => {
       }
     }
     expect(new Set(qs.map((q) => q.kind)).size).toBeGreaterThanOrEqual(3)
+  })
+})
+
+describe('buildReviewQuiz', () => {
+  const asked = [unitWords[2][0], unitWords[0][1], unitWords[1][2], unitWords[0][3], unitWords[2][4]]
+  it('satu soal per kata, urutan sesuai input, pilihan valid', () => {
+    for (const audio of [true, false]) {
+      const qs = buildReviewQuiz(asked, unitWords, { seed: 7, audio })
+      expect(qs.map((q) => q.wordId)).toEqual(asked.map((w) => w.id))
+      for (const q of qs) {
+        check(q, byId)
+        if (!audio) expect(q.kind).not.toBe('audio-hanzi')
+      }
+    }
+  })
+  it('kata kembar di masukan dibuang', () => {
+    const qs = buildReviewQuiz([asked[0], asked[1], asked[0]], unitWords, { seed: 1, audio: true })
+    expect(qs.map((q) => q.wordId)).toEqual([asked[0].id, asked[1].id])
+  })
+  it('pengecoh dari unit kata itu', () => {
+    const qs = buildReviewQuiz(asked, unitWords, { seed: 3, audio: true })
+    for (const q of qs) {
+      const group = unitWords.find((g) => g.some((w) => w.id === q.wordId))!
+      const ids = new Set(group.map((w) => w.id))
+      for (const c of q.choices) if (c.type === 'word') expect(ids.has(c.wordId)).toBe(true)
+    }
+  })
+  it('deterministik dengan seed, kosong -> kosong', () => {
+    expect(buildReviewQuiz(asked, unitWords, { seed: 5, audio: true })).toEqual(buildReviewQuiz(asked, unitWords, { seed: 5, audio: true }))
+    expect(buildReviewQuiz([], unitWords, { seed: 5, audio: true })).toEqual([])
+  })
+  it('semua kata dari satu daftar (tanpa unit lain) tetap menghasilkan soal valid', () => {
+    const all = unitWords.flat()
+    const qs = buildReviewQuiz(all.slice(0, 20), [all], { seed: 9, audio: true })
+    expect(qs).toHaveLength(20)
+    qs.forEach((q) => check(q, byId))
   })
 })

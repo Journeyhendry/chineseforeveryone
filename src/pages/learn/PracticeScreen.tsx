@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useT } from '../../i18n/context'
 import { waitForAudio } from '../../lib/audio'
 import type { LessonIndex, LessonUnitInfo, UnitData } from '../../lib/lessons'
+import { localDay } from '../../lib/dates'
+import { recordAnswers } from '../../lib/leitner'
 import { isUnitUnlocked, recordUnitResult, starsFor } from '../../lib/progress'
 import { buildUnitQuiz, type Question } from '../../lib/quiz'
 import { learnHref } from '../../lib/router'
@@ -70,12 +72,13 @@ function PracticeResult({
   const score = result.total ? result.correct / result.total : 0
   const stars = starsFor(score)
   const saved = useRef(false)
-  // Progres disimpan saat layar nilai muncul (nilai terbaik saja).
+  // Progres disimpan saat layar nilai muncul, sekali per sesi: nilai terbaik + jadwal ulang kata.
   useEffect(() => {
     if (saved.current) return
     saved.current = true
-    updateProgress((p) => recordUnitResult(p, info.id, score, new Date()))
-  }, [info.id, score])
+    const now = new Date()
+    updateProgress((p) => recordAnswers(recordUnitResult(p, info.id, score, now), result.answers, localDay(now), 'practice'))
+  }, [info.id, score, result.answers])
   const progress = useProgress()
   const nextUnit = index.units.find((u) => u.order === info.order + 1)
   const nextOpen = nextUnit ? isUnitUnlocked(nextUnit, index.units, progress) : false

@@ -26,6 +26,12 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     })
   }, [])
 
+  const replace = useCallback((next: Settings) => {
+    const clean = normalizeSettings(next)
+    saveSettings(clean)
+    setSettings(clean)
+  }, [])
+
   useEffect(() => {
     const mq = window.matchMedia(DARK_QUERY)
     applyTheme(settings.theme, mq.matches)
@@ -35,6 +41,6 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     return () => mq.removeEventListener('change', onChange)
   }, [settings.theme])
 
-  const value = useMemo(() => ({ settings, update }), [settings, update])
+  const value = useMemo(() => ({ settings, update, replace }), [settings, update, replace])
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>
 }

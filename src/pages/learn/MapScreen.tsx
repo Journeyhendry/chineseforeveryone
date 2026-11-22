@@ -1,12 +1,14 @@
 import { useRef } from 'react'
-import { ArrowRightIcon, CheckIcon, LockIcon } from '../../components/icons'
+import { ArrowRightIcon, CheckIcon, FlameIcon, LockIcon } from '../../components/icons'
 import { useT } from '../../i18n/context'
+import { currentStreak, dueWords, trackedCount } from '../../lib/leitner'
 import type { LessonIndex } from '../../lib/lessons'
 import { doneCount, suggestedUnit, unitStatus } from '../../lib/progress'
-import { learnHref } from '../../lib/router'
+import { hrefFor, learnHref } from '../../lib/router'
 import { useSettings } from '../../lib/settings-context'
-import { useDocumentTitle, useFocusOnChange, useProgress } from './hooks'
+import { useDocumentTitle, useFocusOnChange, useProgress, useToday, useWordBank } from './hooks'
 import { Badge, Stars } from './parts'
+import '../review/review.css'
 import './map.css'
 
 export function MapScreen({ index }: { index: LessonIndex }) {
@@ -17,6 +19,13 @@ export function MapScreen({ index }: { index: LessonIndex }) {
   const units = index.units
   const next = suggestedUnit(units, progress)
   const done = doneCount(units, progress)
+  const bank = useWordBank()
+  const today = useToday()
+  const streak = currentStreak(progress, today)
+  // Kartu ulangan hanya tampil bila ada kata tercatat (di antara kata yang masih ada di data).
+  const known = bank.status === 'ready' ? bank.data.knownIds : null
+  const hasTracked = known ? trackedCount(progress, known) > 0 : false
+  const dueCount = known ? dueWords(progress, today, known).length : 0
   const h1 = useRef<HTMLHeadingElement>(null)
   useDocumentTitle(t('page.learn.title'))
   useFocusOnChange(h1, 'map')
@@ -30,6 +39,10 @@ export function MapScreen({ index }: { index: LessonIndex }) {
             {t('learn.map.title')}
           </h1>
         </div>
+        <p className="streak-chip">
+          <FlameIcon />
+          <span>{streak > 0 ? t('streak.chip', { n: streak }) : t('streak.chipZero')}</span>
+        </p>
         <div className="map-summary">
           <span className="map-summary-text">{t('learn.map.done', { done, total: units.length })}</span>
           <div
@@ -102,6 +115,17 @@ export function MapScreen({ index }: { index: LessonIndex }) {
         </section>
 
         <aside className="map-aside">
+          {hasTracked ? (
+            <section className="card review-mini" aria-labelledby="review-mini-title">
+              <h2 id="review-mini-title" className="card-title">
+                {t('learn.map.reviewTitle')}
+              </h2>
+              <p>{dueCount > 0 ? t('learn.map.reviewDue', { n: dueCount }) : t('learn.map.reviewNone')}</p>
+              <a className="btn btn-orange" href={hrefFor('ulang')}>
+                {t('learn.map.reviewGo')}
+              </a>
+            </section>
+          ) : null}
           <section className="card card-soft" aria-labelledby="skip-info">
             <h2 id="skip-info" className="card-title">
               {t('learn.map.skipInfoTitle')}

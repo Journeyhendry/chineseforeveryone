@@ -26,6 +26,7 @@ describe('normalizeSettings', () => {
         voiceSpeed: 0.5,
         soundEffects: 1,
         theme: 'biru',
+        dailyGoal: 15,
       }),
     ).toEqual(DEFAULT_SETTINGS)
     expect(normalizeSettings({ lang: 'en', voiceSpeed: '1' })).toEqual({
@@ -42,9 +43,17 @@ describe('normalizeSettings', () => {
       voiceSpeed: 0.75,
       soundEffects: false,
       theme: 'dark',
+      dailyGoal: 30,
     }
     expect(normalizeSettings(v)).toEqual(v)
     expect(normalizeSettings(JSON.stringify(v))).toEqual(v)
+  })
+
+  it('dailyGoal: bawaan 20, data lama tanpa kolom valid, hanya 10/20/30', () => {
+    expect(DEFAULT_SETTINGS.dailyGoal).toBe(20)
+    expect(normalizeSettings({ lang: 'en', theme: 'dark' }).dailyGoal).toBe(20)
+    for (const g of [10, 20, 30]) expect(normalizeSettings({ dailyGoal: g }).dailyGoal).toBe(g)
+    for (const g of ['10', 15, 0, null, -10]) expect(normalizeSettings({ dailyGoal: g }).dailyGoal).toBe(20)
   })
 
   it('kolom asing dibuang', () => {

@@ -215,6 +215,31 @@ export const buildUnitQuiz = (words: QuizWord[], opts: QuizOptions) =>
 export const buildSkipQuiz = (groups: QuizWord[][], opts: QuizOptions) =>
   buildQuiz(groups, opts.count ?? SKIP_QUIZ_LENGTH, opts)
 
+/**
+ * Soal ulangan: tepat satu soal per kata (kata kembar di `asked` dibuang), urutan sama dengan
+ * `asked` (kata paling perlu diulang dulu). `pool` = kata per unit; pengecoh dari unit kata itu.
+ * Jenis soal bergiliran seperti latihan; soal nada hanya untuk kata yang punya nada 1-4.
+ */
+export function buildReviewQuiz(asked: QuizWord[], pool: QuizWord[][], opts: QuizOptions): Question[] {
+  const rng = mulberry32(opts.seed)
+  const seen = new Set<string>()
+  const words = asked.filter((w) => !seen.has(w.id) && seen.add(w.id))
+  if (words.length === 0) return []
+  const groupOf = new Map<string, QuizWord[]>()
+  pool.forEach((g) => g.forEach((w) => groupOf.set(w.id, g)))
+  const base: QuestionKind[] = opts.audio
+    ? ['hanzi-meaning', 'meaning-hanzi', 'audio-hanzi', 'tone']
+    : ['hanzi-meaning', 'meaning-hanzi', 'hanzi-meaning', 'tone']
+  const kinds = shuffle(
+    words.map((_, i) => base[i % base.length]),
+    rng,
+  )
+  return words.map((w, i) => {
+    const k = kinds[i] === 'tone' && toneSyllables(w).length === 0 ? 'hanzi-meaning' : kinds[i]
+    return k === 'tone' ? toneQuestion(w, rng) : wordQuestion(k, w, groupOf.get(w.id) ?? [w], rng)
+  })
+}
+
 export function isCorrect(q: Question, choiceIndex: number): boolean {
   return choiceIndex === q.answer
 }

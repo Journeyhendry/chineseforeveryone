@@ -1,5 +1,7 @@
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type RefObject } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type RefObject } from 'react'
 import { audioAvailable, onAudioChange, SLOW_RATE, speak } from '../../lib/audio'
+import { localDay } from '../../lib/dates'
+import { loadIndex, loadUnit, type LessonIndex, type LessonWord } from '../../lib/lessons'
 import { loadProgress, PROGRESS_KEY, saveProgress, type Progress } from '../../lib/progress'
 import { useSettings } from '../../lib/settings-context'
 import { useT } from '../../i18n/context'
@@ -67,6 +69,49 @@ export function useResource<T>(key: string, load: () => Promise<T>): Resource<T>
   const res: Resource<T> = state.key === key && state.attempt === attempt ? state.res : { status: 'loading' }
   const retry = useCallback(() => setAttempt((a) => a + 1), [])
   return { ...res, retry }
+}
+
+/** Semua kata HSK 1 (dari index.json + semua file unit); tidak mengandalkan jumlah unit/kata tertentu. */
+export interface WordBank {
+  index: LessonIndex
+  /** Kata per unit, urut unit. */
+  groups: LessonWord[][]
+  words: Map<string, LessonWord>
+  knownIds: Set<string>
+}
+
+export function useWordBank(): Resource<WordBank> & { retry: () => void } {
+  const res = useResource('word-bank', async () => {
+    const index = await loadIndex()
+    const units = await Promise.all(index.units.map((u) => loadUnit(u.id)))
+    return { index, units }
+  })
+  const data = res.status === 'ready' ? res.data : null
+  const bank = useMemo<WordBank | null>(() => {
+    if (!data) return null
+    const groups = data.units.map((u) => u.words)
+    const words = new Map(groups.flat().map((w) => [w.id, w] as const))
+    return { index: data.index, groups, words, knownIds: new Set(words.keys()) }
+  }, [data])
+  if (res.status === 'ready' && bank) return { status: 'ready', data: bank, retry: res.retry }
+  return res.status === 'error' ? { status: 'error', retry: res.retry } : { status: 'loading', retry: res.retry }
+}
+
+// ---------- hari ini ----------
+
+/** Hari ini (YYYY-MM-DD, jam perangkat); diperbarui saat tab kembali aktif (mis. lewat tengah malam). */
+export function useToday(): string {
+  const [day, setDay] = useState(() => localDay(new Date()))
+  useEffect(() => {
+    const refresh = () => setDay(localDay(new Date()))
+    window.addEventListener('focus', refresh)
+    document.addEventListener('visibilitychange', refresh)
+    return () => {
+      window.removeEventListener('focus', refresh)
+      document.removeEventListener('visibilitychange', refresh)
+    }
+  }, [])
+  return day
 }
 
 // ---------- suara ----------

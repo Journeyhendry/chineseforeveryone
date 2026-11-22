@@ -1,9 +1,9 @@
 // Progres belajar di localStorage (kunci xue.progress.v1). Fungsi murni + baca/tulis aman.
 //
-// Bentuk ini sengaja terbuka untuk task 8 (Leitner, ulangan harian, cadangan): kolom baru
-// (mis. `words: { [wordId]: { box, due } }`, `streak`) cukup ditambah di Progress dan dipulihkan
-// per kolom di normalizeProgress; data lama tanpa kolom itu tetap valid. Naikkan `version` hanya
-// bila arti kolom yang sudah ada berubah.
+// Kolom baru cukup ditambah di Progress dan dipulihkan per kolom di normalizeProgress; data lama
+// tanpa kolom itu tetap valid. Naikkan `version` hanya bila arti kolom yang sudah ada berubah.
+// Kolom task 8 (semuanya opsional): `words` (Leitner), `today` (kata dijawab hari ini), `streak`.
+import { normalizeStreak, normalizeToday, normalizeWords, type LeitnerEntry, type Streak, type TodayList } from './leitner.ts'
 
 export type Stars = 0 | 1 | 2 | 3
 
@@ -20,6 +20,10 @@ export interface Progress {
   units: Record<string, UnitProgress>
   /** Unit dengan order <= nilai ini terbuka lewat tes loncat. */
   skipUnlockedThrough?: number
+  /** Jadwal ulang tiap kata (kunci = id kata). Id yang tak ada lagi di data tetap disimpan. */
+  words?: Record<string, LeitnerEntry>
+  today?: TodayList
+  streak?: Streak
 }
 
 export interface UnitRef {
@@ -78,6 +82,12 @@ export function normalizeProgress(raw: unknown, knownUnitIds?: Iterable<string>)
   const out: Progress = { version: 1, units }
   const skip = o.skipUnlockedThrough
   if (typeof skip === 'number' && Number.isInteger(skip) && skip >= 2 && skip <= 1000) out.skipUnlockedThrough = skip
+  const words = normalizeWords(o.words)
+  if (words) out.words = words
+  const today = normalizeToday(o.today)
+  if (today) out.today = today
+  const streak = normalizeStreak(o.streak)
+  if (streak) out.streak = streak
   return out
 }
 

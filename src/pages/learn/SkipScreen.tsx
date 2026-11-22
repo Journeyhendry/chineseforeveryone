@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useT } from '../../i18n/context'
 import { waitForAudio } from '../../lib/audio'
 import { loadUnit, type LessonIndex, type LessonUnitInfo, type LessonWord } from '../../lib/lessons'
+import { localDay } from '../../lib/dates'
+import { recordAnswers } from '../../lib/leitner'
 import { isUnitUnlocked, recordSkipResult, SKIP_PASS } from '../../lib/progress'
 import { buildSkipQuiz, SKIP_QUIZ_LENGTH, type Question } from '../../lib/quiz'
 import { learnHref } from '../../lib/router'
@@ -33,12 +35,13 @@ export function SkipScreen({ index, info }: { index: LessonIndex; info: LessonUn
   useDocumentTitle(phase.name === 'result' ? `${t('learn.result.screen')} · ${title}` : title)
   useFocusOnChange(h1, phase.name === 'intro' ? `skip:${info.id}:${run}` : null)
 
-  // Hasil: lolos -> buka sampai unit ini (sekali per hasil).
+  // Hasil: lolos -> buka sampai unit ini; jawaban masuk jadwal ulang (sekali per hasil).
   const savedFor = useRef<QuizResult | null>(null)
   useEffect(() => {
     if (phase.name !== 'result' || savedFor.current === phase.r) return
     savedFor.current = phase.r
-    updateProgress((p) => recordSkipResult(p, info.order, phase.r.correct / phase.r.total))
+    const r = phase.r
+    updateProgress((p) => recordAnswers(recordSkipResult(p, info.order, r.correct / r.total), r.answers, localDay(new Date()), 'skip'))
   }, [phase, info.order])
 
   const alreadyOpen = isUnitUnlocked(info, index.units, progress)

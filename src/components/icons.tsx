@@ -121,3 +121,20 @@ export const StarIcon = ({ filled }: { filled: boolean }) => (
     />
   </svg>
 )
+
+/** Ikon api untuk hari berturut-turut (dekoratif; beri teks di sebelahnya). */
+export const FlameIcon = () => (
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="var(--orange)"
+    stroke="var(--ink)"
+    strokeWidth="2"
+    strokeLinejoin="round"
+  >
+    <path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-4-1-6 1-9Z" />
+  </svg>
+)

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { learnHref, parseHash, parseLearnRoute } from './router'
+import { learnHref, parseHash, parseLearnRoute, parseReviewRoute } from './router'
 
 describe('parseHash', () => {
   it.each(['', '#', '#/', '/', '#//'])('kosong %j -> belajar', (h) => {
@@ -86,5 +86,19 @@ describe('parseLearnRoute', () => {
       { screen: 'skip', unitId: 'u04' },
     ] as const
     for (const r of routes) expect(learn(learnHref(r))).toEqual(r)
+  })
+})
+
+describe('parseReviewRoute', () => {
+  it('beranda, sesi, dan sisanya tidak ditemukan', () => {
+    expect(parseReviewRoute([])).toEqual({ screen: 'home' })
+    expect(parseReviewRoute(['sesi'])).toEqual({ screen: 'session' })
+    expect(parseReviewRoute(['SESI'])).toEqual({ screen: 'session' })
+    expect(parseReviewRoute(['sesi', 'x'])).toEqual({ screen: 'notfound' })
+    expect(parseReviewRoute(['x'])).toEqual({ screen: 'notfound' })
+  })
+  it('dari hash', () => {
+    expect(parseReviewRoute(parseHash('#/ulang/sesi').segments)).toEqual({ screen: 'session' })
+    expect(parseReviewRoute(parseHash('#/ulang').segments)).toEqual({ screen: 'home' })
   })
 })

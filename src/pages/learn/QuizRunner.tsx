@@ -15,6 +15,8 @@ export interface QuizResult {
   total: number
   /** Kata yang dijawab salah (unik, urut kemunculan). */
   wrong: string[]
+  /** Jawaban per soal, urut soal (untuk jadwal ulang). */
+  answers: { wordId: string; correct: boolean }[]
 }
 
 interface Props {
@@ -28,26 +30,28 @@ interface Props {
   onFinish: (r: QuizResult) => void
 }
 
-/** Menjalankan serangkaian soal (dipakai latihan unit dan tes loncat). */
+/** Menjalankan serangkaian soal (dipakai latihan unit, tes loncat, dan ulangan harian). */
 export function QuizRunner(props: Props) {
   const t = useT()
   const [i, setI] = useState(0)
   const [picked, setPicked] = useState<number | null>(null)
   const [correct, setCorrect] = useState(0)
   const [wrong, setWrong] = useState<string[]>([])
+  const [answers, setAnswers] = useState<QuizResult['answers']>([])
   const total = props.questions.length
   const q = props.questions[i]
 
   const choose = (c: number) => {
     if (picked !== null || c < 0 || c >= q.choices.length) return
     setPicked(c)
+    setAnswers((a) => [...a, { wordId: q.wordId, correct: c === q.answer }])
     if (c === q.answer) setCorrect((n) => n + 1)
     else setWrong((w) => (w.includes(q.wordId) ? w : [...w, q.wordId]))
   }
   const next = () => {
     if (picked === null) return
     if (i + 1 >= total) {
-      props.onFinish({ correct, total, wrong })
+      props.onFinish({ correct, total, wrong, answers })
       return
     }
     setI(i + 1)

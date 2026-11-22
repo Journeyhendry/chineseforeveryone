@@ -156,7 +156,9 @@ describe('progres lama dengan unit / kata yang sudah tidak ada (task 2b: HSK 1 j
     expect(() => normalizeProgress(JSON.stringify(old))).not.toThrow()
     const p = normalizeProgress(JSON.stringify(old))
     expect(Object.keys(p.units).sort()).toEqual(['u01', 'u02', 'u20', 'u45'])
-    expect(p).not.toHaveProperty('words')
+    // Sejak task 8 `words` dikenal: entri valid tetap disimpan, entri tanpa tanggal dibuang; streak berbentuk angka dibuang.
+    expect(Object.keys(p.words ?? {})).toEqual(['L1-0436'])
+    expect(p).not.toHaveProperty('streak')
   })
 
   it('unit di luar daftar yang sekarang dibuang bila daftar diberikan', () => {
@@ -179,5 +181,56 @@ describe('progres lama dengan unit / kata yang sudah tidak ada (task 2b: HSK 1 j
     const p = recordUnitResult(normalizeProgress(old), 'u03', 0.8, now)
     expect(p.units.u03.stars).toBe(2)
     expect(p.units.u45.stars).toBe(3)
+  })
+})
+
+describe('kolom task 8 di normalizeProgress', () => {
+  it('data lama (hanya units) tidak berubah', () => {
+    const old = { version: 1, units: { u01: { bestScore: 0.8, stars: 2 } }, skipUnlockedThrough: 3 }
+    expect(normalizeProgress(old)).toEqual(old)
+  })
+
+  it('memulihkan words / today / streak per kolom', () => {
+    const p = normalizeProgress({
+      units: {},
+      words: {
+        'L1-0001': { box: 2.6, due: '2026-12-01', seen: 4, wrong: 1, last: '2026-11-29' },
+        'L1-0002': { box: 99, due: '2026-12-01', seen: -5, wrong: Number.NaN },
+        'L1-0003': { box: 0, due: 'rusak', last: '2026-11-20' },
+        'L1-0004': { box: 2, due: 'rusak' },
+        'bukan id!': { box: 1, due: '2026-12-01' },
+        'L1-0005': 'x',
+      },
+      today: { day: '2026-11-29', words: ['L1-0001', 'L1-0001', 7, 'bad id', 'L1-0002'] },
+      streak: { last: '2026-11-29', current: 3, best: 1 },
+    })
+    expect(p.words).toEqual({
+      'L1-0001': { box: 3, due: '2026-12-01', seen: 4, wrong: 1, last: '2026-11-29' },
+      'L1-0002': { box: 5, due: '2026-12-01', seen: 0, wrong: 0 },
+      'L1-0003': { box: 1, due: '2026-11-21', seen: 0, wrong: 0, last: '2026-11-20' },
+    })
+    expect(p.today).toEqual({ day: '2026-11-29', words: ['L1-0001', 'L1-0002'] })
+    expect(p.streak).toEqual({ last: '2026-11-29', current: 3, best: 3 })
+  })
+
+  it('kolom baru rusak seluruhnya -> dibuang, kolom lama utuh', () => {
+    const p = normalizeProgress({ units: { u01: { bestScore: 1 } }, words: [1, 2], today: { day: 'x' }, streak: { last: 5 } })
+    expect(p).toEqual({ version: 1, units: { u01: { bestScore: 1, stars: 3 } } })
+  })
+
+  it('id kata yang tak ada di data tetap disimpan', () => {
+    const p = normalizeProgress({ words: { 'L1-9999': { box: 1, due: '2026-12-01' } } }, ['u01'])
+    expect(p.words?.['L1-9999']).toBeDefined()
+  })
+
+  it('jumlah entri dibatasi 5000', () => {
+    const words: Record<string, unknown> = {}
+    for (let i = 0; i < 5200; i++) words[`w${i}`] = { box: 1, due: '2026-12-01' }
+    expect(Object.keys(normalizeProgress({ words }).words!)).toHaveLength(5000)
+  })
+
+  it('bolak-balik JSON stabil', () => {
+    const p = normalizeProgress({ words: { a: { box: 2, due: '2026-12-01', seen: 1, wrong: 0, last: '2026-11-29' } }, streak: { last: '2026-11-29', current: 1, best: 2 } })
+    expect(normalizeProgress(JSON.stringify(p))).toEqual(p)
   })
 })

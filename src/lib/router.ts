@@ -112,3 +112,17 @@ export function learnHref(route: LearnRoute): string {
       return `#/belajar/loncat/${route.unitId}`
   }
 }
+
+// ---------- sub-rute Ulang ----------
+
+export type ReviewRoute = { screen: 'home' } | { screen: 'session' } | { screen: 'notfound' }
+
+/** Segmen setelah `#/ulang`: [] = beranda ulangan, ['sesi'] = sesi berjalan. */
+export function parseReviewRoute(segments: string[]): ReviewRoute {
+  if (segments.length === 0) return { screen: 'home' }
+  if (segments.length === 1 && segments[0].toLowerCase() === 'sesi') return { screen: 'session' }
+  return { screen: 'notfound' }
+}
+
+export const REVIEW_HOME = '#/ulang'
+export const REVIEW_SESSION = '#/ulang/sesi'

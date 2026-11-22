@@ -1,4 +1,6 @@
 export type Lang = 'id' | 'en'
+export type DailyGoal = 10 | 20 | 30
+export const DAILY_GOALS: DailyGoal[] = [10, 20, 30]
 export type ThemeSetting = 'system' | 'light' | 'dark'
 
 export interface Settings {
@@ -8,6 +10,8 @@ export interface Settings {
   voiceSpeed: 0.75 | 1
   soundEffects: boolean
   theme: ThemeSetting
+  /** Target kata per hari (ulangan harian). */
+  dailyGoal: DailyGoal
 }
 
 export const SETTINGS_KEY = 'xue.settings.v1'
@@ -19,6 +23,7 @@ export const DEFAULT_SETTINGS: Settings = {
   voiceSpeed: 1,
   soundEffects: true,
   theme: 'system',
+  dailyGoal: 20,
 }
 
 /** Pulihkan data apa pun (string JSON, objek, null) menjadi Settings yang valid, per kolom. */
@@ -44,6 +49,7 @@ export function normalizeSettings(raw: unknown): Settings {
     soundEffects: typeof o.soundEffects === 'boolean' ? o.soundEffects : d.soundEffects,
     theme:
       o.theme === 'system' || o.theme === 'light' || o.theme === 'dark' ? o.theme : d.theme,
+    dailyGoal: o.dailyGoal === 10 || o.dailyGoal === 20 || o.dailyGoal === 30 ? o.dailyGoal : d.dailyGoal,
   }
 }
 

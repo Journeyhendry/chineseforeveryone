@@ -1,0 +1,208 @@
+/* Halaman Progres. Hanya token dari src/styles/theme.css. */
+
+.progress-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.stat {
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  min-width: 0;
+}
+
+.stat dt {
+  font-weight: 800;
+  color: var(--text-soft);
+  font-size: 15px;
+}
+
+.stat dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.stat-note {
+  color: var(--text-soft);
+  font-size: 15px;
+}
+
+.box-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.box-table th,
+.box-table td {
+  text-align: left;
+  padding: var(--space-2) var(--space-2);
+  border-bottom: 2px solid var(--surface-3);
+  vertical-align: middle;
+}
+
+.box-table thead th {
+  font-size: 15px;
+  color: var(--text-soft);
+}
+
+.box-table tbody th {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.box-count {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 32px;
+}
+
+.box-bar {
+  flex: 1 1 auto;
+  min-width: 40px;
+  height: 18px;
+  border-radius: 9px;
+  border: 2px solid var(--line);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.box-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--btn-purple);
+}
+
+.box-num {
+  min-width: 2ch;
+  font-weight: 800;
+  text-align: right;
+}
+
+.box-note {
+  margin: var(--space-3) 0 0;
+  font-size: 15px;
+}
+
+@media (max-width: 520px) {
+  .box-table th,
+  .box-table td {
+    padding-inline: 4px;
+    font-size: 15px;
+  }
+
+  .box-bar {
+    min-width: 24px;
+  }
+}
+
+/* Cadangan */
+.backup-restore {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 2px solid var(--surface-3);
+}
+
+.backup-file-label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.backup-file {
+  display: block;
+  max-width: 100%;
+  min-height: var(--touch);
+  padding: var(--space-2);
+  border: 2px dashed var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.backup-file::file-selector-button {
+  min-height: 36px;
+  margin-right: var(--space-3);
+  padding: 0 var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.backup-hint {
+  margin: var(--space-2) 0 0;
+  font-size: 15px;
+}
+
+.backup-summary {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border: 3px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+
+.backup-summary h3 {
+  font-size: 20px;
+  margin-bottom: var(--space-2);
+}
+
+.backup-summary h3:focus {
+  outline: none;
+}
+
+.backup-summary ul {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-5);
+}
+
+.backup-warn {
+  font-weight: 800;
+}
+
+.backup-notice p {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  background: var(--surface-2);
+}
+
+.backup-notice .notice-error {
+  border-color: var(--btn-orange);
+  box-shadow: inset 4px 0 0 var(--btn-orange);
+}
+
+.backup-notice .notice-status {
+  border-color: var(--btn-green);
+  box-shadow: inset 4px 0 0 var(--btn-green);
+}
+
+.backup-card h2:focus {
+  outline: none;
+}

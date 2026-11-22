@@ -1,7 +1,7 @@
 import { PageHeader } from '../components/ComingSoon'
 import { useT, type MessageKey } from '../i18n/context'
 import { useSettings } from '../lib/settings-context'
-import type { Lang, Settings, ThemeSetting } from '../lib/settings'
+import { DAILY_GOALS, type DailyGoal, type Lang, type Settings, type ThemeSetting } from '../lib/settings'
 
 function RadioGroup<V extends string | number>({
   legend,
@@ -95,6 +95,13 @@ export function SettingsPage() {
           hint={t('settings.sound.hint')}
           checked={settings.soundEffects}
           onChange={(soundEffects) => update({ soundEffects })}
+        />
+        <RadioGroup<DailyGoal>
+          legend={t('settings.goal.legend')}
+          name="dailyGoal"
+          value={settings.dailyGoal}
+          options={DAILY_GOALS.map((g) => ({ value: g, label: t('review.goalOption', { n: g }) }))}
+          onChange={(dailyGoal) => update({ dailyGoal })}
         />
         <RadioGroup<ThemeSetting>
           legend={t('settings.theme.legend')}

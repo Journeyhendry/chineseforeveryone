@@ -1,0 +1,67 @@
+# Task 0 · Tahap 0 "Dasar sebelum HSK 1"
+
+Model: Opus (implementasi), sesi utama Opus memeriksa. Prasyarat: 2b, 6 (selesai).
+
+## Tujuan
+Murid yang belum pernah belajar Mandarin bisa mulai dari nol: mengenal bunyi pinyin, 4 nada + nada ringan, perubahan nada, coretan dasar & urutannya, radikal yang sering muncul, lalu ungkapan kelas (angka 1–10, salam). Tahap 0 tampil di peta belajar **sebelum unit 1**, gaya dan komponennya sama dengan unit lain, **tidak terkunci** dan **tidak mengunci** HSK 1 (BUILD_PLAN bagian 1 + task 0 di bagian 4).
+
+## Latar teknis (penting)
+- Suara Tahap 0 memakai **P3** = Kokoro-82M v1.1-zh, `zf_001` (lihat `scripts/tts/voices.json`, revisi model yang sama). Model TTS/Whisper **tidak bisa diunduh di sesi kerja** → audio dibuat di **GitHub Actions** dan di-commit balik (pola sama dengan `tts-samples.yml` / `scripts/tts/make_samples.py`; pakai ulang fungsinya bila bisa, jangan ubah perilaku workflow 4a).
+- Kerjakan di cabang **`task-0`** (dari `main` terbaru). Workflow audio jalan otomatis saat push ke cabang selain `main`, commit audio balik ke cabang itu. Sesi utama nanti menggabung ke `main` sebagai satu commit. Jangan force-push, jangan hapus riwayat, jangan tulis token/kunci.
+- Pakai `gh api` (REST) untuk memantau workflow (`repos/Journeyhendry/chineseforeveryone/actions/runs?branch=task-0`, jobs, logs). `gh run` dan GraphQL tidak tersedia.
+- Bahasa, token warna, komponen: ikuti yang sudah ada (`src/styles/theme.css`, `src/pages/learn/*`, `src/i18n/{id,en}.json`, `useT`). Jangan tambah hex baru di luar token kecuali warna nada yang sudah ada.
+
+## Scope
+
+### A. Data `data/basics/basics.json` (ditulis tangan, dicek tes)
+Satu file sumber untuk semua isi Tahap 0 (teks ID + EN untuk setiap penjelasan). Setiap item yang bersuara punya `audioId` (aman untuk nama file, unik), `hanzi` (teks yang dibacakan TTS), `pinyin` (bertanda nada, target bunyi).
+1. **Pinyin**: tabel bunyi awal (23: b p m f d t n l g k h j q x zh ch sh r z c s y w) dan bunyi akhir (minimal 24: a o e i u ü ai ei ui ao ou iu ie üe er an en in un ün ang eng ing ong). Tiap bunyi dibacakan dengan satu huruf contoh yang lazim dipakai guru (mis. b → 波 bō, zh → 知 zhī, a → 啊 ā); catat catatan pelafalan singkat ID/EN untuk bunyi sulit (zh/ch/sh/r, z/c/s, j/q/x, ü, e, -n/-ng).
+2. **Nada**: 4 nada + nada ringan, masing-masing: nama, bentuk garis nada (untuk digambar SVG), warna nada tetap (BUILD_PLAN bagian 1), tanda nada, penjelasan singkat. Minimal 4 set suku kata 4 nada untuk latihan dengar (mis. mā má mǎ mà = 妈 麻 马 骂; bā bá bǎ bà = 八 拔 把 爸; plus 2 set lain), dan contoh nada ringan dalam kata (妈妈, 好吗 / 吗, 谢谢…).
+3. **Perubahan nada**: 3+3 (你好 ní hǎo, 很好, 可以…), 不 (不是 bú shì vs 不好 bù hǎo, 不对 …), 一 (一 yī, 一天 yì tiān, 一个 yí gè, 一样…). Tiap contoh: hanzi, pinyin dasar (per huruf), pinyin yang diucapkan, penjelasan aturan. Utamakan kata dari 300 kata HSK 1.
+4. **Coretan**: 8 coretan dasar (点 横 竖 撇 捺 提 折 钩): nama pinyin + arti ID/EN, contoh huruf (utamakan huruf HSK 1), dan aturan urutan coretan (minimal 7: 先横后竖 十, 先撇后捺 人/八, 从上到下, 从左到右, 从外到内, 先里头后封口 回/国, 先中间后两边 小/水) dengan huruf contoh.
+5. **Radikal**: minimal 10 radikal yang sering muncul (亻 口 女 氵 木 日 扌 讠 忄/心 艹 宀 …) dengan arti ID/EN dan 2–4 huruf contoh **dari kata HSK 1** (cek otomatis), plus minimal 5 contoh "cara huruf tersusun" (mis. 好 = 女 + 子, 明 = 日 + 月, 休 = 亻 + 木, 们 = 亻 + 门 …) dengan posisi (kiri-kanan / atas-bawah / luar-dalam).
+6. **Ungkapan kelas**: angka 1–10 (一 … 十) dan salam dasar (你好, 您好, 谢谢, 不客气, 对不起, 没关系, 再见, 老师好 …) — hanya kata HSK 1 (cek otomatis), arti ID/EN.
+
+### B. Audio P3 (workflow)
+- `scripts/tts/basics.py` (atau perluasan bersih dari `make_samples.py`): ambil semua item bersuara dari `data/basics/basics.json`, sintesis dengan P3 (speed 1.0), format sama dengan contoh suara (mp3 mono 64 kbps, sample rate seragam, loudnorm −16 LUFS, pangkas sunyi + jeda ±0.15 dtk).
+- **Cek otomatis**: Whisper (`faster-whisper` small, zh, CPU int8) + opencc t2s. Untuk kata/kalimat multi-huruf: transkrip (tanpa tanda baca) = hanzi. Untuk **suku kata tunggal**: cocokkan **pinyin bernada** transkrip (`pypinyin`, dipatok versinya) dengan `pinyin` target (huruf lain yang bunyinya sama dianggap lolos). Gagal → buat ulang dengan variasi (mis. speed 0.9, tambah "。", ulang huruf dalam bingkai pendek lalu potong — pilih yang masuk akal dan catat), maksimal 3 percobaan. Tetap gagal → file terbaik tetap disimpan tetapi ditandai, dan dicatat di `data/basics/audio-issues.json`.
+- Keluaran: `public/audio/basics/<audioId>.mp3` + `public/audio/basics/manifest.json` (`{version, generatedAt, voice:{code:'P3', model, modelRevision, voiceId}, whisper:{model, passed, total}, files:{<audioId>:{path, durationSec, transcript, ok, attempts}}}`).
+- Workflow `.github/workflows/basics-audio.yml`: `workflow_dispatch` + `push` ke cabang selain `main` bila `data/basics/**`, `scripts/tts/**` (file basics), atau workflow itu berubah. `permissions: contents: write`, `concurrency`, `timeout-minutes ≤ 60`, cache pip + Hugging Face, commit balik hanya `public/audio/basics/**` + `data/basics/audio-issues.json` dengan pesan `Data: basics audio (P3)` (`git pull --rebase` lalu push). Versi paket dipatok.
+- Item tanpa file audio (atau sebelum workflow selesai) → UI memakai suara perangkat lewat `src/lib/audio.ts` (sudah ada) sebagai cadangan, dengan catatan kecil seperti di unit.
+
+### C. Tampilan
+- Peta belajar (`MapScreen`): kartu/bagian **"Tahap 0 · Dasar"** di atas unit 1, menunjukkan 6 bagian + tanda selesai; unit 1 tetap terbuka walau Tahap 0 belum selesai. Rute hash: `#/belajar/dasar` (ringkasan 6 bagian) dan `#/belajar/dasar/<bagian>` (`pinyin`, `nada`, `perubahan-nada`, `coretan`, `radikal`, `ungkapan`); perluas `parseLearnRoute` + tes router.
+- Tiap bagian: penjelasan singkat → materi interaktif → **latihan** (5–10 soal, pilihan ganda 4 opsi memakai komponen/gaya latihan yang ada; keyboard 1–4 / Enter / Spasi) → hasil (bintang memakai aturan yang sama dengan unit) → tombol lanjut ke bagian berikutnya.
+  1. Pinyin: dua tabel tombol (bunyi awal / bunyi akhir), klik/Enter = dengar; latihan "dengar → pilih pinyin" dengan pengecoh mirip (zh/z, q/ch, ü/u, -n/-ng).
+  2. Nada: kartu 4 nada + ringan dengan garis nada SVG berwarna (selalu dengan tanda nada, bukan warna saja), tombol dengar tiap set; latihan "dengar → tebak nada".
+  3. Perubahan nada: kartu contoh yang menampilkan pinyin dasar → pinyin diucapkan (perubahan disorot), tombol dengar; latihan "pilih cara baca yang benar".
+  4. Coretan: 8 coretan dengan animasi Hanzi Writer (data lokal `public/hanzi/`, komponen `StrokePanel` yang ada bila cocok), aturan urutan dengan huruf contoh beranimasi; latihan tanpa wajib menggambar (mis. "coretan mana yang ditulis dulu?", "nama coretan ini?") supaya bisa dengan keyboard; menggambar dengan mouse boleh sebagai tambahan.
+  5. Radikal: kartu radikal + huruf contoh (klik huruf contoh → artinya + dengar), contoh susunan huruf (gambar kotak kiri-kanan/atas-bawah); latihan "radikal apa di huruf ini?" / "arti radikal".
+  6. Ungkapan kelas: angka 1–10 + salam (huruf, pinyin berwarna nada, arti, dengar); latihan "dengar → pilih arti" dan "huruf → arti".
+- Progres Tahap 0 disimpan di `xue.progress.v1` sebagai kolom opsional baru (mis. `basics: { <bagian>: { stars, best } }`), dipulihkan di `normalizeProgress` dan ikut cadangan/pulihkan; data lama tetap valid (tes). Tahap 0 **tidak** dimasukkan ke Leitner kata HSK 1.
+- Semua teks dari `src/i18n/id.json` + `en.json` (atau teks ID/EN di `basics.json`), ganti bahasa tanpa reload. Pinyin selalu dengan tanda nada; warna nada hanya pelengkap.
+- Huruf baru (radikal, huruf contoh coretan/nada) harus tampil dengan font WenKai: perbarui input `scripts/font/build_font.py` / `build:strokes` agar memuat huruf Tahap 0, lalu jalankan `npm run build:font` dan `npm run build:strokes` (data coretan radikal yang tidak ada di `hanzi-writer-data` → tampil huruf diam, dicatat).
+- Hormati `prefers-reduced-motion`; fokus keyboard terlihat; tidak ada scroll ke samping di 375 px.
+
+### D. Tes (vitest)
+- `basics.json`: struktur valid, `audioId` unik & aman, setiap `pinyin` bertanda nada sah (pakai `src/lib/pinyin.ts`), pinyin huruf contoh cocok dengan salah satu bacaan CC-CEDICT (`cedict-json`) untuk huruf itu, huruf contoh radikal benar-benar mengandung radikal itu (minimal: huruf ada di kata HSK 1 dan tercantum manual), ungkapan kelas hanya memakai kata/huruf HSK 1, semua teks ID & EN terisi.
+- Bila `public/audio/basics/manifest.json` ada: setiap item bersuara punya file atau tercatat di `audio-issues.json`; file ada dan > 1 KB.
+- Latihan: pembuat soal Tahap 0 (fungsi murni) menghasilkan 4 pilihan unik dengan tepat satu jawaban benar; router `dasar`; progres `basics` dinormalisasi & ikut cadangan.
+
+## Out of scope
+- Audio kata/kalimat/dialog HSK 1 (task 4b), rekaman penutur asli, Tone Perfect.
+- Mengubah data kata/unit HSK 1, dialog, adegan, karakter. Mengubah BUILD_PLAN bagian 1.
+- Pemeriksa nada berbasis analisis nada (pitch) — cukup Whisper + pypinyin.
+- Memperbaiki pinyin dialog (yī gè) — boleh dicatat saja.
+
+## Acceptance criteria
+1. `npm ci`, `npm run typecheck`, `npm run lint`, `npm test`, `npm run build`, `npm run check:data` lolos.
+2. Workflow `basics-audio.yml` sukses di cabang `task-0` dan commit audio balik; semua mp3 mono 64 kbps, sample rate sama (ffprobe), kenyaringan rata (selisih ≤ 2 dB); tingkat lolos cek otomatis tercatat di manifest; ≥ 90 % item lolos, sisanya tercatat di `audio-issues.json`.
+3. Playwright (lebar 1366 dan 375, terang & gelap): `#/belajar` menampilkan Tahap 0 di atas unit 1 dan unit 1 tetap bisa dibuka; keenam halaman `#/belajar/dasar/<bagian>` terbuka tanpa error konsol, tanpa scroll ke samping; tiap latihan bisa diselesaikan **hanya dengan keyboard** sampai layar hasil; setelah selesai, tanda selesai muncul di peta dan bertahan setelah reload; ganti ID↔EN mengganti teks.
+4. axe (aturan WCAG A/AA) tanpa pelanggaran serius di halaman Tahap 0 (terang & gelap).
+5. Total `public/audio/basics/` ≤ 3 MB. Tidak ada token/kunci di repo.
+6. CREDITS.md menyebut audio Tahap 0 (Kokoro-82M v1.1-zh, Apache-2.0; Whisper/faster-whisper & pypinyin hanya untuk cek).
+
+## File
+- Baru: `data/basics/basics.json`, `data/basics/audio-issues.json` (dibuat workflow), `scripts/tts/basics.py` (+ requirements bila perlu), `.github/workflows/basics-audio.yml`, `public/audio/basics/**` (dibuat workflow), `src/lib/basics*.ts` (+ tes), `src/pages/learn/basics/**` (layar + CSS).
+- Diubah: `src/lib/router.ts`, `src/lib/progress.ts`, `src/lib/backup.ts` (bila perlu), `src/pages/LearnPage.tsx`, `src/pages/learn/MapScreen.tsx` (+ CSS), `src/lib/audio.ts` (hanya tambah pemutar file, perilaku kata tetap), `src/i18n/{id,en}.json`, input font/coretan + hasil `build:font`/`build:strokes`, `CREDITS.md`, `docs/tasks/task-0.md` (catatan temuan saja).

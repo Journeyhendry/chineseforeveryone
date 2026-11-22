@@ -10,13 +10,15 @@
 - Cek: faster-whisper small (zh, CPU int8) + opencc t2s.
   * Kata/kalimat (>= 2 huruf): transkrip tanpa tanda baca = hanzi (angka Arab dibaca sebagai hanzi).
   * Suku kata tunggal: transkrip 1 huruf yang salah satu bacaannya (pypinyin, heteronym) = `pinyin`
-    target. Bila gagal, file yang sama diulang 3x dengan jeda lalu ditranskrip lagi (Whisper lemah pada
-    klip sangat pendek); lolos bila semua huruf transkrip (2-4 huruf) cocok.
+    target.
+  Whisper small lemah pada klip yang sangat pendek (sering menebak kata Inggris), jadi bila cek langsung
+  gagal, file yang SAMA dicek lagi dalam bingkai: kalimat pengantar P3 "跟我读：" + jeda + file itu
+  (lolos bila sisa transkrip setelah pengantar = hanzi / suku kata target), lalu file diulang 3x.
 - Gagal -> buat ulang dengan variasi (maksimal 3 percobaan):
     1. teks apa adanya, speed 1.0
-    2. teks + "。", speed 0.9
-    3. suku kata tunggal: "X，X，X。" lalu potong suku kata tengah (nada sitasi lebih jelas);
-       kata: teks + "。", speed 0.8
+    2. suku kata tunggal: "X，X，X。" lalu potong suku kata tengah di titik energi terendah
+       (nada sitasi lebih jelas); kata: teks + "。", speed 0.9
+    3. teks + "。", speed 0.85
   Tetap gagal -> file terbaik disimpan (ok: false) dan dicatat di data/basics/audio-issues.json.
 - Item yang hanzi/pinyin-nya tidak berubah dan filenya ada tidak dibuat ulang (kecuali --force),
   supaya push berikutnya tidak mengubah mp3 yang sudah ada.
@@ -45,7 +47,8 @@ import make_samples as ms  # noqa: E402  (fungsi format & normalisasi task 4a)
 DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
-SCRIPT_VERSION = 1
+SCRIPT_VERSION = 2
+CARRIER = "跟我读："
 HAN = re.compile(r"[\u3400-\u9fff]")
 DIGITS = {"0": "零", "1": "一", "2": "二", "3": "三", "4": "四", "5": "五", "6": "六", "7": "七", "8": "八", "9": "九"}
 
@@ -123,6 +126,31 @@ def cut(src: Path, dst: Path, start: float, end: float):
             str(dst)])
 
 
+def middle_by_valleys(src: Path, dst: Path):
+    """Potong suku kata tengah dari rekaman "X，X，X。": cari 2 titik energi terendah (jendela 10 ms)
+    di sekitar 1/3 dan 2/3 bagian bersuara."""
+    import numpy as np
+    import soundfile as sf
+
+    x, sr = sf.read(str(src), dtype="float32")
+    if x.ndim > 1:
+        x = x.mean(axis=1)
+    hop = sr // 100
+    rms = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2) + 1e-12) for i in range(0, len(x) - hop, hop)])
+    voiced = np.where(rms > rms.max() * 0.05)[0]
+    if len(voiced) < 30:
+        raise RuntimeError("bingkai terlalu pendek")
+    a, b = voiced[0], voiced[-1]
+    span = b - a
+    def valley(lo, hi):
+        lo, hi = a + int(span * lo), a + int(span * hi)
+        return lo + int(np.argmin(rms[lo:hi]))
+    v1, v2 = valley(0.2, 0.47), valley(0.53, 0.8)
+    if v2 - v1 < 15:
+        raise RuntimeError("bingkai: suku kata tengah terlalu pendek")
+    sf.write(str(dst), x[v1 * hop:v2 * hop], sr)
+
+
 def make_raw(tts: Kokoro, item: dict, attempt: int, wav: Path) -> str:
     """Buat wav mentah untuk percobaan ke-n; kembalikan keterangan variasi."""
     h = item["hanzi"]
@@ -130,19 +158,16 @@ def make_raw(tts: Kokoro, item: dict, attempt: int, wav: Path) -> str:
     if attempt == 1:
         tts.synth(h, 1.0, wav)
         return "plain, speed 1.0"
+    if attempt == 2 and single:
+        frame = wav.with_suffix(".frame.wav")
+        tts.synth(f"{h}，{h}，{h}。", 1.0, frame)
+        middle_by_valleys(frame, wav)
+        return "frame X，X，X。 -> middle syllable"
     if attempt == 2:
         tts.synth(h + "。", 0.9, wav)
         return "text + 。, speed 0.9"
-    if single:
-        frame = wav.with_suffix(".frame.wav")
-        tts.synth(f"{h}，{h}，{h}。", 1.0, frame)
-        segs = voiced_segments(frame)
-        if len(segs) != 3:
-            raise RuntimeError(f"bingkai: {len(segs)} bagian bersuara, bukan 3")
-        cut(frame, wav, *segs[1])
-        return "frame X，X，X。 -> middle syllable"
-    tts.synth(h + "。", 0.8, wav)
-    return "text + 。, speed 0.8"
+    tts.synth(h + "。", 0.85, wav)
+    return "text + 。, speed 0.85"
 
 
 # --------------------------------------------------------------------------
@@ -158,6 +183,7 @@ class Checker:
         self.model = WhisperModel(ms.WHISPER_MODEL, device="cpu", compute_type="int8")
         self.t2s = OpenCC("t2s")
         self.readings = lambda ch: {r for r in pinyin(ch, style=Style.TONE, heteronym=True)[0]}
+        self.carrier: Path | None = None
 
     def norm(self, text: str) -> str:
         text = unicodedata.normalize("NFKC", text)
@@ -174,23 +200,40 @@ class Checker:
     def syllable_ok(self, chars: str, target: str) -> bool:
         return all(unicodedata.normalize("NFC", target.lower()) in self.readings(c) for c in chars)
 
-    def check(self, mp3: Path, item: dict, tmp: Path) -> tuple[bool, str, str]:
-        """(lolos, transkrip, cara cek)."""
+    def matches(self, got: str, item: dict) -> bool:
         h = item["hanzi"]
-        transcript = self.transcribe(mp3)
-        got = self.norm(transcript)
         if len(HAN.findall(h)) != 1:
-            return got == self.norm(h), transcript, "hanzi"
-        if len(got) == 1 and self.syllable_ok(got, item["pinyin"]):
-            return True, transcript, "pinyin"
-        rep = tmp / "repeat.wav"
-        ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
-                "[0:a]apad=pad_dur=0.6,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1", str(rep)])
-        t2 = self.transcribe(rep)
-        g2 = self.norm(t2)
-        if 2 <= len(g2) <= 4 and self.syllable_ok(g2, item["pinyin"]):
-            return True, f"{transcript} | x3: {t2}", "pinyin-repeat3"
-        return False, f"{transcript} | x3: {t2}", "pinyin"
+            return got == self.norm(h)
+        return len(got) == 1 and self.syllable_ok(got, item["pinyin"])
+
+    def check(self, mp3: Path, item: dict, tmp: Path) -> tuple[bool, str, str]:
+        """(lolos, transkrip, cara cek). Semua cara mengecek file mp3 yang sama."""
+        transcript = self.transcribe(mp3)
+        if self.matches(self.norm(transcript), item):
+            return True, transcript, "direct"
+        notes = [transcript]
+        if self.carrier is not None:
+            framed = tmp / "carrier.wav"
+            ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(self.carrier), "-i", str(mp3), "-filter_complex",
+                    "[0:a]aresample=24000,apad=pad_dur=0.3[c];[1:a]aresample=24000[x];[c][x]concat=n=2:v=0:a=1",
+                    "-ac", "1", str(framed)])
+            t = self.transcribe(framed)
+            notes.append(f"carrier: {t}")
+            got = self.norm(t)
+            n = len(HAN.findall(item["hanzi"]))
+            # pengantar boleh sedikit berbeda (mis. 跟我说), yang dicek bagian setelahnya
+            if len(got) == len(self.norm(CARRIER)) + n and self.matches(got[-n:], item):
+                return True, " | ".join(notes), "carrier"
+        if len(HAN.findall(item["hanzi"])) == 1:
+            rep = tmp / "repeat.wav"
+            ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
+                    "[0:a]apad=pad_dur=0.6,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1", str(rep)])
+            t2 = self.transcribe(rep)
+            notes.append(f"x3: {t2}")
+            g2 = self.norm(t2)
+            if 2 <= len(g2) <= 4 and self.syllable_ok(g2, item["pinyin"]):
+                return True, " | ".join(notes), "repeat3"
+        return False, " | ".join(notes), "none"
 
 
 def score(ok: bool, transcript: str, item: dict, checker: Checker) -> int:
@@ -222,17 +265,23 @@ def main():
 
     manifest_path = out / "manifest.json"
     old = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else None
-    old_files = (old or {}).get("files", {}) if (old or {}).get("scriptVersion") == SCRIPT_VERSION else {}
+    old_files = (old or {}).get("files", {})
 
     def reusable(it):
         f = old_files.get(it["audioId"])
-        return (not args.force and f is not None and f.get("hanzi") == it["hanzi"]
+        # File yang belum lolos dicoba lagi (cara cek / variasi bisa berubah antar versi skrip).
+        return (not args.force and f is not None and f.get("ok") and f.get("hanzi") == it["hanzi"]
                 and f.get("pinyin") == it["pinyin"] and (out / f["path"]).exists())
 
     todo = [it for it in items if not reusable(it)]
     log(f"[basics] {len(items)} item, {len(todo)} perlu dibuat")
     tts = Kokoro(voice) if todo else None
     checker = Checker() if todo else None
+    if todo:
+        craw = work / "carrier-raw.wav"
+        tts.synth(CARRIER, 1.0, craw)
+        checker.carrier = work / "carrier.mp3"
+        ms.normalize(craw, checker.carrier, work)
 
     files: dict[str, dict] = {}
     pending: list[str] = []

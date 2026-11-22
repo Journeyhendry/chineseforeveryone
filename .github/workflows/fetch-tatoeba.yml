@@ -72,13 +72,24 @@ jobs:
       - name: Rebuild lesson files
         run: npm run build:lessons
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild font subset
+        run: |
+          set -euo pipefail
+          python -m pip install -r scripts/font/requirements.txt
+          npm run build:font
+
       - name: Commit sentences
         if: github.ref == 'refs/heads/main'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/hsk1/sentences.json data/hsk1/sentences-report.json public/data/hsk1
+          git add data/hsk1/sentences.json data/hsk1/sentences-report.json public/data/hsk1 src/assets/fonts src/styles/fonts.css public/fonts
           if git diff --cached --quiet; then
             echo "No changes in sentences or lesson files"
             exit 0

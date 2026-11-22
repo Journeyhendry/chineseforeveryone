@@ -144,6 +144,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 2437250,
+          "cmn": "你的家人好么？",
+          "author": "CLARET",
+          "license": "CC BY 2.0 FR",
+          "outside": "么",
+          "en": {
+            "tatoebaId": 2438450,
+            "text": "Is your family doing well?",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 6169159,
           "cmn": "你的家人在等你。",
           "author": "verdastelo9604",
@@ -152,20 +166,6 @@
           "en": {
             "tatoebaId": 3831465,
             "text": "Your family's waiting for you.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 9963202,
-          "cmn": "我想给家人打电话。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 24087,
-            "text": "I'd like to call my family.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -215,29 +215,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 2235467,
-          "cmn": "爸爸，我爱你！",
-          "author": "Vortarulo",
+          "tatoebaId": 6057860,
+          "cmn": "我是你爸爸。",
+          "author": "verdastelo9604",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2075226,
-            "text": "Daddy, I love you!",
-            "author": "Vened",
+            "tatoebaId": 1769470,
+            "text": "I am your father.",
+            "author": "wwkudu",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 332500,
-          "cmn": "我爸爸很忙。",
-          "author": "fucongcong",
+          "tatoebaId": 8865619,
+          "cmn": "谁是你爸爸？",
+          "author": "iiujik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 251731,
-            "text": "My father is busy.",
-            "author": "CK",
+            "tatoebaId": 3428703,
+            "text": "Who's your daddy?",
+            "author": "Hybrid",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -522,15 +522,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 502869,
-          "cmn": "我弟弟在看电视。",
-          "author": "fucongcong",
+          "tatoebaId": 1388731,
+          "cmn": "我弟弟很富有。",
+          "author": "Zifre",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "富有",
           "en": {
-            "tatoebaId": 614051,
-            "text": "My brother is watching TV.",
-            "author": "szaby78",
+            "tatoebaId": 1388691,
+            "text": "My brother is rich.",
+            "author": "Spamster",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -855,6 +855,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 704999,
+          "cmn": "你的房间在哪里？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 70408,
+            "text": "Where is your room?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 332881,
           "cmn": "我的房间号是多少？",
           "author": "fucongcong",
@@ -869,28 +883,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 686926,
-          "cmn": "这间房间是谁的？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": "间",
-          "en": {
-            "tatoebaId": 55514,
-            "text": "Whose room is this?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 349657,
-          "cmn": "房间里有人吗？",
+          "tatoebaId": 392252,
+          "cmn": "这是839号房间。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 319501,
-            "text": "Was there anyone in the room?",
+            "tatoebaId": 72335,
+            "text": "This is Room 839.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -996,7 +996,50 @@
         "椅",
         "子"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 1737869,
+          "cmn": "“这是谁的椅子？”“它是我的。”",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 73897,
+            "text": "\"Whose chair is this?\" \"It is mine.\"",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10038371,
+          "cmn": "椅子是木质的。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "木质",
+          "en": {
+            "tatoebaId": 1629472,
+            "text": "The chair is made of wood.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2827154,
+          "cmn": "猫在椅子上睡觉。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 282051,
+            "text": "The cat is sleeping on the chair.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0509",
@@ -1023,43 +1066,53 @@
       ],
       "examples": [
         {
-          "tatoebaId": 2409607,
-          "cmn": "我很喜欢狗。",
-          "author": "sysko",
+          "tatoebaId": 1801131,
+          "cmn": "他有一只狗。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 257235,
-            "text": "I like dogs very much.",
+            "tatoebaId": 288121,
+            "text": "He has a dog.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 13851795,
+            "text": "Dia punya anjing.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 2050950,
-          "cmn": "我早上不喂狗。",
-          "author": "fercheung",
+          "tatoebaId": 4764518,
+          "cmn": "她有一只狗和六只猫。",
+          "author": "ryanwoo",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 898528,
-            "text": "I don't feed my dog in the morning.",
-            "author": "CK",
+            "tatoebaId": 858614,
+            "text": "She has a dog and six cats.",
+            "author": "princesamee",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 4556298,
+            "text": "Dia punya seekor anjing dan enam ekor kucing.",
+            "author": "dbahasa",
+            "license": "CC BY 2.0 FR"
+          }
         },
         {
-          "tatoebaId": 6002105,
-          "cmn": "狗在桌子下边。",
-          "author": "Thai",
+          "tatoebaId": 558665,
+          "cmn": "你有四只狗。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 6004778,
-            "text": "The dog is under the table.",
-            "author": "tvindy",
+            "tatoebaId": 70262,
+            "text": "You have four dogs.",
+            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1091,6 +1144,25 @@
       ],
       "examples": [
         {
+          "tatoebaId": 407226,
+          "cmn": "我没有猫。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 259880,
+            "text": "I do not have a cat.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13706797,
+            "text": "Aku tidak punya kucing.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 4878929,
           "cmn": "我有两只猫。",
           "author": "musclegirlxyp",
@@ -1110,35 +1182,21 @@
           }
         },
         {
-          "tatoebaId": 334150,
-          "cmn": "“一只猫？”老先生问。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "老",
-          "en": {
-            "tatoebaId": 793644,
-            "text": "\"A cat?\" asked the old man.",
-            "author": "Zifre",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 382426,
-          "cmn": "我喜欢猫。",
-          "author": "ver",
+          "tatoebaId": 8577716,
+          "cmn": "我是一只猫。",
+          "author": "slo_oth",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 354379,
-            "text": "I like cats.",
-            "author": "bourdu",
+            "tatoebaId": 2068371,
+            "text": "I'm a cat.",
+            "author": "shekitten",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 4289088,
-            "text": "Aku suka kucing.",
-            "author": "Bilmanda",
+            "tatoebaId": 13772815,
+            "text": "Aku seekor kucing.",
+            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -1171,6 +1229,25 @@
       ],
       "examples": [
         {
+          "tatoebaId": 1801131,
+          "cmn": "他有一只狗。",
+          "author": "Shishir",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 288121,
+            "text": "He has a dog.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 13851795,
+            "text": "Dia punya anjing.",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 4878929,
           "cmn": "我有两只猫。",
           "author": "musclegirlxyp",
@@ -1190,32 +1267,23 @@
           }
         },
         {
-          "tatoebaId": 1869764,
-          "cmn": "我们只是朋友。",
-          "author": "street",
+          "tatoebaId": 8577716,
+          "cmn": "我是一只猫。",
+          "author": "slo_oth",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1869756,
-            "text": "We're just friends.",
-            "author": "Spamster",
+            "tatoebaId": 2068371,
+            "text": "I'm a cat.",
+            "author": "shekitten",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
-        },
-        {
-          "tatoebaId": 334150,
-          "cmn": "“一只猫？”老先生问。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "老",
-          "en": {
-            "tatoebaId": 793644,
-            "text": "\"A cat?\" asked the old man.",
-            "author": "Zifre",
+          "ind": {
+            "tatoebaId": 13772815,
+            "text": "Aku seekor kucing.",
+            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
-          },
-          "ind": null
+          }
         }
       ]
     }

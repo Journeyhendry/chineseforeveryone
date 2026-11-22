@@ -57,6 +57,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 9955771,
+          "cmn": "今天是2019年的第一天。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 7678889,
+            "text": "Today is the first day of 2019.",
+            "author": "MisterBrown",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 335520,
           "cmn": "前几天我见到了她。",
           "author": "fucongcong",
@@ -66,20 +80,6 @@
             "tatoebaId": 33058,
             "text": "I saw her just the other day.",
             "author": "CH",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 351230,
-          "cmn": "请后天来吧。",
-          "author": "zhouj1955",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 8316003,
-            "text": "Please come the day after tomorrow.",
-            "author": "AlanF_US",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -134,6 +134,25 @@
           }
         },
         {
+          "tatoebaId": 388517,
+          "cmn": "你今天怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 429851,
+            "text": "How are you doing today?",
+            "author": "baxtree",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12981758,
+            "text": "Bagaimana kabarmu hari ini?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 348445,
           "cmn": "今天是星期一。",
           "author": "zhouj1955",
@@ -143,20 +162,6 @@
             "tatoebaId": 238862,
             "text": "It's Monday.",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 408909,
-          "cmn": "今天是几号？",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 408906,
-            "text": "What's the date today?",
-            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -191,6 +196,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 791380,
+          "cmn": "明天怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 328023,
+            "text": "How about tomorrow?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 11837632,
           "cmn": "明天星期六。",
           "author": "Lemmih",
@@ -214,20 +233,6 @@
             "tatoebaId": 323310,
             "text": "It is Sunday tomorrow.",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1415796,
-          "cmn": "我明天不在这儿。",
-          "author": "sadhen",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 749293,
-            "text": "Tomorrow I won't be here.",
-            "author": "Serhiy",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -737,15 +742,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 5297688,
-          "cmn": "今年是二零一一年。",
-          "author": "xjjAstrus",
+          "tatoebaId": 11837696,
+          "cmn": "一年有12个月。",
+          "author": "Lemmih",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 5327634,
-            "text": "This year is 2011.",
-            "author": "Jeannierocket",
+            "tatoebaId": 4713377,
+            "text": "A year has 12 months.",
+            "author": "dhirensahu",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

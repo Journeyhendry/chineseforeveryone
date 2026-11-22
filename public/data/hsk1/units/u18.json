@@ -76,15 +76,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 13153751,
-          "cmn": "回去工作！",
-          "author": "LeviHighway",
+          "tatoebaId": 5580886,
+          "cmn": "你在工作。",
+          "author": "grindeldore",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2006521,
-            "text": "Get back to work!",
-            "author": "Spamster",
+            "tatoebaId": 7785092,
+            "text": "You are at work.",
+            "author": "sharris123",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -364,14 +364,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 1990181,
-          "cmn": "我今天休息。",
-          "author": "sunnywqing",
+          "tatoebaId": 1948456,
+          "cmn": "休息10分钟",
+          "author": "bigfatpanda",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 242826,
-            "text": "I am off today.",
+            "tatoebaId": 61583,
+            "text": "Let's take a 10-minute break.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -518,6 +518,20 @@
             "author": "menyo",
             "license": "CC BY 2.0 FR"
           }
+        },
+        {
+          "tatoebaId": 5096416,
+          "cmn": "已经没事了。",
+          "author": "mirrorvan",
+          "license": "CC BY 2.0 FR",
+          "outside": "已经",
+          "en": {
+            "tatoebaId": 2247991,
+            "text": "I'm fine now.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
         }
       ]
     },

@@ -39,7 +39,50 @@
       "chars": [
         "店"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 335615,
+          "cmn": "那家店有很多客人。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "客人",
+          "en": {
+            "tatoebaId": 435417,
+            "text": "That shop has many customers.",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 795619,
+          "cmn": "他回店里去了。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 794178,
+            "text": "He went back to the store.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1216091,
+          "cmn": "那个店的菜太贵。",
+          "author": "Takuya",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1230543,
+            "text": "That restaurant's too expensive.",
+            "author": "alec",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0314",
@@ -102,15 +145,15 @@
           }
         },
         {
-          "tatoebaId": 408838,
-          "cmn": "我家旁边有几家商店。",
+          "tatoebaId": 785849,
+          "cmn": "他去了商店。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "旁边",
+          "outside": null,
           "en": {
-            "tatoebaId": 662701,
-            "text": "There are a few shops next to my house.",
-            "author": "bluepie88",
+            "tatoebaId": 485111,
+            "text": "He went to the store.",
+            "author": "Scott",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -201,7 +244,50 @@
         "超",
         "市"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 5921999,
+          "cmn": "超市出兑。",
+          "author": "Sethlang",
+          "license": "CC BY 2.0 FR",
+          "outside": "出兑",
+          "en": {
+            "tatoebaId": 5922000,
+            "text": "The supermarket is out of business.",
+            "author": "Sethlang",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10109526,
+          "cmn": "这里附近有超市吗？",
+          "author": "ColawithIce",
+          "license": "CC BY 2.0 FR",
+          "outside": "附近",
+          "en": {
+            "tatoebaId": 3273057,
+            "text": "Is there a supermarket nearby?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4147188,
+          "cmn": "去了超市。",
+          "author": "sissima",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1165461,
+            "text": "I went to the supermarket.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0100",
@@ -335,15 +421,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 11680815,
-          "cmn": "你今天晚上去电影院吗？",
-          "author": "n3",
+          "tatoebaId": 472844,
+          "cmn": "我们去电影院怎么样？",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 3155333,
-            "text": "Will you go to the cinema tonight?",
-            "author": "BE",
+            "tatoebaId": 26445,
+            "text": "How about going to the movies?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -377,7 +463,50 @@
         "公",
         "司"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 4270713,
+          "cmn": "在她的公司里，我感觉很好。",
+          "author": "notabene",
+          "license": "CC BY 2.0 FR",
+          "outside": "感觉",
+          "en": {
+            "tatoebaId": 7830348,
+            "text": "I feel happy in her firm.",
+            "author": "sharris123",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3060505,
+          "cmn": "这就是你们公司？",
+          "author": "trieuho",
+          "license": "CC BY 2.0 FR",
+          "outside": "这就",
+          "en": {
+            "tatoebaId": 3060506,
+            "text": "So this is your company?",
+            "author": "trieuho",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1438553,
+          "cmn": "这是我的公司地址。",
+          "author": "asosan",
+          "license": "CC BY 2.0 FR",
+          "outside": "地址",
+          "en": {
+            "tatoebaId": 56209,
+            "text": "This is my business address.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0042",
@@ -480,7 +609,50 @@
         "租",
         "车"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 9501478,
+          "cmn": "坐出租车吧。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 40958,
+            "text": "Let's take a taxi.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 4563171,
+          "cmn": "我们坐出租车吧",
+          "author": "ecl1",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 40958,
+            "text": "Let's take a taxi.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 425131,
+          "cmn": "附近有出租车吗？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "附近",
+          "en": {
+            "tatoebaId": 425128,
+            "text": "Are there taxis around here?",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0161",
@@ -524,14 +696,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 8591238,
-          "cmn": "我们的火车准时来到。",
-          "author": "easononizuka",
+          "tatoebaId": 8742138,
+          "cmn": "我们去坐四点十分的火车吧。",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
-          "outside": "准时",
+          "outside": null,
           "en": {
-            "tatoebaId": 247704,
-            "text": "Our train arrived on time.",
+            "tatoebaId": 72587,
+            "text": "Let's take the 4:10 train.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -681,14 +853,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 399588,
-          "cmn": "你坐火车去吗？",
-          "author": "GlossaMatik",
+          "tatoebaId": 9501478,
+          "cmn": "坐出租车吧。",
+          "author": "BobbyLee",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 237647,
-            "text": "Will you go by train?",
+            "tatoebaId": 40958,
+            "text": "Let's take a taxi.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -751,14 +923,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 4764637,
-          "cmn": "我会开车。",
-          "author": "ryanwoo",
+          "tatoebaId": 10230465,
+          "cmn": "我开车来的。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 258393,
-            "text": "I know how to drive a car.",
+            "tatoebaId": 5829211,
+            "text": "I came by car.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

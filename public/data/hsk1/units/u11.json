@@ -56,6 +56,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 818934,
+          "cmn": "这里，现在。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3527401,
+            "text": "Here and now.",
+            "author": "maydoo",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 14111617,
           "cmn": "现在一点半。",
           "author": "jan_OkulaJu",
@@ -65,20 +79,6 @@
             "tatoebaId": 10713655,
             "text": "It's now half past one.",
             "author": "sundown",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 382996,
-          "cmn": "请问，现在什么时候？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 385392,
-            "text": "Excuse me, what time is it?",
-            "author": "Mouseneb",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -196,42 +196,42 @@
       ],
       "examples": [
         {
-          "tatoebaId": 1330048,
-          "cmn": "他好坏不分。",
-          "author": "vicch",
-          "license": "CC BY 2.0 FR",
-          "outside": "好坏",
-          "en": {
-            "tatoebaId": 300728,
-            "text": "He doesn't know the difference between right and wrong.",
-            "author": "blay_paul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 382432,
-          "cmn": "六点二十分了。",
-          "author": "ver",
+          "tatoebaId": 2041220,
+          "cmn": "现在是7点45分。",
+          "author": "Venki",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 379086,
-            "text": "It's twenty past six.",
-            "author": "CM",
+            "tatoebaId": 241532,
+            "text": "It's quarter to eight now.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 429440,
-          "cmn": "那太过分了。",
-          "author": "aliene",
+          "tatoebaId": 13994928,
+          "cmn": "现在是一点五十分。",
+          "author": "jan_OkulaJu",
           "license": "CC BY 2.0 FR",
-          "outside": "太过",
+          "outside": null,
           "en": {
-            "tatoebaId": 31571,
-            "text": "That's too much.",
+            "tatoebaId": 2267467,
+            "text": "It's ten minutes to two.",
+            "author": "_undertoad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2041218,
+          "cmn": "现在是七点四十五分。",
+          "author": "Venki",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 241532,
+            "text": "It's quarter to eight now.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -265,7 +265,50 @@
         "分",
         "钟"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 380602,
+          "cmn": "一分钟有六十秒。",
+          "author": "kellenparker",
+          "license": "CC BY 2.0 FR",
+          "outside": "秒",
+          "en": {
+            "tatoebaId": 27224,
+            "text": "A minute has sixty seconds.",
+            "author": "sacredceltic",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1948456,
+          "cmn": "休息10分钟",
+          "author": "bigfatpanda",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 61583,
+            "text": "Let's take a 10-minute break.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 5613717,
+          "cmn": "再给我五分钟。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3822409,
+            "text": "Give me five more minutes.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0405",
@@ -694,15 +737,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 759370,
-          "cmn": "今天中午我们出去吃饭吗？",
-          "author": "vgigregg",
+          "tatoebaId": 5574717,
+          "cmn": "你一般中午饭吃什么？",
+          "author": "verdastelo9604",
           "license": "CC BY 2.0 FR",
-          "outside": "出去",
+          "outside": "一般",
           "en": {
-            "tatoebaId": 759371,
-            "text": "Are we going out for lunch today?",
-            "author": "vgigregg",
+            "tatoebaId": 4049115,
+            "text": "What do you usually eat for lunch?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -840,15 +883,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 1877244,
-          "cmn": "我晚上睡觉很早。",
-          "author": "street",
+          "tatoebaId": 8865168,
+          "cmn": "明天晚上九点怎么样？",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 324011,
-            "text": "I go to bed early at night.",
-            "author": "CN",
+            "tatoebaId": 4708936,
+            "text": "How about tomorrow night at nine?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -914,14 +957,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 13938564,
-          "cmn": "我今天能早点下班吗？",
-          "author": "jan_OkulaJu",
+          "tatoebaId": 754013,
+          "cmn": "请早点回家。",
+          "author": "U2FS",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 6972077,
-            "text": "Would it be OK if I left work early today?",
+            "tatoebaId": 274012,
+            "text": "Come home early.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

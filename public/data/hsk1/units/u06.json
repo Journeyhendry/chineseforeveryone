@@ -179,6 +179,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 1750549,
+          "cmn": "她有一千零一个愿望。",
+          "author": "sadhen",
+          "license": "CC BY 2.0 FR",
+          "outside": "愿望",
+          "en": {
+            "tatoebaId": 4728697,
+            "text": "She has 1001 wishes.",
+            "author": "paper1n0",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 3283115,
           "cmn": "五千元是很多钱。",
           "author": "yangmaster",
@@ -188,6 +202,20 @@
             "tatoebaId": 1454609,
             "text": "5000 yuan is a lot of money.",
             "author": "qana",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3378253,
+          "cmn": "他有一千多本书。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3378254,
+            "text": "He has more than a thousand books.",
+            "author": "_undertoad",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -251,15 +279,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 2367523,
-          "cmn": "这是第一点。",
-          "author": "GlossaMatik",
+          "tatoebaId": 1456431,
+          "cmn": "生活第一！",
+          "author": "ekgermana",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "生活",
           "en": {
-            "tatoebaId": 2367524,
-            "text": "That’s the first point.",
-            "author": "eastasiastudent",
+            "tatoebaId": 8776794,
+            "text": "Life first!",
+            "author": "weihaiping",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -298,20 +326,6 @@
       ],
       "examples": [
         {
-          "tatoebaId": 844152,
-          "cmn": "你的生日是几号？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": "生日",
-          "en": {
-            "tatoebaId": 703328,
-            "text": "What is your date of birth?",
-            "author": "papabear",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 408909,
           "cmn": "今天是几号？",
           "author": "GlossaMatik",
@@ -335,6 +349,20 @@
             "tatoebaId": 398977,
             "text": "It's October the third.",
             "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 332135,
+          "cmn": "今天是几月几号？",
+          "author": "Aerhus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 332138,
+            "text": "What is the date today?",
+            "author": "Aerhus",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -547,20 +575,6 @@
           "ind": null
         },
         {
-          "tatoebaId": 354509,
-          "cmn": "她很少出去。",
-          "author": "ruicong",
-          "license": "CC BY 2.0 FR",
-          "outside": "出去",
-          "en": {
-            "tatoebaId": 312305,
-            "text": "She seldom goes out.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 472901,
           "cmn": "少了什么？",
           "author": "fucongcong",
@@ -569,6 +583,20 @@
           "en": {
             "tatoebaId": 25227,
             "text": "What is missing?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3478455,
+          "cmn": "她朋友很少。",
+          "author": "schlagermanx",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 451212,
+            "text": "She has few friends.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -738,6 +766,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 1894904,
+          "cmn": "这是可怕一点儿。",
+          "author": "sixtynine",
+          "license": "CC BY 2.0 FR",
+          "outside": "可怕",
+          "en": {
+            "tatoebaId": 1894608,
+            "text": "It's a little scary.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 400212,
           "cmn": "还要一点儿。",
           "author": "sysko",
@@ -747,20 +789,6 @@
             "tatoebaId": 495631,
             "text": "Just a little more.",
             "author": "FeuDRenais",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 869811,
-          "cmn": "给我一点儿。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1034563,
-            "text": "Give me a little.",
-            "author": "Brian255",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -798,6 +826,34 @@
         "儿"
       ],
       "examples": [
+        {
+          "tatoebaId": 1504990,
+          "cmn": "我有点儿感动。",
+          "author": "menyo",
+          "license": "CC BY 2.0 FR",
+          "outside": "感动",
+          "en": {
+            "tatoebaId": 1504272,
+            "text": "I'm a little touched.",
+            "author": "marcelostockle",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 787242,
+          "cmn": "她有点儿面包。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 456691,
+            "text": "She has a little bread.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
         {
           "tatoebaId": 7817198,
           "cmn": "我有一点儿事。",
@@ -910,15 +966,43 @@
       ],
       "examples": [
         {
-          "tatoebaId": 381090,
-          "cmn": "我会告诉她开会的时候说些什么。",
-          "author": "sherryyyf",
+          "tatoebaId": 846455,
+          "cmn": "我买了些衣服。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "告诉",
+          "outside": null,
           "en": {
-            "tatoebaId": 22454,
-            "text": "I will tell her what to say at the meeting.",
-            "author": "CK",
+            "tatoebaId": 8590678,
+            "text": "I have bought some clothes.",
+            "author": "easononizuka",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7771887,
+          "cmn": "他说了些什么。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2926303,
+            "text": "He said something.",
+            "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 1328169,
+          "cmn": "他今天好些了吗？",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 289700,
+            "text": "Is he any better today?",
+            "author": "CH",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

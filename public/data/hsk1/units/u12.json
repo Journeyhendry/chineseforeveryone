@@ -75,15 +75,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 347218,
-          "cmn": "猫坐在桌子上。",
-          "author": "tommyfang95",
+          "tatoebaId": 1446967,
+          "cmn": "桌子上有只猫吗？",
+          "author": "asosan",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 535007,
-            "text": "The cat is sitting on top of the table.",
-            "author": "blay_paul",
+            "tatoebaId": 39601,
+            "text": "Is there a cat on the table?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -156,15 +156,15 @@
           }
         },
         {
-          "tatoebaId": 7779226,
-          "cmn": "从那儿下来！",
-          "author": "jiangche",
+          "tatoebaId": 870126,
+          "cmn": "昨天下大雨。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
-          "outside": "从",
+          "outside": null,
           "en": {
-            "tatoebaId": 51042,
-            "text": "Get down from there.",
-            "author": "CM",
+            "tatoebaId": 244525,
+            "text": "We had a heavy rain yesterday.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -230,15 +230,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 2889963,
-          "cmn": "他前天去伦敦。",
-          "author": "Popolon",
+          "tatoebaId": 335520,
+          "cmn": "前几天我见到了她。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "伦敦",
+          "outside": null,
           "en": {
-            "tatoebaId": 64965,
-            "text": "He departed for London the day before yesterday.",
-            "author": "CM",
+            "tatoebaId": 33058,
+            "text": "I saw her just the other day.",
+            "author": "CH",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -291,6 +291,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 1446901,
+          "cmn": "我10分钟后回来。",
+          "author": "asosan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 73382,
+            "text": "I'll be back in ten minutes.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 411701,
           "cmn": "我们后天出发。",
           "author": "fucongcong",
@@ -299,20 +313,6 @@
           "en": {
             "tatoebaId": 249408,
             "text": "We're leaving the day after tomorrow.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 687045,
-          "cmn": "你后天有空吗？",
-          "author": "peipei",
-          "license": "CC BY 2.0 FR",
-          "outside": "有空",
-          "en": {
-            "tatoebaId": 71871,
-            "text": "Do you have time the day after tomorrow?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -557,15 +557,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 1454456,
-          "cmn": "他一边唱歌一边工作。",
-          "author": "sadhen",
+          "tatoebaId": 1323999,
+          "cmn": "我们边喝茶边等。",
+          "author": "vicch",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "等",
           "en": {
-            "tatoebaId": 294485,
-            "text": "He sang while working.",
-            "author": "CK",
+            "tatoebaId": 2744092,
+            "text": "We're drinking tea and waiting.",
+            "author": "negativeclock",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -635,15 +635,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 351230,
-          "cmn": "请后天来吧。",
-          "author": "zhouj1955",
+          "tatoebaId": 12880278,
+          "cmn": "你来这里。",
+          "author": "Enzo",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 8316003,
-            "text": "Please come the day after tomorrow.",
-            "author": "AlanF_US",
+            "tatoebaId": 18075,
+            "text": "You come here.",
+            "author": "Zifre",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -755,6 +755,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 754013,
+          "cmn": "请早点回家。",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 274012,
+            "text": "Come home early.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 781124,
           "cmn": "她很晚回家。",
           "author": "Martha",
@@ -777,20 +791,6 @@
           "en": {
             "tatoebaId": 291589,
             "text": "He came home very late.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2928042,
-          "cmn": "明天我回家。",
-          "author": "malaili",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2926313,
-            "text": "Tomorrow I'm going back home.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -843,29 +843,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 767733,
-          "cmn": "他从早吃到晚。",
-          "author": "eastasiastudent",
+          "tatoebaId": 5762988,
+          "cmn": "它什么时候到？",
+          "author": "verdastelo9604",
           "license": "CC BY 2.0 FR",
-          "outside": "从",
+          "outside": null,
           "en": {
-            "tatoebaId": 767734,
-            "text": "He eats non-stop.",
-            "author": "sundown",
+            "tatoebaId": 280089,
+            "text": "When does it arrive?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 4287494,
-          "cmn": "我到东京是两个月前。",
-          "author": "notabene",
+          "tatoebaId": 1511032,
+          "cmn": "明天什么时候到？",
+          "author": "sysko",
           "license": "CC BY 2.0 FR",
-          "outside": "东京",
+          "outside": null,
           "en": {
-            "tatoebaId": 4334407,
-            "text": "It was two months ago that I arrived in Tokyo.",
-            "author": "Blair0113",
+            "tatoebaId": 7785100,
+            "text": "When will tomorrow arrive?",
+            "author": "sharris123",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

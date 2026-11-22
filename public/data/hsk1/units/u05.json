@@ -154,23 +154,18 @@
           "ind": null
         },
         {
-          "tatoebaId": 493888,
-          "cmn": "这是谁的书？",
-          "author": "adjusting",
+          "tatoebaId": 1778257,
+          "cmn": "那些家伙是谁？",
+          "author": "sadhen",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "家伙",
           "en": {
-            "tatoebaId": 54871,
-            "text": "Whose book is this?",
+            "tatoebaId": 2451,
+            "text": "Who are those guys?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 3864961,
-            "text": "Buku siapa ini?",
-            "author": "orion17",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         }
       ]
     },
@@ -293,6 +288,20 @@
           }
         },
         {
+          "tatoebaId": 5829620,
+          "cmn": "你指的是哪个？",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": "指",
+          "en": {
+            "tatoebaId": 3168078,
+            "text": "Which one are you referring to?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 6183644,
           "cmn": "哪个包是你的？",
           "author": "yuiyu",
@@ -301,20 +310,6 @@
           "en": {
             "tatoebaId": 37977,
             "text": "Which bag is yours?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 3580024,
-          "cmn": "哪个是你的杯子？",
-          "author": "CLARET",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1554393,
-            "text": "Which cup is yours?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -667,7 +662,55 @@
         "么",
         "样"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 392248,
+          "cmn": "你好，怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 415678,
+            "text": "Good day, how are you?",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 431126,
+          "cmn": "生意怎么样？",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "生意",
+          "en": {
+            "tatoebaId": 267432,
+            "text": "How's business?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 388517,
+          "cmn": "你今天怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 429851,
+            "text": "How are you doing today?",
+            "author": "baxtree",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 12981758,
+            "text": "Bagaimana kabarmu hari ini?",
+            "author": "HAGNi",
+            "license": "CC BY 2.0 FR"
+          }
+        }
+      ]
     },
     {
       "id": "L1-0379",
@@ -708,20 +751,6 @@
           "ind": null
         },
         {
-          "tatoebaId": 10086133,
-          "cmn": "我问问路。",
-          "author": "ColawithIce",
-          "license": "CC BY 2.0 FR",
-          "outside": "问路",
-          "en": {
-            "tatoebaId": 2546108,
-            "text": "I'll ask for directions.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 5624882,
           "cmn": "我会问他们。",
           "author": "verdastelo9604",
@@ -731,6 +760,20 @@
             "tatoebaId": 3920017,
             "text": "I'll ask them.",
             "author": "CH",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13751977,
+          "cmn": "没人问你这个。",
+          "author": "_LoLa_",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2249611,
+            "text": "Nobody asked you.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -769,15 +812,43 @@
       ],
       "examples": [
         {
-          "tatoebaId": 1516205,
-          "cmn": "我觉得没什么问题。",
-          "author": "gonnastop",
+          "tatoebaId": 5613647,
+          "cmn": "你有问题吗？",
+          "author": "verdastelo9604",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 271563,
-            "text": "I think it will be fine.",
-            "author": "CC",
+            "tatoebaId": 2713495,
+            "text": "Are you having problems?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 13907699,
+          "cmn": "这也没问题！",
+          "author": "jan_OkulaJu",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1345857,
+            "text": "The same sounds OK!",
+            "author": "Eldad",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 476600,
+          "cmn": "这是我的问题。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 449185,
+            "text": "That's my problem.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -831,6 +902,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 818425,
+          "cmn": "这是对的。",
+          "author": "tarim222",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 54868,
+            "text": "It's true.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 6608385,
           "cmn": "对，我没关系。",
           "author": "RainShelter",
@@ -843,25 +928,6 @@
             "license": "CC BY 2.0 FR"
           },
           "ind": null
-        },
-        {
-          "tatoebaId": 8688060,
-          "cmn": "你喜欢雨对吧？",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 20103,
-            "text": "You like rain, don't you?",
-            "author": "blay_paul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 11023614,
-            "text": "Kamu suka hujan, kan?",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
         }
       ]
     }

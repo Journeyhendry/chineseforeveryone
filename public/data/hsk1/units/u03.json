@@ -483,6 +483,25 @@
           }
         },
         {
+          "tatoebaId": 4764518,
+          "cmn": "她有一只狗和六只猫。",
+          "author": "ryanwoo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 858614,
+            "text": "She has a dog and six cats.",
+            "author": "princesamee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4556298,
+            "text": "Dia punya seekor anjing dan enam ekor kucing.",
+            "author": "dbahasa",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 6486900,
           "cmn": "昨天星期六。",
           "author": "xjjAstrus",
@@ -492,20 +511,6 @@
             "tatoebaId": 5579558,
             "text": "Yesterday was Saturday.",
             "author": "garynw",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 11837632,
-          "cmn": "明天星期六。",
-          "author": "Lemmih",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 3062005,
-            "text": "Tomorrow is Saturday.",
-            "author": "CN",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -948,28 +953,28 @@
           }
         },
         {
-          "tatoebaId": 524451,
-          "cmn": "你有两本书。",
-          "author": "Shishir",
+          "tatoebaId": 13839318,
+          "cmn": "两点可以。",
+          "author": "JackyJiaqiSun",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 69062,
-            "text": "You have two books.",
-            "author": "Eldad",
+            "tatoebaId": 495667,
+            "text": "Two o'clock would be OK.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 719711,
-          "cmn": "我有两本书。",
-          "author": "Shishir",
+          "tatoebaId": 482305,
+          "cmn": "他有两只猫。",
+          "author": "siriusbb",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 259771,
-            "text": "I have two books.",
+            "tatoebaId": 288257,
+            "text": "He keeps two cats.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

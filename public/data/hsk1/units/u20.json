@@ -42,43 +42,43 @@
       ],
       "examples": [
         {
-          "tatoebaId": 1300671,
-          "cmn": "你在那边玩吧。",
-          "author": "shanghainese",
+          "tatoebaId": 849811,
+          "cmn": "它很好玩。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1300573,
-            "text": "Play there.",
-            "author": "Luornu",
+            "tatoebaId": 503864,
+            "text": "It was a lot of fun.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 374669,
-          "cmn": "再见！有空多来玩儿！",
-          "author": "sysko",
+          "tatoebaId": 1699103,
+          "cmn": "我去玩了！",
+          "author": "fengli",
           "license": "CC BY 2.0 FR",
-          "outside": "有空",
+          "outside": null,
           "en": {
-            "tatoebaId": 379146,
-            "text": "Goodbye! When you have more time, come back and play!",
-            "author": "kellenparker",
+            "tatoebaId": 7816792,
+            "text": "I went to play!",
+            "author": "sharris123",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 358141,
-          "cmn": "你去国外是玩儿还是出差？",
-          "author": "rmgao",
+          "tatoebaId": 8715885,
+          "cmn": "我想去玩。",
+          "author": "crescat",
           "license": "CC BY 2.0 FR",
-          "outside": "出差",
+          "outside": null,
           "en": {
-            "tatoebaId": 69536,
-            "text": "Did you go abroad for pleasure or on business?",
-            "author": "CM",
+            "tatoebaId": 2011294,
+            "text": "I want to play.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -404,6 +404,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 669406,
+          "cmn": "我想玩电脑。",
+          "author": "aye1995",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 837407,
+            "text": "I want to play on the computer.",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 710294,
           "cmn": "我家没有电脑。",
           "author": "fucongcong",
@@ -427,20 +441,6 @@
             "tatoebaId": 2346862,
             "text": "This is my computer.",
             "author": "everylanguage",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2003361,
-          "cmn": "你会用电脑吗？",
-          "author": "fercheung",
-          "license": "CC BY 2.0 FR",
-          "outside": "用",
-          "en": {
-            "tatoebaId": 513513,
-            "text": "Do you know how to use a computer?",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -639,15 +639,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 4270099,
-          "cmn": "他忘记喂狗了。",
-          "author": "notabene",
+          "tatoebaId": 502848,
+          "cmn": "喂？你还在吗？",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "忘记",
+          "outside": null,
           "en": {
-            "tatoebaId": 2153674,
-            "text": "He forgot to feed the dog.",
-            "author": "jeedrek",
+            "tatoebaId": 1878,
+            "text": "Hello? Are you still here?",
+            "author": "brauliobezerra",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2304957,
+          "cmn": "我正在喂孩子。",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1665291,
+            "text": "I am feeding my baby.",
+            "author": "Amastan",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -772,6 +786,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 895788,
+          "cmn": "你穿那件白色的衣服很好看。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": "白色",
+          "en": {
+            "tatoebaId": 13587238,
+            "text": "You look great in that white outfit.",
+            "author": "LeviHighway",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 9958206,
           "cmn": "这部电影真的很好看。",
           "author": "GlossaMatik",
@@ -780,20 +808,6 @@
           "en": {
             "tatoebaId": 5077903,
             "text": "The movie was really good.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8928633,
-          "cmn": "汤姆是一个非常好看的男人。",
-          "author": "iiujik",
-          "license": "CC BY 2.0 FR",
-          "outside": "汤姆",
-          "en": {
-            "tatoebaId": 1093487,
-            "text": "Tom is an extremely good-looking man.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

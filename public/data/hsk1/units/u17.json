@@ -791,14 +791,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 1454431,
-          "cmn": "她不会读书写字。",
-          "author": "sadhen",
+          "tatoebaId": 4761381,
+          "cmn": "你们在写什么？",
+          "author": "billt_estates",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1442138,
-            "text": "She can't write or read.",
+            "tatoebaId": 1886804,
+            "text": "What are you writing?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -983,6 +983,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 332819,
+          "cmn": "我想看看。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 5226492,
+            "text": "I want to have a little look.",
+            "author": "jaxhere",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 1783787,
           "cmn": "你能看吗？",
           "author": "sadhen",
@@ -1006,20 +1020,6 @@
             "tatoebaId": 1148307,
             "text": "They are watching.",
             "author": "cntrational",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8935907,
-          "cmn": "请看一看。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2245539,
-            "text": "Have a look.",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1081,15 +1081,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 1372536,
-          "cmn": "我看见五个男人。",
-          "author": "sadhen",
+          "tatoebaId": 10182763,
+          "cmn": "您看见它了吗？",
+          "author": "slo_oth",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 370730,
-            "text": "I saw five men.",
-            "author": "saeb",
+            "tatoebaId": 914018,
+            "text": "Did you see it?",
+            "author": "Jane_Austen",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1141,6 +1141,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 6075514,
+          "cmn": "它不见了。",
+          "author": "mendel",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 11277823,
+            "text": "It disappeared.",
+            "author": "Aphima",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 8863215,
           "cmn": "谁想见我？",
           "author": "iiujik",
@@ -1149,20 +1163,6 @@
           "en": {
             "tatoebaId": 2011531,
             "text": "Who wants to see me?",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 340647,
-          "cmn": "下个星期见！",
-          "author": "aaroned",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 32557,
-            "text": "See you next week!",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

@@ -208,6 +208,25 @@
           "ind": null
         },
         {
+          "tatoebaId": 744283,
+          "cmn": "她很漂亮。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 410244,
+            "text": "She is beautiful.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7062012,
+            "text": "Dia cantik.",
+            "author": "purichan",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 3378168,
           "cmn": "她生病了。",
           "author": "GlossaMatik",
@@ -223,25 +242,6 @@
             "tatoebaId": 11260567,
             "text": "Dia sakit.",
             "author": "Pacific",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 13210555,
-          "cmn": "她想知道。",
-          "author": "LeviHighway",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 12046426,
-            "text": "She wants to know.",
-            "author": "Aghanim",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 14054153,
-            "text": "Dia ingin tahu.",
-            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -273,20 +273,6 @@
       ],
       "examples": [
         {
-          "tatoebaId": 5780622,
-          "cmn": "它很正常。",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": "正常",
-          "en": {
-            "tatoebaId": 2249364,
-            "text": "It's very normal.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 5780582,
           "cmn": "它跟我没关系。",
           "author": "verdastelo9604",
@@ -301,14 +287,28 @@
           "ind": null
         },
         {
-          "tatoebaId": 5091438,
-          "cmn": "我想要你睡在它上边。",
-          "author": "mirrorvan",
+          "tatoebaId": 824484,
+          "cmn": "它太大了。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2033205,
-            "text": "I want you to sleep on it.",
+            "tatoebaId": 435409,
+            "text": "It's too big.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 849811,
+          "cmn": "它很好玩。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 503864,
+            "text": "It was a lot of fun.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -561,7 +561,50 @@
         "它",
         "们"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 332547,
+          "cmn": "它们是瓜。",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": "瓜",
+          "en": {
+            "tatoebaId": 31755,
+            "text": "They are melons.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7769298,
+          "cmn": "它们是假的。",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": "假",
+          "en": {
+            "tatoebaId": 2111296,
+            "text": "They're fake.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 760585,
+          "cmn": "不。它们太小了。",
+          "author": "ednorog",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 456515,
+            "text": "No. They are too small.",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0241",
@@ -900,20 +943,6 @@
           "ind": null
         },
         {
-          "tatoebaId": 14020244,
-          "cmn": "你好。我叫包。",
-          "author": "TanukiKun",
-          "license": "CC BY 2.0 FR",
-          "outside": "包",
-          "en": {
-            "tatoebaId": 14020243,
-            "text": "Hello. I am Bao.",
-            "author": "TanukiKun",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 346883,
           "cmn": "你叫什么名字？",
           "author": "fucongcong",
@@ -929,6 +958,25 @@
             "tatoebaId": 3371508,
             "text": "Siapa namamu?",
             "author": "nasirusman",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
+          "tatoebaId": 444659,
+          "cmn": "您叫什么名字？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 365994,
+            "text": "Siapa nama Anda?",
+            "author": "hayabusa_future",
             "license": "CC BY 2.0 FR"
           }
         }

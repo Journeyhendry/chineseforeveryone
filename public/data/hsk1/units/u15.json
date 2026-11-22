@@ -62,6 +62,25 @@
           }
         },
         {
+          "tatoebaId": 1323682,
+          "cmn": "你喜欢苹果吗？",
+          "author": "vicch",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 29617,
+            "text": "Do you like apples?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 11227117,
+            "text": "Apakah kamu suka apel?",
+            "author": "Pi31415i",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 2409607,
           "cmn": "我很喜欢狗。",
           "author": "sysko",
@@ -71,20 +90,6 @@
             "tatoebaId": 257235,
             "text": "I like dogs very much.",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2409610,
-          "cmn": "我很喜欢猫。",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2409622,
-            "text": "I like cats very much.",
-            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -307,18 +312,23 @@
           }
         },
         {
-          "tatoebaId": 469355,
-          "cmn": "您现在想要什么？",
-          "author": "fucongcong",
+          "tatoebaId": 834627,
+          "cmn": "我不想要了。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 16275,
-            "text": "What do you want now?",
+            "tatoebaId": 31649,
+            "text": "I don't want any more.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
-          "ind": null
+          "ind": {
+            "tatoebaId": 1804221,
+            "text": "Saya tidak mau lagi.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
         }
       ]
     },
@@ -353,6 +363,25 @@
       ],
       "examples": [
         {
+          "tatoebaId": 834627,
+          "cmn": "我不想要了。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 31649,
+            "text": "I don't want any more.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 1804221,
+            "text": "Saya tidak mau lagi.",
+            "author": "menyo",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 469355,
           "cmn": "您现在想要什么？",
           "author": "fucongcong",
@@ -376,20 +405,6 @@
             "tatoebaId": 16275,
             "text": "What do you want now?",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 400208,
-          "cmn": "还要多少？",
-          "author": "sysko",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 8108710,
-            "text": "How much more?",
-            "author": "haukie",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -441,6 +456,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 5663452,
+          "cmn": "我不要你。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 4002566,
+            "text": "I don't want you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 5995706,
           "cmn": "我也不要。",
           "author": "xjjAstrus",
@@ -450,20 +479,6 @@
             "tatoebaId": 1349091,
             "text": "Neither do I.",
             "author": "sacredceltic",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 818424,
-          "cmn": "不要骗我。",
-          "author": "tarim222",
-          "license": "CC BY 2.0 FR",
-          "outside": "骗",
-          "en": {
-            "tatoebaId": 262454,
-            "text": "Don't deceive me.",
-            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -503,6 +518,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 1170598,
+          "cmn": "我会想你。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 71632,
+            "text": "I'll miss you.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 1470423,
           "cmn": "怎么会有？",
           "author": "bfsutian",
@@ -517,29 +546,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 2934370,
-          "cmn": "她会做饭。",
-          "author": "Popolon",
+          "tatoebaId": 2489591,
+          "cmn": "狗不会叫。",
+          "author": "alvations",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2276710,
-            "text": "She knows how to cook.",
-            "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4456369,
-          "cmn": "我会做饭。",
-          "author": "plutowu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2245639,
-            "text": "I can cook.",
-            "author": "CK",
+            "tatoebaId": 2489590,
+            "text": "The dog couldn't bark.",
+            "author": "alvations",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -680,28 +695,28 @@
           }
         },
         {
-          "tatoebaId": 396894,
-          "cmn": "您可以走了。",
-          "author": "GlossaMatik",
+          "tatoebaId": 13839318,
+          "cmn": "两点可以。",
+          "author": "JackyJiaqiSun",
           "license": "CC BY 2.0 FR",
-          "outside": "走",
+          "outside": null,
           "en": {
-            "tatoebaId": 518553,
-            "text": "You may go.",
+            "tatoebaId": 495667,
+            "text": "Two o'clock would be OK.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 2070506,
-          "cmn": "我可以做什么来帮你呢？",
-          "author": "saray",
+          "tatoebaId": 476578,
+          "cmn": "你可以去了。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "帮",
+          "outside": null,
           "en": {
-            "tatoebaId": 954508,
-            "text": "What can I do to help you?",
+            "tatoebaId": 518553,
+            "text": "You may go.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -753,6 +768,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 336719,
+          "cmn": "你觉得怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 464554,
+            "text": "What do you think of it?",
+            "author": "lukaszpp",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 774845,
           "cmn": "我觉得不好了。",
           "author": "samuelgilman",
@@ -762,20 +791,6 @@
             "tatoebaId": 761881,
             "text": "I felt bad.",
             "author": "Shishir",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 1151904,
-          "cmn": "他觉得我爱她。",
-          "author": "Quazel",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 1151900,
-            "text": "He thinks I love her.",
-            "author": "Quazel",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

@@ -127,6 +127,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 6728904,
+          "cmn": "那是我的。",
+          "author": "verdastelo9604",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 67126,
+            "text": "That is mine.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 780253,
           "cmn": "那是我的字典。",
           "author": "Martha",
@@ -154,20 +168,6 @@
           "en": {
             "tatoebaId": 244391,
             "text": "No students went there yesterday.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 354121,
-          "cmn": "那人是谁？",
-          "author": "ruicong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 450137,
-            "text": "Who is that person?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -233,15 +233,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 10052320,
-          "cmn": "这个几块？",
-          "author": "GlossaMatik",
+          "tatoebaId": 2930903,
+          "cmn": "这个不会。",
+          "author": "shanghainese",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2418,
-            "text": "How much is it?",
-            "author": "brauliobezerra",
+            "tatoebaId": 2930752,
+            "text": "This one won't.",
+            "author": "astyng",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -279,20 +279,6 @@
       ],
       "examples": [
         {
-          "tatoebaId": 486991,
-          "cmn": "那个包是我的。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "包",
-          "en": {
-            "tatoebaId": 68476,
-            "text": "That bag is mine.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
           "tatoebaId": 2217670,
           "cmn": "那个女人在哪里？",
           "author": "aruhito",
@@ -307,14 +293,28 @@
           "ind": null
         },
         {
-          "tatoebaId": 493346,
-          "cmn": "那个男人是谁？",
-          "author": "GlossaMatik",
+          "tatoebaId": 5975065,
+          "cmn": "他们喜欢那个",
+          "author": "zhangxr91",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 67951,
-            "text": "Who is that man?",
+            "tatoebaId": 2243246,
+            "text": "They love that.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 11837669,
+          "cmn": "那个人是谁？",
+          "author": "Lemmih",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 450137,
+            "text": "Who is that person?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -442,6 +442,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 825942,
+          "cmn": "那些狗都很大。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 67020,
+            "text": "Those dogs are big.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 6585424,
           "cmn": "那些事都是真的。",
           "author": "verdastelo9604",
@@ -451,20 +465,6 @@
             "tatoebaId": 3307525,
             "text": "All those things are true.",
             "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 10966776,
-          "cmn": "那些是你的朋友。",
-          "author": "xjjAstrus",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 13980373,
-            "text": "Those are your friends.",
-            "author": "frpzzd",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -603,15 +603,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 380723,
-          "cmn": "她早上在那儿。",
-          "author": "sherryyyf",
+          "tatoebaId": 3671543,
+          "cmn": "那儿没有猫。",
+          "author": "shirleyleee",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 313540,
-            "text": "She was there in the morning.",
-            "author": "CK",
+            "tatoebaId": 3671059,
+            "text": "There was no cat.",
+            "author": "speedwell",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -978,21 +978,21 @@
           }
         },
         {
-          "tatoebaId": 4878929,
-          "cmn": "我有两只猫。",
-          "author": "musclegirlxyp",
+          "tatoebaId": 1801131,
+          "cmn": "他有一只狗。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2412739,
-            "text": "I have two cats.",
-            "author": "fjrjdk",
+            "tatoebaId": 288121,
+            "text": "He has a dog.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 3081432,
-            "text": "Saya punya dua ekor kucing.",
-            "author": "Bilmanda",
+            "tatoebaId": 13851795,
+            "text": "Dia punya anjing.",
+            "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -1047,42 +1047,32 @@
           "ind": null
         },
         {
-          "tatoebaId": 687042,
-          "cmn": "我没有钱。",
-          "author": "peipei",
+          "tatoebaId": 1445923,
+          "cmn": "它们没有心吗？",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "心",
           "en": {
-            "tatoebaId": 433613,
-            "text": "I have no money.",
-            "author": "CK",
+            "tatoebaId": 9981716,
+            "text": "Are they heartless?",
+            "author": "francaisr0wlet",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 10363928,
-            "text": "Aku tak punya uang.",
-            "author": "koala",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         },
         {
-          "tatoebaId": 344213,
-          "cmn": "我没有孩子。",
-          "author": "fucongcong",
+          "tatoebaId": 1445924,
+          "cmn": "她们没有心吗？",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": null,
+          "outside": "心",
           "en": {
-            "tatoebaId": 257961,
-            "text": "I don't have any children.",
-            "author": "CK",
+            "tatoebaId": 9981716,
+            "text": "Are they heartless?",
+            "author": "francaisr0wlet",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 12395841,
-            "text": "Aku tidak punya anak.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         }
       ]
     },

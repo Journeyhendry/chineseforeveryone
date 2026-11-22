@@ -318,14 +318,14 @@
           }
         },
         {
-          "tatoebaId": 385298,
-          "cmn": "大家都笑我。",
-          "author": "nickyeow",
+          "tatoebaId": 399028,
+          "cmn": "大家早上好。",
+          "author": "kellenparker",
           "license": "CC BY 2.0 FR",
-          "outside": "笑",
+          "outside": null,
           "en": {
-            "tatoebaId": 255696,
-            "text": "I was laughed at by everyone.",
+            "tatoebaId": 22122,
+            "text": "Good morning, everybody.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -440,7 +440,50 @@
         "女",
         "士"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 10052375,
+          "cmn": "我是位女士。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": "位",
+          "en": {
+            "tatoebaId": 11170525,
+            "text": "I'm a lady.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 3783463,
+          "cmn": "那边的两位女士是谁？",
+          "author": "Debbie_Linder",
+          "license": "CC BY 2.0 FR",
+          "outside": "位",
+          "en": {
+            "tatoebaId": 3780431,
+            "text": "Who are the two women over there?",
+            "author": "phikhanguyen",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 383001,
+          "cmn": "请问，这位女士是什么人？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": "这位",
+          "en": {
+            "tatoebaId": 393492,
+            "text": "Excuse me, who is this woman?",
+            "author": "Mouseneb",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0261",
@@ -943,15 +986,15 @@
           }
         },
         {
-          "tatoebaId": 385298,
-          "cmn": "大家都笑我。",
-          "author": "nickyeow",
+          "tatoebaId": 10460422,
+          "cmn": "什么都没动。",
+          "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
-          "outside": "笑",
+          "outside": "动",
           "en": {
-            "tatoebaId": 255696,
-            "text": "I was laughed at by everyone.",
-            "author": "CK",
+            "tatoebaId": 8481072,
+            "text": "Nothing moved.",
+            "author": "shekitten",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1005,6 +1048,25 @@
           "ind": null
         },
         {
+          "tatoebaId": 4764518,
+          "cmn": "她有一只狗和六只猫。",
+          "author": "ryanwoo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 858614,
+            "text": "She has a dog and six cats.",
+            "author": "princesamee",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 4556298,
+            "text": "Dia punya seekor anjing dan enam ekor kucing.",
+            "author": "dbahasa",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 2000277,
           "cmn": "我正在和朋友打电话呢。",
           "author": "fercheung",
@@ -1014,20 +1076,6 @@
             "tatoebaId": 40151,
             "text": "I've got my friend on the line right now.",
             "author": "CM",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 8888035,
-          "cmn": "我和他认识。",
-          "author": "crescat",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 260219,
-            "text": "I am acquainted with him.",
-            "author": "CH",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

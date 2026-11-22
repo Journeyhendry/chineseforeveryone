@@ -143,15 +143,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 466270,
-          "cmn": "他的衣服穿坏了。",
-          "author": "fucongcong",
+          "tatoebaId": 710840,
+          "cmn": "她穿上袜子。",
+          "author": "Yashanti",
           "license": "CC BY 2.0 FR",
-          "outside": "坏了",
+          "outside": "袜子",
           "en": {
-            "tatoebaId": 285530,
-            "text": "His clothes are worn out.",
-            "author": "CK",
+            "tatoebaId": 1479259,
+            "text": "She put on socks.",
+            "author": "weihaiping",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -215,15 +215,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 466270,
-          "cmn": "他的衣服穿坏了。",
+          "tatoebaId": 846455,
+          "cmn": "我买了些衣服。",
           "author": "fucongcong",
           "license": "CC BY 2.0 FR",
-          "outside": "坏了",
+          "outside": null,
           "en": {
-            "tatoebaId": 285530,
-            "text": "His clothes are worn out.",
-            "author": "CK",
+            "tatoebaId": 8590678,
+            "text": "I have bought some clothes.",
+            "author": "easononizuka",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -487,6 +487,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 9968805,
+          "cmn": "我们现在在做饭。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3128104,
+            "text": "We're cooking now.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 2934370,
           "cmn": "她会做饭。",
           "author": "Popolon",
@@ -496,20 +510,6 @@
             "tatoebaId": 2276710,
             "text": "She knows how to cook.",
             "author": "Hybrid",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 4456369,
-          "cmn": "我会做饭。",
-          "author": "plutowu",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2245639,
-            "text": "I can cook.",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -715,29 +715,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 10961159,
-          "cmn": "饭做好了！",
-          "author": "xjjAstrus",
+          "tatoebaId": 5581100,
+          "cmn": "在做什么？",
+          "author": "grindeldore",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1806424,
-            "text": "The food is ready.",
-            "author": "Ameer",
+            "tatoebaId": 16492,
+            "text": "What are you doing?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 426709,
-          "cmn": "饭还没做好。",
-          "author": "GlossaMatik",
+          "tatoebaId": 7768005,
+          "cmn": "我做不到。",
+          "author": "jiangche",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 426708,
-            "text": "The food's not ready yet.",
-            "author": "CM",
+            "tatoebaId": 25544,
+            "text": "I can't do it.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -851,43 +851,43 @@
       ],
       "examples": [
         {
-          "tatoebaId": 9409627,
-          "cmn": "他开口了。",
-          "author": "BobbyLee",
+          "tatoebaId": 839781,
+          "cmn": "他的公司2005年开的。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1564976,
-            "text": "He spoke.",
-            "author": "marcelostockle",
+            "tatoebaId": 7812224,
+            "text": "His company was set up in 2005.",
+            "author": "sharris123",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 12686379,
-          "cmn": "大学四月开学。",
-          "author": "soueihin",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 12613091,
-            "text": "University starts in April.",
-            "author": "urro",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 688808,
-          "cmn": "明天就开学了。",
+          "tatoebaId": 419976,
+          "cmn": "把门开开！",
           "author": "sysko",
           "license": "CC BY 2.0 FR",
-          "outside": "就",
+          "outside": "把门",
           "en": {
-            "tatoebaId": 21509,
-            "text": "School begins tomorrow.",
-            "author": "CK",
+            "tatoebaId": 476469,
+            "text": "Open the door a bit!",
+            "author": "minshirui",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 9423284,
+          "cmn": "他开了灯。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": "灯",
+          "en": {
+            "tatoebaId": 8680683,
+            "text": "He turned on the lights.",
+            "author": "Amastan",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1035,14 +1035,14 @@
           "ind": null
         },
         {
-          "tatoebaId": 3952421,
-          "cmn": "正在下雨。",
-          "author": "cooper",
+          "tatoebaId": 819440,
+          "cmn": "正在下雪。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2713757,
-            "text": "It's raining now.",
+            "tatoebaId": 448963,
+            "text": "It's snowing.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -1109,15 +1109,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 1077784,
-          "cmn": "再来一次！",
-          "author": "Vortarulo",
+          "tatoebaId": 350890,
+          "cmn": "再也吃不下了。",
+          "author": "zhouj1955",
           "license": "CC BY 2.0 FR",
-          "outside": "一次",
+          "outside": null,
           "en": {
-            "tatoebaId": 4736846,
-            "text": "One more time!",
-            "author": "paper1n0",
+            "tatoebaId": 31230,
+            "text": "I could not eat another bite.",
+            "author": "jakov",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -1256,28 +1256,28 @@
           "ind": null
         },
         {
-          "tatoebaId": 332800,
-          "cmn": "帮我一下。",
-          "author": "fucongcong",
+          "tatoebaId": 8877801,
+          "cmn": "休息一下。",
+          "author": "iiujik",
           "license": "CC BY 2.0 FR",
-          "outside": "帮",
+          "outside": null,
           "en": {
-            "tatoebaId": 266065,
-            "text": "Help me.",
-            "author": "Zifre",
+            "tatoebaId": 2249847,
+            "text": "Relax a moment.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 8496264,
-          "cmn": "再试一下。",
-          "author": "maxine",
+          "tatoebaId": 14004679,
+          "cmn": "休息一下吧。",
+          "author": "jan_OkulaJu",
           "license": "CC BY 2.0 FR",
-          "outside": "试",
+          "outside": null,
           "en": {
-            "tatoebaId": 31723,
-            "text": "Try again.",
+            "tatoebaId": 2250035,
+            "text": "Take a break.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },

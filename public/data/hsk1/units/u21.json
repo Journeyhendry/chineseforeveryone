@@ -59,29 +59,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 1399602,
-          "cmn": "那飞机真大！",
-          "author": "sirpoot",
+          "tatoebaId": 336235,
+          "cmn": "我家很大。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 67847,
-            "text": "How huge that airship is!",
-            "author": "sundown",
+            "tatoebaId": 250554,
+            "text": "My house is big.",
+            "author": "Scott",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
         },
         {
-          "tatoebaId": 2137751,
-          "cmn": "你的房间很大。",
-          "author": "sixtynine",
+          "tatoebaId": 454259,
+          "cmn": "他多大了？",
+          "author": "peipei",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2166207,
-            "text": "Your room is big.",
-            "author": "faraway9911",
+            "tatoebaId": 288982,
+            "text": "How old is he?",
+            "author": "ludoviko",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -268,6 +268,25 @@
       ],
       "examples": [
         {
+          "tatoebaId": 744283,
+          "cmn": "她很漂亮。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 410244,
+            "text": "She is beautiful.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7062012,
+            "text": "Dia cantik.",
+            "author": "purichan",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 6055157,
           "cmn": "她的女儿都很漂亮。",
           "author": "verdakoro",
@@ -287,23 +306,18 @@
           }
         },
         {
-          "tatoebaId": 1707997,
-          "cmn": "我比你漂亮。",
-          "author": "ashulga",
+          "tatoebaId": 863601,
+          "cmn": "你很漂亮。",
+          "author": "Shishir",
           "license": "CC BY 2.0 FR",
-          "outside": "比",
+          "outside": null,
           "en": {
-            "tatoebaId": 29056,
-            "text": "I am more beautiful than you.",
-            "author": "CC",
+            "tatoebaId": 863589,
+            "text": "You're very pretty.",
+            "author": "Daga007",
             "license": "CC BY 2.0 FR"
           },
-          "ind": {
-            "tatoebaId": 7666722,
-            "text": "Aku lebih cantik darimu.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
+          "ind": null
         }
       ]
     },
@@ -692,14 +706,42 @@
       ],
       "examples": [
         {
-          "tatoebaId": 336618,
-          "cmn": "去年下了很多雪。",
-          "author": "fucongcong",
+          "tatoebaId": 776959,
+          "cmn": "今天下雪。",
+          "author": "Martha",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 19421,
-            "text": "We had a lot of snow last year.",
+            "tatoebaId": 242911,
+            "text": "It's snowy today.",
+            "author": "IdiomHunter",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 819440,
+          "cmn": "正在下雪。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 448963,
+            "text": "It's snowing.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2680360,
+          "cmn": "要下雪了。",
+          "author": "User5120",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 241715,
+            "text": "It is going to snow.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -751,6 +793,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 824484,
+          "cmn": "它太大了。",
+          "author": "Martha",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 435409,
+            "text": "It's too big.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 4761386,
           "cmn": "太贵了吧！",
           "author": "billt_estates",
@@ -760,20 +816,6 @@
             "tatoebaId": 1719,
             "text": "It's too expensive!",
             "author": "Swift",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 7771677,
-          "cmn": "这太贵了。",
-          "author": "jiangche",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 276955,
-            "text": "It's too expensive.",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -838,15 +880,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 430983,
-          "cmn": "她唱歌非常好。",
-          "author": "fucongcong",
+          "tatoebaId": 13511636,
+          "cmn": "非常好玩。",
+          "author": "LeviHighway",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 1173668,
-            "text": "She can sing very well.",
-            "author": "CK",
+            "tatoebaId": 13537669,
+            "text": "It is very fun.",
+            "author": "LeviHighway",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -886,6 +928,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 1891626,
+          "cmn": "你真漂亮！",
+          "author": "fercheung",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2446,
+            "text": "How beautiful you are!",
+            "author": "al_ex_an_der",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 3377988,
           "cmn": "是真的吗？",
           "author": "GlossaMatik",
@@ -909,20 +965,6 @@
             "tatoebaId": 429537,
             "text": "It's fucking hot.",
             "author": "blay_paul",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 5611557,
-          "cmn": "不是真的！",
-          "author": "verdastelo9604",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 2282392,
-            "text": "It's not true!",
-            "author": "Hybrid",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

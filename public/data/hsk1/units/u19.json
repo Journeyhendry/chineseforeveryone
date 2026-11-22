@@ -127,15 +127,29 @@
           "ind": null
         },
         {
-          "tatoebaId": 844711,
-          "cmn": "我是在网上卖的衣服。",
-          "author": "eastasiastudent",
+          "tatoebaId": 8689187,
+          "cmn": "这个卖不卖？",
+          "author": "jacintoo",
           "license": "CC BY 2.0 FR",
-          "outside": "网上",
+          "outside": null,
           "en": {
-            "tatoebaId": 844712,
-            "text": "It was online that I sold the clothes.",
-            "author": "eastasiastudent",
+            "tatoebaId": 1425424,
+            "text": "Is that for sale?",
+            "author": "Spamster",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 2299585,
+          "cmn": "我下午去卖车。",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2300031,
+            "text": "I'm going to go sell my car this afternoon.",
+            "author": "FeuDRenais2",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -349,15 +363,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 8883985,
-          "cmn": "日元涨了。",
-          "author": "crescat",
+          "tatoebaId": 528021,
+          "cmn": "我只有5000日元。",
+          "author": "biglion",
           "license": "CC BY 2.0 FR",
-          "outside": "涨",
+          "outside": null,
           "en": {
-            "tatoebaId": 281337,
-            "text": "The Japanese yen appreciated.",
-            "author": "shekitten",
+            "tatoebaId": 252597,
+            "text": "I have only five thousand yen.",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -421,15 +435,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 11698443,
-          "cmn": "茶比牛奶贵吗？",
-          "author": "Jokubas",
+          "tatoebaId": 1424312,
+          "cmn": "哪个比较贵？",
+          "author": "sirpoot",
           "license": "CC BY 2.0 FR",
-          "outside": "比",
+          "outside": "比较",
           "en": {
-            "tatoebaId": 6825981,
-            "text": "Is tea more expensive than milk?",
-            "author": "mervert1",
+            "tatoebaId": 1192246,
+            "text": "Which one is more expensive?",
+            "author": "Talonmalon",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -462,7 +476,50 @@
         "便",
         "宜"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 1216079,
+          "cmn": "这个很便宜。",
+          "author": "Takuya",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2053999,
+            "text": "This is cheap.",
+            "author": "JarHead54321",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 804972,
+          "cmn": "很便宜，是吗？",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 645084,
+            "text": "That's cheap, isn't it?",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 430143,
+          "cmn": "我们的饭菜很便宜。",
+          "author": "GlossaMatik",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 430142,
+            "text": "Our food is cheap.",
+            "author": "FeuDRenais",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0086",
@@ -646,15 +703,43 @@
       ],
       "examples": [
         {
-          "tatoebaId": 9958387,
-          "cmn": "这件衣服很好看的。",
+          "tatoebaId": 400394,
+          "cmn": "你知道这件事吗？",
+          "author": "sysko",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1360840,
+            "text": "Do you know this thing?",
+            "author": "xrchz",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 403269,
+          "cmn": "那件事谁都知道。",
           "author": "GlossaMatik",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 12090934,
-            "text": "This shirt looks great.",
-            "author": "FishlandicFishy",
+            "tatoebaId": 449205,
+            "text": "Everybody knows that.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 7768168,
+          "cmn": "谁能做这件工作？",
+          "author": "jiangche",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 276202,
+            "text": "Who can do this work?",
+            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

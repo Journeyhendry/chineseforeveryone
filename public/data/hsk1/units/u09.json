@@ -754,7 +754,50 @@
         "苹",
         "果"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 755839,
+          "cmn": "几只苹果？",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1164076,
+            "text": "How many apples are there?",
+            "author": "Chrikaru",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 755840,
+          "cmn": "多少苹果？",
+          "author": "U2FS",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1164076,
+            "text": "How many apples are there?",
+            "author": "Chrikaru",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
+          "tatoebaId": 10966791,
+          "cmn": "你多吃苹果。",
+          "author": "xjjAstrus",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 13187582,
+            "text": "Eat more apples.",
+            "author": "atitarev",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0164",
@@ -799,6 +842,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 9453418,
+          "cmn": "我们有六枚鸡蛋。",
+          "author": "BobbyLee",
+          "license": "CC BY 2.0 FR",
+          "outside": "枚",
+          "en": {
+            "tatoebaId": 1113266,
+            "text": "We have a half-dozen eggs.",
+            "author": "CM",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 4673809,
           "cmn": "我不喜欢鸡蛋。",
           "author": "McMeao",
@@ -807,20 +864,6 @@
           "en": {
             "tatoebaId": 325226,
             "text": "I don't care for eggs.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 347058,
-          "cmn": "我买了几个鸡蛋和一点牛奶。",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 262176,
-            "text": "I bought a few eggs and a little milk.",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
@@ -884,15 +927,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 8929172,
-          "cmn": "我们在吃面包。",
-          "author": "crescat",
+          "tatoebaId": 787242,
+          "cmn": "她有点儿面包。",
+          "author": "fucongcong",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 8860712,
-            "text": "We are eating bread.",
-            "author": "AlanF_US",
+            "tatoebaId": 456691,
+            "text": "She has a little bread.",
+            "author": "lukaszpp",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -956,7 +999,22 @@
         "饺",
         "子"
       ],
-      "examples": []
+      "examples": [
+        {
+          "tatoebaId": 2309573,
+          "cmn": "晚上我们去吃饺子，好吗？",
+          "author": "xuan",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 2311280,
+            "text": "We're going out for dumplings in the evening, all right?",
+            "author": "FeuDRenais2",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        }
+      ]
     },
     {
       "id": "L1-0244",
@@ -1018,6 +1076,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 4874063,
+          "cmn": "他们的苹果没有我们的好吃。",
+          "author": "musclegirlxyp",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 1580112,
+            "text": "Their apples aren't as tasty as ours.",
+            "author": "fanty",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 2062924,
           "cmn": "香蕉很好吃。",
           "author": "mrtaistoi",
@@ -1041,20 +1113,6 @@
             "tatoebaId": 1668021,
             "text": "Everything was delicious!",
             "author": "kerbear407",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 2778814,
-          "cmn": "这条鱼很好吃。",
-          "author": "GlossaMatik",
-          "license": "CC BY 2.0 FR",
-          "outside": "条鱼",
-          "en": {
-            "tatoebaId": 3049852,
-            "text": "This fish is delicious.",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null

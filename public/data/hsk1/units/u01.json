@@ -41,6 +41,20 @@
       ],
       "examples": [
         {
+          "tatoebaId": 392248,
+          "cmn": "你好，怎么样？",
+          "author": "fucongcong",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 415678,
+            "text": "Good day, how are you?",
+            "author": "blay_paul",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 545888,
           "cmn": "晚上好，你好吗？",
           "author": "sysko",
@@ -55,29 +69,15 @@
           "ind": null
         },
         {
-          "tatoebaId": 2390042,
-          "cmn": "你好像很忙。",
-          "author": "sysko",
+          "tatoebaId": 6149242,
+          "cmn": "你好！我叫小雨。",
+          "author": "xjjAstrus",
           "license": "CC BY 2.0 FR",
-          "outside": "像",
+          "outside": null,
           "en": {
-            "tatoebaId": 68945,
-            "text": "You look busy.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 14020244,
-          "cmn": "你好。我叫包。",
-          "author": "TanukiKun",
-          "license": "CC BY 2.0 FR",
-          "outside": "包",
-          "en": {
-            "tatoebaId": 14020243,
-            "text": "Hello. I am Bao.",
-            "author": "TanukiKun",
+            "tatoebaId": 6276578,
+            "text": "Hello! I'm called Xiaoyu.",
+            "author": "Kiwi",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -287,6 +287,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 4563003,
+          "cmn": "请问您贵姓",
+          "author": "ecl1",
+          "license": "CC BY 2.0 FR",
+          "outside": "贵姓",
+          "en": {
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 782332,
           "cmn": "您不是医生。",
           "author": "fucongcong",
@@ -302,25 +316,6 @@
             "tatoebaId": 12747555,
             "text": "Anda bukan dokter.",
             "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 444659,
-          "cmn": "您叫什么名字？",
-          "author": "fucongcong",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 70623,
-            "text": "What is your name?",
-            "author": "frpzzd",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 365994,
-            "text": "Siapa nama Anda?",
-            "author": "hayabusa_future",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -524,6 +519,20 @@
           }
         },
         {
+          "tatoebaId": 4563003,
+          "cmn": "请问您贵姓",
+          "author": "ecl1",
+          "license": "CC BY 2.0 FR",
+          "outside": "贵姓",
+          "en": {
+            "tatoebaId": 70623,
+            "text": "What is your name?",
+            "author": "frpzzd",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 334425,
           "cmn": "请问鸡蛋在哪里？",
           "author": "fucongcong",
@@ -533,20 +542,6 @@
             "tatoebaId": 1565,
             "text": "Where are the eggs, please?",
             "author": "RoyalBee",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 12569616,
-          "cmn": "请问你的名字是？",
-          "author": "lnvq",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 63911,
-            "text": "May I have your name, please?",
-            "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -706,6 +701,20 @@
           "ind": null
         },
         {
+          "tatoebaId": 3565113,
+          "cmn": "我只想说对不起。",
+          "author": "trieuho",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 3565114,
+            "text": "I want to say nothing but sorry.",
+            "author": "trieuho",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": null
+        },
+        {
           "tatoebaId": 3378156,
           "cmn": "对不起，我来晚了。",
           "author": "GlossaMatik",
@@ -715,20 +724,6 @@
             "tatoebaId": 277376,
             "text": "I'm sorry I'm late.",
             "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": null
-        },
-        {
-          "tatoebaId": 750140,
-          "cmn": "对不起，火车晚点了。",
-          "author": "U2FS",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 56385,
-            "text": "Sorry. The train was late.",
-            "author": "CM",
             "license": "CC BY 2.0 FR"
           },
           "ind": null
@@ -944,21 +939,21 @@
           }
         },
         {
-          "tatoebaId": 4881670,
-          "cmn": "这是谁的你知道吗？",
-          "author": "musclegirlxyp",
+          "tatoebaId": 1323682,
+          "cmn": "你喜欢苹果吗？",
+          "author": "vicch",
           "license": "CC BY 2.0 FR",
           "outside": null,
           "en": {
-            "tatoebaId": 2837952,
-            "text": "Do you know who this belongs to?",
+            "tatoebaId": 29617,
+            "text": "Do you like apples?",
             "author": "CK",
             "license": "CC BY 2.0 FR"
           },
           "ind": {
-            "tatoebaId": 7546975,
-            "text": "Tahukah kamu milik siapa ini?",
-            "author": "HAGNi",
+            "tatoebaId": 11227117,
+            "text": "Apakah kamu suka apel?",
+            "author": "Pi31415i",
             "license": "CC BY 2.0 FR"
           }
         }
@@ -1005,6 +1000,25 @@
           "ind": null
         },
         {
+          "tatoebaId": 744283,
+          "cmn": "她很漂亮。",
+          "author": "Vortarulo",
+          "license": "CC BY 2.0 FR",
+          "outside": null,
+          "en": {
+            "tatoebaId": 410244,
+            "text": "She is beautiful.",
+            "author": "CK",
+            "license": "CC BY 2.0 FR"
+          },
+          "ind": {
+            "tatoebaId": 7062012,
+            "text": "Dia cantik.",
+            "author": "purichan",
+            "license": "CC BY 2.0 FR"
+          }
+        },
+        {
           "tatoebaId": 333127,
           "cmn": "今天天气很好。",
           "author": "fucongcong",
@@ -1019,25 +1033,6 @@
           "ind": {
             "tatoebaId": 13732610,
             "text": "Hari ini cuacanya bagus sekali.",
-            "author": "HAGNi",
-            "license": "CC BY 2.0 FR"
-          }
-        },
-        {
-          "tatoebaId": 710167,
-          "cmn": "你们有很多书。",
-          "author": "Shishir",
-          "license": "CC BY 2.0 FR",
-          "outside": null,
-          "en": {
-            "tatoebaId": 16525,
-            "text": "You have many books.",
-            "author": "CK",
-            "license": "CC BY 2.0 FR"
-          },
-          "ind": {
-            "tatoebaId": 12775404,
-            "text": "Kalian punya banyak buku.",
             "author": "HAGNi",
             "license": "CC BY 2.0 FR"
           }

@@ -1,0 +1,731 @@
+{
+  "version": 1,
+  "note": "Dibuat oleh scripts/tts-basics/basics.py. File tetap dipakai situs (suara terbaik dari 3 percobaan), tetapi belum lolos cek Whisper.",
+  "whisper": {
+    "model": "faster-whisper small",
+    "passed": 72,
+    "total": 162
+  },
+  "items": [
+    {
+      "audioId": "py-i-f",
+      "hanzi": "发",
+      "pinyin": "fā",
+      "transcript": "but | x3: But neverBut neverBut never",
+      "attempts": 3,
+      "file": "py-i-f.mp3"
+    },
+    {
+      "audioId": "py-i-n",
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "transcript": "納云 | x3: 那一那一那一",
+      "attempts": 3,
+      "file": "py-i-n.mp3"
+    },
+    {
+      "audioId": "py-i-k",
+      "hanzi": "科",
+      "pinyin": "kē",
+      "transcript": "Good | x3: 可…可…可…",
+      "attempts": 3,
+      "file": "py-i-k.mp3"
+    },
+    {
+      "audioId": "py-i-j",
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "transcript": "無事 | x3: 無視無視無視",
+      "attempts": 3,
+      "file": "py-i-j.mp3"
+    },
+    {
+      "audioId": "py-i-q",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "transcript": "起 | x3: 起起起",
+      "attempts": 3,
+      "file": "py-i-q.mp3"
+    },
+    {
+      "audioId": "py-i-x",
+      "hanzi": "西",
+      "pinyin": "xī",
+      "transcript": "我們下次見 | x3: 我 see it我 see it我 see it",
+      "attempts": 3,
+      "file": "py-i-x.mp3"
+    },
+    {
+      "audioId": "py-i-zh",
+      "hanzi": "知",
+      "pinyin": "zhī",
+      "transcript": "一直 | x3: 移植",
+      "attempts": 3,
+      "file": "py-i-zh.mp3"
+    },
+    {
+      "audioId": "py-i-ch",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "transcript": "直言 | x3: 知恩",
+      "attempts": 3,
+      "file": "py-i-ch.mp3"
+    },
+    {
+      "audioId": "py-i-sh",
+      "hanzi": "诗",
+      "pinyin": "shī",
+      "transcript": "是 | x3: 是是是",
+      "attempts": 3,
+      "file": "py-i-sh.mp3"
+    },
+    {
+      "audioId": "py-i-r",
+      "hanzi": "日",
+      "pinyin": "rì",
+      "transcript": "月跑 | x3: 略託",
+      "attempts": 3,
+      "file": "py-i-r.mp3"
+    },
+    {
+      "audioId": "py-i-z",
+      "hanzi": "资",
+      "pinyin": "zī",
+      "transcript": "因此 | x3: 因此",
+      "attempts": 3,
+      "file": "py-i-z.mp3"
+    },
+    {
+      "audioId": "py-i-c",
+      "hanzi": "词",
+      "pinyin": "cí",
+      "transcript": "此 | x3: 此",
+      "attempts": 3,
+      "file": "py-i-c.mp3"
+    },
+    {
+      "audioId": "py-i-s",
+      "hanzi": "思",
+      "pinyin": "sī",
+      "transcript": "死了 | x3: sicksicksick",
+      "attempts": 3,
+      "file": "py-i-s.mp3"
+    },
+    {
+      "audioId": "py-i-y",
+      "hanzi": "牙",
+      "pinyin": "yá",
+      "transcript": "YAS | x3: Yat",
+      "attempts": 3,
+      "file": "py-i-y.mp3"
+    },
+    {
+      "audioId": "py-i-w",
+      "hanzi": "乌",
+      "pinyin": "wū",
+      "transcript": "вот | x3: WATCHWATCHWATCH",
+      "attempts": 3,
+      "file": "py-i-w.mp3"
+    },
+    {
+      "audioId": "py-f-a",
+      "hanzi": "阿",
+      "pinyin": "ā",
+      "transcript": "like | x3: likelikelike",
+      "attempts": 3,
+      "file": "py-f-a.mp3"
+    },
+    {
+      "audioId": "py-f-o",
+      "hanzi": "波",
+      "pinyin": "bō",
+      "transcript": "BUT | x3: BossBossBoss",
+      "attempts": 3,
+      "file": "py-f-o.mp3"
+    },
+    {
+      "audioId": "py-f-e",
+      "hanzi": "鹅",
+      "pinyin": "é",
+      "transcript": "呃 | x3: 呃! 呃! 呃!",
+      "attempts": 3,
+      "file": "py-f-e.mp3"
+    },
+    {
+      "audioId": "py-f-u",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "transcript": "會 | x3: Woot!Woot!Woot!",
+      "attempts": 3,
+      "file": "py-f-u.mp3"
+    },
+    {
+      "audioId": "py-f-v",
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "transcript": "月 | x3: 喵喵喵",
+      "attempts": 3,
+      "file": "py-f-v.mp3"
+    },
+    {
+      "audioId": "py-f-ai",
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "transcript": "欸 | x3: 哀哀哀",
+      "attempts": 3,
+      "file": "py-f-ai.mp3"
+    },
+    {
+      "audioId": "py-f-ou",
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "transcript": "夠了 | x3: go it",
+      "attempts": 3,
+      "file": "py-f-ou.mp3"
+    },
+    {
+      "audioId": "py-f-ie",
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "transcript": "see you | x3: sit",
+      "attempts": 3,
+      "file": "py-f-ie.mp3"
+    },
+    {
+      "audioId": "py-f-ve",
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "transcript": "YES | x3: wesswesswess",
+      "attempts": 3,
+      "file": "py-f-ve.mp3"
+    },
+    {
+      "audioId": "py-f-er",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "transcript": "呃 | x3: RoiRoiRoi",
+      "attempts": 3,
+      "file": "py-f-er.mp3"
+    },
+    {
+      "audioId": "py-f-in",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "transcript": "www.youtube.com | x3: 謝謝謝謝謝謝",
+      "attempts": 3,
+      "file": "py-f-in.mp3"
+    },
+    {
+      "audioId": "py-f-vn",
+      "hanzi": "云",
+      "pinyin": "yún",
+      "transcript": "圓 | x3: 圓",
+      "attempts": 3,
+      "file": "py-f-vn.mp3"
+    },
+    {
+      "audioId": "py-f-ing",
+      "hanzi": "星",
+      "pinyin": "xīng",
+      "transcript": "謝謝你 | x3: 性性性",
+      "attempts": 3,
+      "file": "py-f-ing.mp3"
+    },
+    {
+      "audioId": "py-f-ia",
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "transcript": "讲 | x3: 讲 讲 讲",
+      "attempts": 3,
+      "file": "py-f-ia.mp3"
+    },
+    {
+      "audioId": "py-f-ian",
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "transcript": "甜 | x3: 甜",
+      "attempts": 3,
+      "file": "py-f-ian.mp3"
+    },
+    {
+      "audioId": "py-f-iao",
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "transcript": "秀 | x3: 一宿",
+      "attempts": 3,
+      "file": "py-f-iao.mp3"
+    },
+    {
+      "audioId": "tn-ma1",
+      "hanzi": "妈",
+      "pinyin": "mā",
+      "transcript": "麻煩 | x3: MasheMasheMashe",
+      "attempts": 3,
+      "file": "tn-ma1.mp3"
+    },
+    {
+      "audioId": "tn-ma2",
+      "hanzi": "麻",
+      "pinyin": "má",
+      "transcript": "麻煩 | x3: 麻吉麻吉麻吉",
+      "attempts": 3,
+      "file": "tn-ma2.mp3"
+    },
+    {
+      "audioId": "tn-ma3",
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "transcript": "麻煩 | x3: MASHAMASHAMASHA",
+      "attempts": 3,
+      "file": "tn-ma3.mp3"
+    },
+    {
+      "audioId": "tn-ma4",
+      "hanzi": "骂",
+      "pinyin": "mà",
+      "transcript": "麻煩 | x3: MasheMasheMashe",
+      "attempts": 3,
+      "file": "tn-ma4.mp3"
+    },
+    {
+      "audioId": "tn-ba1",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "transcript": "Bye | x3: bye",
+      "attempts": 3,
+      "file": "tn-ba1.mp3"
+    },
+    {
+      "audioId": "tn-ba2",
+      "hanzi": "拔",
+      "pinyin": "bá",
+      "transcript": "Bye | x3: BuddyBuddyBuddy",
+      "attempts": 3,
+      "file": "tn-ba2.mp3"
+    },
+    {
+      "audioId": "tn-ba3",
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "transcript": "Bye | x3: BYEBYEBYE",
+      "attempts": 3,
+      "file": "tn-ba3.mp3"
+    },
+    {
+      "audioId": "tn-ba4",
+      "hanzi": "爸",
+      "pinyin": "bà",
+      "transcript": "by | x3: BuzzyBuzzyBuzzy",
+      "attempts": 3,
+      "file": "tn-ba4.mp3"
+    },
+    {
+      "audioId": "tn-yi3",
+      "hanzi": "椅",
+      "pinyin": "yǐ",
+      "transcript": "唷 | x3: NiTNiTNiT",
+      "attempts": 3,
+      "file": "tn-yi3.mp3"
+    },
+    {
+      "audioId": "tn-tang1",
+      "hanzi": "汤",
+      "pinyin": "tāng",
+      "transcript": "成也 | x3: 長矣",
+      "attempts": 3,
+      "file": "tn-tang1.mp3"
+    },
+    {
+      "audioId": "tn-tang2",
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "transcript": "承鄞 | x3: 蒼蠅",
+      "attempts": 3,
+      "file": "tn-tang2.mp3"
+    },
+    {
+      "audioId": "tn-tang3",
+      "hanzi": "躺",
+      "pinyin": "tǎng",
+      "transcript": "曾與 | x3: 蒼蠅",
+      "attempts": 3,
+      "file": "tn-tang3.mp3"
+    },
+    {
+      "audioId": "tn-tang4",
+      "hanzi": "烫",
+      "pinyin": "tàng",
+      "transcript": "趁雨 | x3: 唱椅",
+      "attempts": 3,
+      "file": "tn-tang4.mp3"
+    },
+    {
+      "audioId": "tn-n-baba",
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "transcript": "Bye Bye",
+      "attempts": 3,
+      "file": "tn-n-baba.mp3"
+    },
+    {
+      "audioId": "tn-n-haoma",
+      "hanzi": "好吗",
+      "pinyin": "hǎoma",
+      "transcript": "靠慢",
+      "attempts": 3,
+      "file": "tn-n-haoma.mp3"
+    },
+    {
+      "audioId": "rd-ni3-4f60",
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "transcript": "nick | x3: NiHNiHNiH",
+      "attempts": 3,
+      "file": "rd-ni3-4f60.mp3"
+    },
+    {
+      "audioId": "rd-xiu1-4f11",
+      "hanzi": "休",
+      "pinyin": "xiū",
+      "transcript": "秀 | x3: 一修",
+      "attempts": 3,
+      "file": "rd-xiu1-4f11.mp3"
+    },
+    {
+      "audioId": "rd-chi1-5403",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "transcript": "致恩 | x3: 致恩",
+      "attempts": 3,
+      "file": "rd-chi1-5403.mp3"
+    },
+    {
+      "audioId": "rd-jiao4-53eb",
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "transcript": "yo | x3: 就",
+      "attempts": 3,
+      "file": "rd-jiao4-53eb.mp3"
+    },
+    {
+      "audioId": "rd-chang4-5531",
+      "hanzi": "唱",
+      "pinyin": "chàng",
+      "transcript": "正 | x3: 正",
+      "attempts": 3,
+      "file": "rd-chang4-5531.mp3"
+    },
+    {
+      "audioId": "rd-ma1-5988",
+      "hanzi": "妈",
+      "pinyin": "mā",
+      "transcript": "much | x3: MasjMasjMasj",
+      "attempts": 3,
+      "file": "rd-ma1-5988.mp3"
+    },
+    {
+      "audioId": "rd-jie3-59d0",
+      "hanzi": "姐",
+      "pinyin": "jiě",
+      "transcript": "見 | x3: 姬野姬野姬野",
+      "attempts": 3,
+      "file": "rd-jie3-59d0.mp3"
+    },
+    {
+      "audioId": "rd-mei4-59b9",
+      "hanzi": "妹",
+      "pinyin": "mèi",
+      "transcript": "MAKE | x3: MateMateMate",
+      "attempts": 3,
+      "file": "rd-mei4-59b9.mp3"
+    },
+    {
+      "audioId": "rd-mei2-6ca1",
+      "hanzi": "没",
+      "pinyin": "méi",
+      "transcript": "美 | x3: MAKE",
+      "attempts": 3,
+      "file": "rd-mei2-6ca1.mp3"
+    },
+    {
+      "audioId": "rd-han4-6c49",
+      "hanzi": "汉",
+      "pinyin": "hàn",
+      "transcript": "看你 | x3: 看你看你看你",
+      "attempts": 3,
+      "file": "rd-han4-6c49.mp3"
+    },
+    {
+      "audioId": "rd-xiao4-6821",
+      "hanzi": "校",
+      "pinyin": "xiào",
+      "transcript": "已秀 | x3: 移秀",
+      "attempts": 3,
+      "file": "rd-xiao4-6821.mp3"
+    },
+    {
+      "audioId": "rd-ji1-673a",
+      "hanzi": "机",
+      "pinyin": "jī",
+      "transcript": "無事 | x3: 無止無止無止",
+      "attempts": 3,
+      "file": "rd-ji1-673a.mp3"
+    },
+    {
+      "audioId": "rd-yi3-6905",
+      "hanzi": "椅",
+      "pinyin": "yǐ",
+      "transcript": "唷 | x3: VITVITVIT",
+      "attempts": 3,
+      "file": "rd-yi3-6905.mp3"
+    },
+    {
+      "audioId": "rd-zhuo1-684c",
+      "hanzi": "桌",
+      "pinyin": "zhuō",
+      "transcript": "祝 | x3: 著著著",
+      "attempts": 3,
+      "file": "rd-zhuo1-684c.mp3"
+    },
+    {
+      "audioId": "rd-zao3-65e9",
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "transcript": "走 | x3: 走",
+      "attempts": 3,
+      "file": "rd-zao3-65e9.mp3"
+    },
+    {
+      "audioId": "rd-shi2-65f6",
+      "hanzi": "时",
+      "pinyin": "shí",
+      "transcript": "吃了 | x3: 吃個吃個吃個",
+      "attempts": 3,
+      "file": "rd-shi2-65f6.mp3"
+    },
+    {
+      "audioId": "rd-wan3-665a",
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "transcript": "問 | x3: 問",
+      "attempts": 3,
+      "file": "rd-wan3-665a.mp3"
+    },
+    {
+      "audioId": "rd-da3-6253",
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "transcript": "大家愉快 | x3: 大喜大喜大喜",
+      "attempts": 3,
+      "file": "rd-da3-6253.mp3"
+    },
+    {
+      "audioId": "rd-zhao3-627e",
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "transcript": "拜拜 | x3: 你走你走你走",
+      "attempts": 3,
+      "file": "rd-zhao3-627e.mp3"
+    },
+    {
+      "audioId": "rd-shuo1-8bf4",
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "transcript": "若 | x3: 說",
+      "attempts": 3,
+      "file": "rd-shuo1-8bf4.mp3"
+    },
+    {
+      "audioId": "rd-hua4-8bdd",
+      "hanzi": "话",
+      "pinyin": "huà",
+      "transcript": "What? | x3: 快!",
+      "attempts": 3,
+      "file": "rd-hua4-8bdd.mp3"
+    },
+    {
+      "audioId": "rd-shei2-8c01",
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "transcript": "水 | x3: 水",
+      "attempts": 3,
+      "file": "rd-shei2-8c01.mp3"
+    },
+    {
+      "audioId": "rd-xiang3-60f3",
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "transcript": "香 | x3: 香",
+      "attempts": 3,
+      "file": "rd-xiang3-60f3.mp3"
+    },
+    {
+      "audioId": "rd-nin2-60a8",
+      "hanzi": "您",
+      "pinyin": "nín",
+      "transcript": "黏 | x3: 年 年 年 年 年 年",
+      "attempts": 3,
+      "file": "rd-nin2-60a8.mp3"
+    },
+    {
+      "audioId": "rd-cai4-83dc",
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "transcript": "再見 | x3: 菜",
+      "attempts": 3,
+      "file": "rd-cai4-83dc.mp3"
+    },
+    {
+      "audioId": "rd-cha2-8336",
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "transcript": "長 | x3: 長",
+      "attempts": 3,
+      "file": "rd-cha2-8336.mp3"
+    },
+    {
+      "audioId": "rd-ping2-82f9",
+      "hanzi": "苹",
+      "pinyin": "píng",
+      "transcript": "停 | x3: 请请请",
+      "attempts": 3,
+      "file": "rd-ping2-82f9.mp3"
+    },
+    {
+      "audioId": "rd-jia1-5bb6",
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "transcript": "讲 | x3: 讲 讲 讲",
+      "attempts": 3,
+      "file": "rd-jia1-5bb6.mp3"
+    },
+    {
+      "audioId": "rd-zi4-5b57",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "transcript": "Wu Zui | x3: 烏紫艾烏紫艾烏紫艾",
+      "attempts": 3,
+      "file": "rd-zi4-5b57.mp3"
+    },
+    {
+      "audioId": "rd-ke4-5ba2",
+      "hanzi": "客",
+      "pinyin": "kè",
+      "transcript": "客人 | x3: ",
+      "attempts": 3,
+      "file": "rd-ke4-5ba2.mp3"
+    },
+    {
+      "audioId": "rd-fan4-996d",
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "transcript": "笨 | x3: 憤怡",
+      "attempts": 3,
+      "file": "rd-fan4-996d.mp3"
+    },
+    {
+      "audioId": "rd-jiao3-997a",
+      "hanzi": "饺",
+      "pinyin": "jiǎo",
+      "transcript": "就 | x3: 酒",
+      "attempts": 3,
+      "file": "rd-jiao3-997a.mp3"
+    },
+    {
+      "audioId": "rd-jian1-95f4",
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "transcript": "zian | x3: 剪",
+      "attempts": 3,
+      "file": "rd-jian1-95f4.mp3"
+    },
+    {
+      "audioId": "rd-hai2-8fd8",
+      "hanzi": "还",
+      "pinyin": "hái",
+      "transcript": "嗨! | x3: 海",
+      "attempts": 3,
+      "file": "rd-hai2-8fd8.mp3"
+    },
+    {
+      "audioId": "cp-xiu1",
+      "hanzi": "休",
+      "pinyin": "xiū",
+      "transcript": "秀 | x3: 秀",
+      "attempts": 3,
+      "file": "cp-xiu1.mp3"
+    },
+    {
+      "audioId": "cp-zi4",
+      "hanzi": "字",
+      "pinyin": "zì",
+      "transcript": "嘶嘶嘶 | x3: Wuzzi,Wuzzi,Wuzzi",
+      "attempts": 3,
+      "file": "cp-zi4.mp3"
+    },
+    {
+      "audioId": "cp-guo2",
+      "hanzi": "国",
+      "pinyin": "guó",
+      "transcript": "Good | x3: 過",
+      "attempts": 3,
+      "file": "cp-guo2.mp3"
+    },
+    {
+      "audioId": "ph-n2",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "transcript": "呃 | x3: 糯糯糯",
+      "attempts": 3,
+      "file": "ph-n2.mp3"
+    },
+    {
+      "audioId": "ph-n5",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "transcript": "will it | x3: WOODWOODWOOD",
+      "attempts": 3,
+      "file": "ph-n5.mp3"
+    },
+    {
+      "audioId": "ph-n7",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "transcript": "起 | x3: 起起起",
+      "attempts": 3,
+      "file": "ph-n7.mp3"
+    },
+    {
+      "audioId": "ph-n8",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "transcript": "Bye | x3: bye",
+      "attempts": 3,
+      "file": "ph-n8.mp3"
+    },
+    {
+      "audioId": "ph-n9",
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "transcript": "就 | x3: 就",
+      "attempts": 3,
+      "file": "ph-n9.mp3"
+    },
+    {
+      "audioId": "ph-n10",
+      "hanzi": "十",
+      "pinyin": "shí",
+      "transcript": "吃了 | x3: 吃個吃個吃個",
+      "attempts": 3,
+      "file": "ph-n10.mp3"
+    },
+    {
+      "audioId": "ph-zaoshanghao",
+      "hanzi": "早上好",
+      "pinyin": "zǎoshang hǎo",
+      "transcript": "走正好",
+      "attempts": 3,
+      "file": "ph-zaoshanghao.mp3"
+    }
+  ]
+}

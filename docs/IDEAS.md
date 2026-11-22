@@ -6,6 +6,10 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
 
 - (kosong)
 
+## Usulan, menunggu keputusan pemilik
+
+- **Tahap 0 "Dasar sebelum HSK 1"** (2026-11-22): pinyin (bunyi awal & akhir), 4 nada + nada ringan, perubahan nada (3-3, 不, 一), 8 coretan dasar + aturan urutan coretan, radikal yang sering muncul, angka & salam kelas. Belum dikerjakan.
+
 ## Ide parkir (untuk nanti / v2)
 
 - Login Google + progres pindah antar perangkat.

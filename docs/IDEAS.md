@@ -4,11 +4,9 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
 
 ## Disetujui masuk v1
 
-- (kosong)
-
-## Usulan, menunggu keputusan pemilik
-
-- **Tahap 0 "Dasar sebelum HSK 1"** (2026-11-22): pinyin (bunyi awal & akhir), 4 nada + nada ringan, perubahan nada (3-3, 不, 一), 8 coretan dasar + aturan urutan coretan, radikal yang sering muncul, angka & salam kelas. Belum dikerjakan.
+- Tahap 0 "Dasar sebelum HSK 1" → task 0 (2026-11-22)
+- HSK 1 = 300 kata silabus 2025 → task 2b (2026-11-22)
+- Dialog alami sehari-hari (rumah, sekolah, pasar, dst.) → task 3d (2026-11-22)
 
 ## Ide parkir (untuk nanti / v2)
 

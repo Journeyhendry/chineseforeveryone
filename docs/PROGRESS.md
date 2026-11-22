@@ -10,6 +10,9 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3 · Unit bertema + kalimat contoh — 2026-11-21 — Sonnet (diperiksa Opus, 1 kali perbaikan) — 20 unit bertema (20–31 kata), 2.405 kalimat Tatoeba beratribusi lewat workflow `fetch-tatoeba.yml`; semua unit ≥ 11 kalimat
 - [x] 3b · Versi santai + dialog — 2026-11-21 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 kali perbaikan) — 98 ungkapan santai lolos 5 lapis cek (4–5 per unit), 20 dialog 4–6 baris hanya kata HSK 1 + ungkapan lolos; bukti di `casual-evidence.json` lewat workflow `casual-evidence.yml`
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
+- [ ] 2b · Ganti HSK 1 ke 300 kata silabus 2025 (keputusan pemilik 2026-11-22)
+- [ ] 3d · Tulis ulang dialog jadi alami (kritik pemilik 2026-11-22)
+- [ ] 0 · Tahap 0 "Dasar sebelum HSK 1" (keputusan pemilik 2026-11-22)
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Pemilik memilih P3 (perempuan) + L3 (laki-laki) pada 2026-11-22.**
 - [ ] 4b · Audio semua materi
 - [x] 5 · Tampilan dasar — 2026-11-21 — Sonnet (diperiksa Opus) — tema + mode gelap, menu samping (layar lebar) / menu bawah (layar sempit), hash router, teks ID/EN tanpa reload, halaman Pengaturan; axe & tanpa scroll samping di 375/1366 lolos
@@ -23,7 +26,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 
 ## Butuh pemilik
 
-- **Keputusan jumlah kata HSK 1 (tidak mendesak)**: menurut beberapa sekolah Mandarin, silabus HSK 3.0 versi final (terbit Nov 2025, ujian baru mulai 13 Des 2026) memangkas HSK 1 dari 500 kata menjadi 300 kata. Sekarang website tetap memakai 500 kata (sesuai keputusan awal). Pilihan: tetap 500, atau ganti ke daftar 300 kata (perlu daftar resmi). Pekerjaan lanjut tetap jalan dengan 500 kata sampai pemilik memutuskan.
+- ~~Keputusan jumlah kata HSK 1~~ **Diputuskan 2026-11-22: ganti ke 300 kata silabus 2025 (task 2b).**
 
 ## Catatan & temuan
 

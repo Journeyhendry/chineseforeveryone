@@ -11,13 +11,14 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 
 ## 1. Keputusan yang sudah final (jangan diubah tanpa izin pemilik)
 
-- **Isi v1**: HSK 1 (standar HSK 3.0, sekitar 500 kata / 300 huruf). Versi laptop dulu, tata letak lentur (tidak rusak di lebar 375 px). Tanpa login; progres di localStorage + tombol cadangan/pulihkan.
+- **Isi v1**: **Tahap 0 · Dasar** (pinyin, nada, coretan, radikal) + **HSK 1 = 300 kata sesuai silabus ujian HSK 2025** (CLEC, Nov 2025; ujian baru 13 Des 2026) — keputusan pemilik 2026-11-22, menggantikan daftar 500 kata standar 2021. Kata di luar 300 tidak dibuang: dipindah ke `data/hsk2-preview/` untuk HSK 2 nanti. Versi laptop dulu, tata letak lentur (tidak rusak di lebar 375 px). Tanpa login; progres di localStorage + tombol cadangan/pulihkan.
 - **Bahasa penjelasan**: Indonesia + Inggris, bisa diganti kapan saja.
 - **Gaya**: ceria, penuh warna, "toy-like": garis tebal #231942, bayangan kartu tebal, sudut membulat. Latar #FFF7E8, ungu #6741D9, kuning #FFD43B, hijau #2F9E44, jingga #E8590C. Font: Baloo 2 (judul), Nunito (teks), Noto Sans SC sementara untuk huruf Mandarin (target akhir LXGW WenKai, self-host).
 - **Warna nada tetap**: nada 1 #C92A2A, nada 2 #B45309, nada 3 #2B8A3E, nada 4 #1864AB, ringan #5C5470. Selalu disertai tanda nada (tidak bergantung warna saja).
 - **Urutan unit**: berurutan; unit terkunci bisa dibuka lewat "Tes loncat" (nilai ≥ 80%). Kamus dan ulangan harian tidak dikunci.
 - **Materi hanya dari sumber terbuka** (lihat CREDITS.md). AI hanya menerjemahkan arti Inggris → Indonesia (ditandai "terjemahan mesin") dan mengelompokkan kata ke unit.
 - **Bahasa sehari-hari**: kotak "Versi santai" 3–5 ungkapan per unit + 1 dialog situasi per unit. Wajib lolos cek berlapis (bagian 5, task 3b).
+- **Dialog harus alami** (kritik pemilik 2026-11-22: dialog lama kaku dan konteksnya aneh): percakapan sehari-hari yang mudah dimengerti di tempat nyata (rumah, sekolah, pasar, warung, toko, metro/bus, telepon, kantor). Tiap dialog punya tujuan jelas (mis. menawar harga, menanyakan jam), tiap baris menjawab baris sebelumnya, tokoh bicara seperti orang sungguhan, tidak ada kalimat yang hanya dipaksakan untuk memamerkan kosakata.
 - **Ilustrasi**: semua digambar Claude sebagai SVG, gaya B "kartun hangat" (garis bersih, warna rata). Tokoh asli "Keluarga Xiǎo" + sistem rakit (tokoh, pose, benda, latar terpisah). Animasi: CSS untuk gerak sederhana, Lottie untuk gerak rumit. Tanpa video, tanpa Rive. Gerak harus halus: ancang-ancang, gerak susulan, napas kecil, easing lembut; hormati `prefers-reduced-motion`. Contoh acuan: artboard "5 · Tes ilustrasi SVG" di mockup.
 - **Suara (pilihan B)**: satu suara utama perempuan untuk SEMUA kata, kalimat, game, dialog; satu suara laki-laki hanya untuk tokoh laki-laki di dialog. Keduanya dari model TTS open source (kandidat: Kokoro zf_*/zm_*, MeloTTS ZH), dipilih pemilik dari contoh: **P3 (perempuan, suara utama) + L3 (laki-laki, tokoh laki-laki di dialog)** — keputusan 2026-11-22. Kecepatan & volume seragam. Rekaman asli (Lingua Libre, Tatoeba, Tone Perfect) hanya sebagai tombol tambahan "Dengar penutur asli" / mode "Dengar berbagai suara". Semua audio dicek Whisper.
 - **Hosting & data besar**: unduhan yang diblokir di sesi kerja (Tatoeba, Commons, model TTS, Whisper) dijalankan lewat GitHub Actions (`workflow_dispatch`), hasil yang sudah difilter di-commit balik ke repo.
@@ -80,7 +81,30 @@ Tambah job `check` di `.github/workflows/deploy.yml` (npm ci, typecheck, lint, t
 - `data/hsk1/visuals.json`: untuk tiap kata pilih jenis visual: `object` | `action` | `pair` (sifat berlawanan) | `count` | `position` | `comic` (kata tugas), plus deskripsi adegan singkat.
 - Acceptance: render PNG semua tokoh terlihat konsisten (proporsi, warna, garis); setiap kata punya entri visual.
 
-### 4 · Audio (Sonnet) — butuh: 3b
+### 2b · Ganti HSK 1 ke 300 kata silabus 2025 (Sonnet, diperiksa Opus) — butuh: 2, 3
+- Cari daftar 300 kata HSK 1 silabus ujian 2025 dari sumber terbuka (mis. `drkameleon/complete-hsk-vocabulary` MIT — cek apakah sudah memuat silabus 2025; cocokkan dengan minimal 1 sumber lain yang menyebut nomor 1–300). Catat sumber, versi, dan izin di `SOURCES.json` dan CREDITS.md. Kalau tidak ada sumber terbuka yang meyakinkan: berhenti, tulis di "Butuh pemilik".
+- `data/hsk1/words.json` = 300 kata itu (kata baru yang belum ada di data lama dilengkapi pinyin/arti/terjemahan dengan skrip yang sama). Kata lama yang tidak masuk → `data/hsk2-preview/words.json` (jangan dihapus; ilustrasi & audio yang sudah ada ikut dipindah referensinya).
+- Susun ulang `units.json` (unit bertema, 12–20 kata per unit, jumlah unit menyesuaikan), perbarui kalimat contoh, versi santai, `visuals.json`, `scenes.json`, dan semua tampilan yang menyebut "500".
+- Acceptance: tepat 300 kata HSK 1; tiap kata tepat di 1 unit; tidak ada referensi rusak (build, tes, dan cek tautan data lolos); daftar kata yang dipindah ke `hsk2-preview` tercatat.
+
+### 3d · Tulis ulang dialog jadi alami (Opus menulis, Sonnet memeriksa) — butuh: 2b
+- Tulis ulang semua dialog mengikuti aturan "Dialog harus alami" di bagian 1. Variasikan tempat: rumah, sekolah, pasar, warung makan, toko, transportasi, telepon. Tiap dialog: judul situasi (ID/EN), tempat, tujuan percakapan, 4–8 baris, `speaker` + `gender` tiap baris.
+- Pemeriksa kedua (Sonnet, tanpa melihat alasan penulis) memberi nilai 1–5 untuk: kewajaran ("orang China sungguhan bilang begini?"), kejelasan konteks untuk pemula, alur (tiap baris menjawab sebelumnya). Dialog dengan nilai < 4 di salah satu poin → tulis ulang.
+- Tetap wajib: hanya kata HSK 1 (300) + ungkapan santai yang lolos cek; cek otomatis kosakata.
+- Acceptance: semua dialog lolos nilai ≥ 4; laporan penilaian di `data/hsk1/dialog-review.json`; contoh 3 dialog tercantum di PROGRESS untuk dilihat pemilik.
+
+### 0 · Tahap 0 "Dasar sebelum HSK 1" (Opus) — butuh: 2b, 6
+- Satu tahap sebelum unit 1 (tidak terkunci; HSK 1 tetap terbuka walau Tahap 0 belum selesai), gaya dan komponen sama dengan unit lain:
+  1. Pinyin: tabel bunyi awal (b p m f …) & bunyi akhir (a o e ai …), klik untuk dengar.
+  2. 4 nada + nada ringan: penjelasan visual (garis nada berwarna) + latihan dengar & tebak.
+  3. Perubahan nada: 3+3 (你好 → ní hǎo), 不 (bù → bú), 一 (yī/yí/yì).
+  4. 8 coretan dasar + aturan urutan coretan, dengan animasi Hanzi Writer.
+  5. Radikal yang sering muncul (亻 口 女 氵 木 日 …) + cara huruf tersusun.
+  6. Ungkapan kelas: angka 1–10, salam dasar.
+- Audio pakai suara P3 (suku kata tunggal dicek Whisper/pengecek nada; yang gagal dibuat ulang).
+- Acceptance: semua bagian bisa diselesaikan dengan mouse & keyboard, ada latihan di tiap bagian, teks ID/EN lengkap, tidak ada horizontal scroll di 375 px.
+
+### 4 · Audio (Sonnet) — butuh: 3b, 2b, 3d (audio dibuat untuk daftar 300 kata & dialog baru)
 - **4a (berhenti untuk pemilik)**: workflow `tts-samples.yml` membuat contoh 5 kata + 2 kalimat dari 3–4 kandidat suara perempuan dan 2–3 laki-laki (Kokoro zf_*/zm_*, MeloTTS ZH). Simpan di `public/audio/samples/`, buat halaman sederhana `samples.html` untuk didengar, lalu tulis di PROGRESS "Butuh pemilik: pilih suara". Lanjut task lain sampai pemilik memilih.
 - **4b**: workflow `build-audio.yml`: buat mp3 (mono, 64 kbps, volume dinormalisasi) untuk semua kata, kalimat, ungkapan santai, dialog dengan suara terpilih; cek tiap file dengan Whisper (transkrip harus sama dengan hanzi); yang gagal dibuat ulang dengan variasi pengaturan, gagal lagi → daftar di `data/hsk1/audio-issues.json`. Unduh juga rekaman asli tambahan (Lingua Libre/Commons CC BY-SA, Tatoeba berlisensi bebas) untuk tombol "Dengar penutur asli". Tone Perfect hanya dipakai kalau izin dari MSU sudah ada.
 - Acceptance: setiap kata/kalimat/dialog punya audio suara utama; tingkat lolos Whisper dicatat; atribusi rekaman asli lengkap di CREDITS.md.

@@ -1,0 +1,191 @@
+name: Build HSK 1 audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      retry_failed:
+        description: "Buat ulang item yang sebelumnya gagal cek Whisper"
+        type: boolean
+        default: false
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - scripts/tts-hsk1/build_audio.py
+      - scripts/tts-hsk1/hsk1_items.py
+      - scripts/tts-hsk1/native_audio.py
+      - scripts/tts-hsk1/requirements.txt
+      - data/hsk1/words.json
+      - data/hsk1/sentences.json
+      - data/hsk1/casual.json
+      - data/hsk1/dialogs.json
+      - data/hsk1/audio-items.json
+      - .github/workflows/build-audio.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  HF_HUB_DISABLE_TELEMETRY: "1"
+  RETRY_FAILED: ${{ inputs.retry_failed && '1' || '0' }}
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      count: ${{ steps.plan.outputs.count }}
+      shards: ${{ steps.plan.outputs.shards }}
+      total: ${{ steps.plan.outputs.total }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - id: plan
+        run: |
+          set -euo pipefail
+          json="$(python scripts/tts-hsk1/build_audio.py plan)"
+          echo "$json"
+          echo "count=$(echo "$json" | python -c 'import json,sys; print(json.load(sys.stdin)["count"])')" >> "$GITHUB_OUTPUT"
+          echo "shards=$(echo "$json" | python -c 'import json,sys; print(json.dumps(json.load(sys.stdin)["shards"]))')" >> "$GITHUB_OUTPUT"
+          echo "total=$(echo "$json" | python -c 'import json,sys; print(json.load(sys.stdin)["total"])')" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    env:
+      WORK: ${{ github.workspace }}/.tts-work
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install system packages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+      - name: Cache pip and Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: tts-hsk1-${{ runner.os }}-${{ hashFiles('scripts/tts-hsk1/requirements.txt', 'scripts/tts/voices.json') }}
+          restore-keys: |
+            tts-hsk1-${{ runner.os }}-
+            tts-${{ runner.os }}-
+      - name: Install Python packages
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
+          "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts-hsk1/requirements.txt
+          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|soundfile|huggingface|pypinyin)" || true
+      - name: Synthesize and check shard ${{ matrix.shard }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$WORK"
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-hsk1/build_audio.py shard --shard ${{ matrix.shard }} --shards ${{ needs.plan.outputs.total }} --work "$WORK"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio-shard-${{ matrix.shard }}
+          path: ${{ github.workspace }}/.tts-work/out
+          retention-days: 3
+
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Fetch native recordings (Lingua Libre, free licenses only)
+        run: python scripts/tts-hsk1/native_audio.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: native-audio
+          path: |
+            public/audio/native
+            data/hsk1/native-audio.json
+          retention-days: 3
+
+  merge:
+    needs: [plan, build, native]
+    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffprobe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: audio-shard-*
+          path: ${{ runner.temp }}/shards
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: native-audio
+          path: ${{ runner.temp }}/native
+      - name: Merge shards
+        run: |
+          set -euo pipefail
+          inputs=()
+          if [ -d "$RUNNER_TEMP/shards" ]; then
+            for d in "$RUNNER_TEMP"/shards/*/; do inputs+=("$d"); done
+          fi
+          python scripts/tts-hsk1/build_audio.py merge --inputs "${inputs[@]}"
+      - name: Install native recordings
+        run: |
+          set -euo pipefail
+          if [ -d "$RUNNER_TEMP/native" ]; then
+            rm -rf public/audio/native
+            mkdir -p public/audio
+            cp -r "$RUNNER_TEMP/native/public/audio/native" public/audio/native
+            cp "$RUNNER_TEMP/native/data/hsk1/native-audio.json" data/hsk1/native-audio.json
+          fi
+          du -sh public/audio/hsk1 public/audio/native 2>/dev/null || true
+      - name: Commit audio
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/audio/hsk1 public/audio/native data/hsk1/audio-issues.json data/hsk1/native-audio.json
+          if git diff --cached --quiet; then
+            echo "No audio changes"
+          else
+            git commit -m "Data: HSK 1 audio (P3/L3)"
+            git pull --rebase origin "$BRANCH"
+            git push origin "HEAD:$BRANCH"
+          fi
+      - name: Fail if a shard failed
+        if: needs.build.result == 'failure'
+        run: |
+          echo "Satu atau lebih shard gagal; hasil yang berhasil sudah di-commit. Jalankan ulang."
+          exit 1

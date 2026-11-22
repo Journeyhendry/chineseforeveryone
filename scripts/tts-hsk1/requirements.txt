@@ -1,0 +1,11 @@
+# Sama dengan scripts/tts/requirements.txt (tidak diubah di sana) + pypinyin untuk cek bunyi.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+numpy==1.26.4
+soundfile==0.12.1
+kokoro==0.9.4
+misaki[zh]==0.9.4
+faster-whisper==1.1.1
+opencc-python-reimplemented==0.1.7
+huggingface_hub>=0.25,<1
+pypinyin==0.53.0

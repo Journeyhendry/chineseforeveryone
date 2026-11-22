@@ -47,6 +47,11 @@ DURATION_LIMITS = {
     "casual": (0.3, 5.0), "casual-slow": (0.3, 7.0),
     "sentence": (0.3, 12.0), "dialog": (0.3, 12.0),
 }
+# Whisper sering salah/mengarang pada klip sangat pendek (kata tunggal ~0,7 dtk). Untuk teks
+# pendek, klip yang dicek = kalimat pembawa (suara yang sama) + jeda + klip itu; kalimat pembawa
+# dibuang dari transkrip sebelum dibandingkan. File yang disimpan tetap klip aslinya saja.
+CARRIER = "这个词是"
+CARRIER_MAX_LETTERS = 6
 PASS_WORDS = 0.95
 PASS_ALL = 0.90
 
@@ -155,13 +160,20 @@ class Checker:
         text = "".join(ch for ch in text if unicodedata.category(ch)[0] not in "PZSC")
         return self.t2s.convert(text)
 
+    def strip_carrier(self, transcript: str) -> str:
+        """Buang kalimat pembawa dari awal transkrip (cocok persis atau sama bunyi)."""
+        pre, t = self.norm(CARRIER), self.norm(transcript)
+        if t.startswith(pre) or (len(t) >= len(pre) and self.py(t[: len(pre)]) == self.py(pre)):
+            return t[len(pre):]
+        return t
+
     def py(self, s: str) -> list[str]:
         return [unicodedata.normalize("NFC", x[0]).lower() for x in self._pinyin(s, style=self._style, errors=lambda c: [c])]
 
     def check(self, text: str, transcript: str, pinyin: str | None) -> tuple[bool, str, float]:
         """(lolos, 'exact'|'homophone'|'beda', kemiripan 0..1)."""
-        a_vars = [self.norm(v) for v in number_variants(text)]
-        b_vars = [self.norm(v) for v in number_variants(transcript)]
+        a_vars = [self.norm(v).replace("两", "二") for v in number_variants(text)]
+        b_vars = [self.norm(v).replace("两", "二") for v in number_variants(transcript)]
         sim = max(difflib.SequenceMatcher(None, a, b).ratio() for a in a_vars for b in b_vars)
         if any(a == b for a in a_vars for b in b_vars):
             return True, "exact", 1.0
@@ -218,6 +230,15 @@ def synth(pipe, pack, text, speed, dst: Path):
     ms.write_wav(dst, np.concatenate(chunks), SAMPLE_RATE)
 
 
+def make_check_clip(prefix: Path, mp3: Path, dst: Path):
+    """prefix + 0,3 dtk jeda + klip -> wav untuk Whisper."""
+    import make_samples as ms
+
+    ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(prefix), "-i", str(mp3), "-filter_complex",
+            f"[0]aresample={SAMPLE_RATE},apad=pad_dur=0.3[a];[1]aresample={SAMPLE_RATE}[b];[a][b]concat=n=2:v=0:a=1",
+            "-ac", "1", str(dst)])
+
+
 def cmd_shard(args):
     import make_samples as ms
     from faster_whisper import WhisperModel
@@ -240,6 +261,12 @@ def cmd_shard(args):
     checker = Checker()
     tmp = work / "tmp"
     tmp.mkdir(parents=True, exist_ok=True)
+    prefixes = {}
+    for code in codes:
+        raw, pm = tmp / f"carrier-{code}.wav", tmp / f"carrier-{code}.mp3"
+        synth(pipe, packs[code], CARRIER, 1.0, raw)
+        ms.normalize(raw, pm, tmp)
+        prefixes[code] = pm
     t0 = time.time()
 
     for n, it in enumerate(todo, 1):
@@ -252,14 +279,20 @@ def cmd_shard(args):
                 synth(pipe, packs[it["voice"]], text, speed, raw)
                 ms.normalize(raw, mp3, tmp)
                 dur = ms.duration(mp3)
-                segs, _ = whisper.transcribe(str(mp3), language="zh", beam_size=5, vad_filter=False,
+                carrier = len(checker.norm(it["text"])) <= CARRIER_MAX_LETTERS
+                clip = mp3
+                if carrier:
+                    clip = tmp / f"chk{attempt}.wav"
+                    make_check_clip(prefixes[it["voice"]], mp3, clip)
+                segs, _ = whisper.transcribe(str(clip), language="zh", beam_size=5, vad_filter=False,
                                              condition_on_previous_text=False, temperature=0.0)
                 transcript = "".join(s.text for s in segs).strip()
-                ok, how, sim = checker.check(it["text"], transcript, it.get("pinyin"))
+                heard = checker.strip_carrier(transcript) if carrier else transcript
+                ok, how, sim = checker.check(it["text"], heard, it.get("pinyin"))
                 lo, hi = DURATION_LIMITS[it["kind"]]
                 if not lo <= dur <= hi:
                     ok, how = False, f"durasi {dur}s"
-                cand.update(mp3=mp3, dur=dur, transcript=transcript, ok=ok, check=how, sim=sim)
+                cand.update(mp3=mp3, dur=dur, transcript=heard, ok=ok, check=how, sim=sim)
             except Exception as e:  # noqa: BLE001
                 traceback.print_exc()
                 cand.update(mp3=None, dur=0, transcript=f"(gagal: {type(e).__name__}: {e})"[:200], ok=False, check="galat", sim=-1)

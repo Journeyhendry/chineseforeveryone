@@ -176,7 +176,8 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A public/audio/hsk1 public/audio/native data/hsk1/audio-issues.json data/hsk1/native-audio.json
+          git add -A public/audio/hsk1 data/hsk1/audio-issues.json
+          for p in public/audio/native data/hsk1/native-audio.json; do [ -e "$p" ] && git add -A "$p"; done
           if git diff --cached --quiet; then
             echo "No audio changes"
           else

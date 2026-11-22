@@ -1062,5 +1062,203 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u05",
+    "title": {
+      "id": "Siapa yang menumpahkan air?",
+      "en": "Who spilled the water?"
+    },
+    "place": {
+      "id": "Ruang tamu di rumah",
+      "en": "Living room at home"
+    },
+    "placeKind": "home",
+    "goal": {
+      "id": "Kakek ingin tahu siapa yang menumpahkan air di meja.",
+      "en": "Grandpa wants to know who spilled water on the table."
+    },
+    "situation": {
+      "id": "Kakek masuk ke ruang tamu: ada air tumpah di meja, dan kucing duduk di sebelahnya. Adik ada di sofa.",
+      "en": "Grandpa walks into the living room. There is water all over the table, and the cat is sitting next to it. Little sister is on the sofa."
+    },
+    "machine": true,
+    "speakers": {
+      "yeye": {
+        "name": {
+          "id": "Kakek",
+          "en": "Grandpa"
+        },
+        "gender": "male"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "这是怎么回事？",
+        "tokens": [
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "怎么回事",
+            "pinyin": "zěnme huí shì"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "What's going on here?",
+        "id": "Ini kenapa?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "不是我！",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It wasn't me!",
+        "id": "Bukan aku!",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "不是你？那是谁？",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "谁",
+            "pinyin": "shéi"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Not you? Then who?",
+        "id": "Bukan kamu? Terus siapa?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "是它！",
+        "tokens": [
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "它",
+            "pinyin": "tā"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It was him!",
+        "id": "Dia tuh!",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "它？",
+        "tokens": [
+          {
+            "text": "它",
+            "pinyin": "tā"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "The cat?",
+        "id": "Kucing itu?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "对，你问它！",
+        "tokens": [
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "问",
+            "pinyin": "wèn"
+          },
+          {
+            "text": "它",
+            "pinyin": "tā"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Yes, ask him!",
+        "id": "Iya, tanya saja dia!",
+        "machine": true
+      }
+    ]
+  }
 }

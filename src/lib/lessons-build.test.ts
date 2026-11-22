@@ -57,6 +57,14 @@ describe('public/data/hsk1 (npm run build:lessons)', () => {
     }
   })
 
+  it('setiap unit punya 1 dialog dengan tempat, jenis tempat, dan tujuan (task 3d)', () => {
+    for (const u of unitsFile.units) {
+      const d = (JSON.parse(fresh[`units/${u.id}.json`]) as UnitData).dialog
+      expect(d, u.id).not.toBeNull()
+      expect(d!.place.id && d!.place.en && d!.goal.id && d!.goal.en && d!.placeKind, u.id).toBeTruthy()
+    }
+  })
+
   it('index kecil dan berisi 20 unit', () => {
     const index = JSON.parse(fresh['index.json'])
     expect(index.units).toHaveLength(unitsFile.units.length)

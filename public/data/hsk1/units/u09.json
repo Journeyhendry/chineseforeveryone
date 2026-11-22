@@ -1251,5 +1251,239 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u09",
+    "title": {
+      "id": "Memesan di warung mi",
+      "en": "Ordering at a noodle shop"
+    },
+    "place": {
+      "id": "Warung mi",
+      "en": "Noodle shop"
+    },
+    "placeKind": "eatery",
+    "goal": {
+      "id": "Ibu ingin memesan makan siang.",
+      "en": "Mom wants to order lunch."
+    },
+    "situation": {
+      "id": "Siang hari Ibu masuk ke warung mi kecil dan duduk. Pelayan datang mencatat pesanan.",
+      "en": "At lunchtime Mom sits down in a small noodle shop. The waiter comes to take her order."
+    },
+    "machine": true,
+    "speakers": {
+      "waiter": {
+        "name": {
+          "id": "Pelayan",
+          "en": "Waiter"
+        },
+        "gender": "male"
+      },
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "您好，吃什么？",
+        "tokens": [
+          {
+            "text": "您",
+            "pinyin": "nín"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hello, what would you like?",
+        "id": "Halo, mau makan apa?",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "有包子吗？",
+        "tokens": [
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "包子",
+            "pinyin": "bāozi"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Do you have baozi?",
+        "id": "Ada bakpao?",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "包子没有了。有饺子和面条儿。",
+        "tokens": [
+          {
+            "text": "包子",
+            "pinyin": "bāozi"
+          },
+          {
+            "text": "没有",
+            "pinyin": "méiyǒu"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "和",
+            "pinyin": "hé"
+          },
+          {
+            "text": "面条儿",
+            "pinyin": "miàntiáor"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "We're out of baozi. We have dumplings and noodles.",
+        "id": "Bakpaonya habis. Ada pangsit dan mi.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "那……饺子吧。",
+        "tokens": [
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Then... dumplings.",
+        "id": "Kalau begitu... pangsit saja.",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "好的。喝什么？",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "喝",
+            "pinyin": "hē"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "OK. Anything to drink?",
+        "id": "Baik. Minumnya apa?",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "不喝了，谢谢。",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "喝",
+            "pinyin": "hē"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Nothing, thanks.",
+        "id": "Tidak usah, terima kasih.",
+        "machine": true
+      }
+    ]
+  }
 }

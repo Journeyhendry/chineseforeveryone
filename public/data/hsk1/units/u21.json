@@ -1134,5 +1134,304 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u21",
+    "title": {
+      "id": "Mencari ukuran yang pas",
+      "en": "Finding the right size"
+    },
+    "place": {
+      "id": "Toko baju",
+      "en": "Clothes shop"
+    },
+    "placeKind": "shop",
+    "goal": {
+      "id": "Ibu ingin membeli baju dengan ukuran yang pas.",
+      "en": "Mom wants to buy a top in the right size."
+    },
+    "situation": {
+      "id": "Ibu melihat baju yang ia suka di toko baju. Penjual menyuruhnya mencoba, tapi yang pertama kebesaran.",
+      "en": "Mom sees a top she likes in a clothes shop. The assistant lets her try it on, but the first one is too big."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "seller": {
+        "name": {
+          "id": "Penjual",
+          "en": "Seller"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "这件衣服真漂亮！",
+        "tokens": [
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "件",
+            "pinyin": "jiàn"
+          },
+          {
+            "text": "衣服",
+            "pinyin": "yīfu"
+          },
+          {
+            "text": "真",
+            "pinyin": "zhēn"
+          },
+          {
+            "text": "漂亮",
+            "pinyin": "piàoliang"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "This top is really pretty!",
+        "id": "Baju ini cantik sekali!",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "您穿一下看看？",
+        "tokens": [
+          {
+            "text": "您",
+            "pinyin": "nín"
+          },
+          {
+            "text": "穿",
+            "pinyin": "chuān"
+          },
+          {
+            "text": "一下",
+            "pinyin": "yíxià"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Would you like to try it on?",
+        "id": "Mau dicoba dulu?",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "嗯……有点儿大。有小一点儿的吗？",
+        "tokens": [
+          {
+            "text": "嗯",
+            "pinyin": "èn"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "有点儿",
+            "pinyin": "yǒudiǎnr"
+          },
+          {
+            "text": "大",
+            "pinyin": "dà"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "小",
+            "pinyin": "xiǎo"
+          },
+          {
+            "text": "一点儿",
+            "pinyin": "yìdiǎnr"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "(after trying it on) Hmm... it's a bit big. Do you have a smaller one?",
+        "id": "(setelah mencoba) Hmm... agak besar. Ada yang lebih kecil?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "有。您再穿这件看看。",
+        "tokens": [
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "您",
+            "pinyin": "nín"
+          },
+          {
+            "text": "再",
+            "pinyin": "zài"
+          },
+          {
+            "text": "穿",
+            "pinyin": "chuān"
+          },
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "件",
+            "pinyin": "jiàn"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Yes. Try this one.",
+        "id": "Ada. Coba yang ini.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "这件好。多少钱？",
+        "tokens": [
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "件",
+            "pinyin": "jiàn"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "多少",
+            "pinyin": "duōshao"
+          },
+          {
+            "text": "钱",
+            "pinyin": "qián"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "This one fits. How much is it?",
+        "id": "Yang ini pas. Berapa harganya?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "一百二。",
+        "tokens": [
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "百",
+            "pinyin": "bǎi"
+          },
+          {
+            "text": "二",
+            "pinyin": "èr"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "A hundred and twenty.",
+        "id": "Seratus dua puluh.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "好，我要了。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, I'll take it.",
+        "id": "Oke, saya ambil.",
+        "machine": true
+      }
+    ]
+  }
 }

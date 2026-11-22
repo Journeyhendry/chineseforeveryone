@@ -1179,5 +1179,250 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u11",
+    "title": {
+      "id": "Janjian lewat telepon",
+      "en": "Making a plan on the phone"
+    },
+    "place": {
+      "id": "Telepon",
+      "en": "Phone call"
+    },
+    "placeKind": "phone",
+    "goal": {
+      "id": "Teman kuliah ingin janjian dengan Kakak besok untuk belajar bersama.",
+      "en": "A classmate wants to set a time with big brother to study together tomorrow."
+    },
+    "situation": {
+      "id": "Teman kuliah Kakak menelepon. Mereka mau belajar bersama di toko buku besok dan perlu menentukan jamnya.",
+      "en": "Big brother's classmate calls him. They want to study together at the bookshop tomorrow and need to pick a time."
+    },
+    "machine": true,
+    "speakers": {
+      "classmate": {
+        "name": {
+          "id": "Teman kuliah",
+          "en": "Classmate"
+        },
+        "gender": "male"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "classmate",
+        "gender": "male",
+        "cmn": "喂，明天上午有时间吗？",
+        "tokens": [
+          {
+            "text": "喂",
+            "pinyin": "wèi"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "明天",
+            "pinyin": "míngtiān"
+          },
+          {
+            "text": "上午",
+            "pinyin": "shàngwǔ"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "时间",
+            "pinyin": "shíjiān"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hey, are you free tomorrow morning?",
+        "id": "Halo, besok pagi ada waktu?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "上午没有。下午呢？",
+        "tokens": [
+          {
+            "text": "上午",
+            "pinyin": "shàngwǔ"
+          },
+          {
+            "text": "没有",
+            "pinyin": "méiyǒu"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "下午",
+            "pinyin": "xiàwǔ"
+          },
+          {
+            "text": "呢",
+            "pinyin": "ne"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Not in the morning. How about the afternoon?",
+        "id": "Pagi tidak bisa. Kalau siang?",
+        "machine": true
+      },
+      {
+        "speaker": "classmate",
+        "gender": "male",
+        "cmn": "下午也好。几点？",
+        "tokens": [
+          {
+            "text": "下午",
+            "pinyin": "xiàwǔ"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "几",
+            "pinyin": "jǐ"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Afternoon works too. What time?",
+        "id": "Siang juga boleh. Jam berapa?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "两点半，在书店，怎么样？",
+        "tokens": [
+          {
+            "text": "两",
+            "pinyin": "liǎng"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "半",
+            "pinyin": "bàn"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "书店",
+            "pinyin": "shūdiàn"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "怎么样",
+            "pinyin": "zěnmeyàng"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Half past two, at the bookshop. OK?",
+        "id": "Setengah tiga, di toko buku. Bagaimana?",
+        "machine": true
+      },
+      {
+        "speaker": "classmate",
+        "gender": "male",
+        "cmn": "好，两点半。不见不散！",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "两",
+            "pinyin": "liǎng"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "半",
+            "pinyin": "bàn"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "不见不散",
+            "pinyin": "bù jiàn bù sàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "OK, half past two. I'll wait for you there!",
+        "id": "Oke, setengah tiga. Aku tunggu di sana, ya!",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "不见不散！",
+        "tokens": [
+          {
+            "text": "不见不散",
+            "pinyin": "bù jiàn bù sàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "I'll be there!",
+        "id": "Aku pasti datang!",
+        "machine": true
+      }
+    ]
+  }
 }

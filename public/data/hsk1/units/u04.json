@@ -1223,5 +1223,163 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u04",
+    "title": {
+      "id": "Mencari susu di supermarket",
+      "en": "Looking for milk at the supermarket"
+    },
+    "place": {
+      "id": "Supermarket dekat rumah",
+      "en": "Neighbourhood supermarket"
+    },
+    "placeKind": "shop",
+    "goal": {
+      "id": "Ibu ingin tahu di mana raknya susu.",
+      "en": "Mom wants to know where the milk is."
+    },
+    "situation": {
+      "id": "Ibu belanja di supermarket dekat rumah dan tidak menemukan susu, jadi ia bertanya kepada petugas toko.",
+      "en": "Mom is shopping at the supermarket near home. She can't find the milk, so she asks a shop assistant."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "seller": {
+        "name": {
+          "id": "Penjual",
+          "en": "Seller"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "你好，请问牛奶在哪儿？",
+        "tokens": [
+          {
+            "text": "你好",
+            "pinyin": "nǐhǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "请问",
+            "pinyin": "qǐngwèn"
+          },
+          {
+            "text": "牛奶",
+            "pinyin": "niúnǎi"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "哪儿",
+            "pinyin": "nǎr"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hi, excuse me, where is the milk?",
+        "id": "Permisi, susunya di mana?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "在那边，水果那儿。",
+        "tokens": [
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "那边",
+            "pinyin": "nàbiān"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "水果",
+            "pinyin": "shuǐguǒ"
+          },
+          {
+            "text": "那儿",
+            "pinyin": "nàr"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Over there, by the fruit.",
+        "id": "Di sebelah sana, dekat buah.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "水果那儿？好，谢谢！",
+        "tokens": [
+          {
+            "text": "水果",
+            "pinyin": "shuǐguǒ"
+          },
+          {
+            "text": "那儿",
+            "pinyin": "nàr"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "By the fruit? Great, thanks!",
+        "id": "Dekat buah? Oke, terima kasih!",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "不客气。",
+        "tokens": [
+          {
+            "text": "不客气",
+            "pinyin": "búkèqi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "You're welcome.",
+        "id": "Sama-sama.",
+        "machine": true
+      }
+    ]
+  }
 }

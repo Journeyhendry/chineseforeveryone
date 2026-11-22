@@ -111,6 +111,8 @@
   "learn.casual.situation": "When to use:",
   "learn.casual.checked": "Checked by AI + sources: {sources}",
   "learn.dialog.eyebrow": "Dialogue",
+  "learn.dialog.goal": "Goal:",
+  "learn.dialog.place": "Place:",
   "learn.quiz.screen": "Practice",
   "learn.quiz.count": "Question {n} of {total}",
   "learn.quiz.progress": "Practice progress",

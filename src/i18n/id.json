@@ -111,6 +111,8 @@
   "learn.casual.situation": "Kapan dipakai:",
   "learn.casual.checked": "Dicek AI + sumber: {sources}",
   "learn.dialog.eyebrow": "Dialog",
+  "learn.dialog.goal": "Tujuan:",
+  "learn.dialog.place": "Tempat:",
   "learn.quiz.screen": "Latihan",
   "learn.quiz.count": "Soal {n} dari {total}",
   "learn.quiz.progress": "Kemajuan latihan",

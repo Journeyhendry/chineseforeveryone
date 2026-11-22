@@ -1704,5 +1704,168 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u01",
+    "title": {
+      "id": "Pamit pada guru sepulang sekolah",
+      "en": "Saying goodbye to the teacher after school"
+    },
+    "place": {
+      "id": "Gerbang sekolah dasar",
+      "en": "Primary school gate"
+    },
+    "placeKind": "school",
+    "goal": {
+      "id": "Adik dan Nenek berpamitan dan berterima kasih kepada guru saat dijemput pulang.",
+      "en": "Little sister and Grandma say goodbye to the teacher and thank her at pick-up time."
+    },
+    "situation": {
+      "id": "Sore hari, guru mengantar murid-murid ke gerbang sekolah. Nenek datang menjemput Adik.",
+      "en": "In the afternoon the teacher walks the pupils to the school gate. Grandma has come to pick up little sister."
+    },
+    "machine": true,
+    "speakers": {
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      },
+      "teacher": {
+        "name": {
+          "id": "Guru",
+          "en": "Teacher"
+        },
+        "gender": "female"
+      },
+      "nainai": {
+        "name": {
+          "id": "Nenek",
+          "en": "Grandma"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "老师再见！",
+        "tokens": [
+          {
+            "text": "老师",
+            "pinyin": "lǎoshī"
+          },
+          {
+            "text": "再见",
+            "pinyin": "zàijiàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Bye, teacher!",
+        "id": "Sampai jumpa, Bu Guru!",
+        "machine": true
+      },
+      {
+        "speaker": "teacher",
+        "gender": "female",
+        "cmn": "再见！明天见！",
+        "tokens": [
+          {
+            "text": "再见",
+            "pinyin": "zàijiàn"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "明天",
+            "pinyin": "míngtiān"
+          },
+          {
+            "text": "见",
+            "pinyin": "jiàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Bye! See you tomorrow!",
+        "id": "Sampai jumpa! Sampai besok!",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "老师，谢谢您！",
+        "tokens": [
+          {
+            "text": "老师",
+            "pinyin": "lǎoshī"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "您",
+            "pinyin": "nín"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Thank you, teacher!",
+        "id": "Terima kasih, Bu Guru!",
+        "machine": true
+      },
+      {
+        "speaker": "teacher",
+        "gender": "female",
+        "cmn": "不客气。拜拜！",
+        "tokens": [
+          {
+            "text": "不客气",
+            "pinyin": "búkèqi"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "拜拜",
+            "pinyin": "bái bái"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "You're welcome. Bye-bye!",
+        "id": "Sama-sama. Dah!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "拜拜！",
+        "tokens": [
+          {
+            "text": "拜拜",
+            "pinyin": "bái bái"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Bye-bye!",
+        "id": "Dah!",
+        "machine": true
+      }
+    ]
+  }
 }

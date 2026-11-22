@@ -1094,5 +1094,233 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u15",
+    "title": {
+      "id": "Mau makan malam apa?",
+      "en": "What do you want for dinner?"
+    },
+    "place": {
+      "id": "Telepon dari supermarket",
+      "en": "Phone call from the supermarket"
+    },
+    "placeKind": "phone",
+    "goal": {
+      "id": "Ayah ingin tahu Adik mau makan malam apa.",
+      "en": "Dad wants to know what little sister wants for dinner."
+    },
+    "situation": {
+      "id": "Ayah sedang di supermarket sepulang kerja dan menelepon ke rumah. Adik yang mengangkat.",
+      "en": "Dad is at the supermarket after work and calls home. Little sister answers."
+    },
+    "machine": true,
+    "speakers": {
+      "baba": {
+        "name": {
+          "id": "Ayah",
+          "en": "Dad"
+        },
+        "gender": "male"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "喂，我在超市。晚上想吃什么？",
+        "tokens": [
+          {
+            "text": "喂",
+            "pinyin": "wèi"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "超市",
+            "pinyin": "chāoshì"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "晚上",
+            "pinyin": "wǎnshang"
+          },
+          {
+            "text": "想",
+            "pinyin": "xiǎng"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hi, I'm at the supermarket. What do you want for dinner?",
+        "id": "Halo, Ayah di supermarket. Nanti malam mau makan apa?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我想吃饺子！",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "想",
+            "pinyin": "xiǎng"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "I want dumplings!",
+        "id": "Aku mau pangsit!",
+        "machine": true
+      },
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "饺子？昨天也是饺子。",
+        "tokens": [
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "昨天",
+            "pinyin": "zuótiān"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Dumplings? We had dumplings yesterday too.",
+        "id": "Pangsit? Kemarin juga pangsit.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我喜欢饺子！",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "喜欢",
+            "pinyin": "xǐhuan"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "I like dumplings!",
+        "id": "Aku suka pangsit!",
+        "machine": true
+      },
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "好吧，饺子。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Fine, dumplings.",
+        "id": "Ya sudah, pangsit.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "谢谢爸爸！",
+        "tokens": [
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "爸爸",
+            "pinyin": "bàba"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Thanks, Dad!",
+        "id": "Makasih, Ayah!",
+        "machine": true
+      }
+    ]
+  }
 }

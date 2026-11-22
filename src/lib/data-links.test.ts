@@ -53,12 +53,15 @@ describe('checkDataLinks finds problems', () => {
     ],
     sentences: [{ tatoebaId: 1, words: ['A', 'B'], unit: 'u02' }],
     casual: [{ id: 'c1', unit: 'u01', hsk: { wordIds: ['A'] } }],
-    dialogs: [{ id: 'd1', unit: 'u02', lines: [{ tokens: [{ wordId: 'A' }, { casualId: 'c1' }] }] }],
+    dialogs: [
+      { id: 'd0', unit: 'u01', lines: [{ tokens: [{ wordId: 'A' }] }] },
+      { id: 'd1', unit: 'u02', lines: [{ tokens: [{ wordId: 'A' }, { casualId: 'c1' }] }] },
+    ],
     visuals: [{ wordId: 'A' }, { wordId: 'B', pairWordId: 'A' }],
     scenes: [{ wordId: 'A', unitId: 'u01' }],
     lessonIndex: { units: [{ id: 'u01', order: 1, wordCount: 1 }, { id: 'u02', order: 2, wordCount: 1 }] },
     lessonUnits: {
-      u01: { unit: { id: 'u01' }, words: [{ id: 'A', examples: [] }], casual: [{ id: 'c1', unit: 'u01', hsk: { wordIds: ['A'] } }], relatedCasual: [], dialog: null },
+      u01: { unit: { id: 'u01' }, words: [{ id: 'A', examples: [] }], casual: [{ id: 'c1', unit: 'u01', hsk: { wordIds: ['A'] } }], relatedCasual: [], dialog: { id: 'd0' } },
       u02: { unit: { id: 'u02' }, words: [{ id: 'B', examples: [] }], casual: [], relatedCasual: [], dialog: { id: 'd1' } },
     },
     sceneIndexIds: ['A'],
@@ -81,11 +84,16 @@ describe('checkDataLinks finds problems', () => {
     expect(check((d) => d.sentences[0].words.push('Z'))).toContain('sentences.json 1: unknown word id Z')
     expect(check((d) => (d.sentences[0].unit = 'u99'))).toContain('sentences.json 1: unknown unit u99')
     expect(check((d) => d.casual[0].hsk.wordIds.push('Z'))).toContain('casual.json c1: unknown word id Z')
-    expect(check((d) => d.dialogs[0].lines[0].tokens.push({ wordId: 'Z' }))).toContain('dialogs.json d1: unknown word id Z')
-    expect(check((d) => d.dialogs[0].lines[0].tokens.push({ casualId: 'c9' }))).toContain('dialogs.json d1: unknown casual id c9')
+    expect(check((d) => d.dialogs[1].lines[0].tokens.push({ wordId: 'Z' }))).toContain('dialogs.json d1: unknown word id Z')
+    expect(check((d) => d.dialogs[1].lines[0].tokens.push({ casualId: 'c9' }))).toContain('dialogs.json d1: unknown casual id c9')
     expect(check((d) => (d.visuals[1].pairWordId = 'Z'))).toContain('visuals.json B pairWordId: unknown word id Z')
     expect(check((d) => d.visuals.pop())).toContain('visuals.json: no entry for B')
     expect(check((d) => (d.scenes[0].unitId = 'u02'))).toContain('scenes.json A: unitId u02 but the word is in u01')
+  })
+  it('a unit without dialog, or with two', () => {
+    expect(check((d) => d.dialogs.shift())).toContain('dialogs.json: unit u01 has 0 dialogs (need exactly 1)')
+    expect(check((d) => (d.dialogs[0].unit = 'u02'))).toContain('dialogs.json: unit u02 has 2 dialogs (need exactly 1)')
+    expect(check((d) => (d.lessonUnits.u01.dialog = null))).toContain('public/data/hsk1/units/u01.json: dialog none but dialogs.json has d0')
   })
   it('built files that disagree with the data', () => {
     expect(check((d) => delete d.lessonUnits.u02)).toContain('public/data/hsk1/units/u02.json: missing')

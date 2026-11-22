@@ -1209,5 +1209,207 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u03",
+    "title": {
+      "id": "Meja untuk berapa orang?",
+      "en": "A table for how many?"
+    },
+    "place": {
+      "id": "Pintu masuk rumah makan",
+      "en": "Restaurant entrance"
+    },
+    "placeKind": "eatery",
+    "goal": {
+      "id": "Keluarga meminta meja untuk empat orang.",
+      "en": "The family asks for a table for four."
+    },
+    "situation": {
+      "id": "Ayah, Ibu, Kakak, dan Adik masuk ke rumah makan. Ayah menghitung terlalu cepat dan lupa Adik yang berdiri di belakangnya.",
+      "en": "Dad, Mom, big brother and little sister walk into a restaurant. Dad counts too fast and forgets little sister, who is standing behind him."
+    },
+    "machine": true,
+    "speakers": {
+      "waiter": {
+        "name": {
+          "id": "Pelayan",
+          "en": "Waiter"
+        },
+        "gender": "male"
+      },
+      "baba": {
+        "name": {
+          "id": "Ayah",
+          "en": "Dad"
+        },
+        "gender": "male"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "您好！几个人？",
+        "tokens": [
+          {
+            "text": "您",
+            "pinyin": "nín"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "几",
+            "pinyin": "jǐ"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "人",
+            "pinyin": "rén"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hello! How many?",
+        "id": "Halo! Berapa orang?",
+        "machine": true
+      },
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "三个。",
+        "tokens": [
+          {
+            "text": "三",
+            "pinyin": "sān"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Three.",
+        "id": "Tiga.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我呢？",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "呢",
+            "pinyin": "ne"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "What about me?",
+        "id": "Aku mana?",
+        "machine": true
+      },
+      {
+        "speaker": "baba",
+        "gender": "male",
+        "cmn": "四个，四个！",
+        "tokens": [
+          {
+            "text": "四",
+            "pinyin": "sì"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "四",
+            "pinyin": "sì"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Four, four!",
+        "id": "Empat, empat!",
+        "machine": true
+      },
+      {
+        "speaker": "waiter",
+        "gender": "male",
+        "cmn": "四个人？好的，请坐。",
+        "tokens": [
+          {
+            "text": "四",
+            "pinyin": "sì"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "人",
+            "pinyin": "rén"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "请",
+            "pinyin": "qǐng"
+          },
+          {
+            "text": "坐",
+            "pinyin": "zuò"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Four? Sure, please have a seat.",
+        "id": "Empat orang? Baik, silakan duduk.",
+        "machine": true
+      }
+    ]
+  }
 }

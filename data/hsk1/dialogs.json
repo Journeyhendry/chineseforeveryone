@@ -95,36 +95,2995 @@
   },
   "dialogs": [
     {
-      "id": "d-u18",
-      "unit": "u19",
+      "id": "n-u01",
+      "unit": "u01",
       "title": {
-        "id": "Menawar di pasar",
-        "en": "Bargaining at the market"
+        "id": "Pamit pada guru sepulang sekolah",
+        "en": "Saying goodbye to the teacher after school"
+      },
+      "place": {
+        "id": "Gerbang sekolah dasar",
+        "en": "Primary school gate"
+      },
+      "placeKind": "school",
+      "goal": {
+        "id": "Adik dan Nenek berpamitan dan berterima kasih kepada guru saat dijemput pulang.",
+        "en": "Little sister and Grandma say goodbye to the teacher and thank her at pick-up time."
       },
       "situation": {
-        "id": "Nenek membeli buah di pasar pagi dan membayar dengan scan kode QR di HP.",
-        "en": "Grandma buys fruit at the morning market and pays by scanning a QR code with her phone."
+        "id": "Sore hari, guru mengantar murid-murid ke gerbang sekolah. Nenek datang menjemput Adik.",
+        "en": "In the afternoon the teacher walks the pupils to the school gate. Grandma has come to pick up little sister."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "老师再见！",
+          "pinyin": "lǎoshī zàijiàn！",
+          "tokens": [
+            {
+              "text": "老师",
+              "pinyin": "lǎoshī",
+              "wordId": "L1-0209"
+            },
+            {
+              "text": "再见",
+              "pinyin": "zàijiàn",
+              "wordId": "L1-0454"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Bye, teacher!",
+          "id": "Sampai jumpa, Bu Guru!",
+          "machine": true
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "再见！明天见！",
+          "pinyin": "zàijiàn！ míngtiān jiàn！",
+          "tokens": [
+            {
+              "text": "再见",
+              "pinyin": "zàijiàn",
+              "wordId": "L1-0454"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "明天",
+              "pinyin": "míngtiān",
+              "wordId": "L1-0248"
+            },
+            {
+              "text": "见",
+              "pinyin": "jiàn",
+              "wordId": "L1-0173"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Bye! See you tomorrow!",
+          "id": "Sampai jumpa! Sampai besok!",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "老师，谢谢您！",
+          "pinyin": "lǎoshī， xièxie nín！",
+          "tokens": [
+            {
+              "text": "老师",
+              "pinyin": "lǎoshī",
+              "wordId": "L1-0209"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "您",
+              "pinyin": "nín",
+              "wordId": "L1-0274"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Thank you, teacher!",
+          "id": "Terima kasih, Bu Guru!",
+          "machine": true
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "不客气。拜拜！",
+          "pinyin": "búkèqi。 bái bái！",
+          "tokens": [
+            {
+              "text": "不客气",
+              "pinyin": "búkèqi",
+              "wordId": "L1-0032"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "拜拜",
+              "pinyin": "bái bái",
+              "casualId": "c-u01-01"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "You're welcome. Bye-bye!",
+          "id": "Sama-sama. Dah!",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "拜拜！",
+          "pinyin": "bái bái！",
+          "tokens": [
+            {
+              "text": "拜拜",
+              "pinyin": "bái bái",
+              "casualId": "c-u01-01"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Bye-bye!",
+          "id": "Dah!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u02",
+      "unit": "u02",
+      "title": {
+        "id": "HP yang tertinggal",
+        "en": "The forgotten phone"
+      },
+      "place": {
+        "id": "Toko kecil dekat kampus",
+        "en": "Small shop near campus"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Penjual ingin mengembalikan HP yang tertinggal di meja kasir.",
+        "en": "The shopkeeper wants to give back a phone left on the counter."
+      },
+      "situation": {
+        "id": "Kakak baru saja membayar di toko kecil dekat kampus, lalu keluar. HP-nya tertinggal di meja kasir, dan penjual memanggilnya.",
+        "en": "Big brother has just paid at a small shop near campus and walked out. His phone is still on the counter, so the shopkeeper calls after him."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "同学！同学！你的手机！",
+          "pinyin": "tóngxué！ tóngxué！ nǐ de shǒujī！",
+          "tokens": [
+            {
+              "text": "同学",
+              "pinyin": "tóngxué",
+              "wordId": "L1-0365"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "同学",
+              "pinyin": "tóngxué",
+              "wordId": "L1-0365"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "手机",
+              "pinyin": "shǒujī",
+              "wordId": "L1-0340"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Hey, student! Your phone!",
+          "id": "Dik! Dik! HP-mu!",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我的手机？",
+          "pinyin": "wǒ de shǒujī？",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "手机",
+              "pinyin": "shǒujī",
+              "wordId": "L1-0340"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "My phone?",
+          "id": "HP saya?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "是不是你的？",
+          "pinyin": "shì bù shì nǐ de？",
+          "tokens": [
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Is this yours?",
+          "id": "Ini punyamu, bukan?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "是我的！谢谢！谢谢！",
+          "pinyin": "shì wǒ de！ xièxie！ xièxie！",
+          "tokens": [
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "It's mine! Thanks, thank you!",
+          "id": "Iya, punya saya! Makasih, makasih!",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "pinyin": "búkèqi。",
+          "tokens": [
+            {
+              "text": "不客气",
+              "pinyin": "búkèqi",
+              "wordId": "L1-0032"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "You're welcome.",
+          "id": "Sama-sama.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u03",
+      "unit": "u03",
+      "title": {
+        "id": "Meja untuk berapa orang?",
+        "en": "A table for how many?"
+      },
+      "place": {
+        "id": "Pintu masuk rumah makan",
+        "en": "Restaurant entrance"
+      },
+      "placeKind": "eatery",
+      "goal": {
+        "id": "Keluarga meminta meja untuk empat orang.",
+        "en": "The family asks for a table for four."
+      },
+      "situation": {
+        "id": "Ayah, Ibu, Kakak, dan Adik masuk ke rumah makan. Ayah menghitung terlalu cepat dan lupa Adik yang berdiri di belakangnya.",
+        "en": "Dad, Mom, big brother and little sister walk into a restaurant. Dad counts too fast and forgets little sister, who is standing behind him."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "您好！几个人？",
+          "pinyin": "nín hǎo！ jǐ gè rén？",
+          "tokens": [
+            {
+              "text": "您",
+              "pinyin": "nín",
+              "wordId": "L1-0274"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "几",
+              "pinyin": "jǐ",
+              "wordId": "L1-0165"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "人",
+              "pinyin": "rén",
+              "wordId": "L1-0305"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hello! How many?",
+          "id": "Halo! Berapa orang?",
+          "machine": true
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "三个。",
+          "pinyin": "sān gè。",
+          "tokens": [
+            {
+              "text": "三",
+              "pinyin": "sān",
+              "wordId": "L1-0311"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Three.",
+          "id": "Tiga.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我呢？",
+          "pinyin": "wǒ ne？",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "呢",
+              "pinyin": "ne",
+              "wordId": "L1-0269"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "What about me?",
+          "id": "Aku mana?",
+          "machine": true
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "四个，四个！",
+          "pinyin": "sì gè， sì gè！",
+          "tokens": [
+            {
+              "text": "四",
+              "pinyin": "sì",
+              "wordId": "L1-0351"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "四",
+              "pinyin": "sì",
+              "wordId": "L1-0351"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Four, four!",
+          "id": "Empat, empat!",
+          "machine": true
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "四个人？好的，请坐。",
+          "pinyin": "sì gè rén？ hǎo de， qǐng zuò。",
+          "tokens": [
+            {
+              "text": "四",
+              "pinyin": "sì",
+              "wordId": "L1-0351"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "人",
+              "pinyin": "rén",
+              "wordId": "L1-0305"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "请",
+              "pinyin": "qǐng",
+              "wordId": "L1-0296"
+            },
+            {
+              "text": "坐",
+              "pinyin": "zuò",
+              "wordId": "L1-0498"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Four? Sure, please have a seat.",
+          "id": "Empat orang? Baik, silakan duduk.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u04",
+      "unit": "u04",
+      "title": {
+        "id": "Mencari susu di supermarket",
+        "en": "Looking for milk at the supermarket"
+      },
+      "place": {
+        "id": "Supermarket dekat rumah",
+        "en": "Neighbourhood supermarket"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Ibu ingin tahu di mana raknya susu.",
+        "en": "Mom wants to know where the milk is."
+      },
+      "situation": {
+        "id": "Ibu belanja di supermarket dekat rumah dan tidak menemukan susu, jadi ia bertanya kepada petugas toko.",
+        "en": "Mom is shopping at the supermarket near home. She can't find the milk, so she asks a shop assistant."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你好，请问牛奶在哪儿？",
+          "pinyin": "nǐhǎo， qǐngwèn niúnǎi zài nǎr？",
+          "tokens": [
+            {
+              "text": "你好",
+              "pinyin": "nǐhǎo",
+              "wordId": "L1-0517"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "请问",
+              "pinyin": "qǐngwèn",
+              "wordId": "L1-0299"
+            },
+            {
+              "text": "牛奶",
+              "pinyin": "niúnǎi",
+              "wordId": "L1-0275"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "哪儿",
+              "pinyin": "nǎr",
+              "wordId": "L1-0252"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hi, excuse me, where is the milk?",
+          "id": "Permisi, susunya di mana?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "在那边，水果那儿。",
+          "pinyin": "zài nàbiān， shuǐguǒ nàr。",
+          "tokens": [
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "那边",
+              "pinyin": "nàbiān",
+              "wordId": "L1-0255"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "水果",
+              "pinyin": "shuǐguǒ",
+              "wordId": "L1-0346"
+            },
+            {
+              "text": "那儿",
+              "pinyin": "nàr",
+              "wordId": "L1-0257"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Over there, by the fruit.",
+          "id": "Di sebelah sana, dekat buah.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "水果那儿？好，谢谢！",
+          "pinyin": "shuǐguǒ nàr？ hǎo， xièxie！",
+          "tokens": [
+            {
+              "text": "水果",
+              "pinyin": "shuǐguǒ",
+              "wordId": "L1-0346"
+            },
+            {
+              "text": "那儿",
+              "pinyin": "nàr",
+              "wordId": "L1-0257"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "By the fruit? Great, thanks!",
+          "id": "Dekat buah? Oke, terima kasih!",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "pinyin": "búkèqi。",
+          "tokens": [
+            {
+              "text": "不客气",
+              "pinyin": "búkèqi",
+              "wordId": "L1-0032"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "You're welcome.",
+          "id": "Sama-sama.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u05",
+      "unit": "u05",
+      "title": {
+        "id": "Siapa yang menumpahkan air?",
+        "en": "Who spilled the water?"
+      },
+      "place": {
+        "id": "Ruang tamu di rumah",
+        "en": "Living room at home"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Kakek ingin tahu siapa yang menumpahkan air di meja.",
+        "en": "Grandpa wants to know who spilled water on the table."
+      },
+      "situation": {
+        "id": "Kakek masuk ke ruang tamu: ada air tumpah di meja, dan kucing duduk di sebelahnya. Adik ada di sofa.",
+        "en": "Grandpa walks into the living room. There is water all over the table, and the cat is sitting next to it. Little sister is on the sofa."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "这是怎么回事？",
+          "pinyin": "zhè shì zěnme huí shì？",
+          "tokens": [
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "怎么回事",
+              "pinyin": "zěnme huí shì",
+              "casualId": "c-u03-04"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "What's going on here?",
+          "id": "Ini kenapa?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "不是我！",
+          "pinyin": "bù shì wǒ！",
+          "tokens": [
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "It wasn't me!",
+          "id": "Bukan aku!",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "不是你？那是谁？",
+          "pinyin": "bù shì nǐ？ nà shì shéi？",
+          "tokens": [
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "谁",
+              "pinyin": "shéi",
+              "wordId": "L1-0325"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Not you? Then who?",
+          "id": "Bukan kamu? Terus siapa?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "是它！",
+          "pinyin": "shì tā！",
+          "tokens": [
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "它",
+              "pinyin": "tā",
+              "wordId": "L1-0523"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "It was him!",
+          "id": "Dia tuh!",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "它？",
+          "pinyin": "tā？",
+          "tokens": [
+            {
+              "text": "它",
+              "pinyin": "tā",
+              "wordId": "L1-0523"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "The cat?",
+          "id": "Kucing itu?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "对，你问它！",
+          "pinyin": "duì， nǐ wèn tā！",
+          "tokens": [
+            {
+              "text": "对",
+              "pinyin": "duì",
+              "wordId": "L1-0092"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "问",
+              "pinyin": "wèn",
+              "wordId": "L1-0379"
+            },
+            {
+              "text": "它",
+              "pinyin": "tā",
+              "wordId": "L1-0523"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Yes, ask him!",
+          "id": "Iya, tanya saja dia!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u06",
+      "unit": "u06",
+      "title": {
+        "id": "Berapa pangsit?",
+        "en": "How many dumplings?"
+      },
+      "place": {
+        "id": "Meja makan di rumah",
+        "en": "Dining table at home"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Nenek ingin Kakak makan banyak, Kakak ingin sedikit saja; mereka tawar-menawar jumlahnya.",
+        "en": "Grandma wants big brother to eat a lot, he wants less, so they haggle over the number."
+      },
+      "situation": {
+        "id": "Nenek baru selesai merebus pangsit dan mengisi piring Kakak.",
+        "en": "Grandma has just cooked dumplings and is filling big brother's plate."
       },
       "machine": true,
       "lines": [
         {
           "speaker": "nainai",
           "gender": "female",
-          "cmn": "老板，这个多少钱？",
-          "pinyin": "lǎo bǎn， zhège duōshao qián？",
+          "cmn": "饺子好了！二十个，怎么样？",
+          "pinyin": "jiǎozi hǎo le！ èr shí gè， zěnmeyàng？",
           "tokens": [
             {
-              "text": "老板",
-              "pinyin": "lǎo bǎn",
-              "casualId": "c-u18-05"
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
             },
             {
               "text": "，"
             },
             {
-              "text": "这个",
-              "pinyin": "zhège",
-              "wordId": "L1-0532"
+              "text": "怎么样",
+              "pinyin": "zěnmeyàng",
+              "wordId": "L1-0531"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "The dumplings are ready! Twenty, OK?",
+          "id": "Pangsitnya sudah matang! Dua puluh, ya?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "二十个？太多了！",
+          "pinyin": "èr shí gè？ tài duō le！",
+          "tokens": [
+            {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "太",
+              "pinyin": "tài",
+              "wordId": "L1-0358"
+            },
+            {
+              "text": "多",
+              "pinyin": "duō",
+              "wordId": "L1-0094"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Twenty? Way too many!",
+          "id": "Dua puluh? Kebanyakan!",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "那十五个。",
+          "pinyin": "nà shí wǔ gè。",
+          "tokens": [
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Fifteen, then.",
+          "id": "Ya sudah, lima belas.",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "十个吧。",
+          "pinyin": "shí gè ba。",
+          "tokens": [
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Let's say ten.",
+          "id": "Sepuluh saja.",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "十个太少了！十二个。",
+          "pinyin": "shí gè tài shǎo le！ shí èr gè。",
+          "tokens": [
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "太",
+              "pinyin": "tài",
+              "wordId": "L1-0358"
+            },
+            {
+              "text": "少",
+              "pinyin": "shǎo",
+              "wordId": "L1-0324"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Ten is too few! Twelve.",
+          "id": "Sepuluh terlalu sedikit! Dua belas.",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "好吧，十二个。",
+          "pinyin": "hǎo ba， shí èr gè。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK, twelve.",
+          "id": "Oke deh, dua belas.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u07",
+      "unit": "u07",
+      "title": {
+        "id": "Itu pacarmu?",
+        "en": "Is that your girlfriend?"
+      },
+      "place": {
+        "id": "Gerbang kampus",
+        "en": "University gate"
+      },
+      "placeKind": "school",
+      "goal": {
+        "id": "Ibu ingin tahu apakah perempuan itu pacar Kakak.",
+        "en": "Mom wants to know whether the girl is big brother's girlfriend."
+      },
+      "situation": {
+        "id": "Ibu menjemput Kakak di gerbang kampus. Sebelum Kakak datang, Ibu melihatnya mengobrol dengan seorang mahasiswi.",
+        "en": "Mom comes to pick up big brother at the university gate. Just before, she saw him chatting with a girl."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那个女孩子是谁？",
+          "pinyin": "nàge nǚ háizi shì shéi？",
+          "tokens": [
+            {
+              "text": "那个",
+              "pinyin": "nàge",
+              "wordId": "L1-0515"
+            },
+            {
+              "text": "女",
+              "pinyin": "nǚ",
+              "wordId": "L1-0276"
+            },
+            {
+              "text": "孩子",
+              "pinyin": "háizi",
+              "wordId": "L1-0135"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "谁",
+              "pinyin": "shéi",
+              "wordId": "L1-0325"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Who is that girl?",
+          "id": "Perempuan tadi siapa?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "她？我同学。",
+          "pinyin": "tā？ wǒ tóngxué。",
+          "tokens": [
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "同学",
+              "pinyin": "tóngxué",
+              "wordId": "L1-0365"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Her? A classmate.",
+          "id": "Dia? Teman sekelas.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "同学？不是你女朋友？",
+          "pinyin": "tóngxué？ bù shì nǐ nǚpéngyou？",
+          "tokens": [
+            {
+              "text": "同学",
+              "pinyin": "tóngxué",
+              "wordId": "L1-0365"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "女朋友",
+              "pinyin": "nǚpéngyou",
+              "wordId": "L1-0279"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "A classmate? Not your girlfriend?",
+          "id": "Teman sekelas? Bukan pacarmu?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不是不是！她有男朋友。",
+          "pinyin": "bù shì bù shì！ tā yǒu nánpéngyou。",
+          "tokens": [
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "男朋友",
+              "pinyin": "nánpéngyou",
+              "wordId": "L1-0263"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "No, no! She has a boyfriend.",
+          "id": "Bukan, bukan! Dia sudah punya pacar.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那你呢？你有女朋友吗？",
+          "pinyin": "nà nǐ ne？ nǐ yǒu nǚpéngyou ma？",
+          "tokens": [
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "呢",
+              "pinyin": "ne",
+              "wordId": "L1-0269"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "女朋友",
+              "pinyin": "nǚpéngyou",
+              "wordId": "L1-0279"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "And you? Do you have a girlfriend?",
+          "id": "Kalau kamu? Kamu punya pacar?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "妈！",
+          "pinyin": "mā！",
+          "tokens": [
+            {
+              "text": "妈",
+              "pinyin": "mā",
+              "wordId": "L1-0224"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Mom!",
+          "id": "Ibu!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u08",
+      "unit": "u08",
+      "title": {
+        "id": "Anjing teman di taman",
+        "en": "A friend's dog in the park"
+      },
+      "place": {
+        "id": "Taman dekat rumah",
+        "en": "Park near home"
+      },
+      "placeKind": "park",
+      "goal": {
+        "id": "Adik ingin tahu nama anjing temannya.",
+        "en": "Little sister wants to know the name of her friend's dog."
+      },
+      "situation": {
+        "id": "Sore hari di taman, Adik bertemu teman sekolahnya yang sedang mengajak anjing jalan-jalan.",
+        "en": "In the park one afternoon, little sister runs into a school friend who is walking a dog."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这是你家的狗吗？",
+          "pinyin": "zhè shì nǐ jiā de gǒu ma？",
+          "tokens": [
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "家",
+              "pinyin": "jiā",
+              "wordId": "L1-0169"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "狗",
+              "pinyin": "gǒu",
+              "wordId": "L1-0509"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Is this your family's dog?",
+          "id": "Ini anjing keluargamu?",
+          "machine": true
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "对！",
+          "pinyin": "duì！",
+          "tokens": [
+            {
+              "text": "对",
+              "pinyin": "duì",
+              "wordId": "L1-0092"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Yes!",
+          "id": "Iya!",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "它叫什么名字？",
+          "pinyin": "tā jiào shénme míngzi？",
+          "tokens": [
+            {
+              "text": "它",
+              "pinyin": "tā",
+              "wordId": "L1-0523"
+            },
+            {
+              "text": "叫",
+              "pinyin": "jiào",
+              "wordId": "L1-0176"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "名字",
+              "pinyin": "míngzi",
+              "wordId": "L1-0245"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "What's its name?",
+          "id": "Namanya apa?",
+          "machine": true
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "它叫“包子”。",
+          "pinyin": "tā jiào“bāozi”。",
+          "tokens": [
+            {
+              "text": "它",
+              "pinyin": "tā",
+              "wordId": "L1-0523"
+            },
+            {
+              "text": "叫",
+              "pinyin": "jiào",
+              "wordId": "L1-0176"
+            },
+            {
+              "text": "“"
+            },
+            {
+              "text": "包子",
+              "pinyin": "bāozi",
+              "wordId": "L1-0016"
+            },
+            {
+              "text": "”"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "It's called \"Baozi\".",
+          "id": "Namanya \"Bakpao\".",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "包子？我家的猫叫“饺子”！",
+          "pinyin": "bāozi？ wǒ jiā de māo jiào“jiǎozi”！",
+          "tokens": [
+            {
+              "text": "包子",
+              "pinyin": "bāozi",
+              "wordId": "L1-0016"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "家",
+              "pinyin": "jiā",
+              "wordId": "L1-0169"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "猫",
+              "pinyin": "māo",
+              "wordId": "L1-0514"
+            },
+            {
+              "text": "叫",
+              "pinyin": "jiào",
+              "wordId": "L1-0176"
+            },
+            {
+              "text": "“"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "”"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Baozi? Our cat is called \"Jiaozi\"!",
+          "id": "Bakpao? Kucing di rumahku namanya \"Pangsit\"!",
+          "machine": true
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "饺子？真的吗？",
+          "pinyin": "jiǎozi？ zhēn de ma？",
+          "tokens": [
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "真",
+              "pinyin": "zhēn",
+              "wordId": "L1-0470"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Jiaozi? Really?",
+          "id": "Pangsit? Beneran?",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u09",
+      "unit": "u09",
+      "title": {
+        "id": "Memesan di warung mi",
+        "en": "Ordering at a noodle shop"
+      },
+      "place": {
+        "id": "Warung mi",
+        "en": "Noodle shop"
+      },
+      "placeKind": "eatery",
+      "goal": {
+        "id": "Ibu ingin memesan makan siang.",
+        "en": "Mom wants to order lunch."
+      },
+      "situation": {
+        "id": "Siang hari Ibu masuk ke warung mi kecil dan duduk. Pelayan datang mencatat pesanan.",
+        "en": "At lunchtime Mom sits down in a small noodle shop. The waiter comes to take her order."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "您好，吃什么？",
+          "pinyin": "nín hǎo， chī shénme？",
+          "tokens": [
+            {
+              "text": "您",
+              "pinyin": "nín",
+              "wordId": "L1-0274"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hello, what would you like?",
+          "id": "Halo, mau makan apa?",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "有包子吗？",
+          "pinyin": "yǒu bāozi ma？",
+          "tokens": [
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "包子",
+              "pinyin": "bāozi",
+              "wordId": "L1-0016"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Do you have baozi?",
+          "id": "Ada bakpao?",
+          "machine": true
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "包子没有了。有饺子和面条儿。",
+          "pinyin": "bāozi méiyǒu le。 yǒu jiǎozi hé miàntiáor。",
+          "tokens": [
+            {
+              "text": "包子",
+              "pinyin": "bāozi",
+              "wordId": "L1-0016"
+            },
+            {
+              "text": "没有",
+              "pinyin": "méiyǒu",
+              "wordId": "L1-0236"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "和",
+              "pinyin": "hé",
+              "wordId": "L1-0145"
+            },
+            {
+              "text": "面条儿",
+              "pinyin": "miàntiáor",
+              "wordId": "L1-0244"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "We're out of baozi. We have dumplings and noodles.",
+          "id": "Bakpaonya habis. Ada pangsit dan mi.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那……饺子吧。",
+          "pinyin": "nà…… jiǎozi ba。",
+          "tokens": [
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Then... dumplings.",
+          "id": "Kalau begitu... pangsit saja.",
+          "machine": true
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "好的。喝什么？",
+          "pinyin": "hǎo de。 hē shénme？",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "喝",
+              "pinyin": "hē",
+              "wordId": "L1-0144"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "OK. Anything to drink?",
+          "id": "Baik. Minumnya apa?",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "不喝了，谢谢。",
+          "pinyin": "bù hē le， xièxie。",
+          "tokens": [
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "喝",
+              "pinyin": "hē",
+              "wordId": "L1-0144"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Nothing, thanks.",
+          "id": "Tidak usah, terima kasih.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u10",
+      "unit": "u10",
+      "title": {
+        "id": "Kakek salah hari",
+        "en": "Grandpa mixes up the days"
+      },
+      "place": {
+        "id": "Pintu depan rumah, pagi hari",
+        "en": "Front door at home, morning"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Kakek ingin tahu hari ini hari apa, karena ia kira hari ini Sabtu.",
+        "en": "Grandpa wants to know what day it is, because he thinks it is Saturday."
+      },
+      "situation": {
+        "id": "Pagi hari Adik memakai tas sekolah dan siap berangkat. Kakek kaget, karena ia kira hari ini libur.",
+        "en": "In the morning little sister puts on her school bag, ready to leave. Grandpa is surprised: he thinks today is a day off."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "今天星期六，你还上学？",
+          "pinyin": "jīntiān xīngqī liù， nǐ hái shàngxué？",
+          "tokens": [
+            {
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "wordId": "L1-0181"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "六",
+              "pinyin": "liù",
+              "wordId": "L1-0217"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "还",
+              "pinyin": "hái",
+              "wordId": "L1-0132"
+            },
+            {
+              "text": "上学",
+              "pinyin": "shàngxué",
+              "wordId": "L1-0323"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "It's Saturday today. You still have school?",
+          "id": "Hari ini Sabtu, kok kamu sekolah?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "今天不是星期六，是星期五！",
+          "pinyin": "jīntiān bù shì xīngqī liù， shì xīngqī wǔ！",
+          "tokens": [
+            {
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "wordId": "L1-0181"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "六",
+              "pinyin": "liù",
+              "wordId": "L1-0217"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Today isn't Saturday, it's Friday!",
+          "id": "Hari ini bukan Sabtu, tapi Jumat!",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "星期五？昨天不是星期五吗？",
+          "pinyin": "xīngqī wǔ？ zuótiān bù shì xīngqī wǔ ma？",
+          "tokens": [
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "昨天",
+              "pinyin": "zuótiān",
+              "wordId": "L1-0495"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Friday? Wasn't yesterday Friday?",
+          "id": "Jumat? Bukannya kemarin Jumat?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "不是，昨天是星期四。",
+          "pinyin": "bù shì， zuótiān shì xīngqī sì。",
+          "tokens": [
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "昨天",
+              "pinyin": "zuótiān",
+              "wordId": "L1-0495"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "四",
+              "pinyin": "sì",
+              "wordId": "L1-0351"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "No, yesterday was Thursday.",
+          "id": "Bukan, kemarin Kamis.",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "星期四……对，对。那明天是星期六。",
+          "pinyin": "xīngqī sì…… duì， duì。 nà míngtiān shì xīngqī liù。",
+          "tokens": [
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "四",
+              "pinyin": "sì",
+              "wordId": "L1-0351"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "对",
+              "pinyin": "duì",
+              "wordId": "L1-0092"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "对",
+              "pinyin": "duì",
+              "wordId": "L1-0092"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "明天",
+              "pinyin": "míngtiān",
+              "wordId": "L1-0248"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "六",
+              "pinyin": "liù",
+              "wordId": "L1-0217"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Thursday... right, right. So tomorrow is Saturday.",
+          "id": "Kamis... oh iya, iya. Jadi besok Sabtu.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "对！拜拜！",
+          "pinyin": "duì！ bái bái！",
+          "tokens": [
+            {
+              "text": "对",
+              "pinyin": "duì",
+              "wordId": "L1-0092"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "拜拜",
+              "pinyin": "bái bái",
+              "casualId": "c-u01-01"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Yes! Bye-bye!",
+          "id": "Iya! Dah!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u11",
+      "unit": "u11",
+      "title": {
+        "id": "Janjian lewat telepon",
+        "en": "Making a plan on the phone"
+      },
+      "place": {
+        "id": "Telepon",
+        "en": "Phone call"
+      },
+      "placeKind": "phone",
+      "goal": {
+        "id": "Teman kuliah ingin janjian dengan Kakak besok untuk belajar bersama.",
+        "en": "A classmate wants to set a time with big brother to study together tomorrow."
+      },
+      "situation": {
+        "id": "Teman kuliah Kakak menelepon. Mereka mau belajar bersama di toko buku besok dan perlu menentukan jamnya.",
+        "en": "Big brother's classmate calls him. They want to study together at the bookshop tomorrow and need to pick a time."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "喂，明天上午有时间吗？",
+          "pinyin": "wèi， míngtiān shàngwǔ yǒu shíjiān ma？",
+          "tokens": [
+            {
+              "text": "喂",
+              "pinyin": "wèi",
+              "wordId": "L1-0525"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "明天",
+              "pinyin": "míngtiān",
+              "wordId": "L1-0248"
+            },
+            {
+              "text": "上午",
+              "pinyin": "shàngwǔ",
+              "wordId": "L1-0322"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "时间",
+              "pinyin": "shíjiān",
+              "wordId": "L1-0334"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hey, are you free tomorrow morning?",
+          "id": "Halo, besok pagi ada waktu?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "上午没有。下午呢？",
+          "pinyin": "shàngwǔ méiyǒu。 xiàwǔ ne？",
+          "tokens": [
+            {
+              "text": "上午",
+              "pinyin": "shàngwǔ",
+              "wordId": "L1-0322"
+            },
+            {
+              "text": "没有",
+              "pinyin": "méiyǒu",
+              "wordId": "L1-0236"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "下午",
+              "pinyin": "xiàwǔ",
+              "wordId": "L1-0395"
+            },
+            {
+              "text": "呢",
+              "pinyin": "ne",
+              "wordId": "L1-0269"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Not in the morning. How about the afternoon?",
+          "id": "Pagi tidak bisa. Kalau siang?",
+          "machine": true
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "下午也好。几点？",
+          "pinyin": "xiàwǔ yě hǎo。 jǐ diǎn？",
+          "tokens": [
+            {
+              "text": "下午",
+              "pinyin": "xiàwǔ",
+              "wordId": "L1-0395"
+            },
+            {
+              "text": "也",
+              "pinyin": "yě",
+              "wordId": "L1-0425"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "几",
+              "pinyin": "jǐ",
+              "wordId": "L1-0165"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Afternoon works too. What time?",
+          "id": "Siang juga boleh. Jam berapa?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "两点半，在书店，怎么样？",
+          "pinyin": "liǎng diǎn bàn， zài shūdiàn， zěnmeyàng？",
+          "tokens": [
+            {
+              "text": "两",
+              "pinyin": "liǎng",
+              "wordId": "L1-0215"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "半",
+              "pinyin": "bàn",
+              "wordId": "L1-0010"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "书店",
+              "pinyin": "shūdiàn",
+              "wordId": "L1-0343"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "怎么样",
+              "pinyin": "zěnmeyàng",
+              "wordId": "L1-0531"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Half past two, at the bookshop. OK?",
+          "id": "Setengah tiga, di toko buku. Bagaimana?",
+          "machine": true
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "好，两点半。不见不散！",
+          "pinyin": "hǎo， liǎng diǎn bàn。 bù jiàn bù sàn！",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "两",
+              "pinyin": "liǎng",
+              "wordId": "L1-0215"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "半",
+              "pinyin": "bàn",
+              "wordId": "L1-0010"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "不见不散",
+              "pinyin": "bù jiàn bù sàn",
+              "casualId": "c-u13-09"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "OK, half past two. I'll wait for you there!",
+          "id": "Oke, setengah tiga. Aku tunggu di sana, ya!",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不见不散！",
+          "pinyin": "bù jiàn bù sàn！",
+          "tokens": [
+            {
+              "text": "不见不散",
+              "pinyin": "bù jiàn bù sàn",
+              "casualId": "c-u13-09"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "I'll be there!",
+          "id": "Aku pasti datang!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u12",
+      "unit": "u12",
+      "title": {
+        "id": "Menanyakan jalan ke supermarket",
+        "en": "Asking the way to the supermarket"
+      },
+      "place": {
+        "id": "Jalan di dekat pasar",
+        "en": "Street near the market"
+      },
+      "placeKind": "street",
+      "goal": {
+        "id": "Nenek mencari supermarket terdekat.",
+        "en": "Grandma is looking for the nearest supermarket."
+      },
+      "situation": {
+        "id": "Nenek berjalan di daerah yang belum ia kenal. Ia bertanya kepada penjual buah di pinggir jalan.",
+        "en": "Grandma is walking in a part of town she doesn't know well. She asks a fruit seller at a roadside stall."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "请问，这边有超市吗？",
+          "pinyin": "qǐngwèn， zhèbiān yǒu chāoshì ma？",
+          "tokens": [
+            {
+              "text": "请问",
+              "pinyin": "qǐngwèn",
+              "wordId": "L1-0299"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "这边",
+              "pinyin": "zhèbiān",
+              "wordId": "L1-0465"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "超市",
+              "pinyin": "chāoshì",
+              "wordId": "L1-0503"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Excuse me, is there a supermarket around here?",
+          "id": "Permisi, di sekitar sini ada supermarket?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "超市？在前头。",
+          "pinyin": "chāoshì？ zài qián tou。",
+          "tokens": [
+            {
+              "text": "超市",
+              "pinyin": "chāoshì",
+              "wordId": "L1-0503"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "前头",
+              "pinyin": "qián tou",
+              "casualId": "c-u09-03"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "A supermarket? It's up ahead.",
+          "id": "Supermarket? Di depan sana.",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "前头？前头哪儿？",
+          "pinyin": "qián tou？ qián tou nǎr？",
+          "tokens": [
+            {
+              "text": "前头",
+              "pinyin": "qián tou",
+              "casualId": "c-u09-03"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "前头",
+              "pinyin": "qián tou",
+              "casualId": "c-u09-03"
+            },
+            {
+              "text": "哪儿",
+              "pinyin": "nǎr",
+              "wordId": "L1-0252"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Up ahead? Where exactly?",
+          "id": "Di depan? Di depan mana?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "在那个书店后头。",
+          "pinyin": "zài nàge shūdiàn hòu tou。",
+          "tokens": [
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "那个",
+              "pinyin": "nàge",
+              "wordId": "L1-0515"
+            },
+            {
+              "text": "书店",
+              "pinyin": "shūdiàn",
+              "wordId": "L1-0343"
+            },
+            {
+              "text": "后头",
+              "pinyin": "hòu tou",
+              "casualId": "c-u09-04"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Behind that bookshop.",
+          "id": "Di belakang toko buku itu.",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "书店后头？好，谢谢！",
+          "pinyin": "shūdiàn hòu tou？ hǎo， xièxie！",
+          "tokens": [
+            {
+              "text": "书店",
+              "pinyin": "shūdiàn",
+              "wordId": "L1-0343"
+            },
+            {
+              "text": "后头",
+              "pinyin": "hòu tou",
+              "casualId": "c-u09-04"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Behind the bookshop? OK, thanks!",
+          "id": "Di belakang toko buku? Oke, terima kasih!",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "pinyin": "búkèqi。",
+          "tokens": [
+            {
+              "text": "不客气",
+              "pinyin": "búkèqi",
+              "wordId": "L1-0032"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "You're welcome.",
+          "id": "Sama-sama.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u13",
+      "unit": "u13",
+      "title": {
+        "id": "Macet di taksi",
+        "en": "Stuck in traffic in a taxi"
+      },
+      "place": {
+        "id": "Di dalam taksi",
+        "en": "In a taxi"
+      },
+      "placeKind": "transport",
+      "goal": {
+        "id": "Ibu ingin sampai di bioskop dan memutuskan turun lebih awal karena macet.",
+        "en": "Mom wants to get to the cinema and decides to get out early because of the traffic jam."
+      },
+      "situation": {
+        "id": "Ibu naik taksi ke bioskop. Tidak jauh sebelum sampai, jalan macet.",
+        "en": "Mom takes a taxi to the cinema. Just before they arrive, the traffic stops."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "去哪儿？",
+          "pinyin": "qù nǎr？",
+          "tokens": [
+            {
+              "text": "去",
+              "pinyin": "qù",
+              "wordId": "L1-0302"
+            },
+            {
+              "text": "哪儿",
+              "pinyin": "nǎr",
+              "wordId": "L1-0252"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Where to?",
+          "id": "Ke mana?",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "师傅，去电影院。",
+          "pinyin": "shī fu， qù diànyǐngyuàn。",
+          "tokens": [
+            {
+              "text": "师傅",
+              "pinyin": "shī fu",
+              "casualId": "c-u12-03"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "去",
+              "pinyin": "qù",
+              "wordId": "L1-0302"
+            },
+            {
+              "text": "电影院",
+              "pinyin": "diànyǐngyuàn",
+              "wordId": "L1-0083"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "To the cinema, please.",
+          "id": "Pak, ke bioskop.",
+          "machine": true
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "好。……前头堵车了。电影院在那儿。",
+          "pinyin": "hǎo。…… qián tou dǔ chē le。 diànyǐngyuàn zài nàr。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "前头",
+              "pinyin": "qián tou",
+              "casualId": "c-u09-03"
+            },
+            {
+              "text": "堵车",
+              "pinyin": "dǔ chē",
+              "casualId": "c-u12-02"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "电影院",
+              "pinyin": "diànyǐngyuàn",
+              "wordId": "L1-0083"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "那儿",
+              "pinyin": "nàr",
+              "wordId": "L1-0257"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK. ... There's a jam up ahead. The cinema is just there.",
+          "id": "Baik. ... Di depan macet. Bioskopnya di sana itu.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那我在这儿下车吧。多少钱？",
+          "pinyin": "nà wǒ zài zhèr xià chē ba。 duōshao qián？",
+          "tokens": [
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "这儿",
+              "pinyin": "zhèr",
+              "wordId": "L1-0467"
+            },
+            {
+              "text": "下",
+              "pinyin": "xià",
+              "wordId": "L1-0389"
+            },
+            {
+              "text": "车",
+              "pinyin": "chē",
+              "wordId": "L1-0042"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "。"
             },
             {
               "text": "多少",
@@ -140,20 +3099,25 @@
               "text": "？"
             }
           ],
-          "en": "Boss, how much is this?",
-          "id": "Bu, ini berapa?",
+          "en": "Then I'll get out here. How much is it?",
+          "id": "Kalau begitu saya turun di sini saja. Berapa?",
           "machine": true
         },
         {
-          "speaker": "seller",
-          "gender": "female",
-          "cmn": "十块。",
-          "pinyin": "shí kuài。",
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "十八块。",
+          "pinyin": "shí bā kuài。",
           "tokens": [
             {
               "text": "十",
               "pinyin": "shí",
               "wordId": "L1-0332"
+            },
+            {
+              "text": "八",
+              "pinyin": "bā",
+              "wordId": "L1-0003"
             },
             {
               "text": "块",
@@ -164,25 +3128,849 @@
               "text": "。"
             }
           ],
-          "en": "Ten yuan.",
-          "id": "Sepuluh yuan.",
+          "en": "Eighteen yuan.",
+          "id": "Delapan belas yuan.",
           "machine": true
         },
         {
-          "speaker": "nainai",
+          "speaker": "mama",
           "gender": "female",
-          "cmn": "太贵了！",
-          "pinyin": "tài guì le！",
+          "cmn": "好。谢谢师傅！",
+          "pinyin": "hǎo。 xièxie shī fu！",
           "tokens": [
             {
-              "text": "太",
-              "pinyin": "tài",
-              "wordId": "L1-0358"
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
             },
             {
-              "text": "贵",
-              "pinyin": "guì",
-              "wordId": "L1-0127"
+              "text": "。"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "师傅",
+              "pinyin": "shī fu",
+              "casualId": "c-u12-03"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "OK. Thank you!",
+          "id": "Oke. Terima kasih, Pak!",
+          "machine": true
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "慢走！",
+          "pinyin": "màn zǒu！",
+          "tokens": [
+            {
+              "text": "慢走",
+              "pinyin": "màn zǒu",
+              "casualId": "c-u12-04"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Take care!",
+          "id": "Hati-hati!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u14",
+      "unit": "u14",
+      "title": {
+        "id": "Bangun, sudah siang!",
+        "en": "Get up, it's late!"
+      },
+      "place": {
+        "id": "Kamar Kakak",
+        "en": "Big brother's room"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Ibu ingin Kakak bangun untuk sarapan.",
+        "en": "Mom wants big brother to get up for breakfast."
+      },
+      "situation": {
+        "id": "Sabtu pagi jam sepuluh. Kakak masih tidur, dan Ibu membangunkannya.",
+        "en": "It's ten o'clock on Saturday morning. Big brother is still asleep, and Mom comes to wake him."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "十点了，还不起床？",
+          "pinyin": "shí diǎn le， hái bù qǐchuáng？",
+          "tokens": [
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "还",
+              "pinyin": "hái",
+              "wordId": "L1-0132"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "起床",
+              "pinyin": "qǐchuáng",
+              "wordId": "L1-0288"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "It's ten o'clock. Still not up?",
+          "id": "Sudah jam sepuluh, belum bangun juga?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "今天星期六……我再睡一下。",
+          "pinyin": "jīntiān xīngqī liù…… wǒ zài shuì yíxià。",
+          "tokens": [
+            {
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "wordId": "L1-0181"
+            },
+            {
+              "text": "星期",
+              "pinyin": "xīngqī",
+              "wordId": "L1-0413"
+            },
+            {
+              "text": "六",
+              "pinyin": "liù",
+              "wordId": "L1-0217"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "再",
+              "pinyin": "zài",
+              "wordId": "L1-0453"
+            },
+            {
+              "text": "睡",
+              "pinyin": "shuì",
+              "wordId": "L1-0347"
+            },
+            {
+              "text": "一下",
+              "pinyin": "yíxià",
+              "wordId": "L1-0434"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "It's Saturday... Let me sleep a bit more.",
+          "id": "Ini kan Sabtu... Aku tidur sebentar lagi.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "早饭不吃了？",
+          "pinyin": "zǎofàn bù chī le？",
+          "tokens": [
+            {
+              "text": "早饭",
+              "pinyin": "zǎofàn",
+              "wordId": "L1-0458"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "No breakfast, then?",
+          "id": "Tidak sarapan?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "吃……再睡十分钟。",
+          "pinyin": "chī…… zài shuì shí fēnzhōng。",
+          "tokens": [
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "再",
+              "pinyin": "zài",
+              "wordId": "L1-0453"
+            },
+            {
+              "text": "睡",
+              "pinyin": "shuì",
+              "wordId": "L1-0347"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "分钟",
+              "pinyin": "fēnzhōng",
+              "wordId": "L1-0507"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "I'll eat... Ten more minutes.",
+          "id": "Sarapan... sepuluh menit lagi.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好，十分钟后我再叫你。",
+          "pinyin": "hǎo， shí fēnzhōng hòu wǒ zài jiào nǐ。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "十",
+              "pinyin": "shí",
+              "wordId": "L1-0332"
+            },
+            {
+              "text": "分钟",
+              "pinyin": "fēnzhōng",
+              "wordId": "L1-0507"
+            },
+            {
+              "text": "后",
+              "pinyin": "hòu",
+              "wordId": "L1-0147"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "再",
+              "pinyin": "zài",
+              "wordId": "L1-0453"
+            },
+            {
+              "text": "叫",
+              "pinyin": "jiào",
+              "wordId": "L1-0176"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK, I'll call you again in ten minutes.",
+          "id": "Ya sudah, sepuluh menit lagi Ibu bangunkan.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u15",
+      "unit": "u15",
+      "title": {
+        "id": "Mau makan malam apa?",
+        "en": "What do you want for dinner?"
+      },
+      "place": {
+        "id": "Telepon dari supermarket",
+        "en": "Phone call from the supermarket"
+      },
+      "placeKind": "phone",
+      "goal": {
+        "id": "Ayah ingin tahu Adik mau makan malam apa.",
+        "en": "Dad wants to know what little sister wants for dinner."
+      },
+      "situation": {
+        "id": "Ayah sedang di supermarket sepulang kerja dan menelepon ke rumah. Adik yang mengangkat.",
+        "en": "Dad is at the supermarket after work and calls home. Little sister answers."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "喂，我在超市。晚上想吃什么？",
+          "pinyin": "wèi， wǒ zài chāoshì。 wǎnshang xiǎng chī shénme？",
+          "tokens": [
+            {
+              "text": "喂",
+              "pinyin": "wèi",
+              "wordId": "L1-0525"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "超市",
+              "pinyin": "chāoshì",
+              "wordId": "L1-0503"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "晚上",
+              "pinyin": "wǎnshang",
+              "wordId": "L1-0374"
+            },
+            {
+              "text": "想",
+              "pinyin": "xiǎng",
+              "wordId": "L1-0400"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hi, I'm at the supermarket. What do you want for dinner?",
+          "id": "Halo, Ayah di supermarket. Nanti malam mau makan apa?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我想吃饺子！",
+          "pinyin": "wǒ xiǎng chī jiǎozi！",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "想",
+              "pinyin": "xiǎng",
+              "wordId": "L1-0400"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "I want dumplings!",
+          "id": "Aku mau pangsit!",
+          "machine": true
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "饺子？昨天也是饺子。",
+          "pinyin": "jiǎozi？ zuótiān yě shì jiǎozi。",
+          "tokens": [
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "昨天",
+              "pinyin": "zuótiān",
+              "wordId": "L1-0495"
+            },
+            {
+              "text": "也",
+              "pinyin": "yě",
+              "wordId": "L1-0425"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Dumplings? We had dumplings yesterday too.",
+          "id": "Pangsit? Kemarin juga pangsit.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我喜欢饺子！",
+          "pinyin": "wǒ xǐhuan jiǎozi！",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "喜欢",
+              "pinyin": "xǐhuan",
+              "wordId": "L1-0388"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "I like dumplings!",
+          "id": "Aku suka pangsit!",
+          "machine": true
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "好吧，饺子。",
+          "pinyin": "hǎo ba， jiǎozi。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "wordId": "L1-0511"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Fine, dumplings.",
+          "id": "Ya sudah, pangsit.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "谢谢爸爸！",
+          "pinyin": "xièxie bàba！",
+          "tokens": [
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "爸爸",
+              "pinyin": "bàba",
+              "wordId": "L1-0004"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Thanks, Dad!",
+          "id": "Makasih, Ayah!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u16",
+      "unit": "u16",
+      "title": {
+        "id": "Teman sebangku baru",
+        "en": "A new desk mate"
+      },
+      "place": {
+        "id": "Jalan pulang dari sekolah",
+        "en": "Walking home from school"
+      },
+      "placeKind": "street",
+      "goal": {
+        "id": "Ibu ingin tahu bagaimana hari Adik di sekolah.",
+        "en": "Mom wants to know how little sister's day at school went."
+      },
+      "situation": {
+        "id": "Ibu menjemput Adik dan mereka berjalan pulang bersama.",
+        "en": "Mom picks up little sister and they walk home together."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "今天在学校怎么样？",
+          "pinyin": "jīntiān zài xuéxiào zěnmeyàng？",
+          "tokens": [
+            {
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "wordId": "L1-0181"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "学校",
+              "pinyin": "xuéxiào",
+              "wordId": "L1-0421"
+            },
+            {
+              "text": "怎么样",
+              "pinyin": "zěnmeyàng",
+              "wordId": "L1-0531"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "How was school today?",
+          "id": "Bagaimana sekolah hari ini?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "很好！我有一个新同桌。",
+          "pinyin": "hěn hǎo！ wǒ yǒu yī gè xīn tóng zhuō。",
+          "tokens": [
+            {
+              "text": "很",
+              "pinyin": "hěn",
+              "wordId": "L1-0146"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "！"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "一",
+              "pinyin": "yī",
+              "wordId": "L1-0427"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "新",
+              "pinyin": "xīn",
+              "wordId": "L1-0411"
+            },
+            {
+              "text": "同桌",
+              "pinyin": "tóng zhuō",
+              "casualId": "c-u14-06"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Great! I have a new desk mate.",
+          "id": "Baik! Aku punya teman sebangku baru.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "新同桌？男孩子还是女孩子？",
+          "pinyin": "xīn tóng zhuō？ nán háizi hái shì nǚ háizi？",
+          "tokens": [
+            {
+              "text": "新",
+              "pinyin": "xīn",
+              "wordId": "L1-0411"
+            },
+            {
+              "text": "同桌",
+              "pinyin": "tóng zhuō",
+              "casualId": "c-u14-06"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "男",
+              "pinyin": "nán",
+              "wordId": "L1-0261"
+            },
+            {
+              "text": "孩子",
+              "pinyin": "háizi",
+              "wordId": "L1-0135"
+            },
+            {
+              "text": "还",
+              "pinyin": "hái",
+              "wordId": "L1-0132"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "女",
+              "pinyin": "nǚ",
+              "wordId": "L1-0276"
+            },
+            {
+              "text": "孩子",
+              "pinyin": "háizi",
+              "wordId": "L1-0135"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "A new desk mate? A boy or a girl?",
+          "id": "Teman sebangku baru? Laki-laki atau perempuan?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "女孩子。她是学霸！",
+          "pinyin": "nǚ háizi。 tā shì xué bà！",
+          "tokens": [
+            {
+              "text": "女",
+              "pinyin": "nǚ",
+              "wordId": "L1-0276"
+            },
+            {
+              "text": "孩子",
+              "pinyin": "háizi",
+              "wordId": "L1-0135"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "是",
+              "pinyin": "shì",
+              "wordId": "L1-0337"
+            },
+            {
+              "text": "学霸",
+              "pinyin": "xué bà",
+              "casualId": "c-u14-01"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "A girl. She's super smart!",
+          "id": "Perempuan. Dia jago banget belajarnya!",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "学霸？那你也要好好学习。",
+          "pinyin": "xué bà？ nà nǐ yě yào hǎo hǎo xuéxí。",
+          "tokens": [
+            {
+              "text": "学霸",
+              "pinyin": "xué bà",
+              "casualId": "c-u14-01"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "也",
+              "pinyin": "yě",
+              "wordId": "L1-0425"
+            },
+            {
+              "text": "要",
+              "pinyin": "yào",
+              "wordId": "L1-0423"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "学习",
+              "pinyin": "xuéxí",
+              "wordId": "L1-0420"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Super smart? Then you study hard too.",
+          "id": "Jago? Kalau begitu kamu juga harus rajin belajar.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "知道了！",
+          "pinyin": "zhīdào le！",
+          "tokens": [
+            {
+              "text": "知道",
+              "pinyin": "zhīdào",
+              "wordId": "L1-0474"
             },
             {
               "text": "了",
@@ -193,15 +3981,866 @@
               "text": "！"
             }
           ],
-          "en": "Too expensive!",
-          "id": "Mahal banget!",
+          "en": "I know!",
+          "id": "Iya, iya!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u17",
+      "unit": "u17",
+      "title": {
+        "id": "Membacakan pesan untuk Kakek",
+        "en": "Reading a message for Grandpa"
+      },
+      "place": {
+        "id": "Bangku taman",
+        "en": "Park bench"
+      },
+      "placeKind": "park",
+      "goal": {
+        "id": "Kakek minta Adik membacakan dan membalas pesan dari Ibu.",
+        "en": "Grandpa asks little sister to read Mom's message to him and reply."
+      },
+      "situation": {
+        "id": "Kakek dan Adik duduk di taman. Ada pesan dari Ibu di HP Kakek, tapi hurufnya terlalu kecil untuk Kakek.",
+        "en": "Grandpa and little sister are sitting in the park. Mom has sent a message to Grandpa's phone, but the text is too small for him."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "你妈妈写的什么？字太小了，你读一下。",
+          "pinyin": "nǐ māma xiě de shénme？ zì tài xiǎo le， nǐ dú yíxià。",
+          "tokens": [
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "妈妈",
+              "pinyin": "māma",
+              "wordId": "L1-0224"
+            },
+            {
+              "text": "写",
+              "pinyin": "xiě",
+              "wordId": "L1-0409"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "字",
+              "pinyin": "zì",
+              "wordId": "L1-0488"
+            },
+            {
+              "text": "太",
+              "pinyin": "tài",
+              "wordId": "L1-0358"
+            },
+            {
+              "text": "小",
+              "pinyin": "xiǎo",
+              "wordId": "L1-0401"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "读",
+              "pinyin": "dú",
+              "wordId": "L1-0090"
+            },
+            {
+              "text": "一下",
+              "pinyin": "yíxià",
+              "wordId": "L1-0434"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "What did your mom write? The letters are too small, you read it.",
+          "id": "Ibumu tulis apa? Hurufnya terlalu kecil, coba kamu bacakan.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我看看……她说她今天晚上八点回来。",
+          "pinyin": "wǒ kàn kàn…… tā shuō tā jīntiān wǎnshang bā diǎn huí lái。",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "说",
+              "pinyin": "shuō",
+              "wordId": "L1-0349"
+            },
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "今天",
+              "pinyin": "jīntiān",
+              "wordId": "L1-0181"
+            },
+            {
+              "text": "晚上",
+              "pinyin": "wǎnshang",
+              "wordId": "L1-0374"
+            },
+            {
+              "text": "八",
+              "pinyin": "bā",
+              "wordId": "L1-0003"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "回",
+              "pinyin": "huí",
+              "wordId": "L1-0154"
+            },
+            {
+              "text": "来",
+              "pinyin": "lái",
+              "wordId": "L1-0205"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Let me see... She says she'll be back at eight tonight.",
+          "id": "Coba aku lihat... Katanya Ibu pulang jam delapan malam ini.",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "八点？那晚饭呢？",
+          "pinyin": "bā diǎn？ nà wǎnfàn ne？",
+          "tokens": [
+            {
+              "text": "八",
+              "pinyin": "bā",
+              "wordId": "L1-0003"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "那",
+              "pinyin": "nà",
+              "wordId": "L1-0254"
+            },
+            {
+              "text": "晚饭",
+              "pinyin": "wǎnfàn",
+              "wordId": "L1-0373"
+            },
+            {
+              "text": "呢",
+              "pinyin": "ne",
+              "wordId": "L1-0269"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Eight? What about dinner?",
+          "id": "Jam delapan? Terus makan malamnya?",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "她说：你们吃吧。",
+          "pinyin": "tā shuō： nǐmen chī ba。",
+          "tokens": [
+            {
+              "text": "她",
+              "pinyin": "tā",
+              "wordId": "L1-0356"
+            },
+            {
+              "text": "说",
+              "pinyin": "shuō",
+              "wordId": "L1-0349"
+            },
+            {
+              "text": "："
+            },
+            {
+              "text": "你们",
+              "pinyin": "nǐmen",
+              "wordId": "L1-0272"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "She says: you go ahead and eat.",
+          "id": "Katanya: kalian makan duluan saja.",
+          "machine": true
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "好。你回：知道了。",
+          "pinyin": "hǎo。 nǐ huí： zhīdào le。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "回",
+              "pinyin": "huí",
+              "wordId": "L1-0154"
+            },
+            {
+              "text": "："
+            },
+            {
+              "text": "知道",
+              "pinyin": "zhīdào",
+              "wordId": "L1-0474"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK. Reply: got it.",
+          "id": "Oke. Balas: oke, siap.",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好，回了！",
+          "pinyin": "hǎo， huí le！",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "回",
+              "pinyin": "huí",
+              "wordId": "L1-0154"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "OK, sent!",
+          "id": "Oke, sudah kubalas!",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u18",
+      "unit": "u18",
+      "title": {
+        "id": "Ke dokter karena tidak enak badan",
+        "en": "At the doctor, feeling unwell"
+      },
+      "place": {
+        "id": "Ruang periksa klinik",
+        "en": "Clinic consulting room"
+      },
+      "placeKind": "clinic",
+      "goal": {
+        "id": "Kakak ingin tahu kenapa ia merasa tidak enak badan.",
+        "en": "Big brother wants to find out why he feels unwell."
+      },
+      "situation": {
+        "id": "Sudah beberapa hari Kakak merasa tidak enak badan, jadi ia pergi ke klinik.",
+        "en": "Big brother has felt unwell for a few days, so he goes to the clinic."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "你好，怎么了？",
+          "pinyin": "nǐhǎo， zěnme le？",
+          "tokens": [
+            {
+              "text": "你好",
+              "pinyin": "nǐhǎo",
+              "wordId": "L1-0517"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "怎么",
+              "pinyin": "zěnme",
+              "wordId": "L1-0460"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Hello, what's the matter?",
+          "id": "Halo, ada keluhan apa?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "医生，我这几天有点儿难受，不想吃饭。",
+          "pinyin": "yīshēng， wǒ zhè jǐ tiān yǒudiǎnr nán shòu， bù xiǎng chī fàn。",
+          "tokens": [
+            {
+              "text": "医生",
+              "pinyin": "yīshēng",
+              "wordId": "L1-0429"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "几",
+              "pinyin": "jǐ",
+              "wordId": "L1-0165"
+            },
+            {
+              "text": "天",
+              "pinyin": "tiān",
+              "wordId": "L1-0359"
+            },
+            {
+              "text": "有点儿",
+              "pinyin": "yǒudiǎnr",
+              "wordId": "L1-0530"
+            },
+            {
+              "text": "难受",
+              "pinyin": "nán shòu",
+              "casualId": "c-u17-07"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "不",
+              "pinyin": "bù",
+              "wordId": "L1-0034"
+            },
+            {
+              "text": "想",
+              "pinyin": "xiǎng",
+              "wordId": "L1-0400"
+            },
+            {
+              "text": "吃",
+              "pinyin": "chī",
+              "wordId": "L1-0046"
+            },
+            {
+              "text": "饭",
+              "pinyin": "fàn",
+              "wordId": "L1-0099"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Doctor, I haven't felt well for a few days, and I don't feel like eating.",
+          "id": "Dok, beberapa hari ini saya agak tidak enak badan, tidak nafsu makan.",
+          "machine": true
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "晚上睡觉怎么样？",
+          "pinyin": "wǎnshang shuìjiào zěnmeyàng？",
+          "tokens": [
+            {
+              "text": "晚上",
+              "pinyin": "wǎnshang",
+              "wordId": "L1-0374"
+            },
+            {
+              "text": "睡觉",
+              "pinyin": "shuìjiào",
+              "wordId": "L1-0348"
+            },
+            {
+              "text": "怎么样",
+              "pinyin": "zěnmeyàng",
+              "wordId": "L1-0531"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "How are you sleeping at night?",
+          "id": "Tidur malamnya bagaimana?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我天天两三点睡。",
+          "pinyin": "wǒ tiān tiān liǎng sān diǎn shuì。",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "天",
+              "pinyin": "tiān",
+              "wordId": "L1-0359"
+            },
+            {
+              "text": "天",
+              "pinyin": "tiān",
+              "wordId": "L1-0359"
+            },
+            {
+              "text": "两",
+              "pinyin": "liǎng",
+              "wordId": "L1-0215"
+            },
+            {
+              "text": "三",
+              "pinyin": "sān",
+              "wordId": "L1-0311"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "睡",
+              "pinyin": "shuì",
+              "wordId": "L1-0347"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "I go to bed at two or three every night.",
+          "id": "Saya tiap hari tidur jam dua atau tiga.",
+          "machine": true
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "两三点？你在做什么？",
+          "pinyin": "liǎng sān diǎn？ nǐ zài zuò shénme？",
+          "tokens": [
+            {
+              "text": "两",
+              "pinyin": "liǎng",
+              "wordId": "L1-0215"
+            },
+            {
+              "text": "三",
+              "pinyin": "sān",
+              "wordId": "L1-0311"
+            },
+            {
+              "text": "点",
+              "pinyin": "diǎn",
+              "wordId": "L1-0076"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "做",
+              "pinyin": "zuò",
+              "wordId": "L1-0500"
+            },
+            {
+              "text": "什么",
+              "pinyin": "shénme",
+              "wordId": "L1-0328"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Two or three? What are you doing?",
+          "id": "Jam dua atau tiga? Kamu ngapain?",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我晚上打工。",
+          "pinyin": "wǒ wǎnshang dǎ gōng。",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "晚上",
+              "pinyin": "wǎnshang",
+              "wordId": "L1-0374"
+            },
+            {
+              "text": "打工",
+              "pinyin": "dǎ gōng",
+              "casualId": "c-u17-03"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "I work a part-time job in the evenings.",
+          "id": "Malam saya kerja sambilan.",
+          "machine": true
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "你要多休息，不要熬夜了。",
+          "pinyin": "nǐ yào duō xiūxi， búyào áo yè le。",
+          "tokens": [
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "要",
+              "pinyin": "yào",
+              "wordId": "L1-0423"
+            },
+            {
+              "text": "多",
+              "pinyin": "duō",
+              "wordId": "L1-0094"
+            },
+            {
+              "text": "休息",
+              "pinyin": "xiūxi",
+              "wordId": "L1-0417"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "不要",
+              "pinyin": "búyào",
+              "wordId": "L1-0502"
+            },
+            {
+              "text": "熬夜",
+              "pinyin": "áo yè",
+              "casualId": "c-u08-07"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "You need more rest. Stop staying up so late.",
+          "id": "Kamu harus banyak istirahat, jangan begadang lagi.",
+          "machine": true
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "好，谢谢医生。",
+          "pinyin": "hǎo， xièxie yīshēng。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "谢谢",
+              "pinyin": "xièxie",
+              "wordId": "L1-0410"
+            },
+            {
+              "text": "医生",
+              "pinyin": "yīshēng",
+              "wordId": "L1-0429"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK, thank you, doctor.",
+          "id": "Baik, terima kasih, Dok.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u19",
+      "unit": "u19",
+      "title": {
+        "id": "Menawar apel di pasar",
+        "en": "Bargaining for apples at the market"
+      },
+      "place": {
+        "id": "Lapak buah di pasar pagi",
+        "en": "Fruit stall at the morning market"
+      },
+      "placeKind": "market",
+      "goal": {
+        "id": "Nenek ingin membeli apel dengan harga lebih murah.",
+        "en": "Grandma wants to buy apples for a lower price."
+      },
+      "situation": {
+        "id": "Pagi hari Nenek belanja di pasar dan berhenti di lapak buah.",
+        "en": "In the morning Grandma goes shopping at the market and stops at a fruit stall."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "老板，苹果怎么卖？",
+          "pinyin": "lǎo bǎn， píngguǒ zěnme mài？",
+          "tokens": [
+            {
+              "text": "老板",
+              "pinyin": "lǎo bǎn",
+              "casualId": "c-u18-05"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "苹果",
+              "pinyin": "píngguǒ",
+              "wordId": "L1-0521"
+            },
+            {
+              "text": "怎么",
+              "pinyin": "zěnme",
+              "wordId": "L1-0460"
+            },
+            {
+              "text": "卖",
+              "pinyin": "mài",
+              "wordId": "L1-0513"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "How much are the apples?",
+          "id": "Bu, apelnya berapa?",
           "machine": true
         },
         {
           "speaker": "seller",
           "gender": "female",
-          "cmn": "不贵，八块吧。",
-          "pinyin": "bù guì， bā kuài ba。",
+          "cmn": "五块一个。",
+          "pinyin": "wǔ kuài yī gè。",
+          "tokens": [
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "块",
+              "pinyin": "kuài",
+              "wordId": "L1-0203"
+            },
+            {
+              "text": "一",
+              "pinyin": "yī",
+              "wordId": "L1-0427"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Five yuan each.",
+          "id": "Lima yuan satu.",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "五块？有点儿贵。",
+          "pinyin": "wǔ kuài？ yǒudiǎnr guì。",
+          "tokens": [
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
+            },
+            {
+              "text": "块",
+              "pinyin": "kuài",
+              "wordId": "L1-0203"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "有点儿",
+              "pinyin": "yǒudiǎnr",
+              "wordId": "L1-0530"
+            },
+            {
+              "text": "贵",
+              "pinyin": "guì",
+              "wordId": "L1-0127"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Five? That's a bit expensive.",
+          "id": "Lima? Agak mahal.",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不贵，很好吃的！",
+          "pinyin": "bù guì， hěn hǎochī de！",
           "tokens": [
             {
               "text": "不",
@@ -217,38 +4856,48 @@
               "text": "，"
             },
             {
-              "text": "八",
-              "pinyin": "bā",
-              "wordId": "L1-0003"
+              "text": "很",
+              "pinyin": "hěn",
+              "wordId": "L1-0146"
             },
             {
-              "text": "块",
-              "pinyin": "kuài",
-              "wordId": "L1-0203"
+              "text": "好吃",
+              "pinyin": "hǎochī",
+              "wordId": "L1-0139"
             },
             {
-              "text": "吧",
-              "pinyin": "ba",
-              "wordId": "L1-0005"
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
             },
             {
-              "text": "。"
+              "text": "！"
             }
           ],
-          "en": "It's not expensive. Eight, then.",
-          "id": "Nggak mahal kok. Delapan yuan deh.",
+          "en": "It's not expensive, they're really good!",
+          "id": "Tidak mahal, enak sekali lho!",
           "machine": true
         },
         {
           "speaker": "nainai",
           "gender": "female",
-          "cmn": "好，我买两个。",
-          "pinyin": "hǎo， wǒ mǎi liǎng gè。",
+          "cmn": "便宜一点儿吧，我买五个。",
+          "pinyin": "piányi yìdiǎnr ba， wǒ mǎi wǔ gè。",
           "tokens": [
             {
-              "text": "好",
-              "pinyin": "hǎo",
-              "wordId": "L1-0138"
+              "text": "便宜",
+              "pinyin": "piányi",
+              "wordId": "L1-0519"
+            },
+            {
+              "text": "一点儿",
+              "pinyin": "yìdiǎnr",
+              "wordId": "L1-0437"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
             },
             {
               "text": "，"
@@ -264,9 +4913,9 @@
               "wordId": "L1-0228"
             },
             {
-              "text": "两",
-              "pinyin": "liǎng",
-              "wordId": "L1-0215"
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
             },
             {
               "text": "个",
@@ -277,20 +4926,28 @@
               "text": "。"
             }
           ],
-          "en": "OK, I'll take two.",
-          "id": "Oke, saya beli dua.",
+          "en": "Give me a better price, I'll take five.",
+          "id": "Kurangi sedikit, ya, saya beli lima.",
           "machine": true
         },
         {
           "speaker": "seller",
           "gender": "female",
-          "cmn": "两个十六块，扫码吧！",
-          "pinyin": "liǎng gè shí liù kuài， sǎo mǎ ba！",
+          "cmn": "好，五个二十块。",
+          "pinyin": "hǎo， wǔ gè èr shí kuài。",
           "tokens": [
             {
-              "text": "两",
-              "pinyin": "liǎng",
-              "wordId": "L1-0215"
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "五",
+              "pinyin": "wǔ",
+              "wordId": "L1-0382"
             },
             {
               "text": "个",
@@ -298,14 +4955,14 @@
               "wordId": "L1-0120"
             },
             {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
               "text": "十",
               "pinyin": "shí",
               "wordId": "L1-0332"
-            },
-            {
-              "text": "六",
-              "pinyin": "liù",
-              "wordId": "L1-0217"
             },
             {
               "text": "块",
@@ -313,7 +4970,31 @@
               "wordId": "L1-0203"
             },
             {
+              "text": "。"
+            }
+          ],
+          "en": "OK, five for twenty.",
+          "id": "Ya sudah, lima jadi dua puluh.",
+          "machine": true
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "好，我扫码。",
+          "pinyin": "hǎo， wǒ sǎo mǎ。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
               "text": "，"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
             },
             {
               "text": "扫码",
@@ -321,16 +5002,626 @@
               "casualId": "c-u18-01"
             },
             {
-              "text": "吧",
-              "pinyin": "ba",
-              "wordId": "L1-0005"
+              "text": "。"
+            }
+          ],
+          "en": "Good, I'll scan to pay.",
+          "id": "Oke, saya scan, ya.",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u20",
+      "unit": "u20",
+      "title": {
+        "id": "Sudah waktunya tidur",
+        "en": "Time for bed"
+      },
+      "place": {
+        "id": "Kamar Adik, malam hari",
+        "en": "Little sister's room at night"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Ibu ingin Adik berhenti menonton di HP dan tidur.",
+        "en": "Mom wants little sister to put the phone away and go to sleep."
+      },
+      "situation": {
+        "id": "Sudah malam. Ibu masuk ke kamar Adik dan melihat ia masih memegang HP.",
+        "en": "It's late. Mom walks into little sister's room and sees her still on the phone."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "不要玩手机了！",
+          "pinyin": "búyào wán shǒujī le！",
+          "tokens": [
+            {
+              "text": "不要",
+              "pinyin": "búyào",
+              "wordId": "L1-0502"
+            },
+            {
+              "text": "玩",
+              "pinyin": "wán",
+              "wordId": "L1-0371"
+            },
+            {
+              "text": "手机",
+              "pinyin": "shǒujī",
+              "wordId": "L1-0340"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
             },
             {
               "text": "！"
             }
           ],
-          "en": "Two is sixteen yuan, scan the code!",
-          "id": "Dua jadi enam belas yuan, silakan scan!",
+          "en": "Stop playing on the phone!",
+          "id": "Sudah, jangan main HP lagi!",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我没玩，我在看电影。",
+          "pinyin": "wǒ méi wán， wǒ zài kàn diànyǐng。",
+          "tokens": [
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "没",
+              "pinyin": "méi",
+              "wordId": "L1-0236"
+            },
+            {
+              "text": "玩",
+              "pinyin": "wán",
+              "wordId": "L1-0371"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "在",
+              "pinyin": "zài",
+              "wordId": "L1-0455"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "电影",
+              "pinyin": "diànyǐng",
+              "wordId": "L1-0082"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "I'm not playing, I'm watching a film.",
+          "id": "Aku tidak main, aku nonton film.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "看电影？你看了一个小时了！",
+          "pinyin": "kàn diànyǐng？ nǐ kàn le yī gè xiǎoshí le！",
+          "tokens": [
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "电影",
+              "pinyin": "diànyǐng",
+              "wordId": "L1-0082"
+            },
+            {
+              "text": "？"
+            },
+            {
+              "text": "你",
+              "pinyin": "nǐ",
+              "wordId": "L1-0271"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "一",
+              "pinyin": "yī",
+              "wordId": "L1-0427"
+            },
+            {
+              "text": "个",
+              "pinyin": "gè",
+              "wordId": "L1-0120"
+            },
+            {
+              "text": "小时",
+              "pinyin": "xiǎoshí",
+              "wordId": "L1-0405"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "A film? You've been watching for an hour!",
+          "id": "Nonton film? Kamu sudah nonton satu jam!",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这个电影很好看！",
+          "pinyin": "zhège diànyǐng hěn hǎokàn！",
+          "tokens": [
+            {
+              "text": "这个",
+              "pinyin": "zhège",
+              "wordId": "L1-0532"
+            },
+            {
+              "text": "电影",
+              "pinyin": "diànyǐng",
+              "wordId": "L1-0082"
+            },
+            {
+              "text": "很",
+              "pinyin": "hěn",
+              "wordId": "L1-0146"
+            },
+            {
+              "text": "好看",
+              "pinyin": "hǎokàn",
+              "wordId": "L1-0140"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "This film is really good!",
+          "id": "Filmnya seru banget!",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好看也明天再看。现在睡觉！",
+          "pinyin": "hǎokàn yě míngtiān zài kàn。 xiànzài shuìjiào！",
+          "tokens": [
+            {
+              "text": "好看",
+              "pinyin": "hǎokàn",
+              "wordId": "L1-0140"
+            },
+            {
+              "text": "也",
+              "pinyin": "yě",
+              "wordId": "L1-0425"
+            },
+            {
+              "text": "明天",
+              "pinyin": "míngtiān",
+              "wordId": "L1-0248"
+            },
+            {
+              "text": "再",
+              "pinyin": "zài",
+              "wordId": "L1-0453"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "现在",
+              "pinyin": "xiànzài",
+              "wordId": "L1-0399"
+            },
+            {
+              "text": "睡觉",
+              "pinyin": "shuìjiào",
+              "wordId": "L1-0348"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "Then watch the rest tomorrow. Bed, now!",
+          "id": "Seru ya lanjut besok. Sekarang tidur!",
+          "machine": true
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好吧……",
+          "pinyin": "hǎo ba……",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "吧",
+              "pinyin": "ba",
+              "wordId": "L1-0005"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            }
+          ],
+          "en": "Fine...",
+          "id": "Iya deh...",
+          "machine": true
+        }
+      ]
+    },
+    {
+      "id": "n-u21",
+      "unit": "u21",
+      "title": {
+        "id": "Mencari ukuran yang pas",
+        "en": "Finding the right size"
+      },
+      "place": {
+        "id": "Toko baju",
+        "en": "Clothes shop"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Ibu ingin membeli baju dengan ukuran yang pas.",
+        "en": "Mom wants to buy a top in the right size."
+      },
+      "situation": {
+        "id": "Ibu melihat baju yang ia suka di toko baju. Penjual menyuruhnya mencoba, tapi yang pertama kebesaran.",
+        "en": "Mom sees a top she likes in a clothes shop. The assistant lets her try it on, but the first one is too big."
+      },
+      "machine": true,
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "这件衣服真漂亮！",
+          "pinyin": "zhè jiàn yīfu zhēn piàoliang！",
+          "tokens": [
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "件",
+              "pinyin": "jiàn",
+              "wordId": "L1-0510"
+            },
+            {
+              "text": "衣服",
+              "pinyin": "yīfu",
+              "wordId": "L1-0428"
+            },
+            {
+              "text": "真",
+              "pinyin": "zhēn",
+              "wordId": "L1-0470"
+            },
+            {
+              "text": "漂亮",
+              "pinyin": "piàoliang",
+              "wordId": "L1-0520"
+            },
+            {
+              "text": "！"
+            }
+          ],
+          "en": "This top is really pretty!",
+          "id": "Baju ini cantik sekali!",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "您穿一下看看？",
+          "pinyin": "nín chuān yíxià kàn kàn？",
+          "tokens": [
+            {
+              "text": "您",
+              "pinyin": "nín",
+              "wordId": "L1-0274"
+            },
+            {
+              "text": "穿",
+              "pinyin": "chuān",
+              "wordId": "L1-0051"
+            },
+            {
+              "text": "一下",
+              "pinyin": "yíxià",
+              "wordId": "L1-0434"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "Would you like to try it on?",
+          "id": "Mau dicoba dulu?",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "嗯……有点儿大。有小一点儿的吗？",
+          "pinyin": "èn…… yǒudiǎnr dà。 yǒu xiǎo yìdiǎnr de ma？",
+          "tokens": [
+            {
+              "text": "嗯",
+              "pinyin": "èn",
+              "casualId": "c-u03-07"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "…"
+            },
+            {
+              "text": "有点儿",
+              "pinyin": "yǒudiǎnr",
+              "wordId": "L1-0530"
+            },
+            {
+              "text": "大",
+              "pinyin": "dà",
+              "wordId": "L1-0061"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "小",
+              "pinyin": "xiǎo",
+              "wordId": "L1-0401"
+            },
+            {
+              "text": "一点儿",
+              "pinyin": "yìdiǎnr",
+              "wordId": "L1-0437"
+            },
+            {
+              "text": "的",
+              "pinyin": "de",
+              "wordId": "L1-0067"
+            },
+            {
+              "text": "吗",
+              "pinyin": "ma",
+              "wordId": "L1-0227"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "(after trying it on) Hmm... it's a bit big. Do you have a smaller one?",
+          "id": "(setelah mencoba) Hmm... agak besar. Ada yang lebih kecil?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "有。您再穿这件看看。",
+          "pinyin": "yǒu。 nín zài chuān zhè jiàn kàn kàn。",
+          "tokens": [
+            {
+              "text": "有",
+              "pinyin": "yǒu",
+              "wordId": "L1-0441"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "您",
+              "pinyin": "nín",
+              "wordId": "L1-0274"
+            },
+            {
+              "text": "再",
+              "pinyin": "zài",
+              "wordId": "L1-0453"
+            },
+            {
+              "text": "穿",
+              "pinyin": "chuān",
+              "wordId": "L1-0051"
+            },
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "件",
+              "pinyin": "jiàn",
+              "wordId": "L1-0510"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "看",
+              "pinyin": "kàn",
+              "wordId": "L1-0192"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "Yes. Try this one.",
+          "id": "Ada. Coba yang ini.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "这件好。多少钱？",
+          "pinyin": "zhè jiàn hǎo。 duōshao qián？",
+          "tokens": [
+            {
+              "text": "这",
+              "pinyin": "zhè",
+              "wordId": "L1-0464"
+            },
+            {
+              "text": "件",
+              "pinyin": "jiàn",
+              "wordId": "L1-0510"
+            },
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "。"
+            },
+            {
+              "text": "多少",
+              "pinyin": "duōshao",
+              "wordId": "L1-0095"
+            },
+            {
+              "text": "钱",
+              "pinyin": "qián",
+              "wordId": "L1-0294"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "en": "This one fits. How much is it?",
+          "id": "Yang ini pas. Berapa harganya?",
+          "machine": true
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "一百二。",
+          "pinyin": "yī bǎi èr。",
+          "tokens": [
+            {
+              "text": "一",
+              "pinyin": "yī",
+              "wordId": "L1-0427"
+            },
+            {
+              "text": "百",
+              "pinyin": "bǎi",
+              "wordId": "L1-0008"
+            },
+            {
+              "text": "二",
+              "pinyin": "èr",
+              "wordId": "L1-0098"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "A hundred and twenty.",
+          "id": "Seratus dua puluh.",
+          "machine": true
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好，我要了。",
+          "pinyin": "hǎo， wǒ yào le。",
+          "tokens": [
+            {
+              "text": "好",
+              "pinyin": "hǎo",
+              "wordId": "L1-0138"
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "我",
+              "pinyin": "wǒ",
+              "wordId": "L1-0380"
+            },
+            {
+              "text": "要",
+              "pinyin": "yào",
+              "wordId": "L1-0423"
+            },
+            {
+              "text": "了",
+              "pinyin": "le",
+              "wordId": "L1-0210"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "en": "OK, I'll take it.",
+          "id": "Oke, saya ambil.",
           "machine": true
         }
       ]

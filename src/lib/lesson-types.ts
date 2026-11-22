@@ -84,9 +84,15 @@ export interface DialogLine {
   machine: boolean
 }
 
+/** Jenis tempat dialog (task 3d); ikon kecil di DialogCard. */
+export type PlaceKind = 'home' | 'school' | 'market' | 'eatery' | 'shop' | 'transport' | 'phone' | 'office' | 'street' | 'clinic' | 'park'
+
 export interface LessonDialog {
   id: string
   title: Bilingual
+  place: Bilingual
+  placeKind: PlaceKind
+  goal: Bilingual
   situation: Bilingual
   machine: boolean
   speakers: Record<string, { name: Bilingual; gender: 'female' | 'male' }>

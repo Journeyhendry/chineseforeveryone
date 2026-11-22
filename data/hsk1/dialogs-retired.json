@@ -93,7 +93,7 @@
       "gender": "male"
     }
   },
-  "note": "Dialogs of the 500-word draft (task 3b) that are not used in the 300-word units. Material for task 3d (rewrite); not shown on the site.",
+  "note": "Dialogs of the 500-word draft (task 3b). None of them is shown on the site since task 3d (the site uses data/hsk1/dialogs-natural.json); kept as an archive.",
   "dialogs": [
     {
       "id": "d-u01",
@@ -1127,6 +1127,66 @@
           "line 5: not HSK 1 \"先\"",
           "line 5: not HSK 1 \"儿\""
         ]
+      }
+    },
+    {
+      "id": "d-u18",
+      "unit": "u18",
+      "title": {
+        "id": "Menawar di pasar",
+        "en": "Bargaining at the market"
+      },
+      "situation": {
+        "id": "Nenek membeli buah di pasar pagi dan membayar dengan scan kode QR di HP.",
+        "en": "Grandma buys fruit at the morning market and pays by scanning a QR code with her phone."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "老板，这个多少钱？",
+          "en": "Boss, how much is this?",
+          "id": "Bu, ini berapa?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "十块。",
+          "en": "Ten yuan.",
+          "id": "Sepuluh yuan."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "太贵了！",
+          "en": "Too expensive!",
+          "id": "Mahal banget!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不贵，八块吧。",
+          "en": "It's not expensive. Eight, then.",
+          "id": "Nggak mahal kok. Delapan yuan deh."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "好，我买两个。",
+          "en": "OK, I'll take two.",
+          "id": "Oke, saya beli dua."
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "两个十六块，扫码吧！",
+          "en": "Two is sixteen yuan, scan the code!",
+          "id": "Dua jadi enam belas yuan, silakan scan!"
+        }
+      ],
+      "retired": {
+        "reason": "replaced by the natural dialog of unit u19 (task 3d)",
+        "details": []
       }
     },
     {

@@ -1,7 +1,22 @@
 import { useT } from '../../i18n/context'
-import type { LessonDialog } from '../../lib/lessons'
+import type { LessonDialog, PlaceKind } from '../../lib/lessons'
 import { useSettings } from '../../lib/settings-context'
 import { MachineTag, SpeakButton } from './parts'
+
+/** Ikon kecil per jenis tempat (hiasan saja; teks tempat tetap tertulis). */
+const PLACE_ICONS: Record<PlaceKind, string> = {
+  home: '🏠',
+  school: '🏫',
+  market: '🧺',
+  eatery: '🍜',
+  shop: '🛍️',
+  transport: '🚕',
+  phone: '📞',
+  office: '🏢',
+  street: '🚶',
+  clinic: '🩺',
+  park: '🌳',
+}
 
 export function DialogCard({ dialog }: { dialog: LessonDialog }) {
   const t = useT()
@@ -13,6 +28,16 @@ export function DialogCard({ dialog }: { dialog: LessonDialog }) {
       <h2 id="dialog-title" className="card-title">
         {dialog.title[lang]}
       </h2>
+      <p className="dialog-goal">
+        <span className="dialog-key">{t('learn.dialog.goal')}</span> {dialog.goal[lang]}
+      </p>
+      <p className="dialog-place">
+        <span className="dialog-place-icon" aria-hidden="true">
+          {PLACE_ICONS[dialog.placeKind] ?? '📍'}
+        </span>
+        <span className="sr-only">{t('learn.dialog.place')} </span>
+        {dialog.place[lang]}
+      </p>
       <p className="muted">
         {dialog.situation[lang]} {dialog.machine ? <MachineTag /> : null}
       </p>

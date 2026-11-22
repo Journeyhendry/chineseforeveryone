@@ -1092,5 +1092,341 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u18",
+    "title": {
+      "id": "Ke dokter karena tidak enak badan",
+      "en": "At the doctor, feeling unwell"
+    },
+    "place": {
+      "id": "Ruang periksa klinik",
+      "en": "Clinic consulting room"
+    },
+    "placeKind": "clinic",
+    "goal": {
+      "id": "Kakak ingin tahu kenapa ia merasa tidak enak badan.",
+      "en": "Big brother wants to find out why he feels unwell."
+    },
+    "situation": {
+      "id": "Sudah beberapa hari Kakak merasa tidak enak badan, jadi ia pergi ke klinik.",
+      "en": "Big brother has felt unwell for a few days, so he goes to the clinic."
+    },
+    "machine": true,
+    "speakers": {
+      "doctor": {
+        "name": {
+          "id": "Dokter",
+          "en": "Doctor"
+        },
+        "gender": "male"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "doctor",
+        "gender": "male",
+        "cmn": "你好，怎么了？",
+        "tokens": [
+          {
+            "text": "你好",
+            "pinyin": "nǐhǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "怎么",
+            "pinyin": "zěnme"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Hello, what's the matter?",
+        "id": "Halo, ada keluhan apa?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "医生，我这几天有点儿难受，不想吃饭。",
+        "tokens": [
+          {
+            "text": "医生",
+            "pinyin": "yīshēng"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "几",
+            "pinyin": "jǐ"
+          },
+          {
+            "text": "天",
+            "pinyin": "tiān"
+          },
+          {
+            "text": "有点儿",
+            "pinyin": "yǒudiǎnr"
+          },
+          {
+            "text": "难受",
+            "pinyin": "nán shòu"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "想",
+            "pinyin": "xiǎng"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "饭",
+            "pinyin": "fàn"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Doctor, I haven't felt well for a few days, and I don't feel like eating.",
+        "id": "Dok, beberapa hari ini saya agak tidak enak badan, tidak nafsu makan.",
+        "machine": true
+      },
+      {
+        "speaker": "doctor",
+        "gender": "male",
+        "cmn": "晚上睡觉怎么样？",
+        "tokens": [
+          {
+            "text": "晚上",
+            "pinyin": "wǎnshang"
+          },
+          {
+            "text": "睡觉",
+            "pinyin": "shuìjiào"
+          },
+          {
+            "text": "怎么样",
+            "pinyin": "zěnmeyàng"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "How are you sleeping at night?",
+        "id": "Tidur malamnya bagaimana?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "我天天两三点睡。",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "天",
+            "pinyin": "tiān"
+          },
+          {
+            "text": "天",
+            "pinyin": "tiān"
+          },
+          {
+            "text": "两",
+            "pinyin": "liǎng"
+          },
+          {
+            "text": "三",
+            "pinyin": "sān"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "睡",
+            "pinyin": "shuì"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "I go to bed at two or three every night.",
+        "id": "Saya tiap hari tidur jam dua atau tiga.",
+        "machine": true
+      },
+      {
+        "speaker": "doctor",
+        "gender": "male",
+        "cmn": "两三点？你在做什么？",
+        "tokens": [
+          {
+            "text": "两",
+            "pinyin": "liǎng"
+          },
+          {
+            "text": "三",
+            "pinyin": "sān"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "做",
+            "pinyin": "zuò"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Two or three? What are you doing?",
+        "id": "Jam dua atau tiga? Kamu ngapain?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "我晚上打工。",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "晚上",
+            "pinyin": "wǎnshang"
+          },
+          {
+            "text": "打工",
+            "pinyin": "dǎ gōng"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "I work a part-time job in the evenings.",
+        "id": "Malam saya kerja sambilan.",
+        "machine": true
+      },
+      {
+        "speaker": "doctor",
+        "gender": "male",
+        "cmn": "你要多休息，不要熬夜了。",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "多",
+            "pinyin": "duō"
+          },
+          {
+            "text": "休息",
+            "pinyin": "xiūxi"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "不要",
+            "pinyin": "búyào"
+          },
+          {
+            "text": "熬夜",
+            "pinyin": "áo yè"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "You need more rest. Stop staying up so late.",
+        "id": "Kamu harus banyak istirahat, jangan begadang lagi.",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "好，谢谢医生。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "医生",
+            "pinyin": "yīshēng"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, thank you, doctor.",
+        "id": "Baik, terima kasih, Dok.",
+        "machine": true
+      }
+    ]
+  }
 }

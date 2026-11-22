@@ -1408,5 +1408,196 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u02",
+    "title": {
+      "id": "HP yang tertinggal",
+      "en": "The forgotten phone"
+    },
+    "place": {
+      "id": "Toko kecil dekat kampus",
+      "en": "Small shop near campus"
+    },
+    "placeKind": "shop",
+    "goal": {
+      "id": "Penjual ingin mengembalikan HP yang tertinggal di meja kasir.",
+      "en": "The shopkeeper wants to give back a phone left on the counter."
+    },
+    "situation": {
+      "id": "Kakak baru saja membayar di toko kecil dekat kampus, lalu keluar. HP-nya tertinggal di meja kasir, dan penjual memanggilnya.",
+      "en": "Big brother has just paid at a small shop near campus and walked out. His phone is still on the counter, so the shopkeeper calls after him."
+    },
+    "machine": true,
+    "speakers": {
+      "seller": {
+        "name": {
+          "id": "Penjual",
+          "en": "Seller"
+        },
+        "gender": "female"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "同学！同学！你的手机！",
+        "tokens": [
+          {
+            "text": "同学",
+            "pinyin": "tóngxué"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "同学",
+            "pinyin": "tóngxué"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "手机",
+            "pinyin": "shǒujī"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Hey, student! Your phone!",
+        "id": "Dik! Dik! HP-mu!",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "我的手机？",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "手机",
+            "pinyin": "shǒujī"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "My phone?",
+        "id": "HP saya?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "是不是你的？",
+        "tokens": [
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Is this yours?",
+        "id": "Ini punyamu, bukan?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "是我的！谢谢！谢谢！",
+        "tokens": [
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "It's mine! Thanks, thank you!",
+        "id": "Iya, punya saya! Makasih, makasih!",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "不客气。",
+        "tokens": [
+          {
+            "text": "不客气",
+            "pinyin": "búkèqi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "You're welcome.",
+        "id": "Sama-sama.",
+        "machine": true
+      }
+    ]
+  }
 }

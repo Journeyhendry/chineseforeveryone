@@ -32,7 +32,8 @@ import {
   type Speaker,
   type WiktionaryPage,
 } from './casual.ts'
-import { buildCasualRemapped, remapCandidates, type CasualRemap } from './casual-remap.ts'
+import { remapCandidates, type CasualRemap } from './casual-remap.ts'
+import { buildCasualWithNaturalDialogs, type NaturalDialogsFile } from './dialogs-natural.ts'
 import { buildLexicon, segment, type UnitInput, type WordInput } from './sentences.ts'
 
 // ---------- fixtures ----------
@@ -448,7 +449,7 @@ describe('data/hsk1/casual-candidates.json + casual-remap.json (task 2b)', () =>
   })
 })
 
-const optional = import.meta.glob('../../data/hsk1/{dialogs-draft,casual-evidence-raw,casual-review}.json', { eager: true, import: 'default' })
+const optional = import.meta.glob('../../data/hsk1/{dialogs-draft,dialogs-natural,casual-evidence-raw,casual-review}.json', { eager: true, import: 'default' })
 const committed = import.meta.glob('../../data/hsk1/{casual,casual-evidence,dialogs,dialogs-retired,casual-report}.json', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>
 const get = <T,>(name: string): T | null => (optional[`../../data/hsk1/${name}`] as T | undefined) ?? null
 const raw = (name: string): string | undefined => committed[`../../data/hsk1/${name}`]
@@ -462,13 +463,14 @@ describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
   const report = haveOutputs ? JSON.parse(raw('casual-report.json')!) : {}
 
   it('equals a fresh build (run npm run build:casual)', () => {
-    const fresh = buildCasualRemapped({
+    const fresh = buildCasualWithNaturalDialogs({
       words: allWords,
       units: allUnits,
       candidates: candidatesFile as CandidatesFile,
       dialogs: get<DialogsFile>('dialogs-draft.json'),
       evidence: get<RawEvidenceFile>('casual-evidence-raw.json'),
       reviews: get<ReviewFile>('casual-review.json'),
+      natural: get<NaturalDialogsFile>('dialogs-natural.json'),
       remap,
     })
     for (const [name, text] of Object.entries(fresh)) expect(raw(name), name).toBe(text)
@@ -495,13 +497,12 @@ describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
     expect(evid.items.filter((e: { dropped?: string }) => e.dropped).length).toBe(report.droppedCandidates.length)
     for (const e of evid.items as { dropped?: string; passed: boolean }[]) if (e.dropped) expect(e.passed).toBe(false)
   })
-  it('has at most one dialog per unit with 4-8 lines and known speakers; missing units are reported', () => {
-    const missing = new Set(report.unitsWithoutDialog as string[])
+  it('has exactly one dialog per unit with 4-8 lines and known speakers; no unit without dialog', () => {
+    expect(report.unitsWithoutDialog).toEqual([])
+    expect(report.failedDialogs).toEqual([])
     for (const u of allUnits) {
       const ds = dialogs.dialogs.filter((d: { unit: string }) => d.unit === u.id)
-      expect(ds.length, u.id).toBeLessThanOrEqual(1)
-      if (ds.length === 0) expect(missing.has(u.id), u.id).toBe(true)
-      else expect(missing.has(u.id), u.id).toBe(false)
+      expect(ds.length, u.id).toBe(1)
     }
     for (const d of dialogs.dialogs as { id: string; lines: { speaker: string; gender: string }[] }[]) {
       expect(d.lines.length, d.id).toBeGreaterThanOrEqual(4)
@@ -512,12 +513,11 @@ describe.skipIf(!haveOutputs)('data/hsk1 casual outputs', () => {
       }
     }
   })
-  it('splits the 20 draft dialogs into kept (dialogs.json) and retired (dialogs-retired.json) with a reason', () => {
+  it('shows only the natural dialogs (task 3d); all 20 draft dialogs are retired with a reason', () => {
     const draft = get<DialogsFile>('dialogs-draft.json')!
-    const kept = dialogs.dialogs.map((d: { id: string }) => d.id)
-    const gone = retired.dialogs.map((d: { id: string }) => d.id)
-    expect([...kept, ...gone].sort()).toEqual(draft.dialogs.map((d) => d.id).sort())
-    expect(kept.filter((id: string) => gone.includes(id))).toEqual([])
+    const natural = get<NaturalDialogsFile>('dialogs-natural.json')!
+    expect(dialogs.dialogs.map((d: { id: string }) => d.id)).toEqual(natural.dialogs.map((d) => d.id))
+    expect(retired.dialogs.map((d: { id: string }) => d.id)).toEqual(draft.dialogs.map((d) => d.id))
     for (const d of retired.dialogs as { retired: { reason: string; details: string[] } }[]) expect(d.retired.reason.length).toBeGreaterThan(5)
   })
 })

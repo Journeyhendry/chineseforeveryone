@@ -3,7 +3,7 @@
 // Dipakai oleh scripts/build-lessons.ts dan scripts/build-strokes.ts.
 import { formatJson } from './casual.ts'
 import { splitSyllables, type Tone } from './pinyin.ts'
-import type { Bilingual, CasualItem, CasualLabel, Example, ExampleTranslation, LessonDialog, LessonIndex, LessonWord, UnitData } from './lesson-types.ts'
+import type { Bilingual, CasualItem, CasualLabel, Example, ExampleTranslation, LessonDialog, LessonIndex, LessonWord, PlaceKind, UnitData } from './lesson-types.ts'
 
 export const EXAMPLES_PER_WORD = 3
 
@@ -55,6 +55,9 @@ export interface SrcDialog {
   id: string
   unit: string
   title: Bilingual
+  place: Bilingual
+  placeKind: PlaceKind
+  goal: Bilingual
   situation: Bilingual
   machine: boolean
   lines: {
@@ -142,6 +145,9 @@ function lessonDialog(d: SrcDialog, speakers: LessonsInput['dialogs']['speakers'
   return {
     id: d.id,
     title: { id: d.title.id, en: d.title.en },
+    place: { id: d.place.id, en: d.place.en },
+    placeKind: d.placeKind,
+    goal: { id: d.goal.id, en: d.goal.en },
     situation: { id: d.situation.id, en: d.situation.en },
     machine: d.machine,
     speakers: used,

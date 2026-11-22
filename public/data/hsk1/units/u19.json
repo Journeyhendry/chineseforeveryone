@@ -1081,14 +1081,23 @@
     }
   ],
   "dialog": {
-    "id": "d-u18",
+    "id": "n-u19",
     "title": {
-      "id": "Menawar di pasar",
-      "en": "Bargaining at the market"
+      "id": "Menawar apel di pasar",
+      "en": "Bargaining for apples at the market"
+    },
+    "place": {
+      "id": "Lapak buah di pasar pagi",
+      "en": "Fruit stall at the morning market"
+    },
+    "placeKind": "market",
+    "goal": {
+      "id": "Nenek ingin membeli apel dengan harga lebih murah.",
+      "en": "Grandma wants to buy apples for a lower price."
     },
     "situation": {
-      "id": "Nenek membeli buah di pasar pagi dan membayar dengan scan kode QR di HP.",
-      "en": "Grandma buys fruit at the morning market and pays by scanning a QR code with her phone."
+      "id": "Pagi hari Nenek belanja di pasar dan berhenti di lapak buah.",
+      "en": "In the morning Grandma goes shopping at the market and stops at a fruit stall."
     },
     "machine": true,
     "speakers": {
@@ -1111,7 +1120,7 @@
       {
         "speaker": "nainai",
         "gender": "female",
-        "cmn": "老板，这个多少钱？",
+        "cmn": "老板，苹果怎么卖？",
         "tokens": [
           {
             "text": "老板",
@@ -1121,75 +1130,90 @@
             "text": "，"
           },
           {
-            "text": "这个",
-            "pinyin": "zhège"
+            "text": "苹果",
+            "pinyin": "píngguǒ"
           },
           {
-            "text": "多少",
-            "pinyin": "duōshao"
+            "text": "怎么",
+            "pinyin": "zěnme"
           },
           {
-            "text": "钱",
-            "pinyin": "qián"
+            "text": "卖",
+            "pinyin": "mài"
           },
           {
             "text": "？"
           }
         ],
-        "en": "Boss, how much is this?",
-        "id": "Bu, ini berapa?",
+        "en": "How much are the apples?",
+        "id": "Bu, apelnya berapa?",
         "machine": true
       },
       {
         "speaker": "seller",
         "gender": "female",
-        "cmn": "十块。",
+        "cmn": "五块一个。",
         "tokens": [
           {
-            "text": "十",
-            "pinyin": "shí"
+            "text": "五",
+            "pinyin": "wǔ"
           },
           {
             "text": "块",
             "pinyin": "kuài"
           },
           {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
             "text": "。"
           }
         ],
-        "en": "Ten yuan.",
-        "id": "Sepuluh yuan.",
+        "en": "Five yuan each.",
+        "id": "Lima yuan satu.",
         "machine": true
       },
       {
         "speaker": "nainai",
         "gender": "female",
-        "cmn": "太贵了！",
+        "cmn": "五块？有点儿贵。",
         "tokens": [
           {
-            "text": "太",
-            "pinyin": "tài"
+            "text": "五",
+            "pinyin": "wǔ"
+          },
+          {
+            "text": "块",
+            "pinyin": "kuài"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "有点儿",
+            "pinyin": "yǒudiǎnr"
           },
           {
             "text": "贵",
             "pinyin": "guì"
           },
           {
-            "text": "了",
-            "pinyin": "le"
-          },
-          {
-            "text": "！"
+            "text": "。"
           }
         ],
-        "en": "Too expensive!",
-        "id": "Mahal banget!",
+        "en": "Five? That's a bit expensive.",
+        "id": "Lima? Agak mahal.",
         "machine": true
       },
       {
         "speaker": "seller",
         "gender": "female",
-        "cmn": "不贵，八块吧。",
+        "cmn": "不贵，很好吃的！",
         "tokens": [
           {
             "text": "不",
@@ -1203,33 +1227,41 @@
             "text": "，"
           },
           {
-            "text": "八",
-            "pinyin": "bā"
+            "text": "很",
+            "pinyin": "hěn"
           },
           {
-            "text": "块",
-            "pinyin": "kuài"
+            "text": "好吃",
+            "pinyin": "hǎochī"
           },
           {
-            "text": "吧",
-            "pinyin": "ba"
+            "text": "的",
+            "pinyin": "de"
           },
           {
-            "text": "。"
+            "text": "！"
           }
         ],
-        "en": "It's not expensive. Eight, then.",
-        "id": "Nggak mahal kok. Delapan yuan deh.",
+        "en": "It's not expensive, they're really good!",
+        "id": "Tidak mahal, enak sekali lho!",
         "machine": true
       },
       {
         "speaker": "nainai",
         "gender": "female",
-        "cmn": "好，我买两个。",
+        "cmn": "便宜一点儿吧，我买五个。",
         "tokens": [
           {
-            "text": "好",
-            "pinyin": "hǎo"
+            "text": "便宜",
+            "pinyin": "piányi"
+          },
+          {
+            "text": "一点儿",
+            "pinyin": "yìdiǎnr"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
           },
           {
             "text": "，"
@@ -1243,8 +1275,8 @@
             "pinyin": "mǎi"
           },
           {
-            "text": "两",
-            "pinyin": "liǎng"
+            "text": "五",
+            "pinyin": "wǔ"
           },
           {
             "text": "个",
@@ -1254,52 +1286,76 @@
             "text": "。"
           }
         ],
-        "en": "OK, I'll take two.",
-        "id": "Oke, saya beli dua.",
+        "en": "Give me a better price, I'll take five.",
+        "id": "Kurangi sedikit, ya, saya beli lima.",
         "machine": true
       },
       {
         "speaker": "seller",
         "gender": "female",
-        "cmn": "两个十六块，扫码吧！",
+        "cmn": "好，五个二十块。",
         "tokens": [
           {
-            "text": "两",
-            "pinyin": "liǎng"
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "五",
+            "pinyin": "wǔ"
           },
           {
             "text": "个",
             "pinyin": "gè"
           },
           {
-            "text": "十",
-            "pinyin": "shí"
+            "text": "二",
+            "pinyin": "èr"
           },
           {
-            "text": "六",
-            "pinyin": "liù"
+            "text": "十",
+            "pinyin": "shí"
           },
           {
             "text": "块",
             "pinyin": "kuài"
           },
           {
+            "text": "。"
+          }
+        ],
+        "en": "OK, five for twenty.",
+        "id": "Ya sudah, lima jadi dua puluh.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "好，我扫码。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
             "text": "，"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
           },
           {
             "text": "扫码",
             "pinyin": "sǎo mǎ"
           },
           {
-            "text": "吧",
-            "pinyin": "ba"
-          },
-          {
-            "text": "！"
+            "text": "。"
           }
         ],
-        "en": "Two is sixteen yuan, scan the code!",
-        "id": "Dua jadi enam belas yuan, silakan scan!",
+        "en": "Good, I'll scan to pay.",
+        "id": "Oke, saya scan, ya.",
         "machine": true
       }
     ]

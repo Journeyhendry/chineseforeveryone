@@ -1510,5 +1510,243 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u08",
+    "title": {
+      "id": "Anjing teman di taman",
+      "en": "A friend's dog in the park"
+    },
+    "place": {
+      "id": "Taman dekat rumah",
+      "en": "Park near home"
+    },
+    "placeKind": "park",
+    "goal": {
+      "id": "Adik ingin tahu nama anjing temannya.",
+      "en": "Little sister wants to know the name of her friend's dog."
+    },
+    "situation": {
+      "id": "Sore hari di taman, Adik bertemu teman sekolahnya yang sedang mengajak anjing jalan-jalan.",
+      "en": "In the park one afternoon, little sister runs into a school friend who is walking a dog."
+    },
+    "machine": true,
+    "speakers": {
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      },
+      "friend": {
+        "name": {
+          "id": "Teman",
+          "en": "Friend"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "这是你家的狗吗？",
+        "tokens": [
+          {
+            "text": "这",
+            "pinyin": "zhè"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "家",
+            "pinyin": "jiā"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "狗",
+            "pinyin": "gǒu"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Is this your family's dog?",
+        "id": "Ini anjing keluargamu?",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "对！",
+        "tokens": [
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Yes!",
+        "id": "Iya!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "它叫什么名字？",
+        "tokens": [
+          {
+            "text": "它",
+            "pinyin": "tā"
+          },
+          {
+            "text": "叫",
+            "pinyin": "jiào"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "名字",
+            "pinyin": "míngzi"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "What's its name?",
+        "id": "Namanya apa?",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "它叫“包子”。",
+        "tokens": [
+          {
+            "text": "它",
+            "pinyin": "tā"
+          },
+          {
+            "text": "叫",
+            "pinyin": "jiào"
+          },
+          {
+            "text": "“"
+          },
+          {
+            "text": "包子",
+            "pinyin": "bāozi"
+          },
+          {
+            "text": "”"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "It's called \"Baozi\".",
+        "id": "Namanya \"Bakpao\".",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "包子？我家的猫叫“饺子”！",
+        "tokens": [
+          {
+            "text": "包子",
+            "pinyin": "bāozi"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "家",
+            "pinyin": "jiā"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "猫",
+            "pinyin": "māo"
+          },
+          {
+            "text": "叫",
+            "pinyin": "jiào"
+          },
+          {
+            "text": "“"
+          },
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "”"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Baozi? Our cat is called \"Jiaozi\"!",
+        "id": "Bakpao? Kucing di rumahku namanya \"Pangsit\"!",
+        "machine": true
+      },
+      {
+        "speaker": "friend",
+        "gender": "female",
+        "cmn": "饺子？真的吗？",
+        "tokens": [
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "真",
+            "pinyin": "zhēn"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Jiaozi? Really?",
+        "id": "Pangsit? Beneran?",
+        "machine": true
+      }
+    ]
+  }
 }

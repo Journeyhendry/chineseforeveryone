@@ -352,6 +352,39 @@ h3 {
 }
 
 /* Dialog */
+.dialog-goal {
+  margin: var(--space-2) 0 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.dialog-key {
+  font-weight: 800;
+  color: var(--text-soft);
+}
+
+.dialog-place {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  max-width: 100%;
+  margin: var(--space-2) 0 var(--space-2);
+  padding: 2px var(--space-3) 2px var(--space-2);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-3);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.dialog-place-icon {
+  flex: none;
+  font-size: 18px;
+  line-height: 1;
+}
+
 .dialog-lines {
   list-style: none;
   margin: var(--space-4) 0 0;

@@ -1546,5 +1546,246 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u14",
+    "title": {
+      "id": "Bangun, sudah siang!",
+      "en": "Get up, it's late!"
+    },
+    "place": {
+      "id": "Kamar Kakak",
+      "en": "Big brother's room"
+    },
+    "placeKind": "home",
+    "goal": {
+      "id": "Ibu ingin Kakak bangun untuk sarapan.",
+      "en": "Mom wants big brother to get up for breakfast."
+    },
+    "situation": {
+      "id": "Sabtu pagi jam sepuluh. Kakak masih tidur, dan Ibu membangunkannya.",
+      "en": "It's ten o'clock on Saturday morning. Big brother is still asleep, and Mom comes to wake him."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "十点了，还不起床？",
+        "tokens": [
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "还",
+            "pinyin": "hái"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "起床",
+            "pinyin": "qǐchuáng"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "It's ten o'clock. Still not up?",
+        "id": "Sudah jam sepuluh, belum bangun juga?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "今天星期六……我再睡一下。",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "六",
+            "pinyin": "liù"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "再",
+            "pinyin": "zài"
+          },
+          {
+            "text": "睡",
+            "pinyin": "shuì"
+          },
+          {
+            "text": "一下",
+            "pinyin": "yíxià"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "It's Saturday... Let me sleep a bit more.",
+        "id": "Ini kan Sabtu... Aku tidur sebentar lagi.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "早饭不吃了？",
+        "tokens": [
+          {
+            "text": "早饭",
+            "pinyin": "zǎofàn"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "No breakfast, then?",
+        "id": "Tidak sarapan?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "吃……再睡十分钟。",
+        "tokens": [
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "再",
+            "pinyin": "zài"
+          },
+          {
+            "text": "睡",
+            "pinyin": "shuì"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "分钟",
+            "pinyin": "fēnzhōng"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "I'll eat... Ten more minutes.",
+        "id": "Sarapan... sepuluh menit lagi.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "好，十分钟后我再叫你。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "分钟",
+            "pinyin": "fēnzhōng"
+          },
+          {
+            "text": "后",
+            "pinyin": "hòu"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "再",
+            "pinyin": "zài"
+          },
+          {
+            "text": "叫",
+            "pinyin": "jiào"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, I'll call you again in ten minutes.",
+        "id": "Ya sudah, sepuluh menit lagi Ibu bangunkan.",
+        "machine": true
+      }
+    ]
+  }
 }

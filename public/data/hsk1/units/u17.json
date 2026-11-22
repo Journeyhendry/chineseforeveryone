@@ -1370,5 +1370,316 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u17",
+    "title": {
+      "id": "Membacakan pesan untuk Kakek",
+      "en": "Reading a message for Grandpa"
+    },
+    "place": {
+      "id": "Bangku taman",
+      "en": "Park bench"
+    },
+    "placeKind": "park",
+    "goal": {
+      "id": "Kakek minta Adik membacakan dan membalas pesan dari Ibu.",
+      "en": "Grandpa asks little sister to read Mom's message to him and reply."
+    },
+    "situation": {
+      "id": "Kakek dan Adik duduk di taman. Ada pesan dari Ibu di HP Kakek, tapi hurufnya terlalu kecil untuk Kakek.",
+      "en": "Grandpa and little sister are sitting in the park. Mom has sent a message to Grandpa's phone, but the text is too small for him."
+    },
+    "machine": true,
+    "speakers": {
+      "yeye": {
+        "name": {
+          "id": "Kakek",
+          "en": "Grandpa"
+        },
+        "gender": "male"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "你妈妈写的什么？字太小了，你读一下。",
+        "tokens": [
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "妈妈",
+            "pinyin": "māma"
+          },
+          {
+            "text": "写",
+            "pinyin": "xiě"
+          },
+          {
+            "text": "的",
+            "pinyin": "de"
+          },
+          {
+            "text": "什么",
+            "pinyin": "shénme"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "字",
+            "pinyin": "zì"
+          },
+          {
+            "text": "太",
+            "pinyin": "tài"
+          },
+          {
+            "text": "小",
+            "pinyin": "xiǎo"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "读",
+            "pinyin": "dú"
+          },
+          {
+            "text": "一下",
+            "pinyin": "yíxià"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "What did your mom write? The letters are too small, you read it.",
+        "id": "Ibumu tulis apa? Hurufnya terlalu kecil, coba kamu bacakan.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我看看……她说她今天晚上八点回来。",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "说",
+            "pinyin": "shuō"
+          },
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "晚上",
+            "pinyin": "wǎnshang"
+          },
+          {
+            "text": "八",
+            "pinyin": "bā"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "回",
+            "pinyin": "huí"
+          },
+          {
+            "text": "来",
+            "pinyin": "lái"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Let me see... She says she'll be back at eight tonight.",
+        "id": "Coba aku lihat... Katanya Ibu pulang jam delapan malam ini.",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "八点？那晚饭呢？",
+        "tokens": [
+          {
+            "text": "八",
+            "pinyin": "bā"
+          },
+          {
+            "text": "点",
+            "pinyin": "diǎn"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "晚饭",
+            "pinyin": "wǎnfàn"
+          },
+          {
+            "text": "呢",
+            "pinyin": "ne"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Eight? What about dinner?",
+        "id": "Jam delapan? Terus makan malamnya?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "她说：你们吃吧。",
+        "tokens": [
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "说",
+            "pinyin": "shuō"
+          },
+          {
+            "text": "："
+          },
+          {
+            "text": "你们",
+            "pinyin": "nǐmen"
+          },
+          {
+            "text": "吃",
+            "pinyin": "chī"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "She says: you go ahead and eat.",
+        "id": "Katanya: kalian makan duluan saja.",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "好。你回：知道了。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "回",
+            "pinyin": "huí"
+          },
+          {
+            "text": "："
+          },
+          {
+            "text": "知道",
+            "pinyin": "zhīdào"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK. Reply: got it.",
+        "id": "Oke. Balas: oke, siap.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "好，回了！",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "回",
+            "pinyin": "huí"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "OK, sent!",
+        "id": "Oke, sudah kubalas!",
+        "machine": true
+      }
+    ]
+  }
 }

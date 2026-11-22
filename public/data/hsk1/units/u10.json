@@ -1140,5 +1140,304 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u10",
+    "title": {
+      "id": "Kakek salah hari",
+      "en": "Grandpa mixes up the days"
+    },
+    "place": {
+      "id": "Pintu depan rumah, pagi hari",
+      "en": "Front door at home, morning"
+    },
+    "placeKind": "home",
+    "goal": {
+      "id": "Kakek ingin tahu hari ini hari apa, karena ia kira hari ini Sabtu.",
+      "en": "Grandpa wants to know what day it is, because he thinks it is Saturday."
+    },
+    "situation": {
+      "id": "Pagi hari Adik memakai tas sekolah dan siap berangkat. Kakek kaget, karena ia kira hari ini libur.",
+      "en": "In the morning little sister puts on her school bag, ready to leave. Grandpa is surprised: he thinks today is a day off."
+    },
+    "machine": true,
+    "speakers": {
+      "yeye": {
+        "name": {
+          "id": "Kakek",
+          "en": "Grandpa"
+        },
+        "gender": "male"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "今天星期六，你还上学？",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "六",
+            "pinyin": "liù"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "还",
+            "pinyin": "hái"
+          },
+          {
+            "text": "上学",
+            "pinyin": "shàngxué"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "It's Saturday today. You still have school?",
+        "id": "Hari ini Sabtu, kok kamu sekolah?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "今天不是星期六，是星期五！",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "六",
+            "pinyin": "liù"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "五",
+            "pinyin": "wǔ"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Today isn't Saturday, it's Friday!",
+        "id": "Hari ini bukan Sabtu, tapi Jumat!",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "星期五？昨天不是星期五吗？",
+        "tokens": [
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "五",
+            "pinyin": "wǔ"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "昨天",
+            "pinyin": "zuótiān"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "五",
+            "pinyin": "wǔ"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Friday? Wasn't yesterday Friday?",
+        "id": "Jumat? Bukannya kemarin Jumat?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "不是，昨天是星期四。",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "昨天",
+            "pinyin": "zuótiān"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "四",
+            "pinyin": "sì"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "No, yesterday was Thursday.",
+        "id": "Bukan, kemarin Kamis.",
+        "machine": true
+      },
+      {
+        "speaker": "yeye",
+        "gender": "male",
+        "cmn": "星期四……对，对。那明天是星期六。",
+        "tokens": [
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "四",
+            "pinyin": "sì"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "明天",
+            "pinyin": "míngtiān"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "星期",
+            "pinyin": "xīngqī"
+          },
+          {
+            "text": "六",
+            "pinyin": "liù"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Thursday... right, right. So tomorrow is Saturday.",
+        "id": "Kamis... oh iya, iya. Jadi besok Sabtu.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "对！拜拜！",
+        "tokens": [
+          {
+            "text": "对",
+            "pinyin": "duì"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "拜拜",
+            "pinyin": "bái bái"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Yes! Bye-bye!",
+        "id": "Iya! Dah!",
+        "machine": true
+      }
+    ]
+  }
 }

@@ -1,0 +1,675 @@
+{
+  "version": 1,
+  "reviewer": "claude-sonnet (independen, tidak melihat alasan penulis)",
+  "criteria": {
+    "natural": "Orang China daratan sungguhan bilang begini? (dalam batas ±300 kata HSK 1)",
+    "clarity": "Konteks jelas untuk pemula; terjemahan cocok",
+    "flow": "Tiap baris menjawab baris sebelumnya; tujuan & penutup jelas"
+  },
+  "passMark": 4,
+  "rounds": [
+    {
+      "round": 1,
+      "reviews": [
+        {
+          "id": "n-u01",
+          "cmn": [
+            "老师再见！",
+            "再见！明天见！",
+            "老师，谢谢您！",
+            "不客气。拜拜！",
+            "拜拜！"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 4
+          },
+          "comment": "Natural farewell. Grandma's thanks comes slightly out of nowhere (no reason for thanking is shown), but plausible at pick-up."
+        },
+        {
+          "id": "n-u02",
+          "cmn": [
+            "先生！先生！",
+            "我吗？",
+            "这是您的吧？",
+            "是我的！谢谢您！",
+            "不客气。"
+          ],
+          "scores": {
+            "natural": 3,
+            "clarity": 4,
+            "flow": 4
+          },
+          "comment": "A shopkeeper calling a young student customer 先生 and using 您 sounds stiff; 'Sir! Sir!' is textbook. Seller never names the item, relies on gesture.",
+          "suggestion": "Seller: 同学！同学！ (near campus) or 哎！你的手机！ then 这是你的吧？ Keep 谢谢 / 不客气."
+        },
+        {
+          "id": "n-u03",
+          "cmn": [
+            "您好！几个人？",
+            "三个。",
+            "不是三个，是四个。",
+            "四个人？好的，请坐。",
+            "谢谢。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 3,
+            "flow": 3
+          },
+          "comment": "Dad answering 三个 then Mom correcting is odd: he knows Grandpa is parking, and nothing in the dialog tells the learner who the fourth person is (only the situation text). Waiter 您好 rendered as 'Selamat datang' (more like 欢迎光临) - small mismatch.",
+          "suggestion": "Dad: 三个……不，四个。爷爷在停车。 (or Mom: 四个，还有爷爷。) so the reason is audible; or make Dad say 四个 directly and keep the humor out."
+        },
+        {
+          "id": "n-u04",
+          "cmn": [
+            "你好，请问有牛奶吗？",
+            "有，在那边。",
+            "那边没有。",
+            "没有吗？……在这儿呢，这些都是。",
+            "好，谢谢！",
+            "不客气。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 4,
+            "flow": 3
+          },
+          "comment": "Asking 有牛奶吗 rather than 牛奶在哪儿 does not match the stated goal (finding where it is). Seller pointing the wrong way and then discovering it is right here is contrived, and 这些都是 is vague.",
+          "suggestion": "Mom: 请问，牛奶在哪儿？ Seller: 在那边。 Mom: 那边没有…… Seller: 哦，在这儿！ Mom: 谢谢！ Or keep 有牛奶吗 and drop the failed pointing."
+        },
+        {
+          "id": "n-u05",
+          "cmn": [
+            "这是怎么回事？",
+            "不是我！",
+            "不是你？那是谁？",
+            "是它！",
+            "它？",
+            "对，你问它！"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 4,
+            "flow": 5
+          },
+          "comment": "Lively and believable. 它 stays ambiguous until Grandpa asks 它？ (translations supply 'cat'); fine because the situation names the cat."
+        },
+        {
+          "id": "n-u06",
+          "cmn": [
+            "饺子好了！二十个，怎么样？",
+            "二十个？太多了！",
+            "那十五个。",
+            "十个吧。",
+            "十个太少了！十二个。",
+            "好吧，十二个。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Fun and realistic grandma-feeding scene. Counting dumplings by number rather than a bowl is slightly unusual but works at this level."
+        },
+        {
+          "id": "n-u07",
+          "cmn": [
+            "那个女孩子是谁？",
+            "她？我同学。",
+            "同学？不是你女朋友？",
+            "不是不是！她有男朋友。",
+            "那你呢？你有女朋友吗？",
+            "妈！"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Very natural family exchange, good comic ending with 妈！"
+        },
+        {
+          "id": "n-u08",
+          "cmn": [
+            "这是你家的狗吗？",
+            "对！",
+            "它叫什么名字？",
+            "它叫“包子”。",
+            "包子？我家的猫叫“饺子”！",
+            "饺子？真的吗？"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 4
+          },
+          "comment": "Cute and natural. Ending 真的吗？ is a bit weak/open. Indonesian 'Namanya siapa?' for a pet is acceptable ('Namanya apa?' is more neutral)."
+        },
+        {
+          "id": "n-u09",
+          "cmn": [
+            "您好，吃什么？",
+            "有包子吗？",
+            "包子没有了。有饺子和面条儿。",
+            "那……饺子吧。",
+            "好的。喝什么？",
+            "不喝了，谢谢。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Good ordering flow. 不喝了 implies 'stop drinking'; the usual refusal is 不喝，谢谢 / 不用了. 面条儿 with erhua is northern flavour, 面条 is safer. Waiter 您好 rendered 'Selamat siang' (time not in the Chinese).",
+          "suggestion": "Mom: 不喝，谢谢。 Waiter: ……面条。"
+        },
+        {
+          "id": "n-u10",
+          "cmn": [
+            "今天星期六，你还上学？",
+            "今天不是星期六，是星期五！",
+            "星期五？昨天不是星期五吗？",
+            "不是，昨天是星期四。",
+            "星期四……对，对。那明天是星期六。",
+            "对！拜拜！"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Clear, funny, good day-of-week practice. 你还上学？ is a little clipped; 你怎么还上学？ / 你还要上学？ is more natural."
+        },
+        {
+          "id": "n-u11",
+          "cmn": [
+            "喂，明天上午有时间吗？",
+            "上午没有。下午呢？",
+            "下午也好。几点？",
+            "两点半，在书店，怎么样？",
+            "好，两点半。不见不散！",
+            "不见不散！"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 4,
+            "flow": 4
+          },
+          "comment": "Mostly natural. 下午也好 is slightly off (下午可以 / 下午行). 上午没有 is terse (上午没时间). 不见不散 is a bit old-fashioned/textbook for students. Study plan is only in the situation text. EN 'I'll be there!' vs ID 'Pokoknya ketemu' differ slightly."
+        },
+        {
+          "id": "n-u12",
+          "cmn": [
+            "请问，这边有超市吗？",
+            "超市？在前头。",
+            "前头？前头哪儿？",
+            "在那个书店后头。",
+            "书店后头？好，谢谢！",
+            "不客气。"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Realistic street-asking with natural repeat-and-clarify (前头哪儿？) and a clear landmark."
+        },
+        {
+          "id": "n-u13",
+          "cmn": [
+            "您好，去哪儿？",
+            "师傅，去电影院。",
+            "好。……前头堵车了。",
+            "堵车？电影院在前头吗？",
+            "对，在那儿。",
+            "那我在这儿下车吧。",
+            "好，慢走！"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 4,
+            "flow": 3
+          },
+          "comment": "Mom asks whether the cinema is up ahead although she is the one who named it as the destination; plausible only if she does not know the area. Taxi drivers usually don't open with 您好. No payment before getting out (多少钱 missing), so the ending feels unfinished. 您好 rendered 'Selamat siang'.",
+          "suggestion": "Mom: 前头堵车了？还远吗？ Driver: 不远，电影院就在前头。 Mom: 那我在这儿下车吧。多少钱？ Driver: 十八块。 (or end with 谢谢 + 慢走)."
+        },
+        {
+          "id": "n-u14",
+          "cmn": [
+            "十点了，还不起床？",
+            "今天星期六……我再睡一下。",
+            "早饭不吃了？",
+            "吃……再睡十分钟。",
+            "好，十分钟后我再叫你。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Very believable. 再睡一下 should be 再睡一会儿 (睡一下 is odd). Otherwise good."
+        },
+        {
+          "id": "n-u15",
+          "cmn": [
+            "喂，我在超市。晚上想吃什么？",
+            "我想吃饺子！",
+            "饺子？昨天也是饺子。",
+            "我喜欢饺子！",
+            "好吧，饺子。",
+            "谢谢爸爸！"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Natural phone call and family banter."
+        },
+        {
+          "id": "n-u16",
+          "cmn": [
+            "今天在学校怎么样？",
+            "很好！我有一个新同桌。",
+            "新同桌？男孩子还是女孩子？",
+            "女孩子。她是学霸！",
+            "学霸？那你也要好好学习。",
+            "知道了！"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Natural, nice mom-child exchange. 很好 vs Indonesian 'Seru' differ slightly in tone; 我有一个新同桌 is OK but 我换了新同桌 / 来了一个新同桌 is more idiomatic. 学霸 is slang (outside HSK 1) but suits a child."
+        },
+        {
+          "id": "n-u17",
+          "cmn": [
+            "你妈妈写的什么？字太小了，我看不见。",
+            "我看看……她说她今天晚上八点回来。",
+            "八点？那晚饭呢？",
+            "她说：你们吃吧。",
+            "好。你写：知道了。",
+            "写好了！"
+          ],
+          "scores": {
+            "natural": 3,
+            "clarity": 4,
+            "flow": 5
+          },
+          "comment": "我看不见 is wrong for 'can't read small text': that means totally unable to see; should be 看不清. Also ID 'Tulis: baik' does not match 知道了 ('got it'). 写 for replying to a message is understandable but 回 is more natural.",
+          "suggestion": "Grandpa: 你妈妈写的什么？字太小了，我看不清。 ... 好。你回：知道了。 Fix ID to 'Tulis: tahu/siap'."
+        },
+        {
+          "id": "n-u18",
+          "cmn": [
+            "你好，怎么了？",
+            "医生，我有点儿难受。",
+            "晚上几点睡觉？",
+            "两三点吧。",
+            "两三点？你要多休息，不要熬夜了。",
+            "好，谢谢医生。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 4,
+            "flow": 3
+          },
+          "comment": "Doctor jumps straight to sleep time with no symptom given beyond 难受; a doctor would first ask where it hurts or what is wrong. Title also gives away the answer.",
+          "suggestion": "Big brother: 医生，我头疼，也很累。 Doctor: 晚上几点睡觉？ (add a concrete symptom before the sleep question)."
+        },
+        {
+          "id": "n-u19",
+          "cmn": [
+            "老板，苹果怎么卖？",
+            "五块一个。",
+            "五块？有点儿贵。",
+            "不贵，很好吃的！",
+            "便宜一点儿吧，我买五个。",
+            "好，五个二十块。",
+            "好，我扫码。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Realistic bargaining and 扫码 touch. Apples are normally sold per 斤 (五块一斤); 五块一个 is possible but unusual. 老板 translated as 'Bu' while a neutral 'Pak/Bu penjual' fits better."
+        },
+        {
+          "id": "n-u20",
+          "cmn": [
+            "不要玩手机了！",
+            "我没玩，我在看电影。",
+            "看电影？你看了一个小时了！",
+            "这个电影很好看！",
+            "好看也明天再看。现在睡觉！",
+            "好吧……"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Natural parent-child exchange; good escalation and resolution."
+        },
+        {
+          "id": "n-u21",
+          "cmn": [
+            "这件衣服真漂亮！",
+            "是新的。您穿一下看看？",
+            "有点儿大。有小的吗？",
+            "有，您看这件。",
+            "嗯，这件好。多少钱？",
+            "一百二。",
+            "好，我要了。"
+          ],
+          "scores": {
+            "natural": 3,
+            "clarity": 4,
+            "flow": 4
+          },
+          "comment": "是新的 is odd from a shop assistant (sounds like 'not used'); EN/ID render it as 'new in / baru datang', which the Chinese does not say. Seller says 看 where 试 is expected; Mom says 有点儿大 right after being offered to try, skipping the trying step.",
+          "suggestion": "Seller: 这是新的。您试试？ -> better 这是新款。您试试吧？ ; later 您试试这件。 Then Mom: 有点儿大……"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "reviews": [
+        {
+          "id": "n-u02",
+          "cmn": [
+            "同学！同学！你的手机！",
+            "我的手机？",
+            "是不是你的？",
+            "是我的！谢谢！谢谢！",
+            "不客气。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 4
+          },
+          "comment": "Much better: 同学！你的手机！ is what a shopkeeper would shout. Minor: 是不是你的？ right after 你的手机！ is slightly redundant (seller already said it is his), and the big brother's 我的手机？ makes the loop a bit circular. Acceptable with a gesture."
+        },
+        {
+          "id": "n-u03",
+          "cmn": [
+            "您好！几个人？",
+            "三个。",
+            "我呢？",
+            "四个，四个！",
+            "四个人？好的，请坐。"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Fixed well. Dad miscounting, little sister's 我呢？ and 四个，四个！ is natural, funny and self-explanatory; the reason for 'four' is now audible."
+        },
+        {
+          "id": "n-u04",
+          "cmn": [
+            "你好，请问牛奶在哪儿？",
+            "在那边，水果那儿。",
+            "水果那儿？好，谢谢！",
+            "不客气。"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Clean and realistic: 牛奶在哪儿？ matches the goal, the answer is concrete, repeat-and-confirm is natural."
+        },
+        {
+          "id": "n-u13",
+          "cmn": [
+            "去哪儿？",
+            "师傅，去电影院。",
+            "好。……前头堵车了。电影院在那儿。",
+            "那我在这儿下车吧。多少钱？",
+            "十八块。",
+            "好。谢谢师傅！",
+            "慢走！"
+          ],
+          "scores": {
+            "natural": 5,
+            "clarity": 4,
+            "flow": 5
+          },
+          "comment": "Now complete: destination, jam, getting out, price, payment, 慢走. 在那儿 relies on a gesture (clear from the situation). Translation: 好。谢谢师傅！ is rendered 'Here you go. Thank you!' / 'Ini.' which the Chinese does not say; use 'OK. Thanks!' / 'Oke. Terima kasih, Pak!'."
+        },
+        {
+          "id": "n-u17",
+          "cmn": [
+            "你妈妈写的什么？字太小了，你读一下。",
+            "我看看……她说她今天晚上八点回来。",
+            "八点？那晚饭呢？",
+            "她说：你们吃吧。",
+            "好。你回：知道了。",
+            "好，回了！"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "看不见 problem is gone and 回/回了 are natural. 你读一下 is a little curt/stiff from a grandfather; 你读给我听 / 你念一下 is more natural, minor. ID 'oke, siap' for 知道了 is a slightly different tone but fine."
+        },
+        {
+          "id": "n-u18",
+          "cmn": [
+            "你好，怎么了？",
+            "医生，我这几天有点儿难受，不想吃饭。",
+            "晚上睡觉怎么样？",
+            "我天天两三点睡。",
+            "两三点？你在做什么？",
+            "我晚上打工。",
+            "你要多休息，不要熬夜了。",
+            "好，谢谢医生。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 5,
+            "flow": 5
+          },
+          "comment": "Good now: symptom first, then sleep, then the reason (打工), then advice. 你在做什么？ is a bit vague as a doctor's question (你晚上做什么？ is clearer) but acceptable; ID 'ada keluhan apa' is more formal than 怎么了, minor."
+        },
+        {
+          "id": "n-u21",
+          "cmn": [
+            "这件衣服真漂亮！",
+            "您穿一下看看？",
+            "嗯……有点儿大。有小一点儿的吗？",
+            "有。您再穿这件看看。",
+            "这件好。多少钱？",
+            "一百二。",
+            "好，我要了。"
+          ],
+          "scores": {
+            "natural": 4,
+            "clarity": 4,
+            "flow": 4
+          },
+          "comment": "是新的 gone; the try-on is now acknowledged. 穿一下看看 is a workable substitute for 试 given the vocabulary limit. The try-on happens off-stage, so the learner depends on the situation text and the added '(after trying it on)' note in the translations to follow the jump to 有点儿大."
+        }
+      ]
+    }
+  ],
+  "final": {
+    "n-u01": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 4
+      }
+    },
+    "n-u02": {
+      "round": 2,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 4
+      }
+    },
+    "n-u03": {
+      "round": 2,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u04": {
+      "round": 2,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u05": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 4,
+        "flow": 5
+      }
+    },
+    "n-u06": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u07": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u08": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 4
+      }
+    },
+    "n-u09": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u10": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u11": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 4,
+        "flow": 4
+      }
+    },
+    "n-u12": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u13": {
+      "round": 2,
+      "scores": {
+        "natural": 5,
+        "clarity": 4,
+        "flow": 5
+      }
+    },
+    "n-u14": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u15": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u16": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u17": {
+      "round": 2,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u18": {
+      "round": 2,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u19": {
+      "round": 1,
+      "scores": {
+        "natural": 4,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u20": {
+      "round": 1,
+      "scores": {
+        "natural": 5,
+        "clarity": 5,
+        "flow": 5
+      }
+    },
+    "n-u21": {
+      "round": 2,
+      "scores": {
+        "natural": 4,
+        "clarity": 4,
+        "flow": 4
+      }
+    }
+  }
+}

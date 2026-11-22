@@ -1124,5 +1124,273 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u16",
+    "title": {
+      "id": "Teman sebangku baru",
+      "en": "A new desk mate"
+    },
+    "place": {
+      "id": "Jalan pulang dari sekolah",
+      "en": "Walking home from school"
+    },
+    "placeKind": "street",
+    "goal": {
+      "id": "Ibu ingin tahu bagaimana hari Adik di sekolah.",
+      "en": "Mom wants to know how little sister's day at school went."
+    },
+    "situation": {
+      "id": "Ibu menjemput Adik dan mereka berjalan pulang bersama.",
+      "en": "Mom picks up little sister and they walk home together."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "今天在学校怎么样？",
+        "tokens": [
+          {
+            "text": "今天",
+            "pinyin": "jīntiān"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "学校",
+            "pinyin": "xuéxiào"
+          },
+          {
+            "text": "怎么样",
+            "pinyin": "zěnmeyàng"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "How was school today?",
+        "id": "Bagaimana sekolah hari ini?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "很好！我有一个新同桌。",
+        "tokens": [
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "新",
+            "pinyin": "xīn"
+          },
+          {
+            "text": "同桌",
+            "pinyin": "tóng zhuō"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Great! I have a new desk mate.",
+        "id": "Baik! Aku punya teman sebangku baru.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "新同桌？男孩子还是女孩子？",
+        "tokens": [
+          {
+            "text": "新",
+            "pinyin": "xīn"
+          },
+          {
+            "text": "同桌",
+            "pinyin": "tóng zhuō"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "男",
+            "pinyin": "nán"
+          },
+          {
+            "text": "孩子",
+            "pinyin": "háizi"
+          },
+          {
+            "text": "还",
+            "pinyin": "hái"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "女",
+            "pinyin": "nǚ"
+          },
+          {
+            "text": "孩子",
+            "pinyin": "háizi"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "A new desk mate? A boy or a girl?",
+        "id": "Teman sebangku baru? Laki-laki atau perempuan?",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "女孩子。她是学霸！",
+        "tokens": [
+          {
+            "text": "女",
+            "pinyin": "nǚ"
+          },
+          {
+            "text": "孩子",
+            "pinyin": "háizi"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "学霸",
+            "pinyin": "xué bà"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "A girl. She's super smart!",
+        "id": "Perempuan. Dia jago banget belajarnya!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "学霸？那你也要好好学习。",
+        "tokens": [
+          {
+            "text": "学霸",
+            "pinyin": "xué bà"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "要",
+            "pinyin": "yào"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "学习",
+            "pinyin": "xuéxí"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Super smart? Then you study hard too.",
+        "id": "Jago? Kalau begitu kamu juga harus rajin belajar.",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "知道了！",
+        "tokens": [
+          {
+            "text": "知道",
+            "pinyin": "zhīdào"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "I know!",
+        "id": "Iya, iya!",
+        "machine": true
+      }
+    ]
+  }
 }

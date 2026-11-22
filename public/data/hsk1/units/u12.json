@@ -1166,5 +1166,216 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u12",
+    "title": {
+      "id": "Menanyakan jalan ke supermarket",
+      "en": "Asking the way to the supermarket"
+    },
+    "place": {
+      "id": "Jalan di dekat pasar",
+      "en": "Street near the market"
+    },
+    "placeKind": "street",
+    "goal": {
+      "id": "Nenek mencari supermarket terdekat.",
+      "en": "Grandma is looking for the nearest supermarket."
+    },
+    "situation": {
+      "id": "Nenek berjalan di daerah yang belum ia kenal. Ia bertanya kepada penjual buah di pinggir jalan.",
+      "en": "Grandma is walking in a part of town she doesn't know well. She asks a fruit seller at a roadside stall."
+    },
+    "machine": true,
+    "speakers": {
+      "nainai": {
+        "name": {
+          "id": "Nenek",
+          "en": "Grandma"
+        },
+        "gender": "female"
+      },
+      "seller": {
+        "name": {
+          "id": "Penjual",
+          "en": "Seller"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "请问，这边有超市吗？",
+        "tokens": [
+          {
+            "text": "请问",
+            "pinyin": "qǐngwèn"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "这边",
+            "pinyin": "zhèbiān"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "超市",
+            "pinyin": "chāoshì"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Excuse me, is there a supermarket around here?",
+        "id": "Permisi, di sekitar sini ada supermarket?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "超市？在前头。",
+        "tokens": [
+          {
+            "text": "超市",
+            "pinyin": "chāoshì"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "前头",
+            "pinyin": "qián tou"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "A supermarket? It's up ahead.",
+        "id": "Supermarket? Di depan sana.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "前头？前头哪儿？",
+        "tokens": [
+          {
+            "text": "前头",
+            "pinyin": "qián tou"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "前头",
+            "pinyin": "qián tou"
+          },
+          {
+            "text": "哪儿",
+            "pinyin": "nǎr"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Up ahead? Where exactly?",
+        "id": "Di depan? Di depan mana?",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "在那个书店后头。",
+        "tokens": [
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "那个",
+            "pinyin": "nàge"
+          },
+          {
+            "text": "书店",
+            "pinyin": "shūdiàn"
+          },
+          {
+            "text": "后头",
+            "pinyin": "hòu tou"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Behind that bookshop.",
+        "id": "Di belakang toko buku itu.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "书店后头？好，谢谢！",
+        "tokens": [
+          {
+            "text": "书店",
+            "pinyin": "shūdiàn"
+          },
+          {
+            "text": "后头",
+            "pinyin": "hòu tou"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Behind the bookshop? OK, thanks!",
+        "id": "Di belakang toko buku? Oke, terima kasih!",
+        "machine": true
+      },
+      {
+        "speaker": "seller",
+        "gender": "female",
+        "cmn": "不客气。",
+        "tokens": [
+          {
+            "text": "不客气",
+            "pinyin": "búkèqi"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "You're welcome.",
+        "id": "Sama-sama.",
+        "machine": true
+      }
+    ]
+  }
 }

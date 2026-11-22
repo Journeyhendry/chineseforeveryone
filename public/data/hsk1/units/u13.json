@@ -1101,5 +1101,267 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u13",
+    "title": {
+      "id": "Macet di taksi",
+      "en": "Stuck in traffic in a taxi"
+    },
+    "place": {
+      "id": "Di dalam taksi",
+      "en": "In a taxi"
+    },
+    "placeKind": "transport",
+    "goal": {
+      "id": "Ibu ingin sampai di bioskop dan memutuskan turun lebih awal karena macet.",
+      "en": "Mom wants to get to the cinema and decides to get out early because of the traffic jam."
+    },
+    "situation": {
+      "id": "Ibu naik taksi ke bioskop. Tidak jauh sebelum sampai, jalan macet.",
+      "en": "Mom takes a taxi to the cinema. Just before they arrive, the traffic stops."
+    },
+    "machine": true,
+    "speakers": {
+      "driver": {
+        "name": {
+          "id": "Sopir",
+          "en": "Driver"
+        },
+        "gender": "male"
+      },
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "driver",
+        "gender": "male",
+        "cmn": "去哪儿？",
+        "tokens": [
+          {
+            "text": "去",
+            "pinyin": "qù"
+          },
+          {
+            "text": "哪儿",
+            "pinyin": "nǎr"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Where to?",
+        "id": "Ke mana?",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "师傅，去电影院。",
+        "tokens": [
+          {
+            "text": "师傅",
+            "pinyin": "shī fu"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "去",
+            "pinyin": "qù"
+          },
+          {
+            "text": "电影院",
+            "pinyin": "diànyǐngyuàn"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "To the cinema, please.",
+        "id": "Pak, ke bioskop.",
+        "machine": true
+      },
+      {
+        "speaker": "driver",
+        "gender": "male",
+        "cmn": "好。……前头堵车了。电影院在那儿。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "前头",
+            "pinyin": "qián tou"
+          },
+          {
+            "text": "堵车",
+            "pinyin": "dǔ chē"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "电影院",
+            "pinyin": "diànyǐngyuàn"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "那儿",
+            "pinyin": "nàr"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK. ... There's a jam up ahead. The cinema is just there.",
+        "id": "Baik. ... Di depan macet. Bioskopnya di sana itu.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "那我在这儿下车吧。多少钱？",
+        "tokens": [
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "这儿",
+            "pinyin": "zhèr"
+          },
+          {
+            "text": "下",
+            "pinyin": "xià"
+          },
+          {
+            "text": "车",
+            "pinyin": "chē"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "多少",
+            "pinyin": "duōshao"
+          },
+          {
+            "text": "钱",
+            "pinyin": "qián"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Then I'll get out here. How much is it?",
+        "id": "Kalau begitu saya turun di sini saja. Berapa?",
+        "machine": true
+      },
+      {
+        "speaker": "driver",
+        "gender": "male",
+        "cmn": "十八块。",
+        "tokens": [
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "八",
+            "pinyin": "bā"
+          },
+          {
+            "text": "块",
+            "pinyin": "kuài"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Eighteen yuan.",
+        "id": "Delapan belas yuan.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "好。谢谢师傅！",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "谢谢",
+            "pinyin": "xièxie"
+          },
+          {
+            "text": "师傅",
+            "pinyin": "shī fu"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "OK. Thank you!",
+        "id": "Oke. Terima kasih, Pak!",
+        "machine": true
+      },
+      {
+        "speaker": "driver",
+        "gender": "male",
+        "cmn": "慢走！",
+        "tokens": [
+          {
+            "text": "慢走",
+            "pinyin": "màn zǒu"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Take care!",
+        "id": "Hati-hati!",
+        "machine": true
+      }
+    ]
+  }
 }

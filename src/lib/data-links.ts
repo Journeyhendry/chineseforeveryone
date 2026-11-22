@@ -1,5 +1,6 @@
 // Link check for the learning data (task 2b): every word / unit id mentioned anywhere must exist, every word is in
-// exactly one unit, and the files built from the data (public/data/hsk1, scene index, stroke files) agree with it.
+// exactly one unit, every unit has exactly one dialog (task 3d), and the files built from the data
+// (public/data/hsk1, scene index, stroke files) agree with it.
 // Pure function (no file access): scripts/check-data.ts loads the files, src/lib/data-links.test.ts tests it.
 
 export interface DataSet {
@@ -79,6 +80,11 @@ export function checkDataLinks(d: DataSet): string[] {
       }
     }
   }
+  for (const id of dupes(d.dialogs.map((dl) => dl.id))) errors.push(`dialogs.json: duplicate id ${id}`)
+  for (const u of d.units) {
+    const n = d.dialogs.filter((dl) => dl.unit === u.id).length
+    if (n !== 1) errors.push(`dialogs.json: unit ${u.id} has ${n} dialogs (need exactly 1)`)
+  }
   for (const v of d.visuals) {
     word('visuals.json', v.wordId)
     word(`visuals.json ${v.wordId} pairWordId`, v.pairWordId)
@@ -107,6 +113,8 @@ export function checkDataLinks(d: DataSet): string[] {
     if (index && index.wordCount !== u.words.length) errors.push(`public/data/hsk1/index.json ${u.id}: wordCount ${index.wordCount} but ${u.words.length} words`)
     for (const c of [...file.casual, ...file.relatedCasual]) for (const id of c.hsk.wordIds) word(`${at} casual ${c.id}`, id)
     for (const c of file.casual) if (c.unit !== u.id) errors.push(`${at}: casual ${c.id} belongs to ${c.unit}`)
+    const dialog = d.dialogs.find((dl) => dl.unit === u.id)
+    if ((file.dialog?.id ?? null) !== (dialog?.id ?? null)) errors.push(`${at}: dialog ${file.dialog?.id ?? 'none'} but dialogs.json has ${dialog?.id ?? 'none'}`)
   }
   for (const name of Object.keys(d.lessonUnits)) if (!unitIds.has(name)) errors.push(`public/data/hsk1/units/${name}.json: no such unit in units.json`)
   for (const id of d.sceneIndexIds) word('public/art/scenes/index.json', id)

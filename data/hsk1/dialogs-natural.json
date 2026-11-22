@@ -1,0 +1,1456 @@
+{
+  "version": 1,
+  "speakers": {
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "seller": {
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female"
+    },
+    "doctor": {
+      "name": {
+        "id": "Dokter",
+        "en": "Doctor"
+      },
+      "gender": "male"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "waiter": {
+      "name": {
+        "id": "Pelayan",
+        "en": "Waiter"
+      },
+      "gender": "male"
+    },
+    "driver": {
+      "name": {
+        "id": "Sopir",
+        "en": "Driver"
+      },
+      "gender": "male"
+    },
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    }
+  },
+  "dialogs": [
+    {
+      "id": "n-u01",
+      "unit": "u01",
+      "title": {
+        "id": "Pamit pada guru sepulang sekolah",
+        "en": "Saying goodbye to the teacher after school"
+      },
+      "place": {
+        "id": "Gerbang sekolah dasar",
+        "en": "Primary school gate"
+      },
+      "placeKind": "school",
+      "goal": {
+        "id": "Adik dan Nenek berpamitan dan berterima kasih kepada guru saat dijemput pulang.",
+        "en": "Little sister and Grandma say goodbye to the teacher and thank her at pick-up time."
+      },
+      "situation": {
+        "id": "Sore hari, guru mengantar murid-murid ke gerbang sekolah. Nenek datang menjemput Adik.",
+        "en": "In the afternoon the teacher walks the pupils to the school gate. Grandma has come to pick up little sister."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "老师再见！",
+          "en": "Bye, teacher!",
+          "id": "Sampai jumpa, Bu Guru!"
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "再见！明天见！",
+          "en": "Bye! See you tomorrow!",
+          "id": "Sampai jumpa! Sampai besok!"
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "老师，谢谢您！",
+          "en": "Thank you, teacher!",
+          "id": "Terima kasih, Bu Guru!"
+        },
+        {
+          "speaker": "teacher",
+          "gender": "female",
+          "cmn": "不客气。拜拜！",
+          "en": "You're welcome. Bye-bye!",
+          "id": "Sama-sama. Dah!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "拜拜！",
+          "en": "Bye-bye!",
+          "id": "Dah!"
+        }
+      ]
+    },
+    {
+      "id": "n-u02",
+      "unit": "u02",
+      "title": {
+        "id": "HP yang tertinggal",
+        "en": "The forgotten phone"
+      },
+      "place": {
+        "id": "Toko kecil dekat kampus",
+        "en": "Small shop near campus"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Penjual ingin mengembalikan HP yang tertinggal di meja kasir.",
+        "en": "The shopkeeper wants to give back a phone left on the counter."
+      },
+      "situation": {
+        "id": "Kakak baru saja membayar di toko kecil dekat kampus, lalu keluar. HP-nya tertinggal di meja kasir, dan penjual memanggilnya.",
+        "en": "Big brother has just paid at a small shop near campus and walked out. His phone is still on the counter, so the shopkeeper calls after him."
+      },
+      "lines": [
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "同学！同学！你的手机！",
+          "en": "Hey, student! Your phone!",
+          "id": "Dik! Dik! HP-mu!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我的手机？",
+          "en": "My phone?",
+          "id": "HP saya?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "是不是你的？",
+          "en": "Is this yours?",
+          "id": "Ini punyamu, bukan?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "是我的！谢谢！谢谢！",
+          "en": "It's mine! Thanks, thank you!",
+          "id": "Iya, punya saya! Makasih, makasih!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "en": "You're welcome.",
+          "id": "Sama-sama."
+        }
+      ]
+    },
+    {
+      "id": "n-u03",
+      "unit": "u03",
+      "title": {
+        "id": "Meja untuk berapa orang?",
+        "en": "A table for how many?"
+      },
+      "place": {
+        "id": "Pintu masuk rumah makan",
+        "en": "Restaurant entrance"
+      },
+      "placeKind": "eatery",
+      "goal": {
+        "id": "Keluarga meminta meja untuk empat orang.",
+        "en": "The family asks for a table for four."
+      },
+      "situation": {
+        "id": "Ayah, Ibu, Kakak, dan Adik masuk ke rumah makan. Ayah menghitung terlalu cepat dan lupa Adik yang berdiri di belakangnya.",
+        "en": "Dad, Mom, big brother and little sister walk into a restaurant. Dad counts too fast and forgets little sister, who is standing behind him."
+      },
+      "lines": [
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "您好！几个人？",
+          "en": "Hello! How many?",
+          "id": "Halo! Berapa orang?"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "三个。",
+          "en": "Three.",
+          "id": "Tiga."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我呢？",
+          "en": "What about me?",
+          "id": "Aku mana?"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "四个，四个！",
+          "en": "Four, four!",
+          "id": "Empat, empat!"
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "四个人？好的，请坐。",
+          "en": "Four? Sure, please have a seat.",
+          "id": "Empat orang? Baik, silakan duduk."
+        }
+      ]
+    },
+    {
+      "id": "n-u04",
+      "unit": "u04",
+      "title": {
+        "id": "Mencari susu di supermarket",
+        "en": "Looking for milk at the supermarket"
+      },
+      "place": {
+        "id": "Supermarket dekat rumah",
+        "en": "Neighbourhood supermarket"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Ibu ingin tahu di mana raknya susu.",
+        "en": "Mom wants to know where the milk is."
+      },
+      "situation": {
+        "id": "Ibu belanja di supermarket dekat rumah dan tidak menemukan susu, jadi ia bertanya kepada petugas toko.",
+        "en": "Mom is shopping at the supermarket near home. She can't find the milk, so she asks a shop assistant."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "你好，请问牛奶在哪儿？",
+          "en": "Hi, excuse me, where is the milk?",
+          "id": "Permisi, susunya di mana?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "在那边，水果那儿。",
+          "en": "Over there, by the fruit.",
+          "id": "Di sebelah sana, dekat buah."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "水果那儿？好，谢谢！",
+          "en": "By the fruit? Great, thanks!",
+          "id": "Dekat buah? Oke, terima kasih!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "en": "You're welcome.",
+          "id": "Sama-sama."
+        }
+      ]
+    },
+    {
+      "id": "n-u05",
+      "unit": "u05",
+      "title": {
+        "id": "Siapa yang menumpahkan air?",
+        "en": "Who spilled the water?"
+      },
+      "place": {
+        "id": "Ruang tamu di rumah",
+        "en": "Living room at home"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Kakek ingin tahu siapa yang menumpahkan air di meja.",
+        "en": "Grandpa wants to know who spilled water on the table."
+      },
+      "situation": {
+        "id": "Kakek masuk ke ruang tamu: ada air tumpah di meja, dan kucing duduk di sebelahnya. Adik ada di sofa.",
+        "en": "Grandpa walks into the living room. There is water all over the table, and the cat is sitting next to it. Little sister is on the sofa."
+      },
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "这是怎么回事？",
+          "en": "What's going on here?",
+          "id": "Ini kenapa?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "不是我！",
+          "en": "It wasn't me!",
+          "id": "Bukan aku!"
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "不是你？那是谁？",
+          "en": "Not you? Then who?",
+          "id": "Bukan kamu? Terus siapa?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "是它！",
+          "en": "It was him!",
+          "id": "Dia tuh!"
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "它？",
+          "en": "The cat?",
+          "id": "Kucing itu?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "对，你问它！",
+          "en": "Yes, ask him!",
+          "id": "Iya, tanya saja dia!"
+        }
+      ]
+    },
+    {
+      "id": "n-u06",
+      "unit": "u06",
+      "title": {
+        "id": "Berapa pangsit?",
+        "en": "How many dumplings?"
+      },
+      "place": {
+        "id": "Meja makan di rumah",
+        "en": "Dining table at home"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Nenek ingin Kakak makan banyak, Kakak ingin sedikit saja; mereka tawar-menawar jumlahnya.",
+        "en": "Grandma wants big brother to eat a lot, he wants less, so they haggle over the number."
+      },
+      "situation": {
+        "id": "Nenek baru selesai merebus pangsit dan mengisi piring Kakak.",
+        "en": "Grandma has just cooked dumplings and is filling big brother's plate."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "饺子好了！二十个，怎么样？",
+          "en": "The dumplings are ready! Twenty, OK?",
+          "id": "Pangsitnya sudah matang! Dua puluh, ya?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "二十个？太多了！",
+          "en": "Twenty? Way too many!",
+          "id": "Dua puluh? Kebanyakan!"
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "那十五个。",
+          "en": "Fifteen, then.",
+          "id": "Ya sudah, lima belas."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "十个吧。",
+          "en": "Let's say ten.",
+          "id": "Sepuluh saja."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "十个太少了！十二个。",
+          "en": "Ten is too few! Twelve.",
+          "id": "Sepuluh terlalu sedikit! Dua belas."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "好吧，十二个。",
+          "en": "OK, twelve.",
+          "id": "Oke deh, dua belas."
+        }
+      ]
+    },
+    {
+      "id": "n-u07",
+      "unit": "u07",
+      "title": {
+        "id": "Itu pacarmu?",
+        "en": "Is that your girlfriend?"
+      },
+      "place": {
+        "id": "Gerbang kampus",
+        "en": "University gate"
+      },
+      "placeKind": "school",
+      "goal": {
+        "id": "Ibu ingin tahu apakah perempuan itu pacar Kakak.",
+        "en": "Mom wants to know whether the girl is big brother's girlfriend."
+      },
+      "situation": {
+        "id": "Ibu menjemput Kakak di gerbang kampus. Sebelum Kakak datang, Ibu melihatnya mengobrol dengan seorang mahasiswi.",
+        "en": "Mom comes to pick up big brother at the university gate. Just before, she saw him chatting with a girl."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那个女孩子是谁？",
+          "en": "Who is that girl?",
+          "id": "Perempuan tadi siapa?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "她？我同学。",
+          "en": "Her? A classmate.",
+          "id": "Dia? Teman sekelas."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "同学？不是你女朋友？",
+          "en": "A classmate? Not your girlfriend?",
+          "id": "Teman sekelas? Bukan pacarmu?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不是不是！她有男朋友。",
+          "en": "No, no! She has a boyfriend.",
+          "id": "Bukan, bukan! Dia sudah punya pacar."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那你呢？你有女朋友吗？",
+          "en": "And you? Do you have a girlfriend?",
+          "id": "Kalau kamu? Kamu punya pacar?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "妈！",
+          "en": "Mom!",
+          "id": "Ibu!"
+        }
+      ]
+    },
+    {
+      "id": "n-u08",
+      "unit": "u08",
+      "title": {
+        "id": "Anjing teman di taman",
+        "en": "A friend's dog in the park"
+      },
+      "place": {
+        "id": "Taman dekat rumah",
+        "en": "Park near home"
+      },
+      "placeKind": "park",
+      "goal": {
+        "id": "Adik ingin tahu nama anjing temannya.",
+        "en": "Little sister wants to know the name of her friend's dog."
+      },
+      "situation": {
+        "id": "Sore hari di taman, Adik bertemu teman sekolahnya yang sedang mengajak anjing jalan-jalan.",
+        "en": "In the park one afternoon, little sister runs into a school friend who is walking a dog."
+      },
+      "lines": [
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这是你家的狗吗？",
+          "en": "Is this your family's dog?",
+          "id": "Ini anjing keluargamu?"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "对！",
+          "en": "Yes!",
+          "id": "Iya!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "它叫什么名字？",
+          "en": "What's its name?",
+          "id": "Namanya apa?"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "它叫“包子”。",
+          "en": "It's called \"Baozi\".",
+          "id": "Namanya \"Bakpao\"."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "包子？我家的猫叫“饺子”！",
+          "en": "Baozi? Our cat is called \"Jiaozi\"!",
+          "id": "Bakpao? Kucing di rumahku namanya \"Pangsit\"!"
+        },
+        {
+          "speaker": "friend",
+          "gender": "female",
+          "cmn": "饺子？真的吗？",
+          "en": "Jiaozi? Really?",
+          "id": "Pangsit? Beneran?"
+        }
+      ]
+    },
+    {
+      "id": "n-u09",
+      "unit": "u09",
+      "title": {
+        "id": "Memesan di warung mi",
+        "en": "Ordering at a noodle shop"
+      },
+      "place": {
+        "id": "Warung mi",
+        "en": "Noodle shop"
+      },
+      "placeKind": "eatery",
+      "goal": {
+        "id": "Ibu ingin memesan makan siang.",
+        "en": "Mom wants to order lunch."
+      },
+      "situation": {
+        "id": "Siang hari Ibu masuk ke warung mi kecil dan duduk. Pelayan datang mencatat pesanan.",
+        "en": "At lunchtime Mom sits down in a small noodle shop. The waiter comes to take her order."
+      },
+      "lines": [
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "您好，吃什么？",
+          "en": "Hello, what would you like?",
+          "id": "Halo, mau makan apa?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "有包子吗？",
+          "en": "Do you have baozi?",
+          "id": "Ada bakpao?"
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "包子没有了。有饺子和面条儿。",
+          "en": "We're out of baozi. We have dumplings and noodles.",
+          "id": "Bakpaonya habis. Ada pangsit dan mi."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那……饺子吧。",
+          "en": "Then... dumplings.",
+          "id": "Kalau begitu... pangsit saja."
+        },
+        {
+          "speaker": "waiter",
+          "gender": "male",
+          "cmn": "好的。喝什么？",
+          "en": "OK. Anything to drink?",
+          "id": "Baik. Minumnya apa?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "不喝了，谢谢。",
+          "en": "Nothing, thanks.",
+          "id": "Tidak usah, terima kasih."
+        }
+      ]
+    },
+    {
+      "id": "n-u10",
+      "unit": "u10",
+      "title": {
+        "id": "Kakek salah hari",
+        "en": "Grandpa mixes up the days"
+      },
+      "place": {
+        "id": "Pintu depan rumah, pagi hari",
+        "en": "Front door at home, morning"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Kakek ingin tahu hari ini hari apa, karena ia kira hari ini Sabtu.",
+        "en": "Grandpa wants to know what day it is, because he thinks it is Saturday."
+      },
+      "situation": {
+        "id": "Pagi hari Adik memakai tas sekolah dan siap berangkat. Kakek kaget, karena ia kira hari ini libur.",
+        "en": "In the morning little sister puts on her school bag, ready to leave. Grandpa is surprised: he thinks today is a day off."
+      },
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "今天星期六，你还上学？",
+          "en": "It's Saturday today. You still have school?",
+          "id": "Hari ini Sabtu, kok kamu sekolah?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "今天不是星期六，是星期五！",
+          "en": "Today isn't Saturday, it's Friday!",
+          "id": "Hari ini bukan Sabtu, tapi Jumat!"
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "星期五？昨天不是星期五吗？",
+          "en": "Friday? Wasn't yesterday Friday?",
+          "id": "Jumat? Bukannya kemarin Jumat?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "不是，昨天是星期四。",
+          "en": "No, yesterday was Thursday.",
+          "id": "Bukan, kemarin Kamis."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "星期四……对，对。那明天是星期六。",
+          "en": "Thursday... right, right. So tomorrow is Saturday.",
+          "id": "Kamis... oh iya, iya. Jadi besok Sabtu."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "对！拜拜！",
+          "en": "Yes! Bye-bye!",
+          "id": "Iya! Dah!"
+        }
+      ]
+    },
+    {
+      "id": "n-u11",
+      "unit": "u11",
+      "title": {
+        "id": "Janjian lewat telepon",
+        "en": "Making a plan on the phone"
+      },
+      "place": {
+        "id": "Telepon",
+        "en": "Phone call"
+      },
+      "placeKind": "phone",
+      "goal": {
+        "id": "Teman kuliah ingin janjian dengan Kakak besok untuk belajar bersama.",
+        "en": "A classmate wants to set a time with big brother to study together tomorrow."
+      },
+      "situation": {
+        "id": "Teman kuliah Kakak menelepon. Mereka mau belajar bersama di toko buku besok dan perlu menentukan jamnya.",
+        "en": "Big brother's classmate calls him. They want to study together at the bookshop tomorrow and need to pick a time."
+      },
+      "lines": [
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "喂，明天上午有时间吗？",
+          "en": "Hey, are you free tomorrow morning?",
+          "id": "Halo, besok pagi ada waktu?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "上午没有。下午呢？",
+          "en": "Not in the morning. How about the afternoon?",
+          "id": "Pagi tidak bisa. Kalau siang?"
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "下午也好。几点？",
+          "en": "Afternoon works too. What time?",
+          "id": "Siang juga boleh. Jam berapa?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "两点半，在书店，怎么样？",
+          "en": "Half past two, at the bookshop. OK?",
+          "id": "Setengah tiga, di toko buku. Bagaimana?"
+        },
+        {
+          "speaker": "classmate",
+          "gender": "male",
+          "cmn": "好，两点半。不见不散！",
+          "en": "OK, half past two. I'll wait for you there!",
+          "id": "Oke, setengah tiga. Aku tunggu di sana, ya!"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "不见不散！",
+          "en": "I'll be there!",
+          "id": "Aku pasti datang!"
+        }
+      ]
+    },
+    {
+      "id": "n-u12",
+      "unit": "u12",
+      "title": {
+        "id": "Menanyakan jalan ke supermarket",
+        "en": "Asking the way to the supermarket"
+      },
+      "place": {
+        "id": "Jalan di dekat pasar",
+        "en": "Street near the market"
+      },
+      "placeKind": "street",
+      "goal": {
+        "id": "Nenek mencari supermarket terdekat.",
+        "en": "Grandma is looking for the nearest supermarket."
+      },
+      "situation": {
+        "id": "Nenek berjalan di daerah yang belum ia kenal. Ia bertanya kepada penjual buah di pinggir jalan.",
+        "en": "Grandma is walking in a part of town she doesn't know well. She asks a fruit seller at a roadside stall."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "请问，这边有超市吗？",
+          "en": "Excuse me, is there a supermarket around here?",
+          "id": "Permisi, di sekitar sini ada supermarket?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "超市？在前头。",
+          "en": "A supermarket? It's up ahead.",
+          "id": "Supermarket? Di depan sana."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "前头？前头哪儿？",
+          "en": "Up ahead? Where exactly?",
+          "id": "Di depan? Di depan mana?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "在那个书店后头。",
+          "en": "Behind that bookshop.",
+          "id": "Di belakang toko buku itu."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "书店后头？好，谢谢！",
+          "en": "Behind the bookshop? OK, thanks!",
+          "id": "Di belakang toko buku? Oke, terima kasih!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不客气。",
+          "en": "You're welcome.",
+          "id": "Sama-sama."
+        }
+      ]
+    },
+    {
+      "id": "n-u13",
+      "unit": "u13",
+      "title": {
+        "id": "Macet di taksi",
+        "en": "Stuck in traffic in a taxi"
+      },
+      "place": {
+        "id": "Di dalam taksi",
+        "en": "In a taxi"
+      },
+      "placeKind": "transport",
+      "goal": {
+        "id": "Ibu ingin sampai di bioskop dan memutuskan turun lebih awal karena macet.",
+        "en": "Mom wants to get to the cinema and decides to get out early because of the traffic jam."
+      },
+      "situation": {
+        "id": "Ibu naik taksi ke bioskop. Tidak jauh sebelum sampai, jalan macet.",
+        "en": "Mom takes a taxi to the cinema. Just before they arrive, the traffic stops."
+      },
+      "lines": [
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "去哪儿？",
+          "en": "Where to?",
+          "id": "Ke mana?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "师傅，去电影院。",
+          "en": "To the cinema, please.",
+          "id": "Pak, ke bioskop."
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "好。……前头堵车了。电影院在那儿。",
+          "en": "OK. ... There's a jam up ahead. The cinema is just there.",
+          "id": "Baik. ... Di depan macet. Bioskopnya di sana itu."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "那我在这儿下车吧。多少钱？",
+          "en": "Then I'll get out here. How much is it?",
+          "id": "Kalau begitu saya turun di sini saja. Berapa?"
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "十八块。",
+          "en": "Eighteen yuan.",
+          "id": "Delapan belas yuan."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好。谢谢师傅！",
+          "en": "OK. Thank you!",
+          "id": "Oke. Terima kasih, Pak!"
+        },
+        {
+          "speaker": "driver",
+          "gender": "male",
+          "cmn": "慢走！",
+          "en": "Take care!",
+          "id": "Hati-hati!"
+        }
+      ]
+    },
+    {
+      "id": "n-u14",
+      "unit": "u14",
+      "title": {
+        "id": "Bangun, sudah siang!",
+        "en": "Get up, it's late!"
+      },
+      "place": {
+        "id": "Kamar Kakak",
+        "en": "Big brother's room"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Ibu ingin Kakak bangun untuk sarapan.",
+        "en": "Mom wants big brother to get up for breakfast."
+      },
+      "situation": {
+        "id": "Sabtu pagi jam sepuluh. Kakak masih tidur, dan Ibu membangunkannya.",
+        "en": "It's ten o'clock on Saturday morning. Big brother is still asleep, and Mom comes to wake him."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "十点了，还不起床？",
+          "en": "It's ten o'clock. Still not up?",
+          "id": "Sudah jam sepuluh, belum bangun juga?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "今天星期六……我再睡一下。",
+          "en": "It's Saturday... Let me sleep a bit more.",
+          "id": "Ini kan Sabtu... Aku tidur sebentar lagi."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "早饭不吃了？",
+          "en": "No breakfast, then?",
+          "id": "Tidak sarapan?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "吃……再睡十分钟。",
+          "en": "I'll eat... Ten more minutes.",
+          "id": "Sarapan... sepuluh menit lagi."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好，十分钟后我再叫你。",
+          "en": "OK, I'll call you again in ten minutes.",
+          "id": "Ya sudah, sepuluh menit lagi Ibu bangunkan."
+        }
+      ]
+    },
+    {
+      "id": "n-u15",
+      "unit": "u15",
+      "title": {
+        "id": "Mau makan malam apa?",
+        "en": "What do you want for dinner?"
+      },
+      "place": {
+        "id": "Telepon dari supermarket",
+        "en": "Phone call from the supermarket"
+      },
+      "placeKind": "phone",
+      "goal": {
+        "id": "Ayah ingin tahu Adik mau makan malam apa.",
+        "en": "Dad wants to know what little sister wants for dinner."
+      },
+      "situation": {
+        "id": "Ayah sedang di supermarket sepulang kerja dan menelepon ke rumah. Adik yang mengangkat.",
+        "en": "Dad is at the supermarket after work and calls home. Little sister answers."
+      },
+      "lines": [
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "喂，我在超市。晚上想吃什么？",
+          "en": "Hi, I'm at the supermarket. What do you want for dinner?",
+          "id": "Halo, Ayah di supermarket. Nanti malam mau makan apa?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我想吃饺子！",
+          "en": "I want dumplings!",
+          "id": "Aku mau pangsit!"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "饺子？昨天也是饺子。",
+          "en": "Dumplings? We had dumplings yesterday too.",
+          "id": "Pangsit? Kemarin juga pangsit."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我喜欢饺子！",
+          "en": "I like dumplings!",
+          "id": "Aku suka pangsit!"
+        },
+        {
+          "speaker": "baba",
+          "gender": "male",
+          "cmn": "好吧，饺子。",
+          "en": "Fine, dumplings.",
+          "id": "Ya sudah, pangsit."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "谢谢爸爸！",
+          "en": "Thanks, Dad!",
+          "id": "Makasih, Ayah!"
+        }
+      ]
+    },
+    {
+      "id": "n-u16",
+      "unit": "u16",
+      "title": {
+        "id": "Teman sebangku baru",
+        "en": "A new desk mate"
+      },
+      "place": {
+        "id": "Jalan pulang dari sekolah",
+        "en": "Walking home from school"
+      },
+      "placeKind": "street",
+      "goal": {
+        "id": "Ibu ingin tahu bagaimana hari Adik di sekolah.",
+        "en": "Mom wants to know how little sister's day at school went."
+      },
+      "situation": {
+        "id": "Ibu menjemput Adik dan mereka berjalan pulang bersama.",
+        "en": "Mom picks up little sister and they walk home together."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "今天在学校怎么样？",
+          "en": "How was school today?",
+          "id": "Bagaimana sekolah hari ini?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "很好！我有一个新同桌。",
+          "en": "Great! I have a new desk mate.",
+          "id": "Baik! Aku punya teman sebangku baru."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "新同桌？男孩子还是女孩子？",
+          "en": "A new desk mate? A boy or a girl?",
+          "id": "Teman sebangku baru? Laki-laki atau perempuan?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "女孩子。她是学霸！",
+          "en": "A girl. She's super smart!",
+          "id": "Perempuan. Dia jago banget belajarnya!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "学霸？那你也要好好学习。",
+          "en": "Super smart? Then you study hard too.",
+          "id": "Jago? Kalau begitu kamu juga harus rajin belajar."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "知道了！",
+          "en": "I know!",
+          "id": "Iya, iya!"
+        }
+      ]
+    },
+    {
+      "id": "n-u17",
+      "unit": "u17",
+      "title": {
+        "id": "Membacakan pesan untuk Kakek",
+        "en": "Reading a message for Grandpa"
+      },
+      "place": {
+        "id": "Bangku taman",
+        "en": "Park bench"
+      },
+      "placeKind": "park",
+      "goal": {
+        "id": "Kakek minta Adik membacakan dan membalas pesan dari Ibu.",
+        "en": "Grandpa asks little sister to read Mom's message to him and reply."
+      },
+      "situation": {
+        "id": "Kakek dan Adik duduk di taman. Ada pesan dari Ibu di HP Kakek, tapi hurufnya terlalu kecil untuk Kakek.",
+        "en": "Grandpa and little sister are sitting in the park. Mom has sent a message to Grandpa's phone, but the text is too small for him."
+      },
+      "lines": [
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "你妈妈写的什么？字太小了，你读一下。",
+          "en": "What did your mom write? The letters are too small, you read it.",
+          "id": "Ibumu tulis apa? Hurufnya terlalu kecil, coba kamu bacakan."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我看看……她说她今天晚上八点回来。",
+          "en": "Let me see... She says she'll be back at eight tonight.",
+          "id": "Coba aku lihat... Katanya Ibu pulang jam delapan malam ini."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "八点？那晚饭呢？",
+          "en": "Eight? What about dinner?",
+          "id": "Jam delapan? Terus makan malamnya?"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "她说：你们吃吧。",
+          "en": "She says: you go ahead and eat.",
+          "id": "Katanya: kalian makan duluan saja."
+        },
+        {
+          "speaker": "yeye",
+          "gender": "male",
+          "cmn": "好。你回：知道了。",
+          "en": "OK. Reply: got it.",
+          "id": "Oke. Balas: oke, siap."
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好，回了！",
+          "en": "OK, sent!",
+          "id": "Oke, sudah kubalas!"
+        }
+      ]
+    },
+    {
+      "id": "n-u18",
+      "unit": "u18",
+      "title": {
+        "id": "Ke dokter karena tidak enak badan",
+        "en": "At the doctor, feeling unwell"
+      },
+      "place": {
+        "id": "Ruang periksa klinik",
+        "en": "Clinic consulting room"
+      },
+      "placeKind": "clinic",
+      "goal": {
+        "id": "Kakak ingin tahu kenapa ia merasa tidak enak badan.",
+        "en": "Big brother wants to find out why he feels unwell."
+      },
+      "situation": {
+        "id": "Sudah beberapa hari Kakak merasa tidak enak badan, jadi ia pergi ke klinik.",
+        "en": "Big brother has felt unwell for a few days, so he goes to the clinic."
+      },
+      "lines": [
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "你好，怎么了？",
+          "en": "Hello, what's the matter?",
+          "id": "Halo, ada keluhan apa?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "医生，我这几天有点儿难受，不想吃饭。",
+          "en": "Doctor, I haven't felt well for a few days, and I don't feel like eating.",
+          "id": "Dok, beberapa hari ini saya agak tidak enak badan, tidak nafsu makan."
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "晚上睡觉怎么样？",
+          "en": "How are you sleeping at night?",
+          "id": "Tidur malamnya bagaimana?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我天天两三点睡。",
+          "en": "I go to bed at two or three every night.",
+          "id": "Saya tiap hari tidur jam dua atau tiga."
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "两三点？你在做什么？",
+          "en": "Two or three? What are you doing?",
+          "id": "Jam dua atau tiga? Kamu ngapain?"
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "我晚上打工。",
+          "en": "I work a part-time job in the evenings.",
+          "id": "Malam saya kerja sambilan."
+        },
+        {
+          "speaker": "doctor",
+          "gender": "male",
+          "cmn": "你要多休息，不要熬夜了。",
+          "en": "You need more rest. Stop staying up so late.",
+          "id": "Kamu harus banyak istirahat, jangan begadang lagi."
+        },
+        {
+          "speaker": "gege",
+          "gender": "male",
+          "cmn": "好，谢谢医生。",
+          "en": "OK, thank you, doctor.",
+          "id": "Baik, terima kasih, Dok."
+        }
+      ]
+    },
+    {
+      "id": "n-u19",
+      "unit": "u19",
+      "title": {
+        "id": "Menawar apel di pasar",
+        "en": "Bargaining for apples at the market"
+      },
+      "place": {
+        "id": "Lapak buah di pasar pagi",
+        "en": "Fruit stall at the morning market"
+      },
+      "placeKind": "market",
+      "goal": {
+        "id": "Nenek ingin membeli apel dengan harga lebih murah.",
+        "en": "Grandma wants to buy apples for a lower price."
+      },
+      "situation": {
+        "id": "Pagi hari Nenek belanja di pasar dan berhenti di lapak buah.",
+        "en": "In the morning Grandma goes shopping at the market and stops at a fruit stall."
+      },
+      "lines": [
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "老板，苹果怎么卖？",
+          "en": "How much are the apples?",
+          "id": "Bu, apelnya berapa?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "五块一个。",
+          "en": "Five yuan each.",
+          "id": "Lima yuan satu."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "五块？有点儿贵。",
+          "en": "Five? That's a bit expensive.",
+          "id": "Lima? Agak mahal."
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "不贵，很好吃的！",
+          "en": "It's not expensive, they're really good!",
+          "id": "Tidak mahal, enak sekali lho!"
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "便宜一点儿吧，我买五个。",
+          "en": "Give me a better price, I'll take five.",
+          "id": "Kurangi sedikit, ya, saya beli lima."
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "好，五个二十块。",
+          "en": "OK, five for twenty.",
+          "id": "Ya sudah, lima jadi dua puluh."
+        },
+        {
+          "speaker": "nainai",
+          "gender": "female",
+          "cmn": "好，我扫码。",
+          "en": "Good, I'll scan to pay.",
+          "id": "Oke, saya scan, ya."
+        }
+      ]
+    },
+    {
+      "id": "n-u20",
+      "unit": "u20",
+      "title": {
+        "id": "Sudah waktunya tidur",
+        "en": "Time for bed"
+      },
+      "place": {
+        "id": "Kamar Adik, malam hari",
+        "en": "Little sister's room at night"
+      },
+      "placeKind": "home",
+      "goal": {
+        "id": "Ibu ingin Adik berhenti menonton di HP dan tidur.",
+        "en": "Mom wants little sister to put the phone away and go to sleep."
+      },
+      "situation": {
+        "id": "Sudah malam. Ibu masuk ke kamar Adik dan melihat ia masih memegang HP.",
+        "en": "It's late. Mom walks into little sister's room and sees her still on the phone."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "不要玩手机了！",
+          "en": "Stop playing on the phone!",
+          "id": "Sudah, jangan main HP lagi!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "我没玩，我在看电影。",
+          "en": "I'm not playing, I'm watching a film.",
+          "id": "Aku tidak main, aku nonton film."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "看电影？你看了一个小时了！",
+          "en": "A film? You've been watching for an hour!",
+          "id": "Nonton film? Kamu sudah nonton satu jam!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "这个电影很好看！",
+          "en": "This film is really good!",
+          "id": "Filmnya seru banget!"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好看也明天再看。现在睡觉！",
+          "en": "Then watch the rest tomorrow. Bed, now!",
+          "id": "Seru ya lanjut besok. Sekarang tidur!"
+        },
+        {
+          "speaker": "meimei",
+          "gender": "female",
+          "cmn": "好吧……",
+          "en": "Fine...",
+          "id": "Iya deh..."
+        }
+      ]
+    },
+    {
+      "id": "n-u21",
+      "unit": "u21",
+      "title": {
+        "id": "Mencari ukuran yang pas",
+        "en": "Finding the right size"
+      },
+      "place": {
+        "id": "Toko baju",
+        "en": "Clothes shop"
+      },
+      "placeKind": "shop",
+      "goal": {
+        "id": "Ibu ingin membeli baju dengan ukuran yang pas.",
+        "en": "Mom wants to buy a top in the right size."
+      },
+      "situation": {
+        "id": "Ibu melihat baju yang ia suka di toko baju. Penjual menyuruhnya mencoba, tapi yang pertama kebesaran.",
+        "en": "Mom sees a top she likes in a clothes shop. The assistant lets her try it on, but the first one is too big."
+      },
+      "lines": [
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "这件衣服真漂亮！",
+          "en": "This top is really pretty!",
+          "id": "Baju ini cantik sekali!"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "您穿一下看看？",
+          "en": "Would you like to try it on?",
+          "id": "Mau dicoba dulu?"
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "嗯……有点儿大。有小一点儿的吗？",
+          "en": "(after trying it on) Hmm... it's a bit big. Do you have a smaller one?",
+          "id": "(setelah mencoba) Hmm... agak besar. Ada yang lebih kecil?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "有。您再穿这件看看。",
+          "en": "Yes. Try this one.",
+          "id": "Ada. Coba yang ini."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "这件好。多少钱？",
+          "en": "This one fits. How much is it?",
+          "id": "Yang ini pas. Berapa harganya?"
+        },
+        {
+          "speaker": "seller",
+          "gender": "female",
+          "cmn": "一百二。",
+          "en": "A hundred and twenty.",
+          "id": "Seratus dua puluh."
+        },
+        {
+          "speaker": "mama",
+          "gender": "female",
+          "cmn": "好，我要了。",
+          "en": "OK, I'll take it.",
+          "id": "Oke, saya ambil."
+        }
+      ]
+    }
+  ]
+}

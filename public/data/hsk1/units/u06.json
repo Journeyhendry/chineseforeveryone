@@ -1384,5 +1384,268 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u06",
+    "title": {
+      "id": "Berapa pangsit?",
+      "en": "How many dumplings?"
+    },
+    "place": {
+      "id": "Meja makan di rumah",
+      "en": "Dining table at home"
+    },
+    "placeKind": "home",
+    "goal": {
+      "id": "Nenek ingin Kakak makan banyak, Kakak ingin sedikit saja; mereka tawar-menawar jumlahnya.",
+      "en": "Grandma wants big brother to eat a lot, he wants less, so they haggle over the number."
+    },
+    "situation": {
+      "id": "Nenek baru selesai merebus pangsit dan mengisi piring Kakak.",
+      "en": "Grandma has just cooked dumplings and is filling big brother's plate."
+    },
+    "machine": true,
+    "speakers": {
+      "nainai": {
+        "name": {
+          "id": "Nenek",
+          "en": "Grandma"
+        },
+        "gender": "female"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "饺子好了！二十个，怎么样？",
+        "tokens": [
+          {
+            "text": "饺子",
+            "pinyin": "jiǎozi"
+          },
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "二",
+            "pinyin": "èr"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "怎么样",
+            "pinyin": "zěnmeyàng"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "The dumplings are ready! Twenty, OK?",
+        "id": "Pangsitnya sudah matang! Dua puluh, ya?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "二十个？太多了！",
+        "tokens": [
+          {
+            "text": "二",
+            "pinyin": "èr"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "太",
+            "pinyin": "tài"
+          },
+          {
+            "text": "多",
+            "pinyin": "duō"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Twenty? Way too many!",
+        "id": "Dua puluh? Kebanyakan!",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "那十五个。",
+        "tokens": [
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "五",
+            "pinyin": "wǔ"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Fifteen, then.",
+        "id": "Ya sudah, lima belas.",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "十个吧。",
+        "tokens": [
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Let's say ten.",
+        "id": "Sepuluh saja.",
+        "machine": true
+      },
+      {
+        "speaker": "nainai",
+        "gender": "female",
+        "cmn": "十个太少了！十二个。",
+        "tokens": [
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "太",
+            "pinyin": "tài"
+          },
+          {
+            "text": "少",
+            "pinyin": "shǎo"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "二",
+            "pinyin": "èr"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Ten is too few! Twelve.",
+        "id": "Sepuluh terlalu sedikit! Dua belas.",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "好吧，十二个。",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "十",
+            "pinyin": "shí"
+          },
+          {
+            "text": "二",
+            "pinyin": "èr"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "OK, twelve.",
+        "id": "Oke deh, dua belas.",
+        "machine": true
+      }
+    ]
+  }
 }

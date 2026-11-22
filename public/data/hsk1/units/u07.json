@@ -1402,5 +1402,245 @@
       "machine": true
     }
   ],
-  "dialog": null
+  "dialog": {
+    "id": "n-u07",
+    "title": {
+      "id": "Itu pacarmu?",
+      "en": "Is that your girlfriend?"
+    },
+    "place": {
+      "id": "Gerbang kampus",
+      "en": "University gate"
+    },
+    "placeKind": "school",
+    "goal": {
+      "id": "Ibu ingin tahu apakah perempuan itu pacar Kakak.",
+      "en": "Mom wants to know whether the girl is big brother's girlfriend."
+    },
+    "situation": {
+      "id": "Ibu menjemput Kakak di gerbang kampus. Sebelum Kakak datang, Ibu melihatnya mengobrol dengan seorang mahasiswi.",
+      "en": "Mom comes to pick up big brother at the university gate. Just before, she saw him chatting with a girl."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "gege": {
+        "name": {
+          "id": "Kakak laki-laki",
+          "en": "Big brother"
+        },
+        "gender": "male"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "那个女孩子是谁？",
+        "tokens": [
+          {
+            "text": "那个",
+            "pinyin": "nàge"
+          },
+          {
+            "text": "女",
+            "pinyin": "nǚ"
+          },
+          {
+            "text": "孩子",
+            "pinyin": "háizi"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "谁",
+            "pinyin": "shéi"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "Who is that girl?",
+        "id": "Perempuan tadi siapa?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "她？我同学。",
+        "tokens": [
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "同学",
+            "pinyin": "tóngxué"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "Her? A classmate.",
+        "id": "Dia? Teman sekelas.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "同学？不是你女朋友？",
+        "tokens": [
+          {
+            "text": "同学",
+            "pinyin": "tóngxué"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "女朋友",
+            "pinyin": "nǚpéngyou"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "A classmate? Not your girlfriend?",
+        "id": "Teman sekelas? Bukan pacarmu?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "不是不是！她有男朋友。",
+        "tokens": [
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "不",
+            "pinyin": "bù"
+          },
+          {
+            "text": "是",
+            "pinyin": "shì"
+          },
+          {
+            "text": "！"
+          },
+          {
+            "text": "她",
+            "pinyin": "tā"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "男朋友",
+            "pinyin": "nánpéngyou"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "No, no! She has a boyfriend.",
+        "id": "Bukan, bukan! Dia sudah punya pacar.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "那你呢？你有女朋友吗？",
+        "tokens": [
+          {
+            "text": "那",
+            "pinyin": "nà"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "呢",
+            "pinyin": "ne"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "有",
+            "pinyin": "yǒu"
+          },
+          {
+            "text": "女朋友",
+            "pinyin": "nǚpéngyou"
+          },
+          {
+            "text": "吗",
+            "pinyin": "ma"
+          },
+          {
+            "text": "？"
+          }
+        ],
+        "en": "And you? Do you have a girlfriend?",
+        "id": "Kalau kamu? Kamu punya pacar?",
+        "machine": true
+      },
+      {
+        "speaker": "gege",
+        "gender": "male",
+        "cmn": "妈！",
+        "tokens": [
+          {
+            "text": "妈",
+            "pinyin": "mā"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Mom!",
+        "id": "Ibu!",
+        "machine": true
+      }
+    ]
+  }
 }

@@ -1087,5 +1087,265 @@
     }
   ],
   "relatedCasual": [],
-  "dialog": null
+  "dialog": {
+    "id": "n-u20",
+    "title": {
+      "id": "Sudah waktunya tidur",
+      "en": "Time for bed"
+    },
+    "place": {
+      "id": "Kamar Adik, malam hari",
+      "en": "Little sister's room at night"
+    },
+    "placeKind": "home",
+    "goal": {
+      "id": "Ibu ingin Adik berhenti menonton di HP dan tidur.",
+      "en": "Mom wants little sister to put the phone away and go to sleep."
+    },
+    "situation": {
+      "id": "Sudah malam. Ibu masuk ke kamar Adik dan melihat ia masih memegang HP.",
+      "en": "It's late. Mom walks into little sister's room and sees her still on the phone."
+    },
+    "machine": true,
+    "speakers": {
+      "mama": {
+        "name": {
+          "id": "Ibu",
+          "en": "Mom"
+        },
+        "gender": "female"
+      },
+      "meimei": {
+        "name": {
+          "id": "Adik perempuan",
+          "en": "Little sister"
+        },
+        "gender": "female"
+      }
+    },
+    "lines": [
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "不要玩手机了！",
+        "tokens": [
+          {
+            "text": "不要",
+            "pinyin": "búyào"
+          },
+          {
+            "text": "玩",
+            "pinyin": "wán"
+          },
+          {
+            "text": "手机",
+            "pinyin": "shǒujī"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Stop playing on the phone!",
+        "id": "Sudah, jangan main HP lagi!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "我没玩，我在看电影。",
+        "tokens": [
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "没",
+            "pinyin": "méi"
+          },
+          {
+            "text": "玩",
+            "pinyin": "wán"
+          },
+          {
+            "text": "，"
+          },
+          {
+            "text": "我",
+            "pinyin": "wǒ"
+          },
+          {
+            "text": "在",
+            "pinyin": "zài"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "电影",
+            "pinyin": "diànyǐng"
+          },
+          {
+            "text": "。"
+          }
+        ],
+        "en": "I'm not playing, I'm watching a film.",
+        "id": "Aku tidak main, aku nonton film.",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "看电影？你看了一个小时了！",
+        "tokens": [
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "电影",
+            "pinyin": "diànyǐng"
+          },
+          {
+            "text": "？"
+          },
+          {
+            "text": "你",
+            "pinyin": "nǐ"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "一",
+            "pinyin": "yī"
+          },
+          {
+            "text": "个",
+            "pinyin": "gè"
+          },
+          {
+            "text": "小时",
+            "pinyin": "xiǎoshí"
+          },
+          {
+            "text": "了",
+            "pinyin": "le"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "A film? You've been watching for an hour!",
+        "id": "Nonton film? Kamu sudah nonton satu jam!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "这个电影很好看！",
+        "tokens": [
+          {
+            "text": "这个",
+            "pinyin": "zhège"
+          },
+          {
+            "text": "电影",
+            "pinyin": "diànyǐng"
+          },
+          {
+            "text": "很",
+            "pinyin": "hěn"
+          },
+          {
+            "text": "好看",
+            "pinyin": "hǎokàn"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "This film is really good!",
+        "id": "Filmnya seru banget!",
+        "machine": true
+      },
+      {
+        "speaker": "mama",
+        "gender": "female",
+        "cmn": "好看也明天再看。现在睡觉！",
+        "tokens": [
+          {
+            "text": "好看",
+            "pinyin": "hǎokàn"
+          },
+          {
+            "text": "也",
+            "pinyin": "yě"
+          },
+          {
+            "text": "明天",
+            "pinyin": "míngtiān"
+          },
+          {
+            "text": "再",
+            "pinyin": "zài"
+          },
+          {
+            "text": "看",
+            "pinyin": "kàn"
+          },
+          {
+            "text": "。"
+          },
+          {
+            "text": "现在",
+            "pinyin": "xiànzài"
+          },
+          {
+            "text": "睡觉",
+            "pinyin": "shuìjiào"
+          },
+          {
+            "text": "！"
+          }
+        ],
+        "en": "Then watch the rest tomorrow. Bed, now!",
+        "id": "Seru ya lanjut besok. Sekarang tidur!",
+        "machine": true
+      },
+      {
+        "speaker": "meimei",
+        "gender": "female",
+        "cmn": "好吧……",
+        "tokens": [
+          {
+            "text": "好",
+            "pinyin": "hǎo"
+          },
+          {
+            "text": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "text": "…"
+          },
+          {
+            "text": "…"
+          }
+        ],
+        "en": "Fine...",
+        "id": "Iya deh...",
+        "machine": true
+      }
+    ]
+  }
 }

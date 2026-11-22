@@ -1,0 +1,91 @@
+name: Basics audio (P3)
+
+# Audio Tahap 0 (task 0): mp3 suara P3 untuk data/basics/basics.json + cek Whisper.
+# Jalan otomatis di cabang selain main bila data/skrip/workflow ini berubah, atau manual.
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Buat ulang semua file (abaikan file yang sudah ada)"
+        type: boolean
+        default: false
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - data/basics/basics.json
+      - scripts/tts-basics/**
+      - .github/workflows/basics-audio.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: basics-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system packages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+          ffmpeg -version | head -1
+
+      - name: Cache pip and Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: basics-audio-${{ runner.os }}-${{ hashFiles('scripts/tts/requirements.txt', 'scripts/tts-basics/requirements.txt', 'scripts/tts/voices.json') }}
+          restore-keys: |
+            basics-audio-${{ runner.os }}-
+            tts-${{ runner.os }}-
+
+      - name: Install Kokoro + Whisper
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
+          "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts/requirements.txt -r scripts/tts-basics/requirements.txt
+          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|pypinyin|jieba|huggingface)" || true
+
+      - name: Synthesize, check, write manifest
+        env:
+          FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE --work "$RUNNER_TEMP/basics-work"
+          du -sh public/audio/basics
+          ls public/audio/basics | wc -l
+
+      - name: Commit audio
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/audio/basics data/basics/audio-issues.json
+          if git diff --cached --quiet; then
+            echo "No changes in basics audio"
+            exit 0
+          fi
+          git commit -m "Data: basics audio (P3)"
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"

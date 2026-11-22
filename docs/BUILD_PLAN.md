@@ -36,6 +36,8 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 9. **Berhenti dan minta pemilik** untuk: membuat akun/kunci/password, mengubah pengaturan repo/akun, memilih suara (task 4a), dan keputusan yang mengubah bagian 1. Tulis permintaannya di PROGRESS.md "Butuh pemilik"; lanjutkan task lain yang tidak terhalang.
 10. Jangan pernah menulis kunci, token, atau password ke repo. Jangan menghapus riwayat git. Jangan force-push.
 
+11. Ide pemilik ada di `docs/IDEAS.md`. Hanya kerjakan ide yang sudah punya task di bagian 4; jangan kerjakan "Ide parkir".
+
 ## 3. Pembagian model
 
 | Peran / task | Model |

@@ -20,7 +20,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 6 · Layar unit + peta belajar — 2026-11-21 — Opus (diperiksa Opus, 1 kali perbaikan kecil) — peta 20 unit + bintang + tes loncat (≥ 80 %), ringkasan unit (versi santai + dialog), kenalan kata (huruf WenKai 120 px berwarna nada, animasi coretan Hanzi Writer data lokal 384 huruf, contoh kalimat Tatoeba), latihan 12 soal (4 jenis, keyboard 1–4/Enter/Spasi); suara sementara dari perangkat
 - [ ] 6b · Ilustrasi + animasi semua kata (tahap berikutnya: unit 4 dst., setelah task 2b menyusun ulang unit)
   - [x] 6b tahap 1 · unit 1–3 — 2026-11-22 — Opus (diperiksa Opus) — 87 adegan SVG dari sistem rakit (`data/hsk1/scenes.json` → `npm run build:scenes`, ±10 KB/adegan), 39 pose tokoh, kartu ilustrasi di layar kenalan kata: gerak napas/kedip, klik/Enter/Spasi = aksi + suara, diam saat kurangi gerak; teks balon komik HTML huruf WenKai dengan kata disorot; axe lolos terang & gelap
-- [ ] 7 · Empat game — SEDANG DIKERJAKAN (mulai 2026-11-23 11:02 UTC)
+- [x] 7 · Empat game — 2026-11-23 — Opus (diperiksa Opus) — kartu bolak-balik, jodohkan dengan waktu, tebak nada, susun kalimat (seret + keyboard) per unit di `#/belajar/unit/<id>/game`; tombol "satu game singkat" di layar nilai latihan; skor terbaik tersimpan (ikut cadangan); semua game selesai hanya dengan keyboard, axe lolos terang & gelap, tanpa scroll samping di 375 px; kode game dimuat hanya saat dibuka (+4 KB awal)
 - [x] 8 · Progres + ulangan harian + cadangan — 2026-11-22 — Sonnet (commit `Task 8` masuk & deploy sukses, tetapi sesinya terhenti sebelum mencentang; dicek ulang sesi 3d: semua tes lolos, layar Ulang & Progres terbuka tanpa galat, tanpa scroll samping di 375 px) — Leitner 5 kotak, target harian 10/20/30, hari berturut-turut, unduh/pulihkan cadangan
 - [x] 9 · Kamus + Sumber + lapor salah — 2026-11-23 — Sonnet (diperiksa Opus, 1 kali perbaikan kecil) — cari lewat huruf/pinyin (dengan/tanpa tanda nada, angka nada, ü/v)/arti ID/EN, halaman detail kata + tautan ke unit, halaman `#/sumber` dari CREDITS.md, tombol "Lapor salah" (kamus & kenalan kata) membuka GitHub Issue terisi; axe lolos terang & gelap, tanpa scroll samping di 375 px
 - [ ] 10 · Pengecekan akhir + rilis v1
@@ -35,6 +35,8 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - ~~Keputusan jumlah kata HSK 1~~ **Diputuskan 2026-11-22: ganti ke 300 kata silabus 2025 (task 2b).**
 
 ## Catatan & temuan
+
+- 2026-11-23 (task 7): Tebak nada memakai nada tertulis di kamus; kata bernada ringan, 3+3, 不 dan 一 tidak dipakai (ditulis di layar). Tanpa suara di perangkat, tebak nada tetap jalan (huruf + pinyin tanpa tanda nada). Susun kalimat hanya memakai kalimat yang terpecah penuh jadi kata HSK 1 (24–45 kalimat per unit). "Main lagi" di game jodohkan kembali ke pilihan mode. Setelah task 4b masuk, game otomatis memakai file suara lewat `audio.ts`.
 
 - 2026-11-21: Repo dijadikan public; GitHub Pages source = GitHub Actions.
 - 2026-11-21 (task 2): 11 arti Inggris diperbaiki manual (`data/hsk1/en-overrides.json`), 16 kata memakai arti CEDICT dengan nada ringan berbeda; detail di `data/hsk1/SOURCES.json`. Sekitar 100 kata gabungan tidak punya jenis kata di sumber (`pos: []`).

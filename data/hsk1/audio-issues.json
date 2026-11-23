@@ -5,31 +5,18 @@
    "key": "word-L1-0001",
    "kind": "word",
    "text": "爱",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0005",
-   "kind": "word",
-   "text": "吧",
-   "transcript": "Bye",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0003",
-   "kind": "word",
-   "text": "八",
-   "transcript": "Bye",
-   "check": "beda",
+   "transcript": "哎",
+   "carrierTranscript": "这个词是哎",
+   "check": "nada 3 bukan 4",
+   "tone": 3,
    "attempts": 3
   },
   {
    "key": "word-L1-0004",
    "kind": "word",
    "text": "爸爸",
-   "transcript": "啤吧",
+   "transcript": "Baba",
+   "carrierTranscript": "这个词是Baba。",
    "check": "beda",
    "attempts": 3
   },
@@ -37,7 +24,8 @@
    "key": "word-L1-0008",
    "kind": "word",
    "text": "百",
-   "transcript": "掰",
+   "transcript": "拜拜。",
+   "carrierTranscript": "这个词是背",
    "check": "beda",
    "attempts": 3
   },
@@ -45,7 +33,8 @@
    "key": "word-L1-0010",
    "kind": "word",
    "text": "半",
-   "transcript": "笨语",
+   "transcript": "半语。",
+   "carrierTranscript": "这个词是《笨》。",
    "check": "beda",
    "attempts": 3
   },
@@ -53,7 +42,8 @@
    "key": "word-L1-0036",
    "kind": "word",
    "text": "茶",
-   "transcript": "",
+   "transcript": "长。",
+   "carrierTranscript": "这个词是成",
    "check": "beda",
    "attempts": 3
   },
@@ -61,55 +51,8 @@
    "key": "word-L1-0040",
    "kind": "word",
    "text": "唱",
-   "transcript": "正",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0046",
-   "kind": "word",
-   "text": "吃",
-   "transcript": "知",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0051",
-   "kind": "word",
-   "text": "穿",
-   "transcript": "春",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0504",
-   "kind": "word",
-   "text": "出租车",
-   "transcript": "出租撤",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0061",
-   "kind": "word",
-   "text": "大",
-   "transcript": "大雨",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0058",
-   "kind": "word",
-   "text": "打电话",
-   "transcript": "戴电话",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0505",
-   "kind": "word",
-   "text": "大家",
-   "transcript": "道家",
+   "transcript": "让",
+   "carrierTranscript": "这个词是圣。",
    "check": "beda",
    "attempts": 3
   },
@@ -117,39 +60,8 @@
    "key": "word-L1-0064",
    "kind": "word",
    "text": "到",
-   "transcript": "道语",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0067",
-   "kind": "word",
-   "text": "的",
-   "transcript": "德",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0075",
-   "kind": "word",
-   "text": "第",
-   "transcript": "第1个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0076",
-   "kind": "word",
-   "text": "点",
-   "transcript": "5点",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0089",
-   "kind": "word",
-   "text": "都",
-   "transcript": "都行",
+   "transcript": "导演",
+   "carrierTranscript": "这个词是do it。",
    "check": "beda",
    "attempts": 3
   },
@@ -157,7 +69,8 @@
    "key": "word-L1-0098",
    "kind": "word",
    "text": "二",
-   "transcript": "恶",
+   "transcript": "录音。",
+   "carrierTranscript": "这个词是阿尔茨的阿尔茨。",
    "check": "beda",
    "attempts": 3
   },
@@ -165,39 +78,8 @@
    "key": "word-L1-0099",
    "kind": "word",
    "text": "饭",
-   "transcript": "份",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0121",
-   "kind": "word",
-   "text": "给",
-   "transcript": "归",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0509",
-   "kind": "word",
-   "text": "狗",
-   "transcript": "勾引",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0128",
-   "kind": "word",
-   "text": "国",
-   "transcript": "郭文贵",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0132",
-   "kind": "word",
-   "text": "还",
-   "transcript": "黑",
+   "transcript": "翻译",
+   "carrierTranscript": "这个词是粉。",
    "check": "beda",
    "attempts": 3
   },
@@ -205,47 +87,8 @@
    "key": "word-L1-0143",
    "kind": "word",
    "text": "号",
-   "transcript": "后制",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0142",
-   "kind": "word",
-   "text": "好玩儿",
-   "transcript": "柯文",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0144",
-   "kind": "word",
-   "text": "喝",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0146",
-   "kind": "word",
-   "text": "很",
-   "transcript": "我很",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0154",
-   "kind": "word",
-   "text": "回",
-   "transcript": "灰",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0165",
-   "kind": "word",
-   "text": "几",
-   "transcript": "记",
+   "transcript": "后期。",
+   "carrierTranscript": "这个词是后",
    "check": "beda",
    "attempts": 3
   },
@@ -253,7 +96,8 @@
    "key": "word-L1-0169",
    "kind": "word",
    "text": "家",
-   "transcript": "将",
+   "transcript": "叫。",
+   "carrierTranscript": "这个词是叫",
    "check": "beda",
    "attempts": 3
   },
@@ -261,55 +105,8 @@
    "key": "word-L1-0176",
    "kind": "word",
    "text": "叫",
-   "transcript": "就",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0511",
-   "kind": "word",
-   "text": "饺子",
-   "transcript": "轿子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0185",
-   "kind": "word",
-   "text": "九",
-   "transcript": "就",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0187",
-   "kind": "word",
-   "text": "觉得",
-   "transcript": "你觉得",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0188",
-   "kind": "word",
-   "text": "开",
-   "transcript": "可以",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0192",
-   "kind": "word",
-   "text": "看",
-   "transcript": "你看",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0199",
-   "kind": "word",
-   "text": "课",
-   "transcript": "客人",
+   "transcript": "哟。",
+   "carrierTranscript": "这个词是就",
    "check": "beda",
    "attempts": 3
   },
@@ -318,46 +115,26 @@
    "kind": "word",
    "text": "口",
    "transcript": "扣",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0203",
-   "kind": "word",
-   "text": "块",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0210",
-   "kind": "word",
-   "text": "了",
-   "transcript": "勒",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0215",
-   "kind": "word",
-   "text": "两",
-   "transcript": "凉",
-   "check": "beda",
+   "carrierTranscript": "这个词是以扣。",
+   "check": "nada 4 bukan 3",
+   "tone": 4,
    "attempts": 3
   },
   {
    "key": "word-L1-0227",
    "kind": "word",
    "text": "吗",
-   "transcript": "",
+   "transcript": "麦。",
+   "carrierTranscript": "这个词是Mai.",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "word-L1-0228",
+   "key": "word-L1-0513",
    "kind": "word",
-   "text": "买",
-   "transcript": "美",
+   "text": "卖",
+   "transcript": "umai",
+   "carrierTranscript": "这个词是 美。",
    "check": "beda",
    "attempts": 3
   },
@@ -365,47 +142,26 @@
    "key": "word-L1-0230",
    "kind": "word",
    "text": "忙",
-   "transcript": "",
+   "transcript": "蚂蚁。",
+   "carrierTranscript": "这个词是蒙眼。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "word-L1-0514",
+   "key": "word-L1-0257",
    "kind": "word",
-   "text": "猫",
-   "transcript": "",
+   "text": "那儿",
+   "transcript": "No.",
+   "carrierTranscript": "这个词是NER",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "word-L1-0241",
+   "key": "word-L1-0252",
    "kind": "word",
-   "text": "们",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0244",
-   "kind": "word",
-   "text": "面条儿",
-   "transcript": "面条",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0250",
-   "kind": "word",
-   "text": "哪",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0515",
-   "kind": "word",
-   "text": "那个",
-   "transcript": "奈哥",
+   "text": "哪儿",
+   "transcript": "哪里?",
+   "carrierTranscript": "这个词是nery。",
    "check": "beda",
    "attempts": 3
   },
@@ -414,14 +170,7 @@
    "kind": "word",
    "text": "哪些",
    "transcript": "那些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0269",
-   "kind": "word",
-   "text": "呢",
-   "transcript": "",
+   "carrierTranscript": "这个词是,那些。",
    "check": "beda",
    "attempts": 3
   },
@@ -429,7 +178,8 @@
    "key": "word-L1-0274",
    "kind": "word",
    "text": "您",
-   "transcript": "年糕",
+   "transcript": "你好。",
+   "carrierTranscript": "这个词是年",
    "check": "beda",
    "attempts": 3
   },
@@ -438,22 +188,7 @@
    "kind": "word",
    "text": "起床",
    "transcript": "气床",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0296",
-   "kind": "word",
-   "text": "请",
-   "transcript": "请来",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0315",
-   "kind": "word",
-   "text": "上",
-   "transcript": "上演",
+   "carrierTranscript": "这个词是气床",
    "check": "beda",
    "attempts": 3
   },
@@ -461,7 +196,8 @@
    "key": "word-L1-0324",
    "kind": "word",
    "text": "少",
-   "transcript": "收",
+   "transcript": "手。",
+   "carrierTranscript": "这个词是收",
    "check": "beda",
    "attempts": 3
   },
@@ -469,39 +205,8 @@
    "key": "word-L1-0325",
    "kind": "word",
    "text": "谁",
-   "transcript": "水",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0328",
-   "kind": "word",
-   "text": "什么",
-   "transcript": "神梦",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0332",
-   "kind": "word",
-   "text": "十",
-   "transcript": "十个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0335",
-   "kind": "word",
-   "text": "事",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0337",
-   "kind": "word",
-   "text": "是",
-   "transcript": "不是",
+   "transcript": "随。",
+   "carrierTranscript": "这个词是水。",
    "check": "beda",
    "attempts": 3
   },
@@ -509,7 +214,8 @@
    "key": "word-L1-0334",
    "kind": "word",
    "text": "时间",
-   "transcript": "实践",
+   "transcript": "实践。",
+   "carrierTranscript": "这个词是实践。",
    "check": "beda",
    "attempts": 3
   },
@@ -517,39 +223,18 @@
    "key": "word-L1-0345",
    "kind": "word",
    "text": "水",
-   "transcript": "睡",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0353",
-   "kind": "word",
-   "text": "岁",
-   "transcript": "五岁",
-   "check": "beda",
+   "transcript": "睡。",
+   "carrierTranscript": "这个词是,睡。",
+   "check": "nada 4 bukan 3",
+   "tone": 4,
    "attempts": 3
   },
   {
    "key": "word-L1-0354",
    "kind": "word",
    "text": "他",
-   "transcript": "特语",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0523",
-   "kind": "word",
-   "text": "它",
-   "transcript": "特语",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0356",
-   "kind": "word",
-   "text": "她",
-   "transcript": "特语",
+   "transcript": "太阳。",
+   "carrierTranscript": "这个词是特语。",
    "check": "beda",
    "attempts": 3
   },
@@ -557,7 +242,8 @@
    "key": "word-L1-0367",
    "kind": "word",
    "text": "外",
-   "transcript": "无谓",
+   "transcript": "外景。",
+   "carrierTranscript": "这个词是位置。",
    "check": "beda",
    "attempts": 3
   },
@@ -565,7 +251,8 @@
    "key": "word-L1-0371",
    "kind": "word",
    "text": "玩",
-   "transcript": "文",
+   "transcript": "文。",
+   "carrierTranscript": "这个词是文。",
    "check": "beda",
    "attempts": 3
   },
@@ -573,7 +260,8 @@
    "key": "word-L1-0372",
    "kind": "word",
    "text": "晚",
-   "transcript": "问",
+   "transcript": "晚安。",
+   "carrierTranscript": "这个词是问。",
    "check": "beda",
    "attempts": 3
   },
@@ -581,23 +269,8 @@
    "key": "word-L1-0373",
    "kind": "word",
    "text": "晚饭",
-   "transcript": "文愤",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0374",
-   "kind": "word",
-   "text": "晚上",
-   "transcript": "问上",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0382",
-   "kind": "word",
-   "text": "五",
-   "transcript": "误解",
+   "transcript": "吻饭。",
+   "carrierTranscript": "这个词是问份。",
    "check": "beda",
    "attempts": 3
   },
@@ -605,7 +278,8 @@
    "key": "word-L1-0389",
    "kind": "word",
    "text": "下",
-   "transcript": "一项",
+   "transcript": "以下。",
+   "carrierTranscript": "这个词是一项",
    "check": "beda",
    "attempts": 3
   },
@@ -613,7 +287,8 @@
    "key": "word-L1-0396",
    "kind": "word",
    "text": "下雨",
-   "transcript": "笑语",
+   "transcript": "笑语。",
+   "carrierTranscript": "这个词是笑语。",
    "check": "beda",
    "attempts": 3
   },
@@ -621,55 +296,38 @@
    "key": "word-L1-0400",
    "kind": "word",
    "text": "想",
-   "transcript": "香",
-   "check": "beda",
+   "transcript": "像。",
+   "carrierTranscript": "这个词是像",
+   "check": "nada 4 bukan 3",
+   "tone": 4,
    "attempts": 3
   },
   {
    "key": "word-L1-0401",
    "kind": "word",
    "text": "小",
-   "transcript": "礼秀",
-   "check": "beda",
+   "transcript": "笑",
+   "carrierTranscript": "这个词是一笑",
+   "check": "nada 4 bukan 3",
+   "tone": 4,
    "attempts": 3
   },
   {
-   "key": "word-L1-0405",
+   "key": "word-L1-0411",
    "kind": "word",
-   "text": "小时",
-   "transcript": "一小时",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0406",
-   "kind": "word",
-   "text": "小学",
-   "transcript": "教学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0407",
-   "kind": "word",
-   "text": "小学生",
-   "transcript": "一小学生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0409",
-   "kind": "word",
-   "text": "写",
-   "transcript": "先",
-   "check": "beda",
+   "text": "新",
+   "transcript": "信。",
+   "carrierTranscript": "这个词是新朗语。",
+   "check": "nada 4 bukan 1",
+   "tone": 4,
    "attempts": 3
   },
   {
    "key": "word-L1-0413",
    "kind": "word",
    "text": "星期",
-   "transcript": "象弃",
+   "transcript": "兴趣。",
+   "carrierTranscript": "这个词是 兴起。",
    "check": "beda",
    "attempts": 3
   },
@@ -677,31 +335,8 @@
    "key": "word-L1-0423",
    "kind": "word",
    "text": "要",
-   "transcript": "YOU",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0425",
-   "kind": "word",
-   "text": "也",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0437",
-   "kind": "word",
-   "text": "一点儿",
-   "transcript": "1",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0434",
-   "kind": "word",
-   "text": "一下",
-   "transcript": "语下",
+   "transcript": "以后。",
+   "carrierTranscript": "这个词是又",
    "check": "beda",
    "attempts": 3
   },
@@ -709,31 +344,8 @@
    "key": "word-L1-0529",
    "kind": "word",
    "text": "椅子",
-   "transcript": "一字",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0441",
-   "kind": "word",
-   "text": "有",
-   "transcript": "已有",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0449",
-   "kind": "word",
-   "text": "雨",
-   "transcript": "月",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0455",
-   "kind": "word",
-   "text": "在",
-   "transcript": "无在",
+   "transcript": "义字。",
+   "carrierTranscript": "这个词是一字。",
    "check": "beda",
    "attempts": 3
   },
@@ -741,15 +353,8 @@
    "key": "word-L1-0457",
    "kind": "word",
    "text": "早",
-   "transcript": "走",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0458",
-   "kind": "word",
-   "text": "早饭",
-   "transcript": "走愤",
+   "transcript": "走。",
+   "carrierTranscript": "这个词是走。",
    "check": "beda",
    "attempts": 3
   },
@@ -757,7 +362,8 @@
    "key": "word-L1-0459",
    "kind": "word",
    "text": "早上",
-   "transcript": "走圣",
+   "transcript": "走上。",
+   "carrierTranscript": "这个词是走圣。",
    "check": "beda",
    "attempts": 3
   },
@@ -765,71 +371,8 @@
    "key": "word-L1-0462",
    "kind": "word",
    "text": "找",
-   "transcript": "一周",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0468",
-   "kind": "word",
-   "text": "这些",
-   "transcript": "祝些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-L1-0533",
-   "kind": "word",
-   "text": "只",
-   "transcript": "音质",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0001",
-   "kind": "word-slow",
-   "text": "爱",
-   "transcript": "恩慰",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0005",
-   "kind": "word-slow",
-   "text": "吧",
-   "transcript": "明白",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0003",
-   "kind": "word-slow",
-   "text": "八",
-   "transcript": "明白",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0004",
-   "kind": "word-slow",
-   "text": "爸爸",
-   "transcript": "明白了吧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0008",
-   "kind": "word-slow",
-   "text": "百",
-   "transcript": "崩败",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0007",
-   "kind": "word-slow",
-   "text": "白天",
-   "transcript": "五白天",
+   "transcript": "柔。",
+   "carrierTranscript": "这个词是柔。",
    "check": "beda",
    "attempts": 3
   },
@@ -837,63 +380,8 @@
    "key": "word-slow-L1-0010",
    "kind": "word-slow",
    "text": "半",
-   "transcript": "一半",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0016",
-   "kind": "word-slow",
-   "text": "包子",
-   "transcript": "引爆物子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0018",
-   "kind": "word-slow",
-   "text": "杯子",
-   "transcript": "五倍以此",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0022",
-   "kind": "word-slow",
-   "text": "本",
-   "transcript": "赢本",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0501",
-   "kind": "word-slow",
-   "text": "边",
-   "transcript": "无辩",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0028",
-   "kind": "word-slow",
-   "text": "病",
-   "transcript": "得病",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0034",
-   "kind": "word-slow",
-   "text": "不",
-   "transcript": "人不",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0035",
-   "kind": "word-slow",
-   "text": "菜",
-   "transcript": "温菜",
+   "transcript": "五瓣",
+   "carrierTranscript": "这个词是一本",
    "check": "beda",
    "attempts": 3
   },
@@ -901,7 +389,8 @@
    "key": "word-slow-L1-0036",
    "kind": "word-slow",
    "text": "茶",
-   "transcript": "雨晨",
+   "transcript": "一场。",
+   "carrierTranscript": "这个词是一场。",
    "check": "beda",
    "attempts": 3
   },
@@ -909,23 +398,8 @@
    "key": "word-slow-L1-0040",
    "kind": "word-slow",
    "text": "唱",
-   "transcript": "疑称",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0503",
-   "kind": "word-slow",
-   "text": "超市",
-   "transcript": "你超是",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0042",
-   "kind": "word-slow",
-   "text": "车",
-   "transcript": "映车",
+   "transcript": "离场。",
+   "carrierTranscript": "这个词是一乘。",
    "check": "beda",
    "attempts": 3
   },
@@ -933,23 +407,8 @@
    "key": "word-slow-L1-0046",
    "kind": "word-slow",
    "text": "吃",
-   "transcript": "引致",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0051",
-   "kind": "word-slow",
-   "text": "穿",
-   "transcript": "愚蠢",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0504",
-   "kind": "word-slow",
-   "text": "出租车",
-   "transcript": "运出租车",
+   "transcript": "音质",
+   "carrierTranscript": "这个词是应是",
    "check": "beda",
    "attempts": 3
   },
@@ -958,6 +417,7 @@
    "kind": "word-slow",
    "text": "大",
    "transcript": "您的",
+   "carrierTranscript": "这个词是应的。",
    "check": "beda",
    "attempts": 3
   },
@@ -965,159 +425,8 @@
    "key": "word-slow-L1-0058",
    "kind": "word-slow",
    "text": "打电话",
-   "transcript": "你打电话",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0505",
-   "kind": "word-slow",
-   "text": "大家",
-   "transcript": "迎大而驾",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0064",
-   "kind": "word-slow",
-   "text": "到",
-   "transcript": "引导",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0062",
-   "kind": "word-slow",
-   "text": "大学",
-   "transcript": "文大学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0063",
-   "kind": "word-slow",
-   "text": "大学生",
-   "transcript": "文大学生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0067",
-   "kind": "word-slow",
-   "text": "的",
-   "transcript": "一德",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0075",
-   "kind": "word-slow",
-   "text": "第",
-   "transcript": "何地",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0506",
-   "kind": "word-slow",
-   "text": "店",
-   "transcript": "炉垫",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0076",
-   "kind": "word-slow",
-   "text": "点",
-   "transcript": "五点",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0078",
-   "kind": "word-slow",
-   "text": "电话",
-   "transcript": "一电话",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0079",
-   "kind": "word-slow",
-   "text": "电脑",
-   "transcript": "一电脑",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0080",
-   "kind": "word-slow",
-   "text": "电视",
-   "transcript": "无电视",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0082",
-   "kind": "word-slow",
-   "text": "电影",
-   "transcript": "不电影",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0083",
-   "kind": "word-slow",
-   "text": "电影院",
-   "transcript": "不电影院",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0074",
-   "kind": "word-slow",
-   "text": "弟弟",
-   "transcript": "儿弟弟",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0086",
-   "kind": "word-slow",
-   "text": "东西",
-   "transcript": "有东西",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0089",
-   "kind": "word-slow",
-   "text": "都",
-   "transcript": "惊兜",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0092",
-   "kind": "word-slow",
-   "text": "对",
-   "transcript": "伦对",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0094",
-   "kind": "word-slow",
-   "text": "多",
-   "transcript": "一度",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0098",
-   "kind": "word-slow",
-   "text": "二",
-   "transcript": "恩恶",
+   "transcript": "你打的电话。",
+   "carrierTranscript": "这个词是一代电话。",
    "check": "beda",
    "attempts": 3
   },
@@ -1125,95 +434,8 @@
    "key": "word-slow-L1-0099",
    "kind": "word-slow",
    "text": "饭",
-   "transcript": "鱼饭",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0100",
-   "kind": "word-slow",
-   "text": "饭店",
-   "transcript": "无饭店",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0101",
-   "kind": "word-slow",
-   "text": "房间",
-   "transcript": "于房间",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0108",
-   "kind": "word-slow",
-   "text": "非常",
-   "transcript": "于非长",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0107",
-   "kind": "word-slow",
-   "text": "飞机",
-   "transcript": "过飞机",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0109",
-   "kind": "word-slow",
-   "text": "分",
-   "transcript": "一分",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0507",
-   "kind": "word-slow",
-   "text": "分钟",
-   "transcript": "一分钟",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0120",
-   "kind": "word-slow",
-   "text": "个",
-   "transcript": "一个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0119",
-   "kind": "word-slow",
-   "text": "歌",
-   "transcript": "一个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0121",
-   "kind": "word-slow",
-   "text": "给",
-   "transcript": "无贵",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0508",
-   "kind": "word-slow",
-   "text": "公司",
-   "transcript": "有公司",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0124",
-   "kind": "word-slow",
-   "text": "工作",
-   "transcript": "与工作",
+   "transcript": "御饭",
+   "carrierTranscript": "与这个词是一约分。",
    "check": "beda",
    "attempts": 3
   },
@@ -1221,55 +443,8 @@
    "key": "word-slow-L1-0509",
    "kind": "word-slow",
    "text": "狗",
-   "transcript": "引购",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0127",
-   "kind": "word-slow",
-   "text": "贵",
-   "transcript": "无贵",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0128",
-   "kind": "word-slow",
-   "text": "国",
-   "transcript": "苹果",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0132",
-   "kind": "word-slow",
-   "text": "还",
-   "transcript": "呜嗨",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0135",
-   "kind": "word-slow",
-   "text": "孩子",
-   "transcript": "我孩子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0136",
-   "kind": "word-slow",
-   "text": "汉语",
-   "transcript": "和汉语",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0137",
-   "kind": "word-slow",
-   "text": "汉字",
-   "transcript": "与汉字",
+   "transcript": "音购",
+   "carrierTranscript": "这个词是一个",
    "check": "beda",
    "attempts": 3
   },
@@ -1277,15 +452,8 @@
    "key": "word-slow-L1-0143",
    "kind": "word-slow",
    "text": "号",
-   "transcript": "以后",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0138",
-   "kind": "word-slow",
-   "text": "好",
-   "transcript": "以后",
+   "transcript": "以后,",
+   "carrierTranscript": "这个词是以后。",
    "check": "beda",
    "attempts": 3
   },
@@ -1293,7 +461,8 @@
    "key": "word-slow-L1-0139",
    "kind": "word-slow",
    "text": "好吃",
-   "transcript": "以后吃",
+   "transcript": "您好,我吃。",
+   "carrierTranscript": "这个词是因后知。",
    "check": "beda",
    "attempts": 3
   },
@@ -1301,15 +470,8 @@
    "key": "word-slow-L1-0140",
    "kind": "word-slow",
    "text": "好看",
-   "transcript": "以后看",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0141",
-   "kind": "word-slow",
-   "text": "好听",
-   "transcript": "后听",
+   "transcript": "后看",
+   "carrierTranscript": "这个词是一后看。",
    "check": "beda",
    "attempts": 3
   },
@@ -1317,71 +479,8 @@
    "key": "word-slow-L1-0142",
    "kind": "word-slow",
    "text": "好玩儿",
-   "transcript": "以后文",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0145",
-   "kind": "word-slow",
-   "text": "和",
-   "transcript": "音乐",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0144",
-   "kind": "word-slow",
-   "text": "喝",
-   "transcript": "鹰鹤",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0146",
-   "kind": "word-slow",
-   "text": "很",
-   "transcript": "忧恨",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0147",
-   "kind": "word-slow",
-   "text": "后",
-   "transcript": "以后",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0154",
-   "kind": "word-slow",
-   "text": "回",
-   "transcript": "误会",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0160",
-   "kind": "word-slow",
-   "text": "会",
-   "transcript": "无讳",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0161",
-   "kind": "word-slow",
-   "text": "火车",
-   "transcript": "银货车",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0165",
-   "kind": "word-slow",
-   "text": "几",
-   "transcript": "我记",
+   "transcript": "以后玩。",
+   "carrierTranscript": "这个词是以后文。",
    "check": "beda",
    "attempts": 3
   },
@@ -1389,23 +488,8 @@
    "key": "word-slow-L1-0169",
    "kind": "word-slow",
    "text": "家",
-   "transcript": "应荐",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0173",
-   "kind": "word-slow",
-   "text": "见",
-   "transcript": "无见",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0510",
-   "kind": "word-slow",
-   "text": "件",
-   "transcript": "无见",
+   "transcript": "音价",
+   "carrierTranscript": "这个词是印象。",
    "check": "beda",
    "attempts": 3
   },
@@ -1414,6 +498,7 @@
    "kind": "word-slow",
    "text": "叫",
    "transcript": "营救",
+   "carrierTranscript": "这个词是依旧",
    "check": "beda",
    "attempts": 3
   },
@@ -1421,23 +506,8 @@
    "key": "word-slow-L1-0511",
    "kind": "word-slow",
    "text": "饺子",
-   "transcript": "一教子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0171",
-   "kind": "word-slow",
-   "text": "家人",
-   "transcript": "一家人",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0164",
-   "kind": "word-slow",
-   "text": "鸡蛋",
-   "transcript": "无鸡蛋",
+   "transcript": "教子",
+   "carrierTranscript": "这个词是因教子。",
    "check": "beda",
    "attempts": 3
   },
@@ -1445,7 +515,8 @@
    "key": "word-slow-L1-0178",
    "kind": "word-slow",
    "text": "姐姐",
-   "transcript": "公季节",
+   "transcript": "孔季二节",
+   "carrierTranscript": "这个词是借解。",
    "check": "beda",
    "attempts": 3
   },
@@ -1453,7 +524,8 @@
    "key": "word-slow-L1-0180",
    "kind": "word-slow",
    "text": "今年",
-   "transcript": "不经年",
+   "transcript": "经年",
+   "carrierTranscript": "这个词是以不经年。",
    "check": "beda",
    "attempts": 3
   },
@@ -1461,79 +533,8 @@
    "key": "word-slow-L1-0181",
    "kind": "word-slow",
    "text": "今天",
-   "transcript": "吴静天",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0185",
-   "kind": "word-slow",
-   "text": "九",
-   "transcript": "英旧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0187",
-   "kind": "word-slow",
-   "text": "觉得",
-   "transcript": "你觉得",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0188",
-   "kind": "word-slow",
-   "text": "开",
-   "transcript": "嗯开",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0189",
-   "kind": "word-slow",
-   "text": "开车",
-   "transcript": "你开车",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0192",
-   "kind": "word-slow",
-   "text": "看",
-   "transcript": "鱼看",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0193",
-   "kind": "word-slow",
-   "text": "看病",
-   "transcript": "自看病",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0195",
-   "kind": "word-slow",
-   "text": "看见",
-   "transcript": "无看见",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0199",
-   "kind": "word-slow",
-   "text": "课",
-   "transcript": "赢课",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0202",
-   "kind": "word-slow",
-   "text": "口",
-   "transcript": "英寇",
+   "transcript": "敬天",
+   "carrierTranscript": "这个词是吴敬天。",
    "check": "beda",
    "attempts": 3
   },
@@ -1541,15 +542,8 @@
    "key": "word-slow-L1-0203",
    "kind": "word-slow",
    "text": "块",
-   "transcript": "无愧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0210",
-   "kind": "word-slow",
-   "text": "了",
-   "transcript": "银勒",
+   "transcript": "红块",
+   "carrierTranscript": "这个词是宫馈。",
    "check": "beda",
    "attempts": 3
   },
@@ -1557,31 +551,8 @@
    "key": "word-slow-L1-0212",
    "kind": "word-slow",
    "text": "冷",
-   "transcript": "一冷",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0213",
-   "kind": "word-slow",
-   "text": "里",
-   "transcript": "俄利",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0215",
-   "kind": "word-slow",
-   "text": "两",
-   "transcript": "一两",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0227",
-   "kind": "word-slow",
-   "text": "吗",
-   "transcript": "无蛮",
+   "transcript": "一冷。",
+   "carrierTranscript": "这个词是一论。",
    "check": "beda",
    "attempts": 3
   },
@@ -1589,7 +560,8 @@
    "key": "word-slow-L1-0513",
    "kind": "word-slow",
    "text": "卖",
-   "transcript": "不卖",
+   "transcript": "不卖。",
+   "carrierTranscript": "这个词是不昧。",
    "check": "beda",
    "attempts": 3
   },
@@ -1597,15 +569,8 @@
    "key": "word-slow-L1-0228",
    "kind": "word-slow",
    "text": "买",
-   "transcript": "不卖",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0224",
-   "kind": "word-slow",
-   "text": "妈妈",
-   "transcript": "英文版",
+   "transcript": "不买。",
+   "carrierTranscript": "这个词是不昧。",
    "check": "beda",
    "attempts": 3
   },
@@ -1613,7 +578,8 @@
    "key": "word-slow-L1-0230",
    "kind": "word-slow",
    "text": "忙",
-   "transcript": "银蒙",
+   "transcript": "隐瞒。",
+   "carrierTranscript": "这个词是阴谋。",
    "check": "beda",
    "attempts": 3
   },
@@ -1621,79 +587,8 @@
    "key": "word-slow-L1-0514",
    "kind": "word-slow",
    "text": "猫",
-   "transcript": "金茂",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0237",
-   "kind": "word-slow",
-   "text": "妹妹",
-   "transcript": "不妹妹",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0235",
-   "kind": "word-slow",
-   "text": "没事",
-   "transcript": "无媒事",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0241",
-   "kind": "word-slow",
-   "text": "们",
-   "transcript": "无门",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0243",
-   "kind": "word-slow",
-   "text": "面包",
-   "transcript": "一面包",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0244",
-   "kind": "word-slow",
-   "text": "面条儿",
-   "transcript": "面条",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0247",
-   "kind": "word-slow",
-   "text": "明年",
-   "transcript": "苏明年",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0248",
-   "kind": "word-slow",
-   "text": "明天",
-   "transcript": "不明天",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0245",
-   "kind": "word-slow",
-   "text": "名字",
-   "transcript": "与名字",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0254",
-   "kind": "word-slow",
-   "text": "那",
-   "transcript": "inthe",
+   "transcript": "紧揉。",
+   "carrierTranscript": "这个词是一闹。",
    "check": "beda",
    "attempts": 3
   },
@@ -1701,15 +596,8 @@
    "key": "word-slow-L1-0250",
    "kind": "word-slow",
    "text": "哪",
-   "transcript": "inthe",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0515",
-   "kind": "word-slow",
-   "text": "那个",
-   "transcript": "赢奈个",
+   "transcript": "音乐。",
+   "carrierTranscript": "这个词是因的。",
    "check": "beda",
    "attempts": 3
   },
@@ -1717,23 +605,8 @@
    "key": "word-slow-L1-0516",
    "kind": "word-slow",
    "text": "哪个",
-   "transcript": "那一个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0261",
-   "kind": "word-slow",
-   "text": "男",
-   "transcript": "迎南",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0257",
-   "kind": "word-slow",
-   "text": "那儿",
-   "transcript": "Inner",
+   "transcript": "那个",
+   "carrierTranscript": "这个词是那个。",
    "check": "beda",
    "attempts": 3
   },
@@ -1741,15 +614,8 @@
    "key": "word-slow-L1-0252",
    "kind": "word-slow",
    "text": "哪儿",
-   "transcript": "Inner",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0258",
-   "kind": "word-slow",
-   "text": "那些",
-   "transcript": "无那些",
+   "transcript": "音囊。",
+   "carrierTranscript": "这个词是inner。",
    "check": "beda",
    "attempts": 3
   },
@@ -1758,46 +624,7 @@
    "kind": "word-slow",
    "text": "哪些",
    "transcript": "那些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0269",
-   "kind": "word-slow",
-   "text": "呢",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0270",
-   "kind": "word-slow",
-   "text": "能",
-   "transcript": "因能",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0271",
-   "kind": "word-slow",
-   "text": "你",
-   "transcript": "伦尼",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0273",
-   "kind": "word-slow",
-   "text": "年",
-   "transcript": "五年",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0272",
-   "kind": "word-slow",
-   "text": "你们",
-   "transcript": "请你们",
+   "carrierTranscript": "这个词是那些。",
    "check": "beda",
    "attempts": 3
   },
@@ -1805,87 +632,8 @@
    "key": "word-slow-L1-0274",
    "kind": "word-slow",
    "text": "您",
-   "transcript": "五年",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0276",
-   "kind": "word-slow",
-   "text": "女",
-   "transcript": "龙女",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0518",
-   "kind": "word-slow",
-   "text": "女士",
-   "transcript": "吴女士",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0284",
-   "kind": "word-slow",
-   "text": "朋友",
-   "transcript": "你朋友",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0519",
-   "kind": "word-slow",
-   "text": "便宜",
-   "transcript": "不便宜",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0520",
-   "kind": "word-slow",
-   "text": "漂亮",
-   "transcript": "一漂亮",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0521",
-   "kind": "word-slow",
-   "text": "苹果",
-   "transcript": "一苹果",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0286",
-   "kind": "word-slow",
-   "text": "七",
-   "transcript": "忘记",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0291",
-   "kind": "word-slow",
-   "text": "前",
-   "transcript": "五千",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0294",
-   "kind": "word-slow",
-   "text": "钱",
-   "transcript": "五千",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0522",
-   "kind": "word-slow",
-   "text": "千",
-   "transcript": "五千",
+   "transcript": "无眠。",
+   "carrierTranscript": "这歌词是《无念》。",
    "check": "beda",
    "attempts": 3
   },
@@ -1893,15 +641,8 @@
    "key": "word-slow-L1-0288",
    "kind": "word-slow",
    "text": "起床",
-   "transcript": "一气床",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0296",
-   "kind": "word-slow",
-   "text": "请",
-   "transcript": "也请",
+   "transcript": "仪器床。",
+   "carrierTranscript": "这个词是一气窗。",
    "check": "beda",
    "attempts": 3
   },
@@ -1909,103 +650,8 @@
    "key": "word-slow-L1-0299",
    "kind": "word-slow",
    "text": "请问",
-   "transcript": "一请问",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0302",
-   "kind": "word-slow",
-   "text": "去",
-   "transcript": "我去",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0303",
-   "kind": "word-slow",
-   "text": "去年",
-   "transcript": "不去年",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0304",
-   "kind": "word-slow",
-   "text": "热",
-   "transcript": "一热",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0305",
-   "kind": "word-slow",
-   "text": "人",
-   "transcript": "一人",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0308",
-   "kind": "word-slow",
-   "text": "日",
-   "transcript": "一日",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0311",
-   "kind": "word-slow",
-   "text": "三",
-   "transcript": "一三",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0315",
-   "kind": "word-slow",
-   "text": "上",
-   "transcript": "提倡",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0316",
-   "kind": "word-slow",
-   "text": "上班",
-   "transcript": "一上班",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0314",
-   "kind": "word-slow",
-   "text": "商店",
-   "transcript": "于商店",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0320",
-   "kind": "word-slow",
-   "text": "上课",
-   "transcript": "一上课",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0322",
-   "kind": "word-slow",
-   "text": "上午",
-   "transcript": "一上午",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0323",
-   "kind": "word-slow",
-   "text": "上学",
-   "transcript": "路上学",
+   "transcript": "提请问。",
+   "carrierTranscript": "这个词是一庆问。",
    "check": "beda",
    "attempts": 3
   },
@@ -2013,7 +659,8 @@
    "key": "word-slow-L1-0324",
    "kind": "word-slow",
    "text": "少",
-   "transcript": "医生",
+   "transcript": "以上",
+   "carrierTranscript": "这个词是一首",
    "check": "beda",
    "attempts": 3
   },
@@ -2021,55 +668,8 @@
    "key": "word-slow-L1-0325",
    "kind": "word-slow",
    "text": "谁",
-   "transcript": "乌水",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0329",
-   "kind": "word-slow",
-   "text": "生病",
-   "transcript": "学生病",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0328",
-   "kind": "word-slow",
-   "text": "什么",
-   "transcript": "一神梦",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0332",
-   "kind": "word-slow",
-   "text": "十",
-   "transcript": "",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0335",
-   "kind": "word-slow",
-   "text": "事",
-   "transcript": "有事",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0337",
-   "kind": "word-slow",
-   "text": "是",
-   "transcript": "五是",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0333",
-   "kind": "word-slow",
-   "text": "时候",
-   "transcript": "一时后",
+   "transcript": "无水。",
+   "carrierTranscript": "这个词是无税。",
    "check": "beda",
    "attempts": 3
   },
@@ -2077,183 +677,8 @@
    "key": "word-slow-L1-0334",
    "kind": "word-slow",
    "text": "时间",
-   "transcript": "不实践",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0340",
-   "kind": "word-slow",
-   "text": "手机",
-   "transcript": "文兽机",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0341",
-   "kind": "word-slow",
-   "text": "书",
-   "transcript": "约书",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0343",
-   "kind": "word-slow",
-   "text": "书店",
-   "transcript": "复书店",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0347",
-   "kind": "word-slow",
-   "text": "睡",
-   "transcript": "不睡",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0345",
-   "kind": "word-slow",
-   "text": "水",
-   "transcript": "无税",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0346",
-   "kind": "word-slow",
-   "text": "水果",
-   "transcript": "比水果",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0349",
-   "kind": "word-slow",
-   "text": "说",
-   "transcript": "于说",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0350",
-   "kind": "word-slow",
-   "text": "说话",
-   "transcript": "与说话",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0351",
-   "kind": "word-slow",
-   "text": "四",
-   "transcript": "五四",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0353",
-   "kind": "word-slow",
-   "text": "岁",
-   "transcript": "五岁",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0354",
-   "kind": "word-slow",
-   "text": "他",
-   "transcript": "应他",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0523",
-   "kind": "word-slow",
-   "text": "它",
-   "transcript": "引他",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0356",
-   "kind": "word-slow",
-   "text": "她",
-   "transcript": "英特尔",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0358",
-   "kind": "word-slow",
-   "text": "太",
-   "transcript": "鹰泰",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0355",
-   "kind": "word-slow",
-   "text": "他们",
-   "transcript": "以他们",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0524",
-   "kind": "word-slow",
-   "text": "它们",
-   "transcript": "以他们",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0357",
-   "kind": "word-slow",
-   "text": "她们",
-   "transcript": "以他们",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0359",
-   "kind": "word-slow",
-   "text": "天",
-   "transcript": "露天",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0360",
-   "kind": "word-slow",
-   "text": "天气",
-   "transcript": "五天气",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0361",
-   "kind": "word-slow",
-   "text": "听",
-   "transcript": "也听",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0363",
-   "kind": "word-slow",
-   "text": "听见",
-   "transcript": "不听见",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0365",
-   "kind": "word-slow",
-   "text": "同学",
-   "transcript": "吴同学",
+   "transcript": "不识贱。",
+   "carrierTranscript": "这个词是不实践。",
    "check": "beda",
    "attempts": 3
   },
@@ -2261,15 +686,8 @@
    "key": "word-slow-L1-0367",
    "kind": "word-slow",
    "text": "外",
-   "transcript": "无谓",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0368",
-   "kind": "word-slow",
-   "text": "外边",
-   "transcript": "无外边",
+   "transcript": "无畏。",
+   "carrierTranscript": "这个词是无谓。",
    "check": "beda",
    "attempts": 3
   },
@@ -2277,7 +695,8 @@
    "key": "word-slow-L1-0371",
    "kind": "word-slow",
    "text": "玩",
-   "transcript": "吴文",
+   "transcript": "无闻。",
+   "carrierTranscript": "这个词是无文。",
    "check": "beda",
    "attempts": 3
   },
@@ -2285,7 +704,8 @@
    "key": "word-slow-L1-0372",
    "kind": "word-slow",
    "text": "晚",
-   "transcript": "无谓",
+   "transcript": "无闻。",
+   "carrierTranscript": "这个词是无谓。",
    "check": "beda",
    "attempts": 3
   },
@@ -2293,7 +713,8 @@
    "key": "word-slow-L1-0373",
    "kind": "word-slow",
    "text": "晚饭",
-   "transcript": "无问范",
+   "transcript": "无问饭。",
+   "carrierTranscript": "这个词是无问范。",
    "check": "beda",
    "attempts": 3
   },
@@ -2301,47 +722,8 @@
    "key": "word-slow-L1-0374",
    "kind": "word-slow",
    "text": "晚上",
-   "transcript": "无问上",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0525",
-   "kind": "word-slow",
-   "text": "喂",
-   "transcript": "无谓",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0379",
-   "kind": "word-slow",
-   "text": "问",
-   "transcript": "无问",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0526",
-   "kind": "word-slow",
-   "text": "问题",
-   "transcript": "无问题",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0382",
-   "kind": "word-slow",
-   "text": "五",
-   "transcript": "吻吻",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0383",
-   "kind": "word-slow",
-   "text": "午饭",
-   "transcript": "无误犯",
+   "transcript": "无吻声。",
+   "carrierTranscript": "这个词是无问圣。",
    "check": "beda",
    "attempts": 3
   },
@@ -2349,7 +731,8 @@
    "key": "word-slow-L1-0389",
    "kind": "word-slow",
    "text": "下",
-   "transcript": "一下",
+   "transcript": "以下。",
+   "carrierTranscript": "这个词是一项。",
    "check": "beda",
    "attempts": 3
   },
@@ -2357,63 +740,8 @@
    "key": "word-slow-L1-0396",
    "kind": "word-slow",
    "text": "下雨",
-   "transcript": "点下雨",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0390",
-   "kind": "word-slow",
-   "text": "下班",
-   "transcript": "一下奔",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0394",
-   "kind": "word-slow",
-   "text": "下课",
-   "transcript": "以下课",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0400",
-   "kind": "word-slow",
-   "text": "想",
-   "transcript": "一项",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0398",
-   "kind": "word-slow",
-   "text": "先生",
-   "transcript": "英先生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0399",
-   "kind": "word-slow",
-   "text": "现在",
-   "transcript": "由现在",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0401",
-   "kind": "word-slow",
-   "text": "小",
-   "transcript": "英秀",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0404",
-   "kind": "word-slow",
-   "text": "小朋友",
-   "transcript": "一笑朋友",
+   "transcript": "很像雨。",
+   "carrierTranscript": "这个词是很像语。",
    "check": "beda",
    "attempts": 3
   },
@@ -2421,7 +749,8 @@
    "key": "word-slow-L1-0405",
    "kind": "word-slow",
    "text": "小时",
-   "transcript": "音效时",
+   "transcript": "效时",
+   "carrierTranscript": "这个词是音效时。",
    "check": "beda",
    "attempts": 3
   },
@@ -2429,7 +758,8 @@
    "key": "word-slow-L1-0406",
    "kind": "word-slow",
    "text": "小学",
-   "transcript": "音效学",
+   "transcript": "效学",
+   "carrierTranscript": "这个词是音效学。",
    "check": "beda",
    "attempts": 3
   },
@@ -2437,39 +767,8 @@
    "key": "word-slow-L1-0407",
    "kind": "word-slow",
    "text": "小学生",
-   "transcript": "一校学生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0395",
-   "kind": "word-slow",
-   "text": "下午",
-   "transcript": "天下午",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0409",
-   "kind": "word-slow",
-   "text": "写",
-   "transcript": "无限",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0527",
-   "kind": "word-slow",
-   "text": "些",
-   "transcript": "用些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0410",
-   "kind": "word-slow",
-   "text": "谢谢",
-   "transcript": "无谢谢",
+   "transcript": "校学生",
+   "carrierTranscript": "这个词是,一校学生",
    "check": "beda",
    "attempts": 3
   },
@@ -2477,15 +776,8 @@
    "key": "word-slow-L1-0388",
    "kind": "word-slow",
    "text": "喜欢",
-   "transcript": "一夕一环",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0411",
-   "kind": "word-slow",
-   "text": "新",
-   "transcript": "我信",
+   "transcript": "李细缓",
+   "carrierTranscript": "这个词是一系换。",
    "check": "beda",
    "attempts": 3
   },
@@ -2493,55 +785,8 @@
    "key": "word-slow-L1-0413",
    "kind": "word-slow",
    "text": "星期",
-   "transcript": "我姓企",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0414",
-   "kind": "word-slow",
-   "text": "星期日",
-   "transcript": "又星期日哦",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0415",
-   "kind": "word-slow",
-   "text": "星期天",
-   "transcript": "五星七天",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0418",
-   "kind": "word-slow",
-   "text": "学",
-   "transcript": "不学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0528",
-   "kind": "word-slow",
-   "text": "雪",
-   "transcript": "吴雪",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0419",
-   "kind": "word-slow",
-   "text": "学生",
-   "transcript": "听学生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0420",
-   "kind": "word-slow",
-   "text": "学习",
-   "transcript": "无学习",
+   "transcript": "我兴趣。",
+   "carrierTranscript": "这个词是我兴趣。",
    "check": "beda",
    "attempts": 3
   },
@@ -2549,7 +794,8 @@
    "key": "word-slow-L1-0423",
    "kind": "word-slow",
    "text": "要",
-   "transcript": "因诱",
+   "transcript": "音调。",
+   "carrierTranscript": "这个词是应用。",
    "check": "beda",
    "attempts": 3
   },
@@ -2557,63 +803,18 @@
    "key": "word-slow-L1-0425",
    "kind": "word-slow",
    "text": "也",
-   "transcript": "音乐",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0427",
-   "kind": "word-slow",
-   "text": "一",
-   "transcript": "一意",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0437",
-   "kind": "word-slow",
-   "text": "一点儿",
-   "transcript": "1",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0434",
-   "kind": "word-slow",
-   "text": "一下",
-   "transcript": "用一下",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0439",
-   "kind": "word-slow",
-   "text": "一些",
-   "transcript": "用一些",
-   "check": "beda",
+   "transcript": "页",
+   "carrierTranscript": "这个词是一页。",
+   "check": "nada 4 bukan 3",
+   "tone": 4,
    "attempts": 3
   },
   {
    "key": "word-slow-L1-0529",
    "kind": "word-slow",
    "text": "椅子",
-   "transcript": "淫义字",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0441",
-   "kind": "word-slow",
-   "text": "有",
-   "transcript": "已有",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0442",
-   "kind": "word-slow",
-   "text": "有的",
-   "transcript": "已有的",
+   "transcript": "音译字。",
+   "carrierTranscript": "这个词是一字。",
    "check": "beda",
    "attempts": 3
   },
@@ -2622,54 +823,7 @@
    "kind": "word-slow",
    "text": "有些",
    "transcript": "已有些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0449",
-   "kind": "word-slow",
-   "text": "雨",
-   "transcript": "忧郁",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0450",
-   "kind": "word-slow",
-   "text": "元",
-   "transcript": "幽缘",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0452",
-   "kind": "word-slow",
-   "text": "月",
-   "transcript": "优越",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0453",
-   "kind": "word-slow",
-   "text": "再",
-   "transcript": "无在",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0455",
-   "kind": "word-slow",
-   "text": "在",
-   "transcript": "无在",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0454",
-   "kind": "word-slow",
-   "text": "再见",
-   "transcript": "无再见",
+   "carrierTranscript": "这个词是右线。",
    "check": "beda",
    "attempts": 3
   },
@@ -2677,7 +831,8 @@
    "key": "word-slow-L1-0457",
    "kind": "word-slow",
    "text": "早",
-   "transcript": "一早",
+   "transcript": "今早。",
+   "carrierTranscript": "这个词是一奏。",
    "check": "beda",
    "attempts": 3
   },
@@ -2685,7 +840,8 @@
    "key": "word-slow-L1-0458",
    "kind": "word-slow",
    "text": "早饭",
-   "transcript": "一套无愤",
+   "transcript": "临走饭。",
+   "carrierTranscript": "这个词是一奏份。",
    "check": "beda",
    "attempts": 3
   },
@@ -2693,15 +849,8 @@
    "key": "word-slow-L1-0459",
    "kind": "word-slow",
    "text": "早上",
-   "transcript": "一套无上",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0460",
-   "kind": "word-slow",
-   "text": "怎么",
-   "transcript": "你怎么",
+   "transcript": "你早上。",
+   "carrierTranscript": "这个词是一奏声。",
    "check": "beda",
    "attempts": 3
   },
@@ -2709,255 +858,32 @@
    "key": "word-slow-L1-0462",
    "kind": "word-slow",
    "text": "找",
-   "transcript": "英招",
+   "transcript": "引咒。",
+   "carrierTranscript": "这个词是音种。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "word-slow-L1-0464",
-   "kind": "word-slow",
-   "text": "这",
-   "transcript": "一折",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0465",
-   "kind": "word-slow",
-   "text": "这边",
-   "transcript": "于这边",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0532",
-   "kind": "word-slow",
-   "text": "这个",
-   "transcript": "与这个",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0470",
-   "kind": "word-slow",
-   "text": "真",
-   "transcript": "一针",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0473",
-   "kind": "word-slow",
-   "text": "正在",
-   "transcript": "与正在",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0467",
-   "kind": "word-slow",
-   "text": "这儿",
-   "transcript": "赢这儿",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0468",
-   "kind": "word-slow",
-   "text": "这些",
-   "transcript": "无座些",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0533",
-   "kind": "word-slow",
-   "text": "只",
-   "transcript": "音质",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0474",
-   "kind": "word-slow",
-   "text": "知道",
-   "transcript": "您知道",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0477",
-   "kind": "word-slow",
-   "text": "中国",
-   "transcript": "与中国",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0479",
-   "kind": "word-slow",
-   "text": "中文",
-   "transcript": "与中文",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0480",
-   "kind": "word-slow",
-   "text": "中午",
-   "transcript": "集中舞",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0481",
-   "kind": "word-slow",
-   "text": "中学",
-   "transcript": "不中学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0482",
-   "kind": "word-slow",
-   "text": "中学生",
-   "transcript": "与中学生",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0485",
-   "kind": "word-slow",
-   "text": "住",
-   "transcript": "云柱",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0487",
-   "kind": "word-slow",
-   "text": "桌子",
-   "transcript": "并桌子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0488",
-   "kind": "word-slow",
-   "text": "字",
-   "transcript": "五字",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0498",
-   "kind": "word-slow",
-   "text": "坐",
-   "transcript": "请坐",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0500",
-   "kind": "word-slow",
-   "text": "做",
-   "transcript": "你做",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "word-slow-L1-0534",
-   "kind": "word-slow",
-   "text": "做饭",
-   "transcript": "你做饭",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-335515",
+   "key": "sentence-332881",
    "kind": "sentence",
-   "text": "那儿是什么天气？",
-   "transcript": "那是什麼天氣",
+   "text": "我的房间号是多少？",
+   "transcript": "我的房间耗时多少?",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-336618",
+   "key": "sentence-332889",
    "kind": "sentence",
-   "text": "去年下了很多雪。",
-   "transcript": "去年下了很多血",
+   "text": "我用两千日元买了这本书。",
+   "transcript": "我用2000日元买了这本书。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-345919",
+   "key": "sentence-348466",
    "kind": "sentence",
-   "text": "没牛奶了。",
-   "transcript": "迷牛奶了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-349704",
-   "kind": "sentence",
-   "text": "学学你姐姐。",
-   "transcript": "学学你姊姊",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-351232",
-   "kind": "sentence",
-   "text": "我一点儿钱也没有。",
-   "transcript": "我一點錢也沒有。",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-357167",
-   "kind": "sentence",
-   "text": "他在攒钱上大学。",
-   "transcript": "他在暫前上大學",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-374669",
-   "kind": "sentence",
-   "text": "再见！有空多来玩儿！",
-   "transcript": "再見 有空多來玩",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-380723",
-   "kind": "sentence",
-   "text": "她早上在那儿。",
-   "transcript": "他走圣在那儿",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-385108",
-   "kind": "sentence",
-   "text": "明天要下雪。",
-   "transcript": "明天要下学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-394139",
-   "kind": "sentence",
-   "text": "你不要着急。",
-   "transcript": "你不要著急",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-398978",
-   "kind": "sentence",
-   "text": "是十月三日。",
-   "transcript": "10月3日",
+   "text": "这些苹果你们三个人分。",
+   "transcript": "这些苹果你们三个人份。",
    "check": "beda",
    "attempts": 3
   },
@@ -2965,23 +891,8 @@
    "key": "sentence-399028",
    "kind": "sentence",
    "text": "大家早上好。",
-   "transcript": "大家走圣侯",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-399985",
-   "kind": "sentence",
-   "text": "我喜欢茶。",
-   "transcript": "我喜欢长",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-400204",
-   "kind": "sentence",
-   "text": "没关系，随便哪块。",
-   "transcript": "没关系,随便拿块。",
+   "transcript": "大家走上猴。",
+   "carrierTranscript": "这个词是,大家走圣猴。",
    "check": "beda",
    "attempts": 3
   },
@@ -2989,7 +900,8 @@
    "key": "sentence-400208",
    "kind": "sentence",
    "text": "还要多少？",
-   "transcript": "还有多少",
+   "transcript": "还有多少?",
+   "carrierTranscript": "这个词是,还有多少?",
    "check": "beda",
    "attempts": 3
   },
@@ -2997,23 +909,16 @@
    "key": "sentence-400212",
    "kind": "sentence",
    "text": "还要一点儿。",
-   "transcript": "还有一点儿",
+   "transcript": "还有一点。",
+   "carrierTranscript": "这个词是,还有一点。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-402752",
+   "key": "sentence-419801",
    "kind": "sentence",
-   "text": "请吃点菜。",
-   "transcript": "请知点菜",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-409196",
-   "kind": "sentence",
-   "text": "“喂，哪一位啊？”",
-   "transcript": "为那一位啊",
+   "text": "你们一般几点下班？",
+   "transcript": "你们一班几点下班?",
    "check": "beda",
    "attempts": 3
   },
@@ -3021,23 +926,7 @@
    "key": "sentence-420438",
    "kind": "sentence",
    "text": "有的，先生你有几位？",
-   "transcript": "幼的先生你有幾位?",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-428004",
-   "kind": "sentence",
-   "text": "厨师在哪里？",
-   "transcript": "出师在哪里",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-454259",
-   "kind": "sentence",
-   "text": "他多大了？",
-   "transcript": "太多大了",
+   "transcript": "诱的先生,你有几位?",
    "check": "beda",
    "attempts": 3
   },
@@ -3045,7 +934,8 @@
    "key": "sentence-462042",
    "kind": "sentence",
    "text": "这我要三个。",
-   "transcript": "这我要三格",
+   "transcript": "这我要三格。",
+   "carrierTranscript": "这个词是,这我要三格。",
    "check": "beda",
    "attempts": 3
   },
@@ -3053,31 +943,17 @@
    "key": "sentence-469250",
    "kind": "sentence",
    "text": "他有三个姐姐。",
-   "transcript": "他有三个姊姊",
+   "transcript": "它有三个节节。",
+   "carrierTranscript": "这个词是,它有三个节节。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-469258",
+   "key": "sentence-469302",
    "kind": "sentence",
-   "text": "她是我的姐姐。",
-   "transcript": "它是我的姊姊",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-471309",
-   "kind": "sentence",
-   "text": "你要这钱干嘛？",
-   "transcript": "你要这钱干么",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-510745",
-   "kind": "sentence",
-   "text": "你有一些书。",
-   "transcript": "您有一些书",
+   "text": "你做到啦！",
+   "transcript": "你做到了。",
+   "carrierTranscript": "这个词是,你做到了。",
    "check": "beda",
    "attempts": 3
   },
@@ -3085,7 +961,8 @@
    "key": "sentence-510751",
    "kind": "sentence",
    "text": "你喜欢雪吗？",
-   "transcript": "你喜欢雪茫",
+   "transcript": "你喜欢血吗?",
+   "carrierTranscript": "这个词是,你喜欢血吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -3093,7 +970,7 @@
    "key": "sentence-528021",
    "kind": "sentence",
    "text": "我只有5000日元。",
-   "transcript": "我只有50零日元。",
+   "transcript": "我只有50日元。",
    "check": "beda",
    "attempts": 3
   },
@@ -3101,15 +978,8 @@
    "key": "sentence-545888",
    "kind": "sentence",
    "text": "晚上好，你好吗？",
-   "transcript": "问声好你好吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-593129",
-   "kind": "sentence",
-   "text": "她晚了起床。",
-   "transcript": "她吻了起床",
+   "transcript": "温生猴你好吗?",
+   "carrierTranscript": "这个词是,问生猴你好吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -3122,90 +992,27 @@
    "attempts": 3
   },
   {
-   "key": "sentence-659658",
-   "kind": "sentence",
-   "text": "哪个是我的？",
-   "transcript": "那一个是我的",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-760585",
-   "kind": "sentence",
-   "text": "不。它们太小了。",
-   "transcript": "不他们太小了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
    "key": "sentence-765893",
    "kind": "sentence",
    "text": "她的言讲非常好听。",
-   "transcript": "他的演講非常好聽",
+   "transcript": "他的演讲非常好听。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-776959",
+   "key": "sentence-816566",
    "kind": "sentence",
-   "text": "今天下雪。",
-   "transcript": "今天下学",
+   "text": "零在一前面。",
+   "transcript": "灵在意前面。",
+   "carrierTranscript": "这个词是,灵在意前面。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-778877",
+   "key": "sentence-895736",
    "kind": "sentence",
-   "text": "有点儿晚了，我们该走了。",
-   "transcript": "有點晚了 我們該走了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-781124",
-   "kind": "sentence",
-   "text": "她很晚回家。",
-   "transcript": "他很稳回家",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-787242",
-   "kind": "sentence",
-   "text": "她有点儿面包。",
-   "transcript": "它有点面包",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-795753",
-   "kind": "sentence",
-   "text": "我昨天去那儿了。",
-   "transcript": "我昨天去那了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-819440",
-   "kind": "sentence",
-   "text": "正在下雪。",
-   "transcript": "正在下学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-822110",
-   "kind": "sentence",
-   "text": "这是新的。",
-   "transcript": "这是心得",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-880292",
-   "kind": "sentence",
-   "text": "除了一人，大家都回家了。",
-   "transcript": "除了藝人,大家都回家了",
+   "text": "看看那边的考拉。",
+   "transcript": "看看那边的口拉。",
    "check": "beda",
    "attempts": 3
   },
@@ -3213,79 +1020,8 @@
    "key": "sentence-917855",
    "kind": "sentence",
    "text": "我睡不著。",
-   "transcript": "我睡不住",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-970198",
-   "kind": "sentence",
-   "text": "请读第四十九页。",
-   "transcript": "清讀第49頁",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1144526",
-   "kind": "sentence",
-   "text": "我们玩点什么吧",
-   "transcript": "我們晚點什麼吧?",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1182328",
-   "kind": "sentence",
-   "text": "是十月三号。",
-   "transcript": "10月3日",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1216079",
-   "kind": "sentence",
-   "text": "这个很便宜。",
-   "transcript": "这个慈日这个很便宜",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1264903",
-   "kind": "sentence",
-   "text": "男孩子在那儿。",
-   "transcript": "能孩子在那儿",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1264904",
-   "kind": "sentence",
-   "text": "男孩子在那里。",
-   "transcript": "能孩子在那里",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1323993",
-   "kind": "sentence",
-   "text": "五千元是一大笔钱。",
-   "transcript": "5000元是一大筆錢",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1399602",
-   "kind": "sentence",
-   "text": "那飞机真大！",
-   "transcript": "那飞机真倒",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1441855",
-   "kind": "sentence",
-   "text": "火车来了！",
-   "transcript": "过车来了",
+   "transcript": "我睡不住。",
+   "carrierTranscript": "这个词是,我睡不住。",
    "check": "beda",
    "attempts": 3
   },
@@ -3293,39 +1029,17 @@
    "key": "sentence-1445923",
    "kind": "sentence",
    "text": "它们没有心吗？",
-   "transcript": "他们没有心忙",
+   "transcript": "他们没有心忙。",
+   "carrierTranscript": "这个词是,他们没有心忙。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-1445924",
+   "key": "sentence-1958159",
    "kind": "sentence",
-   "text": "她们没有心吗？",
-   "transcript": "他们没有心忙",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1516179",
-   "kind": "sentence",
-   "text": "她叫他坐下。",
-   "transcript": "他叫他作侠",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1824158",
-   "kind": "sentence",
-   "text": "我有两个姐姐。",
-   "transcript": "我有两个姊姊",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-1894904",
-   "kind": "sentence",
-   "text": "这是可怕一点儿。",
-   "transcript": "這是可怕一點",
+   "text": "他通通都吃了。",
+   "transcript": "他统统都吃了。",
+   "carrierTranscript": "这个词是,他统统都吃了。",
    "check": "beda",
    "attempts": 3
   },
@@ -3333,23 +1047,7 @@
    "key": "sentence-2042219",
    "kind": "sentence",
    "text": "昨天没学生去那。",
-   "transcript": "昨天沒學生去呢?",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-2298602",
-   "kind": "sentence",
-   "text": "下课了吗？",
-   "transcript": "照告慈事下课了吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-2337135",
-   "kind": "sentence",
-   "text": "这一点儿也不好。",
-   "transcript": "這一點也不好",
+   "transcript": "昨天没学生去呢。",
    "check": "beda",
    "attempts": 3
   },
@@ -3357,31 +1055,8 @@
    "key": "sentence-2437250",
    "kind": "sentence",
    "text": "你的家人好么？",
-   "transcript": "你的家人好吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-2489591",
-   "kind": "sentence",
-   "text": "狗不会叫。",
-   "transcript": "勾不会叫",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-2561534",
-   "kind": "sentence",
-   "text": "我三月二十二号生日。",
-   "transcript": "我3月22日生日",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-2680360",
-   "kind": "sentence",
-   "text": "要下雪了。",
-   "transcript": "又下雪了",
+   "transcript": "你的家人好吗?",
+   "carrierTranscript": "这个词是,你的家人好吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -3389,47 +1064,7 @@
    "key": "sentence-2794651",
    "kind": "sentence",
    "text": "你是一个大懒鬼。",
-   "transcript": "你是一個大狼鬼",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3283115",
-   "kind": "sentence",
-   "text": "五千元是很多钱。",
-   "transcript": "5000元是很多錢",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3378129",
-   "kind": "sentence",
-   "text": "我也喝茶。",
-   "transcript": "我已喝茶",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3580024",
-   "kind": "sentence",
-   "text": "哪个是你的杯子？",
-   "transcript": "那一個是你的杯子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3580026",
-   "kind": "sentence",
-   "text": "哪个杯子是你的？",
-   "transcript": "那個杯子是你的",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3586044",
-   "kind": "sentence",
-   "text": "真他妈热。",
-   "transcript": "真汤麻热",
+   "transcript": "你是一个大蓝鬼。",
    "check": "beda",
    "attempts": 3
   },
@@ -3437,15 +1072,8 @@
    "key": "sentence-3667681",
    "kind": "sentence",
    "text": "她喜欢雨和雪。",
-   "transcript": "他喜欢与何学",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-3695646",
-   "kind": "sentence",
-   "text": "我上午慢跑。",
-   "transcript": "我上午门跑",
+   "transcript": "他喜欢语和学。",
+   "carrierTranscript": "这个词是,他喜欢语和学。",
    "check": "beda",
    "attempts": 3
   },
@@ -3453,103 +1081,25 @@
    "key": "sentence-4751229",
    "kind": "sentence",
    "text": "这是谁的茶？",
-   "transcript": "这是谁的肠",
+   "transcript": "这是谁的肠?",
+   "carrierTranscript": "这个词是,这是谁的肠?",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-4760014",
+   "key": "sentence-5843632",
    "kind": "sentence",
-   "text": "我还有个姐姐。",
-   "transcript": "我还有个姊姊",
+   "text": "咖哩非常好吃。",
+   "transcript": "咖喱非常好吃",
+   "carrierTranscript": "这个词是,咖喱非常好吃。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-4761392",
+   "key": "sentence-6056537",
    "kind": "sentence",
-   "text": "要下雨了。",
-   "transcript": "又下雨了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-4764650",
-   "kind": "sentence",
-   "text": "你喝多了。",
-   "transcript": "这个慈日你喝多了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-4965656",
-   "kind": "sentence",
-   "text": "我唱得好听。",
-   "transcript": "我唱的好听",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5091438",
-   "kind": "sentence",
-   "text": "我想要你睡在它上边。",
-   "transcript": "我想要你睡在它上面。",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5092230",
-   "kind": "sentence",
-   "text": "好好学习。",
-   "transcript": "厚厚学习",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5092669",
-   "kind": "sentence",
-   "text": "一边站着。",
-   "transcript": "一边站著",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5584071",
-   "kind": "sentence",
-   "text": "你在家吗",
-   "transcript": "你在家忙",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5780508",
-   "kind": "sentence",
-   "text": "我要坐下。",
-   "transcript": "我要作响",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-5975065",
-   "kind": "sentence",
-   "text": "他们喜欢那个",
-   "transcript": "他们喜欢那歌",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-6002105",
-   "kind": "sentence",
-   "text": "狗在桌子下边。",
-   "transcript": "勾在桌子下边",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-6142021",
-   "kind": "sentence",
-   "text": "我是小雨。",
-   "transcript": "我是小鱼",
+   "text": "今天是二〇一六年十一月二十三日。",
+   "transcript": "今天是216年11月23日。",
    "check": "beda",
    "attempts": 3
   },
@@ -3557,63 +1107,17 @@
    "key": "sentence-6183644",
    "kind": "sentence",
    "text": "哪个包是你的？",
-   "transcript": "那个包是你的",
+   "transcript": "那个包是你的。",
+   "carrierTranscript": "这个词是,那个包是你的。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-6624702",
+   "key": "sentence-6774612",
    "kind": "sentence",
-   "text": "我唱歌不太好。",
-   "transcript": "这句词是我唱歌不太好",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-7767598",
-   "kind": "sentence",
-   "text": "饭菜不太好。",
-   "transcript": "分菜不太豪",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-7817196",
-   "kind": "sentence",
-   "text": "我买一点儿苹果。",
-   "transcript": "我买一点苹果。",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-7817197",
-   "kind": "sentence",
-   "text": "我们喝一点儿水吧。",
-   "transcript": "我們喝一點水吧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-7817198",
-   "kind": "sentence",
-   "text": "我有一点儿事。",
-   "transcript": "我有一点事",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-8120972",
-   "kind": "sentence",
-   "text": "火车到站了。",
-   "transcript": "我车倒站了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-8577716",
-   "kind": "sentence",
-   "text": "我是一只猫。",
-   "transcript": "我是一只毛",
+   "text": "我们没水。",
+   "transcript": "我们没谁。",
+   "carrierTranscript": "这个词是,我们没谁。",
    "check": "beda",
    "attempts": 3
   },
@@ -3622,14 +1126,7 @@
    "kind": "sentence",
    "text": "那是他家。",
    "transcript": "那是他讲",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-8748492",
-   "kind": "sentence",
-   "text": "萨米会没事的。",
-   "transcript": "三米会没事的",
+   "carrierTranscript": "这个词是,那是他讲。",
    "check": "beda",
    "attempts": 3
   },
@@ -3637,15 +1134,8 @@
    "key": "sentence-9432354",
    "kind": "sentence",
    "text": "哪些是汤姆的？",
-   "transcript": "那些是汤姆的",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-9501478",
-   "kind": "sentence",
-   "text": "坐出租车吧。",
-   "transcript": "做出租车板",
+   "transcript": "那些是汤姆的。",
+   "carrierTranscript": "这个词是,那些是汤姆的。",
    "check": "beda",
    "attempts": 3
   },
@@ -3653,7 +1143,8 @@
    "key": "sentence-9980175",
    "kind": "sentence",
    "text": "我们喜欢雪。",
-   "transcript": "我们喜欢学",
+   "transcript": "我们喜欢学。",
+   "carrierTranscript": "这个词是,我们喜欢学。",
    "check": "beda",
    "attempts": 3
   },
@@ -3661,47 +1152,25 @@
    "key": "sentence-10038371",
    "kind": "sentence",
    "text": "椅子是木质的。",
-   "transcript": "一字是木制的",
+   "transcript": "译字是木质的。",
+   "carrierTranscript": "这个词是,义字是木质的。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-10449481",
+   "key": "sentence-10064214",
    "kind": "sentence",
-   "text": "好吧，你赢了。",
-   "transcript": "后半你赢了",
+   "text": "一打鸡蛋多少钱？",
+   "transcript": "一大鸡蛋多少钱?",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "sentence-10668579",
+   "key": "sentence-10966749",
    "kind": "sentence",
-   "text": "它还活着吗？",
-   "transcript": "他还活著吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-10961055",
-   "kind": "sentence",
-   "text": "爸，我的杯子呢？",
-   "transcript": "把我的杯子呢",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-10961137",
-   "kind": "sentence",
-   "text": "不冷，谢谢。",
-   "transcript": "不冷谢贤",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-10966717",
-   "kind": "sentence",
-   "text": "六点四十五了。",
-   "transcript": "645了",
+   "text": "哪些人想去？",
+   "transcript": "那些人想去。",
+   "carrierTranscript": "这个词是那些人想去",
    "check": "beda",
    "attempts": 3
   },
@@ -3709,31 +1178,8 @@
    "key": "sentence-11321735",
    "kind": "sentence",
    "text": "哪些是最好的？",
-   "transcript": "那些是最好的",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-11541431",
-   "kind": "sentence",
-   "text": "绳子在哪里？",
-   "transcript": "生字在哪里",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-13504539",
-   "kind": "sentence",
-   "text": "超市真大！",
-   "transcript": "抽屎真档",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "sentence-13511636",
-   "kind": "sentence",
-   "text": "非常好玩。",
-   "transcript": "非常好闻",
+   "transcript": "那些是最好的。",
+   "carrierTranscript": "这个词是,那些是最好的。",
    "check": "beda",
    "attempts": 3
   },
@@ -3741,7 +1187,8 @@
    "key": "sentence-13949066",
    "kind": "sentence",
    "text": "蜀葵开了。",
-   "transcript": "书魁开了",
+   "transcript": "树葵开了。",
+   "carrierTranscript": "这个词是,书魁开了。",
    "check": "beda",
    "attempts": 3
   },
@@ -3749,15 +1196,8 @@
    "key": "sentence-14123691",
    "kind": "sentence",
    "text": "太见外了。",
-   "transcript": "太见外轮",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u01-07",
-   "kind": "casual",
-   "text": "哈喽",
-   "transcript": "开楼",
+   "transcript": "太见外冷",
+   "carrierTranscript": "这个词是太见外冷。",
    "check": "beda",
    "attempts": 3
   },
@@ -3765,7 +1205,8 @@
    "key": "casual-c-u03-07",
    "kind": "casual",
    "text": "嗯",
-   "transcript": "",
+   "transcript": "捏。",
+   "carrierTranscript": "这个词是呢",
    "check": "beda",
    "attempts": 3
   },
@@ -3773,15 +1214,17 @@
    "key": "casual-c-u02-01",
    "kind": "casual",
    "text": "俩",
-   "transcript": "凉",
+   "transcript": "6.",
+   "carrierTranscript": "这个词是两个词。",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "casual-c-u04-03",
+   "key": "casual-c-u02-02",
    "kind": "casual",
-   "text": "哥们儿",
-   "transcript": "哥们",
+   "text": "仨",
+   "transcript": "字幕志愿者 杨茜茜",
+   "carrierTranscript": "这个词是SAT.",
    "check": "beda",
    "attempts": 3
   },
@@ -3789,7 +1232,8 @@
    "key": "casual-c-u05-01",
    "kind": "casual",
    "text": "老爸",
-   "transcript": "楼办",
+   "transcript": "老板",
+   "carrierTranscript": "这个词是漏斑。",
    "check": "beda",
    "attempts": 3
   },
@@ -3797,7 +1241,8 @@
    "key": "casual-c-u05-02",
    "kind": "casual",
    "text": "老妈",
-   "transcript": "老蔓",
+   "transcript": "浪漫。",
+   "carrierTranscript": "这个词是浪漫。",
    "check": "beda",
    "attempts": 3
   },
@@ -3805,23 +1250,8 @@
    "key": "casual-c-u05-03",
    "kind": "casual",
    "text": "爸妈",
-   "transcript": "变吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u06-01",
-   "kind": "casual",
-   "text": "吃货",
-   "transcript": "职货",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u06-02",
-   "kind": "casual",
-   "text": "买单",
-   "transcript": "美丹",
+   "transcript": "本文。",
+   "carrierTranscript": "这个词是Bema。",
    "check": "beda",
    "attempts": 3
   },
@@ -3829,7 +1259,17 @@
    "key": "casual-c-u06-06",
    "kind": "casual",
    "text": "开吃",
-   "transcript": "开赤",
+   "transcript": "开斥。",
+   "carrierTranscript": "这个词是开斥。",
+   "check": "beda",
+   "attempts": 3
+  },
+  {
+   "key": "casual-c-u07-07",
+   "kind": "casual",
+   "text": "明儿",
+   "transcript": "明尔",
+   "carrierTranscript": "这个词是明尔。",
    "check": "beda",
    "attempts": 3
   },
@@ -3837,47 +1277,8 @@
    "key": "casual-c-u09-01",
    "kind": "casual",
    "text": "里头",
-   "transcript": "立头",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u09-02",
-   "kind": "casual",
-   "text": "外头",
-   "transcript": "胃偷",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u09-05",
-   "kind": "casual",
-   "text": "上头",
-   "transcript": "上偷",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u12-02",
-   "kind": "casual",
-   "text": "堵车",
-   "transcript": "渡车",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u12-03",
-   "kind": "casual",
-   "text": "师傅",
-   "transcript": "与师傅",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u12-06",
-   "kind": "casual",
-   "text": "搭车",
-   "transcript": "大彻",
+   "transcript": "力头",
+   "carrierTranscript": "这个词是利偷。",
    "check": "beda",
    "attempts": 3
   },
@@ -3885,7 +1286,8 @@
    "key": "casual-c-u05-06",
    "kind": "casual",
    "text": "宅",
-   "transcript": "音宅",
+   "transcript": "嗯哉。",
+   "carrierTranscript": "这个词是Nzai。",
    "check": "beda",
    "attempts": 3
   },
@@ -3893,15 +1295,8 @@
    "key": "casual-c-u06-05",
    "kind": "casual",
    "text": "馋",
-   "transcript": "沈",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u14-01",
-   "kind": "casual",
-   "text": "学霸",
-   "transcript": "一学霸",
+   "transcript": "人。",
+   "carrierTranscript": "这个词是尘。",
    "check": "beda",
    "attempts": 3
   },
@@ -3909,7 +1304,8 @@
    "key": "casual-c-u15-01",
    "kind": "casual",
    "text": "老外",
-   "transcript": "楼位",
+   "transcript": "漏尾",
+   "carrierTranscript": "这个词是漏味。",
    "check": "beda",
    "attempts": 3
   },
@@ -3917,39 +1313,8 @@
    "key": "casual-c-u15-05",
    "kind": "casual",
    "text": "唠叨",
-   "transcript": "楼道",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u17-03",
-   "kind": "casual",
-   "text": "打工",
-   "transcript": "一打工",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u18-01",
-   "kind": "casual",
-   "text": "扫码",
-   "transcript": "SOMETIME",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u18-02",
-   "kind": "casual",
-   "text": "划算",
-   "transcript": "怀孙",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u18-05",
-   "kind": "casual",
-   "text": "老板",
-   "transcript": "楼本",
+   "transcript": "楼道。",
+   "carrierTranscript": "这个词是漏斗。",
    "check": "beda",
    "attempts": 3
   },
@@ -3958,14 +1323,7 @@
    "kind": "casual",
    "text": "打游戏",
    "transcript": "大游戏",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-c-u20-01",
-   "kind": "casual",
-   "text": "挺",
-   "transcript": "听",
+   "carrierTranscript": "这个词是大游戏。",
    "check": "beda",
    "attempts": 3
   },
@@ -3973,47 +1331,8 @@
    "key": "casual-c-u20-02",
    "kind": "casual",
    "text": "超",
-   "transcript": "抽",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u01-01",
-   "kind": "casual-slow",
-   "text": "拜拜",
-   "transcript": "五百一百",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u01-03",
-   "kind": "casual-slow",
-   "text": "回头见",
-   "transcript": "无回头见",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u01-07",
-   "kind": "casual-slow",
-   "text": "哈喽",
-   "transcript": "一哈喽",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u03-03",
-   "kind": "casual-slow",
-   "text": "可不是",
-   "transcript": "因客不是",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u03-07",
-   "kind": "casual-slow",
-   "text": "嗯",
-   "transcript": "",
+   "transcript": "抽筋。",
+   "carrierTranscript": "这个词是抽筋。",
    "check": "beda",
    "attempts": 3
   },
@@ -4021,7 +1340,8 @@
    "key": "casual-slow-c-u02-01",
    "kind": "casual-slow",
    "text": "俩",
-   "transcript": "你俩",
+   "transcript": "音量",
+   "carrierTranscript": "这个词是一两。",
    "check": "beda",
    "attempts": 3
   },
@@ -4029,7 +1349,8 @@
    "key": "casual-slow-c-u02-02",
    "kind": "casual-slow",
    "text": "仨",
-   "transcript": "因萨",
+   "transcript": "音色。",
+   "carrierTranscript": "这个词是一算。",
    "check": "beda",
    "attempts": 3
   },
@@ -4037,15 +1358,8 @@
    "key": "casual-slow-c-u02-03",
    "kind": "casual-slow",
    "text": "好多",
-   "transcript": "一号多",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u04-01",
-   "kind": "casual-slow",
-   "text": "帅哥",
-   "transcript": "与帅哥",
+   "transcript": "号多",
+   "carrierTranscript": "这个词是一号多。",
    "check": "beda",
    "attempts": 3
   },
@@ -4053,23 +1367,8 @@
    "key": "casual-slow-c-u04-03",
    "kind": "casual-slow",
    "text": "哥们儿",
-   "transcript": "一哥门",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u04-04",
-   "kind": "casual-slow",
-   "text": "闺蜜",
-   "transcript": "不闺蜜",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u13-10",
-   "kind": "casual-slow",
-   "text": "串门",
-   "transcript": "与串门",
+   "transcript": "鱼哥们。",
+   "carrierTranscript": "这个词是一个门。",
    "check": "beda",
    "attempts": 3
   },
@@ -4077,7 +1376,8 @@
    "key": "casual-slow-c-u05-01",
    "kind": "casual-slow",
    "text": "老爸",
-   "transcript": "一楼办",
+   "transcript": "一楼吧。",
+   "carrierTranscript": "这个词是一漏半。",
    "check": "beda",
    "attempts": 3
   },
@@ -4085,7 +1385,8 @@
    "key": "casual-slow-c-u05-02",
    "kind": "casual-slow",
    "text": "老妈",
-   "transcript": "一楼吗",
+   "transcript": "一楼吗?",
+   "carrierTranscript": "这个词是一楼吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -4093,23 +1394,8 @@
    "key": "casual-slow-c-u05-03",
    "kind": "casual-slow",
    "text": "爸妈",
-   "transcript": "一半吗",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u05-05",
-   "kind": "casual-slow",
-   "text": "闺女",
-   "transcript": "孤贵女",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u06-01",
-   "kind": "casual-slow",
-   "text": "吃货",
-   "transcript": "定吃货",
+   "transcript": "一般按摩。",
+   "carrierTranscript": "这个词是一本吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -4117,31 +1403,8 @@
    "key": "casual-slow-c-u06-02",
    "kind": "casual-slow",
    "text": "买单",
-   "transcript": "不卖单",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u06-06",
-   "kind": "casual-slow",
-   "text": "开吃",
-   "transcript": "我们开一吃",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u07-07",
-   "kind": "casual-slow",
-   "text": "明儿",
-   "transcript": "英明",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u07-05",
-   "kind": "casual-slow",
-   "text": "一大早",
-   "transcript": "一大走",
+   "transcript": "不买单。",
+   "carrierTranscript": "这个词是一幅美丹。",
    "check": "beda",
    "attempts": 3
   },
@@ -4149,7 +1412,8 @@
    "key": "casual-slow-c-u09-01",
    "kind": "casual-slow",
    "text": "里头",
-   "transcript": "立头",
+   "transcript": "厉头。",
+   "carrierTranscript": "这个词是力通。",
    "check": "beda",
    "attempts": 3
   },
@@ -4157,79 +1421,8 @@
    "key": "casual-slow-c-u09-02",
    "kind": "casual-slow",
    "text": "外头",
-   "transcript": "无畏头",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u09-03",
-   "kind": "casual-slow",
-   "text": "前头",
-   "transcript": "一前头",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u09-04",
-   "kind": "casual-slow",
-   "text": "后头",
-   "transcript": "以后头",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u09-05",
-   "kind": "casual-slow",
-   "text": "上头",
-   "transcript": "一上头",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u10-01",
-   "kind": "casual-slow",
-   "text": "逛街",
-   "transcript": "无光街",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u12-02",
-   "kind": "casual-slow",
-   "text": "堵车",
-   "transcript": "渡车",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u12-03",
-   "kind": "casual-slow",
-   "text": "师傅",
-   "transcript": "应师傅",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u12-04",
-   "kind": "casual-slow",
-   "text": "慢走",
-   "transcript": "一漫走",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u12-06",
-   "kind": "casual-slow",
-   "text": "搭车",
-   "transcript": "你打车",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u05-06",
-   "kind": "casual-slow",
-   "text": "宅",
-   "transcript": "鹰宅",
+   "transcript": "畏头",
+   "carrierTranscript": "这歌词是《无畏头》。",
    "check": "beda",
    "attempts": 3
   },
@@ -4237,15 +1430,8 @@
    "key": "casual-slow-c-u11-01",
    "kind": "casual-slow",
    "text": "赖床",
-   "transcript": "依赖床",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u11-02",
-   "kind": "casual-slow",
-   "text": "睡懒觉",
-   "transcript": "不睡烂觉",
+   "transcript": "你赖一床。",
+   "carrierTranscript": "这个词是一泪床。",
    "check": "beda",
    "attempts": 3
   },
@@ -4253,15 +1439,8 @@
    "key": "casual-slow-c-u11-03",
    "kind": "casual-slow",
    "text": "搞定",
-   "transcript": "告定",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u11-04",
-   "kind": "casual-slow",
-   "text": "弄",
-   "transcript": "一弄",
+   "transcript": "已搞定。",
+   "carrierTranscript": "这个词是告定。",
    "check": "beda",
    "attempts": 3
   },
@@ -4269,39 +1448,8 @@
    "key": "casual-slow-c-u06-05",
    "kind": "casual-slow",
    "text": "馋",
-   "transcript": "宇辰",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u20-03",
-   "kind": "casual-slow",
-   "text": "开心",
-   "transcript": "不开心",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u14-01",
-   "kind": "casual-slow",
-   "text": "学霸",
-   "transcript": "音学霸",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u14-05",
-   "kind": "casual-slow",
-   "text": "逃课",
-   "transcript": "樱桃克",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u14-06",
-   "kind": "casual-slow",
-   "text": "同桌",
-   "transcript": "一同作",
+   "transcript": "遗产",
+   "carrierTranscript": "这个词是以臣。",
    "check": "beda",
    "attempts": 3
   },
@@ -4310,6 +1458,7 @@
    "kind": "casual-slow",
    "text": "老外",
    "transcript": "银楼位",
+   "carrierTranscript": "这个词是音乐位。",
    "check": "beda",
    "attempts": 3
   },
@@ -4318,6 +1467,7 @@
    "kind": "casual-slow",
    "text": "唠叨",
    "transcript": "金楼道",
+   "carrierTranscript": "这个词是一楼道。",
    "check": "beda",
    "attempts": 3
   },
@@ -4325,7 +1475,8 @@
    "key": "casual-slow-c-u08-07",
    "kind": "casual-slow",
    "text": "熬夜",
-   "transcript": "恩劳义",
+   "transcript": "N-L-E",
+   "carrierTranscript": "这个词是Eloi。",
    "check": "beda",
    "attempts": 3
   },
@@ -4333,15 +1484,8 @@
    "key": "casual-slow-c-u17-03",
    "kind": "casual-slow",
    "text": "打工",
-   "transcript": "一大功",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u17-07",
-   "kind": "casual-slow",
-   "text": "难受",
-   "transcript": "因难受",
+   "transcript": "一大公。",
+   "carrierTranscript": "这个词是一大功。",
    "check": "beda",
    "attempts": 3
   },
@@ -4349,7 +1493,8 @@
    "key": "casual-slow-c-u18-01",
    "kind": "casual-slow",
    "text": "扫码",
-   "transcript": "一艘马",
+   "transcript": "寄手码。",
+   "carrierTranscript": "这个词是一首吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -4357,15 +1502,8 @@
    "key": "casual-slow-c-u18-02",
    "kind": "casual-slow",
    "text": "划算",
-   "transcript": "无怀顺",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u18-04",
-   "kind": "casual-slow",
-   "text": "坑",
-   "transcript": "一坑",
+   "transcript": "无划算。",
+   "carrierTranscript": "这个词是义乌华顺。",
    "check": "beda",
    "attempts": 3
   },
@@ -4373,23 +1511,8 @@
    "key": "casual-slow-c-u18-05",
    "kind": "casual-slow",
    "text": "老板",
-   "transcript": "一楼版",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u19-01",
-   "kind": "casual-slow",
-   "text": "追剧",
-   "transcript": "共追剧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u19-02",
-   "kind": "casual-slow",
-   "text": "刷手机",
-   "transcript": "读刷手机",
+   "transcript": "楼板",
+   "carrierTranscript": "这个词是一楼板。",
    "check": "beda",
    "attempts": 3
   },
@@ -4398,30 +1521,7 @@
    "kind": "casual-slow",
    "text": "打游戏",
    "transcript": "大游戏",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u19-04",
-   "kind": "casual-slow",
-   "text": "有意思",
-   "transcript": "也有意思",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u19-05",
-   "kind": "casual-slow",
-   "text": "没意思",
-   "transcript": "我没意思",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u20-01",
-   "kind": "casual-slow",
-   "text": "挺",
-   "transcript": "一听",
+   "carrierTranscript": "这个词是大游戏。",
    "check": "beda",
    "attempts": 3
   },
@@ -4429,39 +1529,8 @@
    "key": "casual-slow-c-u20-02",
    "kind": "casual-slow",
    "text": "超",
-   "transcript": "隐秤",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "casual-slow-c-u20-07",
-   "kind": "casual-slow",
-   "text": "绝了",
-   "transcript": "你绝了",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u05-04",
-   "kind": "dialog",
-   "text": "是它！",
-   "transcript": "于是他",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u05-05",
-   "kind": "dialog",
-   "text": "它？",
-   "transcript": "他",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u06-06",
-   "kind": "dialog",
-   "text": "好吧，十二个。",
-   "transcript": "好办十二个",
+   "transcript": "映照。",
+   "carrierTranscript": "这个词是一抽。",
    "check": "beda",
    "attempts": 3
   },
@@ -4469,7 +1538,8 @@
    "key": "dialog-n-u07-06",
    "kind": "dialog",
    "text": "妈！",
-   "transcript": "慢",
+   "transcript": "慢。",
+   "carrierTranscript": "这个词是慢。",
    "check": "beda",
    "attempts": 3
   },
@@ -4477,7 +1547,8 @@
    "key": "dialog-n-u08-06",
    "kind": "dialog",
    "text": "饺子？真的吗？",
-   "transcript": "胶字真的吗",
+   "transcript": "胶子真的吗?",
+   "carrierTranscript": "这个词是交字真的吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -4485,15 +1556,8 @@
    "key": "dialog-n-u09-04",
    "kind": "dialog",
    "text": "那……饺子吧。",
-   "transcript": "那一酒子吧",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u09-05",
-   "kind": "dialog",
-   "text": "好的。喝什么？",
-   "transcript": "好得喝什么",
+   "transcript": "那一脚子吧。",
+   "carrierTranscript": "这个词是那一九字吧。",
    "check": "beda",
    "attempts": 3
   },
@@ -4501,7 +1565,7 @@
    "key": "dialog-n-u11-01",
    "kind": "dialog",
    "text": "喂，明天上午有时间吗？",
-   "transcript": "为明天赏,无有时间吗?",
+   "transcript": "为明天上无有时间吗?",
    "check": "beda",
    "attempts": 3
   },
@@ -4509,15 +1573,17 @@
    "key": "dialog-n-u13-02",
    "kind": "dialog",
    "text": "师傅，去电影院。",
-   "transcript": "师父去电影院",
+   "transcript": "师父去电影院。",
+   "carrierTranscript": "这个词是,师父去电影院,",
    "check": "beda",
    "attempts": 3
   },
   {
-   "key": "dialog-n-u13-03",
+   "key": "dialog-n-u13-06",
    "kind": "dialog",
-   "text": "好。……前头堵车了。电影院在那儿。",
-   "transcript": "好,前头堵车了,电影院在那。",
+   "text": "好。谢谢师傅！",
+   "transcript": "好,谢谢师父。",
+   "carrierTranscript": "这个词是,好谢谢师父。",
    "check": "beda",
    "attempts": 3
   },
@@ -4525,23 +1591,8 @@
    "key": "dialog-n-u14-04",
    "kind": "dialog",
    "text": "吃……再睡十分钟。",
-   "transcript": "吃饿再睡十分钟",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u15-05",
-   "kind": "dialog",
-   "text": "好吧，饺子。",
-   "transcript": "好把饺子",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u16-04",
-   "kind": "dialog",
-   "text": "女孩子。她是学霸！",
-   "transcript": "女孩子她是學棒。",
+   "transcript": "吃饿再睡十分钟。",
+   "carrierTranscript": "这个词是,吃饿再睡十分钟。",
    "check": "beda",
    "attempts": 3
   },
@@ -4549,31 +1600,7 @@
    "key": "dialog-n-u16-05",
    "kind": "dialog",
    "text": "学霸？那你也要好好学习。",
-   "transcript": "學吧!那你也要好好學習!",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u18-02",
-   "kind": "dialog",
-   "text": "医生，我这几天有点儿难受，不想吃饭。",
-   "transcript": "医生我这几天有点难受,不想吃饭。",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u19-03",
-   "kind": "dialog",
-   "text": "五块？有点儿贵。",
-   "transcript": "五块有点贵",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u19-05",
-   "kind": "dialog",
-   "text": "便宜一点儿吧，我买五个。",
-   "transcript": "便宜一点吧,我买5个",
+   "transcript": "学吧,那你也要好好学习。",
    "check": "beda",
    "attempts": 3
   },
@@ -4581,15 +1608,8 @@
    "key": "dialog-n-u19-07",
    "kind": "dialog",
    "text": "好，我扫码。",
-   "transcript": "靠我扫蛮",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u20-06",
-   "kind": "dialog",
-   "text": "好吧……",
-   "transcript": "后半",
+   "transcript": "好我扫满",
+   "carrierTranscript": "这个词是,好我扫满。",
    "check": "beda",
    "attempts": 3
   },
@@ -4605,15 +1625,7 @@
    "key": "dialog-n-u21-04",
    "kind": "dialog",
    "text": "有。您再穿这件看看。",
-   "transcript": "優 您再穿這件看看",
-   "check": "beda",
-   "attempts": 3
-  },
-  {
-   "key": "dialog-n-u21-06",
-   "kind": "dialog",
-   "text": "一百二。",
-   "transcript": "120",
+   "transcript": "呦,您再穿这件看看。",
    "check": "beda",
    "attempts": 3
   }

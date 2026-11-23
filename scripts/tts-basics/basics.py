@@ -7,7 +7,7 @@
 - Suara: P3 dari scripts/tts/voices.json (Kokoro-82M v1.1-zh, zf_001, revisi yang dipatok), speed 1.0.
 - Format sama dengan contoh suara (fungsi `normalize` dari scripts/tts/make_samples.py dipakai ulang):
   mp3 mono 64 kbps 24 kHz, pangkas sunyi, -16 LUFS, jeda 0,15 dtk.
-- Cek (ronde 2, CHECK_VERSION 3): faster-whisper large-v3 (CPU int8, language="zh", beam 5,
+- Cek (ronde 2, CHECK_VERSION 4): faster-whisper large-v3 (CPU int8, language="zh", beam 5,
   condition_on_previous_text=False, initial_prompt netral berhuruf sederhana yang tidak memuat huruf
   target -- lihat PROMPTS) + opencc t2s.
   * Kata/kalimat (>= 2 huruf): transkrip tanpa tanda baca = hanzi (angka Arab dibaca sebagai hanzi).
@@ -19,8 +19,12 @@
         dan minimal separuhnya berbunyi target).
     (b) nada: kontur F0 (praat-parselmouth) diklasifikasi ke nada 1-4 dengan aturan di
         tonecheck.py (dinormalkan ke rentang penutur = persentil 5-95 F0 semua suku kata tunggal).
-    Lolos bila (a) dan (b) lolos, ATAU transkrip 1 huruf yang salah satu bacaannya bernada =
-    `pinyin` target persis.
+    Lolos bila (a) dan (b) lolos, ATAU transkrip cocok persis dengan pinyin bernada: 1-3 huruf yang
+    semuanya punya bacaan bernada = `pinyin` target (mis. 酒酒 untuk jiǔ), atau versi x3 (file yang
+    sama diulang 3x; dicoba bila belum lolos) 2-8 huruf yang semuanya begitu.
+  * Kata: transkrip berhuruf Latin (mis. "Baba") lolos bila hurufnya = pinyin tanpa nada.
+  CHECK_VERSION 4 = versi 3 + dua tambahan di atas (lebih longgar hanya di situ), jadi file yang lolos di
+  versi 3 tidak dicek ulang; yang gagal setelah 3 percobaan hanya dicek ulang (tanpa sintesis).
   Manifest per file: transkrip, hasil bunyi, nada target/terdeteksi (+ fitur F0), alasan gagal.
 - Gagal -> buat ulang dengan variasi (maksimal 3 percobaan):
     1. teks apa adanya, speed 1.0
@@ -62,7 +66,10 @@ DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
 SCRIPT_VERSION = 3
-CHECK_VERSION = 3
+CHECK_VERSION = 4
+# Versi cek lama yang aturannya himpunan bagian dari versi ini: file yang lolos di sana pasti lolos di
+# sini (tidak dicek ulang); yang gagal setelah 3 percobaan hanya dicek ulang, tidak disintesis lagi.
+COMPATIBLE_CHECKS = {3}
 WHISPER_MODEL = "large-v3"
 # initial_prompt netral (huruf sederhana); dipilih yang pertama tanpa huruf target.
 PROMPTS = ["普通话录音。", "汉语录音。"]
@@ -266,8 +273,11 @@ class Checker:
         hits = self.sound_hits(got, target)
         return 2 <= len(got) <= 8 and hits >= 2 and 2 * hits >= len(got)
 
-    def exact_ok(self, got: str, target: str) -> bool:
-        return len(got) == 1 and unicodedata.normalize("NFC", target.lower()) in self.readings(got)
+    def exact_ok(self, got: str, target: str, lo: int = 1, hi: int = 3) -> bool:
+        """Transkrip = pinyin bernada persis: lo..hi huruf Han, SEMUANYA punya bacaan bernada = target
+        (Whisper kadang menulis suku kata yang sama dua kali, mis. 酒酒 untuk jiǔ)."""
+        t = unicodedata.normalize("NFC", target.lower())
+        return lo <= len(got) <= hi and all(HAN.match(c) and t in self.readings(c) for c in got)
 
     def check(self, mp3: Path, item: dict, tmp: Path) -> dict:
         """Hasil cek satu file mp3: ok, transcript, check, sound, toneTarget, toneDetected, f0, reason."""
@@ -276,22 +286,19 @@ class Checker:
         got = self.norm(transcript)
         if len(HAN.findall(h)) != 1:
             ok = got == self.norm(h)
-            return {"ok": ok, "transcript": transcript, "check": "text", "sound": None, "toneTarget": None,
+            how = "text"
+            # Whisper kadang menulis kata dalam huruf Latin ("Baba"): lolos bila hurufnya = pinyin tanpa nada.
+            if not ok and got.isascii() and got.isalpha():
+                ok = got.lower() == re.sub(r"[^a-zü]", "", toneless(py))
+                how = "text(latin)"
+            return {"ok": ok, "transcript": transcript, "check": how if ok else "none", "sound": None,
+                    "toneTarget": None,
                     "toneDetected": None, "f0": None,
                     "reason": None if ok else f"transkrip '{got}' != '{self.norm(h)}'"}
         notes = [transcript]
         exact = self.exact_ok(got, py)
         sound = exact or self.sound_ok(got, py)
         how = "exact" if exact else "sound+f0"
-        if not sound:
-            rep = tmp / "repeat.wav"
-            ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
-                    "[0:a]apad=pad_dur=0.6,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1", str(rep)])
-            t2 = self.transcribe(rep, h, 24)
-            notes.append(f"x3: {t2}")
-            sound = self.sound_ok_x3(self.norm(t2), py)
-            if sound:
-                how = "sound(x3)+f0"
         want = target_tone(py)
         try:
             detected, feats = tc.classify(tc.clean_semitones(tc.extract_f0(mp3)), self.ref)
@@ -299,6 +306,17 @@ class Checker:
             log(f"[f0] {mp3}: {e}")
             detected, feats = 0, None
         tone_ok = want == 5 or detected == want
+        if not exact and not (sound and tone_ok):
+            rep = tmp / "repeat.wav"
+            ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
+                    "[0:a]apad=pad_dur=0.6,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1", str(rep)])
+            t2 = self.transcribe(rep, h, 24)
+            notes.append(f"x3: {t2}")
+            g2 = self.norm(t2)
+            if self.exact_ok(g2, py, 2, 8):
+                exact, sound, how = True, True, "exact(x3)"
+            elif not sound and self.sound_ok_x3(g2, py):
+                sound, how = True, "sound(x3)+f0"
         ok = exact or (sound and tone_ok)
         reasons = []
         if not ok:
@@ -361,8 +379,12 @@ def main():
     def mode(it):
         if args.force or not same_text(it):
             return "synth"
-        if old_files[it["audioId"]].get("checkVersion") == CHECK_VERSION:
+        f = old_files[it["audioId"]]
+        cv = f.get("checkVersion")
+        if cv == CHECK_VERSION or (cv in COMPATIBLE_CHECKS and f.get("ok")):
             return "keep"
+        if cv in COMPATIBLE_CHECKS and f.get("attempts", 0) >= 3 and args.recheck:
+            return "checkonly"
         return "recheck" if args.recheck else "synth"
 
     if args.merge:
@@ -374,11 +396,12 @@ def main():
     twins: dict[str, str] = {}
     for it in items:
         aid = it["audioId"]
-        if modes[aid] != "keep" or old_files[aid].get("ok"):
+        if modes[aid] not in ("keep", "checkonly") or old_files[aid].get("ok"):
             continue
         for other in items:
             o = old_files.get(other["audioId"])
-            if (other["audioId"] != aid and o and o.get("ok") and o.get("checkVersion") == CHECK_VERSION
+            if (other["audioId"] != aid and o and o.get("ok")
+                    and (o.get("checkVersion") == CHECK_VERSION or o.get("checkVersion") in COMPATIBLE_CHECKS)
                     and same_text(other) and other["hanzi"] == it["hanzi"] and other["pinyin"] == it["pinyin"]):
                 twins[aid] = other["audioId"]
                 modes[aid] = "twin"
@@ -386,7 +409,7 @@ def main():
     n_keep = sum(m == "keep" for m in modes.values())
     if twins:
         log(f"[basics] salin file lolos dari item kembar: {twins}")
-    n_re = sum(m == "recheck" for m in modes.values())
+    n_re = sum(m in ("recheck", "checkonly", "twin") for m in modes.values())
     n_mine = len(mine)
     log(f"[basics] shard {args.shard}/{args.shards}: {n_mine} item: {n_keep} tetap, {n_re} dicek ulang, "
         f"{n_mine - n_keep - n_re} dibuat")
@@ -427,7 +450,7 @@ def main():
         if m == "other":
             continue
         if m == "keep":
-            files[aid] = old_files[aid]
+            files[aid] = {**old_files[aid], "checkVersion": CHECK_VERSION}
             continue
         if time.monotonic() - t0 > args.budget_min * 60:
             pending.append(aid)
@@ -447,8 +470,16 @@ def main():
                 rel = f"{aid}.mp3"
                 (out / rel).write_bytes(cur.read_bytes())
                 files[aid] = entry(res, rel, old_files[aid]["attempts"], f"copy of {src}", it)
-            else:
-                files[aid] = old_files[aid]
+                continue
+            m = "checkonly"
+        if m == "checkonly":
+            tmp.mkdir(parents=True, exist_ok=True)
+            f = old_files[aid]
+            cur = tmp / "existing.mp3"
+            cur.write_bytes((out / f["path"]).read_bytes())
+            res = checker.check(cur, it, tmp)
+            log_res(aid, it, "cek ulang (tanpa sintesis)", res)
+            files[aid] = entry(res, f["path"], f["attempts"], f.get("variant", ""), it)
             continue
         tmp.mkdir(parents=True, exist_ok=True)
         best = None

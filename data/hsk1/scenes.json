@@ -13,12 +13,12 @@
           "props": [
             {"id":"door","x":392,"y":336,"variant":"open"}
           ],
-          "bubbles": [{"from":0,"x":20,"y":22,"w":124,"h":56,"text":"你好！","highlight":true},{"from":1,"x":326,"y":22,"w":124,"h":56,"text":"你好！","highlight":true}]
+          "bubbles": [{"from":0,"x":20,"y":22,"w":124,"h":56,"text":"你好！","highlight":true}]
         }
       ],
       "alt": {
-        "id": "Ibu melambai kepada tetangga yang berdiri di pintu; keduanya tersenyum dan berkata \"你好！\".",
-        "en": "Mom waves to a neighbour standing at the door; both smile and say \"你好！\"."
+        "id": "Ibu melambai kepada tetangga yang berdiri di pintu dan berkata \"你好！\"; tetangga tersenyum dan melambai balik.",
+        "en": "Mom waves to a neighbour standing at the door and says \"你好！\"; the neighbour smiles and waves back."
       },
       "play": "wave"
     },
@@ -2012,7 +2012,7 @@
             {"id":"nainai","pose":"sit","expression":"happy","x":238,"scale":0.85,"y":300},
             {"id":"baba","pose":"sit","expression":"happy","x":306,"scale":0.85,"y":300},
             {"id":"gege","pose":"sit","expression":"happy","x":374,"scale":0.85,"y":300},
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":432,"scale":0.95}
+            {"id":"meimei","pose":"armsUp","expression":"happy","x":418,"scale":0.95}
           ],
           "props": [
             {"id":"table","x":290,"y":336,"value":"330","front":true},
@@ -2493,18 +2493,18 @@
       "panels": [
         {
           "characters": [
-            {"id":"yeye","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.82},
-            {"id":"nainai","pose":"sit","expression":"happy","x":290,"y":300,"scale":0.82},
-            {"id":"mama","expression":"happy","x":420,"scale":0.95},
-            {"id":"baba","pose":"pat","expression":"happy","x":90},
-            {"id":"gege","pose":"holdUp","expression":"happy","x":200,"flip":true}
+            {"id":"yeye","pose":"sit","expression":"happy","x":260,"y":300,"scale":0.82},
+            {"id":"nainai","pose":"sit","expression":"happy","x":330,"y":300,"scale":0.82},
+            {"id":"mama","expression":"happy","x":430,"scale":0.95},
+            {"id":"baba","pose":"pat","expression":"happy","x":100},
+            {"id":"gege","pose":"holdUp","expression":"happy","x":205,"flip":true}
           ],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"trophy","x":0,"y":10,"hold":[4,"left"],"scale":0.9,"roles":["target"]},
-            {"id":"marker","x":200,"y":60,"roles":["bob"]}
+            {"id":"marker","x":215,"y":62,"roles":["bob"]}
           ],
-          "bubbles": [{"from":3,"x":270,"y":20,"w":200,"h":52,"text":"这是我儿子！","highlight":true}]
+          "bubbles": [{"from":3,"x":6,"y":8,"w":176,"h":50,"text":"这是我儿子！","highlight":true}]
         }
       ],
       "alt": {
@@ -2525,7 +2525,7 @@
             {"id":"yeye","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.8},
             {"id":"nainai","pose":"sit","expression":"happy","x":275,"y":300,"scale":0.8},
             {"id":"baba","pose":"sit","expression":"happy","x":350,"y":300,"scale":0.8},
-            {"id":"gege","expression":"happy","x":440,"scale":0.92},
+            {"id":"gege","expression":"happy","x":432,"scale":0.92},
             {"id":"meimei","expression":"happy","x":215,"scale":1.05},
             {"id":"mama","pose":"pat","expression":"happy","x":120}
           ],

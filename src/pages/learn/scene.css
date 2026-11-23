@@ -204,16 +204,16 @@
   .is-playing[data-play='origin'] .morph-to .stroke {
     animation: sc-stroke-in 0.4s ease-out both;
   }
-  .is-playing[data-play='origin'] .stroke-1 { animation-delay: 1.3s; }
-  .is-playing[data-play='origin'] .stroke-2 { animation-delay: 1.45s; }
-  .is-playing[data-play='origin'] .stroke-3 { animation-delay: 1.6s; }
-  .is-playing[data-play='origin'] .stroke-4 { animation-delay: 1.75s; }
-  .is-playing[data-play='origin'] .stroke-5 { animation-delay: 1.9s; }
-  .is-playing[data-play='origin'] .stroke-6 { animation-delay: 2.05s; }
-  .is-playing[data-play='origin'] .stroke-7 { animation-delay: 2.2s; }
-  .is-playing[data-play='origin'] .stroke-8 { animation-delay: 2.35s; }
-  .is-playing[data-play='origin'] .stroke-9 { animation-delay: 2.5s; }
-  .is-playing[data-play='origin'] .stroke-10 { animation-delay: 2.65s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-1 { animation-delay: 1.3s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-2 { animation-delay: 1.45s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-3 { animation-delay: 1.6s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-4 { animation-delay: 1.75s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-5 { animation-delay: 1.9s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-6 { animation-delay: 2.05s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-7 { animation-delay: 2.2s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-8 { animation-delay: 2.35s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-9 { animation-delay: 2.5s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-10 { animation-delay: 2.65s; }
   .is-playing[data-play='origin'] .target {
     animation: sc-pulse 0.8s cubic-bezier(0.34, 1.4, 0.5, 1) 0.9s;
   }

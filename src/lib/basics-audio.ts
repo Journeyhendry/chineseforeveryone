@@ -20,15 +20,20 @@ export const BASICS_AUDIO_DIR = 'audio/basics/'
 const SAFE_ID = /^[a-z0-9-]{1,48}$/
 const SAFE_PATH = /^[a-z0-9-]{1,48}\.mp3$/
 
-/** Ambil hanya entri yang aman dipakai sebagai URL. Manifest rusak -> tanpa file (pakai suara perangkat). */
+/**
+ * Ambil hanya entri yang aman dipakai sebagai URL DAN lolos cek otomatis (`ok: true`).
+ * File yang gagal cek (bunyi/nada mungkin salah) tidak pernah diputar: item itu memakai suara perangkat.
+ * Manifest rusak -> tanpa file (pakai suara perangkat).
+ */
 export function audioFileMap(raw: unknown): Map<string, string> {
   const out = new Map<string, string>()
   if (typeof raw !== 'object' || raw === null) return out
   const files = (raw as { files?: unknown }).files
   if (typeof files !== 'object' || files === null) return out
   for (const [id, f] of Object.entries(files as Record<string, unknown>)) {
-    const path = typeof f === 'object' && f !== null ? (f as { path?: unknown }).path : undefined
-    if (SAFE_ID.test(id) && typeof path === 'string' && SAFE_PATH.test(path)) out.set(id, path)
+    if (typeof f !== 'object' || f === null) continue
+    const { path, ok } = f as { path?: unknown; ok?: unknown }
+    if (ok === true && SAFE_ID.test(id) && typeof path === 'string' && SAFE_PATH.test(path)) out.set(id, path)
   }
   return out
 }

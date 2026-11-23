@@ -61,3 +61,33 @@ Semua fungsi: tes unit untuk opsi unik, tepat satu benar, tidak ada state bocor 
 ## File
 - Baru: `src/games/flashcards.ts`, `match.ts`, `tone.ts`, `sentence.ts` (+ `*.test.ts`), komponen + CSS game (`src/pages/learn/games/**` atau `src/games/*.tsx`), ikon SVG kecil (inline di komponen).
 - Diubah: `src/lib/router.ts` (+ tes), `src/pages/LearnPage.tsx`, `src/pages/learn/UnitScreen.tsx`, `src/pages/learn/ResultScreen.tsx` (+ pemanggilnya `PracticeScreen.tsx` bila perlu), `src/lib/progress.ts` + `src/lib/backup.ts` (+ tes) untuk `games`, `src/i18n/{id,en}.json`, `docs/tasks/task-7.md` (catatan temuan saja).
+
+## Catatan implementasi (2026-11-23)
+
+**Yang dibuat**
+- Logika murni + tes: `src/games/kinds.ts` (nama game = segmen rute), `flashcards.ts`, `match.ts`, `tone.ts`, `sentence.ts` (+ `*.test.ts`; data tes dibaca dari `public/data/hsk1/units/*.json` lewat `testdata.ts`).
+- Tampilan di `src/pages/learn/games/` (dimuat malas lewat `React.lazy` dari `LearnPage`): `GamesRoute.tsx` (pilih game, menjalankan game, layar selesai), satu file per game, `GameCards.tsx` (4 kartu game, juga dipakai di ringkasan unit), `games.css`, `game-cards.css`.
+- Rute `#/belajar/unit/<id>/game` dan `.../game/<kartu|jodohkan|nada|susun>`; unit terkunci tetap menampilkan layar "terkunci" yang sama.
+- Progres: kolom `games: { [unitId]: { [jenis]: { best, plays } } }` di `xue.progress.v1`, dinormalisasi per entri (nilai rusak dibuang) dan ikut cadangan/pulihkan. Game tidak mengubah bintang unit dan tidak mengubah kotak Leitner.
+
+**Aturan bintang** (game selesai = minimal 1 bintang, kecuali tebak nada & susun kalimat yang memakai aturan latihan)
+- Kartu bolak-balik: bagian kartu yang langsung "Sudah tahu" di putaran pertama. ≥ 80% → 3, ≥ 50% → 2, selain itu 1.
+- Jodohkan (p = jumlah pasangan, bawaan 6): salah ≤ 1 dan waktu ≤ 6 detik × p → 3; salah ≤ 3 dan ≤ 12 detik × p → 2; selain itu 1. Waktu mulai dihitung sejak kartu pertama dipilih.
+- Tebak nada & susun kalimat: sama dengan latihan (benar ≥ 90% → 3, ≥ 75% → 2, ≥ 60% → 1, di bawahnya 0). Susun kalimat: satu kali cek per kalimat.
+- Aturan bintang ditulis kecil di layar selesai.
+
+**Tebak nada**: nada selalu nada tertulis di data. Kata utuh yang tidak dipakai: ada nada ringan, lebih dari 2 suku kata, mengandung 不 atau 一, atau pola 3-3 (karena diucapkan berubah). Kalau kata yang lolos kurang dari 10, soal ditambah dari satu huruf kata unit (mis. 谢 dari 谢谢), diberi keterangan "satu huruf dari …". Tiap unit sekarang dapat 10 soal. Pilihan: 1 suku kata = nada 1–4 berurutan (tombol 1–4 = nada 1–4); 2 suku kata = 4 pola acak, pengecoh diutamakan yang beda satu suku kata. Pilihan memakai garis nada berwarna + tanda nada + angka (tidak bergantung warna).
+
+**Susun kalimat (pemotong kata)**: longest-match terhadap semua 300 kata HSK 1 (`useWordBank`). Tanda baca akhir dibuang; tanda baca di tengah (mis. "，") ikut potongan sebelumnya. Kalimat Tatoeba hanya dipakai bila `outside === null`, punya terjemahan, terpotong habis menjadi kata HSK 1 (tidak ada sisa huruf lepas, jadi angka seperti "12" dan nama tidak masuk) dan 3–7 potongan. Baris dialog unit memakai `tokens` yang sudah ada. Jawaban benar = string huruf sama dengan kalimat asli (urutan potongan kembar mana pun diterima). Tiap unit sekarang punya 20–40 kalimat; 5 soal per main. Bila arti di bahasa aktif tidak ada, dipakai bahasa lain dengan label "terjemahan Inggris"/"Indonesian translation".
+
+**Game di layar nilai latihan**: tombol "Main satu game singkat: <nama game>". Bergiliran per unit: unit bernomor ganjil → Jodohkan, genap → Kartu bolak-balik (`closingGame` di `src/games/kinds.ts`).
+
+**Suara**: hanya lewat `useAudio`/`stopAudio`. Tanpa suara Mandarin: mode suara di jodohkan nonaktif dengan keterangan; tebak nada menampilkan huruf + pinyin tanpa tanda nada dan keterangan; tombol dengar nonaktif. Suara dihentikan saat game selesai, "Main lagi", atau keluar.
+
+**Ukuran**: JS awal 107,89 → 111,86 KB gzip (+3,97 KB, kebanyakan teks i18n); CSS awal +0,23 KB gzip. Kode game sendiri di potongan terpisah (±9,7 KB JS + 2,1 KB CSS gzip) yang baru dimuat saat game dibuka.
+
+**Batasan yang diketahui**
+- "Main lagi" di jodohkan kembali ke pilihan mode (lalu tekan "Mulai"); mode tidak diingat.
+- Susun kalimat: urutan ulang dengan keyboard dilakukan dengan mengembalikan potongan lalu menaruhnya lagi (tidak ada pindah kiri/kanan dengan tombol panah). Seret bekerja dengan mouse dan sentuh (Pointer Events); saat menyentuh potongan, halaman tidak bisa digulir dari potongan itu.
+- Pemotong longest-match kadang memotong berbeda dari penutur asli (mis. kata gabungan yang juga kata HSK 1). Jawaban tetap dinilai dari string huruf, jadi tidak membuat jawaban benar dianggap salah.
+- Suara perangkat (sementara sampai task 4b) belum ada di Chromium uji; jalur "suara tersedia" diuji dengan suara tiruan di Playwright.

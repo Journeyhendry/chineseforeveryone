@@ -10,6 +10,9 @@ import { mulberry32, shuffle, type QuizWord } from '../lib/quiz.ts'
 export type PlainTone = 1 | 2 | 3 | 4
 export type TonePattern = PlainTone[]
 
+/** Tanda nada (untuk label pilihan; tidak bergantung warna saja). */
+export const TONE_SIGNS: Record<PlainTone, string> = { 1: 'ˉ', 2: 'ˊ', 3: 'ˇ', 4: 'ˋ' }
+
 export const TONE_QUESTIONS = 10
 export const TONE_MIN = 8
 

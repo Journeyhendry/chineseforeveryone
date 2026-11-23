@@ -1,0 +1,612 @@
+/* Game unit (task 7). Hanya token yang sudah ada; warna nada hanya di atas --tone-surface (.tone-box). */
+
+.learn-game,
+.learn-games {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.game-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.game-title {
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.game-hint {
+  margin: 0 auto;
+  max-width: 56ch;
+  font-size: 18px;
+}
+
+.game-note {
+  text-align: center;
+  margin: 0;
+}
+
+.game-unavailable {
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.game-unavailable .row-actions,
+.game-round {
+  justify-content: center;
+}
+
+.game-round {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.game-finish .eyebrow {
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.game-new-best {
+  font-weight: 800;
+  margin: var(--space-3) 0 0;
+}
+
+.game-rule {
+  font-size: 14px;
+  margin: var(--space-3) auto 0;
+  max-width: 60ch;
+}
+
+/* ---------- kartu bolak-balik ---------- */
+
+.flip-stage {
+  display: flex;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+.flip-card {
+  width: min(100%, 360px);
+  height: 300px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+}
+
+.flip-card:focus-visible {
+  outline-offset: 6px;
+}
+
+.flip-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 480ms cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 4px solid var(--ink);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 0 var(--ink);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-hanzi {
+  font-family: var(--font-hanzi);
+  font-weight: 700;
+  font-size: clamp(72px, 18vw, 110px);
+  line-height: 1.05;
+}
+
+.flip-hanzi-sm {
+  font-family: var(--font-hanzi);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.flip-pinyin {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.flip-meaning {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.flip-tap {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--tone-label);
+}
+
+.flip-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.flip-actions {
+  justify-content: center;
+}
+
+.btn[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Gerak dikurangi: tanpa putar 3D, sisi kartu langsung berganti. */
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner,
+  .flip-card.is-flipped .flip-inner {
+    transform: none;
+    transition: none;
+  }
+
+  .flip-back,
+  .flip-card.is-flipped .flip-front {
+    display: none;
+  }
+
+  .flip-card.is-flipped .flip-back {
+    display: flex;
+    transform: none;
+  }
+}
+
+/* ---------- jodohkan ---------- */
+
+.match-setup {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.match-setup .field {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.choice.is-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.match-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-weight: 800;
+}
+
+.match-timer,
+.match-mistakes {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  padding: 0 var(--space-4);
+  border: var(--border-w) solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.match-time {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.match-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.match-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.match-col-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.match-card {
+  position: relative;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) 34px;
+  border: 4px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: 0 5px 0 var(--ink);
+  font: inherit;
+  font-weight: 800;
+  font-size: 17px;
+  cursor: pointer;
+  transition:
+    transform 140ms ease-out,
+    box-shadow 140ms ease-out;
+}
+
+.match-card:not([aria-disabled='true']):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--ink);
+}
+
+.match-card.is-selected {
+  outline: 4px solid var(--btn-purple);
+  outline-offset: 2px;
+  transform: translateY(-2px);
+}
+
+.match-card.is-selected:focus-visible {
+  outline-color: var(--focus);
+}
+
+.match-card.is-matched {
+  border-color: var(--btn-green);
+  border-style: dashed;
+  box-shadow: none;
+  cursor: default;
+  animation: match-pop 300ms ease-out both;
+}
+
+.match-card.is-wrong {
+  border-color: var(--btn-orange);
+  border-style: dashed;
+}
+
+.match-card.shake-0 {
+  animation: match-shake-a 360ms ease-in-out;
+}
+
+.match-card.shake-1 {
+  animation: match-shake-b 360ms ease-in-out;
+}
+
+.match-hanzi {
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.match-meaning {
+  text-align: center;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+}
+
+.match-sound {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.match-mark {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+}
+
+.is-matched .match-mark {
+  color: var(--btn-green);
+}
+
+.is-wrong .match-mark {
+  color: var(--btn-orange);
+}
+
+.match-status {
+  min-height: 1.5em;
+  text-align: center;
+  font-weight: 800;
+  margin: 0;
+}
+
+@keyframes match-pop {
+  0% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes match-shake-a {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+
+@keyframes match-shake-b {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .match-card,
+  .match-card.is-matched,
+  .match-card.shake-0,
+  .match-card.shake-1 {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ---------- tebak nada ---------- */
+
+.tone-pattern {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.tone-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.tone-num {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tone-choice-pinyin {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--tone-label);
+}
+
+.game-nada .choices-tone .choice-btn {
+  min-height: 120px;
+}
+
+/* ---------- susun kalimat ---------- */
+
+.sentence-prompt {
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.prompt-audio-sm {
+  width: 64px;
+  height: 64px;
+}
+
+.prompt-audio-sm svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sentence-prompt .prompt-body {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sentence-label {
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+}
+
+.sentence-meaning {
+  font-size: clamp(22px, 4vw, 30px);
+}
+
+.sentence-zone {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sentence-zone-title {
+  font-size: 20px;
+}
+
+.sentence-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 84px;
+  padding: var(--space-3);
+  border: var(--border-w) dashed var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.sentence-answer .sentence-row {
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--ink);
+}
+
+.sentence-zone.is-over .sentence-row {
+  outline: 4px solid var(--btn-purple);
+  outline-offset: 2px;
+}
+
+.sentence-answer.is-right .sentence-row {
+  border-color: var(--btn-green);
+}
+
+.sentence-answer.is-wrong .sentence-row {
+  border-color: var(--btn-orange);
+  border-style: dashed;
+}
+
+.sentence-empty {
+  color: var(--tone-label);
+  font-weight: 700;
+}
+
+.piece {
+  position: relative;
+  min-width: var(--touch);
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-4);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-md);
+  background: var(--tone-surface);
+  color: var(--ink);
+  box-shadow: 0 4px 0 var(--ink);
+  font-family: var(--font-hanzi);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sentence-answer .piece {
+  background: var(--yellow);
+}
+
+.piece[aria-disabled='true'] {
+  cursor: default;
+}
+
+.piece.is-dragging {
+  cursor: grabbing;
+  box-shadow: 0 10px 0 var(--ink);
+  opacity: 0.92;
+}
+
+.piece-slot {
+  visibility: visible;
+  border-style: dashed;
+  border-color: var(--line);
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.piece-slot span {
+  visibility: hidden;
+}
+
+.sentence-actions {
+  align-items: center;
+}
+
+.sentence-correct {
+  font-family: var(--font-hanzi);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sentence-pinyin {
+  font-weight: 700;
+}
+
+.sentence-src {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sentence-src a {
+  color: inherit;
+}
+
+@media (max-width: 520px) {
+  .match-board {
+    gap: var(--space-3);
+  }
+
+  .match-card {
+    padding: var(--space-2) 26px;
+    font-size: 15px;
+  }
+
+  .match-hanzi {
+    font-size: 32px;
+  }
+
+  .flip-card {
+    height: 260px;
+  }
+
+  .piece {
+    font-size: 26px;
+    padding: 0 var(--space-3);
+  }
+}

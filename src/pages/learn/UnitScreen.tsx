@@ -5,6 +5,7 @@ import { learnHref } from '../../lib/router'
 import { useSettings } from '../../lib/settings-context'
 import { CasualBox } from './CasualCard'
 import { DialogCard } from './DialogCard'
+import { GameCards } from './games/GameCards'
 import { useDocumentTitle, useFocusOnChange, useProgress } from './hooks'
 import { BackLink, Stars, ToneHanzi, TonePinyin } from './parts'
 import { meaningShort } from './text'
@@ -61,6 +62,14 @@ export function UnitScreen({ info, data }: { info: LessonUnitInfo; data: UnitDat
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="card" aria-labelledby="games-title">
+        <h2 id="games-title" className="card-title">
+          {t('game.section.title')}
+        </h2>
+        <p className="muted">{t('game.section.intro')}</p>
+        <GameCards unitId={info.id} />
       </section>
 
       <CasualBox items={data.casual} />

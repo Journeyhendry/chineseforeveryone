@@ -30,9 +30,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Item dibagi ke beberapa runner (item ke-i -> shard i % SHARDS) supaya Whisper large-v3 di CPU
+  # selesai dalam batas waktu; job "commit" menggabungkan hasilnya.
   audio:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
     env:
       HF_HUB_DISABLE_TELEMETRY: "1"
     steps:
@@ -83,7 +89,42 @@ jobs:
           RECHECK: ${{ github.event.inputs.recheck != 'false' && '--recheck' || '' }}
         run: |
           set -euo pipefail
-          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE $RECHECK --budget-min 42 --work "$RUNNER_TEMP/basics-work"
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE $RECHECK --budget-min 40 \
+            --shard ${{ matrix.shard }} --shards 6 --part-dir "$RUNNER_TEMP/part" --work "$RUNNER_TEMP/basics-work"
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: basics-part-${{ matrix.shard }}
+          path: ${{ runner.temp }}/part
+          retention-days: 3
+
+  commit:
+    needs: audio
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: basics-part-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/parts
+
+      - name: Merge, write manifest
+        id: synth
+        run: |
+          set -euo pipefail
+          pip install -q numpy==1.26.4
+          python scripts/tts-basics/basics.py --merge "$RUNNER_TEMP/parts"
           du -sh public/audio/basics
           ls public/audio/basics | wc -l
 

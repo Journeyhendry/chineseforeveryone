@@ -7,15 +7,16 @@
 - Suara: P3 dari scripts/tts/voices.json (Kokoro-82M v1.1-zh, zf_001, revisi yang dipatok), speed 1.0.
 - Format sama dengan contoh suara (fungsi `normalize` dari scripts/tts/make_samples.py dipakai ulang):
   mp3 mono 64 kbps 24 kHz, pangkas sunyi, -16 LUFS, jeda 0,15 dtk.
-- Cek (ronde 2, CHECK_VERSION 2): faster-whisper large-v3 (CPU int8, language="zh", beam 5,
+- Cek (ronde 2, CHECK_VERSION 3): faster-whisper large-v3 (CPU int8, language="zh", beam 5,
   condition_on_previous_text=False, initial_prompt netral berhuruf sederhana yang tidak memuat huruf
   target -- lihat PROMPTS) + opencc t2s.
   * Kata/kalimat (>= 2 huruf): transkrip tanpa tanda baca = hanzi (angka Arab dibaca sebagai hanzi).
     Nada ringan di dalam kata tidak dicek F0.
   * Suku kata tunggal, dua bagian terpisah:
-    (a) bunyi: transkrip 1-2 huruf Han dan setiap hurufnya punya bacaan (pypinyin heteronym, tanpa
-        nada) = suku kata target tanpa nada (huruf lain yang bunyinya sama lolos). Bila transkrip
-        langsung tidak cocok, file yang SAMA diulang 3x lalu ditranskrip (2-4 huruf, semua cocok).
+    (a) bunyi: transkrip 1-3 huruf, semuanya Han, dan minimal satu huruf punya bacaan (pypinyin
+        heteronym, tanpa nada) = suku kata target tanpa nada (huruf lain yang bunyinya sama lolos).
+        Bila tidak cocok, file yang SAMA diulang 3x lalu ditranskrip (<= 8 huruf; minimal 2 huruf
+        dan minimal separuhnya berbunyi target).
     (b) nada: kontur F0 (praat-parselmouth) diklasifikasi ke nada 1-4 dengan aturan di
         tonecheck.py (dinormalkan ke rentang penutur = persentil 5-95 F0 semua suku kata tunggal).
     Lolos bila (a) dan (b) lolos, ATAU transkrip 1 huruf yang salah satu bacaannya bernada =
@@ -59,7 +60,7 @@ DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
 SCRIPT_VERSION = 3
-CHECK_VERSION = 2
+CHECK_VERSION = 3
 WHISPER_MODEL = "large-v3"
 # initial_prompt netral (huruf sederhana); dipilih yang pertama tanpa huruf target.
 PROMPTS = ["普通话录音。", "汉语录音。"]
@@ -242,16 +243,26 @@ class Checker:
         text = "".join(c for c in text if unicodedata.category(c)[0] not in "PZSC")
         return self.t2s.convert(text)
 
-    def transcribe(self, path: Path, hanzi: str) -> str:
+    def transcribe(self, path: Path, hanzi: str, max_tokens: int) -> str:
+        # max_new_tokens: klip sangat pendek kadang memancing halusinasi panjang; dipotong supaya cepat
+        # (transkrip panjang tetap gagal).
         segs, _ = self.model.transcribe(str(path), language="zh", beam_size=5, vad_filter=False,
                                         condition_on_previous_text=False, initial_prompt=prompt_for(hanzi),
-                                        without_timestamps=True)
+                                        without_timestamps=True, max_new_tokens=max_tokens)
         return "".join(s.text for s in segs).strip()
 
-    def sound_ok(self, got: str, target: str, lo: int, hi: int) -> bool:
-        """Bagian (a): lo..hi huruf, semuanya huruf Han dengan bacaan tanpa nada = target."""
+    def sound_hits(self, got: str, target: str) -> int:
         syl = toneless(target)
-        return lo <= len(got) <= hi and all(HAN.match(c) and syl in self.sounds(c) for c in got)
+        return sum(1 for c in got if HAN.match(c) and syl in self.sounds(c))
+
+    def sound_ok(self, got: str, target: str) -> bool:
+        """Bagian (a), transkrip langsung: 1-3 huruf, semuanya Han, minimal satu berbunyi = target."""
+        return 1 <= len(got) <= 3 and all(HAN.match(c) for c in got) and self.sound_hits(got, target) >= 1
+
+    def sound_ok_x3(self, got: str, target: str) -> bool:
+        """Bagian (a), file diulang 3x: maksimal 8 huruf, >= 2 dan >= separuhnya berbunyi = target."""
+        hits = self.sound_hits(got, target)
+        return 2 <= len(got) <= 8 and hits >= 2 and 2 * hits >= len(got)
 
     def exact_ok(self, got: str, target: str) -> bool:
         return len(got) == 1 and unicodedata.normalize("NFC", target.lower()) in self.readings(got)
@@ -259,7 +270,7 @@ class Checker:
     def check(self, mp3: Path, item: dict, tmp: Path) -> dict:
         """Hasil cek satu file mp3: ok, transcript, check, sound, toneTarget, toneDetected, f0, reason."""
         h, py = item["hanzi"], item["pinyin"]
-        transcript = self.transcribe(mp3, h)
+        transcript = self.transcribe(mp3, h, 2 * len(h) + 8)
         got = self.norm(transcript)
         if len(HAN.findall(h)) != 1:
             ok = got == self.norm(h)
@@ -268,15 +279,15 @@ class Checker:
                     "reason": None if ok else f"transkrip '{got}' != '{self.norm(h)}'"}
         notes = [transcript]
         exact = self.exact_ok(got, py)
-        sound = exact or self.sound_ok(got, py, 1, 2)
+        sound = exact or self.sound_ok(got, py)
         how = "exact" if exact else "sound+f0"
         if not sound:
             rep = tmp / "repeat.wav"
             ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
                     "[0:a]apad=pad_dur=0.6,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1", str(rep)])
-            t2 = self.transcribe(rep, h)
+            t2 = self.transcribe(rep, h, 24)
             notes.append(f"x3: {t2}")
-            sound = self.sound_ok(self.norm(t2), py, 2, 4)
+            sound = self.sound_ok_x3(self.norm(t2), py)
             if sound:
                 how = "sound(x3)+f0"
         want = target_tone(py)
@@ -320,6 +331,10 @@ def main():
     ap.add_argument("--recheck", action="store_true",
                     help="file yang teksnya tidak berubah hanya dicek ulang (sintesis ulang hanya bila gagal)")
     ap.add_argument("--budget-min", type=float, default=38.0)
+    ap.add_argument("--shard", type=int, default=0, help="kerjakan item ke-i dengan i %% shards == shard")
+    ap.add_argument("--shards", type=int, default=1)
+    ap.add_argument("--part-dir", help="(dengan --shards > 1) tulis mp3 + part-<shard>.json ke sini")
+    ap.add_argument("--merge", help="gabungkan hasil shard (folder berisi part-*.json + mp3) lalu tulis manifest")
     args = ap.parse_args()
     out, work = Path(args.out), Path(args.work)
     out.mkdir(parents=True, exist_ok=True)
@@ -348,11 +363,16 @@ def main():
             return "keep"
         return "recheck" if args.recheck else "synth"
 
-    modes = {it["audioId"]: mode(it) for it in items}
+    if args.merge:
+        return finalize(args, items, voice, old, merge_parts(Path(args.merge), out, items, old_files))
+    mine = {it["audioId"] for k, it in enumerate(items) if k % args.shards == args.shard}
+    modes = {it["audioId"]: (mode(it) if it["audioId"] in mine else "other") for it in items}
     n_keep = sum(m == "keep" for m in modes.values())
     n_re = sum(m == "recheck" for m in modes.values())
-    log(f"[basics] {len(items)} item: {n_keep} tetap, {n_re} dicek ulang, {len(items) - n_keep - n_re} dibuat")
-    work_needed = n_keep < len(items)
+    n_mine = len(mine)
+    log(f"[basics] shard {args.shard}/{args.shards}: {n_mine} item: {n_keep} tetap, {n_re} dicek ulang, "
+        f"{n_mine - n_keep - n_re} dibuat")
+    work_needed = n_keep < n_mine
     checker = Checker() if work_needed else None
     tts_box: list[Kokoro] = []
 
@@ -386,6 +406,8 @@ def main():
     for it in items:
         aid = it["audioId"]
         m = modes[aid]
+        if m == "other":
+            continue
         if m == "keep":
             files[aid] = old_files[aid]
             continue
@@ -447,6 +469,53 @@ def main():
                 (out / rel).write_bytes(data)
         files[aid] = entry(best["res"], rel, attempts, best["variant"], it)
 
+    ref = checker.ref if checker else None
+    if args.shards > 1:
+        part = Path(args.part_dir)
+        part.mkdir(parents=True, exist_ok=True)
+        for f in files.values():
+            (part / f["path"]).write_bytes((out / f["path"]).read_bytes())
+        (part / f"part-{args.shard}.json").write_text(json.dumps(
+            {"shard": args.shard, "files": files, "pending": pending, "ref": ref}, ensure_ascii=False),
+            encoding="utf-8")
+        log(f"[basics] shard {args.shard}: {sum(f['ok'] for f in files.values())}/{len(files)} lolos, "
+            f"{len(pending)} tertunda")
+        return
+    finalize(args, items, voice, old, (files, pending, ref))
+
+
+def merge_parts(part_dir: Path, out: Path, items: list[dict], old_files: dict):
+    """Gabungkan part-*.json dari semua shard; mp3 shard disalin ke folder keluaran."""
+    files: dict[str, dict] = {}
+    pending: list[str] = []
+    ref = None
+    parts = sorted(part_dir.glob("part-*.json"))
+    for p in parts:
+        doc = json.loads(p.read_text(encoding="utf-8"))
+        for aid, f in doc["files"].items():
+            src = part_dir / f["path"]
+            if src.exists() and (not (out / f["path"]).exists() or (out / f["path"]).read_bytes() != src.read_bytes()):
+                (out / f["path"]).write_bytes(src.read_bytes())
+            files[aid] = f
+        pending += doc["pending"]
+        ref = ref or doc.get("ref")
+    log(f"[basics] gabung {len(parts)} shard: {len(files)} file, {len(pending)} tertunda")
+    for it in items:  # item tanpa hasil shard (mis. shard gagal) -> tetap file lama, dicoba lagi nanti
+        aid = it["audioId"]
+        if aid not in files and aid not in pending:
+            pending.append(aid)
+            if aid in old_files and (out / old_files[aid]["path"]).exists():
+                files[aid] = old_files[aid]
+    order = [it["audioId"] for it in items]
+    files = {aid: files[aid] for aid in order if aid in files}
+    pending = [aid for aid in order if aid in pending]
+    return files, pending, (tuple(ref) if ref else None)
+
+
+def finalize(args, items, voice, old, result):
+    files, pending, ref = result
+    out = Path(args.out)
+    manifest_path = out / "manifest.json"
     keep = {f["path"] for f in files.values()} | {"manifest.json"}
     for p in out.iterdir():
         if p.name not in keep:
@@ -456,7 +525,7 @@ def main():
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     unchanged = (old is not None and old.get("files") == files and old.get("scriptVersion") == SCRIPT_VERSION
                  and old.get("pending", []) == pending)
-    lo, hi = checker.ref if checker else tuple((old or {}).get("toneCheck", {}).get("refSemitones", tc.DEFAULT_REF))
+    lo, hi = ref or tuple((old or {}).get("toneCheck", {}).get("refSemitones", tc.DEFAULT_REF))
     manifest = {
         "version": 1,
         "scriptVersion": SCRIPT_VERSION,

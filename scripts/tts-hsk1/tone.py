@@ -101,3 +101,71 @@ def tone_ok(expected: int, hz: list[float]) -> bool:
     if expected == 4:
         return c == 4
     return c != 4
+
+
+# --------------------------------------------------------------------------
+# Ronde 3: meluruskan nada suku kata tunggal (PSOLA lewat praat-parselmouth Manipulation)
+# --------------------------------------------------------------------------
+# Hanya untuk item 1 suku kata yang BUNYINYA lolos tetapi NADANYA salah (P3 sering membaca suku
+# kata tunggal dengan nada turun). Kontur F0 diganti dengan kontur baku nada target (huruf nada Chao,
+# tingkat 1 = terendah, 5 = tertinggi) di rentang suara P3 sendiri; durasi dan bunyi tidak diubah
+# (overlap-add hanya menggeser tinggi nada), titik kontur diinterpolasi linear -> perpindahan halus.
+# Hasilnya dicek ulang penuh (Whisper + F0) dan hanya dipakai bila lolos.
+TONE_SHAPES = {
+    1: [(0.0, 4.6), (1.0, 4.5)],                 # 55
+    2: [(0.0, 3.0), (0.3, 2.8), (1.0, 4.8)],     # 35
+    3: [(0.0, 2.3), (0.6, 0.8), (1.0, 3.0)],     # 21(4): turun ke bawah, naik sedikit di akhir
+    4: [(0.0, 5.0), (0.2, 4.9), (1.0, 1.4)],     # 51
+}
+MIN_SPAN_ST = 8.0  # rentang minimal (semitone) tingkat 1-5 bila rentang penutur terukur lebih sempit
+
+
+def speaker_ref(contours: list[list[float]]) -> tuple[float, float]:
+    """(Hz bawah, Hz atas) = persentil 5 dan 95 F0 semua kontur (file P3 yang lolos), minimal MIN_SPAN_ST."""
+    vals = sorted(12 * math.log2(h) for c in contours for h in c if h > 0)
+    if len(vals) < 20:
+        raise ValueError("terlalu sedikit data F0 untuk rentang penutur")
+    lo, hi = vals[int(0.05 * (len(vals) - 1))], vals[int(0.95 * (len(vals) - 1))]
+    if hi - lo < MIN_SPAN_ST:
+        mid = (hi + lo) / 2
+        lo, hi = mid - MIN_SPAN_ST / 2, mid + MIN_SPAN_ST / 2
+    return 2 ** (lo / 12), 2 ** (hi / 12)
+
+
+def target_contour(tone: int, ref: tuple[float, float], n: int = 12) -> list[tuple[float, float]]:
+    """n titik (posisi 0..1, Hz) kontur baku nada `tone` di rentang ref."""
+    lo, hi = (12 * math.log2(x) for x in ref)
+    shape = TONE_SHAPES[tone]
+    out = []
+    for i in range(n):
+        x = i / (n - 1)
+        for (x0, l0), (x1, l1) in zip(shape, shape[1:]):
+            if x0 <= x <= x1:
+                lvl = l0 + (l1 - l0) * (x - x0) / (x1 - x0)
+                break
+        st = lo + (lvl - 1) / 4 * (hi - lo)
+        out.append((x, 2 ** (st / 12)))
+    return out
+
+
+def retarget(src: Path, dst_wav: Path, tone: int, ref: tuple[float, float], tmp_wav: Path) -> None:
+    """Ganti kontur F0 bagian bersuara klip dengan kontur baku `tone` (PSOLA overlap-add)."""
+    import parselmouth
+    from parselmouth.praat import call
+
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-ac", "1", "-ar", "24000", str(tmp_wav)], check=True)
+    snd = parselmouth.Sound(str(tmp_wav))
+    pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=PARSELMOUTH_FLOOR, pitch_ceiling=PARSELMOUTH_CEIL)
+    f = pitch.selected_array["frequency"]
+    voiced = [t for t, v in zip(pitch.xs(), f) if v > 0]
+    if len(voiced) < MIN_VOICED_FRAMES:
+        raise RuntimeError("bagian bersuara terlalu pendek untuk diluruskan")
+    t0, t1 = voiced[0], voiced[-1]
+    manip = call(snd, "To Manipulation", 0.01, PARSELMOUTH_FLOOR, PARSELMOUTH_CEIL)
+    tier = call(manip, "Extract pitch tier")
+    call(tier, "Remove points between", snd.xmin, snd.xmax)
+    for x, hz in target_contour(tone, ref):
+        call(tier, "Add point", t0 + x * (t1 - t0), hz)
+    call([tier, manip], "Replace pitch tier")
+    out = call(manip, "Get resynthesis (overlap-add)")
+    out.save(str(dst_wav), "WAV")

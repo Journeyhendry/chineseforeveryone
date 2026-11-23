@@ -13,6 +13,14 @@ Tiga tahap (dijalankan .github/workflows/build-audio.yml):
 
 Pengecekan (normalisasi, erhua, homofon, suku kata tunggal) ada di check.py dan tone.py (diuji di
 test_check.py). Item yang hash-nya sama, pengecek-nya sama, dan file-nya ada dilewati.
+
+Ronde 3 (CHECK_VERSION 3) -- hanya item yang GAGAL yang diproses ulang; file yang lolos tidak disentuh:
+  1. cek ulang file yang ada dengan cara tambahan "x3" (klip diulang 3x, lihat check.evaluate_x3);
+  2. suku kata tunggal yang bunyinya lolos tetapi nadanya salah: kontur nada diluruskan (tone.retarget,
+     PSOLA) lalu dicek ulang penuh; hanya dipakai bila lolos -> `pitchFixed: true` di manifest;
+  3. variasi sintesis baru (R3_VARIANTS): bingkai "X，X。" lalu ujaran pertama dipotong, suku kata
+     tengah dari "X，X，X。", seruan; dengan koreksi G2P tertulis (G2P_FIX) bila keluaran misaki
+     berbeda dari pinyin data. Hasil terbaik disimpan; tetap gagal -> audio-issues.json.
 """
 from __future__ import annotations
 
@@ -22,6 +30,7 @@ import math
 import os
 import re
 import shutil
+import subprocess
 import sys
 import time
 import traceback
@@ -41,8 +50,14 @@ ITEMS_FILE = ROOT / "data" / "hsk1" / "audio-items.json"
 ISSUES_FILE = ROOT / "data" / "hsk1" / "audio-issues.json"
 SAMPLE_RATE = 24000
 MAX_ATTEMPTS = 3
+R3_EXTRA_ATTEMPTS = 3  # ronde 3: variasi sintesis tambahan untuk item yang tetap gagal
+# Koreksi G2P (misaki) bila bacaannya berbeda dari pinyin data (dicek di test_check.py):
+#   哪些 misaki "ㄋㄟ3ㄒㄝ1" (něixiē), data nǎxiē; 哪个 misaki "ㄋㄟ3ㄍㄜ4", data nǎge;
+#   谁 misaki "ㄕ为2" (shuí), data shéi; 只 misaki "ㄓ十3" (zhǐ), data zhī (kata bantu bilangan).
+G2P_FIX = {"哪些": "ㄋㄚ3ㄒㄝ1", "哪个": "ㄋㄚ3ㄍㄜ5", "谁": "ㄕㄟ2", "只": "ㄓ十1"}
+KIND_ORDER = {"word": 0, "word-slow": 1, "casual": 2, "casual-slow": 3, "dialog": 4, "sentence": 5}
 MAX_SHARDS = 20
-ITEMS_PER_SHARD = 120
+ITEMS_PER_SHARD = 10  # item gagal diproses berat (beberapa sintesis + 3 cara cek); bagi rata ke banyak shard
 # Batas durasi (detik, termasuk jeda 0,3 dtk): di luar ini hasilnya dianggap gagal (biasanya ngawur).
 DURATION_LIMITS = {
     "word": (0.3, 3.0), "word-slow": (0.3, 4.0),
@@ -88,18 +103,30 @@ def read_manifest() -> dict:
     return load_json(p) if p.exists() else {"files": {}}
 
 
-def todo_items(items: list[dict]) -> list[tuple[dict, str]]:
-    """(item, mode): 'build' (belum ada/hash berubah) | 'recheck' (cek ulang file yang ada)."""
+def todo_items(items: list[dict], ck: "check.Checker | None" = None) -> list[tuple[dict, str]]:
+    """(item, mode): 'build' (belum ada/hash berubah) | 'recheck' (cek ulang file yang ada).
+    File yang lolos dengan versi cek yang cocok (check.PASS_COMPATIBLE) dan masih lolos aturan sekarang
+    (dari transkrip tersimpan) tidak diproses ulang -> mp3-nya tidak berubah."""
     files = read_manifest().get("files", {})
     force = os.environ.get("RECHECK") == "1"
     retry = os.environ.get("RETRY_FAILED") == "1"
+    ck = ck or check.Checker()
     out = []
     for it in items:
         e = files.get(it["key"])
         if not e or e["hash"] != it["hash"] or not (AUDIO_DIR / e["path"]).exists():
             out.append((it, "build"))
-        elif force or e.get("checkVersion") != check.CHECK_VERSION or (retry and not e["ok"]):
+        elif force or (retry and not e["ok"]):
             out.append((it, "recheck"))
+        elif ck.norm(it["text"]) in G2P_FIX and not e.get("g2pFix"):
+            out.append((it, "recheck"))  # dibuat dengan G2P yang bacaannya beda dari data -> coba koreksi
+        elif e.get("checkVersion") == check.CHECK_VERSION:
+            continue
+        elif e["ok"] and e.get("checkVersion") in check.PASS_COMPATIBLE and ck.still_passes(it["text"], it.get("pinyin"), e):
+            continue
+        else:
+            out.append((it, "recheck"))
+    out.sort(key=lambda x: KIND_ORDER.get(x[0]["kind"], 9))  # kata dulu (stabil: urutan asli per jenis)
     return out
 
 
@@ -162,6 +189,154 @@ def synth(pipe, pack, text, speed, dst: Path):
     ms.write_wav(dst, np.concatenate(chunks), SAMPLE_RATE)
 
 
+def r3_variants(it: dict) -> list[str]:
+    """Nama variasi sintesis ronde 3 (lihat synth_variant)."""
+    n = len(re.sub(r"[。！？!?…，,、\s]", "", it["text"]))
+    if n == 1:
+        return ["bingkai-awal", "bingkai-tengah", "bingkai-awal-pelan"]
+    if n <= check.CARRIER_MAX_LETTERS:
+        return ["bingkai-awal", "seru", "bingkai-awal-pelan"]
+    return ["kecepatan-0.95", "kecepatan-1.05"]
+
+
+def voiced_segments(wav: Path) -> list[tuple[float, float]]:
+    """Bagian bersuara (detik) menurut silencedetect (disalin dari gagasan scripts/tts-basics, task 0)."""
+    import make_samples as ms
+
+    p = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af", "silencedetect=noise=-38dB:d=0.07",
+                        "-f", "null", "-"], capture_output=True, text=True, check=True)
+    total = ms.duration(wav)
+    starts = [float(x) for x in re.findall(r"silence_start: (-?[\d.]+)", p.stderr)]
+    ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", p.stderr)]
+    silences = list(zip(starts, ends + [total] * (len(starts) - len(ends))))
+    segs, cur = [], 0.0
+    for a, b in silences:
+        if a - cur > 0.05:
+            segs.append((cur, a))
+        cur = b
+    if total - cur > 0.05:
+        segs.append((cur, total))
+    return segs
+
+
+def _rms(x, hop):
+    import numpy as np
+
+    return np.array([np.sqrt(np.mean(x[i:i + hop] ** 2) + 1e-12) for i in range(0, len(x) - hop, hop)])
+
+
+def _fade_write(y, sr, dst: Path):
+    import numpy as np
+    import soundfile as sf
+
+    n_in, n_out = int(0.01 * sr), int(0.03 * sr)
+    if len(y) < sr * 0.12:
+        raise RuntimeError("potongan terlalu pendek")
+    y = y.copy()
+    y[:n_in] *= np.linspace(0, 1, n_in)
+    y[-n_out:] *= np.linspace(1, 0, n_out)
+    sf.write(str(dst), y, sr)
+
+
+def first_segment(src: Path, dst: Path):
+    """Ujaran pertama dari bingkai "X，X。": bagian bersuara pertama (jeda koma); tanpa jeda -> potong di
+    energi terendah antara 30-70 % bagian bersuara. Fade 10/30 ms."""
+    import numpy as np
+    import soundfile as sf
+
+    segs = voiced_segments(src)
+    x, sr = sf.read(str(src), dtype="float32")
+    if x.ndim > 1:
+        x = x.mean(axis=1)
+    if len(segs) >= 2:
+        a, b = max(0.0, segs[0][0] - 0.03), min(segs[0][1] + 0.05, (segs[0][1] + segs[1][0]) / 2)
+        y = x[int(a * sr):int(b * sr)]
+    else:
+        hop = sr // 100
+        rms = _rms(x, hop)
+        voiced = np.where(rms > rms.max() * 0.05)[0]
+        if len(voiced) < 20:
+            raise RuntimeError("bingkai terlalu pendek")
+        lo, hi = voiced[0], voiced[-1]
+        a = lo + int((hi - lo) * 0.3)
+        v = a + int(np.argmin(rms[a:lo + int((hi - lo) * 0.7)]))
+        y = x[:v * hop]
+    _fade_write(y, sr, dst)
+
+
+def middle_by_valleys(src: Path, dst: Path):
+    """Suku kata tengah dari "X，X，X。": dua titik energi terendah sekitar 1/3 dan 2/3 bagian bersuara."""
+    import numpy as np
+    import soundfile as sf
+
+    x, sr = sf.read(str(src), dtype="float32")
+    if x.ndim > 1:
+        x = x.mean(axis=1)
+    hop = sr // 100
+    rms = _rms(x, hop)
+    voiced = np.where(rms > rms.max() * 0.05)[0]
+    if len(voiced) < 30:
+        raise RuntimeError("bingkai terlalu pendek")
+    a, b = voiced[0], voiced[-1]
+    span = b - a
+
+    def valley(lo, hi):
+        lo, hi = a + int(span * lo), a + int(span * hi)
+        return lo + int(np.argmin(rms[lo:hi]))
+
+    v1, v2 = valley(0.2, 0.47), valley(0.53, 0.8)
+    if v2 - v1 < 15:
+        raise RuntimeError("bingkai: suku kata tengah terlalu pendek")
+    _fade_write(x[v1 * hop:v2 * hop], sr, dst)
+
+
+def synth_variant(ctx: "Ctx", it: dict, name: str, raw: Path) -> float:
+    """Buat wav mentah variasi ronde 3; kembalikan kecepatan yang dipakai."""
+    t, s, v = it["text"], it["speed"], it["voice"]
+    base = re.sub(r"[。！？!?…，,]+$", "", t)
+    frame = raw.with_suffix(".frame.wav")
+    if name == "bingkai-awal":
+        ctx.synth(v, f"{base}，{base}。", s, frame, it)
+        first_segment(frame, raw)
+        return s
+    if name == "bingkai-tengah":
+        ctx.synth(v, f"{base}，{base}，{base}。", s, frame, it)
+        middle_by_valleys(frame, raw)
+        return s
+    if name == "bingkai-awal-pelan":
+        sp = round(s * 0.9, 3)
+        ctx.synth(v, f"{base}，{base}，{base}。", sp, frame, it)
+        first_segment(frame, raw)
+        return sp
+    if name == "seru":
+        sp = round(s * 0.9, 3)
+        ctx.synth(v, base + ("？" if base.endswith("吗") else "！"), sp, raw, it)
+        return sp
+    if name.startswith("kecepatan-"):
+        sp = round(s * float(name.split("-")[1]), 3)
+        ctx.synth(v, t, sp, raw, it)
+        return sp
+    raise ValueError(name)
+
+
+def fix_phonemes(g2p, text: str, word: str, fixed: str) -> str:
+    """Fonem misaki untuk `text` dengan bacaan `word` diganti `fixed` (koreksi G2P_FIX)."""
+    ps = g2p(text)[0]
+    wrong = g2p(word)[0]
+    if wrong not in ps:
+        raise RuntimeError(f"G2P: '{wrong}' tidak ada di '{ps}'")
+    return ps.replace(wrong, fixed)
+
+
+def make_x3_clip(mp3: Path, dst: Path):
+    """Klip yang sama diulang 3x (jeda +-0,4 dtk; klip sudah berjeda 0,15 dtk di tiap ujung) + sunyi depan-belakang."""
+    import make_samples as ms
+
+    ms.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-filter_complex",
+            f"[0:a]aresample={SAMPLE_RATE},apad=pad_dur=0.1,asplit=3[a][b][c];[a][b][c]concat=n=3:v=0:a=1,"
+            "adelay=300:all=1,apad=pad_dur=0.3", "-ac", "1", str(dst)])
+
+
 def make_check_clip(prefix: Path, mp3: Path, dst: Path):
     """pembawa + 0,3 dtk jeda + klip -> wav untuk Whisper."""
     import make_samples as ms
@@ -191,15 +366,42 @@ class Ctx:
         self.checker = check.Checker()
         self._kokoro = None
         self._carriers: dict = {}
+        self._ref = None
 
     def kokoro(self):
         if self._kokoro is None:
             self._kokoro = load_kokoro(["L3", "P3"])
         return self._kokoro
 
-    def synth(self, voice, text, speed, dst: Path):
+    def synth(self, voice, text, speed, dst: Path, it: dict | None = None):
         pipe, packs = self.kokoro()
-        synth(pipe, packs[voice], text, speed, dst)
+        word = self.checker.norm(it["text"]) if it else None
+        if word in G2P_FIX:
+            orig = pipe.g2p
+            pipe.g2p = lambda chunk: (fix_phonemes(orig, chunk, word, G2P_FIX[word]), None)
+            try:
+                synth(pipe, packs[voice], text, speed, dst)
+            finally:
+                pipe.g2p = orig
+            log(f"[g2p] {word}: '{G2P_FIX[word]}'")
+        else:
+            synth(pipe, packs[voice], text, speed, dst)
+
+    def speaker_ref(self) -> tuple[float, float]:
+        """Rentang F0 P3 dari file kata 1 huruf (kecepatan normal) yang lolos (untuk tone.retarget)."""
+        if self._ref is None:
+            files = read_manifest().get("files", {})
+            cs = []
+            for e in files.values():
+                if e["ok"] and e["kind"] == "word" and e["voice"] == "P3" and len(self.checker.norm(e["text"])) == 1 \
+                        and e.get("checkVersion") in check.PASS_COMPATIBLE and not e.get("pitchFixed"):
+                    try:
+                        cs.append(tone.f0_contour(AUDIO_DIR / e["path"], self.tmp / "ref.wav"))
+                    except Exception as ex:  # noqa: BLE001
+                        log(f"[ref] {e['path']}: {ex}")
+            self._ref = tone.speaker_ref(cs)
+            log(f"[ref] rentang F0 P3 dari {len(cs)} file: {self._ref[0]:.0f}-{self._ref[1]:.0f} Hz")
+        return self._ref
 
     def carrier(self, voice: str, speed: float) -> Path:
         """Kalimat pembawa dengan suara dan kecepatan yang sama dengan item."""
@@ -235,17 +437,26 @@ def evaluate(ctx: Ctx, it: dict, mp3: Path, speed: float) -> dict:
 
     plain = ctx.transcribe(mp3)
     res = ck.evaluate(it["text"], it.get("pinyin"), [plain], hz)
-    via, shown, carrier_tr = "plain", plain, None
+    via, shown, carrier_tr, x3_tr = "plain", plain, None, None
+    sound = bool(res.get("sound"))
     if not res["ok"] and ck.is_short(it["text"]):
         clip = ctx.tmp / "chk.wav"
         make_check_clip(ctx.carrier(it["voice"], speed), mp3, clip)
         carrier_tr = ctx.transcribe(clip)
         res2 = ck.evaluate(it["text"], it.get("pinyin"), ck.carrier_candidates(it["text"], carrier_tr), hz)
+        sound = sound or bool(res2.get("sound"))
         if res2["ok"] or res2["sim"] > res["sim"]:
             res, via = res2, "carrier"
             shown = res2["heard"]
-    elif res["ok"]:
-        shown = plain
+    if not res["ok"] and ck.is_short(it["text"]):
+        clip = ctx.tmp / "x3.wav"
+        make_x3_clip(mp3, clip)
+        x3_tr = ctx.transcribe(clip)
+        res3 = ck.evaluate_x3(it["text"], it.get("pinyin"), x3_tr, hz)
+        sound = sound or bool(res3.get("sound"))
+        if res3["ok"] or (res3.get("sound") and not res.get("sound")):
+            res, via = res3, "x3"
+            shown = x3_tr
     lo, hi = DURATION_LIMITS[it["kind"]]
     ok, how = res["ok"], res["how"]
     if not lo <= dur <= hi:
@@ -255,6 +466,9 @@ def evaluate(ctx: Ctx, it: dict, mp3: Path, speed: float) -> dict:
         cand["tone"] = res["tone"]
     if carrier_tr is not None and not ok:
         cand["carrierTranscript"] = carrier_tr
+    if x3_tr is not None and not ok:
+        cand["x3Transcript"] = x3_tr
+    cand["soundOnly"] = (not ok) and sound and lo <= dur <= hi  # bunyi lolos, nada salah
     return cand
 
 
@@ -275,6 +489,7 @@ def cmd_shard(args):
 
     old_files = read_manifest().get("files", {})
     ctx = Ctx(work)
+    ck = ctx.checker
     dump_json(out / "meta.json", {"whisperRevision": ctx.whisper_rev})
     t0 = time.time()
 
@@ -282,26 +497,48 @@ def cmd_shard(args):
         if time.time() - t0 > BUDGET_MIN * 60:
             log(f"[shard] batas waktu {BUDGET_MIN:.0f} menit tercapai; sisa {len(todo) - n + 1} item dikerjakan di jalan berikutnya")
             break
-        plan = variants(it)
-        steps = []  # (nama, teks, speed, berkas yang sudah ada | None)
-        if mode == "recheck":
-            old = old_files[it["key"]]
-            first = old.get("variant", "asli")
-            spd = next((s for _, s, nm in plan if nm == first), it["speed"])
-            steps.append((first, None, spd, AUDIO_DIR / old["path"]))
-            steps += [(nm, t, s, None) for t, s, nm in plan if nm != first]
+        old = old_files.get(it["key"]) if mode == "recheck" else None
+        want = ck.expected_tone(it.get("pinyin")) if len(ck.norm(it["text"])) == 1 else None
+        # langkah: (nama, berkas yang sudah ada | None)
+        g2p_redo = old is not None and ck.norm(it["text"]) in G2P_FIX and not old.get("g2pFix")
+        if g2p_redo:
+            # bacaan baru (G2P_FIX): sintesis ulang dulu; file lama hanya cadangan terakhir
+            steps = [(nm, None) for _, _, nm in variants(it)][:2] + [(r3_variants(it)[0], None)]
+            steps.append((old.get("variant", "asli"), AUDIO_DIR / old["path"]))
+            attempt = 0
+        elif old is not None:
+            steps = [(old.get("variant", "asli"), AUDIO_DIR / old["path"])]
+            steps += [(nm, None) for nm in r3_variants(it)[:R3_EXTRA_ATTEMPTS]]
+            attempt = old.get("attempts", 1)
         else:
-            steps = [(nm, t, s, None) for t, s, nm in plan]
+            steps = [(nm, None) for _, _, nm in variants(it)][:MAX_ATTEMPTS]
+            steps += [(nm, None) for nm in r3_variants(it)[:R3_EXTRA_ATTEMPTS]]
+            attempt = 0
         best = None
-        attempt = 0
-        for name, text, speed, existing in steps[:MAX_ATTEMPTS]:
-            attempt += 1
+        fix_tried = False
+
+        def consider(cand):
+            nonlocal best
+            rank = (cand["ok"], cand["sim"] if cand["mp3"] else -2)
+            if best is None or rank > best[0]:
+                if cand["mp3"] is not None and cand["resynth"]:
+                    keep = ctx.tmp / "best.mp3"
+                    shutil.copy(cand["mp3"], keep)
+                    cand["mp3"] = keep
+                best = (rank, cand)
+
+        for name, existing in steps:
+            attempt += 1 if existing is None else 0  # cek ulang file lama bukan percobaan baru
             try:
                 if existing is not None:
-                    mp3 = existing
+                    mp3, speed = existing, next((sp for _, sp, nm in variants(it) if nm == name), it["speed"])
                 else:
                     raw, mp3 = ctx.tmp / "raw.wav", ctx.tmp / f"a{attempt}.mp3"
-                    ctx.synth(it["voice"], text, speed, raw)
+                    if name in {nm for _, _, nm in variants(it)}:
+                        text, speed = next((t, sp) for t, sp, nm in variants(it) if nm == name)
+                        ctx.synth(it["voice"], text, speed, raw, it)
+                    else:
+                        speed = synth_variant(ctx, it, name, raw)
                     ms.normalize(raw, mp3, ctx.tmp)
                 cand = evaluate(ctx, it, mp3, speed)
             except Exception as e:  # noqa: BLE001
@@ -309,25 +546,39 @@ def cmd_shard(args):
                 cand = {"mp3": None, "dur": 0, "transcript": f"(gagal: {type(e).__name__}: {e})"[:200], "ok": False,
                         "check": "galat", "via": "plain", "sim": -1}
             cand.update(variant=name, resynth=existing is None)
-            rank = (cand["ok"], cand["sim"] if cand["mp3"] else -2)
-            if best is None or rank > best[0]:
-                if cand["mp3"] is not None and existing is None:
-                    keep = ctx.tmp / "best.mp3"
-                    shutil.copy(cand["mp3"], keep)
-                    cand["mp3"] = keep
-                best = (rank, cand)
+            consider(cand)
             if cand["ok"]:
                 break
+            # Bunyi lolos tetapi nada salah (suku kata tunggal bernada penuh): luruskan nada lalu cek ulang
+            # penuh. Hanya dipakai bila lolos (file asli tidak diubah bila tidak).
+            if want and cand.get("soundOnly") and cand["mp3"] is not None:
+                fix_tried = True
+                try:
+                    pf_wav, pf = ctx.tmp / "pf.wav", ctx.tmp / f"pf{attempt}.mp3"
+                    tone.retarget(cand["mp3"], pf_wav, want, ctx.speaker_ref(), ctx.tmp / "pft.wav")
+                    ms.normalize(pf_wav, pf, ctx.tmp)
+                    c2 = evaluate(ctx, it, pf, speed)
+                    c2.update(variant=f"{name}+nada", resynth=True, pitchFixed=True, toneBefore=cand.get("tone"))
+                    log(f"    nada diluruskan ({name}): {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) -> '{c2['transcript']}'")
+                    if c2["ok"]:
+                        consider(c2)
+                        break
+                except Exception:  # noqa: BLE001
+                    traceback.print_exc()
         b = best[1]
         if b["mp3"] is None:
             log(f"[{n}/{len(todo)}] {it['key']} GAGAL SINTESIS")
             continue
         entry = {"path": mp3_rel(it), "kind": it["kind"], "text": it["text"], "voice": it["voice"], "speed": it["speed"],
                  "durationSec": b["dur"], "transcript": b["transcript"], "ok": b["ok"], "check": b["check"], "via": b["via"],
-                 "attempts": attempt, "hash": it["hash"], "checkVersion": check.CHECK_VERSION}
-        for k in ("tone", "carrierTranscript"):
-            if k in b:
+                 "attempts": max(attempt, 1), "hash": it["hash"], "checkVersion": check.CHECK_VERSION}
+        for k in ("tone", "carrierTranscript", "x3Transcript", "pitchFixed", "toneBefore"):
+            if b.get(k) is not None:
                 entry[k] = b[k]
+        if fix_tried and not b.get("pitchFixed"):
+            entry["pitchFixTried"] = True
+        if ck.norm(it["text"]) in G2P_FIX and b["resynth"]:
+            entry["g2pFix"] = G2P_FIX[ck.norm(it["text"])]
         if b["variant"] != "asli":
             entry["variant"] = b["variant"]
         entry["resynth"] = b["resynth"]
@@ -336,8 +587,8 @@ def cmd_shard(args):
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy(b["mp3"], dst)
         entries[it["key"]] = entry
-        log(f"[{n}/{len(todo)}] {it['key']} {mode} {entry['durationSec']}s {'OK' if b['ok'] else 'GAGAL'}({b['check']}, {b['via']}, x{attempt}) '{it['text']}' -> '{b['transcript']}' [{int(time.time() - t0)}s]")
-        if n % 10 == 0:
+        log(f"[{n}/{len(todo)}] {it['key']} {mode} {entry['durationSec']}s {'OK' if b['ok'] else 'GAGAL'}({b['check']}, {b['via']}, {b['variant']}, x{entry['attempts']}) '{it['text']}' -> '{b['transcript']}' [{int(time.time() - t0)}s]")
+        if n % 5 == 0:
             dump_json(out / "entries.json", entries)
     dump_json(out / "entries.json", entries)
 
@@ -409,8 +660,9 @@ def cmd_merge(args):
     methods: dict[str, int] = {}
     for e in files.values():
         if e["ok"]:
-            m = f"{e['check']}/{e.get('via', 'plain')}"
+            m = f"{e['check']}/{e.get('via', 'plain')}" + ("/pitchFixed" if e.get("pitchFixed") else "")
             methods[m] = methods.get(m, 0) + 1
+    pitch_fixed = sum(1 for e in files.values() if e.get("pitchFixed"))
     manifest = {
         "version": 1,
         "settingsVersion": doc["settingsVersion"],
@@ -418,7 +670,7 @@ def cmd_merge(args):
         "voices": voices,
         "whisper": {"model": WHISPER_LABEL, "repo": WHISPER_REPO, "revision": whisper_rev or WHISPER_REVISION,
                     "checkVersion": check.CHECK_VERSION, "passed": passed, "total": total,
-                    "wordsPassed": wp, "wordsTotal": wt,
+                    "wordsPassed": wp, "wordsTotal": wt, "pitchFixed": pitch_fixed,
                     "byKind": {k: by_kind[k] for k in hsk1_items.KINDS}, "byMethod": dict(sorted(methods.items()))},
         "files": {it["key"]: files[it["key"]] for it in items if it["key"] in files},
     }
@@ -441,11 +693,12 @@ def cmd_merge(args):
         e = files.get(it["key"])
         if e and not e["ok"]:
             issues.append({"key": it["key"], "kind": it["kind"], "text": it["text"], "transcript": e["transcript"],
-                           **({"carrierTranscript": e["carrierTranscript"]} if "carrierTranscript" in e else {}),
-                           "check": e["check"], **({"tone": e["tone"]} if "tone" in e else {}), "attempts": e["attempts"]})
+                           **{k: e[k] for k in ("carrierTranscript", "x3Transcript") if k in e},
+                           "check": e["check"], **({"tone": e["tone"]} if "tone" in e else {}),
+                           **({"pitchFixTried": True} if e.get("pitchFixTried") else {}), "attempts": e["attempts"]})
     dump_json(ISSUES_FILE, {"version": 1, "issues": issues})
 
-    log(f"[merge] Whisper lolos {passed}/{total}; kata (300, normal) {wp}/{wt}; masalah {len(issues)}")
+    log(f"[merge] Whisper lolos {passed}/{total}; kata (300, normal) {wp}/{wt}; nada diluruskan {pitch_fixed}; masalah {len(issues)}")
     for k, b in by_kind.items():
         log(f"[merge]   {k}: {b['passed']}/{b['total']}")
     size = sum(p.stat().st_size for p in AUDIO_DIR.rglob("*.mp3"))

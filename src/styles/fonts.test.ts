@@ -17,16 +17,20 @@ const chars = JSON.parse(readFileSync(new URL('lxgw-wenkai-chars.json', fontDir)
 
 const HAN = /[\u3400-\u9fff\uf900-\ufaff]/g
 
+// File data yang TIDAK tampil di website, jadi hurufnya tidak perlu ada di font:
+// - audio-issues.json: catatan cek audio (transkrip Whisper yang salah dengar, mis. 导演 untuk 到).
+const NOT_DISPLAYED = new Set(['audio-issues.json'])
+
 function hanIn(text: string): Set<string> {
   return new Set(text.match(HAN) ?? [])
 }
 
 describe('font LXGW WenKai', () => {
-  it('setiap huruf Han di data/hsk1/*.json ada di core atau extra (kecuali yang ada di missing)', () => {
+  it('setiap huruf Han di data/hsk1/*.json yang tampil di website ada di core atau extra (kecuali yang ada di missing)', () => {
     const covered = new Set([...chars.core, ...chars.extra, ...chars.missing])
     const used = new Set<string>()
     for (const name of readdirSync(dataDir)) {
-      if (!name.endsWith('.json')) continue
+      if (!name.endsWith('.json') || NOT_DISPLAYED.has(name)) continue
       for (const ch of hanIn(readFileSync(new URL(name, dataDir), 'utf8'))) used.add(ch)
     }
     expect(used.size).toBeGreaterThan(0)

@@ -9,6 +9,13 @@ public/audio/native/status.json (alasan bila kosong). Tidak pernah menggagalkan 
 Hasil: public/audio/native/<wordId>-<n>.mp3, data/hsk1/native-audio.json dan salinannya
 public/audio/native/index.json (dibaca website). Maks 2 rekaman per kata; entri lama dipertahankan.
 Tatoeba tidak dipakai (lisensi audio di sentences.json: kosong/CC BY-NC).
+
+Ronde 3: jalan ronde 2 menemukan 3.861 berkas "LL-Q9192 (cmn)-" dan kandidat untuk 190 kata, tetapi
+SEMUA unduhan dari upload.wikimedia.org ditolak "HTTP 429 Too many requests" (batas laju Wikimedia
+untuk klien otomatis), jadi hasilnya 0. Perbaikan: unduh turunan mp3 kecil (transcode TimedMediaHandler,
+lewat prop=videoinfo) bila ada, jeda antar unduhan (DOWNLOAD_GAP), patuhi Retry-After, berhenti setelah
+MAX_429 penolakan berturut-turut, dan simpan hasil sedikit demi sedikit (jalan berikutnya melanjutkan
+kata yang belum punya rekaman). Alasan berhenti dicatat di status.json.
 """
 from __future__ import annotations
 
@@ -16,7 +23,6 @@ import html
 import json
 import re
 import shutil
-import subprocess
 import sys
 import tempfile
 import time
@@ -35,7 +41,9 @@ PREFIXES = ["LL-Q9192 (cmn)-"]
 DEADLINE_MIN = 25
 LIST_DEADLINE_MIN = 12
 MAX_CANDIDATES = 6  # judul per kata yang dicek lisensinya
-MAX_PER_WORD = 2
+MAX_PER_WORD = 1  # spec: 1-2; 1 supaya permintaan unduhan sesedikit mungkin
+DOWNLOAD_GAP = 3.0  # detik antar unduhan berkas
+MAX_429 = 4  # penolakan laju berturut-turut sebelum unduhan dihentikan untuk jalan ini
 MAX_SECONDS = 4.0
 ALLOWED = re.compile(r"^(CC0(?: 1\.0)?|CC BY(?: \d\.\d)?|CC BY-SA(?: \d\.\d)?)(?: [A-Za-z]+)?$", re.I)
 TITLE = re.compile(r"^File:LL-Q\d+ \((?:cmn|zh|zho)\)-(.+)-([^-]+)\.(?:wav|ogg|flac|mp3|opus|webm)$", re.I)
@@ -48,6 +56,11 @@ def log(*a):
 
 
 T0 = time.time()
+STATE = {"consecutive429": 0, "stopped": ""}
+
+
+class RateLimited(RuntimeError):
+    pass
 
 
 def out_of_time(minutes: float = DEADLINE_MIN) -> bool:
@@ -62,12 +75,20 @@ def get(url: str, binary=False):
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=60) as r:
                 data = r.read()
+            STATE["consecutive429"] = 0
             return data if binary else json.loads(data)
         except Exception as e:  # noqa: BLE001
-            log(f"[native] {type(e).__name__}: {e} (percobaan {i + 1})")
+            log(f"[native] {type(e).__name__}: {str(e)[:160]} (percobaan {i + 1})")
             wait = 2 * (i + 1)
             if getattr(e, "code", None) == 429:
-                wait = max(wait, int(getattr(e, "headers", {}).get("Retry-After", 0) or 0), 15 * (i + 1))
+                STATE["consecutive429"] += 1
+                if STATE["consecutive429"] >= MAX_429:
+                    raise RateLimited(f"HTTP 429 dari {urllib.parse.urlparse(url).netloc} {MAX_429}x berturut-turut") from e
+                try:
+                    ra = int(getattr(e, "headers", {}).get("Retry-After", 0) or 0)
+                except ValueError:
+                    ra = 0
+                wait = max(wait, min(ra, 180), 20 * (i + 1))
             time.sleep(wait)
     raise RuntimeError(f"gagal mengambil {url}")
 
@@ -90,6 +111,14 @@ def prefix_titles(prefix: str, out: list[str]) -> None:
         if not cont:
             return
     log("[native] waktu daftar habis; daftar belum lengkap")
+
+
+def download_url(ii: dict) -> str:
+    """Turunan mp3 (kecil) bila ada, kalau tidak berkas asli."""
+    for d in ii.get("derivatives") or []:
+        if "mpeg" in d.get("type", "") or d.get("transcodekey", "") == "mp3":
+            return d["src"]
+    return ii["url"]
 
 
 def strip_html(s: str) -> str:
@@ -160,9 +189,10 @@ def run(existing: dict) -> None:
         if out_of_time():
             log("[native] waktu metadata habis")
             break
-        d = api(action="query", prop="imageinfo", iiprop="url|extmetadata|user", titles="|".join(all_titles[i:i + 50]))
+        d = api(action="query", prop="videoinfo", viprop="url|extmetadata|user|derivatives",
+                titles="|".join(all_titles[i:i + 50]))
         for pg in d.get("query", {}).get("pages", []):
-            ii = (pg.get("imageinfo") or [None])[0]
+            ii = (pg.get("videoinfo") or pg.get("imageinfo") or [None])[0]
             if ii:
                 info[pg["title"]] = ii
 
@@ -170,9 +200,14 @@ def run(existing: dict) -> None:
     skipped_license: dict[str, int] = {}
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp())
+    stopped = ""
     for wid in need:
         if out_of_time():
-            log("[native] waktu unduh habis; sisa kata dilewati")
+            stopped = "waktu unduh habis; sisa kata dilanjutkan di jalan berikutnya"
+            log(f"[native] {stopped}")
+            break
+        if STATE["stopped"]:
+            stopped = STATE["stopped"]
             break
         picks = []
         seen = set()
@@ -198,12 +233,17 @@ def run(existing: dict) -> None:
             n = len(entries) + 1
             try:
                 src = tmp / "src.bin"
-                src.write_bytes(get(ii["url"], binary=True))
+                time.sleep(DOWNLOAD_GAP)
+                src.write_bytes(get(download_url(ii), binary=True))
                 dst = OUT_DIR / f"{wid}-{n}.mp3"
                 ms.normalize(src, dst, tmp)
                 dur = ms.duration(dst)
+            except RateLimited as e:
+                STATE["stopped"] = f"unduhan dihentikan: {e} (batas laju Wikimedia untuk klien otomatis)"
+                log(f"[native] {STATE['stopped']}")
+                break
             except Exception as e:  # noqa: BLE001
-                log(f"[native] {wid} {t}: gagal diproses ({type(e).__name__}: {e})")
+                log(f"[native] {wid} {t}: gagal diproses ({type(e).__name__}: {str(e)[:200]})")
                 continue
             if dur > MAX_SECONDS:
                 dst.unlink(missing_ok=True)
@@ -213,6 +253,7 @@ def run(existing: dict) -> None:
             log(f"[native] {wid} <- {t} ({lic}, {author}, {dur}s)")
         if entries:
             result[wid] = entries
+            write_result(result, f"sementara: {len(result)} kata")  # simpan bertahap
     shutil.rmtree(tmp, ignore_errors=True)
 
     # file basi (kata yang entrinya hilang) dibersihkan
@@ -220,7 +261,9 @@ def run(existing: dict) -> None:
     for p in OUT_DIR.glob("*.mp3"):
         if p not in keep:
             p.unlink()
-    note = f"{len(result)} kata punya rekaman ({sum(len(v) for v in result.values())} berkas); lisensi ditolak: {skipped_license}"
+    stopped = stopped or STATE["stopped"]
+    note = (f"{len(result)} kata punya rekaman ({sum(len(v) for v in result.values())} berkas) dari {len(cands)} kata "
+            f"berkandidat; lisensi ditolak: {skipped_license}" + (f"; {stopped}" if stopped else ""))
     write_result(result, note)
 
 

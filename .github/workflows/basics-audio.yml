@@ -1,6 +1,6 @@
 name: Basics audio (P3)
 
-# Audio Tahap 0 (task 0): mp3 suara P3 untuk data/basics/basics.json + cek Whisper.
+# Audio Tahap 0 (task 0): mp3 suara P3 untuk data/basics/basics.json + cek Whisper large-v3 + nada F0.
 # Jalan otomatis di cabang selain main bila data/skrip/workflow ini berubah, atau manual.
 on:
   workflow_dispatch:
@@ -9,6 +9,10 @@ on:
         description: "Buat ulang semua file (abaikan file yang sudah ada)"
         type: boolean
         default: false
+      recheck:
+        description: "File yang teksnya tidak berubah hanya dicek ulang (sintesis ulang hanya bila gagal)"
+        type: boolean
+        default: true
   push:
     branches-ignore:
       - main
@@ -64,15 +68,22 @@ jobs:
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
           "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts/requirements.txt -r scripts/tts-basics/requirements.txt
-          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|pypinyin|jieba|huggingface)" || true
+          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|pypinyin|jieba|huggingface|praat)" || true
+
+      - name: Test tone classifier (synthetic sweeps)
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/test_tonecheck.py
 
       - name: Synthesize, check, write manifest
         id: synth
         env:
           FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+          # push: selalu --recheck; workflow_dispatch: ikut input (bawaan true, juga untuk lanjutan).
+          RECHECK: ${{ github.event.inputs.recheck != 'false' && '--recheck' || '' }}
         run: |
           set -euo pipefail
-          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE --budget-min 38 --work "$RUNNER_TEMP/basics-work"
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE $RECHECK --budget-min 42 --work "$RUNNER_TEMP/basics-work"
           du -sh public/audio/basics
           ls public/audio/basics | wc -l
 

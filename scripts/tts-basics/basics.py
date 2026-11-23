@@ -26,11 +26,18 @@
   CHECK_VERSION 4 = versi 3 + dua tambahan di atas (lebih longgar hanya di situ), jadi file yang lolos di
   versi 3 tidak dicek ulang; yang gagal setelah 3 percobaan hanya dicek ulang (tanpa sintesis).
   Manifest per file: transkrip, hasil bunyi, nada target/terdeteksi (+ fitur F0), alasan gagal.
-- Gagal -> buat ulang dengan variasi (maksimal 3 percobaan):
+- Gagal -> buat ulang dengan variasi (maksimal MAX_ATTEMPTS = 6 percobaan; 4-6 ditambah di ronde 2):
     1. teks apa adanya, speed 1.0
     2. suku kata tunggal: "X，X，X。" lalu potong suku kata tengah di titik energi terendah
        (nada sitasi lebih jelas); kata: teks + "。", speed 0.9
     3. teks + "。", speed 0.85
+    4. bingkai "X，X。" -> ujaran pertama (dipotong di jeda koma, fade 10/30 ms), speed 1.0
+    5. bingkai "X，X，X。" -> ujaran pertama, speed 0.9
+    6. suku kata tunggal: bingkai "X，X。" -> ujaran pertama, speed 0.85;
+       kata: teks + "？" (bila berakhir 吗) atau "！", speed 0.9
+    Alasan 4-6: G2P misaki benar (鸡 -> "ㄐㄧ1"), tetapi P3 sering membaca suku kata di AKHIR ujaran
+    dengan nada turun; di awal ujaran (diikuti koma) nadanya lebih utuh.
+    File yang sudah lolos tidak disentuh; item gagal dengan percobaan < 6 dilanjutkan (--recheck).
   Tetap gagal -> file terbaik disimpan (ok: false) dan dicatat di data/basics/audio-issues.json.
 - Item yang hanzi/pinyin-nya tidak berubah, filenya ada dan sudah dicek dengan CHECK_VERSION ini
   tidak disentuh (kecuali --force), supaya push berikutnya tidak mengubah mp3 yang sudah ada.
@@ -65,7 +72,8 @@ import tonecheck as tc  # noqa: E402
 DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
-SCRIPT_VERSION = 3
+SCRIPT_VERSION = 4
+MAX_ATTEMPTS = 6
 CHECK_VERSION = 4
 # Versi cek lama yang aturannya himpunan bagian dari versi ini: file yang lolos di sana pasti lolos di
 # sini (tidak dicek ulang); yang gagal setelah 3 percobaan hanya dicek ulang, tidak disintesis lagi.
@@ -190,8 +198,59 @@ def make_raw(tts: Kokoro, item: dict, attempt: int, wav: Path) -> str:
     if attempt == 2:
         tts.synth(h + "。", 0.9, wav)
         return "text + 。, speed 0.9"
-    tts.synth(h + "。", 0.85, wav)
-    return "text + 。, speed 0.85"
+    if attempt == 3:
+        tts.synth(h + "。", 0.85, wav)
+        return "text + 。, speed 0.85"
+    # Ronde 2, percobaan 4-6 (hanya untuk item yang masih gagal): bingkai pembawa lalu potong.
+    # G2P misaki sudah benar (mis. 鸡 -> "ㄐㄧ1"); yang salah adalah realisasi nada model untuk suku kata
+    # di akhir ujaran (nada 1 sering turun). Maka target diletakkan di AWAL ujaran, diikuti jeda koma.
+    frame = wav.with_suffix(".frame.wav")
+    if attempt == 4:
+        tts.synth(f"{h}，{h}。", 1.0, frame)
+        first_segment(frame, wav)
+        return "frame X，X。 -> first, speed 1.0"
+    if attempt == 5:
+        tts.synth(f"{h}，{h}，{h}。", 0.9, frame)
+        first_segment(frame, wav)
+        return "frame X，X，X。 -> first, speed 0.9"
+    if single:
+        tts.synth(f"{h}，{h}。", 0.85, frame)
+        first_segment(frame, wav)
+        return "frame X，X。 -> first, speed 0.85"
+    end = "？" if h.endswith("吗") else "！"
+    tts.synth(h + end, 0.9, wav)
+    return f"text + {end}, speed 0.9"
+
+
+def first_segment(src: Path, dst: Path):
+    """Ambil ujaran pertama dari bingkai "X，X。": bagian bersuara pertama menurut silencedetect (jeda koma);
+    bila tidak ada jeda, potong di energi terendah antara 30-70 % bagian bersuara. Fade 10/30 ms."""
+    import numpy as np
+    import soundfile as sf
+
+    segs = voiced_segments(src)
+    x, sr = sf.read(str(src), dtype="float32")
+    if x.ndim > 1:
+        x = x.mean(axis=1)
+    if len(segs) >= 2:
+        a, b = max(0.0, segs[0][0] - 0.03), min(segs[0][1] + 0.05, (segs[0][1] + segs[1][0]) / 2)
+        y = x[int(a * sr):int(b * sr)]
+    else:
+        hop = sr // 100
+        rms = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2) + 1e-12) for i in range(0, len(x) - hop, hop)])
+        voiced = np.where(rms > rms.max() * 0.05)[0]
+        if len(voiced) < 20:
+            raise RuntimeError("bingkai terlalu pendek")
+        lo, hi = voiced[0], voiced[-1]
+        v = lo + int((hi - lo) * 0.3) + int(np.argmin(rms[lo + int((hi - lo) * 0.3):lo + int((hi - lo) * 0.7)]))
+        y = x[:v * hop]
+    n_in, n_out = int(0.01 * sr), int(0.03 * sr)
+    if len(y) < sr * 0.12:
+        raise RuntimeError("potongan terlalu pendek")
+    y = y.copy()
+    y[:n_in] *= np.linspace(0, 1, n_in)
+    y[-n_out:] *= np.linspace(1, 0, n_out)
+    sf.write(str(dst), y, sr)
 
 
 # --------------------------------------------------------------------------
@@ -381,6 +440,8 @@ def main():
             return "synth"
         f = old_files[it["audioId"]]
         cv = f.get("checkVersion")
+        if cv == CHECK_VERSION and not f.get("ok") and f.get("attempts", 0) < MAX_ATTEMPTS and args.recheck:
+            return "extend"
         if cv == CHECK_VERSION or (cv in COMPATIBLE_CHECKS and f.get("ok")):
             return "keep"
         if cv in COMPATIBLE_CHECKS and f.get("attempts", 0) >= 3 and args.recheck:
@@ -396,7 +457,7 @@ def main():
     twins: dict[str, str] = {}
     for it in items:
         aid = it["audioId"]
-        if modes[aid] not in ("keep", "checkonly") or old_files[aid].get("ok"):
+        if modes[aid] not in ("keep", "checkonly", "extend") or old_files[aid].get("ok"):
             continue
         for other in items:
             o = old_files.get(other["audioId"])
@@ -409,7 +470,7 @@ def main():
     n_keep = sum(m == "keep" for m in modes.values())
     if twins:
         log(f"[basics] salin file lolos dari item kembar: {twins}")
-    n_re = sum(m in ("recheck", "checkonly", "twin") for m in modes.values())
+    n_re = sum(m in ("recheck", "checkonly", "twin", "extend") for m in modes.values())
     n_mine = len(mine)
     log(f"[basics] shard {args.shard}/{args.shards}: {n_mine} item: {n_keep} tetap, {n_re} dicek ulang, "
         f"{n_mine - n_keep - n_re} dibuat")
@@ -471,7 +532,7 @@ def main():
                 (out / rel).write_bytes(cur.read_bytes())
                 files[aid] = entry(res, rel, old_files[aid]["attempts"], f"copy of {src}", it)
                 continue
-            m = "checkonly"
+            m = "extend" if old_files[aid].get("attempts", 0) < MAX_ATTEMPTS else "checkonly"
         if m == "checkonly":
             tmp.mkdir(parents=True, exist_ok=True)
             f = old_files[aid]
@@ -484,7 +545,15 @@ def main():
         tmp.mkdir(parents=True, exist_ok=True)
         best = None
         attempts = 0
-        variants = [1, 2, 3]
+        variants = list(range(1, MAX_ATTEMPTS + 1))
+        if m == "extend":
+            f = old_files[aid]
+            cur = tmp / "existing.mp3"
+            cur.write_bytes((out / f["path"]).read_bytes())
+            attempts = f["attempts"]
+            best = {"score": score(f), "mp3": cur, "res": f, "variant": f.get("variant", "")}
+            variants = list(range(attempts + 1, MAX_ATTEMPTS + 1))
+            log(f"[basics] {aid}: lanjut percobaan {variants}")
         if m == "recheck":
             f = old_files[aid]
             cur = tmp / "existing.mp3"
@@ -502,7 +571,7 @@ def main():
                 # File lama = percobaan 1; sisa variasi yang belum dipakai (maksimal 3 percobaan).
                 v = best["variant"]
                 used = 2 if ("frame" in v or v.endswith("0.9")) else 3 if v.endswith("0.85") else 1
-                variants = [v for v in (1, 2, 3) if v != used][:2]
+                variants = [v for v in range(1, MAX_ATTEMPTS + 1) if v != used][:MAX_ATTEMPTS - 1]
         if best is None or not best["res"]["ok"]:
             for attempt in variants:
                 attempts += 1

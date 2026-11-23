@@ -22,7 +22,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
   - [x] 6b tahap 1 · unit 1–3 — 2026-11-22 — Opus (diperiksa Opus) — 87 adegan SVG dari sistem rakit (`data/hsk1/scenes.json` → `npm run build:scenes`, ±10 KB/adegan), 39 pose tokoh, kartu ilustrasi di layar kenalan kata: gerak napas/kedip, klik/Enter/Spasi = aksi + suara, diam saat kurangi gerak; teks balon komik HTML huruf WenKai dengan kata disorot; axe lolos terang & gelap
 - [ ] 7 · Empat game
 - [x] 8 · Progres + ulangan harian + cadangan — 2026-11-22 — Sonnet (commit `Task 8` masuk & deploy sukses, tetapi sesinya terhenti sebelum mencentang; dicek ulang sesi 3d: semua tes lolos, layar Ulang & Progres terbuka tanpa galat, tanpa scroll samping di 375 px) — Leitner 5 kotak, target harian 10/20/30, hari berturut-turut, unduh/pulihkan cadangan
-- [ ] 9 · Kamus + Sumber + lapor salah — SEDANG DIKERJAKAN (mulai 2026-11-22 06:40 UTC)
+- [ ] 9 · Kamus + Sumber + lapor salah — SEDANG DIKERJAKAN (mulai 2026-11-23 07:41 UTC; kunci lama basi)
 - [ ] 10 · Pengecekan akhir + rilis v1
 
 ## Butuh pemilik

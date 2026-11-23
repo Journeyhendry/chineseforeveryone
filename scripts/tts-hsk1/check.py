@@ -22,13 +22,10 @@ import difflib
 import re
 import unicodedata
 
-CHECK_VERSION = 4  # naikkan bila aturan pengecek berubah -> file yang gagal dicek ulang (recheck)
-# Versi 4 (ronde 3, jalan kedua): perbaikan turunan "desah" untuk suku kata tunggal (build_audio); item
-# yang gagal di versi 3 dan BUKAN suku kata tunggal tidak diproses lagi (tidak ada yang baru baginya).
-# File yang LOLOS dengan versi ini tidak dicek ulang (aturan versi 3 hanya menambah cara lolos, kecuali
-# aturan homofon suku kata tunggal yang diperketat: itu dicek ulang dari transkrip tersimpan, lihat
-# still_passes()).
-PASS_COMPATIBLE = {2, 3, 4}
+CHECK_VERSION = 5  # naikkan bila aturan pengecek berubah -> file yang gagal dicek ulang (recheck)
+# Versi 4-5 (ronde 3, jalan berikutnya): perbaikan turunan "desah" (suku kata tunggal) dan "ekor" (item
+# pendek) di build_audio; item gagal yang PANJANG (kalimat) tidak diproses lagi (tidak ada yang baru baginya).
+PASS_COMPATIBLE = {2, 3, 4, 5}
 CARRIER = "这个词是"
 CARRIER_MAX_LETTERS = 6
 # Tidak memuat huruf target kata/ungkapan (diuji di test_check.py).

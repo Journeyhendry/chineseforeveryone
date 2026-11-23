@@ -251,3 +251,10 @@ def test_devoice_span_and_initials():
     assert ba.initial_of("xiǎo") == "x" and ba.initial_of("zhǎo") == "zh" and ba.initial_of("ài") == ""
     assert ba.initial_of("jiā") in ba.DEVOICE_INITIALS and ba.initial_of("māo") not in ba.DEVOICE_INITIALS
     assert tone.runs_from_f0([0.0, 0.01, 0.02, 0.03, 0.04], [0, 200, 210, 0, 190]) == [(0.01, 0.02), (0.04, 0.04)]
+
+
+def test_tail_cut():
+    assert tone.tail_cut([(0.21, 0.49), (0.67, 0.70)], 0.87) == pytest.approx(0.55)  # 外: desah + bagian pendek
+    assert tone.tail_cut([(0.2, 0.5)], 0.6) is None  # sisa terlalu pendek
+    assert tone.tail_cut([(0.2, 0.22)], 0.9) is None
+    assert tone.tail_cut([(0.2, 0.45), (0.5, 0.8)], 1.0) == pytest.approx(0.86)  # kata 2 suku kata

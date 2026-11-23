@@ -220,3 +220,26 @@ def devoice_onset(src: Path, dst_wav: Path, tmp_wav: Path) -> bool:
                     f"[0]asplit[x][y];[x]atrim=0:{t:.3f},{hp}[a];[y]atrim={t:.3f},asetpts=PTS-STARTPTS[b];"
                     "[a][b]acrossfade=d=0.015:c1=tri:c2=tri", str(dst_wav)], check=True)
     return True
+
+
+def tail_cut(runs: list[tuple[float, float]], total: float, margin: float = 0.06, min_run: float = 0.05,
+             min_tail: float = 0.08) -> float | None:
+    """Ronde 3: titik potong setelah bagian bersuara terakhir yang berarti (>= min_run detik) + margin.
+    Suku kata Mandarin selalu berakhir dengan bunyi bersuara (vokal / n / ng), jadi yang tersisa sesudahnya
+    hanya desah/derau napas P3 (外 terdengar 外景, 吗 terdengar 麦). None bila sisa < min_tail detik."""
+    real = [r for r in runs if r[1] - r[0] >= min_run]
+    if not real:
+        return None
+    t = real[-1][1] + margin
+    return t if total - t >= min_tail else None
+
+
+def cut_tail(src: Path, dst_wav: Path, tmp_wav: Path) -> bool:
+    """Potong desah di akhir klip (lihat tail_cut), fade-out 30 ms. False bila tidak ada yang dipotong."""
+    runs, total = voiced_runs(src, tmp_wav)
+    t = tail_cut(runs, total)
+    if t is None:
+        return False
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp_wav), "-af",
+                    f"atrim=0:{t:.3f},afade=t=out:st={max(0.0, t - 0.03):.3f}:d=0.03", str(dst_wav)], check=True)
+    return True

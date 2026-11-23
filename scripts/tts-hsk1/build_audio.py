@@ -128,8 +128,8 @@ def todo_items(items: list[dict], ck: "check.Checker | None" = None) -> list[tup
             continue
         elif e["ok"] and e.get("checkVersion") in check.PASS_COMPATIBLE:
             continue
-        elif not e["ok"] and e.get("checkVersion") == 3 and len(ck.norm(it["text"])) != 1:
-            continue  # versi 4 hanya menambah perbaikan suku kata tunggal
+        elif not e["ok"] and e.get("checkVersion") in (3, 4) and not ck.is_short(it["text"]):
+            continue  # versi 4-5 hanya menambah perbaikan untuk item pendek
         else:
             out.append((it, "recheck"))
     out.sort(key=lambda x: KIND_ORDER.get(x[0]["kind"], 9))  # kata dulu (stabil: urutan asli per jenis)
@@ -567,32 +567,40 @@ def cmd_shard(args):
                 f"{' | x3 ' + cand['x3Transcript'] if cand.get('x3Transcript') else ''}")
             if cand["ok"]:
                 break
-            if cand["mp3"] is None or want is None:
+            if cand["mp3"] is None or not ck.is_short(it["text"]):
                 continue
-            # Perbaikan turunan untuk suku kata tunggal (file baru hanya dipakai bila LOLOS cek penuh):
-            #   desah: bunyi "i" bersuara sebelum konsonan tak bersuara dibuang (tone.devoice_onset)
-            #   nada : bunyi lolos tetapi nada salah -> kontur nada diluruskan (tone.retarget)
+            # Perbaikan turunan (file baru hanya dipakai bila LOLOS cek penuh):
+            #   desah: bunyi "i" bersuara sebelum konsonan tak bersuara dibuang (tone.devoice_onset; 1 suku kata)
+            #   ekor : desah/derau napas sesudah bunyi bersuara terakhir dipotong (tone.cut_tail; item pendek)
+            #   nada : bunyi lolos tetapi nada salah -> kontur nada diluruskan (tone.retarget; 1 suku kata)
             done = False
             chain = [(cand, name)]
-            if initial_of(it.get("pinyin")) in DEVOICE_INITIALS:
+            fixes = []
+            if want is not None and initial_of(it.get("pinyin")) in DEVOICE_INITIALS:
+                fixes.append(("desah", tone.devoice_onset))
+            fixes.append(("ekor", tone.cut_tail))
+            for fname, fn in fixes:
+                base, bname = chain[-1]
                 try:
-                    dv_wav, dv = ctx.tmp / "dv.wav", ctx.tmp / f"dv{attempt}.mp3"
-                    if tone.devoice_onset(cand["mp3"], dv_wav, ctx.tmp / "dvt.wav"):
-                        ms.normalize(dv_wav, dv, ctx.tmp)
-                        c2 = evaluate(ctx, it, dv, speed)
-                        c2.update(variant=f"{name}+desah", resynth=True, devoiced=True)
-                        log(f"    {name}+desah: {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) '{c2['transcript']}'")
-                        if c2["ok"]:
-                            consider(c2)
-                            done = True
-                        else:
-                            chain.append((c2, f"{name}+desah"))
+                    fx_wav, fx = ctx.tmp / f"{fname}.wav", ctx.tmp / f"{fname}{attempt}.mp3"
+                    if not fn(base["mp3"], fx_wav, ctx.tmp / "fxt.wav"):
+                        continue
+                    ms.normalize(fx_wav, fx, ctx.tmp)
+                    c2 = evaluate(ctx, it, fx, speed)
+                    c2.update(variant=f"{bname}+{fname}", resynth=True,
+                              cleaned=sorted(set((base.get("cleaned") or []) + [fname])))
+                    log(f"    {bname}+{fname}: {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) '{c2['transcript']}'")
+                    if c2["ok"]:
+                        consider(c2)
+                        done = True
+                        break
+                    chain.append((c2, f"{bname}+{fname}"))
                 except Exception:  # noqa: BLE001
                     traceback.print_exc()
             if done:
                 break
             for base, bname in chain:
-                if not (want and base.get("soundOnly")):
+                if not (want and base.get("soundOnly") and base.get("mp3") is not None):
                     continue
                 fix_tried = True
                 try:
@@ -601,7 +609,7 @@ def cmd_shard(args):
                     ms.normalize(pf_wav, pf, ctx.tmp)
                     c2 = evaluate(ctx, it, pf, speed)
                     c2.update(variant=f"{bname}+nada", resynth=True, pitchFixed=True, toneBefore=base.get("tone"),
-                              devoiced=base.get("devoiced"))
+                              cleaned=base.get("cleaned"))
                     log(f"    {bname}+nada: {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) '{c2['transcript']}'")
                     if c2["ok"]:
                         consider(c2)
@@ -618,7 +626,7 @@ def cmd_shard(args):
         entry = {"path": mp3_rel(it), "kind": it["kind"], "text": it["text"], "voice": it["voice"], "speed": it["speed"],
                  "durationSec": b["dur"], "transcript": b["transcript"], "ok": b["ok"], "check": b["check"], "via": b["via"],
                  "attempts": max(attempt, 1), "hash": it["hash"], "checkVersion": check.CHECK_VERSION}
-        for k in ("tone", "carrierTranscript", "x3Transcript", "pitchFixed", "toneBefore", "devoiced"):
+        for k in ("tone", "carrierTranscript", "x3Transcript", "pitchFixed", "toneBefore", "cleaned"):
             if b.get(k) is not None:
                 entry[k] = b[k]
         if fix_tried and not b.get("pitchFixed"):

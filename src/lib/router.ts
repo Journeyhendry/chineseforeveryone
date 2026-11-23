@@ -1,6 +1,6 @@
 import { useEffect, useSyncExternalStore } from 'react'
 
-export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan'] as const
+export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan', 'sumber'] as const
 export type RouteName = (typeof ROUTES)[number] | 'notfound'
 
 export interface Route {
@@ -126,3 +126,34 @@ export function parseReviewRoute(segments: string[]): ReviewRoute {
 
 export const REVIEW_HOME = '#/ulang'
 export const REVIEW_SESSION = '#/ulang/sesi'
+
+// ---------- sub-rute Kamus ----------
+
+export type DictionaryRoute =
+  | { screen: 'search'; q: string }
+  | { screen: 'word'; wordId: string; q: string }
+  | { screen: 'notfound' }
+
+const WORD_ID = /^L1-[A-Za-z0-9]{1,16}$/i
+
+/**
+ * Segmen setelah `#/kamus` (+ parameter query): [] = pencarian (`?q=...`), [<wordId>] = detail kata
+ * (`?q=...` dipertahankan supaya tautan kembali ke hasil pencarian).
+ */
+export function parseDictionaryRoute(segments: string[], params: Record<string, string> = {}): DictionaryRoute {
+  const q = params.q ?? ''
+  if (segments.length === 0) return { screen: 'search', q }
+  if (segments.length === 1 && WORD_ID.test(segments[0])) return { screen: 'word', wordId: segments[0].toUpperCase(), q }
+  return { screen: 'notfound' }
+}
+
+export function dictionaryHref(route: DictionaryRoute): string {
+  switch (route.screen) {
+    case 'search':
+      return route.q ? `#/kamus?q=${encodeURIComponent(route.q)}` : '#/kamus'
+    case 'word':
+      return `#/kamus/${route.wordId}${route.q ? `?q=${encodeURIComponent(route.q)}` : ''}`
+    case 'notfound':
+      return '#/kamus'
+  }
+}

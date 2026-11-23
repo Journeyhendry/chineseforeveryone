@@ -26,46 +26,54 @@
   "model": "faster-whisper large-v3 (zh, cpu int8, beam 5)",
   "repo": "Systran/faster-whisper-large-v3",
   "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-  "checkVersion": 2,
-  "passed": 2266,
+  "checkVersion": 3,
+  "passed": 2335,
   "total": 2448,
-  "wordsPassed": 259,
+  "wordsPassed": 282,
   "wordsTotal": 300,
+  "pitchFixed": 6,
   "byKind": {
    "word": {
-    "passed": 259,
+    "passed": 282,
     "total": 300
    },
    "word-slow": {
-    "passed": 246,
+    "passed": 267,
     "total": 300
    },
    "sentence": {
-    "passed": 1540,
+    "passed": 1551,
     "total": 1579
    },
    "casual": {
-    "passed": 57,
+    "passed": 63,
     "total": 72
    },
    "casual-slow": {
-    "passed": 50,
+    "passed": 56,
     "total": 72
    },
    "dialog": {
-    "passed": 114,
+    "passed": 116,
     "total": 125
    }
   },
   "byMethod": {
    "erhua/carrier": 3,
    "erhua/plain": 26,
-   "exact/carrier": 224,
-   "exact/plain": 1749,
+   "exact/carrier": 243,
+   "exact/carrier/pitchFixed": 3,
+   "exact/plain": 1764,
+   "exact/x3": 15,
    "homophone/carrier": 38,
-   "homophone/plain": 159,
-   "sound+tone/carrier": 46,
-   "sound+tone/plain": 16,
+   "homophone/carrier/pitchFixed": 1,
+   "homophone/plain": 164,
+   "homophone/plain/pitchFixed": 1,
+   "homophone/x3": 3,
+   "sound+tone/carrier": 49,
+   "sound+tone/carrier/pitchFixed": 1,
+   "sound+tone/plain": 17,
+   "sound+tone/x3": 2,
    "sound/carrier": 3,
    "sound/plain": 2
   }
@@ -82,11 +90,13 @@
    "ok": false,
    "check": "nada 3 bukan 4",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "72056f03e48c9d13",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "tone": 3,
-   "carrierTranscript": "这个词是哎"
+   "carrierTranscript": "这个词是哎",
+   "x3Transcript": "哎,哎,哎。",
+   "pitchFixTried": true
   },
   "word-L1-0005": {
    "path": "word/L1-0005.mp3",
@@ -132,10 +142,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "b20032e8dd0a20b3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是Baba。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是Baba。",
+   "x3Transcript": "Baba,Baba,Baba。"
   },
   "word-L1-0008": {
    "path": "word/L1-0008.mp3",
@@ -144,14 +155,14 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.72,
-   "transcript": "拜拜。",
-   "ok": false,
-   "check": "beda",
+   "transcript": "拜。",
+   "ok": true,
+   "check": "sound+tone",
    "via": "plain",
    "attempts": 3,
    "hash": "c7eded5dacc77a6a",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是背"
+   "checkVersion": 3,
+   "tone": 1
   },
   "word-L1-0007": {
    "path": "word/L1-0007.mp3",
@@ -174,15 +185,15 @@
    "text": "半",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.71,
-   "transcript": "半语。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.57,
+   "transcript": "半、半、半。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "e1a5945979ea03b9",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是《笨》。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-L1-0016": {
    "path": "word/L1-0016.mp3",
@@ -335,10 +346,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f5fa0b28a14365fe",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是成"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是成",
+   "x3Transcript": "长,长,长。"
   },
   "word-L1-0040": {
    "path": "word/L1-0040.mp3",
@@ -346,15 +358,15 @@
    "text": "唱",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.7,
-   "transcript": "让",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.67,
+   "transcript": "唱。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "e7a4171d30347cb3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是圣。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "word-L1-0503": {
    "path": "word/L1-0503.mp3",
@@ -486,15 +498,15 @@
    "text": "到",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.68,
-   "transcript": "导演",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.56,
+   "transcript": "到,到,到。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "693c9fc22a17fada",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是do it。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-L1-0062": {
    "path": "word/L1-0062.mp3",
@@ -812,15 +824,15 @@
    "text": "二",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.67,
-   "transcript": "录音。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.58,
+   "transcript": "二",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "63dc79fed7bd8d58",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是阿尔茨的阿尔茨。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-L1-0097": {
    "path": "word/L1-0097.mp3",
@@ -845,14 +857,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.69,
-   "transcript": "翻译",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "饭饭饭",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "66ab63417df68670",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是粉。"
+   "checkVersion": 3
   },
   "word-L1-0100": {
    "path": "word/L1-0100.mp3",
@@ -1167,15 +1178,17 @@
    "text": "号",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.75,
-   "transcript": "后期。",
+   "durationSec": 0.98,
+   "transcript": "一号号。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "7f30875fcf011c13",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是后"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是厚厚的。",
+   "x3Transcript": "一号套,一号套,一号套。",
+   "variant": "bingkai-awal-pelan"
   },
   "word-L1-0138": {
    "path": "word/L1-0138.mp3",
@@ -1386,10 +1399,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "2e347665b9abc5f8",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是叫"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是叫",
+   "x3Transcript": "交,交,交。"
   },
   "word-L1-0173": {
    "path": "word/L1-0173.mp3",
@@ -1429,14 +1443,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.68,
-   "transcript": "哟。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "叫,叫,叫。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "b8ce8c82a4612c27",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是就"
+   "checkVersion": 3
   },
   "word-L1-0511": {
    "path": "word/L1-0511.mp3",
@@ -1676,17 +1689,17 @@
    "text": "口",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.76,
-   "transcript": "扣",
-   "ok": false,
-   "check": "nada 4 bukan 3",
+   "durationSec": 0.78,
+   "transcript": "口",
+   "ok": true,
+   "check": "exact",
    "via": "carrier",
    "attempts": 3,
    "hash": "2bab4e0d4441a9eb",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是以扣。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "pitchFixed": true,
+   "toneBefore": 4,
+   "variant": "titik+pelan+nada"
   },
   "word-L1-0203": {
    "path": "word/L1-0203.mp3",
@@ -1838,10 +1851,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "370b18646923213d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是Mai."
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是Mai",
+   "x3Transcript": "卖卖卖。"
   },
   "word-L1-0513": {
    "path": "word/L1-0513.mp3",
@@ -1849,16 +1863,15 @@
    "text": "卖",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.76,
-   "transcript": "umai",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.51,
+   "transcript": "麦。",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "54367ec2f92965fa",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是 美。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "word-L1-0228": {
    "path": "word/L1-0228.mp3",
@@ -1900,14 +1913,15 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.75,
-   "transcript": "蚂蚁。",
+   "transcript": "蚂蚁",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "9fcd81a6be50c81d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是蒙眼。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是蒙眼。",
+   "x3Transcript": "蚂蚁 蚂蚁 蚂蚁"
   },
   "word-L1-0514": {
    "path": "word/L1-0514.mp3",
@@ -2163,9 +2177,9 @@
    "ok": true,
    "check": "exact",
    "via": "plain",
-   "attempts": 1,
+   "attempts": 3,
    "hash": "5f8ff39b061317ab",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "word-L1-0256": {
    "path": "word/L1-0256.mp3",
@@ -2235,14 +2249,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.68,
-   "transcript": "No.",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "那儿",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
    "attempts": 3,
    "hash": "e4bfacf4762e239f",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是NER",
+   "checkVersion": 3,
    "variant": "titik+cepat"
   },
   "word-L1-0252": {
@@ -2251,16 +2264,15 @@
    "text": "哪儿",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.83,
-   "transcript": "哪里?",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.76,
+   "transcript": "哪儿",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 5,
    "hash": "b969f006d8aaabbb",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是nery。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "variant": "seru"
   },
   "word-L1-0258": {
    "path": "word/L1-0258.mp3",
@@ -2283,15 +2295,18 @@
    "text": "哪些",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.87,
-   "transcript": "那些",
+   "durationSec": 1.09,
+   "transcript": "那些哪些人",
    "ok": false,
    "check": "beda",
-   "via": "plain",
+   "via": "carrier",
    "attempts": 3,
    "hash": "8ba3577a185d83f5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,那些。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,那些哪些人,",
+   "x3Transcript": "那些奶,那些奶,那些奶。",
+   "g2pFix": "ㄋㄚ3ㄒㄝ1",
+   "variant": "bingkai-awal"
   },
   "word-L1-0269": {
    "path": "word/L1-0269.mp3",
@@ -2390,15 +2405,15 @@
    "text": "您",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.74,
-   "transcript": "你好。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.54,
+   "transcript": "您",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "1752778b6801f1da",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是年"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-L1-0275": {
    "path": "word/L1-0275.mp3",
@@ -2604,15 +2619,15 @@
    "text": "起床",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.83,
-   "transcript": "气床",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.88,
+   "transcript": "起床。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "d2dbb5fa1fd089e3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是气床"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "word-L1-0296": {
    "path": "word/L1-0296.mp3",
@@ -2848,15 +2863,17 @@
    "text": "少",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.76,
-   "transcript": "手。",
+   "durationSec": 0.63,
+   "transcript": "少许。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "01917250c36eb2b7",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是收"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是首首首首首首首首首首首首。",
+   "x3Transcript": "少数,少数,少数。",
+   "variant": "bingkai-tengah"
   },
   "word-L1-0325": {
    "path": "word/L1-0325.mp3",
@@ -2864,15 +2881,15 @@
    "text": "谁",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.71,
-   "transcript": "随。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.72,
+   "transcript": "谁",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 1,
    "hash": "0ec8bd3d49e1e80b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是水。"
+   "checkVersion": 3,
+   "g2pFix": "ㄕㄟ2"
   },
   "word-L1-0329": {
    "path": "word/L1-0329.mp3",
@@ -2972,15 +2989,17 @@
    "text": "时间",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.87,
-   "transcript": "实践。",
+   "durationSec": 1.22,
+   "transcript": "间诗",
    "ok": false,
    "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "via": "carrier",
+   "attempts": 6,
    "hash": "19825af1a8da8667",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是实践。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是《诗间诗》。",
+   "x3Transcript": "实践时。",
+   "variant": "bingkai-awal-pelan"
   },
   "word-L1-0340": {
    "path": "word/L1-0340.mp3",
@@ -3050,16 +3069,17 @@
    "text": "水",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.69,
-   "transcript": "睡。",
-   "ok": false,
-   "check": "nada 4 bukan 3",
-   "via": "plain",
+   "durationSec": 0.72,
+   "transcript": "水",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
    "attempts": 3,
    "hash": "0e1068c15b15ee02",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是,睡。"
+   "checkVersion": 3,
+   "pitchFixed": true,
+   "toneBefore": 4,
+   "variant": "asli+nada"
   },
   "word-L1-0346": {
    "path": "word/L1-0346.mp3",
@@ -3161,14 +3181,14 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.73,
-   "transcript": "太阳。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "太、太、太。",
+   "ok": true,
+   "check": "sound+tone",
+   "via": "x3",
    "attempts": 3,
    "hash": "cdbb06a38ef42376",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是特语。"
+   "checkVersion": 3,
+   "tone": 1
   },
   "word-L1-0523": {
    "path": "word/L1-0523.mp3",
@@ -3348,10 +3368,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "2ae958c15c1af941",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是位置。",
+   "x3Transcript": "外国语言。",
    "variant": "titik+cepat"
   },
   "word-L1-0368": {
@@ -3380,10 +3401,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "fbbbd2efcf014434",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是文。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是文。",
+   "x3Transcript": "文,文,文。"
   },
   "word-L1-0372": {
    "path": "word/L1-0372.mp3",
@@ -3396,10 +3418,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "9270eeb295c0de03",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是问。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是问。",
+   "x3Transcript": "蜿蜒"
   },
   "word-L1-0373": {
    "path": "word/L1-0373.mp3",
@@ -3408,14 +3431,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.86,
-   "transcript": "吻饭。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "晚饭,晚饭,晚饭。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "7584df3793a367ef",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是问份。"
+   "checkVersion": 3
   },
   "word-L1-0374": {
    "path": "word/L1-0374.mp3",
@@ -3552,10 +3574,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "33ab779ff0381013",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是一项",
+   "x3Transcript": "以下,以下,以下。",
    "variant": "titik+pelan"
   },
   "word-L1-0396": {
@@ -3569,10 +3592,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f3c822cf3e587702",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是笑语。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是笑语。",
+   "x3Transcript": "笑语。"
   },
   "word-L1-0390": {
    "path": "word/L1-0390.mp3",
@@ -3610,16 +3634,17 @@
    "text": "想",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.69,
-   "transcript": "像。",
-   "ok": false,
-   "check": "nada 4 bukan 3",
+   "durationSec": 0.72,
+   "transcript": "响。",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
    "attempts": 3,
    "hash": "c1a4cc366acca86c",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是像"
+   "checkVersion": 3,
+   "pitchFixed": true,
+   "toneBefore": 4,
+   "variant": "asli+nada"
   },
   "word-L1-0398": {
    "path": "word/L1-0398.mp3",
@@ -3659,15 +3684,15 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.79,
-   "transcript": "笑",
+   "transcript": "以上。",
    "ok": false,
-   "check": "nada 4 bukan 3",
-   "via": "carrier",
-   "attempts": 3,
+   "check": "beda",
+   "via": "plain",
+   "attempts": 6,
    "hash": "46f93825dd5f99d4",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是一笑",
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是宜秀",
+   "x3Transcript": "音效,音效,音效。",
    "variant": "titik+pelan"
   },
   "word-L1-0404": {
@@ -3814,17 +3839,17 @@
    "text": "新",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.84,
-   "transcript": "信。",
-   "ok": false,
-   "check": "nada 4 bukan 1",
-   "via": "plain",
+   "durationSec": 0.87,
+   "transcript": "心",
+   "ok": true,
+   "check": "homophone",
+   "via": "carrier",
    "attempts": 3,
    "hash": "8864c00843ed2116",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是新朗语。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "pitchFixed": true,
+   "toneBefore": 4,
+   "variant": "titik+cepat+nada"
   },
   "word-L1-0413": {
    "path": "word/L1-0413.mp3",
@@ -3832,15 +3857,15 @@
    "text": "星期",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.92,
-   "transcript": "兴趣。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.56,
+   "transcript": "星期",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 6,
    "hash": "85a8af4854fab191",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是 兴起。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "word-L1-0414": {
    "path": "word/L1-0414.mp3",
@@ -3976,10 +4001,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d209a33f6bee570c",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是又"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是又",
+   "x3Transcript": "以后,以后,以后。"
   },
   "word-L1-0425": {
    "path": "word/L1-0425.mp3",
@@ -4134,10 +4160,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "593c005e621f1ae9",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一字。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一字。",
+   "x3Transcript": "义字,义字,义字。"
   },
   "word-L1-0441": {
    "path": "word/L1-0441.mp3",
@@ -4302,14 +4329,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.69,
-   "transcript": "走。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "早,早,早。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "25757727c5516ce4",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是走。"
+   "checkVersion": 3
   },
   "word-L1-0458": {
    "path": "word/L1-0458.mp3",
@@ -4334,14 +4360,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.81,
-   "transcript": "走上。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "早上,早上,早上。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "882af87e08d72250",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是走圣。"
+   "checkVersion": 3
   },
   "word-L1-0460": {
    "path": "word/L1-0460.mp3",
@@ -4379,15 +4404,16 @@
    "text": "找",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.69,
-   "transcript": "柔。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.62,
+   "transcript": "赵,赵,赵。",
+   "ok": true,
+   "check": "sound+tone",
+   "via": "x3",
+   "attempts": 5,
    "hash": "344d603b8aea01c8",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是柔。"
+   "checkVersion": 3,
+   "tone": 2,
+   "variant": "bingkai-tengah"
   },
   "word-L1-0464": {
    "path": "word/L1-0464.mp3",
@@ -4515,15 +4541,17 @@
    "text": "只",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.83,
-   "transcript": "指",
+   "durationSec": 0.77,
+   "transcript": "致",
    "ok": true,
-   "check": "homophone",
+   "check": "sound+tone",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 2,
    "hash": "4233d2827c49b56e",
-   "checkVersion": 2,
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "tone": 1,
+   "g2pFix": "ㄓ十1",
+   "variant": "titik+pelan"
   },
   "word-L1-0474": {
    "path": "word/L1-0474.mp3",
@@ -4829,15 +4857,15 @@
    "text": "半",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.82,
-   "transcript": "五瓣",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.65,
+   "transcript": "半、半、半。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "0c720cfb2d9e066c",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一本"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0016": {
    "path": "word-slow/L1-0016.mp3",
@@ -4990,10 +5018,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "ea7486554a3607eb",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一场。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一场。",
+   "x3Transcript": "一长,一长,一长。"
   },
   "word-slow-L1-0040": {
    "path": "word-slow/L1-0040.mp3",
@@ -5001,15 +5030,18 @@
    "text": "唱",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.82,
-   "transcript": "离场。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.87,
+   "transcript": "场",
+   "ok": true,
+   "check": "sound+tone",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "96df707c5c772af1",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一乘。"
+   "checkVersion": 3,
+   "tone": 4,
+   "pitchFixed": true,
+   "toneBefore": 3,
+   "variant": "bingkai-awal+nada"
   },
   "word-slow-L1-0503": {
    "path": "word-slow/L1-0503.mp3",
@@ -5048,15 +5080,17 @@
    "text": "吃",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.8,
-   "transcript": "音质",
+   "durationSec": 0.84,
+   "transcript": "饮吃。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "ebe7fc7f310dd7d4",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是应是"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是应词。",
+   "x3Transcript": "音痴,音痴,音痴。",
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0051": {
    "path": "word-slow/L1-0051.mp3",
@@ -5096,15 +5130,15 @@
    "text": "大",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.79,
-   "transcript": "您的",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.62,
+   "transcript": "大、大、大。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "15c0f6ec77a756d7",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是应的。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0058": {
    "path": "word-slow/L1-0058.mp3",
@@ -5117,10 +5151,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "bc6040c32774eb63",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一代电话。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一代电话。",
+   "x3Transcript": "你打个电话,你打个电话,你打个电话。"
   },
   "word-slow-L1-0505": {
    "path": "word-slow/L1-0505.mp3",
@@ -5501,14 +5536,13 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.95,
-   "transcript": "御饭",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "犯",
+   "ok": true,
+   "check": "homophone",
+   "via": "carrier",
    "attempts": 3,
    "hash": "a90ab427389a2430",
-   "checkVersion": 2,
-   "carrierTranscript": "与这个词是一约分。",
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "word-slow-L1-0100": {
@@ -5719,15 +5753,15 @@
    "text": "狗",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.79,
-   "transcript": "音购",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.65,
+   "transcript": "狗 狗 狗",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "c4415748847e99d2",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一个"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0127": {
    "path": "word-slow/L1-0127.mp3",
@@ -5828,14 +5862,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.84,
-   "transcript": "以后,",
+   "transcript": "以后。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d3e74fb33471f47d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是以后。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是以后。",
+   "x3Transcript": "引后,引后,引后。"
   },
   "word-slow-L1-0138": {
    "path": "word-slow/L1-0138.mp3",
@@ -5865,10 +5900,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "e6a6111f1a952188",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是因后知。",
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是音后痴。",
+   "x3Transcript": "您好之,您好之,您好之。",
    "variant": "titik+cepat"
   },
   "word-slow-L1-0140": {
@@ -5882,10 +5918,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "0d6aee9df3256174",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一后看。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一后看。",
+   "x3Transcript": "以后看,以后看,以后看。"
   },
   "word-slow-L1-0141": {
    "path": "word-slow/L1-0141.mp3",
@@ -5914,10 +5951,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8ae721849cf8dc29",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是以后文。",
+   "x3Transcript": "以后玩,以后玩,以后玩。",
    "variant": "titik+cepat"
   },
   "word-slow-L1-0145": {
@@ -6050,15 +6088,15 @@
    "text": "家",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.83,
-   "transcript": "音价",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.89,
+   "transcript": "家",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 6,
    "hash": "b4496817f7316f41",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是印象。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "word-slow-L1-0173": {
    "path": "word-slow/L1-0173.mp3",
@@ -6098,15 +6136,15 @@
    "text": "叫",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.82,
-   "transcript": "营救",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.66,
+   "transcript": "叫",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 5,
    "hash": "0662146948df21cd",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是依旧"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0511": {
    "path": "word-slow/L1-0511.mp3",
@@ -6119,10 +6157,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "1b6fffc6ffb45721",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是因教子。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是因教子。",
+   "x3Transcript": "音介偶子,音介偶子,音介偶子。"
   },
   "word-slow-L1-0171": {
    "path": "word-slow/L1-0171.mp3",
@@ -6165,10 +6204,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d698acc3a046b089",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是借解。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是借解。",
+   "x3Transcript": "公介节。"
   },
   "word-slow-L1-0180": {
    "path": "word-slow/L1-0180.mp3",
@@ -6181,10 +6221,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "981332c342bfd7f6",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是以不经年。",
+   "x3Transcript": "不经年,不经年,不经年。",
    "variant": "titik+pelan"
   },
   "word-slow-L1-0181": {
@@ -6193,15 +6234,15 @@
    "text": "今天",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.08,
-   "transcript": "敬天",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.18,
+   "transcript": "今天",
+   "ok": true,
+   "check": "exact",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "b6e4372c29e96fd1",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是吴敬天。"
+   "checkVersion": 3,
+   "variant": "seru"
   },
   "word-slow-L1-0185": {
    "path": "word-slow/L1-0185.mp3",
@@ -6365,15 +6406,15 @@
    "text": "块",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.84,
-   "transcript": "红块",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.64,
+   "transcript": "快,快,快。",
+   "ok": true,
+   "check": "homophone",
+   "via": "x3",
+   "attempts": 5,
    "hash": "6e4c51b1a83f51c2",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是宫馈。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0205": {
    "path": "word-slow/L1-0205.mp3",
@@ -6428,15 +6469,15 @@
    "text": "冷",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.75,
-   "transcript": "一冷。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.66,
+   "transcript": "冷",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "011824ee220f8d6f",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一论。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0213": {
    "path": "word-slow/L1-0213.mp3",
@@ -6524,16 +6565,15 @@
    "text": "卖",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.95,
-   "transcript": "不卖。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.66,
+   "transcript": "卖。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "6d157c37d2dcda74",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是不昧。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0228": {
    "path": "word-slow/L1-0228.mp3",
@@ -6541,15 +6581,16 @@
    "text": "买",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.8,
-   "transcript": "不买。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.86,
+   "transcript": "卖",
+   "ok": true,
+   "check": "sound+tone",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "630fc6645282defc",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是不昧。"
+   "checkVersion": 3,
+   "tone": 1,
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0224": {
    "path": "word-slow/L1-0224.mp3",
@@ -6573,15 +6614,15 @@
    "text": "忙",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.79,
-   "transcript": "隐瞒。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.63,
+   "transcript": "盲,盲,盲。",
+   "ok": true,
+   "check": "homophone",
+   "via": "x3",
+   "attempts": 5,
    "hash": "4965aad969bc8c3f",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是阴谋。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0514": {
    "path": "word-slow/L1-0514.mp3",
@@ -6589,15 +6630,15 @@
    "text": "猫",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.8,
-   "transcript": "紧揉。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.82,
+   "transcript": "猫",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "47f6ebc0cb512f90",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一闹。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0233": {
    "path": "word-slow/L1-0233.mp3",
@@ -6790,14 +6831,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.78,
-   "transcript": "音乐。",
+   "transcript": "音囊。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "9fa5398a97c2a6f8",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是因的。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是因的。",
+   "x3Transcript": "因那,因那,因那。"
   },
   "word-slow-L1-0255": {
    "path": "word-slow/L1-0255.mp3",
@@ -6837,16 +6879,16 @@
    "text": "哪个",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.0,
-   "transcript": "那个",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.09,
+   "transcript": "哪个",
+   "ok": true,
+   "check": "exact",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 2,
    "hash": "5eec1dcd07aa6daf",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是那个。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "g2pFix": "ㄋㄚ3ㄍㄜ5",
+   "variant": "titik+pelan"
   },
   "word-slow-L1-0256": {
    "path": "word-slow/L1-0256.mp3",
@@ -6938,10 +6980,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8c588717f18bc711",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是inner。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是inner。",
+   "x3Transcript": "音囊,音囊,音囊。"
   },
   "word-slow-L1-0258": {
    "path": "word-slow/L1-0258.mp3",
@@ -6965,16 +7008,17 @@
    "text": "哪些",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.02,
+   "durationSec": 1.08,
    "transcript": "那些",
    "ok": false,
    "check": "beda",
    "via": "carrier",
    "attempts": 3,
    "hash": "87d046dbeb3c879b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是那些。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是无那些。",
+   "x3Transcript": "吾那西。",
+   "g2pFix": "ㄋㄚ3ㄒㄝ1"
   },
   "word-slow-L1-0269": {
    "path": "word-slow/L1-0269.mp3",
@@ -7074,15 +7118,15 @@
    "text": "您",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.8,
-   "transcript": "无眠。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.61,
+   "transcript": "您",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 5,
    "hash": "2971af6a48177b12",
-   "checkVersion": 2,
-   "carrierTranscript": "这歌词是《无念》。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0275": {
    "path": "word-slow/L1-0275.mp3",
@@ -7293,15 +7337,17 @@
    "text": "起床",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.09,
-   "transcript": "仪器床。",
+   "durationSec": 1.2,
+   "transcript": "器床",
    "ok": false,
    "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "via": "carrier",
+   "attempts": 6,
    "hash": "859bd4b73a6eaf2f",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一气窗。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是音器床。",
+   "x3Transcript": "音气床,音气床,音气床。",
+   "variant": "seru"
   },
   "word-slow-L1-0296": {
    "path": "word-slow/L1-0296.mp3",
@@ -7331,10 +7377,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "c5c4cec3e0da3093",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是一庆问。",
+   "x3Transcript": "你请问,你请问,你请问。",
    "variant": "titik+cepat"
   },
   "word-slow-L1-0302": {
@@ -7542,15 +7589,17 @@
    "text": "少",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.81,
-   "transcript": "以上",
+   "durationSec": 0.79,
+   "transcript": "少许。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8383823bcf324907",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一首"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是熟悉的。",
+   "x3Transcript": "烧烧烧烧",
+   "variant": "bingkai-tengah"
   },
   "word-slow-L1-0325": {
    "path": "word-slow/L1-0325.mp3",
@@ -7558,15 +7607,15 @@
    "text": "谁",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.87,
-   "transcript": "无水。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.81,
+   "transcript": "谁",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 1,
    "hash": "75cb5886cde96161",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是无税。"
+   "checkVersion": 3,
+   "g2pFix": "ㄕㄟ2"
   },
   "word-slow-L1-0329": {
    "path": "word-slow/L1-0329.mp3",
@@ -7672,10 +7721,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d4511e988f21ab68",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是不实践。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是不实践。",
+   "x3Transcript": "不实践,不实践,不实践。"
   },
   "word-slow-L1-0340": {
    "path": "word-slow/L1-0340.mp3",
@@ -8041,10 +8091,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "b99a562202b59e45",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是无谓。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是无谓。",
+   "x3Transcript": "无畏,无畏,无畏。"
   },
   "word-slow-L1-0368": {
    "path": "word-slow/L1-0368.mp3",
@@ -8072,10 +8123,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8f94622ad3759e24",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是无文。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是无文。",
+   "x3Transcript": "无文,无文,无文。"
   },
   "word-slow-L1-0372": {
    "path": "word-slow/L1-0372.mp3",
@@ -8088,10 +8140,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "bdc5538be997e93e",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是无谓。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是无问。",
+   "x3Transcript": "无问,无问,无问。"
   },
   "word-slow-L1-0373": {
    "path": "word-slow/L1-0373.mp3",
@@ -8099,15 +8152,17 @@
    "text": "晚饭",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.04,
-   "transcript": "无问饭。",
+   "durationSec": 1.11,
+   "transcript": "问饭。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "7e8103aa9a3a45f4",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是无问范。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是问分。",
+   "x3Transcript": "午晚饭。",
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0374": {
    "path": "word-slow/L1-0374.mp3",
@@ -8120,10 +8175,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "e47d133a65642e6c",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是无问圣。",
+   "x3Transcript": "无吻上,无吻上,无吻上。",
    "variant": "titik+pelan"
   },
   "word-slow-L1-0525": {
@@ -8244,10 +8300,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "573eae2e793dde95",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一项。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一项。",
+   "x3Transcript": "以下,以下,以下。"
   },
   "word-slow-L1-0396": {
    "path": "word-slow/L1-0396.mp3",
@@ -8260,10 +8317,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f065f41289077e58",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是很像语。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是很像语。",
+   "x3Transcript": "很下雨,很下雨,很下雨。"
   },
   "word-slow-L1-0390": {
    "path": "word-slow/L1-0390.mp3",
@@ -8386,10 +8444,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f579bcfa48a8ce93",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是音效时。",
+   "x3Transcript": "吟笑时,吟笑时,吟笑时。",
    "variant": "titik+cepat"
   },
   "word-slow-L1-0406": {
@@ -8403,10 +8462,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "53de1ab985faed8f",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是音效学。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是音效学。",
+   "x3Transcript": "营校学,营校学,营校学。"
   },
   "word-slow-L1-0407": {
    "path": "word-slow/L1-0407.mp3",
@@ -8419,10 +8479,11 @@
    "ok": false,
    "check": "beda",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "5e850cc3fb65dabf",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是,一校学生",
+   "x3Transcript": "一校学生 一校学生 一校学生",
    "variant": "titik+cepat"
   },
   "word-slow-L1-0395": {
@@ -8498,10 +8559,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "115aef94b7855817",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一系换。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一细缓。",
+   "x3Transcript": "一细缓,一细缓,一细缓。"
   },
   "word-slow-L1-0411": {
    "path": "word-slow/L1-0411.mp3",
@@ -8526,15 +8588,17 @@
    "text": "星期",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.11,
-   "transcript": "我兴趣。",
+   "durationSec": 1.22,
+   "transcript": "莫星期",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f01a6a25e08c48fd",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是我兴趣。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,我兴起。",
+   "x3Transcript": "我姓七,我姓七,我姓七。",
+   "variant": "bingkai-awal-pelan"
   },
   "word-slow-L1-0414": {
    "path": "word-slow/L1-0414.mp3",
@@ -8670,10 +8734,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "e31e55578a00940a",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是应用。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是应用。",
+   "x3Transcript": "音诱,音诱,音诱。"
   },
   "word-slow-L1-0425": {
    "path": "word-slow/L1-0425.mp3",
@@ -8681,17 +8746,17 @@
    "text": "也",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.79,
-   "transcript": "页",
-   "ok": false,
-   "check": "nada 4 bukan 3",
+   "durationSec": 0.81,
+   "transcript": "也",
+   "ok": true,
+   "check": "exact",
    "via": "carrier",
    "attempts": 3,
    "hash": "31b2007a3ee1c024",
-   "checkVersion": 2,
-   "tone": 4,
-   "carrierTranscript": "这个词是一页。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "pitchFixed": true,
+   "toneBefore": 4,
+   "variant": "titik+cepat+nada"
   },
   "word-slow-L1-0427": {
    "path": "word-slow/L1-0427.mp3",
@@ -8831,10 +8896,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "409e629df5d464d5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一字。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一字。",
+   "x3Transcript": "音译字,音译字,音译字。"
   },
   "word-slow-L1-0441": {
    "path": "word-slow/L1-0441.mp3",
@@ -8875,16 +8941,15 @@
    "text": "有些",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.01,
-   "transcript": "已有些",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.04,
+   "transcript": "有些",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "7989a85e77f6d0f9",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是右线。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0530": {
    "path": "word-slow/L1-0530.mp3",
@@ -9005,10 +9070,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "5dec3e51888cc236",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是一奏。",
+   "x3Transcript": "今早,今早,今早。",
    "variant": "titik+pelan"
   },
   "word-slow-L1-0458": {
@@ -9017,15 +9083,15 @@
    "text": "早饭",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.04,
-   "transcript": "临走饭。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.47,
+   "transcript": "早饭",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "27b46ee6c4902810",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一奏份。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "word-slow-L1-0459": {
    "path": "word-slow/L1-0459.mp3",
@@ -9038,10 +9104,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8bf225d967f2b5e5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一奏声。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一奏声。",
+   "x3Transcript": "一早上 一早上 一早上"
   },
   "word-slow-L1-0460": {
    "path": "word-slow/L1-0460.mp3",
@@ -9082,14 +9149,14 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.83,
-   "transcript": "引咒。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
+   "transcript": "着",
+   "ok": true,
+   "check": "sound+tone",
+   "via": "carrier",
    "attempts": 3,
    "hash": "34450c401b34ae0d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是音种。"
+   "checkVersion": 3,
+   "tone": 3
   },
   "word-slow-L1-0464": {
    "path": "word-slow/L1-0464.mp3",
@@ -9229,8 +9296,9 @@
    "via": "carrier",
    "attempts": 1,
    "hash": "80a5bb74c140a980",
-   "checkVersion": 2,
-   "tone": 1
+   "checkVersion": 3,
+   "tone": 1,
+   "g2pFix": "ㄓ十1"
   },
   "word-slow-L1-0474": {
    "path": "word-slow/L1-0474.mp3",
@@ -9671,9 +9739,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "fabbc2249f483800",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-332889": {
    "path": "sentence/332889.mp3",
@@ -9686,9 +9754,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "587877a2fe7615ca",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-332951": {
    "path": "sentence/332951.mp3",
@@ -11020,14 +11088,15 @@
    "text": "这些苹果你们三个人分。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 2.54,
-   "transcript": "这些苹果你们三个人份。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 2.6,
+   "transcript": "这些苹果你们三个人分。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "3142669ba567987b",
-   "checkVersion": 2
+   "checkVersion": 3,
+   "variant": "kecepatan-0.95"
   },
   "sentence-349193": {
    "path": "sentence/349193.mp3",
@@ -12140,10 +12209,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "1abc76fe57fa2a82",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,大家走圣猴。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,大家走圣猴。",
+   "x3Transcript": "大家走圣猴,大家走圣猴,大家走圣猴。"
   },
   "sentence-399588": {
    "path": "sentence/399588.mp3",
@@ -12227,15 +12297,14 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 1.47,
-   "transcript": "还有多少?",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "transcript": "还要多少?还要多少?还要多少?",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 5,
    "hash": "c504a174262fff67",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,还有多少?",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "seru"
   },
   "sentence-400212": {
    "path": "sentence/400212.mp3",
@@ -12248,10 +12317,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "1a692144bf01800d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,还有一点。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,还有一点。",
+   "x3Transcript": "还有一点,还有一点,还有一点。"
   },
   "sentence-400323": {
    "path": "sentence/400323.mp3",
@@ -12805,9 +12875,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "0c6eca17b45aaf96",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "sentence-419802": {
@@ -12896,9 +12966,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "d7b4eaf1b6ce1ee9",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "sentence-420444": {
@@ -13570,15 +13640,15 @@
    "text": "这我要三个。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.41,
-   "transcript": "这我要三格。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.35,
+   "transcript": "这我要三个。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "7cd9c8309e1d7f93",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,这我要三格。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-465256": {
    "path": "sentence/465256.mp3",
@@ -13646,15 +13716,17 @@
    "text": "他有三个姐姐。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.72,
-   "transcript": "它有三个节节。",
+   "durationSec": 1.65,
+   "transcript": "他有三个结界。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "df409e98f00810ea",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,它有三个节节。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,它有三个节节。",
+   "x3Transcript": "他有三个结界,他有三个结界,他有三个结界。",
+   "variant": "bingkai-awal"
   },
   "sentence-469258": {
    "path": "sentence/469258.mp3",
@@ -13682,10 +13754,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "2e377b43262018cb",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,你做到了。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,你做到了。",
+   "x3Transcript": "你做到了,你做到了,你做到了。"
   },
   "sentence-469355": {
    "path": "sentence/469355.mp3",
@@ -14308,15 +14381,15 @@
    "text": "你喜欢雪吗？",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.47,
-   "transcript": "你喜欢血吗?",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.46,
+   "transcript": "你喜欢雪吗?",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "16e634bb6b86066d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,你喜欢血吗?"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-510903": {
    "path": "sentence/510903.mp3",
@@ -14430,13 +14503,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 2.27,
-   "transcript": "我只有50日元。",
+   "transcript": "我只有五十零日元。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "c5d49f6130e80a8c",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "sentence-544891": {
@@ -14465,10 +14538,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "c867d84fba3b5e81",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,问生猴你好吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,问生猴你好吗?",
+   "x3Transcript": "温生好你好吗?温生好你好吗?温生好你好吗?"
   },
   "sentence-558665": {
    "path": "sentence/558665.mp3",
@@ -14627,14 +14701,15 @@
    "text": "十、二十、三十、四十、五十、六十、七十、八十、九十、一百。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 4.68,
+   "durationSec": 4.79,
    "transcript": "12、30、40、50、60、70、80、90、100",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "186b87c1d55a609f",
-   "checkVersion": 2
+   "checkVersion": 3,
+   "variant": "kecepatan-0.95"
   },
   "sentence-623180": {
    "path": "sentence/623180.mp3",
@@ -15701,9 +15776,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "4b45ce9c10dcd107",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-766751": {
    "path": "sentence/766751.mp3",
@@ -16532,10 +16607,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "1a79ef619fb43adc",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,灵在意前面。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是《灵在意前面》。",
+   "x3Transcript": "零在意前面,零在意前面,零在意前面。"
   },
   "sentence-817677": {
    "path": "sentence/817677.mp3",
@@ -17470,9 +17546,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "2fd98d080c8a2670",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-895788": {
    "path": "sentence/895788.mp3",
@@ -17532,10 +17608,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "110e0208e9e24645",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,我睡不住。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,我睡不住。",
+   "x3Transcript": "我睡不住,我睡不住,我睡不住。"
   },
   "sentence-919630": {
    "path": "sentence/919630.mp3",
@@ -19125,15 +19202,15 @@
    "text": "它们没有心吗？",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.56,
-   "transcript": "他们没有心忙。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.51,
+   "transcript": "他们没有心吗?",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "178642daeaec8048",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,他们没有心忙。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-1445924": {
    "path": "sentence/1445924.mp3",
@@ -20498,15 +20575,15 @@
    "text": "他通通都吃了。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.74,
-   "transcript": "他统统都吃了。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.69,
+   "transcript": "他通通都吃了,他通通都吃了,他通通都吃了。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 4,
    "hash": "e4272c98b5476df6",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,他统统都吃了。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-1964240": {
    "path": "sentence/1964240.mp3",
@@ -20830,14 +20907,15 @@
    "text": "昨天没学生去那。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.91,
-   "transcript": "昨天没学生去呢。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.99,
+   "transcript": "昨天没学生去纳。",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "8f6950c4248d74d4",
-   "checkVersion": 2
+   "checkVersion": 3,
+   "variant": "kecepatan-0.95"
   },
   "sentence-2050794": {
    "path": "sentence/2050794.mp3",
@@ -22008,10 +22086,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "398187a03be54fe3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,你的家人好吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,你的家人好吗?",
+   "x3Transcript": "你的家人好吗?"
   },
   "sentence-2440682": {
    "path": "sentence/2440682.mp3",
@@ -22357,9 +22436,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "cb6c329175bc0486",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-2807844": {
    "path": "sentence/2807844.mp3",
@@ -23469,15 +23548,15 @@
    "text": "她喜欢雨和雪。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.79,
-   "transcript": "他喜欢语和学。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.71,
+   "transcript": "他喜欢宇和雪。",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "5bd600cce1451d22",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,他喜欢语和学。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-3671543": {
    "path": "sentence/3671543.mp3",
@@ -24482,10 +24561,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "54da4817afc6ef2b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,这是谁的肠?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,这是谁的肠?",
+   "x3Transcript": "这是谁的长?这是谁的长?这是谁的长?"
   },
   "sentence-4760014": {
    "path": "sentence/4760014.mp3",
@@ -26327,14 +26407,15 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 1.84,
-   "transcript": "咖喱非常好吃",
+   "transcript": "咖喱非常好吃。",
    "ok": false,
    "check": "beda",
-   "via": "carrier",
-   "attempts": 3,
+   "via": "plain",
+   "attempts": 6,
    "hash": "63a66c99e5a15f3e",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,咖喱非常好吃。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,咖喱非常好吃。",
+   "x3Transcript": "卡里非常好吃,卡里非常好吃,卡里非常好吃。"
   },
   "sentence-5856753": {
    "path": "sentence/5856753.mp3",
@@ -26782,9 +26863,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "51f08d0cca6875a7",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-6057860": {
    "path": "sentence/6057860.mp3",
@@ -26962,10 +27043,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f6f5a9da6cbc768c",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,那个包是你的。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,那个包是你的。",
+   "x3Transcript": "那个包是你的。"
   },
   "sentence-6203798": {
    "path": "sentence/6203798.mp3",
@@ -27258,15 +27340,15 @@
    "text": "我们没水。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.26,
-   "transcript": "我们没谁。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.17,
+   "transcript": "我们没水",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "9c4ddee0c87846af",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,我们没谁。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "sentence-6822553": {
    "path": "sentence/6822553.mp3",
@@ -28391,14 +28473,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 1.31,
-   "transcript": "那是他讲",
-   "ok": false,
-   "check": "beda",
-   "via": "carrier",
+   "transcript": "那是他家,那是他家,那是他家。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "aee3f134d452d314",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,那是他讲。"
+   "checkVersion": 3
   },
   "sentence-8685595": {
    "path": "sentence/8685595.mp3",
@@ -29705,10 +29786,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "60e612f90c1bc4d1",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,那些是汤姆的。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,那些是汤姆的。",
+   "x3Transcript": "那些是汤姆的,那些是汤姆的,那些是汤姆的。"
   },
   "sentence-9433041": {
    "path": "sentence/9433041.mp3",
@@ -30308,10 +30390,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "c0c88e01761c86c7",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,我们喜欢学。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是我们喜欢学。",
+   "x3Transcript": "我们喜欢学。"
   },
   "sentence-9980215": {
    "path": "sentence/9980215.mp3",
@@ -30459,10 +30542,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "fc2f9c48cb8d17f5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,义字是木质的。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,义字是木质的。",
+   "x3Transcript": "一字是木质的,一字是木质的,一字是木质的。"
   },
   "sentence-10040417": {
    "path": "sentence/10040417.mp3",
@@ -30595,9 +30679,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "2feeab3d6fb31c2c",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "sentence-10083963": {
    "path": "sentence/10083963.mp3",
@@ -31756,10 +31840,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "c6dfb4f95f9bf1f5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是那些人想去",
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,那些人想去,",
+   "x3Transcript": "那些人想去,那些人想去,那些人想去。",
    "variant": "titik+cepat"
   },
   "sentence-10966776": {
@@ -32028,10 +32113,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "2ac5c806722e3e63",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,那些是最好的。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,那些是最好的。",
+   "x3Transcript": "那些是最好的,那些是最好的,那些是最好的。"
   },
   "sentence-11491162": {
    "path": "sentence/11491162.mp3",
@@ -33083,10 +33169,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "1435772a6d4c8907",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,书魁开了。",
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是《书魁开了》。",
+   "x3Transcript": "树葵开了。",
    "variant": "titik+cepat"
   },
   "sentence-13953734": {
@@ -33232,16 +33319,15 @@
    "text": "太见外了。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.48,
-   "transcript": "太见外冷",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 2.27,
+   "transcript": "太见外了",
+   "ok": true,
+   "check": "exact",
    "via": "carrier",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "623eb8764c812861",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是太见外冷。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "casual-c-u01-01": {
    "path": "casual/c-u01-01.mp3",
@@ -33370,15 +33456,15 @@
    "text": "嗯",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.61,
-   "transcript": "捏。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.5,
+   "transcript": "嗯。",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "6854502aa17dbb5b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是呢"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "casual-c-u02-01": {
    "path": "casual/c-u02-01.mp3",
@@ -33387,14 +33473,15 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.65,
-   "transcript": "6.",
+   "transcript": "聊。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d7f419232f05e4f7",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是两个词。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是两个词。",
+   "x3Transcript": "两、两、两。"
   },
   "casual-c-u02-02": {
    "path": "casual/c-u02-02.mp3",
@@ -33407,10 +33494,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "a667312398ee4ac4",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是SAT."
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是sat.",
+   "x3Transcript": "朗语"
   },
   "casual-c-u02-03": {
    "path": "casual/c-u02-03.mp3",
@@ -33526,14 +33614,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.8,
-   "transcript": "老板",
-   "ok": false,
-   "check": "beda",
+   "transcript": "老爸",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
    "attempts": 3,
    "hash": "ee9ee72effe0b503",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是漏斑。"
+   "checkVersion": 3
   },
   "casual-c-u05-02": {
    "path": "casual/c-u05-02.mp3",
@@ -33546,10 +33633,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "7225ba1807bed001",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是浪漫。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是浪漫。",
+   "x3Transcript": "老马,老马,老马。"
   },
   "casual-c-u05-03": {
    "path": "casual/c-u05-03.mp3",
@@ -33562,10 +33650,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "f1aefc2153dc1704",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是Bema。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是Bema。",
+   "x3Transcript": "变吗?变吗?变吗?"
   },
   "casual-c-u05-04": {
    "path": "casual/c-u05-04.mp3",
@@ -33640,10 +33729,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "ccd2d08e51d36f4d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是开斥。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是开斥。",
+   "x3Transcript": "开翅,开翅,开翅。"
   },
   "casual-c-u07-01": {
    "path": "casual/c-u07-01.mp3",
@@ -33682,14 +33772,13 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.7,
-   "transcript": "明尔",
-   "ok": false,
-   "check": "beda",
-   "via": "carrier",
+   "transcript": "明儿,明儿,明儿。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
    "attempts": 3,
    "hash": "1f07b59c01ced3df",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是明尔。"
+   "checkVersion": 3
   },
   "casual-c-u07-05": {
    "path": "casual/c-u07-05.mp3",
@@ -33743,16 +33832,17 @@
    "text": "里头",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.94,
-   "transcript": "力头",
+   "durationSec": 1.06,
+   "transcript": "里头里。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "8bcad7e66b6dea74",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是利偷。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是《历头历》。",
+   "x3Transcript": "里头里。",
+   "variant": "bingkai-awal"
   },
   "casual-c-u09-02": {
    "path": "casual/c-u09-02.mp3",
@@ -33897,15 +33987,15 @@
    "text": "宅",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.69,
-   "transcript": "嗯哉。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.6,
+   "transcript": "宅",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 5,
    "hash": "fcbec4071194abbc",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是Nzai。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "casual-c-u11-01": {
    "path": "casual/c-u11-01.mp3",
@@ -33980,10 +34070,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "a6f07ec8431443bd",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是尘。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是尘。",
+   "x3Transcript": "然、然、然。"
   },
   "casual-c-u16-07": {
    "path": "casual/c-u16-07.mp3",
@@ -34074,10 +34165,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "66ae968145eca49b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是漏味。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是漏味。",
+   "x3Transcript": "漏位,漏位,漏位。"
   },
   "casual-c-u15-02": {
    "path": "casual/c-u15-02.mp3",
@@ -34101,14 +34193,15 @@
    "voice": "P3",
    "speed": 1.0,
    "durationSec": 0.78,
-   "transcript": "楼道。",
+   "transcript": "楼道",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "6a49a3f1b48dfaf3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是漏斗。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是漏斗。",
+   "x3Transcript": "劳导,劳导,劳导。"
   },
   "casual-c-u08-07": {
    "path": "casual/c-u08-07.mp3",
@@ -34253,15 +34346,15 @@
    "text": "打游戏",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.97,
-   "transcript": "大游戏",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.05,
+   "transcript": "打游戏",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "3961b4295d79ac03",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是大游戏。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "casual-c-u19-04": {
    "path": "casual/c-u19-04.mp3",
@@ -34315,15 +34408,15 @@
    "text": "超",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 0.73,
-   "transcript": "抽筋。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.62,
+   "transcript": "抄,抄,抄。",
+   "ok": true,
+   "check": "homophone",
+   "via": "x3",
+   "attempts": 5,
    "hash": "90ce181dd15d5ae0",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是抽筋。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "casual-c-u20-07": {
    "path": "casual/c-u20-07.mp3",
@@ -34506,10 +34599,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "9667fa2e2fb1aff9",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是一两。",
+   "x3Transcript": "文莉雅",
    "variant": "titik+pelan"
   },
   "casual-slow-c-u02-02": {
@@ -34523,10 +34617,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "c80fd022f2eb30d2",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一算。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一算。",
+   "x3Transcript": "印萨,印萨,印萨。"
   },
   "casual-slow-c-u02-03": {
    "path": "casual-slow/c-u02-03.mp3",
@@ -34534,15 +34629,17 @@
    "text": "好多",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.06,
-   "transcript": "号多",
+   "durationSec": 1.43,
+   "transcript": "一号多,好多。",
    "ok": false,
    "check": "beda",
-   "via": "carrier",
-   "attempts": 3,
+   "via": "plain",
+   "attempts": 6,
    "hash": "3076052fbabc5254",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一号多。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一号多号。",
+   "x3Transcript": "一号多号。",
+   "variant": "bingkai-awal"
   },
   "casual-slow-c-u02-04": {
    "path": "casual-slow/c-u02-04.mp3",
@@ -34596,16 +34693,15 @@
    "text": "哥们儿",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.08,
-   "transcript": "鱼哥们。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.02,
+   "transcript": "哥们儿",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "a145bd66c604238c",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一个门。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "casual-slow-c-u04-04": {
    "path": "casual-slow/c-u04-04.mp3",
@@ -34643,15 +34739,17 @@
    "text": "老爸",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.98,
-   "transcript": "一楼吧。",
+   "durationSec": 1.07,
+   "transcript": "老伴",
    "ok": false,
    "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "via": "carrier",
+   "attempts": 6,
    "hash": "7b13f560a83528e4",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一漏半。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一老伴。",
+   "x3Transcript": "一楼半,一楼半,一楼半。",
+   "variant": "bingkai-awal-pelan"
   },
   "casual-slow-c-u05-02": {
    "path": "casual-slow/c-u05-02.mp3",
@@ -34664,10 +34762,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "35567da9da8fbfbf",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一楼吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "你这个词是一楼吗?",
+   "x3Transcript": "一楼吗?"
   },
   "casual-slow-c-u05-03": {
    "path": "casual-slow/c-u05-03.mp3",
@@ -34680,10 +34779,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "dd193854a8930894",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一本吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一本吗?",
+   "x3Transcript": "一般按摩。"
   },
   "casual-slow-c-u05-04": {
    "path": "casual-slow/c-u05-04.mp3",
@@ -34739,16 +34839,15 @@
    "text": "买单",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.16,
-   "transcript": "不买单。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.4,
+   "transcript": "买单",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "b98052fd53437768",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一幅美丹。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "casual-slow-c-u06-06": {
    "path": "casual-slow/c-u06-06.mp3",
@@ -34863,15 +34962,15 @@
    "text": "里头",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.04,
-   "transcript": "厉头。",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 1.05,
+   "transcript": "里头",
+   "ok": true,
+   "check": "exact",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 4,
    "hash": "251386fc8daef5ed",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是力通。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "casual-slow-c-u09-02": {
    "path": "casual-slow/c-u09-02.mp3",
@@ -34879,15 +34978,17 @@
    "text": "外头",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.06,
-   "transcript": "畏头",
+   "durationSec": 1.13,
+   "transcript": "无外头。",
    "ok": false,
    "check": "beda",
-   "via": "carrier",
-   "attempts": 3,
+   "via": "plain",
+   "attempts": 6,
    "hash": "a9c214c6390a3b63",
-   "checkVersion": 2,
-   "carrierTranscript": "这歌词是《无畏头》。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是为偷。",
+   "x3Transcript": "无外头。",
+   "variant": "bingkai-awal-pelan"
   },
   "casual-slow-c-u09-03": {
    "path": "casual-slow/c-u09-03.mp3",
@@ -35035,16 +35136,15 @@
    "text": "赖床",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.26,
-   "transcript": "你赖一床。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.46,
+   "transcript": "赖床",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 4,
    "hash": "737a19923409b612",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一泪床。",
-   "variant": "titik+pelan"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "casual-slow-c-u11-02": {
    "path": "casual-slow/c-u11-02.mp3",
@@ -35068,16 +35168,15 @@
    "text": "搞定",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 1.06,
-   "transcript": "已搞定。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 1.1,
+   "transcript": "搞定",
+   "ok": true,
+   "check": "exact",
+   "via": "carrier",
+   "attempts": 6,
    "hash": "2e098256577ac63b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是告定。",
-   "variant": "titik+cepat"
+   "checkVersion": 3,
+   "variant": "bingkai-awal-pelan"
   },
   "casual-slow-c-u11-04": {
    "path": "casual-slow/c-u11-04.mp3",
@@ -35101,15 +35200,15 @@
    "text": "馋",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.82,
-   "transcript": "遗产",
-   "ok": false,
-   "check": "beda",
+   "durationSec": 0.72,
+   "transcript": "缠",
+   "ok": true,
+   "check": "homophone",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "e68b98e79bbadfa2",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是以臣。"
+   "checkVersion": 3,
+   "variant": "bingkai-tengah"
   },
   "casual-slow-c-u16-07": {
    "path": "casual-slow/c-u16-07.mp3",
@@ -35196,14 +35295,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.97,
-   "transcript": "银楼位",
+   "transcript": "金楼卫",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "24ca80e650a718c3",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是音乐位。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是音乐位。",
+   "x3Transcript": "今老未,今老未,今老未。"
   },
   "casual-slow-c-u15-02": {
    "path": "casual-slow/c-u15-02.mp3",
@@ -35228,14 +35328,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.97,
-   "transcript": "金楼道",
+   "transcript": "金楼道。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "5dd515cd3e794f49",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一楼道。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一楼道。",
+   "x3Transcript": "金楼道,金楼道,金楼道。"
   },
   "casual-slow-c-u08-07": {
    "path": "casual-slow/c-u08-07.mp3",
@@ -35248,10 +35349,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "b3e45f37a1fec934",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是Eloi。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是N-O-E。",
+   "x3Transcript": "NLE, NLE, NLE。"
   },
   "casual-slow-c-u17-03": {
    "path": "casual-slow/c-u17-03.mp3",
@@ -35260,14 +35362,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 1.02,
-   "transcript": "一大公。",
+   "transcript": "银大公",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "bcb7b8229acbc0c2",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一大功。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一大功。",
+   "x3Transcript": "一大公,一大公,一大公。"
   },
   "casual-slow-c-u17-07": {
    "path": "casual-slow/c-u17-07.mp3",
@@ -35295,10 +35398,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "cf1584082db0bf44",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一首吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一首嘛。",
+   "x3Transcript": "寄扫码。"
   },
   "casual-slow-c-u18-02": {
    "path": "casual-slow/c-u18-02.mp3",
@@ -35311,10 +35415,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "d425ff7bd9935e74",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是义乌华顺。",
+   "x3Transcript": "无华顺,无华顺,无华顺。",
    "variant": "titik+pelan"
   },
   "casual-slow-c-u18-04": {
@@ -35339,14 +35444,15 @@
    "voice": "P3",
    "speed": 0.75,
    "durationSec": 0.99,
-   "transcript": "楼板",
+   "transcript": "一老板",
    "ok": false,
    "check": "beda",
-   "via": "carrier",
-   "attempts": 3,
+   "via": "plain",
+   "attempts": 6,
    "hash": "36fa929247b60b55",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一楼板。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是一楼板。",
+   "x3Transcript": "姬老板,姬老板,姬老板。"
   },
   "casual-slow-c-u19-01": {
    "path": "casual-slow/c-u19-01.mp3",
@@ -35390,10 +35496,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "70af693e45284dee",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是大游戏。",
+   "x3Transcript": "温大游戏。",
    "variant": "titik+cepat"
   },
   "casual-slow-c-u19-04": {
@@ -35448,15 +35555,17 @@
    "text": "超",
    "voice": "P3",
    "speed": 0.75,
-   "durationSec": 0.87,
-   "transcript": "映照。",
+   "durationSec": 0.72,
+   "transcript": "超级。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "746b4f8d6c3516a5",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是一抽。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是超级重要的。",
+   "x3Transcript": "超。",
+   "variant": "bingkai-tengah"
   },
   "casual-slow-c-u20-07": {
    "path": "casual-slow/c-u20-07.mp3",
@@ -36038,15 +36147,15 @@
    "text": "妈！",
    "voice": "L3",
    "speed": 1.0,
-   "durationSec": 0.65,
-   "transcript": "慢。",
-   "ok": false,
-   "check": "beda",
-   "via": "plain",
-   "attempts": 3,
+   "durationSec": 0.64,
+   "transcript": "妈妈妈。",
+   "ok": true,
+   "check": "exact",
+   "via": "x3",
+   "attempts": 4,
    "hash": "ca2fed05af0cd3e9",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是慢。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "dialog-n-u08-01": {
    "path": "dialog/n-u08-01.mp3",
@@ -36129,15 +36238,17 @@
    "text": "饺子？真的吗？",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.51,
-   "transcript": "胶子真的吗?",
+   "durationSec": 2.06,
+   "transcript": "饺子真的吗?饺子。",
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "7362826323d8529d",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是交字真的吗?"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,胶字真的吗?饺子。",
+   "x3Transcript": "焦字真的吗?饺子。",
+   "variant": "bingkai-awal-pelan"
   },
   "dialog-n-u09-01": {
    "path": "dialog/n-u09-01.mp3",
@@ -36196,10 +36307,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "b92772c78525415b",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是那一九字吧。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是那一九字吧。",
+   "x3Transcript": "那一脚字吧,那一脚字吧,那一脚字吧。"
   },
   "dialog-n-u09-05": {
    "path": "dialog/n-u09-05.mp3",
@@ -36332,9 +36444,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "949305725767552d",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "dialog-n-u11-02": {
@@ -36530,10 +36642,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "9848910a77055b90",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,师父去电影院,"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,师父去电影院,",
+   "x3Transcript": "师父去电影院,师父去电影院,师父去电影院。"
   },
   "dialog-n-u13-03": {
    "path": "dialog/n-u13-03.mp3",
@@ -36593,10 +36706,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "12a6fb75dbb0fc85",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,好谢谢师父。"
+   "checkVersion": 3,
+   "carrierTranscript": "这个词是,好谢谢师父。",
+   "x3Transcript": "好谢谢师父!好谢谢师父!好谢谢师父!"
   },
   "dialog-n-u13-07": {
    "path": "dialog/n-u13-07.mp3",
@@ -36669,10 +36783,11 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 6,
    "hash": "b26eba40f9baeb10",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "carrierTranscript": "这个词是,吃饿再睡十分钟。",
+   "x3Transcript": "吃饿再睡十分钟。",
    "variant": "titik+cepat"
   },
   "dialog-n-u14-05": {
@@ -36852,9 +36967,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "3f142ed87d5a485e",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "dialog-n-u16-06": {
    "path": "dialog/n-u16-06.mp3",
@@ -37181,15 +37296,15 @@
    "text": "好，我扫码。",
    "voice": "P3",
    "speed": 1.0,
-   "durationSec": 1.44,
-   "transcript": "好我扫满",
-   "ok": false,
-   "check": "beda",
-   "via": "carrier",
-   "attempts": 3,
+   "durationSec": 1.25,
+   "transcript": "好,我扫码。",
+   "ok": true,
+   "check": "exact",
+   "via": "plain",
+   "attempts": 4,
    "hash": "b59620eaafee0f35",
-   "checkVersion": 2,
-   "carrierTranscript": "这个词是,好我扫满。"
+   "checkVersion": 3,
+   "variant": "bingkai-awal"
   },
   "dialog-n-u20-01": {
    "path": "dialog/n-u20-01.mp3",
@@ -37323,9 +37438,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "c56e4457566a66c7",
-   "checkVersion": 2,
+   "checkVersion": 3,
    "variant": "titik+pelan"
   },
   "dialog-n-u21-04": {
@@ -37339,9 +37454,9 @@
    "ok": false,
    "check": "beda",
    "via": "plain",
-   "attempts": 3,
+   "attempts": 5,
    "hash": "d45f3afafb96fd66",
-   "checkVersion": 2
+   "checkVersion": 3
   },
   "dialog-n-u21-05": {
    "path": "dialog/n-u21-05.mp3",

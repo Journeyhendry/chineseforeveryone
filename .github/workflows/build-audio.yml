@@ -7,6 +7,10 @@ on:
         description: "Buat ulang item yang sebelumnya gagal cek Whisper"
         type: boolean
         default: false
+      recheck:
+        description: "Cek ulang SEMUA file dengan Whisper (tanpa sintesis ulang kecuali tetap gagal)"
+        type: boolean
+        default: false
   push:
     branches-ignore:
       - main
@@ -14,6 +18,9 @@ on:
       - scripts/tts-hsk1/build_audio.py
       - scripts/tts-hsk1/hsk1_items.py
       - scripts/tts-hsk1/native_audio.py
+      - scripts/tts-hsk1/check.py
+      - scripts/tts-hsk1/tone.py
+      - scripts/tts-hsk1/test_check.py
       - scripts/tts-hsk1/requirements.txt
       - data/hsk1/words.json
       - data/hsk1/sentences.json
@@ -32,6 +39,7 @@ concurrency:
 env:
   HF_HUB_DISABLE_TELEMETRY: "1"
   RETRY_FAILED: ${{ inputs.retry_failed && '1' || '0' }}
+  RECHECK: ${{ inputs.recheck && '1' || '0' }}
 
 jobs:
   plan:
@@ -46,6 +54,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Unit tests (checker)
+        run: |
+          set -euo pipefail
+          python -m pip install -q pytest numpy==1.26.4 pypinyin==0.53.0 opencc-python-reimplemented==0.1.7
+          python -m pytest scripts/tts-hsk1 -q
       - id: plan
         run: |
           set -euo pipefail
@@ -82,8 +95,9 @@ jobs:
           path: |
             ~/.cache/pip
             ~/.cache/huggingface
-          key: tts-hsk1-${{ runner.os }}-${{ hashFiles('scripts/tts-hsk1/requirements.txt', 'scripts/tts/voices.json') }}
+          key: tts-hsk1-whisper-large-v3-${{ runner.os }}-${{ hashFiles('scripts/tts-hsk1/requirements.txt', 'scripts/tts/voices.json') }}
           restore-keys: |
+            tts-hsk1-whisper-large-v3-${{ runner.os }}-
             tts-hsk1-${{ runner.os }}-
             tts-${{ runner.os }}-
       - name: Install Python packages
@@ -92,21 +106,24 @@ jobs:
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
           "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts-hsk1/requirements.txt
-          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|soundfile|huggingface|pypinyin)" || true
+          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|soundfile|huggingface|pypinyin|praat)" || true
       - name: Synthesize and check shard ${{ matrix.shard }}
         run: |
           set -euo pipefail
           mkdir -p "$WORK"
           "$RUNNER_TEMP/venv/bin/python" scripts/tts-hsk1/build_audio.py shard --shard ${{ matrix.shard }} --shards ${{ needs.plan.outputs.total }} --work "$WORK"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: audio-shard-${{ matrix.shard }}
           path: ${{ github.workspace }}/.tts-work/out
           retention-days: 3
+          if-no-files-found: ignore
 
+  # Rekaman penutur asli: terpisah, berbatas waktu, tidak menahan job audio; commit sendiri.
   native:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 35
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
@@ -118,17 +135,29 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
       - name: Fetch native recordings (Lingua Libre, free licenses only)
+        timeout-minutes: 30
         run: python scripts/tts-hsk1/native_audio.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: native-audio
-          path: |
-            public/audio/native
-            data/hsk1/native-audio.json
-          retention-days: 3
+      - name: Commit native recordings
+        if: always()
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in public/audio/native data/hsk1/native-audio.json; do [ -e "$p" ] && git add -A "$p"; done
+          if git diff --cached --quiet; then
+            echo "No native changes"
+          else
+            git commit -m "Data: HSK 1 native recordings"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 10))
+            done
+          fi
 
   merge:
-    needs: [plan, build, native]
+    needs: [plan, build]
     if: ${{ !cancelled() && needs.plan.result == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -146,11 +175,6 @@ jobs:
         with:
           pattern: audio-shard-*
           path: ${{ runner.temp }}/shards
-      - uses: actions/download-artifact@v4
-        continue-on-error: true
-        with:
-          name: native-audio
-          path: ${{ runner.temp }}/native
       - name: Merge shards
         run: |
           set -euo pipefail
@@ -159,16 +183,6 @@ jobs:
             for d in "$RUNNER_TEMP"/shards/*/; do inputs+=("$d"); done
           fi
           python scripts/tts-hsk1/build_audio.py merge --inputs "${inputs[@]}"
-      - name: Install native recordings
-        run: |
-          set -euo pipefail
-          if [ -d "$RUNNER_TEMP/native" ]; then
-            rm -rf public/audio/native
-            mkdir -p public/audio
-            cp -r "$RUNNER_TEMP/native/public/audio/native" public/audio/native
-            cp "$RUNNER_TEMP/native/data/hsk1/native-audio.json" data/hsk1/native-audio.json
-          fi
-          du -sh public/audio/hsk1 public/audio/native 2>/dev/null || true
       - name: Commit audio
         env:
           BRANCH: ${{ github.ref_name }}
@@ -177,13 +191,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A public/audio/hsk1 data/hsk1/audio-issues.json
-          for p in public/audio/native data/hsk1/native-audio.json; do [ -e "$p" ] && git add -A "$p"; done
           if git diff --cached --quiet; then
             echo "No audio changes"
           else
             git commit -m "Data: HSK 1 audio (P3/L3)"
-            git pull --rebase origin "$BRANCH"
-            git push origin "HEAD:$BRANCH"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 10))
+            done
           fi
       - name: Fail if a shard failed
         if: needs.build.result == 'failure'

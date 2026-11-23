@@ -2,6 +2,10 @@
 """Rekaman penutur asli (task 4b): Lingua Libre di Wikimedia Commons, hanya CC0 / CC BY / CC BY-SA.
 
 Hanya pustaka standar + ffmpeg (jalan di GitHub Actions; sesi kerja tidak bisa membuka Commons).
+Permintaan berkelompok dan berbatas waktu (DEADLINE_MIN): satu daftar judul berawalan
+"LL-Q9192 (cmn)-" (500 judul per permintaan), metadata 50 judul per permintaan, lalu unduh
+hanya rekaman terpilih. Selalu menulis data/hsk1/native-audio.json (boleh {}) dan
+public/audio/native/status.json (alasan bila kosong). Tidak pernah menggagalkan workflow.
 Hasil: public/audio/native/<wordId>-<n>.mp3, data/hsk1/native-audio.json dan salinannya
 public/audio/native/index.json (dibaca website). Maks 2 rekaman per kata; entri lama dipertahankan.
 Tatoeba tidak dipakai (lisensi audio di sentences.json: kosong/CC BY-NC).
@@ -26,8 +30,11 @@ sys.path.insert(0, str(ROOT / "scripts" / "tts"))
 import make_samples as ms  # noqa: E402
 
 API = "https://commons.wikimedia.org/w/api.php"
-UA = "xue-mandarin-audio-fetch/1.0 (open educational project)"
-CATEGORIES = ["Lingua Libre pronunciation-cmn", "Lingua Libre pronunciation-zh"]
+UA = "xue-mandarin-audio-fetch/2.0 (open educational project; batched Commons API reads)"
+PREFIXES = ["LL-Q9192 (cmn)-"]
+DEADLINE_MIN = 25
+LIST_DEADLINE_MIN = 12
+MAX_CANDIDATES = 6  # judul per kata yang dicek lisensinya
 MAX_PER_WORD = 2
 MAX_SECONDS = 4.0
 ALLOWED = re.compile(r"^(CC0(?: 1\.0)?|CC BY(?: \d\.\d)?|CC BY-SA(?: \d\.\d)?)(?: [A-Za-z]+)?$", re.I)
@@ -40,8 +47,17 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+T0 = time.time()
+
+
+def out_of_time(minutes: float = DEADLINE_MIN) -> bool:
+    return time.time() - T0 > minutes * 60
+
+
 def get(url: str, binary=False):
-    for i in range(6):
+    for i in range(4):
+        if out_of_time():
+            raise RuntimeError("batas waktu")
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -57,28 +73,55 @@ def get(url: str, binary=False):
 
 
 def api(**params):
-    time.sleep(1.0)  # pelan-pelan: Commons membatasi laju permintaan (429)
+    time.sleep(0.5)  # pelan-pelan: Commons membatasi laju permintaan (429)
     return get(API + "?" + urllib.parse.urlencode({**params, "format": "json", "formatversion": "2"}))
 
 
-def category_titles(cat: str) -> list[str]:
-    titles, cont = [], None
-    while True:
-        p = {"action": "query", "list": "categorymembers", "cmtitle": f"Category:{cat}", "cmnamespace": "6", "cmlimit": "500"}
+def prefix_titles(prefix: str, out: list[str]) -> None:
+    """Semua judul berkas berawalan prefix (500 per permintaan), ditambahkan ke out; berhenti bila waktu habis."""
+    cont = None
+    while not out_of_time(LIST_DEADLINE_MIN):
+        p = {"action": "query", "list": "allpages", "apnamespace": "6", "apprefix": prefix, "aplimit": "500"}
         if cont:
-            p["cmcontinue"] = cont
+            p["apcontinue"] = cont
         d = api(**p)
-        titles += [m["title"] for m in d.get("query", {}).get("categorymembers", [])]
-        cont = d.get("continue", {}).get("cmcontinue")
+        out += [m["title"] for m in d.get("query", {}).get("allpages", [])]
+        cont = d.get("continue", {}).get("apcontinue")
         if not cont:
-            return titles
+            return
+    log("[native] waktu daftar habis; daftar belum lengkap")
 
 
 def strip_html(s: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", s))).strip()
 
 
+def write_result(result: dict, note: str) -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    result = {k: result[k] for k in sorted(result)}
+    text = json.dumps(result, ensure_ascii=False, indent=1) + "\n"
+    DATA_FILE.write_text(text, encoding="utf-8")
+    (OUT_DIR / "index.json").write_text(text, encoding="utf-8")
+    (OUT_DIR / "status.json").write_text(json.dumps({"note": note, "words": len(result)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    log(f"[native] {note}")
+
+
 def main() -> int:
+    existing = {}
+    if DATA_FILE.exists():
+        existing = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+        existing = {k: v for k, v in existing.items() if all((ROOT / "public" / "audio" / e["path"]).exists() for e in v)}
+    try:
+        run(existing)
+    except Exception as e:  # noqa: BLE001
+        import traceback
+
+        traceback.print_exc()
+        write_result(existing, f"tidak selesai: {type(e).__name__}: {e}")
+    return 0
+
+
+def run(existing: dict) -> None:
     words = json.loads((ROOT / "data" / "hsk1" / "words.json").read_text(encoding="utf-8"))
     form_to_ids: dict[str, list[str]] = {}
     for w in words:
@@ -86,17 +129,15 @@ def main() -> int:
             form_to_ids.setdefault(form, []).append(w["id"])
 
     titles: list[str] = []
-    for cat in CATEGORIES:
+    for pre in PREFIXES:
         try:
-            t = category_titles(cat)
+            prefix_titles(pre, titles)
         except RuntimeError as e:
-            log(f"[native] Category:{cat} dilewati: {e}")
-            continue
-        log(f"[native] Category:{cat}: {len(t)} berkas")
-        titles += t
+            log(f"[native] daftar {pre} terputus: {e}")
+        log(f"[native] {pre}: {len(titles)} berkas terdaftar")
     if not titles:
-        log("[native] kategori Lingua Libre kosong / tidak terbaca")
-        return 1
+        write_result(existing, "Commons tidak terjangkau atau daftar Lingua Libre kosong; tanpa rekaman penutur asli")
+        return
     titles = sorted(set(titles))
 
     cands: dict[str, list[str]] = {}  # wordId -> judul
@@ -108,15 +149,18 @@ def main() -> int:
             cands.setdefault(wid, []).append(t)
     log(f"[native] kata dengan kandidat: {len(cands)} / {len(words)}")
 
-    existing = json.loads(DATA_FILE.read_text(encoding="utf-8")) if DATA_FILE.exists() else {}
-    existing = {k: v for k, v in existing.items() if all((ROOT / "public" / "audio" / e["path"]).exists() for e in v)}
+    for wid in cands:  # batasi kandidat per kata
+        cands[wid] = cands[wid][:MAX_CANDIDATES]
 
     # Metadata (lisensi, penulis, url) semua kandidat kata yang belum punya rekaman.
     need = sorted(w for w in cands if w not in existing)
     info: dict[str, dict] = {}
     all_titles = sorted({t for w in need for t in cands[w]})
-    for i in range(0, len(all_titles), 40):
-        d = api(action="query", prop="imageinfo", iiprop="url|extmetadata|user", titles="|".join(all_titles[i:i + 40]))
+    for i in range(0, len(all_titles), 50):
+        if out_of_time():
+            log("[native] waktu metadata habis")
+            break
+        d = api(action="query", prop="imageinfo", iiprop="url|extmetadata|user", titles="|".join(all_titles[i:i + 50]))
         for pg in d.get("query", {}).get("pages", []):
             ii = (pg.get("imageinfo") or [None])[0]
             if ii:
@@ -127,6 +171,9 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp())
     for wid in need:
+        if out_of_time():
+            log("[native] waktu unduh habis; sisa kata dilewati")
+            break
         picks = []
         seen = set()
         for t in cands[wid]:
@@ -173,12 +220,8 @@ def main() -> int:
     for p in OUT_DIR.glob("*.mp3"):
         if p not in keep:
             p.unlink()
-    result = {k: result[k] for k in sorted(result)}
-    text = json.dumps(result, ensure_ascii=False, indent=1) + "\n"
-    DATA_FILE.write_text(text, encoding="utf-8")
-    (OUT_DIR / "index.json").write_text(text, encoding="utf-8")
-    log(f"[native] kata dengan rekaman: {len(result)}; berkas: {sum(len(v) for v in result.values())}; lisensi ditolak: {skipped_license}")
-    return 0
+    note = f"{len(result)} kata punya rekaman ({sum(len(v) for v in result.values())} berkas); lisensi ditolak: {skipped_license}"
+    write_result(result, note)
 
 
 if __name__ == "__main__":

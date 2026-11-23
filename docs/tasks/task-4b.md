@@ -71,3 +71,21 @@ Bagian audio: Kokoro-82M v1.1-zh (Apache-2.0, hexgrad) untuk P3/L3; faster-whisp
 ## File
 - Baru: `scripts/tts-hsk1/hsk1_items.*`, `scripts/tts-hsk1/build_audio.py`, (opsional) `scripts/tts-hsk1/native_audio.py`, `scripts/tts-hsk1/requirements.txt`, `.github/workflows/build-audio.yml` (+ opsional `native-audio.yml`), `data/hsk1/audio-items.json`, `data/hsk1/audio-issues.json`, `data/hsk1/native-audio.json`, `public/audio/hsk1/**`, `public/audio/native/**`, tes di `src/lib/*.test.ts`.
 - Diubah: `src/lib/audio.ts`, `src/pages/learn/hooks.ts`, `src/pages/learn/parts.tsx` (+ layar kenalan kata/dialog yang memakai tombol suara), `src/i18n/{id,en}.json`, `scripts/check-data.ts`, `package.json` (skrip), `CREDITS.md`, `docs/tasks/task-4b.md` (catatan temuan saja).
+
+---
+
+## Ronde 2 (diambil alih 2026-11-23, kunci lama basi)
+
+Status saat diambil alih: skrip, workflow, pemutar website, tes sudah ada di cabang `task-4b`; 2.448 mp3 sudah dibuat (35 MB). **Belum lolos:**
+- **Acceptance 4**: Whisper `small` hanya 1.871/2.448 (76 %) lolos; kata 202/300 (67 %), kata pelan 39/300 (13 %), ungkapan 44/72, ungkapan pelan 14/72, dialog 103/125, kalimat 1.469/1.579. Dari contoh di `audio-issues.json`, banyak gagal karena **cek-nya yang lemah**, bukan suaranya: 儿 dibuang Whisper (那儿 → 那), 他/她/它, 姐姐 → 姊姊, sisa kalimat pembawa ("这个词是") ikut terbaca (白天 → 五白天, 病 → 得病, 半 → 一半), kalimat pembawa kecepatan 1.0 ditempel ke kata pelan 0.75 (吧/八/爸爸 pelan → "明白"), suku kata tunggal jadi kata Inggris ("Bye"). Sebagian mungkin memang salah ucap (吃 → 知, 出租车 → 出租撤, 打电话 → 戴电话) — itu harus tetap terdeteksi.
+- **Rekaman penutur asli**: job `native` habis waktu (60 menit) dan dibatalkan → `data/hsk1/native-audio.json` dan `public/audio/native/` belum ada.
+- `scripts/tts-hsk1/__pycache__/*.pyc` ikut ter-commit (harus dihapus + `.gitignore`).
+
+Perbaikan yang diminta (jujur — **jangan melonggarkan cek sampai semua lolos**; salah ucap sungguhan harus tetap gagal):
+1. **Whisper lebih kuat**: faster-whisper `large-v3` CPU int8, `language="zh"`, beam 5, `condition_on_previous_text=False`, `initial_prompt` netral berhuruf sederhana yang tidak memuat huruf target. Patok versi; cache model HF di Actions. Manifest mencatat model yang benar.
+2. **Normalisasi** (dengan tes unit Python, jalan di CI workflow sebelum build): t2s untuk teks & transkrip; tanda baca/spasi dibuang; angka Arab (sudah ada); **儿化**: lolos `erhua` bila sama setelah 儿 penanda erhua dibuang di kedua sisi (bukan 儿 di 儿子/女儿); homofon bernada (他/她/它) tetap `homophone`.
+3. **Kalimat pembawa** untuk item pendek: disintesis dengan **suara dan kecepatan yang sama** dengan item; transkrip lolos bila bagian akhirnya (sepanjang target) = target, atau pinyin bernadanya = pinyin target. Juga transkripsi tanpa pembawa; lolos bila salah satu lolos. Catat cara yang lolos.
+4. **Suku kata tunggal** (kata 1 huruf + versi pelan): dua bagian — (a) bunyi: salah satu bacaan transkrip (pypinyin heteronym, tanpa nada) = suku kata target tanpa nada; (b) nada: kontur F0 (praat-parselmouth atau librosa pyin, versi dipatok) diklasifikasi ke nada 1–4 dengan aturan sederhana yang tertulis di skrip + tes. Lolos bila (a) dan (b) lolos, atau transkrip cocok tepat pinyin bernada. Huruf bernada ringan (吧 吗 呢 的 了 …) hanya dicek bunyinya. Boleh meniru gagasan `scripts/tts-basics/tonecheck.py` di cabang `task-0`, tetapi **salin ke `scripts/tts-hsk1/`**, jangan sentuh file task 0.
+5. **Mode cek ulang** (`recheck`, input workflow + default saat skrip pengecek berubah): file yang `hash`-nya sama tidak disintesis ulang, cukup dicek ulang; yang tetap gagal → sintesis ulang dengan variasi yang ada (maks 3 percobaan). Manifest per file: transkrip, cara lolos / alasan gagal, nada terdeteksi (bila ada). mp3 yang tidak disintesis ulang tidak boleh berubah bytenya.
+6. **Rekaman penutur asli**: job terpisah dengan batas waktu wajar, permintaan API Commons berkelompok (mis. `prefix`/`list=categorymembers` sekali jalan, bukan satu permintaan per kata), tidak memblokir job audio. Hasil `native-audio.json` selalu ditulis (boleh `{}` bila sumber tidak bisa dihubungi, dengan catatan alasan). Tatoeba audio tetap tidak dipakai (lisensi kosong/NC).
+7. Target tetap: **kata (300, kecepatan normal) ≥ 95 %**, **keseluruhan ≥ 90 %**; sisanya di `audio-issues.json` dengan alasan.

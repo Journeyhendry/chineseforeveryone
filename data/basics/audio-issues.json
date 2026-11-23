@@ -3,7 +3,7 @@
   "note": "Dibuat oleh scripts/tts-basics/basics.py. File tetap dipakai situs (suara terbaik dari 3 percobaan), tetapi belum lolos cek otomatis (Whisper + nada F0); alasan per item.",
   "whisper": {
     "model": "faster-whisper large-v3",
-    "passed": 114,
+    "passed": 115,
     "total": 162
   },
   "pending": [],
@@ -547,18 +547,6 @@
       "reason": "nada: F0 terdeteksi nada 4, target nada 3",
       "attempts": 3,
       "file": "ph-n5.mp3"
-    },
-    {
-      "audioId": "ph-n8",
-      "hanzi": "八",
-      "pinyin": "bā",
-      "transcript": " | x3: 梦吧。梦吧。梦吧。",
-      "sound": true,
-      "toneTarget": 1,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 1",
-      "attempts": 3,
-      "file": "ph-n8.mp3"
     },
     {
       "audioId": "ph-n9",

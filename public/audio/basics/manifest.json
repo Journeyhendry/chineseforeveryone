@@ -2,7 +2,7 @@
   "version": 1,
   "scriptVersion": 3,
   "checkVersion": 3,
-  "generatedAt": "2026-11-23T07:07:56Z",
+  "generatedAt": "2026-11-23T07:31:29Z",
   "voice": {
     "code": "P3",
     "model": "Kokoro-82M v1.1-zh",
@@ -21,18 +21,18 @@
   },
   "whisper": {
     "model": "faster-whisper large-v3",
-    "passed": 114,
+    "passed": 115,
     "total": 162
   },
   "toneCheck": {
     "method": "praat-parselmouth F0, aturan di scripts/tts-basics/tonecheck.py",
     "refSemitones": [
-      93.73,
-      98.86
+      93.78,
+      99.02
     ],
     "refHz": [
       225,
-      302
+      305
     ]
   },
   "complete": true,
@@ -3597,12 +3597,12 @@
     },
     "ph-n8": {
       "path": "ph-n8.mp3",
-      "durationSec": 0.75,
-      "transcript": " | x3: 梦吧。梦吧。梦吧。",
-      "ok": false,
+      "durationSec": 0.71,
+      "transcript": "吧。",
+      "ok": true,
       "attempts": 3,
-      "check": "none",
-      "variant": "text + 。, speed 0.85",
+      "check": "exact",
+      "variant": "copy of py-i-b",
       "hanzi": "八",
       "pinyin": "bā",
       "checkVersion": 3,
@@ -3610,15 +3610,15 @@
       "toneTarget": 1,
       "toneDetected": 0,
       "f0": {
-        "s": 2.28,
-        "e": 2.16,
-        "mn": 1.92,
-        "mx": 4.71,
+        "s": 2.61,
+        "e": 2.15,
+        "mn": 1.73,
+        "mx": 4.77,
         "pmn": 0.0,
-        "mean": 3.01,
-        "frames": 37
+        "mean": 3.11,
+        "frames": 34
       },
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 1"
+      "reason": null
     },
     "ph-n9": {
       "path": "ph-n9.mp3",

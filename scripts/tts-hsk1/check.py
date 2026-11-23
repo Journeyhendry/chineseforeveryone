@@ -22,11 +22,13 @@ import difflib
 import re
 import unicodedata
 
-CHECK_VERSION = 3  # naikkan bila aturan pengecek berubah -> file yang gagal dicek ulang (recheck)
+CHECK_VERSION = 4  # naikkan bila aturan pengecek berubah -> file yang gagal dicek ulang (recheck)
+# Versi 4 (ronde 3, jalan kedua): perbaikan turunan "desah" untuk suku kata tunggal (build_audio); item
+# yang gagal di versi 3 dan BUKAN suku kata tunggal tidak diproses lagi (tidak ada yang baru baginya).
 # File yang LOLOS dengan versi ini tidak dicek ulang (aturan versi 3 hanya menambah cara lolos, kecuali
 # aturan homofon suku kata tunggal yang diperketat: itu dicek ulang dari transkrip tersimpan, lihat
 # still_passes()).
-PASS_COMPATIBLE = {2, 3}
+PASS_COMPATIBLE = {2, 3, 4}
 CARRIER = "这个词是"
 CARRIER_MAX_LETTERS = 6
 # Tidak memuat huruf target kata/ungkapan (diuji di test_check.py).
@@ -34,6 +36,10 @@ INITIAL_PROMPT = "简体普通朗诵录音。"
 
 # Varian tulis yang bukan beda bunyi/kata (t2s tidak mengubahnya).
 VARIANTS = str.maketrans({"姊": "姐", "妳": "你", "祢": "你", "牠": "它", "祂": "他", "啊": "啊"})
+
+# Bacaan heteronim pypinyin yang kuno/langka, tidak dipakai untuk cek bunyi: Whisper yang menulis 太
+# tiga kali untuk 他 hampir pasti mendengar "tai", bukan bacaan kuno tā.
+RARE_READINGS = {"太": {"ta"}}
 
 DIGITS = "零一二三四五六七八九"
 TONE_MARKS = {
@@ -123,7 +129,7 @@ class Checker:
         out = set()
         for rs in self._pinyin(ch, style=self._style.NORMAL, heteronym=True, errors=lambda c: [c]):
             out.update(r.replace("ü", "v") for r in rs)
-        return out
+        return out - RARE_READINGS.get(ch, set())
 
     # --- pencocokan teks ---------------------------------------------------
     def match(self, text: str, heard: str) -> str | None:
@@ -231,6 +237,12 @@ class Checker:
         hanya aturan yang diperketat di versi 3 -- homofon suku kata tunggal -- yang bisa berubah)."""
         if not entry.get("ok"):
             return False
-        if entry.get("check") != "homophone" or self.expected_tone(pinyin) is None or len(self.norm(text)) != 1:
+        how = entry.get("check")
+        if how not in ("homophone", "sound", "sound+tone") or self.expected_tone(pinyin) is None \
+                or len(self.norm(text)) != 1:
             return True
-        return self.toned_match(pinyin, entry.get("transcript", ""))
+        heard = self.norm(entry.get("transcript", ""))
+        parts = list(heard) if entry.get("via") == "x3" else [heard]
+        if how == "homophone":
+            return bool(parts) and all(self.toned_match(pinyin, h) for h in parts)
+        return bool(parts) and all(self.sound_match(pinyin, h) for h in parts)

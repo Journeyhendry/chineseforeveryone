@@ -232,3 +232,22 @@ def test_g2p_fix_still_needed():
     g = zh.ZHG2P(version="1.1")
     for w, ps in _ba().G2P_FIX.items():
         assert g(w)[0] != ps, w
+
+
+def test_rare_reading_not_used_for_sound():
+    assert "ta" not in C.sounds("太")
+    assert not x3("他", "tā", "太、太、太。", hz=RISE)["ok"]
+    assert not C.still_passes("他", "tā", {"ok": True, "check": "sound+tone", "via": "x3", "transcript": "太、太、太。"})
+    assert C.still_passes("块", "kuài", {"ok": True, "check": "sound+tone", "via": "plain", "transcript": "会。"})
+    assert C.still_passes("早", "zǎo", {"ok": True, "check": "exact", "via": "x3", "transcript": "早,早,早。"})
+
+
+def test_devoice_span_and_initials():
+    ba = _ba()
+    assert tone.devoice_span([(0.19, 0.31), (0.36, 0.62)]) == 0.36  # 小: "i" bersuara sebelum x
+    assert tone.devoice_span([(0.2, 0.5)]) is None
+    assert tone.devoice_span([(0.21, 0.49), (0.67, 0.7)]) is None  # bagian pendek di BELAKANG: tidak disentuh
+    assert tone.devoice_span([(0.1, 0.2), (0.45, 0.8)]) is None  # jeda terlalu jauh
+    assert ba.initial_of("xiǎo") == "x" and ba.initial_of("zhǎo") == "zh" and ba.initial_of("ài") == ""
+    assert ba.initial_of("jiā") in ba.DEVOICE_INITIALS and ba.initial_of("māo") not in ba.DEVOICE_INITIALS
+    assert tone.runs_from_f0([0.0, 0.01, 0.02, 0.03, 0.04], [0, 200, 210, 0, 190]) == [(0.01, 0.02), (0.04, 0.04)]

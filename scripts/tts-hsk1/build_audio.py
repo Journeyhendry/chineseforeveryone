@@ -55,9 +55,11 @@ R3_EXTRA_ATTEMPTS = 3  # ronde 3: variasi sintesis tambahan untuk item yang teta
 #   哪些 misaki "ㄋㄟ3ㄒㄝ1" (něixiē), data nǎxiē; 哪个 misaki "ㄋㄟ3ㄍㄜ4", data nǎge;
 #   谁 misaki "ㄕ为2" (shuí), data shéi; 只 misaki "ㄓ十3" (zhǐ), data zhī (kata bantu bilangan).
 G2P_FIX = {"哪些": "ㄋㄚ3ㄒㄝ1", "哪个": "ㄋㄚ3ㄍㄜ5", "谁": "ㄕㄟ2", "只": "ㄓ十1"}
+# Konsonan awal tak bersuara (frikatif/afrikat) tempat P3 kadang menambah bunyi "i" bersuara di depan.
+DEVOICE_INITIALS = {"j", "q", "x", "zh", "ch", "sh", "z", "c", "s", "f", "h"}
 KIND_ORDER = {"word": 0, "word-slow": 1, "casual": 2, "casual-slow": 3, "dialog": 4, "sentence": 5}
 MAX_SHARDS = 20
-ITEMS_PER_SHARD = 10  # item gagal diproses berat (beberapa sintesis + 3 cara cek); bagi rata ke banyak shard
+ITEMS_PER_SHARD = 4  # item gagal diproses berat (beberapa sintesis + 3 cara cek); bagi rata ke banyak shard
 # Batas durasi (detik, termasuk jeda 0,3 dtk): di luar ini hasilnya dianggap gagal (biasanya ngawur).
 DURATION_LIMITS = {
     "word": (0.3, 3.0), "word-slow": (0.3, 4.0),
@@ -118,12 +120,16 @@ def todo_items(items: list[dict], ck: "check.Checker | None" = None) -> list[tup
             out.append((it, "build"))
         elif force or (retry and not e["ok"]):
             out.append((it, "recheck"))
-        elif ck.norm(it["text"]) in G2P_FIX and not e.get("g2pFix"):
+        elif ck.norm(it["text"]) in G2P_FIX and not e.get("g2pFix") and not e.get("g2pTried"):
             out.append((it, "recheck"))  # dibuat dengan G2P yang bacaannya beda dari data -> coba koreksi
+        elif e["ok"] and not ck.still_passes(it["text"], it.get("pinyin"), e):
+            out.append((it, "recheck"))  # lolos dengan aturan lama yang kini diperketat
         elif e.get("checkVersion") == check.CHECK_VERSION:
             continue
-        elif e["ok"] and e.get("checkVersion") in check.PASS_COMPATIBLE and ck.still_passes(it["text"], it.get("pinyin"), e):
+        elif e["ok"] and e.get("checkVersion") in check.PASS_COMPATIBLE:
             continue
+        elif not e["ok"] and e.get("checkVersion") == 3 and len(ck.norm(it["text"])) != 1:
+            continue  # versi 4 hanya menambah perbaikan suku kata tunggal
         else:
             out.append((it, "recheck"))
     out.sort(key=lambda x: KIND_ORDER.get(x[0]["kind"], 9))  # kata dulu (stabil: urutan asli per jenis)
@@ -187,6 +193,15 @@ def synth(pipe, pack, text, speed, dst: Path):
     if not chunks:
         raise RuntimeError("tidak ada audio")
     ms.write_wav(dst, np.concatenate(chunks), SAMPLE_RATE)
+
+
+def initial_of(pinyin: str | None) -> str:
+    """Konsonan awal suku kata pertama ('' bila tanpa konsonan awal / tanpa pinyin)."""
+    if not pinyin:
+        return ""
+    base, _ = check.parse_pinyin(pinyin.split()[0])
+    m = re.match(r"(zh|ch|sh|[bpmfdtnlgkhjqxrzcsyw])", base)
+    return m.group(1) if m else ""
 
 
 def r3_variants(it: dict) -> list[str]:
@@ -500,7 +515,7 @@ def cmd_shard(args):
         old = old_files.get(it["key"]) if mode == "recheck" else None
         want = ck.expected_tone(it.get("pinyin")) if len(ck.norm(it["text"])) == 1 else None
         # langkah: (nama, berkas yang sudah ada | None)
-        g2p_redo = old is not None and ck.norm(it["text"]) in G2P_FIX and not old.get("g2pFix")
+        g2p_redo = old is not None and ck.norm(it["text"]) in G2P_FIX and not old.get("g2pFix") and not old.get("g2pTried")
         if g2p_redo:
             # bacaan baru (G2P_FIX): sintesis ulang dulu; file lama hanya cadangan terakhir
             steps = [(nm, None) for _, _, nm in variants(it)][:2] + [(r3_variants(it)[0], None)]
@@ -547,24 +562,55 @@ def cmd_shard(args):
                         "check": "galat", "via": "plain", "sim": -1}
             cand.update(variant=name, resynth=existing is None)
             consider(cand)
+            log(f"    {name}: {'OK' if cand['ok'] else 'GAGAL'}({cand['check']}, {cand['via']}) '{cand['transcript']}'"
+                f"{' | ' + cand['carrierTranscript'] if cand.get('carrierTranscript') else ''}"
+                f"{' | x3 ' + cand['x3Transcript'] if cand.get('x3Transcript') else ''}")
             if cand["ok"]:
                 break
-            # Bunyi lolos tetapi nada salah (suku kata tunggal bernada penuh): luruskan nada lalu cek ulang
-            # penuh. Hanya dipakai bila lolos (file asli tidak diubah bila tidak).
-            if want and cand.get("soundOnly") and cand["mp3"] is not None:
+            if cand["mp3"] is None or want is None:
+                continue
+            # Perbaikan turunan untuk suku kata tunggal (file baru hanya dipakai bila LOLOS cek penuh):
+            #   desah: bunyi "i" bersuara sebelum konsonan tak bersuara dibuang (tone.devoice_onset)
+            #   nada : bunyi lolos tetapi nada salah -> kontur nada diluruskan (tone.retarget)
+            done = False
+            chain = [(cand, name)]
+            if initial_of(it.get("pinyin")) in DEVOICE_INITIALS:
+                try:
+                    dv_wav, dv = ctx.tmp / "dv.wav", ctx.tmp / f"dv{attempt}.mp3"
+                    if tone.devoice_onset(cand["mp3"], dv_wav, ctx.tmp / "dvt.wav"):
+                        ms.normalize(dv_wav, dv, ctx.tmp)
+                        c2 = evaluate(ctx, it, dv, speed)
+                        c2.update(variant=f"{name}+desah", resynth=True, devoiced=True)
+                        log(f"    {name}+desah: {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) '{c2['transcript']}'")
+                        if c2["ok"]:
+                            consider(c2)
+                            done = True
+                        else:
+                            chain.append((c2, f"{name}+desah"))
+                except Exception:  # noqa: BLE001
+                    traceback.print_exc()
+            if done:
+                break
+            for base, bname in chain:
+                if not (want and base.get("soundOnly")):
+                    continue
                 fix_tried = True
                 try:
                     pf_wav, pf = ctx.tmp / "pf.wav", ctx.tmp / f"pf{attempt}.mp3"
-                    tone.retarget(cand["mp3"], pf_wav, want, ctx.speaker_ref(), ctx.tmp / "pft.wav")
+                    tone.retarget(base["mp3"], pf_wav, want, ctx.speaker_ref(), ctx.tmp / "pft.wav")
                     ms.normalize(pf_wav, pf, ctx.tmp)
                     c2 = evaluate(ctx, it, pf, speed)
-                    c2.update(variant=f"{name}+nada", resynth=True, pitchFixed=True, toneBefore=cand.get("tone"))
-                    log(f"    nada diluruskan ({name}): {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) -> '{c2['transcript']}'")
+                    c2.update(variant=f"{bname}+nada", resynth=True, pitchFixed=True, toneBefore=base.get("tone"),
+                              devoiced=base.get("devoiced"))
+                    log(f"    {bname}+nada: {'OK' if c2['ok'] else 'GAGAL'}({c2['check']}, {c2['via']}) '{c2['transcript']}'")
                     if c2["ok"]:
                         consider(c2)
+                        done = True
                         break
                 except Exception:  # noqa: BLE001
                     traceback.print_exc()
+            if done:
+                break
         b = best[1]
         if b["mp3"] is None:
             log(f"[{n}/{len(todo)}] {it['key']} GAGAL SINTESIS")
@@ -572,13 +618,15 @@ def cmd_shard(args):
         entry = {"path": mp3_rel(it), "kind": it["kind"], "text": it["text"], "voice": it["voice"], "speed": it["speed"],
                  "durationSec": b["dur"], "transcript": b["transcript"], "ok": b["ok"], "check": b["check"], "via": b["via"],
                  "attempts": max(attempt, 1), "hash": it["hash"], "checkVersion": check.CHECK_VERSION}
-        for k in ("tone", "carrierTranscript", "x3Transcript", "pitchFixed", "toneBefore"):
+        for k in ("tone", "carrierTranscript", "x3Transcript", "pitchFixed", "toneBefore", "devoiced"):
             if b.get(k) is not None:
                 entry[k] = b[k]
         if fix_tried and not b.get("pitchFixed"):
             entry["pitchFixTried"] = True
         if ck.norm(it["text"]) in G2P_FIX and b["resynth"]:
             entry["g2pFix"] = G2P_FIX[ck.norm(it["text"])]
+        elif g2p_redo or (old or {}).get("g2pTried"):
+            entry["g2pTried"] = True  # bacaan terkoreksi dicoba tetapi tidak lolos; file lama dipertahankan
         if b["variant"] != "asli":
             entry["variant"] = b["variant"]
         entry["resynth"] = b["resynth"]

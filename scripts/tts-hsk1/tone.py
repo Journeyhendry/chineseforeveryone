@@ -169,3 +169,54 @@ def retarget(src: Path, dst_wav: Path, tone: int, ref: tuple[float, float], tmp_
     call([tier, manip], "Replace pitch tier")
     out = call(manip, "Get resynthesis (overlap-add)")
     out.save(str(dst_wav), "WAV")
+
+
+def voiced_runs(audio: Path, tmp_wav: Path) -> tuple[list[tuple[float, float]], float]:
+    """Bagian bersuara (F0 terdeteksi) berurutan, (awal, akhir) detik; dan durasi klip."""
+    import parselmouth
+
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(audio), "-ac", "1", "-ar", "24000", str(tmp_wav)], check=True)
+    snd = parselmouth.Sound(str(tmp_wav))
+    pitch = snd.to_pitch_ac(time_step=0.01, pitch_floor=PARSELMOUTH_FLOOR, pitch_ceiling=PARSELMOUTH_CEIL)
+    return runs_from_f0(list(pitch.xs()), list(pitch.selected_array["frequency"])), snd.duration
+
+
+def runs_from_f0(xs: list[float], f0: list[float]) -> list[tuple[float, float]]:
+    runs, cur = [], None
+    for t, v in zip(xs, f0):
+        if v > 0:
+            cur = [t, t] if cur is None else [cur[0], t]
+        elif cur:
+            runs.append((cur[0], cur[1]))
+            cur = None
+    if cur:
+        runs.append((cur[0], cur[1]))
+    return runs
+
+
+def devoice_span(runs: list[tuple[float, float]], max_gap: float = 0.1) -> float | None:
+    """Waktu awal bagian bersuara utama bila ada bagian bersuara lain yang berakhir <= max_gap detik
+    sebelumnya (bunyi "i" bersuara yang P3 tambahkan sebelum konsonan tak bersuara x/j/q/sh...);
+    None bila tidak ada."""
+    if len(runs) < 2:
+        return None
+    i = max(range(len(runs)), key=lambda k: runs[k][1] - runs[k][0])
+    if i == 0 or runs[i][0] - runs[i - 1][1] > max_gap:
+        return None
+    return runs[i][0]
+
+
+def devoice_onset(src: Path, dst_wav: Path, tmp_wav: Path) -> bool:
+    """Ronde 3: buang suara rendah (< 2 kHz, high-pass 4x) dari bagian SEBELUM vokal utama untuk suku kata
+    berkonsonan awal tak bersuara (x/j/q/zh/ch/sh/z/c/s/f/h). Desis konsonan (> 2 kHz) tetap; vokal tidak
+    disentuh; sambungan crossfade 15 ms. False bila tidak ada bagian bersuara tambahan di depan."""
+    runs, _ = voiced_runs(src, tmp_wav)
+    t = devoice_span(runs)
+    if t is None:
+        return False
+    t = max(0.02, t - 0.01)
+    hp = ",".join(["highpass=f=2000"] * 4)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp_wav), "-filter_complex",
+                    f"[0]asplit[x][y];[x]atrim=0:{t:.3f},{hp}[a];[y]atrim={t:.3f},asetpts=PTS-STARTPTS[b];"
+                    "[a][b]acrossfade=d=0.015:c1=tri:c2=tri", str(dst_wav)], check=True)
+    return True

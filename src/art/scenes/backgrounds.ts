@@ -59,6 +59,27 @@ export const BACKGROUNDS: Record<string, (b: Box) => string> = {
     ].join(''),
   'home-left': (b) =>
     [rect(b.x, b.y, b.w, b.h, '#FCEBD0'), floorBand(b, '#E8C9A0', 0.25), line(d('M', b.x, horizon(b) - 10, 'L', b.x + b.w, horizon(b) - 10), 3, 0.15), windowAt(b.x + 28, b.y + 34, 76, 70)].join(''),
+  /** The Xiǎo family living room (unit Keluarga): the same room in every family scene, so it fills up. */
+  living: (b) => {
+    const hy = horizon(b)
+    const fx = b.x + b.w / 2
+    return [
+      rect(b.x, b.y, b.w, b.h, '#FCE6CF'),
+      el('path', { d: Array.from({ length: Math.ceil(b.w / 48) }, (_, i) => `M${b.x + 24 + i * 48} ${b.y}L${b.x + 24 + i * 48} ${hy - 40}`).join(''), fill: 'none', 'stroke-width': 2, opacity: 0.07 }),
+      rect(b.x, hy - 40, b.w, 40, '#F3D3B0'),
+      line(d('M', b.x, hy - 40, 'L', b.x + b.w, hy - 40), 3, 0.2),
+      floorBand(b, '#DDB58A', 0.25),
+      el('ellipse', { cx: fx, cy: hy + (b.y + b.h - hy) * 0.62, rx: b.w * 0.36, ry: (b.y + b.h - hy) * 0.3, fill: '#F2A7A0', opacity: 0.55, stroke: 'none' }),
+      windowAt(b.x + 22, b.y + 34, 70, 80),
+      el('rect', { x: fx - 40, y: b.y + 30, width: 80, height: 58, rx: 4, fill: '#C98B5B', 'stroke-width': 3 }),
+      el('rect', { x: fx - 32, y: b.y + 38, width: 64, height: 42, rx: 2, fill: '#DDF0FA', 'stroke-width': 2.5 }),
+      shape(d('M', fx - 32, b.y + 80, 'L', fx - 12, b.y + 56, 'L', fx + 2, b.y + 70, 'L', fx + 14, b.y + 60, 'L', fx + 32, b.y + 80, 'Z'), '#8CC97E', { sw: 2.5 }),
+      circle(fx + 18, b.y + 50, 5, '#FFD43B', { sw: 2 }),
+      // red paper-cut style knot (no writing) on the right
+      shape(d('M', b.x + b.w - 52, b.y + 40, 'L', b.x + b.w - 36, b.y + 56, 'L', b.x + b.w - 52, b.y + 72, 'L', b.x + b.w - 68, b.y + 56, 'Z'), '#E03131', { sw: 3 }),
+      line(d('M', b.x + b.w - 52, b.y + 24, 'L', b.x + b.w - 52, b.y + 40, 'M', b.x + b.w - 52, b.y + 72, 'L', b.x + b.w - 56, b.y + 92, 'M', b.x + b.w - 52, b.y + 72, 'L', b.x + b.w - 48, b.y + 92), 3),
+    ].join('')
+  },
   room: (b) => [rect(b.x, b.y, b.w, b.h, '#FCEBD0'), floorBand(b, '#E8C9A0', 0.25), line(d('M', b.x, horizon(b) - 10, 'L', b.x + b.w, horizon(b) - 10), 3, 0.15)].join(''),
   kitchen: (b) => {
     const hy = horizon(b)

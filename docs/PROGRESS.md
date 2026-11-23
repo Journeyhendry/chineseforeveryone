@@ -12,9 +12,9 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
 - [x] 3c · Character sheet + daftar visual — 2026-11-21 — Opus (2 subagent, diperiksa Opus) — 13 tokoh SVG (depan/samping/belakang + 4 ekspresi + lembar) dari sistem rakit `npm run build:characters`; `visuals.json` 500/500 kata (139 benda, 117 aksi, 123 komik, 48 posisi, 41 pasangan, 32 hitungan)
 - [x] 2b · Ganti HSK 1 ke 300 kata silabus 2025 — 2026-11-22 — Sonnet (diperiksa Opus, 1 kali perbaikan font) — 300 kata silabus ujian 2025 (becky82/mteh CC BY-SA 4.0, cocok 1:1 dengan PDF resmi CLEC); 266 ID lama dipakai ulang, 34 kata baru (L1-0501…0534), 234 kata lama ke `data/hsk2-preview/`; 21 unit (12–17 kata); 1.579 kalimat Tatoeba; 72 ungkapan santai; `npm run check:data` baru di CI
 - [x] 3d · Tulis ulang dialog jadi alami — 2026-11-22 — Opus menulis, Sonnet memeriksa (diperiksa Opus, 1 ronde tulis ulang) — 21 dialog baru (1 per unit, 10 jenis tempat, tiap dialog punya tujuan), semua lolos cek kosakata 300 kata; 7 dialog ditulis ulang setelah ronde 1, semua akhirnya bernilai ≥ 4 (`data/hsk1/dialog-review.json`); kartu dialog kini menampilkan tempat + tujuan
-- [ ] 0 · Tahap 0 "Dasar sebelum HSK 1" (keputusan pemilik 2026-11-22) — SEDANG DIKERJAKAN (mulai 2026-11-22 05:12 UTC)
+- [ ] 0 · Tahap 0 "Dasar sebelum HSK 1" (keputusan pemilik 2026-11-22) — SEDANG DIKERJAKAN (mulai 2026-11-23 05:45 UTC)
 - [x] 4a · Contoh suara — 2026-11-21 — Sonnet (diperiksa Opus) — 7 kandidat (P1–P4 perempuan, L1–L3 laki-laki; Kokoro v1.0/v1.1-zh, MeloTTS) × 5 kata + 2 kalimat lewat `tts-samples.yml`, mp3 seragam (−16 LUFS ±0.6), Whisper 42/49 cocok; halaman `samples.html`. **Pemilik memilih P3 (perempuan) + L3 (laki-laki) pada 2026-11-22.**
-- [ ] 4b · Audio semua materi
+- [ ] 4b · Audio semua materi — SEDANG DIKERJAKAN (mulai 2026-11-22 05:41 UTC)
 - [x] 5 · Tampilan dasar — 2026-11-21 — Sonnet (diperiksa Opus) — tema + mode gelap, menu samping (layar lebar) / menu bawah (layar sempit), hash router, teks ID/EN tanpa reload, halaman Pengaturan; axe & tanpa scroll samping di 375/1366 lolos
 - [x] 5b · Font Mandarin self-host — 2026-11-21 — Haiku (diperiksa Opus) — LXGW WenKai disubset & disimpan sendiri (inti 300 huruf HSK 1 ±64 KB per ketebalan, tambahan ±246 KB dimuat hanya bila perlu); Noto Sans SC dari Google Fonts dihapus; `npm run build:font`
 - [x] 6 · Layar unit + peta belajar — 2026-11-21 — Opus (diperiksa Opus, 1 kali perbaikan kecil) — peta 20 unit + bintang + tes loncat (≥ 80 %), ringkasan unit (versi santai + dialog), kenalan kata (huruf WenKai 120 px berwarna nada, animasi coretan Hanzi Writer data lokal 384 huruf, contoh kalimat Tatoeba), latihan 12 soal (4 jenis, keyboard 1–4/Enter/Spasi); suara sementara dari perangkat
@@ -22,7 +22,7 @@ Diperbarui oleh setiap sesi kerja. Format: `- [x] Task — tanggal — model —
   - [x] 6b tahap 1 · unit 1–3 — 2026-11-22 — Opus (diperiksa Opus) — 87 adegan SVG dari sistem rakit (`data/hsk1/scenes.json` → `npm run build:scenes`, ±10 KB/adegan), 39 pose tokoh, kartu ilustrasi di layar kenalan kata: gerak napas/kedip, klik/Enter/Spasi = aksi + suara, diam saat kurangi gerak; teks balon komik HTML huruf WenKai dengan kata disorot; axe lolos terang & gelap
 - [ ] 7 · Empat game
 - [x] 8 · Progres + ulangan harian + cadangan — 2026-11-22 — Sonnet (commit `Task 8` masuk & deploy sukses, tetapi sesinya terhenti sebelum mencentang; dicek ulang sesi 3d: semua tes lolos, layar Ulang & Progres terbuka tanpa galat, tanpa scroll samping di 375 px) — Leitner 5 kotak, target harian 10/20/30, hari berturut-turut, unduh/pulihkan cadangan
-- [ ] 9 · Kamus + Sumber + lapor salah
+- [ ] 9 · Kamus + Sumber + lapor salah — SEDANG DIKERJAKAN (mulai 2026-11-22 06:40 UTC)
 - [ ] 10 · Pengecekan akhir + rilis v1
 
 ## Butuh pemilik

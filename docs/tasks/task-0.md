@@ -76,3 +76,11 @@ Perbaikan yang diminta (tetap jujur — jangan melonggarkan cek sampai semua lol
 3. Manifest mencatat per file: transkrip, hasil bunyi, nada terdeteksi, alasan gagal. Ringkasan `whisper.passed/total` tetap.
 4. File yang suaranya tidak berubah tidak perlu disintesis ulang; cukup dicek ulang (opsi `--recheck`). Yang tetap gagal → sintesis ulang dengan variasi yang ada.
 5. Tetap: ≥ 90 % lolos; sisanya di `audio-issues.json` dengan alasan. Total ≤ 3 MB.
+
+### Hasil ronde 2 (2026-11-23)
+- Cek baru (CHECK_VERSION 4, `scripts/tts-basics/basics.py` + `tonecheck.py`): faster-whisper large-v3 (int8, zh, beam 5, prompt netral tanpa huruf target) + bunyi pypinyin + nada F0 (parselmouth, aturan tercatat di `tonecheck.py`, dites dengan sapuan sinus). Workflow dibagi ke 6 runner (large-v3 di CPU ~8 dtk/transkripsi), `--recheck` bawaan.
+- Hasil: **125/162 (77 %)** — pinyin 34/51, nada 14/21, perubahan nada 17/17, radikal 42/53, ungkapan 18/20. **Target 90 % belum tercapai.**
+- Sisa kegagalan sebagian besar memang suara P3 yang salah, bukan cek: Whisper dan F0 sepakat (mis. 鸡 jī → "记" + kontur turun, 诗 shī → "是/影视" + turun, 五 wǔ → "呜" + turun, 家 jiā → "叫/交", 椅 yǐ → "夜", 唱 chàng → "让/正"). Nada 1 suku kata tunggal paling sering dibaca P3 sebagai nada turun. Rincian per item di `data/basics/audio-issues.json`.
+- Mengganti huruf contoh dengan huruf lain berpinyin sama tidak membantu (P3 menyintesis dari pinyin → suara sama); sudah dicoba lalu dikembalikan.
+- Whisper int8 di CPU tidak sepenuhnya deterministik antar jenis runner (file yang sama 吃: sekali "吃", sekali "诗") — item di batas bisa berubah status.
+- Pilihan berikutnya (butuh keputusan): suara lain untuk suku kata tunggal (mis. rekaman/TTS lain), variasi sintesis baru, atau menerima 77 % dengan cadangan suara perangkat untuk item yang gagal.

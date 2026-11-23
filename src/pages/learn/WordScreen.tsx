@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { ReportButton } from '../../components/ReportButton'
 import { ArrowLeftIcon, ArrowRightIcon } from '../../components/icons'
 import { useT } from '../../i18n/context'
 import type { Example, LessonUnitInfo, UnitData } from '../../lib/lessons'
@@ -102,6 +103,11 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
           </section>
 
           <CasualBox items={casual} />
+
+          <ReportButton
+            word={{ ...word, unitId: info.id, unitOrder: info.order }}
+            context={`${t('learn.word.screen')} · ${t('learn.unitNo', { n: info.order })}`}
+          />
         </div>
       </div>
 
@@ -124,7 +130,7 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
   )
 }
 
-function ExampleItem({ ex }: { ex: Example }) {
+export function ExampleItem({ ex }: { ex: Example }) {
   const t = useT()
   const { settings } = useSettings()
   const lang = settings.lang

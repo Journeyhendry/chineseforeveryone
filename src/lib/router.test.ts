@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { learnHref, parseHash, parseLearnRoute, parseReviewRoute } from './router'
+import { dictionaryHref, learnHref, parseDictionaryRoute, parseHash, parseLearnRoute, parseReviewRoute } from './router'
 
 describe('parseHash', () => {
   it.each(['', '#', '#/', '/', '#//'])('kosong %j -> belajar', (h) => {
     expect(parseHash(h)).toEqual({ name: 'belajar', params: {}, segments: [] })
   })
 
-  it.each(['belajar', 'ulang', 'kamus', 'progres', 'pengaturan'])('rute %s', (n) => {
+  it.each(['belajar', 'ulang', 'kamus', 'progres', 'pengaturan', 'sumber'])('rute %s', (n) => {
     expect(parseHash(`#/${n}`).name).toBe(n)
     expect(parseHash(`#${n}`).name).toBe(n)
   })
@@ -100,5 +100,35 @@ describe('parseReviewRoute', () => {
   it('dari hash', () => {
     expect(parseReviewRoute(parseHash('#/ulang/sesi').segments)).toEqual({ screen: 'session' })
     expect(parseReviewRoute(parseHash('#/ulang').segments)).toEqual({ screen: 'home' })
+  })
+})
+
+describe('parseDictionaryRoute', () => {
+  it('pencarian dengan dan tanpa q', () => {
+    expect(parseDictionaryRoute([])).toEqual({ screen: 'search', q: '' })
+    expect(parseDictionaryRoute([], { q: 'ni3' })).toEqual({ screen: 'search', q: 'ni3' })
+    expect(parseHash('#/kamus?q=ni%20hao').params.q).toBe('ni hao')
+  })
+
+  it('detail kata, id dinormalkan ke huruf besar', () => {
+    expect(parseDictionaryRoute(['L1-0517'])).toEqual({ screen: 'word', wordId: 'L1-0517', q: '' })
+    expect(parseDictionaryRoute(['l1-0517'], { q: 'ni' })).toEqual({ screen: 'word', wordId: 'L1-0517', q: 'ni' })
+  })
+
+  it('segmen tak dikenal / terlalu banyak', () => {
+    expect(parseDictionaryRoute(['abc'])).toEqual({ screen: 'notfound' })
+    expect(parseDictionaryRoute(['L1-0517', 'x'])).toEqual({ screen: 'notfound' })
+    expect(parseDictionaryRoute(['L1-'])).toEqual({ screen: 'notfound' })
+  })
+})
+
+describe('dictionaryHref', () => {
+  it('membuat tautan dan bolak-balik dengan parser', () => {
+    expect(dictionaryHref({ screen: 'search', q: '' })).toBe('#/kamus')
+    expect(dictionaryHref({ screen: 'search', q: 'ni hao' })).toBe('#/kamus?q=ni%20hao')
+    expect(dictionaryHref({ screen: 'word', wordId: 'L1-0517', q: '你' })).toBe(`#/kamus/L1-0517?q=${encodeURIComponent('你')}`)
+    expect(dictionaryHref({ screen: 'notfound' })).toBe('#/kamus')
+    const r = parseHash(dictionaryHref({ screen: 'word', wordId: 'L1-0517', q: 'ni&x=1' }))
+    expect(parseDictionaryRoute(r.segments, r.params)).toEqual({ screen: 'word', wordId: 'L1-0517', q: 'ni&x=1' })
   })
 })

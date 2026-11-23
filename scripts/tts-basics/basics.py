@@ -30,6 +30,8 @@
   Tetap gagal -> file terbaik disimpan (ok: false) dan dicatat di data/basics/audio-issues.json.
 - Item yang hanzi/pinyin-nya tidak berubah, filenya ada dan sudah dicek dengan CHECK_VERSION ini
   tidak disentuh (kecuali --force), supaya push berikutnya tidak mengubah mp3 yang sudah ada.
+- Item gagal yang hanzi + pinyin-nya sama dengan item lain yang lolos memakai salinan file itu
+  (dicek lagi; bukan percobaan sintesis baru).
 - --recheck: file yang teksnya tidak berubah tetapi dicek dengan versi cek lama TIDAK disintesis
   ulang, hanya dicek ulang. Yang tetap gagal dihitung sebagai percobaan 1 lalu disintesis ulang
   dengan variasi 2 dan 3 (maksimal 3 percobaan). Tanpa --recheck file seperti itu dibuat ulang.
@@ -367,7 +369,23 @@ def main():
         return finalize(args, items, voice, old, merge_parts(Path(args.merge), out, items, old_files))
     mine = {it["audioId"] for k, it in enumerate(items) if k % args.shards == args.shard}
     modes = {it["audioId"]: (mode(it) if it["audioId"] in mine else "other") for it in items}
+    # Item gagal yang teksnya (hanzi + pinyin) sama dengan item lain yang sudah lolos: file yang lolos
+    # itu disalin lalu dicek lagi (tidak dihitung sebagai percobaan sintesis baru).
+    twins: dict[str, str] = {}
+    for it in items:
+        aid = it["audioId"]
+        if modes[aid] != "keep" or old_files[aid].get("ok"):
+            continue
+        for other in items:
+            o = old_files.get(other["audioId"])
+            if (other["audioId"] != aid and o and o.get("ok") and o.get("checkVersion") == CHECK_VERSION
+                    and same_text(other) and other["hanzi"] == it["hanzi"] and other["pinyin"] == it["pinyin"]):
+                twins[aid] = other["audioId"]
+                modes[aid] = "twin"
+                break
     n_keep = sum(m == "keep" for m in modes.values())
+    if twins:
+        log(f"[basics] salin file lolos dari item kembar: {twins}")
     n_re = sum(m == "recheck" for m in modes.values())
     n_mine = len(mine)
     log(f"[basics] shard {args.shard}/{args.shards}: {n_mine} item: {n_keep} tetap, {n_re} dicek ulang, "
@@ -418,6 +436,20 @@ def main():
             continue
         started = time.monotonic()
         tmp = work / aid
+        if m == "twin":
+            tmp.mkdir(parents=True, exist_ok=True)
+            src = twins[aid]
+            cur = tmp / "twin.mp3"
+            cur.write_bytes((out / old_files[src]["path"]).read_bytes())
+            res = checker.check(cur, it, tmp)
+            log_res(aid, it, f"salinan {src}", res)
+            if res["ok"]:
+                rel = f"{aid}.mp3"
+                (out / rel).write_bytes(cur.read_bytes())
+                files[aid] = entry(res, rel, old_files[aid]["attempts"], f"copy of {src}", it)
+            else:
+                files[aid] = old_files[aid]
+            continue
         tmp.mkdir(parents=True, exist_ok=True)
         best = None
         attempts = 0

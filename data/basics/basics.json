@@ -26,11 +26,11 @@
         "sound": "p",
         "group": "lips",
         "audioId": "py-i-p",
-        "hanzi": "泼",
+        "hanzi": "坡",
         "pinyin": "pō",
         "meaning": {
-          "id": "memercikkan, menyiram",
-          "en": "to splash"
+          "id": "lereng",
+          "en": "slope"
         },
         "distractors": [
           "bō",
@@ -162,11 +162,11 @@
         "sound": "k",
         "group": "throat",
         "audioId": "py-i-k",
-        "hanzi": "棵",
+        "hanzi": "科",
         "pinyin": "kē",
         "meaning": {
-          "id": "kata penggolong untuk pohon",
-          "en": "measure word for trees"
+          "id": "bidang ilmu",
+          "en": "branch of study"
         },
         "distractors": [
           "gē",
@@ -202,11 +202,11 @@
         "sound": "j",
         "group": "flat",
         "audioId": "py-i-j",
-        "hanzi": "基",
+        "hanzi": "鸡",
         "pinyin": "jī",
         "meaning": {
-          "id": "dasar",
-          "en": "base, foundation"
+          "id": "ayam",
+          "en": "chicken"
         },
         "distractors": [
           "qī",
@@ -242,11 +242,11 @@
         "sound": "x",
         "group": "flat",
         "audioId": "py-i-x",
-        "hanzi": "吸",
+        "hanzi": "西",
         "pinyin": "xī",
         "meaning": {
-          "id": "menghirup, mengisap",
-          "en": "to inhale; to suck"
+          "id": "barat",
+          "en": "west"
         },
         "distractors": [
           "jī",
@@ -262,11 +262,11 @@
         "sound": "zh",
         "group": "curled",
         "audioId": "py-i-zh",
-        "hanzi": "支",
+        "hanzi": "知",
         "pinyin": "zhī",
         "meaning": {
-          "id": "batang (kata penggolong)",
-          "en": "measure word for long, thin things"
+          "id": "tahu",
+          "en": "to know"
         },
         "distractors": [
           "zī",
@@ -302,11 +302,11 @@
         "sound": "sh",
         "group": "curled",
         "audioId": "py-i-sh",
-        "hanzi": "师",
+        "hanzi": "诗",
         "pinyin": "shī",
         "meaning": {
-          "id": "guru (seperti di 老师)",
-          "en": "teacher (as in 老师)"
+          "id": "puisi",
+          "en": "poem"
         },
         "distractors": [
           "sī",
@@ -342,11 +342,11 @@
         "sound": "z",
         "group": "teeth",
         "audioId": "py-i-z",
-        "hanzi": "姿",
+        "hanzi": "资",
         "pinyin": "zī",
         "meaning": {
-          "id": "sikap, postur",
-          "en": "posture"
+          "id": "modal",
+          "en": "funds"
         },
         "distractors": [
           "zhī",
@@ -402,11 +402,11 @@
         "sound": "y",
         "group": "semi",
         "audioId": "py-i-y",
-        "hanzi": "芽",
+        "hanzi": "牙",
         "pinyin": "yá",
         "meaning": {
-          "id": "tunas",
-          "en": "sprout, bud"
+          "id": "gigi",
+          "en": "tooth"
         },
         "distractors": [
           "wá",
@@ -422,11 +422,11 @@
         "sound": "w",
         "group": "semi",
         "audioId": "py-i-w",
-        "hanzi": "屋",
+        "hanzi": "乌",
         "pinyin": "wū",
         "meaning": {
-          "id": "rumah, ruangan",
-          "en": "house; room"
+          "id": "gagak, hitam",
+          "en": "crow, black"
         },
         "distractors": [
           "yū",
@@ -444,11 +444,11 @@
         "sound": "a",
         "group": "simple",
         "audioId": "py-f-a",
-        "hanzi": "啊",
+        "hanzi": "阿",
         "pinyin": "ā",
         "meaning": {
-          "id": "ah! (seruan)",
-          "en": "ah! (interjection)"
+          "id": "awalan nama panggilan",
+          "en": "name prefix"
         },
         "distractors": [
           "ō",
@@ -460,11 +460,11 @@
         "sound": "o",
         "group": "simple",
         "audioId": "py-f-o",
-        "hanzi": "玻",
+        "hanzi": "波",
         "pinyin": "bō",
         "meaning": {
-          "id": "kaca (seperti di 玻璃)",
-          "en": "glass (as in 玻璃)"
+          "id": "gelombang",
+          "en": "wave"
         },
         "distractors": [
           "bā",
@@ -476,11 +476,11 @@
         "sound": "e",
         "group": "simple",
         "audioId": "py-f-e",
-        "hanzi": "额",
+        "hanzi": "鹅",
         "pinyin": "é",
         "meaning": {
-          "id": "dahi",
-          "en": "forehead"
+          "id": "angsa",
+          "en": "goose"
         },
         "distractors": [
           "ó",
@@ -516,11 +516,11 @@
         "sound": "u",
         "group": "simple",
         "audioId": "py-f-u",
-        "hanzi": "舞",
+        "hanzi": "五",
         "pinyin": "wǔ",
         "meaning": {
-          "id": "tari, menari",
-          "en": "dance; to dance"
+          "id": "lima",
+          "en": "five"
         },
         "distractors": [
           "yǔ",
@@ -748,11 +748,11 @@
         "sound": "in",
         "group": "nasal",
         "audioId": "py-f-in",
-        "hanzi": "心",
+        "hanzi": "新",
         "pinyin": "xīn",
         "meaning": {
-          "id": "hati",
-          "en": "heart"
+          "id": "baru",
+          "en": "new"
         },
         "distractors": [
           "xīng",
@@ -900,11 +900,11 @@
         "sound": "ia",
         "group": "compound",
         "audioId": "py-f-ia",
-        "hanzi": "加",
+        "hanzi": "家",
         "pinyin": "jiā",
         "meaning": {
-          "id": "menambah",
-          "en": "to add"
+          "id": "rumah, keluarga",
+          "en": "home, family"
         },
         "distractors": [
           "jiē",
@@ -1139,11 +1139,11 @@
           },
           {
             "audioId": "tn-yi3",
-            "hanzi": "以",
+            "hanzi": "椅",
             "pinyin": "yǐ",
             "meaning": {
-              "id": "dengan, memakai (seperti di 可以)",
-              "en": "with, by means of (as in 可以)"
+              "id": "kursi",
+              "en": "chair"
             }
           },
           {

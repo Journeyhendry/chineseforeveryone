@@ -6,6 +6,7 @@ import {
   normalizeProgress,
   recordSkipResult,
   recordUnitResult,
+  recordGameResult,
   starsFor,
   suggestedUnit,
   unitStatus,
@@ -232,5 +233,42 @@ describe('kolom task 8 di normalizeProgress', () => {
   it('bolak-balik JSON stabil', () => {
     const p = normalizeProgress({ words: { a: { box: 2, due: '2026-12-01', seen: 1, wrong: 0, last: '2026-11-29' } }, streak: { last: '2026-11-29', current: 1, best: 2 } })
     expect(normalizeProgress(JSON.stringify(p))).toEqual(p)
+  })
+})
+
+describe('kolom games (task 7)', () => {
+  it('data lama tanpa games tetap valid', () => {
+    const p = normalizeProgress({ version: 1, units: {} })
+    expect(p.games).toBeUndefined()
+  })
+
+  it('recordGameResult: terbaik + jumlah main; bintang unit & kata tidak berubah', () => {
+    let p = recordUnitResult(emptyProgress(), 'u01', 0.7, new Date('2026-11-23T00:00:00Z'))
+    const before = { units: p.units, words: p.words }
+    p = recordGameResult(p, 'u01', 'jodohkan', 2)
+    p = recordGameResult(p, 'u01', 'jodohkan', 1)
+    p = recordGameResult(p, 'u01', 'kartu', 3)
+    p = recordGameResult(p, 'u02', 'nada', 9)
+    expect(p.games).toEqual({ u01: { jodohkan: { best: 2, plays: 2 }, kartu: { best: 3, plays: 1 } }, u02: { nada: { best: 3, plays: 1 } } })
+    expect(p.units).toEqual(before.units)
+    expect(p.words).toEqual(before.words)
+    expect(normalizeProgress(JSON.stringify(p)).games).toEqual(p.games)
+  })
+
+  it('nilai rusak dibuang per entri', () => {
+    const p = normalizeProgress({
+      version: 1,
+      units: {},
+      games: {
+        u01: { kartu: { best: 2, plays: 3 }, nada: { best: 7, plays: 1 }, susun: { best: 1.5, plays: 1 }, catur: { best: 1, plays: 1 }, jodohkan: { best: 1, plays: 0 } },
+        'BAD ID': { kartu: { best: 1, plays: 1 } },
+        u02: 'x',
+        u03: { kartu: null },
+        u04: { susun: { best: 0, plays: 2 } },
+      },
+    })
+    expect(p.games).toEqual({ u01: { kartu: { best: 2, plays: 3 } }, u04: { susun: { best: 0, plays: 2 } } })
+    expect(normalizeProgress({ version: 1, units: {}, games: [] }).games).toBeUndefined()
+    expect(normalizeProgress({ version: 1, units: {}, games: { u01: { kartu: { best: 1, plays: 1 } } } }, ['u02']).games).toBeUndefined()
   })
 })

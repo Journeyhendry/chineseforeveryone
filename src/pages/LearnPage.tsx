@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { NotFoundPage } from './NotFoundPage'
 import { useT } from '../i18n/context'
 import { loadIndex, loadUnit, type LessonIndex, type LessonUnitInfo } from '../lib/lessons'
@@ -11,6 +12,9 @@ import { PracticeScreen } from './learn/PracticeScreen'
 import { SkipScreen } from './learn/SkipScreen'
 import { UnitScreen } from './learn/UnitScreen'
 import { WordScreen } from './learn/WordScreen'
+
+// Game (task 7) dimuat malas supaya bundel awal tidak membengkak.
+const GamesRoute = lazy(() => import('./learn/games/GamesRoute'))
 
 /** Halaman Belajar: peta, ringkasan unit, kenalan kata, latihan, tes loncat. */
 export function LearnPage() {
@@ -39,6 +43,13 @@ function UnitRoute({ route, index, info }: { route: LearnRoute; index: LessonInd
       return <WordScreen info={info} data={data.data} n={route.index} />
     case 'practice':
       return <PracticeScreen index={index} info={info} data={data.data} />
+    case 'games':
+    case 'game':
+      return (
+        <Suspense fallback={<LoadState status="loading" retry={() => {}} />}>
+          <GamesRoute route={route} info={info} data={data.data} />
+        </Suspense>
+      )
     default:
       return <LearnNotFound />
   }

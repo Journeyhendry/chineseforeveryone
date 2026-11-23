@@ -65,3 +65,14 @@ Satu file sumber untuk semua isi Tahap 0 (teks ID + EN untuk setiap penjelasan).
 ## File
 - Baru: `data/basics/basics.json`, `data/basics/audio-issues.json` (dibuat workflow), `scripts/tts/basics.py` (+ requirements bila perlu), `.github/workflows/basics-audio.yml`, `public/audio/basics/**` (dibuat workflow), `src/lib/basics*.ts` (+ tes), `src/pages/learn/basics/**` (layar + CSS).
 - Diubah: `src/lib/router.ts`, `src/lib/progress.ts`, `src/lib/backup.ts` (bila perlu), `src/pages/LearnPage.tsx`, `src/pages/learn/MapScreen.tsx` (+ CSS), `src/lib/audio.ts` (hanya tambah pemutar file, perilaku kata tetap), `src/i18n/{id,en}.json`, input font/coretan + hasil `build:font`/`build:strokes`, `CREDITS.md`, `docs/tasks/task-0.md` (catatan temuan saja).
+
+## Ronde 2 (sesi 2026-11-23) — sisa pekerjaan
+
+Status saat diambil alih: data, layar, tes, workflow sudah ada di cabang `task-0`; semua cek npm lolos setelah digabung dengan `main`. **Yang belum lolos: acceptance 2** — cek audio hanya 105/162 (65 %) lolos, target ≥ 90 %. Hampir semua yang gagal adalah suku kata tunggal; transkrip Whisper `small` sering berupa kata Inggris ("much", "Bye") atau huruf traditional, jadi cek-nya sendiri yang lemah, belum tentu suaranya salah.
+
+Perbaikan yang diminta (tetap jujur — jangan melonggarkan cek sampai semua lolos):
+1. Whisper lebih kuat: faster-whisper `large-v3` (atau `large-v3-turbo`) CPU int8, `language="zh"` dipaksa, `initial_prompt` netral berhuruf sederhana yang **tidak** memuat huruf target, `condition_on_previous_text=False`, beam 5.
+2. Suku kata tunggal dinilai dua bagian terpisah: (a) **bunyi** — salah satu bacaan transkrip (pypinyin heteronym, tanpa nada) = suku kata target tanpa nada; (b) **nada** — kontur F0 (praat-parselmouth atau librosa pyin, versi dipatok) diklasifikasi ke nada 1–4 dengan aturan sederhana yang tercatat di skrip (datar-tinggi / naik / rendah-turun-naik atau rendah / turun). Lolos bila (a) dan (b) lolos, atau bila transkrip cocok tepat dengan pinyin bernada. Kata ≥ 2 huruf tetap: transkrip = hanzi. Nada ringan dalam kata tidak dicek F0.
+3. Manifest mencatat per file: transkrip, hasil bunyi, nada terdeteksi, alasan gagal. Ringkasan `whisper.passed/total` tetap.
+4. File yang suaranya tidak berubah tidak perlu disintesis ulang; cukup dicek ulang (opsi `--recheck`). Yang tetap gagal → sintesis ulang dengan variasi yang ada.
+5. Tetap: ≥ 90 % lolos; sisanya di `audio-issues.json` dengan alasan. Total ≤ 3 MB.

@@ -132,3 +132,23 @@ describe('dictionaryHref', () => {
     expect(parseDictionaryRoute(r.segments, r.params)).toEqual({ screen: 'word', wordId: 'L1-0517', q: 'ni&x=1' })
   })
 })
+
+describe('rute game (task 7)', () => {
+  it('pilih game + tiap jenis, bolak-balik href', () => {
+    expect(parseLearnRoute(['unit', 'u01', 'game'])).toEqual({ screen: 'games', unitId: 'u01' })
+    for (const game of ['kartu', 'jodohkan', 'nada', 'susun'] as const) {
+      const r = parseLearnRoute(['unit', 'u03', 'game', game])
+      expect(r).toEqual({ screen: 'game', unitId: 'u03', game })
+      expect(learnHref(r)).toBe(`#/belajar/unit/u03/game/${game}`)
+      expect(parseLearnRoute(parseHash(learnHref(r)).segments)).toEqual(r)
+    }
+    expect(learnHref({ screen: 'games', unitId: 'u02' })).toBe('#/belajar/unit/u02/game')
+    expect(parseLearnRoute(['UNIT', 'U01', 'GAME', 'KARTU'])).toEqual({ screen: 'game', unitId: 'u01', game: 'kartu' })
+  })
+
+  it('jenis tak dikenal / segmen berlebih -> notfound', () => {
+    expect(parseLearnRoute(['unit', 'u01', 'game', 'catur'])).toEqual({ screen: 'notfound' })
+    expect(parseLearnRoute(['unit', 'u01', 'game', 'kartu', 'x'])).toEqual({ screen: 'notfound' })
+    expect(parseLearnRoute(['unit', 'u01', 'games'])).toEqual({ screen: 'notfound' })
+  })
+})

@@ -29,7 +29,8 @@
   font-size: 18px;
 }
 
-.game-note {
+.game-note,
+.game > .key-hint {
   text-align: center;
   margin: 0;
 }
@@ -283,14 +284,12 @@
 }
 
 .match-card:not([aria-disabled='true']):hover {
-  transform: translateY(-2px);
   box-shadow: 0 7px 0 var(--ink);
 }
 
 .match-card.is-selected {
   outline: 4px solid var(--btn-purple);
   outline-offset: 2px;
-  transform: translateY(-2px);
 }
 
 .match-card.is-selected:focus-visible {
@@ -427,6 +426,10 @@
   font-size: 18px;
   font-weight: 800;
   color: var(--tone-label);
+}
+
+.game-nada .choices-tone {
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
 }
 
 .game-nada .choices-tone .choice-btn {

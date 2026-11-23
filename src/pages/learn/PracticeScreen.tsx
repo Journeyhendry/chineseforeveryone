@@ -94,8 +94,7 @@ function PracticeResult({
       message={message}
       extra={
         <a className="btn btn-yellow" href={learnHref({ screen: 'game', unitId: info.id, game: closingGame(info.order) })}>
-          {t('game.short')}
-          <span>: {t(`game.${closingGame(info.order)}.name`)}</span>
+          {`${t('game.short')}: ${t(`game.${closingGame(info.order)}.name`)}`}
         </a>
       }
     >

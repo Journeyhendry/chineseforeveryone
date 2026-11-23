@@ -3,46 +3,22 @@
   "note": "Dibuat oleh scripts/tts-basics/basics.py. File tetap dipakai situs (suara terbaik dari 3 percobaan), tetapi belum lolos cek otomatis (Whisper + nada F0); alasan per item.",
   "whisper": {
     "model": "faster-whisper large-v3",
-    "passed": 125,
+    "passed": 133,
     "total": 162
   },
   "pending": [],
   "items": [
     {
-      "audioId": "py-i-p",
-      "hanzi": "坡",
-      "pinyin": "pō",
-      "transcript": "破。 | x3: 破。破。破。",
-      "sound": true,
-      "toneTarget": 1,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 1",
-      "attempts": 3,
-      "file": "py-i-p.mp3"
-    },
-    {
       "audioId": "py-i-n",
       "hanzi": "拿",
       "pinyin": "ná",
-      "transcript": "因此, | x3: 音呢?音呢?音呢?",
-      "sound": false,
-      "toneTarget": 2,
-      "toneDetected": 0,
-      "reason": "bunyi: transkrip tidak berbunyi 'na'; nada: F0 terdeteksi tidak jelas, target nada 2",
-      "attempts": 3,
-      "file": "py-i-n.mp3"
-    },
-    {
-      "audioId": "py-i-k",
-      "hanzi": "科",
-      "pinyin": "kē",
-      "transcript": "课。 | x3: 可。可。可。",
+      "transcript": " | x3: 那。那。那。",
       "sound": true,
-      "toneTarget": 1,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 1",
-      "attempts": 3,
-      "file": "py-i-k.mp3"
+      "toneTarget": 2,
+      "toneDetected": 1,
+      "reason": "nada: F0 terdeteksi nada 1, target nada 2",
+      "attempts": 6,
+      "file": "py-i-n.mp3"
     },
     {
       "audioId": "py-i-j",
@@ -53,7 +29,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-j.mp3"
     },
     {
@@ -65,7 +41,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-x.mp3"
     },
     {
@@ -77,7 +53,7 @@
       "toneTarget": 1,
       "toneDetected": 3,
       "reason": "nada: F0 terdeteksi nada 3, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-zh.mp3"
     },
     {
@@ -89,7 +65,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-sh.mp3"
     },
     {
@@ -101,7 +77,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-z.mp3"
     },
     {
@@ -113,44 +89,32 @@
       "toneTarget": 2,
       "toneDetected": 0,
       "reason": "nada: F0 terdeteksi tidak jelas, target nada 2",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-i-y.mp3"
     },
     {
       "audioId": "py-i-w",
       "hanzi": "乌",
       "pinyin": "wū",
-      "transcript": "优优独播剧场—— | x3: 卧。卧。卧。",
+      "transcript": "Woof! | x3: 卧。卧。卧。",
       "sound": false,
       "toneTarget": 1,
-      "toneDetected": 3,
-      "reason": "bunyi: transkrip tidak berbunyi 'wu'; nada: F0 terdeteksi nada 3, target nada 1",
-      "attempts": 3,
+      "toneDetected": 1,
+      "reason": "bunyi: transkrip tidak berbunyi 'wu'",
+      "attempts": 6,
       "file": "py-i-w.mp3"
     },
     {
       "audioId": "py-f-a",
       "hanzi": "阿",
       "pinyin": "ā",
-      "transcript": "Like。 | x3: likelikelike",
+      "transcript": "嘞。 | x3: ",
       "sound": false,
       "toneTarget": 1,
-      "toneDetected": 3,
-      "reason": "bunyi: transkrip tidak berbunyi 'a'; nada: F0 terdeteksi nada 3, target nada 1",
-      "attempts": 3,
+      "toneDetected": 1,
+      "reason": "bunyi: transkrip tidak berbunyi 'a'",
+      "attempts": 6,
       "file": "py-f-a.mp3"
-    },
-    {
-      "audioId": "py-f-e",
-      "hanzi": "鹅",
-      "pinyin": "é",
-      "transcript": "呃? | x3: 呜呜呜",
-      "sound": true,
-      "toneTarget": 2,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 2",
-      "attempts": 3,
-      "file": "py-f-e.mp3"
     },
     {
       "audioId": "py-f-u",
@@ -161,7 +125,7 @@
       "toneTarget": 3,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 3",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-f-u.mp3"
     },
     {
@@ -173,7 +137,7 @@
       "toneTarget": 4,
       "toneDetected": 4,
       "reason": "bunyi: transkrip tidak berbunyi 'ai'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-f-ai.mp3"
     },
     {
@@ -185,7 +149,7 @@
       "toneTarget": 3,
       "toneDetected": 0,
       "reason": "nada: F0 terdeteksi tidak jelas, target nada 3",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-f-ie.mp3"
     },
     {
@@ -197,7 +161,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-f-in.mp3"
     },
     {
@@ -209,32 +173,8 @@
       "toneTarget": 1,
       "toneDetected": 3,
       "reason": "bunyi: transkrip tidak berbunyi 'jia'; nada: F0 terdeteksi nada 3, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "py-f-ia.mp3"
-    },
-    {
-      "audioId": "tn-ma3",
-      "hanzi": "马",
-      "pinyin": "mǎ",
-      "transcript": "妈妈。 | x3: 妈妈。",
-      "sound": true,
-      "toneTarget": 3,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 3",
-      "attempts": 3,
-      "file": "tn-ma3.mp3"
-    },
-    {
-      "audioId": "tn-ba2",
-      "hanzi": "拔",
-      "pinyin": "bá",
-      "transcript": "吧! | x3: 吧。吧。吧。",
-      "sound": true,
-      "toneTarget": 2,
-      "toneDetected": 0,
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 2",
-      "attempts": 3,
-      "file": "tn-ba2.mp3"
     },
     {
       "audioId": "tn-ba4",
@@ -245,31 +185,31 @@
       "toneTarget": 4,
       "toneDetected": 4,
       "reason": "bunyi: transkrip tidak berbunyi 'ba'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "tn-ba4.mp3"
     },
     {
       "audioId": "tn-yi3",
       "hanzi": "椅",
       "pinyin": "yǐ",
-      "transcript": "夜。 | x3: 夜。夜。夜。",
-      "sound": false,
+      "transcript": "唯一。 | x3: 录音室。",
+      "sound": true,
       "toneTarget": 3,
-      "toneDetected": 3,
-      "reason": "bunyi: transkrip tidak berbunyi 'yi'",
-      "attempts": 3,
+      "toneDetected": 0,
+      "reason": "nada: F0 terdeteksi tidak jelas, target nada 3",
+      "attempts": 6,
       "file": "tn-yi3.mp3"
     },
     {
       "audioId": "tn-tang3",
       "hanzi": "躺",
       "pinyin": "tǎng",
-      "transcript": "腔语。 | x3: tongue",
-      "sound": false,
+      "transcript": "一趟。 | x3: 一趟 一趟 一趟",
+      "sound": true,
       "toneTarget": 3,
-      "toneDetected": 3,
-      "reason": "bunyi: transkrip tidak berbunyi 'tang'",
-      "attempts": 3,
+      "toneDetected": 1,
+      "reason": "nada: F0 terdeteksi nada 1, target nada 3",
+      "attempts": 6,
       "file": "tn-tang3.mp3"
     },
     {
@@ -281,44 +221,8 @@
       "toneTarget": null,
       "toneDetected": null,
       "reason": "transkrip '那么' != '妈妈'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "tn-n-mama.mp3"
-    },
-    {
-      "audioId": "tn-n-haoma",
-      "hanzi": "好吗",
-      "pinyin": "hǎoma",
-      "transcript": "好慢。",
-      "sound": null,
-      "toneTarget": null,
-      "toneDetected": null,
-      "reason": "transkrip '好慢' != '好吗'",
-      "attempts": 3,
-      "file": "tn-n-haoma.mp3"
-    },
-    {
-      "audioId": "rd-chi1-5403",
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "transcript": "确定。 | x3: 去。去。去。",
-      "sound": false,
-      "toneTarget": 1,
-      "toneDetected": 4,
-      "reason": "bunyi: transkrip tidak berbunyi 'chi'; nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
-      "file": "rd-chi1-5403.mp3"
-    },
-    {
-      "audioId": "rd-chang4-5531",
-      "hanzi": "唱",
-      "pinyin": "chàng",
-      "transcript": "让。 | x3: 正正正",
-      "sound": false,
-      "toneTarget": 4,
-      "toneDetected": 4,
-      "reason": "bunyi: transkrip tidak berbunyi 'chang'",
-      "attempts": 3,
-      "file": "rd-chang4-5531.mp3"
     },
     {
       "audioId": "rd-ji1-673a",
@@ -329,7 +233,7 @@
       "toneTarget": 1,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-ji1-673a.mp3"
     },
     {
@@ -341,7 +245,7 @@
       "toneTarget": 3,
       "toneDetected": 3,
       "reason": "bunyi: transkrip tidak berbunyi 'yi'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-yi3-6905.mp3"
     },
     {
@@ -353,7 +257,7 @@
       "toneTarget": 2,
       "toneDetected": 1,
       "reason": "nada: F0 terdeteksi nada 1, target nada 2",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-shi2-65f6.mp3"
     },
     {
@@ -365,7 +269,7 @@
       "toneTarget": 3,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 3",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-wan3-665a.mp3"
     },
     {
@@ -377,7 +281,7 @@
       "toneTarget": 3,
       "toneDetected": 4,
       "reason": "bunyi: transkrip tidak berbunyi 'zhao'; nada: F0 terdeteksi nada 4, target nada 3",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-zhao3-627e.mp3"
     },
     {
@@ -389,7 +293,7 @@
       "toneTarget": 2,
       "toneDetected": 2,
       "reason": "bunyi: transkrip tidak berbunyi 'shei'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-shei2-8c01.mp3"
     },
     {
@@ -401,7 +305,7 @@
       "toneTarget": 3,
       "toneDetected": 3,
       "reason": "bunyi: transkrip tidak berbunyi 'zen'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-zen3-600e.mp3"
     },
     {
@@ -413,7 +317,7 @@
       "toneTarget": 2,
       "toneDetected": 2,
       "reason": "bunyi: transkrip tidak berbunyi 'cha'",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-cha2-8336.mp3"
     },
     {
@@ -425,7 +329,7 @@
       "toneTarget": 1,
       "toneDetected": 3,
       "reason": "bunyi: transkrip tidak berbunyi 'jia'; nada: F0 terdeteksi nada 3, target nada 1",
-      "attempts": 3,
+      "attempts": 6,
       "file": "rd-jia1-5bb6.mp3"
     },
     {
@@ -437,7 +341,7 @@
       "toneTarget": 3,
       "toneDetected": 4,
       "reason": "nada: F0 terdeteksi nada 4, target nada 3",
-      "attempts": 3,
+      "attempts": 6,
       "file": "ph-n5.mp3"
     },
     {
@@ -449,7 +353,7 @@
       "toneTarget": 2,
       "toneDetected": 1,
       "reason": "nada: F0 terdeteksi nada 1, target nada 2",
-      "attempts": 3,
+      "attempts": 6,
       "file": "ph-n10.mp3"
     }
   ]

@@ -195,6 +195,9 @@
   .is-playing[data-play='origin'] .morph-from {
     animation: sc-morph-from 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
   }
+  .is-playing[data-play='origin'] .morph-from.drop {
+    animation: sc-drop-morph 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
+  }
   .is-playing[data-play='origin'] .morph-to {
     animation: sc-morph-to 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
   }
@@ -402,7 +405,17 @@
 }
 @keyframes sc-morph-from {
   0% { transform: translateX(0); opacity: 1; }
-  12% { transform: translateX(-10px); opacity: 1; }
+  20% { transform: translateX(-10px); opacity: 1; }
+  40% { transform: translateX(150px) scale(0.85); opacity: 0.9; }
+  50% { transform: translateX(210px) scale(0.7); opacity: 0; }
+  80% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes sc-drop-morph {
+  0% { transform: translateY(-120px); opacity: 0; }
+  8% { opacity: 1; }
+  18% { transform: translateY(5px); }
+  24% { transform: translate(0, 0); opacity: 1; }
   40% { transform: translateX(150px) scale(0.85); opacity: 0.9; }
   50% { transform: translateX(210px) scale(0.7); opacity: 0; }
   80% { transform: translateX(0); opacity: 0; }

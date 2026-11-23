@@ -17,6 +17,7 @@ import {
   type SceneIndex,
   type ScenesFile,
 } from './scenes/index.ts'
+import { GLYPH_STROKES } from './scenes/glyphs.ts'
 import { checkXml } from './xml-check.ts'
 
 const data = scenesData as ScenesFile
@@ -194,5 +195,56 @@ describe('scene SVG files', () => {
   it('averages 20 KB or less per scene', () => {
     const total = svgFiles.reduce((n, [, src]) => n + new TextEncoder().encode(src).length, 0)
     expect(total / svgFiles.length).toBeLessThanOrEqual(20 * KB)
+  })
+})
+
+describe('tahap 2: units u01–u08', () => {
+  const UNITS = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08']
+  const byHanzi = (h: string) => data.scenes.find((s) => s.hanzi === h && UNITS.includes(s.unitId))
+  const FAMILY = ['家', '家人', '爸爸', '妈妈', '哥哥', '姐姐', '弟弟', '妹妹', '儿子', '女儿']
+  const XIAO = ['yeye', 'nainai', 'baba', 'mama', 'gege', 'meimei']
+
+  it('gives every word of units u01–u08 exactly one scene (120 HSK 1 scenes in all)', () => {
+    for (const u of units.filter((u) => UNITS.includes(u.id))) {
+      for (const w of u.words) expect(data.scenes.filter((s) => s.wordId === w), `${u.id} ${words.get(w)?.hanzi}`).toHaveLength(1)
+    }
+    expect(data.scenes).toHaveLength(120)
+  })
+
+  it('puts the family words of u08 in the same Xiǎo family living room, full for 家 and 家人', () => {
+    for (const h of FAMILY) {
+      const s = byHanzi(h)
+      expect(s, h).toBeTruthy()
+      expect(s?.background, h).toBe('living')
+      expect(s?.panels.every((p) => (p.background ?? 'living') === 'living'), h).toBe(true)
+    }
+    for (const h of ['家', '家人']) {
+      const ids = byHanzi(h)?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
+      expect([...new Set(ids)].sort(), h).toEqual([...XIAO].sort())
+    }
+  })
+
+  it('plays the origin animation for 人 and 家: the picture next to the character drawn stroke by stroke', () => {
+    for (const h of ['人', '家']) {
+      const s = byHanzi(h)
+      expect(s?.play, h).toBe('origin')
+      const props = s?.panels.flatMap((p) => p.props) ?? []
+      expect(props.some((p) => p.roles?.includes('morph-from')), h).toBe(true)
+      const glyph = props.find((p) => p.id === 'glyph')
+      expect(glyph?.value, h).toBe(h)
+      expect(glyph?.roles, h).toContain('morph-to')
+      const svg = built.get(`${s?.wordId}.svg`) as string
+      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
+      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
+    }
+  })
+
+  it('shows three animals and the digit 3 for 只, and the number 1000 for 千', () => {
+    const zhi = byHanzi('只')?.panels.flatMap((p) => p.props) ?? []
+    expect(zhi.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(3)
+    expect(zhi.find((p) => p.id === 'digit')?.value).toBe('3')
+    const qian = byHanzi('千')?.panels.flatMap((p) => p.props) ?? []
+    expect(qian.find((p) => p.id === 'badge')?.value).toBe('1000')
+    expect(qian.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(10)
   })
 })

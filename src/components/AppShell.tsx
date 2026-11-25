@@ -9,6 +9,7 @@ import { ReviewPage } from '../pages/ReviewPage'
 import { DictionaryPage } from '../pages/DictionaryPage'
 import { ProgressPage } from '../pages/ProgressPage'
 import { SettingsPage } from '../pages/SettingsPage'
+import { SourcesPage } from '../pages/SourcesPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import './AppShell.css'
 
@@ -25,6 +26,7 @@ const TITLE_KEYS: Record<RouteName, MessageKey> = {
   kamus: 'page.dictionary.title',
   progres: 'page.progress.title',
   pengaturan: 'settings.title',
+  sumber: 'page.sources.title',
   notfound: 'notfound.title',
 }
 
@@ -40,6 +42,8 @@ function Page({ name }: { name: RouteName }) {
       return <ProgressPage />
     case 'pengaturan':
       return <SettingsPage />
+    case 'sumber':
+      return <SourcesPage />
     default:
       return <NotFoundPage />
   }
@@ -53,8 +57,8 @@ export function AppShell() {
   const firstRender = useRef(true)
 
   const title = t('app.titleTemplate', { page: t(TITLE_KEYS[route.name]) })
-  // Layar Belajar mengatur judulnya sendiri (judul per layar).
-  const ownsTitle = route.name !== 'belajar'
+  // Layar Belajar dan Kamus mengatur judulnya sendiri (judul per layar).
+  const ownsTitle = route.name !== 'belajar' && route.name !== 'kamus'
   useEffect(() => {
     if (ownsTitle) document.title = title
   }, [title, ownsTitle])

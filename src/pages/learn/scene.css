@@ -186,6 +186,41 @@
     animation: sc-nod 1.6s cubic-bezier(0.45, 0.05, 0.35, 1) 0.9s;
   }
 
+  /* origin (picture characters 人 家): the picture plays, slides into the character, and the
+     strokes of the character appear one by one; at rest both stand side by side */
+  .scene-svg .tail { animation: sc-wag 1.6s ease-in-out infinite; }
+  .is-playing[data-play='origin'] .drop {
+    animation: sc-drop 1s cubic-bezier(0.3, 0, 0.2, 1) both;
+  }
+  .is-playing[data-play='origin'] .morph-from {
+    animation: sc-morph-from 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
+  }
+  .is-playing[data-play='origin'] .morph-from.drop {
+    animation: sc-drop-morph 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
+  }
+  .is-playing[data-play='origin'] .morph-to {
+    animation: sc-morph-to 3s cubic-bezier(0.45, 0.05, 0.3, 1) both;
+  }
+  .is-playing[data-play='origin'] .morph-to .stroke {
+    animation: sc-stroke-in 0.4s ease-out both;
+  }
+  .is-playing[data-play='origin'] .morph-to .stroke-1 { animation-delay: 1.3s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-2 { animation-delay: 1.45s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-3 { animation-delay: 1.6s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-4 { animation-delay: 1.75s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-5 { animation-delay: 1.9s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-6 { animation-delay: 2.05s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-7 { animation-delay: 2.2s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-8 { animation-delay: 2.35s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-9 { animation-delay: 2.5s; }
+  .is-playing[data-play='origin'] .morph-to .stroke-10 { animation-delay: 2.65s; }
+  .is-playing[data-play='origin'] .target {
+    animation: sc-pulse 0.8s cubic-bezier(0.34, 1.4, 0.5, 1) 0.9s;
+  }
+  .is-playing[data-play='origin'] .act {
+    animation: sc-wave 1.9s cubic-bezier(0.45, 0.05, 0.35, 1) 0.6s;
+  }
+
   /* panels: panel 1 plays, then panel 2 follows */
   .is-playing[data-play='panels'] g.panel-2 {
     animation: sc-panel-in 1.1s cubic-bezier(0.3, 0, 0.2, 1) 0.5s both;
@@ -207,6 +242,16 @@
   .is-playing[data-play='panels'] .upper.act {
     animation: sc-bow 1.6s cubic-bezier(0.45, 0.05, 0.3, 1) 1.1s;
   }
+
+  /* clock (u11 time words): the minute hand sweeps through the yellow minutes (or once round),
+     the hour hand follows; at rest the clock shows the end time */
+  .is-playing[data-play='clock'] .sweep-m5 { animation: sc-sweep-5 1.8s cubic-bezier(0.45, 0.05, 0.3, 1) 0.2s both; }
+  .is-playing[data-play='clock'] .sweep-m10 { animation: sc-sweep-10 2s cubic-bezier(0.45, 0.05, 0.3, 1) 0.2s both; }
+  .is-playing[data-play='clock'] .sweep-m60 { animation: sc-sweep-60 2.2s cubic-bezier(0.45, 0.05, 0.3, 1) 0.2s both; }
+  .is-playing[data-play='clock'] .sweep-h1 { animation: sc-sweep-h1 2.2s cubic-bezier(0.45, 0.05, 0.3, 1) 0.2s both; }
+  .is-playing[data-play='clock'] .wedge { animation: sc-stroke-in 1.8s ease-in 0.2s both; }
+  .is-playing[data-play='clock'] .digit { animation: sc-pulse 0.7s cubic-bezier(0.34, 1.4, 0.5, 1) 1.9s; }
+  .is-playing[data-play='clock'] .act { animation: sc-nod 1.6s cubic-bezier(0.45, 0.05, 0.35, 1) 0.6s; }
 }
 
 @keyframes sc-breathe {
@@ -358,10 +403,64 @@
   15%, 40% { transform: scale(0.96); opacity: 0.45; }
   55%, 85% { transform: scale(1.08); opacity: 1; }
 }
+@keyframes sc-wag {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(10deg); }
+}
+@keyframes sc-drop {
+  0% { transform: translateY(-120px); opacity: 0; }
+  25% { opacity: 1; }
+  75% { transform: translateY(6px); }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes sc-morph-from {
+  0% { transform: translateX(0); opacity: 1; }
+  20% { transform: translateX(-10px); opacity: 1; }
+  40% { transform: translateX(150px) scale(0.85); opacity: 0.9; }
+  50% { transform: translateX(210px) scale(0.7); opacity: 0; }
+  80% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes sc-drop-morph {
+  0% { transform: translateY(-120px); opacity: 0; }
+  8% { opacity: 1; }
+  18% { transform: translateY(5px); }
+  24% { transform: translate(0, 0); opacity: 1; }
+  40% { transform: translateX(150px) scale(0.85); opacity: 0.9; }
+  50% { transform: translateX(210px) scale(0.7); opacity: 0; }
+  80% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes sc-morph-to {
+  0%, 30% { transform: scale(1); }
+  45% { transform: scale(1.12); }
+  60%, 100% { transform: scale(1); }
+}
+@keyframes sc-stroke-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 @keyframes sc-panel-in {
   0% { opacity: 1; }
   15% { opacity: 0.2; transform: translateY(8px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sc-sweep-5 {
+  0% { transform: rotate(-30deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes sc-sweep-10 {
+  0% { transform: rotate(-60deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes sc-sweep-60 {
+  0% { transform: rotate(-360deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes sc-sweep-h1 {
+  0% { transform: rotate(-30deg); }
+  100% { transform: rotate(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {

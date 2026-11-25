@@ -15,7 +15,7 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 
 ## Kalimat contoh dan audio
 
-- **Tatoeba**: [tatoeba.org](https://tatoeba.org). Kalimat contoh (Mandarin, Inggris, Indonesia) berlisensi CC BY 2.0 FR; sebagian berlisensi CC0 (ditandai di data). Nama penulis dan id Tatoeba tiap kalimat dan terjemahan disimpan di `data/hsk1/sentences.json`. Lisensi dan nama perekam audio disimpan per rekaman (tiap perekam bisa memakai lisensi berbeda, sebagian CC BY-NC); file audio belum dipakai. Kalimat diambil otomatis dari ekspor resmi Tatoeba oleh `.github/workflows/fetch-tatoeba.yml`; tanggal unduhan tercatat di `data/hsk1/sentences-report.json` (berubah tiap unduhan).
+- **Tatoeba**: [tatoeba.org](https://tatoeba.org). Kalimat contoh (Mandarin, Inggris, Indonesia) berlisensi CC BY 2.0 FR; sebagian berlisensi CC0 (ditandai di data). Nama penulis dan id Tatoeba tiap kalimat dan terjemahan disimpan di `data/hsk1/sentences.json`. Lisensi dan nama perekam audio disimpan per rekaman (tiap perekam bisa memakai lisensi berbeda, sebagian CC BY-NC); file audio Tatoeba **tidak dipakai**: di data sekarang hanya ada rekaman berlisensi kosong (58) dan CC BY-NC 4.0 (28), keduanya bukan lisensi bebas. Kalimat diambil otomatis dari ekspor resmi Tatoeba oleh `.github/workflows/fetch-tatoeba.yml`; tanggal unduhan tercatat di `data/hsk1/sentences-report.json` (berubah tiap unduhan).
 
 ## Contoh suara dan audio TTS
 
@@ -25,6 +25,13 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 - **Audio Tahap 0 · Dasar** (`public/audio/basics/`): dibuat dengan suara P3 = **Kokoro-82M v1.1-zh** (`hexgrad/Kokoro-82M-v1.1-zh`, suara `zf_001`, revisi model yang dipatok di `scripts/tts/voices.json`), lisensi Apache-2.0, lewat workflow `basics-audio.yml`. **faster-whisper** (MIT) dan **pypinyin** (MIT) hanya dipakai untuk mengecek hasilnya; **OpenCC** (Apache-2.0) untuk menyamakan huruf tradisional/sederhana saat mengecek.
 - **Isi Tahap 0** (`data/basics/basics.json`: contoh bunyi, nada, perubahan nada, coretan, radikal, ungkapan kelas) ditulis untuk proyek ini; bacaan huruf dicek otomatis dengan CC-CEDICT, huruf contoh radikal dan ungkapan kelas dicek dengan daftar 300 kata HSK 1. Data coretan dari Hanzi Writer (lihat bagian di bawah).
 - Contoh suara (`public/audio/samples/`, halaman `samples.html`) dibuat otomatis oleh `.github/workflows/tts-samples.yml` memakai `scripts/tts/make_samples.py`; versi paket dipatok di `scripts/tts/requirements.txt`.
+
+## Audio materi HSK 1 (task 4b)
+
+- **Suara utama**: Kokoro-82M v1.1-zh (hexgrad, Apache-2.0), revisi model dipatok di `scripts/tts/voices.json`. Suara **P3** (`zf_001`, perempuan) untuk semua kata, kalimat, ungkapan, dan baris dialog; suara **L3** (`zm_010`, laki-laki) hanya untuk baris dialog tokoh laki-laki. Bukan rekaman manusia: dibuat otomatis oleh `.github/workflows/build-audio.yml` (`scripts/tts-hsk1/`) ke `public/audio/hsk1/`; manifest dan hasil cek ada di `public/audio/hsk1/manifest.json` dan `data/hsk1/audio-issues.json`.
+- **faster-whisper / Whisper** (MIT) dan **pypinyin** (MIT): hanya untuk mengecek hasil suara, tidak ikut ke website.
+- **Rekaman penutur asli**: Lingua Libre di Wikimedia Commons, hanya berlisensi CC0, CC BY, atau CC BY-SA. Penulis, lisensi, dan tautan halaman file tiap rekaman ada di `data/hsk1/native-audio.json` dan tampil di bawah tombol "Dengar penutur asli" (diambil otomatis oleh `scripts/tts-hsk1/native_audio.py`; file diubah ke mp3 mono 64 kbps dan disamakan kenyaringannya).
+- **Tatoeba audio** tidak dipakai (lisensi rekaman kosong atau CC BY-NC, bukan lisensi bebas). Tone Perfect tidak dipakai.
 
 ## Versi santai dan dialog
 

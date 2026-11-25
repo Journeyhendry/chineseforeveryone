@@ -22,6 +22,8 @@ export const PLAY_PRESETS = [
   'shrug',
   'beckon',
   'panels',
+  'origin',
+  'clock',
 ] as const
 export type PlayPreset = (typeof PLAY_PRESETS)[number]
 
@@ -30,7 +32,7 @@ export const ACT_TARGETS = ['char', 'head', 'upper', 'arm-left', 'arm-right'] as
 export type ActTarget = (typeof ACT_TARGETS)[number]
 
 /** Extra classes a prop may carry for the action presets. */
-export const PROP_ROLES = ['target', 'side-a', 'side-b', 'mover', 'from-left', 'from-right', 'from-top', 'from-far', 'sway', 'bob', 'spin'] as const
+export const PROP_ROLES = ['target', 'side-a', 'side-b', 'mover', 'from-left', 'from-right', 'from-top', 'from-far', 'sway', 'bob', 'spin', 'morph-from', 'morph-to', 'drop'] as const
 export type PropRole = (typeof PROP_ROLES)[number]
 
 export interface SceneCharacter {

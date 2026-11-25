@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { backupFileName, BACKUP_MAX_BYTES, makeBackup, parseBackup } from './backup'
 import { recordAnswers } from './leitner'
-import { emptyProgress, normalizeProgress, recordBasicsResult, recordUnitResult, type Progress } from './progress'
+import { emptyProgress, normalizeProgress, recordBasicsResult, recordGameResult, recordUnitResult, type Progress } from './progress'
 import { DEFAULT_SETTINGS, type Settings } from './settings'
 
 const now = new Date('2026-11-22T08:30:00Z')
@@ -102,5 +102,18 @@ describe('cadangan memuat progres Tahap 0', () => {
       expect(parsed.progress.basics).toEqual({ radikal: { bestScore: 0.9, stars: 3, completedAt: '2026-11-22T01:00:00.000Z' } })
       expect(parsed.progress).toEqual(p)
     }
+  })
+})
+
+describe('cadangan membawa skor game (task 7)', () => {
+  it('bolak-balik; entri game rusak dibuang', () => {
+    const p = recordGameResult(recordGameResult(sample(), 'u01', 'jodohkan', 3), 'u02', 'susun', 1)
+    const back = parseBackup(JSON.stringify(makeBackup(p, settings, now)))
+    expect(back.ok && back.progress.games).toEqual({ u01: { jodohkan: { best: 3, plays: 1 } }, u02: { susun: { best: 1, plays: 1 } } })
+    const raw = JSON.parse(JSON.stringify(makeBackup(p, settings, now)))
+    raw.progress.games.u01.jodohkan.best = 'x'
+    const broken = parseBackup(JSON.stringify(raw))
+    expect(broken.ok && broken.progress.games).toEqual({ u02: { susun: { best: 1, plays: 1 } } })
+    expect(broken.ok && broken.progress.units).toEqual(p.units)
   })
 })

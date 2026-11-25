@@ -20,7 +20,7 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 - **Bahasa sehari-hari**: kotak "Versi santai" 3–5 ungkapan per unit + 1 dialog situasi per unit. Wajib lolos cek berlapis (bagian 5, task 3b).
 - **Dialog harus alami** (kritik pemilik 2026-11-22: dialog lama kaku dan konteksnya aneh): percakapan sehari-hari yang mudah dimengerti di tempat nyata (rumah, sekolah, pasar, warung, toko, metro/bus, telepon, kantor). Tiap dialog punya tujuan jelas (mis. menawar harga, menanyakan jam), tiap baris menjawab baris sebelumnya, tokoh bicara seperti orang sungguhan, tidak ada kalimat yang hanya dipaksakan untuk memamerkan kosakata.
 - **Ilustrasi**: semua digambar Claude sebagai SVG, gaya B "kartun hangat" (garis bersih, warna rata). Tokoh asli "Keluarga Xiǎo" + sistem rakit (tokoh, pose, benda, latar terpisah). Animasi: CSS untuk gerak sederhana, Lottie untuk gerak rumit. Tanpa video, tanpa Rive. Gerak harus halus: ancang-ancang, gerak susulan, napas kecil, easing lembut; hormati `prefers-reduced-motion`. Contoh acuan: artboard "5 · Tes ilustrasi SVG" di mockup.
-- **Suara (pilihan B)**: satu suara utama perempuan untuk SEMUA kata, kalimat, game, dialog; satu suara laki-laki hanya untuk tokoh laki-laki di dialog. Keduanya dari model TTS open source (kandidat: Kokoro zf_*/zm_*, MeloTTS ZH), dipilih pemilik dari contoh: **P3 (perempuan, suara utama) + L3 (laki-laki, tokoh laki-laki di dialog)** — keputusan 2026-11-22. Kecepatan & volume seragam. Rekaman asli (Lingua Libre, Tatoeba, Tone Perfect) hanya sebagai tombol tambahan "Dengar penutur asli" / mode "Dengar berbagai suara". Semua audio dicek Whisper.
+- **Suara (pilihan B)**: satu suara utama perempuan untuk SEMUA kata, kalimat, game, dialog; satu suara laki-laki hanya untuk tokoh laki-laki di dialog. Keduanya dari model TTS open source (kandidat: Kokoro zf_*/zm_*, MeloTTS ZH), dipilih pemilik dari contoh: **P3 (perempuan, suara utama) + L3 (laki-laki, tokoh laki-laki di dialog)** — keputusan 2026-11-22. Tahap 0 (keputusan pemilik 2026-11-23, "metode A"): suku kata tunggal tetap suara P3, tetapi naik-turun nadanya disamakan dengan rekaman orang asli `hugolpz/audio-cmn` (CC BY-SA, hanya sebagai contoh nada); penghalusan menyusul. Kecepatan & volume seragam. Rekaman asli (Lingua Libre, Tatoeba, Tone Perfect) hanya sebagai tombol tambahan "Dengar penutur asli" / mode "Dengar berbagai suara". Semua audio dicek Whisper.
 - **Hosting & data besar**: unduhan yang diblokir di sesi kerja (Tatoeba, Commons, model TTS, Whisper) dijalankan lewat GitHub Actions (`workflow_dispatch`), hasil yang sudah difilter di-commit balik ke repo.
 
 ## 2. Aturan kerja setiap sesi
@@ -97,7 +97,7 @@ Tambah job `check` di `.github/workflows/deploy.yml` (npm ci, typecheck, lint, t
 - Tetap wajib: hanya kata HSK 1 (300) + ungkapan santai yang lolos cek; cek otomatis kosakata.
 - Acceptance: semua dialog lolos nilai ≥ 4; laporan penilaian di `data/hsk1/dialog-review.json`; contoh 3 dialog tercantum di PROGRESS untuk dilihat pemilik.
 
-### 0 · Tahap 0 "Dasar sebelum HSK 1" (Opus) — butuh: 2b, 6
+### 0 · Tahap 0 "Dasar sebelum HSK 1" (Opus) — butuh: 2b, 6, 4b
 - Satu tahap sebelum unit 1 (tidak terkunci; HSK 1 tetap terbuka walau Tahap 0 belum selesai), gaya dan komponen sama dengan unit lain:
   1. Pinyin: tabel bunyi awal (b p m f …) & bunyi akhir (a o e ai …), klik untuk dengar.
   2. 4 nada + nada ringan: penjelasan visual (garis nada berwarna) + latihan dengar & tebak.
@@ -105,7 +105,7 @@ Tambah job `check` di `.github/workflows/deploy.yml` (npm ci, typecheck, lint, t
   4. 8 coretan dasar + aturan urutan coretan, dengan animasi Hanzi Writer.
   5. Radikal yang sering muncul (亻 口 女 氵 木 日 …) + cara huruf tersusun.
   6. Ungkapan kelas: angka 1–10, salam dasar.
-- Audio pakai suara P3 (suku kata tunggal dicek Whisper/pengecek nada; yang gagal dibuat ulang).
+- Audio pakai suara P3. Suku kata tunggal: nada P3 disamakan dengan rekaman asli `hugolpz/audio-cmn` (metode A, keputusan pemilik 2026-11-23), lalu dicek Whisper/pengecek nada; atribusi audio-cmn di CREDITS.md. Penghalusan suara menyusul di ronde berikutnya.
 - Acceptance: semua bagian bisa diselesaikan dengan mouse & keyboard, ada latihan di tiap bagian, teks ID/EN lengkap, tidak ada horizontal scroll di 375 px.
 
 ### 4 · Audio (Sonnet) — butuh: 3b, 2b, 3d (audio dibuat untuk daftar 300 kata & dialog baru)

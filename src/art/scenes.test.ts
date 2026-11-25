@@ -17,6 +17,7 @@ import {
   type SceneIndex,
   type ScenesFile,
 } from './scenes/index.ts'
+import { GLYPH_STROKES } from './scenes/glyphs.ts'
 import { checkXml } from './xml-check.ts'
 
 const data = scenesData as ScenesFile
@@ -194,5 +195,147 @@ describe('scene SVG files', () => {
   it('averages 20 KB or less per scene', () => {
     const total = svgFiles.reduce((n, [, src]) => n + new TextEncoder().encode(src).length, 0)
     expect(total / svgFiles.length).toBeLessThanOrEqual(20 * KB)
+  })
+})
+
+describe('tahap 2: units u01–u08', () => {
+  const UNITS = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08']
+  const byHanzi = (h: string) => data.scenes.find((s) => s.hanzi === h && UNITS.includes(s.unitId))
+  const FAMILY = ['家', '家人', '爸爸', '妈妈', '哥哥', '姐姐', '弟弟', '妹妹', '儿子', '女儿']
+  const XIAO = ['yeye', 'nainai', 'baba', 'mama', 'gege', 'meimei']
+
+  it('gives every word of units u01–u08 exactly one scene', () => {
+    for (const u of units.filter((u) => UNITS.includes(u.id))) {
+      for (const w of u.words) expect(data.scenes.filter((s) => s.wordId === w), `${u.id} ${words.get(w)?.hanzi}`).toHaveLength(1)
+    }
+  })
+
+  it('puts the family words of u08 in the same Xiǎo family living room, full for 家 and 家人', () => {
+    for (const h of FAMILY) {
+      const s = byHanzi(h)
+      expect(s, h).toBeTruthy()
+      expect(s?.background, h).toBe('living')
+      expect(s?.panels.every((p) => (p.background ?? 'living') === 'living'), h).toBe(true)
+    }
+    for (const h of ['家', '家人']) {
+      const ids = byHanzi(h)?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
+      expect([...new Set(ids)].sort(), h).toEqual([...XIAO].sort())
+    }
+  })
+
+  it('plays the origin animation for 人 and 家: the picture next to the character drawn stroke by stroke', () => {
+    for (const h of ['人', '家']) {
+      const s = byHanzi(h)
+      expect(s?.play, h).toBe('origin')
+      const props = s?.panels.flatMap((p) => p.props) ?? []
+      expect(props.some((p) => p.roles?.includes('morph-from')), h).toBe(true)
+      const glyph = props.find((p) => p.id === 'glyph')
+      expect(glyph?.value, h).toBe(h)
+      expect(glyph?.roles, h).toContain('morph-to')
+      const svg = built.get(`${s?.wordId}.svg`) as string
+      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
+      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
+    }
+  })
+
+  it('shows three animals and the digit 3 for 只, and the number 1000 for 千', () => {
+    const zhi = byHanzi('只')?.panels.flatMap((p) => p.props) ?? []
+    expect(zhi.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(3)
+    expect(zhi.find((p) => p.id === 'digit')?.value).toBe('3')
+    const qian = byHanzi('千')?.panels.flatMap((p) => p.props) ?? []
+    expect(qian.find((p) => p.id === 'badge')?.value).toBe('1000')
+    expect(qian.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(10)
+  })
+})
+
+describe('tahap 3: units u09–u12', () => {
+  const UNITS = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10', 'u11', 'u12']
+  const byHanzi = (h: string) => {
+    const s = data.scenes.find((s) => s.hanzi === h && UNITS.includes(s.unitId))
+    if (!s) throw new Error(`no scene for ${h}`)
+    return s
+  }
+  const props = (h: string) => byHanzi(h).panels.flatMap((p) => p.props)
+  const prop = (h: string, id: string) => props(h).filter((p) => p.id === id)
+
+  it('gives every word of units u01–u12 exactly one scene (177 HSK 1 scenes in all)', () => {
+    for (const u of units.filter((u) => UNITS.includes(u.id))) {
+      for (const w of u.words) expect(data.scenes.filter((s) => s.wordId === w), `${u.id} ${words.get(w)?.hanzi}`).toHaveLength(1)
+    }
+    expect(units.filter((u) => UNITS.includes(u.id)).flatMap((u) => u.words)).toHaveLength(176)
+    // 176 words of u01–u12 + 一下 (u14, drawn in tahap 1)
+    expect(data.scenes).toHaveLength(177)
+  })
+
+  it('plays the origin animation for 日 and 月: the picture next to the character drawn stroke by stroke', () => {
+    for (const h of ['日', '月']) {
+      const s = byHanzi(h)
+      expect(s.play, h).toBe('origin')
+      expect(props(h).some((p) => p.roles?.includes('morph-from')), h).toBe(true)
+      const glyph = prop(h, 'glyph')[0]
+      expect(glyph?.value, h).toBe(h)
+      expect(glyph?.roles, h).toContain('morph-to')
+      const svg = built.get(`${s.wordId}.svg`) as string
+      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
+      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
+      expect(svg, h).not.toContain('<text')
+    }
+    expect(prop('日', 'sun-dot')).toHaveLength(1)
+    expect(prop('月', 'moon-old')).toHaveLength(1)
+  })
+
+  it('shows the right time on the clocks of the time words', () => {
+    const TIMES: Record<string, string> = {
+      现在: '0800', 点: '0700', 分: '0305', 分钟: '0310', 小时: '0400', 时间: '0755', 时候: '0600',
+      早上: '0600', 上午: '1000', 中午: '1200', 下午: '0300', 晚上: '0800', 早: '0700', 晚: '0820',
+    }
+    for (const [h, t] of Object.entries(TIMES)) {
+      const clocks = prop(h, 'clock')
+      expect(clocks.map((c) => c.value), h).toEqual([t])
+    }
+    // the sun / moon dial puts the parts of the day in order
+    const hours = ['早上', '上午', '中午', '下午', '晚上'].map((h) => Number(prop(h, 'day-dial')[0]?.value))
+    expect(hours).toEqual([...hours].sort((a, b) => a - b))
+    expect(prop('分', 'clock')[0].variant).toBe('m5')
+    expect(prop('分', 'digit')[0].value).toBe('5')
+    expect(prop('分钟', 'clock')[0].variant).toBe('m10')
+    expect(prop('分钟', 'digit')[0].value).toBe('10')
+    expect(prop('小时', 'clock')[0].variant).toBe('hour')
+    for (const h of ['分', '分钟', '小时']) expect(byHanzi(h).play, h).toBe('clock')
+  })
+
+  it('draws clock hands that point at the time', () => {
+    const svg = built.get(`${byHanzi('分').wordId}.svg`) as string
+    // 3:05 -> hour hand at 92.5 degrees, minute hand at 30 degrees
+    expect(svg).toMatch(/class="hand-h"><g transform="rotate\(92\.5\)"/)
+    expect(svg).toMatch(/class="hand-m sweep-m5"><g transform="rotate\(30\)"/)
+  })
+
+  it('tells today, tomorrow and yesterday (and this, next and last year) apart', () => {
+    expect(prop('今天', 'days3')[0].variant).toBeUndefined()
+    expect(prop('明天', 'days3')[0].variant).toBe('tomorrow')
+    expect(prop('昨天', 'days3')[0].variant).toBe('yesterday')
+    const hl = (h: string) => prop(h, 'year-cal').filter((p) => p.variant === 'hl').map((p) => p.value)
+    for (const h of ['今年', '明年', '去年']) expect(hl(h), h).toEqual(['2026'])
+    expect(prop('明年', 'year-cal').find((p) => p.color)?.value).toBe('2027')
+    expect(prop('去年', 'year-cal').find((p) => p.color)?.value).toBe('2025')
+    const week = prop('星期', 'day-box').reduce((n, p) => n + (p.count ?? 0), 0)
+    expect(week).toBe(7)
+    expect(built.get(`${byHanzi('星期天').wordId}.svg`)).not.toBe(built.get(`${byHanzi('星期日').wordId}.svg`))
+  })
+
+  it('draws the position pairs with the same things in different places', () => {
+    for (const [a, b] of [['上', '下'], ['前', '后'], ['里', '外']]) {
+      const ids = (h: string) => [...new Set(props(h).map((p) => p.id))].sort()
+      expect(ids(a), `${a}/${b}`).toEqual(ids(b))
+      expect(byHanzi(a).background, `${a}/${b}`).toBe(byHanzi(b).background)
+      expect(prop(a, 'marker'), a).toHaveLength(1)
+      expect(prop(b, 'marker'), b).toHaveLength(1)
+    }
+    for (const h of ['来', '去', '回', '到']) {
+      const s = byHanzi(h)
+      expect(s.play, h).toBe('move-to')
+      expect(s.panels.some((p) => p.characters.some((c) => c.roles?.includes('mover'))), h).toBe(true)
+    }
   })
 })

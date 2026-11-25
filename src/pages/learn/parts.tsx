@@ -1,10 +1,11 @@
 import { useId, type ReactNode } from 'react'
 import { ArrowLeftIcon, CloseIcon, SpeakerIcon, SpeakerSlowIcon, StarIcon } from '../../components/icons'
 import { useT } from '../../i18n/context'
-import { AUDIO_SOURCE } from '../../lib/audio'
+import type { Voice } from '../../lib/audio'
+import { playRecording } from '../../lib/audio'
 import type { Tone } from '../../lib/pinyin'
 import { charTones, syllableColors, toneBadge } from '../../lib/tones'
-import { useAudio } from './hooks'
+import { useAudio, useNativeRecordings } from './hooks'
 import { pinyinWords } from './text'
 import './learn.css'
 
@@ -155,21 +156,23 @@ export function BackLink({ href, children }: { href: string; children: ReactNode
   )
 }
 
-/** Tombol Dengar + Pelan, dengan catatan sumber suara atau alasan nonaktif. */
-export function AudioButtons({ text, label, compact = false }: { text: string; label: string; compact?: boolean }) {
+/** Tombol Dengar + Pelan, dengan catatan bila suaranya sementara dari perangkat atau tidak ada. */
+export function AudioButtons({ text, label, compact = false, voice }: { text: string; label: string; compact?: boolean; voice?: Voice }) {
   const t = useT()
-  const { available, play } = useAudio()
+  const { play, sourceFor } = useAudio()
   const noteId = useId()
+  const source = sourceFor(text, voice)
+  const disabled = source === 'none'
   return (
     <div className={`audio-buttons ${compact ? 'is-compact' : ''}`}>
       <div className="audio-row">
         <button
           type="button"
           className="btn btn-yellow"
-          disabled={!available}
+          disabled={disabled}
           aria-describedby={noteId}
           aria-label={t('learn.audio.playLabel', { text: label })}
-          onClick={() => play(text)}
+          onClick={() => play(text, false, voice)}
         >
           <SpeakerIcon />
           <span>{t('learn.audio.play')}</span>
@@ -178,10 +181,10 @@ export function AudioButtons({ text, label, compact = false }: { text: string; l
           <button
             type="button"
             className="btn btn-white"
-            disabled={!available}
+            disabled={disabled}
             aria-describedby={noteId}
             aria-label={t('learn.audio.slowLabel', { text: label })}
-            onClick={() => play(text, true)}
+            onClick={() => play(text, true, voice)}
           >
             <SpeakerSlowIcon />
             <span>{t('learn.audio.slow')}</span>
@@ -189,26 +192,58 @@ export function AudioButtons({ text, label, compact = false }: { text: string; l
         )}
       </div>
       <span id={noteId} className="audio-note">
-        {available ? (AUDIO_SOURCE === 'device' ? t('learn.audio.device') : '') : t('learn.audio.none')}
+        {source === 'device' ? t('learn.audio.device') : source === 'none' ? t('learn.audio.none') : ''}
       </span>
     </div>
   )
 }
 
-/** Tombol dengar kecil (ikon saja) untuk kalimat / baris dialog. */
-export function SpeakButton({ text, label }: { text: string; label: string }) {
+/** Tombol dengar kecil (ikon saja) untuk kalimat / baris dialog. `voice="male"` = suara laki-laki (L3). */
+export function SpeakButton({ text, label, voice }: { text: string; label: string; voice?: Voice }) {
   const t = useT()
-  const { available, play } = useAudio()
+  const { play, sourceFor } = useAudio()
+  const source = sourceFor(text, voice)
+  const disabled = source === 'none'
   return (
     <button
       type="button"
       className="icon-btn icon-btn-sm"
-      disabled={!available}
-      aria-label={available ? t('learn.audio.playLabel', { text: label }) : t('learn.audio.noneShort')}
-      title={available ? undefined : t('learn.audio.none')}
-      onClick={() => play(text)}
+      disabled={disabled}
+      aria-label={disabled ? t('learn.audio.noneShort') : t('learn.audio.playLabel', { text: label })}
+      title={disabled ? t('learn.audio.none') : source === 'device' ? t('learn.audio.device') : undefined}
+      onClick={() => play(text, false, voice)}
     >
       <SpeakerIcon />
     </button>
+  )
+}
+
+/** "Dengar penutur asli": hanya tampil bila ada rekaman berlisensi bebas untuk kata ini. */
+export function NativeButtons({ id, label }: { id: string; label: string }) {
+  const t = useT()
+  const recordings = useNativeRecordings(id)
+  if (recordings.length === 0) return null
+  return (
+    <ul className="native-list">
+      {recordings.map((r, i) => (
+        <li key={r.path} className="native-item">
+          <button
+            type="button"
+            className="btn btn-white"
+            aria-label={t('learn.audio.nativeLabel', { text: label })}
+            onClick={() => playRecording(r.path)}
+          >
+            <SpeakerIcon />
+            <span>{recordings.length > 1 ? `${t('learn.audio.native')} ${i + 1}` : t('learn.audio.native')}</span>
+          </button>
+          <span className="native-credit">
+            {t('learn.audio.nativeBy', { author: r.author, license: r.license })}{' '}
+            <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer">
+              {t('learn.audio.nativeSource')}
+            </a>
+          </span>
+        </li>
+      ))}
+    </ul>
   )
 }

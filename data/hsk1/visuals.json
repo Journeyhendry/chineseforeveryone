@@ -55,8 +55,8 @@
       "hanzi": "爸爸",
       "type": "object",
       "scene": {
-        "id": "Ayah berkemeja menggendong Adik di pundaknya; keduanya tertawa.",
-        "en": "Dad in his shirt carries Little Sister on his shoulders; both are laughing."
+        "id": "Di ruang keluarga, Adik berlari ke Ayah yang membuka tangan: \"爸爸！\"",
+        "en": "In the living room, Little Sister runs to Dad, who opens his arms: \"爸爸！\""
       },
       "characters": [
         "baba",
@@ -83,8 +83,8 @@
       "hanzi": "白天",
       "type": "comic",
       "scene": {
-        "id": "Langit biru siang hari dengan matahari bersinar; Adik bermain layang-layang di taman kompleks.",
-        "en": "A blue daytime sky with the sun shining; Little Sister flies a kite in the estate's park."
+        "id": "Siang hari: langit biru, matahari bersinar; Adik bermain layang-layang di taman kompleks.",
+        "en": "Daytime: blue sky, the sun shining; Little Sister flies a kite in the estate park."
       },
       "characters": [
         "meimei"
@@ -116,7 +116,7 @@
       "hanzi": "包子",
       "type": "object",
       "scene": {
-        "id": "Kukusan bambu terbuka berisi bakpao putih yang mengepul; Nenek mengambil satu.",
+        "id": "Kukusan bambu terbuka penuh bakpao putih yang mengepul; Nenek mengangkat satu bakpao.",
         "en": "An open bamboo steamer full of steaming white buns; Grandma picks one up."
       },
       "characters": [
@@ -132,7 +132,7 @@
       "hanzi": "杯子",
       "type": "object",
       "scene": {
-        "id": "Cangkir bergagang milik Adik dengan motif bintang di atas meja; Adik meraihnya.",
+        "id": "Gelas bergagang milik Adik, bergambar bintang, ada di meja; Adik mengulurkan tangan untuk mengambilnya.",
         "en": "Little Sister's star-patterned mug with a handle sits on the table; she reaches for it."
       },
       "characters": [
@@ -161,8 +161,8 @@
       "hanzi": "边",
       "type": "position",
       "scene": {
-        "id": "Adik berdiri di tepi jalan dan menunjuk ke satu sisi jalan, tempat sebuah pohon dan bangku berada; panah menandai sisi itu.",
-        "en": "Little Sister stands at the edge of a road and points to one side of it, where a tree and a bench are; an arrow marks that side."
+        "id": "Adik berdiri di pinggir jalan dan menunjuk ke satu sisi, tempat pohon dan bangku: \"这边！\"",
+        "en": "Little Sister stands at the roadside and points to one side, where a tree and a bench are: \"这边！\""
       },
       "characters": [
         "meimei"
@@ -251,8 +251,8 @@
       "hanzi": "菜",
       "type": "object",
       "scene": {
-        "id": "Ibu menaruh sepiring sayur hijau tumis yang masih mengepul di atas meja.",
-        "en": "Mom sets a plate of steaming stir-fried greens on the table."
+        "id": "Ibu membawa sepiring sayur tumis yang masih mengepul: \"菜来了！\"",
+        "en": "Mom carries a plate of steaming stir-fried greens: \"菜来了！\""
       },
       "characters": [
         "mama"
@@ -268,8 +268,8 @@
       "hanzi": "茶",
       "type": "object",
       "scene": {
-        "id": "Teko tanah liat dan cangkir kecil berisi teh hijau mengepul, dengan beberapa daun teh di sampingnya.",
-        "en": "A clay teapot and a small cup of steaming green tea, with a few tea leaves beside them."
+        "id": "Teko tanah liat dan cangkir kecil berisi teh hijau hangat; Kakek mengangkat cangkir tehnya.",
+        "en": "A clay teapot and a small cup of steaming green tea; Grandpa raises his tea cup."
       },
       "characters": [],
       "props": [
@@ -336,7 +336,7 @@
       "hanzi": "吃",
       "type": "action",
       "scene": {
-        "id": "Adik makan semangkuk mi dengan sumpit; pipinya menggembung.",
+        "id": "Adik makan semangkuk mi dengan sumpit, pipinya menggembung.",
         "en": "Little Sister eats a bowl of noodles with chopsticks, her cheeks puffed out."
       },
       "characters": [
@@ -419,8 +419,8 @@
       "hanzi": "大家",
       "type": "comic",
       "scene": {
-        "id": "Ibu melambai ke seluruh keluarga yang sudah duduk di meja makan dan memanggil mereka semua (balon kata berisi gambar semua orang).",
-        "en": "Mom waves to the whole family already seated at the dining table and calls them all (speech bubble with a picture of everyone)."
+        "id": "Ibu melambai ke seluruh keluarga di meja makan: \"大家，吃饭了！\"",
+        "en": "Mom waves to the whole family at the dining table: \"大家，吃饭了！\""
       },
       "characters": [
         "mama",
@@ -441,8 +441,8 @@
       "hanzi": "到",
       "type": "action",
       "scene": {
-        "id": "Pesawat sudah mendarat; Nenek keluar dari pintu kedatangan menarik koper, dan Adik berlari menyambutnya.",
-        "en": "The plane has landed; Grandma comes out of the arrivals gate pulling a suitcase, and Little Sister runs to meet her."
+        "id": "Pesawat sudah mendarat; Nenek keluar dari pintu kedatangan sambil membawa koper, Adik berlari menyambut: \"奶奶到了！\"",
+        "en": "The plane has landed; Grandma comes out of arrivals with her suitcase and Little Sister runs to meet her: \"奶奶到了！\""
       },
       "characters": [
         "nainai",
@@ -548,8 +548,8 @@
       "hanzi": "点",
       "type": "count",
       "scene": {
-        "id": "Jam weker menunjuk tepat pukul 7 dan berdering; Adik terbangun di tempat tidur.",
-        "en": "An alarm clock rings at exactly 7 o'clock; Little Sister wakes up in bed."
+        "id": "Jam weker berbunyi tepat pukul 7:00; Adik bangun di samping tempat tidur: \"七点！\"",
+        "en": "The alarm clock rings at exactly 7:00; Little Sister gets up by her bed: \"七点！\""
       },
       "characters": [
         "meimei"
@@ -646,8 +646,8 @@
       "hanzi": "弟弟",
       "type": "object",
       "scene": {
-        "id": "Ayah menunjuk foto lama: di foto itu Ayah remaja menggendong adik laki-lakinya yang masih balita.",
-        "en": "Dad points at an old photo: in it, teenage Dad is carrying his toddler little brother."
+        "id": "Ayah menunjuk foto lama di dinding: ia waktu remaja bersama adik laki-lakinya yang kecil (ditandai panah): \"这是我弟弟。\"",
+        "en": "Dad points at an old photo on the wall: himself as a boy with his little brother (marked by an arrow): \"这是我弟弟。\""
       },
       "characters": [
         "baba"
@@ -681,8 +681,8 @@
       "hanzi": "都",
       "type": "comic",
       "scene": {
-        "id": "Nenek membawa sepiring pangsit ke meja, dan semua yang lain (Kakek, Ayah, Ibu, Kakak, Adik) mengangkat tangan bersamaan dengan antusias.",
-        "en": "Grandma brings a plate of dumplings to the table, and everyone else (Grandpa, Dad, Mom, Big Brother, Little Sister) raises their hands at once, eager."
+        "id": "Nenek membawa sepiring pangsit, dan semua yang lain mengangkat tangan: \"我们都要！\"",
+        "en": "Grandma brings a plate of dumplings, and everyone else raises a hand: \"我们都要！\""
       },
       "characters": [
         "yeye",
@@ -820,8 +820,8 @@
       "hanzi": "儿子",
       "type": "object",
       "scene": {
-        "id": "Ayah merangkul bahu Kakak dengan bangga saat Kakak memegang piala; wajah mereka mirip.",
-        "en": "Dad proudly puts his arm around Big Brother, who holds a trophy; their faces look alike."
+        "id": "Ayah merangkul Kakak yang memegang piala dengan bangga: \"这是我儿子！\"",
+        "en": "Dad proudly puts his hand on Big Brother, who holds a trophy: \"这是我儿子！\""
       },
       "characters": [
         "baba",
@@ -836,8 +836,8 @@
       "hanzi": "饭",
       "type": "object",
       "scene": {
-        "id": "Nampan makan berisi semangkuk nasi, sepiring sayur, sepiring daging, dan sepasang sumpit.",
-        "en": "A meal tray with a bowl of rice, a plate of vegetables, a plate of meat and a pair of chopsticks."
+        "id": "Ibu memanggil \"吃饭了！\"; di meja ada nampan berisi semangkuk nasi, sepiring sayur, dan sumpit.",
+        "en": "Mom calls \"吃饭了！\"; on the table is a tray with a bowl of rice, a plate of greens and chopsticks."
       },
       "characters": [],
       "props": [
@@ -872,8 +872,8 @@
       "hanzi": "房间",
       "type": "object",
       "scene": {
-        "id": "Kamar Adik: tempat tidur kecil, meja belajar, dan rak berisi boneka; Adik duduk di lantai bermain.",
-        "en": "Little Sister's room: a small bed, a desk and a shelf of stuffed toys; she sits on the floor playing."
+        "id": "Kamar Adik: meja belajar, tempat tidur kecil, dan boneka; Adik duduk di lantai bermain.",
+        "en": "Little Sister's room: a desk, a small bed and soft toys; she sits on the floor playing."
       },
       "characters": [
         "meimei"
@@ -922,8 +922,8 @@
       "hanzi": "分",
       "type": "count",
       "scene": {
-        "id": "Jarum panjang jam bergeser lima garis kecil; Ibu menunggu tehnya selesai diseduh.",
-        "en": "The clock's long hand moves on by five small marks; Mom waits for her tea to finish steeping."
+        "id": "Jarum menit (merah) maju lima menit dari pukul 3:00 ke 3:05 (bagian kuning); Ibu menunggu tehnya: \"三点五分\".",
+        "en": "The (red) minute hand moves on five minutes from 3:00 to 3:05 (the yellow part); Mom waits for her tea: \"三点五分\"."
       },
       "characters": [
         "mama"
@@ -938,8 +938,8 @@
       "hanzi": "分钟",
       "type": "count",
       "scene": {
-        "id": "Pengatur waktu dapur menunjuk angka 10 dan jarum menitnya berputar; Kakak menunggu telurnya matang. Angka 10 di atasnya.",
-        "en": "A kitchen timer is set to 10 and its dial turns; Big Brother waits for his eggs to cook. The digit 10 above it."
+        "id": "Jarum menit berputar sepuluh menit (bagian kuning, angka 10); Kakak menunggu telur rebusnya matang: \"十分钟\".",
+        "en": "The minute hand turns through ten minutes (the yellow part, the number 10); Big Brother waits for his eggs to boil: \"十分钟\"."
       },
       "characters": [
         "gege"
@@ -1003,8 +1003,8 @@
       "hanzi": "哥哥",
       "type": "object",
       "scene": {
-        "id": "Kakak berhoodie menepuk kepala Adik yang jauh lebih pendek; Adik mendongak menatapnya.",
-        "en": "Big Brother in his hoodie pats the head of much shorter Little Sister; she looks up at him."
+        "id": "Kakak memberi bola kepada Adik yang lebih kecil: \"哥哥！\" Ayah dan Ibu duduk di sofa.",
+        "en": "Big Brother hands a ball to his little sister: \"哥哥！\" Dad and Mom sit on the sofa."
       },
       "characters": [
         "gege",
@@ -1068,8 +1068,8 @@
       "hanzi": "狗",
       "type": "object",
       "scene": {
-        "id": "Anjing kecil berbulu kuning berlari mengibaskan ekor di taman; Adik melempar bola untuknya.",
-        "en": "A small yellow dog runs wagging its tail in the park; Little Sister throws a ball for it."
+        "id": "Anjing kecil berbulu kuning berlari mengibaskan ekor; Adik melempar bola untuknya.",
+        "en": "A small yellow dog runs wagging its tail; Little Sister throws a ball for it."
       },
       "characters": [
         "meimei"
@@ -1134,8 +1134,8 @@
       "hanzi": "孩子",
       "type": "object",
       "scene": {
-        "id": "Ibu menggandeng tangan Adik di taman; Adik melompat-lompat kecil di sampingnya.",
-        "en": "Mom holds Little Sister's hand in the park; Little Sister skips along beside her."
+        "id": "Di taman, Adik melompat riang di antara Ayah dan Ibu; panah menunjuk sang anak.",
+        "en": "In the park, Little Sister hops happily between Mom and Dad; an arrow points at the child."
       },
       "characters": [
         "mama",
@@ -1216,8 +1216,8 @@
       "hanzi": "好吃",
       "type": "pair",
       "scene": {
-        "id": "Adik mencicip pangsit, matanya berbinar dan jempolnya terangkat. Di sebelahnya, Adik mencicip sayur pahit dengan wajah meringis.",
-        "en": "Little Sister tastes a dumpling, eyes shining, thumb up. Next to it, she tastes a bitter vegetable and grimaces."
+        "id": "Dua panel: Adik mencicipi jiaozi dan mengacungkan jempol \"好吃！\"; lalu mencicipi pare pahit dan cemberut \"不好吃…\".",
+        "en": "Two panels: Little Sister tastes a dumpling and gives a thumbs-up \"好吃！\"; then tastes bitter melon and grimaces \"不好吃…\"."
       },
       "characters": [
         "meimei"
@@ -1284,8 +1284,8 @@
       "hanzi": "和",
       "type": "comic",
       "scene": {
-        "id": "Di nampan sarapan ada satu bakpao dan satu gelas susu kedelai, dengan tanda plus di antaranya.",
-        "en": "A breakfast tray holds one steamed bun and one glass of soy milk, with a plus sign between them."
+        "id": "Di nampan ada bakpao dan segelas susu, dengan tanda tambah di antaranya; Adik berkata \"包子和牛奶！\"",
+        "en": "A tray holds a steamed bun and a glass of milk with a plus sign between them; Little Sister says \"包子和牛奶！\""
       },
       "characters": [],
       "props": [
@@ -1300,8 +1300,8 @@
       "hanzi": "喝",
       "type": "action",
       "scene": {
-        "id": "Kakak menyedot bubble tea lewat sedotan besar; butir mutiaranya terlihat naik di sedotan.",
-        "en": "Big Brother sips bubble tea through a big straw; the tapioca pearls can be seen rising up the straw."
+        "id": "Kakak minum bubble tea lewat sedotan besar.",
+        "en": "Big Brother drinks bubble tea through a big straw."
       },
       "characters": [
         "gege"
@@ -1332,8 +1332,8 @@
       "hanzi": "后",
       "type": "position",
       "scene": {
-        "id": "Di antrean halte bus, Ayah berdiri di depan dan Adik di belakangnya; panah menunjuk Adik di belakang.",
-        "en": "In the bus-stop queue, Dad stands in front and Little Sister behind him; an arrow points at Little Sister at the back."
+        "id": "Antre di halte bus: Ayah berdiri di depan, Adik di belakangnya; panah menunjuk Adik yang di belakang.",
+        "en": "Queueing at the bus stop: Dad stands in front, Little Sister behind him; the arrow points at Little Sister at the back."
       },
       "characters": [
         "baba",
@@ -1349,8 +1349,8 @@
       "hanzi": "回",
       "type": "action",
       "scene": {
-        "id": "Di tengah jalan, Ayah berbalik karena lupa payung; panah berbentuk U menunjukkan ia kembali.",
-        "en": "Halfway down the street Dad turns back because he forgot his umbrella; a U-shaped arrow shows him going back."
+        "id": "Ayah berbalik arah dan berjalan kembali ke rumah; panah berbentuk U menunjukkan ia kembali: \"回家！\"",
+        "en": "Dad turns around and walks back home; a U-shaped arrow shows him going back: \"回家！\""
       },
       "characters": [
         "baba"
@@ -1415,8 +1415,8 @@
       "hanzi": "家",
       "type": "object",
       "scene": {
-        "id": "Gedung apartemen di sore hari; dari satu balkon yang jendelanya menyala, keenam anggota keluarga Xiǎo melambai.",
-        "en": "An apartment block in the evening; from one balcony with glowing windows, all six members of the Xiǎo family wave."
+        "id": "Atas: atap di atas babi menjadi aksara 家 (rumah). Bawah: seluruh keluarga Xiǎo di ruang keluarga mereka.",
+        "en": "Top: a roof over a pig became the character 家 (home). Below: the whole Xiǎo family in their living room."
       },
       "characters": [
         "yeye",
@@ -1489,8 +1489,8 @@
       "hanzi": "饺子",
       "type": "object",
       "scene": {
-        "id": "Nenek dan Adik membungkus pangsit di meja dapur; sepiring pangsit mengepul di sebelahnya.",
-        "en": "Grandma and Little Sister wrap dumplings at the kitchen table; a plate of steaming dumplings sits next to them."
+        "id": "Nenek dan Adik membuat jiaozi di meja; sepiring jiaozi hangat ada di depan mereka.",
+        "en": "Grandma and Little Sister make dumplings at the table; a plate of warm dumplings is in front of them."
       },
       "characters": [
         "nainai",
@@ -1508,8 +1508,8 @@
       "hanzi": "家人",
       "type": "object",
       "scene": {
-        "id": "Foto keluarga dalam bingkai: keenam anggota keluarga Xiǎo berjajar dan tersenyum.",
-        "en": "A framed family photo: all six members of the Xiǎo family lined up and smiling."
+        "id": "Keenam anggota keluarga Xiǎo berdiri berjajar di ruang keluarga dan tersenyum.",
+        "en": "All six members of the Xiǎo family stand in a row in their living room, smiling."
       },
       "characters": [
         "yeye",
@@ -1528,8 +1528,8 @@
       "hanzi": "鸡蛋",
       "type": "object",
       "scene": {
-        "id": "Tiga butir telur ayam di keranjang kecil; satu sedang digoreng Ibu di wajan.",
-        "en": "Three hen's eggs in a small basket; Mom is frying another one in a wok."
+        "id": "Ibu mengangkat sebutir telur ayam; di wajan ada telur yang sedang digoreng.",
+        "en": "Mom holds up a hen's egg; another egg is frying in the wok."
       },
       "characters": [
         "mama"
@@ -1545,8 +1545,8 @@
       "hanzi": "姐姐",
       "type": "object",
       "scene": {
-        "id": "Ibu menunjuk foto lama sambil tersenyum: di foto itu Ibu masih kecil, berdiri di samping kakak perempuannya yang lebih tinggi.",
-        "en": "Mom smiles and points at an old photo: in it she is a little girl standing next to her taller older sister."
+        "id": "Ibu menunjuk foto lama di dinding: ia waktu kecil bersama kakak perempuannya yang lebih tinggi (ditandai panah): \"这是我姐姐。\"",
+        "en": "Mom points at an old photo on the wall: herself as a little girl with her taller older sister (marked by an arrow): \"这是我姐姐。\""
       },
       "characters": [
         "mama"
@@ -1560,8 +1560,8 @@
       "hanzi": "今年",
       "type": "comic",
       "scene": {
-        "id": "Kalender tahunan di dinding dengan dua belas kotak bulan kecil, semuanya disorot; Ayah menunjuk kalender itu.",
-        "en": "A year calendar on the wall with twelve small month grids, all highlighted; Dad points at it."
+        "id": "Tiga kalender tahunan 2025, 2026, 2027; kalender 2026 menyala dan ditandai panah: tahun ini (\"今年\").",
+        "en": "Three year calendars 2025, 2026 and 2027; 2026 glows and is marked by an arrow: this year (\"今年\")."
       },
       "characters": [
         "baba"
@@ -1575,8 +1575,8 @@
       "hanzi": "今天",
       "type": "comic",
       "scene": {
-        "id": "Kalender dinding dengan satu kotak tanggal yang bersinar terang; Adik menunjuk kotak itu, matahari pagi masuk dari jendela.",
-        "en": "A wall calendar with one date box glowing bright; Little Sister points at it as morning sun comes through the window."
+        "id": "Tiga lembar kalender (24, 25, 26); lembar tengah 25 disorot kuning sebagai hari ini. Adik menunjuknya: \"今天！\"",
+        "en": "Three calendar pages (24, 25, 26); the middle one, 25, is highlighted as today. Little Sister points at it: \"今天！\""
       },
       "characters": [
         "meimei"
@@ -1775,8 +1775,8 @@
       "hanzi": "来",
       "type": "action",
       "scene": {
-        "id": "Ibu melambai memanggil \"ke sini\"; Adik berlari mendekat ke arahnya. Panah mengarah ke Ibu.",
-        "en": "Mom beckons \"come here\"; Little Sister runs toward her. An arrow points toward Mom."
+        "id": "Ibu melambai memanggil \"来！\"; Adik berlari ke arah Ibu. Panah menunjuk ke Ibu.",
+        "en": "Mom beckons \"来！\"; Little Sister runs toward her. The arrow points toward Mom."
       },
       "characters": [
         "mama",
@@ -1844,8 +1844,8 @@
       "hanzi": "里",
       "type": "position",
       "scene": {
-        "id": "Seekor kucing duduk di dalam kotak kardus, hanya kepalanya yang menyembul; panah menunjuk ke dalam kotak.",
-        "en": "A cat sits inside a cardboard box with only its head poking out; an arrow points into the box."
+        "id": "Seekor kucing duduk di dalam kardus, hanya kepalanya yang menyembul; panah menunjuk ke dalam kardus.",
+        "en": "A cat sits inside a cardboard box with only its head poking out; the arrow points into the box."
       },
       "characters": [],
       "props": [
@@ -1963,8 +1963,8 @@
       "hanzi": "妈妈",
       "type": "object",
       "scene": {
-        "id": "Ibu bercelemek berlutut dan memeluk Adik erat-erat.",
-        "en": "Mom in her apron kneels down and gives Little Sister a big hug."
+        "id": "Ibu mengelus kepala Adik, Ayah duduk di sofa: \"妈妈！\"",
+        "en": "Mom pats Little Sister's head while Dad sits on the sofa: \"妈妈！\""
       },
       "characters": [
         "mama",
@@ -1997,8 +1997,8 @@
       "hanzi": "猫",
       "type": "object",
       "scene": {
-        "id": "Kucing belang tidur melingkar di sofa; Adik mengelus kepalanya.",
-        "en": "A tabby cat sleeps curled up on a sofa; Little Sister strokes its head."
+        "id": "Kucing belang oranye tidur melingkar di sofa; Adik mengelus kepalanya.",
+        "en": "An orange tabby cat sleeps curled up on the sofa; Little Sister strokes its head."
       },
       "characters": [
         "meimei"
@@ -2031,8 +2031,8 @@
       "hanzi": "妹妹",
       "type": "object",
       "scene": {
-        "id": "Kakak menggandeng Adik yang lebih kecil menyeberang jalan di zebra cross.",
-        "en": "Big Brother holds smaller Little Sister's hand as they cross at a zebra crossing."
+        "id": "Kakak menunjuk adik perempuannya yang kecil (ditandai panah): \"这是我妹妹。\" Kakek dan Nenek duduk di sofa.",
+        "en": "Big Brother points at his little sister (marked by an arrow): \"这是我妹妹。\" Grandpa and Grandma sit on the sofa."
       },
       "characters": [
         "gege",
@@ -2098,8 +2098,8 @@
       "hanzi": "面包",
       "type": "object",
       "scene": {
-        "id": "Roti tawar dan sebuah roti bulat di atas talenan; Kakak menggigit sepotong roti.",
-        "en": "A loaf of sliced bread and a round bun on a board; Big Brother bites into a slice."
+        "id": "Roti tawar di atas talenan; Kakak menggigit selembar roti.",
+        "en": "A loaf of bread on a board; Big Brother bites into a slice."
       },
       "characters": [
         "gege"
@@ -2114,8 +2114,8 @@
       "hanzi": "面条儿",
       "type": "object",
       "scene": {
-        "id": "Semangkuk mi berkuah panjang; Kakek mengangkat mi tinggi-tinggi dengan sumpit.",
-        "en": "A bowl of long noodles in soup; Grandpa lifts the noodles high with his chopsticks."
+        "id": "Kakek mengangkat mi panjang tinggi-tinggi dengan sumpit dari semangkuk mi kuah.",
+        "en": "Grandpa lifts long noodles high with his chopsticks from a bowl of noodle soup."
       },
       "characters": [
         "yeye"
@@ -2131,8 +2131,8 @@
       "hanzi": "米饭",
       "type": "object",
       "scene": {
-        "id": "Nenek menyendok nasi putih yang mengepul dari rice cooker ke dalam mangkuk.",
-        "en": "Grandma scoops steaming white rice from the rice cooker into a bowl."
+        "id": "Nenek menyodorkan semangkuk nasi putih hangat dari penanak nasi.",
+        "en": "Grandma holds out a bowl of warm white rice from the rice cooker."
       },
       "characters": [
         "nainai"
@@ -2149,8 +2149,8 @@
       "hanzi": "明年",
       "type": "comic",
       "scene": {
-        "id": "Dua kalender tahunan berdampingan dengan panah ke kalender kedua; di balon pikirannya, Adik sudah lebih tinggi.",
-        "en": "Two year calendars side by side with an arrow to the second one; in her thought bubble Little Sister is already taller."
+        "id": "Kalender 2026 (tahun ini, menyala); panah biru maju ke kalender 2027: tahun depan (\"明年\").",
+        "en": "The 2026 calendar (this year) glows; a blue arrow goes forward to the 2027 calendar: next year (\"明年\")."
       },
       "characters": [
         "meimei"
@@ -2166,8 +2166,8 @@
       "hanzi": "明天",
       "type": "comic",
       "scene": {
-        "id": "Kalender: panah melompat dari kotak hari ini ke kotak berikutnya yang bergambar keranjang piknik; Adik melompat girang.",
-        "en": "A calendar: an arrow jumps from today's box to the next box, which has a picnic basket drawn in it; Little Sister jumps for joy."
+        "id": "Kalender: hari ini 25 (kuning), panah biru maju ke 26 (hijau). Adik melompat senang: \"明天！\"",
+        "en": "Calendar: today is 25 (yellow) and a blue arrow jumps forward to 26 (green). Little Sister jumps for joy: \"明天！\""
       },
       "characters": [
         "meimei"
@@ -2251,8 +2251,8 @@
       "hanzi": "那个",
       "type": "position",
       "scene": {
-        "id": "Kakak menunjuk sepeda merah yang berdiri jauh di seberang jalan; sepeda lain di dekatnya tidak ia hiraukan.",
-        "en": "Big Brother points at a red bicycle standing far away across the street, ignoring the one beside him."
+        "id": "Kakak menunjuk sepeda merah yang jauh di seberang jalan, bukan sepeda biru di dekatnya: \"那个！\"",
+        "en": "Big Brother points at the red bicycle far across the street, not the blue one beside him: \"那个！\""
       },
       "characters": [
         "gege"
@@ -2267,8 +2267,8 @@
       "hanzi": "哪个",
       "type": "comic",
       "scene": {
-        "id": "Adik berdiri di depan tiga boneka beruang yang berbeda di rak toko; jarinya melayang di antaranya (balon pikiran tanda tanya).",
-        "en": "Little Sister stands in front of three different teddy bears on a shop shelf, her finger hovering between them (thought bubble with a question mark)."
+        "id": "Adik berdiri di depan tiga boneka beruang di rak toko dan berpikir: \"哪个？\"",
+        "en": "Little Sister stands in front of three teddy bears on a shop shelf, wondering: \"哪个？\""
       },
       "characters": [
         "meimei"
@@ -2320,8 +2320,8 @@
       "hanzi": "男",
       "type": "pair",
       "scene": {
-        "id": "Dua ikon di pintu toilet: siluet laki-laki dan siluet perempuan. Ayah menunjuk siluet laki-laki.",
-        "en": "Two icons on restroom doors: a male figure and a female figure. Dad points at the male figure."
+        "id": "Ayah dan Kakak (laki-laki) di kiri, di bawah tanda laki-laki ♂; Ibu dan Adik di kanan.",
+        "en": "Dad and Big Brother (male) on the left, under the male sign ♂; Mom and Little Sister on the right."
       },
       "characters": [
         "baba"
@@ -2336,8 +2336,8 @@
       "hanzi": "男朋友",
       "type": "object",
       "scene": {
-        "id": "Foto lama: Ayah dan Ibu waktu masih pacaran, bergandengan tangan di taman; panah dan hati kecil menunjuk Ayah muda.",
-        "en": "An old photo: Dad and Mom back when they were dating, holding hands in the park; an arrow and a small heart point at young Dad."
+        "id": "Seorang wanita muda menunjuk pemuda di sampingnya: \"他是我男朋友。\" Ada hati kecil di antara mereka.",
+        "en": "A young woman points at the young man beside her: \"他是我男朋友。\" Little hearts float between them."
       },
       "characters": [
         "baba",
@@ -2472,8 +2472,8 @@
       "hanzi": "你好",
       "type": "comic",
       "scene": {
-        "id": "Ibu melambai kepada tetangga yang berdiri di depan pintu apartemen; keduanya tersenyum (balon kata berisi tangan melambai).",
-        "en": "Mom waves to a neighbour standing at an apartment door; both smile (speech bubble with a waving hand)."
+        "id": "Ibu melambai kepada tetangga yang berdiri di pintu dan berkata \"你好！\"; tetangga tersenyum dan melambai balik.",
+        "en": "Mom waves to a neighbour standing at the door and says \"你好！\"; the neighbour smiles and waves back."
       },
       "characters": [
         "mama",
@@ -2489,8 +2489,8 @@
       "hanzi": "年",
       "type": "comic",
       "scene": {
-        "id": "Satu pohon yang sama dalam empat musim berjajar: berbunga, berdaun hijau, berdaun jingga, dan bersalju; panah melingkar menghubungkannya.",
-        "en": "The same tree in four seasons side by side: blossoming, green, orange-leaved and snowy; a circular arrow joins them."
+        "id": "Pohon yang sama dalam empat musim: berbunga, hijau, oranye, bersalju: satu tahun (\"一年\").",
+        "en": "The same tree in four seasons: blossoming, green, orange and snowy: one year (\"一年\")."
       },
       "characters": [],
       "props": [
@@ -2540,8 +2540,8 @@
       "hanzi": "牛奶",
       "type": "object",
       "scene": {
-        "id": "Nenek menuang susu dari kotak susu bergambar sapi ke dalam gelas.",
-        "en": "Grandma pours milk from a carton with a cow picture into a glass."
+        "id": "Nenek menuang susu dari kotak susu bergambar totol sapi ke dalam gelas.",
+        "en": "Grandma pours milk from a cow-spotted carton into a glass."
       },
       "characters": [
         "nainai"
@@ -2557,8 +2557,8 @@
       "hanzi": "女",
       "type": "pair",
       "scene": {
-        "id": "Dua ikon di pintu toilet: siluet laki-laki dan siluet perempuan. Ibu menunjuk siluet perempuan.",
-        "en": "Two icons on restroom doors: a male figure and a female figure. Mom points at the female figure."
+        "id": "Ibu dan Adik (perempuan) di kanan, di bawah tanda perempuan ♀; Ayah dan Kakak di kiri.",
+        "en": "Mom and Little Sister (female) on the right, under the female sign ♀; Dad and Big Brother on the left."
       },
       "characters": [
         "mama"
@@ -2573,8 +2573,8 @@
       "hanzi": "女儿",
       "type": "object",
       "scene": {
-        "id": "Ibu menyisir dan mengepang rambut Adik yang duduk di depannya.",
-        "en": "Mom combs and braids the hair of Little Sister, who sits in front of her."
+        "id": "Ibu menyisir rambut Adik (ditandai panah): \"这是我女儿。\" Keluarga lain duduk di sofa.",
+        "en": "Mom combs Little Sister's hair (marked by an arrow): \"这是我女儿。\" The rest of the family sits on the sofa."
       },
       "characters": [
         "mama",
@@ -2589,8 +2589,8 @@
       "hanzi": "女朋友",
       "type": "object",
       "scene": {
-        "id": "Foto lama: Ayah dan Ibu waktu masih pacaran, bergandengan tangan di taman; panah dan hati kecil menunjuk Ibu muda.",
-        "en": "An old photo: Dad and Mom back when they were dating, holding hands in the park; an arrow and a small heart point at young Mom."
+        "id": "Seorang pemuda menunjuk wanita muda di sampingnya: \"她是我女朋友。\" Ada hati kecil di antara mereka.",
+        "en": "A young man points at the young woman beside him: \"她是我女朋友。\" Little hearts float between them."
       },
       "characters": [
         "baba",
@@ -2606,8 +2606,8 @@
       "hanzi": "女士",
       "type": "object",
       "scene": {
-        "id": "Pelayan membungkuk sopan menyambut Ibu yang berpakaian rapi dan membawa tas tangan di lobi hotel.",
-        "en": "A waiter bows politely to greet Mom, who is smartly dressed and carries a handbag, in a hotel lobby."
+        "id": "Pelayan membungkuk sopan menyambut Ibu yang membawa tas tangan: \"女士，您好！\"",
+        "en": "The waiter bows politely to greet Mom, who carries a handbag: \"女士，您好！\""
       },
       "characters": [
         "waiter",
@@ -2623,8 +2623,8 @@
       "hanzi": "朋友",
       "type": "object",
       "scene": {
-        "id": "Adik dan temannya tertawa bersama sambil minum bubble tea.",
-        "en": "Little Sister and her friend laugh together over bubble tea."
+        "id": "Ibu dan temannya tertawa bersama sambil minum bubble tea di kedai.",
+        "en": "Mom and her friend laugh together over bubble tea at a tea shop."
       },
       "characters": [
         "meimei",
@@ -2675,8 +2675,8 @@
       "hanzi": "苹果",
       "type": "object",
       "scene": {
-        "id": "Keranjang berisi apel merah mengilap; Adik menggigit satu apel.",
-        "en": "A basket of shiny red apples; Little Sister takes a bite of one apple."
+        "id": "Sekeranjang apel merah; Adik menggigit satu apel.",
+        "en": "A basket of red apples; Little Sister takes a bite of one apple."
       },
       "characters": [
         "meimei"
@@ -2707,8 +2707,8 @@
       "hanzi": "前",
       "type": "position",
       "scene": {
-        "id": "Di antrean halte bus, Ayah berdiri di depan dan Adik di belakangnya; panah menunjuk Ayah di depan.",
-        "en": "In the bus-stop queue, Dad stands in front and Little Sister behind him; an arrow points at Dad in front."
+        "id": "Antre di halte bus: Ayah berdiri di depan, Adik di belakangnya; panah menunjuk Ayah yang di depan.",
+        "en": "Queueing at the bus stop: Dad stands in front, Little Sister behind him; the arrow points at Dad in front."
       },
       "characters": [
         "baba",
@@ -2741,8 +2741,8 @@
       "hanzi": "千",
       "type": "count",
       "scene": {
-        "id": "Sepuluh papan berjajar, tiap papan berisi sepuluh baris sepuluh bintang kecil; angka 1000 di atasnya.",
-        "en": "Ten boards in a row, each with ten rows of ten small stars; the digit 1000 above them."
+        "id": "Sepuluh papan, tiap papan berisi seratus titik, dengan angka 1000 di atasnya.",
+        "en": "Ten boards of one hundred dots each, with the number 1000 above them."
       },
       "characters": [],
       "props": [
@@ -2806,8 +2806,8 @@
       "hanzi": "去",
       "type": "action",
       "scene": {
-        "id": "Kakak berjalan menjauh dari rumah menuju sekolah di kejauhan; panah mengarah menjauh.",
-        "en": "Big Brother walks away from the house toward the school in the distance; an arrow points away."
+        "id": "Kakak berjalan menjauh dari rumah menuju sekolah; panah menunjuk menjauh: \"我去学校。\"",
+        "en": "Big Brother walks away from the house toward the school; the arrow points away: \"我去学校。\""
       },
       "characters": [
         "gege"
@@ -2823,8 +2823,8 @@
       "hanzi": "去年",
       "type": "comic",
       "scene": {
-        "id": "Kakak melihat fotonya dari tahun lalu ketika ia masih lebih pendek; di belakangnya, panah mundur ke kalender tahunan sebelumnya.",
-        "en": "Big Brother looks at a photo of himself from last year, when he was shorter; behind him an arrow points back to the previous year calendar."
+        "id": "Kalender 2026 (tahun ini, menyala); panah biru mundur ke kalender 2025: tahun lalu (\"去年\").",
+        "en": "The 2026 calendar (this year) glows; a blue arrow goes back to the 2025 calendar: last year (\"去年\")."
       },
       "characters": [
         "gege"
@@ -2860,8 +2860,8 @@
       "hanzi": "人",
       "type": "object",
       "scene": {
-        "id": "Ayah melangkah lebar di trotoar; dilihat dari samping, kedua kakinya membentuk huruf V terbalik, mirip bentuk aksaranya.",
-        "en": "Dad strides along the pavement; seen from the side, his legs form an upside-down V, just like the shape of the character."
+        "id": "Orang berjalan dilihat dari samping: kedua kakinya seperti huruf V terbalik, lalu menjadi aksara 人.",
+        "en": "A person walking, seen from the side: the legs make an upside-down V, which became the character 人."
       },
       "characters": [
         "baba"
@@ -2891,8 +2891,8 @@
       "hanzi": "日",
       "type": "object",
       "scene": {
-        "id": "Matahari bulat terbit di atas atap-atap gedung, sinarnya memancar ke segala arah.",
-        "en": "A round sun rises over the rooftops, its rays shining in every direction."
+        "id": "Matahari bulat dengan titik di tengah, seperti gambar kuno, lalu menjadi aksara 日.",
+        "en": "A round sun with a dot in the middle, as the old picture drew it, which became the character 日."
       },
       "characters": [],
       "props": [
@@ -2918,8 +2918,8 @@
       "hanzi": "上",
       "type": "position",
       "scene": {
-        "id": "Seekor kucing duduk di atas kotak kardus; panah ke atas menunjuk kucing itu.",
-        "en": "A cat sits on top of a cardboard box; an up arrow points at the cat."
+        "id": "Seekor kucing duduk di atas meja; panah kuning menunjuk kucing itu.",
+        "en": "A cat sits on top of the table; a yellow arrow points at the cat."
       },
       "characters": [],
       "props": [
@@ -2988,8 +2988,8 @@
       "hanzi": "上午",
       "type": "comic",
       "scene": {
-        "id": "Jam di kelas menunjuk pukul 10 dan matahari sudah agak tinggi; Adik sedang belajar di kelas.",
-        "en": "The classroom clock shows 10 o'clock and the sun is fairly high; Little Sister is in class."
+        "id": "Pukul 10 pagi, matahari sudah cukup tinggi; Adik sedang belajar di kelas: \"上午好！\"",
+        "en": "At 10 in the morning the sun is fairly high; Little Sister is in class: \"上午好！\""
       },
       "characters": [
         "meimei",
@@ -3138,8 +3138,8 @@
       "hanzi": "时候",
       "type": "comic",
       "scene": {
-        "id": "Begitu lampu pejalan kaki berubah hijau, Kakak mulai menyeberang di zebra cross.",
-        "en": "The moment the pedestrian light turns green, Big Brother starts walking across the zebra crossing."
+        "id": "Ibu bertanya \"你什么时候回来？\"; Kakak di pintu menunjuk jam yang menunjukkan pukul 6: \"六点。\"",
+        "en": "Mom asks \"你什么时候回来？\"; Big Brother at the door points at the clock showing 6: \"六点。\""
       },
       "characters": [
         "gege"
@@ -3154,8 +3154,8 @@
       "hanzi": "时间",
       "type": "comic",
       "scene": {
-        "id": "Ayah melirik jam tangannya dengan buru-buru; di belakangnya ada jam dinding dan jam pasir.",
-        "en": "Dad glances at his wristwatch in a hurry; behind him are a wall clock and an hourglass."
+        "id": "Ayah terburu-buru melihat jam dinding (7:55), ada jam pasir di sampingnya: \"没有时间了！\"",
+        "en": "Dad looks at the wall clock (7:55) in a hurry, an hourglass beside him: \"没有时间了！\""
       },
       "characters": [
         "baba"
@@ -3235,8 +3235,8 @@
       "hanzi": "水",
       "type": "object",
       "scene": {
-        "id": "Adik menuang air bening dari botol ke dalam gelas.",
-        "en": "Little Sister pours clear water from a bottle into a glass."
+        "id": "Kakak menuang air bening dari botol ke dalam gelas.",
+        "en": "Big Brother pours clear water from a bottle into a glass."
       },
       "characters": [
         "meimei"
@@ -3252,8 +3252,8 @@
       "hanzi": "水果",
       "type": "object",
       "scene": {
-        "id": "Nenek menyodorkan sepiring buah kepada Adik: apel, pisang, semangka, dan jeruk.",
-        "en": "Grandma offers Little Sister a plate of fruit: apples, bananas, watermelon and oranges."
+        "id": "Nenek menyodorkan sepiring buah (semangka, pisang, apel, jeruk) kepada Adik yang senang.",
+        "en": "Grandma offers a plate of fruit (watermelon, bananas, an apple, an orange) to a happy Little Sister."
       },
       "characters": [
         "nainai",
@@ -3372,8 +3372,8 @@
       "hanzi": "它",
       "type": "comic",
       "scene": {
-        "id": "Adik menunjuk kucing di sofa sambil bercerita kepada Ibu (balon kata berisi gambar kucing, panah menuju kucing).",
-        "en": "Little Sister points at a cat on the sofa while telling Mom about it (speech bubble with a picture of the cat, an arrow pointing to the cat)."
+        "id": "Adik menunjuk kucing di sofa dan berkata kepada Ibu: \"你看它！\"",
+        "en": "Little Sister points at the cat on the sofa and tells Mom: \"你看它！\""
       },
       "characters": [
         "meimei",
@@ -3443,8 +3443,8 @@
       "hanzi": "它们",
       "type": "comic",
       "scene": {
-        "id": "Adik menunjuk dua kucing dan seekor anjing yang bermain di taman sambil bercerita kepada Kakak (balon kata berisi gambar hewan-hewan itu).",
-        "en": "Little Sister points at two cats and a dog playing in the park while telling Big Brother (speech bubble with pictures of the animals)."
+        "id": "Di taman, Adik menunjuk dua kucing dan seekor anjing yang bermain, dan berkata kepada Kakak: \"你看它们！\"",
+        "en": "In the park, Little Sister points at two cats and a dog playing, and tells Big Brother: \"你看它们！\""
       },
       "characters": [
         "meimei",
@@ -3483,8 +3483,8 @@
       "hanzi": "天",
       "type": "comic",
       "scene": {
-        "id": "Busur dari kiri ke kanan: matahari terbit, tinggi di siang hari, lalu terbenam dan bulan muncul. Di bawahnya Adik bangun, bermain, lalu tidur.",
-        "en": "An arc from left to right: the sun rises, stands high at noon, then sets and the moon appears. Below it, Little Sister wakes up, plays, then sleeps."
+        "id": "Matahari terbit, tinggi di siang hari, lalu terbenam: satu hari (\"一天\"). Adik berdiri di bawahnya.",
+        "en": "The sun rises, stands high at noon, then sets: one day (\"一天\"). Little Sister stands below."
       },
       "characters": [
         "meimei"
@@ -3554,8 +3554,8 @@
       "hanzi": "同学",
       "type": "object",
       "scene": {
-        "id": "Kakak dan teman kuliahnya duduk bersebelahan di bangku kelas, berbagi satu buku pelajaran.",
-        "en": "Big Brother and his classmate sit side by side at a classroom desk, sharing one textbook."
+        "id": "Kakak dan teman kuliahnya duduk bersebelahan di kelas, berbagi satu buku.",
+        "en": "Big Brother and his classmate sit side by side in class, sharing one book."
       },
       "characters": [
         "gege",
@@ -3571,8 +3571,8 @@
       "hanzi": "外",
       "type": "position",
       "scene": {
-        "id": "Kotak kardus kosong; seekor kucing duduk di luar kotak, di sebelahnya. Panah menunjuk kucing.",
-        "en": "An empty cardboard box; a cat sits outside it, right next to it. An arrow points at the cat."
+        "id": "Kardus kosong; seekor kucing duduk di luarnya, tepat di samping kardus. Panah menunjuk kucing itu.",
+        "en": "An empty cardboard box; a cat sits outside it, right next to it. The arrow points at the cat."
       },
       "characters": [],
       "props": [
@@ -3586,8 +3586,8 @@
       "hanzi": "外边",
       "type": "position",
       "scene": {
-        "id": "Kakak bermain bola di luar rumah, sementara Nenek memperhatikan dari dalam lewat jendela.",
-        "en": "Big Brother plays ball outside the house while Grandma watches from inside through the window."
+        "id": "Kakak bermain bola di luar rumah; Nenek melihat dari dalam lewat jendela. Panah menunjuk Kakak di luar.",
+        "en": "Big Brother plays ball outside the house; Grandma watches from inside through the window. The arrow points at Big Brother outside."
       },
       "characters": [
         "gege",
@@ -3621,8 +3621,8 @@
       "hanzi": "晚",
       "type": "pair",
       "scene": {
-        "id": "Kakak berlari terengah-engah masuk kelas; jam dinding sudah lewat waktunya dan guru menunggu sambil bersedekap.",
-        "en": "Big Brother rushes into class out of breath; the wall clock is past the hour and the teacher waits with folded arms."
+        "id": "Pukul 8:20, Kakak berlari terengah-engah ke sekolah; Bu Guru menunggu sambil bertolak pinggang: \"你晚了！\"",
+        "en": "At 8:20 Big Brother runs breathlessly to school; the teacher waits, hands on her hips: \"你晚了！\""
       },
       "characters": [
         "gege",
@@ -3659,8 +3659,8 @@
       "hanzi": "晚上",
       "type": "comic",
       "scene": {
-        "id": "Langit gelap berbintang dengan bulan; lampu jendela apartemen menyala; Adik sudah berpiyama.",
-        "en": "A dark starry sky with the moon; apartment windows are lit; Little Sister is already in pyjamas."
+        "id": "Pukul 8 malam: langit gelap, bulan dan bintang; Adik mengucapkan \"晚上好！\".",
+        "en": "At 8 in the evening: dark sky with the moon and stars; Little Sister says \"晚上好！\"."
       },
       "characters": [
         "meimei"
@@ -3694,8 +3694,8 @@
       "hanzi": "问",
       "type": "action",
       "scene": {
-        "id": "Adik mengangkat tangan di kelas dan bertanya kepada guru; balon berisi tanda tanya.",
-        "en": "Little Sister raises her hand in class and asks the teacher a question; her bubble holds a question mark."
+        "id": "Di kelas, Adik mengangkat tangan dan bertanya kepada Guru (balon tanda tanya).",
+        "en": "In class, Little Sister raises her hand and asks the teacher a question (a question-mark balloon)."
       },
       "characters": [
         "meimei",
@@ -3711,8 +3711,8 @@
       "hanzi": "问题",
       "type": "comic",
       "scene": {
-        "id": "Adik mengangkat tangan di kelas dengan tanda tanya di atas kepalanya; Guru menoleh dan tersenyum kepadanya.",
-        "en": "Little Sister raises her hand in class with a question mark above her head; the teacher turns and smiles at her."
+        "id": "Adik mengangkat tangan dengan tanda tanya besar di dekatnya: \"我有问题！\" Guru tersenyum.",
+        "en": "Little Sister raises her hand, a big question mark beside her: \"我有问题！\" The teacher smiles."
       },
       "characters": [
         "meimei",
@@ -3793,8 +3793,8 @@
       "hanzi": "下",
       "type": "position",
       "scene": {
-        "id": "Seekor kucing tidur di bawah meja; Adik membungkuk mengintipnya. Panah ke bawah menunjuk kucing.",
-        "en": "A cat sleeps under the table; Little Sister bends down to peek at it. A down arrow points at the cat."
+        "id": "Seekor kucing tidur di bawah meja; panah kuning menunjuk kucing itu.",
+        "en": "A cat sleeps under the table; a yellow arrow points at the cat."
       },
       "characters": [
         "meimei"
@@ -3880,8 +3880,8 @@
       "hanzi": "先生",
       "type": "object",
       "scene": {
-        "id": "Pelayan membungkuk sopan menyambut Ayah yang berjas di pintu restoran.",
-        "en": "The waiter bows politely to welcome Dad, in a suit jacket, at the restaurant door."
+        "id": "Pelayan membungkuk sopan menyambut Ayah di restoran: \"先生，您好！\"",
+        "en": "The waiter bows politely to welcome Dad at the restaurant: \"先生，您好！\""
       },
       "characters": [
         "waiter",
@@ -3897,8 +3897,8 @@
       "hanzi": "现在",
       "type": "comic",
       "scene": {
-        "id": "Adik menunjuk jam dinding besar dengan tegas; di bawahnya ada garis waktu dengan panah yang berhenti di titik tengah.",
-        "en": "Little Sister points firmly at a big wall clock; below it, a timeline arrow stops right at the middle point."
+        "id": "Adik menunjuk jam dinding besar yang menunjukkan pukul 8:00: \"现在八点。\"",
+        "en": "Little Sister points at a big wall clock showing 8:00: \"现在八点。\""
       },
       "characters": [
         "meimei"
@@ -3930,8 +3930,8 @@
       "hanzi": "小朋友",
       "type": "object",
       "scene": {
-        "id": "Guru membungkuk ramah menyapa Adik yang kecil dan menepuk kepalanya.",
-        "en": "The teacher bends down kindly to greet little Little Sister and pats her on the head."
+        "id": "Guru membungkuk ramah dan menepuk kepala Adik: \"小朋友，你好！\"",
+        "en": "The teacher bends down kindly and pats Little Sister on the head: \"小朋友，你好！\""
       },
       "characters": [
         "teacher",
@@ -3946,8 +3946,8 @@
       "hanzi": "小时",
       "type": "count",
       "scene": {
-        "id": "Jam dinding dengan jarum panjang yang berputar satu putaran penuh, sementara jarum pendek bergeser dari angka 3 ke angka 4.",
-        "en": "A wall clock whose long hand goes all the way round once while the short hand moves from 3 to 4."
+        "id": "Jarum panjang berputar satu kali penuh (panah melingkar) sementara jarum pendek maju dari 3 ke 4: \"一个小时\".",
+        "en": "The long hand goes all the way round once (circular arrow) while the short hand moves from 3 to 4: \"一个小时\"."
       },
       "characters": [],
       "props": [
@@ -3993,8 +3993,8 @@
       "hanzi": "下午",
       "type": "comic",
       "scene": {
-        "id": "Matahari sudah condong ke barat dan jam menunjuk pukul 3; Kakak main bola sepulang sekolah.",
-        "en": "The sun has dipped toward the west and the clock shows 3; Big Brother plays football after school."
+        "id": "Pukul 3 sore, matahari sudah condong ke barat; Kakak bermain bola: \"下午三点\".",
+        "en": "At 3 in the afternoon the sun has dipped to the west; Big Brother plays football: \"下午三点\"."
       },
       "characters": [
         "gege"
@@ -4027,8 +4027,8 @@
       "hanzi": "些",
       "type": "count",
       "scene": {
-        "id": "Ibu mengambil beberapa (sekitar empat) jeruk dari tumpukan besar ke mangkuk buah.",
-        "en": "Mom takes a few (about four) oranges from a big pile into a fruit bowl."
+        "id": "Di meja ada setumpuk besar jeruk; Ibu mengambil beberapa (empat) ke dalam mangkuknya.",
+        "en": "There is a big pile of oranges on the table; Mom takes a few (four) into her bowl."
       },
       "characters": [
         "mama"
@@ -4093,8 +4093,8 @@
       "hanzi": "星期",
       "type": "comic",
       "scene": {
-        "id": "Kalender satu minggu: tujuh kotak berjajar. Lima kotak bergambar tas sekolah, dua kotak terakhir bergambar bola.",
-        "en": "A one-week calendar: seven boxes in a row. Five have a schoolbag drawn in them, the last two have a ball."
+        "id": "Satu minggu: tujuh kotak hari berjajar. Lima kotak bergambar tas sekolah, dua kotak terakhir bergambar bola; angka 7.",
+        "en": "One week: seven day boxes in a row. Five have a school bag, the last two have a ball; the number 7."
       },
       "characters": [
         "meimei"
@@ -4110,8 +4110,8 @@
       "hanzi": "星期日",
       "type": "comic",
       "scene": {
-        "id": "Kotak terakhir di kalender mingguan bersinar; di sebelahnya keluarga Xiǎo berpiknik di taman.",
-        "en": "The last box of a weekly calendar glows; next to it the Xiǎo family has a picnic in the park."
+        "id": "Kotak terakhir kalender seminggu (Minggu) menyala; Keluarga Xiǎo berpiknik di taman: \"星期日！\"",
+        "en": "The last box of a week strip (Sunday) glows; the Xiǎo family goes on a picnic in the park: \"星期日！\""
       },
       "characters": [
         "yeye",
@@ -4132,8 +4132,8 @@
       "hanzi": "星期天",
       "type": "comic",
       "scene": {
-        "id": "Minggu pagi, Ayah masih tidur-tiduran di sofa, sementara Adik menarik tangannya mengajak ke taman; kotak terakhir kalender mingguan bersinar.",
-        "en": "Sunday morning: Dad is still lazing on the sofa while Little Sister tugs his hand to go to the park; the last box of the weekly calendar glows."
+        "id": "Kalender seminggu, kotak terakhir (Minggu) menyala. Ayah bersantai di sofa; Adik menarik tangannya: \"星期天！\"",
+        "en": "A week strip whose last box (Sunday) glows. Dad lounges on the sofa; Little Sister tugs at his hand: \"星期天！\""
       },
       "characters": [
         "baba",
@@ -4419,8 +4419,8 @@
       "hanzi": "椅子",
       "type": "object",
       "scene": {
-        "id": "Kursi kayu di sisi meja makan; Kakek duduk di atasnya sambil membaca koran.",
-        "en": "A wooden chair beside the dining table; Grandpa sits on it reading a newspaper."
+        "id": "Kakek memegang koran dan menunjuk kursi kayu yang kosong (ditandai panah).",
+        "en": "Grandpa holds his newspaper and points at an empty wooden chair (marked by an arrow)."
       },
       "characters": [
         "yeye"
@@ -4453,8 +4453,8 @@
       "hanzi": "有的",
       "type": "comic",
       "scene": {
-        "id": "Guru bertanya ke kelas. Kakak mengangkat tangan, sedangkan teman kuliahnya tetap menunduk.",
-        "en": "The teacher asks the class a question. Big Brother raises his hand, while his classmate keeps his head down."
+        "id": "Guru bertanya ke kelas. Ada yang bisa menjawab dan mengangkat tangan, ada yang menggaruk kepala: \"有的会\".",
+        "en": "The teacher asks the class. Some students know and raise their hands, one scratches his head: \"有的会\"."
       },
       "characters": [
         "teacher",
@@ -4470,8 +4470,8 @@
       "hanzi": "有些",
       "type": "count",
       "scene": {
-        "id": "Satu tandan pisang: beberapa buah sudah kuning, beberapa masih hijau.",
-        "en": "A bunch of bananas: some are already yellow, some are still green."
+        "id": "Satu tandan pisang di meja: beberapa sudah kuning, beberapa masih hijau. Adik menunjuknya.",
+        "en": "A bunch of bananas on the table: some are already yellow, some are still green. Little Sister points at it."
       },
       "characters": [],
       "props": [
@@ -4483,8 +4483,8 @@
       "hanzi": "有点儿",
       "type": "comic",
       "scene": {
-        "id": "Adik menyentuh cangkir teh dan mengibaskan tangan: sedikit terlalu panas (jari telunjuk dan ibu jari hampir bertemu); balon kata berisi uap.",
-        "en": "Little Sister touches a cup of tea and shakes her hand: a bit too hot (her thumb and finger almost touching); speech bubble with steam."
+        "id": "Adik menyentuh cangkir teh yang mengepul dan memberi isyarat \"sedikit\" dengan jarinya: \"有点儿热！\"",
+        "en": "Little Sister touches a steaming cup of tea and shows \"a little\" with her fingers: \"有点儿热！\""
       },
       "characters": [
         "meimei"
@@ -4532,8 +4532,8 @@
       "hanzi": "月",
       "type": "object",
       "scene": {
-        "id": "Bulan sabit di langit malam di atas gedung apartemen; di jendela tergantung kalender satu bulan.",
-        "en": "A crescent moon in the night sky above an apartment block; a one-month calendar hangs in a window."
+        "id": "Bulan sabit dengan satu garis di dalamnya, seperti gambar kuno, lalu menjadi aksara 月.",
+        "en": "A crescent moon with a stroke inside, as the old picture drew it, which became the character 月."
       },
       "characters": [],
       "props": [
@@ -4597,8 +4597,8 @@
       "hanzi": "早",
       "type": "pair",
       "scene": {
-        "id": "Adik tiba pertama di gerbang sekolah yang masih sepi; matahari baru terbit dan jam menunjuk pukul 7.",
-        "en": "Little Sister is the first to arrive at the still-empty school gate; the sun has just risen and the clock shows 7."
+        "id": "Pukul 7, matahari baru terbit; Adik tiba paling awal di gerbang sekolah yang masih sepi: \"我早！\"",
+        "en": "At 7 o'clock, the sun just up, Little Sister is the first to arrive at the still-empty school: \"我早！\""
       },
       "characters": [
         "meimei"
@@ -4633,8 +4633,8 @@
       "hanzi": "早上",
       "type": "comic",
       "scene": {
-        "id": "Pagi-pagi, matahari baru terbit; Kakek dan Nenek berlatih tai chi di taman.",
-        "en": "Early morning, the sun has just come up; Grandpa and Grandma practise tai chi in the park."
+        "id": "Pagi-pagi pukul 6: matahari baru terbit; Kakek dan Nenek berlatih taiji di taman: \"早上好！\"",
+        "en": "Early morning at 6: the sun has just come up; Grandpa and Grandma practise tai chi in the park: \"早上好！\""
       },
       "characters": [
         "yeye",
@@ -4667,8 +4667,8 @@
       "hanzi": "怎么样",
       "type": "comic",
       "scene": {
-        "id": "Ibu memamerkan baju barunya dan bertanya kepada Ayah (balon kata berisi tanda tanya, jempol naik, dan jempol turun).",
-        "en": "Mom shows off her new outfit and asks Dad (speech bubble with a question mark, a thumbs-up and a thumbs-down)."
+        "id": "Ibu menunjukkan baju barunya kepada Ayah: \"怎么样？\" Ayah mengacungkan jempol.",
+        "en": "Mom shows Dad her new top: \"怎么样？\" Dad gives a thumbs-up."
       },
       "characters": [
         "mama",
@@ -4737,8 +4737,8 @@
       "hanzi": "这个",
       "type": "position",
       "scene": {
-        "id": "Adik memegang boneka beruang dan menyodorkannya ke depan; di rak belakangnya masih ada boneka lain.",
-        "en": "Little Sister holds a teddy bear and holds it out in front of her; more toys sit on the shelf behind her."
+        "id": "Adik menyodorkan boneka beruang di tangannya ke depan: \"这个！\" Mainan lain masih di rak.",
+        "en": "Little Sister holds out the teddy bear in her hand: \"这个！\" The other toys stay on the shelf."
       },
       "characters": [
         "meimei"
@@ -4834,8 +4834,8 @@
       "hanzi": "只",
       "type": "count",
       "scene": {
-        "id": "Tiga burung kecil bertengger berjajar di satu dahan; angka 3 di atasnya.",
-        "en": "Three small birds perch in a row on one branch; the digit 3 above them."
+        "id": "Tiga burung kecil bertengger di satu dahan, dengan angka 3.",
+        "en": "Three small birds perch on one branch, with the number 3."
       },
       "characters": [],
       "props": [
@@ -4898,8 +4898,8 @@
       "hanzi": "中午",
       "type": "comic",
       "scene": {
-        "id": "Matahari tepat di atas kepala dan jam menunjuk pukul 12; Ayah membuka kotak bekalnya.",
-        "en": "The sun is right overhead and the clock shows 12; Dad opens his lunch box."
+        "id": "Pukul 12 siang, matahari tepat di atas; Ayah membuka kotak bekalnya: \"中午了，吃饭！\"",
+        "en": "At 12 noon the sun is right overhead; Dad opens his lunch box: \"中午了，吃饭！\""
       },
       "characters": [
         "baba"
@@ -4949,8 +4949,8 @@
       "hanzi": "住",
       "type": "action",
       "scene": {
-        "id": "Malam hari, di satu jendela gedung apartemen tampak keluarga Xiǎo makan malam; panah besar menunjuk jendela itu.",
-        "en": "At night, the Xiǎo family can be seen eating dinner in one window of an apartment block; a big arrow points at that window."
+        "id": "Malam hari, Adik menunjuk satu jendela yang menyala di gedung apartemen; di dalamnya keluarganya sedang makan: \"我住这儿！\"",
+        "en": "At night, Little Sister points at one lit window of an apartment block where her family is eating: \"我住这儿！\""
       },
       "characters": [
         "yeye",
@@ -4971,8 +4971,8 @@
       "hanzi": "桌子",
       "type": "object",
       "scene": {
-        "id": "Meja kayu bundar di ruang makan dengan empat kursi di sekelilingnya.",
-        "en": "A round wooden dining table with four chairs around it."
+        "id": "Meja makan kayu dengan empat kursi di sekelilingnya; panah menunjuk mejanya.",
+        "en": "A wooden dining table with four chairs around it; an arrow points at the table."
       },
       "characters": [],
       "props": [
@@ -5056,8 +5056,8 @@
       "hanzi": "昨天",
       "type": "comic",
       "scene": {
-        "id": "Kalender: panah mundur dari kotak hari ini ke kotak sebelumnya. Balon pikiran Kakak berisi pertandingan bola kemarin.",
-        "en": "A calendar: an arrow goes back from today's box to the one before. Big Brother's thought bubble shows yesterday's football match."
+        "id": "Kalender: hari ini 25 (kuning), panah biru mundur ke 24 (hijau). Kakak mengingat-ingat: \"昨天…\"",
+        "en": "Calendar: today is 25 (yellow) and a blue arrow goes back to 24 (green). Big Brother tries to remember: \"昨天…\""
       },
       "characters": [
         "gege"

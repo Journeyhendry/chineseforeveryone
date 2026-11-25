@@ -12,6 +12,7 @@ import { updateProgress, useDocumentTitle, useProgress } from './hooks'
 import { LoadState } from './parts'
 import { QuizRunner, type QuizResult } from './QuizRunner'
 import { ResultScreen } from './ResultScreen'
+import { closingGame } from '../../games/kinds'
 
 const newSeed = () => Math.floor(Math.random() * 0x7fffffff)
 
@@ -85,7 +86,18 @@ function PracticeResult({
   const message = stars === 3 ? t('learn.result.msg3') : stars >= 1 ? t('learn.result.msgPass') : t('learn.result.msg0')
 
   return (
-    <ResultScreen title={t('learn.result.title')} stars={stars} result={result} words={words} message={message}>
+    <ResultScreen
+      title={t('learn.result.title')}
+      stars={stars}
+      result={result}
+      words={words}
+      message={message}
+      extra={
+        <a className="btn btn-yellow" href={learnHref({ screen: 'game', unitId: info.id, game: closingGame(info.order) })}>
+          {`${t('game.short')}: ${t(`game.${closingGame(info.order)}.name`)}`}
+        </a>
+      }
+    >
       {nextUnit && nextOpen ? (
         <a className="btn btn-big" href={learnHref({ screen: 'unit', unitId: nextUnit.id })}>
           {t('learn.result.nextUnit')}

@@ -1,5 +1,6 @@
 import { PageHeader } from '../components/ComingSoon'
 import { useT, type MessageKey } from '../i18n/context'
+import { hrefFor } from '../lib/router'
 import { useSettings } from '../lib/settings-context'
 import { DAILY_GOALS, type DailyGoal, type Lang, type Settings, type ThemeSetting } from '../lib/settings'
 
@@ -114,6 +115,13 @@ export function SettingsPage() {
           ]}
           onChange={(theme) => update({ theme })}
         />
+        <section className="card" aria-labelledby="settings-sources">
+          <h2 id="settings-sources" className="card-title">
+            {t('settings.sources.title')}
+          </h2>
+          <p className="muted">{t('settings.sources.hint')}</p>
+          <a href={hrefFor('sumber')}>{t('settings.sources.link')}</a>
+        </section>
       </div>
     </>
   )

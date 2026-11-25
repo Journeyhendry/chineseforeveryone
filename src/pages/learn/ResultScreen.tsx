@@ -17,6 +17,7 @@ export function ResultScreen({
   children,
   wrongItems,
   wrongTitle,
+  extra,
 }: {
   title: string
   stars: number | null
@@ -27,6 +28,8 @@ export function ResultScreen({
   /** Pengganti daftar kata salah (mis. Tahap 0, yang tidak memakai kata unit). */
   wrongItems?: { key: string; hanzi: string; pinyin: string; meaning: string }[]
   wrongTitle?: string
+  /** Task 7: "satu game singkat" setelah latihan. */
+  extra?: ReactNode
 }) {
   const t = useT()
   const { settings } = useSettings()
@@ -56,7 +59,7 @@ export function ResultScreen({
       <p className="result-score">{t('learn.result.score', { correct: result.correct, total: result.total })}</p>
       <p className="result-message">{message}</p>
       <div className="row-actions result-actions">{children}</div>
-      {/* Task 7: tempat untuk "satu game singkat" setelah latihan. */}
+      {extra ? <div className="result-extra">{extra}</div> : null}
       {wrong.length > 0 ? (
         <section className="result-wrong" aria-labelledby="wrong-title">
           <h2 id="wrong-title" className="card-title">

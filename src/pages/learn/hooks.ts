@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type RefObject } from 'react'
-import { audioAvailable, onAudioChange, SLOW_RATE, speak } from '../../lib/audio'
+import { audioAvailable, audioSnapshot, audioSourceFor, loadAudioIndex, onAudioChange, SLOW_RATE, speak, type Voice } from '../../lib/audio'
+import { nativeRecordings, type NativeRecording } from '../../lib/native-audio'
 import { localDay } from '../../lib/dates'
 import { loadIndex, loadUnit, type LessonIndex, type LessonWord } from '../../lib/lessons'
 import { loadProgress, PROGRESS_KEY, saveProgress, type Progress } from '../../lib/progress'
@@ -119,13 +120,32 @@ export function useToday(): string {
 const serverFalse = () => false
 
 export function useAudio() {
-  const available = useSyncExternalStore(onAudioChange, audioAvailable, serverFalse)
+  // Muat indeks file suara saat ada tombol suara di layar; hook ikut dirender ulang saat indeks siap.
+  useSyncExternalStore(onAudioChange, audioSnapshot, () => '')
+  useEffect(() => {
+    void loadAudioIndex()
+  }, [])
   const { settings } = useSettings()
   const play = useCallback(
-    (text: string, slow = false) => speak(text, { rate: slow ? SLOW_RATE : settings.voiceSpeed }),
+    (text: string, slow = false, voice?: Voice) => speak(text, { rate: slow ? SLOW_RATE : settings.voiceSpeed, voice }),
     [settings.voiceSpeed],
   )
-  return { available, play }
+  /** Dari mana suara teks ini: 'file' | 'device' (cadangan) | 'none'. */
+  const sourceFor = useCallback((text: string, voice?: Voice) => audioSourceFor(text, { voice }), [])
+  return { available: audioAvailable(), play, sourceFor }
+}
+
+/** Rekaman penutur asli untuk satu kata (kosong bila tidak ada atau masih dimuat). */
+export function useNativeRecordings(id: string): NativeRecording[] {
+  const [state, setState] = useState<{ id: string; list: NativeRecording[] }>({ id, list: [] })
+  useEffect(() => {
+    let alive = true
+    void nativeRecordings(id).then((list) => alive && setState({ id, list }))
+    return () => {
+      alive = false
+    }
+  }, [id])
+  return state.id === id ? state.list : []
 }
 
 // ---------- judul & fokus ----------

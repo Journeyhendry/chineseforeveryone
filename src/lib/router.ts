@@ -1,7 +1,8 @@
 import { useEffect, useSyncExternalStore } from 'react'
 import { isBasicsPart, type BasicsPart } from './basics.ts'
+import { isGameKind, type GameKind } from '../games/kinds.ts'
 
-export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan'] as const
+export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan', 'sumber'] as const
 export type RouteName = (typeof ROUTES)[number] | 'notfound'
 
 export interface Route {
@@ -80,13 +81,15 @@ export type LearnRoute =
   | { screen: 'basics' }
   | { screen: 'basics-part'; part: BasicsPart }
   | { screen: 'basics-practice'; part: BasicsPart }
+  | { screen: 'games'; unitId: string }
+  | { screen: 'game'; unitId: string; game: GameKind }
   | { screen: 'notfound' }
 
 const UNIT_SEGMENT = /^[a-z0-9-]{1,32}$/
 
 /**
  * Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan, loncat/<id>,
- * dasar (Tahap 0), dasar/<bagian>, dasar/<bagian>/latihan.
+ * unit/<id>/game, unit/<id>/game/<jenis>, dasar (Tahap 0), dasar/<bagian>, dasar/<bagian>/latihan.
  */
 export function parseLearnRoute(segments: string[]): LearnRoute {
   const s = segments.map((x) => x.toLowerCase())
@@ -103,6 +106,8 @@ export function parseLearnRoute(segments: string[]): LearnRoute {
   if (s[0] === 'unit') {
     if (s.length === 2) return { screen: 'unit', unitId: id }
     if (s.length === 3 && s[2] === 'latihan') return { screen: 'practice', unitId: id }
+    if (s.length === 3 && s[2] === 'game') return { screen: 'games', unitId: id }
+    if (s.length === 4 && s[2] === 'game' && isGameKind(s[3])) return { screen: 'game', unitId: id, game: s[3] }
     if (s.length === 4 && s[2] === 'kata' && /^[1-9]\d{0,2}$/.test(s[3])) {
       return { screen: 'word', unitId: id, index: Number(s[3]) }
     }
@@ -130,6 +135,10 @@ export function learnHref(route: LearnRoute): string {
       return `#/belajar/dasar/${route.part}`
     case 'basics-practice':
       return `#/belajar/dasar/${route.part}/latihan`
+    case 'games':
+      return `#/belajar/unit/${route.unitId}/game`
+    case 'game':
+      return `#/belajar/unit/${route.unitId}/game/${route.game}`
   }
 }
 
@@ -146,3 +155,34 @@ export function parseReviewRoute(segments: string[]): ReviewRoute {
 
 export const REVIEW_HOME = '#/ulang'
 export const REVIEW_SESSION = '#/ulang/sesi'
+
+// ---------- sub-rute Kamus ----------
+
+export type DictionaryRoute =
+  | { screen: 'search'; q: string }
+  | { screen: 'word'; wordId: string; q: string }
+  | { screen: 'notfound' }
+
+const WORD_ID = /^L1-[A-Za-z0-9]{1,16}$/i
+
+/**
+ * Segmen setelah `#/kamus` (+ parameter query): [] = pencarian (`?q=...`), [<wordId>] = detail kata
+ * (`?q=...` dipertahankan supaya tautan kembali ke hasil pencarian).
+ */
+export function parseDictionaryRoute(segments: string[], params: Record<string, string> = {}): DictionaryRoute {
+  const q = params.q ?? ''
+  if (segments.length === 0) return { screen: 'search', q }
+  if (segments.length === 1 && WORD_ID.test(segments[0])) return { screen: 'word', wordId: segments[0].toUpperCase(), q }
+  return { screen: 'notfound' }
+}
+
+export function dictionaryHref(route: DictionaryRoute): string {
+  switch (route.screen) {
+    case 'search':
+      return route.q ? `#/kamus?q=${encodeURIComponent(route.q)}` : '#/kamus'
+    case 'word':
+      return `#/kamus/${route.wordId}${route.q ? `?q=${encodeURIComponent(route.q)}` : ''}`
+    case 'notfound':
+      return '#/kamus'
+  }
+}

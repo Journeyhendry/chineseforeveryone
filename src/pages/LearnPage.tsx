@@ -14,6 +14,8 @@ import { UnitScreen } from './learn/UnitScreen'
 import { WordScreen } from './learn/WordScreen'
 
 const BasicsRoute = lazy(() => import('./learn/basics/BasicsScreens').then((m) => ({ default: m.BasicsRoute })))
+// Game (task 7) dimuat malas supaya bundel awal tidak membengkak.
+const GamesRoute = lazy(() => import('./learn/games/GamesRoute'))
 
 /** Halaman Belajar: peta, Tahap 0, ringkasan unit, kenalan kata, latihan, tes loncat. */
 export function LearnPage() {
@@ -49,6 +51,13 @@ function UnitRoute({ route, index, info }: { route: LearnRoute; index: LessonInd
       return <WordScreen info={info} data={data.data} n={route.index} />
     case 'practice':
       return <PracticeScreen index={index} info={info} data={data.data} />
+    case 'games':
+    case 'game':
+      return (
+        <Suspense fallback={<LoadState status="loading" retry={() => {}} />}>
+          <GamesRoute route={route} info={info} data={data.data} />
+        </Suspense>
+      )
     default:
       return <LearnNotFound />
   }

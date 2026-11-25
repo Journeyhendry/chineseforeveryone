@@ -233,6 +233,41 @@ def ranked_candidates(before: dict, cands: list, min_gain: float = MIN_GAIN) -> 
     return [first] + sorted((c for c in ok if c is not first), key=lambda c: -c[2]["S"])
 
 
+SECOND_REPO = "Systran/faster-whisper-medium"
+
+
+def load_second():
+    """Pengenal kedua (Whisper medium) hanya untuk informasi: file asli dan hasil dibandingkan dengan pengenal berbeda."""
+    try:
+        from faster_whisper import WhisperModel
+        from huggingface_hub import snapshot_download
+
+        path = snapshot_download(SECOND_REPO)
+        log(f"[whisper2] {SECOND_REPO}@{Path(path).name}")
+        return WhisperModel(path, device="cpu", compute_type="int8")
+    except Exception as e:  # noqa: BLE001
+        log(f"[whisper2] tidak dimuat: {type(e).__name__}: {e}")
+        return None
+
+
+def second_ok(model, ctx, it: dict, mp3: Path) -> bool | None:
+    """Transkripsi polos Whisper medium lolos aturan check.py? (tanpa kalimat pembawa / x3: lebih keras untuk suku kata tunggal)."""
+    if model is None:
+        return None
+    import check
+
+    try:
+        segs, _ = model.transcribe(str(mp3), language="zh", beam_size=5, vad_filter=False, condition_on_previous_text=False,
+                                   temperature=0.0, initial_prompt=check.INITIAL_PROMPT)
+        text = "".join(x.text for x in segs).strip()
+        import tone as tn
+
+        return bool(ctx.checker.evaluate(it["text"], it.get("pinyin"), [text], lambda: tn.f0_contour(mp3, ctx.tmp / "f0b.wav"))["ok"])
+    except Exception as e:  # noqa: BLE001
+        log(f"[whisper2] {e}")
+        return None
+
+
 def encode(wav: Path, dst: Path, tmp: Path):
     import make_samples as ms
 
@@ -277,7 +312,7 @@ def cmd_plan(a):
 # shard (dengan Whisper)
 # --------------------------------------------------------------------------
 
-def process(env: Env, key: str, out_dir: Path, ctx=None) -> dict:
+def process(env: Env, key: str, out_dir: Path, ctx=None, second=None) -> dict:
     """Satu file: kandidat -> (urut) encode -> ukur ulang -> Whisper; kandidat pertama yang lolos semuanya dipakai."""
     before, cands, info = candidates(env, key)
     it, e = env.items[key], env.manifest["files"][key]
@@ -319,6 +354,8 @@ def process(env: Env, key: str, out_dir: Path, ctx=None) -> dict:
                 res.pop("whisper")
                 continue
             res["durationSec"] = cand["dur"]
+            if second is not None:
+                res["whisper2"] = {"before": second_ok(second, ctx, it, AUDIO / e["path"]), "after": second_ok(second, ctx, it, mp3)}
         res["decision"] = "ganti"
         if notes:
             res["triedBefore"] = notes
@@ -341,6 +378,7 @@ def cmd_shard(a):
         import build_audio as ba
 
         ctx = ba.Ctx(Path(a.work))
+    second = load_second() if (ctx is not None and os.environ.get("SECOND_RECOGNIZER", "1") == "1") else None
     results, t0 = [], time.time()
     budget = float(os.environ.get("SHARD_BUDGET_MIN", "100")) * 60
     for n, key in enumerate(plan, 1):
@@ -348,7 +386,7 @@ def cmd_shard(a):
             log(f"[shard] batas waktu; sisa {len(plan) - n + 1} file")
             break
         try:
-            r = process(env, key, out / "mp3", ctx)
+            r = process(env, key, out / "mp3", ctx, second)
         except Exception as e:  # noqa: BLE001
             traceback.print_exc()
             r = {"key": key, "decision": f"tetap (galat: {type(e).__name__}: {str(e)[:120]})"}
@@ -423,7 +461,7 @@ def cmd_merge(a):
     idx_p.write_text(json.dumps(idx, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (DATA / "tone-fix-log.json").write_text(json.dumps(
         {"version": 1, "replaced": sum(1 for e in files.values() if e.get("tuning")),
-         "results": [{k: v for k, v in r.items() if k in ("key", "decision", "strength", "mode", "stretch", "before", "after", "whisper", "candidates")}
+         "results": [{k: v for k, v in r.items() if k in ("key", "decision", "strength", "mode", "stretch", "before", "after", "whisper", "whisper2", "candidates")}
                      for r in log_rows]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     log(f"[merge] diganti {replaced}, tetap {kept}; manifest versi {manifest['version']}; Whisper {wh['passed']}/{wh['total']}")
 

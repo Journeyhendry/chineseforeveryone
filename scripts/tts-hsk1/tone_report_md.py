@@ -124,6 +124,11 @@ def main():
             if r["decision"] != "ganti":
                 reasons[r["decision"]] = reasons.get(r["decision"], 0) + 1
         L += [table(["alasan tidak diganti", "jumlah"], sorted(reasons.items(), key=lambda kv: -kv[1])), ""]
+        w2 = [r["whisper2"] for r in rep if r.get("whisper2") and r["whisper2"].get("before") is not None and r["whisper2"].get("after") is not None]
+        if w2:
+            L += [f"Pengenal kedua (Whisper medium, transkripsi polos, hanya informasi) pada {len(w2)} file yang diganti: lolos sebelum "
+                  f"{sum(1 for w in w2 if w['before'])} -> sesudah {sum(1 for w in w2 if w['after'])} "
+                  f"(turun: {sum(1 for w in w2 if w['before'] and not w['after'])}, naik: {sum(1 for w in w2 if not w['before'] and w['after'])}).", ""]
         if rep:
             import statistics as st
 

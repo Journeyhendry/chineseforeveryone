@@ -20,3 +20,8 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
   - Tanpa hati/energi. Tanpa login (nilai di perangkat). "Tes loncat" tetap ada.
   - Dipakai ulang: data unit/kata/kalimat/dialog, suara, ilustrasi, game, progres. Baru: peta jalur berliku, pengacak + bank soal, layar hasil + belajar ulang. Progres lama harus tetap terbaca (unit tetap 21, pelajaran kecil hanya membagi kata unit).
   - Perkiraan: soal acak + lulus + ulang ±1 sesi; pelajaran kecil ±2–3 sesi.
+- **Animasi sesuai contoh kalimat + dialog per kata (usul pemilik 2026-11-25; 6b DIJEDA karena ini)**
+  - Gambar adegan menggambarkan 1 contoh kalimat utama per kata (balon bicara berisi kalimatnya), bukan kata saja.
+  - Dialog tidak di luar: mini dialog 2 baris di tiap kartu kata (dengan suara), atau percakapan itu sendiri jadi animasi. Dialog panjang per unit jadi "cerita unit".
+  - Tahap 1–3 (unit 1–12, 177 adegan) sudah ada dan bisa diadaptasi (ganti isi balon + pilih kalimat yang cocok).
+

@@ -54,7 +54,8 @@ Naik tingkat kalau gagal: Haiku → Sonnet → Opus → berhenti.
 ## 4. Daftar task (urutan dan prasyarat)
 
 **PRIORITAS (keputusan pemilik 2026-11-22, mengalahkan urutan di bawah):** ambil task yang tersedia (prasyarat selesai, tidak terkunci) dengan urutan:
-**2b → 3d → 0 → 4b → 8 → 9 → 7 → 6b (tahap berikutnya, unit 4 dst.) → 10.**
+**2b → 3d → 0 → 4b → 8 → 9 → 7 → ~~6b (tahap berikutnya)~~ → 10.**
+**DIJEDA PEMILIK 2026-11-25: 6b tahap 4 dst. tidak boleh diambil** (adegan akan diganti per kalimat/dialog, lihat IDEAS.md). Task 10 (rilis v1.0.0) juga TIDAK diambil sampai pemilik memutuskan ide baru; sesi cukup melapor.
 Tujuannya: website sudah bisa dipakai belajar Tahap 0 + HSK 1 (300 kata) lengkap dengan suara secepatnya; ilustrasi unit 4 dst. menyusul. Sesi yang sedang mengerjakan 6b tahap 1 (unit 1–3) boleh menyelesaikannya, tetapi tahap 6b berikutnya hanya diambil kalau tidak ada task lain di daftar prioritas yang tersedia.
 
 ### 1 · Kerangka proyek + deploy — SELESAI

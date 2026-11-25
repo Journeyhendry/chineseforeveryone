@@ -119,6 +119,9 @@ Tema (token warna/font di CSS variables), menu samping (Belajar, Ulang, Kamus, P
 ### 5b · Font Mandarin self-host (Haiku) — butuh: 5
 Self-host LXGW WenKai (subset untuk huruf HSK 1 + tanda baca) menggantikan Noto Sans SC untuk huruf besar; sertakan izin OFL.
 
+### 5c · Tata letak layar lebar (laptop/PC) — butuh: 5
+Di 1366, 1920 dan 2560 px: menu samping penuh tinggi (sticky, 100vh) saat di-scroll; isi halaman memakai lebar fluid (maks-lebar ±1600 px) tanpa ruang kosong besar di kanan; kartu sejajar (kartu gambar kenalan kata sama lebar dengan kartu lain); soal pilihan nada 4 sebaris di layar lebar, 2x2 di sempit; grid daftar kata auto-fill. Hanya CSS/tata letak (`AppShell.css`, `src/pages/learn/*.css`). Tanpa scroll samping di 375 px, mode gelap rapi, axe lolos. Screenshot di 1100/1366/1920/2560 px diperiksa sendiri.
+
 ### 6 · Layar unit + peta belajar (Opus) — butuh: 2, 3, 5 (audio boleh placeholder sampai 4b)
 Peta belajar (mockup artboard 1), layar kenalan kata (artboard 2: huruf besar, pinyin berwarna nada, arti, tombol suara normal/pelan, animasi coretan Hanzi Writer dengan data lokal, contoh kalimat, kotak versi santai), latihan (pilihan ganda huruf↔arti, suara→huruf, tebak nada — artboard 3), nilai bintang 0–3, unit terkunci + tes loncat. Acceptance sesuai PRD bagian "Belajar & game".
 

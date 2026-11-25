@@ -3,7 +3,7 @@ import scenesData from '../../data/hsk1/scenes.json'
 import previewScenes from '../../data/hsk2-preview/scenes.json'
 import unitsData from '../../data/hsk1/units.json'
 import wordsData from '../../data/hsk1/words.json'
-import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, VIEWS } from './characters/index.ts'
+import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
 import {
   ACT_TARGETS,
   BACKGROUND_IDS,
@@ -75,7 +75,7 @@ describe('scenes.json', () => {
         for (const c of p.characters) {
           expect(charIds, where).toContain(c.id)
           if (c.pose) expect(POSE_IDS, where).toContain(c.pose)
-          if (c.expression) expect(['neutral', ...EXPRESSIONS], where).toContain(c.expression)
+          if (c.expression) expect(['neutral', ...EXPRESSIONS, ...SCENE_EXPRESSIONS], where).toContain(c.expression)
           if (c.view) expect(VIEWS, where).toContain(c.view)
           if (c.act) expect(ACT_TARGETS, where).toContain(c.act)
           for (const r of c.roles ?? []) expect(PROP_ROLES, where).toContain(r)
@@ -263,8 +263,8 @@ describe('tahap 3: units u09–u12', () => {
       for (const w of u.words) expect(data.scenes.filter((s) => s.wordId === w), `${u.id} ${words.get(w)?.hanzi}`).toHaveLength(1)
     }
     expect(units.filter((u) => UNITS.includes(u.id)).flatMap((u) => u.words)).toHaveLength(176)
-    // 176 words of u01–u12 + 一下 (u14, drawn in tahap 1)
-    expect(data.scenes).toHaveLength(177)
+    // 176 words of u01–u12 + 一下 (u14, drawn in tahap 1) = 177 scenes after tahap 3; tahap 4 adds u13–u16
+    expect(data.scenes.filter((s) => UNITS.includes(s.unitId) || s.hanzi === '一下')).toHaveLength(177)
   })
 
   it('plays the origin animation for 日 and 月: the picture next to the character drawn stroke by stroke', () => {
@@ -337,5 +337,157 @@ describe('tahap 3: units u09–u12', () => {
       expect(s.play, h).toBe('move-to')
       expect(s.panels.some((p) => p.characters.some((c) => c.roles?.includes('mover'))), h).toBe(true)
     }
+  })
+})
+
+describe('tahap 4: units u13–u16', () => {
+  const UNITS = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10', 'u11', 'u12', 'u13', 'u14', 'u15', 'u16']
+  const byHanzi = (h: string) => {
+    const s = data.scenes.find((s) => s.hanzi === h && UNITS.includes(s.unitId))
+    if (!s) throw new Error(`no scene for ${h}`)
+    return s
+  }
+  const props = (h: string) => byHanzi(h).panels.flatMap((p) => p.props)
+  const prop = (h: string, id: string) => props(h).filter((p) => p.id === id)
+  const chars = (h: string) => byHanzi(h).panels.flatMap((p) => p.characters)
+  const charIds = (h: string) => chars(h).map((c) => c.id)
+  const texts = (h: string) => byHanzi(h).panels.flatMap((p) => p.bubbles ?? []).map((b) => b.text ?? '')
+  const svg = (h: string) => built.get(`${byHanzi(h).wordId}.svg`) as string
+
+  it('gives every word of units u01–u16 exactly one scene (233 HSK 1 scenes in all)', () => {
+    for (const u of units.filter((u) => UNITS.includes(u.id))) {
+      for (const w of u.words) expect(data.scenes.filter((s) => s.wordId === w), `${u.id} ${words.get(w)?.hanzi}`).toHaveLength(1)
+    }
+    expect(units.filter((u) => UNITS.includes(u.id)).flatMap((u) => u.words)).toHaveLength(233)
+    expect(data.scenes).toHaveLength(233)
+    // every scene of the 56 new words is its own picture
+    const fresh = data.scenes.filter((s) => ['u13', 'u14', 'u15', 'u16'].includes(s.unitId) && s.hanzi !== '一下')
+    expect(fresh).toHaveLength(56)
+    expect(new Set(fresh.map((s) => built.get(`${s.wordId}.svg`))).size).toBe(56)
+  })
+
+  it('tells places apart by what is in them, and draws the vehicles without writing', () => {
+    expect(prop('店', 'shopfront')).toHaveLength(1)
+    expect(prop('商店', 'counter')[0]?.variant).toBe('qr')
+    expect(prop('书店', 'shop-shelf').every((p) => p.variant === 'books')).toBe(true)
+    expect(prop('超市', 'cart')).toHaveLength(1)
+    expect(prop('饭店', 'round-table')).toHaveLength(1)
+    expect(charIds('饭店')).toContain('waiter')
+    expect(prop('电影院', 'cinema-screen')).toHaveLength(1)
+    expect(prop('公司', 'office-building')).toHaveLength(1)
+    const vehicles = props('车').filter((p) => ['car', 'bus', 'bicycle'].includes(p.id))
+    expect(new Set(vehicles.map((p) => p.id)).size).toBe(3)
+    expect(prop('出租车', 'car')[0]?.variant).toBe('taxi')
+    expect(prop('火车', 'train')).toHaveLength(1)
+    expect(prop('飞机', 'plane')).toHaveLength(1)
+    for (const h of ['店', '商店', '书店', '超市', '饭店', '电影院', '公司', '车', '出租车', '火车', '飞机']) expect(svg(h), h).not.toContain('<text')
+  })
+
+  it('draws 上课 and 下课 differently: sitting down at the desks vs running out of the door', () => {
+    const shang = byHanzi('上课')
+    const xia = byHanzi('下课')
+    expect(shang.background).toBe('classroom')
+    expect(xia.background).toBe('classroom')
+    expect(prop('上课', 'desk').length).toBeGreaterThan(0)
+    expect(chars('上课').filter((c) => c.pose === 'sit').length).toBeGreaterThanOrEqual(2)
+    expect(prop('上课', 'door')).toHaveLength(0)
+    expect(prop('下课', 'door')[0]?.variant).toBe('open')
+    expect(chars('下课').some((c) => c.pose === 'sit')).toBe(false)
+    expect(chars('下课').filter((c) => c.roles?.includes('mover')).length).toBeGreaterThanOrEqual(2)
+    expect(xia.play).toBe('move-to')
+    expect(texts('上课')).toContain('上课了！')
+    expect(texts('下课')).toContain('下课了！')
+  })
+
+  it('draws 睡 (a nap in the armchair) and 睡觉 (lying in bed at night) differently', () => {
+    expect(prop('睡', 'armchair')).toHaveLength(1)
+    expect(prop('睡', 'bed')).toHaveLength(0)
+    expect(chars('睡').every((c) => c.expression === 'sleep')).toBe(true)
+    expect(prop('睡觉', 'bed')).toHaveLength(1)
+    expect(prop('睡觉', 'blanket')[0]?.front).toBe(true)
+    const sleeper = chars('睡觉')[0]
+    expect(sleeper.expression).toBe('sleep')
+    expect(sleeper.rotate).toBe(-90)
+    expect(byHanzi('睡觉').background).toBe('room-night')
+    expect(charIds('睡')).not.toEqual(charIds('睡觉'))
+    // 起床 uses the same bed, sitting up
+    expect(prop('起床', 'bed')).toHaveLength(1)
+    expect(chars('起床')[0].rotate).toBeUndefined()
+    expect(prop('起床', 'clock')[0]?.variant).toBe('alarm')
+  })
+
+  it('tells breakfast, lunch and dinner apart by the food, the clock and the sun / moon', () => {
+    const meals = ['早饭', '午饭', '晚饭']
+    expect(meals.map((h) => prop(h, 'clock')[0]?.value)).toEqual(['0730', '1200', '0700'])
+    const hours = meals.map((h) => Number(prop(h, 'day-dial')[0]?.value))
+    expect(hours).toEqual([7, 12, 19])
+    expect(prop('早饭', 'youtiao')).toHaveLength(1)
+    expect(prop('午饭', 'noodle-bowl')).toHaveLength(1)
+    expect(prop('晚饭', 'fish-plate')).toHaveLength(1)
+    const food = (h: string) => new Set(props(h).filter((p) => p.front && !['table'].includes(p.id)).map((p) => p.id))
+    expect(food('早饭')).not.toEqual(food('午饭'))
+    expect(food('午饭')).not.toEqual(food('晚饭'))
+    for (const h of meals) expect(texts(h).join(''), h).toContain(h)
+  })
+
+  it('shows 了 as before → after, 正在 as in the middle of it, 再 as asking for more and 还 as still up at night', () => {
+    expect(byHanzi('了').panels).toHaveLength(2)
+    expect(byHanzi('了').play).toBe('panels')
+    expect(prop('了', 'bowl').map((p) => p.variant)).toEqual(['rice', undefined])
+    expect(texts('正在').join('')).toContain('我正在吃饭')
+    expect(texts('再').join('')).toContain('再来')
+    expect(prop('还', 'clock')[0]?.value).toBe('1100')
+    expect(byHanzi('还').background).toBe('room-night')
+    expect(texts('还').join('')).toContain('还在')
+  })
+
+  it('keeps 爱 (a family hug) and 喜欢 (liking a thing) apart', () => {
+    expect(charIds('爱').sort()).toEqual(['mama', 'meimei'])
+    expect(chars('爱').every((c) => c.pose === 'hug')).toBe(true)
+    expect(charIds('喜欢')).toEqual(['meimei'])
+    expect(prop('喜欢', 'toy-panda')).toHaveLength(1)
+    expect(prop('爱', 'toy-panda')).toHaveLength(0)
+    expect(texts('爱').join('')).toContain('我爱你')
+    expect(texts('喜欢').join('')).toContain('喜欢')
+  })
+
+  it('keeps 要 / 不要 and 会 / 能 clearly apart', () => {
+    expect(texts('要').join('')).toContain('我要')
+    expect(texts('要').join('')).not.toContain('不要')
+    expect(texts('不要').join('')).toContain('不要')
+    expect(prop('不要', 'cross')).toHaveLength(1)
+    expect(prop('要', 'cross')).toHaveLength(0)
+    expect(byHanzi('要').play).not.toBe(byHanzi('不要').play)
+    expect(byHanzi('不要').play).toBe('shake-head')
+    // 会 = a learned skill (riding a bike alone); 能 = able / strong enough (lifting a heavy box)
+    expect(prop('会', 'bicycle')).toHaveLength(1)
+    expect(prop('会', 'box')).toHaveLength(0)
+    expect(prop('能', 'box')).toHaveLength(1)
+    expect(prop('能', 'bicycle')).toHaveLength(0)
+    expect(texts('会').join('')).toContain('我会')
+    expect(texts('能').join('')).toContain('能！')
+    // 学 = still learning (Mom holds the bike), 会 = can do it alone
+    expect(charIds('学')).toContain('mama')
+    expect(chars('学').find((c) => c.id === 'mama')?.x).toBeLessThan(chars('学').find((c) => c.id === 'meimei')?.x ?? 0)
+  })
+
+  it('draws 高兴 as a pair', () => {
+    const s = byHanzi('高兴')
+    expect(s.panels).toHaveLength(2)
+    expect(s.play).toBe('swap-pair')
+    expect(chars('高兴').map((c) => c.expression)).toEqual(['happy', 'sad'])
+  })
+
+  it('gives each school level a matching age: Little Sister at primary, never Big Brother at secondary, Big Brother at university', () => {
+    for (const h of ['小学', '小学生']) expect(charIds(h), h).toContain('meimei')
+    for (const h of ['中学', '中学生']) {
+      expect(charIds(h), h).not.toContain('gege')
+      expect(charIds(h), h).toContain('classmate')
+    }
+    for (const h of ['大学', '大学生']) expect(charIds(h), h).toContain('gege')
+    expect(prop('小学', 'school-small')).toHaveLength(1)
+    expect(prop('中学', 'school-tall')).toHaveLength(1)
+    expect(prop('大学', 'university')).toHaveLength(1)
+    for (const [h, t] of [['小学生', '我是小学生'], ['中学生', '我是中学生'], ['大学生', '我是大学生']]) expect(texts(h).join(''), h).toContain(t)
   })
 })

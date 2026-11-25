@@ -74,6 +74,8 @@ function eyes(expr: Expression, k: number): string {
         ellipse(-24, 3, 8.5, 10.5, INK, sh), ellipse(24, 3, 8.5, 10.5, INK, sh),
         circle(-21, -1, 3, WHITE, sh), circle(27, -1, 3, WHITE, sh),
       ])
+    case 'sleep':
+      return group('eyes', line(d('M', -32, 4, 'Q', -24, 12, -16, 4, 'M', 16, 4, 'Q', 24, 12, 32, 4), 4 * k))
     case 'angry':
       return group('eyes', [
         shape(d('M', -31, -1, 'L', -17, 3, 'Q', -16, 13, -24, 13, 'Q', -32, 12, -31, -1, 'Z'), INK, sh),
@@ -101,6 +103,8 @@ function mouth(expr: Expression, k: number): string {
       return group('mouth', line(d('M', -12, 41, 'Q', 0, 31, 12, 41), sw))
     case 'surprised':
       return group('mouth', ellipse(0, 38, 8, 10, MOUTH_DARK, { sw }))
+    case 'sleep':
+      return group('mouth', ellipse(0, 36, 5, 6, MOUTH_DARK, { sw }))
     case 'angry':
       return group('mouth', [
         shape(d('M', -15, 34, 'Q', 0, 29, 15, 34, 'L', 14, 42, 'Q', 0, 38, -14, 42, 'Z'), WHITE, { sw }),

@@ -1,6 +1,8 @@
 export type View = 'front' | 'side' | 'back'
-export type Expression = 'neutral' | 'happy' | 'sad' | 'surprised' | 'angry'
-export type ShownExpression = Exclude<Expression, 'neutral'>
+export type Expression = 'neutral' | 'happy' | 'sad' | 'surprised' | 'angry' | 'sleep'
+export type ShownExpression = Exclude<Expression, 'neutral' | 'sleep'>
+/** Scene-only expressions (not on the character sheets): eyes closed in sleep. */
+export const SCENE_EXPRESSIONS: readonly Expression[] = ['sleep']
 
 export const VIEWS: readonly View[] = ['front', 'side', 'back']
 export const EXPRESSIONS: readonly ShownExpression[] = ['happy', 'sad', 'surprised', 'angry']

@@ -1265,6 +1265,319 @@ export const PROPS: Record<string, Draw> = {
       rect(-44, -20, 8, 20, 2, '#5C5470', 2.5),
       rect(36, -20, 8, 20, 2, '#5C5470', 2.5),
     ].join(''),
+  // ---------- town, transport, daily life, school (tahap 4, u13–u16) ----------
+  /** Small shop front: striped awning, open front with a lit back wall (the seller stands in it; put a counter in front). */
+  shopfront: (o) => {
+    const c = o.color ?? '#E5484D'
+    return [
+      rect(-130, -236, 260, 236, 4, '#FFE8CC'),
+      rect(-104, -186, 208, 186, 4, '#FFF6E2', 3),
+      rect(-104, -150, 208, 8, 2, WOOD, 2.5),
+      ...Array.from({ length: 7 }, (_, i) => shape(d('M', -140 + i * 40, -250, 'L', -100 + i * 40, -250, 'L', -100 + i * 40, -222, 'Q', -120 + i * 40, -206, -140 + i * 40, -222, 'Z'), i % 2 ? WHITE : c, { sw: 3 })),
+      rect(-144, -262, 288, 14, 4, c, 3),
+    ].join('')
+  },
+  /** Shop counter (draw in front of the seller); variant 'qr': a payment code stand on top (squares, no writing). */
+  counter: (o) => {
+    const out = [rect(-110, -92, 220, 92, 6, o.color ?? '#7AA6D8'), rect(-118, -100, 236, 14, 5, '#5E88BB', 3)]
+    if (o.variant === 'qr') {
+      out.push(rect(54, -150, 48, 52, 5, WHITE, 3), rect(74, -100, 8, 4, 1, '#BDB6C9', 2))
+      for (const [x, y] of [[60, -144], [84, -144], [60, -120]]) out.push(el('rect', { x, y, width: 12, height: 12, fill: 'none', 'stroke-width': 3 }), flat(x + 4, y + 4, 4, 4, '#231942'))
+      for (const [x, y] of [[86, -122], [92, -116], [80, -112], [76, -126], [92, -128]]) out.push(flat(x, y, 5, 5, '#231942'))
+    }
+    return out.join('')
+  },
+  /** Shop shelf, 3 boards; variant 'snacks' | 'groceries' | 'books'. */
+  'shop-shelf': (o) => {
+    const v = o.variant ?? 'snacks'
+    const out = [rect(-74, -200, 148, 200, 6, '#E2C29E'), rect(-66, -192, 132, 184, 3, '#F8EBD8', 2.5)]
+    const boards = [-136, -72, -8]
+    const cols = ['#E5484D', '#4C9BE8', '#FFD43B', '#2F9E44', '#F06595', '#FF922B', '#9775FA']
+    boards.forEach((by, r) => {
+      if (v === 'books') {
+        let x = -62
+        let i = r * 3
+        while (x < 56) {
+          const w = 10 + ((i * 7) % 3) * 3
+          const h = 38 + ((i * 11) % 4) * 4
+          out.push(rect(x, by - h, w, h, 2, cols[i % cols.length], 2.5))
+          x += w + 2
+          i++
+        }
+      } else if (v === 'groceries') {
+        if (r === 0) for (let i = 0; i < 5; i++) out.push(circle(-48 + i * 24, by - 11, 11, i % 2 ? '#F59F00' : RED, { sw: 2.5 }))
+        if (r === 1) for (let i = 0; i < 5; i++) out.push(rect(-58 + i * 24, by - 40, 20, 40, 3, WHITE, 2.5), el('path', { d: d('M', -58 + i * 24, by - 40, 'L', -48 + i * 24, by - 50, 'L', -38 + i * 24, by - 40, 'Z'), fill: '#4C9BE8', 'stroke-width': 2.5 }), circle(-48 + i * 24, by - 22, 4, '#4C9BE8', { stroke: false }))
+        if (r === 2) for (let i = 0; i < 4; i++) out.push(rect(-60 + i * 31, by - 34, 28, 34, 5, '#FFD43B', 2.5), line(d('M', -54 + i * 31, by - 24, 'Q', -46 + i * 31, by - 30, -38 + i * 31, by - 24, 'M', -54 + i * 31, by - 16, 'Q', -46 + i * 31, by - 22, -38 + i * 31, by - 16), 2, 0.6))
+      } else {
+        for (let i = 0; i < 5; i++) {
+          const h = 30 + ((i + r) % 3) * 6
+          out.push(shape(d('M', -60 + i * 25, by, 'L', -60 + i * 25, by - h + 4, 'L', -56 + i * 25, by - h, 'L', -40 + i * 25, by - h, 'L', -36 + i * 25, by - h + 4, 'L', -36 + i * 25, by, 'Z'), cols[(i + r * 2) % cols.length], { sw: 2.5 }), circle(-48 + i * 25, by - h / 2, 5, WHITE, { stroke: false, opacity: 0.8 }))
+        }
+      }
+      out.push(rect(-70, by, 140, 8, 3, WOOD, 2.5))
+    })
+    return out.join('')
+  },
+  /** Shopping trolley (handle on the left); variant 'full': things in the basket. */
+  cart: (o) => {
+    const out: string[] = []
+    if (o.variant === 'full') out.push(circle(-6, -96, 12, RED, { sw: 2.5 }), rect(12, -112, 20, 30, 3, WHITE, 2.5), circle(34, -94, 11, '#F59F00', { sw: 2.5 }))
+    out.push(
+      shape(d('M', -40, -90, 'L', 60, -90, 'L', 50, -38, 'L', -30, -38, 'Z'), '#DDE7F5'),
+      line(d('M', -18, -90, 'L', -10, -38, 'M', 6, -90, 'L', 10, -38, 'M', 30, -90, 'L', 30, -38, 'M', -36, -64, 'L', 56, -64), 2.5, 0.6),
+      band([[-40, -90], [-58, -112], [-74, -112]], 4, '#868E96', true, 2.5),
+      band([[-30, -38], [-34, -18], [52, -18]], 3.5, '#868E96', true, 2.5),
+      circle(-28, -9, 8, '#4A4458', { sw: 2.5 }),
+      circle(42, -9, 8, '#4A4458', { sw: 2.5 }),
+    )
+    return out.join('')
+  },
+  /** Round restaurant table with a turntable and dishes (front view, cloth to the floor). */
+  'round-table': () =>
+    [
+      shape(d('M', -120, -78, 'L', 120, -78, 'L', 112, 0, 'L', -112, 0, 'Z'), '#FFF6E6'),
+      line(d('M', -60, -78, 'L', -58, 0, 'M', 0, -78, 'L', 0, 0, 'M', 60, -78, 'L', 58, 0), 2.5, 0.2),
+      ellipse(0, -80, 124, 20, '#E5484D'),
+      ellipse(0, -84, 64, 10, '#F2C4A0', { sw: 3 }),
+      ellipse(-72, -86, 22, 6, WHITE, { sw: 2.5 }),
+      ...[-82, -72, -62].map((x) => ellipse(x, -91, 7, 5, '#FFF6E6', { sw: 2 })),
+      ellipse(0, -92, 24, 6, WHITE, { sw: 2.5 }),
+      shape(d('M', -14, -94, 'Q', 0, -106, 16, -96, 'Q', 8, -92, -14, -94, 'Z'), '#F59F00', { sw: 2.5 }),
+      ellipse(72, -86, 22, 6, WHITE, { sw: 2.5 }),
+      circle(66, -92, 6, '#3E9B4F', { sw: 2 }), circle(78, -92, 6, '#3E9B4F', { sw: 2 }),
+    ].join(''),
+  /** Cinema screen glowing in the dark, showing a simple landscape. */
+  'cinema-screen': () =>
+    [
+      flat(-200, -170, 400, 170, '#FFF3BF', 8, 0.35),
+      rect(-186, -158, 372, 146, 6, '#FFF9DB'),
+      shape(d('M', -186, -40, 'Q', -110, -110, -30, -50, 'Q', 40, -100, 120, -46, 'Q', 160, -70, 186, -52, 'L', 186, -12, 'L', -186, -12, 'Z'), '#8CC97E', { sw: 3 }),
+      circle(110, -116, 18, '#FFD43B', { sw: 3 }),
+      shape(d('M', -120, -120, 'Q', -110, -132, -96, -124, 'Q', -84, -134, -72, -120, 'Z'), WHITE, { sw: 2.5 }),
+    ].join(''),
+  /** One row of cinema seat backs (draw in front of the people sitting in them). */
+  'cinema-seats': () =>
+    Array.from({ length: 6 }, (_, i) => [rect(-235 + i * 80, -70, 70, 70, 14, '#C92A2A'), rect(-227 + i * 80, -62, 54, 10, 5, '#E5484D', 2.5)].join('')).join(''),
+  popcorn: () =>
+    [
+      ...[[-12, -52], [0, -58], [12, -52], [-6, -46], [8, -46]].map(([x, y]) => circle(x, y, 8, '#FFF3BF', { sw: 2.5 })),
+      shape(d('M', -20, -46, 'L', 20, -46, 'L', 14, 0, 'L', -14, 0, 'Z'), WHITE),
+      el('path', { d: d('M', -11, -46, 'L', -8, 0, 'L', -3, 0, 'L', -4, -46, 'Z', 'M', 4, -46, 'L', 3, 0, 'L', 8, 0, 'L', 11, -46, 'Z'), fill: '#E5484D', stroke: 'none' }),
+      shape(d('M', -20, -46, 'L', 20, -46, 'L', 14, 0, 'L', -14, 0, 'Z'), 'none'),
+    ].join(''),
+  /** Tall office building with glass windows and a glass door. */
+  'office-building': () => {
+    const wins: string[] = []
+    for (let r = 0; r < 7; r++) for (let c = 0; c < 4; c++) wins.push(rect(-74 + c * 38, -300 + r * 34, 34, 26, 2, r % 2 ? '#A5D8FF' : '#CFE8F7', 2.5))
+    return [rect(-90, -320, 180, 320, 6, '#748FC9'), rect(-98, -330, 196, 14, 4, '#4C6EF5', 3), ...wins, rect(-44, -62, 88, 62, 3, '#A5D8FF', 3), line(d('M', 0, -62, 'L', 0, 0), 3)].join('')
+  },
+  briefcase: () => [shape(d('M', -10, -34, 'L', -10, -42, 'L', 10, -42, 'L', 10, -34), 'none', { sw: 4 }), rect(-24, -36, 48, 36, 5, '#8A5A3B'), line(d('M', -24, -22, 'L', 24, -22), 2.5, 0.5), rect(-4, -26, 8, 8, 2, YELLOW, 2)].join(''),
+  /** Car seen from the side, facing right; see-through windows (a driver drawn before it shows inside). variant 'taxi': yellow with a roof light (no writing). */
+  car: (o) => {
+    const taxi = o.variant === 'taxi'
+    const c = o.color ?? (taxi ? '#FFD43B' : '#4C9BE8')
+    const body = 'M-110 -24L-110 -56Q-110 -66 -98 -68L-62 -70L-36 -108Q-30 -114 -20 -114L46 -114Q56 -114 62 -106L84 -72L104 -68Q114 -64 114 -52L114 -24Q114 -16 106 -16L-102 -16Q-110 -16 -110 -24Z M-28 -104L-4 -104L-4 -74L-50 -74Z M6 -104L44 -104Q50 -104 54 -98L70 -74L6 -74Z'
+    return [
+      taxi ? rect(-6, -128, 36, 16, 5, '#FFF3BF') : '',
+      el('path', { d: body, fill: c, 'fill-rule': 'evenodd' }),
+      line(d('M', 2, -70, 'L', 2, -30), 2.5, 0.5),
+      rect(-4, -60, 14, 5, 2, '#4A4458', 2),
+      rect(100, -60, 12, 9, 3, '#FFF3BF', 2.5),
+      taxi ? el('path', { d: 'M-110 -44L114 -44L114 -36L-110 -36Z', fill: '#231942', opacity: 0.25, stroke: 'none' }) : '',
+      circle(-66, -16, 20, '#4A4458'), circle(-66, -16, 8, '#BDB6C9', { sw: 2.5 }),
+      circle(70, -16, 20, '#4A4458'), circle(70, -16, 8, '#BDB6C9', { sw: 2.5 }),
+    ].join('')
+  },
+  bus: (o) =>
+    [
+      rect(-150, -150, 300, 130, 16, o.color ?? '#2F9E44'),
+      ...[-130, -82, -34, 14, 62].map((x) => rect(x, -136, 40, 46, 5, '#CFE8F7', 3)),
+      rect(110, -136, 30, 92, 5, '#CFE8F7', 3),
+      rect(-150, -70, 300, 12, 0, '#FFD43B', 3),
+      circle(-96, -20, 22, '#4A4458'), circle(-96, -20, 8, '#BDB6C9', { sw: 2.5 }),
+      circle(96, -20, 22, '#4A4458'), circle(96, -20, 8, '#BDB6C9', { sw: 2.5 }),
+    ].join(''),
+  /** High-speed train, nose to the right. */
+  train: () =>
+    [
+      shape(d('M', -230, -84, 'L', 120, -84, 'Q', 190, -82, 226, -30, 'Q', 230, -16, 214, -16, 'L', -230, -16, 'Z'), '#F8F9FA'),
+      el('path', { d: d('M', -230, -44, 'L', 222, -44, 'Q', 226, -36, 222, -30, 'L', -230, -30, 'Z'), fill: '#4C9BE8', stroke: 'none' }),
+      shape(d('M', 150, -76, 'Q', 186, -70, 204, -50, 'L', 150, -50, 'Z'), '#4A4458', { sw: 3 }),
+      ...[-210, -170, -130, -90, -50, -10, 30, 70, 110].map((x) => rect(x, -72, 28, 20, 5, '#A5D8FF', 2.5)),
+      line(d('M', -60, -84, 'L', -60, -16, 'M', 80, -84, 'L', 80, -16), 2.5, 0.35),
+    ].join(''),
+  /** Long railway bridge on pillars over green rice fields. */
+  bridge: () =>
+    [
+      ...Array.from({ length: 8 }, (_, i) => line(d('M', -240, -8 - i * 9, 'Q', 0, -14 - i * 9, 240, -8 - i * 9), 3, 0.25)),
+      ...[-180, -60, 60, 180].map((x) => rect(x - 12, -90, 24, 90, 3, '#CED4DA')),
+      rect(-240, -104, 480, 18, 0, '#ADB5BD'),
+      line(d('M', -240, -104, 'L', 240, -104, 'M', -240, -86, 'L', 240, -86), 3.5),
+    ].join(''),
+  /** Contrail behind a plane: dashed white line. */
+  contrail: () => el('path', { d: 'M0 0Q-90 6 -200 36', fill: 'none', 'stroke-width': 9, 'stroke-dasharray': '22 12', opacity: 0.55, stroke: '#231942' }),
+  /** Train seat: high blue back and cushion (a character can sit on it). */
+  'train-seat': () => [rect(-50, -170, 100, 130, 16, '#4C6EF5'), rect(-42, -162, 84, 22, 8, WHITE, 2.5), rect(-58, -56, 116, 24, 10, '#5C7CFA'), rect(-46, -34, 10, 34, 3, '#4A4458', 2.5), rect(36, -34, 10, 34, 3, '#4A4458', 2.5)].join(''),
+  /** Train window with hills going by. */
+  'train-window': () =>
+    [
+      rect(-90, -110, 180, 110, 18, '#CFE8F7'),
+      shape(d('M', -86, -30, 'Q', -40, -80, 0, -40, 'Q', 40, -70, 86, -36, 'L', 86, -16, 'Q', 86, -4, 74, -4, 'L', -74, -4, 'Q', -86, -4, -86, -16, 'Z'), '#8CC97E', { sw: 3 }),
+      circle(-50, -84, 6, WHITE, { stroke: false }),
+      rect(-90, -110, 180, 110, 18, 'none', 6),
+    ].join(''),
+  'steering-wheel': () => [circle(0, -26, 26, 'none', { sw: 6 }), line(d('M', -24, -26, 'L', 24, -26, 'M', 0, -26, 'L', 0, 0), 4), circle(0, -26, 6, '#4A4458', { sw: 2.5 })].join(''),
+  // breakfast / dinner food
+  youtiao: () =>
+    [
+      shape(d('M', -36, -10, 'Q', -40, -20, -30, -22, 'L', 30, -24, 'Q', 40, -22, 36, -12, 'Q', 30, -8, -30, -6, 'Z'), '#F4B350'),
+      shape(d('M', -36, -24, 'Q', -40, -34, -30, -36, 'L', 30, -38, 'Q', 40, -36, 36, -26, 'Q', 30, -22, -30, -20, 'Z'), '#F0A23A'),
+      line(d('M', -22, -29, 'L', 22, -31, 'M', -22, -15, 'L', 22, -17), 2, 0.35),
+    ].join(''),
+  'fish-plate': () =>
+    [
+      ellipse(0, -9, 54, 11, WHITE),
+      shape(d('M', -36, -14, 'Q', -10, -34, 22, -16, 'L', 40, -28, 'L', 36, -12, 'L', 40, 2, 'L', 22, -10, 'Q', -10, 2, -36, -14, 'Z'), '#F59F00', { sw: 3 }),
+      circle(-24, -16, 2.5, '#231942', { stroke: false }),
+      line(d('M', -6, -20, 'Q', 0, -14, -6, -8, 'M', 6, -20, 'Q', 12, -14, 6, -8), 2, 0.4),
+      shape(d('M', -10, -26, 'L', -6, -32, 'M', 4, -26, 'L', 8, -32), 'none', { sw: 2.5 }),
+    ].join(''),
+  // clothes
+  /** Jacket held open (front view); variant 'half': the left half only, worn on one arm. */
+  jacket: (o) => {
+    const c = o.color ?? '#4C9BE8'
+    return [
+      shape(d('M', -30, -96, 'Q', -16, -86, -4, -94, 'L', -4, 0, 'L', -40, 0, 'L', -40, -60, 'L', -66, -14, 'L', -80, -24, 'L', -50, -90, 'Z'), c),
+      shape(d('M', 30, -96, 'Q', 16, -86, 4, -94, 'L', 4, 0, 'L', 40, 0, 'L', 40, -60, 'L', 66, -14, 'L', 80, -24, 'L', 50, -90, 'Z'), c),
+      line(d('M', -20, -40, 'L', -10, -40, 'M', 20, -40, 'L', 10, -40), 3, 0.5),
+    ].join('')
+  },
+  /** A piece of clothing on a hanger; variant 'shirt' | 'dress' | 'trousers'. Origin: hook top. */
+  garment: (o) => {
+    const v = o.variant ?? 'shirt'
+    const c = o.color ?? (v === 'dress' ? '#F06595' : v === 'trousers' ? '#3B5BDB' : '#74C0FC')
+    const hanger = [shape(d('M', 0, -4, 'Q', 0, -14, 6, -12), 'none', { sw: 3 }), line(d('M', -26, 10, 'L', 0, -2, 'L', 26, 10), 3.5)].join('')
+    let g = ''
+    if (v === 'dress') g = shape(d('M', -12, 6, 'Q', 0, 12, 12, 6, 'L', 16, 40, 'L', 34, 96, 'L', -34, 96, 'L', -16, 40, 'Z'), c)
+    else if (v === 'trousers') g = [rect(-24, 8, 48, 10, 3, c), shape(d('M', -24, 16, 'L', 24, 16, 'L', 28, 100, 'L', 6, 100, 'L', 0, 40, 'L', -6, 100, 'L', -28, 100, 'Z'), c)].join('')
+    else g = shape(d('M', -14, 6, 'Q', 0, 12, 14, 6, 'L', 34, 16, 'L', 28, 34, 'L', 20, 30, 'L', 20, 76, 'L', -20, 76, 'L', -20, 30, 'L', -28, 34, 'L', -34, 16, 'Z'), c)
+    return g + hanger
+  },
+  armchair: (o) =>
+    [
+      rect(-66, -150, 132, 120, 26, o.color ?? '#B5651D'),
+      rect(-84, -86, 34, 86, 12, o.color ?? '#B5651D'),
+      rect(50, -86, 34, 86, 12, o.color ?? '#B5651D'),
+      rect(-52, -54, 104, 28, 10, '#D08C4A'),
+      rect(-60, -26, 120, 26, 6, '#8A4B14'),
+    ].join(''),
+  /** Window opened wide: both panes swung out, a curtain blowing in. */
+  'window-open': () =>
+    [
+      rect(-56, -120, 112, 120, 6, '#BFE6FA'),
+      circle(26, -86, 12, YELLOW, { sw: 2.5 }),
+      shape(d('M', -56, -120, 'L', -92, -132, 'L', -92, 12, 'L', -56, 0, 'Z'), '#CFE8F7', { sw: 3.5 }),
+      shape(d('M', 56, -120, 'L', 92, -132, 'L', 92, 12, 'L', 56, 0, 'Z'), '#CFE8F7', { sw: 3.5 }),
+      shape(d('M', -50, -118, 'Q', -20, -100, -8, -70, 'Q', 10, -50, 4, -30, 'Q', -20, -40, -30, -60, 'Q', -44, -80, -50, -80, 'Z'), '#FFC9C9', { sw: 3 }),
+      rect(-62, -4, 124, 10, 4, WHITE, 3),
+      rect(-56, -120, 112, 120, 6, 'none', 5),
+    ].join(''),
+  'toy-panda': () =>
+    [
+      circle(-17, -66, 9, '#231942'), circle(17, -66, 9, '#231942'),
+      ellipse(0, -22, 22, 22, WHITE),
+      circle(-18, -10, 8, '#231942'), circle(18, -10, 8, '#231942'),
+      circle(0, -54, 20, WHITE),
+      ellipse(-8, -56, 5, 6.5, '#231942', { stroke: false }), ellipse(8, -56, 5, 6.5, '#231942', { stroke: false }),
+      circle(-7, -57, 1.6, WHITE, { stroke: false }), circle(9, -57, 1.6, WHITE, { stroke: false }),
+      ellipse(0, -46, 3.5, 2.5, '#231942', { stroke: false }),
+    ].join(''),
+  /** Thinking cloud with small puffs trailing down-left (flip for down-right); put a prop inside it. */
+  'thought-cloud': () =>
+    [
+      circle(-70, -6, 6, WHITE, { sw: 3 }),
+      circle(-54, -22, 9, WHITE, { sw: 3 }),
+      shape(d('M', -36, -40, 'Q', -56, -46, -50, -66, 'Q', -54, -92, -26, -94, 'Q', -14, -114, 12, -108, 'Q', 36, -118, 50, -96, 'Q', 72, -92, 66, -66, 'Q', 72, -42, 46, -38, 'Q', 30, -26, 6, -34, 'Q', -14, -26, -36, -40, 'Z'), WHITE, { sw: 3.5 }),
+    ].join(''),
+  /** Class timetable: digits 1–3 and a picture for each lesson (book, ball, music note). */
+  timetable: () => {
+    const rows = [-124, -84, -44]
+    return [
+      rect(-70, -160, 140, 160, 8, WHITE),
+      rect(-70, -160, 140, 22, 8, '#4C9BE8', 3),
+      ...rows.map((y, i) => line(d('M', -64, y + 38, 'L', 64, y + 38), 2, i < 2 ? 0.3 : 0)),
+      line(d('M', -32, -136, 'L', -32, -6), 2, 0.3),
+      ...rows.map((y, i) => digits(-50, y + 30, String(i + 1), 22)),
+      rect(4, -128, 24, 28, 3, '#4C9BE8', 2.5),
+      line(d('M', 16, -128, 'L', 16, -100), 2, 0.6),
+      circle(16, -66, 13, '#FF922B', { sw: 2.5 }),
+      line(d('M', 3, -66, 'L', 29, -66, 'M', 16, -79, 'Q', 10, -66, 16, -53), 2, 0.6),
+      ellipse(10, -14, 6, 5, '#231942', { stroke: false }),
+      ellipse(28, -18, 6, 5, '#231942', { stroke: false }),
+      shape(d('M', 16, -14, 'L', 16, -36, 'L', 34, -40, 'L', 34, -18), 'none', { sw: 3 }),
+    ].join('')
+  },
+  /** Bright one-storey primary school with a slide beside it (no writing). */
+  'school-small': () =>
+    [
+      rect(-120, -120, 240, 120, 8, '#FFE066'),
+      shape(d('M', -134, -116, 'L', 0, -170, 'L', 134, -116, 'Z'), '#F06595'),
+      circle(0, -136, 14, WHITE, { sw: 3 }),
+      shape(star5(0, -136, 9, 4), '#E5484D', { sw: 2 }),
+      ...[-96, -60, 32, 68].map((x) => rect(x, -96, 28, 28, 6, '#CFE8F7', 2.5)),
+      rect(-20, -66, 40, 66, 6, '#4C9BE8', 3),
+      ...[-96, -60, 32, 68].map((x, i) => rect(x, -50, 28, 8, 3, ['#E5484D', '#2F9E44', '#FF922B', '#9775FA'][i], 2.5)),
+    ].join(''),
+  /** Slide for the playground. */
+  slide: () =>
+    [
+      rect(36, -110, 8, 110, 3, '#868E96', 2.5),
+      line(d('M', 36, -90, 'L', 44, -90, 'M', 36, -70, 'L', 44, -70, 'M', 36, -50, 'L', 44, -50, 'M', 36, -30, 'L', 44, -30), 3),
+      band([[40, -110], [-10, -50], [-50, -6]], 8, '#E5484D', true, 3),
+    ].join(''),
+  /** Tall secondary school: four storeys, a flag (no writing). */
+  'school-tall': () =>
+    [
+      rect(-2, -300, 5, 70, 2, '#868E96', 2.5),
+      shape(d('M', 3, -298, 'L', 40, -290, 'L', 3, -276, 'Z'), '#E5484D', { sw: 2.5 }),
+      rect(-120, -232, 240, 232, 6, '#D0EBFF'),
+      rect(-128, -242, 256, 14, 4, '#1C7ED6', 3),
+      ...[-200, -150, -100].flatMap((y) => [-100, -62, -24, 14, 52, 90].map((x) => rect(x - 4, y, 22, 26, 3, WHITE, 2.5))),
+      ...[-100, -62, 52, 90].map((x) => rect(x - 4, -50, 22, 26, 3, WHITE, 2.5)),
+      rect(-22, -60, 44, 60, 4, '#8A5A3B', 3),
+    ].join(''),
+  /** Basketball hoop on a pole. */
+  hoop: () =>
+    [
+      rect(-4, -200, 8, 200, 3, '#868E96', 2.5),
+      rect(-40, -236, 64, 46, 5, WHITE, 3),
+      rect(-24, -222, 32, 22, 2, 'none', 2.5),
+      rect(-28, -196, 40, 7, 3, '#F76707', 2.5),
+      line(d('M', -24, -190, 'L', -18, -168, 'M', -8, -188, 'L', -8, -166, 'M', 8, -190, 'L', 2, -168), 2, 0.5),
+    ].join(''),
+  basketball: () => [circle(0, -16, 16, '#F76707'), shape(d('M', -16, -16, 'L', 16, -16, 'M', 0, -32, 'L', 0, 0, 'M', -11, -28, 'Q', -4, -16, -11, -4, 'M', 11, -28, 'Q', 4, -16, 11, -4), 'none', { sw: 2.5 })].join(''),
+  /** University main building: wide steps, columns, a dome (no writing). */
+  university: () =>
+    [
+      shape(d('M', -40, -206, 'Q', 0, -258, 40, -206, 'Z'), '#94D82D'),
+      rect(-4, -268, 8, 14, 2, '#868E96', 2.5),
+      rect(-200, -200, 400, 30, 4, '#F1E3C8'),
+      shape(d('M', -210, -196, 'L', 0, -226, 'L', 210, -196, 'Z'), '#E9D8B4'),
+      rect(-190, -170, 380, 140, 2, '#FFF1DC'),
+      ...[-170, -120, -70, 50, 100, 150].map((x) => rect(x, -166, 20, 136, 3, WHITE, 3)),
+      rect(-40, -120, 80, 90, 6, '#8A5A3B', 3),
+      rect(-220, -30, 440, 14, 3, '#E9D8B4', 3),
+      rect(-236, -16, 472, 16, 3, '#DCC9A3', 3),
+    ].join(''),
+  /** The blanket of the bed (same place and size as on `bed`): draw it in front of someone lying in that bed. */
+  blanket: (o) =>
+    [
+      shape(d('M', -26, -66, 'L', 76, -66, 'Q', 82, -66, 82, -58, 'L', 82, -20, 'L', -26, -20, 'Z'), o.color ?? '#F7A1C4'),
+      line(d('M', -10, -66, 'L', -10, -20), 3, 0.35),
+    ].join(''),
+  /** Clothes rail: two poles and a bar at y -230 (hang garments from y -226). */
+  'clothes-rail': () => [rect(-134, -236, 10, 236, 3, '#868E96', 2.5), rect(124, -236, 10, 236, 3, '#868E96', 2.5), rect(-140, -240, 280, 10, 4, '#ADB5BD', 3), rect(-150, -8, 40, 8, 3, '#4A4458', 2.5), rect(110, -8, 40, 8, 3, '#4A4458', 2.5)].join(''),
+  laptop: () => [rect(-26, -40, 52, 34, 4, '#4A4458'), rect(-21, -35, 42, 24, 2, '#A5D8FF', 2), rect(-32, -8, 64, 8, 3, '#868E96', 2.5)].join(''),
 }
 
 export const PROP_IDS = Object.keys(PROPS)

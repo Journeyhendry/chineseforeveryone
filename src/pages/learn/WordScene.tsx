@@ -24,6 +24,7 @@ const PLAY_MS: Record<PlayPreset, number> = {
   beckon: 1900,
   panels: 2700,
   origin: 3200,
+  clock: 2600,
 }
 
 let indexPromise: Promise<SceneIndex | null> | null = null

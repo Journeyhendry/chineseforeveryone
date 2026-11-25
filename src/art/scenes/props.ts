@@ -16,6 +16,10 @@ type Draw = (o: PropOpts) => string
 const rect = (x: number, y: number, w: number, h: number, rx: number, fill: string, sw?: number) =>
   el('rect', { x, y, width: w, height: h, rx, fill, 'stroke-width': sw })
 
+/** Flat colour block without outline (glows, sky strips). */
+const flat = (x: number, y: number, w: number, h: number, fill: string, rx = 0, opacity?: number) =>
+  el('rect', { x, y, width: w, height: h, rx: rx || undefined, fill, stroke: 'none', opacity })
+
 /** Digits as text (the only text allowed in scenes). */
 export function digits(x: number, y: number, value: string, size: number, fill = '#231942'): string {
   if (!/^[0-9]+$/.test(value)) throw new Error(`digits only: ${value}`)
@@ -857,6 +861,410 @@ export const PROPS: Record<string, Draw> = {
       el('g', { transform: `matrix(${s} 0 0 ${-s} ${num(-512 * s)} ${num(-10 - 124 * s)})` }, paths),
     ].join('')
   },
+  // ---------- food & drink (tahap 3, u09) ----------
+  /** Bowl of noodles in soup with a few greens and half an egg. variant 'lift': fewer noodles left. */
+  'noodle-bowl': (o) =>
+    [
+      shape(d('M', -36, -30, 'Q', 0, -40, 36, -30, 'Z'), '#F4C06A', { sw: 3 }),
+      line(d('M', -26, -33, 'Q', -18, -38, -10, -33, 'Q', -2, -28, 6, -33, 'Q', 14, -38, 22, -33, 'M', -20, -36, 'Q', -12, -31, -4, -36, 'Q', 4, -41, 12, -36), 2.5),
+      o.variant === 'lift' ? '' : [ellipse(16, -37, 8, 5, WHITE, { sw: 2.5 }), circle(16, -37, 3.2, YELLOW, { stroke: false })].join(''),
+      shape(d('M', -22, -36, 'Q', -16, -46, -8, -38, 'Q', -14, -34, -22, -36, 'Z'), '#4CAF50', { sw: 2.5 }),
+      shape(d('M', -38, -30, 'L', 38, -30, 'Q', 36, -2, 0, -2, 'Q', -36, -2, -38, -30, 'Z'), o.color ?? WHITE),
+      line(d('M', -30, -18, 'Q', 0, -11, 30, -18), 3, 0.3),
+      rect(-13, -4, 26, 4, 2, o.color ?? WHITE, 3),
+    ].join(''),
+  /** Chopsticks lifting long noodles (origin = the hand holding the chopsticks). */
+  'noodles-lift': () =>
+    [
+      ...[[[22, 12], [17, 50], [23, 92]], [[27, 10], [32, 50], [28, 94]], [[32, 9], [39, 46], [35, 88]], [[25, 12], [27, 48], [19, 86]]].map((pts) => band(pts as [number, number][], 2.2, '#F4D58D', true, 2.5)),
+      shape(d('M', 0, 0, 'L', 34, 18, 'M', 2, -6, 'L', 38, 10), 'none', { sw: 4 }),
+    ].join(''),
+  'rice-cooker': () =>
+    [
+      rect(-44, -62, 88, 62, 18, '#F8F9FA'),
+      shape(d('M', -46, -60, 'Q', -46, -86, 0, -88, 'Q', 46, -86, 46, -60, 'Z'), '#E9ECEF'),
+      rect(-10, -96, 20, 10, 4, '#ADB5BD', 3),
+      rect(-18, -40, 36, 18, 5, '#74C0FC', 3),
+      circle(0, -31, 4, '#FA5252', { sw: 2 }),
+    ].join(''),
+  /** Plate of stir-fried greens (bok choy). */
+  'greens-plate': () =>
+    [
+      ...[[-22, -14, -30], [-8, -18, -10], [8, -18, 12], [22, -14, 30], [0, -12, 0]].map(([x, y, r]) =>
+        el('g', { transform: `translate(${x} ${y}) rotate(${r})` }, [shape(d('M', 0, 4, 'Q', -12, -8, -4, -24, 'Q', 0, -28, 4, -24, 'Q', 12, -8, 0, 4, 'Z'), '#40A24E', { sw: 2.5 }), line(d('M', 0, 2, 'L', 0, -18), 2.5, 0.6)].join('')),
+      ),
+      ellipse(0, -7, 46, 9, WHITE),
+      ellipse(0, -8, 30, 5, '#F1EEF6', { sw: 2.5 }),
+    ].join(''),
+  'water-bottle': () =>
+    [
+      rect(-7, -82, 14, 10, 3, '#4C9BE8', 2.5),
+      shape(d('M', -8, -72, 'L', 8, -72, 'Q', 16, -64, 16, -52, 'L', 16, -4, 'Q', 16, 0, 12, 0, 'L', -12, 0, 'Q', -16, 0, -16, -4, 'L', -16, -52, 'Q', -16, -64, -8, -72, 'Z'), '#E7F5FF'),
+      shape(d('M', -14, -40, 'L', 14, -40, 'L', 14, -4, 'L', -14, -4, 'Z'), '#A5D8FF', { stroke: false }),
+      line(d('M', -14, -40, 'L', 14, -40), 2.5, 0.4),
+      shape(d('M', -8, -72, 'L', 8, -72, 'Q', 16, -64, 16, -52, 'L', 16, -4, 'Q', 16, 0, 12, 0, 'L', -12, 0, 'Q', -16, 0, -16, -4, 'L', -16, -52, 'Q', -16, -64, -8, -72, 'Z'), 'none'),
+    ].join(''),
+  /** Milk carton with cow spots (no writing). */
+  'milk-carton': () =>
+    [
+      shape(d('M', -22, -78, 'L', 0, -96, 'L', 22, -78, 'Z'), '#4C9BE8'),
+      rect(-6, -104, 12, 10, 2, '#4C9BE8', 2.5),
+      rect(-22, -78, 44, 78, 4, WHITE),
+      shape(d('M', -22, -60, 'Q', -10, -66, -6, -54, 'Q', -10, -44, -22, -46, 'Z'), '#231942', { stroke: false }),
+      shape(d('M', 6, -40, 'Q', 16, -48, 22, -40, 'L', 22, -24, 'Q', 10, -20, 6, -30, 'Z'), '#231942', { stroke: false }),
+      ellipse(-6, -18, 6, 4, '#231942', { stroke: false }),
+      rect(-22, -78, 44, 78, 4, 'none'),
+    ].join(''),
+  mug: (o) =>
+    [
+      band([[22, -42], [38, -40], [40, -26], [36, -16], [22, -14]], 4, o.color ?? '#7FB3F5', true, 3),
+      rect(-24, -54, 48, 54, 8, o.color ?? '#7FB3F5'),
+      shape(star5(-6, -30, 9, 4), YELLOW, { sw: 2 }),
+      shape(star5(10, -14, 5, 2.2), YELLOW, { sw: 1.8 }),
+      shape(star5(12, -42, 5, 2.2), YELLOW, { sw: 1.8 }),
+    ].join(''),
+  'apple-bite': () =>
+    [
+      shape(d('M', 0, -30, 'Q', 2, -40, 6, -44), 'none', { sw: 3.5 }),
+      shape(d('M', 3, -38, 'Q', 14, -46, 20, -38, 'Q', 12, -32, 3, -38, 'Z'), LEAF, { sw: 3 }),
+      shape(d('M', 0, -30, 'Q', -10, -38, -18, -30, 'Q', -27, -20, -20, -7, 'Q', -12, 4, 0, -2, 'Q', 12, 4, 20, -7, 'Q', 22, -11, 21, -14, 'Q', 13, -14, 13, -21, 'Q', 13, -28, 20, -29, 'Q', 10, -38, 0, -30, 'Z'), RED),
+      shape(d('M', 21, -14, 'Q', 13, -14, 13, -21, 'Q', 13, -28, 20, -29), '#FFF3D6', { sw: 2.5 }),
+    ].join(''),
+  wok: () =>
+    [
+      band([[44, -22], [86, -34]], 5, '#3B3363', true, 3),
+      shape(d('M', -50, -26, 'L', 50, -26, 'Q', 44, 0, 0, 0, 'Q', -44, 0, -50, -26, 'Z'), '#5C5470'),
+      line(d('M', -54, -26, 'L', 54, -26), 4),
+    ].join(''),
+  'fried-egg': () =>
+    [
+      shape(d('M', -22, 0, 'Q', -26, -10, -14, -12, 'Q', -6, -20, 6, -14, 'Q', 22, -16, 22, -6, 'Q', 24, 2, 10, 0, 'Q', 0, 4, -10, 1, 'Q', -18, 4, -22, 0, 'Z'), WHITE, { sw: 2.5 }),
+      circle(0, -7, 6.5, '#FFB703', { sw: 2.5 }),
+    ].join(''),
+  bread: () =>
+    [
+      rect(-70, -8, 140, 8, 3, WOOD_D, 2.5),
+      shape(d('M', -56, -8, 'L', -56, -42, 'Q', -56, -60, -36, -60, 'L', 20, -60, 'Q', 40, -60, 40, -42, 'L', 40, -8, 'Z'), '#E0A458'),
+      line(d('M', -36, -58, 'L', -40, -12, 'M', -16, -60, 'L', -20, -10, 'M', 4, -60, 'L', 0, -10, 'M', 24, -58, 'L', 20, -12), 2.5, 0.45),
+      shape(d('M', 46, -8, 'L', 46, -44, 'Q', 46, -56, 56, -56, 'Q', 66, -56, 66, -44, 'L', 66, -8, 'Z'), '#FFE8B6', { sw: 3 }),
+    ].join(''),
+  'bread-slice': () => shape(d('M', -14, 0, 'L', -14, -26, 'Q', -20, -28, -20, -34, 'Q', -20, -42, -8, -42, 'L', 8, -42, 'Q', 20, -42, 20, -34, 'Q', 20, -28, 14, -26, 'L', 14, 0, 'Z'), '#FFE8B6', { sw: 3 }),
+  /** Open bamboo steamer with buns, the lid leaning behind it. */
+  steamer: () =>
+    [
+      shape(d('M', 6, -60, 'L', 74, -96, 'L', 82, -84, 'L', 20, -46, 'Z'), '#E8C07A'),
+      line(d('M', 30, -68, 'L', 70, -90, 'M', 34, -62, 'L', 74, -84), 2.5, 0.4),
+      ...[[-30, -40], [0, -42], [30, -40], [-15, -52], [15, -52]].map(([x, y]) => group('bun', PROPS.baozi({}), { transform: `translate(${x} ${y + 6}) scale(0.7)` })),
+      rect(-58, -40, 116, 40, 10, '#E8C07A'),
+      line(d('M', -56, -26, 'L', 56, -26, 'M', -56, -12, 'L', 56, -12), 2.5, 0.4),
+    ].join(''),
+  'rolling-pin': () => [rect(-40, -12, 80, 12, 6, '#E2C29E', 3), rect(-56, -9, 16, 6, 3, WOOD_D, 2.5), rect(40, -9, 16, 6, 3, WOOD_D, 2.5)].join(''),
+  'tea-leaves': () =>
+    [[-12, 0, -30], [6, 0, 20], [0, -2, 70]].map(([x, y, r]) => el('g', { transform: `translate(${x} ${y}) rotate(${r})` }, shape(d('M', 0, 0, 'Q', -7, -9, 0, -18, 'Q', 7, -9, 0, 0, 'Z'), '#5FA34A', { sw: 2.5 }))).join(''),
+  /** Small tea cup (no handle) with green tea. */
+  'tea-cup': () =>
+    [
+      shape(d('M', -16, -24, 'L', 16, -24, 'Q', 14, 0, 0, 0, 'Q', -14, 0, -16, -24, 'Z'), '#F8F1E4'),
+      ellipse(0, -24, 16, 4, '#B5C96A', { sw: 2.5 }),
+    ].join(''),
+  /** Clay (yixing-style) teapot. */
+  'clay-teapot': () =>
+    [
+      band([[22, -20], [40, -28], [48, -40]], 4, '#A0522D'),
+      shape(d('M', -28, -30, 'Q', -46, -30, -42, -14, 'Q', -38, -6, -26, -10), 'none', { sw: 5 }),
+      shape(d('M', -30, -6, 'Q', -34, -36, 0, -38, 'Q', 34, -36, 30, -6, 'Q', 28, 0, 0, 0, 'Q', -28, 0, -30, -6, 'Z'), '#A0522D'),
+      ellipse(0, -38, 18, 4, '#8B4513', { sw: 3 }),
+      circle(0, -44, 4.5, '#8B4513', { sw: 3 }),
+    ].join(''),
+  'bitter-melon': () =>
+    [
+      shape(d('M', -36, -10, 'Q', -30, -26, 0, -26, 'Q', 30, -26, 38, -12, 'Q', 30, 0, 0, 0, 'Q', -30, 0, -36, -10, 'Z'), '#7BBF5A'),
+      ...[[-22, -14], [-10, -18], [2, -14], [14, -18], [24, -12], [-14, -8], [8, -7]].map(([x, y]) => circle(x, y, 2.6, '#5A9E3C', { sw: 1.8 })),
+      shape(d('M', 38, -12, 'L', 46, -16), 'none', { sw: 3.5 }),
+    ].join(''),
+  'lunch-box': () =>
+    [
+      shape(d('M', -40, -40, 'L', 40, -40, 'L', 46, -64, 'L', -34, -64, 'Z'), '#74C0FC', { sw: 3 }),
+      rect(-44, -40, 88, 40, 8, '#4C9BE8'),
+      shape(d('M', -40, -38, 'Q', -20, -50, 0, -38, 'Z'), WHITE, { sw: 2.5 }),
+      circle(14, -42, 7, '#40A24E', { sw: 2.5 }),
+      ellipse(30, -40, 8, 5, '#E8590C', { sw: 2.5 }),
+    ].join(''),
+  // ---------- time, days, calendars (tahap 3, u10–u11) ----------
+  /**
+   * Analogue clock showing value "HHMM" (12-hour face, digits 12/3/6/9). The hands sit in groups
+   * whose origin is the clock centre (classes hand-h / hand-m). variant tokens: 'alarm' (bells +
+   * feet), 'm5' / 'm10' (yellow wedge: the last 5 / 10 minutes, minute hand sweeps on click),
+   * 'hour' (the minute hand goes once round, the hour hand moves one hour).
+   */
+  clock: (o) => {
+    const v = (o.value ?? '0300').padStart(4, '0')
+    const hh = Number(v.slice(0, 2)) % 12
+    const mm = Number(v.slice(2))
+    const opts = (o.variant ?? '').split(' ')
+    const alarm = opts.includes('alarm')
+    const cy = alarm ? -62 : -54
+    const R = 44
+    const out: string[] = []
+    if (alarm) {
+      out.push(circle(-32, cy - 42, 13, o.color ?? '#E5484D'), circle(32, cy - 42, 13, o.color ?? '#E5484D'))
+      out.push(shape(d('M', -30, -8, 'L', -38, 0, 'M', 30, -8, 'L', 38, 0), 'none', { sw: 5 }))
+    }
+    if (opts.includes('hour')) {
+      const r = R + 18
+      const a0 = (-80 * Math.PI) / 180
+      const a1 = (250 * Math.PI) / 180
+      const p = (a: number, rr = r) => [Math.cos(a) * rr, cy + Math.sin(a) * rr] as const
+      const [x0, y0] = p(a0)
+      const [x1, y1] = p(a1)
+      out.push(el('path', { class: 'ring', d: d('M', x0, y0, 'A', r, r, 0, 1, 1, x1, y1), fill: 'none', 'stroke-width': 4.5 }))
+      out.push(shape(d('M', x0 - 4, y0 - 12, 'L', x0 + 14, y0, 'L', x0 - 4, y0 + 12, 'Z'), YELLOW, { sw: 3 }))
+    }
+    out.push(circle(0, cy, R + 8, o.color ?? '#4C9BE8'), circle(0, cy, R, WHITE, { sw: 3 }))
+    const sector = (from: number, to: number, r: number, fill: string, cls: string) => {
+      const a = (m: number) => ((m / 60) * 360 - 90) * (Math.PI / 180)
+      const large = to - from > 30 ? 1 : 0
+      return el('path', { class: cls, d: d('M', 0, cy, 'L', Math.cos(a(from)) * r, cy + Math.sin(a(from)) * r, 'A', r, r, 0, large, 1, Math.cos(a(to)) * r, cy + Math.sin(a(to)) * r, 'Z'), fill, stroke: 'none', opacity: 0.85 })
+    }
+    for (const t of opts) {
+      const m = /^m(\d+)$/.exec(t)
+      if (m) out.push(sector(mm - Number(m[1]), mm, R - 2, YELLOW, 'wedge'))
+    }
+    if (opts.includes('hour')) out.push(sector((hh - 1) * 5, hh * 5, R - 16, '#FFC9A8', 'wedge'))
+    const ticks: string[] = []
+    for (let i = 0; i < 60; i++) {
+      if (i % 15 === 0) continue
+      const a = ((i / 60) * 360 - 90) * (Math.PI / 180)
+      const r1 = i % 5 === 0 ? R - 9 : R - 5
+      ticks.push(`M${num(Math.cos(a) * r1)} ${num(cy + Math.sin(a) * r1)}L${num(Math.cos(a) * (R - 2))} ${num(cy + Math.sin(a) * (R - 2))}`)
+    }
+    out.push(el('path', { d: ticks.join(''), fill: 'none', 'stroke-width': 2 }))
+    out.push(digits(0, cy - R + 20, '12', 15), digits(R - 12, cy + 5, '3', 15), digits(0, cy + R - 7, '6', 15), digits(-R + 12, cy + 5, '9', 15))
+    const sweep = opts.find((t) => /^m\d+$/.test(t))
+    const ha = (hh + mm / 60) * 30
+    const ma = mm * 6
+    const hand = (cls: string, ang: number, len: number, w: number, fill: string) =>
+      el('g', { transform: `translate(0 ${cy})` }, el('g', { class: cls }, el('g', { transform: `rotate(${num(ang)})` }, shape(limb({ x: 0, y: 8 }, { x: 0, y: (8 - len) / 2 }, { x: 0, y: -len }, w), fill, { sw: 2.5 }))))
+    out.push(hand(`hand-h${opts.includes('hour') ? ' sweep-h1' : ''}`, ha, 24, 4.2, '#231942'))
+    out.push(hand(`hand-m${sweep ? ` sweep-${sweep}` : opts.includes('hour') ? ' sweep-m60' : ''}`, ma, 37, 2.4, '#E5484D'))
+    out.push(circle(0, cy, 4.5, YELLOW, { sw: 2.5 }))
+    return out.join('')
+  },
+  /** A small sky window: where the sun (or the moon) is at hour `value` (0–23). */
+  'day-dial': (o) => {
+    const h = Number(o.value ?? 12)
+    const night = h >= 19 || h < 5
+    const out: string[] = [rect(-70, -86, 140, 86, 12, night ? '#3B3363' : '#BFE6FA'), flat(-68, -16, 136, 14, night ? '#2E7D4F' : '#8CC97E')]
+    out.push(el('path', { d: d('M', -52, -16, 'A', 52, 56, 0, 0, 1, 52, -16), fill: 'none', 'stroke-width': 2.5, 'stroke-dasharray': '5 6', opacity: night ? 0 : 0.45 }))
+    if (night) {
+      out.push(shape(d('M', 10, -70, 'A', 20, 20, 0, 1, 0, 30, -38, 'A', 15, 15, 0, 1, 1, 10, -70, 'Z'), '#FFE8A3', { sw: 2.5 }))
+      for (const [x, y] of [[-46, -66], [-24, -50], [-50, -36], [48, -66]]) out.push(shape(star5(x, y, 6, 2.6), '#FFE8A3', { sw: 1.5 }))
+    } else {
+      const t = Math.max(0, Math.min(1, (h - 6) / 12))
+      const a = Math.PI * (1 - t)
+      const sx = Math.cos(a) * 52
+      const sy = -16 - Math.sin(a) * 56
+      const rays: string[] = []
+      for (let i = 0; i < 8; i++) {
+        const b = (i * Math.PI) / 4
+        rays.push(`M${num(sx + Math.cos(b) * 17)} ${num(sy + Math.sin(b) * 17)}L${num(sx + Math.cos(b) * 23)} ${num(sy + Math.sin(b) * 23)}`)
+      }
+      out.push(el('path', { d: rays.join(''), fill: 'none', 'stroke-width': 3 }), circle(sx, sy, 13, h < 8 || h > 16 ? '#FFA94D' : YELLOW, { sw: 3 }))
+    }
+    out.push(rect(-70, -86, 140, 86, 12, 'none'))
+    return out.join('')
+  },
+  /** Three day pages (yesterday, today, tomorrow); today is yellow. variant 'tomorrow' / 'yesterday': that page is green, with an arrow from today. */
+  days3: (o) => {
+    const today = Number(o.value ?? 24)
+    const target = o.variant === 'tomorrow' ? 1 : o.variant === 'yesterday' ? -1 : 0
+    const out: string[] = []
+    for (const k of [-1, 0, 1]) {
+      const x = k * 78
+      const fill = k === 0 ? '#FFE066' : k === target ? '#B2F2BB' : WHITE
+      if (k === 0) out.push(flat(x - 38, -96, 76, 96, YELLOW, 12, 0.6))
+      out.push(rect(x - 32, -90, 64, 84, 8, fill, k === 0 || k === target ? 4.5 : 3.5))
+      out.push(el('path', { d: d('M', x - 32, -72, 'L', x - 32, -82, 'Q', x - 32, -90, x - 24, -90, 'L', x + 24, -90, 'Q', x + 32, -90, x + 32, -82, 'L', x + 32, -72, 'Z'), fill: '#E5484D', 'stroke-width': 3 }))
+      out.push(digits(x, -24, String(today + k), 34))
+    }
+    return out.join('')
+  },
+  /** One day box of a week strip; variant 'school' (school bag) or 'play' (ball, weekend). */
+  'day-box': (o) => {
+    const play = o.variant === 'play'
+    return [
+      rect(-20, -54, 40, 54, 7, play ? '#FFE3E3' : WHITE),
+      el('path', { d: 'M-20 -40L-20 -47Q-20 -54 -13 -54L13 -54Q20 -54 20 -47L20 -40Z', fill: play ? '#E5484D' : '#4C9BE8', 'stroke-width': 3 }),
+      play
+        ? [circle(0, -20, 11, '#FF922B', { sw: 2.5 }), line(d('M', -11, -20, 'L', 11, -20, 'M', 0, -31, 'Q', -6, -20, 0, -9), 2, 0.6)].join('')
+        : [rect(-11, -32, 22, 24, 5, '#7950F2', 2.5), shape(d('M', -6, -32, 'Q', 0, -40, 6, -32), 'none', { sw: 2.5 }), rect(-11, -26, 22, 7, 3, '#9775FA', 2)].join(''),
+    ].join('')
+  },
+  /** A week strip of 7 boxes; variant 'sunday': the last one glows with a sun. */
+  week: (o) => {
+    const out: string[] = []
+    for (let i = 0; i < 7; i++) {
+      const x = -138 + i * 46
+      const last = i === 6
+      const hl = last && o.variant === 'sunday'
+      if (hl) out.push(flat(x - 26, -64, 52, 68, YELLOW, 12, 0.7))
+      out.push(rect(x - 20, -54, 40, 54, 7, hl ? '#FFE066' : i >= 5 ? '#FFE3E3' : WHITE, hl ? 4.5 : 3))
+      out.push(el('path', { d: `M${x - 20} -40L${x - 20} -47Q${x - 20} -54 ${x - 13} -54L${x + 13} -54Q${x + 20} -54 ${x + 20} -47L${x + 20} -40Z`, fill: i >= 5 ? '#E5484D' : '#4C9BE8', 'stroke-width': 3 }))
+      if (hl) out.push(circle(x, -20, 9, '#FF922B', { sw: 2.5 }))
+    }
+    return out.join('')
+  },
+  /** A year calendar: the year in digits on top, twelve little month grids. variant 'hl' (glowing) / 'dim'. */
+  'year-cal': (o) => {
+    const out: string[] = []
+    if (o.variant === 'hl') out.push(flat(-68, -158, 136, 162, YELLOW, 16, 0.75))
+    out.push(rect(-60, -150, 120, 150, 10, WHITE))
+    out.push(el('path', { d: 'M-60 -116L-60 -140Q-60 -150 -50 -150L50 -150Q60 -150 60 -140L60 -116Z', fill: o.color ?? '#E5484D', 'stroke-width': 3.5 }))
+    out.push(digits(0, -124, o.value ?? '2026', 26, WHITE))
+    const cells: string[] = []
+    for (let i = 0; i < 12; i++) {
+      const x = -48 + (i % 3) * 34
+      const y = -108 + Math.floor(i / 3) * 26
+      cells.push(`M${x} ${y}h28v20h-28Z`)
+    }
+    out.push(el('path', { d: cells.join(''), fill: '#F1EEF6', 'stroke-width': 2 }))
+    const dots: string[] = []
+    for (let i = 0; i < 12; i++) {
+      const x = -48 + (i % 3) * 34
+      const y = -108 + Math.floor(i / 3) * 26
+      dots.push(`M${x + 6} ${y + 7}h18M${x + 6} ${y + 13}h18`)
+    }
+    out.push(el('path', { d: dots.join(''), fill: 'none', 'stroke-width': 3, 'stroke-dasharray': '0 6', opacity: 0.5 }))
+    const g = out.join('')
+    return o.variant === 'dim' ? el('g', { opacity: 0.6 }, g) : g
+  },
+  /** Crescent moon. */
+  moon: (o) => shape(d('M', -4, -60, 'A', 30, 30, 0, 1, 0, 26, -10, 'A', 24, 24, 0, 1, 1, -4, -60, 'Z'), o.color ?? '#FFE8A3'),
+  /** Picture of the sun as the old character drew it: a round sun with a dot in the middle. */
+  'sun-dot': () => {
+    const rays: string[] = []
+    for (let i = 0; i < 12; i++) {
+      const a = (i * Math.PI) / 6
+      rays.push(`M${num(Math.cos(a) * 50)} ${num(-64 + Math.sin(a) * 50)}L${num(Math.cos(a) * 62)} ${num(-64 + Math.sin(a) * 62)}`)
+    }
+    return [el('path', { d: rays.join(''), fill: 'none', 'stroke-width': 5 }), circle(0, -64, 42, YELLOW, { sw: 5 }), circle(0, -64, 8, '#231942', { stroke: false })].join('')
+  },
+  /** Picture of the moon as the old character drew it: a crescent with a stroke inside. */
+  'moon-old': () =>
+    [
+      shape(d('M', 20, -122, 'A', 58, 58, 0, 0, 0, 20, -6, 'A', 90, 90, 0, 0, 1, 20, -122, 'Z'), '#FFE066', { sw: 5 }),
+      shape(d('M', -30, -66, 'L', -8, -62), 'none', { sw: 6 }),
+    ].join(''),
+  /** The same tree in a season: variant spring / summer / autumn / winter. */
+  'season-tree': (o) => {
+    const v = o.variant ?? 'summer'
+    const crown = v === 'spring' ? '#FFD6E7' : v === 'autumn' ? '#FFA94D' : v === 'winter' ? '#F8F9FA' : '#69B85E'
+    const out = [rect(-7, -60, 14, 60, 4, '#8A5A3B'), circle(0, -88, 34, crown)]
+    if (v === 'spring') for (const [x, y] of [[-14, -98], [10, -106], [16, -82], [-8, -76], [0, -92], [-20, -84]]) out.push(circle(x, y, 4, '#F06595', { sw: 1.8 }))
+    if (v === 'summer') out.push(line(d('M', -16, -96, 'Q', -8, -104, 0, -98, 'M', 6, -78, 'Q', 14, -86, 20, -80), 2.5, 0.4))
+    if (v === 'autumn') for (const [x, y] of [[-30, -30], [26, -18], [36, -44]]) out.push(shape(d('M', x, y, 'Q', x - 6, y - 6, x, y - 12, 'Q', x + 6, y - 6, x, y, 'Z'), '#E8590C', { sw: 2 }))
+    if (v === 'winter') {
+      out.push(line(d('M', 0, -64, 'L', -14, -92, 'M', 0, -70, 'L', 16, -96, 'M', -6, -82, 'L', -20, -80), 3, 0.35))
+      for (const [x, y] of [[-40, -120], [36, -126], [44, -60], [-46, -50]]) out.push(circle(x, y, 3.5, WHITE, { sw: 2 }))
+    }
+    return out.join('')
+  },
+  /** Dashed arc across the sky (the sun's path). */
+  'sky-arc': () => el('path', { d: 'M-180 0A180 150 0 0 1 180 0', fill: 'none', 'stroke-width': 3, 'stroke-dasharray': '8 9', opacity: 0.45 }),
+  /** Kite on a string; origin = the end of the string (the hand). */
+  kite: () =>
+    [
+      line(d('M', 0, 0, 'Q', 40, -30, 86, -128), 2.5, 0.7),
+      el('path', { d: d('M', 86, -128, 'Q', 74, -100, 92, -84, 'Q', 104, -70, 92, -56), fill: 'none', 'stroke-width': 3 }),
+      shape(d('M', 86, -186, 'L', 116, -156, 'L', 86, -128, 'L', 56, -156, 'Z'), '#E5484D'),
+      shape(d('M', 86, -186, 'L', 116, -156, 'L', 86, -156, 'Z'), YELLOW, { sw: 3 }),
+      shape(d('M', 86, -128, 'L', 56, -156, 'L', 86, -156, 'Z'), YELLOW, { sw: 3 }),
+    ].join(''),
+  hourglass: () =>
+    [
+      rect(-24, -78, 48, 8, 3, WOOD, 3),
+      rect(-24, -8, 48, 8, 3, WOOD, 3),
+      shape(d('M', -16, -70, 'L', 16, -70, 'Q', 16, -50, 3, -39, 'Q', 16, -28, 16, -8, 'L', -16, -8, 'Q', -16, -28, -3, -39, 'Q', -16, -50, -16, -70, 'Z'), '#E7F5FF'),
+      shape(d('M', -8, -52, 'L', 8, -52, 'L', 1, -42, 'L', -1, -42, 'Z'), '#F4C06A', { stroke: false }),
+      shape(d('M', -14, -10, 'Q', 0, -26, 14, -10, 'Z'), '#F4C06A', { sw: 2 }),
+    ].join(''),
+  // ---------- places & directions (tahap 3, u12) ----------
+  /** Bus stop: pole and a round sign with a bus drawn on it (no writing). */
+  'bus-stop': () =>
+    [
+      rect(-4, -170, 8, 170, 3, '#868E96', 3),
+      circle(0, -186, 26, '#4C9BE8'),
+      rect(-15, -198, 30, 20, 4, WHITE, 2.5),
+      line(d('M', -15, -190, 'L', 15, -190), 2, 0.6),
+      circle(-8, -176, 3.5, '#231942', { stroke: false }),
+      circle(8, -176, 3.5, '#231942', { stroke: false }),
+    ].join(''),
+  /** Cardboard box; variant 'back' (open box, inside wall) / 'front' (front wall and flaps) / default closed. */
+  box: (o) => {
+    const v = o.variant ?? 'closed'
+    if (v === 'back')
+      return [
+        shape(d('M', -56, -76, 'L', -40, -96, 'L', 40, -96, 'L', 56, -76, 'Z'), '#B07A45'),
+        shape(d('M', -40, -96, 'L', -50, -124, 'L', 30, -124, 'L', 40, -96, 'Z'), '#D9A066', { sw: 3 }),
+      ].join('')
+    const front = [
+      rect(-56, -76, 112, 76, 4, '#D9A066'),
+      rect(-14, -76, 28, 18, 0, '#E9C9A0', 2.5),
+    ]
+    if (v === 'front')
+      return [
+        ...front,
+        shape(d('M', -56, -76, 'L', -76, -60, 'L', -66, -50, 'L', -56, -60, 'Z'), '#E6B47A', { sw: 3 }),
+        shape(d('M', 56, -76, 'L', 76, -60, 'L', 66, -50, 'L', 56, -60, 'Z'), '#E6B47A', { sw: 3 }),
+      ].join('')
+    return [shape(d('M', -56, -76, 'L', -40, -96, 'L', 72, -96, 'L', 56, -76, 'Z'), '#E6B47A'), shape(d('M', 56, -76, 'L', 72, -96, 'L', 72, -20, 'L', 56, 0, 'Z'), '#B07A45'), ...front].join('')
+  },
+  /** House front with a see-through window (characters drawn before it show inside). variant 'inside': the room behind the window. */
+  house: (o) => {
+    if (o.variant === 'inside') return flat(-96, -124, 76, 64, '#F3D9B5')
+    const wall = 'M-120 -150L120 -150L120 0L-120 0Z M-92 -120L-24 -120L-24 -64L-92 -64Z'
+    return [
+      el('path', { d: wall, fill: o.color ?? '#FFE8CC', 'fill-rule': 'evenodd' }),
+      shape(d('M', -136, -146, 'L', 0, -216, 'L', 136, -146, 'Z'), '#D9480F'),
+      rect(-98, -126, 80, 68, 6, 'none', 6),
+      rect(28, -100, 56, 100, 6, '#8A5A3B'),
+      circle(72, -50, 4, YELLOW, { sw: 2 }),
+    ].join('')
+  },
+  /** School building with a flag (no writing). */
+  school: () =>
+    [
+      rect(-2, -230, 5, 92, 2, '#868E96', 2.5),
+      shape(d('M', 3, -228, 'L', 42, -220, 'L', 3, -206, 'Z'), '#E5484D', { sw: 2.5 }),
+      rect(-110, -140, 220, 140, 6, '#F8E3C4'),
+      rect(-118, -150, 236, 14, 4, '#C2410C', 3),
+      ...[-84, -48, 28, 64].flatMap((x) => [rect(x, -120, 24, 24, 3, '#CFE8F7', 2.5), rect(x, -76, 24, 24, 3, '#CFE8F7', 2.5)]),
+      rect(-18, -60, 36, 60, 4, '#8A5A3B', 3),
+      rect(-22, -118, 44, 34, 6, '#FFD43B', 3),
+    ].join(''),
+  /** Arched arrow pointing to the right (flip for left), e.g. from today to tomorrow. */
+  'arc-arrow': (o) => {
+    const pts: [number, number][] = []
+    for (let i = 0; i <= 8; i++) {
+      const a = Math.PI * (1 - (i / 8) * 0.82)
+      pts.push([Math.cos(a) * 60, -Math.sin(a) * 40])
+    }
+    const [ex, ey] = pts[pts.length - 1]
+    return [band(pts, 5, o.color ?? YELLOW, true, 3), shape(d('M', ex - 14, ey - 8, 'L', ex + 16, ey + 2, 'L', ex - 2, ey + 22, 'Z'), o.color ?? YELLOW, { sw: 3 })].join('')
+  },
+  /** U-turn arrow: goes right, turns, comes back left. */
+  'u-turn': (o) =>
+    [
+      band([[-80, -20], [40, -20], [72, -40], [72, -60], [40, -80], [-30, -80]], 6, o.color ?? YELLOW, true, 3),
+      shape(d('M', -26, -98, 'L', -58, -80, 'L', -26, -62, 'Z'), o.color ?? YELLOW, { sw: 3 }),
+    ].join(''),
+  bench: () =>
+    [
+      rect(-50, -48, 100, 12, 4, WOOD),
+      rect(-54, -30, 108, 10, 4, WOOD),
+      rect(-44, -20, 8, 20, 2, '#5C5470', 2.5),
+      rect(36, -20, 8, 20, 2, '#5C5470', 2.5),
+    ].join(''),
 }
 
 export const PROP_IDS = Object.keys(PROPS)

@@ -46,6 +46,18 @@
 - --recheck: file yang teksnya tidak berubah tetapi dicek dengan versi cek lama TIDAK disintesis
   ulang, hanya dicek ulang. Yang tetap gagal dihitung sebagai percobaan 1 lalu disintesis ulang
   dengan variasi 2 dan 3 (maksimal 3 percobaan). Tanpa --recheck file seperti itu dibuat ulang.
+- Ronde 3, metode A (PITCH_VERSION 1, scripts/tts-basics/pitch.py): item 1 suku kata yang masih GAGAL
+  setelah semua percobaan (dicek dengan CHECK_VERSION ini) diluruskan nadanya: suara tetap P3, kontur F0
+  diganti kontur rekaman asli suku kata bernada yang sama dari hugolpz/audio-cmn (Chen Wang, CC BY-SA;
+  hanya contoh nada, diunduh di Actions, tidak di-commit/diputar), dipetakan ke rentang F0 P3 dan
+  direntangkan ke durasi P3, lewat PSOLA praat-parselmouth. Dasar P3 yang dicoba berurutan: file yang
+  ada, lalu sintesis ulang variasi 1, 4, 5, 2, 3, 6 (lihat make_raw). Semua dicek ulang PENUH dengan cek
+  yang sama (Whisper + bunyi + nada F0, tidak dilonggarkan); dipakai yang pertama lolos. Suku kata yang
+  tidak ada di audio-cmn, atau yang hasil kontur audio-cmn-nya tetap gagal di semua dasar, dicoba dengan
+  kontur baku nada target (cara task 4b). Manifest per file: `pitchSource` = "audio-cmn" | "standard" |
+  null (tidak diubah). Tidak ada yang lolos -> file lama tidak diubah (tetap gagal, tidak diputar).
+  Item yang sudah lolos tidak disentuh (byte mp3 sama). Rentang F0 P3 (dan rentang cek nada) dihitung
+  hanya dari suku kata tunggal yang nadanya TIDAK diubah, supaya stabil antar jalan.
 - Batas waktu (--budget-min): item yang belum sempat dibuat ditandai `pending` di manifest
   (`complete: false`); workflow lalu menjalankan dirinya lagi untuk melanjutkan.
 """
@@ -68,11 +80,15 @@ sys.path.insert(0, str(ROOT / "scripts" / "tts"))
 
 import make_samples as ms  # noqa: E402  (fungsi format & normalisasi task 4a)
 import tonecheck as tc  # noqa: E402
+import pitch as pm  # noqa: E402
 
 DATA = ROOT / "data" / "basics" / "basics.json"
 ISSUES = ROOT / "data" / "basics" / "audio-issues.json"
 VOICE_CODE = "P3"
-SCRIPT_VERSION = 4
+SCRIPT_VERSION = 5
+PITCH_VERSION = 1
+# Urutan dasar P3 untuk metode A: file yang ada (0), lalu variasi sintesis make_raw.
+PITCH_BASES = [0, 1, 4, 5, 2, 3, 6]
 MAX_ATTEMPTS = 6
 CHECK_VERSION = 4
 # Versi cek lama yang aturannya himpunan bagian dari versi ini: file yang lolos di sana pasti lolos di
@@ -413,6 +429,7 @@ def main():
     ap.add_argument("--shard", type=int, default=0, help="kerjakan item ke-i dengan i %% shards == shard")
     ap.add_argument("--shards", type=int, default=1)
     ap.add_argument("--part-dir", help="(dengan --shards > 1) tulis mp3 + part-<shard>.json ke sini")
+    ap.add_argument("--no-pitch", action="store_true", help="jangan jalankan metode A (pelurus nada)")
     ap.add_argument("--merge", help="gabungkan hasil shard (folder berisi part-*.json + mp3) lalu tulis manifest")
     args = ap.parse_args()
     out, work = Path(args.out), Path(args.work)
@@ -440,6 +457,10 @@ def main():
             return "synth"
         f = old_files[it["audioId"]]
         cv = f.get("checkVersion")
+        if (cv == CHECK_VERSION and not f.get("ok") and not args.no_pitch and f.get("pitchVersion") != PITCH_VERSION
+                and len(HAN.findall(it["hanzi"])) == 1 and target_tone(it["pinyin"]) != 5
+                and f.get("attempts", 0) >= MAX_ATTEMPTS):
+            return "pitch"
         if cv == CHECK_VERSION and not f.get("ok") and f.get("attempts", 0) < MAX_ATTEMPTS and args.recheck:
             return "extend"
         if cv == CHECK_VERSION or (cv in COMPATIBLE_CHECKS and f.get("ok")):
@@ -471,9 +492,10 @@ def main():
     if twins:
         log(f"[basics] salin file lolos dari item kembar: {twins}")
     n_re = sum(m in ("recheck", "checkonly", "twin", "extend") for m in modes.values())
+    n_pitch = sum(m == "pitch" for m in modes.values())
     n_mine = len(mine)
     log(f"[basics] shard {args.shard}/{args.shards}: {n_mine} item: {n_keep} tetap, {n_re} dicek ulang, "
-        f"{n_mine - n_keep - n_re} dibuat")
+        f"{n_pitch} diluruskan nadanya (metode A), {n_mine - n_keep - n_re - n_pitch} dibuat")
     work_needed = n_keep < n_mine
     checker = Checker() if work_needed else None
     tts_box: list[Kokoro] = []
@@ -485,8 +507,27 @@ def main():
 
     if checker:
         singles = [out / old_files[it["audioId"]]["path"] for it in items
-                   if len(HAN.findall(it["hanzi"])) == 1 and same_text(it)]
+                   if len(HAN.findall(it["hanzi"])) == 1 and same_text(it)
+                   and not old_files[it["audioId"]].get("pitchSource")]
         checker.set_speaker_ref(singles)
+
+    # Metode A: kontur rekaman asli (audio-cmn) untuk item yang akan diluruskan di shard ini.
+    natives: dict[str, object] = {}
+    native_ref = None
+    pitch_ref: dict | None = None
+    pitch_items = [it for it in items if modes[it["audioId"]] == "pitch"]
+    if pitch_items:
+        try:
+            cmn = pm.AudioCmn(pm.cache_dir(), log=log)
+            keys = [pm.syllable_key(it["pinyin"]) for it in pitch_items]
+            natives, native_ref = pm.native_contours(cmn, [k for k in keys if k], work / "audio-cmn", log=log)
+            pitch_ref = {**pm.AUDIO_CMN, "commit": cmn.commit, "nativeRefHz": [round(2 ** (x / 12)) for x in native_ref]}
+            log(f"[pitch] audio-cmn punya {len(natives)}/{len(keys)} suku kata: "
+                f"tidak ada {[k for k in keys if k not in natives]}")
+        except Exception as e:  # noqa: BLE001
+            traceback.print_exc()
+            log(f"[pitch] audio-cmn tidak bisa dipakai ({type(e).__name__}: {e}); semua memakai kontur baku")
+            pitch_ref = {**pm.AUDIO_CMN, "commit": None, "error": f"{type(e).__name__}: {e}"}
 
     def entry(res: dict, mp3_rel: str, attempts: int, variant: str, it: dict) -> dict:
         return {
@@ -494,7 +535,7 @@ def main():
             "ok": bool(res["ok"]), "attempts": attempts, "check": res["check"], "variant": variant,
             "hanzi": it["hanzi"], "pinyin": it["pinyin"], "checkVersion": CHECK_VERSION,
             "sound": res["sound"], "toneTarget": res["toneTarget"], "toneDetected": res["toneDetected"],
-            "f0": res["f0"], "reason": res["reason"],
+            "f0": res["f0"], "reason": res["reason"], "pitchSource": None,
         }
 
     def log_res(aid, it, label, res):
@@ -511,7 +552,7 @@ def main():
         if m == "other":
             continue
         if m == "keep":
-            files[aid] = {**old_files[aid], "checkVersion": CHECK_VERSION}
+            files[aid] = {"pitchSource": None, **old_files[aid], "checkVersion": CHECK_VERSION}
             continue
         if time.monotonic() - t0 > args.budget_min * 60:
             pending.append(aid)
@@ -533,6 +574,11 @@ def main():
                 files[aid] = entry(res, rel, old_files[aid]["attempts"], f"copy of {src}", it)
                 continue
             m = "extend" if old_files[aid].get("attempts", 0) < MAX_ATTEMPTS else "checkonly"
+        if m == "pitch":
+            tmp.mkdir(parents=True, exist_ok=True)
+            files[aid] = fix_pitch(it, old_files[aid], out, tmp, checker, tts, natives, native_ref, entry, log_res)
+            log(f"[basics] {aid}: {time.monotonic() - started:.1f}s")
+            continue
         if m == "checkonly":
             tmp.mkdir(parents=True, exist_ok=True)
             f = old_files[aid]
@@ -608,12 +654,72 @@ def main():
         for f in files.values():
             (part / f["path"]).write_bytes((out / f["path"]).read_bytes())
         (part / f"part-{args.shard}.json").write_text(json.dumps(
-            {"shard": args.shard, "files": files, "pending": pending, "ref": ref}, ensure_ascii=False),
+            {"shard": args.shard, "files": files, "pending": pending, "ref": ref, "pitchRef": pitch_ref},
+            ensure_ascii=False),
             encoding="utf-8")
         log(f"[basics] shard {args.shard}: {sum(f['ok'] for f in files.values())}/{len(files)} lolos, "
             f"{len(pending)} tertunda")
         return
-    finalize(args, items, voice, old, (files, pending, ref))
+    finalize(args, items, voice, old, (files, pending, ref, pitch_ref))
+
+
+def fix_pitch(it, old_entry, out, tmp, checker, tts, natives, native_ref, entry, log_res) -> dict:
+    """Metode A untuk satu item (lihat docstring modul). Mengembalikan entri manifest."""
+    aid, py = it["audioId"], it["pinyin"]
+    tone = target_tone(py)
+    key = pm.syllable_key(py)
+    p3_ref = checker.ref
+    sources = []
+    if key in natives:
+        sources.append(("audio-cmn", pm.map_shape(natives[key], native_ref, p3_ref)))
+    sources.append(("standard", pm.standard_shape(tone, p3_ref)))
+    tried = []
+    bases: dict[int, Path] = {}
+
+    def base(n: int) -> Path | None:
+        if n in bases:
+            return bases[n]
+        if n == 0:
+            p = tmp / "existing.mp3"
+            p.write_bytes((out / old_entry["path"]).read_bytes())
+        else:
+            raw, p = tmp / f"pbase{n}.wav", tmp / f"pbase{n}.mp3"
+            try:
+                make_raw(tts(), it, n, raw)
+                ms.normalize(raw, p, tmp)
+            except Exception as e:  # noqa: BLE001
+                log(f"[pitch] {aid} dasar variasi {n} gagal: {type(e).__name__}: {e}")
+                p = None
+        bases[n] = p
+        return p
+
+    for source, contour in sources:
+        for n in PITCH_BASES:
+            b = base(n)
+            if b is None:
+                continue
+            wav, mp3 = tmp / f"pitch-{source}-{n}.wav", tmp / f"pitch-{source}-{n}.mp3"
+            try:
+                pm.apply_contour(b, wav, contour, tmp / "pitch-t.wav")
+                ms.normalize(wav, mp3, tmp)
+                res = checker.check(mp3, it, tmp)
+            except Exception as e:  # noqa: BLE001
+                traceback.print_exc()
+                log(f"[pitch] {aid} {source} dasar {n} gagal: {type(e).__name__}: {e}")
+                continue
+            label = "file lama" if n == 0 else f"variasi {n}"
+            log_res(aid, it, f"metode A {source}, dasar {label}", res)
+            tried.append(f"{source}/{n}: {res['reason'] or 'ok'}")
+            if res["ok"]:
+                rel = f"{aid}.mp3"
+                (out / rel).write_bytes(mp3.read_bytes())
+                variant = f"pitch {source} on " + ("existing file" if n == 0 else f"variant {n}")
+                e = entry(res, rel, old_entry.get("attempts", 0) + len(tried), variant, it)
+                return {**e, "pitchSource": source, "pitchVersion": PITCH_VERSION, "pitchTried": len(tried)}
+    note = f"metode A gagal ({len(tried)} percobaan): " + "; ".join(tried[:4])
+    log(f"[pitch] {aid}: {note}")
+    return {"pitchSource": None, **old_entry, "pitchVersion": PITCH_VERSION, "pitchTried": len(tried),
+            "pitchNote": note}
 
 
 def merge_parts(part_dir: Path, out: Path, items: list[dict], old_files: dict):
@@ -621,6 +727,7 @@ def merge_parts(part_dir: Path, out: Path, items: list[dict], old_files: dict):
     files: dict[str, dict] = {}
     pending: list[str] = []
     ref = None
+    pitch_ref = None
     parts = sorted(part_dir.glob("part-*.json"))
     for p in parts:
         doc = json.loads(p.read_text(encoding="utf-8"))
@@ -631,6 +738,8 @@ def merge_parts(part_dir: Path, out: Path, items: list[dict], old_files: dict):
             files[aid] = f
         pending += doc["pending"]
         ref = ref or doc.get("ref")
+        if doc.get("pitchRef") and not (pitch_ref and pitch_ref.get("commit")):
+            pitch_ref = doc["pitchRef"]
     log(f"[basics] gabung {len(parts)} shard: {len(files)} file, {len(pending)} tertunda")
     for it in items:  # item tanpa hasil shard (mis. shard gagal) -> tetap file lama, dicoba lagi nanti
         aid = it["audioId"]
@@ -641,11 +750,24 @@ def merge_parts(part_dir: Path, out: Path, items: list[dict], old_files: dict):
     order = [it["audioId"] for it in items]
     files = {aid: files[aid] for aid in order if aid in files}
     pending = [aid for aid in order if aid in pending]
-    return files, pending, (tuple(ref) if ref else None)
+    return files, pending, (tuple(ref) if ref else None), pitch_ref
+
+
+def pitch_summary(files: dict, pitch_ref: dict | None, old: dict | None) -> dict:
+    """Ringkasan metode A di manifest: sumber kontur nada + jumlah file per pitchSource."""
+    ref = pitch_ref or (old or {}).get("reference")
+    counts = {"audio-cmn": 0, "standard": 0}
+    for f in files.values():
+        if f.get("pitchSource") in counts:
+            counts[f["pitchSource"]] += 1
+    return {"method": ("metode A: kontur F0 rekaman asli (audio-cmn) atau kontur baku, dipetakan ke rentang F0 P3, "
+                       "durasi P3 tetap; PSOLA praat-parselmouth 0.4.5 (scripts/tts-basics/pitch.py)"),
+            "pitchVersion": PITCH_VERSION, "reference": ref, "counts": counts,
+            "notFixed": sum(1 for f in files.values() if f.get("pitchVersion") and not f.get("ok"))}
 
 
 def finalize(args, items, voice, old, result):
-    files, pending, ref = result
+    files, pending, ref, pitch_ref = result
     out = Path(args.out)
     manifest_path = out / "manifest.json"
     keep = {f["path"] for f in files.values()} | {"manifest.json"}
@@ -672,6 +794,7 @@ def finalize(args, items, voice, old, result):
         "toneCheck": {"method": "praat-parselmouth F0, aturan di scripts/tts-basics/tonecheck.py",
                       "refSemitones": [round(lo, 2), round(hi, 2)],
                       "refHz": [round(2 ** (lo / 12)), round(2 ** (hi / 12))]},
+        "pitch": pitch_summary(files, pitch_ref, (old or {}).get("pitch")),
         "complete": not pending,
         "pending": pending,
         "files": files,
@@ -682,7 +805,7 @@ def finalize(args, items, voice, old, result):
     issues = [{"audioId": aid, "hanzi": by_id[aid]["hanzi"], "pinyin": by_id[aid]["pinyin"],
                "transcript": f["transcript"], "sound": f.get("sound"), "toneTarget": f.get("toneTarget"),
                "toneDetected": f.get("toneDetected"), "reason": f.get("reason"), "attempts": f["attempts"],
-               "file": f["path"]}
+               "pitchNote": f.get("pitchNote"), "file": f["path"]}
               for aid, f in files.items() if not f["ok"] and aid not in pending]
     issues += [{"audioId": i["audioId"], "hanzi": i["hanzi"], "pinyin": i["pinyin"], "transcript": None,
                 "sound": None, "toneTarget": None, "toneDetected": None, "reason": "tidak ada file (sintesis gagal)",

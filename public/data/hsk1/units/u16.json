@@ -88,7 +88,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我喜欢我的学校。",
+        "pinyin": "Wǒ xǐhuan wǒ de xuéxiào.",
+        "id": "Aku suka sekolahku.",
+        "en": "I like my school.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0419",
@@ -161,7 +172,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们是学生。",
+        "pinyin": "Wǒmen shì xuéshēng.",
+        "id": "Kami murid.",
+        "en": "We are students.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0209",
@@ -242,7 +264,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "老师，早上好！",
+        "pinyin": "Lǎoshī, zǎoshang hǎo!",
+        "id": "Selamat pagi, Bu Guru!",
+        "en": "Good morning, teacher!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0418",
@@ -314,7 +347,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哥哥在学做饭。",
+        "pinyin": "Gēge zài xué zuòfàn.",
+        "id": "Kakak sedang belajar masak.",
+        "en": "Big brother is learning to cook.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0420",
@@ -387,7 +431,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妹妹在房间里学习。",
+        "pinyin": "Mèimei zài fángjiān li xuéxí.",
+        "id": "Adik sedang belajar di kamar.",
+        "en": "Little sister is studying in her room.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0323",
@@ -458,7 +513,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我去上学了！",
+        "pinyin": "Wǒ qù shàngxué le!",
+        "id": "Aku berangkat sekolah, ya!",
+        "en": "I'm off to school!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0199",
@@ -533,7 +599,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "今天有中文课。",
+        "pinyin": "Jīntiān yǒu Zhōngwén kè.",
+        "id": "Hari ini ada pelajaran bahasa Mandarin.",
+        "en": "There is Chinese class today.",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0320",
@@ -605,7 +682,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "同学们，上课了！",
+        "pinyin": "Tóngxuémen, shàngkè le!",
+        "id": "Anak-anak, pelajaran dimulai!",
+        "en": "Class is starting, everyone!",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0394",
@@ -678,7 +766,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "下课了！我们去吃饭吧！",
+        "pinyin": "Xiàkè le! Wǒmen qù chī fàn ba!",
+        "id": "Kelas selesai! Yuk, kita makan!",
+        "en": "Class is over! Let's go eat!",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0406",
@@ -706,7 +805,18 @@
         "小",
         "学"
       ],
-      "examples": []
+      "examples": [],
+      "sentence": {
+        "hanzi": "这是我的小学。",
+        "pinyin": "Zhè shì wǒ de xiǎoxué.",
+        "id": "Ini SD-ku.",
+        "en": "This is my primary school.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0407",
@@ -768,7 +878,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我是小学生。",
+        "pinyin": "Wǒ shì xiǎoxuéshēng.",
+        "id": "Aku murid SD.",
+        "en": "I'm a primary school pupil.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 13138444,
+        "outsideWords": [],
+        "author": "JackyJiaqiSun",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0481",
@@ -839,7 +962,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妹妹明年上中学。",
+        "pinyin": "Mèimei míngnián shàng zhōngxué.",
+        "id": "Tahun depan Adik masuk SMP.",
+        "en": "Little sister starts middle school next year.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0482",
@@ -871,7 +1005,18 @@
         "学",
         "生"
       ],
-      "examples": []
+      "examples": [],
+      "sentence": {
+        "hanzi": "我是中学生。",
+        "pinyin": "Wǒ shì zhōngxuéshēng.",
+        "id": "Aku murid SMP.",
+        "en": "I'm a middle school student.",
+        "speaker": "classmate",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0062",
@@ -945,7 +1090,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哥哥今年上大学了。",
+        "pinyin": "Gēge jīnnián shàng dàxué le.",
+        "id": "Tahun ini Kakak sudah kuliah.",
+        "en": "Big brother started university this year.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0063",
@@ -1024,7 +1180,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我是大学生。",
+        "pinyin": "Wǒ shì dàxuéshēng.",
+        "id": "Aku mahasiswa.",
+        "en": "I'm a university student.",
+        "speaker": "gege",
+        "source": "tatoeba",
+        "sourceId": 567558,
+        "outsideWords": [],
+        "author": "gnomebubble",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1392,5 +1561,42 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    }
   }
 }

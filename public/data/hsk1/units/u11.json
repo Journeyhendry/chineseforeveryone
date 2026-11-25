@@ -83,7 +83,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "现在八点。",
+        "pinyin": "Xiànzài bā diǎn.",
+        "id": "Sekarang jam delapan.",
+        "en": "It's eight o'clock now.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0076",
@@ -160,7 +171,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，我们几点吃饭？",
+        "pinyin": "Māma, wǒmen jǐ diǎn chī fàn?",
+        "id": "Ma, kita makan jam berapa?",
+        "en": "Mom, what time do we eat?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 几点 (jam berapa) paling jelas bersama jawabannya.",
+          "en": "The question 几点 (what time) is clearest together with its answer."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "妈妈，我们几点吃饭？",
+            "pinyin": "Māma, wǒmen jǐ diǎn chī fàn?",
+            "id": "Ma, kita makan jam berapa?",
+            "en": "Mom, what time do we eat?",
+            "outsideWords": []
+          },
+          {
+            "who": "mama",
+            "hanzi": "六点。",
+            "pinyin": "Liù diǎn.",
+            "id": "Jam enam.",
+            "en": "At six.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0109",
@@ -237,7 +282,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "现在三点五分。",
+        "pinyin": "Xiànzài sān diǎn wǔ fēn.",
+        "id": "Sekarang jam tiga lewat lima menit.",
+        "en": "It's 3:05 now.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0507",
@@ -308,7 +364,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "等我五分钟！",
+        "pinyin": "Děng wǒ wǔ fēnzhōng!",
+        "id": "Tunggu aku lima menit!",
+        "en": "Give me five minutes!",
+        "speaker": "gege",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "等"
+        ]
+      },
+      "dialog": null
     },
     {
       "id": "L1-0405",
@@ -380,7 +449,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "一个小时有六十分钟。",
+        "pinyin": "Yí gè xiǎoshí yǒu liùshí fēnzhōng.",
+        "id": "Satu jam ada enam puluh menit.",
+        "en": "An hour has sixty minutes.",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0334",
@@ -454,7 +534,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "对不起，我今天没有时间。",
+        "pinyin": "Duìbuqǐ, wǒ jīntiān méiyǒu shíjiān.",
+        "id": "Maaf, hari ini aku nggak ada waktu.",
+        "en": "Sorry, I don't have time today.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0333",
@@ -534,7 +625,41 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你什么时候有时间？",
+        "pinyin": "Nǐ shénme shíhou yǒu shíjiān?",
+        "id": "Kamu kapan ada waktu?",
+        "en": "When are you free?",
+        "speaker": "classmate",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 什么时候 (kapan) butuh jawaban supaya jelas.",
+          "en": "The question word 什么时候 (when) needs an answer to be clear."
+        },
+        "lines": [
+          {
+            "who": "classmate",
+            "hanzi": "你什么时候有时间？",
+            "pinyin": "Nǐ shénme shíhou yǒu shíjiān?",
+            "id": "Kamu kapan ada waktu?",
+            "en": "When are you free?",
+            "outsideWords": []
+          },
+          {
+            "who": "gege",
+            "hanzi": "明天下午。",
+            "pinyin": "Míngtiān xiàwǔ.",
+            "id": "Besok sore.",
+            "en": "Tomorrow afternoon.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0459",
@@ -606,7 +731,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "早上好！",
+        "pinyin": "Zǎoshang hǎo!",
+        "id": "Selamat pagi!",
+        "en": "Good morning!",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0322",
@@ -677,7 +813,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "现在是上午十点。",
+        "pinyin": "Xiànzài shì shàngwǔ shí diǎn.",
+        "id": "Sekarang jam sepuluh pagi.",
+        "en": "It's 10 a.m. now.",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0480",
@@ -750,7 +897,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "中午吃什么？",
+        "pinyin": "Zhōngwǔ chī shénme?",
+        "id": "Siang ini makan apa?",
+        "en": "What's for lunch?",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0395",
@@ -822,7 +980,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "下午我们喝茶吧！",
+        "pinyin": "Xiàwǔ wǒmen hē chá ba!",
+        "id": "Sore nanti kita minum teh, yuk!",
+        "en": "Let's have tea this afternoon!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0374",
@@ -896,7 +1065,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "晚上好！",
+        "pinyin": "Wǎnshang hǎo!",
+        "id": "Selamat malam!",
+        "en": "Good evening!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0457",
@@ -970,7 +1150,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你今天很早！",
+        "pinyin": "Nǐ jīntiān hěn zǎo!",
+        "id": "Hari ini kamu datang pagi sekali!",
+        "en": "You're early today!",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0372",
@@ -1041,7 +1232,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你来晚了！",
+        "pinyin": "Nǐ lái wǎn le!",
+        "id": "Kamu terlambat!",
+        "en": "You're late!",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1424,5 +1626,63 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

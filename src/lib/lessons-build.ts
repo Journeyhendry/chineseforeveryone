@@ -3,7 +3,21 @@
 // Dipakai oleh scripts/build-lessons.ts dan scripts/build-strokes.ts.
 import { formatJson } from './casual.ts'
 import { splitSyllables, type Tone } from './pinyin.ts'
-import type { Bilingual, CasualItem, CasualLabel, Example, ExampleTranslation, LessonDialog, LessonIndex, LessonWord, PlaceKind, UnitData } from './lesson-types.ts'
+import type {
+  Bilingual,
+  CasualItem,
+  CasualLabel,
+  Example,
+  ExampleTranslation,
+  LessonDialog,
+  LessonIndex,
+  LessonWord,
+  PlaceKind,
+  Speaker,
+  UnitData,
+  WordDialog,
+  WordSentence,
+} from './lesson-types.ts'
 
 export const EXAMPLES_PER_WORD = 3
 
@@ -70,12 +84,31 @@ export interface SrcDialog {
     machine: boolean
   }[]
 }
+/** Satu entri data/hsk1/word-sentences.json (task 6c stage 1); field lain (analysis, scene) diabaikan. */
+export interface SrcWordSentence {
+  wordId: string
+  sentence: {
+    hanzi: string
+    pinyin: string
+    id: string
+    en: string
+    source: string
+    sourceId: string | number | null
+    speaker: string | null
+    outsideWords?: string[]
+  }
+  dialog: { reason: Bilingual; lines: { who: string; hanzi: string; pinyin: string; id: string; en: string; outsideWords?: string[] }[] } | null
+}
 export interface LessonsInput {
   words: SrcWord[]
   units: SrcUnit[]
   sentences: SrcSentence[]
   casual: SrcCasual[]
   dialogs: { speakers: Record<string, { name: Bilingual; gender: 'female' | 'male' }>; dialogs: SrcDialog[] }
+  /** Kalimat/dialog utama per kata (data/hsk1/word-sentences.json → entries). */
+  wordSentences: SrcWordSentence[]
+  /** Tokoh kalimat/dialog (data/hsk1/dialogs-natural.json → speakers). */
+  speakers: Record<string, { name: Bilingual; gender: 'female' | 'male' }>
 }
 
 const translation = (t: ExampleTranslation | undefined): ExampleTranslation | null =>
@@ -163,6 +196,38 @@ function lessonDialog(d: SrcDialog, speakers: LessonsInput['dialogs']['speakers'
   }
 }
 
+const SENTENCE_SOURCES = ['unit', 'tatoeba', 'buatan'] as const
+
+function wordSentence(e: SrcWordSentence, sentences: Map<number, SrcSentence>): WordSentence {
+  const s = e.sentence
+  if (!(SENTENCE_SOURCES as readonly string[]).includes(s.source)) throw new Error(`${e.wordId}: unknown sentence source ${s.source}`)
+  const out: WordSentence = {
+    hanzi: s.hanzi,
+    pinyin: s.pinyin,
+    id: s.id,
+    en: s.en,
+    speaker: s.speaker ?? null,
+    source: s.source as WordSentence['source'],
+    sourceId: s.sourceId ?? null,
+    outsideWords: [...(s.outsideWords ?? [])],
+  }
+  if (s.source === 'tatoeba') {
+    const src = sentences.get(Number(s.sourceId))
+    if (!src) throw new Error(`${e.wordId}: Tatoeba sentence ${String(s.sourceId)} is not in sentences.json`)
+    out.author = src.author
+    out.license = src.license
+  }
+  return out
+}
+
+function wordDialog(e: SrcWordSentence): WordDialog | null {
+  if (!e.dialog) return null
+  return {
+    reason: { id: e.dialog.reason.id, en: e.dialog.reason.en },
+    lines: e.dialog.lines.map((l) => ({ who: l.who, hanzi: l.hanzi, pinyin: l.pinyin, id: l.id, en: l.en, outsideWords: [...(l.outsideWords ?? [])] })),
+  }
+}
+
 /** Isi file keluaran: path relatif terhadap public/data/hsk1/ -> teks JSON. */
 export function buildLessons(input: LessonsInput): Record<string, string> {
   const wordById = new Map(input.words.map((w) => [w.id, w]))
@@ -180,11 +245,20 @@ export function buildLessons(input: LessonsInput): Record<string, string> {
     })),
   }
   const out: Record<string, string> = { 'index.json': formatJson(index) }
+  const sentenceById = new Map(input.sentences.map((s) => [s.tatoebaId, s]))
+  const wsById = new Map(input.wordSentences.map((e) => [e.wordId, e]))
   for (const u of units) {
+    const speakers: Record<string, Speaker> = {}
+    const useSpeaker = (id: string | null, wordId: string) => {
+      if (!id) return
+      const sp = input.speakers[id]
+      if (!sp) throw new Error(`${wordId}: unknown speaker ${id}`)
+      speakers[id] = { name: { id: sp.name.id, en: sp.name.en }, gender: sp.gender }
+    }
     const words: LessonWord[] = u.words.map((id) => {
       const w = wordById.get(id)
       if (!w) throw new Error(`unit ${u.id}: unknown word ${id}`)
-      return {
+      const word: LessonWord = {
         id: w.id,
         hanzi: w.hanzi,
         pinyin: w.pinyin,
@@ -196,7 +270,17 @@ export function buildLessons(input: LessonsInput): Record<string, string> {
         idMachine: w.idMachine,
         chars: [...w.chars],
         examples: pickExamples(w.id, u.order, input.sentences, orderOf),
+        sentence: null,
+        dialog: null,
       }
+      const ws = wsById.get(w.id)
+      if (ws) {
+        word.sentence = wordSentence(ws, sentenceById)
+        word.dialog = wordDialog(ws)
+        useSpeaker(word.sentence.speaker, w.id)
+        for (const l of word.dialog?.lines ?? []) useSpeaker(l.who, w.id)
+      }
+      return word
     })
     const own = new Set(u.words)
     const casual = input.casual.filter((c) => c.unit === u.id).map(casualItem)
@@ -211,6 +295,7 @@ export function buildLessons(input: LessonsInput): Record<string, string> {
       casual,
       relatedCasual,
       dialog: dialog ? lessonDialog(dialog, input.dialogs.speakers) : null,
+      speakers: Object.fromEntries(Object.entries(speakers).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))),
     }
     out[`units/${u.id}.json`] = formatJson(data)
   }

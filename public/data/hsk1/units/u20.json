@@ -83,7 +83,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "孩子们在外边玩。",
+        "pinyin": "Háizimen zài wàibian wán.",
+        "id": "Anak-anak main di luar.",
+        "en": "The kids are playing outside.",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0040",
@@ -158,7 +169,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我喜欢唱歌。",
+        "pinyin": "Wǒ xǐhuan chàng gē.",
+        "id": "Aku suka bernyanyi.",
+        "en": "I like singing.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 357940,
+        "outsideWords": [],
+        "author": "ruicong",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0119",
@@ -232,7 +256,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，我给你唱个歌！",
+        "pinyin": "Māma, wǒ gěi nǐ chàng ge gē!",
+        "id": "Bu, aku nyanyikan lagu buat Ibu, ya!",
+        "en": "Mom, let me sing you a song!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0082",
@@ -303,7 +338,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们去看电影吧！",
+        "pinyin": "Wǒmen qù kàn diànyǐng ba!",
+        "id": "Yuk, kita nonton film!",
+        "en": "Let's go to the movies!",
+        "speaker": "gege",
+        "source": "tatoeba",
+        "sourceId": 7774577,
+        "outsideWords": [],
+        "author": "jiangche",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0080",
@@ -374,7 +422,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "爸爸在看电视。",
+        "pinyin": "Bàba zài kàn diànshì.",
+        "id": "Ayah sedang nonton TV.",
+        "en": "Dad is watching TV.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0079",
@@ -445,7 +504,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我想玩电脑。",
+        "pinyin": "Wǒ xiǎng wán diànnǎo.",
+        "id": "Aku mau main komputer.",
+        "en": "I want to play on the computer.",
+        "speaker": "gege",
+        "source": "tatoeba",
+        "sourceId": 669406,
+        "outsideWords": [],
+        "author": "aye1995",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0340",
@@ -517,7 +589,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "不要玩手机了！",
+        "pinyin": "Búyào wán shǒujī le!",
+        "id": "Sudah, jangan main HP lagi!",
+        "en": "Stop playing on your phone!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": "n-u20:1",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0078",
@@ -595,7 +678,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，你的电话！",
+        "pinyin": "Māma, nǐ de diànhuà!",
+        "id": "Bu, ada telepon buat Ibu!",
+        "en": "Mom, phone for you!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0525",
@@ -666,7 +760,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "喂，你在哪儿？",
+        "pinyin": "Wèi, nǐ zài nǎr?",
+        "id": "Halo, kamu di mana?",
+        "en": "Hello, where are you?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Sapaan pembuka di telepon dan jawabannya.",
+          "en": "The greeting for answering or starting a phone call, and the reply."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "喂，你在哪儿？",
+            "pinyin": "Wèi, nǐ zài nǎr?",
+            "id": "Halo, kamu di mana?",
+            "en": "Hello, where are you?",
+            "outsideWords": []
+          },
+          {
+            "who": "gege",
+            "hanzi": "我在书店。",
+            "pinyin": "Wǒ zài shūdiàn.",
+            "id": "Aku di toko buku.",
+            "en": "I'm at the bookshop.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0058",
@@ -738,7 +866,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈在给爸爸打电话。",
+        "pinyin": "Māma zài gěi bàba dǎ diànhuà.",
+        "id": "Ibu sedang menelepon Ayah.",
+        "en": "Mom is calling Dad.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0140",
@@ -813,7 +952,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个电影很好看！",
+        "pinyin": "Zhège diànyǐng hěn hǎokàn!",
+        "id": "Filmnya seru banget!",
+        "en": "This movie is really good!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": "n-u20:4",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0141",
@@ -885,7 +1035,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个歌很好听！",
+        "pinyin": "Zhège gē hěn hǎotīng!",
+        "id": "Lagu ini enak didengar!",
+        "en": "This song sounds great!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0142",
@@ -920,7 +1081,20 @@
         "玩",
         "儿"
       ],
-      "examples": []
+      "examples": [],
+      "sentence": {
+        "hanzi": "这个游戏很好玩儿！",
+        "pinyin": "Zhège yóuxì hěn hǎowánr!",
+        "id": "Permainan ini seru!",
+        "en": "This game is really fun!",
+        "speaker": "gege",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "游戏"
+        ]
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1347,5 +1521,35 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    }
   }
 }

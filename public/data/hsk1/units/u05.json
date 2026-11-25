@@ -99,7 +99,41 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是什么？",
+        "pinyin": "Zhè shì shénme?",
+        "id": "Ini apa?",
+        "en": "What's this?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "这是什么？",
+            "pinyin": "Zhè shì shénme?",
+            "id": "Ini apa?",
+            "en": "What's this?",
+            "outsideWords": []
+          },
+          {
+            "who": "mama",
+            "hanzi": "这是你的新书。",
+            "pinyin": "Zhè shì nǐ de xīn shū.",
+            "id": "Ini buku barumu.",
+            "en": "It's your new book.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0325",
@@ -167,7 +201,49 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "不是你？那是谁？",
+        "pinyin": "Bú shì nǐ? Nà shì shéi?",
+        "id": "Bukan kamu? Terus siapa?",
+        "en": "Not you? Then who?",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": "n-u05:3",
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "不是我！",
+            "pinyin": "Bú shì wǒ!",
+            "id": "Bukan aku!",
+            "en": "It wasn't me!",
+            "outsideWords": []
+          },
+          {
+            "who": "yeye",
+            "hanzi": "不是你？那是谁？",
+            "pinyin": "Bú shì nǐ? Nà shì shéi?",
+            "id": "Bukan kamu? Terus siapa?",
+            "en": "Not you? Then who?",
+            "outsideWords": []
+          },
+          {
+            "who": "meimei",
+            "hanzi": "是猫！",
+            "pinyin": "Shì māo!",
+            "id": "Si kucing!",
+            "en": "It was the cat!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0250",
@@ -237,7 +313,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你要哪本书？",
+        "pinyin": "Nǐ yào nǎ běn shū?",
+        "id": "Kamu mau buku yang mana?",
+        "en": "Which book do you want?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你要哪本书？",
+            "pinyin": "Nǐ yào nǎ běn shū?",
+            "id": "Kamu mau buku yang mana?",
+            "en": "Which book do you want?",
+            "outsideWords": []
+          },
+          {
+            "who": "meimei",
+            "hanzi": "这本！",
+            "pinyin": "Zhè běn!",
+            "id": "Yang ini!",
+            "en": "This one!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0516",
@@ -315,7 +425,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哪个好？",
+        "pinyin": "Nǎge hǎo?",
+        "id": "Yang mana yang bagus?",
+        "en": "Which one is better?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "哪个好？",
+            "pinyin": "Nǎge hǎo?",
+            "id": "Yang mana yang bagus?",
+            "en": "Which one is better?",
+            "outsideWords": []
+          },
+          {
+            "who": "mama",
+            "hanzi": "这个很好。",
+            "pinyin": "Zhège hěn hǎo.",
+            "id": "Yang ini bagus.",
+            "en": "This one is nice.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0253",
@@ -388,7 +532,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哪些是你的？",
+        "pinyin": "Nǎxiē shì nǐ de?",
+        "id": "Yang mana saja punyamu?",
+        "en": "Which ones are yours?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "哪些是你的？",
+            "pinyin": "Nǎxiē shì nǐ de?",
+            "id": "Yang mana saja punyamu?",
+            "en": "Which ones are yours?",
+            "outsideWords": []
+          },
+          {
+            "who": "gege",
+            "hanzi": "这些都是。",
+            "pinyin": "Zhèxiē dōu shì.",
+            "id": "Yang ini semua.",
+            "en": "All of these.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0252",
@@ -471,7 +649,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "他在哪儿？",
+        "pinyin": "Tā zài nǎr?",
+        "id": "Dia di mana?",
+        "en": "Where is he?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "他在哪儿？",
+            "pinyin": "Tā zài nǎr?",
+            "id": "Dia di mana?",
+            "en": "Where is he?",
+            "outsideWords": []
+          },
+          {
+            "who": "meimei",
+            "hanzi": "在那儿！",
+            "pinyin": "Zài nàr!",
+            "id": "Di sana!",
+            "en": "Over there!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0251",
@@ -553,7 +765,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你在哪里？",
+        "pinyin": "Nǐ zài nǎlǐ?",
+        "id": "Kamu di mana?",
+        "en": "Where are you?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你在哪里？",
+            "pinyin": "Nǐ zài nǎlǐ?",
+            "id": "Kamu di mana?",
+            "en": "Where are you?",
+            "outsideWords": []
+          },
+          {
+            "who": "gege",
+            "hanzi": "我在学校。",
+            "pinyin": "Wǒ zài xuéxiào.",
+            "id": "Aku di sekolah.",
+            "en": "I'm at school.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0460",
@@ -627,7 +873,45 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个怎么用？",
+        "pinyin": "Zhège zěnme yòng?",
+        "id": "Ini cara pakainya gimana?",
+        "en": "How do you use this?",
+        "speaker": "yeye",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "用"
+        ]
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "yeye",
+            "hanzi": "这个怎么用？",
+            "pinyin": "Zhège zěnme yòng?",
+            "id": "Ini cara pakainya gimana?",
+            "en": "How do you use this?",
+            "outsideWords": [
+              "用"
+            ]
+          },
+          {
+            "who": "gege",
+            "hanzi": "我看看。",
+            "pinyin": "Wǒ kànkan.",
+            "id": "Coba kulihat.",
+            "en": "Let me see.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0531",
@@ -710,7 +994,41 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这件衣服怎么样？",
+        "pinyin": "Zhè jiàn yīfu zěnmeyàng?",
+        "id": "Baju ini gimana?",
+        "en": "How does this look?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "这件衣服怎么样？",
+            "pinyin": "Zhè jiàn yīfu zěnmeyàng?",
+            "id": "Baju ini gimana?",
+            "en": "How does this look?",
+            "outsideWords": []
+          },
+          {
+            "who": "baba",
+            "hanzi": "很好看！",
+            "pinyin": "Hěn hǎokàn!",
+            "id": "Bagus banget!",
+            "en": "It looks great!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0379",
@@ -778,7 +1096,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你问她吧。",
+        "pinyin": "Nǐ wèn tā ba.",
+        "id": "Tanya dia saja.",
+        "en": "Go ask her.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0526",
@@ -853,7 +1182,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "有问题吗？",
+        "pinyin": "Yǒu wèntí ma?",
+        "id": "Ada pertanyaan?",
+        "en": "Any questions?",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0092",
@@ -929,7 +1269,51 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "对，很好！",
+        "pinyin": "Duì, hěn hǎo!",
+        "id": "Betul, bagus!",
+        "en": "Right, well done!",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "对 dipakai untuk membenarkan jawaban; perlu terlihat jawaban yang dibenarkan.",
+          "en": "对 confirms an answer; the answer being confirmed needs to be shown."
+        },
+        "lines": [
+          {
+            "who": "teacher",
+            "hanzi": "二加二是几？",
+            "pinyin": "Èr jiā èr shì jǐ?",
+            "id": "Dua tambah dua berapa?",
+            "en": "What's two plus two?",
+            "outsideWords": [
+              "加"
+            ]
+          },
+          {
+            "who": "meimei",
+            "hanzi": "是四。",
+            "pinyin": "Shì sì.",
+            "id": "Empat.",
+            "en": "Four.",
+            "outsideWords": []
+          },
+          {
+            "who": "teacher",
+            "hanzi": "对，很好！",
+            "pinyin": "Duì, hěn hǎo!",
+            "id": "Betul, bagus!",
+            "en": "Right, well done!",
+            "outsideWords": []
+          }
+        ]
+      }
     }
   ],
   "casual": [
@@ -1260,5 +1644,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

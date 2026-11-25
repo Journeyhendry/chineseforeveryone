@@ -84,7 +84,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "多吃一点儿！",
+        "pinyin": "Duō chī yìdiǎnr!",
+        "id": "Makan yang banyak, ya!",
+        "en": "Eat a bit more!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0144",
@@ -152,7 +163,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你喝什么？",
+        "pinyin": "Nǐ hē shénme?",
+        "id": "Kamu mau minum apa?",
+        "en": "What would you like to drink?",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": "n-u09:5",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0099",
@@ -224,7 +246,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "饭好了！",
+        "pinyin": "Fàn hǎo le!",
+        "id": "Makanan sudah siap!",
+        "en": "Food's ready!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0242",
@@ -295,7 +328,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你吃米饭吗？",
+        "pinyin": "Nǐ chī mǐfàn ma?",
+        "id": "Kamu mau makan nasi?",
+        "en": "Will you have some rice?",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0035",
@@ -368,7 +412,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "菜来了！",
+        "pinyin": "Cài lái le!",
+        "id": "Masakannya datang!",
+        "en": "Here comes the food!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0345",
@@ -441,7 +496,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，有水吗？",
+        "pinyin": "Māma, yǒu shuǐ ma?",
+        "id": "Ma, ada air?",
+        "en": "Mom, is there any water?",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0036",
@@ -510,7 +576,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "请喝茶。",
+        "pinyin": "Qǐng hē chá.",
+        "id": "Silakan minum tehnya.",
+        "en": "Please have some tea.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0275",
@@ -581,7 +658,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "喝牛奶吧！",
+        "pinyin": "Hē niúnǎi ba!",
+        "id": "Minum susunya, ya!",
+        "en": "Drink your milk!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0018",
@@ -654,7 +742,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我的杯子！",
+        "pinyin": "Zhè shì wǒ de bēizi!",
+        "id": "Ini gelasku!",
+        "en": "This is my cup!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0346",
@@ -726,7 +825,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你吃什么水果？",
+        "pinyin": "Nǐ chī shénme shuǐguǒ?",
+        "id": "Kamu mau makan buah apa?",
+        "en": "What fruit would you like?",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0521",
@@ -797,7 +907,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我有两个苹果！",
+        "pinyin": "Wǒ yǒu liǎng gè píngguǒ!",
+        "id": "Aku punya dua apel!",
+        "en": "I have two apples!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0164",
@@ -869,7 +990,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "吃一个鸡蛋吧！",
+        "pinyin": "Chī yí gè jīdàn ba!",
+        "id": "Makan satu telur, ya!",
+        "en": "Have an egg!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0243",
@@ -940,7 +1072,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "面包好吃吗？",
+        "pinyin": "Miànbāo hǎochī ma?",
+        "id": "Rotinya enak?",
+        "en": "Is the bread good?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0016",
@@ -969,7 +1112,18 @@
         "包",
         "子"
       ],
-      "examples": []
+      "examples": [],
+      "sentence": {
+        "hanzi": "有包子吗？",
+        "pinyin": "Yǒu bāozi ma?",
+        "id": "Ada bakpao?",
+        "en": "Do you have baozi?",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": "n-u09:2",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0511",
@@ -1014,7 +1168,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们吃饺子吧！",
+        "pinyin": "Wǒmen chī jiǎozi ba!",
+        "id": "Yuk, kita makan pangsit!",
+        "en": "Let's eat dumplings!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0244",
@@ -1045,7 +1210,18 @@
         "条",
         "儿"
       ],
-      "examples": []
+      "examples": [],
+      "sentence": {
+        "hanzi": "我爱吃面条儿！",
+        "pinyin": "Wǒ ài chī miàntiáor!",
+        "id": "Aku suka banget makan mi!",
+        "en": "I love noodles!",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0139",
@@ -1117,7 +1293,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "饺子很好吃！",
+        "pinyin": "Jiǎozi hěn hǎochī!",
+        "id": "Pangsitnya enak sekali!",
+        "en": "The dumplings are delicious!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1485,5 +1672,42 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

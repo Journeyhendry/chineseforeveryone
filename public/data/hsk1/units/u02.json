@@ -86,7 +86,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我是学生。",
+        "pinyin": "Wǒ shì xuéshēng.",
+        "id": "Aku murid.",
+        "en": "I'm a student.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0354",
@@ -166,7 +177,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "他是我爸爸。",
+        "pinyin": "Tā shì wǒ bàba.",
+        "id": "Dia ayahku.",
+        "en": "He's my dad.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0356",
@@ -245,7 +267,20 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "她是我奶奶。",
+        "pinyin": "Tā shì wǒ nǎinai.",
+        "id": "Dia nenekku.",
+        "en": "She's my grandma.",
+        "speaker": "gege",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "奶奶"
+        ]
+      },
+      "dialog": null
     },
     {
       "id": "L1-0523",
@@ -314,7 +349,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "它是我的猫。",
+        "pinyin": "Tā shì wǒ de māo.",
+        "id": "Itu kucingku.",
+        "en": "That's my cat.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0381",
@@ -391,7 +437,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们是一家人！",
+        "pinyin": "Wǒmen shì yì jiā rén!",
+        "id": "Kita satu keluarga!",
+        "en": "We're one family!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0355",
@@ -462,7 +519,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "他们在玩儿。",
+        "pinyin": "Tāmen zài wánr.",
+        "id": "Mereka lagi main.",
+        "en": "They're playing.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0357",
@@ -533,7 +601,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "她们在包饺子。",
+        "pinyin": "Tāmen zài bāo jiǎozi.",
+        "id": "Mereka lagi bikin pangsit.",
+        "en": "They're making dumplings.",
+        "speaker": "baba",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "包饺子"
+        ]
+      },
+      "dialog": null
     },
     {
       "id": "L1-0524",
@@ -604,7 +685,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你看它们！",
+        "pinyin": "Nǐ kàn tāmen!",
+        "id": "Lihat hewan-hewan itu!",
+        "en": "Look at them!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0241",
@@ -672,7 +764,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "孩子们，起床了！",
+        "pinyin": "Háizimen, qǐchuáng le!",
+        "id": "Anak-anak, ayo bangun!",
+        "en": "Kids, time to get up!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0337",
@@ -750,7 +853,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是你。",
+        "pinyin": "Zhè shì nǐ.",
+        "id": "Ini kamu.",
+        "en": "This is you.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0034",
@@ -825,7 +939,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "不是我！",
+        "pinyin": "Bú shì wǒ!",
+        "id": "Bukan aku!",
+        "en": "It wasn't me!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0425",
@@ -895,7 +1020,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我也要！",
+        "pinyin": "Wǒ yě yào!",
+        "id": "Aku juga mau!",
+        "en": "Me too!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0176",
@@ -980,7 +1116,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "小朋友，你叫什么名字？",
+        "pinyin": "Xiǎopéngyǒu, nǐ jiào shénme míngzi?",
+        "id": "Adik kecil, namamu siapa?",
+        "en": "What's your name, little one?",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0245",
@@ -1061,7 +1208,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你的名字很好听。",
+        "pinyin": "Nǐ de míngzi hěn hǎotīng.",
+        "id": "Namamu bagus.",
+        "en": "Your name is lovely.",
+        "speaker": "teacher",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0067",
@@ -1142,7 +1300,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "是我的！",
+        "pinyin": "Shì wǒ de!",
+        "id": "Punyaku!",
+        "en": "It's mine!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     }
   ],
   "casual": [],
@@ -1599,5 +1768,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    }
   }
 }

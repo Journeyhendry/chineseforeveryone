@@ -86,7 +86,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我买了两件衣服。",
+        "pinyin": "Wǒ mǎi le liǎng jiàn yīfu.",
+        "id": "Aku beli dua baju.",
+        "en": "I bought two pieces of clothing.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0513",
@@ -154,7 +165,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这家店卖饺子。",
+        "pinyin": "Zhè jiā diàn mài jiǎozi.",
+        "id": "Toko ini jual pangsit.",
+        "en": "This shop sells dumplings.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0294",
@@ -234,7 +256,49 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个多少钱？",
+        "pinyin": "Zhège duōshao qián?",
+        "id": "Ini berapa harganya?",
+        "en": "How much is this?",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Menanyakan harga di toko dan jawabannya.",
+          "en": "Asking a price in a shop and the answer."
+        },
+        "lines": [
+          {
+            "who": "nainai",
+            "hanzi": "这个多少钱？",
+            "pinyin": "Zhège duōshao qián?",
+            "id": "Ini berapa harganya?",
+            "en": "How much is this?",
+            "outsideWords": []
+          },
+          {
+            "who": "seller",
+            "hanzi": "十块。",
+            "pinyin": "Shí kuài.",
+            "id": "Sepuluh yuan.",
+            "en": "Ten yuan.",
+            "outsideWords": []
+          },
+          {
+            "who": "nainai",
+            "hanzi": "好，我买一个。",
+            "pinyin": "Hǎo, wǒ mǎi yí gè.",
+            "id": "Oke, saya beli satu.",
+            "en": "OK, I'll take one.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0203",
@@ -306,7 +370,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "苹果三块一个。",
+        "pinyin": "Píngguǒ sān kuài yí gè.",
+        "id": "Apelnya tiga yuan satu.",
+        "en": "The apples are three yuan each.",
+        "speaker": "seller",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0450",
@@ -376,7 +451,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这本书二十元。",
+        "pinyin": "Zhè běn shū èrshí yuán.",
+        "id": "Buku ini dua puluh yuan.",
+        "en": "This book is twenty yuan.",
+        "speaker": "seller",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0127",
@@ -448,7 +534,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这太贵了。",
+        "pinyin": "Zhè tài guì le.",
+        "id": "Ini terlalu mahal.",
+        "en": "This is too expensive.",
+        "speaker": "mama",
+        "source": "tatoeba",
+        "sourceId": 7771677,
+        "outsideWords": [],
+        "author": "jiangche",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0519",
@@ -519,7 +618,49 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "能便宜一点儿吗？",
+        "pinyin": "Néng piányi yìdiǎnr ma?",
+        "id": "Bisa lebih murah sedikit?",
+        "en": "Can you make it a bit cheaper?",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Tawar-menawar harga di pasar.",
+          "en": "Bargaining over a price at the market."
+        },
+        "lines": [
+          {
+            "who": "seller",
+            "hanzi": "这个十块。",
+            "pinyin": "Zhège shí kuài.",
+            "id": "Yang ini sepuluh yuan.",
+            "en": "This one is ten yuan.",
+            "outsideWords": []
+          },
+          {
+            "who": "nainai",
+            "hanzi": "能便宜一点儿吗？",
+            "pinyin": "Néng piányi yìdiǎnr ma?",
+            "id": "Bisa lebih murah sedikit?",
+            "en": "Can you make it a bit cheaper?",
+            "outsideWords": []
+          },
+          {
+            "who": "seller",
+            "hanzi": "好，八块吧。",
+            "pinyin": "Hǎo, bā kuài ba.",
+            "id": "Ya sudah, delapan yuan saja.",
+            "en": "OK, eight yuan then.",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0086",
@@ -593,7 +734,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我去超市买东西。",
+        "pinyin": "Wǒ qù chāoshì mǎi dōngxi.",
+        "id": "Aku ke supermarket belanja.",
+        "en": "I'm going to the supermarket to do some shopping.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0121",
@@ -674,7 +826,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是给你的。",
+        "pinyin": "Zhè shì gěi nǐ de.",
+        "id": "Ini buat kamu.",
+        "en": "This is for you.",
+        "speaker": "gege",
+        "source": "tatoeba",
+        "sourceId": 450978,
+        "outsideWords": [],
+        "author": "minshirui",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0510",
@@ -744,7 +909,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我喜欢这件衣服。",
+        "pinyin": "Wǒ xǐhuan zhè jiàn yīfu.",
+        "id": "Aku suka baju ini.",
+        "en": "I like this shirt.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0022",
@@ -829,7 +1005,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "桌子上有一本书。",
+        "pinyin": "Zhuōzi shang yǒu yì běn shū.",
+        "id": "Ada sebuah buku di atas meja.",
+        "en": "There's a book on the table.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0341",
@@ -916,7 +1103,20 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我的书。",
+        "pinyin": "Zhè shì wǒ de shū.",
+        "id": "Ini bukuku.",
+        "en": "This is my book.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 334383,
+        "outsideWords": [],
+        "author": "fucongcong",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1359,5 +1559,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "seller": {
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female"
+    }
   }
 }

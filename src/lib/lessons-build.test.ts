@@ -7,6 +7,8 @@ import dialogsFile from '../../data/hsk1/dialogs.json'
 import sentencesFile from '../../data/hsk1/sentences.json'
 import unitsFile from '../../data/hsk1/units.json'
 import wordsFile from '../../data/hsk1/words.json'
+import wordSentencesFile from '../../data/hsk1/word-sentences.json'
+import dialogsNaturalFile from '../../data/hsk1/dialogs-natural.json'
 import basicsFile from '../../data/basics/basics.json'
 import { basicsChars, type BasicsData } from './basics'
 import { buildLessons, strokeChars, strokeFileName, type LessonsInput } from './lessons-build'
@@ -18,6 +20,8 @@ const input = {
   sentences: sentencesFile.sentences,
   casual: casualFile.items,
   dialogs: dialogsFile,
+  wordSentences: wordSentencesFile.entries,
+  speakers: dialogsNaturalFile.speakers,
 } as unknown as LessonsInput
 
 const outDir = new URL('../../public/data/hsk1/', import.meta.url)
@@ -64,6 +68,24 @@ describe('public/data/hsk1 (npm run build:lessons)', () => {
       const d = (JSON.parse(fresh[`units/${u.id}.json`]) as UnitData).dialog
       expect(d, u.id).not.toBeNull()
       expect(d!.place.id && d!.place.en && d!.goal.id && d!.goal.en && d!.placeKind, u.id).toBeTruthy()
+    }
+  })
+
+  it('setiap kata punya kalimat utama (+ dialog bila ada) dari word-sentences.json, tanpa analysis (task 6c)', () => {
+    const ws = new Map(wordSentencesFile.entries.map((e) => [e.wordId, e]))
+    for (const [name, text] of Object.entries(fresh)) {
+      if (!name.startsWith('units/')) continue
+      const unit = JSON.parse(text) as UnitData
+      for (const w of unit.words) {
+        const src = ws.get(w.id)!
+        expect(w.sentence?.hanzi, w.id).toBe(src.sentence.hanzi)
+        expect(w.sentence?.pinyin, w.id).toBe(src.sentence.pinyin)
+        expect(w.dialog?.lines.map((l) => l.hanzi) ?? null, w.id).toEqual(src.dialog?.lines.map((l) => l.hanzi) ?? null)
+        expect(JSON.stringify(w), w.id).not.toContain('analysis')
+        if (w.sentence?.speaker) expect(unit.speakers[w.sentence.speaker], w.id).toBeTruthy()
+        for (const l of w.dialog?.lines ?? []) expect(unit.speakers[l.who], w.id).toBeTruthy()
+        if (w.sentence?.source === 'tatoeba') expect(w.sentence.author && w.sentence.license, w.id).toBeTruthy()
+      }
     }
   })
 

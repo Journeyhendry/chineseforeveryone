@@ -81,7 +81,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我有一个问题。",
+        "pinyin": "Wǒ yǒu yí gè wèntí.",
+        "id": "Aku punya satu pertanyaan.",
+        "en": "I have a question.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0008",
@@ -152,7 +163,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们做了一百个饺子！",
+        "pinyin": "Wǒmen zuò le yìbǎi gè jiǎozi!",
+        "id": "Kita bikin seratus pangsit!",
+        "en": "We made a hundred dumplings!",
+        "speaker": "nainai",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0522",
@@ -220,7 +242,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个手机一千块。",
+        "pinyin": "Zhège shǒujī yìqiān kuài.",
+        "id": "HP ini seribu yuan.",
+        "en": "This phone is a thousand yuan.",
+        "speaker": "seller",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0075",
@@ -292,7 +325,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我是第一！",
+        "pinyin": "Wǒ shì dì yī!",
+        "id": "Aku juara satu!",
+        "en": "I came first!",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0143",
@@ -367,7 +411,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "今天是十五号。",
+        "pinyin": "Jīntiān shì shíwǔ hào.",
+        "id": "Hari ini tanggal lima belas.",
+        "en": "Today is the fifteenth.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0353",
@@ -448,7 +503,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我六岁！",
+        "pinyin": "Wǒ liù suì!",
+        "id": "Aku enam tahun!",
+        "en": "I'm six!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0094",
@@ -527,7 +593,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "二十个饺子？太多了！",
+        "pinyin": "Èrshí gè jiǎozi? Tài duō le!",
+        "id": "Dua puluh pangsit? Kebanyakan!",
+        "en": "Twenty dumplings? That's too many!",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0324",
@@ -602,7 +679,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你的多，我的少！",
+        "pinyin": "Nǐ de duō, wǒ de shǎo!",
+        "id": "Punyamu banyak, punyaku sedikit!",
+        "en": "You've got lots, I've only got a few!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0010",
@@ -674,7 +762,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "现在七点半。",
+        "pinyin": "Xiànzài qī diǎn bàn.",
+        "id": "Sekarang jam setengah delapan.",
+        "en": "It's half past seven.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0431",
@@ -718,7 +817,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这一半是你的！",
+        "pinyin": "Zhè yíbàn shì nǐ de!",
+        "id": "Setengah ini buat kamu!",
+        "en": "This half is yours!",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0437",
@@ -793,7 +903,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我会说一点儿汉语。",
+        "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "id": "Saya bisa sedikit bahasa Mandarin.",
+        "en": "I can speak a little Chinese.",
+        "speaker": "classmate",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0530",
@@ -868,7 +989,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "茶有点儿热。",
+        "pinyin": "Chá yǒudiǎnr rè.",
+        "id": "Tehnya agak panas.",
+        "en": "The tea is a bit hot.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0439",
@@ -938,7 +1070,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "桌子上有一些书。",
+        "pinyin": "Zhuōzi shang yǒu yìxiē shū.",
+        "id": "Di atas meja ada beberapa buku.",
+        "en": "There are some books on the table.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0527",
@@ -1007,7 +1150,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们吃些水果吧。",
+        "pinyin": "Wǒmen chī xiē shuǐguǒ ba.",
+        "id": "Kita makan buah, yuk.",
+        "en": "Let's have some fruit.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0442",
@@ -1080,7 +1234,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这些苹果有的大，有的小。",
+        "pinyin": "Zhèxiē píngguǒ yǒude dà, yǒude xiǎo.",
+        "id": "Apel-apel ini ada yang besar, ada yang kecil.",
+        "en": "Some of these apples are big, some are small.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0445",
@@ -1153,7 +1318,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "有些菜我不吃。",
+        "pinyin": "Yǒuxiē cài wǒ bù chī.",
+        "id": "Ada masakan yang nggak aku makan.",
+        "en": "There are some dishes I don't eat.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1647,5 +1823,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "seller": {
+      "name": {
+        "id": "Penjual",
+        "en": "Seller"
+      },
+      "gender": "female"
+    }
   }
 }

@@ -1,0 +1,9 @@
+# Task 4c: ukur / perbaiki nada. Alat ukur (tone_refs/tone_analysis/tone_score) hanya perlu baris pertama;
+# rebuild_tone.py (verifikasi Whisper di Actions) memasang requirements.txt (Kokoro, Whisper) + file ini.
+numpy==1.26.4
+praat-parselmouth==0.4.7
+pypinyin==0.53.0
+opencc-python-reimplemented==0.1.7
+soundfile==0.12.1
+scikit-learn==1.5.2
+pytest>=8,<9

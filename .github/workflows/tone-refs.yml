@@ -1,0 +1,136 @@
+name: Tone references (task 4c)
+
+# Rujukan penutur asli untuk ukuran nada/durasi/rentang: hugolpz/audio-cmn (CC BY-SA), Lingua Libre (CC0/CC BY/CC BY-SA),
+# Tatoeba (cek segar), Common Voice (cek akses). Tidak ada audio mentah di-commit: hanya ukuran + metadata
+# -> data/hsk1/tone-refs.json. Terpisah dari build-audio.yml (tidak menyentuh path-nya).
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - scripts/tts-hsk1/tone_refs.py
+      - scripts/tts-hsk1/tone_analysis.py
+      - scripts/tts-hsk1/requirements-4c.txt
+      - .github/workflows/tone-refs.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tone-refs-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  cmn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      REFS_BUDGET_MIN: "85"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q -r scripts/tts-hsk1/requirements-4c.txt
+      - run: python scripts/tts-hsk1/tone_refs.py cmn --out parts/cmn.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: refs-cmn
+          path: parts/cmn.json
+          retention-days: 7
+
+  ll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
+    env:
+      REFS_BUDGET_MIN: "80"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q -r scripts/tts-hsk1/requirements-4c.txt
+      - run: python scripts/tts-hsk1/tone_refs.py ll --shard ${{ matrix.shard }} --shards 3 --out parts/ll-${{ matrix.shard }}.json
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refs-ll-${{ matrix.shard }}
+          path: parts/ll-${{ matrix.shard }}.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+  misc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q -r scripts/tts-hsk1/requirements-4c.txt
+      - run: python scripts/tts-hsk1/tone_refs.py tatoeba --out parts/tatoeba.json
+        continue-on-error: true
+      - run: python scripts/tts-hsk1/tone_refs.py commonvoice --out parts/commonvoice.json
+        continue-on-error: true
+      - run: python scripts/tts-hsk1/tone_refs.py local-native --out parts/local-native.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refs-misc
+          path: parts/
+          retention-days: 7
+          if-no-files-found: ignore
+
+  merge:
+    needs: [cmn, ll, misc]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q numpy==1.26.4 pypinyin==0.53.0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: refs-*
+          path: ${{ runner.temp }}/parts
+          merge-multiple: true
+      - name: Merge
+        run: |
+          set -euo pipefail
+          ls -la "$RUNNER_TEMP/parts"
+          python scripts/tts-hsk1/tone_refs.py merge --inputs "$RUNNER_TEMP"/parts/*.json
+      - name: Commit
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hsk1/tone-refs.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Data: tone references (task 4c)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 10))
+            done
+          fi

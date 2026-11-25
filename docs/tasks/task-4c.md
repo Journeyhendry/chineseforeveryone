@@ -69,3 +69,5 @@ Temuan ronde 1: pengenal nada hanya 85,5 % pada rekaman ORANG ASLI (suku kata tu
 5. **Pelacak F0 lebih baik** (RMVPE/CREPE atau pyin) dibanding dua lintasan Praat, kurangi lompat oktaf dan derit nada 3.
 6. **Pengenal kedua yang sudah terlatih** (Whisper medium, FunASR/Paraformer) tetap sebagai proksi "murid paham", dihitung terpisah.
 Kriteria baru: (a) suku kata tunggal ≥ 90 % (sudah tercapai pada rujukan asli); (b) kata/kalimat: ≥ 90 % pada rujukan asli jika tercapai; bila tidak tercapai setelah langkah 1–5, target suara kita = ≥ 90 % dari angka rujukan asli untuk tiap kelas (usulan pemilik disetujui oleh Opus pemeriksa), dan catat alasannya di `task-4c-hasil.md`. Setelah pengukur membaik, ulangi pengukuran "sebelum" dan penyetelan.
+
+**Standar ukur resmi ronde 2: `docs/STANDAR-UKUR-SUARA.md`** (3 lapis: otomatis, murid otomatis, manusia). Ikuti itu; bila ada beda dengan kriteria di atas, standar itu yang berlaku setelah pemilik menyetujuinya.

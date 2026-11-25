@@ -29,8 +29,13 @@
   outline: none;
 }
 
+/* Lebar isi lentur: di layar lebar mengisi ruang yang ada, dibatasi 1600 px dan di tengah.
+   container-type membuat tata letak anak (mis. pilihan soal) mengikuti lebar isi, bukan lebar layar. */
 .content-inner {
-  max-width: 960px;
+  width: 100%;
+  max-width: min(1600px, 100%);
+  margin-inline: auto;
+  container-type: inline-size;
 }
 
 /* Menu: bar bawah (layar sempit) */
@@ -111,8 +116,7 @@
 
   .sidebar {
     position: sticky;
-    top: 0;
-    inset: auto;
+    inset: 0 auto auto 0;
     height: 100vh;
     flex-direction: column;
     gap: var(--space-2);

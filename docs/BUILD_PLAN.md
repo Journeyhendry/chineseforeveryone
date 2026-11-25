@@ -46,7 +46,7 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 | Sesi utama: perencana, penulis PRD task, pemeriksa | Opus |
 | 1b, 5b, isian i18n, README/CREDITS, perbaikan lint kecil, update PROGRESS | Haiku |
 | 2, 3, 4, 5, 8, 9 | Sonnet |
-| 3b (penulis), 3c, 6, 6b, 7, 10 | Opus |
+| 3b (penulis), 3c, 6, 6b, 7, 10, 4c (periksa & setel) | Opus |
 | 3b (pemeriksa kedua, independen) | Sonnet |
 
 Naik tingkat kalau gagal: Haiku → Sonnet → Opus → berhenti.
@@ -54,7 +54,8 @@ Naik tingkat kalau gagal: Haiku → Sonnet → Opus → berhenti.
 ## 4. Daftar task (urutan dan prasyarat)
 
 **PRIORITAS (keputusan pemilik 2026-11-22, mengalahkan urutan di bawah):** ambil task yang tersedia (prasyarat selesai, tidak terkunci) dengan urutan:
-**2b → 3d → 0 → 4b → 8 → 9 → 7 → 6b (tahap berikutnya, unit 4 dst.) → 10.**
+**2b → 3d → 0 → 4b → 8 → 9 → 7 → ~~6b (tahap berikutnya)~~ → 10.**
+**DIJEDA PEMILIK 2026-11-25: 6b tahap 4 dst. tidak boleh diambil** (adegan akan diganti per kalimat/dialog, lihat IDEAS.md). Task 10 (rilis v1.0.0) juga TIDAK diambil sampai pemilik memutuskan ide baru; sesi cukup melapor.
 Tujuannya: website sudah bisa dipakai belajar Tahap 0 + HSK 1 (300 kata) lengkap dengan suara secepatnya; ilustrasi unit 4 dst. menyusul. Sesi yang sedang mengerjakan 6b tahap 1 (unit 1–3) boleh menyelesaikannya, tetapi tahap 6b berikutnya hanya diambil kalau tidak ada task lain di daftar prioritas yang tersedia.
 
 ### 1 · Kerangka proyek + deploy — SELESAI
@@ -113,11 +114,17 @@ Tambah job `check` di `.github/workflows/deploy.yml` (npm ci, typecheck, lint, t
 - **4b**: workflow `build-audio.yml`: buat mp3 (mono, 64 kbps, volume dinormalisasi) untuk semua kata, kalimat, ungkapan santai, dialog dengan suara terpilih; cek tiap file dengan Whisper (transkrip harus sama dengan hanzi); yang gagal dibuat ulang dengan variasi pengaturan, gagal lagi → daftar di `data/hsk1/audio-issues.json`. Unduh juga rekaman asli tambahan (Lingua Libre/Commons CC BY-SA, Tatoeba berlisensi bebas) untuk tombol "Dengar penutur asli". Tone Perfect hanya dipakai kalau izin dari MSU sudah ada.
 - Acceptance: setiap kata/kalimat/dialog punya audio suara utama; tingkat lolos Whisper dicatat; atribusi rekaman asli lengkap di CREDITS.md.
 
+### 4c · Perbaiki ketepatan suara (Sonnet skrip, Opus memeriksa) — butuh: 4b
+- PRD lengkap: `docs/tasks/task-4c.md`. Ukur nada & durasi suara P3/L3 terhadap rekaman asli dari banyak sumber, perbaiki yang pendek/lemah, pilih versi terbaik per item, halaman sebelum-sesudah untuk telinga pemilik. Suara P3/L3 tidak diganti.
+
 ### 5 · Tampilan dasar (Sonnet) — butuh: 1
 Tema (token warna/font di CSS variables), menu samping (Belajar, Ulang, Kamus, Progres) yang pindah ke bawah di layar sempit, router (hash router agar aman di GitHub Pages), i18n ID/EN (`src/i18n/id.json`, `en.json`, ganti tanpa reload), halaman pengaturan (bahasa, tampilkan pinyin, kecepatan suara, efek suara), mode gelap. Ikuti mockup artboard 1. Acceptance: semua teks dari file i18n; navigasi keyboard; kontras WCAG AA; tidak ada horizontal scroll di 375 px.
 
 ### 5b · Font Mandarin self-host (Haiku) — butuh: 5
 Self-host LXGW WenKai (subset untuk huruf HSK 1 + tanda baca) menggantikan Noto Sans SC untuk huruf besar; sertakan izin OFL.
+
+### 5c · Tata letak layar lebar (laptop/PC) — butuh: 5
+Di 1366, 1920 dan 2560 px: menu samping penuh tinggi (sticky, 100vh) saat di-scroll; isi halaman memakai lebar fluid (maks-lebar ±1600 px) tanpa ruang kosong besar di kanan; kartu sejajar (kartu gambar kenalan kata sama lebar dengan kartu lain); soal pilihan nada 4 sebaris di layar lebar, 2x2 di sempit; grid daftar kata auto-fill. Hanya CSS/tata letak (`AppShell.css`, `src/pages/learn/*.css`). Tanpa scroll samping di 375 px, mode gelap rapi, axe lolos. Screenshot di 1100/1366/1920/2560 px diperiksa sendiri.
 
 ### 6 · Layar unit + peta belajar (Opus) — butuh: 2, 3, 5 (audio boleh placeholder sampai 4b)
 Peta belajar (mockup artboard 1), layar kenalan kata (artboard 2: huruf besar, pinyin berwarna nada, arti, tombol suara normal/pelan, animasi coretan Hanzi Writer dengan data lokal, contoh kalimat, kotak versi santai), latihan (pilihan ganda huruf↔arti, suara→huruf, tebak nada — artboard 3), nilai bintang 0–3, unit terkunci + tes loncat. Acceptance sesuai PRD bagian "Belajar & game".

@@ -66,7 +66,7 @@ export function DialogCard({ dialog }: { dialog: LessonDialog }) {
                   {line[lang]} {line.machine && !dialog.machine ? <MachineTag /> : null}
                 </p>
               </div>
-              <SpeakButton text={line.cmn} label={`${name}: ${line.cmn}`} />
+              <SpeakButton text={line.cmn} label={`${name}: ${line.cmn}`} voice={line.gender} />
             </li>
           )
         })}

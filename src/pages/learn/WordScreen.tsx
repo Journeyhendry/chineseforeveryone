@@ -7,7 +7,7 @@ import { learnHref } from '../../lib/router'
 import { useSettings } from '../../lib/settings-context'
 import { CasualBox } from './CasualCard'
 import { go, isInteractiveTarget, useAudio, useDocumentTitle, useFocusOnChange, useHotkeys } from './hooks'
-import { AudioButtons, Badge, LessonBar, MachineTag, SpeakButton, ToneHanzi, TonePinyin, ToneLabels } from './parts'
+import { AudioButtons, Badge, LessonBar, MachineTag, NativeButtons, SpeakButton, ToneHanzi, TonePinyin, ToneLabels } from './parts'
 import { StrokePanel } from './StrokePanel'
 import { WordScene } from './WordScene'
 import { meaningFull, tatoebaUrl } from './text'
@@ -81,6 +81,7 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
                 {other === 'id' && word.idMachine ? <MachineTag /> : null}
               </p>
               <AudioButtons text={word.hanzi} label={word.hanzi} />
+              <NativeButtons id={word.id} label={word.hanzi} />
             </div>
           </section>
 

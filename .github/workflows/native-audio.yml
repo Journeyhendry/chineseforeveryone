@@ -1,0 +1,56 @@
+name: HSK 1 native recordings
+
+# Rekaman penutur asli (Lingua Libre / Wikimedia Commons, hanya CC0 / CC BY / CC BY-SA).
+# Terpisah dari build-audio.yml supaya tidak memicu atau menahan sintesis TTS utama.
+# Unduhan berurutan dan pelan (kebijakan bot/User-Agent Wikimedia); hasil bertahap, bisa dilanjutkan.
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - scripts/tts-hsk1/native_audio.py
+      - .github/workflows/native-audio.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: native-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Fetch native recordings (Lingua Libre, free licenses only)
+        timeout-minutes: 48
+        continue-on-error: true
+        run: python scripts/tts-hsk1/native_audio.py
+      - name: Commit native recordings
+        if: always()
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in public/audio/native data/hsk1/native-audio.json; do [ -e "$p" ] && git add -A "$p"; done
+          if git diff --cached --quiet; then
+            echo "No native changes"
+          else
+            git commit -m "Data: HSK 1 native recordings"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 10))
+            done
+          fi

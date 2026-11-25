@@ -112,24 +112,24 @@
         "en": "An hour has sixty minutes.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "yeye",
+        "speaker": "teacher",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0405",
-        "fit": "rebubble",
-        "note": "Jarum panjang berputar satu kali penuh sementara jarum pendek maju dari 3 ke 4; Kakek menjelaskan."
+        "fit": "redraw",
+        "note": "Di kelas, Bu Guru memegang jam peraga besar dan memutar jarum panjang satu putaran penuh (60 menit), murid-murid memperhatikan."
       }
     },
     {
       "wordId": "L1-0334",
       "hanzi": "时间",
       "sentence": {
-        "hanzi": "我今天没有时间。",
-        "pinyin": "Wǒ jīntiān méiyǒu shíjiān.",
-        "id": "Hari ini aku nggak ada waktu.",
-        "en": "I don't have time today.",
+        "hanzi": "对不起，我今天没有时间。",
+        "pinyin": "Duìbuqǐ, wǒ jīntiān méiyǒu shíjiān.",
+        "id": "Maaf, hari ini Ayah nggak ada waktu.",
+        "en": "Sorry, I don't have time today.",
         "source": "unit",
         "sourceId": null,
         "speaker": "baba",
@@ -138,8 +138,8 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0334",
-        "fit": "rebubble",
-        "note": "Ayah terburu-buru membawa tas kerja sambil melihat jam dinding (7:55)."
+        "fit": "redraw",
+        "note": "Adik memegang bola dan menarik tangan Ayah; Ayah memakai jas, membawa tas kerja, dan menunjuk jam dinding sambil minta maaf."
       }
     },
     {

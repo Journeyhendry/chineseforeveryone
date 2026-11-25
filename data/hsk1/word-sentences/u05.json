@@ -29,17 +29,17 @@
           },
           {
             "who": "mama",
-            "hanzi": "你看看！",
-            "pinyin": "Nǐ kànkan!",
-            "id": "Coba lihat sendiri!",
-            "en": "Take a look!"
+            "hanzi": "这是你的新书。",
+            "pinyin": "Zhè shì nǐ de xīn shū.",
+            "id": "Ini buku barumu.",
+            "en": "It's your new book."
           }
         ]
       },
       "scene": {
         "ref": "L1-0328",
         "fit": "rebubble",
-        "note": "Adik mengguncang kotak hadiah tertutup di dekat telinganya; Ibu tersenyum."
+        "note": "Adik mengguncang kotak hadiah tertutup; Ibu tersenyum di sebelahnya."
       }
     },
     {
@@ -77,9 +77,9 @@
           },
           {
             "who": "meimei",
-            "hanzi": "是它！",
-            "pinyin": "Shì tā!",
-            "id": "Dia tuh!",
+            "hanzi": "是猫！",
+            "pinyin": "Shì māo!",
+            "id": "Si kucing!",
             "en": "It was the cat!"
           }
         ]
@@ -94,13 +94,13 @@
       "wordId": "L1-0250",
       "hanzi": "哪",
       "sentence": {
-        "hanzi": "你哪天有时间？",
-        "pinyin": "Nǐ nǎ tiān yǒu shíjiān?",
-        "id": "Kamu kosong hari apa?",
-        "en": "Which day are you free?",
+        "hanzi": "你要哪本书？",
+        "pinyin": "Nǐ yào nǎ běn shū?",
+        "id": "Kamu mau buku yang mana?",
+        "en": "Which book do you want?",
         "source": "unit",
         "sourceId": null,
-        "speaker": "friend",
+        "speaker": "mama",
         "matchForm": null
       },
       "dialog": {
@@ -110,25 +110,25 @@
         },
         "lines": [
           {
-            "who": "friend",
-            "hanzi": "你哪天有时间？",
-            "pinyin": "Nǐ nǎ tiān yǒu shíjiān?",
-            "id": "Kamu kosong hari apa?",
-            "en": "Which day are you free?"
+            "who": "mama",
+            "hanzi": "你要哪本书？",
+            "pinyin": "Nǐ yào nǎ běn shū?",
+            "id": "Kamu mau buku yang mana?",
+            "en": "Which book do you want?"
           },
           {
-            "who": "gege",
-            "hanzi": "星期天。",
-            "pinyin": "Xīngqītiān.",
-            "id": "Hari Minggu.",
-            "en": "Sunday."
+            "who": "meimei",
+            "hanzi": "这本！",
+            "pinyin": "Zhè běn!",
+            "id": "Yang ini!",
+            "en": "This one!"
           }
         ]
       },
       "scene": {
         "ref": "L1-0250",
         "fit": "redraw",
-        "note": "Teman dan Kakak berdiri di depan kalender dinding; teman menunjuk kalender."
+        "note": "Di toko buku, Ibu bertanya kepada Adik di depan rak; Adik menunjuk satu buku bergambar."
       }
     },
     {
@@ -281,18 +281,18 @@
             "en": "Where are you?"
           },
           {
-            "who": "baba",
-            "hanzi": "我在超市。",
-            "pinyin": "Wǒ zài chāoshì.",
-            "id": "Aku di supermarket.",
-            "en": "I'm at the supermarket."
+            "who": "gege",
+            "hanzi": "我在学校。",
+            "pinyin": "Wǒ zài xuéxiào.",
+            "id": "Aku di sekolah.",
+            "en": "I'm at school."
           }
         ]
       },
       "scene": {
         "ref": "L1-0251",
         "fit": "redraw",
-        "note": "Dua panel telepon: Ibu menelepon di rumah, Ayah menjawab di supermarket."
+        "note": "Dua panel telepon: Ibu menelepon dari rumah; Kakak menjawab di depan gerbang sekolah."
       }
     },
     {

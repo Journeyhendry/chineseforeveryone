@@ -125,10 +125,10 @@
       "wordId": "L1-0261",
       "hanzi": "男",
       "sentence": {
-        "hanzi": "男同学在这边。",
-        "pinyin": "Nán tóngxué zài zhèbiān.",
-        "id": "Murid laki-laki di sebelah sini.",
-        "en": "Boys over here, please.",
+        "hanzi": "男同学在这边，女同学在那边。",
+        "pinyin": "Nán tóngxué zài zhèbiān, nǚ tóngxué zài nàbiān.",
+        "id": "Murid laki-laki di sebelah sini, murid perempuan di sebelah sana.",
+        "en": "The boys are on this side, the girls on that side.",
         "source": "unit",
         "sourceId": null,
         "speaker": "teacher",
@@ -138,7 +138,7 @@
       "scene": {
         "ref": "L1-0261",
         "fit": "redraw",
-        "note": "Di lapangan sekolah, Bu Guru membagi murid: anak laki-laki berbaris di sisi kiri."
+        "note": "Di lapangan sekolah, Bu Guru menunjuk barisan anak laki-laki di kiri dan anak perempuan di kanan."
       }
     },
     {

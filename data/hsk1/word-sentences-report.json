@@ -7,11 +7,11 @@
     "words": 300,
     "entries": 300,
     "dialogs": 32,
-    "inScope": 217,
-    "inScopePct": 72.3,
+    "inScope": 216,
+    "inScopePct": 72,
     "inScopeTargetPct": 70,
     "errors": 0,
-    "warnings": 13
+    "warnings": 18
   },
   "perUnit": [
     {
@@ -72,7 +72,7 @@
       "inScope": 5,
       "inScopePct": 31.3,
       "dialogs": 0,
-      "buatan": 1
+      "buatan": 0
     },
     {
       "unit": "u07",
@@ -109,10 +109,10 @@
       "draft": true,
       "words": 14,
       "entries": 14,
-      "inScope": 12,
-      "inScopePct": 85.7,
+      "inScope": 11,
+      "inScopePct": 78.6,
       "dialogs": 0,
-      "buatan": 1
+      "buatan": 2
     },
     {
       "unit": "u11",
@@ -226,8 +226,8 @@
     }
   ],
   "sources": {
-    "unit": 249,
-    "tatoeba": 30,
+    "unit": 251,
+    "tatoeba": 28,
     "buatan": 21
   },
   "dialogs": {
@@ -333,10 +333,6 @@
       "count": 1
     },
     {
-      "word": "考",
-      "count": 1
-    },
-    {
       "word": "请进",
       "count": 1
     },
@@ -357,12 +353,20 @@
       "count": 1
     }
   ],
-  "over10": [],
+  "over10": [
+    {
+      "unit": "u07",
+      "wordId": "L1-0261",
+      "where": "sentence",
+      "hanzi": "男同学在这边，女同学在那边。",
+      "hanziCount": 12
+    }
+  ],
   "over14": [],
   "buatan": {
     "count": 21,
     "allInDictionary": 21,
-    "withCollocation": 9,
+    "withCollocation": 8,
     "entries": [
       {
         "unit": "u01",
@@ -473,18 +477,6 @@
         "collocationHits": 0
       },
       {
-        "unit": "u06",
-        "wordId": "L1-0008",
-        "hanzi": "百",
-        "sentence": "我考了一百分！",
-        "outsideWords": [
-          "考"
-        ],
-        "allInDictionary": true,
-        "missing": [],
-        "collocationHits": 6
-      },
-      {
         "unit": "u08",
         "wordId": "L1-0533",
         "hanzi": "只",
@@ -503,6 +495,18 @@
         "sentence": "星期日我们去公园。",
         "outsideWords": [
           "公园"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u10",
+        "wordId": "L1-0308",
+        "hanzi": "日",
+        "sentence": "今天是我的生日！",
+        "outsideWords": [
+          "生日"
         ],
         "allInDictionary": true,
         "missing": [],
@@ -628,20 +632,32 @@
     {
       "level": "warning",
       "unit": "u05",
-      "wordId": "L1-0328",
+      "wordId": "L1-0460",
       "message": "dialog line 2 pinyin: 看 (kan): 看 tone 5, words.json has 4 (neutral vs full tone)"
     },
     {
       "level": "warning",
-      "unit": "u05",
-      "wordId": "L1-0460",
-      "message": "dialog line 2 pinyin: 看 (kan): 看 tone 5, words.json has 4 (neutral vs full tone)"
+      "unit": "u06",
+      "wordId": "L1-0439",
+      "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u07",
+      "wordId": "L1-0261",
+      "message": "sentence: 12 hanzi (target ≤ 10)"
     },
     {
       "level": "warning",
       "unit": "u08",
       "wordId": "L1-0004",
       "message": "sentence pinyin: 来 (lai): 来 tone 5, words.json has 2 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0315",
+      "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
     },
     {
       "level": "warning",
@@ -663,6 +679,12 @@
     },
     {
       "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0213",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
       "unit": "u13",
       "wordId": "L1-0314",
       "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
@@ -672,6 +694,18 @@
       "unit": "u13",
       "wordId": "L1-0343",
       "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0503",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0083",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
     },
     {
       "level": "warning",

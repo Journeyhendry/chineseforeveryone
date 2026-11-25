@@ -6,7 +6,7 @@
       "hanzi": "上",
       "sentence": {
         "hanzi": "猫在桌子上。",
-        "pinyin": "Māo zài zhuōzi shàng.",
+        "pinyin": "Māo zài zhuōzi shang.",
         "id": "Kucingnya di atas meja.",
         "en": "The cat is on the table.",
         "source": "unit",
@@ -86,7 +86,7 @@
       "hanzi": "里",
       "sentence": {
         "hanzi": "杯子里有水。",
-        "pinyin": "Bēizi lǐ yǒu shuǐ.",
+        "pinyin": "Bēizi li yǒu shuǐ.",
         "id": "Di dalam gelas ada air.",
         "en": "There's water in the cup.",
         "source": "unit",

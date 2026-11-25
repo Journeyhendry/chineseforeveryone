@@ -145,11 +145,11 @@
       "wordId": "L1-0308",
       "hanzi": "日",
       "sentence": {
-        "hanzi": "今天是十月一日。",
-        "pinyin": "Jīntiān shì shí yuè yī rì.",
-        "id": "Hari ini tanggal satu Oktober.",
-        "en": "Today is October 1st.",
-        "source": "unit",
+        "hanzi": "今天是我的生日！",
+        "pinyin": "Jīntiān shì wǒ de shēngrì!",
+        "id": "Hari ini ulang tahunku!",
+        "en": "Today's my birthday!",
+        "source": "buatan",
         "sourceId": null,
         "speaker": "meimei",
         "matchForm": null
@@ -158,19 +158,19 @@
       "scene": {
         "ref": "L1-0308",
         "fit": "redraw",
-        "note": "Lembar kalender besar bertuliskan 10月1日; Adik menunjuknya."
+        "note": "Adik tersenyum di depan kue ulang tahun dengan enam lilin; keluarga bertepuk tangan."
       }
     },
     {
       "wordId": "L1-0452",
       "hanzi": "月",
       "sentence": {
-        "hanzi": "我三月二十二号生日。",
-        "pinyin": "Wǒ sān yuè èrshí'èr hào shēngrì.",
-        "id": "Ulang tahunku tanggal 22 Maret.",
-        "en": "My birthday is on March 22.",
-        "source": "tatoeba",
-        "sourceId": 2561534,
+        "hanzi": "今天是五月一号。",
+        "pinyin": "Jīntiān shì wǔ yuè yī hào.",
+        "id": "Hari ini tanggal satu Mei.",
+        "en": "Today is May 1st.",
+        "source": "unit",
+        "sourceId": null,
         "speaker": "meimei",
         "matchForm": null
       },
@@ -178,7 +178,7 @@
       "scene": {
         "ref": "L1-0452",
         "fit": "redraw",
-        "note": "Kalender bulan Maret dengan tanggal 22 dilingkari dan gambar kue ulang tahun; Adik menunjuknya."
+        "note": "Adik menunjuk lembar kalender besar bulan Mei yang tanggal 1-nya dilingkari."
       }
     },
     {
@@ -265,10 +265,10 @@
       "wordId": "L1-0007",
       "hanzi": "白天",
       "sentence": {
-        "hanzi": "白天爸爸不在家。",
-        "pinyin": "Báitiān bàba bú zài jiā.",
-        "id": "Siang hari Ayah nggak di rumah.",
-        "en": "Dad isn't home during the day.",
+        "hanzi": "猫白天睡觉。",
+        "pinyin": "Māo báitiān shuìjiào.",
+        "id": "Kucing tidur di siang hari.",
+        "en": "Cats sleep during the day.",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -278,7 +278,7 @@
       "scene": {
         "ref": "L1-0007",
         "fit": "redraw",
-        "note": "Siang hari (matahari terang di jendela): Adik dan Ibu di rumah, kursi Ayah kosong."
+        "note": "Siang hari, matahari terang masuk lewat jendela; kucing tidur melingkar di sofa, Adik menunjuknya."
       }
     }
   ]

@@ -65,20 +65,20 @@
       "wordId": "L1-0351",
       "hanzi": "四",
       "sentence": {
-        "hanzi": "四个人？好的，请坐。",
-        "pinyin": "Sì gè rén? Hǎo de, qǐng zuò.",
-        "id": "Empat orang? Baik, silakan duduk.",
-        "en": "Four of you? Sure, have a seat.",
+        "hanzi": "我们四个人。",
+        "pinyin": "Wǒmen sì gè rén.",
+        "id": "Kami berempat.",
+        "en": "There are four of us.",
         "source": "unit",
-        "sourceId": "n-u03:5",
-        "speaker": "waiter",
+        "sourceId": null,
+        "speaker": "baba",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0351",
         "fit": "redraw",
-        "note": "Di restoran, pelayan mempersilakan Ayah, Ibu, Kakak, dan Adik ke meja berkursi empat."
+        "note": "Di pintu restoran, Ayah mengacungkan empat jari kepada pelayan; Ibu, Kakak, dan Adik berdiri di belakangnya."
       }
     },
     {
@@ -218,7 +218,7 @@
       "scene": {
         "ref": "L1-0216",
         "fit": "redraw",
-        "note": "Kakek berjaket tebal menunjuk termometer di jendela yang menunjuk angka 0."
+        "note": "Salju turun di luar jendela; Kakek berjaket tebal menunjuk termometer besar yang menunjuk angka 0."
       }
     },
     {

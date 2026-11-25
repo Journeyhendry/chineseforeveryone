@@ -25,20 +25,20 @@
       "wordId": "L1-0008",
       "hanzi": "百",
       "sentence": {
-        "hanzi": "我考了一百分！",
-        "pinyin": "Wǒ kǎo le yìbǎi fēn!",
-        "id": "Aku dapat nilai seratus!",
-        "en": "I got a hundred on the test!",
-        "source": "buatan",
+        "hanzi": "我们做了一百个饺子！",
+        "pinyin": "Wǒmen zuò le yìbǎi gè jiǎozi!",
+        "id": "Kita bikin seratus pangsit!",
+        "en": "We made a hundred dumplings!",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "gege",
+        "speaker": "nainai",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0008",
         "fit": "redraw",
-        "note": "Kakak mengangkat kertas ujian bertuliskan 100 dengan bangga."
+        "note": "Nenek, Ibu, dan Adik di meja penuh nampan pangsit; ada angka 100 di atasnya."
       }
     },
     {
@@ -58,7 +58,7 @@
       "scene": {
         "ref": "L1-0522",
         "fit": "redraw",
-        "note": "Kakak menunjuk halaman sekolah yang penuh murid; ada angka 1000 di papan."
+        "note": "Di gerbang sekolah, banyak sekali murid berjalan keluar; papan sekolah bertuliskan angka 1000."
       }
     },
     {
@@ -125,12 +125,12 @@
       "wordId": "L1-0094",
       "hanzi": "多",
       "sentence": {
-        "hanzi": "二十个？太多了！",
-        "pinyin": "Èrshí gè? Tài duō le!",
-        "id": "Dua puluh? Kebanyakan!",
-        "en": "Twenty? That's too many!",
+        "hanzi": "二十个饺子？太多了！",
+        "pinyin": "Èrshí gè jiǎozi? Tài duō le!",
+        "id": "Dua puluh pangsit? Kebanyakan!",
+        "en": "Twenty dumplings? That's too many!",
         "source": "unit",
-        "sourceId": "n-u06:2",
+        "sourceId": null,
         "speaker": "gege",
         "matchForm": null
       },
@@ -148,7 +148,7 @@
         "hanzi": "你的多，我的少！",
         "pinyin": "Nǐ de duō, wǒ de shǎo!",
         "id": "Punyamu banyak, punyaku sedikit!",
-        "en": "You've got lots, I've got hardly any!",
+        "en": "You've got lots, I've only got a few!",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -246,7 +246,7 @@
       "hanzi": "一些",
       "sentence": {
         "hanzi": "桌子上有一些书。",
-        "pinyin": "Zhuōzi shàng yǒu yìxiē shū.",
+        "pinyin": "Zhuōzi shang yǒu yìxiē shū.",
         "id": "Di atas meja ada beberapa buku.",
         "en": "There are some books on the table.",
         "source": "unit",
@@ -285,20 +285,20 @@
       "wordId": "L1-0442",
       "hanzi": "有的",
       "sentence": {
-        "hanzi": "有的同学会，有的不会。",
-        "pinyin": "Yǒude tóngxué huì, yǒude bú huì.",
-        "id": "Ada murid yang bisa, ada yang tidak.",
-        "en": "Some students know, some don't.",
+        "hanzi": "这些苹果有的大，有的小。",
+        "pinyin": "Zhèxiē píngguǒ yǒude dà, yǒude xiǎo.",
+        "id": "Apel-apel ini ada yang besar, ada yang kecil.",
+        "en": "Some of these apples are big, some are small.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "teacher",
+        "speaker": "mama",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0442",
-        "fit": "rebubble",
-        "note": "Guru bertanya ke kelas; ada yang mengangkat tangan, ada yang menggaruk kepala."
+        "fit": "redraw",
+        "note": "Di pasar, Ibu menunjuk keranjang apel: beberapa besar, beberapa kecil."
       }
     },
     {
@@ -307,7 +307,7 @@
       "sentence": {
         "hanzi": "有些菜我不吃。",
         "pinyin": "Yǒuxiē cài wǒ bù chī.",
-        "id": "Ada sayur yang nggak aku makan.",
+        "id": "Ada masakan yang nggak aku makan.",
         "en": "There are some dishes I don't eat.",
         "source": "unit",
         "sourceId": null,
@@ -318,7 +318,7 @@
       "scene": {
         "ref": "L1-0445",
         "fit": "redraw",
-        "note": "Di meja makan, Adik menyingkirkan beberapa piring sayur dan menarik piring lain."
+        "note": "Di meja makan, Adik menyingkirkan beberapa piring masakan dan menarik piring lain."
       }
     }
   ]

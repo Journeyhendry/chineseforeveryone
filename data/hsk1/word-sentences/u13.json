@@ -66,7 +66,7 @@
       "hanzi": "超市",
       "sentence": {
         "hanzi": "超市里有很多水果。",
-        "pinyin": "Chāoshì lǐ yǒu hěn duō shuǐguǒ.",
+        "pinyin": "Chāoshì li yǒu hěn duō shuǐguǒ.",
         "id": "Di supermarket ada banyak buah.",
         "en": "There's lots of fruit at the supermarket.",
         "source": "unit",
@@ -106,8 +106,8 @@
       "hanzi": "电影院",
       "sentence": {
         "hanzi": "电影院里人很多。",
-        "pinyin": "Diànyǐngyuàn lǐ rén hěn duō.",
-        "id": "Bioskopnya ramai sekali.",
+        "pinyin": "Diànyǐngyuàn li rén hěn duō.",
+        "id": "Di dalam bioskop ramai sekali.",
         "en": "The cinema is really crowded.",
         "source": "unit",
         "sourceId": null,

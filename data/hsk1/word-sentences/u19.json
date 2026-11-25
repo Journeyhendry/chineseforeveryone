@@ -5,12 +5,12 @@
       "wordId": "L1-0228",
       "hanzi": "买",
       "sentence": {
-        "hanzi": "我买了些衣服。",
-        "pinyin": "Wǒ mǎi le xiē yīfu.",
-        "id": "Aku beli beberapa baju.",
-        "en": "I bought some clothes.",
-        "source": "tatoeba",
-        "sourceId": 846455,
+        "hanzi": "我买了两件衣服。",
+        "pinyin": "Wǒ mǎi le liǎng jiàn yīfu.",
+        "id": "Aku beli dua baju.",
+        "en": "I bought two pieces of clothing.",
+        "source": "unit",
+        "sourceId": null,
         "speaker": "mama",
         "matchForm": null
       },
@@ -18,7 +18,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Ibu pulang membawa tas belanja berisi baju."
+        "note": "Ibu pulang dari toko dan mengangkat dua baju baru dari tas belanja."
       }
     },
     {
@@ -169,6 +169,13 @@
         },
         "lines": [
           {
+            "who": "seller",
+            "hanzi": "这个十块。",
+            "pinyin": "Zhège shí kuài.",
+            "id": "Yang ini sepuluh yuan.",
+            "en": "This one is ten yuan."
+          },
+          {
             "who": "nainai",
             "hanzi": "能便宜一点儿吗？",
             "pinyin": "Néng piányi yìdiǎnr ma?",
@@ -177,17 +184,17 @@
           },
           {
             "who": "seller",
-            "hanzi": "好，四块吧。",
-            "pinyin": "Hǎo, sì kuài ba.",
-            "id": "Ya sudah, empat yuan saja.",
-            "en": "OK, four yuan then."
+            "hanzi": "好，八块吧。",
+            "pinyin": "Hǎo, bā kuài ba.",
+            "id": "Ya sudah, delapan yuan saja.",
+            "en": "OK, eight yuan then."
           }
         ]
       },
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Nenek menawar di lapak buah; penjual tersenyum mengangkat empat jari."
+        "note": "Di lapak buah, label harga 10 dicoret penjual dan diganti 8 setelah Nenek menawar."
       }
     },
     {
@@ -237,7 +244,7 @@
         "hanzi": "我喜欢这件衣服。",
         "pinyin": "Wǒ xǐhuan zhè jiàn yīfu.",
         "id": "Aku suka baju ini.",
-        "en": "I like this top.",
+        "en": "I like this shirt.",
         "source": "unit",
         "sourceId": null,
         "speaker": "mama",
@@ -247,7 +254,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Ibu memegang sebuah baju di depan cermin toko."
+        "note": "Ibu memegang sebuah kemeja di depan cermin toko dan tersenyum."
       }
     },
     {

@@ -78,8 +78,8 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0138",
-        "fit": "rebubble",
-        "note": "Ibu mengacungkan jempol untuk apel merah yang bagus."
+        "fit": "redraw",
+        "note": "Adik menunjukkan gambar buatannya; Ibu tersenyum dan mengacungkan jempol."
       }
     },
     {
@@ -146,12 +146,12 @@
       "wordId": "L1-0299",
       "hanzi": "请问",
       "sentence": {
-        "hanzi": "你好，请问牛奶在哪儿？",
-        "pinyin": "Nǐ hǎo, qǐngwèn niúnǎi zài nǎr?",
+        "hanzi": "请问，牛奶在哪儿？",
+        "pinyin": "Qǐngwèn, niúnǎi zài nǎr?",
         "id": "Permisi, susunya di mana, ya?",
         "en": "Excuse me, where is the milk?",
         "source": "unit",
-        "sourceId": "n-u04:1",
+        "sourceId": null,
         "speaker": "mama",
         "matchForm": null
       },

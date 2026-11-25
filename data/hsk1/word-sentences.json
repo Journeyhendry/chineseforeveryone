@@ -130,8 +130,8 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0138",
-        "fit": "rebubble",
-        "note": "Ibu mengacungkan jempol untuk apel merah yang bagus."
+        "fit": "redraw",
+        "note": "Adik menunjukkan gambar buatannya; Ibu tersenyum dan mengacungkan jempol."
       },
       "analysis": {
         "segments": [
@@ -253,12 +253,12 @@
       "wordId": "L1-0299",
       "hanzi": "请问",
       "sentence": {
-        "hanzi": "你好，请问牛奶在哪儿？",
-        "pinyin": "Nǐ hǎo, qǐngwèn niúnǎi zài nǎr?",
+        "hanzi": "请问，牛奶在哪儿？",
+        "pinyin": "Qǐngwèn, niúnǎi zài nǎr?",
         "id": "Permisi, susunya di mana, ya?",
         "en": "Excuse me, where is the milk?",
         "source": "unit",
-        "sourceId": "n-u04:1",
+        "sourceId": null,
         "speaker": "mama",
         "matchForm": null,
         "outsideWords": []
@@ -271,13 +271,12 @@
       },
       "analysis": {
         "segments": [
-          "你好",
           "请问",
           "牛奶",
           "在",
           "哪儿"
         ],
-        "hanziCount": 9,
+        "hanziCount": 7,
         "laterUnitWords": [
           "牛奶",
           "在",
@@ -1215,7 +1214,7 @@
       "sentence": {
         "hanzi": "你看它们！",
         "pinyin": "Nǐ kàn tāmen!",
-        "id": "Lihat mereka!",
+        "id": "Lihat hewan-hewan itu!",
         "en": "Look at them!",
         "source": "unit",
         "sourceId": null,
@@ -1227,7 +1226,7 @@
       "scene": {
         "ref": "L1-0524",
         "fit": "keep",
-        "note": "Di taman, Adik menunjuk dua kucing dan seekor anjing yang bermain."
+        "note": "Di taman, Adik menunjuk dua anak kucing dan seekor anak anjing yang bermain; jelas terlihat semuanya hewan."
       },
       "analysis": {
         "segments": [
@@ -1609,13 +1608,13 @@
       "wordId": "L1-0351",
       "hanzi": "四",
       "sentence": {
-        "hanzi": "四个人？好的，请坐。",
-        "pinyin": "Sì gè rén? Hǎo de, qǐng zuò.",
-        "id": "Empat orang? Baik, silakan duduk.",
-        "en": "Four of you? Sure, have a seat.",
+        "hanzi": "我们四个人。",
+        "pinyin": "Wǒmen sì gè rén.",
+        "id": "Kami berempat.",
+        "en": "There are four of us.",
         "source": "unit",
-        "sourceId": "n-u03:5",
-        "speaker": "waiter",
+        "sourceId": null,
+        "speaker": "baba",
         "matchForm": null,
         "outsideWords": []
       },
@@ -1623,23 +1622,19 @@
       "scene": {
         "ref": "L1-0351",
         "fit": "redraw",
-        "note": "Di restoran, pelayan mempersilakan Ayah, Ibu, Kakak, dan Adik ke meja berkursi empat."
+        "note": "Di pintu restoran, Ayah mengacungkan empat jari kepada pelayan; Ibu, Kakak, dan Adik berdiri di belakangnya."
       },
       "analysis": {
         "segments": [
+          "我们",
           "四",
           "个",
-          "人",
-          "好",
-          "的",
-          "请",
-          "坐"
+          "人"
         ],
-        "hanziCount": 7,
+        "hanziCount": 5,
         "laterUnitWords": [
           "个",
-          "人",
-          "坐"
+          "人"
         ],
         "inScope": false
       }
@@ -1905,7 +1900,7 @@
       "scene": {
         "ref": "L1-0216",
         "fit": "redraw",
-        "note": "Kakek berjaket tebal menunjuk termometer di jendela yang menunjuk angka 0."
+        "note": "Salju turun di luar jendela; Kakek berjaket tebal menunjuk termometer besar yang menunjuk angka 0."
       },
       "analysis": {
         "segments": [
@@ -2433,7 +2428,7 @@
       "scene": {
         "ref": "L1-0466",
         "fit": "rebubble",
-        "note": "Ayah memegang peta taman dan menunjuk tanda lokasi di peta."
+        "note": "Di pintu masuk taman, Ayah menunjuk tanda lokasi pada papan peta besar; Ibu dan Adik ikut melihat."
       },
       "analysis": {
         "segments": [
@@ -2694,20 +2689,24 @@
           },
           {
             "who": "mama",
-            "hanzi": "你看看！",
-            "pinyin": "Nǐ kànkan!",
-            "id": "Coba lihat sendiri!",
-            "en": "Take a look!",
+            "hanzi": "这是你的新书。",
+            "pinyin": "Zhè shì nǐ de xīn shū.",
+            "id": "Ini buku barumu.",
+            "en": "It's your new book.",
             "outsideWords": [],
             "analysis": {
               "segments": [
+                "这",
+                "是",
                 "你",
-                "看",
-                "看"
+                "的",
+                "新",
+                "书"
               ],
-              "hanziCount": 3,
+              "hanziCount": 6,
               "laterUnitWords": [
-                "看"
+                "新",
+                "书"
               ],
               "inScope": false
             }
@@ -2717,7 +2716,7 @@
       "scene": {
         "ref": "L1-0328",
         "fit": "rebubble",
-        "note": "Adik mengguncang kotak hadiah tertutup di dekat telinganya; Ibu tersenyum."
+        "note": "Adik mengguncang kotak hadiah tertutup; Ibu tersenyum di sebelahnya."
       },
       "analysis": {
         "segments": [
@@ -2792,19 +2791,21 @@
           },
           {
             "who": "meimei",
-            "hanzi": "是它！",
-            "pinyin": "Shì tā!",
-            "id": "Dia tuh!",
+            "hanzi": "是猫！",
+            "pinyin": "Shì māo!",
+            "id": "Si kucing!",
             "en": "It was the cat!",
             "outsideWords": [],
             "analysis": {
               "segments": [
                 "是",
-                "它"
+                "猫"
               ],
               "hanziCount": 2,
-              "laterUnitWords": [],
-              "inScope": true
+              "laterUnitWords": [
+                "猫"
+              ],
+              "inScope": false
             }
           }
         ]
@@ -2833,13 +2834,13 @@
       "wordId": "L1-0250",
       "hanzi": "哪",
       "sentence": {
-        "hanzi": "你哪天有时间？",
-        "pinyin": "Nǐ nǎ tiān yǒu shíjiān?",
-        "id": "Kamu kosong hari apa?",
-        "en": "Which day are you free?",
+        "hanzi": "你要哪本书？",
+        "pinyin": "Nǐ yào nǎ běn shū?",
+        "id": "Kamu mau buku yang mana?",
+        "en": "Which book do you want?",
         "source": "unit",
         "sourceId": null,
-        "speaker": "friend",
+        "speaker": "mama",
         "matchForm": null,
         "outsideWords": []
       },
@@ -2850,42 +2851,44 @@
         },
         "lines": [
           {
-            "who": "friend",
-            "hanzi": "你哪天有时间？",
-            "pinyin": "Nǐ nǎ tiān yǒu shíjiān?",
-            "id": "Kamu kosong hari apa?",
-            "en": "Which day are you free?",
+            "who": "mama",
+            "hanzi": "你要哪本书？",
+            "pinyin": "Nǐ yào nǎ běn shū?",
+            "id": "Kamu mau buku yang mana?",
+            "en": "Which book do you want?",
             "outsideWords": [],
             "analysis": {
               "segments": [
                 "你",
+                "要",
                 "哪",
-                "天",
-                "有",
-                "时间"
+                "本",
+                "书"
               ],
-              "hanziCount": 6,
+              "hanziCount": 5,
               "laterUnitWords": [
-                "天",
-                "时间"
+                "要",
+                "本",
+                "书"
               ],
               "inScope": false
             }
           },
           {
-            "who": "gege",
-            "hanzi": "星期天。",
-            "pinyin": "Xīngqītiān.",
-            "id": "Hari Minggu.",
-            "en": "Sunday.",
+            "who": "meimei",
+            "hanzi": "这本！",
+            "pinyin": "Zhè běn!",
+            "id": "Yang ini!",
+            "en": "This one!",
             "outsideWords": [],
             "analysis": {
               "segments": [
-                "星期天"
+                "这",
+                "本"
               ],
-              "hanziCount": 3,
+              "hanziCount": 2,
               "laterUnitWords": [
-                "星期天"
+                "本"
               ],
               "inScope": false
             }
@@ -2895,20 +2898,21 @@
       "scene": {
         "ref": "L1-0250",
         "fit": "redraw",
-        "note": "Teman dan Kakak berdiri di depan kalender dinding; teman menunjuk kalender."
+        "note": "Di toko buku, Ibu bertanya kepada Adik di depan rak; Adik menunjuk satu buku bergambar."
       },
       "analysis": {
         "segments": [
           "你",
+          "要",
           "哪",
-          "天",
-          "有",
-          "时间"
+          "本",
+          "书"
         ],
-        "hanziCount": 6,
+        "hanziCount": 5,
         "laterUnitWords": [
-          "天",
-          "时间"
+          "要",
+          "本",
+          "书"
         ],
         "inScope": false
       }
@@ -3179,21 +3183,21 @@
             }
           },
           {
-            "who": "baba",
-            "hanzi": "我在超市。",
-            "pinyin": "Wǒ zài chāoshì.",
-            "id": "Aku di supermarket.",
-            "en": "I'm at the supermarket.",
+            "who": "gege",
+            "hanzi": "我在学校。",
+            "pinyin": "Wǒ zài xuéxiào.",
+            "id": "Aku di sekolah.",
+            "en": "I'm at school.",
             "outsideWords": [],
             "analysis": {
               "segments": [
                 "我",
                 "在",
-                "超市"
+                "学校"
               ],
               "hanziCount": 4,
               "laterUnitWords": [
-                "超市"
+                "学校"
               ],
               "inScope": false
             }
@@ -3203,7 +3207,7 @@
       "scene": {
         "ref": "L1-0251",
         "fit": "redraw",
-        "note": "Dua panel telepon: Ibu menelepon di rumah, Ayah menjawab di supermarket."
+        "note": "Dua panel telepon: Ibu menelepon dari rumah; Kakak menjawab di depan gerbang sekolah."
       },
       "analysis": {
         "segments": [
@@ -3586,44 +3590,39 @@
       "wordId": "L1-0008",
       "hanzi": "百",
       "sentence": {
-        "hanzi": "我考了一百分！",
-        "pinyin": "Wǒ kǎo le yìbǎi fēn!",
-        "id": "Aku dapat nilai seratus!",
-        "en": "I got a hundred on the test!",
-        "source": "buatan",
+        "hanzi": "我们做了一百个饺子！",
+        "pinyin": "Wǒmen zuò le yìbǎi gè jiǎozi!",
+        "id": "Kita bikin seratus pangsit!",
+        "en": "We made a hundred dumplings!",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "gege",
+        "speaker": "nainai",
         "matchForm": null,
-        "outsideWords": [
-          "考"
-        ]
+        "outsideWords": []
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0008",
         "fit": "redraw",
-        "note": "Kakak mengangkat kertas ujian bertuliskan 100 dengan bangga."
+        "note": "Nenek, Ibu, dan Adik di meja penuh nampan pangsit; ada angka 100 di atasnya."
       },
       "analysis": {
         "segments": [
-          "我",
-          "考",
+          "我们",
+          "做",
           "了",
           "一",
           "百",
-          "分"
+          "个",
+          "饺子"
         ],
-        "hanziCount": 6,
+        "hanziCount": 9,
         "laterUnitWords": [
+          "做",
           "了",
-          "分"
+          "饺子"
         ],
-        "inScope": false,
-        "evidence": {
-          "allInDictionary": true,
-          "missing": [],
-          "collocationHits": 6
-        }
+        "inScope": false
       }
     },
     {
@@ -3645,7 +3644,7 @@
       "scene": {
         "ref": "L1-0522",
         "fit": "redraw",
-        "note": "Kakak menunjuk halaman sekolah yang penuh murid; ada angka 1000 di papan."
+        "note": "Di gerbang sekolah, banyak sekali murid berjalan keluar; papan sekolah bertuliskan angka 1000."
       },
       "analysis": {
         "segments": [
@@ -3771,12 +3770,12 @@
       "wordId": "L1-0094",
       "hanzi": "多",
       "sentence": {
-        "hanzi": "二十个？太多了！",
-        "pinyin": "Èrshí gè? Tài duō le!",
-        "id": "Dua puluh? Kebanyakan!",
-        "en": "Twenty? That's too many!",
+        "hanzi": "二十个饺子？太多了！",
+        "pinyin": "Èrshí gè jiǎozi? Tài duō le!",
+        "id": "Dua puluh pangsit? Kebanyakan!",
+        "en": "Twenty dumplings? That's too many!",
         "source": "unit",
-        "sourceId": "n-u06:2",
+        "sourceId": null,
         "speaker": "gege",
         "matchForm": null,
         "outsideWords": []
@@ -3792,12 +3791,14 @@
           "二",
           "十",
           "个",
+          "饺子",
           "太",
           "多",
           "了"
         ],
-        "hanziCount": 6,
+        "hanziCount": 8,
         "laterUnitWords": [
+          "饺子",
           "太",
           "了"
         ],
@@ -3812,7 +3813,7 @@
         "hanzi": "你的多，我的少！",
         "pinyin": "Nǐ de duō, wǒ de shǎo!",
         "id": "Punyamu banyak, punyaku sedikit!",
-        "en": "You've got lots, I've got hardly any!",
+        "en": "You've got lots, I've only got a few!",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -3988,7 +3989,7 @@
       "hanzi": "一些",
       "sentence": {
         "hanzi": "桌子上有一些书。",
-        "pinyin": "Zhuōzi shàng yǒu yìxiē shū.",
+        "pinyin": "Zhuōzi shang yǒu yìxiē shū.",
         "id": "Di atas meja ada beberapa buku.",
         "en": "There are some books on the table.",
         "source": "unit",
@@ -4062,35 +4063,36 @@
       "wordId": "L1-0442",
       "hanzi": "有的",
       "sentence": {
-        "hanzi": "有的同学会，有的不会。",
-        "pinyin": "Yǒude tóngxué huì, yǒude bú huì.",
-        "id": "Ada murid yang bisa, ada yang tidak.",
-        "en": "Some students know, some don't.",
+        "hanzi": "这些苹果有的大，有的小。",
+        "pinyin": "Zhèxiē píngguǒ yǒude dà, yǒude xiǎo.",
+        "id": "Apel-apel ini ada yang besar, ada yang kecil.",
+        "en": "Some of these apples are big, some are small.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "teacher",
+        "speaker": "mama",
         "matchForm": null,
         "outsideWords": []
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0442",
-        "fit": "rebubble",
-        "note": "Guru bertanya ke kelas; ada yang mengangkat tangan, ada yang menggaruk kepala."
+        "fit": "redraw",
+        "note": "Di pasar, Ibu menunjuk keranjang apel: beberapa besar, beberapa kecil."
       },
       "analysis": {
         "segments": [
+          "这些",
+          "苹果",
           "有的",
-          "同学",
-          "会",
+          "大",
           "有的",
-          "不",
-          "会"
+          "小"
         ],
-        "hanziCount": 9,
+        "hanziCount": 10,
         "laterUnitWords": [
-          "同学",
-          "会"
+          "苹果",
+          "大",
+          "小"
         ],
         "inScope": false
       }
@@ -4102,7 +4104,7 @@
       "sentence": {
         "hanzi": "有些菜我不吃。",
         "pinyin": "Yǒuxiē cài wǒ bù chī.",
-        "id": "Ada sayur yang nggak aku makan.",
+        "id": "Ada masakan yang nggak aku makan.",
         "en": "There are some dishes I don't eat.",
         "source": "unit",
         "sourceId": null,
@@ -4114,7 +4116,7 @@
       "scene": {
         "ref": "L1-0445",
         "fit": "redraw",
-        "note": "Di meja makan, Adik menyingkirkan beberapa piring sayur dan menarik piring lain."
+        "note": "Di meja makan, Adik menyingkirkan beberapa piring masakan dan menarik piring lain."
       },
       "analysis": {
         "segments": [
@@ -4332,10 +4334,10 @@
       "wordId": "L1-0261",
       "hanzi": "男",
       "sentence": {
-        "hanzi": "男同学在这边。",
-        "pinyin": "Nán tóngxué zài zhèbiān.",
-        "id": "Murid laki-laki di sebelah sini.",
-        "en": "Boys over here, please.",
+        "hanzi": "男同学在这边，女同学在那边。",
+        "pinyin": "Nán tóngxué zài zhèbiān, nǚ tóngxué zài nàbiān.",
+        "id": "Murid laki-laki di sebelah sini, murid perempuan di sebelah sana.",
+        "en": "The boys are on this side, the girls on that side.",
         "source": "unit",
         "sourceId": null,
         "speaker": "teacher",
@@ -4346,16 +4348,20 @@
       "scene": {
         "ref": "L1-0261",
         "fit": "redraw",
-        "note": "Di lapangan sekolah, Bu Guru membagi murid: anak laki-laki berbaris di sisi kiri."
+        "note": "Di lapangan sekolah, Bu Guru menunjuk barisan anak laki-laki di kiri dan anak perempuan di kanan."
       },
       "analysis": {
         "segments": [
           "男",
           "同学",
           "在",
-          "这边"
+          "这边",
+          "女",
+          "同学",
+          "在",
+          "那边"
         ],
-        "hanziCount": 6,
+        "hanziCount": 12,
         "laterUnitWords": [],
         "inScope": true
       }
@@ -5992,47 +5998,12 @@
       "wordId": "L1-0308",
       "hanzi": "日",
       "sentence": {
-        "hanzi": "今天是十月一日。",
-        "pinyin": "Jīntiān shì shí yuè yī rì.",
-        "id": "Hari ini tanggal satu Oktober.",
-        "en": "Today is October 1st.",
-        "source": "unit",
+        "hanzi": "今天是我的生日！",
+        "pinyin": "Jīntiān shì wǒ de shēngrì!",
+        "id": "Hari ini ulang tahunku!",
+        "en": "Today's my birthday!",
+        "source": "buatan",
         "sourceId": null,
-        "speaker": "meimei",
-        "matchForm": null,
-        "outsideWords": []
-      },
-      "dialog": null,
-      "scene": {
-        "ref": "L1-0308",
-        "fit": "redraw",
-        "note": "Lembar kalender besar bertuliskan 10月1日; Adik menunjuknya."
-      },
-      "analysis": {
-        "segments": [
-          "今天",
-          "是",
-          "十",
-          "月",
-          "一",
-          "日"
-        ],
-        "hanziCount": 7,
-        "laterUnitWords": [],
-        "inScope": true
-      }
-    },
-    {
-      "unit": "u10",
-      "wordId": "L1-0452",
-      "hanzi": "月",
-      "sentence": {
-        "hanzi": "我三月二十二号生日。",
-        "pinyin": "Wǒ sān yuè èrshí'èr hào shēngrì.",
-        "id": "Ulang tahunku tanggal 22 Maret.",
-        "en": "My birthday is on March 22.",
-        "source": "tatoeba",
-        "sourceId": 2561534,
         "speaker": "meimei",
         "matchForm": null,
         "outsideWords": [
@@ -6041,24 +6012,61 @@
       },
       "dialog": null,
       "scene": {
-        "ref": "L1-0452",
+        "ref": "L1-0308",
         "fit": "redraw",
-        "note": "Kalender bulan Maret dengan tanggal 22 dilingkari dan gambar kue ulang tahun; Adik menunjuknya."
+        "note": "Adik tersenyum di depan kue ulang tahun dengan enam lilin; keluarga bertepuk tangan."
       },
       "analysis": {
         "segments": [
+          "今天",
+          "是",
           "我",
-          "三",
-          "月",
-          "二",
-          "十",
-          "二",
-          "号",
+          "的",
           "生日"
         ],
-        "hanziCount": 9,
+        "hanziCount": 7,
         "laterUnitWords": [],
-        "inScope": false
+        "inScope": false,
+        "evidence": {
+          "allInDictionary": true,
+          "missing": [],
+          "collocationHits": 0
+        }
+      }
+    },
+    {
+      "unit": "u10",
+      "wordId": "L1-0452",
+      "hanzi": "月",
+      "sentence": {
+        "hanzi": "今天是五月一号。",
+        "pinyin": "Jīntiān shì wǔ yuè yī hào.",
+        "id": "Hari ini tanggal satu Mei.",
+        "en": "Today is May 1st.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null,
+        "outsideWords": []
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0452",
+        "fit": "redraw",
+        "note": "Adik menunjuk lembar kalender besar bulan Mei yang tanggal 1-nya dilingkari."
+      },
+      "analysis": {
+        "segments": [
+          "今天",
+          "是",
+          "五",
+          "月",
+          "一",
+          "号"
+        ],
+        "hanziCount": 7,
+        "laterUnitWords": [],
+        "inScope": true
       }
     },
     {
@@ -6201,10 +6209,10 @@
       "wordId": "L1-0007",
       "hanzi": "白天",
       "sentence": {
-        "hanzi": "白天爸爸不在家。",
-        "pinyin": "Báitiān bàba bú zài jiā.",
-        "id": "Siang hari Ayah nggak di rumah.",
-        "en": "Dad isn't home during the day.",
+        "hanzi": "猫白天睡觉。",
+        "pinyin": "Māo báitiān shuìjiào.",
+        "id": "Kucing tidur di siang hari.",
+        "en": "Cats sleep during the day.",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -6215,19 +6223,19 @@
       "scene": {
         "ref": "L1-0007",
         "fit": "redraw",
-        "note": "Siang hari (matahari terang di jendela): Adik dan Ibu di rumah, kursi Ayah kosong."
+        "note": "Siang hari, matahari terang masuk lewat jendela; kucing tidur melingkar di sofa, Adik menunjuknya."
       },
       "analysis": {
         "segments": [
+          "猫",
           "白天",
-          "爸爸",
-          "不",
-          "在",
-          "家"
+          "睡觉"
         ],
-        "hanziCount": 7,
-        "laterUnitWords": [],
-        "inScope": true
+        "hanziCount": 5,
+        "laterUnitWords": [
+          "睡觉"
+        ],
+        "inScope": false
       }
     },
     {
@@ -6427,15 +6435,15 @@
         "en": "An hour has sixty minutes.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "yeye",
+        "speaker": "teacher",
         "matchForm": null,
         "outsideWords": []
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0405",
-        "fit": "rebubble",
-        "note": "Jarum panjang berputar satu kali penuh sementara jarum pendek maju dari 3 ke 4; Kakek menjelaskan."
+        "fit": "redraw",
+        "note": "Di kelas, Bu Guru memegang jam peraga besar dan memutar jarum panjang satu putaran penuh (60 menit), murid-murid memperhatikan."
       },
       "analysis": {
         "segments": [
@@ -6457,10 +6465,10 @@
       "wordId": "L1-0334",
       "hanzi": "时间",
       "sentence": {
-        "hanzi": "我今天没有时间。",
-        "pinyin": "Wǒ jīntiān méiyǒu shíjiān.",
-        "id": "Hari ini aku nggak ada waktu.",
-        "en": "I don't have time today.",
+        "hanzi": "对不起，我今天没有时间。",
+        "pinyin": "Duìbuqǐ, wǒ jīntiān méiyǒu shíjiān.",
+        "id": "Maaf, hari ini Ayah nggak ada waktu.",
+        "en": "Sorry, I don't have time today.",
         "source": "unit",
         "sourceId": null,
         "speaker": "baba",
@@ -6470,17 +6478,18 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0334",
-        "fit": "rebubble",
-        "note": "Ayah terburu-buru membawa tas kerja sambil melihat jam dinding (7:55)."
+        "fit": "redraw",
+        "note": "Adik memegang bola dan menarik tangan Ayah; Ayah memakai jas, membawa tas kerja, dan menunjuk jam dinding sambil minta maaf."
       },
       "analysis": {
         "segments": [
+          "对不起",
           "我",
           "今天",
           "没有",
           "时间"
         ],
-        "hanziCount": 7,
+        "hanziCount": 10,
         "laterUnitWords": [],
         "inScope": true
       }
@@ -6800,7 +6809,7 @@
       "hanzi": "上",
       "sentence": {
         "hanzi": "猫在桌子上。",
-        "pinyin": "Māo zài zhuōzi shàng.",
+        "pinyin": "Māo zài zhuōzi shang.",
         "id": "Kucingnya di atas meja.",
         "en": "The cat is on the table.",
         "source": "unit",
@@ -6935,7 +6944,7 @@
       "hanzi": "里",
       "sentence": {
         "hanzi": "杯子里有水。",
-        "pinyin": "Bēizi lǐ yǒu shuǐ.",
+        "pinyin": "Bēizi li yǒu shuǐ.",
         "id": "Di dalam gelas ada air.",
         "en": "There's water in the cup.",
         "source": "unit",
@@ -7317,7 +7326,7 @@
       "hanzi": "超市",
       "sentence": {
         "hanzi": "超市里有很多水果。",
-        "pinyin": "Chāoshì lǐ yǒu hěn duō shuǐguǒ.",
+        "pinyin": "Chāoshì li yǒu hěn duō shuǐguǒ.",
         "id": "Di supermarket ada banyak buah.",
         "en": "There's lots of fruit at the supermarket.",
         "source": "unit",
@@ -7387,8 +7396,8 @@
       "hanzi": "电影院",
       "sentence": {
         "hanzi": "电影院里人很多。",
-        "pinyin": "Diànyǐngyuàn lǐ rén hěn duō.",
-        "id": "Bioskopnya ramai sekali.",
+        "pinyin": "Diànyǐngyuàn li rén hěn duō.",
+        "id": "Di dalam bioskop ramai sekali.",
         "en": "The cinema is really crowded.",
         "source": "unit",
         "sourceId": null,
@@ -10424,12 +10433,12 @@
       "wordId": "L1-0228",
       "hanzi": "买",
       "sentence": {
-        "hanzi": "我买了些衣服。",
-        "pinyin": "Wǒ mǎi le xiē yīfu.",
-        "id": "Aku beli beberapa baju.",
-        "en": "I bought some clothes.",
-        "source": "tatoeba",
-        "sourceId": 846455,
+        "hanzi": "我买了两件衣服。",
+        "pinyin": "Wǒ mǎi le liǎng jiàn yīfu.",
+        "id": "Aku beli dua baju.",
+        "en": "I bought two pieces of clothing.",
+        "source": "unit",
+        "sourceId": null,
         "speaker": "mama",
         "matchForm": null,
         "outsideWords": []
@@ -10438,17 +10447,18 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Ibu pulang membawa tas belanja berisi baju."
+        "note": "Ibu pulang dari toko dan mengangkat dua baju baru dari tas belanja."
       },
       "analysis": {
         "segments": [
           "我",
           "买",
           "了",
-          "些",
+          "两",
+          "件",
           "衣服"
         ],
-        "hanziCount": 6,
+        "hanziCount": 7,
         "laterUnitWords": [],
         "inScope": true
       }
@@ -10707,6 +10717,24 @@
         },
         "lines": [
           {
+            "who": "seller",
+            "hanzi": "这个十块。",
+            "pinyin": "Zhège shí kuài.",
+            "id": "Yang ini sepuluh yuan.",
+            "en": "This one is ten yuan.",
+            "outsideWords": [],
+            "analysis": {
+              "segments": [
+                "这个",
+                "十",
+                "块"
+              ],
+              "hanziCount": 4,
+              "laterUnitWords": [],
+              "inScope": true
+            }
+          },
+          {
             "who": "nainai",
             "hanzi": "能便宜一点儿吗？",
             "pinyin": "Néng piányi yìdiǎnr ma?",
@@ -10727,15 +10755,15 @@
           },
           {
             "who": "seller",
-            "hanzi": "好，四块吧。",
-            "pinyin": "Hǎo, sì kuài ba.",
-            "id": "Ya sudah, empat yuan saja.",
-            "en": "OK, four yuan then.",
+            "hanzi": "好，八块吧。",
+            "pinyin": "Hǎo, bā kuài ba.",
+            "id": "Ya sudah, delapan yuan saja.",
+            "en": "OK, eight yuan then.",
             "outsideWords": [],
             "analysis": {
               "segments": [
                 "好",
-                "四",
+                "八",
                 "块",
                 "吧"
               ],
@@ -10749,7 +10777,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Nenek menawar di lapak buah; penjual tersenyum mengangkat empat jari."
+        "note": "Di lapak buah, label harga 10 dicoret penjual dan diganti 8 setelah Nenek menawar."
       },
       "analysis": {
         "segments": [
@@ -10839,7 +10867,7 @@
         "hanzi": "我喜欢这件衣服。",
         "pinyin": "Wǒ xǐhuan zhè jiàn yīfu.",
         "id": "Aku suka baju ini.",
-        "en": "I like this top.",
+        "en": "I like this shirt.",
         "source": "unit",
         "sourceId": null,
         "speaker": "mama",
@@ -10850,7 +10878,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Ibu memegang sebuah baju di depan cermin toko."
+        "note": "Ibu memegang sebuah kemeja di depan cermin toko dan tersenyum."
       },
       "analysis": {
         "segments": [
@@ -11530,7 +11558,7 @@
         "hanzi": "这件衣服真漂亮！",
         "pinyin": "Zhè jiàn yīfu zhēn piàoliang!",
         "id": "Baju ini cantik sekali!",
-        "en": "This top is really pretty!",
+        "en": "This dress is really pretty!",
         "source": "unit",
         "sourceId": "n-u21:1",
         "speaker": "mama",
@@ -11541,7 +11569,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Di toko baju Ibu memegang baju berbunga dengan mata berbinar."
+        "note": "Di toko baju Ibu memegang satu gaun berbunga dengan mata berbinar."
       },
       "analysis": {
         "segments": [

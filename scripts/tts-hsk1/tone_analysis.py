@@ -78,6 +78,39 @@ def apply_third_tone_sandhi(tones: list[int]) -> list[int]:
     return out
 
 
+NUMERAL_BEFORE_YI = set("第零二三四五六七八九十百千万")
+
+
+def apply_yi_bu_sandhi(text: str, tones: list[int]) -> list[int]:
+    """Aturan resmi 不/一 untuk nada PERMUKAAN (dipakai untuk memperbaiki label rujukan yang diturunkan dari
+    pypinyin tanpa sandhi lengkap). Dikerjakan kanan ke kiri. text = tulisan asli (erhua 儿 tidak dihitung,
+    sama dengan daftar nada).
+      不 + nada 4 -> 2; selain itu 4; pola V不V (好不好) -> ringan (0).
+      一 + nada 4 -> 2; + nada 1/2/3/ringan -> 4; tetap 1 bila di akhir ujaran, setelah angka/第 (十一, 第一),
+         atau sebelum 月/号 (bacaan bilangan)."""
+    t = hanzi_only(text)
+    chars = [ch for i, ch in enumerate(t) if not is_erhua(t, i)]
+    if len(chars) != len(tones):
+        return list(tones)
+    out = list(tones)
+    for i in range(len(chars) - 1, -1, -1):
+        ch = chars[i]
+        nxt = out[i + 1] if i + 1 < len(out) else None
+        if ch == "不":
+            if nxt is None:
+                out[i] = 4
+            elif i > 0 and i + 1 < len(chars) and chars[i - 1] == chars[i + 1]:
+                out[i] = 0
+            else:
+                out[i] = 2 if nxt == 4 else 4
+        elif ch == "一":
+            if nxt is None or (i > 0 and chars[i - 1] in NUMERAL_BEFORE_YI) or chars[i + 1] in "月号":
+                out[i] = 1
+            else:
+                out[i] = 2 if nxt == 4 else 4
+    return out
+
+
 def is_erhua(text: str, i: int) -> bool:
     """儿 pada indeks i adalah penanda erhua (bukan 女儿 / 儿子 / 儿 di awal)."""
     return text[i] == "儿" and i > 0 and text[i - 1] != "女" and text[i + 1:i + 2] != "子"

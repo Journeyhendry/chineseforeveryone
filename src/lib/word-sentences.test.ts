@@ -43,21 +43,23 @@ const words = [
   w('W14', '玩', 'wán', [2], ['玩儿']),
   w('W15', '去', 'qù', [4]),
   w('W16', '要', 'yào', [4]),
+  ...['有', '时间', '男', '同学', '和', '牛奶', '一些', '分钟', '新', '手机', '茶', '车', '十'].map((h, k) => w(`S${k}`, h, 'x', [...h].map(() => 1 as Tone))),
+  w('S20', '有些', 'yǒuxiē', [3, 1], ['有一些']),
 ]
 const units = [
   { id: 'u01', order: 1, words: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W10', 'W11', 'W12', 'W13', 'W16'] },
-  { id: 'u02', order: 2, words: ['W8', 'W9', 'W14', 'W15'] },
+  { id: 'u02', order: 2, words: ['W8', 'W9', 'W14', 'W15', ...Array.from({ length: 13 }, (_, k) => `S${k}`), 'S20'] },
 ]
 const ctx = makeContext({
   words,
   units,
-  dictionary: ['太阳', '一个', '一个人', '面条', '苹果', '新', '很'],
+  dictionary: ['太阳', '一个', '一个人', '面条', '苹果', '新', '很', '有时', '男同', '和牛', '十分', '新手', '奶茶', '骑车'],
   speakers: { mama: { name: { id: 'Ibu', en: 'Mom' }, gender: 'female' }, baba: { name: { id: 'Ayah', en: 'Dad' }, gender: 'male' } },
   sceneRefs: ['W1'],
   tatoeba: [{ tatoebaId: 42, cmn: '我是老师。' }],
   corpus: ['我吃苹果。', '你吃苹果吗？', '老师好！'],
 })
-const seg = (text: string) => segmentText(text, ctx.lex)
+const seg = (text: string) => segmentText(text, ctx.lex, ctx.forms)
 
 describe('segmentText', () => {
   it('splits dictionary words made of HSK 1 words and keeps outside words separate', () => {
@@ -68,6 +70,23 @@ describe('segmentText', () => {
       ['吃', 'hsk1'],
       ['苹果', 'outside'],
       ['太阳', 'outside'],
+    ])
+  })
+  it('prefers a split into HSK 1 words over a dictionary compound', () => {
+    const texts = (t: string) => seg(t).segments.map((x) => x.text)
+    expect(texts('有时间')).toEqual(['有', '时间'])
+    expect(texts('男同学')).toEqual(['男', '同学'])
+    expect(texts('和牛奶')).toEqual(['和', '牛奶'])
+    expect(texts('有一些')).toEqual(['有', '一些'])
+    expect(texts('十分钟')).toEqual(['十', '分钟'])
+    expect(texts('新手机')).toEqual(['新', '手机'])
+    expect(seg('有一些').segments.every((x) => x.kind === 'hsk1')).toBe(true)
+  })
+  it('keeps an outside compound whole instead of splitting off an HSK 1 character', () => {
+    expect(seg('喝奶茶骑车').segments.map((x) => [x.text, x.kind])).toEqual([
+      ['喝', 'outside'],
+      ['奶茶', 'outside'],
+      ['骑车', 'outside'],
     ])
   })
   it('ignores punctuation and digits, keeps Han positions', () => {
@@ -203,7 +222,7 @@ describe('buildWordSentences', () => {
     has('error W1 dialog has 1 lines')
     has('error W1 dialog reason needs id and en')
     has('error W5 sentence: 15 hanzi')
-    has('error W5 sentence: 4 outside words')
+    has('error W5 sentence: 3 outside words')
     has('error W5 sentence pinyin: pinyin has 1 syllables')
     has('error  draft is not valid JSON')
     has('error W12 word 好 has no entry')

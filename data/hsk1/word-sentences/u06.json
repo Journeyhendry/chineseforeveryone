@@ -5,10 +5,10 @@
       "wordId": "L1-0120",
       "hanzi": "个",
       "sentence": {
-        "hanzi": "我们家有六个人。",
-        "pinyin": "Wǒmen jiā yǒu liù gè rén.",
-        "id": "Keluarga kami ada enam orang.",
-        "en": "There are six people in our family.",
+        "hanzi": "我有一个问题。",
+        "pinyin": "Wǒ yǒu yí gè wèntí.",
+        "id": "Aku punya satu pertanyaan.",
+        "en": "I have a question.",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -18,7 +18,7 @@
       "scene": {
         "ref": "L1-0120",
         "fit": "redraw",
-        "note": "Foto keluarga: Kakek, Nenek, Ayah, Ibu, Kakak, dan Adik; Adik menunjuk sambil menghitung."
+        "note": "Di kelas, Adik mengangkat tangan dan mengacungkan satu jari kepada Bu Guru."
       }
     },
     {
@@ -185,10 +185,10 @@
       "wordId": "L1-0431",
       "hanzi": "一半",
       "sentence": {
-        "hanzi": "一半给你！",
-        "pinyin": "Yíbàn gěi nǐ!",
-        "id": "Setengahnya buat kamu!",
-        "en": "Half for you!",
+        "hanzi": "这一半是你的！",
+        "pinyin": "Zhè yíbàn shì nǐ de!",
+        "id": "Setengah ini buat kamu!",
+        "en": "This half is yours!",
         "source": "unit",
         "sourceId": null,
         "speaker": "gege",
@@ -197,7 +197,7 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0431",
-        "fit": "keep",
+        "fit": "rebubble",
         "note": "Kakak membagi bakpao jadi dua dan memberi setengahnya kepada Adik."
       }
     },

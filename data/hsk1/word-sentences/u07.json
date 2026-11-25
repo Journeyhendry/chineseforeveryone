@@ -105,10 +105,10 @@
       "wordId": "L1-0518",
       "hanzi": "女士",
       "sentence": {
-        "hanzi": "女士，请坐。",
-        "pinyin": "Nǚshì, qǐng zuò.",
-        "id": "Silakan duduk, Bu.",
-        "en": "Please have a seat, ma'am.",
+        "hanzi": "女士，这边请。",
+        "pinyin": "Nǚshì, zhèbiān qǐng.",
+        "id": "Silakan lewat sini, Bu.",
+        "en": "This way, please, ma'am.",
         "source": "unit",
         "sourceId": null,
         "speaker": "waiter",
@@ -118,7 +118,7 @@
       "scene": {
         "ref": "L1-0518",
         "fit": "rebubble",
-        "note": "Pelayan membungkuk sopan dan menarik kursi untuk Ibu yang membawa tas tangan."
+        "note": "Pelayan membungkuk sopan dan mempersilakan Ibu yang membawa tas tangan dengan telapak terbuka."
       }
     },
     {
@@ -245,10 +245,10 @@
       "wordId": "L1-0089",
       "hanzi": "都",
       "sentence": {
-        "hanzi": "我们都要！",
-        "pinyin": "Wǒmen dōu yào!",
-        "id": "Kami semua mau!",
-        "en": "We all want some!",
+        "hanzi": "他们都是我的朋友。",
+        "pinyin": "Tāmen dōu shì wǒ de péngyou.",
+        "id": "Mereka semua temanku.",
+        "en": "They are all my friends.",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -257,18 +257,18 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0089",
-        "fit": "keep",
-        "note": "Nenek membawa sepiring pangsit, dan semua yang lain mengangkat tangan."
+        "fit": "redraw",
+        "note": "Adik merentangkan tangan ke arah empat anak yang melambai di taman."
       }
     },
     {
       "wordId": "L1-0145",
       "hanzi": "和",
       "sentence": {
-        "hanzi": "我要包子和牛奶。",
-        "pinyin": "Wǒ yào bāozi hé niúnǎi.",
-        "id": "Aku mau bakpao dan susu.",
-        "en": "I'd like a bun and milk.",
+        "hanzi": "他和她是好朋友。",
+        "pinyin": "Tā hé tā shì hǎo péngyou.",
+        "id": "Dia dan dia bersahabat.",
+        "en": "He and she are good friends.",
         "source": "unit",
         "sourceId": null,
         "speaker": "meimei",
@@ -277,8 +277,8 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0145",
-        "fit": "rebubble",
-        "note": "Adik menunjuk bakpao dan segelas susu di nampan sarapan."
+        "fit": "redraw",
+        "note": "Adik menunjuk seorang anak laki-laki dan anak perempuan yang bergandengan tangan sambil tertawa."
       }
     }
   ]

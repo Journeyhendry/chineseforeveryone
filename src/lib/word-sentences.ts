@@ -4,7 +4,7 @@
 // Used by scripts/build-word-sentences.ts, scripts/check-data.ts and src/lib/word-sentences.test.ts.
 
 import { splitSyllables, syllableTone, type Tone } from './pinyin.ts'
-import { buildLexicon, splitIntoForms, type Lexicon, type UnitInput, type WordInput } from './sentences.ts'
+import { buildLexicon, type Lexicon, type UnitInput, type WordInput } from './sentences.ts'
 
 export const MAX_HANZI = 14
 export const TARGET_HANZI = 10
@@ -74,6 +74,8 @@ export interface Context {
   words: Map<string, WordRow>
   units: UnitInput[]
   lex: Lexicon
+  /** HSK 1 forms used by the segmenter (see segmentForms). */
+  forms: Map<string, string[]>
   known: Set<string>
   speakers: Record<string, Speaker>
   sceneRefs: Set<string>
@@ -88,6 +90,7 @@ export function makeContext(input: ContextInput): Context {
     words: new Map(input.words.map((w) => [w.id, w])),
     units: [...input.units].sort((a, b) => a.order - b.order),
     lex,
+    forms: segmentForms(lex, input.words),
     known: new Set([...dictionary, ...lex.forms.keys()]),
     speakers: input.speakers,
     sceneRefs: new Set(input.sceneRefs),
@@ -114,45 +117,57 @@ export interface Segmented {
 const HAN_RUN = /\p{Script=Han}+/gu
 const DIGITS = /[0-9０-９]/
 
+interface Cost {
+  outside: number
+  tokens: number
+  outsideChars: number
+}
+const better = (a: Cost, b: Cost) =>
+  a.outside !== b.outside ? a.outside < b.outside : a.tokens !== b.tokens ? a.tokens < b.tokens : a.outsideChars < b.outsideChars
+
 /**
- * Forward maximum matching over HSK 1 forms + dictionary headwords inside each run of Han characters.
- * A dictionary word that splits completely into HSK 1 forms becomes those forms (一个人 -> 一 个 人);
- * any other dictionary word, or a single unknown character, is an outside word. Digits and punctuation are skipped.
+ * HSK 1 forms usable as one token. A variant made only of other HSK 1 forms (有一些 = 有 + 一些) is left out,
+ * so it is counted as those words.
  */
-export function segmentText(text: string, lex: Lexicon): Segmented {
+export function segmentForms(lex: Lexicon, words: { hanzi: string }[]): Map<string, string[]> {
+  const canonical = new Set(words.map((w) => w.hanzi))
+  const splitsAll = (c: string[]): boolean => c.length === 0 || c.some((_, k) => lex.forms.has(c.slice(0, k + 1).join('')) && splitsAll(c.slice(k + 1)))
+  const isCompound = (c: string[]) => c.some((_, k) => k > 0 && lex.forms.has(c.slice(0, k).join('')) && splitsAll(c.slice(k)))
+  return new Map([...lex.forms].filter(([form]) => canonical.has(form) || !isCompound([...form])))
+}
+
+/**
+ * Lowest-cost segmentation of each run of Han characters over HSK 1 forms + dictionary headwords (dynamic
+ * programming). Cost, compared in order: fewest outside tokens (non-HSK 1 dictionary words or unknown single
+ * characters), then fewest tokens, then fewest characters in outside tokens. So any split into HSK 1 words beats a
+ * dictionary compound (有时间 -> 有 时间, 和牛奶 -> 和 牛奶), while an outside compound stays whole (奶茶, not 奶 + 茶).
+ * Digits and punctuation are skipped.
+ */
+export function segmentText(text: string, lex: Lexicon, forms: Map<string, string[]> = lex.forms): Segmented {
   const segments: Segment[] = []
   const han: string[] = []
   for (const run of text.match(HAN_RUN) ?? []) {
     const chars = [...run]
     const base = han.length
     han.push(...chars)
-    let i = 0
-    while (i < chars.length) {
-      let len = Math.min(lex.maxDictionaryLength, chars.length - i)
-      for (; len >= 1; len--) {
-        const candidate = chars.slice(i, i + len).join('')
-        const ids = lex.forms.get(candidate)
-        if (ids) {
-          segments.push({ text: candidate, kind: 'hsk1', ids, start: base + i })
-          break
-        }
-        if (len > 1 && lex.dictionary.has(candidate)) {
-          const parts = splitIntoForms(candidate, lex)
-          if (parts) {
-            let at = base + i
-            for (const p of parts) {
-              segments.push({ text: p.text, kind: 'hsk1', ids: p.kind === 'word' ? p.ids : [], start: at })
-              at += [...p.text].length
-            }
-          } else segments.push({ text: candidate, kind: 'outside', ids: [], start: base + i })
-          break
-        }
+    const n = chars.length
+    const best: { cost: Cost; len: number }[] = Array.from({ length: n + 1 }, () => ({ cost: { outside: 0, tokens: 0, outsideChars: 0 }, len: 0 }))
+    for (let i = n - 1; i >= 0; i--) {
+      let pick: { cost: Cost; len: number } | null = null
+      for (let len = Math.min(lex.maxDictionaryLength, n - i); len >= 1; len--) {
+        const piece = chars.slice(i, i + len).join('')
+        const hsk1 = forms.has(piece)
+        if (!hsk1 && len > 1 && !lex.dictionary.has(piece)) continue
+        const rest = best[i + len].cost
+        const cost = { outside: rest.outside + (hsk1 ? 0 : 1), tokens: rest.tokens + 1, outsideChars: rest.outsideChars + (hsk1 ? 0 : len) }
+        if (pick === null || better(cost, pick.cost)) pick = { cost, len }
       }
-      if (len < 1) {
-        segments.push({ text: chars[i], kind: 'outside', ids: [], start: base + i })
-        len = 1
-      }
-      i += len
+      best[i] = pick!
+    }
+    for (let i = 0; i < n; i += best[i].len) {
+      const piece = chars.slice(i, i + best[i].len).join('')
+      const ids = forms.get(piece)
+      segments.push({ text: piece, kind: ids ? 'hsk1' : 'outside', ids: ids ?? [], start: base + i })
     }
   }
   return { segments, han, hasDigits: DIGITS.test(text) }
@@ -257,7 +272,7 @@ export interface Evidence {
 }
 
 function analyze(text: string, unitOrder: number, ctx: Context) {
-  const seg = segmentText(text, ctx.lex)
+  const seg = segmentText(text, ctx.lex, ctx.forms)
   const outsideWords = uniq(seg.segments.filter((s) => s.kind === 'outside').map((s) => s.text))
   const laterUnitWords = uniq(
     seg.segments.filter((s) => s.kind === 'hsk1' && Math.min(...s.ids.map((id) => ctx.lex.wordUnit.get(id)?.order ?? 0)) > unitOrder).map((s) => s.text),

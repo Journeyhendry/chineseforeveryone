@@ -65,10 +65,10 @@
       "wordId": "L1-0515",
       "hanzi": "那个",
       "sentence": {
-        "hanzi": "我喜欢那个！",
-        "pinyin": "Wǒ xǐhuan nàge!",
-        "id": "Aku suka yang itu!",
-        "en": "I like that one!",
+        "hanzi": "这个是我的，那个是你的。",
+        "pinyin": "Zhège shì wǒ de, nàge shì nǐ de.",
+        "id": "Yang ini punyaku, yang itu punyamu.",
+        "en": "This one is mine, that one is yours.",
         "source": "unit",
         "sourceId": null,
         "speaker": "gege",
@@ -77,8 +77,8 @@
       "dialog": null,
       "scene": {
         "ref": "L1-0515",
-        "fit": "rebubble",
-        "note": "Kakak menunjuk sepeda merah yang jauh di seberang jalan, bukan sepeda biru di dekatnya."
+        "fit": "redraw",
+        "note": "Kakak memegang bola di dekatnya dan menunjuk bola lain yang jauh di lantai sambil bicara kepada Adik."
       }
     },
     {

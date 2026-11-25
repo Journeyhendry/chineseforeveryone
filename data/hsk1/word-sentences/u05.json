@@ -29,10 +29,10 @@
           },
           {
             "who": "mama",
-            "hanzi": "你猜！",
-            "pinyin": "Nǐ cāi!",
-            "id": "Coba tebak!",
-            "en": "Guess!"
+            "hanzi": "你看看！",
+            "pinyin": "Nǐ kànkan!",
+            "id": "Coba lihat sendiri!",
+            "en": "Take a look!"
           }
         ]
       },
@@ -135,13 +135,13 @@
       "wordId": "L1-0516",
       "hanzi": "哪个",
       "sentence": {
-        "hanzi": "你要哪个？",
-        "pinyin": "Nǐ yào nǎge?",
-        "id": "Kamu mau yang mana?",
-        "en": "Which one do you want?",
+        "hanzi": "哪个好？",
+        "pinyin": "Nǎge hǎo?",
+        "id": "Yang mana yang bagus?",
+        "en": "Which one is better?",
         "source": "unit",
         "sourceId": null,
-        "speaker": "mama",
+        "speaker": "meimei",
         "matchForm": null
       },
       "dialog": {
@@ -151,35 +151,35 @@
         },
         "lines": [
           {
-            "who": "mama",
-            "hanzi": "你要哪个？",
-            "pinyin": "Nǐ yào nǎge?",
-            "id": "Kamu mau yang mana?",
-            "en": "Which one do you want?"
+            "who": "meimei",
+            "hanzi": "哪个好？",
+            "pinyin": "Nǎge hǎo?",
+            "id": "Yang mana yang bagus?",
+            "en": "Which one is better?"
           },
           {
-            "who": "meimei",
-            "hanzi": "我要那个！",
-            "pinyin": "Wǒ yào nàge!",
-            "id": "Aku mau yang itu!",
-            "en": "That one!"
+            "who": "mama",
+            "hanzi": "这个很好。",
+            "pinyin": "Zhège hěn hǎo.",
+            "id": "Yang ini bagus.",
+            "en": "This one is nice."
           }
         ]
       },
       "scene": {
         "ref": "L1-0516",
         "fit": "rebubble",
-        "note": "Di toko mainan, Ibu bertanya kepada Adik yang berdiri di depan tiga boneka beruang."
+        "note": "Adik berdiri di depan tiga boneka beruang di rak toko dan menoleh kepada Ibu."
       }
     },
     {
       "wordId": "L1-0253",
       "hanzi": "哪些",
       "sentence": {
-        "hanzi": "哪些是你的书？",
-        "pinyin": "Nǎxiē shì nǐ de shū?",
-        "id": "Buku kamu yang mana saja?",
-        "en": "Which books are yours?",
+        "hanzi": "哪些是你的？",
+        "pinyin": "Nǎxiē shì nǐ de?",
+        "id": "Yang mana saja punyamu?",
+        "en": "Which ones are yours?",
         "source": "unit",
         "sourceId": null,
         "speaker": "mama",
@@ -193,10 +193,10 @@
         "lines": [
           {
             "who": "mama",
-            "hanzi": "哪些是你的书？",
-            "pinyin": "Nǎxiē shì nǐ de shū?",
-            "id": "Buku kamu yang mana saja?",
-            "en": "Which books are yours?"
+            "hanzi": "哪些是你的？",
+            "pinyin": "Nǎxiē shì nǐ de?",
+            "id": "Yang mana saja punyamu?",
+            "en": "Which ones are yours?"
           },
           {
             "who": "gege",
@@ -381,10 +381,10 @@
       "wordId": "L1-0379",
       "hanzi": "问",
       "sentence": {
-        "hanzi": "你问妈妈吧。",
-        "pinyin": "Nǐ wèn māma ba.",
-        "id": "Tanya Ibu saja.",
-        "en": "Go ask Mom.",
+        "hanzi": "你问她吧。",
+        "pinyin": "Nǐ wèn tā ba.",
+        "id": "Tanya dia saja.",
+        "en": "Go ask her.",
         "source": "unit",
         "sourceId": null,
         "speaker": "baba",
@@ -401,20 +401,20 @@
       "wordId": "L1-0526",
       "hanzi": "问题",
       "sentence": {
-        "hanzi": "老师，我有一个问题。",
-        "pinyin": "Lǎoshī, wǒ yǒu yí gè wèntí.",
-        "id": "Bu Guru, saya punya pertanyaan.",
-        "en": "Teacher, I have a question.",
+        "hanzi": "有问题吗？",
+        "pinyin": "Yǒu wèntí ma?",
+        "id": "Ada pertanyaan?",
+        "en": "Any questions?",
         "source": "unit",
         "sourceId": null,
-        "speaker": "meimei",
+        "speaker": "teacher",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0526",
         "fit": "rebubble",
-        "note": "Di kelas, Adik mengangkat tangan; Bu Guru tersenyum."
+        "note": "Bu Guru bertanya kepada kelas sambil tersenyum; Adik mengangkat tangan."
       }
     },
     {

@@ -7,11 +7,11 @@
     "words": 300,
     "entries": 300,
     "dialogs": 32,
-    "inScope": 205,
-    "inScopePct": 68.3,
+    "inScope": 217,
+    "inScopePct": 72.3,
     "inScopeTargetPct": 70,
     "errors": 0,
-    "warnings": 14
+    "warnings": 13
   },
   "perUnit": [
     {
@@ -49,8 +49,8 @@
       "draft": true,
       "words": 15,
       "entries": 15,
-      "inScope": 6,
-      "inScopePct": 40,
+      "inScope": 7,
+      "inScopePct": 46.7,
       "dialogs": 0,
       "buatan": 0
     },
@@ -59,8 +59,8 @@
       "draft": true,
       "words": 12,
       "entries": 12,
-      "inScope": 5,
-      "inScopePct": 41.7,
+      "inScope": 9,
+      "inScopePct": 75,
       "dialogs": 10,
       "buatan": 1
     },
@@ -69,8 +69,8 @@
       "draft": true,
       "words": 16,
       "entries": 16,
-      "inScope": 3,
-      "inScopePct": 18.8,
+      "inScope": 5,
+      "inScopePct": 31.3,
       "dialogs": 0,
       "buatan": 1
     },
@@ -79,8 +79,8 @@
       "draft": true,
       "words": 14,
       "entries": 14,
-      "inScope": 10,
-      "inScopePct": 71.4,
+      "inScope": 14,
+      "inScopePct": 100,
       "dialogs": 0,
       "buatan": 0
     },
@@ -119,8 +119,8 @@
       "draft": true,
       "words": 14,
       "entries": 14,
-      "inScope": 11,
-      "inScopePct": 78.6,
+      "inScope": 12,
+      "inScopePct": 85.7,
       "dialogs": 2,
       "buatan": 1
     },
@@ -273,19 +273,11 @@
       "count": 2
     },
     {
-      "word": "有时",
-      "count": 2
-    },
-    {
       "word": "爷爷",
       "count": 2
     },
     {
       "word": "用",
-      "count": 2
-    },
-    {
-      "word": "间",
       "count": 2
     },
     {
@@ -309,15 +301,7 @@
       "count": 1
     },
     {
-      "word": "和牛",
-      "count": 1
-    },
-    {
       "word": "哇",
-      "count": 1
-    },
-    {
-      "word": "奶",
       "count": 1
     },
     {
@@ -329,10 +313,6 @@
       "count": 1
     },
     {
-      "word": "果",
-      "count": 1
-    },
-    {
       "word": "楼",
       "count": 1
     },
@@ -341,15 +321,7 @@
       "count": 1
     },
     {
-      "word": "猜",
-      "count": 1
-    },
-    {
       "word": "生日",
-      "count": 1
-    },
-    {
-      "word": "男同",
       "count": 1
     },
     {
@@ -656,6 +628,12 @@
     {
       "level": "warning",
       "unit": "u05",
+      "wordId": "L1-0328",
+      "message": "dialog line 2 pinyin: 看 (kan): 看 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u05",
       "wordId": "L1-0460",
       "message": "dialog line 2 pinyin: 看 (kan): 看 tone 5, words.json has 4 (neutral vs full tone)"
     },
@@ -681,12 +659,6 @@
       "level": "warning",
       "unit": "u12",
       "wordId": "L1-0147",
-      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
-    },
-    {
-      "level": "warning",
-      "unit": "u12",
-      "wordId": "L1-0368",
       "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
     },
     {
@@ -718,12 +690,6 @@
       "unit": "u19",
       "wordId": "L1-0022",
       "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
-    },
-    {
-      "level": "warning",
-      "unit": "u20",
-      "wordId": "L1-0371",
-      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
     },
     {
       "level": "warning",

@@ -1,0 +1,325 @@
+{
+  "unit": "u06",
+  "entries": [
+    {
+      "wordId": "L1-0120",
+      "hanzi": "个",
+      "sentence": {
+        "hanzi": "我们家有六个人。",
+        "pinyin": "Wǒmen jiā yǒu liù gè rén.",
+        "id": "Keluarga kami ada enam orang.",
+        "en": "There are six people in our family.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0120",
+        "fit": "redraw",
+        "note": "Foto keluarga: Kakek, Nenek, Ayah, Ibu, Kakak, dan Adik; Adik menunjuk sambil menghitung."
+      }
+    },
+    {
+      "wordId": "L1-0008",
+      "hanzi": "百",
+      "sentence": {
+        "hanzi": "我考了一百分！",
+        "pinyin": "Wǒ kǎo le yìbǎi fēn!",
+        "id": "Aku dapat nilai seratus!",
+        "en": "I got a hundred on the test!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0008",
+        "fit": "redraw",
+        "note": "Kakak mengangkat kertas ujian bertuliskan 100 dengan bangga."
+      }
+    },
+    {
+      "wordId": "L1-0522",
+      "hanzi": "千",
+      "sentence": {
+        "hanzi": "我们学校有一千个学生。",
+        "pinyin": "Wǒmen xuéxiào yǒu yìqiān gè xuéshēng.",
+        "id": "Sekolah kami punya seribu murid.",
+        "en": "Our school has a thousand students.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0522",
+        "fit": "redraw",
+        "note": "Kakak menunjuk halaman sekolah yang penuh murid; ada angka 1000 di papan."
+      }
+    },
+    {
+      "wordId": "L1-0075",
+      "hanzi": "第",
+      "sentence": {
+        "hanzi": "我是第一！",
+        "pinyin": "Wǒ shì dì yī!",
+        "id": "Aku juara satu!",
+        "en": "I came first!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0075",
+        "fit": "rebubble",
+        "note": "Podium lomba lari: Kakak di nomor 1 mengangkat tangan, temannya nomor 2, Ayah nomor 3."
+      }
+    },
+    {
+      "wordId": "L1-0143",
+      "hanzi": "号",
+      "sentence": {
+        "hanzi": "今天是十五号。",
+        "pinyin": "Jīntiān shì shíwǔ hào.",
+        "id": "Hari ini tanggal lima belas.",
+        "en": "Today is the fifteenth.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0143",
+        "fit": "rebubble",
+        "note": "Kalender dinding dengan tanggal 15 dilingkari; Adik menunjuknya."
+      }
+    },
+    {
+      "wordId": "L1-0353",
+      "hanzi": "岁",
+      "sentence": {
+        "hanzi": "我六岁！",
+        "pinyin": "Wǒ liù suì!",
+        "id": "Aku enam tahun!",
+        "en": "I'm six!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0353",
+        "fit": "keep",
+        "note": "Adik bersorak di depan kue ulang tahun dengan lilin angka 6."
+      }
+    },
+    {
+      "wordId": "L1-0094",
+      "hanzi": "多",
+      "sentence": {
+        "hanzi": "二十个？太多了！",
+        "pinyin": "Èrshí gè? Tài duō le!",
+        "id": "Dua puluh? Kebanyakan!",
+        "en": "Twenty? That's too many!",
+        "source": "unit",
+        "sourceId": "n-u06:2",
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0094",
+        "fit": "redraw",
+        "note": "Nenek menyodorkan sepiring besar pangsit; Kakak mengangkat kedua tangan."
+      }
+    },
+    {
+      "wordId": "L1-0324",
+      "hanzi": "少",
+      "sentence": {
+        "hanzi": "你的多，我的少！",
+        "pinyin": "Nǐ de duō, wǒ de shǎo!",
+        "id": "Punyamu banyak, punyaku sedikit!",
+        "en": "You've got lots, I've got hardly any!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0324",
+        "fit": "rebubble",
+        "note": "Dua mangkuk: punya Kakak penuh pangsit, punya Adik hanya berisi dua; Adik cemberut menunjuk keduanya."
+      }
+    },
+    {
+      "wordId": "L1-0010",
+      "hanzi": "半",
+      "sentence": {
+        "hanzi": "现在七点半。",
+        "pinyin": "Xiànzài qī diǎn bàn.",
+        "id": "Sekarang jam setengah delapan.",
+        "en": "It's half past seven.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0010",
+        "fit": "redraw",
+        "note": "Ibu menunjuk jam dinding yang menunjuk pukul 7.30; Adik sarapan."
+      }
+    },
+    {
+      "wordId": "L1-0431",
+      "hanzi": "一半",
+      "sentence": {
+        "hanzi": "一半给你！",
+        "pinyin": "Yíbàn gěi nǐ!",
+        "id": "Setengahnya buat kamu!",
+        "en": "Half for you!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0431",
+        "fit": "keep",
+        "note": "Kakak membagi bakpao jadi dua dan memberi setengahnya kepada Adik."
+      }
+    },
+    {
+      "wordId": "L1-0437",
+      "hanzi": "一点儿",
+      "sentence": {
+        "hanzi": "我会说一点儿汉语。",
+        "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "id": "Saya bisa sedikit bahasa Mandarin.",
+        "en": "I can speak a little Chinese.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0437",
+        "fit": "redraw",
+        "note": "Teman kuliah tersenyum malu sambil memberi isyarat \"sedikit\" dengan jarinya."
+      }
+    },
+    {
+      "wordId": "L1-0530",
+      "hanzi": "有点儿",
+      "sentence": {
+        "hanzi": "茶有点儿热。",
+        "pinyin": "Chá yǒudiǎnr rè.",
+        "id": "Tehnya agak panas.",
+        "en": "The tea is a bit hot.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0530",
+        "fit": "rebubble",
+        "note": "Adik menyentuh cangkir teh yang mengepul dan memberi isyarat \"sedikit\" dengan jarinya."
+      }
+    },
+    {
+      "wordId": "L1-0439",
+      "hanzi": "一些",
+      "sentence": {
+        "hanzi": "桌子上有一些书。",
+        "pinyin": "Zhuōzi shàng yǒu yìxiē shū.",
+        "id": "Di atas meja ada beberapa buku.",
+        "en": "There are some books on the table.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0439",
+        "fit": "redraw",
+        "note": "Ibu menunjuk beberapa buku di atas meja belajar."
+      }
+    },
+    {
+      "wordId": "L1-0527",
+      "hanzi": "些",
+      "sentence": {
+        "hanzi": "我们吃些水果吧。",
+        "pinyin": "Wǒmen chī xiē shuǐguǒ ba.",
+        "id": "Kita makan buah, yuk.",
+        "en": "Let's have some fruit.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0527",
+        "fit": "rebubble",
+        "note": "Ibu mengambil beberapa jeruk dari tumpukan ke dalam mangkuk."
+      }
+    },
+    {
+      "wordId": "L1-0442",
+      "hanzi": "有的",
+      "sentence": {
+        "hanzi": "有的同学会，有的不会。",
+        "pinyin": "Yǒude tóngxué huì, yǒude bú huì.",
+        "id": "Ada murid yang bisa, ada yang tidak.",
+        "en": "Some students know, some don't.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0442",
+        "fit": "rebubble",
+        "note": "Guru bertanya ke kelas; ada yang mengangkat tangan, ada yang menggaruk kepala."
+      }
+    },
+    {
+      "wordId": "L1-0445",
+      "hanzi": "有些",
+      "sentence": {
+        "hanzi": "有些菜我不吃。",
+        "pinyin": "Yǒuxiē cài wǒ bù chī.",
+        "id": "Ada sayur yang nggak aku makan.",
+        "en": "There are some dishes I don't eat.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0445",
+        "fit": "redraw",
+        "note": "Di meja makan, Adik menyingkirkan beberapa piring sayur dan menarik piring lain."
+      }
+    }
+  ]
+}

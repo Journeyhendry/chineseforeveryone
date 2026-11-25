@@ -1,0 +1,305 @@
+{
+  "unit": "u02",
+  "entries": [
+    {
+      "wordId": "L1-0380",
+      "hanzi": "我",
+      "sentence": {
+        "hanzi": "我是学生。",
+        "pinyin": "Wǒ shì xuéshēng.",
+        "id": "Aku murid.",
+        "en": "I'm a student.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0380",
+        "fit": "rebubble",
+        "note": "Adik memakai tas sekolah dan menunjuk dadanya sendiri."
+      }
+    },
+    {
+      "wordId": "L1-0354",
+      "hanzi": "他",
+      "sentence": {
+        "hanzi": "他是我爸爸。",
+        "pinyin": "Tā shì wǒ bàba.",
+        "id": "Dia ayahku.",
+        "en": "He's my dad.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0354",
+        "fit": "keep",
+        "note": "Adik berkata kepada Ibu sambil menunjuk Ayah di sana."
+      }
+    },
+    {
+      "wordId": "L1-0356",
+      "hanzi": "她",
+      "sentence": {
+        "hanzi": "她是我奶奶。",
+        "pinyin": "Tā shì wǒ nǎinai.",
+        "id": "Dia nenekku.",
+        "en": "She's my grandma.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0356",
+        "fit": "keep",
+        "note": "Kakak berkata kepada Ayah sambil menunjuk Nenek di seberang ruangan."
+      }
+    },
+    {
+      "wordId": "L1-0523",
+      "hanzi": "它",
+      "sentence": {
+        "hanzi": "它是我的猫。",
+        "pinyin": "Tā shì wǒ de māo.",
+        "id": "Itu kucingku.",
+        "en": "That's my cat.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0523",
+        "fit": "rebubble",
+        "note": "Adik menunjuk kucing di sofa sambil bicara kepada Ibu."
+      }
+    },
+    {
+      "wordId": "L1-0381",
+      "hanzi": "我们",
+      "sentence": {
+        "hanzi": "我们是一家人！",
+        "pinyin": "Wǒmen shì yì jiā rén!",
+        "id": "Kita satu keluarga!",
+        "en": "We're one family!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0381",
+        "fit": "rebubble",
+        "note": "Adik merentangkan tangan merangkul Ibu dan Kakak."
+      }
+    },
+    {
+      "wordId": "L1-0355",
+      "hanzi": "他们",
+      "sentence": {
+        "hanzi": "他们在玩儿。",
+        "pinyin": "Tāmen zài wánr.",
+        "id": "Mereka lagi main.",
+        "en": "They're playing.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0355",
+        "fit": "rebubble",
+        "note": "Ibu menunjuk Ayah dan Kakak yang bermain bola."
+      }
+    },
+    {
+      "wordId": "L1-0357",
+      "hanzi": "她们",
+      "sentence": {
+        "hanzi": "她们在包饺子。",
+        "pinyin": "Tāmen zài bāo jiǎozi.",
+        "id": "Mereka lagi bikin pangsit.",
+        "en": "They're making dumplings.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0357",
+        "fit": "rebubble",
+        "note": "Ayah menunjuk Ibu, Nenek, dan Adik yang membuat pangsit bersama."
+      }
+    },
+    {
+      "wordId": "L1-0524",
+      "hanzi": "它们",
+      "sentence": {
+        "hanzi": "你看它们！",
+        "pinyin": "Nǐ kàn tāmen!",
+        "id": "Lihat mereka!",
+        "en": "Look at them!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0524",
+        "fit": "keep",
+        "note": "Di taman, Adik menunjuk dua kucing dan seekor anjing yang bermain."
+      }
+    },
+    {
+      "wordId": "L1-0241",
+      "hanzi": "们",
+      "sentence": {
+        "hanzi": "孩子们，起床了！",
+        "pinyin": "Háizimen, qǐchuáng le!",
+        "id": "Anak-anak, ayo bangun!",
+        "en": "Kids, time to get up!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0241",
+        "fit": "redraw",
+        "note": "Ibu membuka pintu kamar dan membangunkan Kakak dan Adik yang masih di tempat tidur."
+      }
+    },
+    {
+      "wordId": "L1-0337",
+      "hanzi": "是",
+      "sentence": {
+        "hanzi": "这是你。",
+        "pinyin": "Zhè shì nǐ.",
+        "id": "Ini kamu.",
+        "en": "This is you.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0337",
+        "fit": "keep",
+        "note": "Ayah memegang foto bayi dan menunjuk Adik; Adik mengangguk."
+      }
+    },
+    {
+      "wordId": "L1-0034",
+      "hanzi": "不",
+      "sentence": {
+        "hanzi": "不是我！",
+        "pinyin": "Bú shì wǒ!",
+        "id": "Bukan aku!",
+        "en": "It wasn't me!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0034",
+        "fit": "redraw",
+        "note": "Ada cangkir pecah di lantai; Adik menggeleng dan menyilangkan kedua tangan di depan Ibu."
+      }
+    },
+    {
+      "wordId": "L1-0425",
+      "hanzi": "也",
+      "sentence": {
+        "hanzi": "我也要！",
+        "pinyin": "Wǒ yě yào!",
+        "id": "Aku juga mau!",
+        "en": "Me too!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0425",
+        "fit": "keep",
+        "note": "Kakak mengangkat tangan, lalu Adik ikut mengangkat tangan."
+      }
+    },
+    {
+      "wordId": "L1-0176",
+      "hanzi": "叫",
+      "sentence": {
+        "hanzi": "小朋友，你叫什么名字？",
+        "pinyin": "Xiǎopéngyǒu, nǐ jiào shénme míngzi?",
+        "id": "Adik kecil, namamu siapa?",
+        "en": "What's your name, little one?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0176",
+        "fit": "redraw",
+        "note": "Di taman, Nenek membungkuk ramah dan bertanya kepada seorang anak kecil."
+      }
+    },
+    {
+      "wordId": "L1-0245",
+      "hanzi": "名字",
+      "sentence": {
+        "hanzi": "你的名字很好听。",
+        "pinyin": "Nǐ de míngzi hěn hǎotīng.",
+        "id": "Namamu bagus.",
+        "en": "Your name is lovely.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0245",
+        "fit": "rebubble",
+        "note": "Hari pertama sekolah: Bu Guru tersenyum melihat label nama di baju Adik."
+      }
+    },
+    {
+      "wordId": "L1-0067",
+      "hanzi": "的",
+      "sentence": {
+        "hanzi": "是我的！",
+        "pinyin": "Shì wǒ de!",
+        "id": "Punyaku!",
+        "en": "It's mine!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0067",
+        "fit": "rebubble",
+        "note": "Adik memeluk boneka beruangnya erat-erat; Kakak ingin mengambilnya."
+      }
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "unit": "u09",
+  "entries": [
+    {
+      "wordId": "L1-0046",
+      "hanzi": "吃",
+      "sentence": {
+        "hanzi": "多吃一点儿！",
+        "pinyin": "Duō chī yìdiǎnr!",
+        "id": "Makan yang banyak, ya!",
+        "en": "Eat a bit more!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0046",
+        "fit": "redraw",
+        "note": "Nenek menambahkan mi ke mangkuk Adik yang sedang makan dengan sumpit."
+      }
+    },
+    {
+      "wordId": "L1-0144",
+      "hanzi": "喝",
+      "sentence": {
+        "hanzi": "你喝什么？",
+        "pinyin": "Nǐ hē shénme?",
+        "id": "Kamu mau minum apa?",
+        "en": "What would you like to drink?",
+        "source": "unit",
+        "sourceId": "n-u09:5",
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0144",
+        "fit": "rebubble",
+        "note": "Di kedai minuman, Kakak memegang bubble tea dan bertanya kepada temannya."
+      }
+    },
+    {
+      "wordId": "L1-0099",
+      "hanzi": "饭",
+      "sentence": {
+        "hanzi": "饭好了！",
+        "pinyin": "Fàn hǎo le!",
+        "id": "Makanan sudah siap!",
+        "en": "Food's ready!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0099",
+        "fit": "rebubble",
+        "note": "Ibu memanggil; di meja ada nampan berisi semangkuk nasi, sepiring sayur, dan sumpit."
+      }
+    },
+    {
+      "wordId": "L1-0242",
+      "hanzi": "米饭",
+      "sentence": {
+        "hanzi": "你吃米饭吗？",
+        "pinyin": "Nǐ chī mǐfàn ma?",
+        "id": "Kamu mau makan nasi?",
+        "en": "Will you have some rice?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0242",
+        "fit": "rebubble",
+        "note": "Nenek menyodorkan semangkuk nasi putih hangat dari penanak nasi."
+      }
+    },
+    {
+      "wordId": "L1-0035",
+      "hanzi": "菜",
+      "sentence": {
+        "hanzi": "菜来了！",
+        "pinyin": "Cài lái le!",
+        "id": "Masakannya datang!",
+        "en": "Here comes the food!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0035",
+        "fit": "keep",
+        "note": "Ibu membawa sepiring sayur tumis yang masih mengepul."
+      }
+    },
+    {
+      "wordId": "L1-0345",
+      "hanzi": "水",
+      "sentence": {
+        "hanzi": "妈妈，有水吗？",
+        "pinyin": "Māma, yǒu shuǐ ma?",
+        "id": "Ma, ada air?",
+        "en": "Mom, is there any water?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0345",
+        "fit": "redraw",
+        "note": "Kakak yang kehausan bertanya; Ibu menunjuk botol air dan gelas di meja dapur."
+      }
+    },
+    {
+      "wordId": "L1-0036",
+      "hanzi": "茶",
+      "sentence": {
+        "hanzi": "请喝茶。",
+        "pinyin": "Qǐng hē chá.",
+        "id": "Silakan minum tehnya.",
+        "en": "Please have some tea.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0036",
+        "fit": "redraw",
+        "note": "Adik menyodorkan cangkir kecil berisi teh hangat kepada Kakek; teko tanah liat di meja."
+      }
+    },
+    {
+      "wordId": "L1-0275",
+      "hanzi": "牛奶",
+      "sentence": {
+        "hanzi": "喝牛奶吧！",
+        "pinyin": "Hē niúnǎi ba!",
+        "id": "Minum susunya, ya!",
+        "en": "Drink your milk!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0275",
+        "fit": "rebubble",
+        "note": "Nenek menuang susu dari kotak susu bergambar totol sapi ke gelas untuk Adik."
+      }
+    },
+    {
+      "wordId": "L1-0018",
+      "hanzi": "杯子",
+      "sentence": {
+        "hanzi": "这是我的杯子！",
+        "pinyin": "Zhè shì wǒ de bēizi!",
+        "id": "Ini gelasku!",
+        "en": "This is my cup!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0018",
+        "fit": "rebubble",
+        "note": "Adik mengambil gelas bergagang bergambar bintang miliknya dari meja."
+      }
+    },
+    {
+      "wordId": "L1-0346",
+      "hanzi": "水果",
+      "sentence": {
+        "hanzi": "你吃什么水果？",
+        "pinyin": "Nǐ chī shénme shuǐguǒ?",
+        "id": "Kamu mau makan buah apa?",
+        "en": "What fruit would you like?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0346",
+        "fit": "rebubble",
+        "note": "Nenek menyodorkan sepiring buah (semangka, pisang, apel, jeruk) kepada Adik."
+      }
+    },
+    {
+      "wordId": "L1-0521",
+      "hanzi": "苹果",
+      "sentence": {
+        "hanzi": "我有两个苹果！",
+        "pinyin": "Wǒ yǒu liǎng gè píngguǒ!",
+        "id": "Aku punya dua apel!",
+        "en": "I have two apples!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0521",
+        "fit": "redraw",
+        "note": "Adik mengangkat satu apel merah di tiap tangan; keranjang apel di belakangnya."
+      }
+    },
+    {
+      "wordId": "L1-0164",
+      "hanzi": "鸡蛋",
+      "sentence": {
+        "hanzi": "吃一个鸡蛋吧！",
+        "pinyin": "Chī yí gè jīdàn ba!",
+        "id": "Makan satu telur, ya!",
+        "en": "Have an egg!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0164",
+        "fit": "rebubble",
+        "note": "Ibu mengangkat sebutir telur; di wajan ada telur yang sedang digoreng."
+      }
+    },
+    {
+      "wordId": "L1-0243",
+      "hanzi": "面包",
+      "sentence": {
+        "hanzi": "面包好吃吗？",
+        "pinyin": "Miànbāo hǎochī ma?",
+        "id": "Rotinya enak?",
+        "en": "Is the bread good?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0243",
+        "fit": "redraw",
+        "note": "Ibu bertanya kepada Kakak yang sedang menggigit selembar roti tawar."
+      }
+    },
+    {
+      "wordId": "L1-0016",
+      "hanzi": "包子",
+      "sentence": {
+        "hanzi": "有包子吗？",
+        "pinyin": "Yǒu bāozi ma?",
+        "id": "Ada bakpao?",
+        "en": "Do you have baozi?",
+        "source": "unit",
+        "sourceId": "n-u09:2",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0016",
+        "fit": "redraw",
+        "note": "Di warung, Ibu bertanya kepada pelayan yang berdiri di samping kukusan bambu."
+      }
+    },
+    {
+      "wordId": "L1-0511",
+      "hanzi": "饺子",
+      "sentence": {
+        "hanzi": "我们吃饺子吧！",
+        "pinyin": "Wǒmen chī jiǎozi ba!",
+        "id": "Yuk, kita makan pangsit!",
+        "en": "Let's eat dumplings!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0511",
+        "fit": "rebubble",
+        "note": "Nenek dan Adik di meja dengan sepiring jiaozi hangat di depan mereka."
+      }
+    },
+    {
+      "wordId": "L1-0244",
+      "hanzi": "面条儿",
+      "sentence": {
+        "hanzi": "我爱吃面条儿！",
+        "pinyin": "Wǒ ài chī miàntiáor!",
+        "id": "Aku suka banget makan mi!",
+        "en": "I love noodles!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0244",
+        "fit": "rebubble",
+        "note": "Kakek mengangkat mi panjang tinggi-tinggi dengan sumpit dari semangkuk mi kuah."
+      }
+    },
+    {
+      "wordId": "L1-0139",
+      "hanzi": "好吃",
+      "sentence": {
+        "hanzi": "饺子很好吃！",
+        "pinyin": "Jiǎozi hěn hǎochī!",
+        "id": "Pangsitnya enak sekali!",
+        "en": "The dumplings are delicious!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0139",
+        "fit": "rebubble",
+        "note": "Adik mencicipi jiaozi dan mengacungkan jempol (panel kedua dengan pare boleh tetap)."
+      }
+    }
+  ]
+}

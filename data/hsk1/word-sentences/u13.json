@@ -1,0 +1,265 @@
+{
+  "unit": "u13",
+  "entries": [
+    {
+      "wordId": "L1-0506",
+      "hanzi": "店",
+      "sentence": {
+        "hanzi": "这家店的苹果很好吃。",
+        "pinyin": "Zhè jiā diàn de píngguǒ hěn hǎochī.",
+        "id": "Apel di toko ini enak sekali.",
+        "en": "The apples at this shop are really good.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0506",
+        "fit": "rebubble",
+        "note": "Kios buah di pinggir jalan dengan keranjang apel; Ibu sedang membeli, penjual melambai."
+      }
+    },
+    {
+      "wordId": "L1-0314",
+      "hanzi": "商店",
+      "sentence": {
+        "hanzi": "我家前边有一个商店。",
+        "pinyin": "Wǒ jiā qiánbian yǒu yí gè shāngdiàn.",
+        "id": "Di depan rumahku ada toko.",
+        "en": "There's a shop in front of my house.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0314",
+        "fit": "redraw",
+        "note": "Adik berdiri di depan gedung rumahnya dan menunjuk toko kecil di seberangnya."
+      }
+    },
+    {
+      "wordId": "L1-0343",
+      "hanzi": "书店",
+      "sentence": {
+        "hanzi": "书店在超市后边。",
+        "pinyin": "Shūdiàn zài chāoshì hòubian.",
+        "id": "Toko bukunya di belakang supermarket.",
+        "en": "The bookstore is behind the supermarket.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "seller",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0343",
+        "fit": "redraw",
+        "note": "Penjual menunjuk arah kepada Nenek; toko buku terlihat di belakang supermarket."
+      }
+    },
+    {
+      "wordId": "L1-0503",
+      "hanzi": "超市",
+      "sentence": {
+        "hanzi": "超市里有很多水果。",
+        "pinyin": "Chāoshì lǐ yǒu hěn duō shuǐguǒ.",
+        "id": "Di supermarket ada banyak buah.",
+        "en": "There's lots of fruit at the supermarket.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0503",
+        "fit": "rebubble",
+        "note": "Ibu mendorong troli di supermarket, di depan rak buah yang penuh."
+      }
+    },
+    {
+      "wordId": "L1-0100",
+      "hanzi": "饭店",
+      "sentence": {
+        "hanzi": "今天我们在饭店吃饭。",
+        "pinyin": "Jīntiān wǒmen zài fàndiàn chī fàn.",
+        "id": "Hari ini kita makan di restoran.",
+        "en": "Today we're eating at a restaurant.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0100",
+        "fit": "rebubble",
+        "note": "Kakek dan Nenek di meja bundar restoran; pelayan datang membawa pangsit."
+      }
+    },
+    {
+      "wordId": "L1-0083",
+      "hanzi": "电影院",
+      "sentence": {
+        "hanzi": "电影院里人很多。",
+        "pinyin": "Diànyǐngyuàn lǐ rén hěn duō.",
+        "id": "Bioskopnya ramai sekali.",
+        "en": "The cinema is really crowded.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0083",
+        "fit": "redraw",
+        "note": "Bioskop gelap dengan layar bercahaya; hampir semua kursi merah terisi, Kakak dan temannya mencari tempat duduk."
+      }
+    },
+    {
+      "wordId": "L1-0508",
+      "hanzi": "公司",
+      "sentence": {
+        "hanzi": "爸爸的公司在那儿。",
+        "pinyin": "Bàba de gōngsī zài nàr.",
+        "id": "Kantor Ayah di sana.",
+        "en": "Dad's company is over there.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0508",
+        "fit": "redraw",
+        "note": "Adik menunjuk gedung kantor tinggi berkaca; Ayah berjalan ke pintunya."
+      }
+    },
+    {
+      "wordId": "L1-0042",
+      "hanzi": "车",
+      "sentence": {
+        "hanzi": "那是我家的车！",
+        "pinyin": "Nà shì wǒ jiā de chē!",
+        "id": "Itu mobil keluargaku!",
+        "en": "That's our car!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0042",
+        "fit": "redraw",
+        "note": "Adik menunjuk mobil biru di jalan yang ramai."
+      }
+    },
+    {
+      "wordId": "L1-0504",
+      "hanzi": "出租车",
+      "sentence": {
+        "hanzi": "我们坐出租车去吧。",
+        "pinyin": "Wǒmen zuò chūzūchē qù ba.",
+        "id": "Kita naik taksi saja, yuk.",
+        "en": "Let's take a taxi.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0504",
+        "fit": "rebubble",
+        "note": "Taksi kuning berhenti; Ayah mengangkat tangan memanggilnya."
+      }
+    },
+    {
+      "wordId": "L1-0161",
+      "hanzi": "火车",
+      "sentence": {
+        "hanzi": "火车几点到？",
+        "pinyin": "Huǒchē jǐ diǎn dào?",
+        "id": "Keretanya sampai jam berapa?",
+        "en": "What time does the train arrive?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0161",
+        "fit": "redraw",
+        "note": "Adik dan Ayah menunggu di peron; kereta cepat putih terlihat dari jauh, ada jam stasiun."
+      }
+    },
+    {
+      "wordId": "L1-0107",
+      "hanzi": "飞机",
+      "sentence": {
+        "hanzi": "我第一次坐飞机！",
+        "pinyin": "Wǒ dì-yī cì zuò fēijī!",
+        "id": "Ini pertama kalinya aku naik pesawat!",
+        "en": "It's my first time on a plane!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0107",
+        "fit": "redraw",
+        "note": "Adik duduk di kursi pesawat dan menempelkan wajah ke jendela, awan di luar."
+      }
+    },
+    {
+      "wordId": "L1-0498",
+      "hanzi": "坐",
+      "sentence": {
+        "hanzi": "我坐这儿，你坐那儿。",
+        "pinyin": "Wǒ zuò zhèr, nǐ zuò nàr.",
+        "id": "Aku duduk di sini, kamu di sana.",
+        "en": "I'll sit here, you sit there.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0498",
+        "fit": "redraw",
+        "note": "Di kereta, Kakak menunjuk dua kursi: kursinya sendiri dan kursi untuk Adik."
+      }
+    },
+    {
+      "wordId": "L1-0189",
+      "hanzi": "开车",
+      "sentence": {
+        "hanzi": "我开车去公司。",
+        "pinyin": "Wǒ kāichē qù gōngsī.",
+        "id": "Aku nyetir ke kantor.",
+        "en": "I drive to work.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0189",
+        "fit": "rebubble",
+        "note": "Ayah menyetir mobil: dua tangan di kemudi, mata ke depan."
+      }
+    }
+  ]
+}

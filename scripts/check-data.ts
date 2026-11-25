@@ -6,6 +6,8 @@
 // every word is in exactly one unit, and the files built from the data agree. Exits with code 1 on any problem.
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { checkDataLinks, type DataSet } from '../src/lib/data-links.ts'
+import { buildOutputs, reviewGate, type ReviewFile } from '../src/lib/word-sentences.ts'
+import { fileUrl, loadWordSentencesInput, WORD_SENTENCES, WORD_SENTENCES_REPORT, WORD_SENTENCES_REVIEW } from './word-sentences-input.ts'
 
 const root = new URL('..', import.meta.url)
 const read = <T>(path: string): T => JSON.parse(readFileSync(new URL(path, root), 'utf8')) as T
@@ -68,6 +70,21 @@ const errors = checkDataLinks(data)
       if (!existsSync(f) || statSync(f).size <= 1024) errors.push(`audio file missing or too small: ${key} (${e.path})`)
     }
   }
+}
+// Word sentences (task 6c): only once the merged file exists. Must equal a rebuild from the drafts, have no
+// validation errors, and pass the review gate.
+if (existsSync(fileUrl(WORD_SENTENCES))) {
+  const { ctx, drafts } = loadWordSentencesInput()
+  const { result, json, report } = buildOutputs(drafts, ctx)
+  if (readFileSync(fileUrl(WORD_SENTENCES), 'utf8') !== json || !existsSync(fileUrl(WORD_SENTENCES_REPORT)) || readFileSync(fileUrl(WORD_SENTENCES_REPORT), 'utf8') !== report) {
+    errors.push(`${WORD_SENTENCES} or its report is out of date with data/hsk1/word-sentences/*.json: run \`npm run build:word-sentences\``)
+  }
+  for (const p of result.problems.filter((x) => x.level === 'error')) errors.push(`word-sentences ${p.unit} ${p.wordId}: ${p.message}`)
+  const review = existsSync(fileUrl(WORD_SENTENCES_REVIEW)) ? read<ReviewFile>(WORD_SENTENCES_REVIEW) : null
+  errors.push(...reviewGate(result.file.entries, review))
+  console.log(`word sentences: ${result.file.entries.length} entries checked`)
+} else {
+  console.log(`word sentences: ${WORD_SENTENCES} not built yet, skipped`)
 }
 console.log(
   `words ${data.words.length}, units ${data.units.length}, sentences ${data.sentences.length}, casual ${data.casual.length}, dialogs ${data.dialogs.length}, visuals ${data.visuals.length}, scenes ${data.scenes.length}, HSK 2 preview words ${data.preview.words.length}`,

@@ -1,0 +1,327 @@
+{
+  "unit": "u11",
+  "entries": [
+    {
+      "wordId": "L1-0399",
+      "hanzi": "现在",
+      "sentence": {
+        "hanzi": "现在八点。",
+        "pinyin": "Xiànzài bā diǎn.",
+        "id": "Sekarang jam delapan.",
+        "en": "It's eight o'clock now.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0399",
+        "fit": "keep",
+        "note": "Adik menunjuk jam dinding besar yang menunjukkan pukul 8:00."
+      }
+    },
+    {
+      "wordId": "L1-0076",
+      "hanzi": "点",
+      "sentence": {
+        "hanzi": "妈妈，我们几点吃饭？",
+        "pinyin": "Māma, wǒmen jǐ diǎn chī fàn?",
+        "id": "Ma, kita makan jam berapa?",
+        "en": "Mom, what time do we eat?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 几点 (jam berapa) paling jelas bersama jawabannya.",
+          "en": "The question 几点 (what time) is clearest together with its answer."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "妈妈，我们几点吃饭？",
+            "pinyin": "Māma, wǒmen jǐ diǎn chī fàn?",
+            "id": "Ma, kita makan jam berapa?",
+            "en": "Mom, what time do we eat?"
+          },
+          {
+            "who": "mama",
+            "hanzi": "六点。",
+            "pinyin": "Liù diǎn.",
+            "id": "Jam enam.",
+            "en": "At six."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0076",
+        "fit": "redraw",
+        "note": "Adik bertanya kepada Ibu yang memasak; jam dinding menunjuk pukul 5, lalu pukul 6."
+      }
+    },
+    {
+      "wordId": "L1-0109",
+      "hanzi": "分",
+      "sentence": {
+        "hanzi": "现在三点五分。",
+        "pinyin": "Xiànzài sān diǎn wǔ fēn.",
+        "id": "Sekarang jam tiga lewat lima menit.",
+        "en": "It's 3:05 now.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0109",
+        "fit": "keep",
+        "note": "Jarum menit maju dari 3:00 ke 3:05; Ibu menunggu tehnya."
+      }
+    },
+    {
+      "wordId": "L1-0507",
+      "hanzi": "分钟",
+      "sentence": {
+        "hanzi": "等我五分钟！",
+        "pinyin": "Děng wǒ wǔ fēnzhōng!",
+        "id": "Tunggu aku lima menit!",
+        "en": "Give me five minutes!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0507",
+        "fit": "redraw",
+        "note": "Kakak di pintu kamar mengangkat lima jari kepada temannya yang menunggu; jam dengan bagian 5 menit berwarna kuning."
+      }
+    },
+    {
+      "wordId": "L1-0405",
+      "hanzi": "小时",
+      "sentence": {
+        "hanzi": "一个小时有六十分钟。",
+        "pinyin": "Yí gè xiǎoshí yǒu liùshí fēnzhōng.",
+        "id": "Satu jam ada enam puluh menit.",
+        "en": "An hour has sixty minutes.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0405",
+        "fit": "rebubble",
+        "note": "Jarum panjang berputar satu kali penuh sementara jarum pendek maju dari 3 ke 4; Kakek menjelaskan."
+      }
+    },
+    {
+      "wordId": "L1-0334",
+      "hanzi": "时间",
+      "sentence": {
+        "hanzi": "我今天没有时间。",
+        "pinyin": "Wǒ jīntiān méiyǒu shíjiān.",
+        "id": "Hari ini aku nggak ada waktu.",
+        "en": "I don't have time today.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0334",
+        "fit": "rebubble",
+        "note": "Ayah terburu-buru membawa tas kerja sambil melihat jam dinding (7:55)."
+      }
+    },
+    {
+      "wordId": "L1-0333",
+      "hanzi": "时候",
+      "sentence": {
+        "hanzi": "你什么时候有时间？",
+        "pinyin": "Nǐ shénme shíhou yǒu shíjiān?",
+        "id": "Kamu kapan ada waktu?",
+        "en": "When are you free?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 什么时候 (kapan) butuh jawaban supaya jelas.",
+          "en": "The question word 什么时候 (when) needs an answer to be clear."
+        },
+        "lines": [
+          {
+            "who": "classmate",
+            "hanzi": "你什么时候有时间？",
+            "pinyin": "Nǐ shénme shíhou yǒu shíjiān?",
+            "id": "Kamu kapan ada waktu?",
+            "en": "When are you free?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "明天下午。",
+            "pinyin": "Míngtiān xiàwǔ.",
+            "id": "Besok sore.",
+            "en": "Tomorrow afternoon."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0333",
+        "fit": "redraw",
+        "note": "Teman kuliah menelepon Kakak; Kakak menunjuk kalender hari besok dan jam pukul 3 sore."
+      }
+    },
+    {
+      "wordId": "L1-0459",
+      "hanzi": "早上",
+      "sentence": {
+        "hanzi": "早上好！",
+        "pinyin": "Zǎoshang hǎo!",
+        "id": "Selamat pagi!",
+        "en": "Good morning!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0459",
+        "fit": "keep",
+        "note": "Pagi pukul 6, matahari baru terbit; Kakek dan Nenek berlatih taiji di taman."
+      }
+    },
+    {
+      "wordId": "L1-0322",
+      "hanzi": "上午",
+      "sentence": {
+        "hanzi": "现在是上午十点。",
+        "pinyin": "Xiànzài shì shàngwǔ shí diǎn.",
+        "id": "Sekarang jam sepuluh pagi.",
+        "en": "It's 10 a.m. now.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0322",
+        "fit": "rebubble",
+        "note": "Pukul 10 pagi, matahari cukup tinggi; Bu Guru menunjuk jam kelas, Adik belajar."
+      }
+    },
+    {
+      "wordId": "L1-0480",
+      "hanzi": "中午",
+      "sentence": {
+        "hanzi": "中午吃什么？",
+        "pinyin": "Zhōngwǔ chī shénme?",
+        "id": "Siang ini makan apa?",
+        "en": "What's for lunch?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0480",
+        "fit": "rebubble",
+        "note": "Pukul 12, matahari tepat di atas; Ayah memegang kotak bekalnya dan berpikir."
+      }
+    },
+    {
+      "wordId": "L1-0395",
+      "hanzi": "下午",
+      "sentence": {
+        "hanzi": "下午我们喝茶吧！",
+        "pinyin": "Xiàwǔ wǒmen hē chá ba!",
+        "id": "Sore nanti kita minum teh, yuk!",
+        "en": "Let's have tea this afternoon!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0395",
+        "fit": "redraw",
+        "note": "Pukul 3 sore, matahari condong ke barat; Nenek menyiapkan teko teh untuk Kakek."
+      }
+    },
+    {
+      "wordId": "L1-0374",
+      "hanzi": "晚上",
+      "sentence": {
+        "hanzi": "晚上好！",
+        "pinyin": "Wǎnshang hǎo!",
+        "id": "Selamat malam!",
+        "en": "Good evening!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0374",
+        "fit": "keep",
+        "note": "Pukul 8 malam, bulan dan bintang; Adik menyapa."
+      }
+    },
+    {
+      "wordId": "L1-0457",
+      "hanzi": "早",
+      "sentence": {
+        "hanzi": "你今天很早！",
+        "pinyin": "Nǐ jīntiān hěn zǎo!",
+        "id": "Hari ini kamu datang pagi sekali!",
+        "en": "You're early today!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0457",
+        "fit": "redraw",
+        "note": "Pukul 7 di gerbang sekolah yang masih sepi; Bu Guru tersenyum menyambut Adik yang datang paling awal."
+      }
+    },
+    {
+      "wordId": "L1-0372",
+      "hanzi": "晚",
+      "sentence": {
+        "hanzi": "你来晚了！",
+        "pinyin": "Nǐ lái wǎn le!",
+        "id": "Kamu terlambat!",
+        "en": "You're late!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0372",
+        "fit": "rebubble",
+        "note": "Pukul 8:20, Kakak berlari terengah-engah; Bu Guru menunggu sambil bertolak pinggang."
+      }
+    }
+  ]
+}

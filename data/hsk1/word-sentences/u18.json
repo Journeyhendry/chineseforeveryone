@@ -1,0 +1,286 @@
+{
+  "unit": "u18",
+  "entries": [
+    {
+      "wordId": "L1-0124",
+      "hanzi": "工作",
+      "sentence": {
+        "hanzi": "爸爸在公司工作。",
+        "pinyin": "Bàba zài gōngsī gōngzuò.",
+        "id": "Ayah bekerja di kantor.",
+        "en": "Dad works at a company.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ayah duduk di meja kantor di depan komputer."
+      }
+    },
+    {
+      "wordId": "L1-0316",
+      "hanzi": "上班",
+      "sentence": {
+        "hanzi": "妈妈八点去上班。",
+        "pinyin": "Māma bā diǎn qù shàngbān.",
+        "id": "Ibu berangkat kerja jam delapan.",
+        "en": "Mom goes to work at eight.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ibu membawa tas keluar pintu; jam dinding menunjukkan pukul delapan."
+      }
+    },
+    {
+      "wordId": "L1-0390",
+      "hanzi": "下班",
+      "sentence": {
+        "hanzi": "爸爸下班回家了。",
+        "pinyin": "Bàba xiàbān huí jiā le.",
+        "id": "Ayah sudah pulang kerja.",
+        "en": "Dad is home from work.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Sore hari Ayah masuk rumah membawa tas kerja; Adik berlari menyambut."
+      }
+    },
+    {
+      "wordId": "L1-0230",
+      "hanzi": "忙",
+      "sentence": {
+        "hanzi": "妈妈今天很忙。",
+        "pinyin": "Māma jīntiān hěn máng.",
+        "id": "Hari ini Ibu sibuk sekali.",
+        "en": "Mom is very busy today.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ibu menelepon sambil mengetik di laptop dengan tumpukan kertas di meja."
+      }
+    },
+    {
+      "wordId": "L1-0417",
+      "hanzi": "休息",
+      "sentence": {
+        "hanzi": "我们休息一下吧。",
+        "pinyin": "Wǒmen xiūxi yíxià ba.",
+        "id": "Kita istirahat sebentar, yuk.",
+        "en": "Let's take a break.",
+        "source": "tatoeba",
+        "sourceId": 401011,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ayah dan Kakak yang lelah duduk di bangku taman sambil minum air."
+      }
+    },
+    {
+      "wordId": "L1-0335",
+      "hanzi": "事",
+      "sentence": {
+        "hanzi": "妈妈，我有事问你。",
+        "pinyin": "Māma, wǒ yǒu shì wèn nǐ.",
+        "id": "Bu, aku mau tanya sesuatu.",
+        "en": "Mom, I have something to ask you.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menarik lengan baju Ibu yang sedang memasak."
+      }
+    },
+    {
+      "wordId": "L1-0235",
+      "hanzi": "没事",
+      "sentence": {
+        "hanzi": "你没事吧？",
+        "pinyin": "Nǐ méishì ba?",
+        "id": "Kamu tidak apa-apa?",
+        "en": "Are you OK?",
+        "source": "tatoeba",
+        "sourceId": 10981515,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Menanyakan keadaan dengan 吧 dan menjawab \"tidak apa-apa\".",
+          "en": "Checking on someone with 吧 and replying \"I'm fine\"."
+        },
+        "lines": [
+          {
+            "who": "gege",
+            "hanzi": "你没事吧？",
+            "pinyin": "Nǐ méishì ba?",
+            "id": "Kamu tidak apa-apa?",
+            "en": "Are you OK?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "没事，没事！",
+            "pinyin": "Méishì, méishì!",
+            "id": "Tidak apa-apa, kok!",
+            "en": "I'm fine, I'm fine!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik jatuh terduduk di taman; Kakak membungkuk mengulurkan tangan."
+      }
+    },
+    {
+      "wordId": "L1-0028",
+      "hanzi": "病",
+      "sentence": {
+        "hanzi": "你的病好了吗？",
+        "pinyin": "Nǐ de bìng hǎo le ma?",
+        "id": "Kamu sudah sembuh?",
+        "en": "Are you better now?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "friend",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Teman datang menjenguk Kakak yang duduk di sofa berselimut."
+      }
+    },
+    {
+      "wordId": "L1-0329",
+      "hanzi": "生病",
+      "sentence": {
+        "hanzi": "哥哥生病了，在家休息。",
+        "pinyin": "Gēge shēngbìng le, zài jiā xiūxi.",
+        "id": "Kakak sakit, jadi istirahat di rumah.",
+        "en": "Big brother is sick and resting at home.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakak berbaring di tempat tidur dengan kompres di dahi; Ibu membawa segelas air."
+      }
+    },
+    {
+      "wordId": "L1-0193",
+      "hanzi": "看病",
+      "sentence": {
+        "hanzi": "妈妈，我不想去看病！",
+        "pinyin": "Māma, wǒ bù xiǎng qù kànbìng!",
+        "id": "Bu, aku tidak mau ke dokter!",
+        "en": "Mom, I don't want to go to the doctor!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik memeluk tiang pintu menolak pergi; Ibu memegang tangannya dengan sabar."
+      }
+    },
+    {
+      "wordId": "L1-0429",
+      "hanzi": "医生",
+      "sentence": {
+        "hanzi": "医生，谢谢您！",
+        "pinyin": "Yīshēng, xièxie nín!",
+        "id": "Terima kasih, Dok!",
+        "en": "Thank you, doctor!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Di ruang periksa Kakak mengangguk berterima kasih kepada dokter berjas putih."
+      }
+    },
+    {
+      "wordId": "L1-0430",
+      "hanzi": "医院",
+      "sentence": {
+        "hanzi": "医院在那边。",
+        "pinyin": "Yīyuàn zài nàbiān.",
+        "id": "Rumah sakitnya di sebelah sana.",
+        "en": "The hospital is over there.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "driver",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Sopir menunjuk gedung rumah sakit bertanda palang merah di ujung jalan."
+      }
+    },
+    {
+      "wordId": "L1-0202",
+      "hanzi": "口",
+      "sentence": {
+        "hanzi": "我家有六口人。",
+        "pinyin": "Wǒ jiā yǒu liù kǒu rén.",
+        "id": "Keluargaku ada enam orang.",
+        "en": "There are six people in my family.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menunjuk foto keluarga berisi enam orang di dinding."
+      }
+    }
+  ]
+}

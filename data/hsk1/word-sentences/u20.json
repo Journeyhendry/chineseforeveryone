@@ -1,0 +1,286 @@
+{
+  "unit": "u20",
+  "entries": [
+    {
+      "wordId": "L1-0371",
+      "hanzi": "玩",
+      "sentence": {
+        "hanzi": "孩子们在外边玩。",
+        "pinyin": "Háizimen zài wàibian wán.",
+        "id": "Anak-anak main di luar.",
+        "en": "The kids are playing outside.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik dan teman-temannya bermain bola di halaman; Nenek melihat dari jendela."
+      }
+    },
+    {
+      "wordId": "L1-0040",
+      "hanzi": "唱",
+      "sentence": {
+        "hanzi": "我喜欢唱歌。",
+        "pinyin": "Wǒ xǐhuan chàng gē.",
+        "id": "Aku suka bernyanyi.",
+        "en": "I like singing.",
+        "source": "tatoeba",
+        "sourceId": 357940,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik bernyanyi riang sambil memegang mikrofon mainan, not musik melayang."
+      }
+    },
+    {
+      "wordId": "L1-0119",
+      "hanzi": "歌",
+      "sentence": {
+        "hanzi": "妈妈，我给你唱个歌！",
+        "pinyin": "Māma, wǒ gěi nǐ chàng ge gē!",
+        "id": "Bu, aku nyanyikan lagu buat Ibu, ya!",
+        "en": "Mom, let me sing you a song!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik berdiri di depan Ibu yang duduk di sofa, siap bernyanyi."
+      }
+    },
+    {
+      "wordId": "L1-0082",
+      "hanzi": "电影",
+      "sentence": {
+        "hanzi": "我们去看电影吧！",
+        "pinyin": "Wǒmen qù kàn diànyǐng ba!",
+        "id": "Yuk, kita nonton film!",
+        "en": "Let's go to the movies!",
+        "source": "tatoeba",
+        "sourceId": 7774577,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakak memegang dua tiket di depan bioskop, mengajak temannya."
+      }
+    },
+    {
+      "wordId": "L1-0080",
+      "hanzi": "电视",
+      "sentence": {
+        "hanzi": "爸爸在看电视。",
+        "pinyin": "Bàba zài kàn diànshì.",
+        "id": "Ayah sedang nonton TV.",
+        "en": "Dad is watching TV.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ayah duduk di sofa memegang remote menonton TV."
+      }
+    },
+    {
+      "wordId": "L1-0079",
+      "hanzi": "电脑",
+      "sentence": {
+        "hanzi": "我想玩电脑。",
+        "pinyin": "Wǒ xiǎng wán diànnǎo.",
+        "id": "Aku mau main komputer.",
+        "en": "I want to play on the computer.",
+        "source": "tatoeba",
+        "sourceId": 669406,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakak berdiri di samping komputer menatapnya penuh harap."
+      }
+    },
+    {
+      "wordId": "L1-0340",
+      "hanzi": "手机",
+      "sentence": {
+        "hanzi": "不要玩手机了！",
+        "pinyin": "Búyào wán shǒujī le!",
+        "id": "Sudah, jangan main HP lagi!",
+        "en": "Stop playing on your phone!",
+        "source": "unit",
+        "sourceId": "n-u20:1",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Malam hari Ibu masuk kamar dan menunjuk HP di tangan Adik."
+      }
+    },
+    {
+      "wordId": "L1-0078",
+      "hanzi": "电话",
+      "sentence": {
+        "hanzi": "妈妈，你的电话！",
+        "pinyin": "Māma, nǐ de diànhuà!",
+        "id": "Bu, ada telepon buat Ibu!",
+        "en": "Mom, phone for you!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menyerahkan telepon yang berdering kepada Ibu."
+      }
+    },
+    {
+      "wordId": "L1-0525",
+      "hanzi": "喂",
+      "sentence": {
+        "hanzi": "喂，你在哪儿？",
+        "pinyin": "Wèi, nǐ zài nǎr?",
+        "id": "Halo, kamu di mana?",
+        "en": "Hello, where are you?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Sapaan pembuka di telepon dan jawabannya.",
+          "en": "The greeting for answering or starting a phone call, and the reply."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "喂，你在哪儿？",
+            "pinyin": "Wèi, nǐ zài nǎr?",
+            "id": "Halo, kamu di mana?",
+            "en": "Hello, where are you?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "我在书店。",
+            "pinyin": "Wǒ zài shūdiàn.",
+            "id": "Aku di toko buku.",
+            "en": "I'm at the bookshop."
+          }
+        ]
+      },
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Layar terbagi: Ibu menelepon di rumah, Kakak menjawab di toko buku."
+      }
+    },
+    {
+      "wordId": "L1-0058",
+      "hanzi": "打电话",
+      "sentence": {
+        "hanzi": "妈妈在给爸爸打电话。",
+        "pinyin": "Māma zài gěi bàba dǎ diànhuà.",
+        "id": "Ibu sedang menelepon Ayah.",
+        "en": "Mom is calling Dad.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ibu menelepon dengan HP di telinga; gelembung kecil memperlihatkan wajah Ayah."
+      }
+    },
+    {
+      "wordId": "L1-0140",
+      "hanzi": "好看",
+      "sentence": {
+        "hanzi": "这个电影很好看！",
+        "pinyin": "Zhège diànyǐng hěn hǎokàn!",
+        "id": "Filmnya seru banget!",
+        "en": "This movie is really good!",
+        "source": "unit",
+        "sourceId": "n-u20:4",
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menonton film di tablet dengan mata berbinar."
+      }
+    },
+    {
+      "wordId": "L1-0141",
+      "hanzi": "好听",
+      "sentence": {
+        "hanzi": "这个歌很好听！",
+        "pinyin": "Zhège gē hěn hǎotīng!",
+        "id": "Lagu ini enak didengar!",
+        "en": "This song sounds great!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Nenek memejamkan mata menikmati lagu dari radio, not musik melayang."
+      }
+    },
+    {
+      "wordId": "L1-0142",
+      "hanzi": "好玩儿",
+      "sentence": {
+        "hanzi": "这个游戏很好玩儿！",
+        "pinyin": "Zhège yóuxì hěn hǎowánr!",
+        "id": "Permainan ini seru!",
+        "en": "This game is really fun!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakak dan Adik tertawa bermain papan permainan di lantai."
+      }
+    }
+  ]
+}

@@ -89,7 +89,7 @@ export type Token =
   | { kind: 'digits' | 'punct' | 'foreign'; text: string }
 
 /** Splits `text` entirely into HSK 1 forms (longest match from the left), or returns null. */
-function splitIntoForms(text: string, lex: Lexicon): Token[] | null {
+export function splitIntoForms(text: string, lex: Lexicon): Token[] | null {
   const chars = [...text]
   const out: Token[] = []
   let i = 0

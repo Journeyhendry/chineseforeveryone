@@ -1,0 +1,305 @@
+{
+  "unit": "u04",
+  "entries": [
+    {
+      "wordId": "L1-0464",
+      "hanzi": "这",
+      "sentence": {
+        "hanzi": "这是我妈妈。",
+        "pinyin": "Zhè shì wǒ māma.",
+        "id": "Ini ibuku.",
+        "en": "This is my mom.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0464",
+        "fit": "redraw",
+        "note": "Kakak memperkenalkan Ibu kepada temannya dengan telapak terbuka."
+      }
+    },
+    {
+      "wordId": "L1-0254",
+      "hanzi": "那",
+      "sentence": {
+        "hanzi": "那是我们的学校。",
+        "pinyin": "Nà shì wǒmen de xuéxiào.",
+        "id": "Itu sekolah kami.",
+        "en": "That's our school.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0254",
+        "fit": "redraw",
+        "note": "Adik menunjuk gedung sekolah yang jauh di ujung jalan; Nenek ikut melihat."
+      }
+    },
+    {
+      "wordId": "L1-0532",
+      "hanzi": "这个",
+      "sentence": {
+        "hanzi": "我要这个！",
+        "pinyin": "Wǒ yào zhège!",
+        "id": "Aku mau yang ini!",
+        "en": "I want this one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0532",
+        "fit": "rebubble",
+        "note": "Adik menyodorkan boneka beruang di tangannya ke depan; mainan lain masih di rak."
+      }
+    },
+    {
+      "wordId": "L1-0515",
+      "hanzi": "那个",
+      "sentence": {
+        "hanzi": "我喜欢那个！",
+        "pinyin": "Wǒ xǐhuan nàge!",
+        "id": "Aku suka yang itu!",
+        "en": "I like that one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0515",
+        "fit": "rebubble",
+        "note": "Kakak menunjuk sepeda merah yang jauh di seberang jalan, bukan sepeda biru di dekatnya."
+      }
+    },
+    {
+      "wordId": "L1-0468",
+      "hanzi": "这些",
+      "sentence": {
+        "hanzi": "这些是我的！",
+        "pinyin": "Zhèxiē shì wǒ de!",
+        "id": "Ini punyaku!",
+        "en": "These are mine!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0468",
+        "fit": "rebubble",
+        "note": "Adik memeluk beberapa boneka di dadanya."
+      }
+    },
+    {
+      "wordId": "L1-0258",
+      "hanzi": "那些",
+      "sentence": {
+        "hanzi": "那些是你的吗？",
+        "pinyin": "Nàxiē shì nǐ de ma?",
+        "id": "Yang di sana itu punyamu?",
+        "en": "Are those yours?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0258",
+        "fit": "redraw",
+        "note": "Ibu menunjuk beberapa mainan di rak yang jauh sambil bertanya kepada Adik."
+      }
+    },
+    {
+      "wordId": "L1-0467",
+      "hanzi": "这儿",
+      "sentence": {
+        "hanzi": "来，坐这儿！",
+        "pinyin": "Lái, zuò zhèr!",
+        "id": "Sini, duduk di sini!",
+        "en": "Come, sit here!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0467",
+        "fit": "rebubble",
+        "note": "Ibu duduk di sofa dan menepuk tempat kosong di sebelahnya, memanggil Adik."
+      }
+    },
+    {
+      "wordId": "L1-0257",
+      "hanzi": "那儿",
+      "sentence": {
+        "hanzi": "我们去那儿吧！",
+        "pinyin": "Wǒmen qù nàr ba!",
+        "id": "Kita ke sana, yuk!",
+        "en": "Let's go there!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0257",
+        "fit": "rebubble",
+        "note": "Kakak menunjuk kedai teh susu di seberang jalan sambil bicara dengan temannya."
+      }
+    },
+    {
+      "wordId": "L1-0466",
+      "hanzi": "这里",
+      "sentence": {
+        "hanzi": "我们在这里。",
+        "pinyin": "Wǒmen zài zhèlǐ.",
+        "id": "Kita ada di sini.",
+        "en": "We're here.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0466",
+        "fit": "rebubble",
+        "note": "Ayah memegang peta taman dan menunjuk tanda lokasi di peta."
+      }
+    },
+    {
+      "wordId": "L1-0256",
+      "hanzi": "那里",
+      "sentence": {
+        "hanzi": "他们在那里！",
+        "pinyin": "Tāmen zài nàlǐ!",
+        "id": "Mereka di sana!",
+        "en": "They're over there!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0256",
+        "fit": "rebubble",
+        "note": "Kakek menunjuk Ayah dan Kakak yang kecil di kejauhan dekat pagoda di atas bukit; Adik ikut melihat."
+      }
+    },
+    {
+      "wordId": "L1-0465",
+      "hanzi": "这边",
+      "sentence": {
+        "hanzi": "您好，这边请！",
+        "pinyin": "Nín hǎo, zhèbiān qǐng!",
+        "id": "Halo, silakan lewat sini!",
+        "en": "Hello, this way, please!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "waiter",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0465",
+        "fit": "rebubble",
+        "note": "Di restoran, pelayan mempersilakan Ibu ke meja di dekatnya dengan telapak terbuka."
+      }
+    },
+    {
+      "wordId": "L1-0255",
+      "hanzi": "那边",
+      "sentence": {
+        "hanzi": "请坐那边。",
+        "pinyin": "Qǐng zuò nàbiān.",
+        "id": "Silakan duduk di sebelah sana.",
+        "en": "Please sit over there.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "waiter",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0255",
+        "fit": "rebubble",
+        "note": "Pelayan menunjuk meja kosong jauh di dekat jendela."
+      }
+    },
+    {
+      "wordId": "L1-0441",
+      "hanzi": "有",
+      "sentence": {
+        "hanzi": "我有很多朋友。",
+        "pinyin": "Wǒ yǒu hěn duō péngyou.",
+        "id": "Aku punya banyak teman.",
+        "en": "I have lots of friends.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0441",
+        "fit": "redraw",
+        "note": "Adik berdiri di tengah lima teman yang saling bergandengan tangan di taman."
+      }
+    },
+    {
+      "wordId": "L1-0236",
+      "hanzi": "没有",
+      "sentence": {
+        "hanzi": "家里没有牛奶了。",
+        "pinyin": "Jiā li méiyǒu niúnǎi le.",
+        "id": "Susu di rumah habis.",
+        "en": "We're out of milk.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0236",
+        "fit": "redraw",
+        "note": "Ibu membuka kulkas dan memegang kotak susu yang kosong."
+      }
+    },
+    {
+      "wordId": "L1-0455",
+      "hanzi": "在",
+      "sentence": {
+        "hanzi": "我在这儿！",
+        "pinyin": "Wǒ zài zhèr!",
+        "id": "Aku di sini!",
+        "en": "I'm here!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0455",
+        "fit": "keep",
+        "note": "Adik bersembunyi di dalam lemari, hanya kepalanya yang terlihat."
+      }
+    }
+  ]
+}

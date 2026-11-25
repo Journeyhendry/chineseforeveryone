@@ -1,0 +1,285 @@
+{
+  "unit": "u07",
+  "entries": [
+    {
+      "wordId": "L1-0305",
+      "hanzi": "人",
+      "sentence": {
+        "hanzi": "这儿人很多。",
+        "pinyin": "Zhèr rén hěn duō.",
+        "id": "Di sini ramai sekali.",
+        "en": "There are lots of people here.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0305",
+        "fit": "redraw",
+        "note": "Ayah menggandeng Adik di stasiun yang penuh orang."
+      }
+    },
+    {
+      "wordId": "L1-0284",
+      "hanzi": "朋友",
+      "sentence": {
+        "hanzi": "她是我的好朋友。",
+        "pinyin": "Tā shì wǒ de hǎo péngyou.",
+        "id": "Dia sahabatku.",
+        "en": "She's my good friend.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0284",
+        "fit": "rebubble",
+        "note": "Ibu dan temannya tertawa bersama sambil minum teh susu di kedai."
+      }
+    },
+    {
+      "wordId": "L1-0365",
+      "hanzi": "同学",
+      "sentence": {
+        "hanzi": "我们是同学。",
+        "pinyin": "Wǒmen shì tóngxué.",
+        "id": "Kami teman sekelas.",
+        "en": "We're classmates.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0365",
+        "fit": "rebubble",
+        "note": "Kakak dan teman kuliahnya duduk bersebelahan di kelas, berbagi satu buku."
+      }
+    },
+    {
+      "wordId": "L1-0505",
+      "hanzi": "大家",
+      "sentence": {
+        "hanzi": "大家好！",
+        "pinyin": "Dàjiā hǎo!",
+        "id": "Halo, semuanya!",
+        "en": "Hello, everyone!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0505",
+        "fit": "redraw",
+        "note": "Bu Guru berdiri di depan kelas dan melambai kepada semua murid."
+      }
+    },
+    {
+      "wordId": "L1-0398",
+      "hanzi": "先生",
+      "sentence": {
+        "hanzi": "先生，您好！",
+        "pinyin": "Xiānsheng, nín hǎo!",
+        "id": "Halo, Pak!",
+        "en": "Hello, sir!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "waiter",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0398",
+        "fit": "keep",
+        "note": "Pelayan membungkuk sopan menyambut Ayah di restoran."
+      }
+    },
+    {
+      "wordId": "L1-0518",
+      "hanzi": "女士",
+      "sentence": {
+        "hanzi": "女士，请坐。",
+        "pinyin": "Nǚshì, qǐng zuò.",
+        "id": "Silakan duduk, Bu.",
+        "en": "Please have a seat, ma'am.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "waiter",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0518",
+        "fit": "rebubble",
+        "note": "Pelayan membungkuk sopan dan menarik kursi untuk Ibu yang membawa tas tangan."
+      }
+    },
+    {
+      "wordId": "L1-0261",
+      "hanzi": "男",
+      "sentence": {
+        "hanzi": "男同学在这边。",
+        "pinyin": "Nán tóngxué zài zhèbiān.",
+        "id": "Murid laki-laki di sebelah sini.",
+        "en": "Boys over here, please.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0261",
+        "fit": "redraw",
+        "note": "Di lapangan sekolah, Bu Guru membagi murid: anak laki-laki berbaris di sisi kiri."
+      }
+    },
+    {
+      "wordId": "L1-0276",
+      "hanzi": "女",
+      "sentence": {
+        "hanzi": "那个女孩子是谁？",
+        "pinyin": "Nàge nǚháizi shì shéi?",
+        "id": "Anak perempuan itu siapa?",
+        "en": "Who's that girl?",
+        "source": "unit",
+        "sourceId": "n-u07:1",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0276",
+        "fit": "redraw",
+        "note": "Ibu bertanya kepada Kakak sambil melihat seorang gadis yang melambai dari jauh."
+      }
+    },
+    {
+      "wordId": "L1-0135",
+      "hanzi": "孩子",
+      "sentence": {
+        "hanzi": "我有两个孩子。",
+        "pinyin": "Wǒ yǒu liǎng gè háizi.",
+        "id": "Saya punya dua anak.",
+        "en": "I have two children.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0135",
+        "fit": "redraw",
+        "note": "Ibu merangkul Kakak dan Adik di taman sambil bicara dengan teman."
+      }
+    },
+    {
+      "wordId": "L1-0404",
+      "hanzi": "小朋友",
+      "sentence": {
+        "hanzi": "小朋友，你好！",
+        "pinyin": "Xiǎopéngyǒu, nǐ hǎo!",
+        "id": "Halo, adik kecil!",
+        "en": "Hello there, little one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0404",
+        "fit": "keep",
+        "note": "Guru membungkuk ramah dan menepuk kepala Adik."
+      }
+    },
+    {
+      "wordId": "L1-0263",
+      "hanzi": "男朋友",
+      "sentence": {
+        "hanzi": "他是我男朋友。",
+        "pinyin": "Tā shì wǒ nánpéngyou.",
+        "id": "Dia pacarku.",
+        "en": "He's my boyfriend.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "friend",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0263",
+        "fit": "keep",
+        "note": "Seorang wanita muda menunjuk pemuda di sampingnya; ada hati kecil di antara mereka."
+      }
+    },
+    {
+      "wordId": "L1-0279",
+      "hanzi": "女朋友",
+      "sentence": {
+        "hanzi": "她是我女朋友。",
+        "pinyin": "Tā shì wǒ nǚpéngyou.",
+        "id": "Dia pacarku.",
+        "en": "She's my girlfriend.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0279",
+        "fit": "keep",
+        "note": "Seorang pemuda menunjuk wanita muda di sampingnya; ada hati kecil di antara mereka."
+      }
+    },
+    {
+      "wordId": "L1-0089",
+      "hanzi": "都",
+      "sentence": {
+        "hanzi": "我们都要！",
+        "pinyin": "Wǒmen dōu yào!",
+        "id": "Kami semua mau!",
+        "en": "We all want some!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0089",
+        "fit": "keep",
+        "note": "Nenek membawa sepiring pangsit, dan semua yang lain mengangkat tangan."
+      }
+    },
+    {
+      "wordId": "L1-0145",
+      "hanzi": "和",
+      "sentence": {
+        "hanzi": "我要包子和牛奶。",
+        "pinyin": "Wǒ yào bāozi hé niúnǎi.",
+        "id": "Aku mau bakpao dan susu.",
+        "en": "I'd like a bun and milk.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0145",
+        "fit": "rebubble",
+        "note": "Adik menunjuk bakpao dan segelas susu di nampan sarapan."
+      }
+    }
+  ]
+}

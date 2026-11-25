@@ -1,0 +1,305 @@
+{
+  "unit": "u16",
+  "entries": [
+    {
+      "wordId": "L1-0421",
+      "hanzi": "学校",
+      "sentence": {
+        "hanzi": "我喜欢我的学校。",
+        "pinyin": "Wǒ xǐhuan wǒ de xuéxiào.",
+        "id": "Aku suka sekolahku.",
+        "en": "I like my school.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0421",
+        "fit": "rebubble",
+        "note": "Adik dengan tas sekolah tersenyum di depan gedung sekolah berbendera."
+      }
+    },
+    {
+      "wordId": "L1-0419",
+      "hanzi": "学生",
+      "sentence": {
+        "hanzi": "我们是学生。",
+        "pinyin": "Wǒmen shì xuéshēng.",
+        "id": "Kami murid.",
+        "en": "We are students.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0419",
+        "fit": "keep",
+        "note": "Dua murid dengan tas sekolah berdiri di depan sekolah."
+      }
+    },
+    {
+      "wordId": "L1-0209",
+      "hanzi": "老师",
+      "sentence": {
+        "hanzi": "老师，早上好！",
+        "pinyin": "Lǎoshī, zǎoshang hǎo!",
+        "id": "Selamat pagi, Bu Guru!",
+        "en": "Good morning, teacher!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0209",
+        "fit": "rebubble",
+        "note": "Adik melambai pada guru berkacamata yang berdiri di depan papan tulis."
+      }
+    },
+    {
+      "wordId": "L1-0418",
+      "hanzi": "学",
+      "sentence": {
+        "hanzi": "哥哥在学做饭。",
+        "pinyin": "Gēge zài xué zuòfàn.",
+        "id": "Kakak sedang belajar masak.",
+        "en": "Big brother is learning to cook.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0418",
+        "fit": "redraw",
+        "note": "Kakak memegang wajan di dapur, Ibu di sampingnya menunjukkan caranya."
+      }
+    },
+    {
+      "wordId": "L1-0420",
+      "hanzi": "学习",
+      "sentence": {
+        "hanzi": "妹妹在房间里学习。",
+        "pinyin": "Mèimei zài fángjiān li xuéxí.",
+        "id": "Adik sedang belajar di kamar.",
+        "en": "Little sister is studying in her room.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0420",
+        "fit": "rebubble",
+        "note": "Adik duduk belajar di meja kamarnya dengan buku terbuka."
+      }
+    },
+    {
+      "wordId": "L1-0323",
+      "hanzi": "上学",
+      "sentence": {
+        "hanzi": "我去上学了！",
+        "pinyin": "Wǒ qù shàngxué le!",
+        "id": "Aku berangkat sekolah, ya!",
+        "en": "I'm off to school!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0323",
+        "fit": "keep",
+        "note": "Pagi hari Adik berangkat ke sekolah; Nenek melambai dari depan rumah."
+      }
+    },
+    {
+      "wordId": "L1-0199",
+      "hanzi": "课",
+      "sentence": {
+        "hanzi": "今天有中文课。",
+        "pinyin": "Jīntiān yǒu Zhōngwén kè.",
+        "id": "Hari ini ada pelajaran bahasa Mandarin.",
+        "en": "There is Chinese class today.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0199",
+        "fit": "keep",
+        "note": "Guru menunjuk jadwal pelajaran di papan."
+      }
+    },
+    {
+      "wordId": "L1-0320",
+      "hanzi": "上课",
+      "sentence": {
+        "hanzi": "同学们，上课了！",
+        "pinyin": "Tóngxuémen, shàngkè le!",
+        "id": "Anak-anak, pelajaran dimulai!",
+        "en": "Class is starting, everyone!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0320",
+        "fit": "rebubble",
+        "note": "Bel berbunyi, guru masuk kelas; Kakak dan temannya sudah duduk siap."
+      }
+    },
+    {
+      "wordId": "L1-0394",
+      "hanzi": "下课",
+      "sentence": {
+        "hanzi": "下课了！我们去吃饭吧！",
+        "pinyin": "Xiàkè le! Wǒmen qù chī fàn ba!",
+        "id": "Kelas selesai! Yuk, kita makan!",
+        "en": "Class is over! Let's go eat!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0394",
+        "fit": "rebubble",
+        "note": "Bel berbunyi; Kakak dan temannya berlari gembira ke pintu kelas."
+      }
+    },
+    {
+      "wordId": "L1-0406",
+      "hanzi": "小学",
+      "sentence": {
+        "hanzi": "这是我的小学。",
+        "pinyin": "Zhè shì wǒ de xiǎoxué.",
+        "id": "Ini SD-ku.",
+        "en": "This is my primary school.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0406",
+        "fit": "rebubble",
+        "note": "Adik dengan tas sekolah menunjuk SD kecil berwarna cerah dengan perosotan."
+      }
+    },
+    {
+      "wordId": "L1-0407",
+      "hanzi": "小学生",
+      "sentence": {
+        "hanzi": "我是小学生。",
+        "pinyin": "Wǒ shì xiǎoxuéshēng.",
+        "id": "Aku murid SD.",
+        "en": "I'm a primary school pupil.",
+        "source": "tatoeba",
+        "sourceId": 13138444,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0407",
+        "fit": "keep",
+        "note": "Adik membawa tas sekolah besar dan melambai."
+      }
+    },
+    {
+      "wordId": "L1-0481",
+      "hanzi": "中学",
+      "sentence": {
+        "hanzi": "妹妹明年上中学。",
+        "pinyin": "Mèimei míngnián shàng zhōngxué.",
+        "id": "Tahun depan Adik masuk SMP.",
+        "en": "Little sister starts middle school next year.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0481",
+        "fit": "redraw",
+        "note": "Ibu dan Adik berdiri di depan gedung SMP bertingkat; Adik menatapnya penasaran."
+      }
+    },
+    {
+      "wordId": "L1-0482",
+      "hanzi": "中学生",
+      "sentence": {
+        "hanzi": "我是中学生。",
+        "pinyin": "Wǒ shì zhōngxuéshēng.",
+        "id": "Aku murid SMP.",
+        "en": "I'm a middle school student.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0482",
+        "fit": "keep",
+        "note": "Seorang murid SMP dengan ransel merah melambai di depan sekolahnya."
+      }
+    },
+    {
+      "wordId": "L1-0062",
+      "hanzi": "大学",
+      "sentence": {
+        "hanzi": "哥哥今年上大学了。",
+        "pinyin": "Gēge jīnnián shàng dàxué le.",
+        "id": "Tahun ini Kakak sudah kuliah.",
+        "en": "Big brother started university this year.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0062",
+        "fit": "rebubble",
+        "note": "Kakak berdiri di depan gedung kampus besar berkubah."
+      }
+    },
+    {
+      "wordId": "L1-0063",
+      "hanzi": "大学生",
+      "sentence": {
+        "hanzi": "我是大学生。",
+        "pinyin": "Wǒ shì dàxuéshēng.",
+        "id": "Aku mahasiswa.",
+        "en": "I'm a university student.",
+        "source": "tatoeba",
+        "sourceId": 567558,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0063",
+        "fit": "keep",
+        "note": "Kakak membawa laptop di depan kampus."
+      }
+    }
+  ]
+}

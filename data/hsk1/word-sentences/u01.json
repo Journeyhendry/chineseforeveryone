@@ -1,0 +1,514 @@
+{
+  "unit": "u01",
+  "entries": [
+    {
+      "wordId": "L1-0517",
+      "hanzi": "你好",
+      "sentence": {
+        "hanzi": "你好！请进！",
+        "pinyin": "Nǐ hǎo! Qǐng jìn!",
+        "id": "Halo! Silakan masuk!",
+        "en": "Hello! Come on in!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Sapaan lebih mudah dipahami bila terlihat dibalas.",
+          "en": "A greeting is easier to understand when you see it answered."
+        },
+        "lines": [
+          {
+            "who": "friend",
+            "hanzi": "你好！",
+            "pinyin": "Nǐ hǎo!",
+            "id": "Halo!",
+            "en": "Hello!"
+          },
+          {
+            "who": "mama",
+            "hanzi": "你好！请进！",
+            "pinyin": "Nǐ hǎo! Qǐng jìn!",
+            "id": "Halo! Silakan masuk!",
+            "en": "Hello! Come on in!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0517",
+        "fit": "rebubble",
+        "note": "Ibu membuka pintu dan melambai kepada teman yang datang."
+      }
+    },
+    {
+      "wordId": "L1-0271",
+      "hanzi": "你",
+      "sentence": {
+        "hanzi": "谢谢你！",
+        "pinyin": "Xièxie nǐ!",
+        "id": "Terima kasih, ya!",
+        "en": "Thank you!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0271",
+        "fit": "redraw",
+        "note": "Teman memungut topi Adik yang jatuh dan memberikannya; Adik menunjuk teman itu sambil tersenyum."
+      }
+    },
+    {
+      "wordId": "L1-0138",
+      "hanzi": "好",
+      "sentence": {
+        "hanzi": "很好！",
+        "pinyin": "Hěn hǎo!",
+        "id": "Bagus sekali!",
+        "en": "Very good!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0138",
+        "fit": "rebubble",
+        "note": "Ibu mengacungkan jempol untuk apel merah yang bagus."
+      }
+    },
+    {
+      "wordId": "L1-0274",
+      "hanzi": "您",
+      "sentence": {
+        "hanzi": "爷爷，您好！",
+        "pinyin": "Yéye, nín hǎo!",
+        "id": "Halo, Kek!",
+        "en": "Hello, Grandpa!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0274",
+        "fit": "rebubble",
+        "note": "Satu panel saja: Adik membungkuk sopan kepada Kakek."
+      }
+    },
+    {
+      "wordId": "L1-0272",
+      "hanzi": "你们",
+      "sentence": {
+        "hanzi": "你们好！",
+        "pinyin": "Nǐmen hǎo!",
+        "id": "Halo, kalian!",
+        "en": "Hello, you two!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0272",
+        "fit": "keep",
+        "note": "Bu Guru membuka tangan ke arah Kakak dan temannya."
+      }
+    },
+    {
+      "wordId": "L1-0296",
+      "hanzi": "请",
+      "sentence": {
+        "hanzi": "请吃水果！",
+        "pinyin": "Qǐng chī shuǐguǒ!",
+        "id": "Silakan makan buahnya!",
+        "en": "Please have some fruit!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0296",
+        "fit": "rebubble",
+        "note": "Ibu menyodorkan piring berisi buah kepada teman yang datang."
+      }
+    },
+    {
+      "wordId": "L1-0299",
+      "hanzi": "请问",
+      "sentence": {
+        "hanzi": "你好，请问牛奶在哪儿？",
+        "pinyin": "Nǐ hǎo, qǐngwèn niúnǎi zài nǎr?",
+        "id": "Permisi, susunya di mana, ya?",
+        "en": "Excuse me, where is the milk?",
+        "source": "unit",
+        "sourceId": "n-u04:1",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0299",
+        "fit": "redraw",
+        "note": "Di toko, Ibu mengangkat tangan dengan sopan untuk bertanya kepada penjual."
+      }
+    },
+    {
+      "wordId": "L1-0410",
+      "hanzi": "谢谢",
+      "sentence": {
+        "hanzi": "谢谢爸爸！",
+        "pinyin": "Xièxie bàba!",
+        "id": "Makasih, Yah!",
+        "en": "Thanks, Dad!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Terima kasih diucapkan saat menerima sesuatu; dialog menunjukkan kapan dipakai.",
+          "en": "Thanks is said when receiving something; the dialog shows when to use it."
+        },
+        "lines": [
+          {
+            "who": "baba",
+            "hanzi": "给你。",
+            "pinyin": "Gěi nǐ.",
+            "id": "Ini buat kamu.",
+            "en": "Here you go."
+          },
+          {
+            "who": "meimei",
+            "hanzi": "谢谢爸爸！",
+            "pinyin": "Xièxie bàba!",
+            "id": "Makasih, Yah!",
+            "en": "Thanks, Dad!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0410",
+        "fit": "rebubble",
+        "note": "Ayah memberi Adik balon; Adik senang."
+      }
+    },
+    {
+      "wordId": "L1-0032",
+      "hanzi": "不客气",
+      "sentence": {
+        "hanzi": "不客气！",
+        "pinyin": "Búkèqi!",
+        "id": "Sama-sama!",
+        "en": "You're welcome!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "不客气 adalah balasan untuk 谢谢, jadi perlu terlihat pasangannya.",
+          "en": "不客气 is the reply to 谢谢, so the pair needs to be shown."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "谢谢！",
+            "pinyin": "Xièxie!",
+            "id": "Makasih!",
+            "en": "Thanks!"
+          },
+          {
+            "who": "gege",
+            "hanzi": "不客气！",
+            "pinyin": "Búkèqi!",
+            "id": "Sama-sama!",
+            "en": "You're welcome!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0032",
+        "fit": "keep",
+        "note": "Adik berterima kasih kepada Kakak karena bolanya; Kakak melambai santai."
+      }
+    },
+    {
+      "wordId": "L1-0093",
+      "hanzi": "对不起",
+      "sentence": {
+        "hanzi": "爸爸，对不起！",
+        "pinyin": "Bàba, duìbuqǐ!",
+        "id": "Maaf, Yah!",
+        "en": "Sorry, Dad!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Permintaan maaf dan jawabannya selalu berpasangan.",
+          "en": "An apology and its reply always come as a pair."
+        },
+        "lines": [
+          {
+            "who": "gege",
+            "hanzi": "爸爸，对不起！",
+            "pinyin": "Bàba, duìbuqǐ!",
+            "id": "Maaf, Yah!",
+            "en": "Sorry, Dad!"
+          },
+          {
+            "who": "baba",
+            "hanzi": "没关系。",
+            "pinyin": "Méiguānxi.",
+            "id": "Nggak apa-apa.",
+            "en": "It's okay."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0093",
+        "fit": "rebubble",
+        "note": "Kakak menumpahkan teh di meja Ayah, lalu membungkuk minta maaf."
+      }
+    },
+    {
+      "wordId": "L1-0233",
+      "hanzi": "没关系",
+      "sentence": {
+        "hanzi": "没关系！",
+        "pinyin": "Méiguānxi!",
+        "id": "Nggak apa-apa!",
+        "en": "That's okay!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "没关系 adalah jawaban untuk 对不起, jadi perlu terlihat pasangannya.",
+          "en": "没关系 is the reply to 对不起, so the pair needs to be shown."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "对不起！",
+            "pinyin": "Duìbuqǐ!",
+            "id": "Maaf!",
+            "en": "Sorry!"
+          },
+          {
+            "who": "nainai",
+            "hanzi": "没关系！",
+            "pinyin": "Méiguānxi!",
+            "id": "Nggak apa-apa!",
+            "en": "That's okay!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0233",
+        "fit": "keep",
+        "note": "Adik menabrak Nenek dan minta maaf; Nenek tersenyum dan melambai."
+      }
+    },
+    {
+      "wordId": "L1-0454",
+      "hanzi": "再见",
+      "sentence": {
+        "hanzi": "老师再见！",
+        "pinyin": "Lǎoshī zàijiàn!",
+        "id": "Sampai jumpa, Bu Guru!",
+        "en": "Bye, teacher!",
+        "source": "unit",
+        "sourceId": "n-u01:1",
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Salam pamit biasanya dibalas; dialog menunjukkan pemakaiannya.",
+          "en": "A goodbye is usually returned; the dialog shows how it is used."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "老师再见！",
+            "pinyin": "Lǎoshī zàijiàn!",
+            "id": "Sampai jumpa, Bu Guru!",
+            "en": "Bye, teacher!"
+          },
+          {
+            "who": "teacher",
+            "hanzi": "再见！明天见！",
+            "pinyin": "Zàijiàn! Míngtiān jiàn!",
+            "id": "Sampai jumpa! Sampai besok!",
+            "en": "Bye! See you tomorrow!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0454",
+        "fit": "redraw",
+        "note": "Di gerbang sekolah, Adik membawa tas dan melambai kepada Bu Guru."
+      }
+    },
+    {
+      "wordId": "L1-0227",
+      "hanzi": "吗",
+      "sentence": {
+        "hanzi": "你吃包子吗？",
+        "pinyin": "Nǐ chī bāozi ma?",
+        "id": "Kamu mau bakpao?",
+        "en": "Do you want a bun?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Partikel tanya 吗 baru jelas bila pertanyaannya dijawab.",
+          "en": "The question particle 吗 is only clear when the question gets an answer."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "你吃包子吗？",
+            "pinyin": "Nǐ chī bāozi ma?",
+            "id": "Kamu mau bakpao?",
+            "en": "Do you want a bun?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "好，谢谢！",
+            "pinyin": "Hǎo, xièxie!",
+            "id": "Mau, makasih!",
+            "en": "Sure, thanks!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0227",
+        "fit": "rebubble",
+        "note": "Adik menawarkan bakpao kepada Kakak."
+      }
+    },
+    {
+      "wordId": "L1-0146",
+      "hanzi": "很",
+      "sentence": {
+        "hanzi": "很好吃！",
+        "pinyin": "Hěn hǎochī!",
+        "id": "Enak banget!",
+        "en": "It's really tasty!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0146",
+        "fit": "redraw",
+        "note": "Adik menggigit bakpao dan tersenyum lebar."
+      }
+    },
+    {
+      "wordId": "L1-0269",
+      "hanzi": "呢",
+      "sentence": {
+        "hanzi": "我喝茶，你呢？",
+        "pinyin": "Wǒ hē chá, nǐ ne?",
+        "id": "Aku minum teh, kamu?",
+        "en": "I'll have tea. And you?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "呢 menanyakan balik \"kalau kamu?\"; perlu kalimat sebelumnya dan jawabannya.",
+          "en": "呢 asks back \"and you?\"; it needs the earlier line and an answer."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "我喝茶，你呢？",
+            "pinyin": "Wǒ hē chá, nǐ ne?",
+            "id": "Aku minum teh, kamu?",
+            "en": "I'll have tea. And you?"
+          },
+          {
+            "who": "baba",
+            "hanzi": "我也喝茶。",
+            "pinyin": "Wǒ yě hē chá.",
+            "id": "Aku juga teh.",
+            "en": "Tea for me too."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0269",
+        "fit": "rebubble",
+        "note": "Ibu memegang cangkir teh dan menoleh kepada Ayah."
+      }
+    },
+    {
+      "wordId": "L1-0005",
+      "hanzi": "吧",
+      "sentence": {
+        "hanzi": "我们走吧！",
+        "pinyin": "Wǒmen zǒu ba!",
+        "id": "Ayo kita pergi!",
+        "en": "Let's go!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "吧 berarti ajakan; dialog menunjukkan ajakan itu diterima.",
+          "en": "吧 makes a suggestion; the dialog shows it being accepted."
+        },
+        "lines": [
+          {
+            "who": "gege",
+            "hanzi": "我们走吧！",
+            "pinyin": "Wǒmen zǒu ba!",
+            "id": "Ayo kita pergi!",
+            "en": "Let's go!"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "好！",
+            "pinyin": "Hǎo!",
+            "id": "Oke!",
+            "en": "Okay!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0005",
+        "fit": "rebubble",
+        "note": "Kakak memegang bola dan menunjuk ke pintu; Adik mengangguk senang."
+      }
+    }
+  ]
+}

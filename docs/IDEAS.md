@@ -14,3 +14,5 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
 - Tampilan khusus HP dan latihan menulis huruf dengan jari.
 - HSK 2 dan seterusnya.
 - Relawan penutur asli untuk memeriksa materi.
+- Ujian/latihan/kuis: soal diacak, tiap ujian soalnya berbeda (2026-11-25).
+- Kelulusan per tahap/level: ada nilai lulus; belum lulus → belajar lagi → ujian ulang (2026-11-25). Usul pemilik: ttanya apakah masuk v1 setelah tugas berjalan selesai.

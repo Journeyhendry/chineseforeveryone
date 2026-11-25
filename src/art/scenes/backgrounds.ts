@@ -132,6 +132,17 @@ export const BACKGROUNDS: Record<string, (b: Box) => string> = {
       floorBand(b, '#D8DCE4', 0.25),
     ].join('')
   },
+  /** Shop inside: pale wall, tiled floor. */
+  shop: (b) => {
+    const hy = horizon(b)
+    const tiles: string[] = []
+    for (let x = b.x + 30; x < b.x + b.w; x += 60) tiles.push(`M${x} ${hy}L${x} ${b.y + b.h}`)
+    return [rect(b.x, b.y, b.w, b.h, '#FFF6E6'), rect(b.x, hy, b.w, b.y + b.h - hy, '#E9E4DA'), el('path', { d: tiles.join(''), fill: 'none', 'stroke-width': 2, opacity: 0.12 }), line(d('M', b.x, hy, 'L', b.x + b.w, hy), 3, 0.2)].join('')
+  },
+  /** Dark cinema hall. */
+  cinema: (b) => rect(b.x, b.y, b.w, b.h, '#2B2540') + rect(b.x, horizon(b) + 30, b.w, b.y + b.h - horizon(b) - 30, '#221D33'),
+  /** A room at night: dim blue wall and floor. */
+  'room-night': (b) => [rect(b.x, b.y, b.w, b.h, '#4A4A7A'), floorBand(b, '#6B5B7B', 0.3), line(d('M', b.x, horizon(b) - 10, 'L', b.x + b.w, horizon(b) - 10), 3, 0.2)].join(''),
   sky: (b) => rect(b.x, b.y, b.w, b.h, '#DDF0FA') + rect(b.x, horizon(b) + 20, b.w, b.y + b.h - horizon(b) - 20, '#BFE3A8'),
   night: (b) => rect(b.x, b.y, b.w, b.h, '#3B3363') + circle(b.x + b.w - 60, b.y + 60, 22, '#FFE8A3', { stroke: false }),
 }

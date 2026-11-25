@@ -78,7 +78,7 @@ function placeChar(c: SceneCharacter, index: number, held: { p: SceneProp; count
   const y = c.y ?? FLOOR
   const cls = ['char', `c-${index + 1}`, `ch-${c.id}`, act === 'char' ? 'act' : '', ...(c.roles ?? [])].filter(Boolean).join(' ')
   const inner = `<g transform="translate(${-FIG_CX} ${-FIG_FLOOR})">${fig.svg}</g>`
-  const svg = pivotGroup(cls, { x, y }, ` scale(${num(fx * s)} ${num(s)})`, inner)
+  const svg = pivotGroup(cls, { x, y }, `${c.rotate ? ` rotate(${num(c.rotate)})` : ''} scale(${num(fx * s)} ${num(s)})`, inner)
   const map = (p: Pt): Pt => ({ x: x + fx * s * (p.x - FIG_CX), y: y + s * (p.y - FIG_FLOOR) })
   const a = fig.anchors
   return {

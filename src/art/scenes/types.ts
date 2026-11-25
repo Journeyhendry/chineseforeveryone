@@ -46,6 +46,8 @@ export interface SceneCharacter {
   scale?: number
   /** mirror horizontally (face / point the other way) */
   flip?: boolean
+  /** degrees around the feet point (e.g. -90: lying in bed) */
+  rotate?: number
   /** part moved by the action preset */
   act?: ActTarget
   /** fingers shown by the 'count' pose */

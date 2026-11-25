@@ -52,6 +52,12 @@ def out_of_time(minutes: float | None = None) -> bool:
     return time.time() - T0 > (minutes or BUDGET_MIN) * 60
 
 
+def write_out(path, text: str) -> None:
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(text, encoding="utf-8")
+
+
 def ref_record(rid: str, src: str, spk: str, text: str, tones: list[int], meas: dict, extra: dict | None = None) -> dict:
     syl = []
     for s in meas["syl"]:
@@ -167,8 +173,7 @@ def cmd_local_native(args):
             if meas:
                 refs.append(ref_record(f"ll:{e['path']}", "lingualibre", spk, w["hanzi"], tones, meas,
                                        {"lic": e["license"], "url": e["sourceUrl"], "au": e["author"]}))
-    Path(args.out).write_text(json.dumps({"part": "local-native", "refs": refs}, ensure_ascii=False, separators=(",", ":")),
-                              encoding="utf-8")
+    write_out(args.out, json.dumps({"part": "local-native", "refs": refs}, ensure_ascii=False, separators=(",", ":")))
     log(f"[local] {len(refs)} rujukan -> {args.out}")
 
 
@@ -324,7 +329,7 @@ def cmd_tatoeba(args):
     except Exception as e:  # noqa: BLE001
         traceback.print_exc()
         report["check"]["error"] = f"{type(e).__name__}: {str(e)[:200]}"
-    Path(args.out).write_text(json.dumps(report, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_out(args.out, json.dumps(report, ensure_ascii=False, separators=(",", ":")))
 
 
 def cmd_commonvoice(args):
@@ -340,8 +345,8 @@ def cmd_commonvoice(args):
             probes[name] = f"{type(e).__name__}: {str(e)[:100]}"
     note = ("Common Voice zh-CN tidak diunduh: unduhan resmi (Mozilla Data Collective) memerlukan akun + persetujuan syarat, "
             "dan salinan Hugging Face bersifat gated (login). Membuat akun adalah urusan pemilik; dilewati.")
-    Path(args.out).write_text(json.dumps({"part": "commonvoice", "refs": [], "check": {"probes": probes, "note": note}},
-                                         ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_out(args.out, json.dumps({"part": "commonvoice", "refs": [], "check": {"probes": probes, "note": note}},
+                                   ensure_ascii=False, separators=(",", ":")))
     log(f"[cv] {probes}")
 
 

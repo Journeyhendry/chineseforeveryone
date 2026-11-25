@@ -46,7 +46,7 @@ Rencana induk untuk membangun website ini sampai v1 selesai. Dibaca oleh setiap 
 | Sesi utama: perencana, penulis PRD task, pemeriksa | Opus |
 | 1b, 5b, isian i18n, README/CREDITS, perbaikan lint kecil, update PROGRESS | Haiku |
 | 2, 3, 4, 5, 8, 9 | Sonnet |
-| 3b (penulis), 3c, 6, 6b, 7, 10 | Opus |
+| 3b (penulis), 3c, 6, 6b, 7, 10, 4c (periksa & setel) | Opus |
 | 3b (pemeriksa kedua, independen) | Sonnet |
 
 Naik tingkat kalau gagal: Haiku → Sonnet → Opus → berhenti.
@@ -113,6 +113,9 @@ Tambah job `check` di `.github/workflows/deploy.yml` (npm ci, typecheck, lint, t
 - **4a (berhenti untuk pemilik)**: workflow `tts-samples.yml` membuat contoh 5 kata + 2 kalimat dari 3–4 kandidat suara perempuan dan 2–3 laki-laki (Kokoro zf_*/zm_*, MeloTTS ZH). Simpan di `public/audio/samples/`, buat halaman sederhana `samples.html` untuk didengar, lalu tulis di PROGRESS "Butuh pemilik: pilih suara". Lanjut task lain sampai pemilik memilih.
 - **4b**: workflow `build-audio.yml`: buat mp3 (mono, 64 kbps, volume dinormalisasi) untuk semua kata, kalimat, ungkapan santai, dialog dengan suara terpilih; cek tiap file dengan Whisper (transkrip harus sama dengan hanzi); yang gagal dibuat ulang dengan variasi pengaturan, gagal lagi → daftar di `data/hsk1/audio-issues.json`. Unduh juga rekaman asli tambahan (Lingua Libre/Commons CC BY-SA, Tatoeba berlisensi bebas) untuk tombol "Dengar penutur asli". Tone Perfect hanya dipakai kalau izin dari MSU sudah ada.
 - Acceptance: setiap kata/kalimat/dialog punya audio suara utama; tingkat lolos Whisper dicatat; atribusi rekaman asli lengkap di CREDITS.md.
+
+### 4c · Perbaiki ketepatan suara (Sonnet skrip, Opus memeriksa) — butuh: 4b
+- PRD lengkap: `docs/tasks/task-4c.md`. Ukur nada & durasi suara P3/L3 terhadap rekaman asli dari banyak sumber, perbaiki yang pendek/lemah, pilih versi terbaik per item, halaman sebelum-sesudah untuk telinga pemilik. Suara P3/L3 tidak diganti.
 
 ### 5 · Tampilan dasar (Sonnet) — butuh: 1
 Tema (token warna/font di CSS variables), menu samping (Belajar, Ulang, Kamus, Progres) yang pindah ke bawah di layar sempit, router (hash router agar aman di GitHub Pages), i18n ID/EN (`src/i18n/id.json`, `en.json`, ganti tanpa reload), halaman pengaturan (bahasa, tampilkan pinyin, kecepatan suara, efek suara), mode gelap. Ikuti mockup artboard 1. Acceptance: semua teks dari file i18n; navigasi keyboard; kontras WCAG AA; tidak ada horizontal scroll di 375 px.

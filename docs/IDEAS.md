@@ -30,3 +30,4 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
   - Sumber kalimat yang boleh: Tatoeba (sebagai referensi/dipakai), kalimat buatan dari luar, atau kalimat dari kata yang sudah ada. Dialog/penggunaan di animasi berkisar di HSK 1.
   - DIBATALKAN pemilik: tidak perlu info "dipelajari di Unit N" saat kata disentuh. Cukup sorot kata baru.
   - Syarat data: kalimat utama tiap kata dicek (a) benar & alami, (b) sederhana/sehari-hari, (c) tandai kata di luar HSK 1 (boleh, tapi tercatat). Utamakan kalimat yang kata-katanya sudah ada.
+  - Tahap 0 juga memakai cara animasi yang sama dengan HSK 1 (kalimat/dialog hybrid) — keputusan pemilik 2026-11-25 (dikerjakan bersama ide animasi baru, bukan sekarang).

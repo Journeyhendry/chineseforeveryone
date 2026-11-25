@@ -18,6 +18,7 @@ import argparse
 import bz2
 import io
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -155,7 +156,10 @@ def cmd_cmn(args):
                 continue
             refs.append(ref_record(rid, src, spk, text, tones, m, {"p": p}))
             (cache / p).unlink(missing_ok=True)
-        log(f"[cmn] {len(refs)}/{len(items)} diukur (gagal {bad})")
+            if len(tones) > 1 and len(refs) <= 6 + 5 * (os.environ.get("TONE_ALIGN") == "1"):
+                log(f"[cmn] contoh {text} {tones} al={m.get('al')} " + " ".join(f"{s['t0']}-{s['t1']}" for s in m["syl"]))
+        multi = [r for r in refs if len(r["tones"]) > 1]
+        log(f"[cmn] {len(refs)}/{len(items)} diukur (gagal {bad}); multi-suku kata {len(multi)}, terselaras {sum(r.get('al', 0) for r in multi)}")
         if out_of_time():
             log("[cmn] waktu habis; sisa dilewati")
             break
@@ -282,7 +286,9 @@ def cmd_ll(args):
             author = na.strip_html(meta.get("Artist", {}).get("value", "")) or ii.get("user") or speaker
             refs.append(ref_record(f"ll:{t}", "lingualibre", "ll:" + speaker.lower().replace(" ", "-"), word, tones, meas,
                                    {"lic": mm.group(1).upper(), "url": ii["descriptionurl"], "au": author[:80]}))
-        log(f"[ll] {len(refs)} rujukan sejauh ini; lisensi ditolak {skipped_lic}")
+        multi = [r for r in refs if len(r["tones"]) > 1]
+        log(f"[ll] {len(refs)} rujukan sejauh ini (multi-suku kata {len(multi)}, terselaras {sum(r.get('al', 0) for r in multi)}); "
+            f"lisensi ditolak {skipped_lic}")
         Path(args.out).parent.mkdir(parents=True, exist_ok=True)
         Path(args.out).write_text(json.dumps({"part": f"ll-{args.shard}", "refs": refs, "skipped": {"license": skipped_lic}},
                                              ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

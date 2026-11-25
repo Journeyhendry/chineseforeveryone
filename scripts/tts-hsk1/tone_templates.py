@@ -191,6 +191,33 @@ def train(rows: list[dict], seed: int = 0) -> tuple[dict, dict]:
     return model, ev
 
 
+def native_stats(rows: list[dict], tpl: dict) -> dict:
+    """Angka rujukan asli untuk standar 1d/1f per kelas (single, word, sent, syl): median + simpangan jarak DTW ke templat nada
+    (nada 1-4, templat menurut nada berikutnya), median rasio rentang (=1 menurut konstruksi), porsi suku kata di bawah p5 durasi."""
+    out: dict = {}
+    for c in ("syl", "single", "word", "sent"):
+        sel = [r for r in rows if r["cls"] == c and r["tone"] in (1, 2, 3, 4) and r["c_rel"]]
+        if not sel:
+            continue
+        ds = []
+        for r in sel:
+            ent = tpl["tones"].get(str(r["tone"]))
+            if not ent:
+                continue
+            m = (ent["next"].get(str(r["next"])) or ent["all"])["mean"]
+            ds.append(ta.dtw(r["c_rel"], m))
+        shorts = 0
+        tot = 0
+        for r in sel:
+            st = tpl["stats"].get(f"{c}/{r['tone']}") or tpl["stats"].get(f"word/{r['tone']}")
+            if st and "p5" in st["dur"]:
+                tot += 1
+                shorts += r["d"] < st["dur"]["p5"] * (0.6 if c == "sent" else 1.0)
+        out[c] = {"n": len(sel), "dtwMedian": round(float(np.median(ds)), 3), "dtwSd": round(float(np.std(ds)), 3),
+                  "shortShare": round(shorts / max(1, tot), 4)}
+    return out
+
+
 def fit_final(rows: list[dict], seed: int = 0):
     """GBM akhir pada semua rujukan (untuk tone_score): (model, jumlah suku kata)."""
     X, y, _spk, _cls, _ids = tm.build_matrix(rows)
@@ -210,7 +237,7 @@ def build(refs_path: Path, out_path: Path) -> dict:
     out = {"version": 2, "npts": ta.NPTS, "relabeledRecordings": relabel_refs(doc["refs"], hsk_texts())[1],
            "refsVersion": doc.get("version"), "alignment": doc.get("alignment"), "refsUsed": len(doc["refs"]), "sources": doc.get("counts", {}),
            "speakers": dict(sorted(spk_info.items(), key=lambda kv: -kv[1]["nSyl"])[:60]), "nSpeakers": len(meds),
-           "tones": tpl["tones"], "stats": tpl["stats"], "classifier": {"model": model, "eval": ev}}
+           "tones": tpl["tones"], "stats": tpl["stats"], "native": native_stats(rows, tpl), "classifier": {"model": model, "eval": ev}}
     out_path.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     log(f"[build] -> {out_path} ({out_path.stat().st_size / 1e3:.0f} KB); pengenal {ev['model']} {ev['acc']:.3f}")
     return out

@@ -108,3 +108,14 @@ Perbaikan yang diminta (tetap jujur: salah ucap sungguhan harus tetap gagal; jan
 5. **Rekaman penutur asli**: cari tahu kenapa 0 (cek nama kategori/pola nama file Lingua Libre untuk Mandarin, mis. `Category:Lingua Libre pronunciation-cmn` dan `LL-Q9192 (cmn)-<user>-<kata>.wav`, juga log job), perbaiki, ambil hanya CC0 / CC BY / CC BY-SA dengan penulis + URL. Kalau sumber memang tidak bisa dihubungi dari Actions, catat alasan jelas di `status.json`.
 6. Hanya item yang gagal yang diproses ulang; mp3 yang sudah lolos tidak boleh berubah bytenya.
 7. Target tetap: kata normal ≥ 95 %, keseluruhan ≥ 90 %. Semua acceptance 1–7 di atas tetap berlaku.
+
+## Ronde 3 — hasil (2026-11-25)
+
+- `main` terbaru sudah digabung ke `task-4b` (gabung biasa, tanpa menulis ulang riwayat).
+- **Cek suara (Whisper large-v3, cek versi 5)**: kata 288/300 (96 %, target 95 % lolos), keseluruhan 2.357/2.448 (96,3 %, target 90 % lolos). Kata pelan 275/300, kalimat 1.552/1.579, ungkapan 65/72, ungkapan pelan 60/72, dialog 117/125. 6 suku kata tunggal nadanya diluruskan. Sisa 91 tercatat di `audio-issues.json`.
+- **Rekaman penutur asli: 190 kata, 280 rekaman** (100 kata 1 rekaman, 90 kata 2 rekaman; CC BY-SA 4.0: 202, CC0: 78; 0 ditolak lisensinya). Penyebab 0 sebelumnya: Wikimedia menolak (HTTP 429) program yang tidak menyebut "identitas + alamat kontak". Sekarang program memperkenalkan diri dengan alamat repo, mengunduh satu per satu dengan jeda, menunggu bila diminta, dan melanjutkan dari yang sudah ada. Jalan ini: 0 penolakan. 110 kata memang tidak punya rekaman di Lingua Libre → tombolnya tidak tampil.
+- Rekaman penutur asli sekarang punya workflow sendiri (`native-audio.yml`), jadi tidak memicu atau menahan pembuatan suara utama; mp3 suara utama tidak berubah. Jalan ulang tanpa rekaman baru tidak membuat commit.
+- Pemeriksaan: `npm ci`, typecheck, lint, test (1.246 tes), build, check:data lolos. Semua 2.448 + 280 mp3 mono 64 kbps 24 kHz. Kenyaringan 60 file acak: −16,2 s/d −16,0 LUFS (selisih 0,2 dB). Durasi: kata 0,58–1,63 dtk, kata pelan 0,67–1,68, kalimat 1,13–4,85, dialog 0,70–3,67. Ukuran audio 30,3 MB + 2,7 MB. Muatan awal halaman naik 1,7 KB (gzip) dibanding `main`.
+- Playwright (1366 & 375 px, terang & gelap): tombol suara kata memutar `audio/hsk1/word/...mp3`, tanpa catatan "suara perangkat", tanpa scroll ke samping, tanpa error konsol (selain Google Fonts yang diblokir jaringan sesi kerja); baris laki-laki di dialog memutar file L3; tombol "Dengar penutur asli" hanya tampil untuk kata yang punya rekaman; axe tanpa pelanggaran serius/kritis.
+- Tes font: `native-audio.json` dikecualikan (huruf Han hanya di nama perekam yang tampil dengan font teks biasa, dan di tautan sumber).
+- Temuan kecil (belum diubah, supaya suara utama tidak dibuat ulang): kata 哪些 (normal + pelan) selalu masuk daftar "cek ulang" karena tanda koreksi bacaan tidak tersimpan di manifest; bila workflow suara utama jalan lagi, file 哪些 bisa dibuat ulang.

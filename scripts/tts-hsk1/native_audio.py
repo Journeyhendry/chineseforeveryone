@@ -327,6 +327,10 @@ def run(existing: dict) -> None:
     for p in OUT_DIR.glob("*.mp3"):
         if p not in keep:
             p.unlink()
+    if result == existing and not stopped and (OUT_DIR / "status.json").exists():
+        # jalan ulang tanpa rekaman baru: berkas & status lama dibiarkan -> tidak ada commit baru
+        log(f"[native] tidak ada rekaman baru ({len(result)} kata tetap); status.json tidak diubah")
+        return
     note = (f"{len(result)} kata punya rekaman ({sum(len(v) for v in result.values())} berkas) dari {len(cands)} kata "
             f"berkandidat ({len(picks)} berlisensi bebas); unduhan jalan ini: {STATE['downloads']}; "
             f"lisensi ditolak: {skipped_license}" + (f"; {stopped}" if stopped else ""))

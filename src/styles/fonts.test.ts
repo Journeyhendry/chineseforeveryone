@@ -19,7 +19,9 @@ const HAN = /[\u3400-\u9fff\uf900-\ufaff]/g
 
 // File data yang TIDAK tampil di website, jadi hurufnya tidak perlu ada di font:
 // - audio-issues.json: catatan cek audio (transkrip Whisper yang salah dengar, mis. 导演 untuk 到).
-const NOT_DISPLAYED = new Set(['audio-issues.json'])
+// - native-audio.json: huruf Han hanya ada di nama perekam (baris kredit .native-credit, memakai
+//   --font-body Nunito/system-ui, bukan LXGW WenKai) dan di sourceUrl (hanya href, tidak tampil).
+const NOT_DISPLAYED = new Set(['audio-issues.json', 'native-audio.json'])
 
 function hanIn(text: string): Set<string> {
   return new Set(text.match(HAN) ?? [])

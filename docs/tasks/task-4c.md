@@ -51,3 +51,11 @@ Ganti suara P3/L3; melatih model TTS baru; layanan berbayar/berkunci; mengubah i
 - Whisper lolos tidak turun dari 96,3 % (angka 4b), volume tetap seragam (−16 LUFS, puncak ≤ −1,5 dBTP).
 - Atribusi semua rujukan lengkap di CREDITS.md dan halaman Sumber; `check:data`, tes, lint, build lolos; deploy sukses.
 - Pemilik mendengar `samples-tone.html` dan setuju (tercatat di PROGRESS). Sebelum itu, task ditandai "menunggu telinga pemilik", bukan selesai penuh.
+
+## Tambahan pemilik 2026-11-25 (sore): Tahap 0 DIKERJAKAN PERTAMA
+Pemilik menilai pelafalan Tahap 0 (162 suara di `public/audio/basics/`) masih kurang baik, meski cek otomatis 4b/0 lolos 154/162. Catatan: lolos Whisper + cek nada F0 hanya bukti bunyi dikenali mesin, bukan bukti terdengar natural; telinga pemilik tetap penentu.
+Urutan kerja 4c diubah:
+1. **Tahap 0 dulu** (suku kata tunggal: pinyin, nada, radikal, coretan; lalu pasangan nada & ungkapan kelas), baru HSK 1.
+2. Cari **rujukan lebih banyak khusus suku kata tunggal & pasangan nada**: audio-cmn (penutur lain bila ada, bukan hanya Chen Wang), Lingua Libre (banyak penutur per suku kata), Wiktionary/Commons `zh-<pinyin>.ogg` berlisensi bebas, Tatoeba, Common Voice. Pakai rata-rata banyak penutur (bukan satu penutur) untuk templat kontur & durasi.
+3. Delapan item yang gagal (`audio-issues.json`: 乌 wū, 五 wǔ, 爱 ài, 椅 yǐ, 鸡 jī, 谁 shéi, 妈妈, 不 contoh ph-n5) wajib dibereskan atau diganti huruf contoh yang bunyinya stabil.
+4. Buat `samples-tone.html` memuat Tahap 0 lebih dulu (sebelum vs sesudah) untuk didengar pemilik.

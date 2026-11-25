@@ -148,7 +148,7 @@ def fake_rows():
 
 
 def test_build_templates_shapes_and_stats():
-    tpl = ta.build_templates(fake_rows())
+    tpl = ta.build_templates(fake_rows(), min_stat_n=8)
     assert set(tpl["tones"]) == {"1", "2", "3", "4"}
     assert tpl["tones"]["4"]["all"]["mean"][0] > 4 > -4 > tpl["tones"]["4"]["all"]["mean"][-1]
     assert tpl["tones"]["2"]["all"]["mean"][-1] > tpl["tones"]["2"]["all"]["mean"][0]
@@ -194,7 +194,7 @@ def test_clf_predict_linear_model():
 # ---- skor -------------------------------------------------------------------
 
 def mini_templates():
-    tpl = ta.build_templates(fake_rows())
+    tpl = ta.build_templates(fake_rows(), min_stat_n=8)
     return {"tones": tpl["tones"], "stats": tpl["stats"]}
 
 

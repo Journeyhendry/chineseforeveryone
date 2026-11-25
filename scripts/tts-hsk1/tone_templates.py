@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -33,12 +34,26 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+def norm_speaker(spk: str) -> str:
+    """'ll:levi-highway-(列维劳德)' -> 'll:levi-highway' (nama sama, tulisan judul file berbeda)."""
+    return re.sub(r"-?\(.*\)$", "", spk)
+
+
 def rows_from_refs(doc: dict, min_spk_syl: int = MIN_SPK_SYL) -> tuple[list[dict], dict]:
     """Baris suku kata dari rujukan; kontur dinormalkan ke median penutur. Penutur dengan < min_spk_syl suku kata
     bernada 1-4 dibuang (median tidak andal)."""
     by_spk = defaultdict(list)
+    seen_url: set[str] = set()
+    refs = []
     for r in doc["refs"]:
+        if r.get("url"):  # rekaman Lingua Libre yang sama bisa terukur dua kali (repo + Commons): satu saja
+            if r["url"] in seen_url:
+                continue
+            seen_url.add(r["url"])
+        r = {**r, "spk": norm_speaker(r["spk"])}
+        refs.append(r)
         by_spk[r["spk"]].append(r)
+    doc = {**doc, "refs": refs}
     meds, keep = {}, set()
     for spk, rs in by_spk.items():
         cs = [[x / 10 for x in s["c"]] for r in rs for s in r["syl"] if s["c"]]

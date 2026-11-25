@@ -370,7 +370,7 @@ def pct(xs: list[float], ps=(5, 10, 50, 90)) -> dict:
     return out
 
 
-def build_templates(syls: list[dict], min_n: int = 8) -> dict:
+def build_templates(syls: list[dict], min_n: int = 8, min_stat_n: int = 40) -> dict:
     """syls: {tone, next, cls, spk, c_rel (10), d, vd, r}. Hasil: templat per nada (+ per nada berikut) dan
     persentil durasi / rentang per (kelas panjang, nada)."""
     out: dict = {"tones": {}, "stats": {}}
@@ -393,7 +393,7 @@ def build_templates(syls: list[dict], min_n: int = 8) -> dict:
     for cls in ("syl", "single", "word", "sent"):
         for t in (0, 1, 2, 3, 4):
             rows = [s for s in syls if s["cls"] == cls and s["tone"] == t]
-            if len(rows) < min_n:
+            if len(rows) < min_stat_n:  # persentil dari sedikit contoh tidak andal (kelas sent: rujukan sangat sedikit)
                 continue
             out["stats"][f"{cls}/{t}"] = {"dur": pct([r["d"] for r in rows]),
                                           "vdur": pct([r["vd"] for r in rows if r["vd"] > 0]),

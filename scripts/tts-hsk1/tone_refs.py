@@ -346,8 +346,9 @@ def cmd_commonvoice(args):
                 probes[name] = f"HTTP {r.status}"
         except Exception as e:  # noqa: BLE001
             probes[name] = f"{type(e).__name__}: {str(e)[:100]}"
-    note = ("Common Voice zh-CN tidak diunduh: unduhan resmi (Mozilla Data Collective) memerlukan akun + persetujuan syarat, "
-            "dan salinan Hugging Face bersifat gated (login). Membuat akun adalah urusan pemilik; dilewati.")
+    note = ("Common Voice zh-CN tidak diunduh. Halaman web situsnya terbuka (HTTP 200, lihat probes), tetapi berkas data audio "
+            "dibagikan lewat Mozilla Data Collective yang memerlukan akun + persetujuan syarat (dan salinan Hugging Face-nya gated: "
+            "login). Tidak dicoba mengunduh data: membuat akun adalah urusan pemilik; dilewati.")
     write_out(args.out, json.dumps({"part": "commonvoice", "refs": [], "check": {"probes": probes, "note": note}},
                                    ensure_ascii=False, separators=(",", ":")))
     log(f"[cv] {probes}")

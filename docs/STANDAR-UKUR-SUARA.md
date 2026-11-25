@@ -1,4 +1,4 @@
-# Standar ukur suara Mandarin (rancangan Claude, 2026-11-25; disetujui pemilik? — menunggu)
+# Standar ukur suara Mandarin (rancangan Claude, 2026-11-25; DISETUJUI pemilik 2026-11-25 23:20 WIB)
 
 Dipakai task 4c (dan task suara berikutnya). Berdasar praktik umum penelitian: penyelarasan paksa + konteks untuk nada, skor kebenaran pelafalan (GOP), pengenalan ucapan sebagai "murid", dan uji dengar manusia sebagai penentu akhir.
 

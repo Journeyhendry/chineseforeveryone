@@ -1,4 +1,12 @@
 {
- "note": "0 kata punya rekaman (0 berkas) dari 190 kata berkandidat; lisensi ditolak: {}; unduhan dihentikan: HTTP 429 dari upload.wikimedia.org 4x berturut-turut (batas laju Wikimedia untuk klien otomatis)",
- "words": 0
+ "note": "190 kata punya rekaman (280 berkas) dari 190 kata berkandidat (190 berlisensi bebas); unduhan jalan ini: 280; lisensi ditolak: {}",
+ "words": 190,
+ "files": 280,
+ "candidates": 190,
+ "freeLicensed": 190,
+ "downloadsThisRun": 280,
+ "http429": 0,
+ "last429": "",
+ "userAgent": "XueMandarinNativeAudio/3.0 (https://github.com/Journeyhendry/chineseforeveryone; open-source Mandarin learning site; sequential low-rate fetch) Python-urllib/3.11",
+ "licensesRejected": {}
 }

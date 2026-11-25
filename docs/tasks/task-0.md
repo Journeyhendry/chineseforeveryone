@@ -84,3 +84,18 @@ Perbaikan yang diminta (tetap jujur — jangan melonggarkan cek sampai semua lol
 - Mengganti huruf contoh dengan huruf lain berpinyin sama tidak membantu (P3 menyintesis dari pinyin → suara sama); sudah dicoba lalu dikembalikan.
 - Whisper int8 di CPU tidak sepenuhnya deterministik antar jenis runner (file yang sama 吃: sekali "吃", sekali "诗") — item di batas bisa berubah status.
 - Pilihan berikutnya (butuh keputusan): suara lain untuk suku kata tunggal (mis. rekaman/TTS lain), variasi sintesis baru, atau menerima 77 % dengan cadangan suara perangkat untuk item yang gagal.
+
+## Ronde 3 (2026-11-25, Opus) — metode A (keputusan pemilik 2026-11-23)
+
+Status saat diambil alih: layar, latihan, tes, workflow sudah ada di cabang `task-0`; audio 125–133/162 lolos (77–82 %), target ≥ 90 %. Task 4b sudah selesai dan masuk `main` (pemutar file `src/lib/audio.ts`, rekaman penutur asli, pelurus nada PSOLA di `scripts/tts-hsk1/`).
+
+Yang diminta:
+1. **Gabung `main` terbaru** ke `task-0` (merge biasa). Selesaikan bentrok dengan menjaga perilaku 4b di `src/lib/audio.ts` (pemutar file HSK 1, `speak` + opsi `key`/suara, penutur asli) dan menambahkan pemutar file Tahap 0 dengan rapi. Semua tes `main` tetap lolos.
+2. **Metode A — suku kata tunggal**: suara tetap **P3** yang membaca suku katanya; lalu kontur nada (F0) P3 diganti dengan kontur nada rekaman orang asli `hugolpz/audio-cmn` (penutur Chen Wang, CC BY-SA) untuk suku kata bernada yang sama — bentuk konturnya dipetakan ke rentang suara P3 sendiri (median & rentang F0 P3), dirapatkan ke durasi P3 (durasi P3 tidak berubah), perpindahan halus, lewat PSOLA `parselmouth` (versi dipatok). Rekaman audio-cmn **hanya contoh nada, tidak diputar di website, tidak di-commit sebagai audio situs** (boleh simpan kontur F0 hasil ekstraksi kecil sebagai data turunan bila perlu, dengan atribusi). File mentah diunduh di GitHub Actions (cache), bukan di sesi kerja. Boleh memakai/meniru kode pelurus nada 4b (`scripts/tts-hsk1/tone.py`, `build_audio.py`) — salin ke `scripts/tts-basics/`, jangan ubah `scripts/tts-hsk1/` atau `build-audio.yml`.
+   - Berlaku untuk semua item 1 suku kata Tahap 0 (pinyin, nada, contoh radikal/coretan yang bersuara 1 huruf). Item multi-huruf tetap sintesis biasa (boleh diluruskan juga bila 1 suku kata gagal, opsional).
+   - Suku kata yang tidak ada di audio-cmn → pakai kontur baku nada target (cara 4b), dicatat.
+   - Hasil dicek ulang penuh: Whisper large-v3 + bunyi pypinyin + nada F0 (aturan cek yang ada, **jangan dilonggarkan**). Manifest per file: `pitchSource: "audio-cmn" | "standard" | null`.
+   - Cek telinga sederhana: tidak ada klik/derau (lihat spektrogram beberapa contoh, simpan 3–4 PNG di scratchpad untuk pemeriksa). Bila terdengar kasar seperti mesin itu diterima (penghalusan ronde berikut, keputusan pemilik), tetapi bunyi harus tetap dikenali Whisper.
+3. **CREDITS.md**: tambah `hugolpz/audio-cmn` (Chen Wang, CC BY-SA, hanya sebagai contoh nada untuk menyetel nada suara Tahap 0; tidak diputar).
+4. Target: **≥ 90 % dari 162 item lolos**; sisanya di `data/basics/audio-issues.json` dengan alasan; item gagal tidak diputar (cadangan suara perangkat, perilaku yang ada). Total `public/audio/basics/` ≤ 3 MB.
+5. Semua acceptance 1–6 di atas tetap berlaku.

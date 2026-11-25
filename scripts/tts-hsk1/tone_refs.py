@@ -65,7 +65,9 @@ def ref_record(rid: str, src: str, spk: str, text: str, tones: list[int], meas: 
     for s in meas["syl"]:
         syl.append({"d": s["d"], "vd": s["vd"], "r": s["r"],
                     "c": [int(round(x * 10)) for x in s["c"]] if s["c"] else None,
-                    "vf": s.get("vf"), "inn": s.get("inn"), "hn": s.get("hn"), "vs": s.get("vs"), "ve": s.get("ve")})
+                    "vf": s.get("vf"), "inn": s.get("inn"), "hn": s.get("hn"), "vs": s.get("vs"), "ve": s.get("ve"),
+                    **({"c0": [int(round(x * 10)) for x in s["dp"]["c"]] if s["dp"]["c"] else None, "d0": s["dp"]["d"],
+                        "vd0": s["dp"]["vd"]} if s.get("dp") else {})})
     rec = {"id": rid, "src": src, "spk": spk, "text": text, "tones": tones, "span": meas["span"],
            "span_st": meas["span_st"], "al": meas.get("al", 0), "syl": syl}
     rec.update(extra or {})

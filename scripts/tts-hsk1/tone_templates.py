@@ -60,9 +60,10 @@ def relabel_refs(refs: list[dict], trusted: set[str]) -> tuple[list[dict], int]:
     return out, changed
 
 
-def rows_from_refs(doc: dict, min_spk_syl: int = MIN_SPK_SYL, relabel: bool = True) -> tuple[list[dict], dict]:
+def rows_from_refs(doc: dict, min_spk_syl: int = MIN_SPK_SYL, relabel: bool = True, seg: str = "auto") -> tuple[list[dict], dict]:
     """Baris suku kata dari rujukan; kontur dinormalkan ke median penutur. Penutur dengan < min_spk_syl suku kata
-    bernada 1-4 dibuang (median tidak andal)."""
+    bernada 1-4 dibuang (median tidak andal). seg="dp": pakai kontur/durasi hasil pemotongan DP (c0/d0/vd0, bila ada) untuk
+    ablasi; "auto": kontur utama (penyelarasan paksa bila 'al' = 1)."""
     by_spk = defaultdict(list)
     seen_url: set[str] = set()
     refs = []
@@ -76,6 +77,10 @@ def rows_from_refs(doc: dict, min_spk_syl: int = MIN_SPK_SYL, relabel: bool = Tr
         refs.append(r)
         by_spk[r["spk"]].append(r)
     doc = {**doc, "refs": refs}
+    if seg == "dp":
+        for r in refs:
+            if r.get("al"):
+                r["syl"] = [{**s, "c": s.get("c0", s["c"]), "d": s.get("d0", s["d"]), "vd": s.get("vd0", s["vd"])} for s in r["syl"]]
     meds, keep = {}, set()
     for spk, rs in by_spk.items():
         cs = [[x / 10 for x in s["c"]] for r in rs for s in r["syl"] if s["c"]]
@@ -230,6 +235,17 @@ def build(refs_path: Path, out_path: Path) -> dict:
     log(f"[build] {len(doc['refs'])} rujukan -> {len(rows)} suku kata, {len(meds)} penutur dipakai")
     tpl = ta.build_templates(rows)
     model, ev = train(rows)
+    if any(r.get("al") for r in doc["refs"]):
+        rows_dp, _ = rows_from_refs(doc, seg="dp")
+        X, y, spk, cls, _ids = tm.build_matrix(rows_dp)
+        cols = tm.columns("base", "tones", "nbr", "pos", "dur", "utt")  # konteks saja (fitur tambahan dihitung pada batas penyelarasan)
+        P = tm.loso_proba(X[:, cols], y, spk)
+        pr = P.argmax(1) + 1
+        ctx_al = next((a for a in ev["ablation"] if a["name"].startswith("+ konteks")), None)
+        ev["alignAblation"] = {"dp": {"acc": round(float((pr == y).mean()), 4), "word": round(float((pr[cls == "word"] == y[cls == "word"]).mean()), 4),
+                                      "tone3": round(float((pr[y == 3] == 3).mean()), 4)},
+                               "aligned": ctx_al, "note": "kedua sisi: GBM konteks tanpa fitur tambahan, rekaman sama, hanya batas suku kata beda"}
+        log(f"[align] ablasi: DP {ev['alignAblation']['dp']} vs penyelarasan {ctx_al}")
     spk_info = {}
     for s, m in meds.items():
         n = sum(1 for r in rows if r["spk"] == s)

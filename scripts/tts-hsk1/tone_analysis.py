@@ -359,7 +359,7 @@ def measure(times, st, inten, tones: list[int], npts: int = NPTS, bounds: list[t
     else:
         if bounds is not None and len(bounds) == n:
             segs_t = [(float(a), float(b)) for a, b in bounds]
-            durs = [effective_duration(inten, max(0, int(round(a / STEP))), min(len(inten), int(round(b / STEP))), imax)
+            durs = [effective_duration(inten, int(np.searchsorted(times, a)), int(np.searchsorted(times, b)), imax)
                     for a, b in segs_t]
         else:
             segs = segment(inten[i0:i1], voiced, [TONE_WEIGHT[t] for t in tones])
@@ -446,6 +446,11 @@ def analyze_file(path: Path, tones: list[int], tmp_wav: Path, letters: list[str]
     m = measure(times, st, inten, tones, bounds=bounds, hnr=hnr)
     if m is not None:
         m["al"] = 1 if bounds is not None else 0
+        if bounds is not None:  # pemotongan DP ikut disimpan (c0/d0/vd0) agar ablasi "penyelarasan vs DP" bisa dihitung pada rekaman sama
+            m0 = measure(times, st, inten, tones, bounds=None, hnr=hnr)
+            if m0 is not None and len(m0["syl"]) == len(m["syl"]):
+                for s, s0 in zip(m["syl"], m0["syl"]):
+                    s["dp"] = {"c": s0["c"], "d": s0["d"], "vd": s0["vd"]}
     return m
 
 

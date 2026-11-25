@@ -99,8 +99,8 @@ def bounds_from_spans(spans: list[tuple[float, float]], times: np.ndarray, inten
         lo, hi = spans[i][1], spans[i + 1][0]
         if hi < lo:  # token bertumpuk: tengah
             lo = hi = (lo + hi) / 2
-        a = int(round(lo / ta.STEP))
-        b = max(a + 1, int(round(hi / ta.STEP)) + 1)
+        a = int(np.searchsorted(times, lo))
+        b = max(a + 1, int(np.searchsorted(times, hi)) + 1)
         a, b = max(0, min(a, len(sm) - 1)), max(1, min(b, len(sm)))
         k = a + int(np.argmin(sm[a:b])) if b > a else a
         cuts.append(float(times[min(k, len(times) - 1)]))

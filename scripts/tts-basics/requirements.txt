@@ -1,0 +1,8 @@
+# Tambahan untuk audio Tahap 0, dipasang bersama scripts/tts/requirements.txt (Kokoro + Whisper).
+# pypinyin dipakai untuk cek suku kata tunggal (dan oleh misaki untuk G2P), jadi versinya dipatok.
+pypinyin==0.53.0
+pypinyin-dict==0.9.0
+jieba==0.42.1
+cn2an==0.5.24
+# Cek nada suku kata tunggal (kontur F0, scripts/tts-basics/tonecheck.py).
+praat-parselmouth==0.4.5

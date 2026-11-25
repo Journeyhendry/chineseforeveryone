@@ -103,6 +103,26 @@ describe('parseReviewRoute', () => {
   })
 })
 
+describe('parseLearnRoute · Tahap 0 (dasar)', () => {
+  const learn = (h: string) => parseLearnRoute(parseHash(h).segments)
+  it('ringkasan, bagian, latihan', () => {
+    expect(learn('#/belajar/dasar')).toEqual({ screen: 'basics' })
+    expect(learn('#/belajar/dasar/')).toEqual({ screen: 'basics' })
+    for (const part of ['pinyin', 'nada', 'perubahan-nada', 'coretan', 'radikal', 'ungkapan'] as const) {
+      expect(learn(`#/belajar/dasar/${part}`)).toEqual({ screen: 'basics-part', part })
+      expect(learn(`#/belajar/dasar/${part}/latihan`)).toEqual({ screen: 'basics-practice', part })
+    }
+    expect(learn('#/belajar/DASAR/Nada')).toEqual({ screen: 'basics-part', part: 'nada' })
+  })
+  it.each(['#/belajar/dasar/xyz', '#/belajar/dasar/nada/x', '#/belajar/dasar/nada/latihan/2', '#/belajar/dasar/%3Cb%3E'])('tidak dikenal %s', (h) => {
+    expect(learn(h)).toEqual({ screen: 'notfound' })
+  })
+  it('learnHref kebalikan dari parse', () => {
+    const routes = [{ screen: 'basics' }, { screen: 'basics-part', part: 'coretan' }, { screen: 'basics-practice', part: 'ungkapan' }] as const
+    for (const r of routes) expect(learn(learnHref(r))).toEqual(r)
+  })
+})
+
 describe('parseDictionaryRoute', () => {
   it('pencarian dengan dan tanpa q', () => {
     expect(parseDictionaryRoute([])).toEqual({ screen: 'search', q: '' })

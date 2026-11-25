@@ -218,6 +218,27 @@ export function stopAudio(): void {
   }
 }
 
+// ---------- pemutar file mp3 Tahap 0 (public/audio/basics) ----------
+
+/**
+ * Putar satu file audio lewat URL lengkap (mis. Tahap 0: `audio/basics/x.mp3`). Memakai elemen
+ * pemutar yang sama dengan speak(), jadi tetap hanya satu suara pada satu waktu. Selesai dengan
+ * false bila file gagal dimuat/diputar (pemanggil boleh memakai suara perangkat sebagai cadangan).
+ */
+export function playFile(url: string, opts: { rate?: number } = {}): Promise<boolean> {
+  token++
+  stopFile()
+  if (typeof Audio === 'undefined') return Promise.resolve(false)
+  return new Promise((resolve) => {
+    const ok = playUrl(url, opts.rate ?? 1, () => resolve(false))
+    if (!ok) resolve(false)
+    else if (current) {
+      const a = current
+      a.addEventListener('playing', () => resolve(true), { once: true })
+    }
+  })
+}
+
 /** Dipanggil saat daftar suara berubah (browser memuat suara secara asinkron) atau indeks file selesai dimuat. */
 export function onAudioChange(cb: () => void): () => void {
   listeners.add(cb)

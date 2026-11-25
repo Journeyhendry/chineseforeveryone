@@ -7,6 +7,7 @@ import { doneCount, suggestedUnit, unitStatus } from '../../lib/progress'
 import { hrefFor, learnHref } from '../../lib/router'
 import { useSettings } from '../../lib/settings-context'
 import { useDocumentTitle, useFocusOnChange, useProgress, useToday, useWordBank } from './hooks'
+import { BasicsMapCard } from './basics/MapCard'
 import { Badge, Stars } from './parts'
 import '../review/review.css'
 import './map.css'
@@ -59,6 +60,8 @@ export function MapScreen({ index }: { index: LessonIndex }) {
       </header>
 
       <div className="map-layout">
+        <div className="map-main">
+        <BasicsMapCard />
         <section className="card unit-path-card" aria-labelledby="path-title">
           <h2 id="path-title" className="sr-only">
             {t('learn.map.pathLabel')}
@@ -113,6 +116,7 @@ export function MapScreen({ index }: { index: LessonIndex }) {
             })}
           </ol>
         </section>
+        </div>
 
         <aside className="map-aside">
           {hasTracked ? (

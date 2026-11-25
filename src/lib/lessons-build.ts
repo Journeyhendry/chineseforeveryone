@@ -220,9 +220,9 @@ export function buildLessons(input: LessonsInput): Record<string, string> {
 const HAN = /\p{Script=Han}/u
 
 /** Huruf yang butuh data coretan: semua huruf kata HSK 1 dan ungkapan santai, urut kode Unicode. */
-export function strokeChars(words: Pick<SrcWord, 'hanzi'>[], casual: Pick<SrcCasual, 'hanzi'>[]): string[] {
+export function strokeChars(words: Pick<SrcWord, 'hanzi'>[], casual: Pick<SrcCasual, 'hanzi'>[], extra: string[] = []): string[] {
   const set = new Set<string>()
-  for (const x of [...words, ...casual]) for (const ch of x.hanzi) if (HAN.test(ch)) set.add(ch)
+  for (const x of [...words, ...casual, ...extra.map((hanzi) => ({ hanzi }))]) for (const ch of x.hanzi) if (HAN.test(ch)) set.add(ch)
   return [...set].sort((a, b) => a.codePointAt(0)! - b.codePointAt(0)!)
 }
 

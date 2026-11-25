@@ -50,6 +50,7 @@ SRC_DIR = REPO / 'src'
 FONT_DIR = SRC_DIR / 'assets' / 'fonts'
 CSS_OUT = SRC_DIR / 'styles' / 'fonts.css'
 DATA_DIR = REPO / 'data' / 'hsk1'
+BASICS_FILE = REPO / 'data' / 'basics' / 'basics.json'
 LICENSE_OUT = REPO / 'public' / 'fonts' / 'LXGW-WenKai-OFL.txt'
 
 # Tanda baca Mandarin umum yang dipakai di core.
@@ -74,6 +75,8 @@ def collect_requested() -> tuple[set[str], set[str]]:
     extra: set[str] = set()
     for path in sorted(DATA_DIR.glob('*.json')):
         extra |= han_chars(path.read_text(encoding='utf-8'))
+    # Tahap 0 (task 0): hanya basics.json (audio-issues.json berisi transkrip Whisper, tidak tampil).
+    extra |= han_chars(BASICS_FILE.read_text(encoding='utf-8'))
     for path in sorted(SRC_DIR.rglob('*')):
         if not path.is_file():
             continue

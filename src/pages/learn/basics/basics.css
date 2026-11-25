@@ -1,0 +1,951 @@
+/* Layar Tahap 0 · Dasar. Hanya token dari src/styles/theme.css (warna nada: --tone-*).
+   Teks berwarna nada selalu di atas --tone-surface (kelas .tone-box) dan berukuran besar/tebal. */
+
+.learn-basics {
+  min-width: 0;
+}
+
+.basics-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.basics-audio-note {
+  display: block;
+  margin: var(--space-2) 0 0;
+}
+
+/* Rumus suku kata */
+.syllable-formula {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  max-width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-w) solid var(--ink);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.formula-part {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.formula-part small {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tone-label);
+}
+
+/* Petak bunyi */
+.sound-group + .sound-group,
+.sound-notes {
+  margin-top: var(--space-4);
+}
+
+.sound-group-title {
+  font-size: 18px;
+  margin-bottom: var(--space-2);
+}
+
+.sound-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: var(--space-3);
+}
+
+.sound-grid-wide {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.sound-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  min-height: var(--touch);
+  padding: var(--space-3) var(--space-2);
+  border: var(--border-w) solid var(--ink);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 0 var(--ink);
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    transform 140ms ease-out,
+    box-shadow 140ms ease-out;
+}
+
+.sound-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--ink);
+}
+
+.sound-tile:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.sound-tile[aria-pressed='true'] {
+  outline: 3px solid var(--btn-purple);
+  outline-offset: 2px;
+}
+
+.sound-tile:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.sound-big {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sound-example {
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.sound-example .hanzi {
+  font-size: 22px;
+}
+
+.sound-flag {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.sound-flag-inline {
+  position: static;
+  display: inline-block;
+  text-align: center;
+}
+
+.note-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-2) var(--space-4);
+}
+
+.note-item {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: var(--space-2) var(--space-3);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+
+.note-item dt {
+  flex: none;
+  min-width: 2.2em;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.note-item dd {
+  margin: 0;
+  font-size: 15px;
+}
+
+.sound-hanzi {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.sound-hanzi-sm {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.sound-pinyin {
+  font-size: 20px;
+}
+
+.sound-meaning {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tone-label);
+  overflow-wrap: anywhere;
+}
+
+/* Kartu nada */
+.tone-cards {
+  list-style: none;
+  margin: 0 0 var(--space-5);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.tone-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-color: var(--ink);
+}
+
+.tone-card-1 {
+  border-top: 10px solid var(--tone-1);
+}
+.tone-card-2 {
+  border-top: 10px solid var(--tone-2);
+}
+.tone-card-3 {
+  border-top: 10px solid var(--tone-3);
+}
+.tone-card-4 {
+  border-top: 10px solid var(--tone-4);
+}
+.tone-card-5 {
+  border-top: 10px solid var(--tone-5);
+}
+
+.tone-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.tone-mark {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tone-contour {
+  flex: none;
+  max-width: 60%;
+  height: auto;
+}
+
+.tone-contour-grid {
+  stroke: var(--surface-3);
+  stroke-width: 1.5;
+}
+
+.tone-card-name {
+  font-size: 19px;
+}
+
+.tone-card-desc {
+  margin: 0;
+  font-size: 15px;
+  flex: 1 1 auto;
+}
+
+.sound-tile-inline {
+  flex-direction: row;
+  gap: var(--space-2);
+  padding-block: var(--space-2);
+}
+
+.tone-sets {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.tone-set {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px dashed var(--surface-3);
+}
+
+.tone-set:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.tone-set-all {
+  flex: none;
+}
+
+.tone-set-all[aria-pressed='true'] {
+  outline: 3px solid var(--btn-purple);
+  outline-offset: 2px;
+}
+
+.tone-set-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 420px;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: var(--space-3);
+}
+
+/* Perubahan nada */
+.syl-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0 0.35em;
+  font-weight: 800;
+}
+
+.syl.is-changed {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  padding: 0 4px;
+  border: 2px dashed currentColor;
+  border-radius: 8px;
+}
+
+.sandhi-legend {
+  font-weight: 700;
+}
+
+.sandhi-legend .syl {
+  font-weight: 800;
+}
+
+.sandhi-rule {
+  max-width: 70ch;
+}
+
+.sandhi-list {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-3);
+}
+
+.sandhi-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'hanzi forms audio' 'hanzi meaning audio';
+  align-items: center;
+  gap: 2px var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+}
+
+.sandhi-hanzi {
+  grid-area: hanzi;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.sandhi-forms {
+  grid-area: forms;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 4px var(--space-2);
+  min-width: 0;
+}
+
+.sandhi-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+}
+
+.sandhi-label {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--tone-label);
+}
+
+.sandhi-arrow {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--tone-label);
+}
+
+.sandhi-meaning {
+  grid-area: meaning;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tone-label);
+}
+
+.sandhi-item .icon-btn {
+  grid-area: audio;
+}
+
+.sandhi-item .badge {
+  color: var(--ink);
+  background: var(--tone-surface);
+  border-color: var(--ink);
+}
+
+/* Coretan */
+.stroke-cards {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.stroke-card {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface-2);
+  min-width: 0;
+}
+
+.stroke-shape {
+  position: relative;
+  flex: none;
+  display: block;
+  width: 104px;
+  height: 104px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.stroke-shape svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.stroke-shape-grid {
+  stroke: var(--surface-3);
+  stroke-width: 6;
+  stroke-dasharray: 24 18;
+  fill: none;
+}
+
+.stroke-shape-other {
+  fill: var(--text-soft);
+  opacity: 0.35;
+}
+
+.stroke-shape-ghost {
+  fill: var(--link);
+  opacity: 0.25;
+}
+
+.stroke-shape-draw {
+  fill: none;
+  stroke: var(--link);
+  stroke-width: 150;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1.05 1.05;
+  stroke-dashoffset: 0;
+  animation: stroke-draw 1.1s ease-in-out 0.25s both;
+}
+
+@keyframes stroke-draw {
+  from {
+    stroke-dashoffset: 1.05;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.stroke-shape-static {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-hanzi);
+  font-size: 72px;
+  color: var(--text);
+}
+
+.stroke-card-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.stroke-card-text p {
+  margin: 0;
+}
+
+.stroke-card-name {
+  font-size: 22px;
+}
+
+.stroke-card-name .hanzi {
+  font-size: 28px;
+}
+
+.stroke-card-meaning {
+  font-weight: 800;
+}
+
+.stroke-card-desc,
+.stroke-card-example {
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+.stroke-card-example .hanzi {
+  font-size: 20px;
+  color: var(--text);
+}
+
+.btn-small {
+  min-height: var(--touch);
+  padding: 4px 14px;
+  font-size: 15px;
+  margin-top: var(--space-2);
+}
+
+.btn-small svg {
+  width: 18px;
+  height: 18px;
+}
+
+.stroke-rules-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  align-items: flex-start;
+}
+
+.stroke-rules-layout > .card:first-child {
+  flex: 999 1 420px;
+  min-width: 0;
+}
+
+.stroke-rules-layout > .stroke-panel {
+  flex: 1 1 280px;
+  min-width: 0;
+  max-width: 420px;
+}
+
+@media (min-width: 900px) {
+  .stroke-rules-layout > .stroke-panel {
+    position: sticky;
+    top: var(--space-4);
+  }
+}
+
+.rule-list {
+  margin: var(--space-3) 0 0;
+  padding-left: 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rule-item {
+  padding-left: var(--space-2);
+}
+
+.rule-item::marker {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.rule-item {
+  display: list-item;
+}
+
+.rule-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px var(--space-3);
+}
+
+.rule-hanzi {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.rule-pinyin {
+  font-weight: 800;
+  color: var(--text-soft);
+}
+
+.rule-meaning {
+  flex-basis: 100%;
+  font-weight: 700;
+}
+
+.rule-chars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+/* Radikal */
+.radical-grid {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.radical-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface-2);
+  min-width: 0;
+}
+
+.radical-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.radical-glyph {
+  flex: none;
+  min-width: 72px;
+  height: 72px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.radical-variant {
+  font-size: 30px;
+}
+
+.radical-meaning {
+  font-size: 20px;
+}
+
+.radical-from {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-soft);
+}
+
+.radical-from .hanzi {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.radical-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.sound-tile-char {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.radical-detail {
+  margin: 0;
+  min-height: 1.5em;
+  font-weight: 700;
+}
+
+.radical-detail-hanzi {
+  font-size: 22px;
+}
+
+/* Susunan huruf */
+.compose-grid {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.compose-card {
+  padding: var(--space-4);
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface-2);
+  min-width: 0;
+}
+
+.compose-card p {
+  margin: var(--space-2) 0 0;
+}
+
+.compose-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.compose-box {
+  flex: none;
+  display: grid;
+  width: 96px;
+  height: 96px;
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.compose-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-hanzi);
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--text);
+}
+
+.compose-lr {
+  grid-template-columns: 1fr 1fr;
+}
+
+.compose-lr .compose-part-0 {
+  border-right: 2px dashed var(--line);
+  background: var(--surface-3);
+}
+
+.compose-tb {
+  grid-template-rows: 1fr 1fr;
+}
+
+.compose-tb .compose-part-0 {
+  border-bottom: 2px dashed var(--line);
+  background: var(--surface-3);
+}
+
+.compose-tb .compose-part {
+  font-size: 30px;
+}
+
+.compose-oi {
+  position: relative;
+  place-items: center;
+}
+
+.compose-oi .compose-part-0 {
+  position: absolute;
+  inset: 0;
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-soft);
+}
+
+.compose-oi .compose-part-1 {
+  position: relative;
+  font-size: 30px;
+  padding-top: 6px;
+}
+
+.compose-eq {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.compose-result {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-w) solid var(--ink);
+  border-radius: var(--radius-md);
+}
+
+.compose-hanzi {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.compose-pinyin {
+  font-size: 20px;
+}
+
+.compose-layout-name {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--link);
+}
+
+.compose-meaning {
+  font-size: 15px;
+}
+
+/* Ungkapan */
+.number-grid {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: var(--space-3);
+}
+
+.number-value {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--tone-label);
+}
+
+.greet-list {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  gap: var(--space-3);
+}
+
+.greet-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+}
+
+.greet-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.greet-hanzi {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.greet-pinyin {
+  font-size: 20px;
+}
+
+.greet-text {
+  flex: 1 1 140px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.greet-text span {
+  color: var(--tone-label);
+  font-weight: 600;
+}
+
+/* Navigasi bawah & latihan */
+.basics-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.basics-practice-cta .card-title {
+  font-size: 24px;
+}
+
+.prompt-stroke .stroke-shape {
+  width: 160px;
+  height: 160px;
+}
+
+.choice-pinyin-big {
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.basics-path {
+  gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .sandhi-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: 'hanzi audio' 'forms forms' 'meaning meaning';
+  }
+
+  .stroke-card {
+    flex-direction: column;
+  }
+}

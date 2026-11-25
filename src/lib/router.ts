@@ -1,4 +1,5 @@
 import { useEffect, useSyncExternalStore } from 'react'
+import { isBasicsPart, type BasicsPart } from './basics.ts'
 import { isGameKind, type GameKind } from '../games/kinds.ts'
 
 export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan', 'sumber'] as const
@@ -77,6 +78,9 @@ export type LearnRoute =
   | { screen: 'word'; unitId: string; index: number }
   | { screen: 'practice'; unitId: string }
   | { screen: 'skip'; unitId: string }
+  | { screen: 'basics' }
+  | { screen: 'basics-part'; part: BasicsPart }
+  | { screen: 'basics-practice'; part: BasicsPart }
   | { screen: 'games'; unitId: string }
   | { screen: 'game'; unitId: string; game: GameKind }
   | { screen: 'notfound' }
@@ -84,12 +88,19 @@ export type LearnRoute =
 const UNIT_SEGMENT = /^[a-z0-9-]{1,32}$/
 
 /**
- * Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan,
- * unit/<id>/game, unit/<id>/game/<jenis>, loncat/<id>.
+ * Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan, loncat/<id>,
+ * unit/<id>/game, unit/<id>/game/<jenis>, dasar (Tahap 0), dasar/<bagian>, dasar/<bagian>/latihan.
  */
 export function parseLearnRoute(segments: string[]): LearnRoute {
   const s = segments.map((x) => x.toLowerCase())
   if (s.length === 0) return { screen: 'map' }
+  if (s[0] === 'dasar') {
+    if (s.length === 1) return { screen: 'basics' }
+    if (!isBasicsPart(s[1])) return { screen: 'notfound' }
+    if (s.length === 2) return { screen: 'basics-part', part: s[1] }
+    if (s.length === 3 && s[2] === 'latihan') return { screen: 'basics-practice', part: s[1] }
+    return { screen: 'notfound' }
+  }
   const id = s[1]
   if (id === undefined || !UNIT_SEGMENT.test(id)) return { screen: 'notfound' }
   if (s[0] === 'unit') {
@@ -118,6 +129,12 @@ export function learnHref(route: LearnRoute): string {
       return `#/belajar/unit/${route.unitId}/latihan`
     case 'skip':
       return `#/belajar/loncat/${route.unitId}`
+    case 'basics':
+      return '#/belajar/dasar'
+    case 'basics-part':
+      return `#/belajar/dasar/${route.part}`
+    case 'basics-practice':
+      return `#/belajar/dasar/${route.part}/latihan`
     case 'games':
       return `#/belajar/unit/${route.unitId}/game`
     case 'game':

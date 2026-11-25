@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { backupFileName, BACKUP_MAX_BYTES, makeBackup, parseBackup } from './backup'
 import { recordAnswers } from './leitner'
-import { emptyProgress, normalizeProgress, recordGameResult, recordUnitResult, type Progress } from './progress'
+import { emptyProgress, normalizeProgress, recordBasicsResult, recordGameResult, recordUnitResult, type Progress } from './progress'
 import { DEFAULT_SETTINGS, type Settings } from './settings'
 
 const now = new Date('2026-11-22T08:30:00Z')
@@ -89,6 +89,19 @@ describe('parseBackup', () => {
     expect(r.ok && r.progress).toEqual(emptyProgress())
     expect(r.ok && r.settings.lang).toBe('en')
     expect(r.ok && 'extra' in r.progress).toBe(false)
+  })
+})
+
+describe('cadangan memuat progres Tahap 0', () => {
+  it('basics ikut dicadangkan dan dipulihkan', () => {
+    const p = recordBasicsResult(recordUnitResult(emptyProgress(), 'u01', 1, new Date('2026-11-22T00:00:00Z')), 'radikal', 0.9, new Date('2026-11-22T01:00:00Z'))
+    const text = JSON.stringify(makeBackup(p, DEFAULT_SETTINGS, new Date('2026-11-22T02:00:00Z')))
+    const parsed = parseBackup(text)
+    expect(parsed.ok).toBe(true)
+    if (parsed.ok) {
+      expect(parsed.progress.basics).toEqual({ radikal: { bestScore: 0.9, stars: 3, completedAt: '2026-11-22T01:00:00.000Z' } })
+      expect(parsed.progress).toEqual(p)
+    }
   })
 })
 

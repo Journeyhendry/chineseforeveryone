@@ -1,0 +1,2888 @@
+{
+  "version": 1,
+  "pinyin": {
+    "intro": {
+      "id": "Pinyin adalah cara menulis bunyi Mandarin dengan huruf Latin. Satu suku kata = bunyi awal + bunyi akhir + nada. Contoh: mā = m + a + nada 1.",
+      "en": "Pinyin writes Mandarin sounds with Latin letters. One syllable = initial + final + tone. Example: mā = m + a + tone 1."
+    },
+    "initials": [
+      {
+        "sound": "b",
+        "group": "lips",
+        "audioId": "py-i-b",
+        "hanzi": "八",
+        "pinyin": "bā",
+        "meaning": {
+          "id": "delapan",
+          "en": "eight"
+        },
+        "distractors": [
+          "pā",
+          "mā",
+          "fā"
+        ]
+      },
+      {
+        "sound": "p",
+        "group": "lips",
+        "audioId": "py-i-p",
+        "hanzi": "坡",
+        "pinyin": "pō",
+        "meaning": {
+          "id": "lereng",
+          "en": "slope"
+        },
+        "distractors": [
+          "bō",
+          "fō",
+          "mō"
+        ],
+        "note": {
+          "id": "Seperti b, tetapi dengan hembusan udara kuat. Coba taruh kertas di depan mulut: kertasnya bergerak.",
+          "en": "Like b, but with a strong puff of air. Hold paper in front of your mouth: it should move."
+        }
+      },
+      {
+        "sound": "m",
+        "group": "lips",
+        "audioId": "py-i-m",
+        "hanzi": "摸",
+        "pinyin": "mō",
+        "meaning": {
+          "id": "meraba",
+          "en": "to touch"
+        },
+        "distractors": [
+          "bō",
+          "fō",
+          "pō"
+        ]
+      },
+      {
+        "sound": "f",
+        "group": "lips",
+        "audioId": "py-i-f",
+        "hanzi": "发",
+        "pinyin": "fā",
+        "meaning": {
+          "id": "mengirim",
+          "en": "to send"
+        },
+        "distractors": [
+          "hā",
+          "pā",
+          "wā"
+        ]
+      },
+      {
+        "sound": "d",
+        "group": "tongueTip",
+        "audioId": "py-i-d",
+        "hanzi": "德",
+        "pinyin": "dé",
+        "meaning": {
+          "id": "kebajikan",
+          "en": "virtue"
+        },
+        "distractors": [
+          "té",
+          "gé",
+          "lé"
+        ]
+      },
+      {
+        "sound": "t",
+        "group": "tongueTip",
+        "audioId": "py-i-t",
+        "hanzi": "特",
+        "pinyin": "tè",
+        "meaning": {
+          "id": "khusus",
+          "en": "special"
+        },
+        "distractors": [
+          "dè",
+          "kè",
+          "lè"
+        ],
+        "note": {
+          "id": "Seperti d, tetapi dengan hembusan udara kuat.",
+          "en": "Like d, but with a strong puff of air."
+        }
+      },
+      {
+        "sound": "n",
+        "group": "tongueTip",
+        "audioId": "py-i-n",
+        "hanzi": "拿",
+        "pinyin": "ná",
+        "meaning": {
+          "id": "mengambil",
+          "en": "to take"
+        },
+        "distractors": [
+          "lá",
+          "má",
+          "dá"
+        ]
+      },
+      {
+        "sound": "l",
+        "group": "tongueTip",
+        "audioId": "py-i-l",
+        "hanzi": "拉",
+        "pinyin": "lā",
+        "meaning": {
+          "id": "menarik",
+          "en": "to pull"
+        },
+        "distractors": [
+          "nā",
+          "dā",
+          "tā"
+        ]
+      },
+      {
+        "sound": "g",
+        "group": "throat",
+        "audioId": "py-i-g",
+        "hanzi": "哥",
+        "pinyin": "gē",
+        "meaning": {
+          "id": "kakak laki-laki",
+          "en": "older brother"
+        },
+        "distractors": [
+          "kē",
+          "hē",
+          "dē"
+        ]
+      },
+      {
+        "sound": "k",
+        "group": "throat",
+        "audioId": "py-i-k",
+        "hanzi": "科",
+        "pinyin": "kē",
+        "meaning": {
+          "id": "bidang ilmu",
+          "en": "branch of study"
+        },
+        "distractors": [
+          "gē",
+          "hē",
+          "tē"
+        ],
+        "note": {
+          "id": "Seperti g, tetapi dengan hembusan udara kuat.",
+          "en": "Like g, but with a strong puff of air."
+        }
+      },
+      {
+        "sound": "h",
+        "group": "throat",
+        "audioId": "py-i-h",
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "meaning": {
+          "id": "minum",
+          "en": "to drink"
+        },
+        "distractors": [
+          "kē",
+          "gē",
+          "fā"
+        ],
+        "note": {
+          "id": "Bunyi dari tenggorokan, sedikit serak (seperti \"kh\" ringan).",
+          "en": "Made in the throat, a little rough (like a soft \"kh\")."
+        }
+      },
+      {
+        "sound": "j",
+        "group": "flat",
+        "audioId": "py-i-j",
+        "hanzi": "鸡",
+        "pinyin": "jī",
+        "meaning": {
+          "id": "ayam",
+          "en": "chicken"
+        },
+        "distractors": [
+          "qī",
+          "xī",
+          "zhī"
+        ],
+        "note": {
+          "id": "Lidah datar di belakang gigi bawah, bibir agak tersenyum. Mirip \"j\" di \"jin\" tetapi lebih ringan.",
+          "en": "Tongue flat behind the lower teeth, lips smiling. Close to \"j\" in \"jeep\" but lighter."
+        }
+      },
+      {
+        "sound": "q",
+        "group": "flat",
+        "audioId": "py-i-q",
+        "hanzi": "七",
+        "pinyin": "qī",
+        "meaning": {
+          "id": "tujuh",
+          "en": "seven"
+        },
+        "distractors": [
+          "jī",
+          "xī",
+          "chī"
+        ],
+        "note": {
+          "id": "Posisi seperti j, ditambah hembusan udara. Bunyinya mirip \"c\" di \"cium\", bukan \"k\".",
+          "en": "Same position as j, plus a puff of air. Sounds like \"ch\" in \"cheese\", never \"k\"."
+        }
+      },
+      {
+        "sound": "x",
+        "group": "flat",
+        "audioId": "py-i-x",
+        "hanzi": "西",
+        "pinyin": "xī",
+        "meaning": {
+          "id": "barat",
+          "en": "west"
+        },
+        "distractors": [
+          "jī",
+          "qī",
+          "shī"
+        ],
+        "note": {
+          "id": "Posisi seperti j, udara keluar mendesis. Mirip \"sy\" ringan.",
+          "en": "Same position as j, with a hiss. Like a light \"sh\" with a smile."
+        }
+      },
+      {
+        "sound": "zh",
+        "group": "curled",
+        "audioId": "py-i-zh",
+        "hanzi": "知",
+        "pinyin": "zhī",
+        "meaning": {
+          "id": "tahu",
+          "en": "to know"
+        },
+        "distractors": [
+          "zī",
+          "jī",
+          "chī"
+        ],
+        "note": {
+          "id": "Ujung lidah ditekuk ke atas-belakang. Mirip \"j\" yang berat.",
+          "en": "Curl the tongue tip up and back. Like a heavy \"j\" in \"jungle\"."
+        }
+      },
+      {
+        "sound": "ch",
+        "group": "curled",
+        "audioId": "py-i-ch",
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "meaning": {
+          "id": "makan",
+          "en": "to eat"
+        },
+        "distractors": [
+          "cī",
+          "qī",
+          "zhī"
+        ],
+        "note": {
+          "id": "Lidah ditekuk seperti zh, ditambah hembusan udara.",
+          "en": "Curled tongue like zh, plus a puff of air."
+        }
+      },
+      {
+        "sound": "sh",
+        "group": "curled",
+        "audioId": "py-i-sh",
+        "hanzi": "诗",
+        "pinyin": "shī",
+        "meaning": {
+          "id": "puisi",
+          "en": "poem"
+        },
+        "distractors": [
+          "sī",
+          "xī",
+          "chī"
+        ],
+        "note": {
+          "id": "Lidah ditekuk seperti zh, udara mendesis. Mirip \"sy\" yang berat.",
+          "en": "Curled tongue like zh, with a hiss. Like \"sh\" in \"shirt\"."
+        }
+      },
+      {
+        "sound": "r",
+        "group": "curled",
+        "audioId": "py-i-r",
+        "hanzi": "日",
+        "pinyin": "rì",
+        "meaning": {
+          "id": "matahari, hari",
+          "en": "sun, day"
+        },
+        "distractors": [
+          "lì",
+          "zhì",
+          "shì"
+        ],
+        "note": {
+          "id": "Lidah ditekuk seperti sh, tetapi bersuara. Bukan \"r\" bergetar.",
+          "en": "Curled tongue like sh, but voiced. Not a rolled \"r\"; close to \"r\" in \"pleasure\"."
+        }
+      },
+      {
+        "sound": "z",
+        "group": "teeth",
+        "audioId": "py-i-z",
+        "hanzi": "资",
+        "pinyin": "zī",
+        "meaning": {
+          "id": "modal",
+          "en": "funds"
+        },
+        "distractors": [
+          "zhī",
+          "cī",
+          "jī"
+        ],
+        "note": {
+          "id": "Ujung lidah di belakang gigi atas. Bunyinya \"dz\".",
+          "en": "Tongue tip behind the upper teeth. Sounds like \"ds\" in \"kids\"."
+        }
+      },
+      {
+        "sound": "c",
+        "group": "teeth",
+        "audioId": "py-i-c",
+        "hanzi": "词",
+        "pinyin": "cí",
+        "meaning": {
+          "id": "kata",
+          "en": "word"
+        },
+        "distractors": [
+          "chí",
+          "sí",
+          "qí"
+        ],
+        "note": {
+          "id": "Seperti z ditambah hembusan udara. Bunyinya \"ts\", bukan \"c\" Indonesia.",
+          "en": "Like z plus a puff of air. Sounds like \"ts\" in \"cats\", not \"k\"."
+        }
+      },
+      {
+        "sound": "s",
+        "group": "teeth",
+        "audioId": "py-i-s",
+        "hanzi": "思",
+        "pinyin": "sī",
+        "meaning": {
+          "id": "berpikir",
+          "en": "to think"
+        },
+        "distractors": [
+          "shī",
+          "xī",
+          "cī"
+        ],
+        "note": {
+          "id": "Seperti \"s\" biasa, ujung lidah di belakang gigi atas.",
+          "en": "A plain \"s\", tongue tip behind the upper teeth."
+        }
+      },
+      {
+        "sound": "y",
+        "group": "semi",
+        "audioId": "py-i-y",
+        "hanzi": "牙",
+        "pinyin": "yá",
+        "meaning": {
+          "id": "gigi",
+          "en": "tooth"
+        },
+        "distractors": [
+          "wá",
+          "yé",
+          "lá"
+        ],
+        "note": {
+          "id": "Sebenarnya bukan bunyi awal: y ditulis di depan i/ü kalau tidak ada bunyi awal lain.",
+          "en": "Not a real initial: y is written before i/ü when there is no other initial."
+        }
+      },
+      {
+        "sound": "w",
+        "group": "semi",
+        "audioId": "py-i-w",
+        "hanzi": "乌",
+        "pinyin": "wū",
+        "meaning": {
+          "id": "gagak, hitam",
+          "en": "crow, black"
+        },
+        "distractors": [
+          "yū",
+          "hū",
+          "fū"
+        ],
+        "note": {
+          "id": "Sebenarnya bukan bunyi awal: w ditulis di depan u kalau tidak ada bunyi awal lain.",
+          "en": "Not a real initial: w is written before u when there is no other initial."
+        }
+      }
+    ],
+    "finals": [
+      {
+        "sound": "a",
+        "group": "simple",
+        "audioId": "py-f-a",
+        "hanzi": "阿",
+        "pinyin": "ā",
+        "meaning": {
+          "id": "awalan nama panggilan",
+          "en": "name prefix"
+        },
+        "distractors": [
+          "ō",
+          "ē",
+          "āi"
+        ]
+      },
+      {
+        "sound": "o",
+        "group": "simple",
+        "audioId": "py-f-o",
+        "hanzi": "波",
+        "pinyin": "bō",
+        "meaning": {
+          "id": "gelombang",
+          "en": "wave"
+        },
+        "distractors": [
+          "bā",
+          "bū",
+          "bēi"
+        ]
+      },
+      {
+        "sound": "e",
+        "group": "simple",
+        "audioId": "py-f-e",
+        "hanzi": "鹅",
+        "pinyin": "é",
+        "meaning": {
+          "id": "angsa",
+          "en": "goose"
+        },
+        "distractors": [
+          "ó",
+          "á",
+          "ér"
+        ],
+        "note": {
+          "id": "Bukan \"e\" seperti di \"enak\". Mulut setengah terbuka, lidah ke belakang: mirip \"ê\" di \"emas\" yang ditarik ke belakang.",
+          "en": "Not \"e\" as in \"bed\". Mouth half open, tongue pulled back: close to \"u\" in \"but\", said further back."
+        }
+      },
+      {
+        "sound": "i",
+        "group": "simple",
+        "audioId": "py-f-i",
+        "hanzi": "衣",
+        "pinyin": "yī",
+        "meaning": {
+          "id": "pakaian",
+          "en": "clothes"
+        },
+        "distractors": [
+          "yū",
+          "wū",
+          "yē"
+        ],
+        "note": {
+          "id": "Tanpa bunyi awal ditulis yi. Hati-hati: zhi chi shi ri zi ci si tidak dibaca \"i\", tetapi bunyi dengung pendek.",
+          "en": "Written yi with no initial. Careful: in zhi chi shi ri zi ci si the \"i\" is not \"ee\" but a short buzz."
+        }
+      },
+      {
+        "sound": "u",
+        "group": "simple",
+        "audioId": "py-f-u",
+        "hanzi": "五",
+        "pinyin": "wǔ",
+        "meaning": {
+          "id": "lima",
+          "en": "five"
+        },
+        "distractors": [
+          "yǔ",
+          "wǒ",
+          "ǒu"
+        ]
+      },
+      {
+        "sound": "ü",
+        "group": "simple",
+        "audioId": "py-f-v",
+        "hanzi": "雨",
+        "pinyin": "yǔ",
+        "meaning": {
+          "id": "hujan",
+          "en": "rain"
+        },
+        "distractors": [
+          "wǔ",
+          "yǐ",
+          "yǒu"
+        ],
+        "note": {
+          "id": "Ucapkan \"i\" lalu bulatkan bibir seperti mau bilang \"u\". Setelah j q x y, titiknya tidak ditulis: ju, qu, xu, yu = ü.",
+          "en": "Say \"ee\" and round your lips as for \"oo\". After j q x y the dots are dropped: ju, qu, xu, yu all mean ü."
+        }
+      },
+      {
+        "sound": "ai",
+        "group": "compound",
+        "audioId": "py-f-ai",
+        "hanzi": "爱",
+        "pinyin": "ài",
+        "meaning": {
+          "id": "cinta",
+          "en": "love"
+        },
+        "distractors": [
+          "èi",
+          "ào",
+          "àn"
+        ]
+      },
+      {
+        "sound": "ei",
+        "group": "compound",
+        "audioId": "py-f-ei",
+        "hanzi": "杯",
+        "pinyin": "bēi",
+        "meaning": {
+          "id": "gelas",
+          "en": "cup"
+        },
+        "distractors": [
+          "bāi",
+          "bāo",
+          "bēn"
+        ]
+      },
+      {
+        "sound": "ui",
+        "group": "compound",
+        "audioId": "py-f-ui",
+        "hanzi": "对",
+        "pinyin": "duì",
+        "meaning": {
+          "id": "benar",
+          "en": "correct"
+        },
+        "distractors": [
+          "duò",
+          "dù",
+          "dòu"
+        ],
+        "note": {
+          "id": "ui adalah singkatan dari uei: duì terdengar \"duei\".",
+          "en": "ui is short for uei: duì sounds like \"duei\"."
+        }
+      },
+      {
+        "sound": "ao",
+        "group": "compound",
+        "audioId": "py-f-ao",
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "meaning": {
+          "id": "baik",
+          "en": "good"
+        },
+        "distractors": [
+          "hǒu",
+          "hǎi",
+          "hǎn"
+        ]
+      },
+      {
+        "sound": "ou",
+        "group": "compound",
+        "audioId": "py-f-ou",
+        "hanzi": "狗",
+        "pinyin": "gǒu",
+        "meaning": {
+          "id": "anjing",
+          "en": "dog"
+        },
+        "distractors": [
+          "gǎo",
+          "gǔ",
+          "gǒng"
+        ]
+      },
+      {
+        "sound": "iu",
+        "group": "compound",
+        "audioId": "py-f-iu",
+        "hanzi": "六",
+        "pinyin": "liù",
+        "meaning": {
+          "id": "enam",
+          "en": "six"
+        },
+        "distractors": [
+          "lòu",
+          "lù",
+          "liào"
+        ],
+        "note": {
+          "id": "iu adalah singkatan dari iou: liù terdengar \"liou\".",
+          "en": "iu is short for iou: liù sounds like \"liou\"."
+        }
+      },
+      {
+        "sound": "ie",
+        "group": "compound",
+        "audioId": "py-f-ie",
+        "hanzi": "写",
+        "pinyin": "xiě",
+        "meaning": {
+          "id": "menulis",
+          "en": "to write"
+        },
+        "distractors": [
+          "xuě",
+          "xǐ",
+          "xiǎ"
+        ]
+      },
+      {
+        "sound": "üe",
+        "group": "compound",
+        "audioId": "py-f-ve",
+        "hanzi": "月",
+        "pinyin": "yuè",
+        "meaning": {
+          "id": "bulan",
+          "en": "moon, month"
+        },
+        "distractors": [
+          "yè",
+          "yù",
+          "yuàn"
+        ],
+        "note": {
+          "id": "ü + ê. Setelah j q x y ditulis ue: xué, yuè.",
+          "en": "ü + ê. After j q x y it is written ue: xué, yuè."
+        }
+      },
+      {
+        "sound": "er",
+        "group": "compound",
+        "audioId": "py-f-er",
+        "hanzi": "二",
+        "pinyin": "èr",
+        "meaning": {
+          "id": "dua",
+          "en": "two"
+        },
+        "distractors": [
+          "è",
+          "èi",
+          "à"
+        ]
+      },
+      {
+        "sound": "an",
+        "group": "nasal",
+        "audioId": "py-f-an",
+        "hanzi": "三",
+        "pinyin": "sān",
+        "meaning": {
+          "id": "tiga",
+          "en": "three"
+        },
+        "distractors": [
+          "sāng",
+          "sēn",
+          "sāi"
+        ],
+        "note": {
+          "id": "-n pendek dan maju; bandingkan dengan -ang yang lebih \"dalam\".",
+          "en": "A short, forward -n; compare -ang, which sounds deeper."
+        }
+      },
+      {
+        "sound": "en",
+        "group": "nasal",
+        "audioId": "py-f-en",
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "meaning": {
+          "id": "sangat",
+          "en": "very"
+        },
+        "distractors": [
+          "hěng",
+          "hǎn",
+          "hǒng"
+        ],
+        "note": {
+          "id": "-n: ujung lidah menyentuh gusi atas di akhir bunyi.",
+          "en": "-n: the tongue tip touches the gum ridge at the end."
+        }
+      },
+      {
+        "sound": "in",
+        "group": "nasal",
+        "audioId": "py-f-in",
+        "hanzi": "新",
+        "pinyin": "xīn",
+        "meaning": {
+          "id": "baru",
+          "en": "new"
+        },
+        "distractors": [
+          "xīng",
+          "xūn",
+          "xiān"
+        ],
+        "note": {
+          "id": "-in berakhir dengan lidah di gusi; -ing berakhir dengan \"ng\".",
+          "en": "-in ends with the tongue on the gum ridge; -ing ends with \"ng\"."
+        }
+      },
+      {
+        "sound": "un",
+        "group": "nasal",
+        "audioId": "py-f-un",
+        "hanzi": "孙",
+        "pinyin": "sūn",
+        "meaning": {
+          "id": "cucu",
+          "en": "grandchild"
+        },
+        "distractors": [
+          "sēn",
+          "sōng",
+          "sān"
+        ],
+        "note": {
+          "id": "un adalah singkatan dari uen: sūn terdengar \"suen\".",
+          "en": "un is short for uen: sūn sounds like \"suen\"."
+        }
+      },
+      {
+        "sound": "ün",
+        "group": "nasal",
+        "audioId": "py-f-vn",
+        "hanzi": "云",
+        "pinyin": "yún",
+        "meaning": {
+          "id": "awan",
+          "en": "cloud"
+        },
+        "distractors": [
+          "yín",
+          "yíng",
+          "wén"
+        ],
+        "note": {
+          "id": "ü + n. Setelah j q x y ditulis un: yún, jūn.",
+          "en": "ü + n. After j q x y it is written un: yún, jūn."
+        }
+      },
+      {
+        "sound": "ang",
+        "group": "nasal",
+        "audioId": "py-f-ang",
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "meaning": {
+          "id": "sibuk",
+          "en": "busy"
+        },
+        "distractors": [
+          "mán",
+          "méng",
+          "míng"
+        ],
+        "note": {
+          "id": "-ng: suara bergaung di belakang, mulut terbuka lebar.",
+          "en": "-ng: resonates at the back, mouth wide open."
+        }
+      },
+      {
+        "sound": "eng",
+        "group": "nasal",
+        "audioId": "py-f-eng",
+        "hanzi": "冷",
+        "pinyin": "lěng",
+        "meaning": {
+          "id": "dingin",
+          "en": "cold"
+        },
+        "distractors": [
+          "lǎng",
+          "lǐng",
+          "lǒng"
+        ],
+        "note": {
+          "id": "-ng: pangkal lidah naik, mulut tetap terbuka (seperti \"ng\" di \"bang\").",
+          "en": "-ng: the back of the tongue rises, mouth stays open (like \"ng\" in \"sing\")."
+        }
+      },
+      {
+        "sound": "ing",
+        "group": "nasal",
+        "audioId": "py-f-ing",
+        "hanzi": "星",
+        "pinyin": "xīng",
+        "meaning": {
+          "id": "bintang",
+          "en": "star"
+        },
+        "distractors": [
+          "xīn",
+          "xiōng",
+          "shēng"
+        ],
+        "note": {
+          "id": "Bandingkan xīn (baru) dan xīng (bintang).",
+          "en": "Compare xīn (new) and xīng (star)."
+        }
+      },
+      {
+        "sound": "ong",
+        "group": "nasal",
+        "audioId": "py-f-ong",
+        "hanzi": "中",
+        "pinyin": "zhōng",
+        "meaning": {
+          "id": "tengah",
+          "en": "middle"
+        },
+        "distractors": [
+          "zhēng",
+          "zhāng",
+          "jiōng"
+        ]
+      },
+      {
+        "sound": "uo",
+        "group": "compound",
+        "audioId": "py-f-uo",
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "meaning": {
+          "id": "saya",
+          "en": "I, me"
+        },
+        "distractors": [
+          "wǔ",
+          "wǎ",
+          "wěi"
+        ]
+      },
+      {
+        "sound": "ia",
+        "group": "compound",
+        "audioId": "py-f-ia",
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "meaning": {
+          "id": "rumah, keluarga",
+          "en": "home, family"
+        },
+        "distractors": [
+          "jiē",
+          "zhā",
+          "jiāo"
+        ]
+      },
+      {
+        "sound": "ian",
+        "group": "nasal",
+        "audioId": "py-f-ian",
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "meaning": {
+          "id": "langit, hari",
+          "en": "sky, day"
+        },
+        "distractors": [
+          "tīng",
+          "tān",
+          "tiāo"
+        ]
+      },
+      {
+        "sound": "iao",
+        "group": "compound",
+        "audioId": "py-f-iao",
+        "hanzi": "小",
+        "pinyin": "xiǎo",
+        "meaning": {
+          "id": "kecil",
+          "en": "small"
+        },
+        "distractors": [
+          "xiǔ",
+          "xǔ",
+          "shǎo"
+        ]
+      }
+    ]
+  },
+  "tones": {
+    "intro": {
+      "id": "Mandarin punya 4 nada + nada ringan. Bunyi yang sama dengan nada berbeda punya arti berbeda: mā (ibu), mǎ (kuda). Tanda di atas huruf vokal menunjukkan nadanya.",
+      "en": "Mandarin has 4 tones plus a neutral tone. The same sound with a different tone means something else: mā (mother), mǎ (horse). The mark above the vowel shows the tone."
+    },
+    "tones": [
+      {
+        "tone": 1,
+        "mark": "ā",
+        "contour": [
+          5,
+          5
+        ],
+        "name": {
+          "id": "Nada 1 · datar tinggi",
+          "en": "Tone 1 · high and level"
+        },
+        "desc": {
+          "id": "Tinggi dan datar, ditahan seperti menyanyikan satu nada panjang.",
+          "en": "High and flat, held steady like singing one long note."
+        }
+      },
+      {
+        "tone": 2,
+        "mark": "á",
+        "contour": [
+          3,
+          5
+        ],
+        "name": {
+          "id": "Nada 2 · naik",
+          "en": "Tone 2 · rising"
+        },
+        "desc": {
+          "id": "Naik dari tengah ke atas, seperti bertanya \"Hah?\" dengan heran.",
+          "en": "Rises from the middle to the top, like a surprised \"Huh?\""
+        }
+      },
+      {
+        "tone": 3,
+        "mark": "ǎ",
+        "contour": [
+          2,
+          1,
+          4
+        ],
+        "name": {
+          "id": "Nada 3 · turun lalu naik",
+          "en": "Tone 3 · dipping"
+        },
+        "desc": {
+          "id": "Turun ke bawah lalu naik sedikit. Di tengah kalimat biasanya hanya terdengar rendah.",
+          "en": "Dips low, then rises a little. In the middle of a sentence it usually stays low."
+        }
+      },
+      {
+        "tone": 4,
+        "mark": "à",
+        "contour": [
+          5,
+          1
+        ],
+        "name": {
+          "id": "Nada 4 · turun tajam",
+          "en": "Tone 4 · falling"
+        },
+        "desc": {
+          "id": "Turun cepat dari atas ke bawah, tegas seperti berkata \"Stop!\"",
+          "en": "Falls sharply from top to bottom, firm like saying \"Stop!\""
+        }
+      },
+      {
+        "tone": 5,
+        "mark": "a",
+        "contour": [
+          3
+        ],
+        "name": {
+          "id": "Nada ringan",
+          "en": "Neutral tone"
+        },
+        "desc": {
+          "id": "Pendek dan ringan, tanpa tanda nada. Tingginya mengikuti suku kata sebelumnya.",
+          "en": "Short and light, written without a mark. Its pitch follows the syllable before it."
+        }
+      }
+    ],
+    "sets": [
+      {
+        "id": "ma",
+        "items": [
+          {
+            "audioId": "tn-ma1",
+            "hanzi": "妈",
+            "pinyin": "mā",
+            "meaning": {
+              "id": "ibu",
+              "en": "mother"
+            }
+          },
+          {
+            "audioId": "tn-ma2",
+            "hanzi": "麻",
+            "pinyin": "má",
+            "meaning": {
+              "id": "rami; kebas",
+              "en": "hemp; numb"
+            }
+          },
+          {
+            "audioId": "tn-ma3",
+            "hanzi": "马",
+            "pinyin": "mǎ",
+            "meaning": {
+              "id": "kuda",
+              "en": "horse"
+            }
+          },
+          {
+            "audioId": "tn-ma4",
+            "hanzi": "骂",
+            "pinyin": "mà",
+            "meaning": {
+              "id": "memarahi",
+              "en": "to scold"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ba",
+        "items": [
+          {
+            "audioId": "tn-ba1",
+            "hanzi": "八",
+            "pinyin": "bā",
+            "meaning": {
+              "id": "delapan",
+              "en": "eight"
+            }
+          },
+          {
+            "audioId": "tn-ba2",
+            "hanzi": "拔",
+            "pinyin": "bá",
+            "meaning": {
+              "id": "mencabut",
+              "en": "to pull out"
+            }
+          },
+          {
+            "audioId": "tn-ba3",
+            "hanzi": "把",
+            "pinyin": "bǎ",
+            "meaning": {
+              "id": "memegang",
+              "en": "to hold"
+            }
+          },
+          {
+            "audioId": "tn-ba4",
+            "hanzi": "爸",
+            "pinyin": "bà",
+            "meaning": {
+              "id": "ayah",
+              "en": "dad"
+            }
+          }
+        ]
+      },
+      {
+        "id": "yi",
+        "items": [
+          {
+            "audioId": "tn-yi1",
+            "hanzi": "衣",
+            "pinyin": "yī",
+            "meaning": {
+              "id": "pakaian",
+              "en": "clothes"
+            }
+          },
+          {
+            "audioId": "tn-yi2",
+            "hanzi": "姨",
+            "pinyin": "yí",
+            "meaning": {
+              "id": "bibi",
+              "en": "aunt"
+            }
+          },
+          {
+            "audioId": "tn-yi3",
+            "hanzi": "椅",
+            "pinyin": "yǐ",
+            "meaning": {
+              "id": "kursi",
+              "en": "chair"
+            }
+          },
+          {
+            "audioId": "tn-yi4",
+            "hanzi": "意",
+            "pinyin": "yì",
+            "meaning": {
+              "id": "makna",
+              "en": "meaning"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tang",
+        "items": [
+          {
+            "audioId": "tn-tang1",
+            "hanzi": "汤",
+            "pinyin": "tāng",
+            "meaning": {
+              "id": "sup",
+              "en": "soup"
+            }
+          },
+          {
+            "audioId": "tn-tang2",
+            "hanzi": "糖",
+            "pinyin": "táng",
+            "meaning": {
+              "id": "gula, permen",
+              "en": "sugar, candy"
+            }
+          },
+          {
+            "audioId": "tn-tang3",
+            "hanzi": "躺",
+            "pinyin": "tǎng",
+            "meaning": {
+              "id": "berbaring",
+              "en": "to lie down"
+            }
+          },
+          {
+            "audioId": "tn-tang4",
+            "hanzi": "烫",
+            "pinyin": "tàng",
+            "meaning": {
+              "id": "panas sekali",
+              "en": "scalding hot"
+            }
+          }
+        ]
+      }
+    ],
+    "neutral": [
+      {
+        "audioId": "tn-n-mama",
+        "hanzi": "妈妈",
+        "pinyin": "māma",
+        "syllables": [
+          "mā",
+          "ma"
+        ],
+        "meaning": {
+          "id": "ibu, mama",
+          "en": "mom"
+        }
+      },
+      {
+        "audioId": "tn-n-baba",
+        "hanzi": "爸爸",
+        "pinyin": "bàba",
+        "syllables": [
+          "bà",
+          "ba"
+        ],
+        "meaning": {
+          "id": "ayah, papa",
+          "en": "dad"
+        }
+      },
+      {
+        "audioId": "tn-n-xiexie",
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "syllables": [
+          "xiè",
+          "xie"
+        ],
+        "meaning": {
+          "id": "terima kasih",
+          "en": "thank you"
+        }
+      },
+      {
+        "audioId": "tn-n-haoma",
+        "hanzi": "好吗",
+        "pinyin": "hǎoma",
+        "syllables": [
+          "hǎo",
+          "ma"
+        ],
+        "meaning": {
+          "id": "baik? / oke?",
+          "en": "OK? / all right?"
+        }
+      },
+      {
+        "audioId": "tn-n-wode",
+        "hanzi": "我的",
+        "pinyin": "wǒde",
+        "syllables": [
+          "wǒ",
+          "de"
+        ],
+        "meaning": {
+          "id": "milikku",
+          "en": "mine"
+        }
+      }
+    ]
+  },
+  "sandhi": {
+    "intro": {
+      "id": "Beberapa nada berubah saat diucapkan bersama nada lain. Tulisan pinyin di kamus biasanya tetap memakai nada asli, tetapi kita membacanya dengan nada yang berubah.",
+      "en": "Some tones change when spoken next to other tones. Dictionaries usually keep the original mark, but we say the changed tone."
+    },
+    "rules": [
+      {
+        "id": "third",
+        "title": {
+          "id": "Nada 3 + nada 3",
+          "en": "Tone 3 + tone 3"
+        },
+        "rule": {
+          "id": "Dua nada 3 berurutan: yang pertama dibaca nada 2. Tanda nada di tulisan tetap nada 3.",
+          "en": "Two 3rd tones in a row: the first one is said as a 2nd tone. The written mark stays 3rd tone."
+        },
+        "examples": [
+          {
+            "audioId": "sd-nihao",
+            "hanzi": "你好",
+            "base": [
+              "nǐ",
+              "hǎo"
+            ],
+            "spoken": [
+              "ní",
+              "hǎo"
+            ],
+            "pinyin": "ní hǎo",
+            "focus": 0,
+            "meaning": {
+              "id": "halo",
+              "en": "hello"
+            }
+          },
+          {
+            "audioId": "sd-henhao",
+            "hanzi": "很好",
+            "base": [
+              "hěn",
+              "hǎo"
+            ],
+            "spoken": [
+              "hén",
+              "hǎo"
+            ],
+            "pinyin": "hén hǎo",
+            "focus": 0,
+            "meaning": {
+              "id": "sangat baik",
+              "en": "very good"
+            }
+          },
+          {
+            "audioId": "sd-keyi",
+            "hanzi": "可以",
+            "base": [
+              "kě",
+              "yǐ"
+            ],
+            "spoken": [
+              "ké",
+              "yǐ"
+            ],
+            "pinyin": "ké yǐ",
+            "focus": 0,
+            "meaning": {
+              "id": "boleh",
+              "en": "may, can"
+            }
+          },
+          {
+            "audioId": "sd-shuiguo",
+            "hanzi": "水果",
+            "base": [
+              "shuǐ",
+              "guǒ"
+            ],
+            "spoken": [
+              "shuí",
+              "guǒ"
+            ],
+            "pinyin": "shuí guǒ",
+            "focus": 0,
+            "meaning": {
+              "id": "buah",
+              "en": "fruit"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bu",
+        "title": {
+          "id": "不 bù",
+          "en": "不 bù"
+        },
+        "rule": {
+          "id": "不 biasanya nada 4 (bù). Di depan nada 4, 不 berubah jadi nada 2: bú. Di depan nada lain tetap bù.",
+          "en": "不 is normally 4th tone (bù). Before another 4th tone it becomes 2nd tone: bú. Before other tones it stays bù."
+        },
+        "examples": [
+          {
+            "audioId": "sd-bushi",
+            "hanzi": "不是",
+            "base": [
+              "bù",
+              "shì"
+            ],
+            "spoken": [
+              "bú",
+              "shì"
+            ],
+            "pinyin": "bú shì",
+            "focus": 0,
+            "meaning": {
+              "id": "bukan",
+              "en": "is not"
+            }
+          },
+          {
+            "audioId": "sd-budui",
+            "hanzi": "不对",
+            "base": [
+              "bù",
+              "duì"
+            ],
+            "spoken": [
+              "bú",
+              "duì"
+            ],
+            "pinyin": "bú duì",
+            "focus": 0,
+            "meaning": {
+              "id": "tidak benar",
+              "en": "not right"
+            }
+          },
+          {
+            "audioId": "sd-buyao",
+            "hanzi": "不要",
+            "base": [
+              "bù",
+              "yào"
+            ],
+            "spoken": [
+              "bú",
+              "yào"
+            ],
+            "pinyin": "bú yào",
+            "focus": 0,
+            "meaning": {
+              "id": "jangan; tidak mau",
+              "en": "don't; don't want"
+            }
+          },
+          {
+            "audioId": "sd-buhao",
+            "hanzi": "不好",
+            "base": [
+              "bù",
+              "hǎo"
+            ],
+            "spoken": [
+              "bù",
+              "hǎo"
+            ],
+            "pinyin": "bù hǎo",
+            "focus": 0,
+            "meaning": {
+              "id": "tidak baik",
+              "en": "not good"
+            }
+          },
+          {
+            "audioId": "sd-buchi",
+            "hanzi": "不吃",
+            "base": [
+              "bù",
+              "chī"
+            ],
+            "spoken": [
+              "bù",
+              "chī"
+            ],
+            "pinyin": "bù chī",
+            "focus": 0,
+            "meaning": {
+              "id": "tidak makan",
+              "en": "don't eat"
+            }
+          },
+          {
+            "audioId": "sd-bulai",
+            "hanzi": "不来",
+            "base": [
+              "bù",
+              "lái"
+            ],
+            "spoken": [
+              "bù",
+              "lái"
+            ],
+            "pinyin": "bù lái",
+            "focus": 0,
+            "meaning": {
+              "id": "tidak datang",
+              "en": "won't come"
+            }
+          }
+        ]
+      },
+      {
+        "id": "yi",
+        "title": {
+          "id": "一 yī",
+          "en": "一 yī"
+        },
+        "rule": {
+          "id": "一 dibaca yī kalau berdiri sendiri, saat menghitung, atau di akhir (第一). Di depan nada 4 jadi yí; di depan nada 1, 2, 3 jadi yì.",
+          "en": "一 is yī on its own, when counting, or at the end (第一). Before a 4th tone it becomes yí; before tones 1, 2 and 3 it becomes yì."
+        },
+        "examples": [
+          {
+            "audioId": "sd-yi",
+            "hanzi": "一",
+            "base": [
+              "yī"
+            ],
+            "spoken": [
+              "yī"
+            ],
+            "pinyin": "yī",
+            "focus": 0,
+            "meaning": {
+              "id": "satu",
+              "en": "one"
+            }
+          },
+          {
+            "audioId": "sd-diyi",
+            "hanzi": "第一",
+            "base": [
+              "dì",
+              "yī"
+            ],
+            "spoken": [
+              "dì",
+              "yī"
+            ],
+            "pinyin": "dì yī",
+            "focus": 1,
+            "meaning": {
+              "id": "pertama",
+              "en": "first"
+            }
+          },
+          {
+            "audioId": "sd-yitian",
+            "hanzi": "一天",
+            "base": [
+              "yī",
+              "tiān"
+            ],
+            "spoken": [
+              "yì",
+              "tiān"
+            ],
+            "pinyin": "yì tiān",
+            "focus": 0,
+            "meaning": {
+              "id": "satu hari",
+              "en": "one day"
+            }
+          },
+          {
+            "audioId": "sd-yinian",
+            "hanzi": "一年",
+            "base": [
+              "yī",
+              "nián"
+            ],
+            "spoken": [
+              "yì",
+              "nián"
+            ],
+            "pinyin": "yì nián",
+            "focus": 0,
+            "meaning": {
+              "id": "satu tahun",
+              "en": "one year"
+            }
+          },
+          {
+            "audioId": "sd-yige",
+            "hanzi": "一个",
+            "base": [
+              "yī",
+              "gè"
+            ],
+            "spoken": [
+              "yí",
+              "ge"
+            ],
+            "pinyin": "yí ge",
+            "focus": 0,
+            "meaning": {
+              "id": "satu (buah)",
+              "en": "one (of something)"
+            }
+          },
+          {
+            "audioId": "sd-yixia",
+            "hanzi": "一下",
+            "base": [
+              "yī",
+              "xià"
+            ],
+            "spoken": [
+              "yí",
+              "xià"
+            ],
+            "pinyin": "yí xià",
+            "focus": 0,
+            "meaning": {
+              "id": "sebentar",
+              "en": "a moment"
+            }
+          },
+          {
+            "audioId": "sd-yiban",
+            "hanzi": "一半",
+            "base": [
+              "yī",
+              "bàn"
+            ],
+            "spoken": [
+              "yí",
+              "bàn"
+            ],
+            "pinyin": "yí bàn",
+            "focus": 0,
+            "meaning": {
+              "id": "setengah",
+              "en": "half"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "strokes": {
+    "intro": {
+      "id": "Setiap huruf Mandarin tersusun dari coretan. Ada 8 coretan dasar, dan urutan menulisnya mengikuti beberapa aturan sederhana.",
+      "en": "Every Chinese character is built from strokes. There are 8 basic strokes, and the writing order follows a few simple rules."
+    },
+    "basic": [
+      {
+        "id": "dian",
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "meaning": {
+          "id": "titik",
+          "en": "dot"
+        },
+        "desc": {
+          "id": "Titik pendek, ditekan dari kiri atas ke kanan bawah.",
+          "en": "A short dab pressed from top left to bottom right."
+        },
+        "example": {
+          "char": "六",
+          "stroke": 0
+        }
+      },
+      {
+        "id": "heng",
+        "hanzi": "横",
+        "pinyin": "héng",
+        "meaning": {
+          "id": "garis datar",
+          "en": "horizontal"
+        },
+        "desc": {
+          "id": "Garis mendatar dari kiri ke kanan.",
+          "en": "A flat line from left to right."
+        },
+        "example": {
+          "char": "一",
+          "stroke": 0
+        }
+      },
+      {
+        "id": "shu",
+        "hanzi": "竖",
+        "pinyin": "shù",
+        "meaning": {
+          "id": "garis tegak",
+          "en": "vertical"
+        },
+        "desc": {
+          "id": "Garis tegak dari atas ke bawah.",
+          "en": "A straight line from top to bottom."
+        },
+        "example": {
+          "char": "十",
+          "stroke": 1
+        }
+      },
+      {
+        "id": "pie",
+        "hanzi": "撇",
+        "pinyin": "piě",
+        "meaning": {
+          "id": "miring ke kiri",
+          "en": "left-falling"
+        },
+        "desc": {
+          "id": "Turun miring ke kiri bawah, makin tipis di ujung.",
+          "en": "Sweeps down to the left, thinning at the end."
+        },
+        "example": {
+          "char": "人",
+          "stroke": 0
+        }
+      },
+      {
+        "id": "na",
+        "hanzi": "捺",
+        "pinyin": "nà",
+        "meaning": {
+          "id": "miring ke kanan",
+          "en": "right-falling"
+        },
+        "desc": {
+          "id": "Turun miring ke kanan bawah, melebar di ujung.",
+          "en": "Sweeps down to the right, widening at the end."
+        },
+        "example": {
+          "char": "人",
+          "stroke": 1
+        }
+      },
+      {
+        "id": "ti",
+        "hanzi": "提",
+        "pinyin": "tí",
+        "meaning": {
+          "id": "naik",
+          "en": "rising"
+        },
+        "desc": {
+          "id": "Naik pendek dari kiri bawah ke kanan atas.",
+          "en": "A short flick up from bottom left to top right."
+        },
+        "example": {
+          "char": "打",
+          "stroke": 2
+        }
+      },
+      {
+        "id": "zhe",
+        "hanzi": "折",
+        "pinyin": "zhé",
+        "meaning": {
+          "id": "belok",
+          "en": "turning"
+        },
+        "desc": {
+          "id": "Satu coretan yang berbelok, mis. datar lalu turun.",
+          "en": "One stroke that turns a corner, e.g. across then down."
+        },
+        "example": {
+          "char": "口",
+          "stroke": 1
+        }
+      },
+      {
+        "id": "gou",
+        "hanzi": "钩",
+        "pinyin": "gōu",
+        "meaning": {
+          "id": "kait",
+          "en": "hook"
+        },
+        "desc": {
+          "id": "Coretan yang ujungnya dikaitkan ke atas.",
+          "en": "A stroke that ends with a little flick (hook)."
+        },
+        "example": {
+          "char": "小",
+          "stroke": 0
+        }
+      }
+    ],
+    "rules": [
+      {
+        "id": "heng-shu",
+        "hanzi": "先横后竖",
+        "pinyin": "xiān héng hòu shù",
+        "text": {
+          "id": "Datar dulu, lalu tegak.",
+          "en": "Horizontal before vertical."
+        },
+        "examples": [
+          {
+            "char": "十",
+            "first": "heng"
+          }
+        ]
+      },
+      {
+        "id": "pie-na",
+        "hanzi": "先撇后捺",
+        "pinyin": "xiān piě hòu nà",
+        "text": {
+          "id": "Miring kiri dulu, lalu miring kanan.",
+          "en": "Left-falling before right-falling."
+        },
+        "examples": [
+          {
+            "char": "人",
+            "first": "pie"
+          },
+          {
+            "char": "八",
+            "first": "pie"
+          }
+        ]
+      },
+      {
+        "id": "top-bottom",
+        "hanzi": "从上到下",
+        "pinyin": "cóng shàng dào xià",
+        "text": {
+          "id": "Dari atas ke bawah.",
+          "en": "From top to bottom."
+        },
+        "examples": [
+          {
+            "char": "三",
+            "first": "heng"
+          }
+        ]
+      },
+      {
+        "id": "left-right",
+        "hanzi": "从左到右",
+        "pinyin": "cóng zuǒ dào yòu",
+        "text": {
+          "id": "Dari kiri ke kanan.",
+          "en": "From left to right."
+        },
+        "examples": [
+          {
+            "char": "明",
+            "first": "shu"
+          }
+        ]
+      },
+      {
+        "id": "out-in",
+        "hanzi": "从外到内",
+        "pinyin": "cóng wài dào nèi",
+        "text": {
+          "id": "Bagian luar dulu, lalu bagian dalam.",
+          "en": "Outside before inside."
+        },
+        "examples": [
+          {
+            "char": "月",
+            "first": "pie"
+          }
+        ]
+      },
+      {
+        "id": "close-last",
+        "hanzi": "先里头后封口",
+        "pinyin": "xiān lǐtou hòu fēngkǒu",
+        "text": {
+          "id": "Isi bagian dalam dulu, garis penutup bawah paling akhir.",
+          "en": "Fill the inside first, close the box at the bottom last."
+        },
+        "examples": [
+          {
+            "char": "回",
+            "first": "shu"
+          },
+          {
+            "char": "国",
+            "first": "shu"
+          }
+        ]
+      },
+      {
+        "id": "middle-sides",
+        "hanzi": "先中间后两边",
+        "pinyin": "xiān zhōngjiān hòu liǎngbiān",
+        "text": {
+          "id": "Tengah dulu, lalu kiri dan kanan.",
+          "en": "Middle first, then the two sides."
+        },
+        "examples": [
+          {
+            "char": "小",
+            "first": "gou",
+            "avoid": [
+              "shu"
+            ]
+          },
+          {
+            "char": "水",
+            "first": "gou",
+            "avoid": [
+              "shu"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "radicals": {
+    "intro": {
+      "id": "Radikal adalah bagian huruf yang sering memberi petunjuk arti. Huruf dengan 女 sering berhubungan dengan perempuan, huruf dengan 氵 dengan air.",
+      "en": "A radical is a part of a character that often hints at its meaning. Characters with 女 often relate to women, characters with 氵 to water."
+    },
+    "items": [
+      {
+        "radical": "亻",
+        "from": "人",
+        "pinyin": "rén",
+        "meaning": {
+          "id": "orang",
+          "en": "person"
+        },
+        "examples": [
+          {
+            "audioId": "rd-ni3-4f60",
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "meaning": {
+              "id": "kamu",
+              "en": "you"
+            }
+          },
+          {
+            "audioId": "rd-ta1-4ed6",
+            "hanzi": "他",
+            "pinyin": "tā",
+            "meaning": {
+              "id": "dia (laki-laki)",
+              "en": "he"
+            }
+          },
+          {
+            "audioId": "rd-xiu1-4f11",
+            "hanzi": "休",
+            "pinyin": "xiū",
+            "meaning": {
+              "id": "istirahat",
+              "en": "rest"
+            },
+            "also": [
+              "木"
+            ]
+          },
+          {
+            "audioId": "rd-zhu4-4f4f",
+            "hanzi": "住",
+            "pinyin": "zhù",
+            "meaning": {
+              "id": "tinggal",
+              "en": "to live"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "口",
+        "from": "口",
+        "pinyin": "kǒu",
+        "meaning": {
+          "id": "mulut",
+          "en": "mouth"
+        },
+        "examples": [
+          {
+            "audioId": "rd-chi1-5403",
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "meaning": {
+              "id": "makan",
+              "en": "to eat"
+            }
+          },
+          {
+            "audioId": "rd-he1-559d",
+            "hanzi": "喝",
+            "pinyin": "hē",
+            "meaning": {
+              "id": "minum",
+              "en": "to drink"
+            },
+            "also": [
+              "日"
+            ]
+          },
+          {
+            "audioId": "rd-jiao4-53eb",
+            "hanzi": "叫",
+            "pinyin": "jiào",
+            "meaning": {
+              "id": "memanggil; bernama",
+              "en": "to call; to be called"
+            }
+          },
+          {
+            "audioId": "rd-chang4-5531",
+            "hanzi": "唱",
+            "pinyin": "chàng",
+            "meaning": {
+              "id": "menyanyi",
+              "en": "to sing"
+            },
+            "also": [
+              "日"
+            ]
+          }
+        ]
+      },
+      {
+        "radical": "女",
+        "from": "女",
+        "pinyin": "nǚ",
+        "meaning": {
+          "id": "perempuan",
+          "en": "woman"
+        },
+        "examples": [
+          {
+            "audioId": "rd-ma1-5988",
+            "hanzi": "妈",
+            "pinyin": "mā",
+            "meaning": {
+              "id": "ibu",
+              "en": "mother"
+            }
+          },
+          {
+            "audioId": "rd-jie3-59d0",
+            "hanzi": "姐",
+            "pinyin": "jiě",
+            "meaning": {
+              "id": "kakak perempuan",
+              "en": "older sister"
+            }
+          },
+          {
+            "audioId": "rd-mei4-59b9",
+            "hanzi": "妹",
+            "pinyin": "mèi",
+            "meaning": {
+              "id": "adik perempuan",
+              "en": "younger sister"
+            }
+          },
+          {
+            "audioId": "rd-ta1-5979",
+            "hanzi": "她",
+            "pinyin": "tā",
+            "meaning": {
+              "id": "dia (perempuan)",
+              "en": "she"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "氵",
+        "from": "水",
+        "pinyin": "shuǐ",
+        "meaning": {
+          "id": "air",
+          "en": "water"
+        },
+        "examples": [
+          {
+            "audioId": "rd-mei2-6ca1",
+            "hanzi": "没",
+            "pinyin": "méi",
+            "meaning": {
+              "id": "tidak ada",
+              "en": "not have"
+            }
+          },
+          {
+            "audioId": "rd-han4-6c49",
+            "hanzi": "汉",
+            "pinyin": "hàn",
+            "meaning": {
+              "id": "Han (bangsa Tionghoa)",
+              "en": "Han (Chinese)"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "木",
+        "from": "木",
+        "pinyin": "mù",
+        "meaning": {
+          "id": "pohon, kayu",
+          "en": "tree, wood"
+        },
+        "examples": [
+          {
+            "audioId": "rd-xiao4-6821",
+            "hanzi": "校",
+            "pinyin": "xiào",
+            "meaning": {
+              "id": "sekolah",
+              "en": "school"
+            }
+          },
+          {
+            "audioId": "rd-ji1-673a",
+            "hanzi": "机",
+            "pinyin": "jī",
+            "meaning": {
+              "id": "mesin",
+              "en": "machine"
+            }
+          },
+          {
+            "audioId": "rd-yi3-6905",
+            "hanzi": "椅",
+            "pinyin": "yǐ",
+            "meaning": {
+              "id": "kursi",
+              "en": "chair"
+            }
+          },
+          {
+            "audioId": "rd-zhuo1-684c",
+            "hanzi": "桌",
+            "pinyin": "zhuō",
+            "meaning": {
+              "id": "meja",
+              "en": "table"
+            },
+            "also": [
+              "日"
+            ]
+          }
+        ]
+      },
+      {
+        "radical": "日",
+        "from": "日",
+        "pinyin": "rì",
+        "meaning": {
+          "id": "matahari, hari",
+          "en": "sun, day"
+        },
+        "examples": [
+          {
+            "audioId": "rd-ming2-660e",
+            "hanzi": "明",
+            "pinyin": "míng",
+            "meaning": {
+              "id": "terang; besok",
+              "en": "bright; next"
+            }
+          },
+          {
+            "audioId": "rd-zao3-65e9",
+            "hanzi": "早",
+            "pinyin": "zǎo",
+            "meaning": {
+              "id": "pagi, awal",
+              "en": "early, morning"
+            }
+          },
+          {
+            "audioId": "rd-shi2-65f6",
+            "hanzi": "时",
+            "pinyin": "shí",
+            "meaning": {
+              "id": "waktu",
+              "en": "time"
+            }
+          },
+          {
+            "audioId": "rd-wan3-665a",
+            "hanzi": "晚",
+            "pinyin": "wǎn",
+            "meaning": {
+              "id": "malam, terlambat",
+              "en": "evening, late"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "扌",
+        "from": "手",
+        "pinyin": "shǒu",
+        "meaning": {
+          "id": "tangan",
+          "en": "hand"
+        },
+        "examples": [
+          {
+            "audioId": "rd-da3-6253",
+            "hanzi": "打",
+            "pinyin": "dǎ",
+            "meaning": {
+              "id": "memukul; menelepon",
+              "en": "to hit; to make (a call)"
+            }
+          },
+          {
+            "audioId": "rd-zhao3-627e",
+            "hanzi": "找",
+            "pinyin": "zhǎo",
+            "meaning": {
+              "id": "mencari",
+              "en": "to look for"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "讠",
+        "from": "言",
+        "pinyin": "yán",
+        "meaning": {
+          "id": "ucapan, kata",
+          "en": "speech, words"
+        },
+        "examples": [
+          {
+            "audioId": "rd-shuo1-8bf4",
+            "hanzi": "说",
+            "pinyin": "shuō",
+            "meaning": {
+              "id": "berbicara",
+              "en": "to speak"
+            }
+          },
+          {
+            "audioId": "rd-hua4-8bdd",
+            "hanzi": "话",
+            "pinyin": "huà",
+            "meaning": {
+              "id": "perkataan",
+              "en": "speech"
+            },
+            "also": [
+              "口"
+            ]
+          },
+          {
+            "audioId": "rd-qing3-8bf7",
+            "hanzi": "请",
+            "pinyin": "qǐng",
+            "meaning": {
+              "id": "silakan; meminta",
+              "en": "please; to ask"
+            }
+          },
+          {
+            "audioId": "rd-shei2-8c01",
+            "hanzi": "谁",
+            "pinyin": "shéi",
+            "meaning": {
+              "id": "siapa",
+              "en": "who"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "心",
+        "variant": "忄",
+        "from": "心",
+        "pinyin": "xīn",
+        "meaning": {
+          "id": "hati, perasaan",
+          "en": "heart, feeling"
+        },
+        "examples": [
+          {
+            "audioId": "rd-mang2-5fd9",
+            "hanzi": "忙",
+            "pinyin": "máng",
+            "meaning": {
+              "id": "sibuk",
+              "en": "busy"
+            }
+          },
+          {
+            "audioId": "rd-xiang3-60f3",
+            "hanzi": "想",
+            "pinyin": "xiǎng",
+            "meaning": {
+              "id": "ingin; berpikir",
+              "en": "to want; to think"
+            },
+            "also": [
+              "木"
+            ]
+          },
+          {
+            "audioId": "rd-nin2-60a8",
+            "hanzi": "您",
+            "pinyin": "nín",
+            "meaning": {
+              "id": "Anda (sopan)",
+              "en": "you (polite)"
+            },
+            "also": [
+              "亻"
+            ]
+          },
+          {
+            "audioId": "rd-zen3-600e",
+            "hanzi": "怎",
+            "pinyin": "zěn",
+            "meaning": {
+              "id": "bagaimana",
+              "en": "how"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "艹",
+        "from": "草",
+        "pinyin": "cǎo",
+        "meaning": {
+          "id": "rumput, tanaman",
+          "en": "grass, plant"
+        },
+        "examples": [
+          {
+            "audioId": "rd-cai4-83dc",
+            "hanzi": "菜",
+            "pinyin": "cài",
+            "meaning": {
+              "id": "sayur, lauk",
+              "en": "vegetable, dish"
+            },
+            "also": [
+              "木"
+            ]
+          },
+          {
+            "audioId": "rd-cha2-8336",
+            "hanzi": "茶",
+            "pinyin": "chá",
+            "meaning": {
+              "id": "teh",
+              "en": "tea"
+            },
+            "also": [
+              "木"
+            ]
+          },
+          {
+            "audioId": "rd-ping2-82f9",
+            "hanzi": "苹",
+            "pinyin": "píng",
+            "meaning": {
+              "id": "(dalam 苹果) apel",
+              "en": "(in 苹果) apple"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "宀",
+        "from": "宀",
+        "pinyin": "mián",
+        "meaning": {
+          "id": "atap",
+          "en": "roof"
+        },
+        "examples": [
+          {
+            "audioId": "rd-jia1-5bb6",
+            "hanzi": "家",
+            "pinyin": "jiā",
+            "meaning": {
+              "id": "rumah, keluarga",
+              "en": "home, family"
+            }
+          },
+          {
+            "audioId": "rd-zi4-5b57",
+            "hanzi": "字",
+            "pinyin": "zì",
+            "meaning": {
+              "id": "huruf",
+              "en": "character"
+            }
+          },
+          {
+            "audioId": "rd-ke4-5ba2",
+            "hanzi": "客",
+            "pinyin": "kè",
+            "meaning": {
+              "id": "tamu",
+              "en": "guest"
+            },
+            "also": [
+              "口"
+            ]
+          }
+        ]
+      },
+      {
+        "radical": "饣",
+        "from": "食",
+        "pinyin": "shí",
+        "meaning": {
+          "id": "makanan",
+          "en": "food"
+        },
+        "examples": [
+          {
+            "audioId": "rd-fan4-996d",
+            "hanzi": "饭",
+            "pinyin": "fàn",
+            "meaning": {
+              "id": "nasi, makanan",
+              "en": "rice, meal"
+            }
+          },
+          {
+            "audioId": "rd-jiao3-997a",
+            "hanzi": "饺",
+            "pinyin": "jiǎo",
+            "meaning": {
+              "id": "(dalam 饺子) pangsit",
+              "en": "(in 饺子) dumpling"
+            }
+          }
+        ]
+      },
+      {
+        "radical": "门",
+        "from": "门",
+        "pinyin": "mén",
+        "meaning": {
+          "id": "pintu",
+          "en": "door"
+        },
+        "examples": [
+          {
+            "audioId": "rd-wen4-95ee",
+            "hanzi": "问",
+            "pinyin": "wèn",
+            "meaning": {
+              "id": "bertanya",
+              "en": "to ask"
+            },
+            "also": [
+              "口"
+            ]
+          },
+          {
+            "audioId": "rd-jian1-95f4",
+            "hanzi": "间",
+            "pinyin": "jiān",
+            "meaning": {
+              "id": "ruang, di antara",
+              "en": "room, between"
+            },
+            "also": [
+              "日"
+            ]
+          }
+        ]
+      },
+      {
+        "radical": "辶",
+        "from": "辶",
+        "pinyin": "chuò",
+        "meaning": {
+          "id": "berjalan",
+          "en": "walking"
+        },
+        "examples": [
+          {
+            "audioId": "rd-zhe4-8fd9",
+            "hanzi": "这",
+            "pinyin": "zhè",
+            "meaning": {
+              "id": "ini",
+              "en": "this"
+            }
+          },
+          {
+            "audioId": "rd-hai2-8fd8",
+            "hanzi": "还",
+            "pinyin": "hái",
+            "meaning": {
+              "id": "masih",
+              "en": "still"
+            }
+          },
+          {
+            "audioId": "rd-bian1-8fb9",
+            "hanzi": "边",
+            "pinyin": "biān",
+            "meaning": {
+              "id": "sisi",
+              "en": "side"
+            }
+          },
+          {
+            "audioId": "rd-dao4-9053",
+            "hanzi": "道",
+            "pinyin": "dào",
+            "meaning": {
+              "id": "jalan; (dalam 知道) tahu",
+              "en": "road; (in 知道) know"
+            }
+          }
+        ]
+      }
+    ],
+    "compositions": [
+      {
+        "audioId": "cp-hao3",
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "parts": [
+          "女",
+          "子"
+        ],
+        "layout": "lr",
+        "meaning": {
+          "id": "baik",
+          "en": "good"
+        },
+        "note": {
+          "id": "Perempuan (女) dengan anak (子): baik.",
+          "en": "A woman (女) with a child (子): good."
+        }
+      },
+      {
+        "audioId": "cp-ming2",
+        "hanzi": "明",
+        "pinyin": "míng",
+        "parts": [
+          "日",
+          "月"
+        ],
+        "layout": "lr",
+        "meaning": {
+          "id": "terang",
+          "en": "bright"
+        },
+        "note": {
+          "id": "Matahari (日) dan bulan (月): terang.",
+          "en": "Sun (日) and moon (月): bright."
+        }
+      },
+      {
+        "audioId": "cp-xiu1",
+        "hanzi": "休",
+        "pinyin": "xiū",
+        "parts": [
+          "亻",
+          "木"
+        ],
+        "layout": "lr",
+        "meaning": {
+          "id": "istirahat",
+          "en": "rest"
+        },
+        "note": {
+          "id": "Orang (亻) bersandar di pohon (木): istirahat.",
+          "en": "A person (亻) leaning on a tree (木): rest."
+        }
+      },
+      {
+        "hanzi": "们",
+        "pinyin": "men",
+        "parts": [
+          "亻",
+          "门"
+        ],
+        "layout": "lr",
+        "meaning": {
+          "id": "penanda jamak (我们 kami)",
+          "en": "plural marker (我们 we)"
+        },
+        "note": {
+          "id": "亻 memberi arti \"orang\", 门 mén memberi bunyi.",
+          "en": "亻 gives the meaning \"person\", 门 mén gives the sound."
+        }
+      },
+      {
+        "audioId": "cp-zi4",
+        "hanzi": "字",
+        "pinyin": "zì",
+        "parts": [
+          "宀",
+          "子"
+        ],
+        "layout": "tb",
+        "meaning": {
+          "id": "huruf",
+          "en": "character"
+        },
+        "note": {
+          "id": "Anak (子) di bawah atap (宀) belajar huruf.",
+          "en": "A child (子) under a roof (宀) learning characters."
+        }
+      },
+      {
+        "audioId": "cp-nan2",
+        "hanzi": "男",
+        "pinyin": "nán",
+        "parts": [
+          "田",
+          "力"
+        ],
+        "layout": "tb",
+        "meaning": {
+          "id": "laki-laki",
+          "en": "male"
+        },
+        "note": {
+          "id": "Tenaga (力) di sawah (田): laki-laki.",
+          "en": "Strength (力) in the field (田): male."
+        }
+      },
+      {
+        "audioId": "cp-guo2",
+        "hanzi": "国",
+        "pinyin": "guó",
+        "parts": [
+          "囗",
+          "玉"
+        ],
+        "layout": "oi",
+        "meaning": {
+          "id": "negara",
+          "en": "country"
+        },
+        "note": {
+          "id": "Batu giok (玉) di dalam batas wilayah (囗): negara.",
+          "en": "Jade (玉) inside borders (囗): country."
+        }
+      },
+      {
+        "audioId": "cp-wen4",
+        "hanzi": "问",
+        "pinyin": "wèn",
+        "parts": [
+          "门",
+          "口"
+        ],
+        "layout": "oi",
+        "meaning": {
+          "id": "bertanya",
+          "en": "to ask"
+        },
+        "note": {
+          "id": "Mulut (口) di depan pintu (门): bertanya.",
+          "en": "A mouth (口) at the door (门): to ask."
+        }
+      }
+    ]
+  },
+  "phrases": {
+    "intro": {
+      "id": "Ungkapan yang langsung terpakai di kelas: angka 1 sampai 10 dan salam sehari-hari. Semuanya kata HSK 1.",
+      "en": "Phrases you can use in class right away: numbers 1 to 10 and everyday greetings. All are HSK 1 words."
+    },
+    "numbers": [
+      {
+        "audioId": "ph-n1",
+        "value": 1,
+        "hanzi": "一",
+        "pinyin": "yī",
+        "meaning": {
+          "id": "satu",
+          "en": "one"
+        }
+      },
+      {
+        "audioId": "ph-n2",
+        "value": 2,
+        "hanzi": "二",
+        "pinyin": "èr",
+        "meaning": {
+          "id": "dua",
+          "en": "two"
+        }
+      },
+      {
+        "audioId": "ph-n3",
+        "value": 3,
+        "hanzi": "三",
+        "pinyin": "sān",
+        "meaning": {
+          "id": "tiga",
+          "en": "three"
+        }
+      },
+      {
+        "audioId": "ph-n4",
+        "value": 4,
+        "hanzi": "四",
+        "pinyin": "sì",
+        "meaning": {
+          "id": "empat",
+          "en": "four"
+        }
+      },
+      {
+        "audioId": "ph-n5",
+        "value": 5,
+        "hanzi": "五",
+        "pinyin": "wǔ",
+        "meaning": {
+          "id": "lima",
+          "en": "five"
+        }
+      },
+      {
+        "audioId": "ph-n6",
+        "value": 6,
+        "hanzi": "六",
+        "pinyin": "liù",
+        "meaning": {
+          "id": "enam",
+          "en": "six"
+        }
+      },
+      {
+        "audioId": "ph-n7",
+        "value": 7,
+        "hanzi": "七",
+        "pinyin": "qī",
+        "meaning": {
+          "id": "tujuh",
+          "en": "seven"
+        }
+      },
+      {
+        "audioId": "ph-n8",
+        "value": 8,
+        "hanzi": "八",
+        "pinyin": "bā",
+        "meaning": {
+          "id": "delapan",
+          "en": "eight"
+        }
+      },
+      {
+        "audioId": "ph-n9",
+        "value": 9,
+        "hanzi": "九",
+        "pinyin": "jiǔ",
+        "meaning": {
+          "id": "sembilan",
+          "en": "nine"
+        }
+      },
+      {
+        "audioId": "ph-n10",
+        "value": 10,
+        "hanzi": "十",
+        "pinyin": "shí",
+        "meaning": {
+          "id": "sepuluh",
+          "en": "ten"
+        }
+      }
+    ],
+    "greetings": [
+      {
+        "audioId": "ph-nihao",
+        "hanzi": "你好",
+        "pinyin": "nǐ hǎo",
+        "meaning": {
+          "id": "halo",
+          "en": "hello"
+        },
+        "use": {
+          "id": "Salam umum untuk siapa saja.",
+          "en": "Everyday greeting for anyone."
+        }
+      },
+      {
+        "audioId": "ph-ninhao",
+        "hanzi": "您好",
+        "pinyin": "nín hǎo",
+        "meaning": {
+          "id": "halo (sopan)",
+          "en": "hello (polite)"
+        },
+        "use": {
+          "id": "Untuk orang yang lebih tua atau dihormati.",
+          "en": "For older people or someone you respect."
+        }
+      },
+      {
+        "audioId": "ph-nimenhao",
+        "hanzi": "你们好",
+        "pinyin": "nǐmen hǎo",
+        "meaning": {
+          "id": "halo semuanya",
+          "en": "hello, everyone"
+        },
+        "use": {
+          "id": "Menyapa beberapa orang sekaligus.",
+          "en": "Greeting several people at once."
+        }
+      },
+      {
+        "audioId": "ph-laoshihao",
+        "hanzi": "老师好",
+        "pinyin": "lǎoshī hǎo",
+        "meaning": {
+          "id": "selamat pagi/siang, Guru",
+          "en": "hello, teacher"
+        },
+        "use": {
+          "id": "Murid menyapa guru di awal pelajaran.",
+          "en": "Students greet the teacher at the start of class."
+        }
+      },
+      {
+        "audioId": "ph-zaoshanghao",
+        "hanzi": "早上好",
+        "pinyin": "zǎoshang hǎo",
+        "meaning": {
+          "id": "selamat pagi",
+          "en": "good morning"
+        },
+        "use": {
+          "id": "Salam di pagi hari.",
+          "en": "Greeting in the morning."
+        }
+      },
+      {
+        "audioId": "ph-xiexie",
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": {
+          "id": "terima kasih",
+          "en": "thank you"
+        },
+        "use": {
+          "id": "Berterima kasih.",
+          "en": "Saying thanks."
+        }
+      },
+      {
+        "audioId": "ph-bukeqi",
+        "hanzi": "不客气",
+        "pinyin": "bú kèqi",
+        "meaning": {
+          "id": "sama-sama",
+          "en": "you're welcome"
+        },
+        "use": {
+          "id": "Jawaban untuk 谢谢.",
+          "en": "The reply to 谢谢."
+        }
+      },
+      {
+        "audioId": "ph-duibuqi",
+        "hanzi": "对不起",
+        "pinyin": "duìbuqǐ",
+        "meaning": {
+          "id": "maaf",
+          "en": "sorry"
+        },
+        "use": {
+          "id": "Meminta maaf.",
+          "en": "Apologizing."
+        }
+      },
+      {
+        "audioId": "ph-meiguanxi",
+        "hanzi": "没关系",
+        "pinyin": "méi guānxi",
+        "meaning": {
+          "id": "tidak apa-apa",
+          "en": "it doesn't matter"
+        },
+        "use": {
+          "id": "Jawaban untuk 对不起.",
+          "en": "The reply to 对不起."
+        }
+      },
+      {
+        "audioId": "ph-zaijian",
+        "hanzi": "再见",
+        "pinyin": "zàijiàn",
+        "meaning": {
+          "id": "sampai jumpa",
+          "en": "goodbye"
+        },
+        "use": {
+          "id": "Berpamitan.",
+          "en": "Saying goodbye."
+        }
+      }
+    ]
+  }
+}

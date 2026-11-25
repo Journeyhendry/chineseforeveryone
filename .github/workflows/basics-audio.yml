@@ -1,0 +1,169 @@
+name: Basics audio (P3)
+
+# Audio Tahap 0 (task 0): mp3 suara P3 untuk data/basics/basics.json + cek Whisper large-v3 + nada F0.
+# Ronde 3 (metode A): suku kata tunggal yang gagal diluruskan nadanya dengan kontur rekaman asli
+# hugolpz/audio-cmn (CC BY-SA). audio-cmn hanya diunduh ke cache runner sebagai contoh nada; tidak
+# pernah di-commit dan tidak diputar di website.
+# Jalan otomatis di cabang selain main bila data/skrip/workflow ini berubah, atau manual.
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Buat ulang semua file (abaikan file yang sudah ada)"
+        type: boolean
+        default: false
+      recheck:
+        description: "File yang teksnya tidak berubah hanya dicek ulang (sintesis ulang hanya bila gagal)"
+        type: boolean
+        default: true
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - data/basics/basics.json
+      - scripts/tts-basics/**
+      - .github/workflows/basics-audio.yml
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: basics-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  # Item dibagi ke beberapa runner (item ke-i -> shard i % SHARDS) supaya Whisper large-v3 di CPU
+  # selesai dalam batas waktu; job "commit" menggabungkan hasilnya.
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      AUDIO_CMN_DIR: ${{ github.workspace }}/../audio-cmn
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system packages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+          ffmpeg -version | head -1
+
+      - name: Cache pip and Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: basics-audio-${{ runner.os }}-${{ hashFiles('scripts/tts/requirements.txt', 'scripts/tts-basics/requirements.txt', 'scripts/tts/voices.json') }}
+          restore-keys: |
+            basics-audio-${{ runner.os }}-
+            tts-${{ runner.os }}-
+
+      - name: Cache audio-cmn (pitch reference only, never committed)
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/../audio-cmn
+          key: audio-cmn-v1-${{ matrix.shard }}-${{ hashFiles('data/basics/basics.json') }}
+          restore-keys: |
+            audio-cmn-v1-${{ matrix.shard }}-
+            audio-cmn-v1-
+
+      - name: Install Kokoro + Whisper
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
+          "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts/requirements.txt -r scripts/tts-basics/requirements.txt
+          "$RUNNER_TEMP/venv/bin/pip" freeze | grep -i -E "^(torch|kokoro|misaki|faster|opencc|numpy|pypinyin|jieba|huggingface|praat)" || true
+
+      - name: Test tone classifier (synthetic sweeps)
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/test_tonecheck.py
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/test_pitch.py
+
+      - name: Synthesize, check, write manifest
+        id: synth
+        env:
+          FORCE: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+          # push: selalu --recheck; workflow_dispatch: ikut input (bawaan true, juga untuk lanjutan).
+          RECHECK: ${{ github.event.inputs.recheck != 'false' && '--recheck' || '' }}
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-basics/basics.py $FORCE $RECHECK --budget-min 40 \
+            --shard ${{ matrix.shard }} --shards 6 --part-dir "$RUNNER_TEMP/part" --work "$RUNNER_TEMP/basics-work"
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: basics-part-${{ matrix.shard }}
+          path: ${{ runner.temp }}/part
+          retention-days: 3
+
+  commit:
+    needs: audio
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: basics-part-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/parts
+
+      - name: Merge, write manifest
+        id: synth
+        run: |
+          set -euo pipefail
+          pip install -q numpy==1.26.4
+          python scripts/tts-basics/basics.py --merge "$RUNNER_TEMP/parts"
+          du -sh public/audio/basics
+          ls public/audio/basics | wc -l
+
+      - name: Commit audio
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/audio/basics data/basics/audio-issues.json
+          if git diff --cached --quiet; then
+            echo "No changes in basics audio"
+            exit 0
+          fi
+          git commit -m "Data: basics audio (P3)"
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"
+
+      - name: Continue in a new run if the time budget ran out
+        if: steps.synth.outputs.complete == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          gh workflow run basics-audio.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+          echo "Dispatched a follow-up run to finish the remaining items."

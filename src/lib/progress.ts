@@ -3,6 +3,9 @@
 // Kolom baru cukup ditambah di Progress dan dipulihkan per kolom di normalizeProgress; data lama
 // tanpa kolom itu tetap valid. Naikkan `version` hanya bila arti kolom yang sudah ada berubah.
 // Kolom task 8 (semuanya opsional): `words` (Leitner), `today` (kata dijawab hari ini), `streak`.
+// Kolom task 0 (opsional): `basics` = hasil latihan Tahap 0 per bagian (bentuk sama dengan unit;
+// tidak masuk Leitner kata HSK 1).
+import { BASICS_PARTS, type BasicsPart } from './basics.ts'
 import { normalizeStreak, normalizeToday, normalizeWords, type LeitnerEntry, type Streak, type TodayList } from './leitner.ts'
 import { GAME_KINDS, type GameKind } from '../games/kinds.ts'
 
@@ -25,6 +28,8 @@ export interface Progress {
   words?: Record<string, LeitnerEntry>
   today?: TodayList
   streak?: Streak
+  /** Tahap 0 · Dasar: nilai terbaik per bagian. */
+  basics?: Partial<Record<BasicsPart, UnitProgress>>
   /** Task 7: skor terbaik game per unit (bintang 0-3) + berapa kali dimainkan. Tidak memengaruhi bintang unit. */
   games?: Record<string, Partial<Record<GameKind, GameProgress>>>
 }
@@ -96,9 +101,22 @@ export function normalizeProgress(raw: unknown, knownUnitIds?: Iterable<string>)
   if (today) out.today = today
   const streak = normalizeStreak(o.streak)
   if (streak) out.streak = streak
+  const basics = normalizeBasics(o.basics)
+  if (basics) out.basics = basics
   const games = normalizeGames(o.games, known)
   if (games) out.games = games
   return out
+}
+
+function normalizeBasics(raw: unknown): Progress['basics'] | null {
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return null
+  const o = raw as Record<string, unknown>
+  const out: NonNullable<Progress['basics']> = {}
+  for (const part of BASICS_PARTS) {
+    const u = normalizeUnit(o[part])
+    if (u) out[part] = u
+  }
+  return Object.keys(out).length > 0 ? out : null
 }
 
 function normalizeGames(raw: unknown, known: Set<string> | null): Progress['games'] | undefined {
@@ -182,6 +200,23 @@ export function recordSkipResult(p: Progress, targetOrder: number, score: number
   if (!(score >= SKIP_PASS) || targetOrder < 2) return p
   if ((p.skipUnlockedThrough ?? 0) >= targetOrder) return p
   return { ...p, skipUnlockedThrough: targetOrder }
+}
+
+// ---------- Tahap 0 ----------
+
+export const isBasicsDone = (p: Progress, part: BasicsPart) => (p.basics?.[part]?.stars ?? 0) >= 1
+export const basicsDoneCount = (p: Progress) => BASICS_PARTS.filter((part) => isBasicsDone(p, part)).length
+
+/** Simpan hasil latihan Tahap 0; hanya nilai terbaik yang disimpan. Tidak mengubah unit/Leitner. */
+export function recordBasicsResult(p: Progress, part: BasicsPart, score: number, now: Date): Progress {
+  const s = Math.min(1, Math.max(0, Number.isFinite(score) ? score : 0))
+  const old = p.basics?.[part]
+  if (old && old.bestScore >= s) return p
+  const stars = starsFor(s)
+  const next: UnitProgress = { bestScore: s, stars }
+  const completedAt = old?.completedAt ?? (stars >= 1 ? now.toISOString() : undefined)
+  if (completedAt) next.completedAt = completedAt
+  return { ...p, basics: { ...p.basics, [part]: next } }
 }
 
 // ---------- penyimpanan ----------

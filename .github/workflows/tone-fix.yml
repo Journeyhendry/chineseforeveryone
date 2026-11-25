@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       sentences:
-        description: "Jumlah kalimat berbendera yang ikut diproses (0 = tidak ada)"
-        default: "0"
+        description: "Jumlah kalimat berbendera yang ikut diproses (terburuk dulu; 0 = tidak ada)"
+        default: "400"
       control:
         description: "Jumlah sampel kontrol (file tidak berbendera)"
         default: "80"
@@ -28,7 +28,7 @@ concurrency:
 
 env:
   HF_HUB_DISABLE_TELEMETRY: "1"
-  FIX_SENTENCES: ${{ inputs.sentences || '0' }}
+  FIX_SENTENCES: ${{ inputs.sentences || '400' }}
   FIX_CONTROL: ${{ inputs.control || '80' }}
 
 jobs:

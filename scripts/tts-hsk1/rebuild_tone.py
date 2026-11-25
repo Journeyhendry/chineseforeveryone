@@ -50,6 +50,7 @@ SHIFT_CAP = 7.0          # geseran F0 per bingkai paling besar (semitone)
 STRETCH_MAX = 1.5        # pemanjangan suku kata paling besar
 SENT_SHORT_TARGET = 1.0  # kalimat: target = p5 kelas "word" x SENT_SHORT_FACTOR x ini (sama dengan batas bendera)
 MIN_GAIN = 0.02
+SENT_MIN_GAIN = 0.10  # kalimat: hanya diganti bila skor naik jelas (>= 0.10); tanpa telinga, metode ini belum terbukti aman di kalimat
 SAMPLE_RATE = 24000
 PRIORITY = {"word": 0, "word-slow": 1, "casual": 2, "casual-slow": 3, "dialog": 4, "sentence": 5}
 
@@ -216,9 +217,9 @@ def candidates(env: Env, key: str, strengths=STRENGTHS):
     return before, out, {"mode": mode, "stretch": max(factors) if factors else 1.0}
 
 
-def pick(before: dict, cands: list):
+def pick(before: dict, cands: list, min_gain: float = MIN_GAIN):
     """Kandidat terbaik: skor tertinggi, lalu kekuatan terkecil dengan skor >= terbaik - TIE; harus lolos ts.better."""
-    ok = [c for c in cands if ts.better(c[2], before, MIN_GAIN)]
+    ok = [c for c in cands if ts.better(c[2], before, min_gain)]
     if not ok:
         return None
     top = max(c[2]["S"] for c in ok)
@@ -267,7 +268,8 @@ def cmd_plan(a):
 def process(env: Env, key: str, out_dir: Path, ctx=None) -> dict:
     """Satu file: kandidat -> pemenang -> mp3 -> ukur ulang -> (Whisper). Kembalikan entri hasil."""
     before, cands, info = candidates(env, key)
-    best = pick(before, cands)
+    gain = SENT_MIN_GAIN if env.items[key]["kind"] == "sentence" else MIN_GAIN
+    best = pick(before, cands, gain)
     res = {"key": key, "before": {k: before[k] for k in ("S", "acc", "conf", "rr", "dist", "short", "flags")},
            "candidates": {str(c[0]): {k: c[2][k] for k in ("S", "acc", "conf", "rr", "short")} for c in cands}, **info}
     if best is None:
@@ -292,7 +294,7 @@ def process(env: Env, key: str, out_dir: Path, ctx=None) -> dict:
     after = {**ts.file_summary(after_syl)}
     res["strength"], res["after"] = s, {k: after[k] for k in ("S", "acc", "conf", "rr", "dist", "short", "flags")}
     res["durationSec"] = dur
-    if not ts.better(after, before, MIN_GAIN):
+    if not ts.better(after, before, gain):
         mp3.unlink(missing_ok=True)
         res["decision"] = "tetap (setelah dienkode ulang skor tidak lebih baik)"
         return res

@@ -107,6 +107,7 @@ export const POSES = {
   pointDownHold: { left: { a: 40, el: -4, hand: 'point' }, right: { a: 30, el: 112, hand: 'fist' }, head: 8 },
   holdEar: { left: { to: [1.45, -0.5], bend: 'down', front: true, hand: 'fist' }, head: -8 },
   pinch: { left: { a: 30, el: 112, hand: 'point', aim: 150 }, head: 4 },
+  lookFor: { left: { to: [0.26, -0.8], bend: 'out', front: true, hand: 'open' }, head: -5 },
 } as const satisfies Record<string, Pose>
 
 export type PoseId = keyof typeof POSES

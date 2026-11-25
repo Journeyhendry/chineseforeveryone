@@ -188,6 +188,7 @@ def cmd_ll(args):
 
     na.UA = UA
     na.T0 = time.time()
+    na.DEADLINE_MIN = BUDGET_MIN + 5  # batas waktu get() di native_audio (bawaan 40 menit)
     hsk = hsk_tone_table()
     titles: list[str] = []
     na.prefix_titles(na.PREFIXES[0], titles)

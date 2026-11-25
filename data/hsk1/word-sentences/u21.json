@@ -1,0 +1,265 @@
+{
+  "unit": "u21",
+  "entries": [
+    {
+      "wordId": "L1-0061",
+      "hanzi": "大",
+      "sentence": {
+        "hanzi": "这个苹果很大！",
+        "pinyin": "Zhège píngguǒ hěn dà!",
+        "id": "Apel ini besar sekali!",
+        "en": "This apple is huge!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik memegang apel yang sangat besar dengan kedua tangan."
+      }
+    },
+    {
+      "wordId": "L1-0401",
+      "hanzi": "小",
+      "sentence": {
+        "hanzi": "这只猫很小。",
+        "pinyin": "Zhè zhī māo hěn xiǎo.",
+        "id": "Kucing ini kecil sekali.",
+        "en": "This cat is very small.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Anak kucing mungil duduk di telapak tangan Adik."
+      }
+    },
+    {
+      "wordId": "L1-0411",
+      "hanzi": "新",
+      "sentence": {
+        "hanzi": "我有一个新朋友！",
+        "pinyin": "Wǒ yǒu yí gè xīn péngyou!",
+        "id": "Aku punya teman baru!",
+        "en": "I have a new friend!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menggandeng teman baru di halaman sekolah sambil tersenyum lebar."
+      }
+    },
+    {
+      "wordId": "L1-0520",
+      "hanzi": "漂亮",
+      "sentence": {
+        "hanzi": "这件衣服真漂亮！",
+        "pinyin": "Zhè jiàn yīfu zhēn piàoliang!",
+        "id": "Baju ini cantik sekali!",
+        "en": "This outfit is really pretty!",
+        "source": "unit",
+        "sourceId": "n-u21:1",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Di toko baju Ibu memegang satu baju berbunga dengan mata berbinar."
+      }
+    },
+    {
+      "wordId": "L1-0212",
+      "hanzi": "冷",
+      "sentence": {
+        "hanzi": "今天很冷。",
+        "pinyin": "Jīntiān hěn lěng.",
+        "id": "Hari ini dingin sekali.",
+        "en": "It's very cold today.",
+        "source": "tatoeba",
+        "sourceId": 1085587,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakek berjaket tebal dan syal menggigil di luar rumah."
+      }
+    },
+    {
+      "wordId": "L1-0304",
+      "hanzi": "热",
+      "sentence": {
+        "hanzi": "我觉得很热。",
+        "pinyin": "Wǒ juéde hěn rè.",
+        "id": "Aku merasa panas sekali.",
+        "en": "I feel really hot.",
+        "source": "tatoeba",
+        "sourceId": 489080,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakak berkeringat mengipasi diri di bawah matahari terik."
+      }
+    },
+    {
+      "wordId": "L1-0360",
+      "hanzi": "天气",
+      "sentence": {
+        "hanzi": "今天天气很好。",
+        "pinyin": "Jīntiān tiānqì hěn hǎo.",
+        "id": "Hari ini cuacanya bagus sekali.",
+        "en": "The weather is nice today.",
+        "source": "tatoeba",
+        "sourceId": 333127,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Nenek membuka jendela; langit biru dan matahari bersinar."
+      }
+    },
+    {
+      "wordId": "L1-0396",
+      "hanzi": "下雨",
+      "sentence": {
+        "hanzi": "要下雨了。",
+        "pinyin": "Yào xiàyǔ le.",
+        "id": "Sebentar lagi hujan.",
+        "en": "It's going to rain.",
+        "source": "tatoeba",
+        "sourceId": 4761392,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ibu menunjuk awan gelap di langit sambil membawa payung."
+      }
+    },
+    {
+      "wordId": "L1-0449",
+      "hanzi": "雨",
+      "sentence": {
+        "hanzi": "外边雨很大。",
+        "pinyin": "Wàibian yǔ hěn dà.",
+        "id": "Di luar hujannya deras.",
+        "en": "It's raining hard outside.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ayah melihat hujan deras dari balik jendela."
+      }
+    },
+    {
+      "wordId": "L1-0528",
+      "hanzi": "雪",
+      "sentence": {
+        "hanzi": "哇，下雪了！",
+        "pinyin": "Wā, xià xuě le!",
+        "id": "Wah, turun salju!",
+        "en": "Wow, it's snowing!",
+        "source": "tatoeba",
+        "sourceId": 3805044,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menempelkan wajah di jendela, salju turun di luar."
+      }
+    },
+    {
+      "wordId": "L1-0358",
+      "hanzi": "太",
+      "sentence": {
+        "hanzi": "太好了，我们去玩吧！",
+        "pinyin": "Tài hǎo le, wǒmen qù wán ba!",
+        "id": "Asyik, ayo kita main!",
+        "en": "Great, let's go play!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik melompat gembira menarik tangan Kakak ke luar."
+      }
+    },
+    {
+      "wordId": "L1-0108",
+      "hanzi": "非常",
+      "sentence": {
+        "hanzi": "我非常喜欢这本书。",
+        "pinyin": "Wǒ fēicháng xǐhuan zhè běn shū.",
+        "id": "Aku suka sekali buku ini.",
+        "en": "I really love this book.",
+        "source": "tatoeba",
+        "sourceId": 4270137,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik memeluk sebuah buku dengan hati-hati melayang di sekitarnya."
+      }
+    },
+    {
+      "wordId": "L1-0470",
+      "hanzi": "真",
+      "sentence": {
+        "hanzi": "这个真好吃。",
+        "pinyin": "Zhège zhēn hǎochī.",
+        "id": "Ini enak banget.",
+        "en": "This is really tasty.",
+        "source": "tatoeba",
+        "sourceId": 2363175,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ayah mencicipi pangsit dan mengacungkan jempol."
+      }
+    }
+  ]
+}

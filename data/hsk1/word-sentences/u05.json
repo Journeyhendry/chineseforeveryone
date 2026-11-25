@@ -1,0 +1,469 @@
+{
+  "unit": "u05",
+  "entries": [
+    {
+      "wordId": "L1-0328",
+      "hanzi": "什么",
+      "sentence": {
+        "hanzi": "这是什么？",
+        "pinyin": "Zhè shì shénme?",
+        "id": "Ini apa?",
+        "en": "What's this?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "这是什么？",
+            "pinyin": "Zhè shì shénme?",
+            "id": "Ini apa?",
+            "en": "What's this?"
+          },
+          {
+            "who": "mama",
+            "hanzi": "这是你的新书。",
+            "pinyin": "Zhè shì nǐ de xīn shū.",
+            "id": "Ini buku barumu.",
+            "en": "It's your new book."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0328",
+        "fit": "rebubble",
+        "note": "Adik mengguncang kotak hadiah tertutup; Ibu tersenyum di sebelahnya."
+      }
+    },
+    {
+      "wordId": "L1-0325",
+      "hanzi": "谁",
+      "sentence": {
+        "hanzi": "不是你？那是谁？",
+        "pinyin": "Bú shì nǐ? Nà shì shéi?",
+        "id": "Bukan kamu? Terus siapa?",
+        "en": "Not you? Then who?",
+        "source": "unit",
+        "sourceId": "n-u05:3",
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "不是我！",
+            "pinyin": "Bú shì wǒ!",
+            "id": "Bukan aku!",
+            "en": "It wasn't me!"
+          },
+          {
+            "who": "yeye",
+            "hanzi": "不是你？那是谁？",
+            "pinyin": "Bú shì nǐ? Nà shì shéi?",
+            "id": "Bukan kamu? Terus siapa?",
+            "en": "Not you? Then who?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "是猫！",
+            "pinyin": "Shì māo!",
+            "id": "Si kucing!",
+            "en": "It was the cat!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0325",
+        "fit": "redraw",
+        "note": "Kakek melihat cangkir pecah di lantai; Adik menggeleng lalu menunjuk kucing."
+      }
+    },
+    {
+      "wordId": "L1-0250",
+      "hanzi": "哪",
+      "sentence": {
+        "hanzi": "你要哪本书？",
+        "pinyin": "Nǐ yào nǎ běn shū?",
+        "id": "Kamu mau buku yang mana?",
+        "en": "Which book do you want?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你要哪本书？",
+            "pinyin": "Nǐ yào nǎ běn shū?",
+            "id": "Kamu mau buku yang mana?",
+            "en": "Which book do you want?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "这本！",
+            "pinyin": "Zhè běn!",
+            "id": "Yang ini!",
+            "en": "This one!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0250",
+        "fit": "redraw",
+        "note": "Di toko buku, Ibu bertanya kepada Adik di depan rak; Adik menunjuk satu buku bergambar."
+      }
+    },
+    {
+      "wordId": "L1-0516",
+      "hanzi": "哪个",
+      "sentence": {
+        "hanzi": "哪个好？",
+        "pinyin": "Nǎge hǎo?",
+        "id": "Yang mana yang bagus?",
+        "en": "Which one is better?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "哪个好？",
+            "pinyin": "Nǎge hǎo?",
+            "id": "Yang mana yang bagus?",
+            "en": "Which one is better?"
+          },
+          {
+            "who": "mama",
+            "hanzi": "这个很好。",
+            "pinyin": "Zhège hěn hǎo.",
+            "id": "Yang ini bagus.",
+            "en": "This one is nice."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0516",
+        "fit": "rebubble",
+        "note": "Adik berdiri di depan tiga boneka beruang di rak toko dan menoleh kepada Ibu."
+      }
+    },
+    {
+      "wordId": "L1-0253",
+      "hanzi": "哪些",
+      "sentence": {
+        "hanzi": "哪些是你的？",
+        "pinyin": "Nǎxiē shì nǐ de?",
+        "id": "Yang mana saja punyamu?",
+        "en": "Which ones are yours?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "哪些是你的？",
+            "pinyin": "Nǎxiē shì nǐ de?",
+            "id": "Yang mana saja punyamu?",
+            "en": "Which ones are yours?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "这些都是。",
+            "pinyin": "Zhèxiē dōu shì.",
+            "id": "Yang ini semua.",
+            "en": "All of these."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0253",
+        "fit": "redraw",
+        "note": "Ibu menunjuk tumpukan buku di meja; Kakak menunjuk sebagian buku."
+      }
+    },
+    {
+      "wordId": "L1-0252",
+      "hanzi": "哪儿",
+      "sentence": {
+        "hanzi": "他在哪儿？",
+        "pinyin": "Tā zài nǎr?",
+        "id": "Dia di mana?",
+        "en": "Where is he?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "他在哪儿？",
+            "pinyin": "Tā zài nǎr?",
+            "id": "Dia di mana?",
+            "en": "Where is he?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "在那儿！",
+            "pinyin": "Zài nàr!",
+            "id": "Di sana!",
+            "en": "Over there!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0252",
+        "fit": "redraw",
+        "note": "Di taman yang ramai, Ibu mencari Kakak; Adik menunjuk Kakak di dekat pohon."
+      }
+    },
+    {
+      "wordId": "L1-0251",
+      "hanzi": "哪里",
+      "sentence": {
+        "hanzi": "你在哪里？",
+        "pinyin": "Nǐ zài nǎlǐ?",
+        "id": "Kamu di mana?",
+        "en": "Where are you?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你在哪里？",
+            "pinyin": "Nǐ zài nǎlǐ?",
+            "id": "Kamu di mana?",
+            "en": "Where are you?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "我在学校。",
+            "pinyin": "Wǒ zài xuéxiào.",
+            "id": "Aku di sekolah.",
+            "en": "I'm at school."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0251",
+        "fit": "redraw",
+        "note": "Dua panel telepon: Ibu menelepon dari rumah; Kakak menjawab di depan gerbang sekolah."
+      }
+    },
+    {
+      "wordId": "L1-0460",
+      "hanzi": "怎么",
+      "sentence": {
+        "hanzi": "这个怎么用？",
+        "pinyin": "Zhège zěnme yòng?",
+        "id": "Ini cara pakainya gimana?",
+        "en": "How do you use this?",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "yeye",
+            "hanzi": "这个怎么用？",
+            "pinyin": "Zhège zěnme yòng?",
+            "id": "Ini cara pakainya gimana?",
+            "en": "How do you use this?"
+          },
+          {
+            "who": "gege",
+            "hanzi": "我看看。",
+            "pinyin": "Wǒ kànkan.",
+            "id": "Coba kulihat.",
+            "en": "Let me see."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0460",
+        "fit": "rebubble",
+        "note": "Kakek memegang ponsel baru dengan bingung; Kakak mendekat."
+      }
+    },
+    {
+      "wordId": "L1-0531",
+      "hanzi": "怎么样",
+      "sentence": {
+        "hanzi": "这件衣服怎么样？",
+        "pinyin": "Zhè jiàn yīfu zěnmeyàng?",
+        "id": "Baju ini gimana?",
+        "en": "How does this look?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "这件衣服怎么样？",
+            "pinyin": "Zhè jiàn yīfu zěnmeyàng?",
+            "id": "Baju ini gimana?",
+            "en": "How does this look?"
+          },
+          {
+            "who": "baba",
+            "hanzi": "很好看！",
+            "pinyin": "Hěn hǎokàn!",
+            "id": "Bagus banget!",
+            "en": "It looks great!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0531",
+        "fit": "rebubble",
+        "note": "Ibu menunjukkan baju barunya kepada Ayah; Ayah mengacungkan jempol."
+      }
+    },
+    {
+      "wordId": "L1-0379",
+      "hanzi": "问",
+      "sentence": {
+        "hanzi": "你问她吧。",
+        "pinyin": "Nǐ wèn tā ba.",
+        "id": "Tanya dia saja.",
+        "en": "Go ask her.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0379",
+        "fit": "redraw",
+        "note": "Adik bertanya kepada Ayah; Ayah tersenyum dan menunjuk Ibu di dapur."
+      }
+    },
+    {
+      "wordId": "L1-0526",
+      "hanzi": "问题",
+      "sentence": {
+        "hanzi": "有问题吗？",
+        "pinyin": "Yǒu wèntí ma?",
+        "id": "Ada pertanyaan?",
+        "en": "Any questions?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0526",
+        "fit": "rebubble",
+        "note": "Bu Guru bertanya kepada kelas sambil tersenyum; Adik mengangkat tangan."
+      }
+    },
+    {
+      "wordId": "L1-0092",
+      "hanzi": "对",
+      "sentence": {
+        "hanzi": "对，很好！",
+        "pinyin": "Duì, hěn hǎo!",
+        "id": "Betul, bagus!",
+        "en": "Right, well done!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "对 dipakai untuk membenarkan jawaban; perlu terlihat jawaban yang dibenarkan.",
+          "en": "对 confirms an answer; the answer being confirmed needs to be shown."
+        },
+        "lines": [
+          {
+            "who": "teacher",
+            "hanzi": "二加二是几？",
+            "pinyin": "Èr jiā èr shì jǐ?",
+            "id": "Dua tambah dua berapa?",
+            "en": "What's two plus two?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "是四。",
+            "pinyin": "Shì sì.",
+            "id": "Empat.",
+            "en": "Four."
+          },
+          {
+            "who": "teacher",
+            "hanzi": "对，很好！",
+            "pinyin": "Duì, hěn hǎo!",
+            "id": "Betul, bagus!",
+            "en": "Right, well done!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0092",
+        "fit": "rebubble",
+        "note": "Di papan tulis tertulis 2 + 2 = 4; Bu Guru tersenyum dan memberi centang."
+      }
+    }
+  ]
+}

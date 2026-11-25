@@ -1,0 +1,287 @@
+{
+  "unit": "u15",
+  "entries": [
+    {
+      "wordId": "L1-0388",
+      "hanzi": "喜欢",
+      "sentence": {
+        "hanzi": "我很喜欢这个！",
+        "pinyin": "Wǒ hěn xǐhuan zhège!",
+        "id": "Aku suka banget yang ini!",
+        "en": "I really like this one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0388",
+        "fit": "rebubble",
+        "note": "Adik memeluk boneka panda pilihannya di depan rak mainan."
+      }
+    },
+    {
+      "wordId": "L1-0001",
+      "hanzi": "爱",
+      "sentence": {
+        "hanzi": "妈妈，我爱你！",
+        "pinyin": "Māma, wǒ ài nǐ!",
+        "id": "Ibu, aku sayang Ibu!",
+        "en": "Mom, I love you!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0001",
+        "fit": "keep",
+        "note": "Ibu dan Adik berpelukan erat di ruang keluarga."
+      }
+    },
+    {
+      "wordId": "L1-0116",
+      "hanzi": "高兴",
+      "sentence": {
+        "hanzi": "我很高兴。",
+        "pinyin": "Wǒ hěn gāoxìng.",
+        "id": "Aku senang sekali.",
+        "en": "I'm very happy.",
+        "source": "tatoeba",
+        "sourceId": 924590,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0116",
+        "fit": "rebubble",
+        "note": "Satu panel saja: Adik tersenyum lebar memegang balon."
+      }
+    },
+    {
+      "wordId": "L1-0400",
+      "hanzi": "想",
+      "sentence": {
+        "hanzi": "我想喝奶茶。",
+        "pinyin": "Wǒ xiǎng hē nǎichá.",
+        "id": "Aku mau minum teh susu.",
+        "en": "I want to drink milk tea.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0400",
+        "fit": "rebubble",
+        "note": "Adik berdiri di dekat kedai teh susu sambil membayangkan segelas teh susu."
+      }
+    },
+    {
+      "wordId": "L1-0423",
+      "hanzi": "要",
+      "sentence": {
+        "hanzi": "爸爸，我要这个！",
+        "pinyin": "Bàba, wǒ yào zhège!",
+        "id": "Ayah, aku mau yang ini!",
+        "en": "Dad, I want this one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0423",
+        "fit": "rebubble",
+        "note": "Di toko mainan Adik menunjuk boneka beruang, Ayah di sampingnya."
+      }
+    },
+    {
+      "wordId": "L1-0502",
+      "hanzi": "不要",
+      "sentence": {
+        "hanzi": "我不要这个菜！",
+        "pinyin": "Wǒ búyào zhège cài!",
+        "id": "Aku tidak mau sayur ini!",
+        "en": "I don't want this dish!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0502",
+        "fit": "rebubble",
+        "note": "Ibu menyodorkan sepiring pare; Adik menggeleng dan mengangkat tangan menolak."
+      }
+    },
+    {
+      "wordId": "L1-0160",
+      "hanzi": "会",
+      "sentence": {
+        "hanzi": "哥哥会开车。",
+        "pinyin": "Gēge huì kāichē.",
+        "id": "Kakak bisa menyetir mobil.",
+        "en": "Big brother can drive.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0160",
+        "fit": "redraw",
+        "note": "Kakak menyetir mobil dengan percaya diri; Adik duduk di sebelahnya dan menunjuk dia."
+      }
+    },
+    {
+      "wordId": "L1-0270",
+      "hanzi": "能",
+      "sentence": {
+        "hanzi": "我能吃三个包子！",
+        "pinyin": "Wǒ néng chī sān gè bāozi!",
+        "id": "Aku bisa makan tiga bakpao!",
+        "en": "I can eat three buns!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0270",
+        "fit": "redraw",
+        "note": "Kakak dengan bangga mengangkat tiga jari di depan sepiring tiga bakpao."
+      }
+    },
+    {
+      "wordId": "L1-0512",
+      "hanzi": "可以",
+      "sentence": {
+        "hanzi": "妈妈，我可以吃一个吗？",
+        "pinyin": "Māma, wǒ kěyǐ chī yí gè ma?",
+        "id": "Bu, aku boleh makan satu?",
+        "en": "Mom, can I have one?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Minta izin dengan 可以…吗 dan menjawab \"boleh\" dengan 可以.",
+          "en": "Asking permission with 可以…吗 and answering \"yes\" with 可以."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "妈妈，我可以吃一个吗？",
+            "pinyin": "Māma, wǒ kěyǐ chī yí gè ma?",
+            "id": "Bu, aku boleh makan satu?",
+            "en": "Mom, can I have one?"
+          },
+          {
+            "who": "mama",
+            "hanzi": "可以，吃吧！",
+            "pinyin": "Kěyǐ, chī ba!",
+            "id": "Boleh, makan saja!",
+            "en": "Sure, go ahead!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0512",
+        "fit": "rebubble",
+        "note": "Adik menunjuk kue di meja; Ibu tersenyum dan mengacungkan jempol."
+      }
+    },
+    {
+      "wordId": "L1-0187",
+      "hanzi": "觉得",
+      "sentence": {
+        "hanzi": "我觉得很好吃。",
+        "pinyin": "Wǒ juéde hěn hǎochī.",
+        "id": "Menurutku enak sekali.",
+        "en": "I think it tastes great.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0187",
+        "fit": "keep",
+        "note": "Kakek mencicipi sup lalu mengusap dagu sambil berpikir."
+      }
+    },
+    {
+      "wordId": "L1-0474",
+      "hanzi": "知道",
+      "sentence": {
+        "hanzi": "老师，我知道！",
+        "pinyin": "Lǎoshī, wǒ zhīdào!",
+        "id": "Bu Guru, saya tahu!",
+        "en": "Teacher, I know!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0474",
+        "fit": "rebubble",
+        "note": "Guru menulis soal 2+3 di papan tulis; Adik mengangkat tangan dengan yakin."
+      }
+    },
+    {
+      "wordId": "L1-0306",
+      "hanzi": "认识",
+      "sentence": {
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "Nǐ hǎo! Rènshi nǐ hěn gāoxìng.",
+        "id": "Halo! Senang kenalan sama kamu.",
+        "en": "Hi! Nice to meet you.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Ungkapan perkenalan dan balasannya.",
+          "en": "A phrase for meeting someone and its reply."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你好！认识你很高兴。",
+            "pinyin": "Nǐ hǎo! Rènshi nǐ hěn gāoxìng.",
+            "id": "Halo! Senang kenalan sama kamu.",
+            "en": "Hi! Nice to meet you."
+          },
+          {
+            "who": "friend",
+            "hanzi": "我也很高兴认识你！",
+            "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ!",
+            "id": "Aku juga senang kenalan sama kamu!",
+            "en": "Nice to meet you too!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0306",
+        "fit": "rebubble",
+        "note": "Ibu berkenalan dengan seorang teman dan berjabat tangan."
+      }
+    }
+  ]
+}

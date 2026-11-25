@@ -1,0 +1,374 @@
+{
+  "unit": "u17",
+  "entries": [
+    {
+      "wordId": "L1-0477",
+      "hanzi": "中国",
+      "sentence": {
+        "hanzi": "这是中国菜。",
+        "pinyin": "Zhè shì Zhōngguó cài.",
+        "id": "Ini masakan Tiongkok.",
+        "en": "This is Chinese food.",
+        "source": "tatoeba",
+        "sourceId": 3377911,
+        "speaker": "waiter",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Pelayan meletakkan piring-piring masakan Tiongkok di meja keluarga."
+      }
+    },
+    {
+      "wordId": "L1-0128",
+      "hanzi": "国",
+      "sentence": {
+        "hanzi": "你是哪国人？",
+        "pinyin": "Nǐ shì nǎ guó rén?",
+        "id": "Kamu orang mana?",
+        "en": "Where are you from?",
+        "source": "tatoeba",
+        "sourceId": 1163567,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 哪国 (negara mana) butuh jawaban supaya jelas.",
+          "en": "The question 哪国 (which country) needs an answer to be clear."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "你是哪国人？",
+            "pinyin": "Nǐ shì nǎ guó rén?",
+            "id": "Kamu orang mana?",
+            "en": "Where are you from?"
+          },
+          {
+            "who": "classmate",
+            "hanzi": "我是印尼人。",
+            "pinyin": "Wǒ shì Yìnní rén.",
+            "id": "Aku orang Indonesia.",
+            "en": "I'm Indonesian."
+          }
+        ]
+      },
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik bertanya kepada teman sekelas baru di kelas."
+      }
+    },
+    {
+      "wordId": "L1-0479",
+      "hanzi": "中文",
+      "sentence": {
+        "hanzi": "我们在学习中文。",
+        "pinyin": "Wǒmen zài xuéxí Zhōngwén.",
+        "id": "Kami sedang belajar bahasa Mandarin.",
+        "en": "We're learning Chinese.",
+        "source": "tatoeba",
+        "sourceId": 3521456,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik dan teman-temannya duduk di kelas membaca buku bahasa Mandarin."
+      }
+    },
+    {
+      "wordId": "L1-0136",
+      "hanzi": "汉语",
+      "sentence": {
+        "hanzi": "我会说一点儿汉语。",
+        "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "id": "Aku bisa sedikit bahasa Mandarin.",
+        "en": "I can speak a little Chinese.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Teman sekelas tersenyum malu sambil menunjukkan jari \"sedikit\"."
+      }
+    },
+    {
+      "wordId": "L1-0137",
+      "hanzi": "汉字",
+      "sentence": {
+        "hanzi": "我在学汉字。",
+        "pinyin": "Wǒ zài xué Hànzì.",
+        "id": "Aku sedang belajar huruf Mandarin.",
+        "en": "I'm learning Chinese characters.",
+        "source": "tatoeba",
+        "sourceId": 1843469,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menulis huruf Mandarin di buku kotak-kotak."
+      }
+    },
+    {
+      "wordId": "L1-0488",
+      "hanzi": "字",
+      "sentence": {
+        "hanzi": "这个字我不认识。",
+        "pinyin": "Zhège zì wǒ bú rènshi.",
+        "id": "Huruf ini aku tidak tahu.",
+        "en": "I don't know this character.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakek memandangi satu huruf di buku sambil menggaruk kepala."
+      }
+    },
+    {
+      "wordId": "L1-0349",
+      "hanzi": "说",
+      "sentence": {
+        "hanzi": "这个用汉语怎么说？",
+        "pinyin": "Zhège yòng Hànyǔ zěnme shuō?",
+        "id": "Ini bahasa Mandarinnya apa?",
+        "en": "How do you say this in Chinese?",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "classmate",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Menanyakan cara mengucapkan sesuatu (怎么说) butuh jawaban.",
+          "en": "Asking how to say something (怎么说) needs an answer."
+        },
+        "lines": [
+          {
+            "who": "classmate",
+            "hanzi": "这个用汉语怎么说？",
+            "pinyin": "Zhège yòng Hànyǔ zěnme shuō?",
+            "id": "Ini bahasa Mandarinnya apa?",
+            "en": "How do you say this in Chinese?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "苹果。",
+            "pinyin": "Píngguǒ.",
+            "id": "Píngguǒ (apel).",
+            "en": "Píngguǒ (apple)."
+          },
+          {
+            "who": "classmate",
+            "hanzi": "苹果！谢谢你！",
+            "pinyin": "Píngguǒ! Xièxie nǐ!",
+            "id": "Píngguǒ! Makasih, ya!",
+            "en": "Píngguǒ! Thank you!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Teman sekelas mengangkat sebuah apel dan bertanya kepada Adik."
+      }
+    },
+    {
+      "wordId": "L1-0350",
+      "hanzi": "说话",
+      "sentence": {
+        "hanzi": "不要说话了。",
+        "pinyin": "Búyào shuōhuà le.",
+        "id": "Sudah, jangan bicara lagi.",
+        "en": "Stop talking now.",
+        "source": "tatoeba",
+        "sourceId": 5092251,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Guru menempelkan telunjuk di bibir; dua murid yang mengobrol langsung diam."
+      }
+    },
+    {
+      "wordId": "L1-0090",
+      "hanzi": "读",
+      "sentence": {
+        "hanzi": "老师，我来读！",
+        "pinyin": "Lǎoshī, wǒ lái dú!",
+        "id": "Bu Guru, saya yang baca!",
+        "en": "Teacher, I'll read it!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Di kelas Adik berdiri dengan buku terbuka dan mengangkat tangan."
+      }
+    },
+    {
+      "wordId": "L1-0091",
+      "hanzi": "读书",
+      "sentence": {
+        "hanzi": "妈妈喜欢在家读书。",
+        "pinyin": "Māma xǐhuan zài jiā dúshū.",
+        "id": "Ibu suka membaca buku di rumah.",
+        "en": "Mom likes reading at home.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Ibu duduk santai di sofa membaca buku."
+      }
+    },
+    {
+      "wordId": "L1-0409",
+      "hanzi": "写",
+      "sentence": {
+        "hanzi": "我会写我的名字了！",
+        "pinyin": "Wǒ huì xiě wǒ de míngzi le!",
+        "id": "Aku sudah bisa menulis namaku!",
+        "en": "I can write my name now!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik dengan bangga mengangkat kertas berisi namanya."
+      }
+    },
+    {
+      "wordId": "L1-0361",
+      "hanzi": "听",
+      "sentence": {
+        "hanzi": "你们在听吗？",
+        "pinyin": "Nǐmen zài tīng ma?",
+        "id": "Kalian mendengarkan?",
+        "en": "Are you listening?",
+        "source": "tatoeba",
+        "sourceId": 775985,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Guru bertanya ke kelas; satu murid melamun melihat ke luar jendela."
+      }
+    },
+    {
+      "wordId": "L1-0363",
+      "hanzi": "听见",
+      "sentence": {
+        "hanzi": "你说什么？我没听见。",
+        "pinyin": "Nǐ shuō shénme? Wǒ méi tīngjiàn.",
+        "id": "Kamu bilang apa? Aku tidak dengar.",
+        "en": "What did you say? I didn't hear you.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Kakek menempelkan tangan di telinga ke arah Adik."
+      }
+    },
+    {
+      "wordId": "L1-0192",
+      "hanzi": "看",
+      "sentence": {
+        "hanzi": "你看，那是飞机！",
+        "pinyin": "Nǐ kàn, nà shì fēijī!",
+        "id": "Lihat, itu pesawat!",
+        "en": "Look, that's a plane!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik menunjuk pesawat di langit; Kakak ikut mendongak."
+      }
+    },
+    {
+      "wordId": "L1-0195",
+      "hanzi": "看见",
+      "sentence": {
+        "hanzi": "你看见我的猫了吗？",
+        "pinyin": "Nǐ kànjiàn wǒ de māo le ma?",
+        "id": "Kamu lihat kucingku, tidak?",
+        "en": "Have you seen my cat?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Adik mencari-cari di ruang tamu dan bertanya pada Kakak; ekor kucing mengintip dari balik sofa."
+      }
+    },
+    {
+      "wordId": "L1-0173",
+      "hanzi": "见",
+      "sentence": {
+        "hanzi": "下个星期见！",
+        "pinyin": "Xià ge xīngqī jiàn!",
+        "id": "Sampai ketemu minggu depan!",
+        "en": "See you next week!",
+        "source": "tatoeba",
+        "sourceId": 340647,
+        "speaker": "friend",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": null,
+        "fit": "new",
+        "note": "Teman melambai pamit kepada Kakak di depan gerbang."
+      }
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "version": 1,
+  "totals": {
+    "units": 21,
+    "draftsPresent": 21,
+    "draftsMissing": [],
+    "words": 300,
+    "entries": 300,
+    "dialogs": 32,
+    "inScope": 217,
+    "inScopePct": 72.3,
+    "inScopeTargetPct": 70,
+    "errors": 0,
+    "warnings": 18
+  },
+  "perUnit": [
+    {
+      "unit": "u01",
+      "draft": true,
+      "words": 16,
+      "entries": 16,
+      "inScope": 5,
+      "inScopePct": 31.3,
+      "dialogs": 9,
+      "buatan": 3
+    },
+    {
+      "unit": "u02",
+      "draft": true,
+      "words": 15,
+      "entries": 15,
+      "inScope": 2,
+      "inScopePct": 13.3,
+      "dialogs": 0,
+      "buatan": 2
+    },
+    {
+      "unit": "u03",
+      "draft": true,
+      "words": 14,
+      "entries": 14,
+      "inScope": 0,
+      "inScopePct": 0,
+      "dialogs": 2,
+      "buatan": 2
+    },
+    {
+      "unit": "u04",
+      "draft": true,
+      "words": 15,
+      "entries": 15,
+      "inScope": 7,
+      "inScopePct": 46.7,
+      "dialogs": 0,
+      "buatan": 0
+    },
+    {
+      "unit": "u05",
+      "draft": true,
+      "words": 12,
+      "entries": 12,
+      "inScope": 9,
+      "inScopePct": 75,
+      "dialogs": 10,
+      "buatan": 1
+    },
+    {
+      "unit": "u06",
+      "draft": true,
+      "words": 16,
+      "entries": 16,
+      "inScope": 5,
+      "inScopePct": 31.3,
+      "dialogs": 0,
+      "buatan": 0
+    },
+    {
+      "unit": "u07",
+      "draft": true,
+      "words": 14,
+      "entries": 14,
+      "inScope": 14,
+      "inScopePct": 100,
+      "dialogs": 0,
+      "buatan": 0
+    },
+    {
+      "unit": "u08",
+      "draft": true,
+      "words": 17,
+      "entries": 17,
+      "inScope": 14,
+      "inScopePct": 82.4,
+      "dialogs": 0,
+      "buatan": 1
+    },
+    {
+      "unit": "u09",
+      "draft": true,
+      "words": 17,
+      "entries": 17,
+      "inScope": 14,
+      "inScopePct": 82.4,
+      "dialogs": 0,
+      "buatan": 0
+    },
+    {
+      "unit": "u10",
+      "draft": true,
+      "words": 14,
+      "entries": 14,
+      "inScope": 12,
+      "inScopePct": 85.7,
+      "dialogs": 0,
+      "buatan": 1
+    },
+    {
+      "unit": "u11",
+      "draft": true,
+      "words": 14,
+      "entries": 14,
+      "inScope": 12,
+      "inScopePct": 85.7,
+      "dialogs": 2,
+      "buatan": 1
+    },
+    {
+      "unit": "u12",
+      "draft": true,
+      "words": 12,
+      "entries": 12,
+      "inScope": 10,
+      "inScopePct": 83.3,
+      "dialogs": 0,
+      "buatan": 2
+    },
+    {
+      "unit": "u13",
+      "draft": true,
+      "words": 13,
+      "entries": 13,
+      "inScope": 12,
+      "inScopePct": 92.3,
+      "dialogs": 0,
+      "buatan": 1
+    },
+    {
+      "unit": "u14",
+      "draft": true,
+      "words": 17,
+      "entries": 17,
+      "inScope": 14,
+      "inScopePct": 82.4,
+      "dialogs": 1,
+      "buatan": 2
+    },
+    {
+      "unit": "u15",
+      "draft": true,
+      "words": 12,
+      "entries": 12,
+      "inScope": 10,
+      "inScopePct": 83.3,
+      "dialogs": 2,
+      "buatan": 1
+    },
+    {
+      "unit": "u16",
+      "draft": true,
+      "words": 15,
+      "entries": 15,
+      "inScope": 14,
+      "inScopePct": 93.3,
+      "dialogs": 0,
+      "buatan": 0
+    },
+    {
+      "unit": "u17",
+      "draft": true,
+      "words": 16,
+      "entries": 16,
+      "inScope": 15,
+      "inScopePct": 93.8,
+      "dialogs": 2,
+      "buatan": 1
+    },
+    {
+      "unit": "u18",
+      "draft": true,
+      "words": 13,
+      "entries": 13,
+      "inScope": 13,
+      "inScopePct": 100,
+      "dialogs": 1,
+      "buatan": 0
+    },
+    {
+      "unit": "u19",
+      "draft": true,
+      "words": 12,
+      "entries": 12,
+      "inScope": 11,
+      "inScopePct": 91.7,
+      "dialogs": 2,
+      "buatan": 0
+    },
+    {
+      "unit": "u20",
+      "draft": true,
+      "words": 13,
+      "entries": 13,
+      "inScope": 12,
+      "inScopePct": 92.3,
+      "dialogs": 1,
+      "buatan": 1
+    },
+    {
+      "unit": "u21",
+      "draft": true,
+      "words": 13,
+      "entries": 13,
+      "inScope": 12,
+      "inScopePct": 92.3,
+      "dialogs": 0,
+      "buatan": 0
+    }
+  ],
+  "sources": {
+    "unit": 253,
+    "tatoeba": 28,
+    "buatan": 19
+  },
+  "dialogs": {
+    "count": 32,
+    "words": [
+      "你好",
+      "谢谢",
+      "不客气",
+      "对不起",
+      "没关系",
+      "再见",
+      "吗",
+      "呢",
+      "吧",
+      "几",
+      "多少",
+      "什么",
+      "谁",
+      "哪",
+      "哪个",
+      "哪些",
+      "哪儿",
+      "哪里",
+      "怎么",
+      "怎么样",
+      "对",
+      "点",
+      "时候",
+      "正在",
+      "可以",
+      "认识",
+      "国",
+      "说",
+      "没事",
+      "钱",
+      "便宜",
+      "喂"
+    ]
+  },
+  "outsideWords": [
+    {
+      "word": "奶奶",
+      "count": 2
+    },
+    {
+      "word": "爷爷",
+      "count": 2
+    },
+    {
+      "word": "用",
+      "count": 2
+    },
+    {
+      "word": "公园",
+      "count": 1
+    },
+    {
+      "word": "加",
+      "count": 1
+    },
+    {
+      "word": "包饺子",
+      "count": 1
+    },
+    {
+      "word": "印尼",
+      "count": 1
+    },
+    {
+      "word": "吃完",
+      "count": 1
+    },
+    {
+      "word": "哇",
+      "count": 1
+    },
+    {
+      "word": "奶茶",
+      "count": 1
+    },
+    {
+      "word": "开门",
+      "count": 1
+    },
+    {
+      "word": "楼",
+      "count": 1
+    },
+    {
+      "word": "游戏",
+      "count": 1
+    },
+    {
+      "word": "第一次",
+      "count": 1
+    },
+    {
+      "word": "等",
+      "count": 1
+    },
+    {
+      "word": "请进",
+      "count": 1
+    },
+    {
+      "word": "走",
+      "count": 1
+    },
+    {
+      "word": "门外",
+      "count": 1
+    },
+    {
+      "word": "鸟",
+      "count": 1
+    }
+  ],
+  "over10": [
+    {
+      "unit": "u07",
+      "wordId": "L1-0261",
+      "where": "sentence",
+      "hanzi": "男同学在这边，女同学在那边。",
+      "hanziCount": 12
+    }
+  ],
+  "over14": [],
+  "buatan": {
+    "count": 19,
+    "allInDictionary": 19,
+    "withCollocation": 8,
+    "entries": [
+      {
+        "unit": "u01",
+        "wordId": "L1-0517",
+        "hanzi": "你好",
+        "sentence": "你好！请进！",
+        "outsideWords": [
+          "请进"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u01",
+        "wordId": "L1-0274",
+        "hanzi": "您",
+        "sentence": "爷爷，您好！",
+        "outsideWords": [
+          "爷爷"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 2
+      },
+      {
+        "unit": "u01",
+        "wordId": "L1-0005",
+        "hanzi": "吧",
+        "sentence": "我们走吧！",
+        "outsideWords": [
+          "走"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u02",
+        "wordId": "L1-0356",
+        "hanzi": "她",
+        "sentence": "她是我奶奶。",
+        "outsideWords": [
+          "奶奶"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 13
+      },
+      {
+        "unit": "u02",
+        "wordId": "L1-0357",
+        "hanzi": "她们",
+        "sentence": "她们在包饺子。",
+        "outsideWords": [
+          "包饺子"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 2
+      },
+      {
+        "unit": "u03",
+        "wordId": "L1-0098",
+        "hanzi": "二",
+        "sentence": "我家在二楼。",
+        "outsideWords": [
+          "楼"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u03",
+        "wordId": "L1-0003",
+        "hanzi": "八",
+        "sentence": "爷爷八十岁了。",
+        "outsideWords": [
+          "爷爷"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 1
+      },
+      {
+        "unit": "u05",
+        "wordId": "L1-0460",
+        "hanzi": "怎么",
+        "sentence": "这个怎么用？",
+        "outsideWords": [
+          "用"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u08",
+        "wordId": "L1-0533",
+        "hanzi": "只",
+        "sentence": "那儿有三只鸟。",
+        "outsideWords": [
+          "鸟"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u10",
+        "wordId": "L1-0414",
+        "hanzi": "星期日",
+        "sentence": "星期日我们去公园。",
+        "outsideWords": [
+          "公园"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u11",
+        "wordId": "L1-0507",
+        "hanzi": "分钟",
+        "sentence": "等我五分钟！",
+        "outsideWords": [
+          "等"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 3
+      },
+      {
+        "unit": "u12",
+        "wordId": "L1-0367",
+        "hanzi": "外",
+        "sentence": "门外有人。",
+        "outsideWords": [
+          "门外"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u12",
+        "wordId": "L1-0064",
+        "hanzi": "到",
+        "sentence": "奶奶到了！",
+        "outsideWords": [
+          "奶奶"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 11
+      },
+      {
+        "unit": "u13",
+        "wordId": "L1-0107",
+        "hanzi": "飞机",
+        "sentence": "我第一次坐飞机！",
+        "outsideWords": [
+          "第一次"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 1
+      },
+      {
+        "unit": "u14",
+        "wordId": "L1-0188",
+        "hanzi": "开",
+        "sentence": "妈妈，开门！",
+        "outsideWords": [
+          "开门"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u14",
+        "wordId": "L1-0210",
+        "hanzi": "了",
+        "sentence": "我吃完了！",
+        "outsideWords": [
+          "吃完"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u15",
+        "wordId": "L1-0400",
+        "hanzi": "想",
+        "sentence": "我想喝奶茶。",
+        "outsideWords": [
+          "奶茶"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 30
+      },
+      {
+        "unit": "u17",
+        "wordId": "L1-0349",
+        "hanzi": "说",
+        "sentence": "这个用汉语怎么说？",
+        "outsideWords": [
+          "用"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      },
+      {
+        "unit": "u20",
+        "wordId": "L1-0142",
+        "hanzi": "好玩儿",
+        "sentence": "这个游戏很好玩儿！",
+        "outsideWords": [
+          "游戏"
+        ],
+        "allInDictionary": true,
+        "missing": [],
+        "collocationHits": 0
+      }
+    ]
+  },
+  "problems": [
+    {
+      "level": "warning",
+      "unit": "u04",
+      "wordId": "L1-0236",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u05",
+      "wordId": "L1-0460",
+      "message": "dialog line 2 pinyin: 看 (kan): 看 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u06",
+      "wordId": "L1-0439",
+      "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u07",
+      "wordId": "L1-0261",
+      "message": "sentence: 12 hanzi (target ≤ 10)"
+    },
+    {
+      "level": "warning",
+      "unit": "u08",
+      "wordId": "L1-0004",
+      "message": "sentence pinyin: 来 (lai): 来 tone 5, words.json has 2 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0315",
+      "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0389",
+      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0291",
+      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0147",
+      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u12",
+      "wordId": "L1-0213",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0314",
+      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0343",
+      "message": "sentence pinyin: 边 (bian): 边 tone 5, words.json has 1 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0503",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u13",
+      "wordId": "L1-0083",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u16",
+      "wordId": "L1-0420",
+      "message": "sentence pinyin: 里 (li): 里 tone 5, words.json has 3 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u17",
+      "wordId": "L1-0173",
+      "message": "sentence pinyin: 个 (ge): 个 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u19",
+      "wordId": "L1-0022",
+      "message": "sentence pinyin: 上 (shang): 上 tone 5, words.json has 4 (neutral vs full tone)"
+    },
+    {
+      "level": "warning",
+      "unit": "u20",
+      "wordId": "L1-0119",
+      "message": "sentence pinyin: 个 (ge): 个 tone 5, words.json has 4 (neutral vs full tone)"
+    }
+  ]
+}

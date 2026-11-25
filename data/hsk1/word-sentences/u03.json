@@ -1,0 +1,327 @@
+{
+  "unit": "u03",
+  "entries": [
+    {
+      "wordId": "L1-0427",
+      "hanzi": "一",
+      "sentence": {
+        "hanzi": "我有一个哥哥。",
+        "pinyin": "Wǒ yǒu yí gè gēge.",
+        "id": "Aku punya satu kakak laki-laki.",
+        "en": "I have one big brother.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0427",
+        "fit": "redraw",
+        "note": "Adik berdiri di samping Kakak dan mengacungkan satu jari."
+      }
+    },
+    {
+      "wordId": "L1-0098",
+      "hanzi": "二",
+      "sentence": {
+        "hanzi": "我家在二楼。",
+        "pinyin": "Wǒ jiā zài èr lóu.",
+        "id": "Rumahku di lantai dua.",
+        "en": "We live on the second floor.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0098",
+        "fit": "redraw",
+        "note": "Adik menunjuk jendela lantai dua sebuah gedung apartemen; ada angka 2 di samping jendela."
+      }
+    },
+    {
+      "wordId": "L1-0311",
+      "hanzi": "三",
+      "sentence": {
+        "hanzi": "他有三个哥哥。",
+        "pinyin": "Tā yǒu sān gè gēge.",
+        "id": "Dia punya tiga kakak laki-laki.",
+        "en": "He has three older brothers.",
+        "source": "tatoeba",
+        "sourceId": 2144004,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0311",
+        "fit": "redraw",
+        "note": "Adik menunjuk seorang teman kecil yang berdiri bersama tiga kakak laki-lakinya."
+      }
+    },
+    {
+      "wordId": "L1-0351",
+      "hanzi": "四",
+      "sentence": {
+        "hanzi": "我们四个人。",
+        "pinyin": "Wǒmen sì gè rén.",
+        "id": "Kami berempat.",
+        "en": "There are four of us.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0351",
+        "fit": "redraw",
+        "note": "Di pintu restoran, Ayah mengacungkan empat jari kepada pelayan; Ibu, Kakak, dan Adik berdiri di belakangnya."
+      }
+    },
+    {
+      "wordId": "L1-0382",
+      "hanzi": "五",
+      "sentence": {
+        "hanzi": "我要五个包子。",
+        "pinyin": "Wǒ yào wǔ gè bāozi.",
+        "id": "Saya mau lima bakpao.",
+        "en": "Five buns, please.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0382",
+        "fit": "redraw",
+        "note": "Di kedai bakpao, Ibu membuka lima jari kepada penjual; ada lima bakpao di nampan."
+      }
+    },
+    {
+      "wordId": "L1-0217",
+      "hanzi": "六",
+      "sentence": {
+        "hanzi": "妈妈买了六个鸡蛋。",
+        "pinyin": "Māma mǎi le liù gè jīdàn.",
+        "id": "Ibu beli enam butir telur.",
+        "en": "Mom bought six eggs.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0217",
+        "fit": "redraw",
+        "note": "Ibu pulang membawa enam butir telur; Adik menunjuknya."
+      }
+    },
+    {
+      "wordId": "L1-0286",
+      "hanzi": "七",
+      "sentence": {
+        "hanzi": "我吃了七个饺子！",
+        "pinyin": "Wǒ chī le qī gè jiǎozi!",
+        "id": "Aku makan tujuh pangsit!",
+        "en": "I ate seven dumplings!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0286",
+        "fit": "redraw",
+        "note": "Kakak menepuk perut di depan piring kosong; tujuh pangsit tergambar di atas kepalanya."
+      }
+    },
+    {
+      "wordId": "L1-0003",
+      "hanzi": "八",
+      "sentence": {
+        "hanzi": "爷爷八十岁了。",
+        "pinyin": "Yéye bāshí suì le.",
+        "id": "Kakek sudah delapan puluh tahun.",
+        "en": "Grandpa is eighty now.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0003",
+        "fit": "redraw",
+        "note": "Kakek tersenyum di depan kue ulang tahun dengan lilin angka 80."
+      }
+    },
+    {
+      "wordId": "L1-0185",
+      "hanzi": "九",
+      "sentence": {
+        "hanzi": "九点了，睡觉吧。",
+        "pinyin": "Jiǔ diǎn le, shuìjiào ba.",
+        "id": "Sudah jam sembilan, ayo tidur.",
+        "en": "It's nine o'clock. Time for bed.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0185",
+        "fit": "redraw",
+        "note": "Jam dinding menunjuk pukul 9 malam; Ibu menunjuk tempat tidur Adik."
+      }
+    },
+    {
+      "wordId": "L1-0332",
+      "hanzi": "十",
+      "sentence": {
+        "hanzi": "这儿有十个苹果。",
+        "pinyin": "Zhèr yǒu shí gè píngguǒ.",
+        "id": "Di sini ada sepuluh apel.",
+        "en": "There are ten apples here.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0332",
+        "fit": "redraw",
+        "note": "Sepuluh apel di meja (5 + 5); Adik menghitungnya dengan jari."
+      }
+    },
+    {
+      "wordId": "L1-0216",
+      "hanzi": "零",
+      "sentence": {
+        "hanzi": "现在十点零五分。",
+        "pinyin": "Xiànzài shí diǎn líng wǔ fēn.",
+        "id": "Sekarang jam sepuluh lewat lima menit.",
+        "en": "It's five past ten.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0216",
+        "fit": "redraw",
+        "note": "Kakak menunjuk jam dinding besar yang menunjukkan pukul 10.05."
+      }
+    },
+    {
+      "wordId": "L1-0215",
+      "hanzi": "两",
+      "sentence": {
+        "hanzi": "我家有两只猫。",
+        "pinyin": "Wǒ jiā yǒu liǎng zhī māo.",
+        "id": "Di rumahku ada dua kucing.",
+        "en": "We have two cats at home.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0215",
+        "fit": "redraw",
+        "note": "Adik duduk di sofa memangku dua kucing."
+      }
+    },
+    {
+      "wordId": "L1-0165",
+      "hanzi": "几",
+      "sentence": {
+        "hanzi": "你要几个？",
+        "pinyin": "Nǐ yào jǐ gè?",
+        "id": "Kamu mau berapa?",
+        "en": "How many do you want?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你要几个？",
+            "pinyin": "Nǐ yào jǐ gè?",
+            "id": "Kamu mau berapa?",
+            "en": "How many do you want?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "三个！",
+            "pinyin": "Sān gè!",
+            "id": "Tiga!",
+            "en": "Three!"
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0165",
+        "fit": "rebubble",
+        "note": "Ibu memegang permen; Adik menjawab dengan tiga jari."
+      }
+    },
+    {
+      "wordId": "L1-0095",
+      "hanzi": "多少",
+      "sentence": {
+        "hanzi": "这个多少钱？",
+        "pinyin": "Zhège duōshao qián?",
+        "id": "Ini berapa harganya?",
+        "en": "How much is this?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya lebih mudah dipahami bila pertanyaannya dijawab.",
+          "en": "A question word is easier to understand when the question is answered."
+        },
+        "lines": [
+          {
+            "who": "baba",
+            "hanzi": "这个多少钱？",
+            "pinyin": "Zhège duōshao qián?",
+            "id": "Ini berapa harganya?",
+            "en": "How much is this?"
+          },
+          {
+            "who": "seller",
+            "hanzi": "三块钱一个。",
+            "pinyin": "Sān kuài qián yí gè.",
+            "id": "Tiga yuan satu.",
+            "en": "Three yuan each."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0095",
+        "fit": "rebubble",
+        "note": "Di pasar, Ayah menunjuk tumpukan buah dan bertanya kepada penjual."
+      }
+    }
+  ]
+}

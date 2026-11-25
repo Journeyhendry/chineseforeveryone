@@ -1,0 +1,285 @@
+{
+  "unit": "u10",
+  "entries": [
+    {
+      "wordId": "L1-0359",
+      "hanzi": "天",
+      "sentence": {
+        "hanzi": "我们在这儿住三天。",
+        "pinyin": "Wǒmen zài zhèr zhù sān tiān.",
+        "id": "Kita menginap di sini tiga hari.",
+        "en": "We're staying here for three days.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0359",
+        "fit": "redraw",
+        "note": "Keluarga tiba membawa koper di penginapan; kalender dengan tiga hari yang dilingkari."
+      }
+    },
+    {
+      "wordId": "L1-0181",
+      "hanzi": "今天",
+      "sentence": {
+        "hanzi": "今天是星期一。",
+        "pinyin": "Jīntiān shì xīngqīyī.",
+        "id": "Hari ini hari Senin.",
+        "en": "Today is Monday.",
+        "source": "tatoeba",
+        "sourceId": 348445,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0181",
+        "fit": "rebubble",
+        "note": "Adik menunjuk lembar kalender hari ini yang disorot kuning, bertanda Senin."
+      }
+    },
+    {
+      "wordId": "L1-0248",
+      "hanzi": "明天",
+      "sentence": {
+        "hanzi": "明天是星期六！",
+        "pinyin": "Míngtiān shì xīngqīliù!",
+        "id": "Besok hari Sabtu!",
+        "en": "Tomorrow is Saturday!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0248",
+        "fit": "rebubble",
+        "note": "Kalender: panah maju dari hari ini ke besok (Sabtu); Adik melompat senang."
+      }
+    },
+    {
+      "wordId": "L1-0495",
+      "hanzi": "昨天",
+      "sentence": {
+        "hanzi": "昨天是二十四号。",
+        "pinyin": "Zuótiān shì èrshísì hào.",
+        "id": "Kemarin tanggal dua puluh empat.",
+        "en": "Yesterday was the 24th.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0495",
+        "fit": "rebubble",
+        "note": "Kalender: hari ini 25, panah mundur ke 24; Kakak mengingat-ingat."
+      }
+    },
+    {
+      "wordId": "L1-0413",
+      "hanzi": "星期",
+      "sentence": {
+        "hanzi": "一个星期有七天。",
+        "pinyin": "Yí gè xīngqī yǒu qī tiān.",
+        "id": "Satu minggu ada tujuh hari.",
+        "en": "A week has seven days.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0413",
+        "fit": "rebubble",
+        "note": "Tujuh kotak hari berjajar dengan angka 7; Bu Guru menunjuknya."
+      }
+    },
+    {
+      "wordId": "L1-0415",
+      "hanzi": "星期天",
+      "sentence": {
+        "hanzi": "爸爸，今天是星期天！",
+        "pinyin": "Bàba, jīntiān shì xīngqītiān!",
+        "id": "Ayah, hari ini hari Minggu!",
+        "en": "Dad, it's Sunday today!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0415",
+        "fit": "rebubble",
+        "note": "Kotak Minggu di kalender menyala; Ayah bersantai di sofa, Adik menarik tangannya."
+      }
+    },
+    {
+      "wordId": "L1-0414",
+      "hanzi": "星期日",
+      "sentence": {
+        "hanzi": "星期日我们去公园。",
+        "pinyin": "Xīngqīrì wǒmen qù gōngyuán.",
+        "id": "Hari Minggu kita ke taman.",
+        "en": "On Sunday we go to the park.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0414",
+        "fit": "rebubble",
+        "note": "Kotak Minggu di kalender menyala; Keluarga Xiǎo berpiknik di taman."
+      }
+    },
+    {
+      "wordId": "L1-0308",
+      "hanzi": "日",
+      "sentence": {
+        "hanzi": "今天是十月一日。",
+        "pinyin": "Jīntiān shì shí yuè yī rì.",
+        "id": "Hari ini tanggal satu Oktober.",
+        "en": "Today is October 1st.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0308",
+        "fit": "redraw",
+        "note": "Di kelas, Bu Guru baru selesai menulis \"10月1日\" di papan tulis dan menunjuknya sambil membacakan tanggal; murid-murid memperhatikan."
+      }
+    },
+    {
+      "wordId": "L1-0452",
+      "hanzi": "月",
+      "sentence": {
+        "hanzi": "今天是五月一号。",
+        "pinyin": "Jīntiān shì wǔ yuè yī hào.",
+        "id": "Hari ini tanggal satu Mei.",
+        "en": "Today is May 1st.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0452",
+        "fit": "redraw",
+        "note": "Adik menunjuk lembar kalender besar bulan Mei yang tanggal 1-nya dilingkari."
+      }
+    },
+    {
+      "wordId": "L1-0273",
+      "hanzi": "年",
+      "sentence": {
+        "hanzi": "一年有十二个月。",
+        "pinyin": "Yì nián yǒu shí'èr gè yuè.",
+        "id": "Satu tahun ada dua belas bulan.",
+        "en": "A year has twelve months.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "teacher",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0273",
+        "fit": "rebubble",
+        "note": "Pohon yang sama dalam empat musim (satu tahun); tambahkan Bu Guru di pinggir sebagai pembicara."
+      }
+    },
+    {
+      "wordId": "L1-0180",
+      "hanzi": "今年",
+      "sentence": {
+        "hanzi": "我今年六岁。",
+        "pinyin": "Wǒ jīnnián liù suì.",
+        "id": "Tahun ini aku enam tahun.",
+        "en": "I'm six this year.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0180",
+        "fit": "redraw",
+        "note": "Adik mengangkat enam jari di samping kalender 2026 yang menyala."
+      }
+    },
+    {
+      "wordId": "L1-0247",
+      "hanzi": "明年",
+      "sentence": {
+        "hanzi": "明年我七岁！",
+        "pinyin": "Míngnián wǒ qī suì!",
+        "id": "Tahun depan aku tujuh tahun!",
+        "en": "Next year I'll be seven!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0247",
+        "fit": "redraw",
+        "note": "Panah maju dari kalender 2026 ke 2027; Adik mengangkat tujuh jari dengan gembira."
+      }
+    },
+    {
+      "wordId": "L1-0303",
+      "hanzi": "去年",
+      "sentence": {
+        "hanzi": "去年我五岁。",
+        "pinyin": "Qùnián wǒ wǔ suì.",
+        "id": "Tahun lalu aku lima tahun.",
+        "en": "Last year I was five.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0303",
+        "fit": "redraw",
+        "note": "Panah mundur dari kalender 2026 ke 2025; Adik menunjuk fotonya yang lebih kecil sambil mengangkat lima jari."
+      }
+    },
+    {
+      "wordId": "L1-0007",
+      "hanzi": "白天",
+      "sentence": {
+        "hanzi": "猫白天睡觉。",
+        "pinyin": "Māo báitiān shuìjiào.",
+        "id": "Kucing tidur di siang hari.",
+        "en": "Cats sleep during the day.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0007",
+        "fit": "redraw",
+        "note": "Siang hari, matahari terang masuk lewat jendela; kucing tidur melingkar di sofa, Adik menunjuknya."
+      }
+    }
+  ]
+}

@@ -1,0 +1,3906 @@
+{
+  "version": 1,
+  "reviewer": "sonnet (independen, tanpa catatan penulis); ronde 1: 300 entri, ronde 2: 30, ronde 3: 5",
+  "entries": [
+    {
+      "wordId": "L1-0517",
+      "text": "你好！\n你好！请进！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0271",
+      "text": "谢谢你！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0138",
+      "text": "很好！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0274",
+      "text": "爷爷，您好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0272",
+      "text": "你们好！",
+      "scores": {
+        "natural": 4,
+        "correct": 4,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": "English 'you two' is too specific for 你们; use 'Hello, everyone/you all' or draw exactly two people."
+    },
+    {
+      "wordId": "L1-0296",
+      "text": "请吃水果！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0299",
+      "text": "请问，牛奶在哪儿？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0410",
+      "text": "给你。\n谢谢爸爸！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0032",
+      "text": "谢谢！\n不客气！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0093",
+      "text": "爸爸，对不起！\n没关系。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0233",
+      "text": "对不起！\n没关系！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0454",
+      "text": "老师再见！\n再见！明天见！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0227",
+      "text": "你吃包子吗？\n好，谢谢！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0146",
+      "text": "很好吃！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0269",
+      "text": "我喝茶，你呢？\n我也喝茶。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0005",
+      "text": "我们走吧！\n好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0380",
+      "text": "我是学生。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0354",
+      "text": "他是我爸爸。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0356",
+      "text": "她是我奶奶。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0523",
+      "text": "它是我的猫。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0381",
+      "text": "我们是一家人！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0355",
+      "text": "他们在玩儿。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0357",
+      "text": "她们在包饺子。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0524",
+      "text": "你看它们！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 4,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0241",
+      "text": "孩子们，起床了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0337",
+      "text": "这是你。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0034",
+      "text": "不是我！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0425",
+      "text": "我也要！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0176",
+      "text": "小朋友，你叫什么名字？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0245",
+      "text": "你的名字很好听。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0067",
+      "text": "是我的！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0427",
+      "text": "我有一个哥哥。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0098",
+      "text": "我家在二楼。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0311",
+      "text": "他有三个哥哥。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0351",
+      "text": "我们四个人。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0382",
+      "text": "我要五个包子。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0217",
+      "text": "妈妈买了六个鸡蛋。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0286",
+      "text": "我吃了七个饺子！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0003",
+      "text": "爷爷八十岁了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0185",
+      "text": "九点了，睡觉吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0332",
+      "text": "这儿有十个苹果。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0216",
+      "text": "现在十点零五分。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0215",
+      "text": "我家有两只猫。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0165",
+      "text": "你要几个？\n三个！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0095",
+      "text": "这个多少钱？\n三块钱一个。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0464",
+      "text": "这是我妈妈。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0254",
+      "text": "那是我们的学校。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0532",
+      "text": "我要这个！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0515",
+      "text": "这个是我的，那个是你的。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0468",
+      "text": "这些是我的！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0258",
+      "text": "那些是你的吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0467",
+      "text": "来，坐这儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0257",
+      "text": "我们去那儿吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0466",
+      "text": "我们在这里。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0256",
+      "text": "他们在那里！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0465",
+      "text": "您好，这边请！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0255",
+      "text": "请坐那边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0441",
+      "text": "我有很多朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0236",
+      "text": "家里没有牛奶了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0455",
+      "text": "我在这儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0328",
+      "text": "这是什么？\n这是你的新书。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0325",
+      "text": "不是我！\n不是你？那是谁？\n是猫！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0250",
+      "text": "你要哪本书？\n这本！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0516",
+      "text": "哪个好？\n这个很好。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0253",
+      "text": "哪些是你的？\n这些都是。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0252",
+      "text": "他在哪儿？\n在那儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0251",
+      "text": "你在哪里？\n我在学校。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0460",
+      "text": "这个怎么用？\n我看看。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0531",
+      "text": "这件衣服怎么样？\n很好看！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0379",
+      "text": "你问她吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0526",
+      "text": "有问题吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0092",
+      "text": "二加二是几？\n是四。\n对，很好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0120",
+      "text": "我有一个问题。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0008",
+      "text": "我们做了一百个饺子！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0522",
+      "text": "这个手机一千块。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0075",
+      "text": "我是第一！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0143",
+      "text": "今天是十五号。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0353",
+      "text": "我六岁！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0094",
+      "text": "二十个饺子？太多了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0324",
+      "text": "你的多，我的少！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0010",
+      "text": "现在七点半。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0431",
+      "text": "这一半是你的！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0437",
+      "text": "我会说一点儿汉语。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0530",
+      "text": "茶有点儿热。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0439",
+      "text": "桌子上有一些书。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0527",
+      "text": "我们吃些水果吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0442",
+      "text": "这些苹果有的大，有的小。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0445",
+      "text": "有些菜我不吃。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0305",
+      "text": "这儿人很多。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0284",
+      "text": "她是我的好朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0365",
+      "text": "我们是同学。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0505",
+      "text": "大家好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0398",
+      "text": "先生，您好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0518",
+      "text": "女士，这边请。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0261",
+      "text": "男同学在这边，女同学在那边。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0276",
+      "text": "那个女孩子是谁？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0135",
+      "text": "我有两个孩子。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0404",
+      "text": "小朋友，你好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0263",
+      "text": "他是我男朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0279",
+      "text": "她是我女朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0089",
+      "text": "他们都是我的朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0145",
+      "text": "他和她是好朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0169",
+      "text": "他不在家。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0171",
+      "text": "这是我的家人。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0004",
+      "text": "爸爸回来了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0224",
+      "text": "妈妈，这是我朋友。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0118",
+      "text": "哥哥在哪儿？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0178",
+      "text": "这是我姐姐。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0074",
+      "text": "我有一个弟弟。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0237",
+      "text": "我妹妹六岁。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0097",
+      "text": "这是我儿子！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0277",
+      "text": "这是你女儿吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0485",
+      "text": "我住这儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0101",
+      "text": "这个房间是我的！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0487",
+      "text": "这是我的桌子。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0529",
+      "text": "这儿有椅子，请坐。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0509",
+      "text": "这是你家的狗吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0514",
+      "text": "我的猫在这儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0533",
+      "text": "那儿有三只鸟。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0046",
+      "text": "多吃一点儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0144",
+      "text": "你喝什么？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0099",
+      "text": "饭好了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0242",
+      "text": "你吃米饭吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0035",
+      "text": "菜来了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0345",
+      "text": "妈妈，有水吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0036",
+      "text": "请喝茶。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0275",
+      "text": "喝牛奶吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0018",
+      "text": "这是我的杯子！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0346",
+      "text": "你吃什么水果？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0521",
+      "text": "我有两个苹果！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0164",
+      "text": "吃一个鸡蛋吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0243",
+      "text": "面包好吃吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0016",
+      "text": "有包子吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0511",
+      "text": "我们吃饺子吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0244",
+      "text": "我爱吃面条儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0139",
+      "text": "饺子很好吃！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0359",
+      "text": "我们在这儿住三天。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0181",
+      "text": "今天是星期一。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0248",
+      "text": "明天是星期六！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0495",
+      "text": "昨天是二十四号。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0413",
+      "text": "一个星期有七天。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0415",
+      "text": "爸爸，今天是星期天！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0414",
+      "text": "星期日我们去公园。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0308",
+      "text": "今天是十月一日。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 4,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": "Spoken Chinese usually says 号 for dates, but 十月一日 is common in writing and for National Day, and it teaches 日 clearly."
+    },
+    {
+      "wordId": "L1-0452",
+      "text": "今天是五月一号。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0273",
+      "text": "一年有十二个月。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0180",
+      "text": "我今年六岁。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0247",
+      "text": "明年我七岁！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0303",
+      "text": "去年我五岁。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0007",
+      "text": "猫白天睡觉。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0399",
+      "text": "现在八点。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0076",
+      "text": "妈妈，我们几点吃饭？\n六点。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0109",
+      "text": "现在三点五分。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0507",
+      "text": "等我五分钟！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0405",
+      "text": "一个小时有六十分钟。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0334",
+      "text": "对不起，我今天没有时间。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0333",
+      "text": "你什么时候有时间？\n明天下午。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0459",
+      "text": "早上好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0322",
+      "text": "现在是上午十点。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0480",
+      "text": "中午吃什么？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0395",
+      "text": "下午我们喝茶吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0374",
+      "text": "晚上好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0457",
+      "text": "你今天很早！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0372",
+      "text": "你来晚了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0315",
+      "text": "猫在桌子上。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0389",
+      "text": "猫在桌子下边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0291",
+      "text": "爸爸在我前边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0147",
+      "text": "我在爸爸后边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0213",
+      "text": "杯子里有水。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0367",
+      "text": "门外有人。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0368",
+      "text": "哥哥在外边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0501",
+      "text": "来这边！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0205",
+      "text": "到妈妈这儿来！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0302",
+      "text": "我去朋友家。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0154",
+      "text": "我们回家吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0064",
+      "text": "奶奶到了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0506",
+      "text": "这家店的苹果很好吃。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0314",
+      "text": "我家前边有一个商店。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": "一个商店 is acceptable; 一家商店 is more natural."
+    },
+    {
+      "wordId": "L1-0343",
+      "text": "书店在超市后边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0503",
+      "text": "超市里有很多水果。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0100",
+      "text": "今天我们在饭店吃饭。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0083",
+      "text": "电影院里人很多。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0508",
+      "text": "爸爸的公司在那儿。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0042",
+      "text": "那是我家的车！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0504",
+      "text": "我们坐出租车去吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0161",
+      "text": "火车几点到？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0107",
+      "text": "我第一次坐飞机！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0498",
+      "text": "我坐这儿，你坐那儿。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0189",
+      "text": "我开车去公司。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0288",
+      "text": "我七点起床。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0051",
+      "text": "穿这个吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0428",
+      "text": "这是我的新衣服！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0458",
+      "text": "吃早饭了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0383",
+      "text": "我们午饭吃面条儿。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0373",
+      "text": "我们吃晚饭吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0534",
+      "text": "妈妈在做饭。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0347",
+      "text": "他睡了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0348",
+      "text": "妹妹在睡觉。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0500",
+      "text": "我们做饺子吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0462",
+      "text": "我在找我的猫。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0188",
+      "text": "妈妈，开门！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0210",
+      "text": "我吃完了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0473",
+      "text": "你在做什么？\n我正在吃饭。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0453",
+      "text": "再来一个！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0132",
+      "text": "十点了，还不起床？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0434",
+      "text": "你来一下！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0388",
+      "text": "我很喜欢这个！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0001",
+      "text": "妈妈，我爱你！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0116",
+      "text": "我很高兴。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0400",
+      "text": "我想喝奶茶。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0423",
+      "text": "爸爸，我要这个！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0502",
+      "text": "我不要这个菜！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 4,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0160",
+      "text": "哥哥会开车。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0270",
+      "text": "我能吃三个包子！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0512",
+      "text": "妈妈，我可以吃一个吗？\n可以，吃吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0187",
+      "text": "我觉得很好吃。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0474",
+      "text": "老师，我知道！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0306",
+      "text": "你好！认识你很高兴。\n我也很高兴认识你！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0421",
+      "text": "我喜欢我的学校。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0419",
+      "text": "我们是学生。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0209",
+      "text": "老师，早上好！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0418",
+      "text": "哥哥在学做饭。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0420",
+      "text": "妹妹在房间里学习。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0323",
+      "text": "我去上学了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0199",
+      "text": "今天有中文课。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0320",
+      "text": "同学们，上课了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0394",
+      "text": "下课了！我们去吃饭吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0406",
+      "text": "这是我的小学。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0407",
+      "text": "我是小学生。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0481",
+      "text": "妹妹明年上中学。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0482",
+      "text": "我是中学生。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0062",
+      "text": "哥哥今年上大学了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0063",
+      "text": "我是大学生。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0477",
+      "text": "这是中国菜。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0128",
+      "text": "你是哪国人？\n我是印尼人。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0479",
+      "text": "我们在学习中文。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0136",
+      "text": "我会说一点儿汉语。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0137",
+      "text": "我在学汉字。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0488",
+      "text": "这个字我不认识。",
+      "scores": {
+        "natural": 5,
+        "correct": 4,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": "id 'tidak tahu' is slightly loose; 'Aku tidak kenal huruf ini' is closer to 认识."
+    },
+    {
+      "wordId": "L1-0349",
+      "text": "这个用汉语怎么说？\n苹果。\n苹果！谢谢你！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0350",
+      "text": "不要说话了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0090",
+      "text": "老师，我来读！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0091",
+      "text": "妈妈喜欢在家读书。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0409",
+      "text": "我会写我的名字了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0361",
+      "text": "你们在听吗？",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0363",
+      "text": "你说什么？我没听见。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0192",
+      "text": "你看，那是飞机！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0195",
+      "text": "你看见我的猫了吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0173",
+      "text": "下个星期见！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0124",
+      "text": "爸爸在公司工作。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0316",
+      "text": "妈妈八点去上班。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0390",
+      "text": "爸爸下班回家了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0230",
+      "text": "妈妈今天很忙。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0417",
+      "text": "我们休息一下吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0335",
+      "text": "妈妈，我有事问你。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0235",
+      "text": "你没事吧？\n没事，没事！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0028",
+      "text": "你的病好了吗？",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0329",
+      "text": "哥哥生病了，在家休息。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0193",
+      "text": "妈妈，我不想去看病！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0429",
+      "text": "医生，谢谢您！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0430",
+      "text": "医院在那边。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0202",
+      "text": "我家有六口人。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0228",
+      "text": "我买了两件衣服。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0513",
+      "text": "这家店卖饺子。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0294",
+      "text": "这个多少钱？\n十块。\n好，我买一个。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0203",
+      "text": "苹果三块一个。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0450",
+      "text": "这本书二十元。",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0127",
+      "text": "这太贵了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0519",
+      "text": "这个十块。\n能便宜一点儿吗？\n好，八块吧。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0086",
+      "text": "我去超市买东西。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0121",
+      "text": "这是给你的。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0510",
+      "text": "我喜欢这件衣服。",
+      "scores": {
+        "natural": 5,
+        "correct": 4,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": "English 'shirt' is narrower than 衣服 (clothes). Prefer 'this top' or 'this piece of clothing'."
+    },
+    {
+      "wordId": "L1-0022",
+      "text": "桌子上有一本书。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0341",
+      "text": "这是我的书。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0371",
+      "text": "孩子们在外边玩。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0040",
+      "text": "我喜欢唱歌。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0119",
+      "text": "妈妈，我给你唱个歌！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0082",
+      "text": "我们去看电影吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0080",
+      "text": "爸爸在看电视。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0079",
+      "text": "我想玩电脑。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0340",
+      "text": "不要玩手机了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0078",
+      "text": "妈妈，你的电话！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0525",
+      "text": "喂，你在哪儿？\n我在书店。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0058",
+      "text": "妈妈在给爸爸打电话。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0140",
+      "text": "这个电影很好看！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0141",
+      "text": "这个歌很好听！",
+      "scores": {
+        "natural": 4,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0142",
+      "text": "这个游戏很好玩儿！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0061",
+      "text": "这个苹果很大！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0401",
+      "text": "这只猫很小。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0411",
+      "text": "我有一个新朋友！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0520",
+      "text": "这件衣服真漂亮！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 4
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0212",
+      "text": "今天很冷。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0304",
+      "text": "我觉得很热。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0360",
+      "text": "今天天气很好。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0396",
+      "text": "要下雨了。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0449",
+      "text": "外边雨很大。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0528",
+      "text": "哇，下雪了！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0358",
+      "text": "太好了，我们去玩吧！",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0108",
+      "text": "我非常喜欢这本书。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    },
+    {
+      "wordId": "L1-0470",
+      "text": "这个真好吃。",
+      "scores": {
+        "natural": 5,
+        "correct": 5,
+        "beginner": 5,
+        "drawable": 5
+      },
+      "translationOk": true,
+      "pinyinOk": true,
+      "comment": ""
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "unit": "u08",
+  "entries": [
+    {
+      "wordId": "L1-0169",
+      "hanzi": "家",
+      "sentence": {
+        "hanzi": "他不在家。",
+        "pinyin": "Tā bú zài jiā.",
+        "id": "Dia nggak ada di rumah.",
+        "en": "He's not home.",
+        "source": "tatoeba",
+        "sourceId": 765282,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0169",
+        "fit": "redraw",
+        "note": "Teman Kakak berdiri di pintu; Ibu menggeleng sambil menunjuk ke dalam rumah yang tanpa Kakak."
+      }
+    },
+    {
+      "wordId": "L1-0171",
+      "hanzi": "家人",
+      "sentence": {
+        "hanzi": "这是我的家人。",
+        "pinyin": "Zhè shì wǒ de jiārén.",
+        "id": "Ini keluargaku.",
+        "en": "This is my family.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0171",
+        "fit": "rebubble",
+        "note": "Keenam anggota keluarga berjajar di ruang keluarga; Adik di depan memperkenalkan mereka."
+      }
+    },
+    {
+      "wordId": "L1-0004",
+      "hanzi": "爸爸",
+      "sentence": {
+        "hanzi": "爸爸回来了！",
+        "pinyin": "Bàba huílai le!",
+        "id": "Ayah pulang!",
+        "en": "Dad's home!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0004",
+        "fit": "rebubble",
+        "note": "Ayah masuk ruang keluarga dan membuka tangan; Adik berlari menyambutnya."
+      }
+    },
+    {
+      "wordId": "L1-0224",
+      "hanzi": "妈妈",
+      "sentence": {
+        "hanzi": "妈妈，这是我朋友。",
+        "pinyin": "Māma, zhè shì wǒ péngyou.",
+        "id": "Ma, ini temanku.",
+        "en": "Mom, this is my friend.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0224",
+        "fit": "redraw",
+        "note": "Adik menggandeng teman perempuannya dan mengenalkannya kepada Ibu di ruang keluarga."
+      }
+    },
+    {
+      "wordId": "L1-0118",
+      "hanzi": "哥哥",
+      "sentence": {
+        "hanzi": "哥哥在哪儿？",
+        "pinyin": "Gēge zài nǎr?",
+        "id": "Kakak di mana?",
+        "en": "Where's big brother?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0118",
+        "fit": "redraw",
+        "note": "Adik bertanya kepada Ibu sambil celingukan; Kakak mengintip dari balik pintu kamar."
+      }
+    },
+    {
+      "wordId": "L1-0178",
+      "hanzi": "姐姐",
+      "sentence": {
+        "hanzi": "这是我姐姐。",
+        "pinyin": "Zhè shì wǒ jiějie.",
+        "id": "Ini kakak perempuanku.",
+        "en": "This is my older sister.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0178",
+        "fit": "keep",
+        "note": "Ibu menunjuk foto lama di dinding: dirinya waktu kecil bersama kakak perempuannya."
+      }
+    },
+    {
+      "wordId": "L1-0074",
+      "hanzi": "弟弟",
+      "sentence": {
+        "hanzi": "我有一个弟弟。",
+        "pinyin": "Wǒ yǒu yí gè dìdi.",
+        "id": "Aku punya satu adik laki-laki.",
+        "en": "I have a younger brother.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0074",
+        "fit": "rebubble",
+        "note": "Ayah menunjuk foto lama di dinding: dirinya waktu remaja bersama adik laki-lakinya yang kecil."
+      }
+    },
+    {
+      "wordId": "L1-0237",
+      "hanzi": "妹妹",
+      "sentence": {
+        "hanzi": "我妹妹六岁。",
+        "pinyin": "Wǒ mèimei liù suì.",
+        "id": "Adikku umurnya enam tahun.",
+        "en": "My little sister is six.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0237",
+        "fit": "rebubble",
+        "note": "Kakak menunjuk Adik yang mengangkat enam jari; Kakek dan Nenek duduk di sofa."
+      }
+    },
+    {
+      "wordId": "L1-0097",
+      "hanzi": "儿子",
+      "sentence": {
+        "hanzi": "这是我儿子！",
+        "pinyin": "Zhè shì wǒ érzi!",
+        "id": "Ini anakku!",
+        "en": "This is my son!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0097",
+        "fit": "keep",
+        "note": "Ayah merangkul Kakak yang memegang piala dengan bangga."
+      }
+    },
+    {
+      "wordId": "L1-0277",
+      "hanzi": "女儿",
+      "sentence": {
+        "hanzi": "这是你女儿吗？",
+        "pinyin": "Zhè shì nǐ nǚ'ér ma?",
+        "id": "Ini anak perempuanmu?",
+        "en": "Is this your daughter?",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "friend",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0277",
+        "fit": "redraw",
+        "note": "Teman Ibu bertamu dan bertanya sambil tersenyum; Ibu sedang menyisir rambut Adik."
+      }
+    },
+    {
+      "wordId": "L1-0485",
+      "hanzi": "住",
+      "sentence": {
+        "hanzi": "我住这儿！",
+        "pinyin": "Wǒ zhù zhèr!",
+        "id": "Aku tinggal di sini!",
+        "en": "I live here!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0485",
+        "fit": "keep",
+        "note": "Malam hari, Adik menunjuk satu jendela yang menyala di gedung apartemen."
+      }
+    },
+    {
+      "wordId": "L1-0101",
+      "hanzi": "房间",
+      "sentence": {
+        "hanzi": "这个房间是我的！",
+        "pinyin": "Zhège fángjiān shì wǒ de!",
+        "id": "Kamar ini punyaku!",
+        "en": "This room is mine!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0101",
+        "fit": "rebubble",
+        "note": "Adik berdiri bangga di kamarnya yang berisi meja belajar, tempat tidur kecil, dan boneka."
+      }
+    },
+    {
+      "wordId": "L1-0487",
+      "hanzi": "桌子",
+      "sentence": {
+        "hanzi": "这是我的桌子。",
+        "pinyin": "Zhè shì wǒ de zhuōzi.",
+        "id": "Ini mejaku.",
+        "en": "This is my desk.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0487",
+        "fit": "redraw",
+        "note": "Kakak duduk di meja belajarnya dan menepuk mejanya dengan bangga."
+      }
+    },
+    {
+      "wordId": "L1-0529",
+      "hanzi": "椅子",
+      "sentence": {
+        "hanzi": "这儿有椅子，请坐。",
+        "pinyin": "Zhèr yǒu yǐzi, qǐng zuò.",
+        "id": "Di sini ada kursi, silakan duduk.",
+        "en": "There's a chair here. Have a seat.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "yeye",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0529",
+        "fit": "rebubble",
+        "note": "Kakek menunjuk kursi kayu yang kosong, mempersilakan tamu duduk."
+      }
+    },
+    {
+      "wordId": "L1-0509",
+      "hanzi": "狗",
+      "sentence": {
+        "hanzi": "这是你家的狗吗？",
+        "pinyin": "Zhè shì nǐ jiā de gǒu ma?",
+        "id": "Ini anjing keluargamu?",
+        "en": "Is this your family's dog?",
+        "source": "unit",
+        "sourceId": "n-u08:1",
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0509",
+        "fit": "redraw",
+        "note": "Di taman, Adik bertanya kepada Teman yang memegang tali anjing kecil berbulu kuning."
+      }
+    },
+    {
+      "wordId": "L1-0514",
+      "hanzi": "猫",
+      "sentence": {
+        "hanzi": "我的猫在这儿！",
+        "pinyin": "Wǒ de māo zài zhèr!",
+        "id": "Kucingku di sini!",
+        "en": "Here's my cat!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0514",
+        "fit": "rebubble",
+        "note": "Kucing belang oranye tidur melingkar di sofa; Adik mengelus kepalanya."
+      }
+    },
+    {
+      "wordId": "L1-0533",
+      "hanzi": "只",
+      "sentence": {
+        "hanzi": "那儿有三只鸟。",
+        "pinyin": "Nàr yǒu sān zhī niǎo.",
+        "id": "Di sana ada tiga ekor burung.",
+        "en": "There are three birds over there.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0533",
+        "fit": "redraw",
+        "note": "Adik menunjuk tiga burung kecil yang bertengger di satu dahan, dengan angka 3."
+      }
+    }
+  ]
+}

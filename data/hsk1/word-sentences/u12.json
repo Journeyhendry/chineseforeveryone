@@ -1,0 +1,245 @@
+{
+  "unit": "u12",
+  "entries": [
+    {
+      "wordId": "L1-0315",
+      "hanzi": "上",
+      "sentence": {
+        "hanzi": "猫在桌子上。",
+        "pinyin": "Māo zài zhuōzi shang.",
+        "id": "Kucingnya di atas meja.",
+        "en": "The cat is on the table.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0315",
+        "fit": "rebubble",
+        "note": "Kucing duduk di atas meja dengan panah kuning; tambahkan Adik di pinggir sebagai pembicara."
+      }
+    },
+    {
+      "wordId": "L1-0389",
+      "hanzi": "下",
+      "sentence": {
+        "hanzi": "猫在桌子下边。",
+        "pinyin": "Māo zài zhuōzi xiàbian.",
+        "id": "Kucingnya di bawah meja.",
+        "en": "The cat is under the table.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0389",
+        "fit": "rebubble",
+        "note": "Kucing tidur di bawah meja dengan panah kuning; tambahkan Adik di pinggir sebagai pembicara."
+      }
+    },
+    {
+      "wordId": "L1-0291",
+      "hanzi": "前",
+      "sentence": {
+        "hanzi": "爸爸在我前边。",
+        "pinyin": "Bàba zài wǒ qiánbian.",
+        "id": "Ayah di depanku.",
+        "en": "Dad is in front of me.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0291",
+        "fit": "rebubble",
+        "note": "Antre di halte bus: Ayah di depan, Adik di belakangnya; panah menunjuk Ayah."
+      }
+    },
+    {
+      "wordId": "L1-0147",
+      "hanzi": "后",
+      "sentence": {
+        "hanzi": "我在爸爸后边。",
+        "pinyin": "Wǒ zài bàba hòubian.",
+        "id": "Aku di belakang Ayah.",
+        "en": "I'm behind Dad.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0147",
+        "fit": "rebubble",
+        "note": "Antre di halte bus: Ayah di depan, Adik di belakangnya; panah menunjuk Adik."
+      }
+    },
+    {
+      "wordId": "L1-0213",
+      "hanzi": "里",
+      "sentence": {
+        "hanzi": "杯子里有水。",
+        "pinyin": "Bēizi li yǒu shuǐ.",
+        "id": "Di dalam gelas ada air.",
+        "en": "There's water in the cup.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0213",
+        "fit": "redraw",
+        "note": "Ibu menyodorkan gelas bening berisi air; panah menunjuk ke dalam gelas."
+      }
+    },
+    {
+      "wordId": "L1-0367",
+      "hanzi": "外",
+      "sentence": {
+        "hanzi": "门外有人。",
+        "pinyin": "Mén wài yǒu rén.",
+        "id": "Ada orang di luar pintu.",
+        "en": "There's someone at the door.",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0367",
+        "fit": "redraw",
+        "note": "Bayangan orang terlihat di luar pintu; Ibu di dalam mendengar ketukan, panah menunjuk ke luar."
+      }
+    },
+    {
+      "wordId": "L1-0368",
+      "hanzi": "外边",
+      "sentence": {
+        "hanzi": "哥哥在外边。",
+        "pinyin": "Gēge zài wàibian.",
+        "id": "Kakak ada di luar.",
+        "en": "Big brother is outside.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0368",
+        "fit": "rebubble",
+        "note": "Kakak bermain bola di luar rumah; Nenek melihat dari jendela."
+      }
+    },
+    {
+      "wordId": "L1-0501",
+      "hanzi": "边",
+      "sentence": {
+        "hanzi": "来这边！",
+        "pinyin": "Lái zhèbiān!",
+        "id": "Sini, ke sebelah sini!",
+        "en": "Come over this way!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0501",
+        "fit": "rebubble",
+        "note": "Adik berdiri di pinggir jalan dan menunjuk ke satu sisi, tempat pohon dan bangku."
+      }
+    },
+    {
+      "wordId": "L1-0205",
+      "hanzi": "来",
+      "sentence": {
+        "hanzi": "到妈妈这儿来！",
+        "pinyin": "Dào māma zhèr lái!",
+        "id": "Sini, ke Mama!",
+        "en": "Come here to Mommy!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0205",
+        "fit": "rebubble",
+        "note": "Ibu melambai memanggil; Adik berlari ke arah Ibu."
+      }
+    },
+    {
+      "wordId": "L1-0302",
+      "hanzi": "去",
+      "sentence": {
+        "hanzi": "我去朋友家。",
+        "pinyin": "Wǒ qù péngyou jiā.",
+        "id": "Aku pergi ke rumah teman.",
+        "en": "I'm going to my friend's place.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0302",
+        "fit": "redraw",
+        "note": "Kakak berjalan menjauh dari rumah menuju rumah temannya yang melambai; panah menunjuk menjauh."
+      }
+    },
+    {
+      "wordId": "L1-0154",
+      "hanzi": "回",
+      "sentence": {
+        "hanzi": "我们回家吧！",
+        "pinyin": "Wǒmen huí jiā ba!",
+        "id": "Yuk, kita pulang!",
+        "en": "Let's go home!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0154",
+        "fit": "rebubble",
+        "note": "Ayah berbalik arah menuju rumah; panah berbentuk U."
+      }
+    },
+    {
+      "wordId": "L1-0064",
+      "hanzi": "到",
+      "sentence": {
+        "hanzi": "奶奶到了！",
+        "pinyin": "Nǎinai dào le!",
+        "id": "Nenek sudah sampai!",
+        "en": "Grandma's here!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0064",
+        "fit": "keep",
+        "note": "Nenek keluar dari pintu kedatangan bandara membawa koper; Adik berlari menyambut."
+      }
+    }
+  ]
+}

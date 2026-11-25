@@ -1,0 +1,366 @@
+{
+  "unit": "u14",
+  "entries": [
+    {
+      "wordId": "L1-0288",
+      "hanzi": "起床",
+      "sentence": {
+        "hanzi": "我七点起床。",
+        "pinyin": "Wǒ qī diǎn qǐchuáng.",
+        "id": "Aku bangun jam tujuh.",
+        "en": "I get up at seven.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0288",
+        "fit": "rebubble",
+        "note": "Jam weker berdering pukul 7; Adik bangun dan duduk di tempat tidur sambil menggeliat."
+      }
+    },
+    {
+      "wordId": "L1-0051",
+      "hanzi": "穿",
+      "sentence": {
+        "hanzi": "穿这个吧！",
+        "pinyin": "Chuān zhège ba!",
+        "id": "Pakai yang ini, ya!",
+        "en": "Wear this one!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0051",
+        "fit": "rebubble",
+        "note": "Ibu memegang jaket terbuka; Adik memasukkan tangannya ke lengan jaket."
+      }
+    },
+    {
+      "wordId": "L1-0428",
+      "hanzi": "衣服",
+      "sentence": {
+        "hanzi": "这是我的新衣服！",
+        "pinyin": "Zhè shì wǒ de xīn yīfu!",
+        "id": "Ini baju baruku!",
+        "en": "These are my new clothes!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0428",
+        "fit": "rebubble",
+        "note": "Adik mengangkat gaun ungu dari gantungan baju dengan gembira."
+      }
+    },
+    {
+      "wordId": "L1-0458",
+      "hanzi": "早饭",
+      "sentence": {
+        "hanzi": "吃早饭了！",
+        "pinyin": "Chī zǎofàn le!",
+        "id": "Ayo sarapan!",
+        "en": "Breakfast time!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0458",
+        "fit": "keep",
+        "note": "Pagi pukul 7:30: susu kedelai, cakwe, dan bakpao di meja; Ibu memanggil."
+      }
+    },
+    {
+      "wordId": "L1-0383",
+      "hanzi": "午饭",
+      "sentence": {
+        "hanzi": "我们午饭吃面条儿。",
+        "pinyin": "Wǒmen wǔfàn chī miàntiáor.",
+        "id": "Makan siang kita mi.",
+        "en": "We're having noodles for lunch.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0383",
+        "fit": "rebubble",
+        "note": "Siang pukul 12: semangkuk mi dan dua bakpao di meja; Nenek memanggil Kakek."
+      }
+    },
+    {
+      "wordId": "L1-0373",
+      "hanzi": "晚饭",
+      "sentence": {
+        "hanzi": "我们吃晚饭吧！",
+        "pinyin": "Wǒmen chī wǎnfàn ba!",
+        "id": "Yuk, kita makan malam!",
+        "en": "Let's have dinner!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "baba",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0373",
+        "fit": "rebubble",
+        "note": "Malam pukul 7: ikan, sayur, dan nasi di meja di bawah lampu; keluarga duduk bersama."
+      }
+    },
+    {
+      "wordId": "L1-0534",
+      "hanzi": "做饭",
+      "sentence": {
+        "hanzi": "妈妈在做饭。",
+        "pinyin": "Māma zài zuòfàn.",
+        "id": "Ibu lagi masak.",
+        "en": "Mom is cooking.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0534",
+        "fit": "rebubble",
+        "note": "Ibu mengaduk wajan yang mengepul di dapur; Adik membawa sayur."
+      }
+    },
+    {
+      "wordId": "L1-0347",
+      "hanzi": "睡",
+      "sentence": {
+        "hanzi": "他睡了。",
+        "pinyin": "Tā shuì le.",
+        "id": "Dia sudah tidur.",
+        "en": "He's asleep.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0347",
+        "fit": "redraw",
+        "note": "Kakek tertidur di kursi malas dengan buku di pangkuan; Nenek berbisik kepada Adik sambil menaruh jari di bibir."
+      }
+    },
+    {
+      "wordId": "L1-0348",
+      "hanzi": "睡觉",
+      "sentence": {
+        "hanzi": "妹妹在睡觉。",
+        "pinyin": "Mèimei zài shuìjiào.",
+        "id": "Adik lagi tidur.",
+        "en": "Little sister is sleeping.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "gege",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0348",
+        "fit": "rebubble",
+        "note": "Malam hari Adik tidur nyenyak berselimut dengan boneka beruang; Kakak mengintip dari pintu dan berbisik."
+      }
+    },
+    {
+      "wordId": "L1-0500",
+      "hanzi": "做",
+      "sentence": {
+        "hanzi": "我们做饺子吧！",
+        "pinyin": "Wǒmen zuò jiǎozi ba!",
+        "id": "Yuk, kita bikin pangsit!",
+        "en": "Let's make dumplings!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "nainai",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0500",
+        "fit": "rebubble",
+        "note": "Nenek dan Adik membuat pangsit bersama di meja dapur."
+      }
+    },
+    {
+      "wordId": "L1-0462",
+      "hanzi": "找",
+      "sentence": {
+        "hanzi": "我在找我的猫。",
+        "pinyin": "Wǒ zài zhǎo wǒ de māo.",
+        "id": "Aku lagi cari kucingku.",
+        "en": "I'm looking for my cat.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0462",
+        "fit": "rebubble",
+        "note": "Adik mencari dengan tangan di atas mata; kucing bersembunyi di balik sofa."
+      }
+    },
+    {
+      "wordId": "L1-0188",
+      "hanzi": "开",
+      "sentence": {
+        "hanzi": "妈妈，开门！",
+        "pinyin": "Māma, kāi mén!",
+        "id": "Ma, bukain pintu!",
+        "en": "Mom, open the door!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0188",
+        "fit": "redraw",
+        "note": "Adik mengetuk pintu dari luar; Ibu datang dari dalam untuk membukanya."
+      }
+    },
+    {
+      "wordId": "L1-0210",
+      "hanzi": "了",
+      "sentence": {
+        "hanzi": "我吃完了！",
+        "pinyin": "Wǒ chī wán le!",
+        "id": "Aku sudah selesai makan!",
+        "en": "I'm done eating!",
+        "source": "buatan",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0210",
+        "fit": "rebubble",
+        "note": "Dua panel: mangkuk penuh nasi lalu mangkuk kosong; Adik mengacungkan jempol."
+      }
+    },
+    {
+      "wordId": "L1-0473",
+      "hanzi": "正在",
+      "sentence": {
+        "hanzi": "我正在吃饭。",
+        "pinyin": "Wǒ zhèngzài chī fàn.",
+        "id": "Aku lagi makan.",
+        "en": "I'm eating right now.",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": {
+        "reason": {
+          "id": "正在 (sedang) paling jelas sebagai jawaban atas pertanyaan \"sedang apa?\".",
+          "en": "正在 (in the middle of) is clearest as the answer to \"what are you doing?\"."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你在做什么？",
+            "pinyin": "Nǐ zài zuò shénme?",
+            "id": "Kamu lagi ngapain?",
+            "en": "What are you doing?"
+          },
+          {
+            "who": "meimei",
+            "hanzi": "我正在吃饭。",
+            "pinyin": "Wǒ zhèngzài chī fàn.",
+            "id": "Aku lagi makan.",
+            "en": "I'm eating right now."
+          }
+        ]
+      },
+      "scene": {
+        "ref": "L1-0473",
+        "fit": "keep",
+        "note": "Dua panel: Ibu menelepon bertanya; Adik yang sedang makan semangkuk nasi menjawab."
+      }
+    },
+    {
+      "wordId": "L1-0453",
+      "hanzi": "再",
+      "sentence": {
+        "hanzi": "再来一个！",
+        "pinyin": "Zài lái yí gè!",
+        "id": "Tambah satu lagi!",
+        "en": "One more, please!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "meimei",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0453",
+        "fit": "keep",
+        "note": "Adik menyodorkan piring kosong kepada Nenek yang memegang kukusan bakpao."
+      }
+    },
+    {
+      "wordId": "L1-0132",
+      "hanzi": "还",
+      "sentence": {
+        "hanzi": "十点了，还不起床？",
+        "pinyin": "Shí diǎn le, hái bù qǐchuáng?",
+        "id": "Sudah jam sepuluh, belum bangun juga?",
+        "en": "It's ten o'clock and you're still in bed?",
+        "source": "unit",
+        "sourceId": "n-u14:1",
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0132",
+        "fit": "redraw",
+        "note": "Ibu berdiri di pintu kamar; Kakak masih bergelung di selimut, jam menunjuk pukul 10."
+      }
+    },
+    {
+      "wordId": "L1-0434",
+      "hanzi": "一下",
+      "sentence": {
+        "hanzi": "你来一下！",
+        "pinyin": "Nǐ lái yíxià!",
+        "id": "Sini sebentar!",
+        "en": "Come here a sec!",
+        "source": "unit",
+        "sourceId": null,
+        "speaker": "mama",
+        "matchForm": null
+      },
+      "dialog": null,
+      "scene": {
+        "ref": "L1-0434",
+        "fit": "rebubble",
+        "note": "Ibu di dapur melambai memanggil Adik sebentar."
+      }
+    }
+  ]
+}

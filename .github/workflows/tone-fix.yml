@@ -37,7 +37,8 @@ env:
   HF_HUB_DISABLE_TELEMETRY: "1"
   FIX_SENTENCES: ${{ inputs.sentences || '400' }}
   FIX_CONTROL: ${{ inputs.control || '80' }}
-  FIX_LIMIT: ${{ inputs.limit || '0' }}
+  # push ke cabang = uji asap saja (24 file, tanpa commit hasil); jalan sungguhan hanya lewat workflow_dispatch
+  FIX_LIMIT: ${{ inputs.limit || (github.event_name == 'push' && '24' || '0') }}
 
 jobs:
   plan:
@@ -118,7 +119,7 @@ jobs:
 
   merge:
     needs: [plan, fix]
-    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.count != '0' && !inputs.dry_run }}
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.count != '0' && !inputs.dry_run && github.event_name != 'push' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

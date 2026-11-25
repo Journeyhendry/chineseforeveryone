@@ -33,6 +33,7 @@ ROOT = HERE.parent.parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / "scripts" / "tts"))
 
+import tone_align as tal  # noqa: E402
 import tone_analysis as ta  # noqa: E402
 
 DATA = ROOT / "data" / "hsk1"
@@ -62,9 +63,10 @@ def ref_record(rid: str, src: str, spk: str, text: str, tones: list[int], meas: 
     syl = []
     for s in meas["syl"]:
         syl.append({"d": s["d"], "vd": s["vd"], "r": s["r"],
-                    "c": [int(round(x * 10)) for x in s["c"]] if s["c"] else None})
+                    "c": [int(round(x * 10)) for x in s["c"]] if s["c"] else None,
+                    "vf": s.get("vf"), "inn": s.get("inn"), "hn": s.get("hn"), "vs": s.get("vs"), "ve": s.get("ve")})
     rec = {"id": rid, "src": src, "spk": spk, "text": text, "tones": tones, "span": meas["span"],
-           "span_st": meas["span_st"], "syl": syl}
+           "span_st": meas["span_st"], "al": meas.get("al", 0), "syl": syl}
     rec.update(extra or {})
     return rec
 
@@ -90,6 +92,15 @@ def hsk_tone_table() -> dict[str, list[int]]:
     return {w["hanzi"]: ta.expected_tones_from_numbered(w["pinyinNumbered"]) for w in read_words()}
 
 
+def hsk_letter_table() -> dict[str, list[str]]:
+    return {w["hanzi"]: tal.letters_from_numbered(w["pinyinNumbered"]) for w in read_words()}
+
+
+def letters_for_word(word: str, table: dict[str, list[str]]) -> list[str] | None:
+    """Huruf pinyin per suku kata untuk penyelarasan: data HSK bila ada, kalau tidak pypinyin."""
+    return table.get(word) or tal.letters_from_text(word)
+
+
 # --------------------------------------------------------------------------
 # audio-cmn
 # --------------------------------------------------------------------------
@@ -107,6 +118,7 @@ def cmd_cmn(args):
     names = subprocess.run(["git", "-C", str(cache), "ls-tree", "-r", "-z", "--name-only", "HEAD"], check=True,
                            capture_output=True).stdout.decode("utf-8").split("\0")
     hsk = hsk_tone_table()
+    hsk_l = hsk_letter_table()
     items = []  # (path, id, src, spk, text, tones)
     for p in names:
         if p.startswith("64k/syllabs/cmn-") and p.endswith(".mp3"):
@@ -122,7 +134,10 @@ def cmd_cmn(args):
                 continue
             if tones and len(tones) == ta.syllable_count(w):
                 items.append((p, f"cmn-hsk:{w}", "audio-cmn-hsk", "yue-tan", w, tones))
-    log(f"[cmn] commit {commit[:12]}: {len(items)} rekaman terpilih")
+    items = items[args.shard::args.shards]
+    if args.limit:
+        items = items[:args.limit]
+    log(f"[cmn] commit {commit[:12]}: shard {args.shard}/{args.shards}: {len(items)} rekaman terpilih")
     tmp = Path(tempfile.mkdtemp())
     refs, bad = [], 0
     for i in range(0, len(items), 200):
@@ -130,7 +145,8 @@ def cmd_cmn(args):
         git("checkout", "HEAD", "--", *[b[0] for b in batch], cwd=cache)
         for p, rid, src, spk, text, tones in batch:
             try:
-                m = ta.analyze_file(cache / p, tones, tmp / "x.wav")
+                m = ta.analyze_file(cache / p, tones, tmp / "x.wav",
+                                    letters=None if src == "audio-cmn-syl" else letters_for_word(text, hsk_l))
             except Exception as e:  # noqa: BLE001
                 log(f"[cmn] {p}: {type(e).__name__}: {e}")
                 m = None
@@ -143,7 +159,7 @@ def cmd_cmn(args):
         if out_of_time():
             log("[cmn] waktu habis; sisa dilewati")
             break
-    part = {"part": "cmn", "audioCmnCommit": commit, "refs": refs,
+    part = {"part": f"cmn-{args.shard}", "audioCmnCommit": commit, "refs": refs,
             "skipped": {"unmeasurable": bad}}
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(part, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -168,7 +184,8 @@ def cmd_local_native(args):
             m = re.search(r"Speaker: (.+?) Recorder", e["author"] + " ")
             spk = "ll:" + (m.group(1) if m else e["author"]).strip().lower().replace(" ", "-")
             try:
-                meas = ta.analyze_file(ROOT / "public" / "audio" / e["path"], tones, tmp / "x.wav")
+                meas = ta.analyze_file(ROOT / "public" / "audio" / e["path"], tones, tmp / "x.wav",
+                                       letters=tal.letters_from_numbered(w["pinyinNumbered"]))
             except Exception as ex:  # noqa: BLE001
                 log(f"[local] {e['path']}: {ex}")
                 continue
@@ -190,6 +207,7 @@ def cmd_ll(args):
     na.T0 = time.time()
     na.DEADLINE_MIN = BUDGET_MIN + 5  # batas waktu get() di native_audio (bawaan 40 menit)
     hsk = hsk_tone_table()
+    hsk_l = hsk_letter_table()
     titles: list[str] = []
     na.prefix_titles(na.PREFIXES[0], titles)
     titles = sorted(set(titles))
@@ -206,6 +224,8 @@ def cmd_ll(args):
     # kata HSK 1 dulu, lalu yang lain; bagi ke shard berselang-seling
     cands.sort(key=lambda c: (c[2] not in hsk, c[2], c[0]))
     mine = cands[args.shard::args.shards]
+    if args.limit:
+        mine = mine[:args.limit]
     log(f"[ll] shard {args.shard}/{args.shards}: {len(mine)} kandidat dari {len(cands)}")
     tmp = Path(tempfile.mkdtemp())
     refs, skipped_lic, fails = [], {}, 0
@@ -244,7 +264,7 @@ def cmd_ll(args):
                 time.sleep(na.DOWNLOAD_GAP)
                 src = tmp / "src.bin"
                 src.write_bytes(na.get(na.download_url(ii), binary=True))
-                meas = ta.analyze_file(src, tones, tmp / "x.wav")
+                meas = ta.analyze_file(src, tones, tmp / "x.wav", letters=letters_for_word(word, hsk_l))
             except na.RateLimited as e:
                 log(f"[ll] {e}")
                 fails += 1
@@ -322,7 +342,7 @@ def cmd_tatoeba(args):
                 time.sleep(1.0)
                 f = tmp / "a.mp3"
                 f.write_bytes(fetch(f"https://tatoeba.org/audio/download/{aid}"))
-                m = ta.analyze_file(f, tones, tmp / "x.wav")
+                m = ta.analyze_file(f, tones, tmp / "x.wav", letters=tal.letters_from_text(ids[sid]))
             except Exception as e:  # noqa: BLE001
                 log(f"[tatoeba] {aid}: {e}")
                 continue
@@ -396,7 +416,13 @@ def cmd_merge(args):
     by_src: dict[str, int] = {}
     for r in refs:
         by_src[r["src"]] = by_src.get(r["src"], 0) + 1
-    doc = {"version": 1, "npts": ta.NPTS, "unit": "c = kontur semitone x10 terhadap 100 Hz; d/vd detik; r semitone",
+    n_al = sum(1 for r in refs if r.get("al"))
+    n_multi = sum(1 for r in refs if len(r["tones"]) > 1)
+    doc = {"version": 2, "npts": ta.NPTS,
+           "unit": "c = kontur semitone x10 terhadap 100 Hz; d/vd detik; r semitone; vf = % bersuara sepertiga awal/tengah/akhir; "
+                   "inn = intensitas (dB relatif puncak) 5 titik; hn = HNR dB x10; vs/ve = awal/akhir bersuara (% suku kata); "
+                   "al = 1 bila batas suku kata dari penyelarasan paksa (MMS_FA), 0 = DP lembah intensitas",
+           "alignment": {"model": "torchaudio MMS_FA", "recordingsAligned": n_al, "recordingsMultiSyllable": n_multi},
            "sources": SOURCES, "counts": by_src, "checks": checks, "speakers": dict(sorted(spk.items())), "refs": refs}
     OUT.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     log(f"[merge] {len(refs)} rujukan, {len(spk)} penutur, {by_src}; {OUT.stat().st_size / 1e6:.2f} MB")
@@ -413,6 +439,7 @@ def main():
         s.add_argument("--dev-subset", action="store_true", help="cmn: hanya kata HSK 1 + semua suku kata (uji lokal cepat)")
         s.add_argument("--shard", type=int, default=0)
         s.add_argument("--shards", type=int, default=1)
+        s.add_argument("--limit", type=int, default=0, help="uji asap: hanya N rekaman per bagian (0 = semua)")
         s.set_defaults(fn=fn)
     m = sub.add_parser("merge")
     m.add_argument("--inputs", nargs="+", required=True)

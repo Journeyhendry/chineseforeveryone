@@ -42,6 +42,32 @@ def utterance_stats(sib: list[dict]) -> tuple[list[float], float]:
     return [float(a.mean()), float(a.min()), float(a.max()), float(a.std())], float(sum(s["d"] for s in sib))
 
 
+GROUPS = {"base": 26, "tones": 24, "nbr": 56, "pos": 5, "dur": 5, "utt": 5, "extra": 11, "nbx": 3}
+_OFF: dict[str, tuple[int, int]] = {}
+_o = 0
+for _k, _n in GROUPS.items():
+    _OFF[_k] = (_o, _o + _n)
+    _o += _n
+N_FEATURES = _o
+
+
+def columns(*groups: str) -> list[int]:
+    """Indeks kolom fitur untuk kelompok tertentu (dipakai ablasi: base / +tones+nbr+pos+dur+utt = konteks / +extra+nbx)."""
+    out: list[int] = []
+    for g in groups:
+        out += list(range(*_OFF[g]))
+    return out
+
+
+def _ex(s) -> list[float]:
+    """Fitur ronde 2 satu suku kata: % bersuara 3 bagian, intensitas 5 titik, HNR, awal/akhir bersuara (0 bila tak ada)."""
+    if s is None:
+        return [0.0] * 11
+    vf = s.get("vf") or [0, 0, 0]
+    inn = s.get("inn") or [0] * 5
+    return [*map(float, vf), *map(float, inn), float(s.get("hn") or 0) / 10, float(s.get("vs") or 0), float(s.get("ve") or 0)]
+
+
 def features(sib: list[dict], i: int, ustat=None) -> np.ndarray:
     r = sib[i]
     n = len(sib)
@@ -50,13 +76,18 @@ def features(sib: list[dict], i: int, ustat=None) -> np.ndarray:
     utt, tot = ustat or utterance_stats(sib)
     base = ta.clf_features(r["c_rel"], r["vd"])
     cm = np.asarray(r["c_rel"], dtype=float)
-    return np.concatenate([
+    pv, nx = g(i - 1), g(i + 1)
+    nbx = [float((pv or {}).get("hn") or 0) / 10, float((pv or {}).get("ve") or 0), float((nx or {}).get("vs") or 0)]
+    f = np.concatenate([
         base, _onehot(tn(i - 1)), _onehot(tn(i + 1)), _onehot(tn(i - 2)), _onehot(tn(i + 2)),
         _nb(g(i - 1)), _nb(g(i + 1)), _nb(g(i - 2)), _nb(g(i + 2)),
         [i, n - 1 - i, n, float(i == n - 1), float(i == 0)],
         [r["d"], r["vd"], r["vd"] / max(r["d"], 0.03), r["r"], r["d"] / max(tot, 0.03)],
         utt, [float(cm.mean() - utt[0])],
+        _ex(r), nbx,
     ]).astype(float)
+    assert len(f) == N_FEATURES, (len(f), N_FEATURES)
+    return f
 
 
 def usable(s: dict) -> bool:
@@ -67,7 +98,7 @@ def build_matrix(rows: list[dict]):
     """rows (dari tone_templates.rows_from_refs; punya rid, pos) -> (X, y, spk, cls, idx baris)."""
     by = defaultdict(list)
     for k, r in enumerate(rows):
-        by[r["rid"]].append((r["pos"], k))
+        by[r.get("rid", k)].append((r.get("pos", 0), k))
     X, y, spk, cls, ids = [], [], [], [], []
     for rid, lst in by.items():
         lst.sort()
@@ -95,8 +126,8 @@ def make_folds(spk: np.ndarray) -> list[list[str]]:
 def make_gbm(seed: int = 0):
     from sklearn.ensemble import HistGradientBoostingClassifier
 
-    return HistGradientBoostingClassifier(max_iter=300, learning_rate=0.06, max_leaf_nodes=15,
-                                          l2_regularization=1.0, random_state=seed)
+    return HistGradientBoostingClassifier(max_iter=500, learning_rate=0.04, max_leaf_nodes=31,
+                                          l2_regularization=3.0, min_samples_leaf=40, random_state=seed)
 
 
 def loso_proba(X, y, spk, make=make_gbm, folds=None) -> np.ndarray:

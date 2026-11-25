@@ -311,9 +311,34 @@ def effective_duration(inten: np.ndarray, i0: int, i1: int, imax: float) -> floa
     return (i1 - i0 - pause) * STEP
 
 
-def measure(times, st, inten, tones: list[int], npts: int = NPTS) -> dict | None:
-    """Ukur ujaran: {span, span_st, syl:[{tone, d, vd, r, c (st absolut) | None, t0, t1}]}. tones = nada yang
-    diharapkan per suku kata (0 = ringan)."""
+def syl_extras(times, st, inten, hnr, a: float, b: float, imax: float, v0: float | None, v1: float | None) -> dict:
+    """Fitur tambahan ronde 2 per suku kata [a, b): fraksi bersuara di sepertiga awal/tengah/akhir (persen), intensitas relatif
+    puncak ujaran di 5 titik (dB, bulat), rata-rata harmonisitas HNR bingkai bersuara (dB x10, penanda derit: rendah),
+    posisi awal/akhir bagian bersuara di dalam suku kata (persen)."""
+    m = (times >= a - 1e-9) & (times < b - 1e-9)
+    idx = np.where(m)[0]
+    if len(idx) < 3:
+        return {"vf": [0, 0, 0], "inn": [-40] * 5, "hn": 0, "vs": 0, "ve": 0}
+    thirds = np.array_split(idx, 3)
+    vf = [int(round(100 * float((~np.isnan(st[t])).mean()))) if len(t) else 0 for t in thirds]
+    pts = np.linspace(idx[0], idx[-1], 5).round().astype(int)
+    inn = [int(round(float(inten[k] - imax))) for k in pts]
+    hn = 0
+    if hnr is not None:
+        vm = m & ~np.isnan(st)
+        if vm.sum():
+            hn = int(round(10 * float(np.clip(np.nanmean(hnr[vm]), -20, 40))))
+    L = max(b - a, 1e-6)
+    vs = int(round(100 * (v0 - a) / L)) if v0 is not None else 0
+    ve = int(round(100 * (v1 - a) / L)) if v1 is not None else 0
+    return {"vf": vf, "inn": inn, "hn": hn, "vs": vs, "ve": ve}
+
+
+def measure(times, st, inten, tones: list[int], npts: int = NPTS, bounds: list[tuple[float, float]] | None = None,
+            hnr=None) -> dict | None:
+    """Ukur ujaran: {span, span_st, syl:[{tone, d, vd, r, c (st absolut) | None, t0, t1, vf, inn, hn, vs, ve}]}.
+    tones = nada yang diharapkan per suku kata (0 = ringan). bounds = batas suku kata dari penyelarasan paksa
+    (tone_align.bounds_from_spans); bila None dipakai DP lembah intensitas."""
     n = len(tones)
     if n == 0 or len(times) < 10:
         return None
@@ -330,19 +355,27 @@ def measure(times, st, inten, tones: list[int], npts: int = NPTS) -> dict | None
             return None
         segs_t = [mv]
         durs = [effective_duration(inten, i0, i1, imax)]  # ujaran penuh (konsonan awal ikut)
+        ext_seg = [(t0, t1)]
     else:
-        segs = segment(inten[i0:i1], voiced, [TONE_WEIGHT[t] for t in tones])
-        segs_t = [(float(times[i0] + a * STEP), float(times[i0] + b * STEP)) for a, b in segs]
-        durs = [effective_duration(inten, i0 + a, i0 + b, imax) for a, b in segs]
+        if bounds is not None and len(bounds) == n:
+            segs_t = [(float(a), float(b)) for a, b in bounds]
+            durs = [effective_duration(inten, max(0, int(round(a / STEP))), min(len(inten), int(round(b / STEP))), imax)
+                    for a, b in segs_t]
+        else:
+            segs = segment(inten[i0:i1], voiced, [TONE_WEIGHT[t] for t in tones])
+            segs_t = [(float(times[i0] + a * STEP), float(times[i0] + b * STEP)) for a, b in segs]
+            durs = [effective_duration(inten, i0 + a, i0 + b, imax) for a, b in segs]
+        ext_seg = segs_t
     syl = []
-    for tone, (a, b), d in zip(tones, segs_t, durs):
+    for tone, (a, b), d, (ea, eb) in zip(tones, segs_t, durs, ext_seg):
         cp = contour_points(times, st, a, b, npts)
         rec = {"tone": tone, "d": round(d, 3), "t0": round(float(a), 3), "t1": round(float(b), 3)}
         if cp is None:
-            rec.update(c=None, vd=0.0, r=0.0)
+            rec.update(c=None, vd=0.0, r=0.0, **syl_extras(times, st, inten, hnr, ea, eb, imax, None, None))
         else:
             c, v0, v1, rng = cp
-            rec.update(c=[round(float(x), 2) for x in c], vd=round(v1 - v0, 3), r=round(rng, 2), v0=round(v0, 3))
+            rec.update(c=[round(float(x), 2) for x in c], vd=round(v1 - v0, 3), r=round(rng, 2), v0=round(v0, 3),
+                       **syl_extras(times, st, inten, hnr, ea, eb, imax, v0, v1))
         syl.append(rec)
     allv = st[~np.isnan(st)]
     span_st = float(np.percentile(allv, 95) - np.percentile(allv, 5)) if len(allv) > 10 else 0.0
@@ -360,9 +393,10 @@ def load_sound(path: Path, tmp_wav: Path, sr: int = 16000):
     return parselmouth.Sound(str(tmp_wav))
 
 
-def track(snd) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def track(snd, with_hnr: bool = False):
     """(waktu, F0 semitone-absolut dengan NaN tak bersuara, intensitas dB), langkah 10 ms. Dua lintasan:
-    pertama 60-500 Hz untuk median, kedua rentang sempit sekitar median (kurangi galat oktaf)."""
+    pertama 60-500 Hz untuk median, kedua rentang sempit sekitar median (kurangi galat oktaf).
+    with_hnr=True: tambahan elemen keempat = harmonisitas (dB) pada waktu yang sama."""
     p1 = snd.to_pitch_ac(time_step=STEP, pitch_floor=60.0, pitch_ceiling=500.0)
     f1 = np.asarray(p1.selected_array["frequency"], dtype=float)
     v = f1[f1 > 0]
@@ -376,13 +410,43 @@ def track(snd) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     it = snd.to_intensity(minimum_pitch=120.0, time_step=STEP)
     inten = np.interp(times, np.asarray(it.xs(), dtype=float), np.asarray(it.values[0], dtype=float))
     st = smooth_nan(repair_octaves(hz_to_st(f0)))
-    return times, st, inten
+    if not with_hnr:
+        return times, st, inten
+    try:
+        h = snd.to_harmonicity_cc(time_step=STEP, minimum_pitch=60.0)
+        hv = np.asarray(h.values[0], dtype=float)
+        hv = np.where(hv < -100, np.nan, hv)  # Praat: -200 = tak bersuara
+        hnr = np.interp(times, np.asarray(h.xs(), dtype=float), np.nan_to_num(hv, nan=-20.0))
+    except Exception:  # noqa: BLE001
+        hnr = np.zeros_like(times)
+    return times, st, inten, hnr
 
 
-def analyze_file(path: Path, tones: list[int], tmp_wav: Path) -> dict | None:
+def wave16k(snd) -> np.ndarray:
+    return np.asarray(snd.values[0], dtype=np.float32)
+
+
+def analyze_file(path: Path, tones: list[int], tmp_wav: Path, letters: list[str] | None = None) -> dict | None:
+    """Ukur satu berkas. letters (huruf pinyin per suku kata, tone_align) + TONE_ALIGN=1 -> batas suku kata dari
+    penyelarasan paksa; hasil membawa 'al': 1 (dipakai) atau 0 (DP; model/penyelarasan tak tersedia)."""
     snd = load_sound(path, tmp_wav)
-    times, st, inten = track(snd)
-    return measure(times, st, inten, tones)
+    times, st, inten, hnr = track(snd, with_hnr=True)
+    bounds = None
+    if letters is not None and len(tones) > 1 and len(letters) == len(tones):
+        import tone_align as tal
+
+        al = tal.get_aligner()
+        if al is not None:
+            try:
+                spans = al.align(wave16k(snd), letters)
+                if spans:
+                    bounds = tal.bounds_from_spans(spans, times, inten, speech_span(times, inten))
+            except Exception:  # noqa: BLE001
+                bounds = None
+    m = measure(times, st, inten, tones, bounds=bounds, hnr=hnr)
+    if m is not None:
+        m["al"] = 1 if bounds is not None else 0
+    return m
 
 
 # --------------------------------------------------------------------------

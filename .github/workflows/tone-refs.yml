@@ -5,17 +5,26 @@ name: Tone references (task 4c)
 # -> data/hsk1/tone-refs.json. Terpisah dari build-audio.yml (tidak menyentuh path-nya).
 on:
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Uji asap: hanya N rekaman per bagian, hasil TIDAK di-commit (0 = semua, commit)"
+        default: "0"
   push:
     branches-ignore:
       - main
     paths:
       - scripts/tts-hsk1/tone_refs.py
       - scripts/tts-hsk1/tone_analysis.py
+      - scripts/tts-hsk1/tone_align.py
       - scripts/tts-hsk1/requirements-4c.txt
       - .github/workflows/tone-refs.yml
 
 permissions:
   contents: write
+
+env:
+  TONE_ALIGN: "1"
+  REFS_LIMIT: ${{ inputs.limit || '0' }}
 
 concurrency:
   group: tone-refs-${{ github.ref }}
@@ -24,23 +33,32 @@ concurrency:
 jobs:
   cmn:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 110
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
     env:
-      REFS_BUDGET_MIN: "85"
+      REFS_BUDGET_MIN: "95"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch
+          key: mms-fa-model-v1
       - run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           pip install -q -r scripts/tts-hsk1/requirements-4c.txt
-      - run: python scripts/tts-hsk1/tone_refs.py cmn --out parts/cmn.json
+          pip install -q torch==2.4.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: python scripts/tts-hsk1/tone_refs.py cmn --shard ${{ matrix.shard }} --shards 4 --limit "$REFS_LIMIT" --out parts/cmn-${{ matrix.shard }}.json
       - uses: actions/upload-artifact@v4
         with:
-          name: refs-cmn
-          path: parts/cmn.json
+          name: refs-cmn-${{ matrix.shard }}
+          path: parts/cmn-${{ matrix.shard }}.json
           retention-days: 7
 
   ll:
@@ -57,11 +75,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch
+          key: mms-fa-model-v1
       - run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           pip install -q -r scripts/tts-hsk1/requirements-4c.txt
-      - run: python scripts/tts-hsk1/tone_refs.py ll --shard ${{ matrix.shard }} --shards 3 --out parts/ll-${{ matrix.shard }}.json
+          pip install -q torch==2.4.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: python scripts/tts-hsk1/tone_refs.py ll --shard ${{ matrix.shard }} --shards 3 --limit "$REFS_LIMIT" --out parts/ll-${{ matrix.shard }}.json
         continue-on-error: true
       - uses: actions/upload-artifact@v4
         if: always()
@@ -79,10 +102,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch
+          key: mms-fa-model-v1
       - run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           pip install -q -r scripts/tts-hsk1/requirements-4c.txt
+          pip install -q torch==2.4.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cpu
       - run: python scripts/tts-hsk1/tone_refs.py tatoeba --out parts/tatoeba.json
         continue-on-error: true
       - run: python scripts/tts-hsk1/tone_refs.py commonvoice --out parts/commonvoice.json
@@ -118,6 +146,7 @@ jobs:
           ls -la "$RUNNER_TEMP/parts"
           python scripts/tts-hsk1/tone_refs.py merge --inputs "$RUNNER_TEMP"/parts/*.json
       - name: Commit
+        if: ${{ env.REFS_LIMIT == '0' }}
         env:
           BRANCH: ${{ github.ref_name }}
         run: |

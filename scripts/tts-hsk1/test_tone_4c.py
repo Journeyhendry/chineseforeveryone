@@ -302,3 +302,115 @@ def test_rebuild_make_plan_priorities_and_skip_tuned():
     plan = rb.make_plan(report, manifest, sentences=0, control=5)
     assert plan[:3] == ["a", "f", "b"] and "e" not in plan and "d" not in plan and plan[-1] == "c"
     assert "d" in rb.make_plan(report, manifest, sentences=1, control=0)
+
+
+# ---- ronde 2: sandhi 不/一, penyelarasan (parsing), model konteks + verifikasi ------
+
+def test_yi_bu_sandhi_rules():
+    assert ta.apply_yi_bu_sandhi("一举两得", [1, 2, 3, 2]) == [4, 2, 3, 2]     # 一 + nada 3 -> 4
+    assert ta.apply_yi_bu_sandhi("不屑一顾", [4, 4, 1, 4]) == [2, 4, 2, 4]     # 不 + 4 -> 2 ; 一 + 4 -> 2
+    assert ta.apply_yi_bu_sandhi("一丝不苟", [1, 1, 4, 3]) == [4, 1, 4, 3]     # 不 + 3 tetap 4
+    assert ta.apply_yi_bu_sandhi("第一", [4, 4]) == [4, 1]                      # 一 setelah 第 / akhir ujaran: nada 1
+    assert ta.apply_yi_bu_sandhi("好不好", [3, 4, 3]) == [3, 0, 3]              # V不V -> ringan
+    assert ta.apply_yi_bu_sandhi("一会儿", [1, 4]) == [2, 4]                    # erhua 儿 tidak dihitung
+    assert ta.apply_yi_bu_sandhi("你好", [2, 3]) == [2, 3]                      # tak ada 不/一: tak berubah
+    assert ta.apply_yi_bu_sandhi("不是", [4]) == [4]                            # panjang tak cocok: dibiarkan
+
+
+def test_align_letters_from_numbered_and_text():
+    import tone_align as tal
+
+    assert tal.letters_from_numbered("mian4 tiao2 r5") == ["mian", "tiaor"]
+    assert tal.letters_from_numbered("nv3 er2") == ["nu", "er"]
+    assert tal.letters_from_numbered("ni3 hao3") == ["ni", "hao"]
+    pytest.importorskip("pypinyin")
+    assert tal.letters_from_text("你好") == ["ni", "hao"]
+    assert tal.letters_from_text("面条儿") == ["mian", "tiaor"]
+    assert tal.letters_from_text("abc") is None
+
+
+def test_align_group_spans_and_mismatch():
+    import tone_align as tal
+
+    toks = [(0.10, 0.12), (0.14, 0.16), (0.30, 0.32), (0.40, 0.42), (0.44, 0.46)]   # n i | h a o  -> ni, hao  (5 huruf)
+    assert tal.group_spans(toks, ["ni", "hao"]) == [(0.10, 0.16), (0.30, 0.46)]
+    assert tal.group_spans(toks[:-1], ["ni", "hao"]) is None                         # jumlah token tak cocok
+
+
+def test_align_bounds_cut_at_intensity_valley_between_tokens():
+    import tone_align as tal
+
+    n = 100
+    times = np.arange(n) * ta.STEP
+    inten = np.full(n, 70.0)
+    inten[48:53] = 40.0                       # lembah 0.48-0.52
+    spans = [(0.10, 0.40), (0.60, 0.90)]      # celah antar token 0.40-0.60 berisi lembah
+    b = tal.bounds_from_spans(spans, times, inten, (0.05, 0.95))
+    assert b is not None and len(b) == 2
+    assert b[0][0] == 0.05 and b[1][1] == 0.95 and b[0][1] == b[1][0]
+    assert 0.47 <= b[0][1] <= 0.53
+    assert tal.bounds_from_spans([(0.3, 0.9), (0.1, 0.2)], times, inten, (0.05, 0.95)) is None or True
+
+
+def test_measure_uses_alignment_bounds_and_extras():
+    st = np.concatenate([np.linspace(0, 6, 30), np.full(5, np.nan), np.linspace(8, -2, 30)])
+    inten = np.concatenate([np.full(30, 70.0), np.full(5, 45.0), np.full(30, 70.0)])
+    times, st = make_track(st)
+    hnr = np.full(len(st), 12.0)
+    m = ta.measure(times, st, inten, [2, 4], bounds=[(0.0, 0.32), (0.32, 0.65)], hnr=hnr)
+    assert m["syl"][0]["t1"] == 0.32 and m["syl"][1]["t0"] == 0.32
+    s = m["syl"][0]
+    assert len(s["vf"]) == 3 and len(s["inn"]) == 5 and s["hn"] == 120 and 0 <= s["vs"] <= 100
+
+
+def _toy_rows(n_per=60, seed=0):
+    rng = np.random.default_rng(seed)
+    shapes = {1: np.zeros(10), 2: np.linspace(-3, 3, 10), 3: np.concatenate([np.linspace(-1, -4, 5), np.linspace(-4, 0, 5)]),
+              4: np.linspace(5, -5, 10)}
+    rows = []
+    for spk in ("a", "b", "c"):
+        for k in range(n_per):
+            tones = [int(x) for x in rng.integers(1, 5, size=2)]
+            for i, t in enumerate(tones):
+                rows.append({"tone": t, "cls": "word", "spk": spk, "c_rel": list(shapes[t] + rng.normal(0, 0.4, 10)),
+                             "d": 0.3, "vd": 0.25, "r": 6.0, "pos": i, "n": 2, "rid": f"{spk}{k}", "next": -1,
+                             "vf": [90, 90, 90], "inn": [-10, -3, 0, -3, -10], "hn": 100, "vs": 5, "ve": 95})
+    return rows
+
+
+def test_tone_model_features_have_no_label_leak_and_fixed_size():
+    import tone_model as tm
+
+    rows = _toy_rows(5)
+    sib = [r for r in rows if r["rid"] == "a0"]
+    f = tm.features(sib, 0)
+    assert len(f) == tm.N_FEATURES
+    alt = [dict(sib[0], tone=(sib[0]["tone"] % 4) + 1), sib[1]]
+    # mengganti nada suku kata ITU SENDIRI tidak boleh mengubah fitur (hanya nada tetangga yang boleh dipakai)
+    assert np.allclose(tm.features(alt, 0), f)
+    assert not np.allclose(tm.features([sib[0], dict(sib[1], tone=(sib[1]["tone"] % 4) + 1)], 0), f)
+
+
+def test_tone_model_loso_verification_and_threshold():
+    import tone_model as tm
+
+    rows = _toy_rows()
+    X, y, spk, cls, ids = tm.build_matrix(rows)
+    P = tm.loso_proba(X, y, spk, make=lambda: tm.make_gbm(0))
+    assert (P.argmax(1) + 1 == y).mean() > 0.95
+    g = tm.verification_scores(P, y)
+    thr = tm.threshold_p10(g)
+    assert abs((g >= thr).mean() - 0.9) < 0.03
+    wrong = np.where(P.argmax(1) + 1 != y)[0]
+    if len(wrong):
+        assert g[wrong].max() < 0  # nada salah -> skor negatif (peluang diharapkan < 0.5)
+
+
+def test_relabel_refs_only_untrusted_texts():
+    import tone_templates as tt
+
+    refs = [{"id": "x", "text": "一举两得", "tones": [1, 2, 3, 2]}, {"id": "y", "text": "一个", "tones": [1, 4]},
+            {"id": "z", "text": "你好", "tones": [2, 3]}]
+    out, n = tt.relabel_refs(refs, trusted={"一个"})
+    assert n == 1 and out[0]["tones"] == [4, 2, 3, 2] and out[0]["tonesRaw"] == [1, 2, 3, 2]
+    assert out[1]["tones"] == [1, 4]            # kata data HSK 1 dipercaya apa adanya

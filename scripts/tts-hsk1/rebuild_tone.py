@@ -219,11 +219,18 @@ def candidates(env: Env, key: str, strengths=STRENGTHS):
 
 def pick(before: dict, cands: list, min_gain: float = MIN_GAIN):
     """Kandidat terbaik: skor tertinggi, lalu kekuatan terkecil dengan skor >= terbaik - TIE; harus lolos ts.better."""
+    ranked = ranked_candidates(before, cands, min_gain)
+    return ranked[0] if ranked else None
+
+
+def ranked_candidates(before: dict, cands: list, min_gain: float = MIN_GAIN) -> list:
+    """Semua kandidat yang lolos ts.better, urutan percobaan: pilihan utama (lihat pick), lalu sisanya skor menurun."""
     ok = [c for c in cands if ts.better(c[2], before, min_gain)]
     if not ok:
-        return None
+        return []
     top = max(c[2]["S"] for c in ok)
-    return min((c for c in ok if c[2]["S"] >= top - TIE), key=lambda c: c[0])
+    first = min((c for c in ok if c[2]["S"] >= top - TIE), key=lambda c: c[0])
+    return [first] + sorted((c for c in ok if c is not first), key=lambda c: -c[2]["S"])
 
 
 def encode(wav: Path, dst: Path, tmp: Path):
@@ -271,54 +278,54 @@ def cmd_plan(a):
 # --------------------------------------------------------------------------
 
 def process(env: Env, key: str, out_dir: Path, ctx=None) -> dict:
-    """Satu file: kandidat -> pemenang -> mp3 -> ukur ulang -> (Whisper). Kembalikan entri hasil."""
+    """Satu file: kandidat -> (urut) encode -> ukur ulang -> Whisper; kandidat pertama yang lolos semuanya dipakai."""
     before, cands, info = candidates(env, key)
-    gain = SENT_MIN_GAIN if env.items[key]["kind"] == "sentence" else MIN_GAIN
-    best = pick(before, cands, gain)
+    it, e = env.items[key], env.manifest["files"][key]
+    gain = SENT_MIN_GAIN if it["kind"] == "sentence" else MIN_GAIN
+    ranked = ranked_candidates(before, cands, gain)
     res = {"key": key, "before": {k: before[k] for k in ("S", "acc", "conf", "rr", "dist", "short", "flags")},
            "candidates": {str(c[0]): {k: c[2][k] for k in ("S", "acc", "conf", "rr", "short")} for c in cands}, **info}
-    if best is None:
+    if not ranked:
         res["decision"] = "tetap (tidak ada kandidat yang lebih baik)"
         return res
-    s, wav, _ = best
-    mp3 = out_dir / (key + ".mp3")
-    mp3.parent.mkdir(parents=True, exist_ok=True)
-    dur = encode(wav, mp3, env.work)
-    it = env.items[key]
     tones = ts.item_tones(it, env.words, env.casual)
-    after_syl = None
-    snd = ta.load_sound(mp3, env.work / "m.wav", sr=16000)
-    times, st, inten = ta.track(snd)
-    meas = ta.measure(times, st, inten, tones)
-    if meas:
-        after_syl = ts.score_syllables(meas, env.med[env.manifest["files"][key]["voice"]], env.tpl)
-    if not after_syl:
-        mp3.unlink(missing_ok=True)
-        res["decision"] = "tetap (mp3 hasil tidak terukur)"
-        return res
-    after = {**ts.file_summary(after_syl)}
-    res["strength"], res["after"] = s, {k: after[k] for k in ("S", "acc", "conf", "rr", "dist", "short", "flags")}
-    res["durationSec"] = dur
-    if not ts.better(after, before, gain):
-        mp3.unlink(missing_ok=True)
-        res["decision"] = "tetap (setelah dienkode ulang skor tidak lebih baik)"
-        return res
-    if ctx is not None:
-        import build_audio as ba
+    notes = []
+    for s, wav, _ in ranked[:3]:
+        mp3 = out_dir / (key + ".mp3")
+        mp3.parent.mkdir(parents=True, exist_ok=True)
+        dur = encode(wav, mp3, env.work)
+        snd = ta.load_sound(mp3, env.work / "m.wav", sr=16000)
+        times, st, inten = ta.track(snd)
+        meas = ta.measure(times, st, inten, tones)
+        if not meas:
+            mp3.unlink(missing_ok=True)
+            notes.append(f"{s}: mp3 tidak terukur")
+            continue
+        after = ts.file_summary(ts.score_syllables(meas, env.med[e["voice"]], env.tpl))
+        if not ts.better(after, before, gain):
+            mp3.unlink(missing_ok=True)
+            notes.append(f"{s}: setelah enkode skor tidak lebih baik")
+            continue
+        res["strength"], res["durationSec"] = s, dur
+        res["after"] = {k: after[k] for k in ("S", "acc", "conf", "rr", "dist", "short", "flags")}
+        if ctx is not None:
+            import build_audio as ba
 
-        e = env.manifest["files"][key]
-        cand = ba.evaluate(ctx, it, mp3, it["speed"])
-        res["whisper"] = {"ok": cand["ok"], "transcript": cand["transcript"], "check": cand["check"], "via": cand["via"]}
-        if e["ok"] and not cand["ok"]:
-            mp3.unlink(missing_ok=True)
-            res["decision"] = "tetap (Whisper tidak lolos untuk hasil baru)"
-            return res
-        if not e["ok"] and not cand["ok"]:
-            mp3.unlink(missing_ok=True)
-            res["decision"] = "tetap (file lama sudah gagal Whisper; hasil baru juga gagal)"
-            return res
-        res["durationSec"] = cand["dur"]
-    res["decision"] = "ganti"
+            cand = ba.evaluate(ctx, it, mp3, it["speed"])
+            res["whisper"] = {"ok": cand["ok"], "transcript": cand["transcript"], "check": cand["check"], "via": cand["via"]}
+            if not cand["ok"]:
+                mp3.unlink(missing_ok=True)
+                notes.append(f"{s}: Whisper tidak lolos ('{cand['transcript']}')")
+                res.pop("whisper")
+                continue
+            res["durationSec"] = cand["dur"]
+        res["decision"] = "ganti"
+        if notes:
+            res["triedBefore"] = notes
+        return res
+    res.pop("after", None)
+    res.pop("strength", None)
+    res["decision"] = "tetap (" + "; ".join(notes) + ")"
     return res
 
 

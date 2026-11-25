@@ -2817,6 +2817,8 @@
           ],
           "props": [
             {"id":"table","x":380,"y":336,"value":"160"},
+            {"id":"bowl","x":360,"y":266,"variant":"rice","scale":0.8},
+            {"id":"chopsticks","x":410,"y":268,"rotate":80,"scale":0.8},
             {"id":"greens-plate","x":0,"y":14,"hold":[0,"left"],"scale":1.0},
             {"id":"steam","x":200,"y":180,"roles":["sway"]}
           ],
@@ -3099,7 +3101,7 @@
           "props": [
             {"id":"table","x":330,"y":336,"value":"200"},
             {"id":"noodle-bowl","x":300,"y":266,"variant":"lift","scale":1.2},
-            {"id":"noodles-lift","x":4,"y":4,"hold":[0,"left"],"scale":1.0}
+            {"id":"noodles-lift","x":4,"y":4,"hold":[0,"left"],"scale":0.7}
           ]
         }
       ],
@@ -3305,10 +3307,10 @@
             {"id":"meimei","pose":"armsUp","expression":"happy","x":400,"scale":1.0,"flip":true,"act":"char"}
           ],
           "props": [
-            {"id":"week","x":240,"y":96,"variant":"sunday","scale":0.8,"roles":["target"]},
+            {"id":"week","x":170,"y":96,"variant":"sunday","scale":0.8,"roles":["target"]},
             {"id":"basket","x":12,"y":10,"hold":[1,"left"],"scale":0.7}
           ],
-          "bubbles": [{"from":3,"x":340,"y":116,"w":128,"h":52,"text":"星期日！","highlight":true}]
+          "bubbles": [{"from":3,"x":316,"y":24,"w":140,"h":52,"text":"星期日！","highlight":true}]
         }
       ],
       "alt": {

@@ -26,6 +26,7 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
   - Tahap 1–3 (unit 1–12, 177 adegan) sudah ada dan bisa diadaptasi (ganti isi balon + pilih kalimat yang cocok).
 
   - Keputusan pemilik 2026-11-25 (lanjutan): default 1 kalimat per kata; pakai dialog hanya untuk kata yang butuh dialog agar paham (mis. partikel 吗/呢/吧, sapaan, tawar-menawar).
-  - Kalimat/dialog hanya memakai kata & data yang SUDAH ada (kata unit ini + unit sebelumnya, 300 kata HSK 1 + ungkapan santai yang sudah lolos cek). Tujuan: pelajar mengulang dan mengingat — "tulisan ini pernah dipakai di materi sebelumnya, ternyata fungsinya begini".
-  - Di animasi/kalimat, kata yang sudah dipelajari bisa disentuh: muncul arti + tautan "dipelajari di Unit N". Kata baru disorot warna.
-  - Syarat data: cek otomatis kosakata (sudah ada untuk dialog) diperluas ke kalimat utama tiap kata; kalimat yang memuat kata di luar unit ini + sebelumnya tidak dipakai.
+  - Pendekatan HYBRID (pemilik 2026-11-25 malam): PRIORITAS kata yang sudah ada di materi HSK 1 (unit ini + sebelumnya) supaya materi saling terkait dan mudah diingat. Kalau contoh tidak ada atau tidak sederhana/sehari-hari, boleh pakai kata dari luar, jadi pelajar juga dapat lebih banyak kalimat sehari-hari. Kalimat di luar unit tetap boleh.
+  - Sumber kalimat yang boleh: Tatoeba (sebagai referensi/dipakai), kalimat buatan dari luar, atau kalimat dari kata yang sudah ada. Dialog/penggunaan di animasi berkisar di HSK 1.
+  - DIBATALKAN pemilik: tidak perlu info "dipelajari di Unit N" saat kata disentuh. Cukup sorot kata baru.
+  - Syarat data: kalimat utama tiap kata dicek (a) benar & alami, (b) sederhana/sehari-hari, (c) tandai kata di luar HSK 1 (boleh, tapi tercatat). Utamakan kalimat yang kata-katanya sudah ada.

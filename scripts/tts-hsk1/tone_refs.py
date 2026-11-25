@@ -118,6 +118,8 @@ def cmd_cmn(args):
             if not (1 <= len(w) <= 4 and ta.hanzi_only(w) == w):
                 continue
             tones = tones_for_word(w, hsk)
+            if args.dev_subset and w not in hsk:
+                continue
             if tones and len(tones) == ta.syllable_count(w):
                 items.append((p, f"cmn-hsk:{w}", "audio-cmn-hsk", "yue-tan", w, tones))
     log(f"[cmn] commit {commit[:12]}: {len(items)} rekaman terpilih")
@@ -406,6 +408,7 @@ def main():
         s = sub.add_parser(name)
         s.add_argument("--out", required=True)
         s.add_argument("--cache", default=str(Path.home() / ".cache" / "audio-cmn-4c"))
+        s.add_argument("--dev-subset", action="store_true", help="cmn: hanya kata HSK 1 + semua suku kata (uji lokal cepat)")
         s.add_argument("--shard", type=int, default=0)
         s.add_argument("--shards", type=int, default=1)
         s.set_defaults(fn=fn)

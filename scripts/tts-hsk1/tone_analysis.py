@@ -390,7 +390,7 @@ def build_templates(syls: list[dict], min_n: int = 8) -> dict:
             if len(rows) >= min_n:
                 ent["next"][str(nx)] = tpl(rows)
         out["tones"][str(t)] = ent
-    for cls in ("single", "word", "sent"):
+    for cls in ("syl", "single", "word", "sent"):
         for t in (0, 1, 2, 3, 4):
             rows = [s for s in syls if s["cls"] == cls and s["tone"] == t]
             if len(rows) < min_n:

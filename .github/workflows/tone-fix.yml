@@ -1,0 +1,152 @@
+name: Tone fix (task 4c)
+
+# Memperbaiki nada/durasi file P3/L3 yang berbendera (data/hsk1/audio-tone-report.json) lewat PSOLA,
+# memverifikasi tiap file pengganti dengan Whisper large-v3 (fungsi evaluate() build_audio.py), lalu
+# mengganti file hanya bila skor membaik dan Whisper tidak turun. Terpisah dari build-audio.yml.
+on:
+  workflow_dispatch:
+    inputs:
+      sentences:
+        description: "Jumlah kalimat berbendera yang ikut diproses (0 = tidak ada)"
+        default: "0"
+      control:
+        description: "Jumlah sampel kontrol (file tidak berbendera)"
+        default: "80"
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - scripts/tts-hsk1/rebuild_tone.py
+      - .github/workflows/tone-fix.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tone-fix-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  HF_HUB_DISABLE_TELEMETRY: "1"
+  FIX_SENTENCES: ${{ inputs.sentences || '0' }}
+  FIX_CONTROL: ${{ inputs.control || '80' }}
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      count: ${{ steps.plan.outputs.count }}
+      shards: ${{ steps.plan.outputs.shards }}
+      total: ${{ steps.plan.outputs.total }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Unit tests
+        run: |
+          set -euo pipefail
+          python -m pip install -q numpy==1.26.4 pypinyin==0.53.0 opencc-python-reimplemented==0.1.7 scikit-learn==1.5.2 pytest
+          python -m pytest scripts/tts-hsk1/test_tone_4c.py -q
+      - id: plan
+        run: |
+          set -euo pipefail
+          json="$(python scripts/tts-hsk1/rebuild_tone.py plan)"
+          echo "$json"
+          echo "count=$(echo "$json" | python -c 'import json,sys; print(json.load(sys.stdin)["count"])')" >> "$GITHUB_OUTPUT"
+          echo "shards=$(echo "$json" | python -c 'import json,sys; print(json.dumps(json.load(sys.stdin)["shards"]))')" >> "$GITHUB_OUTPUT"
+          echo "total=$(echo "$json" | python -c 'import json,sys; print(json.load(sys.stdin)["total"])')" >> "$GITHUB_OUTPUT"
+
+  fix:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    env:
+      WORK: ${{ github.workspace }}/.tone-work
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install system packages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+      - name: Cache pip and Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: tts-hsk1-whisper-large-v3-${{ runner.os }}-${{ hashFiles('scripts/tts-hsk1/requirements.txt', 'scripts/tts/voices.json') }}
+          restore-keys: |
+            tts-hsk1-whisper-large-v3-${{ runner.os }}-
+            tts-hsk1-${{ runner.os }}-
+      - name: Install Python packages
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --upgrade pip
+          "$RUNNER_TEMP/venv/bin/pip" install -r scripts/tts-hsk1/requirements.txt
+      - name: Tune and verify shard ${{ matrix.shard }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$WORK"
+          "$RUNNER_TEMP/venv/bin/python" scripts/tts-hsk1/rebuild_tone.py shard --shard ${{ matrix.shard }} --shards ${{ needs.plan.outputs.total }} --work "$WORK"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tone-shard-${{ matrix.shard }}
+          path: ${{ github.workspace }}/.tone-work/out
+          retention-days: 5
+          if-no-files-found: ignore
+
+  merge:
+    needs: [plan, fix]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.count != '0' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: tone-shard-*
+          path: ${{ runner.temp }}/shards
+      - name: Merge
+        run: |
+          set -euo pipefail
+          inputs=()
+          for d in "$RUNNER_TEMP"/shards/*/; do inputs+=("$d"); done
+          python scripts/tts-hsk1/rebuild_tone.py merge --inputs "${inputs[@]}"
+      - name: Commit
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/audio/hsk1 data/hsk1/tone-fix-log.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Data: tone-tuned HSK 1 audio (task 4c)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && break
+              sleep $((i * 10))
+            done
+          fi

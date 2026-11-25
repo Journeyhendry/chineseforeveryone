@@ -51,7 +51,8 @@ def rows_from_refs(doc: dict, min_spk_syl: int = MIN_SPK_SYL) -> tuple[list[dict
         if r["spk"] not in keep:
             continue
         nx = ta.next_tones(r["tones"])
-        cls = ta.length_class(len(r["tones"]))
+        # daftar suku kata terpisah (dibaca lambat satu-satu) tidak dicampur dengan rekaman kata: kelas "syl"
+        cls = "syl" if r["src"] == "audio-cmn-syl" else ta.length_class(len(r["tones"]))
         for i, (t, s) in enumerate(zip(r["tones"], r["syl"])):
             c_rel = [round(x / 10 - meds[r["spk"]], 2) for x in s["c"]] if s["c"] else None
             rows.append({"tone": t, "next": nx[i], "cls": cls, "spk": r["spk"], "c_rel": c_rel, "d": s["d"], "vd": s["vd"],
@@ -100,8 +101,8 @@ def train(rows: list[dict], seed: int = 0) -> tuple[dict, dict]:
     ev = {"model": best, "folds": [f if len(f) == 1 else f"{len(f)} penutur kecil" for f in folds],
           "n": int(len(y)), "acc": result[best]["acc"], "accLR": result["lr"]["acc"], "accMLP": result["mlp"]["acc"],
           "perTone": {str(t): round(float((pred[y == t] == t).mean()), 4) for t in (1, 2, 3, 4)},
-          "perClass": {c: round(float((pred[cls == c] == y[cls == c]).mean()), 4) for c in ("single", "word", "sent") if (cls == c).any()},
-          "perClassN": {c: int((cls == c).sum()) for c in ("single", "word", "sent")},
+          "perClass": {c: round(float((pred[cls == c] == y[cls == c]).mean()), 4) for c in ("syl", "single", "word", "sent") if (cls == c).any()},
+          "perClassN": {c: int((cls == c).sum()) for c in ("syl", "single", "word", "sent")},
           "perSpeaker": {s: {"n": int(cnt[s]), "acc": round(float((pred[spk == s] == y[spk == s]).mean()), 4)} for s in big},
           "confusion": [[int(((y == a) & (pred == b)).sum()) for b in (1, 2, 3, 4)] for a in (1, 2, 3, 4)]}
     final = make(best).fit(Xs, y)

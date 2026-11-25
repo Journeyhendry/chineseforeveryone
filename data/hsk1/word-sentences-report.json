@@ -7,8 +7,8 @@
     "words": 300,
     "entries": 300,
     "dialogs": 32,
-    "inScope": 216,
-    "inScopePct": 72,
+    "inScope": 217,
+    "inScopePct": 72.3,
     "inScopeTargetPct": 70,
     "errors": 0,
     "warnings": 18
@@ -42,7 +42,7 @@
       "inScope": 0,
       "inScopePct": 0,
       "dialogs": 2,
-      "buatan": 3
+      "buatan": 2
     },
     {
       "unit": "u04",
@@ -109,10 +109,10 @@
       "draft": true,
       "words": 14,
       "entries": 14,
-      "inScope": 11,
-      "inScopePct": 78.6,
+      "inScope": 12,
+      "inScopePct": 85.7,
       "dialogs": 0,
-      "buatan": 2
+      "buatan": 1
     },
     {
       "unit": "u11",
@@ -226,9 +226,9 @@
     }
   ],
   "sources": {
-    "unit": 251,
+    "unit": 253,
     "tatoeba": 28,
-    "buatan": 21
+    "buatan": 19
   },
   "dialogs": {
     "count": 32,
@@ -321,10 +321,6 @@
       "count": 1
     },
     {
-      "word": "生日",
-      "count": 1
-    },
-    {
       "word": "第一次",
       "count": 1
     },
@@ -345,10 +341,6 @@
       "count": 1
     },
     {
-      "word": "零度",
-      "count": 1
-    },
-    {
       "word": "鸟",
       "count": 1
     }
@@ -364,8 +356,8 @@
   ],
   "over14": [],
   "buatan": {
-    "count": 21,
-    "allInDictionary": 21,
+    "count": 19,
+    "allInDictionary": 19,
     "withCollocation": 8,
     "entries": [
       {
@@ -453,18 +445,6 @@
         "collocationHits": 1
       },
       {
-        "unit": "u03",
-        "wordId": "L1-0216",
-        "hanzi": "零",
-        "sentence": "今天零度。",
-        "outsideWords": [
-          "零度"
-        ],
-        "allInDictionary": true,
-        "missing": [],
-        "collocationHits": 0
-      },
-      {
         "unit": "u05",
         "wordId": "L1-0460",
         "hanzi": "怎么",
@@ -495,18 +475,6 @@
         "sentence": "星期日我们去公园。",
         "outsideWords": [
           "公园"
-        ],
-        "allInDictionary": true,
-        "missing": [],
-        "collocationHits": 0
-      },
-      {
-        "unit": "u10",
-        "wordId": "L1-0308",
-        "hanzi": "日",
-        "sentence": "今天是我的生日！",
-        "outsideWords": [
-          "生日"
         ],
         "allInDictionary": true,
         "missing": [],

@@ -145,20 +145,20 @@
       "wordId": "L1-0308",
       "hanzi": "日",
       "sentence": {
-        "hanzi": "今天是我的生日！",
-        "pinyin": "Jīntiān shì wǒ de shēngrì!",
-        "id": "Hari ini ulang tahunku!",
-        "en": "Today's my birthday!",
-        "source": "buatan",
+        "hanzi": "今天是十月一日。",
+        "pinyin": "Jīntiān shì shí yuè yī rì.",
+        "id": "Hari ini tanggal satu Oktober.",
+        "en": "Today is October 1st.",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "meimei",
+        "speaker": "teacher",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0308",
         "fit": "redraw",
-        "note": "Adik tersenyum di depan kue ulang tahun dengan enam lilin; keluarga bertepuk tangan."
+        "note": "Di kelas, Bu Guru baru selesai menulis \"10月1日\" di papan tulis dan menunjuknya sambil membacakan tanggal; murid-murid memperhatikan."
       }
     },
     {

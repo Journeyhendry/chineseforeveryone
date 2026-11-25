@@ -1884,39 +1884,38 @@
       "wordId": "L1-0216",
       "hanzi": "零",
       "sentence": {
-        "hanzi": "今天零度。",
-        "pinyin": "Jīntiān líng dù.",
-        "id": "Hari ini nol derajat.",
-        "en": "It's zero degrees today.",
-        "source": "buatan",
+        "hanzi": "现在十点零五分。",
+        "pinyin": "Xiànzài shí diǎn líng wǔ fēn.",
+        "id": "Sekarang jam sepuluh lewat lima menit.",
+        "en": "It's five past ten.",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "yeye",
+        "speaker": "gege",
         "matchForm": null,
-        "outsideWords": [
-          "零度"
-        ]
+        "outsideWords": []
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0216",
         "fit": "redraw",
-        "note": "Salju turun di luar jendela; Kakek berjaket tebal menunjuk termometer besar yang menunjuk angka 0."
+        "note": "Kakak menunjuk jam dinding besar yang menunjukkan pukul 10.05."
       },
       "analysis": {
         "segments": [
-          "今天",
-          "零度"
+          "现在",
+          "十",
+          "点",
+          "零",
+          "五",
+          "分"
         ],
-        "hanziCount": 4,
+        "hanziCount": 7,
         "laterUnitWords": [
-          "今天"
+          "现在",
+          "点",
+          "分"
         ],
-        "inScope": false,
-        "evidence": {
-          "allInDictionary": true,
-          "missing": [],
-          "collocationHits": 0
-        }
+        "inScope": false
       }
     },
     {
@@ -3630,13 +3629,13 @@
       "wordId": "L1-0522",
       "hanzi": "千",
       "sentence": {
-        "hanzi": "我们学校有一千个学生。",
-        "pinyin": "Wǒmen xuéxiào yǒu yìqiān gè xuéshēng.",
-        "id": "Sekolah kami punya seribu murid.",
-        "en": "Our school has a thousand students.",
+        "hanzi": "这个手机一千块。",
+        "pinyin": "Zhège shǒujī yìqiān kuài.",
+        "id": "HP ini seribu yuan.",
+        "en": "This phone is a thousand yuan.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "gege",
+        "speaker": "seller",
         "matchForm": null,
         "outsideWords": []
       },
@@ -3644,22 +3643,20 @@
       "scene": {
         "ref": "L1-0522",
         "fit": "redraw",
-        "note": "Di gerbang sekolah, banyak sekali murid berjalan keluar; papan sekolah bertuliskan angka 1000."
+        "note": "Di toko, penjual menunjuk label harga besar bertuliskan 1000 di samping sebuah HP; Ayah melihatnya."
       },
       "analysis": {
         "segments": [
-          "我们",
-          "学校",
-          "有",
+          "这个",
+          "手机",
           "一",
           "千",
-          "个",
-          "学生"
+          "块"
         ],
-        "hanziCount": 10,
+        "hanziCount": 7,
         "laterUnitWords": [
-          "学校",
-          "学生"
+          "手机",
+          "块"
         ],
         "inScope": false
       }
@@ -5998,40 +5995,34 @@
       "wordId": "L1-0308",
       "hanzi": "日",
       "sentence": {
-        "hanzi": "今天是我的生日！",
-        "pinyin": "Jīntiān shì wǒ de shēngrì!",
-        "id": "Hari ini ulang tahunku!",
-        "en": "Today's my birthday!",
-        "source": "buatan",
+        "hanzi": "今天是十月一日。",
+        "pinyin": "Jīntiān shì shí yuè yī rì.",
+        "id": "Hari ini tanggal satu Oktober.",
+        "en": "Today is October 1st.",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "meimei",
+        "speaker": "teacher",
         "matchForm": null,
-        "outsideWords": [
-          "生日"
-        ]
+        "outsideWords": []
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0308",
         "fit": "redraw",
-        "note": "Adik tersenyum di depan kue ulang tahun dengan enam lilin; keluarga bertepuk tangan."
+        "note": "Di kelas, Bu Guru baru selesai menulis \"10月1日\" di papan tulis dan menunjuknya sambil membacakan tanggal; murid-murid memperhatikan."
       },
       "analysis": {
         "segments": [
           "今天",
           "是",
-          "我",
-          "的",
-          "生日"
+          "十",
+          "月",
+          "一",
+          "日"
         ],
         "hanziCount": 7,
         "laterUnitWords": [],
-        "inScope": false,
-        "evidence": {
-          "allInDictionary": true,
-          "missing": [],
-          "collocationHits": 0
-        }
+        "inScope": true
       }
     },
     {
@@ -6467,7 +6458,7 @@
       "sentence": {
         "hanzi": "对不起，我今天没有时间。",
         "pinyin": "Duìbuqǐ, wǒ jīntiān méiyǒu shíjiān.",
-        "id": "Maaf, hari ini Ayah nggak ada waktu.",
+        "id": "Maaf, hari ini aku nggak ada waktu.",
         "en": "Sorry, I don't have time today.",
         "source": "unit",
         "sourceId": null,
@@ -11558,7 +11549,7 @@
         "hanzi": "这件衣服真漂亮！",
         "pinyin": "Zhè jiàn yīfu zhēn piàoliang!",
         "id": "Baju ini cantik sekali!",
-        "en": "This dress is really pretty!",
+        "en": "This outfit is really pretty!",
         "source": "unit",
         "sourceId": "n-u21:1",
         "speaker": "mama",
@@ -11569,7 +11560,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Di toko baju Ibu memegang satu gaun berbunga dengan mata berbinar."
+        "note": "Di toko baju Ibu memegang satu baju berbunga dengan mata berbinar."
       },
       "analysis": {
         "segments": [

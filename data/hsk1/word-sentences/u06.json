@@ -45,20 +45,20 @@
       "wordId": "L1-0522",
       "hanzi": "千",
       "sentence": {
-        "hanzi": "我们学校有一千个学生。",
-        "pinyin": "Wǒmen xuéxiào yǒu yìqiān gè xuéshēng.",
-        "id": "Sekolah kami punya seribu murid.",
-        "en": "Our school has a thousand students.",
+        "hanzi": "这个手机一千块。",
+        "pinyin": "Zhège shǒujī yìqiān kuài.",
+        "id": "HP ini seribu yuan.",
+        "en": "This phone is a thousand yuan.",
         "source": "unit",
         "sourceId": null,
-        "speaker": "gege",
+        "speaker": "seller",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0522",
         "fit": "redraw",
-        "note": "Di gerbang sekolah, banyak sekali murid berjalan keluar; papan sekolah bertuliskan angka 1000."
+        "note": "Di toko, penjual menunjuk label harga besar bertuliskan 1000 di samping sebuah HP; Ayah melihatnya."
       }
     },
     {

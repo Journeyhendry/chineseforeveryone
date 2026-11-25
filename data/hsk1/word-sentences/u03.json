@@ -205,20 +205,20 @@
       "wordId": "L1-0216",
       "hanzi": "零",
       "sentence": {
-        "hanzi": "今天零度。",
-        "pinyin": "Jīntiān líng dù.",
-        "id": "Hari ini nol derajat.",
-        "en": "It's zero degrees today.",
-        "source": "buatan",
+        "hanzi": "现在十点零五分。",
+        "pinyin": "Xiànzài shí diǎn líng wǔ fēn.",
+        "id": "Sekarang jam sepuluh lewat lima menit.",
+        "en": "It's five past ten.",
+        "source": "unit",
         "sourceId": null,
-        "speaker": "yeye",
+        "speaker": "gege",
         "matchForm": null
       },
       "dialog": null,
       "scene": {
         "ref": "L1-0216",
         "fit": "redraw",
-        "note": "Salju turun di luar jendela; Kakek berjaket tebal menunjuk termometer besar yang menunjuk angka 0."
+        "note": "Kakak menunjuk jam dinding besar yang menunjukkan pukul 10.05."
       }
     },
     {

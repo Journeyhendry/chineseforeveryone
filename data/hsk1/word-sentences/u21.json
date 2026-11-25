@@ -68,7 +68,7 @@
         "hanzi": "这件衣服真漂亮！",
         "pinyin": "Zhè jiàn yīfu zhēn piàoliang!",
         "id": "Baju ini cantik sekali!",
-        "en": "This dress is really pretty!",
+        "en": "This outfit is really pretty!",
         "source": "unit",
         "sourceId": "n-u21:1",
         "speaker": "mama",
@@ -78,7 +78,7 @@
       "scene": {
         "ref": null,
         "fit": "new",
-        "note": "Di toko baju Ibu memegang satu gaun berbunga dengan mata berbinar."
+        "note": "Di toko baju Ibu memegang satu baju berbunga dengan mata berbinar."
       }
     },
     {

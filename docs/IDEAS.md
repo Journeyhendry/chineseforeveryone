@@ -25,3 +25,7 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
   - Dialog tidak di luar: mini dialog 2 baris di tiap kartu kata (dengan suara), atau percakapan itu sendiri jadi animasi. Dialog panjang per unit jadi "cerita unit".
   - Tahap 1–3 (unit 1–12, 177 adegan) sudah ada dan bisa diadaptasi (ganti isi balon + pilih kalimat yang cocok).
 
+  - Keputusan pemilik 2026-11-25 (lanjutan): default 1 kalimat per kata; pakai dialog hanya untuk kata yang butuh dialog agar paham (mis. partikel 吗/呢/吧, sapaan, tawar-menawar).
+  - Kalimat/dialog hanya memakai kata & data yang SUDAH ada (kata unit ini + unit sebelumnya, 300 kata HSK 1 + ungkapan santai yang sudah lolos cek). Tujuan: pelajar mengulang dan mengingat — "tulisan ini pernah dipakai di materi sebelumnya, ternyata fungsinya begini".
+  - Di animasi/kalimat, kata yang sudah dipelajari bisa disentuh: muncul arti + tautan "dipelajari di Unit N". Kata baru disorot warna.
+  - Syarat data: cek otomatis kosakata (sudah ada untuk dialog) diperluas ke kalimat utama tiap kata; kalimat yang memuat kata di luar unit ini + sebelumnya tidak dipakai.

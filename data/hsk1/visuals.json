@@ -4220,8 +4220,8 @@
       "hanzi": "学习",
       "type": "action",
       "scene": {
-        "id": "Siang hari Adik belajar di meja belajarnya, membaca buku dengan tumpukan buku di sampingnya.",
-        "en": "In the daytime Little Sister studies at her desk, reading a book with a pile of books beside her."
+        "id": "Siang hari Adik duduk belajar di meja belajarnya, membaca buku terbuka dengan tumpukan buku di sampingnya.",
+        "en": "In the daytime Little Sister sits studying at her desk, reading an open book with a pile of books beside her."
       },
       "characters": [
         "gege"

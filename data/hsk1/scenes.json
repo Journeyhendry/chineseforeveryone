@@ -5122,7 +5122,7 @@
             {"id":"box","x":280,"y":128,"scale":1.05},
             {"id":"sweat","x":214,"y":150}
           ],
-          "bubbles": [{"from":0,"x":8,"y":80,"w":196,"h":58,"text":"爸爸，你能吗？","highlight":false},{"from":1,"x":350,"y":170,"w":110,"h":56,"text":"能！","highlight":true}]
+          "bubbles": [{"from":0,"x":8,"y":34,"w":196,"h":58,"text":"爸爸，你能吗？","highlight":false},{"from":1,"x":350,"y":170,"w":110,"h":56,"text":"能！","highlight":true}]
         }
       ],
       "alt": {
@@ -5147,7 +5147,7 @@
             {"id":"table","x":280,"y":336,"value":"160","front":true},
             {"id":"cake","x":280,"y":266,"front":true}
           ],
-          "bubbles": [{"from":0,"x":10,"y":20,"w":200,"h":56,"text":"我可以吃吗？","highlight":false},{"from":1,"x":320,"y":70,"w":140,"h":56,"text":"可以！","highlight":true}]
+          "bubbles": [{"from":0,"x":10,"y":20,"w":200,"h":56,"text":"我可以吃吗？","highlight":false},{"from":1,"x":236,"y":14,"w":134,"h":56,"text":"可以！","highlight":true}]
         }
       ],
       "alt": {
@@ -5339,19 +5339,20 @@
       "panels": [
         {
           "characters": [
-            {"id":"meimei","pose":"holdObject","expression":"happy","x":240,"scale":1.1,"act":"head"}
+            {"id":"meimei","pose":"sit","expression":"happy","x":250,"y":282,"scale":1.1,"act":"head"}
           ],
           "props": [
+            {"id":"chair","x":250,"y":312,"scale":1.05},
             {"id":"desk","x":240,"y":336,"scale":1.4,"front":true},
-            {"id":"book","x":0,"y":10,"hold":[0,"left"],"scale":1.1},
+            {"id":"book","x":250,"y":242,"scale":1.05,"front":true},
             {"id":"book","x":160,"y":238,"variant":"closed","color":"#2F9E44","front":true},
             {"id":"book","x":160,"y":212,"variant":"closed","color":"#FFD43B","front":true}
           ]
         }
       ],
       "alt": {
-        "id": "Siang hari Adik belajar di meja belajarnya, membaca buku dengan tumpukan buku di sampingnya.",
-        "en": "In the daytime Little Sister studies at her desk, reading a book with a pile of books beside her."
+        "id": "Siang hari Adik duduk belajar di meja belajarnya, membaca buku terbuka dengan tumpukan buku di sampingnya.",
+        "en": "In the daytime Little Sister sits studying at her desk, reading an open book with a pile of books beside her."
       },
       "play": "nod"
     },

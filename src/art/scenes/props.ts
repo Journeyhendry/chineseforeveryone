@@ -3,6 +3,7 @@
 // table or the floor; the composer moves/scales it. Outline width is inherited from the scene
 // (3.5); details use 2.5–3.
 import { circle, d, el, ellipse, group, limb, line, num, shape, type Pt } from '../characters/svg.ts'
+import { GLYPH_STROKES } from './glyphs.ts'
 
 export interface PropOpts {
   value?: string
@@ -32,6 +33,9 @@ function band(pts: [number, number][], w: number, fill: string, outline = true, 
   }
   return out.join('')
 }
+
+/** Group whose local origin is (x, y): the CSS idle animations (blink, wag) pivot there. */
+const pivot = (x: number, y: number, body: string) => el('g', { transform: `translate(${num(x)} ${num(y)})` }, body)
 
 const RED = '#E5484D'
 const LEAF = '#4CAF50'
@@ -563,6 +567,296 @@ export const PROPS: Record<string, Draw> = {
   shirt: (o) =>
     shape(d('M', -14, -40, 'Q', 0, -34, 14, -40, 'L', 32, -30, 'L', 26, -18, 'L', 18, -22, 'L', 18, 0, 'L', -18, 0, 'L', -18, -22, 'L', -26, -18, 'L', -32, -30, 'Z'), o.color ?? '#74C0FC'),
   crumbs: () => [circle(-8, -3, 2, '#C98B5B', { stroke: false }), circle(4, -2, 2, '#C98B5B', { stroke: false })].join(''),
+
+  // ---------- animals (tahap 2) ----------
+  cat: (o) => {
+    const c = o.color ?? '#F4A259'
+    if (o.variant === 'sleep') {
+      // curled up, side view, head on the left
+      return [
+        ellipse(4, -20, 36, 20, c),
+        line(d('M', 0, -38, 'Q', 4, -30, 2, -24, 'M', 14, -38, 'Q', 18, -30, 16, -24, 'M', 26, -33, 'Q', 28, -27, 26, -22), 3, 0.5),
+        band([[38, -12], [22, -2], [-6, -1], [-26, -6]], 5.5, c, true, 3),
+        shape(d('M', -38, -26, 'L', -40, -44, 'L', -28, -36, 'Z'), c, { sw: 3 }),
+        shape(d('M', -22, -34, 'L', -16, -48, 'L', -10, -34, 'Z'), c, { sw: 3 }),
+        ellipse(-26, -22, 17, 15, c),
+        line(d('M', -35, -24, 'Q', -31, -20, -27, -24, 'M', -22, -24, 'Q', -18, -20, -14, -24), 2.5),
+        shape(d('M', -26, -17, 'L', -23, -17, 'L', -24.5, -15, 'Z'), '#F28B82', { sw: 1.5 }),
+        line(d('M', -32, -33, 'L', -30, -29, 'M', -26, -35, 'L', -26, -30, 'M', -20, -33, 'L', -22, -29), 2.5, 0.5),
+      ].join('')
+    }
+    return [
+      pivot(14, -6, group('tail', band([[0, 0], [20, -4], [24, -24], [16, -34]], 5.5, c, true, 3))),
+      shape(d('M', -19, 0, 'Q', -25, -28, -12, -44, 'L', 12, -44, 'Q', 25, -28, 19, 0, 'Z'), c),
+      line(d('M', -18, -22, 'L', -10, -20, 'M', 18, -22, 'L', 10, -20, 'M', -19, -12, 'L', -11, -11, 'M', 19, -12, 'L', 11, -11), 2.5, 0.5),
+      ellipse(0, -16, 9, 13, '#FFF1E0', { sw: 2.5 }),
+      ellipse(-9, -3, 7, 4.5, c, { sw: 2.5 }),
+      ellipse(9, -3, 7, 4.5, c, { sw: 2.5 }),
+      shape(d('M', -18, -66, 'L', -16, -86, 'L', -3, -76, 'Z'), c, { sw: 3 }),
+      shape(d('M', 18, -66, 'L', 16, -86, 'L', 3, -76, 'Z'), c, { sw: 3 }),
+      shape(d('M', -14, -70, 'L', -14, -80, 'L', -7, -75, 'Z'), '#F7B7B0', { stroke: false }),
+      shape(d('M', 14, -70, 'L', 14, -80, 'L', 7, -75, 'Z'), '#F7B7B0', { stroke: false }),
+      ellipse(0, -60, 21, 18, c),
+      line(d('M', -6, -77, 'L', -5, -71, 'M', 0, -78, 'L', 0, -72, 'M', 6, -77, 'L', 5, -71), 2.5, 0.55),
+      group('eyes', [circle(-8, -61, 2.8, '#231942', { stroke: false }), circle(8, -61, 2.8, '#231942', { stroke: false })], { transform: 'translate(0 0)' }),
+      shape(d('M', -3, -55, 'L', 3, -55, 'L', 0, -52, 'Z'), '#F28B82', { sw: 1.5 }),
+      line(d('M', -5, -49, 'Q', -2.5, -47, 0, -51, 'Q', 2.5, -47, 5, -49, 'M', -12, -54, 'L', -24, -56, 'M', -12, -51, 'L', -23, -49, 'M', 12, -54, 'L', 24, -56, 'M', 12, -51, 'L', 23, -49), 2, 0.7),
+    ].join('')
+  },
+  dog: (o) => {
+    const c = o.color ?? '#F2C14E'
+    const ear = '#B5793A'
+    const run = o.variant === 'run'
+    const legs = run
+      ? [band([[-22, -22], [-34, -8], [-40, -2]], 5.5, c, true, 3), band([[-12, -22], [-6, -10], [-2, -2]], 5.5, c, true, 3), band([[12, -22], [6, -8], [2, -2]], 5.5, c, true, 3), band([[20, -22], [32, -12], [40, -6]], 5.5, c, true, 3)]
+      : [-22, -10, 10, 22].map((x) => rect(x - 5, -26, 10, 26, 4, c, 3))
+    return [
+      pivot(-30, -34, group('tail', band([[0, 0], [-12, -12], [-16, -26]], 4.5, c, true, 3))),
+      ...legs,
+      el('rect', { x: -34, y: -46, width: 64, height: 28, rx: 14, fill: c }),
+      ellipse(30, -50, 17, 15, c),
+      ellipse(44, -44, 9, 7, '#FFE8B0', { sw: 2.5 }),
+      circle(51, -46, 3.2, '#231942', { stroke: false }),
+      run ? shape(d('M', 40, -38, 'Q', 42, -30, 46, -32, 'Q', 47, -36, 45, -39), '#F06595', { sw: 2 }) : line(d('M', 40, -39, 'Q', 44, -37, 48, -40), 2.5),
+      group('eyes', circle(34, -54, 2.8, '#231942', { stroke: false })),
+      shape(d('M', 20, -62, 'Q', 12, -60, 14, -44, 'Q', 22, -44, 24, -56, 'Z'), ear, { sw: 3 }),
+    ].join('')
+  },
+  bird: (o) => {
+    const c = o.color ?? '#4C9BE8'
+    return [
+      line(d('M', -3, -6, 'L', -5, 0, 'M', 4, -6, 'L', 4, 0), 2.5),
+      shape(d('M', -14, -18, 'L', -24, -22, 'L', -22, -12, 'Z'), c, { sw: 2.5 }),
+      ellipse(0, -18, 15, 13, c),
+      ellipse(4, -14, 7, 5, '#FFF4D6', { stroke: false }),
+      shape(d('M', -10, -20, 'Q', -2, -24, 4, -16, 'Q', -6, -10, -10, -20, 'Z'), c, { sw: 2.5 }),
+      shape(d('M', 14, -22, 'L', 22, -19, 'L', 14, -16, 'Z'), '#F59F00', { sw: 2 }),
+      group('eyes', circle(8, -23, 2.2, '#231942', { stroke: false })),
+    ].join('')
+  },
+  branch: () =>
+    [
+      band([[-170, 4], [-60, -2], [60, 2], [170, -4]], 5, '#8A5A3B', true, 3),
+      ...[[-140, 2, -30], [150, -4, 25], [-60, -2, -20], [90, 2, 35]].map(([x, y, r]) => shape(d('M', 0, 0, 'Q', 10, -14, 26, -10, 'Q', 16, 4, 0, 0, 'Z'), LEAF, { sw: 2.5 }).replace('<path', `<path transform="translate(${x} ${y}) rotate(${r})"`)),
+    ].join(''),
+  pig: () =>
+    [
+      shape(d('M', -40, -40, 'Q', -54, -46, -50, -54, 'Q', -46, -60, -48, -50), 'none', { sw: 3 }),
+      ...[-28, -14, 16, 28].map((x) => rect(x - 5, -20, 10, 20, 4, '#F7A9B8', 3)),
+      ellipse(0, -36, 42, 24, '#FBC4CF'),
+      shape(d('M', 22, -58, 'L', 30, -72, 'L', 36, -56, 'Z'), '#F7A9B8', { sw: 3 }),
+      ellipse(36, -42, 18, 16, '#FBC4CF'),
+      ellipse(50, -40, 8, 9, '#F7A9B8', { sw: 3 }),
+      circle(48, -41, 1.6, '#231942', { stroke: false }),
+      circle(52, -39, 1.6, '#231942', { stroke: false }),
+      group('eyes', circle(36, -48, 2.6, '#231942', { stroke: false })),
+    ].join(''),
+
+  // ---------- home & things (tahap 2) ----------
+  bicycle: (o) => {
+    const c = o.color ?? '#E5484D'
+    return [
+      circle(-38, -28, 26, 'none', { sw: 5 }),
+      circle(38, -28, 26, 'none', { sw: 5 }),
+      circle(-38, -28, 3, '#BDB6C9', { sw: 2 }),
+      circle(38, -28, 3, '#BDB6C9', { sw: 2 }),
+      band([[-38, -28], [-6, -28], [-16, -62], [-38, -28]], 3.6, c, true, 2.5),
+      band([[-6, -28], [26, -62], [-16, -62]], 3.6, c, true, 2.5),
+      band([[38, -28], [24, -72]], 3.6, c, true, 2.5),
+      band([[16, -76], [30, -74]], 3, '#4A4458', true, 2.5),
+      band([[-24, -68], [-8, -68]], 4, '#4A4458', true, 2.5),
+    ].join('')
+  },
+  'banana-bunch': (o) => {
+    // bananas lying on their side, stacked and joined at one stem (right); 'y' = ripe, 'g' = green
+    const pattern = (o.value ?? 'yyyyy').split('')
+    const out: string[] = []
+    pattern.forEach((k, i) => {
+      const fill = k === 'g' ? '#8BC34A' : YELLOW
+      const tip = k === 'g' ? '#4E7A27' : '#6E5236'
+      const y = -i * 15
+      const a = (i - (pattern.length - 1) / 2) * -5
+      const b = [
+        shape(d('M', -62, -26, 'Q', -40, 6, 0, 2, 'Q', 24, 0, 34, -14, 'L', 30, -22, 'Q', 16, -12, 0, -12, 'Q', -36, -10, -62, -26, 'Z'), fill, { sw: 3 }),
+        circle(-61, -25, 3, tip, { stroke: false }),
+        line(d('M', -40, -8, 'Q', -10, 0, 22, -10), 2, 0.3),
+      ].join('')
+      out.push(el('g', { transform: `translate(0 ${y}) rotate(${num(a)} 32 -18)` }, el('g', { class: `banana bn-${k}` }, b)))
+    })
+    return [...out.reverse(), rect(28, -36 - (pattern.length - 1) * 15, 16, 26 + (pattern.length - 1) * 15, 6, '#7A9A3A', 3)].join('')
+  },
+  handbag: (o) =>
+    [
+      shape(d('M', -14, -34, 'Q', -14, -50, 0, -50, 'Q', 14, -50, 14, -34), 'none', { sw: 4 }),
+      shape(d('M', -24, -34, 'L', 24, -34, 'L', 28, 0, 'L', -28, 0, 'Z'), o.color ?? '#9775FA'),
+      rect(-6, -30, 12, 8, 2, YELLOW, 2.5),
+    ].join(''),
+  trophy: () =>
+    [
+      shape(d('M', -20, -66, 'Q', -36, -66, -32, -52, 'Q', -28, -42, -16, -44, 'M', 20, -66, 'Q', 36, -66, 32, -52, 'Q', 28, -42, 16, -44), 'none', { sw: 5 }),
+      rect(-22, -10, 44, 10, 3, '#8A5A3B'),
+      rect(-6, -26, 12, 18, 2, '#FCC419', 3),
+      shape(d('M', -22, -70, 'L', 22, -70, 'Q', 22, -30, 0, -28, 'Q', -22, -30, -22, -70, 'Z'), '#FCC419'),
+      shape(star5(0, -50, 8, 3.5), WHITE, { sw: 2 }),
+    ].join(''),
+  comb: () => [rect(-26, -12, 52, 12, 4, '#F06595', 3), line(d(...Array.from({ length: 8 }, (_, i) => ['M', -21 + i * 6, 0, 'L', -21 + i * 6, 9]).flat()), 2.5)].join(''),
+  bed: (o) =>
+    [
+      rect(-84, -86, 16, 86, 5, WOOD_D),
+      rect(70, -54, 14, 54, 5, WOOD_D),
+      rect(-74, -46, 152, 26, 8, WOOD),
+      rect(-70, -62, 46, 20, 9, WHITE, 3),
+      shape(d('M', -26, -66, 'L', 76, -66, 'Q', 82, -66, 82, -58, 'L', 82, -20, 'L', -26, -20, 'Z'), o.color ?? '#F7A1C4'),
+      line(d('M', -10, -66, 'L', -10, -20), 3, 0.35),
+    ].join(''),
+  desk: (o) =>
+    [
+      rect(-62, -58, 12, 58, 4, WOOD_D),
+      rect(28, -58, 36, 58, 4, WOOD),
+      line(d('M', 30, -30, 'L', 62, -30), 3),
+      circle(46, -44, 2.5, YELLOW, { sw: 2 }),
+      rect(-70, -70, 140, 14, 5, o.color ?? WOOD),
+    ].join(''),
+  book: (o) =>
+    o.variant === 'closed'
+      ? [rect(-18, -26, 36, 26, 3, o.color ?? '#4C9BE8'), rect(-18, -6, 36, 6, 2, WHITE, 2.5)].join('')
+      : [
+          shape(d('M', 0, -4, 'Q', -14, -10, -30, -6, 'L', -30, -30, 'Q', -14, -34, 0, -28, 'Z'), WHITE, { sw: 3 }),
+          shape(d('M', 0, -4, 'Q', 14, -10, 30, -6, 'L', 30, -30, 'Q', 14, -34, 0, -28, 'Z'), WHITE, { sw: 3 }),
+          line(d('M', -24, -24, 'L', -6, -22, 'M', -24, -17, 'L', -6, -15, 'M', 6, -22, 'L', 24, -24, 'M', 6, -15, 'L', 24, -17), 2, 0.35),
+          shape(d('M', -32, -4, 'Q', -14, -8, 0, 0, 'Q', 14, -8, 32, -4, 'L', 32, -1, 'Q', 14, -4, 0, 3, 'Q', -14, -4, -32, -1, 'Z'), o.color ?? '#4C9BE8', { sw: 2.5 }),
+        ].join(''),
+  newspaper: () =>
+    [
+      rect(-30, -44, 60, 44, 3, '#F4F1EA'),
+      rect(-24, -38, 22, 16, 2, '#C5D7E8', 2),
+      line(d('M', 4, -36, 'L', 24, -36, 'M', 4, -29, 'L', 24, -29, 'M', -24, -15, 'L', 24, -15, 'M', -24, -8, 'L', 24, -8), 2.5, 0.35),
+      line(d('M', 0, -44, 'L', 0, 0), 2.5, 0.5),
+    ].join(''),
+  tray: () => [rect(-90, -12, 180, 12, 6, '#E8A15A'), rect(-96, -16, 12, 8, 3, '#C8813A', 2.5), rect(84, -16, 12, 8, 3, '#C8813A', 2.5)].join(''),
+  glass: (o) =>
+    [
+      shape(d('M', -15, -50, 'L', 15, -50, 'L', 12, 0, 'L', -12, 0, 'Z'), '#EAF6FD'),
+      shape(d('M', -13.6, -36, 'L', 13.6, -36, 'L', 11.8, -2, 'L', -11.8, -2, 'Z'), o.color ?? WHITE, { stroke: false }),
+      line(d('M', -13.6, -36, 'L', 13.6, -36), 2.5, 0.4),
+      shape(d('M', -15, -50, 'L', 15, -50, 'L', 12, 0, 'L', -12, 0, 'Z'), 'none'),
+    ].join(''),
+  'old-photo': (o) => {
+    const brothers = o.variant === 'brothers'
+    const kid = (x: number, h: number, hair: string, shirt: string, girl: boolean, extra = '') => {
+      const r = h * 0.2
+      const hy = -h + r
+      const body = [
+        rect(x - h * 0.08, -h * 0.34, h * 0.07, h * 0.34, 2, '#5C5470', 2),
+        rect(x + h * 0.01, -h * 0.34, h * 0.07, h * 0.34, 2, '#5C5470', 2),
+        girl
+          ? shape(d('M', x - h * 0.13, hy + r + 2, 'L', x + h * 0.13, hy + r + 2, 'L', x + h * 0.21, -h * 0.3, 'L', x - h * 0.21, -h * 0.3, 'Z'), shirt, { sw: 2.5 })
+          : rect(x - h * 0.15, hy + r + 2, h * 0.3, h * 0.38, 4, shirt, 2.5),
+      ]
+      const hairSvg = girl
+        ? [circle(x - r * 1.05, hy - r * 0.1, r * 0.45, hair, { sw: 2.5 }), circle(x + r * 1.05, hy - r * 0.1, r * 0.45, hair, { sw: 2.5 })].join('')
+        : ''
+      return [
+        ...body,
+        hairSvg,
+        circle(x, hy, r, '#F6D3B3', { sw: 2.5 }),
+        shape(d('M', x - r, hy - r * 0.05, 'Q', x - r, hy - r * 1.1, x, hy - r * 1.05, 'Q', x + r, hy - r * 1.1, x + r, hy - r * 0.05, 'Q', x, hy - r * 0.6, x - r, hy - r * 0.05, 'Z'), hair, { sw: 2 }),
+        circle(x - r * 0.35, hy + r * 0.15, 1.3, '#231942', { stroke: false }),
+        circle(x + r * 0.35, hy + r * 0.15, 1.3, '#231942', { stroke: false }),
+        line(d('M', x - r * 0.3, hy + r * 0.45, 'Q', x, hy + r * 0.7, x + r * 0.3, hy + r * 0.45), 1.8),
+        extra,
+      ].join('')
+    }
+    const people = brothers
+      ? [kid(-22, 84, '#2B2233', '#74C0FC', false), kid(26, 50, '#2B2233', '#8CE99A', false)]
+      : [kid(-22, 84, '#2B2233', '#B197FC', true), kid(26, 52, '#2B2233', '#FFA8A8', true)]
+    return [rect(-66, -120, 132, 120, 6, '#C98B5B'), rect(-56, -110, 112, 100, 3, '#F3E3C3', 2.5), el('g', { transform: 'translate(0 -14)' }, people.join(''))].join('')
+  },
+  'photo-frame': (o) => {
+    const w = Number(o.value ?? 240) / 2
+    const h = Number(o.variant ?? 180)
+    return [rect(-w, -h, w * 2, h, 8, '#C98B5B'), rect(-w + 10, -h + 10, w * 2 - 20, h - 20, 4, '#DFF1D8', 3), el('rect', { x: -w + 12, y: -h * 0.36, width: w * 2 - 24, height: h * 0.36 - 12, fill: '#B9DFA5', stroke: 'none' })].join('')
+  },
+  'apartment-night': () => {
+    const wins: string[] = []
+    for (let r = 0; r < 6; r++)
+      for (let c = 0; c < 3; c++) {
+        if (r === 3 && c === 1) continue
+        wins.push(rect(-66 + c * 50, -258 + r * 40, 32, 26, 3, (r + c) % 3 === 0 ? '#FFE8A3' : '#4B4F7A', 2.5))
+      }
+    return [
+      rect(-90, -280, 180, 280, 4, '#8E86B0'),
+      rect(-98, -288, 196, 14, 3, '#6E6690', 3),
+      ...wins,
+      group('home-window', [
+        rect(-34, -146, 68, 50, 4, '#FFD43B', 3),
+        ...[-18, -4, 10, 22].map((x, i) => circle(x, -124 + (i === 3 ? 6 : 0), i === 3 ? 4.5 : 6, '#5F4BB6', { stroke: false })),
+        el('rect', { x: -30, y: -112, width: 60, height: 6, fill: '#8A5A3B', stroke: 'none' }),
+        rect(-40, -98, 80, 8, 2, '#C9C3DC', 2.5),
+      ]),
+      rect(-18, -34, 36, 34, 3, '#8A5A3B', 3),
+    ].join('')
+  },
+  marker: (o) => shape(d('M', -16, -46, 'L', 16, -46, 'L', 16, -26, 'L', 28, -26, 'L', 0, 0, 'L', -28, -26, 'L', -16, -26, 'Z'), o.color ?? YELLOW, { sw: 3.5 }),
+  gender: (o) =>
+    o.variant === 'female'
+      ? [circle(0, -44, 16, WHITE, { sw: 5.5 }), shape(d('M', 0, -28, 'L', 0, 0, 'M', -10, -12, 'L', 10, -12), 'none', { sw: 5.5 })].join('')
+      : [circle(-6, -18, 16, WHITE, { sw: 5.5 }), shape(d('M', 5, -29, 'L', 22, -46, 'M', 8, -46, 'L', 22, -46, 'L', 22, -32), 'none', { sw: 5.5 })].join(''),
+  lamp: () => [rect(-16, -4, 32, 6, 3, '#4A4458', 2.5), band([[0, -4], [0, -130]], 2.5, '#4A4458', true, 2.5), shape(d('M', -26, -126, 'L', 26, -126, 'L', 16, -160, 'L', -16, -160, 'Z'), '#FFE8A3')].join(''),
+  plant: () =>
+    [
+      ...[[-14, -64, -30], [12, -70, 25], [0, -82, 0], [-20, -44, -55], [20, -48, 55]].map(([x, y, r]) =>
+        shape(d('M', 0, 0, 'Q', -12, -18, 0, -36, 'Q', 12, -18, 0, 0, 'Z'), '#4CAF50', { sw: 3 }).replace('<path', `<path transform="translate(${x * 0.4} ${-36}) rotate(${r}) translate(0 ${y + 36})"`),
+      ),
+      shape(d('M', -20, -38, 'L', 20, -38, 'L', 15, 0, 'L', -15, 0, 'Z'), '#E8590C'),
+    ].join(''),
+
+  /** Digits on a wide yellow badge (numbers with many digits, e.g. 1000). */
+  badge: (o) => {
+    const v = o.value ?? '0'
+    const w = 26 + v.length * 21
+    return [rect(-w / 2, -50, w, 50, 25, o.color ?? YELLOW), digits(0, -12, v, 38)].join('')
+  },
+  /** A light board of 10 x 10 dots (one hundred), cheap enough to repeat ten times. */
+  'board100-dots': () => {
+    const rows = Array.from({ length: 10 }, (_, r) => `M-45 ${-98 + r * 10}h90`).join('')
+    return [rect(-58, -112, 116, 112, 8, '#BFD3FF'), el('path', { d: rows, fill: 'none', 'stroke-width': 5.5, 'stroke-dasharray': '0 10' })].join('')
+  },
+  // ---------- picture characters (origin animations, tahap 2) ----------
+  walker: (o) => {
+    const c = o.color ?? '#5F4BB6'
+    // a person in profile walking to the left, leaning forward: legs make an upside-down V like 人
+    return [
+      band([[6, -112], [26, -86], [34, -62]], 8, c, true, 3),
+      band([[2, -70], [26, -36], [40, 0]], 10, c, true, 3),
+      shape(d('M', -2, -128, 'Q', 14, -128, 14, -104, 'L', 8, -64, 'Q', -2, -58, -10, -66, 'L', -14, -104, 'Q', -16, -128, -2, -128, 'Z'), c),
+      band([[-4, -70], [-22, -36], [-40, 0]], 10, c, true, 3),
+      band([[-6, -112], [-26, -92], [-40, -82]], 8, c, true, 3),
+      circle(-8, -146, 17, c),
+    ].join('')
+  },
+  roof: (o) =>
+    [
+      rect(-6, -126, 12, 22, 4, o.color ?? '#D9480F', 3),
+      shape(d('M', -100, -74, 'Q', -60, -96, -40, -108, 'L', 40, -108, 'Q', 60, -96, 100, -74, 'Q', 104, -64, 92, -66, 'L', -92, -66, 'Q', -104, -64, -100, -74, 'Z'), o.color ?? '#D9480F'),
+      line(d('M', -60, -92, 'L', 60, -92, 'M', -30, -106, 'L', -36, -70, 'M', 0, -106, 'L', 0, -70, 'M', 30, -106, 'L', 36, -70), 3, 0.35),
+      rect(-84, -66, 14, 66, 3, '#C98B5B'),
+      rect(70, -66, 14, 66, 3, '#C98B5B'),
+    ].join(''),
+  /** Plain card behind a picture (same size as the glyph card). */
+  card: (o) => rect(-72, -144, 144, 144, 14, o.color ?? WHITE),
+  glyph: (o) => {
+    const ch = o.value ?? '人'
+    const strokes = GLYPH_STROKES[ch]
+    if (!strokes) throw new Error(`no glyph ${ch}`)
+    const s = 0.12
+    const paths = strokes.map((p, i) => el('path', { class: `stroke stroke-${i + 1}`, d: p, fill: '#231942', stroke: 'none' })).join('')
+    return [
+      rect(-72, -144, 144, 144, 14, o.color ?? WHITE),
+      el('path', { d: 'M-72 -72L72 -72M0 -144L0 0', fill: 'none', 'stroke-width': 2, 'stroke-dasharray': '6 6', opacity: 0.25 }),
+      el('g', { transform: `matrix(${s} 0 0 ${-s} ${num(-512 * s)} ${num(-10 - 124 * s)})` }, paths),
+    ].join('')
+  },
 }
 
 export const PROP_IDS = Object.keys(PROPS)

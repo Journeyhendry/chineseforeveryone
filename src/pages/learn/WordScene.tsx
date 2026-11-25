@@ -23,6 +23,7 @@ const PLAY_MS: Record<PlayPreset, number> = {
   shrug: 1700,
   beckon: 1900,
   panels: 2700,
+  origin: 3200,
 }
 
 let indexPromise: Promise<SceneIndex | null> | null = null

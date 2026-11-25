@@ -4,6 +4,7 @@
 // tanpa kolom itu tetap valid. Naikkan `version` hanya bila arti kolom yang sudah ada berubah.
 // Kolom task 8 (semuanya opsional): `words` (Leitner), `today` (kata dijawab hari ini), `streak`.
 import { normalizeStreak, normalizeToday, normalizeWords, type LeitnerEntry, type Streak, type TodayList } from './leitner.ts'
+import { GAME_KINDS, type GameKind } from '../games/kinds.ts'
 
 export type Stars = 0 | 1 | 2 | 3
 
@@ -24,6 +25,13 @@ export interface Progress {
   words?: Record<string, LeitnerEntry>
   today?: TodayList
   streak?: Streak
+  /** Task 7: skor terbaik game per unit (bintang 0-3) + berapa kali dimainkan. Tidak memengaruhi bintang unit. */
+  games?: Record<string, Partial<Record<GameKind, GameProgress>>>
+}
+
+export interface GameProgress {
+  best: Stars
+  plays: number
 }
 
 export interface UnitRef {
@@ -88,7 +96,38 @@ export function normalizeProgress(raw: unknown, knownUnitIds?: Iterable<string>)
   if (today) out.today = today
   const streak = normalizeStreak(o.streak)
   if (streak) out.streak = streak
+  const games = normalizeGames(o.games, known)
+  if (games) out.games = games
   return out
+}
+
+function normalizeGames(raw: unknown, known: Set<string> | null): Progress['games'] | undefined {
+  if (typeof raw !== 'object' || raw === null || Array.isArray(raw)) return undefined
+  const out: NonNullable<Progress['games']> = {}
+  for (const [unitId, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (!UNIT_ID.test(unitId) || (known && !known.has(unitId))) continue
+    if (typeof value !== 'object' || value === null || Array.isArray(value)) continue
+    const unit: Partial<Record<GameKind, GameProgress>> = {}
+    for (const kind of GAME_KINDS) {
+      const g = (value as Record<string, unknown>)[kind]
+      if (typeof g !== 'object' || g === null || Array.isArray(g)) continue
+      const { best, plays } = g as Record<string, unknown>
+      if (typeof best !== 'number' || !Number.isInteger(best) || best < 0 || best > 3) continue
+      if (typeof plays !== 'number' || !Number.isInteger(plays) || plays < 1 || plays > 1_000_000) continue
+      unit[kind] = { best: best as Stars, plays }
+    }
+    if (Object.keys(unit).length) out[unitId] = unit
+  }
+  return Object.keys(out).length ? out : undefined
+}
+
+/** Simpan hasil satu game: bintang terbaik + jumlah main. Bintang unit & jadwal ulang tidak berubah. */
+export function recordGameResult(p: Progress, unitId: string, kind: GameKind, stars: number): Progress {
+  const s = Math.min(3, Math.max(0, Math.round(Number.isFinite(stars) ? stars : 0))) as Stars
+  const unit = p.games?.[unitId] ?? {}
+  const old = unit[kind]
+  const next: GameProgress = { best: old ? (Math.max(old.best, s) as Stars) : s, plays: (old?.plays ?? 0) + 1 }
+  return { ...p, games: { ...p.games, [unitId]: { ...unit, [kind]: next } } }
 }
 
 // ---------- aturan buka unit ----------

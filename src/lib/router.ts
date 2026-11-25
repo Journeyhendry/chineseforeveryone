@@ -1,4 +1,5 @@
 import { useEffect, useSyncExternalStore } from 'react'
+import { isGameKind, type GameKind } from '../games/kinds.ts'
 
 export const ROUTES = ['belajar', 'ulang', 'kamus', 'progres', 'pengaturan', 'sumber'] as const
 export type RouteName = (typeof ROUTES)[number] | 'notfound'
@@ -76,11 +77,16 @@ export type LearnRoute =
   | { screen: 'word'; unitId: string; index: number }
   | { screen: 'practice'; unitId: string }
   | { screen: 'skip'; unitId: string }
+  | { screen: 'games'; unitId: string }
+  | { screen: 'game'; unitId: string; game: GameKind }
   | { screen: 'notfound' }
 
 const UNIT_SEGMENT = /^[a-z0-9-]{1,32}$/
 
-/** Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan, loncat/<id>. */
+/**
+ * Segmen setelah `#/belajar`: [], unit/<id>, unit/<id>/kata/<n> (mulai 1), unit/<id>/latihan,
+ * unit/<id>/game, unit/<id>/game/<jenis>, loncat/<id>.
+ */
 export function parseLearnRoute(segments: string[]): LearnRoute {
   const s = segments.map((x) => x.toLowerCase())
   if (s.length === 0) return { screen: 'map' }
@@ -89,6 +95,8 @@ export function parseLearnRoute(segments: string[]): LearnRoute {
   if (s[0] === 'unit') {
     if (s.length === 2) return { screen: 'unit', unitId: id }
     if (s.length === 3 && s[2] === 'latihan') return { screen: 'practice', unitId: id }
+    if (s.length === 3 && s[2] === 'game') return { screen: 'games', unitId: id }
+    if (s.length === 4 && s[2] === 'game' && isGameKind(s[3])) return { screen: 'game', unitId: id, game: s[3] }
     if (s.length === 4 && s[2] === 'kata' && /^[1-9]\d{0,2}$/.test(s[3])) {
       return { screen: 'word', unitId: id, index: Number(s[3]) }
     }
@@ -110,6 +118,10 @@ export function learnHref(route: LearnRoute): string {
       return `#/belajar/unit/${route.unitId}/latihan`
     case 'skip':
       return `#/belajar/loncat/${route.unitId}`
+    case 'games':
+      return `#/belajar/unit/${route.unitId}/game`
+    case 'game':
+      return `#/belajar/unit/${route.unitId}/game/${route.game}`
   }
 }
 

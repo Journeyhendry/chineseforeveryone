@@ -132,6 +132,9 @@ Peta belajar (mockup artboard 1), layar kenalan kata (artboard 2: huruf besar, p
 ### 6b · Ilustrasi + animasi semua kata (Opus) — butuh: 3c, 6
 Dikerjakan bertahap per unit (unit 1–3 dulu, lalu sisanya; satu sesi bisa mengerjakan beberapa unit). Sistem rakit di `public/art/` + `data/hsk1/scenes.json`. Klik kata → animasi + suara. Unit Keluarga: "rumah yang terisi". Huruf bergambar (家, 人, 口, 山 …): animasi asal-usul. Acceptance sesuai PRD bagian "Ilustrasi & animasi".
 
+### 6c · Animasi per kalimat + dialog per kata, hybrid (Opus, pemeriksa Sonnet) — butuh: 6b tahap 1–3, 4b (4c untuk suara)
+- Pengganti 6b tahap 4 dst. PRD lengkap: `docs/tasks/task-6c.md`. **Mulai paling cepat 2026-11-26 01:00 WIB.**
+
 ### 7 · Empat game (Opus) — butuh: 6
 Kartu bolak-balik, jodohkan dengan waktu (artboard 4), tebak nada, susun kalimat (seret + alternatif keyboard). Memakai kata unit yang sedang dibuka. Acceptance: semua jalan dengan mouse dan keyboard; tidak ada bug state saat diulang.
 

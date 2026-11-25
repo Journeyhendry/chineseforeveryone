@@ -8,6 +8,8 @@ Ide baru dari pemilik dicatat di sini. Sesi kerja **tidak** mengerjakan ide dari
 - HSK 1 = 300 kata silabus 2025 → task 2b (2026-11-22)
 - Dialog alami sehari-hari (rumah, sekolah, pasar, dst.) → task 3d (2026-11-22)
 
+- Animasi per kalimat + dialog per kata, hybrid → task 6c (disetujui 2026-11-25 23:27, mulai ≥ 2026-11-26 01:00 WIB)
+
 ## Ide parkir (untuk nanti / v2)
 
 - Login Google + progres pindah antar perangkat.

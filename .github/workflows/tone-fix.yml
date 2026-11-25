@@ -12,6 +12,13 @@ on:
       control:
         description: "Jumlah sampel kontrol (file tidak berbendera)"
         default: "80"
+      limit:
+        description: "Uji asap: proses hanya N file (campuran), 0 = semua"
+        default: "0"
+      dry_run:
+        description: "Jangan commit hasil (hanya periksa jalur kerja)"
+        type: boolean
+        default: false
   push:
     branches-ignore:
       - main
@@ -30,6 +37,7 @@ env:
   HF_HUB_DISABLE_TELEMETRY: "1"
   FIX_SENTENCES: ${{ inputs.sentences || '400' }}
   FIX_CONTROL: ${{ inputs.control || '80' }}
+  FIX_LIMIT: ${{ inputs.limit || '0' }}
 
 jobs:
   plan:
@@ -110,7 +118,7 @@ jobs:
 
   merge:
     needs: [plan, fix]
-    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.count != '0' }}
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.count != '0' && !inputs.dry_run }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

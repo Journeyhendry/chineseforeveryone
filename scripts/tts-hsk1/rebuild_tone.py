@@ -237,7 +237,7 @@ def encode(wav: Path, dst: Path, tmp: Path):
 # plan
 # --------------------------------------------------------------------------
 
-def make_plan(report: dict, manifest: dict, sentences: int, control: int) -> list[str]:
+def make_plan(report: dict, manifest: dict, sentences: int, control: int, limit: int | None = None) -> list[str]:
     files = report["files"]
     flagged = [k for k, v in files.items() if v["flags"] and not manifest["files"][k].get("tuning")]
 
@@ -249,7 +249,12 @@ def make_plan(report: dict, manifest: dict, sentences: int, control: int) -> lis
     ctrl_pool = [k for k in files if not files[k]["flags"] and manifest["files"][k]["kind"] != "sentence"
                  and not manifest["files"][k].get("tuning")]
     ctrl = sorted(ctrl_pool, key=lambda k: hashlib.sha1(k.encode()).hexdigest())[:control]
-    return chosen + sent + ctrl
+    plan = chosen + sent + ctrl
+    limit = int(os.environ.get("FIX_LIMIT", "0")) if limit is None else limit
+    if limit:  # uji asap: campuran tiap jenis (berselang-seling), bukan hanya kata
+        step = max(1, len(plan) // limit)
+        plan = plan[::step][:limit]
+    return plan
 
 
 def cmd_plan(a):

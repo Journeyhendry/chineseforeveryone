@@ -246,3 +246,59 @@ def test_get_template_falls_back_to_all():
     assert ts.get_template(tpl, 4, 1) is not None
     assert ts.get_template(tpl, 4, 99) == tpl["tones"]["4"]["all"]["mean"]
     assert ts.get_template(tpl, 7, 1) is None
+
+
+# ---- rebuild_tone (fungsi murni) ----------------------------------------------
+
+def test_rebuild_target_track_moves_toward_template_and_caps():
+    pytest.importorskip("parselmouth", reason="rebuild_tone mengimpor tone_score saja; Praat tidak diperlukan")
+    import rebuild_tone as rb
+
+    tpl = mini_templates()
+    n = 40
+    times = np.arange(n) * ta.STEP
+    st = np.full(n, 10.0)                       # T4 datar di +10 (salah)
+    syl = [{"tone": 4, "c": [10.0] * 10, "t0": 0.0, "t1": n * ta.STEP, "d": 0.4}]
+    new = rb.target_track(st, times, syl, tpl, 10.0, 1.0, "level", "word")
+    assert new[0] > new[-1] + 4                  # kini turun
+    assert np.max(np.abs(new - st)) <= rb.SHIFT_CAP + 1e-9
+    half = rb.target_track(st, times, syl, tpl, 10.0, 0.5, "level", "word")
+    assert abs(half[0] - st[0]) <= abs(new[0] - st[0]) + 1e-9
+    unchanged = rb.target_track(st, times, [{**syl[0], "tone": 0}], tpl, 10.0, 1.0, "level", "word")
+    assert np.allclose(unchanged, st)
+
+
+def test_rebuild_stretch_factors():
+    import rebuild_tone as rb
+
+    tpl = mini_templates()
+    p10 = tpl["stats"]["word/3"]["dur"]["p10"]
+    syl = [{"tone": 3, "d": p10 / 2}, {"tone": 3, "d": p10 * 2}, {"tone": 3, "d": p10 * 0.9}]
+    f = rb.stretch_factors(syl, tpl, "word")
+    assert f[0] == rb.STRETCH_MAX and f[1] == 1.0 and 1.0 < f[2] < 1.5
+
+
+def test_rebuild_pick_prefers_smallest_strength_within_tie():
+    import rebuild_tone as rb
+
+    before = {"S": 0.5, "acc": 0.5, "short": 1}
+    c = [(0.5, "a", {"S": 0.80, "acc": 1.0, "short": 0}), (0.75, "b", {"S": 0.805, "acc": 1.0, "short": 0}),
+         (1.0, "c", {"S": 0.85, "acc": 1.0, "short": 0})]
+    assert rb.pick(before, c)[0] == 1.0                      # selisih > TIE -> yang terbaik
+    c[2] = (1.0, "c", {"S": 0.81, "acc": 1.0, "short": 0})
+    assert rb.pick(before, c)[0] == 0.5                      # dalam TIE -> kekuatan terkecil
+    assert rb.pick(before, [(1.0, "x", {"S": 0.51, "acc": 1.0, "short": 0})]) is None
+
+
+def test_rebuild_make_plan_priorities_and_skip_tuned():
+    import rebuild_tone as rb
+
+    manifest = {"files": {k: {"kind": kind} for k, kind in
+                          {"a": "word", "b": "dialog", "c": "word", "d": "sentence", "e": "word", "f": "word-slow"}.items()}}
+    manifest["files"]["e"]["tuning"] = {"method": "x"}
+    report = {"files": {"a": {"S": 0.5, "flags": ["nada_salah"]}, "b": {"S": 0.1, "flags": ["nada_salah"]},
+                        "c": {"S": 0.9, "flags": []}, "d": {"S": 0.2, "flags": ["nada_salah"]},
+                        "e": {"S": 0.3, "flags": ["nada_salah"]}, "f": {"S": 0.4, "flags": ["terlalu_pendek"]}}}
+    plan = rb.make_plan(report, manifest, sentences=0, control=5)
+    assert plan[:3] == ["a", "f", "b"] and "e" not in plan and "d" not in plan and plan[-1] == "c"
+    assert "d" in rb.make_plan(report, manifest, sentences=1, control=0)

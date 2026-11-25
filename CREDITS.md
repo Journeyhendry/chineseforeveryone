@@ -34,6 +34,18 @@ Kode proyek ini berlisensi MIT (lihat [LICENSE](LICENSE)). Data pembelajaran dan
 - **Rekaman penutur asli**: Lingua Libre di Wikimedia Commons, hanya berlisensi CC0, CC BY, atau CC BY-SA. Penulis, lisensi, dan tautan halaman file tiap rekaman ada di `data/hsk1/native-audio.json` dan tampil di bawah tombol "Dengar penutur asli" (diambil otomatis oleh `scripts/tts-hsk1/native_audio.py`; file diubah ke mp3 mono 64 kbps dan disamakan kenyaringannya).
 - **Tatoeba audio** tidak dipakai (lisensi rekaman kosong atau CC BY-NC, bukan lisensi bebas). Tone Perfect tidak dipakai.
 
+## Rujukan nada dan penyetelan suara (task 4c)
+
+Dipakai hanya untuk **mengukur** nada, durasi, dan rentang nada rekaman penutur asli, lalu menyetel nada suara P3/L3 yang sudah ada. Rekaman rujukan diunduh sementara di GitHub Actions (`.github/workflows/tone-refs.yml`) dan **tidak** disimpan di repo, tidak diputar di website; yang disimpan hanya angka ukuran dan metadata di `data/hsk1/tone-refs.json` (daftar penutur, lisensi, dan tautan sumber tiap rekaman ada di sana).
+
+- **hugolpz/audio-cmn**, suku kata (`syllabs`, 1.707 suku kata) oleh **Chen Wang**, lisensi **CC BY-SA** ([github.com/hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn)).
+- **hugolpz/audio-cmn**, kata (`hsk`), rekaman dari paket SWAC `cmn-caen-tan` oleh **Yue Tan**, lisensi **CC BY-SA** menurut README audio-cmn ([github.com/hugolpz/audio-cmn](https://github.com/hugolpz/audio-cmn)); versi lisensi tidak disebut README.
+- **Lingua Libre / Wikimedia Commons**, rekaman kata Mandarin dari banyak penutur, hanya berlisensi **CC0, CC BY, atau CC BY-SA** (penutur, lisensi, dan halaman file tiap rekaman di `data/hsk1/tone-refs.json` dan `data/hsk1/native-audio.json`; [commons.wikimedia.org](https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-cmn)).
+- **Tatoeba audio**: dicek ulang oleh `tone_refs.py tatoeba` (hanya CC0 / CC BY / CC BY-SA yang akan dipakai); hasil cek tercatat di `data/hsk1/tone-refs.json` bagian `checks`.
+- **Mozilla Common Voice** zh-CN **tidak dipakai**: unduhannya perlu akun dan persetujuan syarat; membuat akun adalah urusan pemilik. **Tone Perfect** tidak dipakai.
+- Alat (hanya di workflow / skrip, tidak ikut ke website): **praat-parselmouth** 0.4.7 (GPL-3.0, pembungkus Praat) untuk F0 dan PSOLA; **scikit-learn** (BSD-3-Clause) untuk melatih pengenal nada; **NumPy** (BSD-3-Clause); **pypinyin** (MIT) untuk nada yang diharapkan; **faster-whisper large-v3** (MIT) untuk memastikan file hasil setelan masih terbaca benar.
+- File suara yang nadanya disetel ditandai `tuning` di `public/audio/hsk1/manifest.json`; log keputusan di `data/hsk1/tone-fix-log.json`. Angka dan metode lengkap: `docs/tasks/task-4c-hasil.md`.
+
 ## Versi santai dan dialog
 
 - **Ungkapan santai dan dialog** (`data/hsk1/casual.json`, `data/hsk1/dialogs.json`) ditulis oleh AI, lalu dicek berlapis: (1) draf AI; (2) tiap ungkapan harus ada di minimal 2 sumber luar di bawah; (3) dinilai oleh pemeriksa AI kedua yang tidak melihat alasan penulis; (4) dialog dicek otomatis hanya memakai kata HSK 1 dan ungkapan yang lolos; (5) yang gagal satu lapis dibuang. Arti, situasi, dan terjemahan dialog adalah terjemahan mesin (ditandai `machine: true`). Bukti tiap ungkapan tercatat di `data/hsk1/casual-evidence.json`.

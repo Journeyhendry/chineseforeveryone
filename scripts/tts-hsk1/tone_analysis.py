@@ -309,7 +309,7 @@ def measure(times, st, inten, tones: list[int], npts: int = NPTS) -> dict | None
             rec.update(c=None, vd=0.0, r=0.0)
         else:
             c, v0, v1, rng = cp
-            rec.update(c=[round(float(x), 2) for x in c], vd=round(v1 - v0, 3), r=round(rng, 2))
+            rec.update(c=[round(float(x), 2) for x in c], vd=round(v1 - v0, 3), r=round(rng, 2), v0=round(v0, 3))
         syl.append(rec)
     allv = st[~np.isnan(st)]
     span_st = float(np.percentile(allv, 95) - np.percentile(allv, 5)) if len(allv) > 10 else 0.0

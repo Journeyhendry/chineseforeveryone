@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "scriptVersion": 4,
+  "scriptVersion": 5,
   "checkVersion": 4,
-  "generatedAt": "2026-11-23T07:59:19Z",
+  "generatedAt": "2026-11-25T10:06:40Z",
   "voice": {
     "code": "P3",
     "model": "Kokoro-82M v1.1-zh",
@@ -21,24 +21,45 @@
   },
   "whisper": {
     "model": "faster-whisper large-v3",
-    "passed": 133,
+    "passed": 154,
     "total": 162
   },
   "toneCheck": {
     "method": "praat-parselmouth F0, aturan di scripts/tts-basics/tonecheck.py",
     "refSemitones": [
-      93.78,
-      99.02
+      93.86,
+      99.11
     ],
     "refHz": [
-      225,
-      305
+      226,
+      306
     ]
+  },
+  "pitch": {
+    "method": "metode A: kontur F0 rekaman asli (audio-cmn) atau kontur baku, dipetakan ke rentang F0 P3, durasi P3 tetap; PSOLA praat-parselmouth 0.4.5 (scripts/tts-basics/pitch.py)",
+    "pitchVersion": 1,
+    "reference": {
+      "repo": "hugolpz/audio-cmn",
+      "speaker": "Chen Wang",
+      "license": "CC BY-SA",
+      "use": "contoh kontur nada saja (tidak diputar, tidak di-commit)",
+      "commit": "f759a0f18f27690742957619e1248ed91e9b3f2c",
+      "nativeRefHz": [
+        153,
+        320
+      ]
+    },
+    "counts": {
+      "audio-cmn": 19,
+      "standard": 2
+    },
+    "notFixed": 7
   },
   "complete": true,
   "pending": [],
   "files": {
     "py-i-b": {
+      "pitchSource": null,
       "path": "py-i-b.mp3",
       "durationSec": 0.71,
       "transcript": "吧。",
@@ -64,6 +85,7 @@
       "reason": null
     },
     "py-i-p": {
+      "pitchSource": null,
       "path": "py-i-p.mp3",
       "durationSec": 0.75,
       "transcript": "破。",
@@ -89,6 +111,7 @@
       "reason": null
     },
     "py-i-m": {
+      "pitchSource": null,
       "path": "py-i-m.mp3",
       "durationSec": 0.54,
       "transcript": "默默。",
@@ -114,6 +137,7 @@
       "reason": null
     },
     "py-i-f": {
+      "pitchSource": null,
       "path": "py-i-f.mp3",
       "durationSec": 0.59,
       "transcript": "发声。",
@@ -139,6 +163,7 @@
       "reason": null
     },
     "py-i-d": {
+      "pitchSource": null,
       "path": "py-i-d.mp3",
       "durationSec": 0.57,
       "transcript": "得。",
@@ -164,6 +189,7 @@
       "reason": null
     },
     "py-i-t": {
+      "pitchSource": null,
       "path": "py-i-t.mp3",
       "durationSec": 0.65,
       "transcript": "特。",
@@ -190,30 +216,34 @@
     },
     "py-i-n": {
       "path": "py-i-n.mp3",
-      "durationSec": 0.65,
+      "durationSec": 0.67,
       "transcript": " | x3: 那。那。那。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "frame X，X，X。 -> first, speed 0.9",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "拿",
       "pinyin": "ná",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 2,
-      "toneDetected": 1,
+      "toneDetected": 2,
       "f0": {
-        "s": 4.35,
-        "e": 4.88,
-        "mn": 4.12,
-        "mx": 4.88,
-        "pmn": 0.38,
-        "mean": 4.46,
-        "frames": 32
+        "s": 3.2,
+        "e": 4.3,
+        "mn": 3.13,
+        "mx": 4.42,
+        "pmn": 0.0,
+        "mean": 3.54,
+        "frames": 31
       },
-      "reason": "nada: F0 terdeteksi nada 1, target nada 2"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "py-i-l": {
+      "pitchSource": null,
       "path": "py-i-l.mp3",
       "durationSec": 0.75,
       "transcript": "了。 | x3: 啦。啦。啦。",
@@ -239,6 +269,7 @@
       "reason": null
     },
     "py-i-g": {
+      "pitchSource": null,
       "path": "py-i-g.mp3",
       "durationSec": 0.63,
       "transcript": "歌。",
@@ -264,6 +295,7 @@
       "reason": null
     },
     "py-i-k": {
+      "pitchSource": null,
       "path": "py-i-k.mp3",
       "durationSec": 0.97,
       "transcript": "呵呵。",
@@ -289,6 +321,7 @@
       "reason": null
     },
     "py-i-h": {
+      "pitchSource": null,
       "path": "py-i-h.mp3",
       "durationSec": 0.68,
       "transcript": "和。 | x3: 喝。喝。喝。",
@@ -315,30 +348,34 @@
     },
     "py-i-j": {
       "path": "py-i-j.mp3",
-      "durationSec": 0.59,
-      "transcript": "记得订阅我的频道哦。 | x3: 记。记。记。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "frame X，X，X。 -> middle syllable",
+      "durationSec": 0.8,
+      "transcript": "5G。 | x3: 无稽。无稽。无稽。",
+      "ok": true,
+      "attempts": 12,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 3",
       "hanzi": "鸡",
       "pinyin": "jī",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 4,
+      "toneDetected": 1,
       "f0": {
-        "s": 5.31,
-        "e": 0.96,
-        "mn": 0.96,
-        "mx": 5.53,
-        "pmn": 0.8,
-        "mean": 2.8,
-        "frames": 23
+        "s": 4.72,
+        "e": 4.75,
+        "mn": 4.69,
+        "mx": 4.84,
+        "pmn": 0.38,
+        "mean": 4.72,
+        "frames": 24
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 6
     },
     "py-i-q": {
+      "pitchSource": null,
       "path": "py-i-q.mp3",
       "durationSec": 0.58,
       "transcript": "7。",
@@ -365,55 +402,62 @@
     },
     "py-i-x": {
       "path": "py-i-x.mp3",
-      "durationSec": 0.69,
-      "transcript": "是。 | x3: 温习温习温习",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.82,
+      "transcript": "温馨。 | x3: 欧西。欧西。欧西。",
+      "ok": true,
+      "attempts": 13,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 6",
       "hanzi": "西",
       "pinyin": "xī",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 4,
+      "toneDetected": 1,
       "f0": {
-        "s": 4.29,
-        "e": 0.86,
-        "mn": 0.86,
-        "mx": 4.36,
-        "pmn": 0.86,
-        "mean": 2.42,
-        "frames": 22
+        "s": 4.94,
+        "e": 5.01,
+        "mn": 4.94,
+        "mx": 5.02,
+        "pmn": 0.69,
+        "mean": 4.95,
+        "frames": 25
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 7
     },
     "py-i-zh": {
       "path": "py-i-zh.mp3",
-      "durationSec": 0.69,
-      "transcript": "音质。 | x3: 一直。一直。一直。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.7,
+      "transcript": "音质。",
+      "ok": true,
+      "attempts": 14,
+      "check": "sound+f0",
+      "variant": "pitch standard on existing file",
       "hanzi": "知",
       "pinyin": "zhī",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 3,
+      "toneDetected": 1,
       "f0": {
-        "s": 3.75,
-        "e": 2.22,
-        "mn": 2.0,
-        "mx": 3.84,
-        "pmn": 0.7,
-        "mean": 2.88,
-        "frames": 31
+        "s": 5.4,
+        "e": 5.32,
+        "mn": 5.31,
+        "mx": 5.4,
+        "pmn": 1.0,
+        "mean": 5.36,
+        "frames": 35
       },
-      "reason": "nada: F0 terdeteksi nada 3, target nada 1"
+      "reason": null,
+      "pitchSource": "standard",
+      "pitchVersion": 1,
+      "pitchTried": 8
     },
     "py-i-ch": {
+      "pitchSource": null,
       "path": "py-i-ch.mp3",
       "durationSec": 0.66,
       "transcript": "吃。",
@@ -440,30 +484,34 @@
     },
     "py-i-sh": {
       "path": "py-i-sh.mp3",
-      "durationSec": 0.81,
-      "transcript": "于是, | x3: 影视。影视。影视。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "text + 。, speed 0.85",
+      "durationSec": 0.82,
+      "transcript": "不是。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "诗",
       "pinyin": "shī",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 4,
+      "toneDetected": 1,
       "f0": {
-        "s": 4.78,
-        "e": 1.0,
-        "mn": 1.0,
-        "mx": 4.78,
-        "pmn": 0.88,
-        "mean": 2.82,
-        "frames": 24
+        "s": 4.66,
+        "e": 4.67,
+        "mn": 4.64,
+        "mx": 4.7,
+        "pmn": 0.0,
+        "mean": 4.68,
+        "frames": 25
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "py-i-r": {
+      "pitchSource": null,
       "path": "py-i-r.mp3",
       "durationSec": 0.56,
       "transcript": "日日。",
@@ -490,30 +538,34 @@
     },
     "py-i-z": {
       "path": "py-i-z.mp3",
-      "durationSec": 0.58,
-      "transcript": "字幕由 Amara.org 社群 | x3: 字、字、字",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "frame X，X，X。 -> middle syllable",
+      "durationSec": 0.69,
+      "transcript": "字幕由 Amara.org 社群 | x3: 字 字 字",
+      "ok": true,
+      "attempts": 9,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 4",
       "hanzi": "资",
       "pinyin": "zī",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 4,
+      "toneDetected": 1,
       "f0": {
-        "s": 5.0,
-        "e": 1.97,
-        "mn": 1.97,
-        "mx": 5.0,
-        "pmn": 0.92,
-        "mean": 3.68,
-        "frames": 21
+        "s": 4.91,
+        "e": 5.03,
+        "mn": 4.89,
+        "mx": 5.13,
+        "pmn": 0.0,
+        "mean": 5.06,
+        "frames": 30
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 3
     },
     "py-i-c": {
+      "pitchSource": null,
       "path": "py-i-c.mp3",
       "durationSec": 0.64,
       "transcript": "词。",
@@ -539,6 +591,7 @@
       "reason": null
     },
     "py-i-s": {
+      "pitchSource": null,
       "path": "py-i-s.mp3",
       "durationSec": 0.6,
       "transcript": "嘶。",
@@ -565,30 +618,34 @@
     },
     "py-i-y": {
       "path": "py-i-y.mp3",
-      "durationSec": 0.68,
-      "transcript": "亚。 | x3: 亚。亚。亚。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.7,
+      "transcript": "压。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "牙",
       "pinyin": "yá",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 2,
-      "toneDetected": 0,
+      "toneDetected": 2,
       "f0": {
-        "s": 2.93,
-        "e": 2.58,
-        "mn": 2.32,
-        "mx": 3.05,
-        "pmn": 0.43,
-        "mean": 2.62,
+        "s": 3.07,
+        "e": 4.4,
+        "mn": 2.72,
+        "mx": 4.68,
+        "pmn": 0.0,
+        "mean": 3.51,
         "frames": 32
       },
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 2"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "py-i-w": {
+      "pitchSource": null,
       "path": "py-i-w.mp3",
       "durationSec": 0.7,
       "transcript": "Woof! | x3: 卧。卧。卧。",
@@ -611,34 +668,41 @@
         "mean": 4.4,
         "frames": 33
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'wu'"
+      "reason": "bunyi: transkrip tidak berbunyi 'wu'",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'wu'"
     },
     "py-f-a": {
       "path": "py-f-a.mp3",
-      "durationSec": 0.65,
-      "transcript": "嘞。 | x3: ",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "frame X，X。 -> first, speed 1.0",
+      "durationSec": 0.74,
+      "transcript": "哇。 | x3: 嗯啊。嗯啊。嗯啊。",
+      "ok": true,
+      "attempts": 13,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 6",
       "hanzi": "阿",
       "pinyin": "ā",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 1,
       "toneDetected": 1,
       "f0": {
-        "s": 3.97,
-        "e": 3.73,
-        "mn": 3.64,
-        "mx": 4.1,
-        "pmn": 1.0,
-        "mean": 3.95,
-        "frames": 26
+        "s": 4.64,
+        "e": 4.76,
+        "mn": 4.63,
+        "mx": 4.76,
+        "pmn": 0.0,
+        "mean": 4.72,
+        "frames": 33
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'a'"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 7
     },
     "py-f-o": {
+      "pitchSource": null,
       "path": "py-f-o.mp3",
       "durationSec": 0.57,
       "transcript": "播放。 | x3: 啵。啵。啵。",
@@ -664,6 +728,7 @@
       "reason": null
     },
     "py-f-e": {
+      "pitchSource": null,
       "path": "py-f-e.mp3",
       "durationSec": 0.68,
       "transcript": "噁心。",
@@ -689,6 +754,7 @@
       "reason": null
     },
     "py-f-i": {
+      "pitchSource": null,
       "path": "py-f-i.mp3",
       "durationSec": 0.73,
       "transcript": "一。",
@@ -714,6 +780,7 @@
       "reason": null
     },
     "py-f-u": {
+      "pitchSource": null,
       "path": "py-f-u.mp3",
       "durationSec": 0.76,
       "transcript": "呜。 | x3: 呜。呜。呜。",
@@ -736,9 +803,13 @@
         "mean": 3.02,
         "frames": 39
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 3"
+      "reason": "nada: F0 terdeteksi nada 4, target nada 3",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'wu'"
     },
     "py-f-v": {
+      "pitchSource": null,
       "path": "py-f-v.mp3",
       "durationSec": 0.68,
       "transcript": "预设",
@@ -764,6 +835,7 @@
       "reason": null
     },
     "py-f-ai": {
+      "pitchSource": null,
       "path": "py-f-ai.mp3",
       "durationSec": 0.77,
       "transcript": "喂。 | x3: 喂。喂。喂。",
@@ -786,9 +858,13 @@
         "mean": 3.21,
         "frames": 41
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'ai'"
+      "reason": "bunyi: transkrip tidak berbunyi 'ai'",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'ai'; nada: F0 terdeteksi tidak jelas, target nada 4; audio-cmn/1: bunyi: transkrip tidak berbunyi 'ai'; nada: F0 terdeteksi tidak jelas, target nada 4; audio-cmn/4: bunyi: transkrip tidak berbunyi 'ai'; nada: F0 terdeteksi tidak jelas, target nada 4; audio-cmn/5: bunyi: transkrip tidak berbunyi 'ai'; nada: F0 terdeteksi tidak jelas, target nada 4"
     },
     "py-f-ei": {
+      "pitchSource": null,
       "path": "py-f-ei.mp3",
       "durationSec": 0.73,
       "transcript": "背。",
@@ -814,6 +890,7 @@
       "reason": null
     },
     "py-f-ui": {
+      "pitchSource": null,
       "path": "py-f-ui.mp3",
       "durationSec": 0.73,
       "transcript": "对。",
@@ -839,6 +916,7 @@
       "reason": null
     },
     "py-f-ao": {
+      "pitchSource": null,
       "path": "py-f-ao.mp3",
       "durationSec": 0.69,
       "transcript": "好。",
@@ -864,6 +942,7 @@
       "reason": null
     },
     "py-f-ou": {
+      "pitchSource": null,
       "path": "py-f-ou.mp3",
       "durationSec": 0.68,
       "transcript": "够了。",
@@ -889,6 +968,7 @@
       "reason": null
     },
     "py-f-iu": {
+      "pitchSource": null,
       "path": "py-f-iu.mp3",
       "durationSec": 0.65,
       "transcript": "6.",
@@ -915,30 +995,34 @@
     },
     "py-f-ie": {
       "path": "py-f-ie.mp3",
-      "durationSec": 0.71,
-      "transcript": "谢谢。 | x3: 谢。谢。谢。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.72,
+      "transcript": "线。 | x3: 谢谢。谢谢。谢谢。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "写",
       "pinyin": "xiě",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 3,
-      "toneDetected": 0,
+      "toneDetected": 3,
       "f0": {
-        "s": 3.45,
-        "e": 2.09,
-        "mn": 2.09,
-        "mx": 3.5,
-        "pmn": 0.73,
-        "mean": 2.54,
-        "frames": 23
+        "s": 1.96,
+        "e": 0.71,
+        "mn": 0.65,
+        "mx": 2.08,
+        "pmn": 1.0,
+        "mean": 1.3,
+        "frames": 24
       },
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 3"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "py-f-ve": {
+      "pitchSource": null,
       "path": "py-f-ve.mp3",
       "durationSec": 0.78,
       "transcript": "愉悦",
@@ -964,6 +1048,7 @@
       "reason": null
     },
     "py-f-er": {
+      "pitchSource": null,
       "path": "py-f-er.mp3",
       "durationSec": 0.58,
       "transcript": "二。",
@@ -989,6 +1074,7 @@
       "reason": null
     },
     "py-f-an": {
+      "pitchSource": null,
       "path": "py-f-an.mp3",
       "durationSec": 0.76,
       "transcript": "3.",
@@ -1014,6 +1100,7 @@
       "reason": null
     },
     "py-f-en": {
+      "pitchSource": null,
       "path": "py-f-en.mp3",
       "durationSec": 0.81,
       "transcript": "无痕。",
@@ -1040,30 +1127,34 @@
     },
     "py-f-in": {
       "path": "py-f-in.mp3",
-      "durationSec": 0.81,
-      "transcript": "螺线。 | x3: 我信。我信。我信。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "text + 。, speed 0.85",
+      "durationSec": 0.82,
+      "transcript": "不信。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "新",
       "pinyin": "xīn",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 1,
-      "toneDetected": 4,
+      "toneDetected": 1,
       "f0": {
-        "s": 4.67,
-        "e": 1.91,
-        "mn": 1.91,
-        "mx": 4.91,
-        "pmn": 0.88,
-        "mean": 2.99,
-        "frames": 25
+        "s": 4.94,
+        "e": 5.0,
+        "mn": 4.91,
+        "mx": 5.13,
+        "pmn": 0.38,
+        "mean": 4.94,
+        "frames": 24
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "py-f-un": {
+      "pitchSource": null,
       "path": "py-f-un.mp3",
       "durationSec": 0.69,
       "transcript": "孙。",
@@ -1089,6 +1180,7 @@
       "reason": null
     },
     "py-f-vn": {
+      "pitchSource": null,
       "path": "py-f-vn.mp3",
       "durationSec": 0.77,
       "transcript": "云。",
@@ -1114,6 +1206,7 @@
       "reason": null
     },
     "py-f-ang": {
+      "pitchSource": null,
       "path": "py-f-ang.mp3",
       "durationSec": 0.76,
       "transcript": "忙。",
@@ -1139,6 +1232,7 @@
       "reason": null
     },
     "py-f-eng": {
+      "pitchSource": null,
       "path": "py-f-eng.mp3",
       "durationSec": 0.77,
       "transcript": "冷。",
@@ -1164,6 +1258,7 @@
       "reason": null
     },
     "py-f-ing": {
+      "pitchSource": null,
       "path": "py-f-ing.mp3",
       "durationSec": 0.69,
       "transcript": "星星。",
@@ -1189,6 +1284,7 @@
       "reason": null
     },
     "py-f-ong": {
+      "pitchSource": null,
       "path": "py-f-ong.mp3",
       "durationSec": 0.69,
       "transcript": "中",
@@ -1214,6 +1310,7 @@
       "reason": null
     },
     "py-f-uo": {
+      "pitchSource": null,
       "path": "py-f-uo.mp3",
       "durationSec": 0.72,
       "transcript": "我。",
@@ -1240,30 +1337,34 @@
     },
     "py-f-ia": {
       "path": "py-f-ia.mp3",
-      "durationSec": 0.69,
-      "transcript": "叫。 | x3: 交。交。交。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 1.02,
+      "transcript": "家家。",
+      "ok": true,
+      "attempts": 10,
+      "check": "exact",
+      "variant": "pitch audio-cmn on variant 5",
       "hanzi": "家",
       "pinyin": "jiā",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 1,
-      "toneDetected": 3,
+      "toneDetected": 1,
       "f0": {
-        "s": 2.56,
-        "e": 2.96,
-        "mn": 1.83,
-        "mx": 3.22,
-        "pmn": 0.25,
-        "mean": 2.43,
-        "frames": 24
+        "s": 4.69,
+        "e": 4.55,
+        "mn": 4.49,
+        "mx": 4.72,
+        "pmn": 0.7,
+        "mean": 4.59,
+        "frames": 29
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'jia'; nada: F0 terdeteksi nada 3, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 4
     },
     "py-f-ian": {
+      "pitchSource": null,
       "path": "py-f-ian.mp3",
       "durationSec": 0.75,
       "transcript": "天。",
@@ -1289,6 +1390,7 @@
       "reason": null
     },
     "py-f-iao": {
+      "pitchSource": null,
       "path": "py-f-iao.mp3",
       "durationSec": 0.71,
       "transcript": "微笑。",
@@ -1314,6 +1416,7 @@
       "reason": null
     },
     "tn-ma1": {
+      "pitchSource": null,
       "path": "tn-ma1.mp3",
       "durationSec": 0.55,
       "transcript": "妈妈。",
@@ -1339,6 +1442,7 @@
       "reason": null
     },
     "tn-ma2": {
+      "pitchSource": null,
       "path": "tn-ma2.mp3",
       "durationSec": 0.57,
       "transcript": "妈妈。",
@@ -1364,6 +1468,7 @@
       "reason": null
     },
     "tn-ma3": {
+      "pitchSource": null,
       "path": "tn-ma3.mp3",
       "durationSec": 0.58,
       "transcript": "吗?",
@@ -1389,6 +1494,7 @@
       "reason": null
     },
     "tn-ma4": {
+      "pitchSource": null,
       "path": "tn-ma4.mp3",
       "durationSec": 0.75,
       "transcript": "抹。",
@@ -1414,6 +1520,7 @@
       "reason": null
     },
     "tn-ba1": {
+      "pitchSource": null,
       "path": "tn-ba1.mp3",
       "durationSec": 0.75,
       "transcript": "吧!",
@@ -1439,6 +1546,7 @@
       "reason": null
     },
     "tn-ba2": {
+      "pitchSource": null,
       "path": "tn-ba2.mp3",
       "durationSec": 0.65,
       "transcript": "吧!",
@@ -1464,6 +1572,7 @@
       "reason": null
     },
     "tn-ba3": {
+      "pitchSource": null,
       "path": "tn-ba3.mp3",
       "durationSec": 0.77,
       "transcript": "吧!",
@@ -1490,30 +1599,34 @@
     },
     "tn-ba4": {
       "path": "tn-ba4.mp3",
-      "durationSec": 0.73,
-      "transcript": "拜。 | x3: 拜。拜。拜。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.78,
+      "transcript": "嗯吧。",
+      "ok": true,
+      "attempts": 19,
+      "check": "sound+f0",
+      "variant": "pitch standard on variant 3",
       "hanzi": "爸",
       "pinyin": "bà",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 4,
       "toneDetected": 4,
       "f0": {
-        "s": 3.65,
-        "e": 1.44,
-        "mn": 0.53,
-        "mx": 4.03,
-        "pmn": 0.53,
-        "mean": 1.8,
-        "frames": 28
+        "s": 5.74,
+        "e": 1.84,
+        "mn": 1.46,
+        "mx": 5.92,
+        "pmn": 1.0,
+        "mean": 3.78,
+        "frames": 43
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'ba'"
+      "reason": null,
+      "pitchSource": "standard",
+      "pitchVersion": 1,
+      "pitchTried": 13
     },
     "tn-yi1": {
+      "pitchSource": null,
       "path": "tn-yi1.mp3",
       "durationSec": 0.72,
       "transcript": "1.",
@@ -1539,6 +1652,7 @@
       "reason": null
     },
     "tn-yi2": {
+      "pitchSource": null,
       "path": "tn-yi2.mp3",
       "durationSec": 0.71,
       "transcript": "一。",
@@ -1564,6 +1678,7 @@
       "reason": null
     },
     "tn-yi3": {
+      "pitchSource": null,
       "path": "tn-yi3.mp3",
       "durationSec": 0.74,
       "transcript": "唯一。 | x3: 录音室。",
@@ -1586,9 +1701,13 @@
         "mean": 4.21,
         "frames": 39
       },
-      "reason": "nada: F0 terdeteksi tidak jelas, target nada 3"
+      "reason": "nada: F0 terdeteksi tidak jelas, target nada 3",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'yi'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'yi'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'yi'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'yi'"
     },
     "tn-yi4": {
+      "pitchSource": null,
       "path": "tn-yi4.mp3",
       "durationSec": 0.7,
       "transcript": "1.",
@@ -1614,6 +1733,7 @@
       "reason": null
     },
     "tn-tang1": {
+      "pitchSource": null,
       "path": "tn-tang1.mp3",
       "durationSec": 0.59,
       "transcript": "汤。",
@@ -1639,6 +1759,7 @@
       "reason": null
     },
     "tn-tang2": {
+      "pitchSource": null,
       "path": "tn-tang2.mp3",
       "durationSec": 0.6,
       "transcript": "疼。 | x3: 糖。糖。糖。",
@@ -1665,30 +1786,34 @@
     },
     "tn-tang3": {
       "path": "tn-tang3.mp3",
-      "durationSec": 0.73,
-      "transcript": "一趟。 | x3: 一趟 一趟 一趟",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "frame X，X，X。 -> first, speed 0.9",
+      "durationSec": 0.76,
+      "transcript": "一趟。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "躺",
       "pinyin": "tǎng",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 3,
-      "toneDetected": 1,
+      "toneDetected": 3,
       "f0": {
-        "s": 5.0,
-        "e": 4.18,
-        "mn": 3.93,
-        "mx": 5.13,
-        "pmn": 0.55,
-        "mean": 4.27,
+        "s": 1.7,
+        "e": 2.2,
+        "mn": 1.59,
+        "mx": 2.26,
+        "pmn": 0.0,
+        "mean": 2.0,
         "frames": 29
       },
-      "reason": "nada: F0 terdeteksi nada 1, target nada 3"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "tn-tang4": {
+      "pitchSource": null,
       "path": "tn-tang4.mp3",
       "durationSec": 0.62,
       "transcript": "烫。",
@@ -1714,6 +1839,7 @@
       "reason": null
     },
     "tn-n-mama": {
+      "pitchSource": null,
       "path": "tn-n-mama.mp3",
       "durationSec": 0.81,
       "transcript": "那么。",
@@ -1731,6 +1857,7 @@
       "reason": "transkrip '那么' != '妈妈'"
     },
     "tn-n-baba": {
+      "pitchSource": null,
       "path": "tn-n-baba.mp3",
       "durationSec": 0.75,
       "transcript": "Baba。",
@@ -1748,6 +1875,7 @@
       "reason": null
     },
     "tn-n-xiexie": {
+      "pitchSource": null,
       "path": "tn-n-xiexie.mp3",
       "durationSec": 0.9,
       "transcript": "谢谢。",
@@ -1765,6 +1893,7 @@
       "reason": null
     },
     "tn-n-haoma": {
+      "pitchSource": null,
       "path": "tn-n-haoma.mp3",
       "durationSec": 0.76,
       "transcript": "好吗?",
@@ -1782,6 +1911,7 @@
       "reason": null
     },
     "tn-n-wode": {
+      "pitchSource": null,
       "path": "tn-n-wode.mp3",
       "durationSec": 0.74,
       "transcript": "我的。",
@@ -1799,6 +1929,7 @@
       "reason": null
     },
     "sd-nihao": {
+      "pitchSource": null,
       "path": "sd-nihao.mp3",
       "durationSec": 0.84,
       "transcript": "你好。",
@@ -1816,6 +1947,7 @@
       "reason": null
     },
     "sd-henhao": {
+      "pitchSource": null,
       "path": "sd-henhao.mp3",
       "durationSec": 0.83,
       "transcript": "很好。",
@@ -1833,6 +1965,7 @@
       "reason": null
     },
     "sd-keyi": {
+      "pitchSource": null,
       "path": "sd-keyi.mp3",
       "durationSec": 0.78,
       "transcript": "可以。",
@@ -1850,6 +1983,7 @@
       "reason": null
     },
     "sd-shuiguo": {
+      "pitchSource": null,
       "path": "sd-shuiguo.mp3",
       "durationSec": 0.85,
       "transcript": "水果。",
@@ -1867,6 +2001,7 @@
       "reason": null
     },
     "sd-bushi": {
+      "pitchSource": null,
       "path": "sd-bushi.mp3",
       "durationSec": 0.82,
       "transcript": "不是。",
@@ -1884,6 +2019,7 @@
       "reason": null
     },
     "sd-budui": {
+      "pitchSource": null,
       "path": "sd-budui.mp3",
       "durationSec": 0.72,
       "transcript": "不对。",
@@ -1901,6 +2037,7 @@
       "reason": null
     },
     "sd-buyao": {
+      "pitchSource": null,
       "path": "sd-buyao.mp3",
       "durationSec": 0.73,
       "transcript": "不要。",
@@ -1918,6 +2055,7 @@
       "reason": null
     },
     "sd-buhao": {
+      "pitchSource": null,
       "path": "sd-buhao.mp3",
       "durationSec": 0.79,
       "transcript": "不好。",
@@ -1935,6 +2073,7 @@
       "reason": null
     },
     "sd-buchi": {
+      "pitchSource": null,
       "path": "sd-buchi.mp3",
       "durationSec": 0.81,
       "transcript": "不吃。",
@@ -1952,6 +2091,7 @@
       "reason": null
     },
     "sd-bulai": {
+      "pitchSource": null,
       "path": "sd-bulai.mp3",
       "durationSec": 0.74,
       "transcript": "不来。",
@@ -1969,6 +2109,7 @@
       "reason": null
     },
     "sd-yi": {
+      "pitchSource": null,
       "path": "sd-yi.mp3",
       "durationSec": 0.73,
       "transcript": "一。",
@@ -1994,6 +2135,7 @@
       "reason": null
     },
     "sd-diyi": {
+      "pitchSource": null,
       "path": "sd-diyi.mp3",
       "durationSec": 0.91,
       "transcript": "第一,",
@@ -2011,6 +2153,7 @@
       "reason": null
     },
     "sd-yitian": {
+      "pitchSource": null,
       "path": "sd-yitian.mp3",
       "durationSec": 0.84,
       "transcript": "一天。",
@@ -2028,6 +2171,7 @@
       "reason": null
     },
     "sd-yinian": {
+      "pitchSource": null,
       "path": "sd-yinian.mp3",
       "durationSec": 0.79,
       "transcript": "一年。",
@@ -2045,6 +2189,7 @@
       "reason": null
     },
     "sd-yige": {
+      "pitchSource": null,
       "path": "sd-yige.mp3",
       "durationSec": 0.8,
       "transcript": "一个。",
@@ -2062,6 +2207,7 @@
       "reason": null
     },
     "sd-yixia": {
+      "pitchSource": null,
       "path": "sd-yixia.mp3",
       "durationSec": 0.97,
       "transcript": "一下。",
@@ -2079,6 +2225,7 @@
       "reason": null
     },
     "sd-yiban": {
+      "pitchSource": null,
       "path": "sd-yiban.mp3",
       "durationSec": 0.78,
       "transcript": "一半。",
@@ -2096,6 +2243,7 @@
       "reason": null
     },
     "rd-ni3-4f60": {
+      "pitchSource": null,
       "path": "rd-ni3-4f60.mp3",
       "durationSec": 0.7,
       "transcript": "逆。 | x3: 你,你,你。",
@@ -2121,6 +2269,7 @@
       "reason": null
     },
     "rd-ta1-4ed6": {
+      "pitchSource": null,
       "path": "rd-ta1-4ed6.mp3",
       "durationSec": 0.73,
       "transcript": "太阳。 | x3: 太。太。太。",
@@ -2146,6 +2295,7 @@
       "reason": null
     },
     "rd-xiu1-4f11": {
+      "pitchSource": null,
       "path": "rd-xiu1-4f11.mp3",
       "durationSec": 0.64,
       "transcript": "休息。",
@@ -2171,6 +2321,7 @@
       "reason": null
     },
     "rd-zhu4-4f4f": {
+      "pitchSource": null,
       "path": "rd-zhu4-4f4f.mp3",
       "durationSec": 0.66,
       "transcript": "助。",
@@ -2196,6 +2347,7 @@
       "reason": null
     },
     "rd-chi1-5403": {
+      "pitchSource": null,
       "path": "rd-chi1-5403.mp3",
       "durationSec": 0.77,
       "transcript": "音讯。 | x3: 音痴。音痴。音痴。",
@@ -2221,6 +2373,7 @@
       "reason": null
     },
     "rd-he1-559d": {
+      "pitchSource": null,
       "path": "rd-he1-559d.mp3",
       "durationSec": 0.68,
       "transcript": "和。 | x3: 喝。喝。喝。",
@@ -2246,6 +2399,7 @@
       "reason": null
     },
     "rd-jiao4-53eb": {
+      "pitchSource": null,
       "path": "rd-jiao4-53eb.mp3",
       "durationSec": 0.68,
       "transcript": "哟。 | x3: 叫。叫。叫。",
@@ -2271,6 +2425,7 @@
       "reason": null
     },
     "rd-chang4-5531": {
+      "pitchSource": null,
       "path": "rd-chang4-5531.mp3",
       "durationSec": 0.67,
       "transcript": "唱。",
@@ -2296,6 +2451,7 @@
       "reason": null
     },
     "rd-ma1-5988": {
+      "pitchSource": null,
       "path": "rd-ma1-5988.mp3",
       "durationSec": 0.55,
       "transcript": "妈妈。",
@@ -2321,6 +2477,7 @@
       "reason": null
     },
     "rd-jie3-59d0": {
+      "pitchSource": null,
       "path": "rd-jie3-59d0.mp3",
       "durationSec": 0.85,
       "transcript": "终结。",
@@ -2346,6 +2503,7 @@
       "reason": null
     },
     "rd-mei4-59b9": {
+      "pitchSource": null,
       "path": "rd-mei4-59b9.mp3",
       "durationSec": 0.54,
       "transcript": "妹妹。",
@@ -2371,6 +2529,7 @@
       "reason": null
     },
     "rd-ta1-5979": {
+      "pitchSource": null,
       "path": "rd-ta1-5979.mp3",
       "durationSec": 0.72,
       "transcript": "淘汰。 | x3: 太。太。太。",
@@ -2396,6 +2555,7 @@
       "reason": null
     },
     "rd-mei2-6ca1": {
+      "pitchSource": null,
       "path": "rd-mei2-6ca1.mp3",
       "durationSec": 0.55,
       "transcript": " | x3: 每每每",
@@ -2421,6 +2581,7 @@
       "reason": null
     },
     "rd-han4-6c49": {
+      "pitchSource": null,
       "path": "rd-han4-6c49.mp3",
       "durationSec": 0.83,
       "transcript": "遗憾。",
@@ -2446,6 +2607,7 @@
       "reason": null
     },
     "rd-xiao4-6821": {
+      "pitchSource": null,
       "path": "rd-xiao4-6821.mp3",
       "durationSec": 0.61,
       "transcript": "笑笑。",
@@ -2471,6 +2633,7 @@
       "reason": null
     },
     "rd-ji1-673a": {
+      "pitchSource": null,
       "path": "rd-ji1-673a.mp3",
       "durationSec": 0.59,
       "transcript": "记忆。 | x3: 进。进。进。",
@@ -2493,34 +2656,41 @@
         "mean": 2.8,
         "frames": 23
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 1"
+      "reason": "nada: F0 terdeteksi nada 4, target nada 1",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'ji'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'ji'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'ji'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'ji'"
     },
     "rd-yi3-6905": {
       "path": "rd-yi3-6905.mp3",
-      "durationSec": 0.61,
-      "transcript": "夜。 | x3: 夜。夜。夜。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.76,
+      "transcript": "红叶。 | x3: 同意。同意。同意。",
+      "ok": true,
+      "attempts": 13,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 6",
       "hanzi": "椅",
       "pinyin": "yǐ",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 3,
       "toneDetected": 3,
       "f0": {
-        "s": 3.02,
-        "e": 1.83,
-        "mn": 1.67,
-        "mx": 3.32,
-        "pmn": 0.78,
-        "mean": 2.6,
-        "frames": 27
+        "s": 1.89,
+        "e": 0.77,
+        "mn": 0.62,
+        "mx": 2.07,
+        "pmn": 1.0,
+        "mean": 1.44,
+        "frames": 39
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'yi'"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 7
     },
     "rd-zhuo1-684c": {
+      "pitchSource": null,
       "path": "rd-zhuo1-684c.mp3",
       "durationSec": 0.69,
       "transcript": "卓。",
@@ -2546,6 +2716,7 @@
       "reason": null
     },
     "rd-ming2-660e": {
+      "pitchSource": null,
       "path": "rd-ming2-660e.mp3",
       "durationSec": 0.76,
       "transcript": "名。",
@@ -2571,6 +2742,7 @@
       "reason": null
     },
     "rd-zao3-65e9": {
+      "pitchSource": null,
       "path": "rd-zao3-65e9.mp3",
       "durationSec": 0.69,
       "transcript": "早。",
@@ -2597,55 +2769,62 @@
     },
     "rd-shi2-65f6": {
       "path": "rd-shi2-65f6.mp3",
-      "durationSec": 0.57,
-      "transcript": "热 | x3: 是。是。是。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.6,
+      "transcript": "是。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "时",
       "pinyin": "shí",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 2,
-      "toneDetected": 1,
+      "toneDetected": 2,
       "f0": {
-        "s": 2.96,
-        "e": 2.7,
-        "mn": 2.65,
-        "mx": 3.41,
+        "s": 2.66,
+        "e": 4.29,
+        "mn": 2.66,
+        "mx": 4.42,
         "pmn": 0.0,
-        "mean": 3.07,
+        "mean": 3.33,
         "frames": 18
       },
-      "reason": "nada: F0 terdeteksi nada 1, target nada 2"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "rd-wan3-665a": {
       "path": "rd-wan3-665a.mp3",
-      "durationSec": 0.78,
-      "transcript": "晚安。 | x3: 晚安。晚安。晚安。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.79,
+      "transcript": "晚安。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "晚",
       "pinyin": "wǎn",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 3,
-      "toneDetected": 4,
+      "toneDetected": 3,
       "f0": {
-        "s": 4.03,
-        "e": 1.2,
-        "mn": 1.1,
-        "mx": 4.03,
-        "pmn": 0.77,
-        "mean": 2.44,
+        "s": 2.54,
+        "e": 0.4,
+        "mn": 0.33,
+        "mx": 2.56,
+        "pmn": 1.0,
+        "mean": 1.58,
         "frames": 33
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 3"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "rd-da3-6253": {
+      "pitchSource": null,
       "path": "rd-da3-6253.mp3",
       "durationSec": 0.75,
       "transcript": "大雨。",
@@ -2672,30 +2851,34 @@
     },
     "rd-zhao3-627e": {
       "path": "rd-zhao3-627e.mp3",
-      "durationSec": 0.69,
-      "transcript": "肉。 | x3: 肉。肉。肉。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.83,
+      "transcript": "印象。 | x3: 印照。印照。印照。",
+      "ok": true,
+      "attempts": 12,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 3",
       "hanzi": "找",
       "pinyin": "zhǎo",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 3,
-      "toneDetected": 4,
+      "toneDetected": 3,
       "f0": {
-        "s": 4.04,
-        "e": 1.79,
-        "mn": 1.38,
-        "mx": 4.26,
-        "pmn": 0.57,
-        "mean": 2.46,
-        "frames": 34
+        "s": 1.61,
+        "e": 0.68,
+        "mn": 0.64,
+        "mx": 1.81,
+        "pmn": 1.0,
+        "mean": 0.94,
+        "frames": 48
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'zhao'; nada: F0 terdeteksi nada 4, target nada 3"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 6
     },
     "rd-shuo1-8bf4": {
+      "pitchSource": null,
       "path": "rd-shuo1-8bf4.mp3",
       "durationSec": 0.63,
       "transcript": "说说。",
@@ -2721,6 +2904,7 @@
       "reason": null
     },
     "rd-hua4-8bdd": {
+      "pitchSource": null,
       "path": "rd-hua4-8bdd.mp3",
       "durationSec": 0.71,
       "transcript": "换。 | x3: 画。画。画。",
@@ -2746,6 +2930,7 @@
       "reason": null
     },
     "rd-qing3-8bf7": {
+      "pitchSource": null,
       "path": "rd-qing3-8bf7.mp3",
       "durationSec": 0.59,
       "transcript": "请。",
@@ -2771,6 +2956,7 @@
       "reason": null
     },
     "rd-shei2-8c01": {
+      "pitchSource": null,
       "path": "rd-shei2-8c01.mp3",
       "durationSec": 0.6,
       "transcript": "水。 | x3: 水。水。水。",
@@ -2793,9 +2979,13 @@
         "mean": 2.5,
         "frames": 20
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'shei'"
+      "reason": "bunyi: transkrip tidak berbunyi 'shei'",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'shei'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'shei'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'shei'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'shei'"
     },
     "rd-mang2-5fd9": {
+      "pitchSource": null,
       "path": "rd-mang2-5fd9.mp3",
       "durationSec": 0.76,
       "transcript": " | x3: 忙。忙。忙。",
@@ -2821,6 +3011,7 @@
       "reason": null
     },
     "rd-xiang3-60f3": {
+      "pitchSource": null,
       "path": "rd-xiang3-60f3.mp3",
       "durationSec": 0.69,
       "transcript": "像。",
@@ -2846,6 +3037,7 @@
       "reason": null
     },
     "rd-nin2-60a8": {
+      "pitchSource": null,
       "path": "rd-nin2-60a8.mp3",
       "durationSec": 0.74,
       "transcript": "您好。",
@@ -2872,30 +3064,34 @@
     },
     "rd-zen3-600e": {
       "path": "rd-zen3-600e.mp3",
-      "durationSec": 0.64,
-      "transcript": "分。 | x3: 正。正。正。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.81,
+      "transcript": "午餐。 | x3: 不怎。不怎。不怎。",
+      "ok": true,
+      "attempts": 12,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 3",
       "hanzi": "怎",
       "pinyin": "zěn",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 3,
       "toneDetected": 3,
       "f0": {
-        "s": 3.24,
-        "e": 1.65,
-        "mn": 1.65,
-        "mx": 3.54,
-        "pmn": 0.8,
-        "mean": 2.19,
-        "frames": 23
+        "s": 1.72,
+        "e": 1.29,
+        "mn": 0.55,
+        "mx": 1.88,
+        "pmn": 0.37,
+        "mean": 1.07,
+        "frames": 41
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'zen'"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 6
     },
     "rd-cai4-83dc": {
+      "pitchSource": null,
       "path": "rd-cai4-83dc.mp3",
       "durationSec": 0.62,
       "transcript": "菜籽。",
@@ -2922,30 +3118,34 @@
     },
     "rd-cha2-8336": {
       "path": "rd-cha2-8336.mp3",
-      "durationSec": 0.75,
-      "transcript": "长。 | x3: 长。长。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.85,
+      "transcript": "以上。 | x3: 语差。语差。语差。",
+      "ok": true,
+      "attempts": 12,
+      "check": "sound(x3)+f0",
+      "variant": "pitch audio-cmn on variant 3",
       "hanzi": "茶",
       "pinyin": "chá",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 2,
       "toneDetected": 2,
       "f0": {
-        "s": 2.31,
-        "e": 3.18,
-        "mn": 1.36,
-        "mx": 3.19,
-        "pmn": 0.2,
-        "mean": 2.4,
-        "frames": 29
+        "s": 2.92,
+        "e": 4.29,
+        "mn": 2.91,
+        "mx": 4.48,
+        "pmn": 0.15,
+        "mean": 3.38,
+        "frames": 31
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'cha'"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 6
     },
     "rd-ping2-82f9": {
+      "pitchSource": null,
       "path": "rd-ping2-82f9.mp3",
       "durationSec": 0.65,
       "transcript": " | x3: 平 平 平",
@@ -2972,30 +3172,34 @@
     },
     "rd-jia1-5bb6": {
       "path": "rd-jia1-5bb6.mp3",
-      "durationSec": 0.69,
-      "transcript": "叫。 | x3: 交。交。交。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.7,
+      "transcript": " | x3: 加。加。加。",
+      "ok": true,
+      "attempts": 10,
+      "check": "exact(x3)",
+      "variant": "pitch audio-cmn on variant 5",
       "hanzi": "家",
       "pinyin": "jiā",
       "checkVersion": 4,
-      "sound": false,
+      "sound": true,
       "toneTarget": 1,
-      "toneDetected": 3,
+      "toneDetected": 1,
       "f0": {
-        "s": 2.53,
-        "e": 2.96,
-        "mn": 1.79,
-        "mx": 3.22,
-        "pmn": 0.25,
-        "mean": 2.43,
-        "frames": 24
+        "s": 4.74,
+        "e": 4.62,
+        "mn": 4.53,
+        "mx": 4.75,
+        "pmn": 0.7,
+        "mean": 4.64,
+        "frames": 29
       },
-      "reason": "bunyi: transkrip tidak berbunyi 'jia'; nada: F0 terdeteksi nada 3, target nada 1"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 4
     },
     "rd-zi4-5b57": {
+      "pitchSource": null,
       "path": "rd-zi4-5b57.mp3",
       "durationSec": 0.55,
       "transcript": "字典。",
@@ -3021,6 +3225,7 @@
       "reason": null
     },
     "rd-ke4-5ba2": {
+      "pitchSource": null,
       "path": "rd-ke4-5ba2.mp3",
       "durationSec": 0.6,
       "transcript": "课。",
@@ -3046,6 +3251,7 @@
       "reason": null
     },
     "rd-fan4-996d": {
+      "pitchSource": null,
       "path": "rd-fan4-996d.mp3",
       "durationSec": 0.69,
       "transcript": " | x3: 饭饭饭",
@@ -3071,6 +3277,7 @@
       "reason": null
     },
     "rd-jiao3-997a": {
+      "pitchSource": null,
       "path": "rd-jiao3-997a.mp3",
       "durationSec": 0.62,
       "transcript": "脚。",
@@ -3096,6 +3303,7 @@
       "reason": null
     },
     "rd-wen4-95ee": {
+      "pitchSource": null,
       "path": "rd-wen4-95ee.mp3",
       "durationSec": 0.74,
       "transcript": "问。",
@@ -3121,6 +3329,7 @@
       "reason": null
     },
     "rd-jian1-95f4": {
+      "pitchSource": null,
       "path": "rd-jian1-95f4.mp3",
       "durationSec": 0.57,
       "transcript": "中文字幕——YK | x3: 间。间。间。",
@@ -3146,6 +3355,7 @@
       "reason": null
     },
     "rd-zhe4-8fd9": {
+      "pitchSource": null,
       "path": "rd-zhe4-8fd9.mp3",
       "durationSec": 0.58,
       "transcript": "这段视频就分享到这里,谢谢观 | x3: 这 这 这",
@@ -3171,6 +3381,7 @@
       "reason": null
     },
     "rd-hai2-8fd8": {
+      "pitchSource": null,
       "path": "rd-hai2-8fd8.mp3",
       "durationSec": 0.69,
       "transcript": "嗨!",
@@ -3196,6 +3407,7 @@
       "reason": null
     },
     "rd-bian1-8fb9": {
+      "pitchSource": null,
       "path": "rd-bian1-8fb9.mp3",
       "durationSec": 0.64,
       "transcript": "编。",
@@ -3221,6 +3433,7 @@
       "reason": null
     },
     "rd-dao4-9053": {
+      "pitchSource": null,
       "path": "rd-dao4-9053.mp3",
       "durationSec": 0.7,
       "transcript": "到。",
@@ -3246,6 +3459,7 @@
       "reason": null
     },
     "cp-hao3": {
+      "pitchSource": null,
       "path": "cp-hao3.mp3",
       "durationSec": 0.76,
       "transcript": "后期。 | x3: 好。好。好。",
@@ -3271,6 +3485,7 @@
       "reason": null
     },
     "cp-ming2": {
+      "pitchSource": null,
       "path": "cp-ming2.mp3",
       "durationSec": 0.75,
       "transcript": "名。",
@@ -3296,6 +3511,7 @@
       "reason": null
     },
     "cp-xiu1": {
+      "pitchSource": null,
       "path": "cp-xiu1.mp3",
       "durationSec": 0.64,
       "transcript": "休息。",
@@ -3321,6 +3537,7 @@
       "reason": null
     },
     "cp-zi4": {
+      "pitchSource": null,
       "path": "cp-zi4.mp3",
       "durationSec": 0.55,
       "transcript": "字幕由 Amara.org 社群 | x3: 字字字",
@@ -3346,6 +3563,7 @@
       "reason": null
     },
     "cp-nan2": {
+      "pitchSource": null,
       "path": "cp-nan2.mp3",
       "durationSec": 0.73,
       "transcript": "男女。",
@@ -3371,6 +3589,7 @@
       "reason": null
     },
     "cp-guo2": {
+      "pitchSource": null,
       "path": "cp-guo2.mp3",
       "durationSec": 0.69,
       "transcript": "过去。",
@@ -3396,6 +3615,7 @@
       "reason": null
     },
     "cp-wen4": {
+      "pitchSource": null,
       "path": "cp-wen4.mp3",
       "durationSec": 0.74,
       "transcript": "问。",
@@ -3421,6 +3641,7 @@
       "reason": null
     },
     "ph-n1": {
+      "pitchSource": null,
       "path": "ph-n1.mp3",
       "durationSec": 0.73,
       "transcript": "1.",
@@ -3446,6 +3667,7 @@
       "reason": null
     },
     "ph-n2": {
+      "pitchSource": null,
       "path": "ph-n2.mp3",
       "durationSec": 0.58,
       "transcript": "二。",
@@ -3471,6 +3693,7 @@
       "reason": null
     },
     "ph-n3": {
+      "pitchSource": null,
       "path": "ph-n3.mp3",
       "durationSec": 0.76,
       "transcript": "3.",
@@ -3496,6 +3719,7 @@
       "reason": null
     },
     "ph-n4": {
+      "pitchSource": null,
       "path": "ph-n4.mp3",
       "durationSec": 0.59,
       "transcript": "嘶。",
@@ -3521,6 +3745,7 @@
       "reason": null
     },
     "ph-n5": {
+      "pitchSource": null,
       "path": "ph-n5.mp3",
       "durationSec": 0.76,
       "transcript": "呜。 | x3: 呜。呜。呜。",
@@ -3543,9 +3768,13 @@
         "mean": 3.05,
         "frames": 38
       },
-      "reason": "nada: F0 terdeteksi nada 4, target nada 3"
+      "reason": "nada: F0 terdeteksi nada 4, target nada 3",
+      "pitchVersion": 1,
+      "pitchTried": 14,
+      "pitchNote": "metode A gagal (14 percobaan): audio-cmn/0: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/1: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/4: bunyi: transkrip tidak berbunyi 'wu'; audio-cmn/5: bunyi: transkrip tidak berbunyi 'wu'"
     },
     "ph-n6": {
+      "pitchSource": null,
       "path": "ph-n6.mp3",
       "durationSec": 0.65,
       "transcript": "6.",
@@ -3571,6 +3800,7 @@
       "reason": null
     },
     "ph-n7": {
+      "pitchSource": null,
       "path": "ph-n7.mp3",
       "durationSec": 0.59,
       "transcript": "7.",
@@ -3596,6 +3826,7 @@
       "reason": null
     },
     "ph-n8": {
+      "pitchSource": null,
       "path": "ph-n8.mp3",
       "durationSec": 0.71,
       "transcript": "吧。",
@@ -3621,6 +3852,7 @@
       "reason": null
     },
     "ph-n9": {
+      "pitchSource": null,
       "path": "ph-n9.mp3",
       "durationSec": 0.6,
       "transcript": "酒酒。",
@@ -3647,30 +3879,34 @@
     },
     "ph-n10": {
       "path": "ph-n10.mp3",
-      "durationSec": 0.57,
-      "transcript": "热。 | x3: 是。是。是。",
-      "ok": false,
-      "attempts": 6,
-      "check": "none",
-      "variant": "plain, speed 1.0",
+      "durationSec": 0.61,
+      "transcript": "是。",
+      "ok": true,
+      "attempts": 7,
+      "check": "sound+f0",
+      "variant": "pitch audio-cmn on existing file",
       "hanzi": "十",
       "pinyin": "shí",
       "checkVersion": 4,
       "sound": true,
       "toneTarget": 2,
-      "toneDetected": 1,
+      "toneDetected": 2,
       "f0": {
-        "s": 2.93,
-        "e": 2.74,
-        "mn": 2.64,
-        "mx": 3.45,
+        "s": 2.66,
+        "e": 4.22,
+        "mn": 2.66,
+        "mx": 4.43,
         "pmn": 0.0,
-        "mean": 3.07,
+        "mean": 3.3,
         "frames": 18
       },
-      "reason": "nada: F0 terdeteksi nada 1, target nada 2"
+      "reason": null,
+      "pitchSource": "audio-cmn",
+      "pitchVersion": 1,
+      "pitchTried": 1
     },
     "ph-nihao": {
+      "pitchSource": null,
       "path": "ph-nihao.mp3",
       "durationSec": 0.84,
       "transcript": "你好。",
@@ -3688,6 +3924,7 @@
       "reason": null
     },
     "ph-ninhao": {
+      "pitchSource": null,
       "path": "ph-ninhao.mp3",
       "durationSec": 0.84,
       "transcript": "您好。",
@@ -3705,6 +3942,7 @@
       "reason": null
     },
     "ph-nimenhao": {
+      "pitchSource": null,
       "path": "ph-nimenhao.mp3",
       "durationSec": 0.96,
       "transcript": "你们好。",
@@ -3722,6 +3960,7 @@
       "reason": null
     },
     "ph-laoshihao": {
+      "pitchSource": null,
       "path": "ph-laoshihao.mp3",
       "durationSec": 1.04,
       "transcript": "老师好。",
@@ -3739,6 +3978,7 @@
       "reason": null
     },
     "ph-zaoshanghao": {
+      "pitchSource": null,
       "path": "ph-zaoshanghao.mp3",
       "durationSec": 1.4,
       "transcript": "早上好。",
@@ -3756,6 +3996,7 @@
       "reason": null
     },
     "ph-xiexie": {
+      "pitchSource": null,
       "path": "ph-xiexie.mp3",
       "durationSec": 0.9,
       "transcript": "谢谢。",
@@ -3773,6 +4014,7 @@
       "reason": null
     },
     "ph-bukeqi": {
+      "pitchSource": null,
       "path": "ph-bukeqi.mp3",
       "durationSec": 0.96,
       "transcript": "不客气。",
@@ -3790,6 +4032,7 @@
       "reason": null
     },
     "ph-duibuqi": {
+      "pitchSource": null,
       "path": "ph-duibuqi.mp3",
       "durationSec": 0.95,
       "transcript": "对不起。",
@@ -3807,6 +4050,7 @@
       "reason": null
     },
     "ph-meiguanxi": {
+      "pitchSource": null,
       "path": "ph-meiguanxi.mp3",
       "durationSec": 1.03,
       "transcript": "没关系。",
@@ -3824,6 +4068,7 @@
       "reason": null
     },
     "ph-zaijian": {
+      "pitchSource": null,
       "path": "ph-zaijian.mp3",
       "durationSec": 0.77,
       "transcript": "再见。",

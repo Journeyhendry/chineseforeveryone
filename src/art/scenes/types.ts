@@ -23,6 +23,7 @@ export const PLAY_PRESETS = [
   'beckon',
   'panels',
   'origin',
+  'clock',
 ] as const
 export type PlayPreset = (typeof PLAY_PRESETS)[number]
 

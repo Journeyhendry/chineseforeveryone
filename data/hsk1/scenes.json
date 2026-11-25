@@ -4265,7 +4265,7 @@
         {
           "characters": [
             {"id":"gege","view":"back","x":180,"y":360,"scale":0.95,"act":"head"},
-            {"id":"friend","view":"back","x":300,"y":360,"scale":0.95}
+            {"id":"friend","view":"side","x":300,"y":360,"scale":0.95,"flip":true}
           ],
           "props": [
             {"id":"cinema-screen","x":240,"y":190},
@@ -4794,7 +4794,7 @@
           "props": [
             {"id":"table","x":362,"y":336,"value":"150","front":true},
             {"id":"bowl","x":362,"y":268,"front":true},
-            {"id":"check","x":420,"y":150,"scale":0.9}
+            {"id":"check","x":446,"y":262,"scale":0.75}
           ],
           "bubbles": [{"from":0,"x":268,"y":24,"w":170,"h":56,"text":"吃完了！","highlight":true}]
         }
@@ -4960,10 +4960,10 @@
           "props": [
             {"id":"sofa","x":240,"y":336,"color":"#7AA6D8"},
             {"id":"heart","x":140,"y":140,"scale":0.9},
-            {"id":"heart","x":320,"y":120,"scale":1.1},
-            {"id":"heart","x":360,"y":190,"scale":0.7}
+            {"id":"heart","x":370,"y":200,"scale":1.1},
+            {"id":"heart","x":330,"y":250,"scale":0.7}
           ],
-          "bubbles": [{"from":1,"x":300,"y":20,"w":170,"h":56,"text":"妈妈，我爱你！","highlight":true}]
+          "bubbles": [{"from":1,"x":262,"y":20,"w":208,"h":60,"text":"妈妈，我爱你！","highlight":true}]
         }
       ],
       "alt": {
@@ -5122,7 +5122,7 @@
             {"id":"box","x":280,"y":128,"scale":1.05},
             {"id":"sweat","x":214,"y":150}
           ],
-          "bubbles": [{"from":0,"x":10,"y":80,"w":176,"h":56,"text":"爸爸，你能吗？","highlight":false},{"from":1,"x":350,"y":170,"w":110,"h":56,"text":"能！","highlight":true}]
+          "bubbles": [{"from":0,"x":8,"y":80,"w":196,"h":58,"text":"爸爸，你能吗？","highlight":false},{"from":1,"x":350,"y":170,"w":110,"h":56,"text":"能！","highlight":true}]
         }
       ],
       "alt": {

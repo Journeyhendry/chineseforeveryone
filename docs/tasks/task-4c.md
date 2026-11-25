@@ -59,3 +59,13 @@ Urutan kerja 4c diubah:
 2. Cari **rujukan lebih banyak khusus suku kata tunggal & pasangan nada**: audio-cmn (penutur lain bila ada, bukan hanya Chen Wang), Lingua Libre (banyak penutur per suku kata), Wiktionary/Commons `zh-<pinyin>.ogg` berlisensi bebas, Tatoeba, Common Voice. Pakai rata-rata banyak penutur (bukan satu penutur) untuk templat kontur & durasi.
 3. Delapan item yang gagal (`audio-issues.json`: 乌 wū, 五 wǔ, 爱 ài, 椅 yǐ, 鸡 jī, 谁 shéi, 妈妈, 不 contoh ph-n5) wajib dibereskan atau diganti huruf contoh yang bunyinya stabil.
 4. Buat `samples-tone.html` memuat Tahap 0 lebih dulu (sebelum vs sesudah) untuk didengar pemilik.
+
+## RONDE 2 — naikkan akurasi pengukur (permintaan pemilik 2026-11-25 23:14 WIB: "adakah metode lain agar capai 90 %?")
+Temuan ronde 1: pengenal nada hanya 85,5 % pada rekaman ORANG ASLI (suku kata tunggal 93–95 %, kata 2+ suku 83,5 %, nada 3 hanya 70,5 %). Artinya batas ada di **cara mengukur**, bukan di jumlah rekaman (data sudah 10.570; menambah rekaman hampir tak menolong). Lakukan berurutan, berhenti begitu pengukur ≥ 90 % pada rekaman asli (lintas penutur):
+1. **Potong suku kata dengan penyelarasan paksa** (forced alignment: wav2vec2-CTC / MFA / stempel waktu Whisper) menggantikan pemotongan "lembah intensitas". Kesalahan potong adalah sumber galat terbesar di kata 2+ suku.
+2. **Fitur konteks:** kirim nada tetangga (kiri/kanan) + posisi dalam kata ke pengenal; atau pakai pelabel urutan (CRF/BiLSTM kecil) atas seluruh kata. Nada 3 sebelum nada 3 → 2 (sandhi), nada ringan, 不/一 dihitung sebagai kelasnya sendiri.
+3. **Mode verifikasi, bukan tebak 4 kelas:** untuk tiap suku kata, skor "apakah kontur ini cocok dengan nada yang DIHARAPKAN dalam konteksnya" (rasio kemungkinan terhadap 3 nada lain). Lebih mudah dan itulah yang sebenarnya kita perlu.
+4. **Nada 3 dipecah:** 3 penuh (turun-naik), setengah-3 (rendah, sering berderit), dan 3-sandhi; tambahkan fitur durasi, intensitas, jitter/derit.
+5. **Pelacak F0 lebih baik** (RMVPE/CREPE atau pyin) dibanding dua lintasan Praat, kurangi lompat oktaf dan derit nada 3.
+6. **Pengenal kedua yang sudah terlatih** (Whisper medium, FunASR/Paraformer) tetap sebagai proksi "murid paham", dihitung terpisah.
+Kriteria baru: (a) suku kata tunggal ≥ 90 % (sudah tercapai pada rujukan asli); (b) kata/kalimat: ≥ 90 % pada rujukan asli jika tercapai; bila tidak tercapai setelah langkah 1–5, target suara kita = ≥ 90 % dari angka rujukan asli untuk tiap kelas (usulan pemilik disetujui oleh Opus pemeriksa), dan catat alasannya di `task-4c-hasil.md`. Setelah pengukur membaik, ulangi pengukuran "sebelum" dan penyetelan.

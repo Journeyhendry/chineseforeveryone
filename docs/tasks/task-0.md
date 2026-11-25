@@ -99,3 +99,10 @@ Yang diminta:
 3. **CREDITS.md**: tambah `hugolpz/audio-cmn` (Chen Wang, CC BY-SA, hanya sebagai contoh nada untuk menyetel nada suara Tahap 0; tidak diputar).
 4. Target: **≥ 90 % dari 162 item lolos**; sisanya di `data/basics/audio-issues.json` dengan alasan; item gagal tidak diputar (cadangan suara perangkat, perilaku yang ada). Total `public/audio/basics/` ≤ 3 MB.
 5. Semua acceptance 1–6 di atas tetap berlaku.
+
+### Hasil ronde 3 (2026-11-25, diperiksa Opus)
+- Audio: **154/162 (95 %) lolos** cek Whisper large-v3 + bunyi + nada F0 (aturan cek tidak dilonggarkan). Metode A dipakai untuk 21 suku kata tunggal (19 kontur audio-cmn, 2 kontur baku). 8 item gagal tercatat di `data/basics/audio-issues.json` (mis. 五 wǔ di bunyi i→w, 夫 fū, 爱 ài, 椅 yǐ, 妈妈, 鸡 jī, 谁 shéi) dan tidak diputar (cadangan suara perangkat).
+- Semua mp3 mono 64 kbps 24 kHz, kenyaringan −16,0…−16,2 LUFS, total 1,4 MB.
+- Playwright (1366/375, terang/gelap): Tahap 0 di atas unit 1, unit 1 terbuka, 6 bagian tanpa error konsol & tanpa scroll samping, axe tanpa pelanggaran, keenam latihan selesai hanya dengan keyboard, tanda selesai 6/6 bertahan setelah reload, ID↔EN berganti.
+- Perbaikan saat pemeriksaan: nama bagian di kartu Tahap 0 di peta terpotong di tengah kata → grid kartu dilebarkan (`map-card.css`).
+- Belum: penghalusan suara (ikut task 4c); Tahap 0 nanti ikut cara animasi baru (IDEAS.md, bukan sekarang).

@@ -19,12 +19,13 @@
   margin: var(--space-4) 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(132px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(11rem, 100%), 1fr));
   gap: var(--space-3);
 }
 
 .basics-chip {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-2);
   height: 100%;
@@ -69,9 +70,19 @@
 }
 
 .basics-chip-text {
-  flex: 1 1 auto;
+  /* Nama boleh turun baris hanya di antara kata, tidak di tengah kata. */
+  flex: 1 1 6rem;
   min-width: 0;
   line-height: 1.2;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+/* Bintang pindah ke bawah nama kalau tempatnya sempit. */
+.basics-chip-stars {
+  flex: none;
+  margin-inline-start: auto;
 }
 
 .basics-chip-stars svg {

@@ -543,6 +543,38 @@ const OUTFITS: Record<string, Outfit> = {
       ].join('')
     },
   },
+
+  // scene-only extras (children in the background, task 6c)
+  boy: {
+    arms: { sleeve: '#5B9BD5', sleeveFrac: 0.4 },
+    legs: trousers('#5E9E6E', '#FFFFFF', 'sneaker', '#4E6FA8'),
+    torso(view, b) {
+      const y = b.shoulderY
+      const c = '#5B9BD5'
+      const stripes = [band(view, b, y + 26, y + 33, '#FFFFFF'), band(view, b, y + 46, y + 53, '#FFFFFF')].join('')
+      if (view === 'side') return [torso(view, b, c), stripes, neck(view, b, b.skinShade)].join('')
+      if (view === 'back') return [torso(view, b, c), stripes, neck(view, b, b.skinShade)].join('')
+      return [torso(view, b, c), stripes, neck(view, b, b.skinShade), shape(d('M', CX - 12, y - 3, 'Q', CX, y + 10, CX + 12, y - 3), 'none', { sw: 3.5 })].join('')
+    },
+  },
+
+  girl: {
+    arms: { sleeve: '#8FD3B6', sleeveFrac: 0.34, spread: 8 },
+    legs: skirtLegs({ knee: 0, legs: 'skin', sock: '#FFFFFF', shoe: '#7C5CDB', style: 'kid' }),
+    torso(view, b) {
+      const y = b.shoulderY
+      const c = '#8FD3B6'
+      const o: TorsoOpts = { extend: 26, bottomHalf: b.p.hemHalf + 16 }
+      if (view !== 'front') return [torso(view, b, c, o), neck(view, b, b.skinShade)].join('')
+      return [
+        torso(view, b, c, o),
+        neck(view, b, b.skinShade),
+        shape(d('M', CX - 14, y - 3, 'Q', CX, y + 14, CX + 14, y - 3), '#FFFFFF', { sw: 3 }),
+        circle(CX, y + 26, 4, '#FFFFFF', { sw: 2.5 }), circle(CX, y + 42, 4, '#FFFFFF', { sw: 2.5 }),
+        line(d('M', CX - halfAt(b, b.hemY + 14, o) + 2, b.hemY + 14, 'L', CX + halfAt(b, b.hemY + 14, o) - 2, b.hemY + 14), 3, 0.5),
+      ].join('')
+    },
+  },
 }
 
 export function outfitFor(spec: CharacterSpec): Outfit {

@@ -5,7 +5,7 @@ import unitsData from '../../data/hsk1/units.json'
 import wordsData from '../../data/hsk1/words.json'
 import wordSentencesData from '../../data/hsk1/word-sentences.json'
 import { checkAllSceneLines, LINE_FITS, type SceneLinesEntry } from '../lib/scene-lines.ts'
-import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
+import { CHARACTERS, EXPRESSIONS, SCENE_EXTRAS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
 import {
   ACT_TARGETS,
   BACKGROUND_IDS,
@@ -39,6 +39,9 @@ const KB = 1024
 
 /** Number shown by counting words (零 = nothing to count). */
 const NUMBERS: Record<string, number> = { 零: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 }
+// task 6c: in these sentences the number is a floor (二楼), an age (八十岁) or a clock time (九点, 十点零五分),
+// so nothing is counted; a digit badge, the cake candle or the clock shows the number instead
+const NOT_COUNTED = new Set(['二', '八', '九', '零'])
 
 describe('scenes.json', () => {
   it('has at most one scene per HSK 1 word, listed in unit order with the unit the word is in now', () => {
@@ -66,7 +69,7 @@ describe('scenes.json', () => {
   })
 
   it('only uses known characters, poses, props, backgrounds and presets', () => {
-    const charIds = CHARACTERS.map((c) => c.id)
+    const charIds = [...CHARACTERS, ...SCENE_EXTRAS].map((c) => c.id)
     for (const s of data.scenes) {
       const where = `${s.wordId} ${s.hanzi}`
       expect(BACKGROUND_IDS, where).toContain(s.background)
@@ -117,6 +120,11 @@ describe('scenes.json', () => {
   it('shows exactly the right number of things for number words', () => {
     for (const s of data.scenes) {
       if (!(s.hanzi in NUMBERS)) continue
+      if (NOT_COUNTED.has(s.hanzi)) {
+        const shown = s.panels.flatMap((p) => p.props).some((p) => (p.value ?? '').includes(String(NUMBERS[s.hanzi])))
+        expect(shown, `${s.hanzi} shows its number`).toBe(true)
+        continue
+      }
       const counted = s.panels.flatMap((p) => p.props).reduce((n, p) => n + (p.count ?? 0), 0)
       expect(counted, `${s.hanzi}`).toBe(NUMBERS[s.hanzi])
       const digit = s.panels.flatMap((p) => p.props).find((p) => p.id === 'digit')

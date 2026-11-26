@@ -19,7 +19,6 @@ import {
   type SceneIndex,
   type ScenesFile,
 } from './scenes/index.ts'
-import { GLYPH_STROKES } from './scenes/glyphs.ts'
 import { checkXml } from './xml-check.ts'
 
 const data = scenesData as ScenesFile
@@ -302,39 +301,34 @@ describe('tahap 3: units u09–u12', () => {
     expect(data.scenes.filter((s) => UNITS.includes(s.unitId) || s.hanzi === '一下')).toHaveLength(177)
   })
 
-  it('plays the origin animation for 日 and 月: the picture next to the character drawn stroke by stroke', () => {
-    for (const h of ['日', '月']) {
-      const s = byHanzi(h)
-      expect(s.play, h).toBe('origin')
-      expect(props(h).some((p) => p.roles?.includes('morph-from')), h).toBe(true)
-      const glyph = prop(h, 'glyph')[0]
-      expect(glyph?.value, h).toBe(h)
-      expect(glyph?.roles, h).toContain('morph-to')
-      const svg = built.get(`${s.wordId}.svg`) as string
-      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
-      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
-      expect(svg, h).not.toContain('<text')
-    }
-    expect(prop('日', 'sun-dot')).toHaveLength(1)
-    expect(prop('月', 'moon-old')).toHaveLength(1)
+  // task 6c: 日 and 月 show their sentences (今天是十月一日。 on the blackboard, 今天是五月一号。 on a May
+  // calendar) instead of the picture-to-character origin animation
+  it('writes the date of 日 on the blackboard and the month of 月 on the calendar', () => {
+    expect(prop('日', 'blackboard')[0]?.value).toBe('10月1日')
+    expect(byHanzi('日').background).toBe('classroom')
+    expect(prop('月', 'calendar')[0]).toMatchObject({ variant: '5', value: '1' })
+    // the picture characters are drawn as filled outlines, never as SVG text
+    for (const h of ['日', '月']) expect(built.get(`${byHanzi(h).wordId}.svg`), h).toMatch(/<g transform="matrix\(0\.0\d+ 0 0 -0\.0\d+/)
   })
 
   it('shows the right time on the clocks of the time words', () => {
     const TIMES: Record<string, string> = {
-      现在: '0800', 点: '0700', 分: '0305', 分钟: '0310', 小时: '0400', 时间: '0755', 时候: '0600',
+      现在: '0800', 分: '0305', 分钟: '0405', 小时: '0400', 时间: '0755', 时候: '0300',
       早上: '0600', 上午: '1000', 中午: '1200', 下午: '0300', 晚上: '0800', 早: '0700', 晚: '0820',
     }
     for (const [h, t] of Object.entries(TIMES)) {
       const clocks = prop(h, 'clock')
       expect(clocks.map((c) => c.value), h).toEqual([t])
     }
+    // 点 (task 6c): the question at five, the answer 六点 at six
+    expect(prop('点', 'clock').map((c) => c.value)).toEqual(['0500', '0600'])
     // the sun / moon dial puts the parts of the day in order
     const hours = ['早上', '上午', '中午', '下午', '晚上'].map((h) => Number(prop(h, 'day-dial')[0]?.value))
     expect(hours).toEqual([...hours].sort((a, b) => a - b))
     expect(prop('分', 'clock')[0].variant).toBe('m5')
     expect(prop('分', 'digit')[0].value).toBe('5')
-    expect(prop('分钟', 'clock')[0].variant).toBe('m10')
-    expect(prop('分钟', 'digit')[0].value).toBe('10')
+    expect(prop('分钟', 'clock')[0].variant).toBe('m5')
+    expect(prop('分钟', 'digit')[0].value).toBe('5')
     expect(prop('小时', 'clock')[0].variant).toBe('hour')
     for (const h of ['分', '分钟', '小时']) expect(byHanzi(h).play, h).toBe('clock')
   })
@@ -360,7 +354,9 @@ describe('tahap 3: units u09–u12', () => {
   })
 
   it('draws the position pairs with the same things in different places', () => {
-    for (const [a, b] of [['上', '下'], ['前', '后'], ['里', '外']]) {
+    // 里 / 外 (task 6c) show their own sentences (water in the cup, someone outside the door); each still has one arrow
+    for (const h of ['里', '外']) expect(prop(h, 'marker'), h).toHaveLength(1)
+    for (const [a, b] of [['上', '下'], ['前', '后']]) {
       const ids = (h: string) => [...new Set(props(h).map((p) => p.id))].sort()
       expect(ids(a), `${a}/${b}`).toEqual(ids(b))
       expect(byHanzi(a).background, `${a}/${b}`).toBe(byHanzi(b).background)

@@ -3110,26 +3110,24 @@
       "hanzi": "天",
       "unitId": "u10",
       "type": "count",
-      "background": "sky",
+      "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"armsOpen","expression":"happy","x":240,"scale":0.9,"act":"head"}
-          ],
+          "characters": [{"id":"baba","pose":"carry","expression":"happy","x":110,"act":"head"},{"id":"mama","expression":"happy","x":200,"scale":0.95},{"id":"meimei","pose":"wave","expression":"happy","x":275,"scale":1.05}],
           "props": [
-            {"id":"sky-arc","x":240,"y":250},
-            {"id":"sun","x":70,"y":262,"count":1,"scale":0.9,"color":"#FFA94D"},
-            {"id":"sun","x":240,"y":132,"count":1,"scale":1.1},
-            {"id":"sun","x":410,"y":262,"count":1,"scale":0.9}
+            {"id":"suitcase","x":12,"y":46,"hold":[0,"left"],"scale":0.9},
+            {"id":"days3","value":"12","x":380,"y":160,"scale":0.6},
+            {"id":"counter","x":400,"y":336,"scale":0.7},
+            {"id":"bell","x":400,"y":252,"scale":0.8}
           ],
-          "bubbles": [{"x":300,"y":270,"w":100,"h":52,"text":"一天","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":22,"w":304,"h":53,"text":"我们在这儿住三天。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Matahari terbit, tinggi di siang hari, lalu terbenam: satu hari (\"一天\"). Adik berdiri di bawahnya.",
-        "en": "The sun rises, stands high at noon, then sets: one day (\"一天\"). Little Sister stands below."
+        "id": "Keluarga tiba di penginapan membawa koper; di dinding ada kalender tiga hari: \"我们在这儿住三天。\"",
+        "en": "The family arrives at a guesthouse with a suitcase; a three-day calendar hangs on the wall: \"我们在这儿住三天。\""
       },
-      "play": "count-up"
+      "play": "nod"
     },
     {
       "wordId": "L1-0181",
@@ -3269,44 +3267,42 @@
       "hanzi": "日",
       "unitId": "u10",
       "type": "object",
-      "background": "sky",
+      "background": "classroom",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"teacher","pose":"point","expression":"happy","x":100,"act":"arm-left"},{"id":"boy","view":"back","x":260,"y":356,"scale":1},{"id":"meimei","view":"back","x":420,"y":356,"scale":1}],
           "props": [
-            {"id":"sun-dot","x":110,"y":300,"scale":1.25,"roles":["morph-from"]},
-            {"id":"arrow","x":238,"y":214,"scale":0.8,"roles":["target"]},
-            {"id":"glyph","x":370,"y":300,"scale":1.25,"value":"日","roles":["morph-to"]}
-          ]
+            {"id":"blackboard","value":"10月1日","x":300,"y":236,"scale":1.25,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":10,"w":117,"h":77,"text":"今天是十月一日。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Matahari bulat dengan titik di tengah, seperti gambar kuno, lalu menjadi aksara 日.",
-        "en": "A round sun with a dot in the middle, as the old picture drew it, which became the character 日."
+        "id": "Di kelas, Bu Guru menunjuk tulisan \"10月1日\" di papan tulis sambil membacakan tanggal; murid-murid memperhatikan: \"今天是十月一日。\"",
+        "en": "In class, the teacher points at \"10月1日\" on the blackboard and reads the date aloud while the pupils watch: \"今天是十月一日。\""
       },
-      "play": "origin"
+      "play": "point"
     },
     {
       "wordId": "L1-0452",
       "hanzi": "月",
       "unitId": "u10",
       "type": "object",
-      "background": "night",
+      "background": "home",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":140,"scale":1.2,"act":"arm-left"}],
           "props": [
-            {"id":"moon-old","x":110,"y":300,"scale":1.25,"roles":["morph-from"]},
-            {"id":"arrow","x":238,"y":214,"scale":0.8,"roles":["target"]},
-            {"id":"glyph","x":370,"y":300,"scale":1.25,"value":"月","roles":["morph-to"]}
-          ]
+            {"id":"calendar","variant":"5","value":"1","x":330,"y":280,"scale":1.7,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":10,"w":147,"h":97,"text":"今天是五月一号。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Bulan sabit dengan satu garis di dalamnya, seperti gambar kuno, lalu menjadi aksara 月.",
-        "en": "A crescent moon with a stroke inside, as the old picture drew it, which became the character 月."
+        "id": "Adik menunjuk kalender besar bulan Mei yang tanggal 1-nya dilingkari: \"今天是五月一号。\"",
+        "en": "Little Sister points at a big May calendar with the 1st circled: \"今天是五月一号。\""
       },
-      "play": "origin"
+      "play": "point"
     },
     {
       "wordId": "L1-0273",
@@ -3340,70 +3336,69 @@
       "hanzi": "今年",
       "unitId": "u10",
       "type": "object",
-      "background": "plain",
+      "background": "home",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"meimei","pose":"countBoth","fingers":6,"expression":"happy","x":150,"scale":1.25,"act":"head"}],
           "props": [
-            {"id":"year-cal","x":96,"y":300,"value":"2025","scale":0.85},
-            {"id":"year-cal","x":240,"y":300,"value":"2026","scale":0.85,"variant":"hl","roles":["target"]},
-            {"id":"year-cal","x":384,"y":300,"value":"2027","scale":0.85},
-            {"id":"marker","x":240,"y":118,"scale":0.9,"roles":["bob"]}
+            {"id":"year-cal","value":"2026","variant":"hl","x":350,"y":300,"scale":1.1,"roles":["target"]},
+            {"id":"digit","value":"6","x":250,"y":140,"scale":0.8}
           ],
-          "bubbles": [{"x":30,"y":20,"w":128,"h":52,"text":"今年","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":46,"w":210,"h":53,"text":"我今年六岁。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Tiga kalender tahunan 2025, 2026, 2027; kalender 2026 menyala dan ditandai panah: tahun ini (\"今年\").",
-        "en": "Three year calendars 2025, 2026 and 2027; 2026 glows and is marked by an arrow: this year (\"今年\")."
+        "id": "Adik mengangkat enam jari di samping kalender 2026 yang menyala: \"我今年六岁。\"",
+        "en": "Little Sister holds up six fingers next to the glowing 2026 calendar: \"我今年六岁。\""
       },
-      "play": "point"
+      "play": "nod"
     },
     {
       "wordId": "L1-0247",
       "hanzi": "明年",
       "unitId": "u10",
       "type": "object",
-      "background": "plain",
+      "background": "home",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"meimei","pose":"countBoth","fingers":7,"expression":"happy","x":395,"scale":1.15,"act":"char"}],
           "props": [
-            {"id":"year-cal","x":96,"y":300,"value":"2025","scale":0.85},
-            {"id":"year-cal","x":240,"y":300,"value":"2026","scale":0.85,"variant":"hl"},
-            {"id":"year-cal","x":384,"y":300,"value":"2027","scale":0.85,"color":"#2F9E44"},
-            {"id":"arc-arrow","x":312,"y":132,"color":"#4C9BE8","scale":0.9,"roles":["target"]}
+            {"id":"year-cal","value":"2026","variant":"hl","x":85,"y":320,"scale":0.75},
+            {"id":"arc-arrow","x":165,"y":170,"color":"#4C9BE8","scale":0.7,"roles":["target"]},
+            {"id":"year-cal","value":"2027","color":"#2F9E44","x":250,"y":320,"scale":0.75},
+            {"id":"digit","value":"7","x":168,"y":300,"scale":0.7}
           ],
-          "bubbles": [{"x":30,"y":20,"w":128,"h":52,"text":"明年","highlight":true}]
+          "bubbles": [{"from":0,"x":162,"y":62,"w":210,"h":53,"text":"明年我七岁！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender 2026 (tahun ini, menyala); panah biru maju ke kalender 2027: tahun depan (\"明年\").",
-        "en": "The 2026 calendar (this year) glows; a blue arrow goes forward to the 2027 calendar: next year (\"明年\")."
+        "id": "Panah maju dari kalender 2026 ke 2027; Adik mengangkat tujuh jari dengan gembira: \"明年我七岁！\"",
+        "en": "An arrow goes forward from the 2026 calendar to 2027; Little Sister happily holds up seven fingers: \"明年我七岁！\""
       },
-      "play": "point"
+      "play": "jump"
     },
     {
       "wordId": "L1-0303",
       "hanzi": "去年",
       "unitId": "u10",
       "type": "object",
-      "background": "plain",
+      "background": "home",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"meimei","pose":"count","fingers":5,"expression":"happy","x":400,"scale":1.15,"flip":true,"act":"head"}],
           "props": [
-            {"id":"year-cal","x":96,"y":300,"value":"2025","scale":0.85,"color":"#2F9E44"},
-            {"id":"year-cal","x":240,"y":300,"value":"2026","scale":0.85,"variant":"hl"},
-            {"id":"year-cal","x":384,"y":300,"value":"2027","scale":0.85},
-            {"id":"arc-arrow","x":168,"y":132,"color":"#4C9BE8","scale":0.9,"flip":true,"roles":["target"]}
+            {"id":"year-cal","value":"2025","color":"#2F9E44","x":85,"y":320,"scale":0.75},
+            {"id":"arc-arrow","x":165,"y":170,"color":"#4C9BE8","scale":0.7,"flip":true,"roles":["target"]},
+            {"id":"year-cal","value":"2026","variant":"hl","x":250,"y":320,"scale":0.75},
+            {"id":"photo","x":85,"y":150,"scale":0.8},
+            {"id":"digit","value":"5","x":168,"y":300,"scale":0.7}
           ],
-          "bubbles": [{"x":322,"y":20,"w":128,"h":52,"text":"去年","highlight":true}]
+          "bubbles": [{"from":0,"x":162,"y":62,"w":210,"h":53,"text":"去年我五岁。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender 2026 (tahun ini, menyala); panah biru mundur ke kalender 2025: tahun lalu (\"去年\").",
-        "en": "The 2026 calendar (this year) glows; a blue arrow goes back to the 2025 calendar: last year (\"去年\")."
+        "id": "Panah mundur dari kalender 2026 ke 2025, ada foto Adik waktu kecil; Adik mengangkat lima jari: \"去年我五岁。\"",
+        "en": "An arrow goes back from the 2026 calendar to 2025, with a photo of Little Sister when she was smaller; she holds up five fingers: \"去年我五岁。\""
       },
       "play": "point"
     },
@@ -3412,24 +3407,23 @@
       "hanzi": "白天",
       "unitId": "u10",
       "type": "comic",
-      "background": "park",
+      "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"raiseHand","expression":"happy","x":170,"scale":1.15,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":110,"scale":1.15,"act":"arm-left"}],
           "props": [
-            {"id":"sun","x":400,"y":90,"scale":1.3,"roles":["spin"]},
-            {"id":"kite","x":0,"y":0,"hold":[0,"left"],"scale":1.0,"roles":["sway"]}
+            {"id":"sun","x":330,"y":110,"scale":0.9},
+            {"id":"sofa","x":330,"y":336,"scale":1.1},
+            {"id":"cat","variant":"sleep","x":330,"y":300,"scale":1,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":20,"y":24,"w":120,"h":54,"text":"白天","highlight":true}]
+          "bubbles": [{"from":0,"x":98,"y":30,"w":100,"h":84,"text":"猫白天睡觉。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Siang hari: langit biru, matahari bersinar; Adik bermain layang-layang di taman kompleks.",
-        "en": "Daytime: blue sky, the sun shining; Little Sister flies a kite in the estate park."
+        "id": "Siang hari, matahari bersinar terang; kucing tidur melingkar di sofa dan Adik menunjuknya: \"猫白天睡觉。\"",
+        "en": "In the daytime the sun shines bright; a cat sleeps curled up on the sofa and Little Sister points at it: \"猫白天睡觉。\""
       },
-      "play": "nod"
+      "play": "point"
     },
     {
       "wordId": "L1-0399",
@@ -3457,27 +3451,31 @@
       "hanzi": "点",
       "unitId": "u11",
       "type": "count",
-      "background": "room",
+      "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"armsUp","expression":"surprised","x":160,"scale":1.1,"act":"char"}
-          ],
+          "characters": [{"id":"meimei","expression":"happy","x":60,"scale":0.95},{"id":"mama","pose":"holdBoth","expression":"happy","x":160,"scale":0.9,"flip":true}],
           "props": [
-            {"id":"bed","x":150,"y":336,"scale":1.0},
-            {"id":"desk","x":360,"y":336,"value":"120","scale":0.8},
-            {"id":"clock","x":360,"y":280,"value":"0700","variant":"alarm","scale":1.2,"roles":["target"]},
-            {"id":"sound-lines","x":420,"y":210,"roles":["bob"]},
-            {"id":"sound-lines","x":300,"y":210,"flip":true,"roles":["bob"]}
+            {"id":"clock","value":"0500","x":210,"y":236,"scale":0.42},
+            {"id":"wok","x":0,"y":0,"hold":[1,"left"],"scale":0.8}
           ],
-          "bubbles": [{"x":300,"y":30,"w":130,"h":56,"text":"七点！","highlight":true}]
+          "bubbles": [{"from":0,"x":14,"y":26,"w":207,"h":84,"text":"妈妈，我们几点吃饭？","highlight":true,"line":0}]
+        },
+        {
+          "characters": [{"id":"mama","pose":"pointUp","expression":"happy","x":310,"scale":0.9,"act":"arm-left"}],
+          "props": [
+            {"id":"clock","value":"0600","x":410,"y":150,"scale":0.75,"roles":["target"]},
+            {"id":"table","value":"140","x":410,"y":336},
+            {"id":"fish-plate","x":410,"y":268,"scale":0.8}
+          ],
+          "bubbles": [{"from":0,"x":250,"y":58,"w":116,"h":53,"text":"六点。","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Jam weker berbunyi tepat pukul 7:00; Adik bangun di samping tempat tidur: \"七点！\"",
-        "en": "The alarm clock rings at exactly 7:00; Little Sister gets up by her bed: \"七点！\""
+        "id": "Panel 1 (jam 5): Adik bertanya kepada Ibu yang memasak: \"妈妈，我们几点吃饭？\" Panel 2 (jam 6): Ibu menunjuk jam: \"六点。\"",
+        "en": "Panel 1 (five o’clock): Little Sister asks Mom, who is cooking: \"妈妈，我们几点吃饭？\" Panel 2 (six o’clock): Mom points at the clock: \"六点。\""
       },
-      "play": "jump"
+      "play": "panels"
     },
     {
       "wordId": "L1-0109",
@@ -3509,25 +3507,21 @@
       "hanzi": "分钟",
       "unitId": "u11",
       "type": "count",
-      "background": "kitchen",
+      "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"pointUp","expression":"happy","x":100,"act":"head"}
-          ],
+          "characters": [{"id":"gege","pose":"count","fingers":5,"expression":"happy","x":120,"act":"head"},{"id":"classmate","expression":"neutral","x":400,"flip":true}],
           "props": [
-            {"id":"stove","x":340,"y":336,"scale":0.9},
-            {"id":"pot","x":340,"y":296,"scale":0.6},
-            {"id":"steam","x":340,"y":256,"roles":["sway"],"scale":0.7},
-            {"id":"clock","x":270,"y":196,"value":"0310","variant":"m10","scale":1.35,"roles":["target"]},
-            {"id":"digit","x":404,"y":130,"value":"10","scale":0.9}
+            {"id":"door","variant":"open","x":60,"y":336},
+            {"id":"clock","value":"0405","variant":"m5","x":260,"y":150,"scale":1,"roles":["target"]},
+            {"id":"digit","value":"5","x":260,"y":300,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":150,"h":56,"text":"十分钟","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":42,"w":195,"h":49,"text":"等我五分钟！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Jarum menit berputar sepuluh menit (bagian kuning, angka 10); Kakak menunggu telur rebusnya matang: \"十分钟\".",
-        "en": "The minute hand turns through ten minutes (the yellow part, the number 10); Big Brother waits for his eggs to boil: \"十分钟\"."
+        "id": "Kakak di pintu kamar mengangkat lima jari kepada temannya yang menunggu; jam dengan bagian 5 menit berwarna kuning: \"等我五分钟！\"",
+        "en": "At his bedroom door, Big Brother holds up five fingers to his waiting friend; the clock shows five minutes in yellow: \"等我五分钟！\""
       },
       "play": "clock"
     },
@@ -3536,21 +3530,20 @@
       "hanzi": "小时",
       "unitId": "u11",
       "type": "count",
-      "background": "room",
+      "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"pointUp","expression":"happy","x":90,"act":"head"}
-          ],
+          "characters": [{"id":"teacher","pose":"holdUp","expression":"happy","x":150,"act":"head"},{"id":"boy","view":"back","x":330,"y":356,"scale":1},{"id":"girl","view":"back","x":440,"y":356,"scale":1}],
           "props": [
-            {"id":"clock","x":300,"y":290,"value":"0400","variant":"hour","scale":1.9,"roles":["target"]}
+            {"id":"clock","value":"0400","variant":"hour","x":40,"y":80,"hold":[0,"left"],"scale":1.2,"roles":["target"]},
+            {"id":"digit","value":"60","x":400,"y":120,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":16,"y":20,"w":160,"h":56,"text":"一个小时","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":335,"h":53,"text":"一个小时有六十分钟。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Jarum panjang berputar satu kali penuh (panah melingkar) sementara jarum pendek maju dari 3 ke 4: \"一个小时\".",
-        "en": "The long hand goes all the way round once (circular arrow) while the short hand moves from 3 to 4: \"一个小时\"."
+        "id": "Di kelas, Bu Guru memegang jam peraga besar; jarum panjang berputar satu putaran penuh (60 menit): \"一个小时有六十分钟。\"",
+        "en": "In class, the teacher holds up a big teaching clock; the long hand goes once all the way round (60 minutes): \"一个小时有六十分钟。\""
       },
       "play": "clock"
     },
@@ -3559,24 +3552,21 @@
       "hanzi": "时间",
       "unitId": "u11",
       "type": "comic",
-      "background": "room",
+      "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"pointUp","expression":"surprised","x":150,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"reach","expression":"sad","x":330,"scale":1.1,"flip":true},{"id":"baba","pose":"pointUp","expression":"sad","x":170,"act":"arm-left"}],
           "props": [
-            {"id":"clock","x":320,"y":200,"value":"0755","scale":1.3,"roles":["target"]},
-            {"id":"table","x":400,"y":336,"value":"120"},
-            {"id":"hourglass","x":400,"y":266,"scale":1.0},
-            {"id":"sweat","x":196,"y":108,"roles":["bob"]}
+            {"id":"clock","value":"0755","x":280,"y":110,"scale":0.75,"roles":["target"]},
+            {"id":"briefcase","x":100,"y":336,"scale":1.2},
+            {"id":"ball","x":410,"y":336,"scale":1.2}
           ],
-          "bubbles": [{"from":0,"x":16,"y":16,"w":230,"h":56,"text":"没有时间了！","highlight":true}]
+          "bubbles": [{"from":1,"x":6,"y":6,"w":200,"h":72,"text":"对不起，我今天没有时间。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ayah terburu-buru melihat jam dinding (7:55), ada jam pasir di sampingnya: \"没有时间了！\"",
-        "en": "Dad looks at the wall clock (7:55) in a hurry, an hourglass beside him: \"没有时间了！\""
+        "id": "Adik menarik tangan Ayah untuk bermain bola; Ayah, dengan tas kerja, menunjuk jam (7.55) sambil minta maaf: \"对不起，我今天没有时间。\"",
+        "en": "Little Sister tugs at Dad’s hand to play ball; Dad, with his work bag, points at the clock (7:55) and apologises: \"对不起，我今天没有时间。\""
       },
       "play": "point"
     },
@@ -3585,25 +3575,31 @@
       "hanzi": "时候",
       "unitId": "u11",
       "type": "comic",
-      "background": "room",
+      "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","expression":"happy","x":110},
-            {"id":"gege","pose":"pointUp","expression":"happy","x":370,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"classmate","pose":"holdEar","expression":"happy","x":120,"scale":0.95,"act":"head"}],
           "props": [
-            {"id":"door","x":440,"y":336,"variant":"open"},
-            {"id":"clock","x":240,"y":290,"value":"0600","scale":1.0,"roles":["target"]}
+            {"id":"phone","x":0,"y":4,"hold":[0,"left"]}
           ],
-          "bubbles": [{"from":0,"x":12,"y":16,"w":214,"h":56,"text":"你什么时候回来？","highlight":true},{"from":1,"x":320,"y":40,"w":110,"h":54,"text":"六点。","highlight":false}]
+          "bubbles": [{"from":0,"x":14,"y":14,"w":153,"h":84,"text":"你什么时候有时间？","highlight":true,"line":0}]
+        },
+        {
+          "background": "room",
+          "characters": [{"id":"gege","pose":"holdEar","expression":"happy","x":300,"scale":0.95}],
+          "props": [
+            {"id":"phone","x":0,"y":4,"hold":[0,"left"]},
+            {"id":"days3","value":"12","variant":"tomorrow","x":410,"y":200,"scale":0.42,"roles":["target"]},
+            {"id":"clock","value":"0300","x":410,"y":320,"scale":0.6}
+          ],
+          "bubbles": [{"from":0,"x":250,"y":50,"w":168,"h":53,"text":"明天下午。","line":1}]
         }
       ],
       "alt": {
-        "id": "Ibu bertanya \"你什么时候回来？\"; Kakak di pintu menunjuk jam yang menunjukkan pukul 6: \"六点。\"",
-        "en": "Mom asks \"你什么时候回来？\"; Big Brother at the door points at the clock showing 6: \"六点。\""
+        "id": "Panel 1: Teman kuliah menelepon Kakak: \"你什么时候有时间？\" Panel 2: Kakak menjawab; di dinding kalender hari besok dan jam pukul 3: \"明天下午。\"",
+        "en": "Panel 1: A classmate phones Big Brother: \"你什么时候有时间？\" Panel 2: he answers, next to tomorrow on the calendar and a clock at three: \"明天下午。\""
       },
-      "play": "pop-bubble"
+      "play": "panels"
     },
     {
       "wordId": "L1-0459",
@@ -3678,25 +3674,26 @@
       "hanzi": "下午",
       "unitId": "u11",
       "type": "comic",
-      "background": "park",
+      "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"armsOpen","expression":"happy","x":230,"act":"char"}
-          ],
+          "characters": [{"id":"nainai","pose":"holdObject","expression":"happy","x":170,"act":"head"},{"id":"yeye","pose":"sit","expression":"happy","x":370,"flip":true}],
           "props": [
-            {"id":"day-dial","x":84,"y":112,"value":"15","scale":0.95},
-            {"id":"clock","x":396,"y":126,"value":"0300","scale":0.95,"roles":["target"]},
-            {"id":"ball","x":310,"y":336,"scale":1.2,"roles":["bob"]}
+            {"id":"day-dial","value":"15","x":70,"y":120,"scale":0.75},
+            {"id":"clock","value":"0300","x":290,"y":110,"scale":0.6},
+            {"id":"armchair","x":380,"y":336},
+            {"id":"clay-teapot","x":20,"y":6,"hold":[0,"left"],"scale":1},
+            {"id":"table","value":"100","x":270,"y":336,"front":true},
+            {"id":"tea-cup","count":2,"x":270,"y":268,"dx":30,"front":true}
           ],
-          "bubbles": [{"from":0,"x":160,"y":24,"w":150,"h":52,"text":"下午三点","highlight":true}]
+          "bubbles": [{"from":0,"x":214,"y":114,"w":109,"h":72,"text":"下午我们喝茶吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pukul 3 sore, matahari sudah condong ke barat; Kakak bermain bola: \"下午三点\".",
-        "en": "At 3 in the afternoon the sun has dipped to the west; Big Brother plays football: \"下午三点\"."
+        "id": "Pukul 3 sore, matahari condong ke barat; Nenek menyiapkan teko teh untuk Kakek: \"下午我们喝茶吧！\"",
+        "en": "Three in the afternoon, the sun low in the west; Grandma brings a teapot for Grandpa: \"下午我们喝茶吧！\""
       },
-      "play": "jump"
+      "play": "nod"
     },
     {
       "wordId": "L1-0374",
@@ -3728,22 +3725,21 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":220,"scale":1.15,"act":"char"}
-          ],
+          "characters": [{"id":"teacher","pose":"wave","expression":"happy","x":330,"flip":true,"act":"arm-left"},{"id":"meimei","pose":"wave","expression":"happy","x":140,"scale":1.15}],
           "props": [
-            {"id":"school","x":370,"y":336,"scale":0.85},
-            {"id":"clock","x":370,"y":200,"value":"0700","scale":0.9,"roles":["target"]},
-            {"id":"sun","x":60,"y":120,"scale":0.8}
+            {"id":"school-small","x":260,"y":270,"scale":0.6},
+            {"id":"clock","value":"0700","x":430,"y":150,"scale":0.6},
+            {"id":"sun","x":50,"y":130,"scale":0.6},
+            {"id":"schoolbag","x":-6,"y":6,"hold":[1,"right"]}
           ],
-          "bubbles": [{"from":0,"x":110,"y":20,"w":130,"h":54,"text":"我早！","highlight":true}]
+          "bubbles": [{"from":0,"x":118,"y":34,"w":210,"h":53,"text":"你今天很早！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pukul 7, matahari baru terbit; Adik tiba paling awal di gerbang sekolah yang masih sepi: \"我早！\"",
-        "en": "At 7 o'clock, the sun just up, Little Sister is the first to arrive at the still-empty school: \"我早！\""
+        "id": "Pukul 7 di gerbang sekolah yang masih sepi; Bu Guru tersenyum menyambut Adik yang datang paling awal: \"你今天很早！\"",
+        "en": "Seven o’clock at the still-empty school gate; the teacher smiles at Little Sister, the first to arrive: \"你今天很早！\""
       },
-      "play": "jump"
+      "play": "wave"
     },
     {
       "wordId": "L1-0372",
@@ -3864,21 +3860,20 @@
       "hanzi": "里",
       "unitId": "u12",
       "type": "position",
-      "background": "home",
+      "background": "kitchen",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"mama","pose":"offer","expression":"happy","x":150,"act":"arm-left"},{"id":"meimei","expression":"happy","x":360,"scale":1.1,"flip":true}],
           "props": [
-            {"id":"box","x":240,"y":330,"variant":"back","scale":1.4},
-            {"id":"cat","x":240,"y":250,"scale":1.3,"roles":["target"]},
-            {"id":"box","x":240,"y":330,"variant":"front","scale":1.4},
-            {"id":"marker","x":240,"y":90,"roles":["bob"]}
-          ]
+            {"id":"glass","x":6,"y":2,"hold":[0,"left"],"scale":1.3,"color":"#8FD3F4"},
+            {"id":"marker","x":232,"y":160,"scale":0.6,"roles":["bob"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":210,"h":53,"text":"杯子里有水。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Seekor kucing duduk di dalam kardus, hanya kepalanya yang menyembul; panah menunjuk ke dalam kardus.",
-        "en": "A cat sits inside a cardboard box with only its head poking out; the arrow points into the box."
+        "id": "Ibu menyodorkan gelas bening berisi air; panah menunjuk ke dalam gelas: \"杯子里有水。\"",
+        "en": "Mom holds out a clear glass of water; an arrow points into the glass: \"杯子里有水。\""
       },
       "play": "point"
     },
@@ -3890,20 +3885,20 @@
       "background": "home",
       "panels": [
         {
-          "characters": [],
+          "characters": [{"id":"mama","pose":"holdEar","expression":"surprised","x":140,"act":"head"}],
           "props": [
-            {"id":"box","x":200,"y":330,"variant":"back","scale":1.4},
-            {"id":"box","x":200,"y":330,"variant":"front","scale":1.4},
-            {"id":"cat","x":380,"y":330,"scale":1.3,"roles":["target"]},
-            {"id":"marker","x":380,"y":180,"roles":["bob"]}
-          ]
+            {"id":"door-shadow","x":340,"y":336,"roles":["target"]},
+            {"id":"sound-lines","x":280,"y":200,"flip":true,"roles":["bob"]},
+            {"id":"marker","x":440,"y":230,"rotate":-90,"scale":0.7,"roles":["bob"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":178,"h":53,"text":"门外有人。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kardus kosong; seekor kucing duduk di luarnya, tepat di samping kardus. Panah menunjuk kucing itu.",
-        "en": "An empty cardboard box; a cat sits outside it, right next to it. The arrow points at the cat."
+        "id": "Bayangan orang terlihat di luar pintu; Ibu di dalam mendengar ketukan, panah menunjuk ke luar: \"门外有人。\"",
+        "en": "A person’s shadow shows outside the door; Mom, inside, hears the knock, and an arrow points outside: \"门外有人。\""
       },
-      "play": "point"
+      "play": "nod"
     },
     {
       "wordId": "L1-0368",
@@ -3982,20 +3977,18 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","view":"side","x":250,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"gege","view":"side","x":230,"act":"char","roles":["mover","from-left"]},{"id":"classmate","pose":"wave","expression":"happy","x":445,"scale":0.75,"flip":true}],
           "props": [
             {"id":"house","x":64,"y":336,"scale":0.6},
-            {"id":"school","x":400,"y":336,"scale":0.62},
-            {"id":"arrow","x":318,"y":318,"scale":0.6,"front":true,"roles":["target"]}
+            {"id":"house","x":380,"y":336,"scale":0.6,"color":"#D3F9D8"},
+            {"id":"arrow","x":300,"y":330,"scale":0.6,"front":true,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":170,"h":54,"text":"我去学校。","highlight":true}]
+          "bubbles": [{"from":0,"x":26,"y":38,"w":210,"h":53,"text":"我去朋友家。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakak berjalan menjauh dari rumah menuju sekolah; panah menunjuk menjauh: \"我去学校。\"",
-        "en": "Big Brother walks away from the house toward the school; the arrow points away: \"我去学校。\""
+        "id": "Kakak berjalan menjauh dari rumah menuju rumah temannya yang melambai: \"我去朋友家。\"",
+        "en": "Big Brother walks away from home toward his friend’s house; the friend waves: \"我去朋友家。\""
       },
       "play": "move-to"
     },

@@ -73,6 +73,7 @@ export const POSES = {
     right: { to: [-1.05, -0.38], bend: 'down', front: true, hand: 'open' },
   },
   count: { left: { a: 30, el: 122, hand: 'fingers' }, head: 4 },
+  countBoth: { left: { a: 30, el: 122, hand: 'fingers' }, right: { a: 30, el: 122, hand: 'fingers' }, head: 2 },
   beckon: { left: { a: 48, el: 60, hand: 'open' }, head: 5 },
   stop: { left: { a: 84, el: 52, hand: 'open' }, lean: -3 },
   reach: { left: { a: 84, el: 4, hand: 'open' }, lean: 4 },

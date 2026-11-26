@@ -27,6 +27,14 @@ export function digits(x: number, y: number, value: string, size: number, fill =
 }
 
 /** Coloured band along a polyline: a filled shape (ink outline unless outline=false). */
+/** A picture character (月, 日 ...) from GLYPH_STROKES as filled paths, `size` tall, sitting on baseline y. */
+function glyphText(ch: string, x: number, y: number, size: number, fill: string): string {
+  const strokes = GLYPH_STROKES[ch]
+  if (!strokes) throw new Error(`no glyph ${ch}`)
+  const s = size / 1024
+  return el('g', { transform: `matrix(${s.toFixed(5)} 0 0 ${(-s).toFixed(5)} ${num(x - 512 * s)} ${num(y + 3 - 124 * s)})` }, strokes.map((p) => el('path', { d: p, fill, stroke: 'none' })).join(''))
+}
+
 function band(pts: [number, number][], w: number, fill: string, outline = true, sw?: number): string {
   const P = pts.map(([x, y]): Pt => ({ x, y }))
   const out: string[] = []
@@ -442,6 +450,8 @@ export const PROPS: Record<string, Draw> = {
       line(d('M', -50, -84, 'L', 50, -84), 3.5),
       circle(-26, -110, 4, WHITE, { sw: 2.5 }), circle(26, -110, 4, WHITE, { sw: 2.5 }),
       ...Array.from({ length: 12 }, (_, i) => circle(-33 + (i % 4) * 22, -70 + Math.floor(i / 4) * 26, 3.5, '#D8D2E4', { stroke: false })),
+      // variant: the month number, written in the red top as "5月"
+      o.variant ? [digits(-8, -91, o.variant, 20, WHITE), glyphText('月', 14, -91, 18, WHITE)].join('') : '',
       o.value ? digits(11, -18, o.value, 30) : '',
       o.value ? el('path', { d: d('M', -12, -30, 'A', 23, 18, 0, 1, 1, -6, -16), fill: 'none', 'stroke-width': 3.5 }) : '',
     ].join(''),
@@ -457,6 +467,7 @@ export const PROPS: Record<string, Draw> = {
         const x = x0 + i * step
         if (ch === '+') content.push(band([[x - 10, -70], [x + 10, -70]], 2.4, chalk, false) + band([[x, -80], [x, -60]], 2.4, chalk, false))
         else if (ch === '=') content.push(band([[x - 10, -75], [x + 10, -75]], 2.4, chalk, false) + band([[x - 10, -65], [x + 10, -65]], 2.4, chalk, false))
+        else if (GLYPH_STROKES[ch]) content.push(glyphText(ch, x, -57, 36, chalk))
         else content.push(digits(x, -57, ch, 40, chalk))
       })
     }

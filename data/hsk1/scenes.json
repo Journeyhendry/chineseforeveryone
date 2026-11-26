@@ -1368,12 +1368,12 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [{"id":"meimei","pose":"armsCross","expression":"sad","x":60,"scale":0.95,"act":"head"},{"id":"yeye","pose":"pointDown","expression":"surprised","x":175,"scale":0.9,"flip":true}],
+          "characters": [{"id":"meimei","pose":"armsCross","expression":"sad","x":70,"scale":0.9,"act":"head"},{"id":"yeye","pose":"pointDown","expression":"surprised","x":175,"scale":0.9,"flip":true}],
           "props": [
             {"id":"cup","x":112,"y":334,"rotate":80},
             {"id":"puddle","x":118,"y":338}
           ],
-          "bubbles": [{"from":0,"x":14,"y":46,"w":73,"h":97,"text":"不是我！","line":0},{"from":1,"x":102,"y":42,"w":117,"h":77,"text":"不是你？那是谁？","highlight":true,"line":1}]
+          "bubbles": [{"from":0,"x":18,"y":46,"w":73,"h":97,"text":"不是我！","line":0},{"from":1,"x":102,"y":42,"w":117,"h":77,"text":"不是你？那是谁？","highlight":true,"line":1}]
         },
         {
           "characters": [{"id":"yeye","expression":"surprised","x":290,"scale":0.9},{"id":"meimei","pose":"pointDown","expression":"happy","x":370,"scale":0.95,"act":"arm-left"}],

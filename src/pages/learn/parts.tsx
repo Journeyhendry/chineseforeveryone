@@ -230,11 +230,11 @@ export function NativeButtons({ id, label }: { id: string; label: string }) {
           <button
             type="button"
             className="btn btn-white"
-            aria-label={t('learn.audio.nativeLabel', { text: label })}
+            aria-label={recordings.length > 1 ? `${t('learn.audio.nativeLabel', { text: label })} (${i + 1})` : t('learn.audio.nativeLabel', { text: label })}
             onClick={() => playRecording(r.path)}
           >
             <SpeakerIcon />
-            <span>{recordings.length > 1 ? `${t('learn.audio.native')} ${i + 1}` : t('learn.audio.native')}</span>
+            <span>{recordings.length > 1 ? `${t('learn.audio.native')} (${i + 1})` : t('learn.audio.native')}</span>
           </button>
           <span className="native-credit">
             {t('learn.audio.nativeBy', { author: r.author, license: r.license })}{' '}

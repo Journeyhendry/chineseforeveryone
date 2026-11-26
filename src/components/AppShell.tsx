@@ -114,7 +114,7 @@ export function AppShell() {
                   type="button"
                   className="lang-btn"
                   aria-pressed={settings.lang === l}
-                  aria-label={t(`lang.name.${l}`)}
+                  aria-label={`${t(`lang.short.${l}`)} · ${t(`lang.name.${l}`)}`}
                   onClick={() => update({ lang: l })}
                 >
                   {t(`lang.short.${l}`)}

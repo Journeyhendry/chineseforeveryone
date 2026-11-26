@@ -216,9 +216,9 @@ export function WordScene({ wordId, hanzi, sentence, dialog, speakers }: WordSce
               type="button"
               className={stageCls}
               data-play={scene.entry.play}
-              aria-label={t('learn.scene.label', { alt: scene.entry.alt[lang] })}
               onClick={() => start(false)}
             >
+              <span className="sr-only">{t('learn.scene.label', { alt: scene.entry.alt[lang] })}</span>
               <span className="scene-svg" aria-hidden="true" dangerouslySetInnerHTML={{ __html: scene.svg }} />
               <span className="scene-texts" aria-hidden="true">
                 {lineBubbles.map((b, i) => {
@@ -248,13 +248,15 @@ export function WordScene({ wordId, hanzi, sentence, dialog, speakers }: WordSce
         <div className="scene-text">
           <div className="audio-buttons scene-controls">
             <div className="audio-row">
-              <button type="button" className="btn btn-yellow" aria-label={t('learn.scene.playLabel', { text: allText })} onClick={() => start(false)}>
+              <button type="button" className="btn btn-yellow" onClick={() => start(false)}>
                 <SpeakerIcon />
                 <span>{played ? t('learn.scene.replay') : t('learn.scene.play')}</span>
+                <span className="sr-only">: {allText}</span>
               </button>
-              <button type="button" className="btn btn-white" aria-label={t('learn.scene.slowLabel', { text: allText })} onClick={() => start(true)}>
+              <button type="button" className="btn btn-white" onClick={() => start(true)}>
                 <SpeakerSlowIcon />
                 <span>{t('learn.scene.slow')}</span>
+                <span className="sr-only">: {allText}</span>
               </button>
             </div>
             {source === 'device' ? <span className="audio-note">{t('learn.audio.device')}</span> : null}

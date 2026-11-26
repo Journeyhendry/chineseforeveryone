@@ -84,8 +84,6 @@
   "learn.scene.play": "Putar",
   "learn.scene.replay": "Putar ulang",
   "learn.scene.slow": "Pelan",
-  "learn.scene.playLabel": "Putar kalimat: {text}",
-  "learn.scene.slowLabel": "Putar pelan: {text}",
   "learn.scene.why": "Kenapa dialog?",
   "learn.scene.outside": "di luar HSK 1",
   "learn.scene.now": "sedang diputar",

@@ -17,6 +17,11 @@ export interface SpeakOptions {
   voice?: Voice
   /** Berkas langsung, mis. 'dialog/n-u01-03' (tanpa .mp3), mengalahkan pencarian lewat teks. */
   key?: string
+  /**
+   * Dipanggil sekali saat suara ini selesai berbunyi (atau gagal diputar). Tidak dipanggil bila
+   * dihentikan oleh suara lain / stopAudio(). Dipakai pemutar kalimat per baris (task 6c).
+   */
+  onEnd?: () => void
 }
 
 export interface AudioIndex {
@@ -136,7 +141,7 @@ function stopFile() {
   }
 }
 
-function speakDevice(text: string, rate: number): boolean {
+function speakDevice(text: string, rate: number, done?: () => void): boolean {
   const s = synth()
   const voice = zhVoice()
   if (!s || !voice) return false
@@ -146,6 +151,10 @@ function speakDevice(text: string, rate: number): boolean {
     u.lang = 'zh-CN'
     u.voice = voice
     u.rate = rate
+    if (done) {
+      u.onend = done
+      u.onerror = done
+    }
     s.speak(u)
     return true
   } catch {
@@ -153,7 +162,7 @@ function speakDevice(text: string, rate: number): boolean {
   }
 }
 
-function playUrl(url: string, rate: number, onFail: () => void): boolean {
+function playUrl(url: string, rate: number, onFail: () => void, done?: () => void): boolean {
   try {
     synth()?.cancel()
     const a = new Audio(url)
@@ -168,6 +177,7 @@ function playUrl(url: string, rate: number, onFail: () => void): boolean {
     a.onerror = fail
     a.onended = () => {
       if (current === a) current = null
+      done?.()
     }
     const p = a.play()
     if (p && typeof p.catch === 'function') p.catch(fail)
@@ -177,13 +187,13 @@ function playUrl(url: string, rate: number, onFail: () => void): boolean {
   }
 }
 
-function playNow(text: string, opts: SpeakOptions): boolean {
+function playNow(text: string, opts: SpeakOptions, done?: () => void): boolean {
   const rate = opts.rate ?? 1
   const hit = fileStem(text, opts)
   if (hit) {
-    return playUrl(`${filesBase()}hsk1/${hit.stem}.mp3`, hit.slow ? 1 : rate, () => void speakDevice(text, rate))
+    return playUrl(`${filesBase()}hsk1/${hit.stem}.mp3`, hit.slow ? 1 : rate, () => void (speakDevice(text, rate, done) || done?.()), done)
   }
-  return speakDevice(text, rate)
+  return speakDevice(text, rate, done)
 }
 
 /**
@@ -193,10 +203,19 @@ function playNow(text: string, opts: SpeakOptions): boolean {
 export function speak(text: string, opts: SpeakOptions = {}): boolean {
   const mine = ++token
   stopFile()
-  if (index) return playNow(text, opts)
-  if (state === 'failed') return speakDevice(text, opts.rate ?? 1)
+  let called = false
+  const onEnd = opts.onEnd
+  const done = onEnd
+    ? () => {
+        if (called || mine !== token) return
+        called = true
+        onEnd()
+      }
+    : undefined
+  if (index) return playNow(text, opts, done)
+  if (state === 'failed') return speakDevice(text, opts.rate ?? 1, done)
   void loadAudioIndex().then(() => {
-    if (mine === token) playNow(text, opts)
+    if (mine === token && !playNow(text, opts, done)) done?.()
   })
   return true
 }
@@ -206,6 +225,11 @@ export function playRecording(path: string, opts: { rate?: number } = {}): boole
   token++
   stopFile()
   return playUrl(`${filesBase()}${path}`, opts.rate ?? 1, () => {})
+}
+
+/** Nomor urut suara terakhir yang diminta: berubah tiap speak/stopAudio (untuk tahu suara dipotong). */
+export function audioToken(): number {
+  return token
 }
 
 export function stopAudio(): void {

@@ -10,7 +10,7 @@ import { go, isInteractiveTarget, useAudio, useDocumentTitle, useFocusOnChange, 
 import { AudioButtons, Badge, LessonBar, MachineTag, NativeButtons, SpeakButton, ToneHanzi, TonePinyin, ToneLabels } from './parts'
 import { StrokePanel } from './StrokePanel'
 import { WordScene } from './WordScene'
-import { meaningFull, tatoebaUrl } from './text'
+import { meaningFull, otherExamples, tatoebaUrl } from './text'
 import './word.css'
 
 export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: UnitData; n: number }) {
@@ -29,6 +29,7 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
   const prevHref = n > 1 ? learnHref({ screen: 'word', unitId: info.id, index: n - 1 }) : null
   const nextHref = n < total ? learnHref({ screen: 'word', unitId: info.id, index: n + 1 }) : learnHref({ screen: 'practice', unitId: info.id })
   const casual = [...data.casual, ...data.relatedCasual].filter((c) => c.hsk.wordIds.includes(word.id))
+  const more = otherExamples(word)
 
   useHotkeys((e) => {
     if (e.key === ' ' || e.code === 'Space') {
@@ -85,22 +86,28 @@ export function WordScreen({ info, data, n }: { info: LessonUnitInfo; data: Unit
             </div>
           </section>
 
-          <WordScene wordId={word.id} hanzi={word.hanzi} />
+          <WordScene key={word.id} wordId={word.id} hanzi={word.hanzi} sentence={word.sentence} dialog={word.dialog} speakers={data.speakers} />
 
-          <section className="card examples" aria-labelledby="examples-title">
-            <h2 id="examples-title" className="card-title">
-              {t('learn.examples.title')}
-            </h2>
-            {word.examples.length === 0 ? (
-              <p className="muted">{t('learn.examples.none')}</p>
-            ) : (
+          {more.length ? (
+            <details className="card examples examples-more">
+              <summary>
+                <h2 className="card-title">{t('learn.examples.more')}</h2>
+                <span className="examples-count">{t('learn.examples.moreCount', { n: more.length })}</span>
+              </summary>
               <ul className="example-list">
-                {word.examples.map((ex) => (
+                {more.map((ex) => (
                   <ExampleItem key={ex.tatoebaId} ex={ex} />
                 ))}
               </ul>
-            )}
-          </section>
+            </details>
+          ) : !word.sentence ? (
+            <section className="card examples" aria-labelledby="examples-title">
+              <h2 id="examples-title" className="card-title">
+                {t('learn.examples.title')}
+              </h2>
+              <p className="muted">{t('learn.examples.none')}</p>
+            </section>
+          ) : null}
 
           <CasualBox items={casual} />
 

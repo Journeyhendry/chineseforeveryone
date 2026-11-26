@@ -251,32 +251,26 @@ describe('tahap 2: units u01–u08', () => {
     }
   })
 
-  it('puts the family words of u08 in the same Xiǎo family living room, full for 家 and 家人', () => {
+  it('puts the family words of u08 in the same Xiǎo family living room, full for 家人', () => {
     for (const h of FAMILY) {
       const s = byHanzi(h)
       expect(s, h).toBeTruthy()
       expect(s?.background, h).toBe('living')
       expect(s?.panels.every((p) => (p.background ?? 'living') === 'living'), h).toBe(true)
     }
-    for (const h of ['家', '家人']) {
-      const ids = byHanzi(h)?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
-      expect([...new Set(ids)].sort(), h).toEqual([...XIAO].sort())
-    }
+    const ids = byHanzi('家人')?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
+    expect([...new Set(ids)].sort()).toEqual([...XIAO].sort())
   })
 
-  it('plays the origin animation for 人 and 家: the picture next to the character drawn stroke by stroke', () => {
-    for (const h of ['人', '家']) {
-      const s = byHanzi(h)
-      expect(s?.play, h).toBe('origin')
-      const props = s?.panels.flatMap((p) => p.props) ?? []
-      expect(props.some((p) => p.roles?.includes('morph-from')), h).toBe(true)
-      const glyph = props.find((p) => p.id === 'glyph')
-      expect(glyph?.value, h).toBe(h)
-      expect(glyph?.roles, h).toContain('morph-to')
-      const svg = built.get(`${s?.wordId}.svg`) as string
-      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
-      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
-    }
+  // task 6c: 人 and 家 no longer play the picture-to-character origin animation; they show their
+  // sentence (这儿人很多。 in a crowded station, 他不在家。 at the front door)
+  it('shows a crowd for 人 and the front door with an empty room for 家', () => {
+    const ren = byHanzi('人')
+    expect(ren?.background).toBe('metro')
+    expect(ren?.panels.flatMap((p) => p.characters).length).toBeGreaterThanOrEqual(6)
+    const jia = byHanzi('家')
+    expect(jia?.panels.flatMap((p) => p.props).some((p) => p.id === 'door')).toBe(true)
+    expect(jia?.panels.flatMap((p) => p.characters).some((c) => c.id === 'gege')).toBe(false)
   })
 
   it('shows three animals and the digit 3 for 只, and the number 1000 for 千', () => {
@@ -284,8 +278,8 @@ describe('tahap 2: units u01–u08', () => {
     expect(zhi.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(3)
     expect(zhi.find((p) => p.id === 'digit')?.value).toBe('3')
     const qian = byHanzi('千')?.panels.flatMap((p) => p.props) ?? []
+    // task 6c: 千 now shows its sentence (a phone priced 1000 in a shop): the price label, no counted boards
     expect(qian.find((p) => p.id === 'badge')?.value).toBe('1000')
-    expect(qian.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(10)
   })
 })
 

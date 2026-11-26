@@ -146,7 +146,7 @@ describe('scenes.json', () => {
 describe('task 6c: balloons say the sentence / dialog of the word', () => {
   const entries = (wordSentencesData as { entries: SceneLinesEntry[] }).entries
 
-  it('every keep / rebubble scene says its sentence or dialog, line by line, without covering a face', () => {
+  it('every keep / rebubble / redraw scene says its sentence or dialog, line by line, without covering a face', () => {
     expect(checkAllSceneLines(data.scenes, entries)).toEqual([])
     const lineScenes = data.scenes.filter((s) => s.panels.some((p) => (p.bubbles ?? []).some((b) => b.line !== undefined)))
     expect(lineScenes.length).toBeGreaterThanOrEqual(entries.filter((e) => LINE_FITS.includes(e.scene.fit)).length)
@@ -433,7 +433,9 @@ describe('tahap 4: units u13–u16', () => {
   it('draws 睡 (a nap in the armchair) and 睡觉 (lying in bed at night) differently', () => {
     expect(prop('睡', 'armchair')).toHaveLength(1)
     expect(prop('睡', 'bed')).toHaveLength(0)
-    expect(chars('睡').every((c) => c.expression === 'sleep')).toBe(true)
+    // task 6c: 他睡了。 Grandpa naps in the armchair while Grandma whispers to Little Sister
+    expect(chars('睡').find((c) => c.id === 'yeye')?.expression).toBe('sleep')
+    expect(chars('睡').find((c) => c.id === 'nainai')?.pose).toBe('shush')
     expect(prop('睡觉', 'bed')).toHaveLength(1)
     expect(prop('睡觉', 'blanket')[0]?.front).toBe(true)
     const sleeper = chars('睡觉')[0]
@@ -467,9 +469,10 @@ describe('tahap 4: units u13–u16', () => {
     expect(prop('了', 'bowl').map((p) => p.variant)).toEqual(['rice', undefined])
     expect(texts('正在').join('')).toContain('我正在吃饭')
     expect(texts('再').join('')).toContain('再来')
-    expect(prop('还', 'clock')[0]?.value).toBe('1100')
-    expect(byHanzi('还').background).toBe('room-night')
-    expect(texts('还').join('')).toContain('还在')
+    // task 6c: 十点了，还不起床？ ten in the morning and Big Brother is still in bed
+    expect(prop('还', 'clock')[0]?.value).toBe('1000')
+    expect(prop('还', 'bed')).toHaveLength(1)
+    expect(texts('还').join('')).toContain('还不起床')
   })
 
   it('keeps 爱 (a family hug) and 喜欢 (liking a thing) apart', () => {
@@ -490,16 +493,16 @@ describe('tahap 4: units u13–u16', () => {
     expect(prop('要', 'cross')).toHaveLength(0)
     expect(byHanzi('要').play).not.toBe(byHanzi('不要').play)
     expect(byHanzi('不要').play).toBe('shake-head')
-    // 会 = a learned skill (riding a bike alone); 能 = able / strong enough (lifting a heavy box)
-    expect(prop('会', 'bicycle')).toHaveLength(1)
-    expect(prop('会', 'box')).toHaveLength(0)
-    expect(prop('能', 'box')).toHaveLength(1)
-    expect(prop('能', 'bicycle')).toHaveLength(0)
-    expect(texts('会').join('')).toContain('我会')
-    expect(texts('能').join('')).toContain('能！')
-    // 学 = still learning (Mom holds the bike), 会 = can do it alone
-    expect(charIds('学')).toContain('mama')
-    expect(chars('学').find((c) => c.id === 'mama')?.x).toBeLessThan(chars('学').find((c) => c.id === 'meimei')?.x ?? 0)
+    // task 6c: 会 = a learned skill (哥哥会开车。 Big Brother drives); 能 = able to (我能吃三个包子！)
+    expect(prop('会', 'car')).toHaveLength(1)
+    expect(charIds('会')).toContain('gege')
+    expect(prop('能', 'baozi').reduce((n, p) => n + (p.count ?? 1), 0)).toBe(3)
+    expect(prop('能', 'car')).toHaveLength(0)
+    expect(texts('会').join('')).toContain('会开车')
+    expect(texts('能').join('')).toContain('我能')
+    // 学 = still learning (哥哥在学做饭。 Mom shows Big Brother how to cook)
+    expect(charIds('学')).toEqual(expect.arrayContaining(['mama', 'gege']))
+    expect(prop('学', 'wok')).toHaveLength(1)
   })
 
   it('draws 高兴 as one happy panel (task 6c: the sentence is 我很高兴。)', () => {
@@ -512,10 +515,10 @@ describe('tahap 4: units u13–u16', () => {
 
   it('gives each school level a matching age: Little Sister at primary, never Big Brother at secondary, Big Brother at university', () => {
     for (const h of ['小学', '小学生']) expect(charIds(h), h).toContain('meimei')
-    for (const h of ['中学', '中学生']) {
-      expect(charIds(h), h).not.toContain('gege')
-      expect(charIds(h), h).toContain('classmate')
-    }
+    for (const h of ['中学', '中学生']) expect(charIds(h), h).not.toContain('gege')
+    expect(charIds('中学生')).toContain('classmate')
+    // task 6c: 妹妹明年上中学。 Mom and Little Sister look at the middle school she starts next year
+    expect(charIds('中学')).toEqual(expect.arrayContaining(['mama', 'meimei']))
     for (const h of ['大学', '大学生']) expect(charIds(h), h).toContain('gege')
     expect(prop('小学', 'school-small')).toHaveLength(1)
     expect(prop('中学', 'school-tall')).toHaveLength(1)

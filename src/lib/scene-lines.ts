@@ -11,8 +11,8 @@ export interface SceneLinesEntry {
   scene: { fit: string }
 }
 
-/** Fits whose scene balloons must already say the stage-1 sentence / dialog (2b adds 'redraw'). */
-export const LINE_FITS = ['keep', 'rebubble']
+/** Fits whose scene balloons say the stage-1 sentence / dialog (all 233 scenes of units 1–16). */
+export const LINE_FITS = ['keep', 'rebubble', 'redraw']
 
 /** The lines a scene for this word says, in order. */
 export function sentenceLines(e: SceneLinesEntry): { who: string | null; hanzi: string }[] {
@@ -71,7 +71,7 @@ export function checkAllSceneLines(scenes: Scene[], entries: SceneLinesEntry[]):
   const byId = new Map(entries.map((e) => [e.wordId, e]))
   const errors: string[] = []
   for (const s of scenes) errors.push(...checkSceneLines(s, byId.get(s.wordId)))
-  // every keep / rebubble word has its scene
+  // every keep / rebubble / redraw word has its scene
   const sceneIds = new Set(scenes.map((s) => s.wordId))
   for (const e of entries) if (LINE_FITS.includes(e.scene.fit) && !sceneIds.has(e.wordId)) errors.push(`${e.wordId}: fit ${e.scene.fit} but no scene`)
   return errors

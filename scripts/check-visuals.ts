@@ -32,7 +32,7 @@ for (const [type, n] of Object.entries(counts)) console.log(`  ${type.padEnd(8)}
 const pairs = (visuals.items ?? []).filter((it) => it.pairWordId).length
 const props = new Set((visuals.items ?? []).flatMap((it) => it.props)).size
 console.log(`  with pairWordId: ${pairs}, distinct props: ${props}`)
-console.log(`scenes.json: ${lineScenes} scenes say their sentence / dialog line by line (${mustLine} keep/rebubble must)`)
+console.log(`scenes.json: ${lineScenes} scenes say their sentence / dialog line by line (${mustLine} keep/rebubble/redraw must)`)
 
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):`)

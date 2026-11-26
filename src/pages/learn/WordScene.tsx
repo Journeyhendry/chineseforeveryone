@@ -1,9 +1,15 @@
-import { useEffect, useRef, useState } from 'react'
-import type { PlayPreset, SceneIndex, SceneIndexEntry } from '../../art/scenes/types'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import type { PlayPreset, SceneIndex, SceneIndexBubble, SceneIndexEntry } from '../../art/scenes/types'
+import { SpeakerIcon, SpeakerSlowIcon } from '../../components/icons'
 import { useT } from '../../i18n/context'
-import { sanitizeSvg, splitHighlight } from '../../lib/scene-svg'
+import { audioToken, SLOW_RATE, speak, stopAudio, type Voice } from '../../lib/audio'
+import type { Speaker, WordDialog, WordSentence } from '../../lib/lessons'
+import { playLines, type PlayerLine } from '../../lib/line-player'
+import { layoutBubbleText, sanitizeSvg, splitHighlight } from '../../lib/scene-svg'
 import { useSettings } from '../../lib/settings-context'
-import { useAudio } from './hooks'
+import { useAudio, useReducedMotion } from './hooks'
+import { TonePinyin } from './parts'
+import { tatoebaUrl } from './text'
 import './scene.css'
 
 const sceneUrl = (file: string) => `${import.meta.env.BASE_URL}art/scenes/${file}`
@@ -42,18 +48,66 @@ function loadIndex(): Promise<SceneIndex | null> {
 
 type Loaded = { wordId: string; entry: SceneIndexEntry; svg: string }
 
+/** One line of the word's sentence / dialog, as shown under the picture and played. */
+interface ShownLine {
+  who: string | null
+  hanzi: string
+  pinyin: string
+  id: string
+  en: string
+  outsideWords: string[]
+}
+
+function shownLines(sentence: WordSentence, dialog: WordDialog | null): ShownLine[] {
+  if (dialog) return dialog.lines
+  return [{ who: sentence.speaker, hanzi: sentence.hanzi, pinyin: sentence.pinyin, id: sentence.id, en: sentence.en, outsideWords: sentence.outsideWords }]
+}
+
+/** Old scenes (until task 6c 2b redraws them) have text balloons without line numbers: they are hidden. */
+const isLegacy = (bubbles: SceneIndexBubble[]) => bubbles.length > 0 && bubbles.every((b) => b.line === undefined)
+
+function Highlighted({ text, word }: { text: string; word: string }) {
+  return (
+    <>
+      {splitHighlight(text, word).map((p, j) =>
+        p.hl ? (
+          <mark key={j} className="scene-hl">
+            {p.text}
+          </mark>
+        ) : (
+          <span key={j}>{p.text}</span>
+        ),
+      )}
+    </>
+  )
+}
+
+export interface WordSceneProps {
+  wordId: string
+  hanzi: string
+  sentence: WordSentence | null
+  dialog: WordDialog | null
+  speakers: Record<string, Speaker>
+}
+
 /**
- * Illustration card for a word: the scene SVG (fetched only for the word on screen), Mandarin
- * text over the comic balloons, idle motion, and an action + the word's audio on click / Enter /
- * Space. Renders nothing for words without a scene or when loading fails.
+ * Sentence card of a word (task 6c): the scene SVG (fetched only for the word on screen) with the
+ * sentence / dialog in its balloons, the lines as text below, and a player that shows and sounds the
+ * lines one by one on click / Enter / Space on the picture or the Play / Slow buttons. Words without a
+ * scene get the text and the buttons only. Renders nothing for a word without a sentence.
  */
-export function WordScene({ wordId, hanzi }: { wordId: string; hanzi: string }) {
+export function WordScene({ wordId, hanzi, sentence, dialog, speakers }: WordSceneProps) {
   const t = useT()
   const { settings } = useSettings()
-  const { available, play } = useAudio()
+  const lang = settings.lang
+  const { sourceFor } = useAudio()
+  const reduced = useReducedMotion()
   const [loaded, setLoaded] = useState<Loaded | null>(null)
+  const [current, setCurrent] = useState<number | null>(null)
+  const [played, setPlayed] = useState(false)
   const stage = useRef<HTMLButtonElement>(null)
   const timer = useRef<number | undefined>(undefined)
+  const stopper = useRef<(() => void) | null>(null)
 
   useEffect(() => {
     let alive = true
@@ -75,67 +129,189 @@ export function WordScene({ wordId, hanzi }: { wordId: string; hanzi: string }) 
     }
   }, [wordId])
 
+  // leaving the word (or the page) stops the sentence
   useEffect(
     () => () => {
       window.clearTimeout(timer.current)
+      if (stopper.current) {
+        stopper.current()
+        stopper.current = null
+        stopAudio()
+      }
     },
     [],
   )
 
-  const current = loaded && loaded.wordId === wordId ? loaded : null
-  if (!current) return null
-  const { entry, svg } = current
-  const alt = entry.alt[settings.lang]
+  const scene = loaded && loaded.wordId === wordId ? loaded : null
+  const lines = sentence ? shownLines(sentence, dialog) : []
+  const lineBubbles = scene && !isLegacy(scene.entry.bubbles) ? scene.entry.bubbles : []
+  const animate = !reduced && current !== null
 
-  const onPlay = () => {
-    if (available) play(hanzi)
+  // speaking character + SVG balloons follow the line now playing (the SVG is not React-rendered)
+  useEffect(() => {
+    const svg = stage.current?.querySelector('.scene-svg')
+    if (!svg) return
+    for (const el of svg.querySelectorAll('.is-talking, .is-hidden, .is-pop')) el.classList.remove('is-talking', 'is-hidden', 'is-pop')
+    if (!animate || current === null) return
+    for (const el of svg.querySelectorAll<SVGGElement>('.bubble[class*="line-"]')) {
+      const m = /\bline-(\d+)\b/.exec(el.getAttribute('class') ?? '')
+      const n = m ? Number(m[1]) : -1
+      if (n > current) el.classList.add('is-hidden')
+      else if (n === current) el.classList.add('is-pop')
+    }
+    for (const b of scene?.entry.bubbles ?? []) if (b.line === current && b.char) svg.querySelector(`.c-${b.char}`)?.classList.add('is-talking')
+  }, [animate, current, scene])
+
+  const voiceOf = useCallback((who: string | null): Voice => (who && speakers[who]?.gender === 'male' ? 'male' : 'female'), [speakers])
+
+  if (!sentence) return null
+
+  const start = (slow: boolean) => {
+    stopper.current?.()
+    setPlayed(true)
     const el = stage.current
-    if (!el) return
-    window.clearTimeout(timer.current)
-    el.classList.remove('is-playing')
-    // restart the CSS animations cleanly instead of stacking them
-    void el.offsetWidth
-    el.classList.add('is-playing')
-    timer.current = window.setTimeout(() => el.classList.remove('is-playing'), PLAY_MS[entry.play] ?? 2000)
+    if (el && scene && !reduced) {
+      window.clearTimeout(timer.current)
+      el.classList.remove('is-playing')
+      // restart the CSS animations cleanly instead of stacking them
+      void el.offsetWidth
+      el.classList.add('is-playing')
+      timer.current = window.setTimeout(() => el.classList.remove('is-playing'), PLAY_MS[scene.entry.play] ?? 2000)
+    }
+    const list: PlayerLine[] = lines.map((l) => ({ text: l.hanzi, voice: voiceOf(l.who) }))
+    stopper.current = playLines(
+      list,
+      {
+        rate: slow ? SLOW_RATE : settings.voiceSpeed,
+        onLine: (l) => {
+          setCurrent(l)
+          if (l === null) stopper.current = null
+        },
+      },
+      {
+        speak,
+        token: audioToken,
+        setTimeout: (fn, ms) => window.setTimeout(fn, ms),
+        clearTimeout: (id) => window.clearTimeout(id),
+      },
+    )
   }
 
+  const title = dialog ? t('learn.scene.titleDialog') : t('learn.scene.title')
+  const allText = lines.map((l) => l.hanzi).join(' ')
+  const source = sourceFor(lines[0].hanzi, voiceOf(lines[0].who))
+  const legacy = scene ? isLegacy(scene.entry.bubbles) : false
+  const stageCls = ['scene-stage', animate ? 'is-seq' : '', legacy ? 'is-legacy' : ''].filter(Boolean).join(' ')
+
   return (
-    <section className="card scene-card" aria-label={t('learn.scene.title')}>
-      <button
-        ref={stage}
-        type="button"
-        className="scene-stage"
-        data-play={entry.play}
-        aria-label={t('learn.scene.label', { alt })}
-        onClick={onPlay}
-      >
-        <span className="scene-svg" aria-hidden="true" dangerouslySetInnerHTML={{ __html: svg }} />
-        <span className="scene-texts" aria-hidden="true">
-          {entry.bubbles.map((b, i) => {
-            const len = [...b.text].length
-            const size = Math.min(b.h * 0.75 * 0.52, (b.w * 0.86) / Math.max(1, len))
-            return (
-              <span
-                key={i}
-                className={`scene-bubble in-panel-${b.panel}`}
-                lang="zh-CN"
-                style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%`, height: `${b.h}%`, fontSize: `${size.toFixed(2)}cqw` }}
-              >
-                {splitHighlight(b.text, b.highlight ? hanzi : '').map((p, j) =>
-                  p.hl ? (
-                    <span key={j} className="scene-hl">
-                      {p.text}
+    <section className="card scene-card" aria-labelledby={`scene-title-${wordId}`}>
+      <h2 id={`scene-title-${wordId}`} className="card-title scene-title">
+        {title}
+      </h2>
+      <div className="scene-body">
+        {scene ? (
+          <div className="scene-figure">
+            <button
+              ref={stage}
+              type="button"
+              className={stageCls}
+              data-play={scene.entry.play}
+              onClick={() => start(false)}
+            >
+              <span className="sr-only">{t('learn.scene.label', { alt: scene.entry.alt[lang] })}</span>
+              <span className="scene-svg" aria-hidden="true" dangerouslySetInnerHTML={{ __html: scene.svg }} />
+              <span className="scene-texts" aria-hidden="true">
+                {lineBubbles.map((b, i) => {
+                  const lay = layoutBubbleText(b.text, b.w, b.h, b.highlight ? hanzi : '')
+                  const state = animate && b.line !== undefined ? (b.line > (current as number) ? 'is-hidden' : b.line === current ? 'is-pop' : '') : ''
+                  return (
+                    <span
+                      key={i}
+                      className={`scene-bubble in-panel-${b.panel} ${state}`}
+                      lang="zh-CN"
+                      style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%`, height: `${b.h}%`, fontSize: `${lay.font}cqw` }}
+                    >
+                      {lay.lines.map((ln, j) => (
+                        <span key={j} className="scene-bubble-line">
+                          <Highlighted text={ln} word={b.highlight ? hanzi : ''} />
+                        </span>
+                      ))}
                     </span>
-                  ) : (
-                    <span key={j}>{p.text}</span>
-                  ),
-                )}
+                  )
+                })}
               </span>
-            )
-          })}
-        </span>
-      </button>
-      <p className="scene-hint">{t('learn.scene.hint')}</p>
+            </button>
+            <p className="scene-hint">{t('learn.scene.hint')}</p>
+          </div>
+        ) : null}
+
+        <div className="scene-text">
+          <div className="audio-buttons scene-controls">
+            <div className="audio-row">
+              <button type="button" className="btn btn-yellow" onClick={() => start(false)}>
+                <SpeakerIcon />
+                <span>{played ? t('learn.scene.replay') : t('learn.scene.play')}</span>
+                <span className="sr-only">: {allText}</span>
+              </button>
+              <button type="button" className="btn btn-white" onClick={() => start(true)}>
+                <SpeakerSlowIcon />
+                <span>{t('learn.scene.slow')}</span>
+                <span className="sr-only">: {allText}</span>
+              </button>
+            </div>
+            {source === 'device' ? <span className="audio-note">{t('learn.audio.device')}</span> : null}
+          </div>
+
+          {dialog ? (
+            <p className="scene-reason">
+              <span className="dialog-key">{t('learn.scene.why')}</span> {dialog.reason[lang]}
+            </p>
+          ) : null}
+
+          <ol className={`sent-lines ${dialog ? 'is-dialog' : ''}`}>
+            {lines.map((l, i) => {
+              const name = l.who ? (speakers[l.who]?.name[lang] ?? l.who) : null
+              const now = current === i
+              return (
+                <li key={i} className={`sent-line sent-${voiceOf(l.who)} ${now ? 'is-current' : ''}`} aria-current={now ? 'true' : undefined}>
+                  {name ? <span className="sent-speaker">{name}</span> : null}
+                  {now ? <span className="sr-only">{t('learn.scene.now')}</span> : null}
+                  <p className="sent-cmn" lang="zh-CN">
+                    <Highlighted text={l.hanzi} word={hanzi} />
+                  </p>
+                  {settings.showPinyin ? (
+                    <p className="sent-pinyin">
+                      <TonePinyin pinyin={l.pinyin} />
+                    </p>
+                  ) : null}
+                  <p className="sent-tr" lang={lang}>
+                    {l[lang]}
+                  </p>
+                  {l.outsideWords.length ? (
+                    <p className="sent-outside">
+                      <span className="sent-outside-tag">{t('learn.scene.outside')}</span>{' '}
+                      <span lang="zh-CN" className="hanzi-inline">
+                        {l.outsideWords.join('、')}
+                      </span>
+                    </p>
+                  ) : null}
+                </li>
+              )
+            })}
+          </ol>
+
+          {sentence.source === 'tatoeba' && sentence.sourceId !== null ? (
+            <p className="example-src">
+              {t('learn.scene.source')}{' '}
+              <a href={tatoebaUrl(Number(sentence.sourceId))} target="_blank" rel="noopener noreferrer">
+                Tatoeba #{sentence.sourceId}
+              </a>
+              {sentence.author ? ` · ${sentence.author}` : ''}
+              {sentence.license ? ` · ${sentence.license}` : ''}
+            </p>
+          ) : null}
+        </div>
+      </div>
     </section>
   )
 }

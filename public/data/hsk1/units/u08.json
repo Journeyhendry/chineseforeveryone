@@ -98,7 +98,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "他不在家。",
+        "pinyin": "Tā bú zài jiā.",
+        "id": "Dia nggak ada di rumah.",
+        "en": "He's not home.",
+        "speaker": "mama",
+        "source": "tatoeba",
+        "sourceId": 765282,
+        "outsideWords": [],
+        "author": "Martha",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0171",
@@ -171,7 +184,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我的家人。",
+        "pinyin": "Zhè shì wǒ de jiārén.",
+        "id": "Ini keluargaku.",
+        "en": "This is my family.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0004",
@@ -242,7 +266,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "爸爸回来了！",
+        "pinyin": "Bàba huílai le!",
+        "id": "Ayah pulang!",
+        "en": "Dad's home!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0224",
@@ -320,7 +355,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，这是我朋友。",
+        "pinyin": "Māma, zhè shì wǒ péngyou.",
+        "id": "Ma, ini temanku.",
+        "en": "Mom, this is my friend.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0118",
@@ -395,7 +441,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哥哥在哪儿？",
+        "pinyin": "Gēge zài nǎr?",
+        "id": "Kakak di mana?",
+        "en": "Where's big brother?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0178",
@@ -465,7 +522,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我姐姐。",
+        "pinyin": "Zhè shì wǒ jiějie.",
+        "id": "Ini kakak perempuanku.",
+        "en": "This is my older sister.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0074",
@@ -535,7 +603,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我有一个弟弟。",
+        "pinyin": "Wǒ yǒu yí gè dìdi.",
+        "id": "Aku punya satu adik laki-laki.",
+        "en": "I have a younger brother.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0237",
@@ -606,7 +685,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我妹妹六岁。",
+        "pinyin": "Wǒ mèimei liù suì.",
+        "id": "Adikku umurnya enam tahun.",
+        "en": "My little sister is six.",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0097",
@@ -678,7 +768,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我儿子！",
+        "pinyin": "Zhè shì wǒ érzi!",
+        "id": "Ini anakku!",
+        "en": "This is my son!",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0277",
@@ -750,7 +851,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是你女儿吗？",
+        "pinyin": "Zhè shì nǐ nǚ'ér ma?",
+        "id": "Ini anak perempuanmu?",
+        "en": "Is this your daughter?",
+        "speaker": "friend",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0485",
@@ -824,7 +936,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我住这儿！",
+        "pinyin": "Wǒ zhù zhèr!",
+        "id": "Aku tinggal di sini!",
+        "en": "I live here!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0101",
@@ -896,7 +1019,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个房间是我的！",
+        "pinyin": "Zhège fángjiān shì wǒ de!",
+        "id": "Kamar ini punyaku!",
+        "en": "This room is mine!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0487",
@@ -968,7 +1102,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是我的桌子。",
+        "pinyin": "Zhè shì wǒ de zhuōzi.",
+        "id": "Ini mejaku.",
+        "en": "This is my desk.",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0529",
@@ -1039,7 +1184,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这儿有椅子，请坐。",
+        "pinyin": "Zhèr yǒu yǐzi, qǐng zuò.",
+        "id": "Di sini ada kursi, silakan duduk.",
+        "en": "There's a chair here. Have a seat.",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0509",
@@ -1117,7 +1273,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是你家的狗吗？",
+        "pinyin": "Zhè shì nǐ jiā de gǒu ma?",
+        "id": "Ini anjing keluargamu?",
+        "en": "Is this your family's dog?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": "n-u08:1",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0514",
@@ -1200,7 +1367,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我的猫在这儿！",
+        "pinyin": "Wǒ de māo zài zhèr!",
+        "id": "Kucingku di sini!",
+        "en": "Here's my cat!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0533",
@@ -1285,7 +1463,20 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "那儿有三只鸟。",
+        "pinyin": "Nàr yǒu sān zhī niǎo.",
+        "id": "Di sana ada tiga ekor burung.",
+        "en": "There are three birds over there.",
+        "speaker": "meimei",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "鸟"
+        ]
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1748,5 +1939,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

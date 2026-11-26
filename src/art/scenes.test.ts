@@ -3,6 +3,8 @@ import scenesData from '../../data/hsk1/scenes.json'
 import previewScenes from '../../data/hsk2-preview/scenes.json'
 import unitsData from '../../data/hsk1/units.json'
 import wordsData from '../../data/hsk1/words.json'
+import wordSentencesData from '../../data/hsk1/word-sentences.json'
+import { checkAllSceneLines, LINE_FITS, type SceneLinesEntry } from '../lib/scene-lines.ts'
 import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
 import {
   ACT_TARGETS,
@@ -131,6 +133,37 @@ describe('scenes.json', () => {
       }
       if (s.type === 'comic') expect(bubbles.some((b) => b.highlight), s.hanzi).toBe(true)
     }
+  })
+})
+
+describe('task 6c: balloons say the sentence / dialog of the word', () => {
+  const entries = (wordSentencesData as { entries: SceneLinesEntry[] }).entries
+
+  it('every keep / rebubble scene says its sentence or dialog, line by line, without covering a face', () => {
+    expect(checkAllSceneLines(data.scenes, entries)).toEqual([])
+    const lineScenes = data.scenes.filter((s) => s.panels.some((p) => (p.bubbles ?? []).some((b) => b.line !== undefined)))
+    expect(lineScenes.length).toBeGreaterThanOrEqual(entries.filter((e) => LINE_FITS.includes(e.scene.fit)).length)
+  })
+
+  it('writes line and speaker into index.json so the app can play the lines one by one', () => {
+    const index = JSON.parse(built.get('index.json') as string) as SceneIndex
+    const dialog = entries.find((e) => e.dialog && LINE_FITS.includes(e.scene.fit))!
+    const bubbles = index.scenes[dialog.wordId].bubbles
+    expect(bubbles.every((b) => b.line !== undefined)).toBe(true)
+    expect(new Set(bubbles.map((b) => b.line)).size).toBe(dialog.dialog!.lines.length)
+    const svg = built.get(`${dialog.wordId}.svg`) as string
+    for (const b of bubbles) {
+      expect(svg).toContain(`line-${b.line}`)
+      if (b.char !== undefined) expect(svg).toContain(`c-${b.char} `)
+    }
+  })
+
+  it('catches a balloon whose text is not the sentence', () => {
+    const e = entries.find((x) => !x.dialog && LINE_FITS.includes(x.scene.fit))!
+    const scene = structuredClone(data.scenes.find((s) => s.wordId === e.wordId)!)
+    const b = scene.panels.flatMap((p) => p.bubbles ?? [])[0]
+    b.text = `${b.text}了`
+    expect(checkAllSceneLines([scene], [e]).join('\n')).toContain('expected')
   })
 })
 
@@ -395,8 +428,8 @@ describe('tahap 4: units u13–u16', () => {
     expect(chars('下课').some((c) => c.pose === 'sit')).toBe(false)
     expect(chars('下课').filter((c) => c.roles?.includes('mover')).length).toBeGreaterThanOrEqual(2)
     expect(xia.play).toBe('move-to')
-    expect(texts('上课')).toContain('上课了！')
-    expect(texts('下课')).toContain('下课了！')
+    expect(texts('上课').join('')).toContain('上课了！')
+    expect(texts('下课').join('')).toContain('下课了！')
   })
 
   it('draws 睡 (a nap in the armchair) and 睡觉 (lying in bed at night) differently', () => {
@@ -471,11 +504,12 @@ describe('tahap 4: units u13–u16', () => {
     expect(chars('学').find((c) => c.id === 'mama')?.x).toBeLessThan(chars('学').find((c) => c.id === 'meimei')?.x ?? 0)
   })
 
-  it('draws 高兴 as a pair', () => {
+  it('draws 高兴 as one happy panel (task 6c: the sentence is 我很高兴。)', () => {
     const s = byHanzi('高兴')
-    expect(s.panels).toHaveLength(2)
-    expect(s.play).toBe('swap-pair')
-    expect(chars('高兴').map((c) => c.expression)).toEqual(['happy', 'sad'])
+    expect(s.panels).toHaveLength(1)
+    expect(chars('高兴').map((c) => c.expression)).toEqual(['happy'])
+    expect(prop('高兴', 'balloon')).toHaveLength(1)
+    expect(texts('高兴')).toEqual(['我很高兴。'])
   })
 
   it('gives each school level a matching age: Little Sister at primary, never Big Brother at secondary, Big Brother at university', () => {

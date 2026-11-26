@@ -51,6 +51,47 @@ export interface LessonWord {
   /** Huruf unik (untuk panel coretan). */
   chars: string[]
   examples: Example[]
+  /** Kalimat contoh utama yang digambar di adegan (task 6c). */
+  sentence: WordSentence | null
+  /** Dialog pendek untuk kata yang butuh percakapan (task 6c), atau null. */
+  dialog: WordDialog | null
+}
+
+/** Kalimat utama per kata (dari data/hsk1/word-sentences.json, hanya field untuk layar). */
+export interface WordSentence {
+  hanzi: string
+  pinyin: string
+  id: string
+  en: string
+  /** id tokoh (kunci di UnitData.speakers), atau null */
+  speaker: string | null
+  source: 'unit' | 'tatoeba' | 'buatan'
+  sourceId: string | number | null
+  /** Kata di luar HSK 1 di kalimat ini. */
+  outsideWords: string[]
+  /** Atribusi Tatoeba (hanya bila source = 'tatoeba'). */
+  author?: string
+  license?: string
+}
+
+export interface WordDialogLine {
+  /** id tokoh (kunci di UnitData.speakers) */
+  who: string
+  hanzi: string
+  pinyin: string
+  id: string
+  en: string
+  outsideWords: string[]
+}
+
+export interface WordDialog {
+  reason: Bilingual
+  lines: WordDialogLine[]
+}
+
+export interface Speaker {
+  name: Bilingual
+  gender: 'female' | 'male'
 }
 
 export type CasualLabel = 'santai' | 'gaul' | 'kasar'
@@ -108,4 +149,6 @@ export interface UnitData {
   /** Ungkapan dari unit lain yang padanan HSK-nya memakai kata unit ini (untuk layar kenalan kata). */
   relatedCasual: CasualItem[]
   dialog: LessonDialog | null
+  /** Tokoh yang dipakai kalimat/dialog kata unit ini (nama ID/EN + suara). */
+  speakers: Record<string, Speaker>
 }

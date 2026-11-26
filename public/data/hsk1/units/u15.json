@@ -94,7 +94,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我很喜欢这个！",
+        "pinyin": "Wǒ hěn xǐhuan zhège!",
+        "id": "Aku suka banget yang ini!",
+        "en": "I really like this one!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0001",
@@ -166,7 +177,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，我爱你！",
+        "pinyin": "Māma, wǒ ài nǐ!",
+        "id": "Ibu, aku sayang Ibu!",
+        "en": "Mom, I love you!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0116",
@@ -241,7 +263,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我很高兴。",
+        "pinyin": "Wǒ hěn gāoxìng.",
+        "id": "Aku senang sekali.",
+        "en": "I'm very happy.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 924590,
+        "outsideWords": [],
+        "author": "jessie0422",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0400",
@@ -330,7 +365,20 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我想喝奶茶。",
+        "pinyin": "Wǒ xiǎng hē nǎichá.",
+        "id": "Aku mau minum teh susu.",
+        "en": "I want to drink milk tea.",
+        "speaker": "meimei",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "奶茶"
+        ]
+      },
+      "dialog": null
     },
     {
       "id": "L1-0423",
@@ -409,7 +457,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "爸爸，我要这个！",
+        "pinyin": "Bàba, wǒ yào zhège!",
+        "id": "Ayah, aku mau yang ini!",
+        "en": "Dad, I want this one!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0502",
@@ -483,7 +542,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我不要这个菜！",
+        "pinyin": "Wǒ búyào zhège cài!",
+        "id": "Aku tidak mau sayur ini!",
+        "en": "I don't want this dish!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0160",
@@ -559,7 +629,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哥哥会开车。",
+        "pinyin": "Gēge huì kāichē.",
+        "id": "Kakak bisa menyetir mobil.",
+        "en": "Big brother can drive.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0270",
@@ -638,7 +719,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我能吃三个包子！",
+        "pinyin": "Wǒ néng chī sān gè bāozi!",
+        "id": "Aku bisa makan tiga bakpao!",
+        "en": "I can eat three buns!",
+        "speaker": "gege",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0512",
@@ -722,7 +814,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈，我可以吃一个吗？",
+        "pinyin": "Māma, wǒ kěyǐ chī yí gè ma?",
+        "id": "Bu, aku boleh makan satu?",
+        "en": "Mom, can I have one?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Minta izin dengan 可以…吗 dan menjawab \"boleh\" dengan 可以.",
+          "en": "Asking permission with 可以…吗 and answering \"yes\" with 可以."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "妈妈，我可以吃一个吗？",
+            "pinyin": "Māma, wǒ kěyǐ chī yí gè ma?",
+            "id": "Bu, aku boleh makan satu?",
+            "en": "Mom, can I have one?",
+            "outsideWords": []
+          },
+          {
+            "who": "mama",
+            "hanzi": "可以，吃吧！",
+            "pinyin": "Kěyǐ, chī ba!",
+            "id": "Boleh, makan saja!",
+            "en": "Sure, go ahead!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0187",
@@ -795,7 +921,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我觉得很好吃。",
+        "pinyin": "Wǒ juéde hěn hǎochī.",
+        "id": "Menurutku enak sekali.",
+        "en": "I think it tastes great.",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0474",
@@ -882,7 +1019,18 @@
             "license": "CC BY 2.0 FR"
           }
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "老师，我知道！",
+        "pinyin": "Lǎoshī, wǒ zhīdào!",
+        "id": "Bu Guru, saya tahu!",
+        "en": "Teacher, I know!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0306",
@@ -961,7 +1109,41 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "Nǐ hǎo! Rènshi nǐ hěn gāoxìng.",
+        "id": "Halo! Senang kenalan sama kamu.",
+        "en": "Hi! Nice to meet you.",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": {
+        "reason": {
+          "id": "Ungkapan perkenalan dan balasannya.",
+          "en": "A phrase for meeting someone and its reply."
+        },
+        "lines": [
+          {
+            "who": "mama",
+            "hanzi": "你好！认识你很高兴。",
+            "pinyin": "Nǐ hǎo! Rènshi nǐ hěn gāoxìng.",
+            "id": "Halo! Senang kenalan sama kamu.",
+            "en": "Hi! Nice to meet you.",
+            "outsideWords": []
+          },
+          {
+            "who": "friend",
+            "hanzi": "我也很高兴认识你！",
+            "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ!",
+            "id": "Aku juga senang kenalan sama kamu!",
+            "en": "Nice to meet you too!",
+            "outsideWords": []
+          }
+        ]
+      }
     }
   ],
   "casual": [
@@ -1322,5 +1504,42 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

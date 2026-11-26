@@ -97,6 +97,11 @@ export interface SceneBubble {
   icon?: 'question' | 'heart' | 'check' | 'cross' | 'dots' | 'exclaim'
   /** highlight the learned word inside the text */
   highlight?: boolean
+  /**
+   * 0-based line of the word's sentence / dialog this balloon says (task 6c): balloons with the same
+   * line appear together when the scene is played line by line.
+   */
+  line?: number
 }
 
 export interface ScenePanel {
@@ -132,6 +137,10 @@ export interface SceneIndexBubble {
   highlight: boolean
   /** comic panel the balloon belongs to (1 or 2) */
   panel: number
+  /** dialog line (0-based) the balloon says, when the scene is line-based (task 6c) */
+  line?: number
+  /** speaking character: n of its `c-n` class in the SVG (1-based, counted over all panels) */
+  char?: number
 }
 
 export interface SceneIndexEntry {

@@ -2,7 +2,7 @@
 //
 //   npm run build:lessons
 //
-// Membaca data/hsk1/{words,units,sentences,casual,dialogs}.json dan menulis public/data/hsk1/index.json
+// Membaca data/hsk1/{words,units,sentences,casual,dialogs,word-sentences,dialogs-natural}.json dan menulis public/data/hsk1/index.json
 // + public/data/hsk1/units/<unitId>.json. Deterministik; aturannya ada di src/lib/lessons-build.ts.
 import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { buildLessons, type LessonsInput } from '../src/lib/lessons-build.ts'
@@ -17,6 +17,8 @@ const input: LessonsInput = {
   sentences: read<{ sentences: LessonsInput['sentences'] }>('sentences.json').sentences,
   casual: read<{ items: LessonsInput['casual'] }>('casual.json').items,
   dialogs: read('dialogs.json'),
+  wordSentences: read<{ entries: LessonsInput['wordSentences'] }>('word-sentences.json').entries,
+  speakers: read<{ speakers: LessonsInput['speakers'] }>('dialogs-natural.json').speakers,
 }
 const out = buildLessons(input)
 

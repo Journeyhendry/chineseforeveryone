@@ -84,7 +84,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这是中国菜。",
+        "pinyin": "Zhè shì Zhōngguó cài.",
+        "id": "Ini masakan Tiongkok.",
+        "en": "This is Chinese food.",
+        "speaker": "waiter",
+        "source": "tatoeba",
+        "sourceId": 3377911,
+        "outsideWords": [],
+        "author": "Ivan24",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0128",
@@ -153,7 +166,45 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你是哪国人？",
+        "pinyin": "Nǐ shì nǎ guó rén?",
+        "id": "Kamu orang mana?",
+        "en": "Where are you from?",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 1163567,
+        "outsideWords": [],
+        "author": "cntrational",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": {
+        "reason": {
+          "id": "Kata tanya 哪国 (negara mana) butuh jawaban supaya jelas.",
+          "en": "The question 哪国 (which country) needs an answer to be clear."
+        },
+        "lines": [
+          {
+            "who": "meimei",
+            "hanzi": "你是哪国人？",
+            "pinyin": "Nǐ shì nǎ guó rén?",
+            "id": "Kamu orang mana?",
+            "en": "Where are you from?",
+            "outsideWords": []
+          },
+          {
+            "who": "classmate",
+            "hanzi": "我是印尼人。",
+            "pinyin": "Wǒ shì Yìnní rén.",
+            "id": "Aku orang Indonesia.",
+            "en": "I'm Indonesian.",
+            "outsideWords": [
+              "印尼"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "L1-0479",
@@ -225,7 +276,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我们在学习中文。",
+        "pinyin": "Wǒmen zài xuéxí Zhōngwén.",
+        "id": "Kami sedang belajar bahasa Mandarin.",
+        "en": "We're learning Chinese.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 3521456,
+        "outsideWords": [],
+        "author": "GlossaMatik",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0136",
@@ -297,7 +361,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我会说一点儿汉语。",
+        "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "id": "Aku bisa sedikit bahasa Mandarin.",
+        "en": "I can speak a little Chinese.",
+        "speaker": "classmate",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0137",
@@ -369,7 +444,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我在学汉字。",
+        "pinyin": "Wǒ zài xué Hànzì.",
+        "id": "Aku sedang belajar huruf Mandarin.",
+        "en": "I'm learning Chinese characters.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 1843469,
+        "outsideWords": [],
+        "author": "LanguageExpert",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0488",
@@ -443,7 +531,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个字我不认识。",
+        "pinyin": "Zhège zì wǒ bú rènshi.",
+        "id": "Huruf ini aku tidak tahu.",
+        "en": "I don't know this character.",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0349",
@@ -516,7 +615,53 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个用汉语怎么说？",
+        "pinyin": "Zhège yòng Hànyǔ zěnme shuō?",
+        "id": "Ini bahasa Mandarinnya apa?",
+        "en": "How do you say this in Chinese?",
+        "speaker": "classmate",
+        "source": "buatan",
+        "sourceId": null,
+        "outsideWords": [
+          "用"
+        ]
+      },
+      "dialog": {
+        "reason": {
+          "id": "Menanyakan cara mengucapkan sesuatu (怎么说) butuh jawaban.",
+          "en": "Asking how to say something (怎么说) needs an answer."
+        },
+        "lines": [
+          {
+            "who": "classmate",
+            "hanzi": "这个用汉语怎么说？",
+            "pinyin": "Zhège yòng Hànyǔ zěnme shuō?",
+            "id": "Ini bahasa Mandarinnya apa?",
+            "en": "How do you say this in Chinese?",
+            "outsideWords": [
+              "用"
+            ]
+          },
+          {
+            "who": "meimei",
+            "hanzi": "苹果。",
+            "pinyin": "Píngguǒ.",
+            "id": "Píngguǒ (apel).",
+            "en": "Píngguǒ (apple).",
+            "outsideWords": []
+          },
+          {
+            "who": "classmate",
+            "hanzi": "苹果！谢谢你！",
+            "pinyin": "Píngguǒ! Xièxie nǐ!",
+            "id": "Píngguǒ! Makasih, ya!",
+            "en": "Píngguǒ! Thank you!",
+            "outsideWords": []
+          }
+        ]
+      }
     },
     {
       "id": "L1-0350",
@@ -591,7 +736,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "不要说话了。",
+        "pinyin": "Búyào shuōhuà le.",
+        "id": "Sudah, jangan bicara lagi.",
+        "en": "Stop talking now.",
+        "speaker": "teacher",
+        "source": "tatoeba",
+        "sourceId": 5092251,
+        "outsideWords": [],
+        "author": "mirrorvan",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0090",
@@ -663,7 +821,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "老师，我来读！",
+        "pinyin": "Lǎoshī, wǒ lái dú!",
+        "id": "Bu Guru, saya yang baca!",
+        "en": "Teacher, I'll read it!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0091",
@@ -736,7 +905,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "妈妈喜欢在家读书。",
+        "pinyin": "Māma xǐhuan zài jiā dúshū.",
+        "id": "Ibu suka membaca buku di rumah.",
+        "en": "Mom likes reading at home.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0409",
@@ -804,7 +984,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我会写我的名字了！",
+        "pinyin": "Wǒ huì xiě wǒ de míngzi le!",
+        "id": "Aku sudah bisa menulis namaku!",
+        "en": "I can write my name now!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0361",
@@ -878,7 +1069,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你们在听吗？",
+        "pinyin": "Nǐmen zài tīng ma?",
+        "id": "Kalian mendengarkan?",
+        "en": "Are you listening?",
+        "speaker": "teacher",
+        "source": "tatoeba",
+        "sourceId": 775985,
+        "outsideWords": [],
+        "author": "GlossaMatik",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0363",
@@ -948,7 +1152,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你说什么？我没听见。",
+        "pinyin": "Nǐ shuō shénme? Wǒ méi tīngjiàn.",
+        "id": "Kamu bilang apa? Aku tidak dengar.",
+        "en": "What did you say? I didn't hear you.",
+        "speaker": "yeye",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0192",
@@ -1024,7 +1239,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你看，那是飞机！",
+        "pinyin": "Nǐ kàn, nà shì fēijī!",
+        "id": "Lihat, itu pesawat!",
+        "en": "Look, that's a plane!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0195",
@@ -1094,7 +1320,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "你看见我的猫了吗？",
+        "pinyin": "Nǐ kànjiàn wǒ de māo le ma?",
+        "id": "Kamu lihat kucingku, tidak?",
+        "en": "Have you seen my cat?",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0173",
@@ -1168,7 +1405,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "下个星期见！",
+        "pinyin": "Xià ge xīngqī jiàn!",
+        "id": "Sampai ketemu minggu depan!",
+        "en": "See you next week!",
+        "speaker": "friend",
+        "source": "tatoeba",
+        "sourceId": 340647,
+        "outsideWords": [],
+        "author": "aaroned",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1681,5 +1931,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "classmate": {
+      "name": {
+        "id": "Teman kuliah",
+        "en": "Classmate"
+      },
+      "gender": "male"
+    },
+    "friend": {
+      "name": {
+        "id": "Teman",
+        "en": "Friend"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "teacher": {
+      "name": {
+        "id": "Guru",
+        "en": "Teacher"
+      },
+      "gender": "female"
+    },
+    "waiter": {
+      "name": {
+        "id": "Pelayan",
+        "en": "Waiter"
+      },
+      "gender": "male"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

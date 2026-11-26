@@ -86,7 +86,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个苹果很大！",
+        "pinyin": "Zhège píngguǒ hěn dà!",
+        "id": "Apel ini besar sekali!",
+        "en": "This apple is huge!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0401",
@@ -162,7 +173,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这只猫很小。",
+        "pinyin": "Zhè zhī māo hěn xiǎo.",
+        "id": "Kucing ini kecil sekali.",
+        "en": "This cat is very small.",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0411",
@@ -237,7 +259,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我有一个新朋友！",
+        "pinyin": "Wǒ yǒu yí gè xīn péngyou!",
+        "id": "Aku punya teman baru!",
+        "en": "I have a new friend!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0520",
@@ -319,7 +352,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这件衣服真漂亮！",
+        "pinyin": "Zhè jiàn yīfu zhēn piàoliang!",
+        "id": "Baju ini cantik sekali!",
+        "en": "This outfit is really pretty!",
+        "speaker": "mama",
+        "source": "unit",
+        "sourceId": "n-u21:1",
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0212",
@@ -387,7 +431,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "今天很冷。",
+        "pinyin": "Jīntiān hěn lěng.",
+        "id": "Hari ini dingin sekali.",
+        "en": "It's very cold today.",
+        "speaker": "yeye",
+        "source": "tatoeba",
+        "sourceId": 1085587,
+        "outsideWords": [],
+        "author": "nickyeow",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0304",
@@ -461,7 +518,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我觉得很热。",
+        "pinyin": "Wǒ juéde hěn rè.",
+        "id": "Aku merasa panas sekali.",
+        "en": "I feel really hot.",
+        "speaker": "gege",
+        "source": "tatoeba",
+        "sourceId": 489080,
+        "outsideWords": [],
+        "author": "GlossaMatik",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0360",
@@ -537,7 +607,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "今天天气很好。",
+        "pinyin": "Jīntiān tiānqì hěn hǎo.",
+        "id": "Hari ini cuacanya bagus sekali.",
+        "en": "The weather is nice today.",
+        "speaker": "nainai",
+        "source": "tatoeba",
+        "sourceId": 333127,
+        "outsideWords": [],
+        "author": "fucongcong",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0396",
@@ -606,7 +689,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "要下雨了。",
+        "pinyin": "Yào xiàyǔ le.",
+        "id": "Sebentar lagi hujan.",
+        "en": "It's going to rain.",
+        "speaker": "mama",
+        "source": "tatoeba",
+        "sourceId": 4761392,
+        "outsideWords": [],
+        "author": "billt_estates",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0449",
@@ -679,7 +775,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "外边雨很大。",
+        "pinyin": "Wàibian yǔ hěn dà.",
+        "id": "Di luar hujannya deras.",
+        "en": "It's raining hard outside.",
+        "speaker": "baba",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0528",
@@ -747,7 +854,22 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "哇，下雪了！",
+        "pinyin": "Wā, xià xuě le!",
+        "id": "Wah, turun salju!",
+        "en": "Wow, it's snowing!",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 3805044,
+        "outsideWords": [
+          "哇"
+        ],
+        "author": "rickjiang",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0358",
@@ -820,7 +942,18 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "太好了，我们去玩吧！",
+        "pinyin": "Tài hǎo le, wǒmen qù wán ba!",
+        "id": "Asyik, ayo kita main!",
+        "en": "Great, let's go play!",
+        "speaker": "meimei",
+        "source": "unit",
+        "sourceId": null,
+        "outsideWords": []
+      },
+      "dialog": null
     },
     {
       "id": "L1-0108",
@@ -893,7 +1026,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "我非常喜欢这本书。",
+        "pinyin": "Wǒ fēicháng xǐhuan zhè běn shū.",
+        "id": "Aku suka sekali buku ini.",
+        "en": "I really love this book.",
+        "speaker": "meimei",
+        "source": "tatoeba",
+        "sourceId": 4270137,
+        "outsideWords": [],
+        "author": "notabene",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     },
     {
       "id": "L1-0470",
@@ -969,7 +1115,20 @@
           },
           "ind": null
         }
-      ]
+      ],
+      "sentence": {
+        "hanzi": "这个真好吃。",
+        "pinyin": "Zhège zhēn hǎochī.",
+        "id": "Ini enak banget.",
+        "en": "This is really tasty.",
+        "speaker": "baba",
+        "source": "tatoeba",
+        "sourceId": 2363175,
+        "outsideWords": [],
+        "author": "User5120",
+        "license": "CC BY 2.0 FR"
+      },
+      "dialog": null
     }
   ],
   "casual": [
@@ -1433,5 +1592,49 @@
         "machine": true
       }
     ]
+  },
+  "speakers": {
+    "baba": {
+      "name": {
+        "id": "Ayah",
+        "en": "Dad"
+      },
+      "gender": "male"
+    },
+    "gege": {
+      "name": {
+        "id": "Kakak laki-laki",
+        "en": "Big brother"
+      },
+      "gender": "male"
+    },
+    "mama": {
+      "name": {
+        "id": "Ibu",
+        "en": "Mom"
+      },
+      "gender": "female"
+    },
+    "meimei": {
+      "name": {
+        "id": "Adik perempuan",
+        "en": "Little sister"
+      },
+      "gender": "female"
+    },
+    "nainai": {
+      "name": {
+        "id": "Nenek",
+        "en": "Grandma"
+      },
+      "gender": "female"
+    },
+    "yeye": {
+      "name": {
+        "id": "Kakek",
+        "en": "Grandpa"
+      },
+      "gender": "male"
+    }
   }
 }

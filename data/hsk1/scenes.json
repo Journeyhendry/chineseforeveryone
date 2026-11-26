@@ -9,16 +9,16 @@
       "background": "room",
       "panels": [
         {
-          "characters": [{"id":"mama","pose":"wave","expression":"happy","x":140,"act":"arm-left"},{"id":"friend","pose":"wave","expression":"happy","x":370,"flip":true}],
+          "characters": [{"id":"friend","pose":"wave","expression":"happy","x":140},{"id":"mama","pose":"wave","expression":"happy","x":370,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"door","x":392,"y":336,"variant":"open"}
           ],
-          "bubbles": [{"from":0,"x":20,"y":22,"w":124,"h":56,"text":"你好！","highlight":true}]
+          "bubbles": [{"from":0,"x":30,"y":38,"w":116,"h":53,"text":"你好！","highlight":true,"line":0},{"from":1,"x":158,"y":34,"w":210,"h":53,"text":"你好！请进！","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Ibu melambai kepada tetangga yang berdiri di pintu dan berkata \"你好！\"; tetangga tersenyum dan melambai balik.",
-        "en": "Mom waves to a neighbour standing at the door and says \"你好！\"; the neighbour smiles and waves back."
+        "id": "Ibu membuka pintu untuk teman yang datang. Teman melambai: \"你好！\" Ibu membalas: \"你好！请进！\"",
+        "en": "Mom opens the door to a friend who has come over. The friend waves: \"你好！\" Mom answers: \"你好！请进！\""
       },
       "play": "wave"
     },
@@ -64,26 +64,19 @@
       "hanzi": "您",
       "unitId": "u01",
       "type": "comic",
-      "background": "home",
+      "background": "room",
       "panels": [
         {
-          "background": "room",
-          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":80,"scale":0.95},{"id":"gege","x":180,"scale":0.78}],
+          "characters": [{"id":"meimei","pose":"bow","view":"side","x":170,"act":"upper"},{"id":"yeye","expression":"happy","x":340,"flip":true}],
           "props": [],
-          "bubbles": [{"from":0,"x":24,"y":30,"w":112,"h":52,"text":"你好！"}]
-        },
-        {
-          "background": "room",
-          "characters": [{"id":"meimei","pose":"bow","view":"side","x":300,"scale":0.95,"act":"upper"},{"id":"yeye","expression":"happy","x":405,"scale":0.8}],
-          "props": [],
-          "bubbles": [{"from":0,"x":254,"y":30,"w":112,"h":52,"text":"您好！","highlight":true}]
+          "bubbles": [{"from":0,"x":22,"y":102,"w":210,"h":53,"text":"爷爷，您好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Panel 1: Adik menyapa Kakak dengan santai \"你好！\". Panel 2: Adik membungkuk sopan kepada Kakek, \"您好！\".",
-        "en": "Panel 1: Little Sister greets Big Brother casually, \"你好！\". Panel 2: she bows politely to Grandpa, \"您好！\"."
+        "id": "Adik membungkuk sopan kepada Kakek dan berkata \"爷爷，您好！\"; Kakek tersenyum.",
+        "en": "Little Sister bows politely to Grandpa and says \"爷爷，您好！\"; Grandpa smiles."
       },
-      "play": "panels"
+      "play": "bow"
     },
     {
       "wordId": "L1-0272",
@@ -93,13 +86,9 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"offer","expression":"happy","x":120,"act":"arm-left"},
-            {"id":"gege","expression":"happy","x":320,"flip":true},
-            {"id":"classmate","expression":"happy","x":420,"flip":true}
-          ],
+          "characters": [{"id":"teacher","pose":"offer","expression":"happy","x":120,"act":"arm-left"},{"id":"gege","expression":"happy","x":320,"flip":true},{"id":"classmate","expression":"happy","x":420,"flip":true}],
           "props": [],
-          "bubbles": [{"from":0,"x":20,"y":26,"w":150,"h":58,"text":"你们好！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":147,"h":53,"text":"你们好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -122,12 +111,12 @@
             {"id":"orange","x":-6,"y":-2,"hold":[0,"left"],"scale":0.75},
             {"id":"orange","x":16,"y":-2,"hold":[0,"left"],"scale":0.75}
           ],
-          "bubbles": [{"from":0,"x":30,"y":28,"w":100,"h":58,"text":"请！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":178,"h":53,"text":"请吃水果！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu menyodorkan piring berisi jeruk kepada teman yang datang: \"请！\"",
-        "en": "Mom holds out a plate of oranges to a visiting friend: \"请！\""
+        "id": "Ibu menyodorkan piring berisi jeruk kepada teman yang datang: \"请吃水果！\"",
+        "en": "Mom holds out a plate of oranges to a visiting friend: \"请吃水果！\""
       },
       "play": "pop-bubble"
     },
@@ -161,15 +150,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"offer","expression":"happy","x":130},
-            {"id":"meimei","pose":"holdUp","expression":"happy","x":340,"scale":1.1,"flip":true,"act":"char"}
+          "characters": [{"id":"baba","pose":"offer","expression":"happy","x":130},{"id":"meimei","pose":"holdUp","expression":"happy","x":340,"scale":1.1,"flip":true,"act":"char"}],
+          "props": [
+            {"id":"balloon","x":0,"y":-4,"hold":[1,"left"],"scale":1.25,"roles":["sway"]}
           ],
-          "props": [{"id":"balloon","x":0,"y":-4,"hold":[1,"left"],"scale":1.25,"roles":["sway"]}],
-          "bubbles": [{"from":1,"x":330,"y":56,"w":124,"h":58,"text":"谢谢！","highlight":true}]
+          "bubbles": [{"from":0,"x":34,"y":22,"w":105,"h":53,"text":"给你。","line":0},{"from":1,"x":330,"y":30,"w":116,"h":97,"text":"谢谢爸爸！","highlight":true,"line":1}]
         }
       ],
-      "alt": {"id":"Ayah memberi Adik balon. Adik senang dan berkata \"谢谢！\".","en":"Dad gives Little Sister a balloon. She is happy and says \"谢谢！\"."},
+      "alt": {
+        "id": "Ayah memberi Adik balon: \"给你。\" Adik senang: \"谢谢爸爸！\"",
+        "en": "Dad gives Little Sister a balloon: \"给你。\" She is happy: \"谢谢爸爸！\""
+      },
       "play": "pop-bubble"
     },
     {
@@ -181,21 +172,22 @@
       "panels": [
         {
           "characters": [{"id":"meimei","pose":"holdObject","expression":"happy","x":70,"scale":0.95},{"id":"gege","x":175,"scale":0.78}],
-          "props": [{"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":112,"h":52,"text":"谢谢！"}]
+          "props": [
+            {"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}
+          ],
+          "bubbles": [{"from":0,"x":14,"y":98,"w":105,"h":53,"text":"谢谢！","line":0}]
         },
         {
-          "characters": [
-            {"id":"meimei","pose":"holdObject","expression":"happy","x":290,"scale":0.95},
-            {"id":"gege","pose":"wave","expression":"happy","x":400,"scale":0.78,"flip":true,"act":"arm-left"}
+          "characters": [{"id":"meimei","pose":"holdObject","expression":"happy","x":290,"scale":0.95},{"id":"gege","pose":"wave","expression":"happy","x":400,"scale":0.78,"flip":true,"act":"arm-left"}],
+          "props": [
+            {"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}
           ],
-          "props": [{"id":"ball","x":0,"y":16,"hold":[0,"left"],"scale":0.9}],
-          "bubbles": [{"from":1,"x":300,"y":28,"w":160,"h":52,"text":"不客气！","highlight":true}]
+          "bubbles": [{"from":1,"x":250,"y":90,"w":147,"h":53,"text":"不客气！","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Panel 1: Adik berterima kasih kepada Kakak karena bolanya. Panel 2: Kakak melambai santai, \"不客气！\".",
-        "en": "Panel 1: Little Sister thanks Big Brother for her ball. Panel 2: he waves it off casually, \"不客气！\"."
+        "id": "Panel 1: Adik berterima kasih kepada Kakak karena bolanya: \"谢谢！\" Panel 2: Kakak melambai santai: \"不客气！\"",
+        "en": "Panel 1: Little Sister thanks Big Brother for her ball: \"谢谢！\" Panel 2: he waves it off casually: \"不客气！\""
       },
       "play": "panels"
     },
@@ -213,10 +205,13 @@
             {"id":"puddle","x":250,"y":276,"scale":0.9},
             {"id":"cup","x":290,"y":257,"rotate":-90,"variant":"empty"}
           ],
-          "bubbles": [{"from":1,"x":30,"y":34,"w":150,"h":58,"text":"对不起！","highlight":true}]
+          "bubbles": [{"from":1,"x":78,"y":10,"w":147,"h":97,"text":"爸爸，对不起！","highlight":true,"line":0},{"from":0,"x":234,"y":22,"w":136,"h":53,"text":"没关系。","line":1}]
         }
       ],
-      "alt": {"id":"Kakak menumpahkan teh di meja Ayah, lalu membungkuk: \"对不起！\"","en":"Big Brother spilled tea on Dad’s table and bows: \"对不起！\""},
+      "alt": {
+        "id": "Kakak menumpahkan teh di meja Ayah, lalu membungkuk: \"爸爸，对不起！\" Ayah menjawab: \"没关系。\"",
+        "en": "Big Brother spilled tea on Dad’s table and bows: \"爸爸，对不起！\" Dad answers: \"没关系。\""
+      },
       "play": "bow"
     },
     {
@@ -227,29 +222,25 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","expression":"surprised","x":75,"scale":0.8},
-            {"id":"meimei","pose":"handsTogether","expression":"sad","x":175,"scale":0.95,"flip":true}
-          ],
+          "characters": [{"id":"nainai","expression":"surprised","x":75,"scale":0.8},{"id":"meimei","pose":"handsTogether","expression":"sad","x":175,"scale":0.95,"flip":true}],
           "props": [
             {"id":"orange","x":110,"y":340,"scale":0.8},
             {"id":"orange","x":140,"y":334,"scale":0.8},
             {"id":"shopping-bag","x":130,"y":300,"rotate":70,"scale":0.7}
           ],
-          "bubbles": [{"from":1,"x":120,"y":30,"w":108,"h":52,"text":"对不起！"}]
+          "bubbles": [{"from":1,"x":114,"y":54,"w":73,"h":97,"text":"对不起！","line":0}]
         },
         {
-          "characters": [
-            {"id":"nainai","pose":"wave","expression":"happy","x":300,"scale":0.8,"act":"arm-left"},
-            {"id":"meimei","expression":"happy","x":410,"scale":0.95,"flip":true}
+          "characters": [{"id":"nainai","pose":"wave","expression":"happy","x":300,"scale":0.8,"act":"arm-left"},{"id":"meimei","expression":"happy","x":410,"scale":0.95,"flip":true}],
+          "props": [
+            {"id":"orange","x":345,"y":340,"scale":0.8}
           ],
-          "props": [{"id":"orange","x":345,"y":340,"scale":0.8}],
-          "bubbles": [{"from":0,"x":252,"y":30,"w":160,"h":52,"text":"没关系！","highlight":true}]
+          "bubbles": [{"from":0,"x":250,"y":90,"w":147,"h":53,"text":"没关系！","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Panel 1: Adik menabrak Nenek, jeruk jatuh, Adik minta maaf. Panel 2: Nenek tersenyum dan melambai, \"没关系！\".",
-        "en": "Panel 1: Little Sister bumps into Grandma, oranges fall, she says sorry. Panel 2: Grandma smiles and waves, \"没关系！\"."
+        "id": "Panel 1: Adik menabrak Nenek, jeruk jatuh: \"对不起！\" Panel 2: Nenek tersenyum dan melambai: \"没关系！\"",
+        "en": "Panel 1: Little Sister bumps into Grandma and oranges fall: \"对不起！\" Panel 2: Grandma smiles and waves: \"没关系！\""
       },
       "play": "panels"
     },
@@ -283,20 +274,16 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"offer","expression":"happy","x":150,"scale":1.15},
-            {"id":"gege","pose":"thinking","expression":"surprised","x":360,"act":"char"}
+          "characters": [{"id":"meimei","pose":"offer","expression":"happy","x":150,"scale":1.15},{"id":"gege","pose":"thinking","expression":"surprised","x":360,"act":"char"}],
+          "props": [
+            {"id":"baozi","x":2,"y":0,"hold":[0,"left"],"scale":1}
           ],
-          "props": [{"id":"baozi","x":2,"y":0,"hold":[0,"left"],"scale":1}],
-          "bubbles": [
-            {"from":0,"x":20,"y":34,"w":140,"h":58,"text":"吃吗？","highlight":true},
-            {"from":1,"x":400,"y":40,"w":66,"h":56,"icon":"question","kind":"thought"}
-          ]
+          "bubbles": [{"from":0,"x":42,"y":18,"w":116,"h":97,"text":"你吃包子吗？","highlight":true,"line":0},{"from":1,"x":202,"y":38,"w":168,"h":53,"text":"好，谢谢！","line":1}]
         }
       ],
       "alt": {
-        "id": "Adik menawarkan bakpao kepada Kakak: \"吃吗？\" Kakak berpikir.",
-        "en": "Little Sister offers Big Brother a steamed bun: \"吃吗？\" He thinks about it."
+        "id": "Adik menawarkan bakpao kepada Kakak: \"你吃包子吗？\" Kakak menjawab: \"好，谢谢！\"",
+        "en": "Little Sister offers Big Brother a steamed bun: \"你吃包子吗？\" He answers: \"好，谢谢！\""
       },
       "play": "pop-bubble"
     },
@@ -332,18 +319,22 @@
       "panels": [
         {
           "characters": [{"id":"mama","pose":"pointSelf","expression":"happy","x":110,"scale":0.85}],
-          "props": [{"id":"table","x":190,"y":340,"value":"90","scale":0.85},{"id":"cup","x":190,"y":280},{"id":"steam","x":190,"y":248,"scale":0.6}],
-          "bubbles": [{"from":0,"x":24,"y":26,"w":150,"h":52,"text":"我喝茶。"}]
+          "props": [
+            {"id":"table","x":190,"y":340,"value":"90","scale":0.85},
+            {"id":"cup","x":190,"y":280},
+            {"id":"steam","x":190,"y":248,"scale":0.6}
+          ],
+          "bubbles": [{"from":0,"x":14,"y":70,"w":136,"h":53,"text":"我喝茶，","line":0}]
         },
         {
           "characters": [{"id":"mama","pose":"point","expression":"happy","x":300,"scale":0.85},{"id":"baba","x":415,"scale":0.8,"flip":true}],
           "props": [],
-          "bubbles": [{"from":0,"x":254,"y":26,"w":112,"h":52,"text":"你呢？","highlight":true}]
+          "bubbles": [{"from":0,"x":250,"y":70,"w":116,"h":53,"text":"你呢？","highlight":true,"line":0},{"from":1,"x":374,"y":38,"w":91,"h":84,"text":"我也喝茶。","line":1}]
         }
       ],
       "alt": {
-        "id": "Panel 1: Ibu menunjuk dirinya: \"我喝茶。\" Panel 2: Ibu menunjuk Ayah: \"你呢？\"",
-        "en": "Panel 1: Mom points at herself: \"我喝茶。\" Panel 2: she points at Dad: \"你呢？\""
+        "id": "Panel 1: Ibu menunjuk dirinya: \"我喝茶，\" Panel 2: Ibu menunjuk Ayah: \"你呢？\" Ayah menjawab: \"我也喝茶。\"",
+        "en": "Panel 1: Mom points at herself: \"我喝茶，\" Panel 2: she points at Dad: \"你呢？\" Dad answers: \"我也喝茶。\""
       },
       "play": "panels"
     },
@@ -356,13 +347,16 @@
       "panels": [
         {
           "characters": [{"id":"gege","pose":"pointHold","expression":"happy","x":230},{"id":"meimei","expression":"happy","x":90,"scale":1.1,"act":"head"}],
-          "props": [{"id":"ball","x":0,"y":18,"hold":[0,"right"]},{"id":"door","x":410,"y":300,"scale":0.85,"roles":["target"]}],
-          "bubbles": [{"from":0,"x":250,"y":30,"w":124,"h":58,"text":"走吧！","highlight":true}]
+          "props": [
+            {"id":"ball","x":0,"y":18,"hold":[0,"right"]},
+            {"id":"door","x":410,"y":300,"scale":0.85,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":102,"y":30,"w":178,"h":53,"text":"我们走吧！","highlight":true,"line":0},{"from":1,"x":18,"y":70,"w":73,"h":53,"text":"好！","line":1}]
         }
       ],
       "alt": {
-        "id": "Kakak memegang bola dan menunjuk ke pintu: \"走吧！\" Adik mengangguk senang.",
-        "en": "Big Brother holds a ball and points at the door: \"走吧！\" Little Sister nods happily."
+        "id": "Kakak memegang bola dan menunjuk ke pintu: \"我们走吧！\" Adik mengangguk senang: \"好！\"",
+        "en": "Big Brother holds a ball and points at the door: \"我们走吧！\" Little Sister nods happily: \"好！\""
       },
       "play": "nod"
     },
@@ -376,10 +370,13 @@
         {
           "characters": [{"id":"meimei","pose":"pointSelf","expression":"happy","x":240,"scale":1.45,"act":"arm-right"}],
           "props": [],
-          "bubbles": [{"from":0,"x":300,"y":52,"w":100,"h":64,"text":"我！","highlight":true}]
+          "bubbles": [{"from":0,"x":58,"y":10,"w":178,"h":53,"text":"我是学生。","highlight":true,"line":0}]
         }
       ],
-      "alt": {"id":"Adik menunjuk dadanya sendiri: \"我！\"","en":"Little Sister points at her own chest: \"我！\""},
+      "alt": {
+        "id": "Adik menunjuk dadanya sendiri: \"我是学生。\"",
+        "en": "Little Sister points at her own chest: \"我是学生。\""
+      },
       "play": "point"
     },
     {
@@ -390,13 +387,9 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","expression":"happy","x":90},
-            {"id":"meimei","pose":"point","expression":"happy","x":210,"scale":1.1,"act":"arm-left"},
-            {"id":"baba","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}
-          ],
+          "characters": [{"id":"mama","expression":"happy","x":90},{"id":"meimei","pose":"point","expression":"happy","x":210,"scale":1.1,"act":"arm-left"},{"id":"baba","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}],
           "props": [],
-          "bubbles": [{"from":1,"x":140,"y":30,"w":200,"h":58,"text":"他是我爸爸。","highlight":true}]
+          "bubbles": [{"from":1,"x":134,"y":70,"w":210,"h":53,"text":"他是我爸爸。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -413,13 +406,9 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","expression":"happy","x":85},
-            {"id":"gege","pose":"point","expression":"happy","x":215,"act":"arm-left"},
-            {"id":"nainai","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}
-          ],
+          "characters": [{"id":"baba","expression":"happy","x":85},{"id":"gege","pose":"point","expression":"happy","x":215,"act":"arm-left"},{"id":"nainai","expression":"happy","x":410,"scale":0.82,"y":300,"roles":["target"]}],
           "props": [],
-          "bubbles": [{"from":1,"x":140,"y":26,"w":200,"h":58,"text":"她是我奶奶。","highlight":true}]
+          "bubbles": [{"from":1,"x":130,"y":38,"w":210,"h":53,"text":"她是我奶奶。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -441,12 +430,12 @@
             {"id":"sofa","x":370,"y":336,"scale":0.78},
             {"id":"cat","x":370,"y":300,"scale":1.15,"roles":["target"]}
           ],
-          "bubbles": [{"from":1,"x":150,"y":40,"w":150,"h":56,"text":"你看它！","highlight":true}]
+          "bubbles": [{"from":1,"x":114,"y":70,"w":210,"h":53,"text":"它是我的猫。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik menunjuk kucing di sofa dan berkata kepada Ibu: \"你看它！\"",
-        "en": "Little Sister points at the cat on the sofa and tells Mom: \"你看它！\""
+        "id": "Adik menunjuk kucing di sofa dan berkata kepada Ibu: \"它是我的猫。\"",
+        "en": "Little Sister points at the cat on the sofa and tells Mom: \"它是我的猫。\""
       },
       "play": "point"
     },
@@ -458,16 +447,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","expression":"happy","x":110},
-            {"id":"gege","expression":"happy","x":370},
-            {"id":"meimei","pose":"armsOpen","expression":"happy","x":240,"scale":1.1,"act":"char"}
+          "characters": [{"id":"mama","expression":"happy","x":110},{"id":"gege","expression":"happy","x":370},{"id":"meimei","pose":"armsOpen","expression":"happy","x":240,"scale":1.1,"act":"char"}],
+          "props": [
+            {"id":"heart","x":240,"y":120,"roles":["bob"]}
           ],
-          "props": [{"id":"heart","x":240,"y":120,"roles":["bob"]}],
-          "bubbles": [{"from":2,"x":270,"y":30,"w":124,"h":58,"text":"我们！","highlight":true}]
+          "bubbles": [{"from":2,"x":154,"y":26,"w":147,"h":97,"text":"我们是一家人！","highlight":true,"line":0}]
         }
       ],
-      "alt": {"id":"Adik merentangkan tangan merangkul Ibu dan Kakak: \"我们！\"","en":"Little Sister opens her arms to include Mom and Big Brother: \"我们！\""},
+      "alt": {
+        "id": "Adik merentangkan tangan merangkul Ibu dan Kakak: \"我们是一家人！\"",
+        "en": "Little Sister opens her arms to include Mom and Big Brother: \"我们是一家人！\""
+      },
       "play": "jump"
     },
     {
@@ -478,17 +468,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","expression":"happy","x":60,"scale":0.95},
-            {"id":"mama","pose":"point","expression":"happy","x":160,"act":"arm-left"},
-            {"id":"baba","pose":"wave","expression":"happy","x":330,"scale":0.75,"y":296,"flip":true},
-            {"id":"gege","pose":"raiseHand","expression":"happy","x":430,"scale":0.75,"y":296}
+          "characters": [{"id":"nainai","expression":"happy","x":60,"scale":0.95},{"id":"mama","pose":"point","expression":"happy","x":160,"act":"arm-left"},{"id":"baba","pose":"wave","expression":"happy","x":330,"scale":0.75,"y":296,"flip":true},{"id":"gege","pose":"raiseHand","expression":"happy","x":430,"scale":0.75,"y":296}],
+          "props": [
+            {"id":"ball","x":382,"y":190,"roles":["bob"],"scale":0.8}
           ],
-          "props": [{"id":"ball","x":382,"y":190,"roles":["bob"],"scale":0.8}],
-          "bubbles": [{"from":1,"x":110,"y":26,"w":124,"h":58,"text":"他们！","highlight":true}]
+          "bubbles": [{"from":1,"x":6,"y":34,"w":210,"h":53,"text":"他们在玩儿。","highlight":true,"line":0}]
         }
       ],
-      "alt": {"id":"Ibu menunjuk Ayah dan Kakak yang bermain bola: \"他们！\"","en":"Mom points at Dad and Big Brother playing ball: \"他们！\""},
+      "alt": {
+        "id": "Ibu menunjuk Ayah dan Kakak yang bermain bola: \"他们在玩儿。\"",
+        "en": "Mom points at Dad and Big Brother playing ball: \"他们在玩儿。\""
+      },
       "play": "point"
     },
     {
@@ -499,19 +489,17 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"point","expression":"happy","x":110,"act":"arm-left"},
-            {"id":"mama","expression":"happy","x":300,"scale":0.78,"y":300},
-            {"id":"nainai","expression":"happy","x":440,"scale":0.78,"y":300},
-            {"id":"meimei","expression":"happy","x":370,"scale":0.85,"y":300}
+          "characters": [{"id":"baba","pose":"point","expression":"happy","x":110,"act":"arm-left"},{"id":"mama","expression":"happy","x":300,"scale":0.78,"y":300},{"id":"nainai","expression":"happy","x":440,"scale":0.78,"y":300},{"id":"meimei","expression":"happy","x":370,"scale":0.85,"y":300}],
+          "props": [
+            {"id":"table","x":370,"y":336,"value":"220","front":true},
+            {"id":"dumpling","x":370,"y":266,"count":4,"dx":32,"front":true,"scale":0.8}
           ],
-          "props": [{"id":"table","x":370,"y":336,"value":"220","front":true},{"id":"dumpling","x":370,"y":266,"count":4,"dx":32,"front":true,"scale":0.8}],
-          "bubbles": [{"from":0,"x":30,"y":26,"w":124,"h":58,"text":"她们！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":22,"w":241,"h":53,"text":"她们在包饺子。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ayah menunjuk Ibu, Nenek, dan Adik yang membuat pangsit bersama: \"她们！\"",
-        "en": "Dad points at Mom, Grandma and Little Sister making dumplings together: \"她们！\""
+        "id": "Ayah menunjuk Ibu, Nenek, dan Adik yang membuat pangsit bersama: \"她们在包饺子。\"",
+        "en": "Dad points at Mom, Grandma and Little Sister making dumplings together: \"她们在包饺子。\""
       },
       "play": "point"
     },
@@ -525,12 +513,12 @@
         {
           "characters": [{"id":"gege","expression":"happy","x":50},{"id":"meimei","pose":"point","expression":"happy","x":140,"scale":1.1,"act":"arm-left"}],
           "props": [
-            {"id":"cat","x":268,"y":334,"scale":1.0,"roles":["target"]},
+            {"id":"cat","x":268,"y":334,"scale":1,"roles":["target"]},
             {"id":"dog","x":356,"y":322,"variant":"run","roles":["target","bob"]},
             {"id":"cat","x":440,"y":336,"scale":0.9,"color":"#A9A3B8","roles":["target"],"flip":true},
             {"id":"ball","x":300,"y":262,"scale":0.7,"color":"#F06595","roles":["bob"]}
           ],
-          "bubbles": [{"from":1,"x":150,"y":36,"w":170,"h":56,"text":"你看它们！","highlight":true}]
+          "bubbles": [{"from":1,"x":94,"y":70,"w":178,"h":53,"text":"你看它们！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -575,12 +563,11 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","expression":"happy","x":130,"scale":1.15,"act":"head"},
-            {"id":"baba","pose":"pointHold","expression":"happy","x":345,"flip":true}
+          "characters": [{"id":"meimei","expression":"happy","x":130,"scale":1.15,"act":"head"},{"id":"baba","pose":"pointHold","expression":"happy","x":345,"flip":true}],
+          "props": [
+            {"id":"photo","x":0,"y":10,"hold":[1,"right"],"scale":0.9}
           ],
-          "props": [{"id":"photo","x":0,"y":10,"hold":[1,"right"],"scale":0.9}],
-          "bubbles": [{"from":1,"x":300,"y":30,"w":150,"h":58,"text":"这是你。","highlight":true}]
+          "bubbles": [{"from":1,"x":198,"y":22,"w":147,"h":53,"text":"这是你。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -619,17 +606,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"raiseHand","expression":"happy","x":150},
-            {"id":"meimei","pose":"raiseHand","expression":"happy","x":335,"scale":1.15,"act":"char"}
-          ],
+          "characters": [{"id":"gege","pose":"raiseHand","expression":"happy","x":150},{"id":"meimei","pose":"raiseHand","expression":"happy","x":335,"scale":1.15,"act":"char"}],
           "props": [],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":112,"h":52,"text":"我要！"},{"from":1,"x":230,"y":46,"w":140,"h":56,"text":"我也要！","highlight":true}]
+          "bubbles": [{"from":1,"x":198,"y":62,"w":147,"h":53,"text":"我也要！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakak mengangkat tangan: \"我要！\" Adik ikut mengangkat tangan: \"我也要！\"",
-        "en": "Big Brother raises his hand: \"我要！\" Little Sister raises hers too: \"我也要！\""
+        "id": "Kakak mengangkat tangan; Adik ikut mengangkat tangan: \"我也要！\"",
+        "en": "Big Brother raises his hand; Little Sister raises hers too: \"我也要！\""
       },
       "play": "jump"
     },
@@ -663,17 +647,16 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","expression":"happy","x":370,"flip":true},
-            {"id":"meimei","pose":"pointSelf","expression":"happy","x":150,"scale":1.25,"act":"char"}
+          "characters": [{"id":"teacher","expression":"happy","x":370,"flip":true},{"id":"meimei","pose":"pointSelf","expression":"happy","x":150,"scale":1.25,"act":"char"}],
+          "props": [
+            {"id":"name-tag","x":162,"y":258,"front":true,"roles":["target"]}
           ],
-          "props": [{"id":"name-tag","x":162,"y":258,"front":true,"roles":["target"]}],
-          "bubbles": [{"from":1,"x":24,"y":26,"w":200,"h":58,"text":"我的名字是……","highlight":true}]
+          "bubbles": [{"from":0,"x":98,"y":34,"w":273,"h":53,"text":"你的名字很好听。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Hari pertama sekolah: Adik menunjuk label nama di bajunya sambil berkenalan dengan Bu Guru: \"我的名字是……\"",
-        "en": "First day of school: Little Sister points at the name tag on her shirt and introduces herself to the teacher: \"我的名字是……\""
+        "id": "Hari pertama sekolah: Adik menunjuk label nama di bajunya; Bu Guru membacanya dan berkata \"你的名字很好听。\"",
+        "en": "First day of school: Little Sister points at the name tag on her shirt; the teacher reads it and says \"你的名字很好听。\""
       },
       "play": "pop-bubble"
     },
@@ -685,20 +668,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"hug","expression":"happy","x":150,"scale":1.2,"act":"char"},
-            {"id":"gege","pose":"holdObject","expression":"happy","x":360}
+          "characters": [{"id":"meimei","pose":"hug","expression":"happy","x":150,"scale":1.2,"act":"char"},{"id":"gege","pose":"holdObject","expression":"happy","x":360}],
+          "props": [
+            {"id":"toy-bear","x":0,"y":46,"hold":[0,"left"],"scale":1},
+            {"id":"ball","x":0,"y":20,"hold":[1,"left"],"scale":1.2}
           ],
-          "props": [{"id":"toy-bear","x":0,"y":46,"hold":[0,"left"],"scale":1},{"id":"ball","x":0,"y":20,"hold":[1,"left"],"scale":1.2}],
-          "bubbles": [
-            {"from":0,"x":28,"y":34,"w":124,"h":58,"text":"我的！","highlight":true},
-            {"from":1,"x":310,"y":30,"w":124,"h":58,"text":"我的！","highlight":true}
-          ]
+          "bubbles": [{"from":0,"x":6,"y":54,"w":147,"h":53,"text":"是我的！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik memeluk boneka beruangnya, Kakak memegang bolanya; masing-masing berkata \"我的！\"",
-        "en": "Little Sister hugs her teddy bear and Big Brother holds his ball; each says \"我的！\""
+        "id": "Adik memeluk boneka beruangnya dan berkata \"是我的！\"; Kakak memegang bolanya.",
+        "en": "Little Sister hugs her teddy bear and says \"是我的！\"; Big Brother holds his ball."
       },
       "play": "pop-bubble"
     },
@@ -947,17 +927,16 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"holdUp","expression":"happy","x":130},
-            {"id":"meimei","pose":"count","expression":"happy","x":350,"fingers":3,"scale":1.2,"flip":true,"act":"char"}
+          "characters": [{"id":"mama","pose":"holdUp","expression":"happy","x":130},{"id":"meimei","pose":"count","expression":"happy","x":350,"fingers":3,"scale":1.2,"flip":true,"act":"char"}],
+          "props": [
+            {"id":"candy","x":4,"y":-4,"hold":[0,"left"],"scale":0.8}
           ],
-          "props": [{"id":"candy","x":4,"y":-4,"hold":[0,"left"],"scale":0.8}],
-          "bubbles": [{"from":0,"x":26,"y":30,"w":130,"h":58,"text":"几个？","highlight":true},{"from":1,"x":360,"y":64,"w":80,"h":52,"icon":"dots"}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":178,"h":53,"text":"你要几个？","highlight":true,"line":0},{"from":1,"x":242,"y":54,"w":105,"h":53,"text":"三个！","line":1}]
         }
       ],
       "alt": {
-        "id": "Ibu bertanya \"几个？\" sambil memegang permen; Adik menebak dengan tiga jari.",
-        "en": "Mom asks \"几个？\" holding sweets; Little Sister guesses with three fingers."
+        "id": "Ibu memegang permen dan bertanya \"你要几个？\"; Adik menunjukkan tiga jari: \"三个！\"",
+        "en": "Mom holds sweets and asks \"你要几个？\"; Little Sister shows three fingers: \"三个！\""
       },
       "play": "pop-bubble"
     },
@@ -969,21 +948,18 @@
       "background": "market",
       "panels": [
         {
-          "characters": [
-            {"id":"seller","expression":"happy","x":370,"flip":true,"y":320},
-            {"id":"baba","pose":"point","expression":"happy","x":120,"act":"arm-left"}
-          ],
+          "characters": [{"id":"seller","expression":"happy","x":370,"flip":true,"y":320},{"id":"baba","pose":"point","expression":"happy","x":120,"act":"arm-left"}],
           "props": [
             {"id":"market-stall","x":370,"y":336,"front":true,"scale":0.8},
             {"id":"orange","x":345,"y":250,"repeat":3,"dx":28,"front":true,"scale":0.8},
             {"id":"orange","x":345,"y":276,"repeat":4,"dx":28,"front":true,"scale":0.8,"roles":["target"]}
           ],
-          "bubbles": [{"from":1,"x":160,"y":30,"w":150,"h":58,"text":"多少钱？","highlight":true}]
+          "bubbles": [{"from":1,"x":6,"y":22,"w":210,"h":53,"text":"这个多少钱？","highlight":true,"line":0},{"from":0,"x":230,"y":18,"w":199,"h":53,"text":"三块钱一个。","line":1}]
         }
       ],
       "alt": {
-        "id": "Di pasar, Ayah menunjuk tumpukan jeruk dan bertanya kepada penjual: \"多少钱？\"",
-        "en": "At the market, Dad points at a pile of oranges and asks the seller: \"多少钱？\""
+        "id": "Di pasar, Ayah menunjuk tumpukan jeruk: \"这个多少钱？\" Penjual menjawab: \"三块钱一个。\"",
+        "en": "At the market, Dad points at a pile of oranges: \"这个多少钱？\" The seller answers: \"三块钱一个。\""
       },
       "play": "point"
     },
@@ -1045,12 +1021,12 @@
             {"id":"ball","x":390,"y":322,"scale":0.8},
             {"id":"toy-bear","x":8,"y":36,"hold":[0,"left"],"scale":0.85,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":40,"y":34,"w":130,"h":56,"text":"这个！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":178,"h":53,"text":"我要这个！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik menyodorkan boneka beruang di tangannya ke depan: \"这个！\" Mainan lain masih di rak.",
-        "en": "Little Sister holds out the teddy bear in her hand: \"这个！\" The other toys stay on the shelf."
+        "id": "Adik menyodorkan boneka beruang di tangannya ke depan: \"我要这个！\" Mainan lain masih di rak.",
+        "en": "Little Sister holds out the teddy bear in her hand: \"我要这个！\" The other toys stay on the shelf."
       },
       "play": "point"
     },
@@ -1092,12 +1068,12 @@
             {"id":"toy-bear","x":4,"y":40,"hold":[0,"left"],"scale":0.9},
             {"id":"toy-bear","x":-14,"y":26,"hold":[0,"left"],"scale":0.8,"color":"#F4A7B9"}
           ],
-          "bubbles": [{"from":0,"x":230,"y":40,"w":120,"h":58,"text":"这些！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":46,"w":210,"h":53,"text":"这些是我的！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik memeluk beberapa boneka di dadanya: \"这些！\" Boneka lain ada jauh di rak.",
-        "en": "Little Sister hugs several stuffed toys to her chest: \"这些！\" Other toys sit far away on a shelf."
+        "id": "Adik memeluk beberapa boneka di dadanya: \"这些是我的！\" Boneka lain ada jauh di rak.",
+        "en": "Little Sister hugs several stuffed toys to her chest: \"这些是我的！\" Other toys sit far away on a shelf."
       },
       "play": "pop-bubble"
     },
@@ -1133,17 +1109,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"sitPat","expression":"happy","x":150,"act":"arm-left","y":318},
-            {"id":"meimei","expression":"happy","x":400,"scale":1.1,"flip":true}
+          "characters": [{"id":"mama","pose":"sitPat","expression":"happy","x":150,"act":"arm-left","y":318},{"id":"meimei","expression":"happy","x":400,"scale":1.1,"flip":true}],
+          "props": [
+            {"id":"sofa","x":200,"y":336,"scale":1.1},
+            {"id":"sparkle","x":262,"y":262,"roles":["target"]}
           ],
-          "props": [{"id":"sofa","x":200,"y":336,"scale":1.1},{"id":"sparkle","x":262,"y":262,"roles":["target"]}],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":150,"h":58,"text":"坐这儿！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":54,"w":210,"h":53,"text":"来，坐这儿！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu duduk di sofa dan menepuk tempat kosong di sebelahnya, memanggil Adik: \"坐这儿！\"",
-        "en": "Mom sits on the sofa and pats the empty spot beside her, calling Little Sister: \"坐这儿！\""
+        "id": "Ibu duduk di sofa dan menepuk tempat kosong di sebelahnya, memanggil Adik: \"来，坐这儿！\"",
+        "en": "Mom sits on the sofa and pats the empty spot beside her, calling Little Sister: \"来，坐这儿！\""
       },
       "play": "beckon"
     },
@@ -1156,13 +1132,15 @@
       "panels": [
         {
           "characters": [{"id":"classmate","expression":"happy","x":80,"scale":0.95},{"id":"gege","pose":"point","expression":"happy","x":190,"act":"arm-left"}],
-          "props": [{"id":"tea-shop","x":400,"y":252,"scale":0.6,"roles":["target"]}],
-          "bubbles": [{"from":1,"x":230,"y":36,"w":110,"h":58,"text":"那儿！","highlight":true}]
+          "props": [
+            {"id":"tea-shop","x":400,"y":252,"scale":0.6,"roles":["target"]}
+          ],
+          "bubbles": [{"from":1,"x":6,"y":38,"w":241,"h":53,"text":"我们去那儿吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakak menunjuk kedai teh susu di seberang jalan sambil bicara dengan temannya: \"那儿！\"",
-        "en": "Big Brother points at the milk tea shop across the street while talking to his classmate: \"那儿！\""
+        "id": "Kakak menunjuk kedai teh susu di seberang jalan sambil bicara dengan temannya: \"我们去那儿吧！\"",
+        "en": "Big Brother points at the milk tea shop across the street while talking to his classmate: \"我们去那儿吧！\""
       },
       "play": "point"
     },
@@ -1175,13 +1153,16 @@
       "panels": [
         {
           "characters": [{"id":"baba","pose":"pointDownHold","expression":"happy","x":200,"act":"arm-left"}],
-          "props": [{"id":"location-pin","x":272,"y":340,"scale":1.1,"roles":["target","bob"]},{"id":"map","x":0,"y":22,"hold":[0,"right"],"scale":0.85}],
-          "bubbles": [{"from":0,"x":280,"y":40,"w":120,"h":58,"text":"这里！","highlight":true}]
+          "props": [
+            {"id":"location-pin","x":272,"y":340,"scale":1.1,"roles":["target","bob"]},
+            {"id":"map","x":0,"y":22,"hold":[0,"right"],"scale":0.85}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":22,"w":210,"h":53,"text":"我们在这里。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ayah memegang peta taman dan menunjuk tanah tepat di dekat kakinya, ada tanda lokasi: \"这里！\"",
-        "en": "Dad holds a park map and points at the ground right by his feet, where a location pin is: \"这里！\""
+        "id": "Ayah memegang peta taman dan menunjuk tanah tepat di dekat kakinya, ada tanda lokasi: \"我们在这里。\"",
+        "en": "Dad holds a park map and points at the ground right by his feet, where a location pin is: \"我们在这里。\""
       },
       "play": "point"
     },
@@ -1193,17 +1174,17 @@
       "background": "sky",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"pointUp","expression":"happy","x":120,"act":"arm-left"},
-            {"id":"meimei","pose":"stand","expression":"surprised","x":230,"scale":1}
+          "characters": [{"id":"yeye","pose":"pointUp","expression":"happy","x":120,"act":"arm-left"},{"id":"meimei","pose":"stand","expression":"surprised","x":230,"scale":1}],
+          "props": [
+            {"id":"hill","x":400,"y":278,"scale":0.8},
+            {"id":"pagoda","x":400,"y":178,"scale":0.9,"roles":["target"]}
           ],
-          "props": [{"id":"hill","x":400,"y":278,"scale":0.8},{"id":"pagoda","x":400,"y":178,"scale":0.9,"roles":["target"]}],
-          "bubbles": [{"from":0,"x":20,"y":26,"w":150,"h":58,"text":"在那里！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":42,"w":210,"h":53,"text":"他们在那里！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakek menunjuk pagoda jauh di atas bukit; Adik ikut melihat: \"在那里！\"",
-        "en": "Grandpa points far off to a pagoda on a hill; Little Sister looks: \"在那里！\""
+        "id": "Kakek menunjuk pagoda jauh di atas bukit; Adik ikut melihat: \"他们在那里！\"",
+        "en": "Grandpa points far off to a pagoda on a hill; Little Sister looks: \"他们在那里！\""
       },
       "play": "point"
     },
@@ -1216,13 +1197,16 @@
       "panels": [
         {
           "characters": [{"id":"mama","expression":"happy","x":390,"flip":true},{"id":"waiter","pose":"offer","expression":"happy","x":150,"act":"arm-left"}],
-          "props": [{"id":"chair","x":265,"y":330,"scale":0.85},{"id":"table","x":265,"y":336,"value":"110","front":true,"roles":["target"]}],
-          "bubbles": [{"from":1,"x":24,"y":16,"w":150,"h":58,"text":"这边请！","highlight":true}]
+          "props": [
+            {"id":"chair","x":265,"y":330,"scale":0.85},
+            {"id":"table","x":265,"y":336,"value":"110","front":true,"roles":["target"]}
+          ],
+          "bubbles": [{"from":1,"x":6,"y":30,"w":241,"h":53,"text":"您好，这边请！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Di restoran, pelayan mempersilakan Ibu ke meja di dekatnya dengan telapak terbuka: \"这边请！\"",
-        "en": "In a restaurant, the waiter shows Mom to the table right next to him with an open palm: \"这边请！\""
+        "id": "Di restoran, pelayan mempersilakan Ibu ke meja di dekatnya dengan telapak terbuka: \"您好，这边请！\"",
+        "en": "In a restaurant, the waiter shows Mom to the table right next to him with an open palm: \"您好，这边请！\""
       },
       "play": "beckon"
     },
@@ -1240,10 +1224,13 @@
             {"id":"table","x":400,"y":290,"value":"120","scale":0.6,"roles":["target"]},
             {"id":"chair","x":360,"y":290,"scale":0.55}
           ],
-          "bubbles": [{"from":1,"x":200,"y":16,"w":120,"h":58,"text":"那边！","highlight":true}]
+          "bubbles": [{"from":1,"x":6,"y":30,"w":178,"h":53,"text":"请坐那边。","highlight":true,"line":0}]
         }
       ],
-      "alt": {"id":"Pelayan menunjuk meja kosong jauh di dekat jendela: \"那边！\"","en":"The waiter points to an empty table far away by the window: \"那边！\""},
+      "alt": {
+        "id": "Pelayan menunjuk meja kosong jauh di dekat jendela: \"请坐那边。\"",
+        "en": "The waiter points to an empty table far away by the window: \"请坐那边。\""
+      },
       "play": "point"
     },
     {
@@ -1305,7 +1292,7 @@
             {"id":"wardrobe-door","x":275,"y":320,"scale":1.3,"front":true},
             {"id":"arrow","x":120,"y":250,"scale":0.8,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":30,"y":40,"w":170,"h":58,"text":"我在这儿！","highlight":true}]
+          "bubbles": [{"from":0,"x":246,"y":78,"w":153,"h":46,"text":"我在这儿！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -1322,14 +1309,16 @@
       "background": "plain-peach",
       "panels": [
         {
-          "characters": [{"id":"meimei","pose":"holdEar","expression":"surprised","x":210,"scale":1.35,"act":"upper"}],
-          "props": [{"id":"gift-box","x":10,"y":24,"hold":[0,"left"],"scale":0.85}],
-          "bubbles": [{"from":0,"x":40,"y":50,"w":130,"h":58,"text":"什么？","highlight":true},{"x":340,"y":60,"w":70,"h":64,"icon":"question","kind":"thought"}]
+          "characters": [{"id":"meimei","pose":"holdEar","expression":"surprised","x":150,"scale":1.2,"act":"upper"},{"id":"mama","expression":"happy","x":370,"flip":true}],
+          "props": [
+            {"id":"gift-box","x":10,"y":24,"hold":[0,"left"],"scale":0.85}
+          ],
+          "bubbles": [{"from":0,"x":26,"y":10,"w":116,"h":97,"text":"这是什么？","highlight":true,"line":0},{"from":1,"x":150,"y":34,"w":230,"h":53,"text":"这是你的新书。","line":1}]
         }
       ],
       "alt": {
-        "id": "Adik mengguncang kotak hadiah tertutup di dekat telinganya: \"什么？\"",
-        "en": "Little Sister shakes a closed gift box next to her ear: \"什么？\""
+        "id": "Adik mengguncang kotak hadiah tertutup di dekat telinganya: \"这是什么？\" Ibu tersenyum: \"这是你的新书。\"",
+        "en": "Little Sister shakes a closed gift box next to her ear: \"这是什么？\" Mom smiles: \"这是你的新书。\""
       },
       "play": "shake-head"
     },
@@ -1384,19 +1373,19 @@
       "background": "market",
       "panels": [
         {
-          "characters": [{"id":"meimei","pose":"thinking","expression":"surprised","x":130,"scale":1.15,"act":"char"}],
+          "characters": [{"id":"meimei","pose":"thinking","expression":"surprised","x":90,"scale":1.15,"act":"char"},{"id":"mama","expression":"happy","x":218}],
           "props": [
             {"id":"shelf","x":340,"y":334,"scale":1.25},
             {"id":"toy-bear","x":290,"y":242,"scale":0.6},
             {"id":"toy-bear","x":340,"y":242,"scale":0.6,"color":"#F7A1C4"},
             {"id":"toy-bear","x":390,"y":242,"scale":0.6,"color":"#8EC5FC"}
           ],
-          "bubbles": [{"from":0,"x":40,"y":40,"w":130,"h":56,"kind":"thought","text":"哪个？","highlight":true}]
+          "bubbles": [{"from":0,"x":18,"y":18,"w":84,"h":97,"text":"哪个好？","highlight":true,"line":0},{"from":1,"x":114,"y":34,"w":168,"h":53,"text":"这个很好。","line":1}]
         }
       ],
       "alt": {
-        "id": "Adik berdiri di depan tiga boneka beruang di rak toko dan berpikir: \"哪个？\"",
-        "en": "Little Sister stands in front of three teddy bears on a shop shelf, wondering: \"哪个？\""
+        "id": "Di toko, Adik melihat tiga boneka beruang di rak dan bertanya kepada Ibu: \"哪个好？\" Ibu menjawab: \"这个很好。\"",
+        "en": "In a shop, Little Sister looks at three teddy bears on a shelf and asks Mom: \"哪个好？\" Mom answers: \"这个很好。\""
       },
       "play": "pop-bubble"
     },
@@ -1468,12 +1457,18 @@
       "background": "room",
       "panels": [
         {
-          "characters": [{"id":"yeye","pose":"holdUp","expression":"surprised","x":200,"scale":1.1,"act":"char"}],
-          "props": [{"id":"phone","x":0,"y":4,"hold":[0,"left"],"scale":1.1},{"id":"gear","x":330,"y":120,"scale":0.9,"roles":["sway"]}],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"怎么用？","highlight":true}]
+          "characters": [{"id":"yeye","pose":"holdUp","expression":"surprised","x":150,"scale":1.1,"act":"char"},{"id":"gege","expression":"happy","x":375,"flip":true}],
+          "props": [
+            {"id":"phone","x":0,"y":4,"hold":[0,"left"],"scale":1.1},
+            {"id":"gear","x":262,"y":150,"scale":0.6,"roles":["sway"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":18,"w":210,"h":53,"text":"这个怎么用？","highlight":true,"line":0},{"from":1,"x":242,"y":38,"w":136,"h":53,"text":"我看看。","line":1}]
         }
       ],
-      "alt": {"id":"Kakek memegang ponsel baru dan bingung cara memakainya: \"怎么用？\"","en":"Grandpa holds a new phone, puzzled how to use it: \"怎么用？\""},
+      "alt": {
+        "id": "Kakek memegang ponsel baru dengan bingung: \"这个怎么用？\" Kakak mendekat: \"我看看。\"",
+        "en": "Grandpa holds a new phone, puzzled: \"这个怎么用？\" Big Brother comes over: \"我看看。\""
+      },
       "play": "shrug"
     },
     {
@@ -1490,12 +1485,12 @@
             {"id":"sparkle","x":232,"y":150},
             {"id":"sparkle","x":70,"y":170,"scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":40,"y":24,"w":160,"h":56,"text":"怎么样？","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":26,"w":273,"h":53,"text":"这件衣服怎么样？","highlight":true,"line":0},{"from":1,"x":290,"y":22,"w":136,"h":53,"text":"很好看！","line":1}]
         }
       ],
       "alt": {
-        "id": "Ibu menunjukkan baju barunya kepada Ayah: \"怎么样？\" Ayah mengacungkan jempol.",
-        "en": "Mom shows Dad her new top: \"怎么样？\" Dad gives a thumbs-up."
+        "id": "Ibu menunjukkan baju barunya kepada Ayah: \"这件衣服怎么样？\" Ayah mengacungkan jempol: \"很好看！\"",
+        "en": "Mom shows Dad her new top: \"这件衣服怎么样？\" Dad gives a thumbs-up: \"很好看！\""
       },
       "play": "pop-bubble"
     },
@@ -1532,12 +1527,12 @@
           "props": [
             {"id":"question","x":420,"y":150,"scale":1.5,"roles":["bob","target"]}
           ],
-          "bubbles": [{"from":1,"x":150,"y":30,"w":170,"h":56,"text":"我有问题！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":178,"h":53,"text":"有问题吗？","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik mengangkat tangan dengan tanda tanya besar di dekatnya: \"我有问题！\" Guru tersenyum.",
-        "en": "Little Sister raises her hand, a big question mark beside her: \"我有问题！\" The teacher smiles."
+        "id": "Bu Guru bertanya \"有问题吗？\"; Adik mengangkat tangan dengan tanda tanya besar di dekatnya.",
+        "en": "The teacher asks \"有问题吗？\"; Little Sister raises her hand, a big question mark beside her."
       },
       "play": "pop-bubble"
     },
@@ -1549,17 +1544,17 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"thumbsUp","expression":"happy","x":90,"act":"head","scale":0.95},
-            {"id":"gege","expression":"happy","x":405,"flip":true}
+          "characters": [{"id":"teacher","pose":"thumbsUp","expression":"happy","x":90,"act":"head","scale":0.95},{"id":"meimei","expression":"happy","x":405,"scale":1.1,"flip":true}],
+          "props": [
+            {"id":"blackboard","x":240,"y":210,"value":"2+2=4","scale":1},
+            {"id":"check","x":330,"y":120,"roles":["target"],"scale":1.3}
           ],
-          "props": [{"id":"blackboard","x":240,"y":210,"value":"2+2=4","scale":1},{"id":"check","x":330,"y":120,"roles":["target"],"scale":1.3}],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":110,"h":52,"text":"对！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":10,"w":98,"h":90,"text":"二加二是几？","line":0},{"from":1,"x":366,"y":70,"w":105,"h":53,"text":"是四。","line":1},{"from":0,"x":118,"y":22,"w":178,"h":53,"text":"对，很好！","highlight":true,"line":2}]
         }
       ],
       "alt": {
-        "id": "Di papan tulis tertulis 2 + 2 = 4. Bu Guru tersenyum dan memberi centang: \"对！\"",
-        "en": "The blackboard shows 2 + 2 = 4. The teacher smiles and adds a big tick: \"对！\""
+        "id": "Bu Guru bertanya \"二加二是几？\"; Adik menjawab \"是四。\"; Bu Guru tersenyum dan memberi centang di papan (2 + 2 = 4): \"对，很好！\"",
+        "en": "The teacher asks \"二加二是几？\"; Little Sister answers \"是四。\"; the teacher smiles and ticks the board (2 + 2 = 4): \"对，很好！\""
       },
       "play": "nod"
     },
@@ -1630,16 +1625,13 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"classmate","expression":"happy","x":120,"y":289,"scale":0.85},
-            {"id":"baba","expression":"sad","x":360,"y":294,"scale":0.85},
-            {"id":"gege","pose":"armsUp","expression":"happy","x":240,"y":258,"scale":0.85,"act":"char"}
-          ],
+          "characters": [{"id":"classmate","expression":"happy","x":120,"y":289,"scale":0.85},{"id":"baba","expression":"sad","x":360,"y":294,"scale":0.85},{"id":"gege","pose":"armsUp","expression":"happy","x":240,"y":258,"scale":0.85,"act":"char"}],
           "props": [
             {"id":"podium","x":120,"y":340,"value":"2","variant":"44","color":"#DDE3EE","scale":1.2},
             {"id":"podium","x":360,"y":340,"value":"3","variant":"40","color":"#F3D9C4","scale":1.2},
             {"id":"podium","x":240,"y":340,"value":"1","variant":"70","color":"#FFE08A","scale":1.2}
-          ]
+          ],
+          "bubbles": [{"from":2,"x":278,"y":10,"w":178,"h":53,"text":"我是第一！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -1657,13 +1649,15 @@
       "panels": [
         {
           "characters": [{"id":"meimei","pose":"pointUp","expression":"happy","x":130,"scale":1.2,"act":"arm-left"}],
-          "props": [{"id":"calendar","x":330,"y":250,"value":"15","scale":1.4,"roles":["target"]}],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":150,"h":58,"text":"十五号！","highlight":true}]
+          "props": [
+            {"id":"calendar","x":330,"y":250,"value":"15","scale":1.4,"roles":["target"]}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":54,"w":241,"h":53,"text":"今天是十五号。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender dinding dengan tanggal 15 dilingkari; Adik menunjuknya: \"十五号！\"",
-        "en": "A wall calendar with the 15th circled; Little Sister points at it: \"十五号！\""
+        "id": "Kalender dinding dengan tanggal 15 dilingkari; Adik menunjuknya: \"今天是十五号。\"",
+        "en": "A wall calendar with the 15th circled; Little Sister points at it: \"今天是十五号。\""
       },
       "play": "point"
     },
@@ -1676,8 +1670,11 @@
       "panels": [
         {
           "characters": [{"id":"meimei","pose":"armsUp","expression":"happy","x":140,"scale":1.2,"act":"char"}],
-          "props": [{"id":"table","x":340,"y":336,"value":"200"},{"id":"cake","x":340,"y":268,"value":"6","scale":1.2}],
-          "bubbles": [{"from":0,"x":250,"y":30,"w":150,"h":58,"text":"我六岁！","highlight":true}]
+          "props": [
+            {"id":"table","x":340,"y":336,"value":"200"},
+            {"id":"cake","x":340,"y":268,"value":"6","scale":1.2}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":54,"w":147,"h":53,"text":"我六岁！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -1723,12 +1720,12 @@
             {"id":"bowl","x":115,"y":268,"variant":"full","scale":1.25},
             {"id":"bowl","x":220,"y":268,"variant":"few","scale":1.25,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":330,"y":30,"w":100,"h":58,"text":"少！","highlight":true}]
+          "bubbles": [{"from":0,"x":130,"y":62,"w":273,"h":53,"text":"你的多，我的少！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Dua mangkuk: satu penuh pangsit, satu hanya berisi dua. Adik cemberut menunjuk yang hampir kosong: \"少！\"",
-        "en": "Two bowls: one piled with dumplings, one with only two. Little Sister pouts and points at the nearly empty one: \"少！\""
+        "id": "Dua mangkuk: satu penuh pangsit, satu hanya berisi dua. Adik cemberut menunjuk yang hampir kosong: \"你的多，我的少！\"",
+        "en": "Two bowls: one piled with dumplings, one with only two. Little Sister pouts and points at the nearly empty one: \"你的多，我的少！\""
       },
       "play": "point"
     },
@@ -1763,20 +1760,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"holdUpBoth","expression":"happy","x":150,"act":"head"},
-            {"id":"meimei","pose":"offer","expression":"happy","x":350,"scale":1.15,"flip":true,"act":"char"}
-          ],
+          "characters": [{"id":"gege","pose":"holdUpBoth","expression":"happy","x":150,"act":"head"},{"id":"meimei","pose":"offer","expression":"happy","x":350,"scale":1.15,"flip":true,"act":"char"}],
           "props": [
             {"id":"baozi","x":0,"y":2,"hold":[0,"right"],"variant":"half","scale":1.2},
             {"id":"baozi","x":0,"y":2,"hold":[0,"left"],"variant":"half","scale":1.2,"flip":true}
           ],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":170,"h":58,"text":"一半给你！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":38,"w":241,"h":53,"text":"这一半是你的！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakak membagi bakpao jadi dua dan memberi setengahnya kepada Adik: \"一半给你！\"",
-        "en": "Big Brother breaks a steamed bun in two and gives half to Little Sister: \"一半给你！\""
+        "id": "Kakak membagi bakpao jadi dua dan memberi setengahnya kepada Adik: \"这一半是你的！\"",
+        "en": "Big Brother breaks a steamed bun in two and gives half to Little Sister: \"这一半是你的！\""
       },
       "play": "pop-bubble"
     },
@@ -1821,12 +1815,12 @@
             {"id":"steam","x":350,"y":220,"roles":["sway"]},
             {"id":"hotLines","x":392,"y":228,"scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":40,"y":36,"w":180,"h":56,"text":"有点儿热！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":210,"h":53,"text":"茶有点儿热。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik menyentuh cangkir teh yang mengepul dan memberi isyarat \"sedikit\" dengan jarinya: \"有点儿热！\"",
-        "en": "Little Sister touches a steaming cup of tea and shows \"a little\" with her fingers: \"有点儿热！\""
+        "id": "Adik menyentuh cangkir teh yang mengepul dan memberi isyarat \"sedikit\" dengan jarinya: \"茶有点儿热。\"",
+        "en": "Little Sister touches a steaming cup of tea and shows \"a little\" with her fingers: \"茶有点儿热。\""
       },
       "play": "pop-bubble"
     },
@@ -1874,7 +1868,8 @@
             {"id":"orange","x":0,"y":26,"hold":[0,"left"],"count":1},
             {"id":"orange","x":20,"y":30,"hold":[0,"left"],"count":1},
             {"id":"orange","x":0,"y":6,"hold":[0,"left"],"count":1}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":273,"h":53,"text":"我们吃些水果吧。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -1966,7 +1961,8 @@
             {"id":"sparkle","x":240,"y":120,"roles":["bob"]},
             {"id":"sparkle","x":214,"y":160,"scale":0.6},
             {"id":"sparkle","x":268,"y":154,"scale":0.7}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":273,"h":53,"text":"她是我的好朋友。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -1989,7 +1985,8 @@
             {"id":"table","x":240,"y":336,"value":"300","front":true},
             {"id":"book","x":240,"y":268,"scale":1.6,"front":true,"roles":["target"]},
             {"id":"schoolbag","x":420,"y":336,"scale":0.9}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":34,"y":34,"w":116,"h":97,"text":"我们是同学。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2040,7 +2037,7 @@
         {
           "characters": [{"id":"baba","expression":"happy","x":130},{"id":"waiter","pose":"bow","view":"side","x":330,"flip":true,"act":"upper"}],
           "props": [],
-          "bubbles": [{"from":1,"x":250,"y":30,"w":200,"h":56,"text":"先生，您好！","highlight":true}]
+          "bubbles": [{"from":1,"x":174,"y":46,"w":210,"h":53,"text":"先生，您好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2061,12 +2058,12 @@
           "props": [
             {"id":"handbag","x":0,"y":44,"hold":[0,"left"],"scale":1.1,"color":"#E64980"}
           ],
-          "bubbles": [{"from":1,"x":250,"y":30,"w":200,"h":56,"text":"女士，您好！","highlight":true}]
+          "bubbles": [{"from":1,"x":178,"y":46,"w":241,"h":53,"text":"女士，这边请。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pelayan membungkuk sopan menyambut Ibu yang membawa tas tangan: \"女士，您好！\"",
-        "en": "The waiter bows politely to greet Mom, who carries a handbag: \"女士，您好！\""
+        "id": "Pelayan membungkuk sopan menyambut Ibu yang membawa tas tangan: \"女士，这边请。\"",
+        "en": "The waiter bows politely to greet Mom, who carries a handbag: \"女士，这边请。\""
       },
       "play": "bow"
     },
@@ -2152,7 +2149,7 @@
           "props": [
             {"id":"tree","x":420,"y":300,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":24,"w":220,"h":56,"text":"小朋友，你好！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":241,"h":53,"text":"小朋友，你好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2175,7 +2172,7 @@
             {"id":"heart","x":240,"y":100,"roles":["bob"]},
             {"id":"heart","x":214,"y":138,"scale":0.6}
           ],
-          "bubbles": [{"from":1,"x":276,"y":24,"w":196,"h":56,"text":"他是我男朋友。","highlight":true}]
+          "bubbles": [{"from":1,"x":250,"y":42,"w":224,"h":49,"text":"他是我男朋友。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2198,7 +2195,7 @@
             {"id":"heart","x":240,"y":100,"roles":["bob"]},
             {"id":"heart","x":266,"y":138,"scale":0.6}
           ],
-          "bubbles": [{"from":0,"x":8,"y":24,"w":196,"h":56,"text":"她是我女朋友。","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":241,"h":53,"text":"她是我女朋友。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2302,19 +2299,13 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","expression":"happy","x":56,"scale":0.82},
-            {"id":"nainai","pose":"handsTogether","expression":"happy","x":134,"scale":0.82},
-            {"id":"baba","pose":"wave","expression":"happy","x":214,"scale":0.82,"act":"arm-left"},
-            {"id":"mama","expression":"happy","x":294,"scale":0.82},
-            {"id":"gege","pose":"thumbsUp","expression":"happy","x":372,"scale":0.82},
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":440,"scale":0.86}
-          ],
+          "characters": [{"id":"yeye","expression":"happy","x":56,"scale":0.82},{"id":"nainai","pose":"handsTogether","expression":"happy","x":134,"scale":0.82},{"id":"baba","pose":"wave","expression":"happy","x":214,"scale":0.82,"act":"arm-left"},{"id":"mama","expression":"happy","x":294,"scale":0.82},{"id":"gege","pose":"thumbsUp","expression":"happy","x":372,"scale":0.82},{"id":"meimei","pose":"armsUp","expression":"happy","x":440,"scale":0.86}],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"heart","x":160,"y":60,"scale":0.7,"roles":["bob"]},
             {"id":"heart","x":330,"y":52,"scale":0.9,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"from":5,"x":282,"y":86,"w":190,"h":43,"text":"这是我的家人。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2337,12 +2328,12 @@
             {"id":"marker","x":320,"y":66,"roles":["bob","target"]},
             {"id":"heart","x":236,"y":150,"scale":0.7,"roles":["bob"]}
           ],
-          "bubbles": [{"from":0,"x":30,"y":40,"w":120,"h":56,"text":"爸爸！","highlight":true}]
+          "bubbles": [{"from":0,"x":98,"y":42,"w":100,"h":84,"text":"爸爸回来了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Di ruang keluarga, Adik berlari ke Ayah yang membuka tangan: \"爸爸！\"",
-        "en": "In the living room, Little Sister runs to Dad, who opens his arms: \"爸爸！\""
+        "id": "Di ruang keluarga, Adik berlari ke Ayah yang membuka tangan: \"爸爸回来了！\"",
+        "en": "In the living room, Little Sister runs to Dad, who opens his arms: \"爸爸回来了！\""
       },
       "play": "jump"
     },
@@ -2409,18 +2400,13 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","expression":"happy","x":60,"scale":1.0},
-            {"id":"baba","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.82},
-            {"id":"gege","pose":"sit","expression":"happy","x":290,"y":300,"scale":0.82},
-            {"id":"mama","pose":"point","expression":"happy","x":400,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","expression":"happy","x":60,"scale":1},{"id":"baba","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.82},{"id":"gege","pose":"sit","expression":"happy","x":290,"y":300,"scale":0.82},{"id":"mama","pose":"point","expression":"happy","x":400,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"old-photo","x":240,"y":152,"scale":1.1,"roles":["target"]},
             {"id":"marker","x":216,"y":46,"scale":0.4,"roles":["bob"]}
           ],
-          "bubbles": [{"from":3,"x":330,"y":14,"w":146,"h":50,"text":"这是我姐姐。","highlight":true}]
+          "bubbles": [{"from":3,"x":318,"y":10,"w":92,"h":77,"text":"这是我姐姐。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2437,23 +2423,18 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","expression":"happy","x":60,"scale":1.0},
-            {"id":"mama","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.82},
-            {"id":"gege","pose":"sit","expression":"happy","x":290,"y":300,"scale":0.82},
-            {"id":"baba","pose":"point","expression":"happy","x":400,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","expression":"happy","x":60,"scale":1},{"id":"mama","pose":"sit","expression":"happy","x":200,"y":300,"scale":0.82},{"id":"gege","pose":"sit","expression":"happy","x":290,"y":300,"scale":0.82},{"id":"baba","pose":"point","expression":"happy","x":400,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"old-photo","x":240,"y":152,"scale":1.1,"variant":"brothers","roles":["target"]},
             {"id":"marker","x":269,"y":82,"scale":0.4,"roles":["bob"]}
           ],
-          "bubbles": [{"from":3,"x":330,"y":14,"w":146,"h":50,"text":"这是我弟弟。","highlight":true}]
+          "bubbles": [{"from":3,"x":318,"y":6,"w":109,"h":72,"text":"我有一个弟弟。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ayah menunjuk foto lama di dinding: ia waktu remaja bersama adik laki-lakinya yang kecil (ditandai panah): \"这是我弟弟。\"",
-        "en": "Dad points at an old photo on the wall: himself as a boy with his little brother (marked by an arrow): \"这是我弟弟。\""
+        "id": "Ayah menunjuk foto lama di dinding: ia waktu remaja bersama adik laki-lakinya yang kecil (ditandai panah): \"我有一个弟弟。\"",
+        "en": "Dad points at an old photo on the wall: himself as a boy with his little brother (marked by an arrow): \"我有一个弟弟。\""
       },
       "play": "point"
     },
@@ -2465,22 +2446,17 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"sit","expression":"happy","x":180,"y":300,"scale":0.82},
-            {"id":"nainai","pose":"sit","expression":"happy","x":270,"y":300,"scale":0.82},
-            {"id":"gege","pose":"point","expression":"happy","x":110,"act":"arm-left"},
-            {"id":"meimei","pose":"wave","expression":"happy","x":350,"scale":1.05}
-          ],
+          "characters": [{"id":"yeye","pose":"sit","expression":"happy","x":180,"y":300,"scale":0.82},{"id":"nainai","pose":"sit","expression":"happy","x":270,"y":300,"scale":0.82},{"id":"gege","pose":"point","expression":"happy","x":110,"act":"arm-left"},{"id":"meimei","pose":"wave","expression":"happy","x":350,"scale":1.05}],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"marker","x":350,"y":118,"roles":["bob","target"]}
           ],
-          "bubbles": [{"from":2,"x":10,"y":14,"w":200,"h":52,"text":"这是我妹妹。","highlight":true}]
+          "bubbles": [{"from":2,"x":94,"y":6,"w":100,"h":84,"text":"我妹妹六岁。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kakak menunjuk adik perempuannya yang kecil (ditandai panah): \"这是我妹妹。\" Kakek dan Nenek duduk di sofa.",
-        "en": "Big Brother points at his little sister (marked by an arrow): \"这是我妹妹。\" Grandpa and Grandma sit on the sofa."
+        "id": "Kakak menunjuk adik perempuannya yang kecil (ditandai panah): \"我妹妹六岁。\" Kakek dan Nenek duduk di sofa.",
+        "en": "Big Brother points at his little sister (marked by an arrow): \"我妹妹六岁。\" Grandpa and Grandma sit on the sofa."
       },
       "play": "point"
     },
@@ -2492,19 +2468,13 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"sit","expression":"happy","x":260,"y":300,"scale":0.82},
-            {"id":"nainai","pose":"sit","expression":"happy","x":330,"y":300,"scale":0.82},
-            {"id":"mama","expression":"happy","x":430,"scale":0.95},
-            {"id":"baba","pose":"pat","expression":"happy","x":100},
-            {"id":"gege","pose":"holdUp","expression":"happy","x":205,"flip":true}
-          ],
+          "characters": [{"id":"yeye","pose":"sit","expression":"happy","x":260,"y":300,"scale":0.82},{"id":"nainai","pose":"sit","expression":"happy","x":330,"y":300,"scale":0.82},{"id":"mama","expression":"happy","x":430,"scale":0.95},{"id":"baba","pose":"pat","expression":"happy","x":100},{"id":"gege","pose":"holdUp","expression":"happy","x":205,"flip":true}],
           "props": [
             {"id":"sofa","x":240,"y":268,"scale":0.8},
             {"id":"trophy","x":0,"y":10,"hold":[4,"left"],"scale":0.9,"roles":["target"]},
             {"id":"marker","x":215,"y":62,"roles":["bob"]}
           ],
-          "bubbles": [{"from":3,"x":6,"y":8,"w":176,"h":50,"text":"这是我儿子！","highlight":true}]
+          "bubbles": [{"from":3,"x":98,"y":6,"w":86,"h":72,"text":"这是我儿子！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2556,7 +2526,7 @@
             {"id":"apartment-night","x":330,"y":360,"scale":1.15,"roles":["target"]},
             {"id":"marker","x":330,"y":166,"scale":0.8,"roles":["bob"]}
           ],
-          "bubbles": [{"from":0,"x":20,"y":60,"w":170,"h":52,"text":"我住这儿！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":178,"h":53,"text":"我住这儿！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2581,7 +2551,8 @@
             {"id":"bed","x":380,"y":336},
             {"id":"toy-bear","x":330,"y":272,"scale":0.5,"color":"#F7A1C4"},
             {"id":"toy-bear","x":4,"y":18,"hold":[0,"left"],"scale":0.6}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":118,"w":273,"h":53,"text":"这个房间是我的！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2630,7 +2601,8 @@
             {"id":"newspaper","x":-4,"y":30,"hold":[0,"right"],"scale":1.1},
             {"id":"chair","x":350,"y":336,"scale":1.25,"roles":["target"]},
             {"id":"marker","x":350,"y":150,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":42,"w":304,"h":53,"text":"这儿有椅子，请坐。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2672,7 +2644,8 @@
           "props": [
             {"id":"sofa","x":290,"y":336,"scale":0.95},
             {"id":"cat","x":282,"y":286,"scale":1.4,"variant":"sleep","roles":["target"]}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":218,"y":90,"w":241,"h":53,"text":"我的猫在这儿！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2736,12 +2709,11 @@
       "background": "plain-mint",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"eat","expression":"happy","x":240,"scale":1.05,"act":"head"}
-          ],
+          "characters": [{"id":"gege","pose":"eat","expression":"happy","x":240,"scale":1.05,"act":"head"}],
           "props": [
             {"id":"bubble-tea","x":14,"y":64,"hold":[0,"left"],"scale":0.85}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":54,"y":26,"w":178,"h":53,"text":"你喝什么？","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2758,9 +2730,7 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"offer","expression":"happy","x":96,"act":"arm-left"}
-          ],
+          "characters": [{"id":"mama","pose":"offer","expression":"happy","x":96,"act":"arm-left"}],
           "props": [
             {"id":"table","x":310,"y":336,"value":"240"},
             {"id":"tray","x":310,"y":266},
@@ -2769,12 +2739,12 @@
             {"id":"chopsticks","x":318,"y":258,"rotate":78,"scale":0.9},
             {"id":"steam","x":262,"y":196,"roles":["sway"]}
           ],
-          "bubbles": [{"from":0,"x":150,"y":26,"w":170,"h":58,"text":"吃饭了！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":147,"h":53,"text":"饭好了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu memanggil \"吃饭了！\"; di meja ada nampan berisi semangkuk nasi, sepiring sayur, dan sumpit.",
-        "en": "Mom calls \"吃饭了！\"; on the table is a tray with a bowl of rice, a plate of greens and chopsticks."
+        "id": "Ibu memanggil \"饭好了！\"; di meja ada nampan berisi semangkuk nasi, sepiring sayur, dan sumpit.",
+        "en": "Mom calls \"饭好了！\"; on the table is a tray with a bowl of rice, a plate of greens and chopsticks."
       },
       "play": "pop-bubble"
     },
@@ -2786,16 +2756,15 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"offer","expression":"happy","x":150,"act":"arm-left"}
-          ],
+          "characters": [{"id":"nainai","pose":"offer","expression":"happy","x":150,"act":"arm-left"}],
           "props": [
             {"id":"table","x":340,"y":336,"value":"200"},
             {"id":"rice-cooker","x":360,"y":266,"scale":0.9},
             {"id":"bowl","x":30,"y":-6,"hold":[0,"left"],"variant":"rice","scale":0.75},
             {"id":"steam","x":218,"y":156,"roles":["sway"],"scale":0.8},
             {"id":"steam","x":360,"y":170,"roles":["sway"],"scale":0.8}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":46,"w":210,"h":53,"text":"你吃米饭吗？","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2812,17 +2781,15 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"holdBoth","expression":"happy","x":200,"act":"head"}
-          ],
+          "characters": [{"id":"mama","pose":"holdBoth","expression":"happy","x":200,"act":"head"}],
           "props": [
             {"id":"table","x":380,"y":336,"value":"160"},
             {"id":"bowl","x":360,"y":266,"variant":"rice","scale":0.8},
             {"id":"chopsticks","x":410,"y":268,"rotate":80,"scale":0.8},
-            {"id":"greens-plate","x":0,"y":14,"hold":[0,"left"],"scale":1.0},
+            {"id":"greens-plate","x":0,"y":14,"hold":[0,"left"],"scale":1},
             {"id":"steam","x":200,"y":180,"roles":["sway"]}
           ],
-          "bubbles": [{"from":0,"x":250,"y":40,"w":150,"h":58,"text":"菜来了！","highlight":true}]
+          "bubbles": [{"from":0,"x":54,"y":34,"w":147,"h":53,"text":"菜来了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2891,14 +2858,13 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"holdUp","expression":"happy","x":200,"act":"arm-left"}
-          ],
+          "characters": [{"id":"nainai","pose":"holdUp","expression":"happy","x":200,"act":"arm-left"}],
           "props": [
             {"id":"table","x":330,"y":336,"value":"180"},
             {"id":"glass","x":310,"y":266,"scale":1.1,"roles":["target"]},
             {"id":"milk-carton","x":0,"y":0,"hold":[0,"left"],"rotate":125,"scale":0.75}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":30,"y":46,"w":178,"h":53,"text":"喝牛奶吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2915,14 +2881,13 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"reach","expression":"happy","x":160,"scale":1.15,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"reach","expression":"happy","x":160,"scale":1.15,"act":"arm-left"}],
           "props": [
             {"id":"table","x":330,"y":336,"value":"180"},
             {"id":"mug","x":330,"y":266,"scale":1.4,"roles":["target"]},
             {"id":"marker","x":334,"y":160}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":62,"w":241,"h":53,"text":"这是我的杯子！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2939,18 +2904,16 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"offer","expression":"happy","x":90,"act":"arm-left"},
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":400,"flip":true,"scale":1.1}
-          ],
+          "characters": [{"id":"nainai","pose":"offer","expression":"happy","x":90,"act":"arm-left"},{"id":"meimei","pose":"armsUp","expression":"happy","x":400,"flip":true,"scale":1.1}],
           "props": [
             {"id":"table","x":245,"y":336,"value":"200"},
             {"id":"plate","x":245,"y":266,"scale":1.5},
             {"id":"watermelon","x":210,"y":260,"variant":"half","scale":0.6},
             {"id":"banana-bunch","x":266,"y":258,"scale":0.7},
             {"id":"apple","x":224,"y":260,"scale":0.9},
-            {"id":"orange","x":282,"y":262,"scale":1.0}
-          ]
+            {"id":"orange","x":282,"y":262,"scale":1}
+          ],
+          "bubbles": [{"from":0,"x":6,"y":46,"w":241,"h":53,"text":"你吃什么水果？","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -2992,15 +2955,14 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"holdUp","expression":"happy","x":140,"act":"arm-left"}
-          ],
+          "characters": [{"id":"mama","pose":"holdUp","expression":"happy","x":140,"act":"arm-left"}],
           "props": [
-            {"id":"stove","x":350,"y":336,"scale":1.0},
+            {"id":"stove","x":350,"y":336,"scale":1},
             {"id":"wok","x":330,"y":296,"scale":0.9},
             {"id":"fried-egg","x":330,"y":290,"scale":0.9},
             {"id":"egg","x":4,"y":8,"hold":[0,"left"],"scale":0.9,"roles":["target"]}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":241,"h":53,"text":"吃一个鸡蛋吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3066,10 +3028,7 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"hold","expression":"happy","x":90},
-            {"id":"meimei","pose":"holdUp","expression":"happy","x":400,"flip":true,"scale":1.1,"act":"arm-left"}
-          ],
+          "characters": [{"id":"nainai","pose":"hold","expression":"happy","x":90},{"id":"meimei","pose":"holdUp","expression":"happy","x":400,"flip":true,"scale":1.1,"act":"arm-left"}],
           "props": [
             {"id":"table","x":245,"y":336,"value":"230"},
             {"id":"plate","x":220,"y":266,"scale":1.4},
@@ -3078,7 +3037,8 @@
             {"id":"rolling-pin","x":300,"y":266,"scale":0.7},
             {"id":"steam","x":220,"y":220,"roles":["sway"],"scale":0.8},
             {"id":"dumpling","x":4,"y":8,"hold":[1,"left"],"scale":0.8}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":46,"w":241,"h":53,"text":"我们吃饺子吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3095,14 +3055,13 @@
       "background": "restaurant",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"holdUp","expression":"happy","x":190,"act":"arm-left"}
-          ],
+          "characters": [{"id":"yeye","pose":"holdUp","expression":"happy","x":190,"act":"arm-left"}],
           "props": [
             {"id":"table","x":330,"y":336,"value":"200"},
             {"id":"noodle-bowl","x":300,"y":266,"variant":"lift","scale":1.2},
             {"id":"noodles-lift","x":4,"y":4,"hold":[0,"left"],"scale":0.7}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":42,"w":241,"h":53,"text":"我爱吃面条儿！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3119,31 +3078,26 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"thumbsUp","expression":"happy","x":118,"scale":1.15,"roles":["side-a"]}
-          ],
+          "characters": [{"id":"meimei","pose":"thumbsUp","expression":"happy","x":118,"scale":1.15,"roles":["side-a"]}],
           "props": [
             {"id":"table","x":118,"y":336,"value":"150","front":true},
             {"id":"plate","x":118,"y":266,"scale":0.9,"front":true},
             {"id":"dumpling","x":100,"y":258,"repeat":3,"dx":18,"scale":0.7,"front":true}
           ],
-          "bubbles": [{"from":0,"x":30,"y":24,"w":150,"h":56,"text":"好吃！","highlight":true}]
+          "bubbles": [{"from":0,"x":14,"y":62,"w":210,"h":53,"text":"饺子很好吃！","highlight":true,"line":0}]
         },
         {
-          "characters": [
-            {"id":"meimei","pose":"stop","expression":"sad","x":362,"scale":1.15,"flip":true,"roles":["side-b"]}
-          ],
+          "characters": [{"id":"meimei","pose":"stop","expression":"sad","x":362,"scale":1.15,"flip":true,"roles":["side-b"]}],
           "props": [
             {"id":"table","x":362,"y":336,"value":"150","front":true},
             {"id":"plate","x":362,"y":266,"scale":0.9,"front":true},
             {"id":"bitter-melon","x":360,"y":260,"scale":0.8,"front":true}
-          ],
-          "bubbles": [{"from":0,"x":282,"y":24,"w":160,"h":56,"text":"不好吃…","highlight":false}]
+          ]
         }
       ],
       "alt": {
-        "id": "Dua panel: Adik mencicipi jiaozi dan mengacungkan jempol \"好吃！\"; lalu mencicipi pare pahit dan cemberut \"不好吃…\".",
-        "en": "Two panels: Little Sister tastes a dumpling and gives a thumbs-up \"好吃！\"; then tastes bitter melon and grimaces \"不好吃…\"."
+        "id": "Dua panel: Adik mencicipi jiaozi dan mengacungkan jempol: \"饺子很好吃！\"; lalu mencicipi pare pahit dan cemberut.",
+        "en": "Two panels: Little Sister tastes a dumpling and gives a thumbs-up: \"饺子很好吃！\"; then she tastes bitter melon and grimaces."
       },
       "play": "swap-pair"
     },
@@ -3181,19 +3135,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"pointUp","expression":"happy","x":110,"scale":1.15,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"pointUp","expression":"happy","x":110,"scale":1.15,"act":"arm-left"}],
           "props": [
             {"id":"days3","x":300,"y":220,"value":"25","roles":["target"]},
             {"id":"marker","x":300,"y":116,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":130,"h":56,"text":"今天！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":241,"h":53,"text":"今天是星期一。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Tiga lembar kalender (24, 25, 26); lembar tengah 25 disorot kuning sebagai hari ini. Adik menunjuknya: \"今天！\"",
-        "en": "Three calendar pages (24, 25, 26); the middle one, 25, is highlighted as today. Little Sister points at it: \"今天！\""
+        "id": "Tiga lembar kalender (24, 25, 26); lembar tengah 25 disorot kuning sebagai hari ini. Adik menunjuknya: \"今天是星期一。\"",
+        "en": "Three calendar pages (24, 25, 26); the middle one, 25, is highlighted as today. Little Sister points at it: \"今天是星期一。\""
       },
       "play": "point"
     },
@@ -3205,19 +3157,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":110,"scale":1.15,"act":"char"}
-          ],
+          "characters": [{"id":"meimei","pose":"armsUp","expression":"happy","x":110,"scale":1.15,"act":"char"}],
           "props": [
             {"id":"days3","x":300,"y":220,"value":"25","variant":"tomorrow","roles":["target"]},
             {"id":"arc-arrow","x":339,"y":120,"color":"#4C9BE8","scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":130,"h":56,"text":"明天！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":241,"h":53,"text":"明天是星期六！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender: hari ini 25 (kuning), panah biru maju ke 26 (hijau). Adik melompat senang: \"明天！\"",
-        "en": "Calendar: today is 25 (yellow) and a blue arrow jumps forward to 26 (green). Little Sister jumps for joy: \"明天！\""
+        "id": "Kalender: hari ini 25 (kuning), panah biru maju ke 26 (hijau). Adik melompat senang: \"明天是星期六！\"",
+        "en": "Calendar: today is 25 (yellow) and a blue arrow jumps forward to 26 (green). Little Sister jumps for joy: \"明天是星期六！\""
       },
       "play": "jump"
     },
@@ -3229,19 +3179,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"headScratch","expression":"neutral","x":110,"act":"head"}
-          ],
+          "characters": [{"id":"gege","pose":"headScratch","expression":"neutral","x":110,"act":"head"}],
           "props": [
             {"id":"days3","x":300,"y":220,"value":"25","variant":"yesterday","roles":["target"]},
             {"id":"arc-arrow","x":261,"y":120,"color":"#4C9BE8","scale":0.7,"flip":true}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":130,"h":56,"text":"昨天…","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":273,"h":53,"text":"昨天是二十四号。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender: hari ini 25 (kuning), panah biru mundur ke 24 (hijau). Kakak mengingat-ingat: \"昨天…\"",
-        "en": "Calendar: today is 25 (yellow) and a blue arrow goes back to 24 (green). Big Brother tries to remember: \"昨天…\""
+        "id": "Kalender: hari ini 25 (kuning), panah biru mundur ke 24 (hijau). Kakak mengingat-ingat: \"昨天是二十四号。\"",
+        "en": "Calendar: today is 25 (yellow) and a blue arrow goes back to 24 (green). Big Brother tries to remember: \"昨天是二十四号。\""
       },
       "play": "nod"
     },
@@ -3258,7 +3206,8 @@
             {"id":"day-box","x":184,"y":230,"count":5,"dx":56,"scale":1.25},
             {"id":"day-box","x":380,"y":230,"count":2,"dx":56,"scale":1.25,"variant":"play"},
             {"id":"digit","x":240,"y":320,"value":"7","scale":1.2,"roles":["target"]}
-          ]
+          ],
+          "bubbles": [{"x":102,"y":6,"w":273,"h":53,"text":"一个星期有七天。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3275,20 +3224,17 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"sit","expression":"happy","x":300,"y":318},
-            {"id":"meimei","pose":"reach","expression":"happy","x":130,"scale":1.15,"act":"arm-left"}
-          ],
+          "characters": [{"id":"baba","pose":"sit","expression":"happy","x":300,"y":318},{"id":"meimei","pose":"reach","expression":"happy","x":130,"scale":1.15,"act":"arm-left"}],
           "props": [
             {"id":"sofa","x":310,"y":336},
             {"id":"week","x":340,"y":104,"variant":"sunday","scale":0.75,"roles":["target"]}
           ],
-          "bubbles": [{"from":1,"x":16,"y":20,"w":170,"h":56,"text":"星期天！","highlight":true}]
+          "bubbles": [{"from":1,"x":6,"y":34,"w":207,"h":84,"text":"爸爸，今天是星期天！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kalender seminggu, kotak terakhir (Minggu) menyala. Ayah bersantai di sofa; Adik menarik tangannya: \"星期天！\"",
-        "en": "A week strip whose last box (Sunday) glows. Dad lounges on the sofa; Little Sister tugs at his hand: \"星期天！\""
+        "id": "Kalender seminggu, kotak terakhir (Minggu) menyala. Ayah bersantai di sofa; Adik menarik tangannya: \"爸爸，今天是星期天！\"",
+        "en": "A week strip whose last box (Sunday) glows. Dad lounges on the sofa; Little Sister tugs at his hand: \"爸爸，今天是星期天！\""
       },
       "play": "pop-bubble"
     },
@@ -3300,22 +3246,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"wave","expression":"happy","x":86,"scale":0.9},
-            {"id":"mama","pose":"hold","expression":"happy","x":180,"scale":0.9},
-            {"id":"gege","expression":"happy","x":300,"scale":0.9},
-            {"id":"meimei","pose":"armsUp","expression":"happy","x":400,"scale":1.0,"flip":true,"act":"char"}
-          ],
+          "characters": [{"id":"baba","pose":"wave","expression":"happy","x":86,"scale":0.9},{"id":"mama","pose":"hold","expression":"happy","x":180,"scale":0.9},{"id":"gege","expression":"happy","x":300,"scale":0.9},{"id":"meimei","pose":"armsUp","expression":"happy","x":400,"scale":1,"flip":true,"act":"char"}],
           "props": [
             {"id":"week","x":170,"y":96,"variant":"sunday","scale":0.8,"roles":["target"]},
             {"id":"basket","x":12,"y":10,"hold":[1,"left"],"scale":0.7}
           ],
-          "bubbles": [{"from":3,"x":316,"y":24,"w":140,"h":52,"text":"星期日！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":6,"w":239,"h":43,"text":"星期日我们去公园。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Kotak terakhir kalender seminggu (Minggu) menyala; Keluarga Xiǎo berpiknik di taman: \"星期日！\"",
-        "en": "The last box of a week strip (Sunday) glows; the Xiǎo family goes on a picnic in the park: \"星期日！\""
+        "id": "Kotak terakhir kalender seminggu (Minggu) menyala; Keluarga Xiǎo berpiknik di taman: \"星期日我们去公园。\"",
+        "en": "The last box of a week strip (Sunday) glows; the Xiǎo family goes on a picnic in the park: \"星期日我们去公园。\""
       },
       "play": "jump"
     },
@@ -3381,12 +3322,12 @@
             {"id":"arrow","x":240,"y":262,"scale":0.32},
             {"id":"arrow","x":356,"y":262,"scale":0.32}
           ],
-          "bubbles": [{"x":190,"y":24,"w":100,"h":54,"text":"一年","highlight":true}]
+          "bubbles": [{"x":102,"y":6,"w":273,"h":53,"text":"一年有十二个月。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pohon yang sama dalam empat musim: berbunga, hijau, oranye, bersalju: satu tahun (\"一年\").",
-        "en": "The same tree in four seasons: blossoming, green, orange and snowy: one year (\"一年\")."
+        "id": "Pohon yang sama dalam empat musim: berbunga, hijau, oranye, bersalju: satu tahun (\"一年有十二个月。\").",
+        "en": "The same tree in four seasons: blossoming, green, orange and snowy: one year (\"一年有十二个月。\")."
       },
       "play": "count-up"
     },
@@ -3494,13 +3435,11 @@
       "background": "room",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"pointUp","expression":"happy","x":120,"scale":1.15,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"pointUp","expression":"happy","x":120,"scale":1.15,"act":"arm-left"}],
           "props": [
             {"id":"clock","x":320,"y":220,"value":"0800","scale":1.5,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":210,"y":262,"w":220,"h":56,"text":"现在八点。","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":178,"h":53,"text":"现在八点。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3544,22 +3483,20 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"pointUp","expression":"happy","x":100,"act":"head"}
-          ],
+          "characters": [{"id":"mama","pose":"pointUp","expression":"happy","x":100,"act":"head"}],
           "props": [
             {"id":"table","x":320,"y":336,"value":"200"},
-            {"id":"clay-teapot","x":360,"y":266,"scale":1.0},
+            {"id":"clay-teapot","x":360,"y":266,"scale":1},
             {"id":"tea-cup","x":280,"y":266,"scale":0.9},
             {"id":"clock","x":270,"y":210,"value":"0305","variant":"m5","scale":1.45,"roles":["target"]},
             {"id":"digit","x":400,"y":150,"value":"5","scale":0.9}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":150,"h":56,"text":"三点五分","highlight":true}]
+          "bubbles": [{"from":0,"x":10,"y":8,"w":128,"h":84,"text":"现在三点五分。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Jarum menit (merah) maju lima menit dari pukul 3:00 ke 3:05 (bagian kuning); Ibu menunggu tehnya: \"三点五分\".",
-        "en": "The (red) minute hand moves on five minutes from 3:00 to 3:05 (the yellow part); Mom waits for her tea: \"三点五分\"."
+        "id": "Jarum menit (merah) maju lima menit dari pukul 3:00 ke 3:05 (bagian kuning); Ibu menunggu tehnya: \"现在三点五分。\".",
+        "en": "The (red) minute hand moves on five minutes from 3:00 to 3:05 (the yellow part); Mom waits for her tea: \"现在三点五分。\"."
       },
       "play": "clock"
     },
@@ -3672,15 +3609,12 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"armsOpen","expression":"happy","x":190,"act":"head"},
-            {"id":"nainai","pose":"stop","expression":"happy","x":320,"flip":true}
-          ],
+          "characters": [{"id":"yeye","pose":"armsOpen","expression":"happy","x":190,"act":"head"},{"id":"nainai","pose":"stop","expression":"happy","x":320,"flip":true}],
           "props": [
             {"id":"day-dial","x":84,"y":112,"value":"6","scale":0.95},
             {"id":"clock","x":396,"y":126,"value":"0600","scale":0.95,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":160,"y":30,"w":150,"h":52,"text":"早上好！","highlight":true}]
+          "bubbles": [{"from":0,"x":158,"y":42,"w":147,"h":53,"text":"早上好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3697,21 +3631,18 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"point","expression":"happy","x":160,"act":"arm-left"},
-            {"id":"meimei","pose":"raiseHand","expression":"happy","x":330,"scale":1.0}
-          ],
+          "characters": [{"id":"teacher","pose":"point","expression":"happy","x":160,"act":"arm-left"},{"id":"meimei","pose":"raiseHand","expression":"happy","x":330,"scale":1}],
           "props": [
             {"id":"day-dial","x":84,"y":112,"value":"10","scale":0.95},
             {"id":"clock","x":396,"y":126,"value":"1000","scale":0.95,"roles":["target"]},
             {"id":"blackboard","x":250,"y":196,"scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":160,"y":20,"w":150,"h":52,"text":"上午好！","highlight":true}]
+          "bubbles": [{"from":0,"x":158,"y":10,"w":141,"h":77,"text":"现在是上午十点。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pukul 10 pagi, matahari sudah cukup tinggi; Adik sedang belajar di kelas: \"上午好！\"",
-        "en": "At 10 in the morning the sun is fairly high; Little Sister is in class: \"上午好！\""
+        "id": "Pukul 10 pagi, matahari sudah cukup tinggi; Adik sedang belajar di kelas: \"现在是上午十点。\"",
+        "en": "At 10 in the morning the sun is fairly high; Little Sister is in class: \"现在是上午十点。\""
       },
       "play": "nod"
     },
@@ -3723,20 +3654,18 @@
       "background": "restaurant",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"holdBoth","expression":"happy","x":240,"act":"head"}
-          ],
+          "characters": [{"id":"baba","pose":"holdBoth","expression":"happy","x":240,"act":"head"}],
           "props": [
             {"id":"day-dial","x":84,"y":112,"value":"12","scale":0.95},
             {"id":"clock","x":396,"y":126,"value":"1200","scale":0.95,"roles":["target"]},
             {"id":"lunch-box","x":0,"y":18,"hold":[0,"left"],"scale":0.9}
           ],
-          "bubbles": [{"from":0,"x":150,"y":22,"w":180,"h":52,"text":"中午了，吃饭！","highlight":true}]
+          "bubbles": [{"from":0,"x":158,"y":30,"w":180,"h":46,"text":"中午吃什么？","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pukul 12 siang, matahari tepat di atas; Ayah membuka kotak bekalnya: \"中午了，吃饭！\"",
-        "en": "At 12 noon the sun is right overhead; Dad opens his lunch box: \"中午了，吃饭！\""
+        "id": "Pukul 12 siang, matahari tepat di atas; Ayah membuka kotak bekalnya: \"中午吃什么？\"",
+        "en": "At 12 noon the sun is right overhead; Dad opens his lunch box: \"中午吃什么？\""
       },
       "play": "nod"
     },
@@ -3773,14 +3702,12 @@
       "background": "night",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"wave","expression":"happy","x":240,"scale":1.1,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":240,"scale":1.1,"act":"arm-left"}],
           "props": [
             {"id":"day-dial","x":84,"y":112,"value":"20","scale":0.95},
             {"id":"clock","x":396,"y":126,"value":"0800","scale":0.95,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":150,"y":24,"w":150,"h":52,"text":"晚上好！","highlight":true}]
+          "bubbles": [{"from":0,"x":158,"y":74,"w":147,"h":53,"text":"晚上好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3822,22 +3749,19 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"hips","expression":"angry","x":236,"flip":true,"act":"head"},
-            {"id":"gege","pose":"armsOpen","expression":"surprised","x":96,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"teacher","pose":"hips","expression":"angry","x":236,"flip":true,"act":"head"},{"id":"gege","pose":"armsOpen","expression":"surprised","x":96,"roles":["mover","from-left"]}],
           "props": [
             {"id":"school","x":370,"y":336,"scale":0.85},
             {"id":"clock","x":370,"y":200,"value":"0820","scale":0.9,"roles":["target"]},
             {"id":"sweat","x":140,"y":110},
             {"id":"motion-lines","x":30,"y":230}
           ],
-          "bubbles": [{"from":0,"x":110,"y":20,"w":150,"h":54,"text":"你晚了！","highlight":true}]
+          "bubbles": [{"from":0,"x":58,"y":34,"w":178,"h":53,"text":"你来晚了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Pukul 8:20, Kakak berlari terengah-engah ke sekolah; Bu Guru menunggu sambil bertolak pinggang: \"你晚了！\"",
-        "en": "At 8:20 Big Brother runs breathlessly to school; the teacher waits, hands on her hips: \"你晚了！\""
+        "id": "Pukul 8:20, Kakak berlari terengah-engah ke sekolah; Bu Guru menunggu sambil bertolak pinggang: \"你来晚了！\"",
+        "en": "At 8:20 Big Brother runs breathlessly to school; the teacher waits, hands on her hips: \"你来晚了！\""
       },
       "play": "move-to"
     },
@@ -3854,7 +3778,8 @@
             {"id":"table","x":240,"y":336,"value":"220"},
             {"id":"cat","x":240,"y":266,"scale":1.3,"roles":["target"]},
             {"id":"marker","x":240,"y":150,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"x":134,"y":6,"w":210,"h":53,"text":"猫在桌子上。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3876,7 +3801,8 @@
             {"id":"table","x":240,"y":336,"value":"220"},
             {"id":"cat","x":240,"y":336,"scale":1.1,"variant":"sleep","roles":["target"]},
             {"id":"marker","x":380,"y":304,"rotate":90,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"x":118,"y":6,"w":241,"h":53,"text":"猫在桌子下边。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3893,14 +3819,12 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","view":"side","x":170,"flip":true,"act":"char"},
-            {"id":"meimei","view":"side","x":320,"flip":true,"scale":1.1}
-          ],
+          "characters": [{"id":"baba","view":"side","x":170,"flip":true,"act":"char"},{"id":"meimei","view":"side","x":320,"flip":true,"scale":1.1}],
           "props": [
             {"id":"bus-stop","x":60,"y":336},
             {"id":"marker","x":170,"y":70,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"from":1,"x":214,"y":70,"w":241,"h":53,"text":"爸爸在我前边。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3917,14 +3841,12 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","view":"side","x":170,"flip":true},
-            {"id":"meimei","view":"side","x":320,"flip":true,"scale":1.1,"act":"char"}
-          ],
+          "characters": [{"id":"baba","view":"side","x":170,"flip":true},{"id":"meimei","view":"side","x":320,"flip":true,"scale":1.1,"act":"char"}],
           "props": [
             {"id":"bus-stop","x":60,"y":336},
             {"id":"marker","x":320,"y":70,"roles":["bob"]}
-          ]
+          ],
+          "bubbles": [{"from":1,"x":214,"y":70,"w":241,"h":53,"text":"我在爸爸后边。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -3987,16 +3909,14 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"wave","expression":"happy","x":112,"scale":0.5,"y":336},
-            {"id":"gege","pose":"armsUp","expression":"happy","x":380,"act":"char"}
-          ],
+          "characters": [{"id":"nainai","pose":"wave","expression":"happy","x":112,"scale":0.5,"y":336},{"id":"gege","pose":"armsUp","expression":"happy","x":380,"act":"char"}],
           "props": [
             {"id":"house","x":170,"y":336,"variant":"inside"},
             {"id":"house","x":170,"y":336,"front":true},
             {"id":"ball","x":400,"y":120,"roles":["bob"]},
             {"id":"marker","x":380,"y":66,"roles":["bob"],"front":true}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":90,"w":116,"h":97,"text":"哥哥在外边。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4013,21 +3933,19 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"point","expression":"happy","x":110,"scale":1.1,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":110,"scale":1.1,"act":"arm-left"}],
           "props": [
             {"id":"tree","x":380,"y":300,"scale":1.1},
             {"id":"bench","x":300,"y":300,"scale":0.9},
             {"id":"road","x":240,"y":360},
             {"id":"marker","x":340,"y":120,"roles":["bob"]}
           ],
-          "bubbles": [{"from":0,"x":150,"y":30,"w":130,"h":54,"text":"这边！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":70,"w":147,"h":53,"text":"来这边！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik berdiri di pinggir jalan dan menunjuk ke satu sisi, tempat pohon dan bangku: \"这边！\"",
-        "en": "Little Sister stands at the roadside and points to one side, where a tree and a bench are: \"这边！\""
+        "id": "Adik berdiri di pinggir jalan dan menunjuk ke satu sisi, tempat pohon dan bangku: \"来这边！\"",
+        "en": "Little Sister stands at the roadside and points to one side, where a tree and a bench are: \"来这边！\""
       },
       "play": "point"
     },
@@ -4039,19 +3957,16 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"beckon","expression":"happy","x":380,"flip":true,"act":"arm-left"},
-            {"id":"meimei","pose":"armsOpen","expression":"happy","x":150,"scale":1.1,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"mama","pose":"beckon","expression":"happy","x":380,"flip":true,"act":"arm-left"},{"id":"meimei","pose":"armsOpen","expression":"happy","x":150,"scale":1.1,"roles":["mover","from-left"]}],
           "props": [
             {"id":"arrow","x":262,"y":300,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":270,"y":30,"w":110,"h":54,"text":"来！","highlight":true}]
+          "bubbles": [{"from":0,"x":134,"y":34,"w":241,"h":53,"text":"到妈妈这儿来！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu melambai memanggil \"来！\"; Adik berlari ke arah Ibu. Panah menunjuk ke Ibu.",
-        "en": "Mom beckons \"来！\"; Little Sister runs toward her. The arrow points toward Mom."
+        "id": "Ibu melambai memanggil \"到妈妈这儿来！\"; Adik berlari ke arah Ibu. Panah menunjuk ke Ibu.",
+        "en": "Mom beckons \"到妈妈这儿来！\"; Little Sister runs toward her. The arrow points toward Mom."
       },
       "play": "move-to"
     },
@@ -4088,19 +4003,17 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","view":"side","x":250,"flip":true,"scale":0.9,"roles":["mover","from-right"]}
-          ],
+          "characters": [{"id":"baba","view":"side","x":250,"flip":true,"scale":0.9,"roles":["mover","from-right"]}],
           "props": [
             {"id":"house","x":86,"y":336,"scale":0.72,"roles":["target"]},
-            {"id":"u-turn","x":300,"y":106,"scale":1.0}
+            {"id":"u-turn","x":300,"y":106,"scale":1}
           ],
-          "bubbles": [{"from":0,"x":330,"y":140,"w":120,"h":54,"text":"回家！","highlight":true}]
+          "bubbles": [{"from":0,"x":14,"y":50,"w":210,"h":53,"text":"我们回家吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ayah berbalik arah dan berjalan kembali ke rumah; panah berbentuk U menunjukkan ia kembali: \"回家！\"",
-        "en": "Dad turns around and walks back home; a U-shaped arrow shows him going back: \"回家！\""
+        "id": "Ayah berbalik arah dan berjalan kembali ke rumah; panah berbentuk U menunjukkan ia kembali: \"我们回家吧！\"",
+        "en": "Dad turns around and walks back home; a U-shaped arrow shows him going back: \"我们回家吧！\""
       },
       "play": "move-to"
     },
@@ -4112,15 +4025,12 @@
       "background": "airport",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"wave","expression":"happy","x":320,"flip":true,"roles":["mover","from-right"]},
-            {"id":"meimei","pose":"armsOpen","expression":"happy","x":130,"scale":1.1,"act":"char"}
-          ],
+          "characters": [{"id":"nainai","pose":"wave","expression":"happy","x":320,"flip":true,"roles":["mover","from-right"]},{"id":"meimei","pose":"armsOpen","expression":"happy","x":130,"scale":1.1,"act":"char"}],
           "props": [
             {"id":"plane","x":240,"y":110,"scale":1.2},
             {"id":"suitcase","x":400,"y":336,"scale":1.1,"roles":["mover","from-right"]}
           ],
-          "bubbles": [{"from":1,"x":20,"y":20,"w":160,"h":54,"text":"奶奶到了！","highlight":true}]
+          "bubbles": [{"from":1,"x":22,"y":26,"w":116,"h":97,"text":"奶奶到了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4137,15 +4047,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"seller","pose":"wave","expression":"happy","x":240,"scale":0.9,"act":"arm-left"}
-          ],
+          "characters": [{"id":"seller","pose":"wave","expression":"happy","x":240,"scale":0.9,"act":"arm-left"},{"id":"mama","expression":"happy","x":425,"flip":true}],
           "props": [
             {"id":"shopfront","x":240,"y":336,"color":"#2F9E44"},
             {"id":"counter","x":240,"y":336,"color":"#E2C29E","front":true},
             {"id":"basket","x":175,"y":244,"front":true},
             {"id":"basket","x":305,"y":244,"front":true}
-          ]
+          ],
+          "bubbles": [{"from":1,"x":90,"y":18,"w":335,"h":53,"text":"这家店的苹果很好吃。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4211,14 +4120,13 @@
       "background": "shop",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"reach","expression":"happy","view":"side","x":186,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"mama","pose":"reach","expression":"happy","view":"side","x":186,"roles":["mover","from-left"]}],
           "props": [
             {"id":"shop-shelf","x":70,"y":312,"scale":1.1,"variant":"groceries"},
             {"id":"shop-shelf","x":410,"y":312,"scale":1.1,"variant":"groceries"},
             {"id":"cart","x":300,"y":336,"scale":1.15,"variant":"full","front":true,"roles":["mover","from-left"]}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":34,"w":304,"h":53,"text":"超市里有很多水果。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4235,18 +4143,15 @@
       "background": "restaurant",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","expression":"happy","x":140},
-            {"id":"nainai","expression":"happy","x":260},
-            {"id":"waiter","pose":"holdUp","expression":"happy","x":405,"flip":true,"act":"head"}
-          ],
+          "characters": [{"id":"yeye","expression":"happy","x":140},{"id":"nainai","expression":"happy","x":260},{"id":"waiter","pose":"holdUp","expression":"happy","x":405,"flip":true,"act":"head"}],
           "props": [
             {"id":"round-table","x":200,"y":336,"front":true},
             {"id":"tray","x":0,"y":-2,"hold":[2,"left"],"scale":0.42},
             {"id":"plate","x":0,"y":-6,"hold":[2,"left"],"scale":0.6},
             {"id":"dumpling","x":-6,"y":-10,"hold":[2,"left"],"scale":0.5},
             {"id":"dumpling","x":8,"y":-10,"hold":[2,"left"],"scale":0.5}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":42,"w":335,"h":53,"text":"今天我们在饭店吃饭。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4334,20 +4239,17 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"raiseHand","expression":"happy","x":92,"act":"arm-left"},
-            {"id":"driver","view":"side","x":352,"y":318,"scale":0.48}
-          ],
+          "characters": [{"id":"baba","pose":"raiseHand","expression":"happy","x":92,"act":"arm-left"},{"id":"driver","view":"side","x":352,"y":318,"scale":0.48}],
           "props": [
             {"id":"road","x":240,"y":360},
             {"id":"car","x":300,"y":340,"scale":1.25,"variant":"taxi","front":true}
           ],
-          "bubbles": [{"from":0,"x":10,"y":20,"w":170,"h":56,"text":"出租车！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":22,"w":304,"h":53,"text":"我们坐出租车去吧。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Taksi kuning dengan lampu di atap (tanpa tulisan) berhenti; sopir di dalam, Ayah mengangkat tangan memanggil: \"出租车！\"",
-        "en": "A yellow taxi with a roof light (no writing) pulls up with the driver inside; Dad raises his hand to call it: \"出租车！\""
+        "id": "Taksi kuning dengan lampu di atap (tanpa tulisan) berhenti; sopir di dalam, Ayah mengangkat tangan memanggil: \"我们坐出租车去吧。\"",
+        "en": "A yellow taxi with a roof light (no writing) pulls up with the driver inside; Dad raises his hand to call it: \"我们坐出租车去吧。\""
       },
       "play": "wave"
     },
@@ -4430,15 +4332,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","pose":"holdBoth","expression":"happy","view":"side","x":292,"y":318,"scale":0.66}
-          ],
+          "characters": [{"id":"baba","pose":"holdBoth","expression":"happy","view":"side","x":292,"y":318,"scale":0.66}],
           "props": [
             {"id":"road","x":240,"y":360},
             {"id":"steering-wheel","x":330,"y":238,"scale":0.8,"front":true},
             {"id":"car","x":250,"y":344,"scale":1.5,"front":true,"roles":["mover","from-left"]},
             {"id":"motion-lines","x":60,"y":250,"scale":1.2,"front":true}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":54,"y":90,"w":241,"h":53,"text":"我开车去公司。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4455,16 +4356,15 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"armsUp","expression":"sleep","x":236,"scale":1.05,"act":"char"}
-          ],
+          "characters": [{"id":"meimei","pose":"armsUp","expression":"sleep","x":236,"scale":1.05,"act":"char"}],
           "props": [
             {"id":"sun","x":414,"y":96,"scale":0.7},
             {"id":"bed","x":270,"y":336,"scale":1.7,"front":true},
             {"id":"table","x":66,"y":336,"value":"90","front":true},
             {"id":"clock","x":66,"y":268,"value":"0700","variant":"alarm","scale":0.62,"front":true},
             {"id":"sound-lines","x":104,"y":210,"front":true}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":26,"y":82,"w":210,"h":53,"text":"我七点起床。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4481,19 +4381,16 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"reach","expression":"happy","x":196,"scale":1.1,"act":"arm-left"},
-            {"id":"mama","pose":"holdObject","expression":"happy","x":340,"flip":true}
-          ],
+          "characters": [{"id":"meimei","pose":"reach","expression":"happy","x":196,"scale":1.1,"act":"arm-left"},{"id":"mama","pose":"holdObject","expression":"happy","x":340,"flip":true}],
           "props": [
             {"id":"jacket","x":0,"y":64,"hold":[1,"left"],"scale":0.95,"color":"#FF922B"}
           ],
-          "bubbles": [{"from":1,"x":250,"y":20,"w":170,"h":56,"text":"穿衣服！","highlight":true}]
+          "bubbles": [{"from":1,"x":162,"y":34,"w":178,"h":53,"text":"穿这个吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu memegang jaket terbuka; Adik memasukkan tangannya ke lengan jaket. Ibu: \"穿衣服！\"",
-        "en": "Mom holds a jacket open and Little Sister puts her arm into the sleeve. Mom: \"穿衣服！\""
+        "id": "Ibu memegang jaket terbuka; Adik memasukkan tangannya ke lengan jaket. Ibu: \"穿这个吧！\"",
+        "en": "Mom holds a jacket open and Little Sister puts her arm into the sleeve. Mom: \"穿这个吧！\""
       },
       "play": "pop-bubble"
     },
@@ -4505,9 +4402,7 @@
       "background": "home-left",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"holdUp","expression":"happy","x":96,"scale":1.05,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"holdUp","expression":"happy","x":96,"scale":1.05,"act":"arm-left"}],
           "props": [
             {"id":"clothes-rail","x":310,"y":336},
             {"id":"garment","x":230,"y":110,"variant":"shirt"},
@@ -4516,12 +4411,12 @@
             {"id":"garment","x":410,"y":110,"variant":"shirt","color":"#FFD43B"},
             {"id":"garment","x":0,"y":-30,"hold":[0,"left"],"variant":"dress","color":"#9775FA","scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":160,"h":56,"text":"我的衣服！","highlight":true}]
+          "bubbles": [{"from":0,"x":110,"y":38,"w":273,"h":53,"text":"这是我的新衣服！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Gantungan baju berisi kemeja, gaun, dan celana; Adik mengangkat gaun ungu: \"我的衣服！\"",
-        "en": "A clothes rail with shirts, a dress and trousers; Little Sister holds up a purple dress: \"我的衣服！\""
+        "id": "Gantungan baju berisi kemeja, gaun, dan celana; Adik mengangkat gaun ungu: \"这是我的新衣服！\"",
+        "en": "A clothes rail with shirts, a dress and trousers; Little Sister holds up a purple dress: \"这是我的新衣服！\""
       },
       "play": "pop-bubble"
     },
@@ -4533,10 +4428,7 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"eat","expression":"happy","x":200,"act":"head"},
-            {"id":"mama","pose":"beckon","expression":"happy","x":410,"flip":true}
-          ],
+          "characters": [{"id":"meimei","pose":"eat","expression":"happy","x":200,"act":"head"},{"id":"mama","pose":"beckon","expression":"happy","x":410,"flip":true}],
           "props": [
             {"id":"day-dial","x":92,"y":112,"value":"7"},
             {"id":"clock","x":410,"y":96,"value":"0730","scale":0.72},
@@ -4546,7 +4438,7 @@
             {"id":"youtiao","x":210,"y":262,"scale":0.9,"front":true},
             {"id":"steamer","x":300,"y":268,"scale":0.8,"front":true}
           ],
-          "bubbles": [{"from":1,"x":172,"y":22,"w":166,"h":56,"text":"吃早饭了！","highlight":true}]
+          "bubbles": [{"from":1,"x":194,"y":34,"w":178,"h":53,"text":"吃早饭了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4563,10 +4455,7 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"eat","expression":"happy","x":200,"act":"head"},
-            {"id":"nainai","pose":"beckon","expression":"happy","x":410,"flip":true}
-          ],
+          "characters": [{"id":"yeye","pose":"eat","expression":"happy","x":200,"act":"head"},{"id":"nainai","pose":"beckon","expression":"happy","x":410,"flip":true}],
           "props": [
             {"id":"day-dial","x":92,"y":112,"value":"12"},
             {"id":"clock","x":410,"y":96,"value":"1200","scale":0.72},
@@ -4576,12 +4465,12 @@
             {"id":"baozi","x":278,"y":262,"scale":0.7,"front":true},
             {"id":"baozi","x":304,"y":262,"scale":0.7,"front":true}
           ],
-          "bubbles": [{"from":1,"x":170,"y":22,"w":170,"h":56,"text":"吃午饭了！","highlight":true}]
+          "bubbles": [{"from":1,"x":206,"y":6,"w":166,"h":90,"text":"我们午饭吃面条儿。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Siang (matahari tinggi, jam 12): makan siang semangkuk mi dan dua bakpao; Nenek memanggil \"吃午饭了！\".",
-        "en": "Noon (sun high, 12 o'clock): lunch of a bowl of noodles and two steamed buns; Grandma calls \"吃午饭了！\"."
+        "id": "Siang (matahari tinggi, jam 12): makan siang semangkuk mi dan dua bakpao; Nenek memanggil \"我们午饭吃面条儿。\".",
+        "en": "Noon (sun high, 12 o'clock): lunch of a bowl of noodles and two steamed buns; Grandma calls \"我们午饭吃面条儿。\"."
       },
       "play": "pop-bubble"
     },
@@ -4593,11 +4482,7 @@
       "background": "room-night",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","expression":"happy","x":130},
-            {"id":"meimei","pose":"eat","expression":"happy","x":230,"act":"head"},
-            {"id":"mama","pose":"beckon","expression":"happy","x":410,"flip":true}
-          ],
+          "characters": [{"id":"baba","expression":"happy","x":130},{"id":"meimei","pose":"eat","expression":"happy","x":230,"act":"head"},{"id":"mama","pose":"beckon","expression":"happy","x":410,"flip":true}],
           "props": [
             {"id":"day-dial","x":92,"y":112,"value":"19"},
             {"id":"clock","x":410,"y":96,"value":"0700","scale":0.72},
@@ -4607,12 +4492,12 @@
             {"id":"greens-plate","x":270,"y":268,"front":true},
             {"id":"bowl","x":230,"y":268,"variant":"rice","scale":0.6,"front":true}
           ],
-          "bubbles": [{"from":2,"x":170,"y":22,"w":170,"h":56,"text":"吃晚饭了！","highlight":true}]
+          "bubbles": [{"from":0,"x":130,"y":22,"w":241,"h":53,"text":"我们吃晚饭吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Malam (bulan, jam 7): makan malam keluarga dengan ikan, sayur, dan nasi di bawah lampu; Ibu memanggil \"吃晚饭了！\".",
-        "en": "Evening (moon, 7 o'clock): family dinner of fish, vegetables and rice under the lamp; Mom calls \"吃晚饭了！\"."
+        "id": "Malam (bulan, jam 7): makan malam keluarga dengan ikan, sayur, dan nasi di bawah lampu; Ayah berkata \"我们吃晚饭吧！\".",
+        "en": "Evening (moon, 7 o'clock): family dinner of fish, vegetables and rice under the lamp; Dad says \"我们吃晚饭吧！\"."
       },
       "play": "pop-bubble"
     },
@@ -4624,17 +4509,15 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"hold","expression":"happy","x":190,"act":"arm-left"},
-            {"id":"meimei","pose":"holdObject","expression":"happy","x":400,"flip":true}
-          ],
+          "characters": [{"id":"mama","pose":"hold","expression":"happy","x":190,"act":"arm-left"},{"id":"meimei","pose":"holdObject","expression":"happy","x":400,"flip":true}],
           "props": [
             {"id":"stove","x":270,"y":336},
             {"id":"wok","x":254,"y":296,"scale":0.95},
             {"id":"steam","x":250,"y":236,"scale":1.1},
             {"id":"spoon","x":0,"y":4,"hold":[0,"left"],"rotate":40,"scale":0.9},
             {"id":"vegetables","x":0,"y":10,"hold":[1,"left"],"scale":0.9}
-          ]
+          ],
+          "bubbles": [{"from":1,"x":238,"y":90,"w":210,"h":53,"text":"妈妈在做饭。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4675,9 +4558,7 @@
       "background": "room-night",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","expression":"sleep","x":270,"y":242,"rotate":-90,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","expression":"sleep","x":270,"y":242,"rotate":-90,"act":"head"}],
           "props": [
             {"id":"window","x":380,"y":150,"scale":0.9},
             {"id":"moon","x":388,"y":136,"scale":0.55},
@@ -4685,7 +4566,8 @@
             {"id":"bed","x":230,"y":336,"scale":1.8},
             {"id":"toy-bear","x":196,"y":220,"scale":0.55,"front":true},
             {"id":"blanket","x":230,"y":336,"scale":1.8,"front":true}
-          ]
+          ],
+          "bubbles": [{"x":134,"y":6,"w":210,"h":53,"text":"妹妹在睡觉。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4702,10 +4584,7 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"holdBoth","expression":"happy","x":150},
-            {"id":"meimei","pose":"holdUp","expression":"happy","x":330,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"nainai","pose":"holdBoth","expression":"happy","x":150},{"id":"meimei","pose":"holdUp","expression":"happy","x":330,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"table","x":240,"y":336,"value":"320","front":true},
             {"id":"rolling-pin","x":150,"y":266,"front":true},
@@ -4713,12 +4592,12 @@
             {"id":"dumpling","x":320,"y":262,"repeat":3,"dx":20,"scale":0.7,"front":true},
             {"id":"dumpling","x":0,"y":0,"hold":[1,"left"],"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":200,"h":56,"text":"我们做饺子！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":46,"w":241,"h":53,"text":"我们做饺子吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Nenek dan Adik membuat pangsit bersama: Nenek menggiling kulit, Adik mengangkat pangsit buatannya. Nenek: \"我们做饺子！\"",
-        "en": "Grandma and Little Sister make dumplings together: Grandma rolls the wrappers and Little Sister holds up one she made. Grandma: \"我们做饺子！\""
+        "id": "Nenek dan Adik membuat pangsit bersama: Nenek menggiling kulit, Adik mengangkat pangsit buatannya. Nenek: \"我们做饺子吧！\"",
+        "en": "Grandma and Little Sister make dumplings together: Grandma rolls the wrappers and Little Sister holds up one she made. Grandma: \"我们做饺子吧！\""
       },
       "play": "pop-bubble"
     },
@@ -4730,20 +4609,18 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"lookFor","expression":"surprised","x":110,"scale":1.1,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"lookFor","expression":"surprised","x":110,"scale":1.1,"act":"head"}],
           "props": [
             {"id":"cat","x":380,"y":262,"scale":0.8},
             {"id":"sofa","x":330,"y":336},
             {"id":"question","x":200,"y":120,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":170,"h":56,"text":"我找小猫。","highlight":true}]
+          "bubbles": [{"from":0,"x":158,"y":98,"w":241,"h":53,"text":"我在找我的猫。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik mencari kucing dengan tangan di atas mata; kucing bersembunyi di balik sofa. Adik: \"我找小猫。\"",
-        "en": "Little Sister looks around for the cat, hand over her eyes; the cat is hiding behind the sofa. Little Sister: \"我找小猫。\""
+        "id": "Adik mencari kucing dengan tangan di atas mata; kucing bersembunyi di balik sofa. Adik: \"我在找我的猫。\"",
+        "en": "Little Sister looks around for the cat, hand over her eyes; the cat is hiding behind the sofa. Little Sister: \"我在找我的猫。\""
       },
       "play": "pop-bubble"
     },
@@ -4779,29 +4656,25 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"eat","expression":"happy","x":118,"scale":1.25}
-          ],
+          "characters": [{"id":"meimei","pose":"eat","expression":"happy","x":118,"scale":1.25}],
           "props": [
             {"id":"table","x":118,"y":336,"value":"150","front":true},
             {"id":"bowl","x":118,"y":268,"variant":"rice","front":true}
           ]
         },
         {
-          "characters": [
-            {"id":"meimei","pose":"thumbsUp","expression":"happy","x":362,"scale":1.25,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"thumbsUp","expression":"happy","x":362,"scale":1.25,"act":"arm-left"}],
           "props": [
             {"id":"table","x":362,"y":336,"value":"150","front":true},
             {"id":"bowl","x":362,"y":268,"front":true},
             {"id":"check","x":446,"y":262,"scale":0.75}
           ],
-          "bubbles": [{"from":0,"x":268,"y":24,"w":170,"h":56,"text":"吃完了！","highlight":true}]
+          "bubbles": [{"from":0,"x":250,"y":46,"w":178,"h":53,"text":"我吃完了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Dua panel: mangkuk penuh nasi dan Adik mulai makan; lalu mangkuk kosong, Adik mengacungkan jempol: \"吃完了！\" (sebelum → sesudah).",
-        "en": "Two panels: a full bowl of rice as Little Sister starts eating; then the bowl is empty and she gives a thumbs-up: \"吃完了！\" (before → after)."
+        "id": "Dua panel: mangkuk penuh nasi dan Adik mulai makan; lalu mangkuk kosong, Adik mengacungkan jempol: \"我吃完了！\" (sebelum → sesudah).",
+        "en": "Two panels: a full bowl of rice as Little Sister starts eating; then the bowl is empty and she gives a thumbs-up: \"我吃完了！\" (before → after)."
       },
       "play": "panels"
     },
@@ -4813,26 +4686,22 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"holdEar","expression":"happy","x":118}
-          ],
+          "characters": [{"id":"mama","pose":"holdEar","expression":"happy","x":118}],
           "props": [
             {"id":"phone","x":0,"y":30,"hold":[0,"left"],"scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":24,"y":24,"w":190,"h":56,"text":"你在做什么？","highlight":false}]
+          "bubbles": [{"from":0,"x":30,"y":14,"w":79,"h":72,"text":"你在做什么？","line":0}]
         },
         {
           "background": "kitchen",
-          "characters": [
-            {"id":"meimei","pose":"holdEar","expression":"happy","x":362,"scale":1.1,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"holdEar","expression":"happy","x":362,"scale":1.1,"act":"head"}],
           "props": [
             {"id":"phone","x":0,"y":30,"hold":[0,"left"],"scale":0.6},
             {"id":"table","x":362,"y":336,"value":"150","front":true},
             {"id":"bowl","x":340,"y":268,"variant":"rice","front":true},
             {"id":"chopsticks","x":384,"y":268,"rotate":20,"front":true}
           ],
-          "bubbles": [{"from":0,"x":256,"y":24,"w":206,"h":56,"text":"我正在吃饭。","highlight":true}]
+          "bubbles": [{"from":0,"x":250,"y":74,"w":210,"h":53,"text":"我正在吃饭。","highlight":true,"line":1}]
         }
       ],
       "alt": {
@@ -4849,16 +4718,13 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"offer","expression":"happy","x":150,"scale":1.1,"act":"arm-left"},
-            {"id":"nainai","expression":"happy","x":380,"flip":true}
-          ],
+          "characters": [{"id":"meimei","pose":"offer","expression":"happy","x":150,"scale":1.1,"act":"arm-left"},{"id":"nainai","expression":"happy","x":380,"flip":true}],
           "props": [
             {"id":"table","x":370,"y":336,"value":"180","front":true},
             {"id":"steamer","x":370,"y":266,"front":true},
             {"id":"plate","x":6,"y":2,"hold":[0,"left"],"scale":0.7}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":190,"h":56,"text":"再来一个！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":74,"w":178,"h":53,"text":"再来一个！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4904,15 +4770,15 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"beckon","expression":"happy","x":140,"act":"arm-left"},
-            {"id":"meimei","expression":"surprised","x":370,"scale":1.1,"flip":true}
-          ],
+          "characters": [{"id":"mama","pose":"beckon","expression":"happy","x":140,"act":"arm-left"},{"id":"meimei","expression":"surprised","x":370,"scale":1.1,"flip":true}],
           "props": [],
-          "bubbles": [{"from":0,"x":20,"y":30,"w":190,"h":58,"text":"来一下！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":178,"h":53,"text":"你来一下！","highlight":true,"line":0}]
         }
       ],
-      "alt": {"id":"Ibu melambai memanggil Adik sebentar: \"来一下！\"","en":"Mom waves Little Sister over for a moment: \"来一下！\""},
+      "alt": {
+        "id": "Ibu melambai memanggil Adik sebentar: \"你来一下！\"",
+        "en": "Mom waves Little Sister over for a moment: \"你来一下！\""
+      },
       "play": "beckon"
     },
     {
@@ -4923,9 +4789,7 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"hug","expression":"happy","x":190,"scale":1.15,"act":"char"}
-          ],
+          "characters": [{"id":"meimei","pose":"hug","expression":"happy","x":190,"scale":1.15,"act":"char"}],
           "props": [
             {"id":"shelf","x":380,"y":336},
             {"id":"ball","x":350,"y":266},
@@ -4933,15 +4797,15 @@
             {"id":"gift-box","x":380,"y":330,"scale":0.7},
             {"id":"toy-panda","x":0,"y":26,"hold":[0,"left"],"scale":0.9},
             {"id":"heart","x":120,"y":150,"scale":0.8},
-            {"id":"heart","x":270,"y":120,"scale":1.0},
+            {"id":"heart","x":270,"y":120,"scale":1},
             {"id":"heart","x":250,"y":180,"scale":0.6}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":170,"h":56,"text":"我很喜欢！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":241,"h":53,"text":"我很喜欢这个！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik memeluk boneka panda pilihannya dari rak mainan, dikelilingi hati: \"我很喜欢！\"",
-        "en": "Little Sister hugs the stuffed panda she picked from the toy shelf, surrounded by hearts: \"我很喜欢！\""
+        "id": "Adik memeluk boneka panda pilihannya dari rak mainan, dikelilingi hati: \"我很喜欢这个！\"",
+        "en": "Little Sister hugs the stuffed panda she picked from the toy shelf, surrounded by hearts: \"我很喜欢这个！\""
       },
       "play": "pop-bubble"
     },
@@ -4953,17 +4817,14 @@
       "background": "living",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"hug","expression":"happy","x":210},
-            {"id":"meimei","pose":"hug","expression":"happy","view":"side","x":268,"flip":true,"act":"char"}
-          ],
+          "characters": [{"id":"mama","pose":"hug","expression":"happy","x":210},{"id":"meimei","pose":"hug","expression":"happy","view":"side","x":268,"flip":true,"act":"char"}],
           "props": [
             {"id":"sofa","x":240,"y":336,"color":"#7AA6D8"},
             {"id":"heart","x":140,"y":140,"scale":0.9},
             {"id":"heart","x":370,"y":200,"scale":1.1},
             {"id":"heart","x":330,"y":250,"scale":0.7}
           ],
-          "bubbles": [{"from":1,"x":262,"y":20,"w":208,"h":60,"text":"妈妈，我爱你！","highlight":true}]
+          "bubbles": [{"from":1,"x":254,"y":98,"w":207,"h":46,"text":"妈妈，我爱你！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -4980,29 +4841,18 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"holdUp","expression":"happy","x":118,"scale":1.15,"roles":["side-a"]}
-          ],
+          "characters": [{"id":"meimei","pose":"holdUp","expression":"happy","x":170,"scale":1.15,"act":"head"}],
           "props": [
             {"id":"balloon","x":0,"y":-4,"hold":[0,"left"],"scale":1.2,"roles":["sway"]}
           ],
-          "bubbles": [{"from":0,"x":30,"y":24,"w":150,"h":56,"text":"很高兴！","highlight":true}]
-        },
-        {
-          "characters": [
-            {"id":"meimei","pose":"reach","expression":"sad","x":362,"scale":1.15,"flip":true,"roles":["side-b"]}
-          ],
-          "props": [
-            {"id":"balloon","x":290,"y":130,"scale":1.0,"rotate":-10}
-          ],
-          "bubbles": [{"from":0,"x":330,"y":30,"w":130,"h":52,"text":"不高兴…","highlight":false}]
+          "bubbles": [{"from":0,"x":6,"y":62,"w":178,"h":53,"text":"我很高兴。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Dua panel: Adik senang sekali memegang balon \"很高兴！\"; lalu balonnya terbang lepas dan ia sedih \"不高兴…\".",
-        "en": "Two panels: Little Sister is happy holding a balloon \"很高兴！\"; then the balloon floats away and she is sad \"不高兴…\"."
+        "id": "Adik tersenyum lebar memegang balon merah di taman: \"我很高兴。\"",
+        "en": "Little Sister smiles widely, holding a red balloon in the park: \"我很高兴。\""
       },
-      "play": "swap-pair"
+      "play": "nod"
     },
     {
       "wordId": "L1-0400",
@@ -5012,14 +4862,13 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"thinking","expression":"happy","x":130,"scale":1.1,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"thinking","expression":"happy","x":130,"scale":1.1,"act":"head"}],
           "props": [
             {"id":"tea-shop","x":370,"y":336},
             {"id":"thought-cloud","x":236,"y":150,"front":true},
             {"id":"bubble-tea","x":238,"y":120,"scale":0.85,"front":true}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":26,"y":30,"w":116,"h":97,"text":"我想喝奶茶。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5036,22 +4885,19 @@
       "background": "shop",
       "panels": [
         {
-          "characters": [
-            {"id":"baba","expression":"neutral","x":90},
-            {"id":"meimei","pose":"point","expression":"happy","x":200,"scale":1.1,"act":"arm-left"}
-          ],
+          "characters": [{"id":"baba","expression":"neutral","x":90},{"id":"meimei","pose":"point","expression":"happy","x":200,"scale":1.1,"act":"arm-left"}],
           "props": [
             {"id":"shelf","x":380,"y":300,"scale":1.1},
             {"id":"toy-bear","x":350,"y":222,"scale":0.7,"roles":["target"]},
             {"id":"ball","x":410,"y":222},
             {"id":"gift-box","x":380,"y":296,"scale":0.7}
           ],
-          "bubbles": [{"from":1,"x":150,"y":20,"w":170,"h":56,"text":"我要这个！","highlight":true}]
+          "bubbles": [{"from":1,"x":134,"y":70,"w":273,"h":53,"text":"爸爸，我要这个！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Di toko mainan Adik menunjuk boneka beruang dengan tegas, Ayah di sampingnya: \"我要这个！\"",
-        "en": "In a toy shop Little Sister points firmly at a teddy bear, Dad beside her: \"我要这个！\""
+        "id": "Di toko mainan Adik menunjuk boneka beruang dengan tegas, Ayah di sampingnya: \"爸爸，我要这个！\"",
+        "en": "In a toy shop Little Sister points firmly at a teddy bear, Dad beside her: \"爸爸，我要这个！\""
       },
       "play": "point"
     },
@@ -5063,21 +4909,18 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"stop","expression":"angry","x":150,"scale":1.1,"act":"head"},
-            {"id":"mama","pose":"offer","expression":"happy","x":350,"flip":true}
-          ],
+          "characters": [{"id":"meimei","pose":"stop","expression":"angry","x":150,"scale":1.1,"act":"head"},{"id":"mama","pose":"offer","expression":"happy","x":350,"flip":true}],
           "props": [
             {"id":"plate","x":4,"y":4,"hold":[1,"left"],"scale":0.75},
             {"id":"bitter-melon","x":4,"y":0,"hold":[1,"left"],"scale":0.6},
             {"id":"cross","x":250,"y":150,"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":20,"y":20,"w":140,"h":56,"text":"不要！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":30,"w":147,"h":97,"text":"我不要这个菜！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Ibu menyodorkan sepiring pare; Adik menggeleng dan mengangkat telapak tangan menolak: \"不要！\"",
-        "en": "Mom holds out a plate of bitter melon; Little Sister shakes her head and raises her palm to refuse: \"不要！\""
+        "id": "Ibu menyodorkan sepiring pare; Adik menggeleng dan mengangkat telapak tangan menolak: \"我不要这个菜！\"",
+        "en": "Mom holds out a plate of bitter melon; Little Sister shakes her head and raises her palm to refuse: \"我不要这个菜！\""
       },
       "play": "shake-head"
     },
@@ -5139,20 +4982,17 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"point","expression":"happy","x":130,"scale":1.1},
-            {"id":"mama","pose":"thumbsUp","expression":"happy","x":400,"flip":true,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"point","expression":"happy","x":130,"scale":1.1},{"id":"mama","pose":"thumbsUp","expression":"happy","x":400,"flip":true,"act":"head"}],
           "props": [
             {"id":"table","x":280,"y":336,"value":"160","front":true},
             {"id":"cake","x":280,"y":266,"front":true}
           ],
-          "bubbles": [{"from":0,"x":10,"y":20,"w":200,"h":56,"text":"我可以吃吗？","highlight":false},{"from":1,"x":236,"y":14,"w":134,"h":56,"text":"可以！","highlight":true}]
+          "bubbles": [{"from":0,"x":10,"y":14,"w":273,"h":97,"text":"妈妈，我可以吃一个吗？","highlight":true,"line":0},{"from":1,"x":298,"y":10,"w":92,"h":77,"text":"可以，吃吧！","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Adik menunjuk kue di meja: \"我可以吃吗？\"; Ibu tersenyum dan mengacungkan jempol: \"可以！\"",
-        "en": "Little Sister points at the cake on the table: \"我可以吃吗？\"; Mom smiles and gives a thumbs-up: \"可以！\""
+        "id": "Adik menunjuk kue di meja: \"妈妈，我可以吃一个吗？\" Ibu tersenyum dan mengacungkan jempol: \"可以，吃吧！\"",
+        "en": "Little Sister points at the cake on the table: \"妈妈，我可以吃一个吗？\" Mom smiles and gives a thumbs-up: \"可以，吃吧！\""
       },
       "play": "nod"
     },
@@ -5164,16 +5004,14 @@
       "background": "kitchen",
       "panels": [
         {
-          "characters": [
-            {"id":"yeye","pose":"thinking","expression":"happy","x":190,"act":"head"}
-          ],
+          "characters": [{"id":"yeye","pose":"thinking","expression":"happy","x":190,"act":"head"}],
           "props": [
             {"id":"table","x":300,"y":336,"value":"200","front":true},
             {"id":"bowl","x":320,"y":268,"front":true},
             {"id":"steam","x":320,"y":230},
             {"id":"spoon","x":270,"y":268,"rotate":-60,"front":true}
           ],
-          "bubbles": [{"from":0,"x":220,"y":20,"w":230,"h":56,"text":"我觉得很好吃。","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":42,"w":241,"h":53,"text":"我觉得很好吃。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5190,20 +5028,17 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","expression":"happy","x":80},
-            {"id":"meimei","pose":"raiseHand","expression":"happy","x":380,"scale":1.15,"flip":true,"act":"char"}
-          ],
+          "characters": [{"id":"teacher","expression":"happy","x":80},{"id":"meimei","pose":"raiseHand","expression":"happy","x":380,"scale":1.15,"flip":true,"act":"char"}],
           "props": [
             {"id":"blackboard","x":210,"y":236,"value":"2+3="},
             {"id":"question","x":300,"y":120,"scale":0.8}
           ],
-          "bubbles": [{"from":1,"x":300,"y":20,"w":160,"h":56,"text":"我知道！","highlight":true}]
+          "bubbles": [{"from":1,"x":326,"y":18,"w":147,"h":97,"text":"老师，我知道！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Guru menulis soal 2+3 di papan tulis; Adik mengangkat tangan dengan yakin: \"我知道！\"",
-        "en": "The teacher writes 2+3 on the board; Little Sister raises her hand confidently: \"我知道！\""
+        "id": "Guru menulis soal 2+3 di papan tulis; Adik mengangkat tangan dengan yakin: \"老师，我知道！\"",
+        "en": "The teacher writes 2+3 on the board; Little Sister raises her hand confidently: \"老师，我知道！\""
       },
       "play": "jump"
     },
@@ -5215,17 +5050,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"mama","pose":"offer","expression":"happy","x":170},
-            {"id":"friend","pose":"offer","expression":"happy","x":310,"flip":true,"act":"head"}
-          ],
+          "characters": [{"id":"mama","pose":"offer","expression":"happy","x":170},{"id":"friend","pose":"offer","expression":"happy","x":310,"flip":true,"act":"head"}],
           "props": [],
-          "bubbles": [{"from":1,"x":250,"y":20,"w":220,"h":56,"text":"认识你很高兴！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":10,"w":190,"h":77,"text":"你好！认识你很高兴。","highlight":true,"line":0},{"from":1,"x":206,"y":42,"w":260,"h":46,"text":"我也很高兴认识你！","highlight":true,"line":1}]
         }
       ],
       "alt": {
-        "id": "Ibu berkenalan dengan seorang wanita dan berjabat tangan: \"认识你很高兴！\"",
-        "en": "Mom meets a woman for the first time and shakes her hand: \"认识你很高兴！\""
+        "id": "Ibu berkenalan dengan seorang wanita dan berjabat tangan: \"你好！认识你很高兴。\" Wanita itu menjawab: \"我也很高兴认识你！\"",
+        "en": "Mom meets a woman for the first time and shakes her hand: \"你好！认识你很高兴。\" The woman answers: \"我也很高兴认识你！\""
       },
       "play": "nod"
     },
@@ -5237,14 +5069,12 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"wave","expression":"happy","x":62,"act":"arm-left"},
-            {"id":"teacher","pose":"wave","expression":"happy","x":168,"flip":true}
-          ],
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":62,"act":"arm-left"},{"id":"teacher","pose":"wave","expression":"happy","x":168,"flip":true}],
           "props": [
             {"id":"school","x":345,"y":336,"scale":1.15},
             {"id":"schoolbag","x":0,"y":50,"hold":[0,"right"],"scale":0.8}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":70,"w":109,"h":72,"text":"我喜欢我的学校。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5261,17 +5091,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"wave","expression":"happy","x":170,"act":"arm-left"},
-            {"id":"classmate","expression":"happy","x":290,"scale":0.9}
-          ],
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":170,"act":"arm-left"},{"id":"classmate","expression":"happy","x":290,"scale":0.9}],
           "props": [
             {"id":"school","x":400,"y":336,"scale":0.7},
             {"id":"marker","x":170,"y":140,"scale":0.8},
             {"id":"marker","x":290,"y":90,"scale":0.8},
             {"id":"schoolbag","x":0,"y":50,"hold":[0,"right"],"scale":0.8}
           ],
-          "bubbles": [{"from":0,"x":10,"y":20,"w":180,"h":56,"text":"我们是学生。","highlight":true}]
+          "bubbles": [{"from":0,"x":38,"y":46,"w":116,"h":97,"text":"我们是学生。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5288,21 +5115,18 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"holdObject","expression":"happy","x":150,"act":"head"},
-            {"id":"meimei","pose":"wave","expression":"happy","x":400,"flip":true}
-          ],
+          "characters": [{"id":"teacher","pose":"holdObject","expression":"happy","x":150,"act":"head"},{"id":"meimei","pose":"wave","expression":"happy","x":400,"flip":true}],
           "props": [
             {"id":"blackboard","x":255,"y":228,"value":"1+1=2","scale":0.85},
             {"id":"book","x":0,"y":10,"hold":[0,"left"],"variant":"closed","scale":1.1,"color":"#E5484D"},
             {"id":"marker","x":150,"y":116,"scale":0.8}
           ],
-          "bubbles": [{"from":1,"x":336,"y":96,"w":134,"h":54,"text":"老师好！","highlight":true}]
+          "bubbles": [{"from":1,"x":326,"y":46,"w":147,"h":97,"text":"老师，早上好！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Guru berkacamata berdiri di depan papan tulis memegang buku; Adik melambai: \"老师好！\"",
-        "en": "The teacher with glasses stands in front of the blackboard holding a book; Little Sister waves: \"老师好！\""
+        "id": "Guru berkacamata berdiri di depan papan tulis memegang buku; Adik melambai: \"老师，早上好！\"",
+        "en": "The teacher with glasses stands in front of the blackboard holding a book; Little Sister waves: \"老师，早上好！\""
       },
       "play": "nod"
     },
@@ -5338,16 +5162,15 @@
       "background": "home",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"sit","expression":"happy","x":250,"y":282,"scale":1.1,"act":"head"}
-          ],
+          "characters": [{"id":"meimei","pose":"sit","expression":"happy","x":250,"y":282,"scale":1.1,"act":"head"}],
           "props": [
             {"id":"chair","x":250,"y":312,"scale":1.05},
             {"id":"desk","x":240,"y":336,"scale":1.4,"front":true},
             {"id":"book","x":250,"y":242,"scale":1.05,"front":true},
             {"id":"book","x":160,"y":238,"variant":"closed","color":"#2F9E44","front":true},
             {"id":"book","x":160,"y":212,"variant":"closed","color":"#FFD43B","front":true}
-          ]
+          ],
+          "bubbles": [{"x":150,"y":6,"w":178,"h":97,"text":"妹妹在房间里学习。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5364,17 +5187,14 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"nainai","pose":"waveBye","expression":"happy","x":110},
-            {"id":"meimei","expression":"happy","view":"side","x":250,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"nainai","pose":"waveBye","expression":"happy","x":110},{"id":"meimei","expression":"happy","view":"side","x":250,"roles":["mover","from-left"]}],
           "props": [
             {"id":"sun","x":240,"y":90,"scale":0.8},
             {"id":"house","x":90,"y":336,"scale":0.7},
             {"id":"school","x":400,"y":336,"scale":0.65},
             {"id":"arrow","x":330,"y":330,"scale":0.6}
           ],
-          "bubbles": [{"from":1,"x":160,"y":20,"w":200,"h":56,"text":"我去上学了！","highlight":true}]
+          "bubbles": [{"from":1,"x":246,"y":90,"w":210,"h":53,"text":"我去上学了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5391,13 +5211,11 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"point","expression":"happy","x":330,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"teacher","pose":"point","expression":"happy","x":330,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"timetable","x":140,"y":270,"scale":1.2,"roles":["target"]}
           ],
-          "bubbles": [{"from":0,"x":250,"y":20,"w":210,"h":56,"text":"今天有中文课。","highlight":true}]
+          "bubbles": [{"from":0,"x":230,"y":34,"w":241,"h":53,"text":"今天有中文课。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5414,11 +5232,7 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"sit","expression":"happy","x":110,"y":300,"scale":0.9},
-            {"id":"friend","pose":"sit","expression":"happy","x":240,"y":300,"scale":0.9},
-            {"id":"teacher","pose":"raiseHand","expression":"happy","x":400,"flip":true,"act":"arm-left"}
-          ],
+          "characters": [{"id":"gege","pose":"sit","expression":"happy","x":110,"y":300,"scale":0.9},{"id":"friend","pose":"sit","expression":"happy","x":240,"y":300,"scale":0.9},{"id":"teacher","pose":"raiseHand","expression":"happy","x":400,"flip":true,"act":"arm-left"}],
           "props": [
             {"id":"blackboard","x":300,"y":210,"scale":0.8},
             {"id":"desk","x":110,"y":336,"front":true},
@@ -5426,12 +5240,12 @@
             {"id":"bell","x":40,"y":80,"scale":1.2},
             {"id":"sound-lines","x":70,"y":80}
           ],
-          "bubbles": [{"from":2,"x":310,"y":20,"w":150,"h":56,"text":"上课了！","highlight":true}]
+          "bubbles": [{"from":2,"x":122,"y":34,"w":273,"h":53,"text":"同学们，上课了！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Bel berbunyi, guru masuk kelas: \"上课了！\"; Kakak dan temannya sudah duduk siap di bangku.",
-        "en": "The bell rings and the teacher comes in: \"上课了！\"; Big Brother and his friend sit ready at their desks."
+        "id": "Bel berbunyi, guru masuk kelas: \"同学们，上课了！\"; Kakak dan temannya sudah duduk siap di bangku.",
+        "en": "The bell rings and the teacher comes in: \"同学们，上课了！\"; Big Brother and his friend sit ready at their desks."
       },
       "play": "pop-bubble"
     },
@@ -5443,23 +5257,19 @@
       "background": "classroom",
       "panels": [
         {
-          "characters": [
-            {"id":"teacher","pose":"waveBye","expression":"happy","x":80},
-            {"id":"gege","pose":"armsUp","expression":"happy","x":260,"roles":["mover","from-left"]},
-            {"id":"friend","pose":"armsUp","expression":"happy","x":340,"roles":["mover","from-left"]}
-          ],
+          "characters": [{"id":"teacher","pose":"waveBye","expression":"happy","x":80},{"id":"gege","pose":"armsUp","expression":"happy","x":260,"roles":["mover","from-left"]},{"id":"friend","pose":"armsUp","expression":"happy","x":340,"roles":["mover","from-left"]}],
           "props": [
             {"id":"door","x":440,"y":336,"variant":"open"},
             {"id":"bell","x":30,"y":70,"scale":1.1},
             {"id":"sound-lines","x":56,"y":70},
             {"id":"motion-lines","x":190,"y":250,"scale":1.2}
           ],
-          "bubbles": [{"from":0,"x":80,"y":20,"w":150,"h":56,"text":"下课了！","highlight":true}]
+          "bubbles": [{"from":1,"x":78,"y":34,"w":367,"h":53,"text":"下课了！我们去吃饭吧！","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Bel berbunyi, guru berkata \"下课了！\"; Kakak dan temannya berlari gembira ke pintu keluar kelas.",
-        "en": "The bell rings and the teacher says \"下课了！\"; Big Brother and his friend run happily out of the classroom door."
+        "id": "Bel berbunyi; Kakak dan temannya berlari gembira ke pintu keluar kelas, Kakak berseru \"下课了！我们去吃饭吧！\".",
+        "en": "The bell rings; Big Brother and his friend run happily to the classroom door, and Big Brother calls \"下课了！我们去吃饭吧！\"."
       },
       "play": "move-to"
     },
@@ -5471,14 +5281,13 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"wave","expression":"happy","x":90,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":90,"act":"arm-left"}],
           "props": [
             {"id":"school-small","x":280,"y":336},
             {"id":"slide","x":440,"y":336,"scale":0.9},
             {"id":"schoolbag","x":0,"y":50,"hold":[0,"right"],"scale":0.8}
-          ]
+          ],
+          "bubbles": [{"from":0,"x":6,"y":90,"w":241,"h":53,"text":"这是我的小学。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5495,19 +5304,17 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"meimei","pose":"wave","expression":"happy","x":200,"scale":1.3,"act":"arm-left"}
-          ],
+          "characters": [{"id":"meimei","pose":"wave","expression":"happy","x":200,"scale":1.3,"act":"arm-left"}],
           "props": [
             {"id":"school-small","x":390,"y":336,"scale":0.55},
             {"id":"schoolbag","x":0,"y":60,"hold":[0,"right"],"scale":1.1}
           ],
-          "bubbles": [{"from":0,"x":250,"y":20,"w":200,"h":56,"text":"我是小学生！","highlight":true}]
+          "bubbles": [{"from":0,"x":6,"y":34,"w":210,"h":53,"text":"我是小学生。","highlight":true,"line":0}]
         }
       ],
       "alt": {
-        "id": "Adik, murid SD, membawa tas sekolah besar dan melambai: \"我是小学生！\"",
-        "en": "Little Sister, a primary school pupil, carries a big school bag and waves: \"我是小学生！\""
+        "id": "Adik, murid SD, membawa tas sekolah besar dan melambai: \"我是小学生。\"",
+        "en": "Little Sister, a primary school pupil, carries a big school bag and waves: \"我是小学生。\""
       },
       "play": "wave"
     },
@@ -5543,14 +5350,12 @@
       "background": "street",
       "panels": [
         {
-          "characters": [
-            {"id":"classmate","pose":"wave","expression":"happy","x":200,"scale":0.92,"act":"arm-left"}
-          ],
+          "characters": [{"id":"classmate","pose":"wave","expression":"happy","x":200,"scale":0.92,"act":"arm-left"}],
           "props": [
             {"id":"school-tall","x":390,"y":336,"scale":0.6},
-            {"id":"book","x":0,"y":10,"hold":[0,"right"],"variant":"closed","scale":1.0,"color":"#4C9BE8"}
+            {"id":"book","x":0,"y":10,"hold":[0,"right"],"variant":"closed","scale":1,"color":"#4C9BE8"}
           ],
-          "bubbles": [{"from":0,"x":250,"y":20,"w":200,"h":56,"text":"我是中学生。","highlight":true}]
+          "bubbles": [{"from":0,"x":206,"y":50,"w":210,"h":53,"text":"我是中学生。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5567,14 +5372,12 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"wave","expression":"happy","x":130,"act":"arm-left"},
-            {"id":"friend","pose":"holdObject","expression":"happy","x":360,"flip":true}
-          ],
+          "characters": [{"id":"gege","pose":"wave","expression":"happy","x":130,"act":"arm-left"},{"id":"friend","pose":"holdObject","expression":"happy","x":360,"flip":true}],
           "props": [
             {"id":"university","x":240,"y":290,"scale":0.9},
             {"id":"book","x":0,"y":10,"hold":[1,"left"],"variant":"closed","color":"#9775FA"}
-          ]
+          ],
+          "bubbles": [{"x":86,"y":6,"w":304,"h":53,"text":"哥哥今年上大学了。","highlight":true,"line":0}]
         }
       ],
       "alt": {
@@ -5591,14 +5394,12 @@
       "background": "park",
       "panels": [
         {
-          "characters": [
-            {"id":"gege","pose":"holdObject","expression":"happy","x":190,"scale":1.05,"act":"head"}
-          ],
+          "characters": [{"id":"gege","pose":"holdObject","expression":"happy","x":190,"scale":1.05,"act":"head"}],
           "props": [
             {"id":"university","x":370,"y":250,"scale":0.5},
             {"id":"laptop","x":0,"y":10,"hold":[0,"left"],"scale":1.1}
           ],
-          "bubbles": [{"from":0,"x":250,"y":20,"w":200,"h":56,"text":"我是大学生。","highlight":true}]
+          "bubbles": [{"from":0,"x":198,"y":26,"w":210,"h":53,"text":"我是大学生。","highlight":true,"line":0}]
         }
       ],
       "alt": {

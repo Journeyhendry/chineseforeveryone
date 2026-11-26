@@ -179,3 +179,44 @@ describe('audio.ts (file playback)', () => {
     expect(FakeAudio.made[0].url).toMatch(/word\/L1-0001\.mp3$/)
   })
 })
+
+describe('audio.ts onEnd (task 6c: lines played one by one)', () => {
+  it('calls onEnd once when a file ends, but not when another sound interrupts it', async () => {
+    stubDevice(false)
+    stubFetch(true)
+    await loadAudioIndex()
+    const ended = vi.fn()
+    speak('你好', { onEnd: ended })
+    const first = FakeAudio.made[0]
+    first.onended?.()
+    first.onended?.()
+    expect(ended).toHaveBeenCalledTimes(1)
+    const cut = vi.fn()
+    speak('你好', { onEnd: cut })
+    const second = FakeAudio.made[1]
+    speak('我走了')
+    second.onended?.()
+    stopAudio()
+    expect(cut).not.toHaveBeenCalled()
+  })
+
+  it('calls onEnd when the device voice finishes, and not after stopAudio()', async () => {
+    const synth = stubDevice(true)
+    stubFetch(false)
+    await loadAudioIndex()
+    const utterances: { onend?: () => void }[] = []
+    synth.speak = (u: { text: string; onend?: () => void }) => {
+      utterances.push(u)
+      return spoken.push(u.text)
+    }
+    const ended = vi.fn()
+    speak('没有文件', { onEnd: ended })
+    utterances[0].onend?.()
+    expect(ended).toHaveBeenCalledTimes(1)
+    const cut = vi.fn()
+    speak('没有文件', { onEnd: cut })
+    stopAudio()
+    utterances[1].onend?.()
+    expect(cut).not.toHaveBeenCalled()
+  })
+})

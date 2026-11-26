@@ -79,7 +79,14 @@ function placeChar(c: SceneCharacter, index: number, held: { p: SceneProp; count
   const cls = ['char', `c-${index + 1}`, `ch-${c.id}`, act === 'char' ? 'act' : '', ...(c.roles ?? [])].filter(Boolean).join(' ')
   const inner = `<g transform="translate(${-FIG_CX} ${-FIG_FLOOR})">${fig.svg}</g>`
   const svg = pivotGroup(cls, { x, y }, `${c.rotate ? ` rotate(${num(c.rotate)})` : ''} scale(${num(fx * s)} ${num(s)})`, inner)
-  const map = (p: Pt): Pt => ({ x: x + fx * s * (p.x - FIG_CX), y: y + s * (p.y - FIG_FLOOR) })
+  const rad = ((c.rotate ?? 0) * Math.PI) / 180
+  const cos = Math.cos(rad)
+  const sin = Math.sin(rad)
+  const map = (p: Pt): Pt => {
+    const lx = fx * s * (p.x - FIG_CX)
+    const ly = s * (p.y - FIG_FLOOR)
+    return rad ? { x: x + lx * cos - ly * sin, y: y + lx * sin + ly * cos } : { x: x + lx, y: y + ly }
+  }
   const a = fig.anchors
   return {
     svg,
@@ -166,6 +173,7 @@ export function composeScene(scene: Scene): ComposedScene {
       const svg = placeProp(p, propCopies(p), countFrom)
       ;(p.front ? front : back).push(svg)
     }
+    const firstChar = charIndex
     const placed = panel.characters.map((c, i) => placeChar(c, charIndex++, heldBy.get(i)))
     const bubbles = (panel.bubbles ?? []).map((b, bi) => {
       const target = b.from === undefined ? null : placed[b.from]?.anchors.mouth
@@ -173,9 +181,12 @@ export function composeScene(scene: Scene): ComposedScene {
       const drawn = drawBubble(b, target ?? null)
       if (b.text) {
         const pc = (v: number, of: number) => Math.round((v / of) * 10000) / 100
-        bubblesOut.push({ x: pc(b.x, SCENE_W), y: pc(b.y, SCENE_H), w: pc(b.w, SCENE_W), h: pc(b.h, SCENE_H), text: b.text, highlight: b.highlight ?? false, panel: pi + 1 })
+        const out: SceneIndexBubble = { x: pc(b.x, SCENE_W), y: pc(b.y, SCENE_H), w: pc(b.w, SCENE_W), h: pc(b.h, SCENE_H), text: b.text, highlight: b.highlight ?? false, panel: pi + 1 }
+        if (b.line !== undefined) out.line = b.line
+        if (b.line !== undefined && b.from !== undefined) out.char = firstChar + b.from + 1
+        bubblesOut.push(out)
       }
-      const cls = ['bubble', `b-${bi + 1}`, b.text ? 'has-text' : ''].filter(Boolean).join(' ')
+      const cls = ['bubble', `b-${bi + 1}`, b.text ? 'has-text' : '', b.line !== undefined ? `line-${b.line}` : ''].filter(Boolean).join(' ')
       return `<g transform="translate(${num(drawn.pivot.x)} ${num(drawn.pivot.y)})"><g class="${cls}"><g transform="translate(${num(-drawn.pivot.x)} ${num(-drawn.pivot.y)})">${drawn.svg}</g></g></g>`
     })
     const content = [bg(box), ...back, ...placed.map((c) => c.svg), ...front, ...bubbles].join('')
@@ -191,6 +202,24 @@ export function composeScene(scene: Scene): ComposedScene {
     svg,
     entry: { file: `${scene.wordId}.svg`, alt: scene.alt, play: scene.play, bubbles: bubblesOut },
   }
+}
+
+/** Where the characters' heads and mouths are, per panel (in scene units), e.g. to keep balloons off faces. */
+export function characterAnchors(scene: Scene): FigureAnchors[][] {
+  let n = 0
+  return scene.panels.map((panel) => panel.characters.map((c) => placeChar(c, n++).anchors))
+}
+
+/**
+ * Box around a character's face (hair and hat included, roughly), in scene units. Balloons must not
+ * cover it.
+ */
+export function faceBox(c: SceneCharacter, a: FigureAnchors): Box {
+  const s = (c.scale ?? 1) * CHAR_SCALE
+  const r = 64 * s
+  const cx = a.headCenter.x
+  const cy = a.headCenter.y
+  return { x: cx - r, y: cy - 70 * s, w: 2 * r, h: 70 * s + 54 * s }
 }
 
 /** Every output file, keyed by path relative to public/art/scenes/. */

@@ -131,7 +131,7 @@ export interface PosedFigure {
 export interface PosedOptions {
   /** wrap animated parts (char parts, head, arms, eyes) in pivot groups for CSS animation */
   anim?: boolean
-  /** fingers shown by the 'count' pose (1-5) */
+  /** fingers shown by the 'count' pose (1-5), or by 'countBoth' (6-10: five on the left hand) */
   fingers?: number
   /** extra class names for arm groups, e.g. { left: 'act' } */
   armClass?: Partial<Record<'left' | 'right', string>>
@@ -186,7 +186,9 @@ export function posedFigure(spec: CharacterSpec, view: View, expr: Expression, p
       hands[side] = g.hand
     } else {
       const g: PosedArm = posedArmGeom(view, b, side, ap)
-      svg = posedArm(g, ap, st, side, opts.fingers)
+      // more than five fingers: five on the left hand, the rest on the right (pose countBoth)
+      const fingers = opts.fingers !== undefined && opts.fingers > 5 ? (side === 'left' ? 5 : opts.fingers - 5) : opts.fingers
+      svg = posedArm(g, ap, st, side, fingers)
       hands[side] = g.hand
       front = ap.front ?? false
     }

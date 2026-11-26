@@ -102,3 +102,26 @@ export const CHARACTERS: readonly CharacterSpec[] = [
     body: adult({ headScale: 0.98, legLen: 112, torsoLen: 116, shoulderHalf: 47, hemHalf: 48, armLen: 92, armHalf: 9.5, legWidth: 36 }),
   },
 ]
+
+const child = (o: Partial<Proportions>): Proportions =>
+  adult({ headScale: 0.9, legLen: 78, torsoLen: 72, shoulderHalf: 32, hemHalf: 36, armLen: 64, armHalf: 8, legWidth: 26, shoeScale: 0.78, neckLen: 9, ...o })
+
+/**
+ * Scene-only extras (task 6c): other children in the background of a scene (friends, classmates,
+ * a little one in the park). They never speak, so they have no voice, no character sheet and are not
+ * in the dialog speakers.
+ */
+export const SCENE_EXTRAS: readonly CharacterSpec[] = [
+  {
+    id: 'boy', name: { id: 'Anak laki-laki', en: 'Boy' }, gender: 'male', role: 'support',
+    label: 'A little boy with short hair, a blue striped T-shirt and green trousers',
+    skin: SKIN.tan[0], skinShade: SKIN.tan[1], hair: 'cropped', hairColor: '#3A2C2A',
+    body: child({ torsoLen: 70, legLen: 80, shoulderHalf: 33, hemHalf: 34 }),
+  },
+  {
+    id: 'girl', name: { id: 'Anak perempuan', en: 'Girl' }, gender: 'female', role: 'support',
+    label: 'A little girl with a bob, a hair clip and a mint dress',
+    skin: SKIN.light[0], skinShade: SKIN.light[1], hair: 'bob', hairColor: '#4A3328', hairAccent: '#7C5CDB',
+    body: child({}),
+  },
+]

@@ -5,7 +5,7 @@ import unitsData from '../../data/hsk1/units.json'
 import wordsData from '../../data/hsk1/words.json'
 import wordSentencesData from '../../data/hsk1/word-sentences.json'
 import { checkAllSceneLines, LINE_FITS, type SceneLinesEntry } from '../lib/scene-lines.ts'
-import { CHARACTERS, EXPRESSIONS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
+import { CHARACTERS, EXPRESSIONS, SCENE_EXTRAS, INK, POSE_IDS, SCENE_EXPRESSIONS, VIEWS } from './characters/index.ts'
 import {
   ACT_TARGETS,
   BACKGROUND_IDS,
@@ -19,7 +19,6 @@ import {
   type SceneIndex,
   type ScenesFile,
 } from './scenes/index.ts'
-import { GLYPH_STROKES } from './scenes/glyphs.ts'
 import { checkXml } from './xml-check.ts'
 
 const data = scenesData as ScenesFile
@@ -39,6 +38,9 @@ const KB = 1024
 
 /** Number shown by counting words (零 = nothing to count). */
 const NUMBERS: Record<string, number> = { 零: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 }
+// task 6c: in these sentences the number is a floor (二楼), an age (八十岁) or a clock time (九点, 十点零五分),
+// so nothing is counted; a digit badge, the cake candle or the clock shows the number instead
+const NOT_COUNTED = new Set(['二', '八', '九', '零'])
 
 describe('scenes.json', () => {
   it('has at most one scene per HSK 1 word, listed in unit order with the unit the word is in now', () => {
@@ -66,7 +68,7 @@ describe('scenes.json', () => {
   })
 
   it('only uses known characters, poses, props, backgrounds and presets', () => {
-    const charIds = CHARACTERS.map((c) => c.id)
+    const charIds = [...CHARACTERS, ...SCENE_EXTRAS].map((c) => c.id)
     for (const s of data.scenes) {
       const where = `${s.wordId} ${s.hanzi}`
       expect(BACKGROUND_IDS, where).toContain(s.background)
@@ -117,6 +119,11 @@ describe('scenes.json', () => {
   it('shows exactly the right number of things for number words', () => {
     for (const s of data.scenes) {
       if (!(s.hanzi in NUMBERS)) continue
+      if (NOT_COUNTED.has(s.hanzi)) {
+        const shown = s.panels.flatMap((p) => p.props).some((p) => (p.value ?? '').includes(String(NUMBERS[s.hanzi])))
+        expect(shown, `${s.hanzi} shows its number`).toBe(true)
+        continue
+      }
       const counted = s.panels.flatMap((p) => p.props).reduce((n, p) => n + (p.count ?? 0), 0)
       expect(counted, `${s.hanzi}`).toBe(NUMBERS[s.hanzi])
       const digit = s.panels.flatMap((p) => p.props).find((p) => p.id === 'digit')
@@ -139,7 +146,7 @@ describe('scenes.json', () => {
 describe('task 6c: balloons say the sentence / dialog of the word', () => {
   const entries = (wordSentencesData as { entries: SceneLinesEntry[] }).entries
 
-  it('every keep / rebubble scene says its sentence or dialog, line by line, without covering a face', () => {
+  it('every keep / rebubble / redraw scene says its sentence or dialog, line by line, without covering a face', () => {
     expect(checkAllSceneLines(data.scenes, entries)).toEqual([])
     const lineScenes = data.scenes.filter((s) => s.panels.some((p) => (p.bubbles ?? []).some((b) => b.line !== undefined)))
     expect(lineScenes.length).toBeGreaterThanOrEqual(entries.filter((e) => LINE_FITS.includes(e.scene.fit)).length)
@@ -243,32 +250,26 @@ describe('tahap 2: units u01–u08', () => {
     }
   })
 
-  it('puts the family words of u08 in the same Xiǎo family living room, full for 家 and 家人', () => {
+  it('puts the family words of u08 in the same Xiǎo family living room, full for 家人', () => {
     for (const h of FAMILY) {
       const s = byHanzi(h)
       expect(s, h).toBeTruthy()
       expect(s?.background, h).toBe('living')
       expect(s?.panels.every((p) => (p.background ?? 'living') === 'living'), h).toBe(true)
     }
-    for (const h of ['家', '家人']) {
-      const ids = byHanzi(h)?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
-      expect([...new Set(ids)].sort(), h).toEqual([...XIAO].sort())
-    }
+    const ids = byHanzi('家人')?.panels.flatMap((p) => p.characters.map((c) => c.id)) ?? []
+    expect([...new Set(ids)].sort()).toEqual([...XIAO].sort())
   })
 
-  it('plays the origin animation for 人 and 家: the picture next to the character drawn stroke by stroke', () => {
-    for (const h of ['人', '家']) {
-      const s = byHanzi(h)
-      expect(s?.play, h).toBe('origin')
-      const props = s?.panels.flatMap((p) => p.props) ?? []
-      expect(props.some((p) => p.roles?.includes('morph-from')), h).toBe(true)
-      const glyph = props.find((p) => p.id === 'glyph')
-      expect(glyph?.value, h).toBe(h)
-      expect(glyph?.roles, h).toContain('morph-to')
-      const svg = built.get(`${s?.wordId}.svg`) as string
-      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
-      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
-    }
+  // task 6c: 人 and 家 no longer play the picture-to-character origin animation; they show their
+  // sentence (这儿人很多。 in a crowded station, 他不在家。 at the front door)
+  it('shows a crowd for 人 and the front door with an empty room for 家', () => {
+    const ren = byHanzi('人')
+    expect(ren?.background).toBe('metro')
+    expect(ren?.panels.flatMap((p) => p.characters).length).toBeGreaterThanOrEqual(6)
+    const jia = byHanzi('家')
+    expect(jia?.panels.flatMap((p) => p.props).some((p) => p.id === 'door')).toBe(true)
+    expect(jia?.panels.flatMap((p) => p.characters).some((c) => c.id === 'gege')).toBe(false)
   })
 
   it('shows three animals and the digit 3 for 只, and the number 1000 for 千', () => {
@@ -276,8 +277,8 @@ describe('tahap 2: units u01–u08', () => {
     expect(zhi.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(3)
     expect(zhi.find((p) => p.id === 'digit')?.value).toBe('3')
     const qian = byHanzi('千')?.panels.flatMap((p) => p.props) ?? []
+    // task 6c: 千 now shows its sentence (a phone priced 1000 in a shop): the price label, no counted boards
     expect(qian.find((p) => p.id === 'badge')?.value).toBe('1000')
-    expect(qian.reduce((n, p) => n + (p.count ?? 0), 0)).toBe(10)
   })
 })
 
@@ -300,39 +301,34 @@ describe('tahap 3: units u09–u12', () => {
     expect(data.scenes.filter((s) => UNITS.includes(s.unitId) || s.hanzi === '一下')).toHaveLength(177)
   })
 
-  it('plays the origin animation for 日 and 月: the picture next to the character drawn stroke by stroke', () => {
-    for (const h of ['日', '月']) {
-      const s = byHanzi(h)
-      expect(s.play, h).toBe('origin')
-      expect(props(h).some((p) => p.roles?.includes('morph-from')), h).toBe(true)
-      const glyph = prop(h, 'glyph')[0]
-      expect(glyph?.value, h).toBe(h)
-      expect(glyph?.roles, h).toContain('morph-to')
-      const svg = built.get(`${s.wordId}.svg`) as string
-      const strokes = [...svg.matchAll(/class="stroke stroke-(\d+)"/g)].map((m) => Number(m[1]))
-      expect(strokes, h).toEqual(GLYPH_STROKES[h].map((_, i) => i + 1))
-      expect(svg, h).not.toContain('<text')
-    }
-    expect(prop('日', 'sun-dot')).toHaveLength(1)
-    expect(prop('月', 'moon-old')).toHaveLength(1)
+  // task 6c: 日 and 月 show their sentences (今天是十月一日。 on the blackboard, 今天是五月一号。 on a May
+  // calendar) instead of the picture-to-character origin animation
+  it('writes the date of 日 on the blackboard and the month of 月 on the calendar', () => {
+    expect(prop('日', 'blackboard')[0]?.value).toBe('10月1日')
+    expect(byHanzi('日').background).toBe('classroom')
+    expect(prop('月', 'calendar')[0]).toMatchObject({ variant: '5', value: '1' })
+    // the picture characters are drawn as filled outlines, never as SVG text
+    for (const h of ['日', '月']) expect(built.get(`${byHanzi(h).wordId}.svg`), h).toMatch(/<g transform="matrix\(0\.0\d+ 0 0 -0\.0\d+/)
   })
 
   it('shows the right time on the clocks of the time words', () => {
     const TIMES: Record<string, string> = {
-      现在: '0800', 点: '0700', 分: '0305', 分钟: '0310', 小时: '0400', 时间: '0755', 时候: '0600',
+      现在: '0800', 分: '0305', 分钟: '0405', 小时: '0400', 时间: '0755', 时候: '0300',
       早上: '0600', 上午: '1000', 中午: '1200', 下午: '0300', 晚上: '0800', 早: '0700', 晚: '0820',
     }
     for (const [h, t] of Object.entries(TIMES)) {
       const clocks = prop(h, 'clock')
       expect(clocks.map((c) => c.value), h).toEqual([t])
     }
+    // 点 (task 6c): the question at five, the answer 六点 at six
+    expect(prop('点', 'clock').map((c) => c.value)).toEqual(['0500', '0600'])
     // the sun / moon dial puts the parts of the day in order
     const hours = ['早上', '上午', '中午', '下午', '晚上'].map((h) => Number(prop(h, 'day-dial')[0]?.value))
     expect(hours).toEqual([...hours].sort((a, b) => a - b))
     expect(prop('分', 'clock')[0].variant).toBe('m5')
     expect(prop('分', 'digit')[0].value).toBe('5')
-    expect(prop('分钟', 'clock')[0].variant).toBe('m10')
-    expect(prop('分钟', 'digit')[0].value).toBe('10')
+    expect(prop('分钟', 'clock')[0].variant).toBe('m5')
+    expect(prop('分钟', 'digit')[0].value).toBe('5')
     expect(prop('小时', 'clock')[0].variant).toBe('hour')
     for (const h of ['分', '分钟', '小时']) expect(byHanzi(h).play, h).toBe('clock')
   })
@@ -358,7 +354,9 @@ describe('tahap 3: units u09–u12', () => {
   })
 
   it('draws the position pairs with the same things in different places', () => {
-    for (const [a, b] of [['上', '下'], ['前', '后'], ['里', '外']]) {
+    // 里 / 外 (task 6c) show their own sentences (water in the cup, someone outside the door); each still has one arrow
+    for (const h of ['里', '外']) expect(prop(h, 'marker'), h).toHaveLength(1)
+    for (const [a, b] of [['上', '下'], ['前', '后']]) {
       const ids = (h: string) => [...new Set(props(h).map((p) => p.id))].sort()
       expect(ids(a), `${a}/${b}`).toEqual(ids(b))
       expect(byHanzi(a).background, `${a}/${b}`).toBe(byHanzi(b).background)
@@ -435,7 +433,9 @@ describe('tahap 4: units u13–u16', () => {
   it('draws 睡 (a nap in the armchair) and 睡觉 (lying in bed at night) differently', () => {
     expect(prop('睡', 'armchair')).toHaveLength(1)
     expect(prop('睡', 'bed')).toHaveLength(0)
-    expect(chars('睡').every((c) => c.expression === 'sleep')).toBe(true)
+    // task 6c: 他睡了。 Grandpa naps in the armchair while Grandma whispers to Little Sister
+    expect(chars('睡').find((c) => c.id === 'yeye')?.expression).toBe('sleep')
+    expect(chars('睡').find((c) => c.id === 'nainai')?.pose).toBe('shush')
     expect(prop('睡觉', 'bed')).toHaveLength(1)
     expect(prop('睡觉', 'blanket')[0]?.front).toBe(true)
     const sleeper = chars('睡觉')[0]
@@ -469,9 +469,10 @@ describe('tahap 4: units u13–u16', () => {
     expect(prop('了', 'bowl').map((p) => p.variant)).toEqual(['rice', undefined])
     expect(texts('正在').join('')).toContain('我正在吃饭')
     expect(texts('再').join('')).toContain('再来')
-    expect(prop('还', 'clock')[0]?.value).toBe('1100')
-    expect(byHanzi('还').background).toBe('room-night')
-    expect(texts('还').join('')).toContain('还在')
+    // task 6c: 十点了，还不起床？ ten in the morning and Big Brother is still in bed
+    expect(prop('还', 'clock')[0]?.value).toBe('1000')
+    expect(prop('还', 'bed')).toHaveLength(1)
+    expect(texts('还').join('')).toContain('还不起床')
   })
 
   it('keeps 爱 (a family hug) and 喜欢 (liking a thing) apart', () => {
@@ -492,16 +493,16 @@ describe('tahap 4: units u13–u16', () => {
     expect(prop('要', 'cross')).toHaveLength(0)
     expect(byHanzi('要').play).not.toBe(byHanzi('不要').play)
     expect(byHanzi('不要').play).toBe('shake-head')
-    // 会 = a learned skill (riding a bike alone); 能 = able / strong enough (lifting a heavy box)
-    expect(prop('会', 'bicycle')).toHaveLength(1)
-    expect(prop('会', 'box')).toHaveLength(0)
-    expect(prop('能', 'box')).toHaveLength(1)
-    expect(prop('能', 'bicycle')).toHaveLength(0)
-    expect(texts('会').join('')).toContain('我会')
-    expect(texts('能').join('')).toContain('能！')
-    // 学 = still learning (Mom holds the bike), 会 = can do it alone
-    expect(charIds('学')).toContain('mama')
-    expect(chars('学').find((c) => c.id === 'mama')?.x).toBeLessThan(chars('学').find((c) => c.id === 'meimei')?.x ?? 0)
+    // task 6c: 会 = a learned skill (哥哥会开车。 Big Brother drives); 能 = able to (我能吃三个包子！)
+    expect(prop('会', 'car')).toHaveLength(1)
+    expect(charIds('会')).toContain('gege')
+    expect(prop('能', 'baozi').reduce((n, p) => n + (p.count ?? 1), 0)).toBe(3)
+    expect(prop('能', 'car')).toHaveLength(0)
+    expect(texts('会').join('')).toContain('会开车')
+    expect(texts('能').join('')).toContain('我能')
+    // 学 = still learning (哥哥在学做饭。 Mom shows Big Brother how to cook)
+    expect(charIds('学')).toEqual(expect.arrayContaining(['mama', 'gege']))
+    expect(prop('学', 'wok')).toHaveLength(1)
   })
 
   it('draws 高兴 as one happy panel (task 6c: the sentence is 我很高兴。)', () => {
@@ -514,10 +515,10 @@ describe('tahap 4: units u13–u16', () => {
 
   it('gives each school level a matching age: Little Sister at primary, never Big Brother at secondary, Big Brother at university', () => {
     for (const h of ['小学', '小学生']) expect(charIds(h), h).toContain('meimei')
-    for (const h of ['中学', '中学生']) {
-      expect(charIds(h), h).not.toContain('gege')
-      expect(charIds(h), h).toContain('classmate')
-    }
+    for (const h of ['中学', '中学生']) expect(charIds(h), h).not.toContain('gege')
+    expect(charIds('中学生')).toContain('classmate')
+    // task 6c: 妹妹明年上中学。 Mom and Little Sister look at the middle school she starts next year
+    expect(charIds('中学')).toEqual(expect.arrayContaining(['mama', 'meimei']))
     for (const h of ['大学', '大学生']) expect(charIds(h), h).toContain('gege')
     expect(prop('小学', 'school-small')).toHaveLength(1)
     expect(prop('中学', 'school-tall')).toHaveLength(1)

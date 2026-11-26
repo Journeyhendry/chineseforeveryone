@@ -27,6 +27,14 @@ export function digits(x: number, y: number, value: string, size: number, fill =
 }
 
 /** Coloured band along a polyline: a filled shape (ink outline unless outline=false). */
+/** A picture character (月, 日 ...) from GLYPH_STROKES as filled paths, `size` tall, sitting on baseline y. */
+function glyphText(ch: string, x: number, y: number, size: number, fill: string): string {
+  const strokes = GLYPH_STROKES[ch]
+  if (!strokes) throw new Error(`no glyph ${ch}`)
+  const s = size / 1024
+  return el('g', { transform: `matrix(${s.toFixed(5)} 0 0 ${(-s).toFixed(5)} ${num(x - 512 * s)} ${num(y + 3 - 124 * s)})` }, strokes.map((p) => el('path', { d: p, fill, stroke: 'none' })).join(''))
+}
+
 function band(pts: [number, number][], w: number, fill: string, outline = true, sw?: number): string {
   const P = pts.map(([x, y]): Pt => ({ x, y }))
   const out: string[] = []
@@ -442,6 +450,8 @@ export const PROPS: Record<string, Draw> = {
       line(d('M', -50, -84, 'L', 50, -84), 3.5),
       circle(-26, -110, 4, WHITE, { sw: 2.5 }), circle(26, -110, 4, WHITE, { sw: 2.5 }),
       ...Array.from({ length: 12 }, (_, i) => circle(-33 + (i % 4) * 22, -70 + Math.floor(i / 4) * 26, 3.5, '#D8D2E4', { stroke: false })),
+      // variant: the month number, written in the red top as "5月"
+      o.variant ? [digits(-8, -91, o.variant, 20, WHITE), glyphText('月', 14, -91, 18, WHITE)].join('') : '',
       o.value ? digits(11, -18, o.value, 30) : '',
       o.value ? el('path', { d: d('M', -12, -30, 'A', 23, 18, 0, 1, 1, -6, -16), fill: 'none', 'stroke-width': 3.5 }) : '',
     ].join(''),
@@ -457,6 +467,7 @@ export const PROPS: Record<string, Draw> = {
         const x = x0 + i * step
         if (ch === '+') content.push(band([[x - 10, -70], [x + 10, -70]], 2.4, chalk, false) + band([[x, -80], [x, -60]], 2.4, chalk, false))
         else if (ch === '=') content.push(band([[x - 10, -75], [x + 10, -75]], 2.4, chalk, false) + band([[x - 10, -65], [x + 10, -65]], 2.4, chalk, false))
+        else if (GLYPH_STROKES[ch]) content.push(glyphText(ch, x, -57, 36, chalk))
         else content.push(digits(x, -57, ch, 40, chalk))
       })
     }
@@ -1577,6 +1588,21 @@ export const PROPS: Record<string, Draw> = {
     ].join(''),
   /** Clothes rail: two poles and a bar at y -230 (hang garments from y -226). */
   'clothes-rail': () => [rect(-134, -236, 10, 236, 3, '#868E96', 2.5), rect(124, -236, 10, 236, 3, '#868E96', 2.5), rect(-140, -240, 280, 10, 4, '#ADB5BD', 3), rect(-150, -8, 40, 8, 3, '#4A4458', 2.5), rect(110, -8, 40, 8, 3, '#4A4458', 2.5)].join(''),
+  /** Fridge; variant 'open': the door swung out to the right, a lit inside with shelves, a few jars and an egg box (no milk). */
+  fridge: (o) => {
+    const body = [rect(-54, -210, 108, 210, 12, '#E7F1F8'), line(d('M', -54, -146, 'L', 54, -146), 3.5)]
+    if (o.variant !== 'open') return [...body, rect(38, -196, 7, 36, 3, '#ADB5BD', 2.5), rect(38, -132, 7, 50, 3, '#ADB5BD', 2.5)].join('')
+    return [
+      ...body,
+      rect(-46, -202, 92, 50, 6, '#FFF9DB', 2.5),
+      rect(-46, -140, 92, 132, 6, '#FFF9DB', 2.5),
+      line(d('M', -46, -96, 'L', 46, -96, 'M', -46, -52, 'L', 46, -52), 3, 0.7),
+      rect(-38, -126, 18, 30, 4, '#FFA8A8', 2.5), rect(-14, -120, 18, 24, 4, '#B2F2BB', 2.5),
+      rect(10, -70, 30, 18, 4, '#F3D9B5', 2.5), circle(-26, -62, 9, RED, { sw: 2.5 }),
+      shape(d('M', 54, -208, 'L', 92, -222, 'L', 92, 12, 'L', 54, 0, 'Z'), '#D0E3F0'),
+      rect(80, -150, 6, 40, 3, '#ADB5BD', 2.5),
+    ].join('')
+  },
   laptop: () => [rect(-26, -40, 52, 34, 4, '#4A4458'), rect(-21, -35, 42, 24, 2, '#A5D8FF', 2), rect(-32, -8, 64, 8, 3, '#868E96', 2.5)].join(''),
 }
 

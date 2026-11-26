@@ -73,6 +73,7 @@ export const POSES = {
     right: { to: [-1.05, -0.38], bend: 'down', front: true, hand: 'open' },
   },
   count: { left: { a: 30, el: 122, hand: 'fingers' }, head: 4 },
+  countBoth: { left: { a: 30, el: 122, hand: 'fingers' }, right: { a: 30, el: 122, hand: 'fingers' }, head: 2 },
   beckon: { left: { a: 48, el: 60, hand: 'open' }, head: 5 },
   stop: { left: { a: 84, el: 52, hand: 'open' }, lean: -3 },
   reach: { left: { a: 84, el: 4, hand: 'open' }, lean: 4 },
@@ -84,6 +85,7 @@ export const POSES = {
   carry: { left: { a: 12, el: 0, hand: 'fist' } },
   pat: { left: { a: 46, el: -6, hand: 'open' }, lean: 4 },
   sit: { sit: true, left: { to: [0.62, 0.98], bend: 'out', front: true, hand: 'fist' }, right: { to: [0.62, 0.98], bend: 'out', front: true, hand: 'fist' } },
+  sitReach: { sit: true, left: { a: 96, el: 6, hand: 'open' }, right: { to: [0.62, 0.98], bend: 'out', front: true, hand: 'fist' }, head: 4 },
   sitPat: { sit: true, left: { a: 44, el: -6, hand: 'open' }, right: { to: [0.62, 0.98], bend: 'out', front: true, hand: 'fist' } },
   eat: { left: { to: [0.15, -0.32], bend: 'out', front: true, hand: 'fist' }, right: { to: [0.4, 0.62], bend: 'out', front: true, hand: 'fist' }, head: -3 },
   sweep: {
@@ -107,6 +109,7 @@ export const POSES = {
   pointDownHold: { left: { a: 40, el: -4, hand: 'point' }, right: { a: 30, el: 112, hand: 'fist' }, head: 8 },
   holdEar: { left: { to: [1.45, -0.5], bend: 'down', front: true, hand: 'fist' }, head: -8 },
   pinch: { left: { a: 30, el: 112, hand: 'point', aim: 150 }, head: 4 },
+  shush: { left: { to: [0.06, -0.34], bend: 'out', front: true, hand: 'point', aim: 178 }, head: 5 },
   lookFor: { left: { to: [0.26, -0.8], bend: 'out', front: true, hand: 'open' }, head: -5 },
 } as const satisfies Record<string, Pose>
 

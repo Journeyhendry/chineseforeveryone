@@ -2,7 +2,7 @@
 // character sheets), comic balloons and panel frames, into one SVG in the 480x360 viewBox.
 // Animated parts are wrapped so that each animated group's local origin is its pivot point
 // (CSS transforms in the app then rotate/scale around the right spot without transform-origin).
-import { CHARACTERS } from '../characters/specs.ts'
+import { CHARACTERS, SCENE_EXTRAS } from '../characters/specs.ts'
 import { posedFigure, type FigureAnchors } from '../characters/render.ts'
 import { POSES } from '../characters/pose.ts'
 import { el, INK, num, type Pt } from '../characters/svg.ts'
@@ -44,7 +44,7 @@ interface PlacedChar {
 }
 
 function placeChar(c: SceneCharacter, index: number, held: { p: SceneProp; countFrom: number }[] = []): PlacedChar {
-  const spec = CHARACTERS.find((s) => s.id === c.id)
+  const spec = CHARACTERS.find((s) => s.id === c.id) ?? SCENE_EXTRAS.find((s) => s.id === c.id)
   if (!spec) throw new Error(`unknown character ${c.id}`)
   const pose = c.pose ?? 'stand'
   if (!(pose in POSES)) throw new Error(`unknown pose ${pose}`)

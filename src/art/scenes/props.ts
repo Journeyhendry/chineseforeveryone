@@ -1577,6 +1577,21 @@ export const PROPS: Record<string, Draw> = {
     ].join(''),
   /** Clothes rail: two poles and a bar at y -230 (hang garments from y -226). */
   'clothes-rail': () => [rect(-134, -236, 10, 236, 3, '#868E96', 2.5), rect(124, -236, 10, 236, 3, '#868E96', 2.5), rect(-140, -240, 280, 10, 4, '#ADB5BD', 3), rect(-150, -8, 40, 8, 3, '#4A4458', 2.5), rect(110, -8, 40, 8, 3, '#4A4458', 2.5)].join(''),
+  /** Fridge; variant 'open': the door swung out to the right, a lit inside with shelves, a few jars and an egg box (no milk). */
+  fridge: (o) => {
+    const body = [rect(-54, -210, 108, 210, 12, '#E7F1F8'), line(d('M', -54, -146, 'L', 54, -146), 3.5)]
+    if (o.variant !== 'open') return [...body, rect(38, -196, 7, 36, 3, '#ADB5BD', 2.5), rect(38, -132, 7, 50, 3, '#ADB5BD', 2.5)].join('')
+    return [
+      ...body,
+      rect(-46, -202, 92, 50, 6, '#FFF9DB', 2.5),
+      rect(-46, -140, 92, 132, 6, '#FFF9DB', 2.5),
+      line(d('M', -46, -96, 'L', 46, -96, 'M', -46, -52, 'L', 46, -52), 3, 0.7),
+      rect(-38, -126, 18, 30, 4, '#FFA8A8', 2.5), rect(-14, -120, 18, 24, 4, '#B2F2BB', 2.5),
+      rect(10, -70, 30, 18, 4, '#F3D9B5', 2.5), circle(-26, -62, 9, RED, { sw: 2.5 }),
+      shape(d('M', 54, -208, 'L', 92, -222, 'L', 92, 12, 'L', 54, 0, 'Z'), '#D0E3F0'),
+      rect(80, -150, 6, 40, 3, '#ADB5BD', 2.5),
+    ].join('')
+  },
   laptop: () => [rect(-26, -40, 52, 34, 4, '#4A4458'), rect(-21, -35, 42, 24, 2, '#A5D8FF', 2), rect(-32, -8, 64, 8, 3, '#868E96', 2.5)].join(''),
 }
 
